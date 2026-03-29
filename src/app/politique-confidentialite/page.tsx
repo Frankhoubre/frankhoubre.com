@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           <ul className="mt-3 list-inside list-disc space-y-2">
             <li>
               <strong className="text-neutral-950">Hébergement et logs</strong>{" "}
-              : l’hébergeur (par ex. Vercel ou équivalent) peut enregistrer des
+              : l’hébergeur (Vercel Inc.) peut enregistrer des
               données techniques (adresse IP, horodatage, navigateur) dans des
               fichiers journaux aux fins de sécurité, maintenance et statistiques
               d’infrastructure, conformément à sa propre politique et au contrat

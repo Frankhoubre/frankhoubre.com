@@ -123,7 +123,11 @@ function buildJsonLd(opts: {
       name: person.name,
       url: person.url,
       jobTitle: person.jobTitle,
+      description: person.description,
       image: authorImage,
+      ...(person.sameAs.length
+        ? { sameAs: [...person.sameAs] }
+        : {}),
     },
     publisher: {
       "@type": "Organization",
@@ -284,22 +288,61 @@ export default async function BlogArticlePage({ params }: Props) {
               ) : null}
             </div>
 
-            <footer className="mt-14 flex gap-4 border-t border-neutral-200 pt-10">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={authorImg}
-                alt=""
-                width={56}
-                height={56}
-                className="h-14 w-14 shrink-0 rounded-full border border-neutral-200 object-cover"
-              />
-              <div>
-                <p className="font-semibold text-neutral-950">
-                  {person.authorDisplayName}
-                </p>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-800">
-                  {person.description}
-                </p>
+            <footer className="mt-14 rounded-2xl border border-neutral-200 bg-[var(--background)] px-5 py-8 sm:px-6">
+              <p className="font-mono text-xs uppercase tracking-wide text-neutral-500">
+                Auteur
+              </p>
+              <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-start">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={authorImg}
+                  alt={person.authorDisplayName}
+                  width={72}
+                  height={72}
+                  className="h-[4.5rem] w-[4.5rem] shrink-0 rounded-full border border-neutral-200 bg-white object-cover"
+                />
+                <div className="min-w-0 flex-1">
+                  <p className="font-semibold text-neutral-950">
+                    {person.authorDisplayName}
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-neutral-600">
+                    {person.jobTitle}
+                  </p>
+                  <div className="mt-4 space-y-3 text-sm leading-relaxed text-neutral-800">
+                    {person.bio.map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
+                  <nav
+                    className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium"
+                    aria-label="Liens auteur"
+                  >
+                    <Link
+                      href="/a-propos"
+                      className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                    >
+                      À propos
+                    </Link>
+                    <span className="text-neutral-300" aria-hidden>
+                      ·
+                    </span>
+                    <Link
+                      href="/contact"
+                      className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                    >
+                      Contact
+                    </Link>
+                    <span className="text-neutral-300" aria-hidden>
+                      ·
+                    </span>
+                    <Link
+                      href="/blog"
+                      className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                    >
+                      Tous les articles
+                    </Link>
+                  </nav>
+                </div>
               </div>
             </footer>
 

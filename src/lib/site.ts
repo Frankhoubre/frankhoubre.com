@@ -32,10 +32,16 @@ export const siteName = "Frank Houbre";
 export const person = {
   name: "Frank Houbre",
   authorDisplayName: "Frank Houbre",
-  jobTitle: "Auteur & créateur",
+  jobTitle: "Créateur, image & vidéo par IA",
+  /** Court résumé (SEO, JSON-LD, cartes de partage). */
   description:
-    "Articles, notes et tutoriels autour du web, de la création et des outils du quotidien.",
+    "Guides et tutoriels pour exploiter l’IA générative au service d’un rendu cinématographique crédible : lumière, prompts, image et vidéo.",
+  /** Paragraphes affichés dans la section auteur des articles. */
+  bio: [
+    "J’écris sur ce site pour partager des workflows concrets autour de l’IA générative : prompts structurés comme un brief photo ou vidéo, erreurs qui donnent un rendu « plastique », et pistes pour garder une cohérence visuelle sur plusieurs plans.",
+    "L’idée n’est pas de collectionner des effets spectaculaires, mais d’approcher un langage de réalisation — lumière naturelle, grain, mouvement de caméra — pour que le résultat tienne la route à l’écran.",
+  ] as const,
   url: baseUrl,
-  image: `${baseUrl}/next.svg`,
+  image: "/images/author.svg",
   sameAs: [] as string[],
 } as const;

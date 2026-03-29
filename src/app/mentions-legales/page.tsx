@@ -29,8 +29,20 @@ export default function LegalPage() {
             Hébergement
           </h2>
           <p className="mt-2">
-            Indiquez ici le nom, l’adresse et les coordonnées de votre hébergeur
-            (ex. Vercel, OVH, etc.).
+            <strong className="text-neutral-950">Vercel Inc.</strong>
+            <br />
+            440 N Barranca Ave #4133
+            <br />
+            Covina, CA 91723
+            <br />
+            États-Unis
+            <br />
+            <a
+              href="https://vercel.com"
+              className="text-neutral-950 underline underline-offset-2 hover:text-neutral-600"
+            >
+              vercel.com
+            </a>
           </p>
         </section>
         <section>
