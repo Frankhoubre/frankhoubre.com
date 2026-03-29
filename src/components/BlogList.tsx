@@ -144,8 +144,11 @@ export function BlogList({
             return (
               <li key={post.slug}>
                 <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:border-neutral-300">
-                  <Link href={`/blog/${post.slug}`} className="relative block">
-                    <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
+                  <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="relative block h-full w-full"
+                    >
                       {thumb ? (
                         thumb.startsWith("http") ? (
                           // eslint-disable-next-line @next/next/no-img-element
@@ -168,14 +171,14 @@ export function BlogList({
                           Aperçu
                         </div>
                       )}
-                      <span className="absolute left-3 top-3">
-                        <Badge
-                          category={post.frontmatter.category}
-                          href={`/blog/category/${post.frontmatter.category}`}
-                        />
-                      </span>
-                    </div>
-                  </Link>
+                    </Link>
+                    <span className="absolute left-3 top-3 z-10">
+                      <Badge
+                        category={post.frontmatter.category}
+                        href={`/blog/category/${post.frontmatter.category}`}
+                      />
+                    </span>
+                  </div>
                   <div className="flex flex-1 flex-col p-5">
                     <time
                       dateTime={post.frontmatter.date}
