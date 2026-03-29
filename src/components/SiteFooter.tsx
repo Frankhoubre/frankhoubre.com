@@ -19,6 +19,12 @@ export function SiteFooter() {
           >
             Mentions légales
           </Link>
+          <Link
+            href="/politique-confidentialite"
+            className="hover:text-neutral-950"
+          >
+            Confidentialité
+          </Link>
         </nav>
       </div>
     </footer>
