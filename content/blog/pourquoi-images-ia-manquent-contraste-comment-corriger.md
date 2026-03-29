@@ -139,17 +139,6 @@ La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les ph
 Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
 Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, flat log image vs graded version side by side on monitor, scopes, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, mountain scene crushed blacks lifted intentionally filmic, not muddy, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, face with clear shadow under nose from side key, contrast readable, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)

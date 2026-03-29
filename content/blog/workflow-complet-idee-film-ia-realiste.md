@@ -147,17 +147,6 @@ Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détai
 Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
 Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, messy director desk, printed storyboard, pencil, coffee stain, warm desk lamp, quiet evening interior, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, wide shot empty soundstage with single spotlight, dust, industrial texture, moody silhouette, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, monitor glow on face in dark edit suite, reflection in glasses, cool bias, film grain, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Pourquoi mes vidéos IA ont l’air fake, et comment les rendre réalistes](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes)

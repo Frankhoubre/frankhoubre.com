@@ -153,17 +153,6 @@ Les séquences dialogue en IA demandent des plans de réaction. Même si tu n’
 Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
 Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, moodboard wall pins photographs color swatches, tungsten office, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, LUT cube on monitor colorist desk, scopes blurred background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, painter palette beside cinema still print, hybrid metaphor, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia)

@@ -153,17 +153,6 @@ Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet
 La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
 Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, large softbox edge visible in reflection, portrait subject, controlled falloff, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, candlelit dinner table, warm skin, deep shadows, single source logic, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, hard noon sun one alley wall bright other dark, crisp shadow line, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle)

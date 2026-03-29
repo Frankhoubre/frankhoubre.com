@@ -153,17 +153,6 @@ L’étalonnage « teal and orange » fonctionne quand les peaux restent humaine
 Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
 Pour calibrer l’œil, regarde cette référence : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, cinematographer holding light meter, set backstage, smoke haze soft, documentary texture, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, lens case open, glass reflections, workshop clutter, photoreal metal, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, sunset silhouette on rooftop, anamorphic flare subtle, natural haze, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer une pub vidéo avec l’IA comme une agence pro](/blog/comment-creer-pub-video-avec-ia-comme-agence-pro)

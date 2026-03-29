@@ -147,17 +147,6 @@ Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu
 Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
 Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, three monitors showing timeline sketches, dim suite, blue bias, practical lamp, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, clapperboard sharp foreground, blurred set behind, ready to roll energy, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, audience in dark room screen glow, subtle grain, realistic skin tones, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia)

@@ -147,17 +147,6 @@ La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Ga
 Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
 Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, woman turning head slowly, window light, motion blur hint only on background, photoreal skin, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, city street shallow focus, camera slight dolly in, wet asphalt, natural flares, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, macro fabric texture with bokeh lights behind, gentle parallax feeling, cinematic color grade, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste)

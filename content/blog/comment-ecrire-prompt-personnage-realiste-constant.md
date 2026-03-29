@@ -153,17 +153,6 @@ Le format carré historique Instagram n’est pas le même que le vertical TikTo
 La constance de palette sur plusieurs plans, c’est un LUT ou une courbe, pas un espoir. Exporte une référence, colle la sur le bord de ton écran, mate plan par plan. L’œil se fatigue vite, la référence non.
 Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, character sheet collage natural lighting, neutral background, three angles subtle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, same woman coat scarf at bus stop overcast, consistent wardrobe, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, same man barber chair mirror reflection, consistent haircut stubble, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia)

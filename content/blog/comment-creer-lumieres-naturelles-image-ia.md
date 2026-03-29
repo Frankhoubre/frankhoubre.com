@@ -139,17 +139,6 @@ Les textures de tissu trahissent le plastique avant la peau. Un pull en laine do
 Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
 Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, north window soft portrait, white curtain diffusion, realistic falloff, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, golden hour long shadow grass, warm rim cool fill subtle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, overcast beach flat light skin still dimensional, no hdr sky, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ)

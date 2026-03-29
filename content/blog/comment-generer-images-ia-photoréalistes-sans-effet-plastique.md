@@ -139,17 +139,6 @@ Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole 
 Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
 Pour calibrer l’œil, regarde cette référence : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, middle-aged woman natural skin pores window light, no beauty filter, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, denim jacket macro thread fade real wear, cool fill warm key, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, outdoor portrait overcast softbox sky, realistic catchlight shape, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia)

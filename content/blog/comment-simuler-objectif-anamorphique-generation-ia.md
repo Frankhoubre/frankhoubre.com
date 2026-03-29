@@ -139,17 +139,6 @@ Les ambiances cuisine ou bar avec mille reflets demandent des angles prudents. S
 Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
 Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, oval bokeh street lights, slight horizontal flare, widescreen feel, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close portrait anamorphic falloff edges softer, center sharp, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, car headlights streak flare controlled, wet road, cinematic, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia)

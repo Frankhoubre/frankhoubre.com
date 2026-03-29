@@ -139,17 +139,6 @@ Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui 
 Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
 Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, cheek macro pores and soft peach fuzz, side light, no wax, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, older man wrinkles dignified, warm key, shadow in eye sockets natural, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, backlit ear rim light fine hairs, realistic bloom control, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia)

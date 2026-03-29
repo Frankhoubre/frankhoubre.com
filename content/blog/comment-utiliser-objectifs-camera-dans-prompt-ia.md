@@ -153,17 +153,6 @@ Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton out
 Les prompts qui listent vingt adjectifs esthétiques sans géométrie produisent des fonds d’écran. Remplace la moitié des adjectifs par des données physiques : distance, focale, hauteur de caméra, heure, matériau dominant.
 Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, 50mm portrait distance, compressed background city lights bokeh circles, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, 24mm wide interior architecture lines converging gently, natural distortion, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, 85mm detail eye close-up, creamy bokeh, minimal distortion on face, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt)

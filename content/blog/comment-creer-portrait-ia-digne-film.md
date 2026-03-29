@@ -139,17 +139,6 @@ Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détai
 Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
 Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, actor mid-dialogue eyes to camera off-axis, shallow dof, tungsten key, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, black and white portrait high contrast but skin not plastic, grain, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, environmental portrait workshop tools background contextual, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia)

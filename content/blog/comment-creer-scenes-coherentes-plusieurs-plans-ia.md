@@ -153,17 +153,6 @@ Le format vertical impose une autre lecture. Un plan large horizontal raconte l�
 Le storyboard, même grossier, te fait économiser des heures. Trois cases dessinées au stylo valent dix prompts aveugles. Tu sais où est la ligne d’horizon, où est le regard, où est la coupure. Le modèle ne devine pas ton plan suivant, tu dois le lui donner comme un cadre.
 Pour calibrer l’œil, regarde cette référence : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, same apartment kitchen wide, matching props, morning cool light consistent, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, same character waist-up different angle, continuity clothing and hair, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, same street corner establishing then OTS conversation, matching weather, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment utiliser les objectifs caméra dans un prompt IA](/blog/comment-utiliser-objectifs-camera-dans-prompt-ia)

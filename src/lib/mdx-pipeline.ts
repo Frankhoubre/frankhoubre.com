@@ -207,7 +207,6 @@ export function injectMiddleBanner(content: string): string {
 export function runMdxPipeline(segment: string): string {
   let s = segment;
   s = injectHeadingIds(s);
-  // Les prompts cinéma des tutoriels utilisent ```text + « Prompt: ». On les affiche.
   s = embedYouTubeLinks(s);
   return s;
 }

@@ -139,17 +139,6 @@ Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet
 Les ambiances cuisine ou bar avec mille reflets demandent des angles prudents. Si tu simplifies une rangée de bouteilles en un mur sombre, tu gagnes en crédibilité. **Réduis la complexité** quand le modèle montre des limites.
 Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, noir alley single street lamp pool of light, rain, realistic wet speculars, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, interior candle and darkness most of frame, face partially lit, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, subway tunnel vanishing point, sparse lights, grain heavy, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Pourquoi tes images IA manquent de contraste, et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger)

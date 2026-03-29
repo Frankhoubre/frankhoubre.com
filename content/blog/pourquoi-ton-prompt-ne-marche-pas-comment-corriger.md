@@ -153,17 +153,6 @@ Les références film doivent être des références de lumière, pas de sujet. 
 Le contraste n’est pas la saturation. Monter les couleurs pour cacher une image plate, ça donne une pub télé années 90. Travaille d’abord la courbe : noirs qui ne tombent pas en boue, hautes lumières qui ne crament pas la peau. Quand la courbe tient, la saturation a besoin de beaucoup moins.
 Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, crumpled paper notes with crossed words, desk lamp, frustration still life, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, split face lit wrong vs right key light tutorial metaphor, photoreal, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, keyboard close-up, finger hovering enter, shallow dof, cool room light, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment écrire un prompt cinematic ultra réaliste pour l’IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia)

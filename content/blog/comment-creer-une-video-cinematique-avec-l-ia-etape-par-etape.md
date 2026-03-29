@@ -156,17 +156,6 @@ Entre les deux captures, vérifie ton histogramme mental. Est ce que tu as encor
 **Tu copies des prompts géants trouvés en ligne.** Ils contiennent souvent des contradictions. Écris court, technique, testable.
 Pour calibrer l’œil, regarde cette référence : [réflexes de composition et de mouvement en cinéma](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, dim interior, single practical lamp, dust in the air, actor silhouette mid-frame, moody contrast, handheld micro-shake, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close-up of clapperboard out of focus foreground, blurred warm tungsten background, editorial framing, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, wide shot urban night street, wet pavement reflections, distant neon bokeh, natural noise, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Pourquoi tes vidéos IA ont l’air fake](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes)

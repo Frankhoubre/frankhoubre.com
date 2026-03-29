@@ -153,17 +153,6 @@ Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur 
 Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
 Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, futuristic city but grounded textures rust concrete, no neon soup, cohesive palette, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, repeated hexagon motif in architecture subtle, same weather fog, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, same vehicle design three shots different streets, continuity paint wear, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia)

@@ -139,17 +139,6 @@ Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets
 La musique générique « épique » tue une scène intime. Choisis une musique qui laisse de l’air aux silences. Coupe la musique sous une phrase importante. Le cinéma, c’est aussi ce que tu enlèves.
 Pour calibrer l’œil, regarde cette référence : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, foreground out of focus leaves, subject sharp mid, city far soft bokeh, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, restaurant depth layers patrons blurred foreground glass reflections, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, car rearview mirror sharp driver face road bokeh behind, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer un portrait IA digne d’un film](/blog/comment-creer-portrait-ia-digne-film)

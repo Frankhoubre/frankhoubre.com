@@ -153,17 +153,6 @@ La fatigue visuelle du spectateur augmente avec les néons saturés. Si ton mond
 Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
 Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, profile face half shadow, safe angle, ear and jaw defined, no smile teeth, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, slight down angle eyes up, controlled catchlights, pores visible, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, wide hat brim shadow over eyes, mystery framing, avoids teeth, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant)

@@ -147,17 +147,6 @@ Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détai
 La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
 Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, athlete mid stride frozen almost, slight motion blur on limbs only, stadium lights soft, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, car interior dashboard lights, night road bokeh, stable horizon line, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, chef slicing vegetables, hands mid action, controlled shutter feel, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)

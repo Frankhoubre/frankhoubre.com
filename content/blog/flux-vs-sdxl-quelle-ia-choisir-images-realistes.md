@@ -139,17 +139,6 @@ Les références film doivent être des références de lumière, pas de sujet. 
 Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
 Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, two workstations side by side monitors different software blur logos, neutral, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, GPU card close-up heat pipes, workshop vibe, practical light, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, split image same pose different render subtle variation, comparison feel, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique)

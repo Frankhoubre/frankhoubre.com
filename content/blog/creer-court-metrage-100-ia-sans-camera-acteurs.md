@@ -147,17 +147,6 @@ Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles
 Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
 Pour calibrer l’œil, regarde cette référence : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, two silhouettes at kitchen table, single overhead practical, tension in posture, noir influence, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, forest path morning mist, natural sunlight shafts, handheld micro texture, no fantasy, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, final shot empty chair by window, rain trails on glass, quiet ending frame, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment obtenir un rendu cinéma avec Seedance 2](/blog/comment-obtenir-rendu-cinema-avec-seedance-2)

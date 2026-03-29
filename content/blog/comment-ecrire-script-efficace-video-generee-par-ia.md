@@ -147,17 +147,6 @@ Les couleurs de peau sous néon doivent rester dans une famille crédible. Le n�
 Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
 Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, typewriter and stack of pages, warm tungsten, shallow dof, dust in air, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close-up pen marking beat on paper margin, texture macro, natural shadows, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, writer staring out window rain, reflection layered, restrained grade, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Créer un court métrage 100 % IA sans caméra ni acteurs](/blog/creer-court-metrage-100-ia-sans-camera-acteurs)

@@ -147,17 +147,6 @@ La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière
 Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
 Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, dance rehearsal studio mirror, soft side light, chalk dust, realistic sweat sheen subtle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, night exterior with soft fog, streetlamp bloom controlled, anamorphic hint, no neon overload, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close eyes catching single catchlight, shallow dof, filmic roll-off on highlights, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible)

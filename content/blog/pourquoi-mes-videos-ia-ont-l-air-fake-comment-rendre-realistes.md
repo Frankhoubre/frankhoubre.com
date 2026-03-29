@@ -147,17 +147,6 @@ Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai 
 Quand tu parles de cinéma à un modèle, pense caméra physique. Un 35 mm en intérieur, ce n’est pas la même chose qu’un 18 mm au même endroit. Le 35 mm rapproche le visage sans déformer les épaules. Le 18 mm allonge les mains vers la caméra et transforme un simple geste en catastrophe géométrique. Si ton personnage a des mains au premier plan, **choisis une focale plus longue** ou recule virtuellement la caméra.
 Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, subway platform at night, sickly green fluorescent spill, tired commuter face half in shadow, 35mm spherical lens look, heavy grain, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, overexposed smartphone ad aesthetic vs muted film contrast split screen metaphor, editorial still, subtle chromatic aberration, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close-up hands holding paper cup, shallow depth, steam, natural skin pores, soft tungsten rim, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer une vidéo cinématique avec l’IA, étape par étape](/blog/comment-creer-une-video-cinematique-avec-l-ia-etape-par-etape)

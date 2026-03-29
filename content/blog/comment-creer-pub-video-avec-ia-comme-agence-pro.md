@@ -147,17 +147,6 @@ Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silen
 Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
 Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, minimal product on concrete, single hard light, crisp shadow, no fake glow, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, office team around table, natural window key, realistic wardrobe wrinkles, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, packshot hero with subtle film grain, restrained palette, premium but human, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia)

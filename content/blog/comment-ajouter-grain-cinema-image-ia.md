@@ -139,17 +139,6 @@ Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui
 Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
 Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, 35mm film scan texture overlay subtle on digital portrait, convincing blend, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, dark shadows grain visible midtones clean, controlled, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
-
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, projector beam dust grain in theater air, volumetric soft, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
 ## Liens utiles dans la série AI Studio
 
 - [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes)
