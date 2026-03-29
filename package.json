@@ -1,0 +1,10 @@
+{
+  "name": "frankhoubre-com",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix mon-site",
+    "build": "npm run build --prefix mon-site",
+    "start": "npm run start --prefix mon-site",
+    "lint": "npm run lint --prefix mon-site"
+  }
+}
