@@ -5,139 +5,122 @@ category: "tutoriels"
 excerpt: "Lumière latérale, fréquences, retouche locale et export pour la vidéo ou l’impression."
 thumbnail: "/images/blog/comment-ameliorer-texture-peau-image-ia/hero.webp"
 ---
-Tu es ici pour : Comment améliorer la texture de peau en image IA. Bien. On va éviter deux pièges tout de suite.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Tu zoomes à deux cents pourcent sur un portrait généré et tu n’y vois ni pores ni histoire : une surface qui rappelle la porcelaine ou le filtre beauté téléphonique. Ce n’est pas « parce que l’IA ne sait pas faire la peau » ; c’est presque toujours un **cocktail de lumière plate, de guidance trop agressive et de post-traitement qui lisse tout** avant que tu aies vu la vraie matière. La peau humaine, photographiée, est une zone de **fréquences mixtes** : zones plus lisses (joue jeune, lumière douce) et zones plus texturées (contour du nez, pores visibles sous un rasant). Quand le modèle uniformise cette complexité, l’œil déclenche le réflexe « synthèse » en une fraction de seconde.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+Ce guide pose une méthode de terrain : **lumière d’abord**, fréquences ensuite, retouche locale plutôt que regénération totale, export pensé pour la suite (vidéo, print, réseaux). On évite la course à la résolution tant que la géométrie des ombres sur le visage est fausse : agrandir une erreur ne fait qu’une **grande** erreur. Tu auras aussi des repères pour Flux, SDXL et pipelines voisins sans dogme : **teste sur ton sujet**, note ce qui ment le moins, documente. L’objectif n’est pas une peau « parfaite » au sens skincare, mais une peau **crédible** au sens cinéma : lisible, cohérente avec la lumière, et survivante au zoom du spectateur sceptique.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+Je pars de trois situations réelles. **Élodie** livre des portraits pour une campagne : les images sont nets partout, la peau devient plastique. **Hugo** inpaint les yeux en boucle sans jamais toucher à la lumière : la texture revient cinq secondes puis retombe en bouillie au prochain export. **Sarah** monte les steps « à fond » parce que l’interface le suggère : les pores deviennent une grille dessinée. Les étapes ci-dessous te sortent de ces impasses.
 
-Pour Comment améliorer la texture de peau en image IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+**Engagement court.** Choisis **un** portrait à mener jusqu’au bout (export final + note de réglages). L’entraînement de l’œil passe par des allers-retours **complets**, pas par vingt débuts de session abandonnés.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+### Trois mini scénarios avec pivot
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+**Campagne beauté « naturelle ».** Le client veut « authenticité » mais refuse les cernes et les pores visibles. **Pivot :** texture **suggérée** plutôt que documentaire brut — lumière douce latérale, pas de sharp sur le visage, rétention d’une micro irrégularité sur une joue pour éviter la poupée.
 
-La constance de palette sur plusieurs plans, c’est un LUT ou une courbe, pas un espoir. Exporte une référence, colle la sur le bord de ton écran, mate plan par plan. L’œil se fatigue vite, la référence non.
+**Portrait dramatique ombre dure.** Tu pousses le contraste : la peau craque en zones mortes ou en halos. **Pivot :** roll-off plus doux sur les transitions ombre-lumière, fill très léger non visible comme « studio », ou recadre pour qu’une partie du visage reste dans une zone d’exposition lisible.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+**Série de trois âges (même lighting).** Le modèle jeune est lisse, le modèle âgé devient caricatural ridé. **Pivot :** une consigne d’âge **ressenti** + référence photo réelle pour le grain de peau de chaque tranche ; évite les adjectifs « old » vagues qui activent les clichés dataset.
 
-Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la saturation sur le blanc des yeux, ajoute une micro ombre sous la paupière, évite le catchlight parfait en double symétrique. L’œil humain est légèrement imparfait, exploite ça.
+## Concepts clés : ce que la peau demande au pipeline
 
-Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détail plus une lumière frontale dure. Penche la lumière, ajoute une ombre douce sous le nez, baisse la clarté sur les hautes fréquences de peau en post. La peau a des pores, pas une grille.
+**Lumière latérale révèle, lumière frontale masque.** Un key light qui rase la joue donne une lecture de relief ; une source frontale large et proche aplatit les volumes. Ce n’est pas une leçon d’école : c’est un **levier** pour que le modèle place des micro-ombres là où la peau doit exister. Si tu veux du doux, garde la source large mais **penche-la** légèrement : tu évites le masque mort du flash face.
 
-La limite d’un outil n’est pas une insulte personnelle. Si un modèle ne tient pas les mains, contourne. Si un autre ne tient pas les visages de profil, change l’angle. Le studio professionnel choisit l’outil pour la tâche, pas l’inverse.
-## Notes de plateau, détails qui changent tout
+**Guidance (CFG) et plastique.** Une guidance trop haute force le modèle à « satisfaire » tous les tags en même temps, souvent au prix d’une surface lissée. Une guidance trop basse donne de la boue. Cherche une **fenêtre** au milieu, note-la pour ton checkpoint et ton sujet. Même consigne pour les steps : au-delà d’un palier, tu ne gagnes plus en vérité, tu **cristallises** des artefacts de peau.
 
-Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
+**Hautes fréquences en post.** Une fois l’image presque bonne, une retouche sur les hautes fréquences **uniquement** sur des zones choisies (joues, front) peut rendre de la suggestion sans refaire toute la scène. À l’inverse, un sharp global sur le visage crie retouche cheap. Pense **masques** et **opacités basses**.
 
-Les mains et les dents sont des capteurs de mensonge. Si tu n’as pas besoin des mains, mets les hors champ ou en lointain flou. Si tu en as besoin, prévois un recadrage serré sur le visage et laisse les mains hors cadre. Ce n’est pas de la lâcheté, c’est du métier.
+**Séparation peau / vêtement.** Les pulls et les tissus trahissent souvent le plastique avant la peau. Si la laine ressemble à de la résine, baisse la clarté locale sur le textile, ajoute une micro-texture ou une photo de référence de tricot dans ton moodboard mental. Une peau crédible à côté d’un vêtement de jouet casse tout autant que l’inverse.
 
-La résolution intermédiaire est ton laboratoire. Travaille où tu peux itérer en dix minutes, pas en trois heures. Quand une séquence tient, upscaler ou regénérer haut a un sens. Sinon tu optimises un pixel parfait dans une scène fausse.
+**Yeux et bouche comme repères.** Le triangle visage (yeux, nez, bouche) concentre l’attention. Si les yeux sont hyper nets et la bouche fondue, le cerveau rejette l’image. Priorise la cohérence **du triangle** avant de peaufiner l’oreille en arrière-plan. Pour les déformations fréquentes, croise avec [comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia).
 
-Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
+## Notes de plateau : détails qui changent la lecture de la peau
 
-Les prompts qui listent vingt adjectifs esthétiques sans géométrie produisent des fonds d’écran. Remplace la moitié des adjectifs par des données physiques : distance, focale, hauteur de caméra, heure, matériau dominant.
+**Catchlights.** Des reflets parfaitement symétriques sur les deux yeux lisent « studio IA ». Asymétrie légère, saturation modérée sur le blanc de l’œil, micro-ombre sous la paupière : petits gestes qui réancrent le portrait dans le réel.
 
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
+**Peau sous néon ou sous tungstène.** La couleur de peau **doit rester dans une famille crédible** même sous teinte forte. Le néon colore ; il ne doit pas transformer le visage en objet monochrome. En post, isole les rouges de peau, baisse la saturation si tout part magenta, remonte un peu la luminance pour garder du « sang » dans les joues.
 
-Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+**Profondeur de champ et texture.** Si le nez est net et le mur à cinquante centimètres est flou comme de la crème, le cerveau hurie. Décris distance sujet–caméra et sujet–fond, même approximativement. Voir [comment générer une scène réaliste avec une vraie profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ).
 
-### Étape 1 : choisir le bon moteur pour la tâche
+**Résolution de travail.** Travaille là où tu peux itérer vite ; n’upscale que quand la composition et la lumière sont figées. Sinon tu passes des heures sur des pores dans une scène dont l’ombre du nez est au mauvais endroit.
 
-Flux brille souvent sur les transitions douces, la matière, les scènes complexes avec beaucoup d’objets. SDXL reste un couteau suisse avec un écosystème énorme de LoRA et de workflows ComfyUI.
+**Brief honnête en trois phrases.** Qui, où, quelle heure ; ce que le spectateur doit ressentir ; ce qui est interdit visuellement (ex. pas de peau porcelaine, pas de sharp global). Les interdits évitent le pack « sci-fi néon » par défaut.
 
-**Règle simple :** si tu veux du portrait peau et yeux avec contrôle fin, teste les deux sur le même prompt court. Garde celui qui ment le moins sur les mains et les dents.
+**Compression réseaux sociaux.** Une image trop propre subit ensuite le codec de la plateforme ; tu peux obtenir du bouillonnement autour des contours du visage. Un léger grain maîtrisé et des hautes lumières non cramées stabilisent souvent le rendu après upload — même principe que pour les clips dans [pourquoi mes vidéos IA ont l’air fake (et comment les rendre réalistes)](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes).
 
-### Étape 2 : résolution et recadrage avant beauté
+**Documentation légale / client.** Si tu livres pour une marque, trace ce qui est généré, retouché, upscalé. La technique ne remplace pas le cadre contractuel ; elle vit à côté.
 
-Travaille en 16:9 ou 2:3 selon la sortie, pas en carré si ton film est horizontal. Monte en résolution seulement quand la composition est figée. Sinon tu optimises des erreurs en haute définition.
+## Workflow pratique : de la génération à l’export propre
 
-### Étape 3 : steps, CFG, scheduler, sans religion
+### Étape 1 — Choisir le moteur pour **ton** portrait
 
-Monte les steps jusqu’au point où la texture apparaît, puis arrête avant la surdéfinition. CFG trop haut = plastique. CFG trop bas = boue. **Cherche une fenêtre**, note la, réutilise la.
+Flux excelle souvent sur la matière et les scènes denses ; SDXL offre un écosystème énorme (LoRA, ControlNet, ComfyUI). **Règle :** même prompt court, deux moteurs, même résolution de test. Garde celui qui ment le moins sur **mains et dents** si elles sont visibles, et sur la transition net–flou du visage.
 
-### Étape 4 : peau en deux temps
+### Étape 2 — Ratio et cadrage avant « beauté »
 
-Temps 1 : génération avec lumière plausible et ombre sous le nez. Temps 2 : retouche locale légère ou inpainting sur la zone yeux bouche si nécessaire. Évite de régénérer toute la scène pour une micro zone.
+Travaille dans le ratio final (16:9, 2:3, etc.). Recadrer après coup pour « sauver » une peau déjà fausse ne fait que recentrer le problème.
 
-### Étape 5 : grain cinéma en post souvent mieux qu’en prompt seul
+### Étape 3 — Prompt : géométrie du visage puis lumière
 
-Un grain overlay contrôlé, adapté à la densité des ombres, réagit mieux que « add grain » jeté dans le prompt sans mesure. Combine les deux seulement si tu sais ce que chaque couche apporte.
+Plan (gros plan, poitrine), hauteur de caméra, direction de la source, dureté (fenêtre large = doux, soleil direct = dur). Ajoute **une** ligne sur la texture souhaitée : natural skin texture, subtle pores, not plastic skin — adapte à la langue qui marche sur ton modèle.
 
-### Étape 6 : contraste et couleur
+### Étape 4 — Steps, guidance, scheduler : chercher le palier
 
-Courbe d’abord, saturation ensuite. Isole les peaux si tu pousses un look teal orange. **Garde du sang dans les rouges** des joues, sinon tu passes en mannequin 3D.
+Monte les steps jusqu’à l’apparition de la texture, puis **arrête** avant la surdéfinition. Note le couple (steps, guidance) gagnant dans un fichier texte. Le scheduler et le sampler changent parfois la « texture perçue » à réglages égaux : si tu bloques sur un checkpoint, fais **une** série de tests A/B sur deux schedulers, pas dix changements simultanés. Pour aller plus loin sur les erreurs de formulation, voir [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle).
 
-### Étape 7 : profondeur de champ crédible
+### Étape 5 — Peau en deux temps
 
-Décris la distance et la focale. Vérifie les transitions net vers flou : trop abruptes = collage. Un léger flou gaussien sur l’arrière plan en post peut sauver une scène presque bonne.
+**Temps 1** : génération avec lumière plausible et ombre sous le nez. **Temps 2** : inpainting ou retouche locale sur yeux / bouche si nécessaire. Évite de régénérer toute la scène pour une micro-zone.
 
-### Étape 8 : export pour la suite vidéo
+### Étape 6 — Grain et collage visuel
 
-Exporte PNG ou TIFF propre pour l’image pilote, garde une variante avec grain si tu enchaînes directement vers un outil vidéo. Documente la focale et la lumière dans un fichier texte à côté, la vidéo te remerciera.
-## Micro réglages avant de figer une séquence
+Un grain cinéma léger en overlay **après** coup lie souvent mieux les zones trop propres au reste du cadre que « film grain » répété sans mesure dans le prompt. Guide dédié : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia).
 
-La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière dure sans direction. Dis d’où vient la source, sa taille, sa couleur. Fenêtre nord, néon vert en contre, lampe de bureau tungstène. Même si le modèle simplifie, ton cerveau de spectateur cherche une hiérarchie lumineuse. Sans hiérarchie, tu obtiens ce plat gris qui crie l’IA.
+### Étape 7 — Courbe et saturation
 
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
+Courbe d’abord (noirs qui ne tombent pas en boue, hautes qui ne crament pas la peau), saturation ensuite. Si tu pousses un look teal-orange, **isole les peaux** pour ne pas brûler les rouges.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+### Étape 8 — Export pour la suite
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
+PNG ou TIFF propre pour image pilote ; variante avec grain si tu enchaînes vers la vidéo. Fichier `.txt` à côté : focale implicite, direction lumière, réglages — la vidéo te remerciera. Pont avec [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
 
-Le suréchantillonnage d’image n’est pas toujours ton ami. Plus de steps peuvent cristalliser des textures de peau en stuc. Cherche le palier où les pores redeviennent suggérés plutôt que dessinés. C’est souvent un peu avant le maximum que l’interface te propose fièrement.
-
-Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
-
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
-
-Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+### Étape 9 — Contrôle sur deux écrans
 
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
+Laptop consumer : le grain disparaît, tu risques d’en rajouter trop. Écran plus fidèle ou calibré : le grain reparaît en boue. **Teste les deux** avant le master, idéalement sur téléphone aussi.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
-
-La résolution intermédiaire est ton laboratoire. Travaille où tu peux itérer en dix minutes, pas en trois heures. Quand une séquence tient, upscaler ou regénérer haut a un sens. Sinon tu optimises un pixel parfait dans une scène fausse.
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
-
 
 ### Table de décision rapide
 
 | Choix | Critère | Flux | SDXL |
 | --- | --- | --- | --- |
-| Portrait | peau et yeux | tester en priorité | LoRA énorme, très flexible |
-| Scène | objets multiples | souvent très fort | dépend du checkpoint |
-| Vitesse locale | VRAM | selon quant | optimisé DIY |
-| Post grain | contrôle fin | combine prompt + overlay | idem |
-| Vidéo next | image pilote propre | export PNG + meta | export PNG + meta |
-> Le réalisme n’est pas la netteté max. C’est une suite de petites erreurs cohérentes avec le monde physique.
+| Portrait peau | texture crédible | souvent très bon | LoRA / checkpoints spécialisés |
+| Scène complexe | objets + visage | souvent fort | dépend du setup |
+| Contrôle fin | mains, pose | à tester | écosystème outils riche |
+| Post grain | contrôle fin | prompt + overlay | idem |
+| Vitesse itération | VRAM / temps | selon machine | optimisations variées |
 
+> Le réalisme n’est pas la netteté max. C’est une suite de petites variations cohérentes avec la physique, avec la lumière réelle, et avec ce que ton œil accepte comme humain.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+## Trench warfare : pièges et correctifs
 
-Les fichiers de travail doivent survivre à un changement d’ordinateur. Exporte aussi une version lisible pour toi dans dix ans : mp4 h264 pour preview, wav pour son, png pour références. La technologie change, les archives restent.
+**Lumière frontale + sharp + steps max.** Tu obtiens un mannequin 3D. Corrige dans cet ordre : angle de lumière, guidance, steps, sharp en dernier recours et jamais global sur la peau.
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+**Inpainting sans consigne physique.** « Refais la peau » donne une autre peau, pas une meilleure lumière. Écris : « même lumière latérale, garder ombre sous nez, texture pores suggérés, pas lisse ».
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+**Négliger les mains au bord du cadre.** Si elles entrent, elles doivent être crédibles ou hors champ. Recadre ou masque si l’outil faiblit — ce n’est pas une défaite, c’est du cadrage.
 
-Le contraste n’est pas la saturation. Monter les couleurs pour cacher une image plate, ça donne une pub télé années 90. Travaille d’abord la courbe : noirs qui ne tombent pas en boue, hautes lumières qui ne crament pas la peau. Quand la courbe tient, la saturation a besoin de beaucoup moins.
+**Teal-orange sans masque peau.** Visages orange-brique. Isole les rouges, ramène une teinte sang réaliste.
 
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
+**Comparer à une pub skincare années 2000.** Ce look est volontairement lisse. Si tu vises documentaire ou cinéma contemporain, vise **irrégularité contrôlée**, pas polish total.
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+**Oublier le cou et les oreilles.** Le visage est bon mais le cou est une zone plastique ou une couleur différente. Étends la retouche ou la consigne de texture **au triangle étendu** (cou, partie visible des oreilles) ou recadre plus serré.
 
-Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui harmonise des zones trop propres avec des zones trop sales. Commence léger, 8 mm virtuel fin, puis monte si ton écran est calibré froid. Sur un laptop consumer, le grain disparaît, donc tu en mets trop, puis sur un bon écran ça devient boueux. **Teste sur deux écrans** avant de valider.
+**Abus du débruitage automatique.** Certains upscalers « nettoient » la peau. Désactive le débruitage agressif ou réinjecte du grain fin après coup pour retrouver de la matière.
 
-Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
-Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
+Pour calibrer l’œil sur la couleur et le contraste (qui façonnent autant la peau que la texture), cette référence reste solide : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
 
 ## Liens utiles dans la série AI Studio
 
@@ -146,32 +129,49 @@ Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https
 - [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
 - [Workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste)
 
-## Foire aux questions (FAQ)
+## FAQ
 
-**Pourquoi ma peau est plastique ?**
+**Pourquoi ma peau est plastique ?**  
+Souvent guidance trop haute, lumière trop frontale, sharp global ou steps au-delà du palier utile. Corrige dans cet ordre.
 
-Guidance trop haute, lumière frontale dure, sharp en post. Corrige dans cet ordre.
+**Je monte les steps à fond ?**  
+Non si la texture devient une grille. Cherche un palier et note-le.
 
-**Contraste faible, pourquoi ?**
+**Inpainting ou regénération totale ?**  
+Inpaint pour yeux, bouche ou petite zone si la lumière globale est bonne. Regénère tout si l’ombre principale est incohérente.
 
-Modèle prudent ou export plat. Monte le contraste global avant la saturation.
+**SDXL ou Flux pour les portraits ?**  
+Teste les deux avec le même brief court sur ton machine. Le gagnant dépend du checkpoint et du sujet.
 
-**Je monte les steps à fond ?**
+**L’anamorphique aide la peau ?**  
+Indirectement : il change la chute de netteté et le bokeh ; la peau doit rester cohérente avec cette optique. Ne confonds pas « look objectif » et « texture dermique ».
 
-Tu cristallises les défauts. Cherche un palier, note le.
+**Comment garder la peau sur plusieurs images d’une série ?**  
+Même brief lumière, même post-traitement (LUT/grain), mêmes termes de texture dans le prompt ; référence visuelle du pilote sous les yeux.
 
-**SDXL checkpoint, lequel ?**
+**La peau sombre est plus dure ?**  
+Souvent le dataset biaise les expositions. Surexpose légèrement en génération ou rétablis les ombres en post sans écraser les noirs ; vérifie sur plusieurs écrans.
 
-Celui qui correspond à ton sujet réel, pas celui à la mode cette semaine.
+**J’imprime grand format : quand upscaler ?**  
+Après verrouillage lumière et texture à résolution de travail. Upscaler tôt, c’est upscaler les erreurs.
 
-**L’anamorphique en prompt marche ?**
+**Ça remplace une retouche pro beauté ?**  
+Non pour une campagne peau « parfaite » style cosmétique. Oui pour du cinéma ou du documentaire où les imperfections sont des atouts.
 
-Oui si tu décris bokeh, falloff, et souvent des imperfections d’objectif légères.
+**Anglais ou français dans le prompt ?**  
+Souvent les tags photo anglais sont plus stables ; teste et garde ce qui marche sur ton stack.
 
-**Flux ou SDXL pour {topic} ?**
+**Le détail des cheveux mange la peau ?**  
+Oui si le prompt surcharge les deux. Priorise le triangle visage ; simplifie la coiffure ou recadre si le modèle divise mal ses « tokens » d’attention.
 
-Teste les deux avec le même prompt court. Garde le moteur qui ment le moins sur ton sujet précis.
+**Peau et maquillage fort ?**  
+Décris des transitions douces entre zones (œil, joue) ; sinon tu obtiens des masques nets « collés ». En post, fondre légèrement les bords des zones colorettes.
 
-**Inpainting ou regénération totale ?**
+**Je veux du gros plan extrême.**  
+Attends-toi à plus d’erreurs sur pores et lèvres. Teste un cadrage légèrement plus large puis recadre après génération stable.
 
-Inpaint pour yeux ou mains, regénère tout seulement si la lumière globale est fausse.
+**La balance des blancs change entre deux images ?**  
+Verrouille la température de couleur dans le prompt **et** en post avec une pipette sur une zone grise neutre du décor ou une carte grise virtuelle.
+
+**Je travaille avec un personnage récurrent.**  
+Aligne-toi sur [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant) : la peau stable découle souvent d’une fiche costume et lumière stable, pas seulement d’un tag « same face ».

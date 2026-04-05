@@ -5,173 +5,193 @@ category: "tutoriels"
 excerpt: "Bokeh, falloff, flare, distorsion légère, et quand ne pas utiliser le mot anamorphic."
 thumbnail: "/images/blog/comment-simuler-objectif-anamorphique-generation-ia/hero.webp"
 ---
-Tu es ici pour : Comment simuler un objectif anamorphique en génération IA. Bien. On va éviter deux pièges tout de suite.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Un objectif anamorphique réel compresse l’image sur la pellicule ou le capteur puis la décompresse en projection. Ce n’est pas qu’un filtre Instagram. Tu peux t’en servir comme référence culturelle sans prétendre reproduire une série d’optiques précise au micron près.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+L’objectif ici est simple : donner des **leviers de langage** pour guider le modèle, puis vérifier au zoom et au recul d’œil. Si une image te plaît immédiatement mais ment sur la lumière, tu la garderas pour une vignette, pas pour une scène longue. Tu obtiens une géométrie particulière, un bokeh souvent étiré, des flare en ligne, une chute de netteté qui n’a rien à voir avec un simple flou gaussien. En génération d’image, le mot « anamorphic » devient vite un autocollant : tu crois avoir du cinéma, tu obtiens souvent du flou sale et des ovales incohérents.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+Ce guide vise un résultat **plausible** : pas la copie parfaite d’une optique précise, mais une image qui ne trahit pas la physique du regard. On décrit ce que le modèle peut tenir, on évite les contradictions, et on finit parfois en post quand le prompt seul suffit rarement.
 
-Pour Comment simuler un objectif anamorphique en génération IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+Tu peux lire les sections dans l’ordre ou sauter directement au workflow si tu as déjà une image ratée sous les yeux. Dans les deux cas, garde une règle : **une décision d’optique simulée par image**, pas trois optiques différentes dans le même paragraphe de prompt.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+Les checkpoints et les interfaces changent, mais la logique du spectateur change peu. Il compare ton image à des milliers d’heures de références film et photo. Ton travail est de rester dans une **bande crédible**, pas de pousser chaque curseur au maximum.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+## Ce qu’un anamorphique change vraiment
 
-Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
+**Le bokeh** n’est pas rond comme sur beaucoup d’objectifs spheriques classiques. Souvent, les highlights hors focus prennent une forme **ovale ou cat eye** vers les bords. **Le falloff** de netteté peut être plus progressif ou plus « ciné » selon la série d’optiques, mais l’essentiel est la cohérence : même type de bulles sur tout le champ, pas un mélange de ronds et d’ovales sans raison.
 
-Les reflets dans les yeux racontent la pièce. Un catchlight rectangulaire sur une scène « bougie seulement » ment. Harmonise la forme de la source avec le décor. Les petits détails de cohérence font taire le cerveau critique.
+**Les flares** anamorphiques classiques incluent souvent des **streaks** horizontaux quand une source forte entre dans le champ. Si ton décor n’a aucune source intense et que tu tires des traînées bleues, le cerveau crie décor numérique.
 
-Les transitions sonores masquent des coupures dures. Un whoosh discret, un impact de porte, un cut de musique sur le downbeat. Le son te permet de garder des images simples sans fondus IA douteux.
+**La distorsion** horizontale légère peut élargir les visages en bord de cadre si tu simules un grand angle anamorphique sans recadrer. Tu peux l’assumer pour le style, ou tu compenses par cadrage et focale virtuelle plus longue.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+Pour la lumière naturelle qui accompagne souvent ce genre de look, recoupe avec [comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia) : une key douce cohérente évite que le bokeh devienne le seul sujet de l’image.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
-## Notes de plateau, détails qui changent tout
+## Quand ne pas écrire « anamorphic »
 
-La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière dure sans direction. Dis d’où vient la source, sa taille, sa couleur. Fenêtre nord, néon vert en contre, lampe de bureau tungstène. Même si le modèle simplifie, ton cerveau de spectateur cherche une hiérarchie lumineuse. Sans hiérarchie, tu obtiens ce plat gris qui crie l’IA.
+Si tu veux seulement un arrière plan flou propre sur un portrait, un **50 mm spherique** décrit mieux ton besoin. Le mot anamorphique appelle des artefacts spécifiques ; le modèle va parfois en rajouter au hasard.
 
-Le storyboard, même grossier, te fait économiser des heures. Trois cases dessinées au stylo valent dix prompts aveugles. Tu sais où est la ligne d’horizon, où est le regard, où est la coupure. Le modèle ne devine pas ton plan suivant, tu dois le lui donner comme un cadre.
+Si ton image est déjà saturée de contraste et de néons, ajouter anamorphic + flare + ovale partout donne une soupe. Dans ce cas, [pourquoi tes images IA manquent de contraste, et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger) t’aide à replacer le contraste **avant** de simuler une optique.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+## Trois scénarios
 
-Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la saturation sur le blanc des yeux, ajoute une micro ombre sous la paupière, évite le catchlight parfait en double symétrique. L’œil humain est légèrement imparfait, exploite ça.
+**Nuit urbaine, néons, pluie.** Tu assumes flare et ovales. Tu décris des sources fortes, des reflets au sol, une key latérale sur le visage. Tu demandes des highlights étirés **dans le bokeh**, pas sur la peau nette. Tu gardes une lecture claire du regard même si le fond hurle en couleurs.
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+**Jour intérieur, fenêtre large.** Tu veux une chute douce et un bokeh ovale discret. Tu évites les flare agressifs. Tu précises distance sujet arrière plan pour que le flou suive une loi de profondeur.
 
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
+**Portrait sobre, fond neutre.** Souvent tu n’as pas besoin d’anamorphique. Un 85 mm spherique et une lumière simple donnent un résultat plus stable. N’utilise l’anamorphique que si tu assumes l’imperfection comme signe de style.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+**Scène avec beaucoup de texte ou d’UI dans le décor.** Les ovales et streaks peuvent rendre les bords de lettres illisibles et « sales ». Soit tu simplifies le décor, soit tu passes spherique pour garder la lisibilité. Le look cinéma ne doit pas tuer l’information.
 
-### Étape 1 : choisir le bon moteur pour la tâche
+Pour les clips où le mouvement révèle les erreurs, [pourquoi mes vidéos IA ont l’air fake, et comment les rendre réalistes](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes) complète ce guide : une optique simulée doit rester cohérente frame après frame.
 
-Flux brille souvent sur les transitions douces, la matière, les scènes complexes avec beaucoup d’objets. SDXL reste un couteau suisse avec un écosystème énorme de LoRA et de workflows ComfyUI.
+## Workflow : du prompt à la retouche
 
-**Règle simple :** si tu veux du portrait peau et yeux avec contrôle fin, teste les deux sur le même prompt court. Garde celui qui ment le moins sur les mains et les dents.
+### Étape 1 : définir la focale virtuelle et la distance
 
-### Étape 2 : résolution et recadrage avant beauté
+Écris : caméra à hauteur d’œil, sujet à deux mètres, arrière plan à six mètres, **anamorphic lens characteristics** seulement si tu maîtrises la suite. Sinon commence par « shallow depth of field » et ajoute progressivement.
 
-Travaille en 16:9 ou 2:3 selon la sortie, pas en carré si ton film est horizontal. Monte en résolution seulement quand la composition est figée. Sinon tu optimises des erreurs en haute définition.
+### Étape 2 : décrire le bokeh par le comportement, pas par le slogan
 
-### Étape 3 : steps, CFG, scheduler, sans religion
+Remplace « cinematic bokeh » par : **oval highlight shapes in out of focus areas**, **cat eye toward frame edges**, **smooth falloff**. Ces termes orientent sans magie.
 
-Monte les steps jusqu’au point où la texture apparaît, puis arrête avant la surdéfinition. CFG trop haut = plastique. CFG trop bas = boue. **Cherche une fenêtre**, note la, réutilise la.
+### Étape 3 : flares ou pas
 
-### Étape 4 : peau en deux temps
+Si oui : **horizontal lens flare streak** from strong practical in frame edge, **subtle veiling glare**. Si non : **no artificial streak flares**, **clean highlights**.
 
-Temps 1 : génération avec lumière plausible et ombre sous le nez. Temps 2 : retouche locale légère ou inpainting sur la zone yeux bouche si nécessaire. Évite de régénérer toute la scène pour une micro zone.
+### Étape 4 : générer trois variantes
 
-### Étape 5 : grain cinéma en post souvent mieux qu’en prompt seul
+Même prompt, trois lumières légèrement différentes. Choisis celle où les ovales sont homogènes et où le visage ne fond pas.
 
-Un grain overlay contrôlé, adapté à la densité des ombres, réagit mieux que « add grain » jeté dans le prompt sans mesure. Combine les deux seulement si tu sais ce que chaque couche apporte.
+### Étape 5 : post ciblé
 
-### Étape 6 : contraste et couleur
+Si le bokeh est presque bon mais trop uniforme, un léger étirement horizontal sélectif sur les highlights hors focus peut suffire. Si la peau est plastique, corrige la peau **avant** de pousser les ovales, sinon tu grilles les transitions.
 
-Courbe d’abord, saturation ensuite. Isole les peaux si tu pousses un look teal orange. **Garde du sang dans les rouges** des joues, sinon tu passes en mannequin 3D.
+### Étape 6 : cohérence multi plans
 
-### Étape 7 : profondeur de champ crédible
+Pour un mini récit, [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia) t’aide à verrouiller ce qui doit rester identique entre plans : même heure, même type d’optique simulée, même direction de key.
 
-Décris la distance et la focale. Vérifie les transitions net vers flou : trop abruptes = collage. Un léger flou gaussien sur l’arrière plan en post peut sauver une scène presque bonne.
+Si tu changes d’optique simulée entre deux plans du même dialogue sans raison narrative, le spectateur lit une erreur de production. Si tu changes **volontairement** pour marquer un flashback ou un changement de monde, signale le avec le son ou une phrase de voix, pas seulement avec un ovale plus gros.
 
-### Étape 8 : export pour la suite vidéo
+Exemple de prompt structuré :
 
-Exporte PNG ou TIFF propre pour l’image pilote, garde une variante avec grain si tu enchaînes directement vers un outil vidéo. Documente la focale et la lumière dans un fichier texte à côté, la vidéo te remerciera.
-## Micro réglages avant de figer une séquence
+```text
+35mm anamorphic-style spherical emulation, eye level medium shot.
+Subject 2m from camera, background lights 8m+ away, strong separation.
+Oval bokeh highlights, gentle edge softness, no plastic skin.
+Optional: subtle horizontal flare from bright sign at frame edge, not on face.
+Negative: duplicated catchlights, warped geometry, cartoon CA, text, watermark.
+```
 
-Quand tu parles de cinéma à un modèle, pense caméra physique. Un 35 mm en intérieur, ce n’est pas la même chose qu’un 18 mm au même endroit. Le 35 mm rapproche le visage sans déformer les épaules. Le 18 mm allonge les mains vers la caméra et transforme un simple geste en catastrophe géométrique. Si ton personnage a des mains au premier plan, **choisis une focale plus longue** ou recule virtuellement la caméra.
+Deuxième exemple, plus sobre :
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
+```text
+50mm spherical lens look, shallow depth, natural round bokeh.
+Soft window key, no anamorphic streaks, realistic skin texture.
+Negative: oval bokeh, fake anamorphic, extreme halation.
+```
 
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
+## Lumière, contraste et couleur avec un look anamorphique
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+Le look anamorphique classique au cinéma est souvent **associé** à des contrastes forts et des sources visibles, mais ce n’est pas une règle absolue. Ce qui compte, c’est que la lumière **justifie** les artefacts d’optique. Une traînée horizontale crédible part presque toujours d’un practical fort, d’un contre jour dur, ou d’un reflet direct dans l’objectif. Si ta scène est douce et diffuse et que le modèle ajoute des streaks, tu obtiens une incohérence immédiate.
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+Travaille la **hiérarchie** : une key claire, un fill souvent faible ou absent en look contrasté, un fond qui porte les points lumineux qui deviendront du bokeh. Si tout le cadre est uniformément éclairé, il n’y a pas de matière pour dessiner des ovales intéressants : tu auras du flou générique.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Sur les peaux, le contraste **local** doit rester maîtrisé. Les looks « blockbuster » poussent parfois les mids, mais si tu ajoutes halation et flare sans contrôle, les joues et le nez perdent leur structure. Une solution stable : garde le visage dans une plage de contraste plus étroite que le fond, puis pousse le dramatisme sur les lumières lointaines.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+Pour les scènes de jour extérieur, l’anamorphique simulé est souvent **sous utilisé à bon escient** : un ciel trop net avec des ovales artificiels sur des feuilles donne un collage. Préfère une approche spherique claire, ou alors assumes un contre jour fort qui crée des highlights étirés loin du visage.
 
-Les fichiers de travail doivent survivre à un changement d’ordinateur. Exporte aussi une version lisible pour toi dans dix ans : mp4 h264 pour preview, wav pour son, png pour références. La technologie change, les archives restent.
+## Grain, netteté et résolution
+
+Le grain fin aide à **coller** les zones très nettes et les zones très floues quand le modèle crée une séparation trop propre. Ajoute le grain souvent en post plutôt qu’en surcharge dans le prompt, pour contrôler la densité dans les ombres.
+
+Monte en résolution seulement quand la **géométrie du bokeh** te convient à l’échelle de travail. Sinon tu agrandis des formes incohérentes. L’upscale intelligent ne « devine » pas une optique meilleure : il extrapole ce que tu lui donnes.
+
+Si tu utilises plusieurs passes (image de base, puis img2img), note les réglages à chaque passe. Les variations légères de dénoise peuvent **casser** l’homogénéité du bokeh entre deux images d’une même série.
+
+Quand tu compares deux résolutions, vérifie aussi le **piqué apparent** sur les highlights du bokeh : parfois l’upscale rend ces zones plus dures, plus « CG », et tu dois les adoucir localement. Ce n’est pas une trahison du look, c’est de la finition comme en étalonnage classique.
+
+## Micro réglages et limites des modèles
+
+Les modèles confondent parfois **aberration chromatique** et style anamorphique. Une frange violette partout n’est pas une signature d’optique, c’est souvent une erreur. Si tu vois des couleurs qui décollent des contours, réduis l’effet ou repasse par une seconde génération avec négatif ciblé.
+
+Les lignes droites en bord de cadre : un léger moustiquaire peut aller avec le look, mais des murs en vague trahissent la génération. Recadre pour mettre les verticales loin du bord ou simplifie le décor.
+
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+La peau en premier plan doit rester **lisible** : pores suggérés, pas grille. Si le modèle lisse tout pour « faire cinéma », baisse la guidance ou ajoute des imperfection contrôlées dans le prompt.
 
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
-
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
-
-Le format carré historique Instagram n’est pas le même que le vertical TikTok. Le centre de gravité visuel monte en vertical. Place l’information importante dans le tiers supérieur, sinon le téléphone la mange sous le pouce du spectateur.
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+### Table de choix : anamorphique ou pas
 
-### Table de décision rapide
+| Besoin visuel | Mot clé utile | Risque si tu forces anamorphic |
+| --- | --- | --- |
+| Portrait clean | spherical, 85mm | ovales incohérents |
+| Nuit néon | anamorphic + practicals | flare et boue |
+| Paysage architecture | spherical wide | géométrie tordue |
+| Dialogue intérieur | soft key + falloff | distractions bokeh |
+| Action large champ | spherical + motion blur propre | double langage optique |
 
-| Choix | Critère | Flux | SDXL |
-| --- | --- | --- | --- |
-| Portrait | peau et yeux | tester en priorité | LoRA énorme, très flexible |
-| Scène | objets multiples | souvent très fort | dépend du checkpoint |
-| Vitesse locale | VRAM | selon quant | optimisé DIY |
-| Post grain | contrôle fin | combine prompt + overlay | idem |
-| Vidéo next | image pilote propre | export PNG + meta | export PNG + meta |
-> Le cinéma commence quand tu arrêtes d’expliquer et que tu montres une intention. L’IA ne remplace pas ça, elle accélère la matière première.
+> Un look « cinéma » tient d’abord à la lumière et au cadrage. L’optique simulée ne remplace pas une key qui ment, ni une géométrie de scène floue dans ton brief, ni un décor trop chargé pour tenir en profondeur.
 
+## Comparaison A B honnête
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+Quand tu hésites entre spherique et anamorphique simulé, exporte **deux séries** avec la même lumière et le même cadrage. Mets les images côte à côte, réduis la taille à la vignette. Souvent, à petite échelle, tu vois immédiatement laquelle version raconte une optique crédible et laquelle version ressemble à un filtre.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+Demande aussi à ton œil de **squinter** : les zones de transition net vers flou forment elles une courbe douce ou une marche d’escalier ? Les marches violentes trahissent le collage numérique même si les ovales sont jolis.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+## Ce que tu peux promettre à un client
 
-Le flou d’arrière plan doit suivre une loi de distance. Si le nez est net et le mur derrière est flou comme de la crème alors qu’il est à cinquante centimètres, le cerveau crie fake. **Décris la distance caméra sujet** et la distance sujet arrière plan, même approximative.
+Si tu livres pour une marque, **nomme** ce que tu simules : « inspiration look anamorphique », pas « prise avec telle optique réelle » sauf si c’est vrai. Documente les retouches. Le style optique est une décision créative légitime ; le mensonge sur la provenance ne l’est pas.
 
-Les transitions sonores masquent des coupures dures. Un whoosh discret, un impact de porte, un cut de musique sur le downbeat. Le son te permet de garder des images simples sans fondus IA douteux.
+Pour une série d’affiches, verrouille une **feuille de style** : trois phrases sur le bokeh, deux sur les flares autorisés, une sur les interdits. Toute dérive au milieu du projet coûte cher en régénération.
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+## Trench warfare : erreurs fréquentes
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
+**Coller « anamorphic » dix fois dans le prompt.** Le modèle amplifie au hasard. Une description physique du bokeh bat dix répétitions.
 
-Les ambiances cuisine ou bar avec mille reflets demandent des angles prudents. Si tu simplifies une rangée de bouteilles en un mur sombre, tu gagnes en crédibilité. **Réduis la complexité** quand le modèle montre des limites.
+**Oublier la distance sujet arrière plan.** Sans distance, le flou n’a pas de loi, les ovales flottent.
 
-Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
-Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
+**Demander flare et scène basse lumière sans source forte.** Les traînées sans cause lisible cassent la scène.
 
-## Liens utiles dans la série AI Studio
+**Sharp global après coup.** Tu durcis les artefacts du bokeh. Masque le visage.
 
-- [Comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia)
-- [Pourquoi tes images IA manquent de contraste, et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger)
-- [Pourquoi mes vidéos IA ont l’air fake, et comment les rendre réalistes](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes)
-- [Comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia)
+**Mélanger plusieurs styles d’optique dans une série.** Plan 1 anamorphique lourd, plan 2 smartphone net : le spectateur sent la couture.
 
-## Foire aux questions (FAQ)
+L’article [format anamorphique](nf:https://en.wikipedia.org/wiki/Anamorphic_format) résume l’idée historique : étirement optique pour gagner du champ en hauteur sur la pellicule. En numérique pur, tu n’as pas les mêmes contraintes physiques, mais le **spectateur** a intégré des codes visuels. Ton travail consiste à rester dans ces codes sans caricature.
 
-**L’anamorphique en prompt marche ?**
+Les **LoRA** thématiques se testent sur un prompt court avant d’engager un projet entier : un pack entraîné sur des néons peut ruiner un portrait jour. Le **ratio 2.39:1** ne force pas l’anamorphique, c’est une question de cadrage. Si le modèle **ignore** tes ovales, retire la moitié du prompt et remonte la guidance par paliers. En **vidéo**, un bokeh qui pulse vient souvent d’un mouvement trop agressif : réduis l’amplitude ou fige l’arrière plan. Une **photo de référence** réelle du même type de scène vaut plus que vingt adjectifs pour calibrer ton œil.
 
-Oui si tu décris bokeh, falloff, et souvent des imperfections d’objectif légères.
+## Frequently Asked Questions (FAQ)
 
-**Flux ou SDXL pour {topic} ?**
+**Le mot anamorphic suffit il ?**
 
-Teste les deux avec le même prompt court. Garde le moteur qui ment le moins sur ton sujet précis.
+Rarement. Ajoute la forme du bokeh, la présence ou l’absence de flare, et la distance des plans.
 
-**Inpainting ou regénération totale ?**
+**Je dois absolument ovales partout ?**
 
-Inpaint pour yeux ou mains, regénère tout seulement si la lumière globale est fausse.
+Non. Les optiques et les mises au point changent le dessin du bokeh. Cherche l’homogénéité, pas la maximalisation.
 
-**Le grain seulement en prompt ?**
+**L’anamorphique aide la profondeur ?**
 
-Souvent non. Un overlay en post contrôle mieux les ombres.
+Il influence le **rendu** du flou, pas la vraie profondeur de scène. Décris toujours la géométrie.
 
-**Je veux une ambiance sombre ?**
+**Pourquoi mon image est boueuse ?**
 
-Garde une petite accroche lumineuse sur le visage ou un practical, sinon boue.
+Trop d’effets cumulés, guidance mal calibrée, ou flare qui mange le contraste. Simplifie une couche à la fois. Si la boue reste après simplification, change de checkpoint ou baisse la résolution de travail : parfois tu pousses le modèle au delà de sa zone stable sur ton sujet.
 
-**Mes noirs sont gris ?**
+**Je prépare une vidéo à partir de l’image : précaution ?**
 
-Courbe, pas saturation. Remets du vrai noir cinéma.
+Évite les flare qui bougent sans logique entre frames. Préfère un look sobre en pilote si la vidéo amplifie les défauts.
 
-**Je prépare une image pour vidéo ?**
+**Post obligatoire ?**
 
-Oui : export propre, note focale et lumière, garde une piste sans sharpen agressif pour Comment simuler un objectif anamorphique en génération IA.
+Souvent un peu : roll off des hautes, grain fin, parfois correction sélective du bokeh.
+
+**Anglais ou français dans le prompt ?**
+
+Mélange courant : français pour toi, tags techniques en anglais si ton modèle y répond mieux sur ton setup précis actuel.
+
+**C’est « tricher » d’étirer le bokeh en post ?**
+
+Non si tu assumes un look et que tu restes cohérent sur la série. Le cinéma numérique combine capture, optique et finition depuis longtemps.

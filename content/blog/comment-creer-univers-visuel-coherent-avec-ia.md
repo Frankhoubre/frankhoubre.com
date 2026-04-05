@@ -5,187 +5,211 @@ category: "tutoriels"
 excerpt: "Bible lumière, palette, architecture, et règles de décision pour dix images ou plus."
 thumbnail: "/images/blog/comment-creer-univers-visuel-coherent-avec-ia/hero.webp"
 ---
-Tu es ici pour : Comment créer un univers visuel cohérent avec l’IA. Bien. On va éviter deux pièges tout de suite.
+Un univers visuel n’est pas une esthétique Instagram collée sur dix images différentes, ni une collection de « meilleures sorties » triées au jugé sans grille commune, ni une démo de capacité technique sans fil narratif. C’est un système : mêmes lois de lumière, même gamme de matériaux, même échelle d’architecture, même grain, même manière de traiter la peau et les reflets. Avec l’IA, la dérive est la norme, parce que chaque image est une nouvelle optimisation. Ce texte te donne une **bible** légère, des **scénarios** de dérapage, un **workflow** pour séries longues, une **table** de décision, une section **trench warfare**, des liens encyclopédiques, quatre liens internes, et une **FAQ**.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+**Scénario A.** Une équipe produit douze keyframes pour un pitch. Chaque image est belle seule. Ensemble, elles racontent six mondes : néons 80, sci fi clinique, nature douce, thriller bleu nuit, comédie lumineuse, documentaire granuleux. Le client dit « il manque une identité ». Il manquait une **feuille de règles** partagée avant la génération.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+**Scénario B.** Un auteur indie verrouille la palette dans la suite couleur mais pas dans le prompt. Les forms changent, les matériaux changent, la lumière saute. Le LUT ne peut pas recoller des géométries lumineuses différentes.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+**Scénario C.** Un studio documente mal les prompts gagnants. Au pick-up deux semaines plus tard, personne ne reproduit le même « monde ». La bible existe dans des têtes, pas dans des fichiers.
 
-Pour Comment créer un univers visuel cohérent avec l’IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+## Pourquoi l’IA dérive même quand tu es « constant »
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+Les modèles optimisent chaque image comme un problème local. Ils n’ont pas de mémoire de ton projet sauf ce que tu réinjectes, références, prompts, ControlNet du moment, img2img. Deux images avec le même prompt textuel peuvent diverger si le bruit d’échantillonnage, le recadrage, ou un slider a bougé. **La cohérence d’univers est un processus**, pas une propriété magique d’un bouton.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+La dérive se voit d’abord aux endroits où le cerveau humain est exigeant : mains, lunettes, texte, perspective de rue, répétition d’un objet récurrent. Ensuite elle apparaît aux endroits subtils, largeur de trottoir, hauteur des portes, style de poignée, type de grille de fenêtre. Tu n’es pas obligé de tout contrôler, mais tu dois choisir **quels détails signent ton monde** et les répéter.
 
-Le contraste n’est pas la saturation. Monter les couleurs pour cacher une image plate, ça donne une pub télé années 90. Travaille d’abord la courbe : noirs qui ne tombent pas en boue, hautes lumières qui ne crament pas la peau. Quand la courbe tient, la saturation a besoin de beaucoup moins.
+**Charge cognitive du décor.** Plus tu demandes de géométrie fine dans un seul prompt, plus le modèle sacrifie des morceaux. Pour une série, simplifie le décor quand tu veux tenir l’identité du personnage, et inversement. C’est la même logique que sur un plateau où l’on déplace un mur pour sauver la lumière.
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
+**Cohérence des ombres sur plusieurs plans.** Note pour chaque lieu la direction dominante des ombres au sol et sur les visages. Quand tu génères le plan suivant, réinjecte cette direction. Sinon tu montes un montage où le soleil semble tourner autour de la scène sans que le temps passe.
 
-Les prompts qui listent vingt adjectifs esthétiques sans géométrie produisent des fonds d’écran. Remplace la moitié des adjectifs par des données physiques : distance, focale, hauteur de caméra, heure, matériau dominant.
+**Le style moto « comme un film de X »** sans décomposition lumineuse produit des mélanges. Préfère une bible qui parle de matériaux et de lumière. Si tu dois référencer une œuvre, fais-le en privé pour toi, puis traduis en paramètres physiques pour le prompt.
 
-Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
+## Les cinq piliers d’une bible courte
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
-## Notes de plateau, détails qui changent tout
+**Lumière.** Une phrase sur la key dominante du projet, fenêtre nord douce partout, ou néon avec fond sombre, ou soleil bas et poussière. Tu peux avoir des exceptions de scène, mais elles doivent être **nommées** comme exceptions.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+**Palette.** Trois couleurs dominantes et une couleur d’accent. Pas vingt. Les neutres comptent, gris chaud, beige sale, bleu nuit.
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+**Matériaux récurrents.** Béton brut, bois huilé, métal brossé, tissu matte. Quand un nouveau matériau apparaît, tu décides s’il devient récurrent ou s’il casse l’univers.
 
-Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détail plus une lumière frontale dure. Penche la lumière, ajoute une ombre douce sous le nez, baisse la clarté sur les hautes fréquences de peau en post. La peau a des pores, pas une grille.
+**Grain et netteté.** Même famille de grain sur toute la série, ou variation documentée, grain fin jour, grain plus dense nuit.
 
-Les prompts qui listent vingt adjectifs esthétiques sans géométrie produisent des fonds d’écran. Remplace la moitié des adjectifs par des données physiques : distance, focale, hauteur de caméra, heure, matériau dominant.
+**Échelle et architecture.** Hauteur des plafonds, largeur des rues, style de fenêtre. L’IA change volontiers d’échelle si tu ne la calles pas.
 
-Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
+**Typographie et graphisme dans l’image.** Si ton monde inclut des enseignes, des écrans, des affiches, décide tôt si tu acceptes du texte illisible ou si tu places des surfaces sans lettres. Le texte est un point de rupture. Beaucoup de bibles professionnelles disent simplement « pas de logos lisibles, pas de slogans ».
 
-Les séquences dialogue en IA demandent des plans de réaction. Même si tu n’as pas d’acteur réel, pense coupe, contre coupe, silence. Le montage porte le dialogue, pas un seul plan qui parle pendant trente secondes.
+**Véhicules et époque.** Une voiture ou un vélo ancre le temps. Si ton histoire est contemporaine soft, évite les modèles trop iconiques qui crient une décennie précise, sauf intention.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+> Un univers, c’est ce que tu refuses autant que ce que tu demandes.
 
-### Étape 1 : une phrase d’intention, puis la géométrie
+## Exemple de bible minimaliste, fiction urbaine humide
 
-Avant les adjectifs, écris ce que la caméra doit montrer. Plan américain, plan taille, gros plan. Hauteur de caméra : niveau œil, légèrement en contre plongée, ou à hauteur de poitrine pour une tension douce.
+**Lumière.** Extérieur, ciel couvert, sources ponctuelles chaudes issues des devantures, pas de soleil dur. Intérieur, néons froids en arrière plan, key douce sur le visage depuis une fenêtre sale.
 
-Ensuite seulement, ajoute l’émotion. L’émotion sans géométrie, les modèles la traduisent par des néons et des poses catalogue.
+**Palette.** Gris bleuté, ambre sur les practicals, rouge brique secondaire, accent vert néon sur un seul type de lieu.
 
-**Test rapide :** si tu retires tous les adjectifs « cinematic », est ce que ton prompt tient encore debout ? Sinon, il était creux.
+**Matériaux.** Béton mouillé, métal oxydé, verre avec traînées, textiles mats.
 
-### Étape 2 : lumière en trois lignes, comme un chef op
+**Grain.** Fin, visible surtout dans les ombres ouvertes.
 
-Ligne A : source principale, taille apparente, couleur, direction. Exemple : fenêtre large nord, lumière douce, légèrement froide.
+**Architecture.** Immeubles 70, fenêtres rectangulaires répétitives, tuyaux apparents.
 
-Ligne B : fill ou absence de fill. Exemple : pas de fill, ombre dure sous le nez, contraste fort.
+Ce bloc tient en moins de quinze lignes. Chaque nouveau prompt de la série commence par un copier coller de ce bloc, puis ajoute plan, action, personnage.
 
-Ligne C : arrière plan. Exemple : pièce sombre, une lampe practical chaude au fond, bokeh large.
+## Scénarios de série : même personnage, même ville, même heure
 
-Tu viens de remplacer dix adjectifs vagues par une hiérarchie lisible.
+Pour une série narrative, ajoute une **feuille de continuité** par session : heure fictive, météo, direction du soleil ou des néons, état des vêtements du héros. Quand tu génères l’image 7, tu réinjectes la feuille avant le détail du plan.
 
-### Étape 3 : objectif et champs, sans jargon inutile
+**Variations légitimes.** Intérieur versus extérieur, nuit versus jour, doivent rester dans les règles de ta bible. Si ton monde est « jour gris urbain », la nuit doit être cohérente avec les mêmes enseignes, les mêmes matériaux de rue, pas une métropole futuriste soudaine.
 
-Choisis une famille : 24 mm large, 35 mm polyvalent, 50 mm portrait sobre, 85 mm compression douce. Ajoute anamorphique seulement si tu assumes des ovales de bokeh et une chute de netteté caractéristique.
+**Exceptions narratives.** Si une scène doit casser l’univers, écris l’exception sur la feuille de session, « scène de rêve, grain plus fort, couleurs désaturées, géométrie instable ». Sinon la review croit à une erreur.
 
-**Écris la distance sujet arrière plan** en une phrase courte. Même fausse au millimètre près, l’idée de profondeur aide le modèle à séparer les plans.
+**Cohérence multi-outils.** Image dans un moteur, vidéo dans un autre, la bible doit voyager. Exporte un still de référence et une ligne sur la lumière pour l’outil suivant. Ne suppose pas que « le même style » se transmet par magie entre APIs.
 
-### Étape 4 : matière et imperfections contrôlées
-
-Ajoute trois imperfection réelles : grain fin, poussière en suspension légère, micro texture de peau visible au zoom. Pas vingt. Trois.
-
-Puis ajoute deux interdits explicites : pas de peau porcelaine, pas de sharp global agressif, pas de catchlights symétriques parfaits si la scène est naturelle.
-
-### Étape 5 : personnage, fiche courte et stable
-
-Âge approximatif, vêtement ancré, coiffure réaliste, accessoire rare mais mémorable. Évite les listes de vingt traits. **Moins de traits, plus stables.**
-
-Si tu enchaînes plusieurs plans, garde la même fiche et change seulement le cadrage ou l’action.
-
-### Étape 6 : itération en trois passes
-
-Passe 1 : composition et lumière. Passe 2 : peau et tissus. Passe 3 : netteté et grain. Ne touche pas aux trois en même temps, sinon tu ne sauras pas ce qui a sauvé l’image.
-
-### Étape 7 : négatif utile, pas encyclopédique
-
-Quatre à huit négatifs précis battent trente négatifs génériques. Cible ce que ton modèle produit par défaut sur ton sujet : mains supplémentaires, dents fusionnées, texte illisible, horizon courbe.
-
-### Étape 8 : verrouillage
-
-Quand une image tient, note seed, note prompt final, note réglages critiques. Ton futur toi est un collaborateur impatient, il déteste le mystère.
-## Micro réglages avant de figer une séquence
-
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
-
-La constance de palette sur plusieurs plans, c’est un LUT ou une courbe, pas un espoir. Exporte une référence, colle la sur le bord de ton écran, mate plan par plan. L’œil se fatigue vite, la référence non.
-
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
-
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
-
-Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
-
-Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
-
-Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
-
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
+## Workflow pour dix images ou plus
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+### Étape 1 : écrire la bible sur une page
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Cinq piliers, dix lignes maximum. Lis-la à voix haute. Si elle tient, elle tient pour l’équipe.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+### Étape 2 : image pilote
+
+Une image qui combine lieu typique, personnage typique, lumière typique. Valide-la avec du recul. C’est ton **nord**. Si l’image pilote est « presque », ne lance pas la série tout de suite, sinon tu reproduiras le défaut vingt fois. Corrige d’abord la phrase lumineuse ou le cadrage, puis fige.
+
+**Test de stress rapide.** Génère deux variantes de l’image pilote avec la même bible et un seul paramètre léger modifié. Si le monde saute déjà, ta bible manque de contraintes ou ton prompt mélange trop d’intentions.
+
+### Étape 3 : déclinaisons par couches
+
+Même prompt de base, tu ne changes qu’un paramètre, cadrage, action, heure justifiée. Sinon tu perds le fil.
+
+### Étape 4 : tableau de suivi
+
+Fichier avec colonnes : nom, prompt final, seed, outil, date, exceptions autorisées.
+
+### Étape 5 : revue « paire d’yeux frais »
+
+Quelqu’un qui n’a pas généré regarde les vignettes côte à côte. Les dérives sautent plus vite.
+
+### Étape 6 : verrouillage couleur global
+
+LUT ou courbe de référence, appliquée après validation des géométries lumineuses.
+
+### Étape 7 : exports nommés
+
+`projet_scene_plan_v###.png` vaut mieux que `final_final2`.
+
+### Étape 8 : archivage prompts
+
+Un `.txt` par livrable ou un journal unique daté.
+
+### Étape 9 : revue « collage mural »
+
+Imprime ou affiche en petit toutes les vignettes. Le cerveau voit les sauts de blanc, de contraste, de température, plus vite qu’écran par écran. Même un mockup Figma avec des grilles aide.
+
+### Étape 10 : gel des versions
+
+Quand une série est validée, copie le dossier en lecture seule ou tague la version git. Les « petites retouches » non tracées sont la source n°1 des ruptures au pick-up.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+### Table de décision
 
-### Table de décision rapide
+| Signal de dérive | Probable cause | Action |
+| --- | --- | --- |
+| Saut de grain | prompts différents sans ligne grain | fixe une phrase grain dans la bible |
+| Saut d’échelle | absence de repère architectural | ajoute hauteur, type de fenêtre |
+| Peau qui change | trop de détails visage variables | fiche personnage courte stable |
+| Néons différents | trop de couleurs listées | une accentuation, le reste neutre |
+| HDR cheap | contraste non hiérarchisé | réécris key et fill |
 
-| Couche | Tu écris quoi | Erreur fréquente | Bon signal |
-| --- | --- | --- | --- |
-| Caméra | plan, hauteur, focale | seulement « cinematic » | tu visualises le cadre |
-| Lumière | key, fill, fond | « belle lumière » | tu sais où est la source |
-| Matière | grain, texture peau | 20 adjectifs | 3 défauts réels assumés |
-| Négatif | 4 à 8 cibles précises | liste encyclopédique | tu corriges un défaut mesuré |
-| Lock | seed + fichier txt | tout en tête | reproductible demain |
-> Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.
+## Revue hebdomadaire sans mythologie
 
+Une équipe qui génère vite se fatigue visuellement. Mets en place un créneau court où quelqu’un compare **six vignettes** avec une checklist : même température globale, même famille de grain, même logique de reflets, même densité d’objets dans la rue, même hauteur de caméra moyenne pour les plans comparables. Coche ou non. Les cases non cochées deviennent des tickets, pas des discussions floues.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+**Les captures d’écran des réglages** valent de l’or quand un modèle change de version. Si ton outil met à jour un checkpoint, refais une image pilote et note la version dans la bible. Sinon tu poursuis une série sur une fondation qui n’existe plus.
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
+**Les livrables clients** doivent inclure une phrase sur ce qui est canon. « Pack A, bible version 3, gelée le jj/mm. » Ça évite la demande « remettez la version d’avant hier » quand personne ne sait quel prompt a produit avant hier.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+## Quand élargir l’univers sans le casser
 
-Le flou d’arrière plan doit suivre une loi de distance. Si le nez est net et le mur derrière est flou comme de la crème alors qu’il est à cinquante centimètres, le cerveau crie fake. **Décris la distance caméra sujet** et la distance sujet arrière plan, même approximative.
+Ajouter un nouveau lieu se fait par **extension**, pas par remplacement. Écris une sous-bible d’une demi-page : quels matériaux restent, lesquels sont nouveaux, comment la lumière change, pourquoi narrativement. Si le nouveau lieu partage la même ville, garde les mêmes enseignes en arrière plan flou, les mêmes types de poteaux, les mêmes largeurs de trottoir.
 
-Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
+Si tu ajoutes une époque flashback, change au moins deux piliers en même temps, grain plus présent, palette différente, mais garde une signature, par exemple le même vert accent ou le même type de bruit de foule en suggestion visuelle. Le spectateur doit sentir la parenté et la différence.
 
-Le flou d’arrière plan doit suivre une loi de distance. Si le nez est net et le mur derrière est flou comme de la crème alors qu’il est à cinquante centimètres, le cerveau crie fake. **Décris la distance caméra sujet** et la distance sujet arrière plan, même approximative.
+> Une extension d’univers, c’est un patch documenté. Un remplacement silencieux, c’est une fuite en avant.
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+## Cohérence des silhouettes, costumes et accessoires récurrents
 
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
+Dans une série longue, le public retient trois ancres sur un personnage, la coupe de cheveux, la veste, le sac. Fixe ces ancres dans la bible personnage, pas seulement dans le prompt du jour. Quand tu changes de plan, réinjecte les ancres avant l’action. Si la veste change de couleur sans scène de garde-robe, ce n’est plus le même personnage pour le cerveau humain.
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
-Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+**Les extras et la foule** demandent une règle simple : silhouettes génériques, pas de visages nets en foule dense si ton outil y laisse des artefacts. Écris « foule floue », « silhouettes », « pas de visages lisibles au loin », selon ce que ton modèle comprend.
+
+**Les objets récurrents**, téléphone, arme de fiction stylisée, carnet, doivent avoir une description stable courte. « Carnet cuir marron usé, coins arrondis » suffit souvent mieux qu’une page de détails.
+
+## Trench warfare
+
+**Croire que le style transfer rattrape tout.** Il lisse parfois la texture et tue la cohérence fine. Corrige la lumière en amont.
+
+**Ajouter une nouvelle référence Pinterest à chaque image.** Tu importes des mondes parallèles. Limite les références actives à trois images maximum pour toute la série, et convertis-les en règles écrites.
+
+**Laisser chaque artiste freelancer réinventer la bible.** Même freelance, même fichier bible obligatoire, même review.
+
+**Oublier le son et le rythme dans un projet qui devient vidéo.** L’univers visuel doit tenir quand les plans s’enchaînent. Si tu prévois du montage, garde des espaces négatifs cohérents pour titres et sous-titres.
+
+**Mélanger deux checkpoints dans une même série sans transition narrative.** Si tu changes de modèle, refais une image pilote.
+
+**Négliger les props récurrents.** La tasse, le vélo, le badge doivent être stables ou assumés comme remplacés.
+
+**Sous-estimer les logos et marques.** Pour un univers propre, évite les marques réelles non autorisées, invente des packsagings génériques.
+
+**Poursuivre une série après une pause sans relire la bible.** Tu réinjectes des intuitions neuves qui contredisent le gel. Relis la page avant chaque session de génération.
+
+**Ignorer la direction du regard et la composition récurrente.** Si ton monde utilise souvent la tension du hors champ, réserve l’espace dans le cadre pour ne pas le recouvrir avec du texte marketing en post.
+
+Pour le vocabulaire de la direction artistique, voir [direction artistique](https://fr.wikipedia.org/wiki/Direction_artistique). Pour la cohérence des couleurs dans l’image, [couleur](https://fr.wikipedia.org/wiki/Couleur). Pour l’architecture comme ancrage, [architecture](https://fr.wikipedia.org/wiki/Architecture). Pour la notion d’**identité visuelle** appliquée aux marques et déclinaisons, [identité visuelle](https://fr.wikipedia.org/wiki/Identit%C3%A9_visuelle).
+
+**Éthique et droits.** Documente ce qui est généré, retouché, sous licence, et ce qui ne peut pas représenter des personnes réelles identifiables sans cadre. La bible technique ne remplace pas le cadre légal du client. Ajoute une ligne sur les interdits de marque et de copie de design produit si tu livres pour une campagne commerciale, pour que l’équipe juridique sache ce qu’elle regarde.
 
 ## Liens utiles dans la série AI Studio
 
-- [Comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia)
-- [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique)
-- [Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia)
-- [Pourquoi tes images IA manquent de contraste, et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger)
+- [Comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia)
+- [Comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant)
+- [Comment contrôler le style visuel en génération IA](/blog/comment-controler-style-visuel-generation-ia)
+- [Comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)
 
-## Foire aux questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
-**Je copie des prompts sur Discord ?**
+**Comment intégrer des photos réelles et de l’IA dans le même univers ?** Traite les photos comme la vérité de la lumière, génère autour avec la même direction de key et la même température, et harmonise en post avec une courbe commune.
 
-Inspire toi, réécris pour ton sujet. Les prompts génériques te collent un style générique.
+**La bible doit-elle être longue ?** Non. Une page bat un roman. La longueur crée des contradictions.
 
-**Anglais ou français ?**
+**Peut-on avoir deux mondes en parallèle ?** Oui, avec deux bibles et des dossiers séparés.
 
-Teste les deux sur Comment créer un univers visuel cohérent avec l’IA. Garde la langue qui donne les tags photo les plus stables sur ton modèle.
+**Comment gérer le jour et la nuit ?** Deux sous-règles explicites, pas un seul prompt flou.
 
-**Comment décrire une nuit crédible ?**
+**L’univers texte influence-t-il l’univers visuel ?** Oui. Les noms de lieux et d’époque orientent les objets.
 
-Source pratique proche, ombres profondes mais pas grises, reflets au sol si humide.
+**Que faire si le client veut un pivot esthétique ?** Nouvelle image pilote, nouvelle bible, pas un patch sur douze images.
 
-**Pourquoi la lumière ne suit pas ?**
+**Faut-il des références externes ?** Oui, mais comme repères lumineux et matière, pas comme copie de sujet.
 
-Tu n’as pas nommé de source, seulement un mood. Décris fenêtre, lampe, heure, dureté.
+**Comment éviter la fatigue de série ?** Limite les sessions, reviens avec une grille de comparaison.
 
-**Le style « film » suffit ?**
+**Les métadonnées importent-elles ?** Pour la repro, oui. Documente outil, modèle, date.
 
-Non. « Film » sans caméra et sans lumière, c’est un fond d’écran.
+**Comment former un junior sur une bible ?** Fais-lui refaire trois images en ne changeant qu’un pilier à la fois, puis une revue de vignettes. La pédagogie passe par la variation contrôlée.
 
-**Mes visages fondent, que mettre dans le prompt ?**
+**Que faire si deux images excellentes mais incompatibles ?** Choisis celle qui respecte la bible. L’autre devient variante « hors canon » ou nouvelle branche de projet.
 
-Moins de beauté, plus de lumière latérale, mains hors champ si possible.
+**L’univers doit-il inclure la post-production ?** Oui, au moins une ligne, grain cible, contraste global, pour éviter que cinq opérateurs fassent cinq films.
 
-**Mon prompt est long et moche, normal ?**
+**Peut-on automatiser la bible ?** Tu peux script des préfixes de prompt, mais le jugement humain reste nécessaire sur l’image pilote.
 
-Non. Un prompt long est souvent un prompt qui se combat lui même. Raccourcis, hiérarchise, teste.
+**Comment gérer les saisons d’une même série ?** Bible saison 1, bible saison 2, avec liste des changements assumés, météo, végétation, dégradation des lieux.
+
+**Une bible peut-elle inclure des ratios d’image ?** Oui, 2.39, 16:9, 4:5, note-les pour éviter des recadrages qui cassent la composition d’ensemble entre les livrables.
+
+**Faut-il une image de moodboard par pilier ?** Utile mais pas obligatoire. Une image par pilier peut aider l’équipe, à condition de les traduire en règles textuelles pour ne pas dépendre du seul visuel.

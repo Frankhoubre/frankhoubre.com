@@ -5,187 +5,171 @@ category: "tutoriels"
 excerpt: "Fiche personnage, invariants, angles sûrs, et gestion des mains et du profil."
 thumbnail: "/images/blog/comment-ecrire-prompt-personnage-realiste-constant/hero.webp"
 ---
-Tu es ici pour : Comment écrire un prompt pour un personnage réaliste et constant. Bien. On va éviter deux pièges tout de suite.
+Un même visage qui devient un cousin différent à chaque régénération, ce n’est pas de la malchance, c’est le défaut normal d’un outil qui optimise une image, pas une identité, et qui n’a aucune obligation de se souvenir pour toi. Si tu veux un personnage **réaliste** et **constant**, tu dois traiter le prompt comme un contrat de tournage, pas comme une liste de souhaits. Le modèle n’a pas ta mémoire. Toi, tu dois la remplacer par des invariants écrits, des angles qui limitent les mensonges, et une discipline de fichiers qui te permet de revenir en arrière sans deviner.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Ce guide part du terrain. Tu y trouveras des **scénarios** concrets, un **workflow** en passes, une **table** de décision, une section **trench warfare** sur ce que les débutants cassent en premier, des renvois vers la culture image utile, et une **FAQ** en fin de page. L’objectif est simple, passer du tir aléatoire à une méthode reproductible, quitte à produire moins d’images mais plus utiles.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+**Scénario A.** Une créatrice veut un protagoniste pour trois plans d’une mini fiction. Elle copie un prompt « portrait ultra détaillé » trouvé en ligne. Le premier plan est convaincant. Le deuxième change la forme du nez. Le troisième invente une montre qu’elle n’a jamais demandée. Elle conclut que « l’IA ne sait pas tenir un personnage ». En réalité, elle n’a jamais figé les invariants ni réduit la charge cognitive du cadre.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+**Scénario B.** Un réalisateur indépendant veut un personnage type pour une affiche. Il fixe vingt traits dans un seul paragraphe. Le modèle mélange deux styles, la veste devient cuir puis coton, la coiffure glisse. Il pense qu’il faut « encore plus de détails ». La bonne direction est l’inverse, **moins de traits contradictoires**, plus de hiérarchie, et une référence visuelle stable si l’outil la supporte.
 
-Pour Comment écrire un prompt pour un personnage réaliste et constant, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+**Scénario C.** Une petite agence prépare des visuels pour une campagne. Le client veut « le même héros » sur cinq déclinaisons. L’équipe régénère jusqu’à obtenir cinq visages proches, puis retouche à la main. Ça tient pour une livraison ponctuelle, mais ça ne scale pas. La méthode durable, c’est une fiche personnage courte, des seeds ou références notées, et des cadrages qui évitent les zones anatomiques fragiles.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+Les articles voisins du blog couvrent la multi-plan, les visages difficiles, et le photoréalisme sans plastique, tu les retrouves dans la section liens en fin de guide.
 
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
+## Lire les défauts « signature IA » avant de blâmer le personnage
 
-Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
+Quand le visage semble « faux », le spectateur accuse souvent les yeux ou la peau. En pratique, la liste des suspects est plus longue et plus banale. **Les hautes lumières** trop propres sur le front créent une lecture studio même si tu voulais du naturel. **Le bokeh** incohérent, ovales qui changent de taille entre deux images du même objectif fictif, casse l’illusion optique. **Les ombres portées** trop noires sans bounce intérieur donnent un collage découpé. **Les reflets dans les yeux** parfaitement symétriques sur une scène quotidienne signalent une lumière de packshot.
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
+Corriger le personnage sans corriger la lumière, c’est peindre sur une fondation qui bouge. Pour chaque image presque bonne, pose-toi quatre questions. La source principale est-elle au même endroit que dans le prompt ? Les tons de peau ont-ils une sous-couche rouge crédible ou seulement un beige lissé ? Les cheveux ont-ils une micro variation de brillance ou un casque uniforme ? Les vêtements ont-ils un pli qui suit le corps ou une surface de mannequin 3D ?
 
-Le contraste n’est pas la saturation. Monter les couleurs pour cacher une image plate, ça donne une pub télé années 90. Travaille d’abord la courbe : noirs qui ne tombent pas en boue, hautes lumières qui ne crament pas la peau. Quand la courbe tient, la saturation a besoin de beaucoup moins.
+**Le bruit et le grain** ne sont pas une mode. Sur une série, un grain trop différent d’un plan à l’autre devient une variation de « caméra » inexpliquée. Choisis une densité de grain cible pour le projet, note-la, et rapproche les plans avant livraison. Même chose pour le **piqué**. Un plan ultra net à côté d’un plan doux sans justification de focale ou de mouvement ressemble à un montage de sources disparates.
 
-Les mains et les dents sont des capteurs de mensonge. Si tu n’as pas besoin des mains, mets les hors champ ou en lointain flou. Si tu en as besoin, prévois un recadrage serré sur le visage et laisse les mains hors cadre. Ce n’est pas de la lâcheté, c’est du métier.
+## Ce que « constant » veut dire pour un modèle
 
-Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
-## Notes de plateau, détails qui changent tout
+La constance n’est pas la copie pixel par pixel. C’est une **corrélation** entre images : proportions du visage dans une fourchette, même famille de cheveux, même silhouette vestimentaire, mêmes indices d’âge, même marqueurs mémorables discrets. Si tu changes trois invariants à la fois entre deux prompts, tu n’auras aucune idée de ce qui a cassé la continuité.
 
-Le contraste n’est pas la saturation. Monter les couleurs pour cacher une image plate, ça donne une pub télé années 90. Travaille d’abord la courbe : noirs qui ne tombent pas en boue, hautes lumières qui ne crament pas la peau. Quand la courbe tient, la saturation a besoin de beaucoup moins.
+**Âge et physiognomonie.** Donne une tranche, « début trentaine », plutôt qu’un nombre magique. Ajoute une caractéristique stable, fossette, cicatrice fine, écarteur discret, mais évite d’en empiler cinq. Chaque ajout est une nouvelle variable.
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
+**Coiffure et barbe.** Ce sont des ancres visuelles fortes. « Cheveux châtains mi-longs, raie sur le côté, légère ondulation » bat « beaux cheveux ». Si tu changes la longueur entre deux plans, le spectateur lit un saut de casting.
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+**Tenue.** Un vêtement simple et typé, bleu de travail, caban beige, sweat gris uni, tient mieux qu’une tenue chargée de logos et de couches. Les motifs complexes attirent les hallucinations de tissu.
 
-Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
+**Accessoire rare mais répété.** Une montre sobre, un badge usé, un tote bag local, ça aide la mémoire du spectateur. Évite les lunettes réfléchissantes si tu n’as pas besoin du reflet, c’est une porte ouverte aux incohérences.
 
-Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
+> La constance, ce n’est pas répéter le même prompt bavard. C’est répéter les mêmes trois décisions qui définissent l’identité, et ne changer que le cadrage ou l’action.
 
-Quand tu parles de cinéma à un modèle, pense caméra physique. Un 35 mm en intérieur, ce n’est pas la même chose qu’un 18 mm au même endroit. Le 35 mm rapproche le visage sans déformer les épaules. Le 18 mm allonge les mains vers la caméra et transforme un simple geste en catastrophe géométrique. Si ton personnage a des mains au premier plan, **choisis une focale plus longue** ou recule virtuellement la caméra.
+## Fiche personnage « promptable » en une page
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+Garde un document texte à côté de tes exports. Une ligne pour l’identité stable, une ligne pour la tenue du jour si elle change volontairement, une ligne pour la scène, une ligne pour les interdits.
 
-### Étape 1 : une phrase d’intention, puis la géométrie
+**Ligne identité.** Sexe perçu ou neutre selon ton besoin, âge approximatif, origine phénotypique si tu l’utilises avec respect et cohérence narrative, coiffure, barbe ou pas, marqueur stable.
 
-Avant les adjectifs, écris ce que la caméra doit montrer. Plan américain, plan taille, gros plan. Hauteur de caméra : niveau œil, légèrement en contre plongée, ou à hauteur de poitrine pour une tension douce.
+**Ligne tenue.** Haut, bas, chaussures, couleur dominante, matière, usure légère si tu veux du réalisme.
 
-Ensuite seulement, ajoute l’émotion. L’émotion sans géométrie, les modèles la traduisent par des néons et des poses catalogue.
+**Ligne scène.** Lieu, heure, météo si extérieur, mood.
 
-**Test rapide :** si tu retires tous les adjectifs « cinematic », est ce que ton prompt tient encore debout ? Sinon, il était creux.
+**Ligne interdits.** Pas de mains en premier plan si ton pipeline les dégrade, pas de dents visibles en très gros plan, pas de texte sur les vêtements, ce que tu refuses est aussi un pilier du contrat.
 
-### Étape 2 : lumière en trois lignes, comme un chef op
-
-Ligne A : source principale, taille apparente, couleur, direction. Exemple : fenêtre large nord, lumière douce, légèrement froide.
-
-Ligne B : fill ou absence de fill. Exemple : pas de fill, ombre dure sous le nez, contraste fort.
-
-Ligne C : arrière plan. Exemple : pièce sombre, une lampe practical chaude au fond, bokeh large.
-
-Tu viens de remplacer dix adjectifs vagues par une hiérarchie lisible.
-
-### Étape 3 : objectif et champs, sans jargon inutile
-
-Choisis une famille : 24 mm large, 35 mm polyvalent, 50 mm portrait sobre, 85 mm compression douce. Ajoute anamorphique seulement si tu assumes des ovales de bokeh et une chute de netteté caractéristique.
-
-**Écris la distance sujet arrière plan** en une phrase courte. Même fausse au millimètre près, l’idée de profondeur aide le modèle à séparer les plans.
-
-### Étape 4 : matière et imperfections contrôlées
-
-Ajoute trois imperfection réelles : grain fin, poussière en suspension légère, micro texture de peau visible au zoom. Pas vingt. Trois.
-
-Puis ajoute deux interdits explicites : pas de peau porcelaine, pas de sharp global agressif, pas de catchlights symétriques parfaits si la scène est naturelle.
-
-### Étape 5 : personnage, fiche courte et stable
-
-Âge approximatif, vêtement ancré, coiffure réaliste, accessoire rare mais mémorable. Évite les listes de vingt traits. **Moins de traits, plus stables.**
-
-Si tu enchaînes plusieurs plans, garde la même fiche et change seulement le cadrage ou l’action.
-
-### Étape 6 : itération en trois passes
-
-Passe 1 : composition et lumière. Passe 2 : peau et tissus. Passe 3 : netteté et grain. Ne touche pas aux trois en même temps, sinon tu ne sauras pas ce qui a sauvé l’image.
-
-### Étape 7 : négatif utile, pas encyclopédique
-
-Quatre à huit négatifs précis battent trente négatifs génériques. Cible ce que ton modèle produit par défaut sur ton sujet : mains supplémentaires, dents fusionnées, texte illisible, horizon courbe.
-
-### Étape 8 : verrouillage
-
-Quand une image tient, note seed, note prompt final, note réglages critiques. Ton futur toi est un collaborateur impatient, il déteste le mystère.
-## Micro réglages avant de figer une séquence
-
-Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la saturation sur le blanc des yeux, ajoute une micro ombre sous la paupière, évite le catchlight parfait en double symétrique. L’œil humain est légèrement imparfait, exploite ça.
-
-Le temps météo dans une scène extérieure change tout. Même rue, même acteur, brouillard ou soleil bas, ce n’est pas la même émotion. Fixe l’heure et la météo dans le brief, sinon le modèle mélange des nuages dramatiques avec une lumière de midi.
-
-Les transitions sonores masquent des coupures dures. Un whoosh discret, un impact de porte, un cut de musique sur le downbeat. Le son te permet de garder des images simples sans fondus IA douteux.
-
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
-
-Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
-
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
-
-Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
-
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+## Géométrie et angles qui réduisent les erreurs
 
-Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
+Les mains, les dents, les profils stricts et les oreilles sont des zones sensibles. Ce n’est pas une honte de les **sortir du cadre** quand l’histoire le permet.
 
-Le suréchantillonnage d’image n’est pas toujours ton ami. Plus de steps peuvent cristalliser des textures de peau en stuc. Cherche le palier où les pores redeviennent suggérés plutôt que dessinés. C’est souvent un peu avant le maximum que l’interface te propose fièrement.
+**Plan américain et plan poitrine** donnent souvent un meilleur ratio réalisme ou cohérence que le gros plan frontal complet si tu n’as pas de retouches prévues. Si tu dois montrer l’émotion du visage, un léger trois quarts aide plus qu’un masque symétrique parfait.
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+**Focale et distance.** Un 35 mm ou 50 mm « équivalents plein format » est un langage que les modèles comprennent souvent mieux que « portrait magnifique ». Écris la hauteur de caméra, niveau œil, légère contre-plongée, légère plongée, pour éviter la caméra flottante.
+
+**Direction du regard.** Fixe un point simple, regarde vers la fenêtre, vers l’objectif, vers un interlocuteire hors champ. Le regard flou dans le prompt devient un regard flou dans l’image.
+
+## Workflow en huit passes
+
+### Passe 1 : silhouette et lumière
+
+Tu cherches d’abord la lecture en ombre et lumière, pas les pores. Un personnage lisible au loin tient mieux qu’un visage « parfait » dans un décor incohérent.
+
+### Passe 2 : visage et coiffure
+
+Tu verrouilles l’identité sans ajouter dix adjectifs. Trois traits forts, puis stop.
+
+### Passe 3 : tenue et matière
+
+Tu décris le textile avec des mots de matière, laine, coton usé, jean brut, plutôt que « stylé ».
+
+### Passe 4 : arrière-plan volontairement simple
+
+Moins de géométrie concurrente, moins de glissement d’identité. Un mur, une fenêtre, une rue simple, selon ton récit.
+
+### Passe 5 : netteté, grain, imperfections
+
+Tu ajoutes du grain fin, une micro-asperité de peau, une poussière légère si le monde le permet. Le but est de casser le plastique par défaut.
+
+### Passe 6 : négatifs ciblés
+
+Quatre à huit interdits précis, mains supplémentaires, fusion de doigts, dents fusionnées, symétrie catchlight absurde, texte illisible sur les vêtements.
+
+### Passe 7 : image de référence ou seed selon l’outil
+
+Si ton flux le permet, une image de référence du personnage bat mille mots. Sinon, note la seed quand une image est proche du but, et ne change qu’une couche à la fois ensuite.
+
+### Passe 8 : verrouillage fichier
+
+Tu exportes, tu nommes, tu copies le prompt final dans le même dossier. Ton futur toi n’a pas à deviner quelle variante était la bonne.
+
+## Enchaînement multi-plans sans perdre l’identité
+
+Imagine une séquence courte : entrée dans un café, commande au comptoir, regard vers la rue. Trois images, un même personnage. La méthode qui échoue, c’est trois prompts indépendants « dans le même style ». La méthode qui tient commence par **une feuille de continuité** : direction de la key, température de couleur dominante, tenue inchangée sauf intention narrative, et trois cadrages écrits noir sur blanc.
+
+**Plan 1, établissement.** Tu décris le lieu et la silhouette du personnage avant le visage. Le modèle ancre le monde, tu réduis les surprises sur les proportions.
+
+**Plan 2, action.** Tu réinjectes la même ligne identité, tu changes uniquement l’action et le cadrage. Si tu modifies en même temps la lumière et la veste, tu ne sauras pas laquelle des deux a tué la ressemblance.
+
+**Plan 3, réaction.** Tu gardes la key, tu joues sur le regard et la proximité caméra. Si tu dois rapprocher, préfère un bond de cadrage réaliste, du plan taille au plan épaules, plutôt que d’aller directement au frontale bouche.
+
+Quand tu exportes vers la vidéo plus tard, ces trois images partagent déjà une **géométrie lumineuse** compatible. Tu évites le saut de studio entre deux plans qui devrait être continus.
+
+## Post-production minimale pour sauver la constance
+
+Même une retouche légère peut synchroniser une série. **Courbe** d’abord, pour caler noirs et hautes lumières sur une référence fixée. **Saturation** ensuite, en protégeant les rouges de peau si tu pousses un look. **Netteté locale** sur textile ou arrière-plan, jamais en masque global sur le visage, sauf intention publicitaire assumée.
+
+Si deux visages sont proches mais pas identiques, parfois un léger **harmonisation** des tons de peau et des ombres suffit à vendre la continuité, surtout en plan moyen. En gros plan, le cerveau est moins indulgent, d’où l’intérêt de verrouiller tôt le cadrage et les invariants plutôt que de compter sur la retouche.
+
+Les **LUT** ou presets couleur doivent servir de colle entre plans, pas de cache. Si la lumière de base ment, un LUT transforme le mensonge en style cohérent mais toujours faux pour qui regarde les ombres du nez et des joues.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
-
 
 ### Table de décision rapide
 
-| Couche | Tu écris quoi | Erreur fréquente | Bon signal |
-| --- | --- | --- | --- |
-| Caméra | plan, hauteur, focale | seulement « cinematic » | tu visualises le cadre |
-| Lumière | key, fill, fond | « belle lumière » | tu sais où est la source |
-| Matière | grain, texture peau | 20 adjectifs | 3 défauts réels assumés |
-| Négatif | 4 à 8 cibles précises | liste encyclopédique | tu corriges un défaut mesuré |
-| Lock | seed + fichier txt | tout en tête | reproductible demain |
-> Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.
+| Problème | Cause probable | Action |
+| --- | --- | --- |
+| Visage qui change entre plans | trop de traits variables à la fois | réduis à trois invariants, fige coiffure et âge |
+| Mains invraisemblables | mains au premier plan sans contrôle | hors champ ou plan plus large |
+| Peau plastique | sharp global et lumière plate | courbe avant saturation, grain léger |
+| Dents « IA » | sourire trop serré en gros plan | bouche presque fermée ou plan plus large |
+| Décor qui vole la vedette | arrière-plan trop chargé | simplifie murs et lignes de fuite |
 
+## Trench warfare : erreurs fréquentes et réparations
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+**Copier une fiche d’acteur réelle dans le prompt.** Même pour un personnage fictif, coller des détails biométriques d’une personne identifiable est une ligne rouge éthique et souvent légale. Travaille des archétypes visuels cohérents, des marqueurs de costume, et des références **lumineuses**, pas des doubles numériques de gens réels sans cadre clair.
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+**Multiplier les adjectifs « cinéma » sans caméra.** Remplace-les par plan, focale, hauteur, heure, direction de la key. Le modèle a besoin d’une scène physique, pas d’un trailer marketing.
 
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
+**Changer la coiffure pour « varier ».** C’est une nouvelle personne pour le cerveau humain. Varie plutôt l’action et le cadrage.
 
-Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
+**Oublier la lumière entre deux plans.** Même personnage avec une key opposée sans justification narrative, le spectateur lit une erreur de continuité. Note la direction de la lumière sur ta fiche, comme sur un rapport de tournage.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+**Sharper jusqu’à la mort.** Le sharpening sur la peau cristallise des textures de jeu vidéo. Masque le visage si tu post-traite.
 
-Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
+**Négliger le monitoring mobile.** Sur téléphone, les contrastes mentent. Vérifie sur un écran petit avant de valider une série pour une campagne.
 
-Les lumières multiples sans hiérarchie donnent un studio photo cheap. Choisis une key, une fill faible ou rien, peut être un rim. Trois sources fortes égales, c’est la mort de la profondeur. Écris qui domine en EV si tu peux, même grossièrement.
+**Abandonner après un plan « presque ».** Garde cette image comme référence négative écrite : note trois défauts précis, puis régénère en ne touchant qu’une couche, lumière seulement, ou cadrage seulement. La constance s’apprend en séparant les variables, pas en relançant la roulette à chaque frustration.
 
-Le format carré historique Instagram n’est pas le même que le vertical TikTok. Le centre de gravité visuel monte en vertical. Place l’information importante dans le tiers supérieur, sinon le téléphone la mange sous le pouce du spectateur.
+Pour la **profondeur de champ** et le lien entre focale et séparation des plans, la fiche encyclopédique sur la [profondeur de champ](https://fr.wikipedia.org/wiki/Profondeur_de_champ) aide à calibrer le vocabulaire. Sur le langage classique du portrait, voir aussi [éclairage en trois points](https://fr.wikipedia.org/wiki/%C3%89clairage_en_trois_points). Pour le vocabulaire des plans et des cadrages tels qu’on les nomme sur un plateau, la page [plan (cadrage)](https://fr.wikipedia.org/wiki/Plan_(cadrage)) évite les mélanges entre « américain » et « italien » selon les écoles. Ces pages sont des repères de vocabulaire, pas des règles magiques pour un modèle précis.
 
-La constance de palette sur plusieurs plans, c’est un LUT ou une courbe, pas un espoir. Exporte une référence, colle la sur le bord de ton écran, mate plan par plan. L’œil se fatigue vite, la référence non.
-Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
+**Journal de session, format minimal.** Une ligne date, une ligne outil et version de modèle, une ligne prompt figé, une ligne seed, une ligne « ce que j’ai changé depuis hier ». En deux semaines, ce journal vaut plus qu’un dossier de deux cents captures non triées. Tu peux aussi y noter le **CFG** ou équivalent et le nombre de steps au moment où la texture bascule vers le plastique, pour ne plus refaire l’exploration au hasard.
 
 ## Liens utiles dans la série AI Studio
 
 - [Comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia)
 - [Comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia)
 - [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique)
-- [Comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ)
+- [Comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible)
 
-## Foire aux questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
-**Mon prompt est long et moche, normal ?**
+**Faut-il toujours une image de référence ?** Non, mais sans référence tu dois être plus strict sur la fiche et les angles. Avec référence, tu gagnes en stabilité si l’outil gère l’img2img ou l’IP-Adapter du moment.
 
-Non. Un prompt long est souvent un prompt qui se combat lui même. Raccourcis, hiérarchise, teste.
+**Combien de traits sur la fiche personnage ?** Trois à cinq invariants forts. Au-delà, les contradictions augmentent.
 
-**Anamorphique à tout va ?**
+**Le seed suffit-il ?** Seul, non. C’est un verrou partiel. Combine seed stable, prompt stable, et idéalement référence ou même modèle et même réglages.
 
-Seulement si tu assumes bokeh ovale et falloff. Sinon tu ajoutes du flou sale.
+**Pourquoi mes mains ratent toujours ?** Les mains sont rares et complexes dans les données. Mets-les hors champ, lointaines, ou occupe-les avec un objet simple et volumineux.
 
-**Les négatifs, j’en mets trente ?**
+**Anglais ou français dans le prompt ?** Les deux peuvent marcher. Garde les termes photo en anglais si ton modèle y est sensible, key, fill, rim, bokeh, et écris le reste dans la langue qui te donne les meilleurs résultats sur ton stack.
 
-Tu crées des interférences. Prends quatre négatifs qui ciblent tes défauts réels.
+**Je dois absolument un gros plan bouche ?** C’est une demande à risque. Prévois retouche locale ou inpainting ciblé, ou recule d’un cran de cadrage.
 
-**Je dois tout mettre dans un seul prompt ?**
+**Comment livrer « le même héros » à un client ?** Documente prompt, seed, réglages, et fournis une planche de trois angles validés plutôt que cinq hasards « proches ».
 
-Pour Comment écrire un prompt pour un personnage réaliste et constant, sépare parfois en deux passes : lumière d’abord, détail ensuite.
-
-**Comment garder un personnage ?**
-
-Fiche courte stable, seed, référence image, et changements minimales entre plans.
-
-**Où je note mes tests ?**
-
-Dans un fichier à côté des images. Sinon tu répètes les mêmes erreures sur Comment écrire un prompt pour un personnage réaliste et constant.
-
-**Je copie des prompts sur Discord ?**
-
-Inspire toi, réécris pour ton sujet. Les prompts génériques te collent un style générique.
+**La coiffure change entre deux images du même jour de tournage fictif, est-ce grave ?** Pour le spectateur, oui, sauf si ton récit montre explicitement un passage de temps ou une scène différente.

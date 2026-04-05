@@ -5,147 +5,143 @@ category: "tutoriels"
 excerpt: "Vitesses, trajectoires, interactions mains objets, et quand préférer le montage à la génération brute."
 thumbnail: "/images/blog/comment-ameliorer-realisme-mouvements-video-ia/hero.webp"
 ---
-Tu es ici pour : Comment améliorer le réalisme des mouvements en vidéo IA. Bien. On va éviter deux pièges tout de suite.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Un bras qui traverse l’air sans anticipation, un mur qui respire pendant un travelling, une main qui fusionne avec une tasse : le réalisme d’une vidéo IA se joue souvent **avant** la résolution 4K annoncée sur la page marketing. Tu peux exporter en haute définition un geste impossible : tu n’auras qu’une **haute définition d’impossible**, lisible en un écran sur deux. Le spectateur ne mesure pas tes pixels ; il mesure **la physique du geste**, la cohérence de la lumière pendant le déplacement, et la façon dont le son colle (ou non) à l’image. Quand ces signaux divergent, le cerveau classe le clip en « démo » en quelques secondes, même si le color grading est joli.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+Ce texte est une grille de travail pour **réduire l’incohérence du mouvement** sans te promettre une caméra virtuelle parfaite. On traitera la vitesse, la complexité du décor, les interactions main–objet, le rôle du son et du montage, et le moment où il vaut mieux **couper** que générer un plan unique impossible. L’idée directrice : **moins d’amplitude dans la génération, plus d’intention au montage** — comme sur un plateau où l’opérateur sait qu’un push-in discret vend mieux qu’une orbite qui casse la géométrie.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt : elle obtient des métamorphoses de mobilier. **Paul** pousse le curseur mouvement à fond pour « du dynamisme » : les visages ondulent. **Amina** fige une belle image puis ajoute une orbite 360° : le plafond devient liquide. La méthode ci-dessous les ramène à des **briefs tenables** et à une chaîne image → mouvement → critique → correction.
 
-Pour Comment améliorer le réalisme des mouvements en vidéo IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+**Engagement.** Fixe-toi un livrable court : dix à quinze secondes finies avec son et export nommé. Le réalisme du mouvement s’apprend sur des **boucles complètes**, pas sur des previews abandonnées à mi-parcours.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+### Trois scénarios avec pivot
 
-Le flou d’arrière plan doit suivre une loi de distance. Si le nez est net et le mur derrière est flou comme de la crème alors qu’il est à cinquante centimètres, le cerveau crie fake. **Décris la distance caméra sujet** et la distance sujet arrière plan, même approximative.
+**Spot marque, produit et main.** La main attrape la bouteille : doigts qui fusionnent. **Pivot :** main hors champ dans la phase contact ; on voit le produit posé, puis coupe sur gros plan visage qui sourit ; le contact réel peut être un plan live ou une compo 2D classique si le client exige la vérité du bord.
 
-Les ambiances cuisine ou bar avec mille reflets demandent des angles prudents. Si tu simplifies une rangée de bouteilles en un mur sombre, tu gagnes en crédibilité. **Réduis la complexité** quand le modèle montre des limites.
+**Scène dialogue, deux personnages.** Un seul long plan : les têtes changent de proportions. **Pivot :** contrechamps séparés générés avec le même brief lumière, montés sur voix ; le regard et le rythme portent la scène.
 
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
+**Extérieur, vent, cheveux.** Les mèches deviennent un masque. **Pivot :** chapeau, attache, ou vent « suggéré » par le son plutôt que par la complexité capillaire en chaque frame ; ou recadre buste avec cheveux moins mobiles.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+## Concepts clés : ce que le mouvement révèle (et ce qu’il cache)
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+**Amplitude et crédibilité.** Les outils image→vidéo ou texte→vidéo proposent souvent un curseur de mouvement. Très haut, tu paies en **déformation temporelle** et en glissement de texture. Commence bas (souvent entre 20 % et 45 % selon l’outil), monte par paliers quand le décor est simple et le sujet stable.
 
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
-## Notes de plateau, détails qui changent tout
+**Anticipation et relâchement.** Un geste humain a un démarrage et une fin. Les modèles tendent à interpoler « trop lisse » ou à sauter des phases. Décris **pause → action → pause** dans le brief, ou génère moins de secondes et **allonge** au montage avec une ambiance qui masque la jonction.
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
+**Caméra modeste.** Push-in de quelques pourcents, pan très lent, truck léger : le spectateur lit l’émotion sans que la scène doive reconstruire cinquante mètres de perspective par frame. Pour aller plus loin sur la structure narrative, voir [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
 
-Le format vertical impose une autre lecture. Un plan large horizontal raconte l’environnement. Un vertical demande un sujet clair, une ligne forte, peu d’éléments parasites sur les bords. Si tu recadres un horizontal en vertical sans repenser la compo, tu obtiens des têtes coupées et des mains qui entrent par surprise.
+**Décors denses = risque.** Lignes verticales (étagères, fenêtres) pendant un travelling latéral demandent une stabilité géométrique élevée. Simplifie le fond, raccourcis le déplacement, ou ajoute un **léger** flou de mouvement en post sur l’arrière-plan si tu assumes une esthétique « handheld ».
 
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
+**Son comme ancrage.** Une image douteuse survit parfois avec une bande-son crédible ; l’inverse est rare. Pose un room tone, une rue lointaine, une pièce vide avec souffle — avant de figer le master. Même une piste temporaire change ton jugement sur le mouvement.
 
-Les ambiances cuisine ou bar avec mille reflets demandent des angles prudents. Si tu simplifies une rangée de bouteilles en un mur sombre, tu gagnes en crédibilité. **Réduis la complexité** quand le modèle montre des limites.
+**Image pilote avant vidéo.** Si ton outil part d’une frame, investis dans une image **lumineusement juste** : ombre du nez, direction de la key, distance focale cohérente. Sinon la vidéo amplifie l’erreur. Pont avec [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
 
-Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
+**Cadence et motion blur.** Un mouvement rapide à 24 images/s avec peu de flou naturel peut « stroboscoper » ; un flou excessif ressemble à du smear. Si ton outil permet un réglage de shutter implicite ou de flou de mouvement, teste une valeur **moyenne** plutôt que les extrêmes. L’objectif est que le spectateur suive le sujet sans lire des doubles contours sur les bords.
 
-Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la saturation sur le blanc des yeux, ajoute une micro ombre sous la paupière, évite le catchlight parfait en double symétrique. L’œil humain est légèrement imparfait, exploite ça.
+**Cohérence temporelle vs changement de prompt.** Changer plusieurs termes entre deux segments d’une même scène peut casser la géométrie du décor. Pour une continuité longue, garde un **noyau de prompt stable** (lumière, matériaux, focale) et ne fais varier que l’action ou le cadrage — ou coupe explicitement au montage pour marquer le temps.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+## Notes de plateau : interactions, profondeur, compression
 
-### Étape 1 : brief en une page, sans poésie creuse
+**Mains et objets.** Saisir, poser, tourner une clé : ce sont des cas limites. Réduis la vitesse, évite les gros plans extrêmes sur les doigts, ou **triche par cadrage** (main hors champ, objet déjà en place). Pour les visages en mouvement, garde [comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia) sous la main.
 
-Ouvre un doc. Écris cinq lignes.
+**Profondeur de champ vs mouvement.** Si le flou d’arrière-plan n’évolue pas logiquement quand la caméra avance, la 3D implicite est cassée. Décris la distance sujet–fond ; accepte parfois un plan moins « bokeh extrême » pour gagner de la stabilité.
 
-Ligne 1 : le sujet, physique, situé dans un lieu précis. Pas « une femme », mais « une femme en laine, près d’une fenêtre nord, pluie dehors ».
+**Compression sociale.** Export trop propre + upload = artefacts autour des contours en mouvement. Un grain léger et des hautes lumières maîtrisées aident souvent après encodage. Même logique que pour les images « plastique » dans [pourquoi mes vidéos IA ont l’air fake (et comment les rendre réalistes)](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes).
 
-Ligne 2 : l’émotion dominante. Peur, soulagement, désir, fatigue. Un seul mot fort.
+**Format vertical vs horizontal.** Le centre de gravité monte en 9:16 ; une action basse peut être mangée par l’UI du téléphone. Compose en conséquence **avant** de générer le mouvement.
 
-Ligne 3 : la durée cible et le format. 12 secondes, 16:9, voix off ou pas.
+**Dialogue et lèvres.** Si la synchro labiale est instable à basse résolution, recule le cadrage, raccourcis la réplique, ou passe **voix off** + réactions visuelles. Le spectateur préfère une lecture claire à une bouche bruitée en gros plan.
 
-Ligne 4 : trois références visuelles humaines. Des films, pas des mots. « Blade Runner 2049 intérieurs », « Dune sable et brume », « Winter’s Bone naturel ».
+**Continuité couleur entre plans générés.** Si tu enchaînes deux clips IA, la balance peut glisser. Prévois une **passe étalonnage globale** sur la timeline ou une LUT de série appliquée aux deux sources. Même esprit que pour les stills : [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).
 
-Ligne 5 : interdits. « Pas de néon », « pas de peau lisse », « pas de flou de mouvement extrême ».
+**Plans de réaction.** Même sans acteur réel, pense coupe / contre-coupe / silence : le montage porte le dialogue. Voir [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia) pour aligner texte et découpage.
 
-**Sauvegarde ce doc.** C’est ton contrat avec toi même.
+## Workflow pratique : du brief au clip lisible
 
-### Étape 2 : moodboard rapide, trois images fixes
+### Étape 1 — Brief d’une page, cinq lignes fixes
 
-Génère trois images fixes avec le même prompt de base, en ne changeant que la lumière ou l’heure. Compare au zoom. Choisis celle qui tient la peau et les tissus. C’est ton pilote.
+1. Sujet situé (physique, lieu, heure).  
+2. Émotion dominante en un mot.  
+3. Durée cible et format (ex. 12 s, 16:9).  
+4. Trois références **de lumière et d’espace**, pas de titres vagues sans détail.  
+5. Interdits (pas d’orbite, pas de mains en gros plan, pas de HDR ciel).
 
-Réglages types côté image : démarre avec un modèle photoréaliste, évite les presets « fantasy ». Steps ou force équivalente : assez pour la texture, pas assez pour l’hyper netteté. CFG ou guidance : milieu de plage, pas le max, sinon tu obtiens du plastique.
+Sauvegarde ce bloc : c’est ton contrat avec toi-même.
 
-### Étape 3 : mouvement minimal, comme un opérateur humain
+### Étape 2 — Pilote image
 
-Passe à la vidéo seulement quand le pilote est validé. Décris un mouvement de caméra simple. Truck lent, pan très lent, push in discret. **Évite 360° et les orbites** au début, c’est là que la géométrie explose.
+Trois images fixes avec le même cœur de prompt ; varie seulement l’heure ou la qualité d’air. Choisis celle qui tient peau, tissu et perspective au zoom. Réglages : guidance modérée, évite les presets « fantasy » si tu vises du réel.
 
-Si ton outil propose force de mouvement, reste entre 20% et 45% au début. Au dessus, tu paies en déformation. Si tu as un réglage de cohérence avec l’image source, monte le légèrement jusqu’à ce que les mains restent stables.
+### Étape 3 — Mouvement minimal
 
-### Étape 4 : son et ambiance, tout de suite
+Un seul type de mouvement par essai : lent push-in, pan lent, ou truck court. **Pas** 360° au début. Si l’outil a cohérence / adhérence à l’image source, monte légèrement jusqu’à stabilité des mains, puis stop.
 
-Ne finis pas visuel avant d’poser une piste d’ambiance. Même mauvaise. Le cerveau associe le son au réalisme. Bruit de pièce, ventilation, rue lointaine, pluie. Puis voix si besoin, traitée avec un peu de chambre.
+### Étape 4 — Durée générée > durée finale
 
-### Étape 5 : montage, recadrage, grain
+Génère plus long que nécessaire, coupe **sec** au montage. La coupe porte l’intention ; le fondu enchaîné masque parfois une incohérence mais peut aussi donner un look « démo IA » si abusé.
 
-Importe dans ton NLE préféré. Recadre légèrement pour casser l’effet « cadrage IA parfait ». Ajoute une courbe douce, baisse un peu les hautes lumières, monte légèrement les mids pour garder du visage. **Ajoute du grain** en overlay, 8 mm léger ou 35 mm fin selon ton look.
+### Étape 5 — Son tôt
 
-Exporte une première version en qualité moyenne, regarde sur téléphone et sur écran calibré. Corrige, reboucle.
+Room tone + bruit contextuel. Puis voix ou musique. Le son révèle les moments où le mouvement « flotte » sans que tu aies vu le problème en muet.
 
-### Étape 6 : critique en cinq minutes
+### Étape 6 — Montage, recadrage, grain léger
 
-Pose un minuteur. Note trois défauts maximum. Corrige ceux qui touchent à la cohérence avant ceux qui touchent au détail cosmétique. Une main bizarre bat une tache de lumière discutable.
-## Micro réglages avant de figer une séquence
+Recadre 2–3 % pour casser le cadrage « parfait par défaut ». Courbe douce : évite les hautes cramées sur la peau. Grain overlay fin pour coller les plans. Référence grain : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia) (transposable en vidéo).
 
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
+### Étape 7 — Critique en cinq minutes
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+Minuteur. Trois défauts max par passe. Tu corriges d’abord **cohérence** (main, perspective), puis cosmétique.
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
-
-Le sharpening global est l’ennemi. Si tu veux du piqué, masque le visage et sharp très peu sur les textiles ou les détails éloignés. Jamais sur la peau au premier plan, sauf si tu cherches un look publicitaire années 2000 volontaire.
-
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
-
-Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
-
-Le temps météo dans une scène extérieure change tout. Même rue, même acteur, brouillard ou soleil bas, ce n’est pas la même émotion. Fixe l’heure et la météo dans le brief, sinon le modèle mélange des nuages dramatiques avec une lumière de midi.
-
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+### Étape 8 — Itération une variable à la fois
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+Mouvement OU lumière OU durée — pas les trois. Sinon tu ne sais pas ce qui a sauvé le clip.
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+### Étape 9 — Revue « ralenti »
 
-La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière dure sans direction. Dis d’où vient la source, sa taille, sa couleur. Fenêtre nord, néon vert en contre, lampe de bureau tungstène. Même si le modèle simplifie, ton cerveau de spectateur cherche une hiérarchie lumineuse. Sans hiérarchie, tu obtiens ce plat gris qui crie l’IA.
+Regarde une fois en **demi-vitesse** : les déformations subtiles (murs, grille de fenêtre, dents) apparaissent souvent là où l’œil les rate à vitesse normale. Note-les, puis décide : regénération, recadrage, ou masquage par son et coupe — pas toutes les trois en panique.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
-
 
 ### Table de décision rapide
 
 | Phase | But | Levier | Test rapide |
 | --- | --- | --- | --- |
-| Brief | clarifier | 5 lignes max | lisible à voix haute |
-| Pilote | look | image fixe 16:9 | zoom peau et tissu |
-| Mouvement | crédibilité | amplitude 20 à 45 % | mains stables |
+| Brief | clarifier | 5 lignes | lisible à voix haute |
+| Pilote | look stable | image fixe | zoom peau / tissu |
+| Mouvement | crédibilité | amplitude basse | mains stables 3 s |
 | Son | ancrage | room tone | pas de silence absolu |
-| Master | diffusion | grain + courbe | lecture sur téléphone |
-> Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.
+| Montage | rythme | coupes sèches | lecture mobile |
+| Master | diffusion | grain + courbe | export test plateforme |
 
+> Un prompt vidéo, c’est une liste de décisions physiques. Sans ça, le modèle improvise une chorégraphie de dataset — et ce n’est jamais ta chorégraphie.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+## Trench warfare : erreurs fréquentes
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
+**Orbite ou travelling long sur décor riche.** Réduis la distance parcourue ou simplifie le fond.
 
-Le suréchantillonnage d’image n’est pas toujours ton ami. Plus de steps peuvent cristalliser des textures de peau en stuc. Cherche le palier où les pores redeviennent suggérés plutôt que dessinés. C’est souvent un peu avant le maximum que l’interface te propose fièrement.
+**Mouvement max + visage proéminent.** Tu obtiens du « visage gelée ». Baisse l’amplitude ou éloigne le cadrage.
 
-Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
+**Ignorer la lumière de la référence vidéo** (si transfert). Harmonise la direction des ombres entre source et personnage, ou accepte un composite incohérent.
 
-Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
+**Comparer à un blockbuster.** Compare à un moyen et un décor proches des tiens ; sinon tu juges toujours « nul » sans apprendre.
 
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
+**Pas de journal de session.** Note date, prompt, curseurs, seed ou ID de job. Sinon tu ne reproduis pas un succès.
 
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
+**Sur-dépendance au fondu.** Préfère le son et la coupe pour la continuité.
 
-Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détail plus une lumière frontale dure. Penche la lumière, ajoute une ombre douce sous le nez, baisse la clarté sur les hautes fréquences de peau en post. La peau a des pores, pas une grille.
+**Oublier le timecode mental en pub courte.** À 0 s, 3 s, 7 s, 12 s : quelle info change ? Si rien, le mouvement est décoratif.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
-Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
+**Sous-estimer le poids du cadre initial.** Un horizon penché ou une ligne d’épaule impossible sur l’image pilote devient un cauchemar dès que la caméra bouge. Corrige la still **avant** la vidéo.
+
+**Multiplier les effets « réparation » en post.** Stabiliseur agressif + sharp + NR peut donner du « visage en caoutchouc ». Préfère regénérer avec moins d’amplitude ou un décor simplifié.
+
+**Ne pas valider sur la vitesse de lecture réelle.** Accélérer la preview masque les micro saccades. Joue à **1x** sur téléphone avant le master.
+
+**Ignorer les droits sur une vidéo de référence** pour du transfert de mouvement. Utilise des prises dont tu détiens les droits ou du matériel tourné pour le test.
+
+Pour calibrer l’œil sur le mouvement caméra et la lisibilité du geste : [mouvement caméra et lisibilité](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
 ## Liens utiles dans la série AI Studio
 
@@ -154,32 +150,52 @@ Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https
 - [Les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle)
 - [Comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia)
 
-## Foire aux questions (FAQ)
+## FAQ
 
-**Combien de temps pour un premier clip propre ?**
+**Combien de temps pour un premier clip propre ?**  
+Plusieurs sessions courtes battent un marathon ; le sommeil est un correcteur.
 
-Pour Comment améliorer le réalisme des mouvements en vidéo IA, compte plusieurs sessions courtes plutôt qu’un marathon. Le sommeil est un outil de correction.
+**Pourquoi mon clip ressemble à une pub télé ?**  
+Souvent saturation élevée, netteté globale, lumière frontale. Penche la lumière, baisse le sharp sur le visage, ajoute grain modéré.
 
-**Pourquoi mon clip ressemble à une pub télé ?**
+**Le mouvement déforme tout : que faire ?**  
+Baisse l’amplitude, raccourcis, simplifie le décor, repars d’une image pilote corrigée, ou coupe au montage.
 
-Souvent trop de saturation, trop de netteté, trop de lumière frontale. Baisse la clarté locale, penche la lumière, ajoute du grain.
+**Je perds la motivation.**  
+Réduis la durée cible : huit secondes solides valent mieux qu’une minute bancale.
 
-**Pourquoi mes ciels sont trop HDR ?**
+**Le son est facultatif ?**  
+Non pour le jugement réaliste. Même une ambi basse change la perception du mouvement.
 
-Tu n’as pas bridé les hautes lumières. Courbe et roll off doux avant de saturer.
+**Je commence par quel logiciel ?**  
+Celui qui te donne une **image pilote stable** pour ton sujet, pas celui avec la meilleure bande-annonce marketing.
 
-**Le mouvement déforme tout, que faire ?**
+**Quand préférer plusieurs plans courts à un plan séquence ?**  
+Quand le décor est chargé ou les mains visibles : trois vérités courtes battent une séquence longue qui ment.
 
-Réduis l’amplitude, raccourcis la durée, simplifie le décor, ou repars d’une image fixe corrigée.
+**La 4K d’abord ou le mouvement d’abord ?**  
+Mouvement crédible à résolution de travail, puis upscale si nécessaire. Upscaler une trajectoire fausse ne fait qu’une belle erreur.
 
-**Je perds la motivation ?**
+**Les transitions IA « cinéma » entre deux images ?**  
+Souvent elles mélangent deux géométries : préfère coupe + son. Voir aussi [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
 
-Réduis la durée du projet. Un clip de huit secondes bien fini vaut mieux qu’un long métrage IA bancal.
+**Comment brief-er une interaction main–objet ?**  
+Vitesse basse, cadrage plus large, action en deux temps (approche, contact), et retakes courts plutôt qu’un long take unique.
 
-**Le son est facultatif ?**
+**Seed / variation : à quoi ça sert en vidéo ?**  
+Comme en image : la variation ne corrige pas une trajectoire physiquement fausse. Change le brief, puis verrouille quand tu approches d’un résultat stable.
 
-Jamais. Même une ambi basse change le jugement sur l’image.
+**Je fais du vertical TikTok : le mouvement change quoi ?**  
+Le sujet doit être lisible dans le tiers supérieur ; les mouvements latéraux amples coupent souvent le visage sous les overlays UI. Préfère push-in / léger pan.
 
-**Je commence par quel logiciel ?**
+**Deux personnages dans le même plan : conseil ?**  
+Réduit la complexité : un personnage statique, un mouvement léger sur l’autre, ou sépare en deux plans. Les interactions corps à corps restent parmi les cas les plus fragiles.
 
-Par celui qui te donne une image pilote stable pour Comment améliorer le réalisme des mouvements en vidéo IA. Pas celui qui a la meilleure bande annonce marketing.
+**L’eau, la fumée, les vitres : danger ?**  
+Oui : transparences et particules explosent les artefacts en mouvement. Simplifie, ou masque par cadrage et son.
+
+**Je livre pour la TV / broadcast ?**  
+Vérifie niveaux légaux, safe zones, et surtout **motion** jugée sur grand écran : ce qui passe sur téléphone peut s’effondrer sur OLED salon.
+
+**Pourquoi mes ciels « HDR » cassent le réalisme ?**  
+Hautes lumières non maîtrisées : applique un roll-off doux et baisse le contraste local sur le ciel avant de repousser la saturation. Même logique que sur stills trop « drone ».

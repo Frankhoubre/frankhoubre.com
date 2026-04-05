@@ -5,173 +5,188 @@ category: "tutoriels"
 excerpt: "Types de grain, intensité par zone, combinaison prompt et post, et pièges sur écran consumer."
 thumbnail: "/images/blog/comment-ajouter-grain-cinema-image-ia/hero.webp"
 ---
-Tu es ici pour : Comment ajouter du grain cinéma sur une image IA. Bien. On va éviter deux pièges tout de suite.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Le grain n’est pas une « texture Instagram » posée sur une image déjà morte. Sur une still IA, il joue souvent le rôle de **colle visuelle** : il harmonise une peau trop lisse avec un mur trop détaillé, il masque légèrement les transitions douteuses entre net et flou, il rapproche le rendu d’un **support photochimique** ou d’un capteur numérique tourné avec intention. Utilisé sans intention, il devient une signature « j’ai vu trois tutos » — utilisé avec discipline, il devient un **choix de poste** au même titre qu’une focale ou une LUT. Sans lui, beaucoup d’images générées restent dans une zone interdite à l’œil : ni illustration assumée, ni photographie crédible — juste le lisse du défaut statistique.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+Ici, on sépare **grain dans le prompt** (biais du modèle) et **grain en post** (contrôle fin), on parle taille de grain, intensité par zone (ombres vs hautes lumières), et pièges d’écran : sur un laptop consumer, tu peux **sous-voir** le grain puis en rajouter trop ; sur un écran calibré, la même couche devient boueuse. Tu auras une méthode pour tester sur deux supports avant de valider un master destiné au montage vidéo ou à l’impression.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+Trois anecdotes de coulisse. **Tom** empile « film grain » dans le prompt et en overlay identique : le milieu de tonalité devient sale sans que les ombres gagnent en profondeur. **Lina** exporte pour Instagram : la plateforme recompresse et le grain devient une mosaïque. **Karim** veut du 16 mm vintage sur une image hyper nette : il ajoute un grain gros sans toucher au contraste — le résultat ressemble à un filtre, pas à une pellicule. Les sections suivantes évitent ces écueils avec des réglages **itérables**.
 
-Pour Comment ajouter du grain cinéma sur une image IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+**Projet pilote.** Prends **une** image IA que tu aimes à 80 % et pousse-la jusqu’au master avec un preset grain documenté. Tu apprends dix fois plus qu’en changeant d’image à chaque essai.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+### Trois scénarios avec pivot
 
-Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
+**Look « thriller nuit ».** Tu veux des ombres profondes et du grain visible. **Pivot :** garde du détail dans une ombre près du visage (évite noir bouché total), pose le grain surtout dans les noirs et le fond, pas sur les yeux.
 
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
+**Packshot produit.** Le grain peut salir les bords du produit. **Pivot :** masque le produit, grain sur le décor ; ou grain très fin global + netteté sélective sur le logo après accord avec la charte.
 
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
+**Série de portraits casting.** Dix visages, dix lumières différentes mais même film. **Pivot :** étalonnage séparé par image pour rapprocher les peaux, **même overlay grain** (même fichier, même opacité de départ) puis micro-ajustements par plan.
 
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
+## Concepts clés : anatomy du grain sur une image IA
 
-Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
+**Grain vs bruit numérique.** Le grain cinéma a souvent une **structure** (particules, distribution inégale selon la densité) ; le bruit de capteur pauvre est plus uniforme et électronique. Les overlays « film stock » dans les logiciels de grade imitent la première ; un simple bruit monochrone ajouté à outrance imite rarement la seconde correctement — et encore moins la première.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
-## Notes de plateau, détails qui changent tout
+**Dépendance à l’exposition implicite.** Sur pellicule, le grain monte dans les ombres. En post sur une image IA, beaucoup d’artistes **masquent le grain sur les hautes lumières** du visage pour garder de la propreté sur le triangle yeux–nez–bouche, et le renforcent légèrement dans les noirs pour donner du volume. C’est une approximation du comportement réel, mais surtout un **outil de direction du regard**.
 
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
+**Le prompt comme amorce.** Ajouter « subtle film grain » ou équivalent peut aider le modèle à **cesser de lisser** certaines zones. Ce n’est pas une garantie : parfois le grain prompt devient une texture dessinée sur la peau. D’où l’intérêt du **double pipeline** : amorce légère en génération, contrôle précis en post.
 
-Les séquences dialogue en IA demandent des plans de réaction. Même si tu n’as pas d’acteur réel, pense coupe, contre coupe, silence. Le montage porte le dialogue, pas un seul plan qui parle pendant trente secondes.
+**Netteté globale et grain.** Un sharpening agressif après ajout de grain crée des halos et des « grains qui grattent » sur les contours. Ordre sain : composition et lumière → étalonnage global → grain → **sharp sélectif** très léger hors peau si nécessaire.
 
-Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
+**LUT et grain.** Si tu appliques une LUT contrastée après le grain, tu modifies la perception du bruit. Souvent : **LUT avant grain fin**, ou grain sur une couche ajustée après LUT avec opacité réduite. Il n’y a pas une seule religion — il y a une règle : **ne change pas cinq couches à la fois**.
 
-Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
+Pour le contexte peau et fréquences, croise avec [comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia).
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+**Résolution native et taille du grain.** Un grain conçu pour du 1080p posé sur du 4K peut sembler trop fin ou trop régulier selon le redimensionnement. Parfois tu dois **rescaler la texture** de grain ou en utiliser une déclinaison haute résolution pour garder la bonne « échelle de particule » par rapport au sujet.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+**Couleur du grain.** Un grain légèrement chaud sous une lumière tungstène aide la cohérence ; un grain froid sur une scène chaude peut lire « numérique mal matché ». Ajuste teinte/saturation sur la **couche** de grain, pas sur toute l’image.
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+**Animations du grain (vidéo).** Si le grain est statique frame à frame alors que le reste bouge, l’œil peut lire un collage. En mouvement, un léger jitter ou un grain généré par le moteur vidéo peut mieux s’intégrer — au prix d’un contrôle moindre.
 
-### Étape 1 : choisir le bon moteur pour la tâche
+## Notes de plateau : formats, impression, vidéo
 
-Flux brille souvent sur les transitions douces, la matière, les scènes complexes avec beaucoup d’objets. SDXL reste un couteau suisse avec un écosystème énorme de LoRA et de workflows ComfyUI.
+**Impression.** Le grain qui semble correct à l’écran peut **s’écraser** à l’impression ou devenir trop visible en grand format. Garde une épreuve ou un test A3 si le budget le permet ; sinon zoom impressionnant à l’écran (pas seulement 100 %).
 
-**Règle simple :** si tu veux du portrait peau et yeux avec contrôle fin, teste les deux sur le même prompt court. Garde celui qui ment le moins sur les mains et les dents.
+**Vidéo.** Une still avec grain fort peut **bouger** étrangement quand un outil image→vidéo interpole : teste court. Pour une série de plans, garde la **même couche de grain** (même overlay, mêmes réglages) appliquée après le grade de chaque plan pour homogénéiser. Voir [comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia).
 
-### Étape 2 : résolution et recadrage avant beauté
+**Compression sociale.** Une image très granuleuse peut se dégrader en blocs après encodage. Légère réduction du grain sur la version « web » ou export à bitrate plus confortable peut aider. Ce n’est pas trahir le look : c’est **connaître le média**.
 
-Travaille en 16:9 ou 2:3 selon la sortie, pas en carré si ton film est horizontal. Monte en résolution seulement quand la composition est figée. Sinon tu optimises des erreurs en haute définition.
+**16 mm vs 35 mm vs « digital clean ».** 16 mm : grain plus visible, particules plus grosses. 35 mm : plus fin, plus élégant sur des visages. « Clean digital » : grain quasi absent — utile si tu ajoutes du grain **uniquement** en post pour contrôle total. Choisis **une** référence par projet et tiens-la dans un doc.
 
-### Étape 3 : steps, CFG, scheduler, sans religion
+**HDR et grain.** Sur des images très « HDR » (ciel détaillé + intérieur lumineux), le grain peut attaquer les micro-contrastes et donner un aspect crunchy. Parfois tu baisses légèrement le grain dans les zones à haute micro-contrast (feuillage fin, textures métalliques) tout en le gardant dans les dégradés de ciel pour éviter le banding.
 
-Monte les steps jusqu’au point où la texture apparaît, puis arrête avant la surdéfinition. CFG trop haut = plastique. CFG trop bas = boue. **Cherche une fenêtre**, note la, réutilise la.
+**Stacks de débruitage IA + grain.** Si ton pipeline inclut un passage « denoise » automatique sur l’export du générateur, note que tu enlèves parfois **la même matière** que tu veux réinjecter. Soit tu désactives le denoise agressif, soit tu acceptes un grain un peu plus fort pour compenser — mais jamais les deux à l’aveugle sans test visuel.
 
-### Étape 4 : peau en deux temps
+## Workflow pratique : étapes reproductibles
 
-Temps 1 : génération avec lumière plausible et ombre sous le nez. Temps 2 : retouche locale légère ou inpainting sur la zone yeux bouche si nécessaire. Évite de régénérer toute la scène pour une micro zone.
+### Étape 1 — Image presque finie avant grain
 
-### Étape 5 : grain cinéma en post souvent mieux qu’en prompt seul
+Verrouille cadrage, lumière, peau au niveau « acceptable ». Le grain ne sauve pas une ombre du nez au mauvais endroit.
 
-Un grain overlay contrôlé, adapté à la densité des ombres, réagit mieux que « add grain » jeté dans le prompt sans mesure. Combine les deux seulement si tu sais ce que chaque couche apporte.
+### Étape 2 — Amorce en prompt (optionnelle)
 
-### Étape 6 : contraste et couleur
+Un terme de grain **subtil** dans le prompt ou le négatif « oversharpened, plastic skin » pour pousser le modèle vers une matière moins lisse. Évalue au zoom 100 % et 200 %.
 
-Courbe d’abord, saturation ensuite. Isole les peaux si tu pousses un look teal orange. **Garde du sang dans les rouges** des joues, sinon tu passes en mannequin 3D.
+### Étape 3 — Étalonner avant grain lourd
 
-### Étape 7 : profondeur de champ crédible
+Courbe / LUT pour contraste global. Évite les noirs bouchés si tu veux que le grain **lise** dans les ombres.
 
-Décris la distance et la focale. Vérifie les transitions net vers flou : trop abruptes = collage. Un léger flou gaussien sur l’arrière plan en post peut sauver une scène presque bonne.
+### Étape 4 — Couche de grain en overlay
 
-### Étape 8 : export pour la suite vidéo
+Importe une texture de grain (boucle courte, tile propre) ou utilise le module film grain de ton logiciel. Mode **overlay / soft light** selon le look. Opacité basse au départ.
 
-Exporte PNG ou TIFF propre pour l’image pilote, garde une variante avec grain si tu enchaînes directement vers un outil vidéo. Documente la focale et la lumière dans un fichier texte à côté, la vidéo te remerciera.
-## Micro réglages avant de figer une séquence
+### Étape 5 — Masques par zone
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
+Réduis le grain sur le visage si nécessaire ; renforce-le dans les zones sombres ou les ciels pour éviter le banding. Utilise des courbes sur le masque alpha du grain si ton outil le permet.
 
-Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
+### Étape 6 — Monochrome vs couleur
 
-Les transitions sonores masquent des coupures dures. Un whoosh discret, un impact de porte, un cut de musique sur le downbeat. Le son te permet de garder des images simples sans fondus IA douteux.
+Le grain couleur peut sembler plus « organique » ; le grain luminance seul est plus discret. Pour du portrait, luminance + très léger mélange couleur marche souvent bien.
 
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
+### Étape 7 — Vérification multi-écrans
 
-Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui harmonise des zones trop propres avec des zones trop sales. Commence léger, 8 mm virtuel fin, puis monte si ton écran est calibré froid. Sur un laptop consumer, le grain disparaît, donc tu en mets trop, puis sur un bon écran ça devient boueux. **Teste sur deux écrans** avant de valider.
+Laptop, téléphone, deuxième écran si dispo. Ajuste l’opacité ; note la valeur dans un preset.
 
-Le format carré historique Instagram n’est pas le même que le vertical TikTok. Le centre de gravité visuel monte en vertical. Place l’information importante dans le tiers supérieur, sinon le téléphone la mange sous le pouce du spectateur.
+### Étape 8 — Export master vs export web
 
-Le suréchantillonnage d’image n’est pas toujours ton ami. Plus de steps peuvent cristalliser des textures de peau en stuc. Cherche le palier où les pores redeviennent suggérés plutôt que dessinés. C’est souvent un peu avant le maximum que l’interface te propose fièrement.
+Master : PNG/TIFF avec grain intégré ou, si workflow pro, exports séparés (sans grain) + couche grain pour flexibilité. Web : variante légèrement moins granuleuse si la compression mange le détail.
 
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Le sharpening global est l’ennemi. Si tu veux du piqué, masque le visage et sharp très peu sur les textiles ou les détails éloignés. Jamais sur la peau au premier plan, sauf si tu cherches un look publicitaire années 2000 volontaire.
+### Étape 9 — Documenter le preset
 
-Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui harmonise des zones trop propres avec des zones trop sales. Commence léger, 8 mm virtuel fin, puis monte si ton écran est calibré froid. Sur un laptop consumer, le grain disparaît, donc tu en mets trop, puis sur un bon écran ça devient boueux. **Teste sur deux écrans** avant de valider.
+Nom du fichier overlay, opacité, mode de fusion, LUT utilisée. Ton futur toi refait la même série sans deviner.
 
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
+### Étape 10 — A/B aveugle rapide
 
-Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
+Exporte **deux** versions (avec / sans grain, ou grain A vs grain B), mets-les en plein écran, regarde à distance de « canapé » puis au zoom. Le grain doit survivre à la **lecture lointaine** sans casser la silhouette du sujet.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
-
 
 ### Table de décision rapide
 
-| Choix | Critère | Flux | SDXL |
-| --- | --- | --- | --- |
-| Portrait | peau et yeux | tester en priorité | LoRA énorme, très flexible |
-| Scène | objets multiples | souvent très fort | dépend du checkpoint |
-| Vitesse locale | VRAM | selon quant | optimisé DIY |
-| Post grain | contrôle fin | combine prompt + overlay | idem |
-| Vidéo next | image pilote propre | export PNG + meta | export PNG + meta |
-> Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.
+| Situation | Approche | Erreur fréquente |
+| --- | --- | --- |
+| Portrait peau | grain fin + masque visage | grain gros qui devient texture peau |
+| Paysage ciel | grain modéré anti-banding | oublier le banding avant grain |
+| Série 10 images | même preset sur toutes | grain différent par image |
+| Web social | variante moins forte | bloc MPEG visible |
+| Prep vidéo | grain cohérent plan à plan | grain qui nage après interpolation |
 
+> Le grain répond à une question simple : « est-ce que toutes les zones de mon image vivent dans le même monde matériel ? » Si non, le grain aide parfois à **mentir ensemble** sans alourdir le sujet.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+## Trench warfare : erreurs classiques
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+**Grain pour cacher un mauvais découpage.** Ça adoucit parfois le bord ; ça ne remplace pas une sélection propre ou une regénération.
 
-Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
+**Même intensité partout.** Le réel varie avec la densité ; le contrôle par zone vend mieux.
 
-Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la saturation sur le blanc des yeux, ajoute une micro ombre sous la paupière, évite le catchlight parfait en double symétrique. L’œil humain est légèrement imparfait, exploite ça.
+**Sharp après grain sans masque.** Halos visibles sur les contours du nez et des cheveux.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+**Négliger le bruit de compression** après coup. Teste upload privé ou export simulé.
 
-Les prompts qui listent vingt adjectifs esthétiques sans géométrie produisent des fonds d’écran. Remplace la moitié des adjectifs par des données physiques : distance, focale, hauteur de caméra, heure, matériau dominant.
+**Confondre grain et vignettage forcé.** Deux outils différents ; les combiner sans mesure donne un look « preset 2012 ».
 
-Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
+**Utiliser un overlay mal tiled.** Coutures visibles dans le ciel : préfère des textures loopées pro ou corrige la tile.
 
-Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
+**Oublier le profil colorimétrique à l’export.** sRGB vs Display P3 change la perception du grain après conversion ; garde une chaîne cohérente pour le web.
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
-Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
+**Grain pour « sauver » une image sur-exposée.** Tu ajoutes du bruit sur du crame : ça reste crame, avec du sable.
+
+Pour le mouvement caméra et la façon dont le grain interact avec la perception du réel en image : [mouvement caméra](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
 ## Liens utiles dans la série AI Studio
 
 - [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes)
 - [Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia)
 - [Comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia)
-- [Pourquoi mes vidéos IA ont l’air fake, et comment les rendre réalistes](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes)
+- [Pourquoi mes vidéos IA ont l’air fake (et comment les rendre réalistes)](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes)
 
-## Foire aux questions (FAQ)
+## FAQ
 
-**Je monte les steps à fond ?**
+**Je monte les steps à fond pour « plus de grain » ?**  
+Les steps poussés cristallisent souvent la texture en stuc ; le grain utile est souvent **post** ou une amorce légère en prompt.
 
-Tu cristallises les défauts. Cherche un palier, note le.
+**Grain seulement en prompt, suffisant ?**  
+Parfois oui pour une ambiance globale ; pour le contrôle par zone (visage vs fond), le post bat presque toujours le prompt seul.
 
-**SDXL checkpoint, lequel ?**
+**Quel overlay acheter ou utiliser ?**  
+Des boucles de grain scannées pro, ou les modules intégrés à Resolve / After Effects / Lightroom — l’important est la **tile** sans couture et une distribution crédible.
 
-Celui qui correspond à ton sujet réel, pas celui à la mode cette semaine.
+**LUT avant ou après grain ?**  
+Teste les deux sur une copie ; garde ce qui préserve le roll-off des peaux. Souvent LUT puis grain fin.
 
-**L’anamorphique en prompt marche ?**
+**Inpainting ou regénération après grain ?**  
+Si tu dois inpaint, fais-le **avant** la couche grain finale, sinon tu mélanges des structures incohérentes.
 
-Oui si tu décris bokeh, falloff, et souvent des imperfections d’objectif légères.
+**Le grain sauve-t-il le plastique ?**  
+Il aide à l’unification ; il ne remplace pas une lumière latérale et une guidance raisonnable.
 
-**Flux ou SDXL pour {topic} ?**
+**Anglais ou français dans le prompt pour le grain ?**  
+Les tags anglais « film grain, subtle grain » sont souvent efficaces ; teste sur ton modèle.
 
-Teste les deux avec le même prompt court. Garde le moteur qui ment le moins sur ton sujet précis.
+**Je veux du 8 mm super8.**  
+Particules plus grosses, jitter optionnel très léger en vidéo ; en still, évite d’exagérer sur le visage.
 
-**Inpainting ou regénération totale ?**
+**Pourquoi mon grain disparaît sur mobile ?**  
+Écran petit + luminosité auto + compression : augmente légèrement le contraste local du grain ou accepte une variante web plus marquée (avec prudence).
 
-Inpaint pour yeux ou mains, regénère tout seulement si la lumière globale est fausse.
+**C’est quoi la différence avec du « noise reduction » IA ?**  
+Le NR enlève du détail pour lisser ; tu travailles **à contre-courant** si tu rajoutes du grain après un NR agressif. Mieux : NR léger ou ciblé, puis grain maîtrisé.
 
-**Le grain seulement en prompt ?**
+**Je fais une série pour un court métrage.**  
+Verrouille un **document grain** (référence still + réglages) et applique-le à chaque export ; croise [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).
 
-Souvent non. Un overlay en post contrôle mieux les ombres.
+**Le grain remplace le contraste ?**  
+Non. Le contraste structure l’image ; le grain habille la surface. Sans contraste, le grain ressemble à du bruit sur du plat.
 
-**Je veux une ambiance sombre ?**
+**Je travaille en 32 bits / linear ?**  
+Le grain se comporte différemment selon l’espace colorimétrique et la courbe de transfert. Applique le grain souvent **après** la conversion vers l’espace d’affichage ou sur une pile dédiée, selon les bonnes pratiques de ton logiciel — l’important est de ne pas empiler cinq espaces différents sans t’en rendre compte.
 
-Garde une petite accroche lumineuse sur le visage ou un practical, sinon boue.
+**Blackmagic, Premiere, Photoshop : où commencer ?**  
+Là où tu grades déjà. Un seul endroit « maître » pour le grain évite la double couche invisible. Si tu grades dans Resolve et retouches dans Photoshop, décide lequel porte le **master grain** et synchronise.
+
+**Le générateur ajoute déjà du grain « sale ».**  
+Parfois c’est du bruit de compression ou d’upscale, pas du grain esthétique. Évalue : si le bruit est chromatique et bloc, nettoie ou regénère plutôt que d’empiler un overlay « cinéma ».
+
+**Je combine avec du halation / glow ?**  
+Ordre courant : halation douce sur les sources lumineuses, puis grain fin global pour lier. Inverse parfois utile si le glow adoucit trop les hautes : teste sur une copie.

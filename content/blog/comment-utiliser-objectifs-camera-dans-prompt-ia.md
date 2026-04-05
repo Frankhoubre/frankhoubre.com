@@ -5,187 +5,252 @@ category: "tutoriels"
 excerpt: "Focales, anamorphique, profondeur de champ, et erreurs classiques de compression de visage."
 thumbnail: "/images/blog/comment-utiliser-objectifs-camera-dans-prompt-ia/hero.webp"
 ---
-Tu es ici pour : Comment utiliser les objectifs caméra dans un prompt IA. Bien. On va éviter deux pièges tout de suite.
+Tu écris « cinematic lens » et tu obtiens un flou bizarre, un visage aplati, ou des mains longues comme des algues. La focale n’est pas une décoration, c’est une **décision de géométrie**. Quand tu la nommes correctement dans un prompt, tu donnes au modèle une échelle entre sujet, décor, et compression du visage.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Trois situations. **Pauline**, photographe à Strasbourg, voulait du « cinéma » sans chiffre : ses portraits avaient des épaules trop larges et des mains géantes jusqu’à ce qu’elle fixe **50 mm niveau œil**. **Youssef**, réalisateur amateur à Bruxelles, demandait de l’anamorphique partout : le bokeh ovale était joli sur une nature morte mais salissait les portraits. **Ingrid**, conceptrice à Oslo, oubliait la **distance sujet arrière-plan** : le flou ne suivait aucune loi physique, le cerveau criait collage.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+La longueur focale et son effet sur le champ et la perspective sont bien résumés sur [longueur focale](nf:https://en.wikipedia.org/wiki/Focal_length). Tu n’as pas besoin de devenir opticien, tu as besoin de **deux phrases** par image : focale approximative, distance approximative.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+## Langage : français dans la tête, tags en pratique
 
-Pour Comment utiliser les objectifs caméra dans un prompt IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+Tu peux rédiger ton intention en français sur une feuille, puis traduire en tags compacts pour le modèle : `35mm spherical, eye level, medium shot`. Beaucoup de checkpoints réagissent mieux aux termes anglais standardisés parce qu’ils ressemblent aux légendes de datasets photo. Ce n’est pas une obligation universelle, c’est une piste quand ton prompt français « beau » ne se traduit pas en image stable.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+## Famille de focales : que choisir quand
 
-La constance de palette sur plusieurs plans, c’est un LUT ou une courbe, pas un espoir. Exporte une référence, colle la sur le bord de ton écran, mate plan par plan. L’œil se fatigue vite, la référence non.
+**24 mm grand-angle.** Utile pour environnement, silhouette, action dans l’espace. Risque : mains au premier plan, nez proche de la lentille. À réserver aux plans où le visage n’est pas collé à la caméra.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+**35 mm polyvalent.** Classique intérieur, documentaire, dialogue en plan taille si la caméra n’est pas trop proche. Bon compromis pour beaucoup de scènes « naturelles ».
 
-Les reflets dans les yeux racontent la pièce. Un catchlight rectangulaire sur une scène « bougie seulement » ment. Harmonise la forme de la source avec le décor. Les petits détails de cohérence font taire le cerveau critique.
+**50 mm sobre.** Portrait mi-corps, compression douce du visage, moins de déformation que le grand-angle. Très bon point de départ pour éviter les mains monstrueuses.
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+**85 mm portrait.** Compression plus marquée, arrière-plan lointain flou, visage plus « ciné » en serré. Attention à ne pas demander un 85 mm sur une scène où tu décris un plan large, contradiction fréquente.
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+Pour la profondeur de champ cohérente avec la focale, [comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ) détaille les formulations utiles.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
-## Notes de plateau, détails qui changent tout
+> **Astuce pro :** si tu ne sais pas quoi mettre, commence par **35 mm ou 50 mm niveau œil**, puis varie une fois que la scène tient.
 
-La résolution intermédiaire est ton laboratoire. Travaille où tu peux itérer en dix minutes, pas en trois heures. Quand une séquence tient, upscaler ou regénérer haut a un sens. Sinon tu optimises un pixel parfait dans une scène fausse.
+## Cas pratiques : intérieur, extérieur, véhicule
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+**Intérieur étroit.** Commence 35 mm ou 50 mm, caméra reculée dans le texte, verticals droites si tu veux des murs crédibles. Évite 18 mm sauf si le sujet est loin et le visage petit dans le cadre.
 
-Les lumières multiples sans hiérarchie donnent un studio photo cheap. Choisis une key, une fill faible ou rien, peut être un rim. Trois sources fortes égales, c’est la mort de la profondeur. Écris qui domine en EV si tu peux, même grossièrement.
+**Extérieur rue.** 35 mm pour équilibre, 28 mm si tu veux plus d’architecture avec sujet moyen. Ajoute la position du soleil ou des nuages pour éviter un ciel HDR par défaut.
 
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
+**Intérieur voiture.** Reflets vitre, profondeur courte, mains volant : combo risqué. Passe 35 mm ou plus, trois quarts, mains partiellement hors champ, reflets flous.
 
-Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
+**Table conversation restaurant.** 50 mm ou 85 mm selon la distance table caméra, arrière-plan avec bokeh de lumières chaudes, distance explicite entre convive et rangée de tables derrière.
 
-Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la saturation sur le blanc des yeux, ajoute une micro ombre sous la paupière, évite le catchlight parfait en double symétrique. L’œil humain est légèrement imparfait, exploite ça.
+## Anamorphique versus sphérique
 
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+**Sphérique** : bokeh plus rond, chute de netteté plus « neutre » pour beaucoup de checkpoints.
 
-### Étape 1 : une phrase d’intention, puis la géométrie
+**Anamorphique** : bokeh souvent ovale, flare linéaire, chute de netteté caractéristique. À utiliser quand tu assumes ce look sur **tout le cadre**, pas seulement sur le mot « cinematic ».
 
-Avant les adjectifs, écris ce que la caméra doit montrer. Plan américain, plan taille, gros plan. Hauteur de caméra : niveau œil, légèrement en contre plongée, ou à hauteur de poitrine pour une tension douce.
+Le guide [comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia) évite les clichés et les contradictions.
 
-Ensuite seulement, ajoute l’émotion. L’émotion sans géométrie, les modèles la traduisent par des néons et des poses catalogue.
+## Hauteur et distance : compléter la focale
 
-**Test rapide :** si tu retires tous les adjectifs « cinematic », est ce que ton prompt tient encore debout ? Sinon, il était creux.
+Écris **eye level**, **slight low angle**, ou **high angle looking down** selon l’intention, pas seulement « dramatic angle ».
 
-### Étape 2 : lumière en trois lignes, comme un chef op
+Ajoute une phrase courte sur la distance : **subject two meters from camera**, **background wall six meters behind subject**. Même approximatif, ça aide à séparer les plans.
 
-Ligne A : source principale, taille apparente, couleur, direction. Exemple : fenêtre large nord, lumière douce, légèrement froide.
+Pour lier lumière et focale sans prompt creux, [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) complète cette page.
 
-Ligne B : fill ou absence de fill. Exemple : pas de fill, ombre dure sous le nez, contraste fort.
+## Erreurs fréquentes liées à l’objectif
 
-Ligne C : arrière plan. Exemple : pièce sombre, une lampe practical chaude au fond, bokeh large.
+Grand-angle + gros plan visage = déformation. **Change de focale** ou recule le sujet dans le texte.
 
-Tu viens de remplacer dix adjectifs vagues par une hiérarchie lisible.
+Focale longue + plan large extrême = contradiction. Un 85 mm ne « voit » pas une scène entière comme un 18 mm.
 
-### Étape 3 : objectif et champs, sans jargon inutile
+« Macro » sans intention : textures de peau surdéfinies, effet insecte. Réserve macro aux objets.
 
-Choisis une famille : 24 mm large, 35 mm polyvalent, 50 mm portrait sobre, 85 mm compression douce. Ajoute anamorphique seulement si tu assumes des ovales de bokeh et une chute de netteté caractéristique.
+Bokeh « creamy » sans distance : le modèle invente un pudding. Nomme la distance et la ouverture implicite via la focale et le plan.
 
-**Écris la distance sujet arrière plan** en une phrase courte. Même fausse au millimètre près, l’idée de profondeur aide le modèle à séparer les plans.
+Les tics de langage qui plastifient l’image sont listés dans [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle).
 
-### Étape 4 : matière et imperfections contrôlées
-
-Ajoute trois imperfection réelles : grain fin, poussière en suspension légère, micro texture de peau visible au zoom. Pas vingt. Trois.
-
-Puis ajoute deux interdits explicites : pas de peau porcelaine, pas de sharp global agressif, pas de catchlights symétriques parfaits si la scène est naturelle.
-
-### Étape 5 : personnage, fiche courte et stable
-
-Âge approximatif, vêtement ancré, coiffure réaliste, accessoire rare mais mémorable. Évite les listes de vingt traits. **Moins de traits, plus stables.**
-
-Si tu enchaînes plusieurs plans, garde la même fiche et change seulement le cadrage ou l’action.
-
-### Étape 6 : itération en trois passes
-
-Passe 1 : composition et lumière. Passe 2 : peau et tissus. Passe 3 : netteté et grain. Ne touche pas aux trois en même temps, sinon tu ne sauras pas ce qui a sauvé l’image.
-
-### Étape 7 : négatif utile, pas encyclopédique
-
-Quatre à huit négatifs précis battent trente négatifs génériques. Cible ce que ton modèle produit par défaut sur ton sujet : mains supplémentaires, dents fusionnées, texte illisible, horizon courbe.
-
-### Étape 8 : verrouillage
-
-Quand une image tient, note seed, note prompt final, note réglages critiques. Ton futur toi est un collaborateur impatient, il déteste le mystère.
-## Micro réglages avant de figer une séquence
-
-Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
-
-La résolution intermédiaire est ton laboratoire. Travaille où tu peux itérer en dix minutes, pas en trois heures. Quand une séquence tient, upscaler ou regénérer haut a un sens. Sinon tu optimises un pixel parfait dans une scène fausse.
-
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
-
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
-
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
-
-Le format carré historique Instagram n’est pas le même que le vertical TikTok. Le centre de gravité visuel monte en vertical. Place l’information importante dans le tiers supérieur, sinon le téléphone la mange sous le pouce du spectateur.
-
-Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
-
-Le storyboard, même grossier, te fait économiser des heures. Trois cases dessinées au stylo valent dix prompts aveugles. Tu sais où est la ligne d’horizon, où est le regard, où est la coupure. Le modèle ne devine pas ton plan suivant, tu dois le lui donner comme un cadre.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+### Tableau : focale, usage, risque
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+| Focale | Usage typique | Risque principal |
+| --- | --- | --- |
+| 18-24 mm | lieu, action large | visage déformé si proche |
+| 35 mm | intérieur, docu | encore des mains si trop près |
+| 50 mm | portrait mi-corps | peut sembler « neutre » |
+| 85 mm | serré, séparation fond | contradiction si plan large |
+| Macro | objets, détails | peau insecte sur visage |
 
-Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui harmonise des zones trop propres avec des zones trop sales. Commence léger, 8 mm virtuel fin, puis monte si ton écran est calibré froid. Sur un laptop consumer, le grain disparaît, donc tu en mets trop, puis sur un bon écran ça devient boueux. **Teste sur deux écrans** avant de valider.
+> **Astuce pro :** une ligne « spherical 35mm » vaut dix adjectifs « cinematic ».
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Exemple de bloc texte :
+
+```text
+35mm spherical lens, eye level, medium shot,
+subject 2 meters from camera, background shelves 4 meters behind,
+shallow depth of field, natural skin texture, single window key left
+```
+
+## Workflow en six étapes
+
+**Étape 1 :** choisis plan (large, américain, taille, serré).
+
+**Étape 2 :** choisis focale compatible avec la distance implicite du plan.
+
+**Étape 3 :** écris hauteur caméra.
+
+**Étape 4 :** écris distance sujet et distance arrière-plan.
+
+**Étape 5 :** ajoute lumière key fill rim en trois lignes courtes.
+
+**Étape 6 :** itère une seule variable si le résultat ment encore.
+
+### Itération guidée par la focale
+
+Si la géométrie du visage te plaît mais le décor est trop étroit, ne passes pas au 18 mm tout de suite. **Recule virtuellement** le sujet dans le texte en gardant le 35 mm, ou demande un plan américain au lieu d’un taille. Si tu passes au wide sans ajuster la distance, tu réintroduis la déformation.
+
+Si le sujet semble « aplati » contre le mur, ajoute une phrase sur la **profondeur de la pièce** et la distance caméra sujet, puis garde une focale moyenne. Souvent le modèle collait le sujet au mur faute d’indices d’espace.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+Pour calibrer l’œil sur la préparation de tournage réel, cette vidéo aide : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk).
 
-### Table de décision rapide
+## Carnet de focale personnel
 
-| Couche | Tu écris quoi | Erreur fréquente | Bon signal |
-| --- | --- | --- | --- |
-| Caméra | plan, hauteur, focale | seulement « cinematic » | tu visualises le cadre |
-| Lumière | key, fill, fond | « belle lumière » | tu sais où est la source |
-| Matière | grain, texture peau | 20 adjectifs | 3 défauts réels assumés |
-| Négatif | 4 à 8 cibles précises | liste encyclopédique | tu corriges un défaut mesuré |
-| Lock | seed + fichier txt | tout en tête | reproductible demain |
-> Le cinéma commence quand tu arrêtes d’expliquer et que tu montres une intention. L’IA ne remplace pas ça, elle accélère la matière première.
+Quand tu trouves une combinaison qui marche sur ton modèle, note-la comme une recette : `50mm + eye level + medium + distance 2m + window key left`. Au bout de dix recettes, tu as un **petit livre de focales** plus fiable que les listes internet copiées sans contexte. Partage ce carnet avec personne si tu veux garder un avantage compétitif, ou partage-le avec ton équipe si tu veux dormir la nuit quand quelqu’un reprend ton projet.
 
+## Guerre des tranchées : ce que les débutants ratent, et comment réparer
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+Tu listes cinq focales dans le même prompt. Le modèle triche. **Une focale** par image.
 
-Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
+Tu demandes shallow depth of field sur un plan large où tout doit être lisible. Contradiction. Assouplis le flou ou resserre le cadre.
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
+Tu copies « shot on 35mm » sans plan ni distance : ça devient un tag décoratif. Ajoute la géométrie.
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+Tu veux du wide pour « montrer la chambre » et tu cadres le visage en gros plan : choisis l’un ou l’autre.
 
-Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
+Tu ignores le **crop sensor** mental : certains modèles interprètent mal « équivalent 35mm full frame ». Teste avec et sans la mention full frame sur ton stack.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+Tu mélanges anamorphique et « perfect circle bokeh ». Choisis une famille d’optique.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Tu demandes un travelling latéral agressif en 85 mm sur un couloir étroit : la perspective n’a aucune chance. **Simplifie le décor** ou raccourcis le mouvement, ou passe sphérique 35 mm avec travelling plus court.
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
+Tu crois que « telephoto compression » remplace la phrase sur la distance. Les deux se renforcent. Sans distance, la compression devient un mot magique vide.
 
-Les prompts qui listent vingt adjectifs esthétiques sans géométrie produisent des fonds d’écran. Remplace la moitié des adjectifs par des données physiques : distance, focale, hauteur de caméra, heure, matériau dominant.
-Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+Tu oublies que le **cadrage vertical** change la lecture de la focale : en 9:16, un 35 mm proche du visage punit plus vite qu’en 16:9. Recadre ou allonge la focale en vertical si les épaules explosent hors cadre.
 
-## Liens utiles dans la série AI Studio
+> **Astuce pro :** si les mains sont toujours fausses, descends en 50 mm ou 85 mm et mets les mains hors champ une fois sur deux.
 
-- [Comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt)
-- [Comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia)
-- [Comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia)
-- [Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia)
+> **Astuce pro :** pour une scène dialogue, garde la même focale entre les deux personnages si tu veux un raccord classique, change la focale seulement si tu assumes un saut d’échelle narratif.
 
-## Foire aux questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
-**Comment décrire une nuit crédible ?**
+**Dois-je écrire la marque d’objectif ?**
 
-Source pratique proche, ombres profondes mais pas grises, reflets au sol si humide.
+Optionnel. Teste avec et sans. Certaines marques déclenchent des looks publicitaires lisses.
 
-**Pourquoi la lumière ne suit pas ?**
+**Full frame ou APS-C dans le prompt ?**
 
-Tu n’as pas nommé de source, seulement un mood. Décris fenêtre, lampe, heure, dureté.
+Ajoute seulement si tu vois une incohérence d’échelle répétée. Sinon garde le prompt léger.
 
-**Le style « film » suffit ?**
+**Comment éviter le nez trop grand en gros plan ?**
 
-Non. « Film » sans caméra et sans lumière, c’est un fond d’écran.
+Éloigne le sujet dans le texte, passe sur une focale plus longue, ou recadre en plan américain.
 
-**Mes visages fondent, que mettre dans le prompt ?**
+**Anamorphique sur tous les plans ?**
 
-Moins de beauté, plus de lumière latérale, mains hors champ si possible.
+Seulement si tu assumes flare et bokeh ovale partout. Sinon varie sphérique pour les inserts.
 
-**Mon prompt est long et moche, normal ?**
+**Le prompt doit-il mentionner l’ouverture ?**
 
-Non. Un prompt long est souvent un prompt qui se combat lui même. Raccourcis, hiérarchise, teste.
+Tu peux dire **wide aperture** ou **f/1.8 look** si tu veux du flou marqué, mais couple-le avec distance sujet arrière-plan pour éviter le flou aléatoire.
 
-**Anamorphique à tout va ?**
+**Pourquoi mon arrière-plan est net alors que j’ai mis 85 mm ?**
 
-Seulement si tu assumes bokeh ovale et falloff. Sinon tu ajoutes du flou sale.
+Peut-être plan trop large ou distance arrière-plan très faible dans le texte. Précise les mètres ou « very shallow depth » avec distance.
 
-**Les négatifs, j’en mets trente ?**
+**Comment nommer un zoom sans chiffre précis ?**
 
-Tu crées des interférences. Prends quatre négatifs qui ciblent tes défauts réels.
+Écris **zoom lens at 40mm** approximatif ou donne une fourchette courte, pas « zoom » seul.
+
+**Mes horizons se courbent avec le grand-angle ?**
+
+Réduis l’effet en demandant **straight verticals** ou en passant moins wide, ou corrige en post léger si la scène le permet.
+
+**Le 50 mm suffit-il pour tout ?**
+
+Souvent pour apprendre. Non si tu veux une géographie claire d’un lieu immense, là tu passes temporairement plus large puis tu reviens au portrait serré.
+
+**Comment aligner focale et mouvement caméra en vidéo ?**
+
+Garde la focale stable entre plans d’un même espace, change-la seulement pour marquer une rupture. Note la focale dans le fichier texte à côté du clip pour le monteur.
+
+**Le fish-eye a-t-il sa place en photoréalisme ?**
+
+Rarement pour du portrait crédible sans intention comique ou musicale assumée. Pour du réalisme, évite sauf si tu documentes un monde qui utilise réellement ce type d’optique.
+
+**Comment décrire un split diopter ou un focus pull ?**
+
+Les modèles image fixes peinent souvent sur deux plans de netteté contradictoires. Pour une image, choisis **un** plan de netteté principal. Pour une vidéo, décris un rack focus lent et garde le décor simple.
+
+**Dois-je mentionner le stabilisateur ou le steadicam ?**
+
+Seulement si tu enchaînes vers la vidéo et que ton outil comprend le mouvement. Sinon tu ajoutes du bruit sémantique. Préfère décrire l’amplitude : slow smooth dolly, handheld subtle.
+
+**Pourquoi mon 50 mm ressemble à du smartphone ?**
+
+Souvent lumière frontale dure, sharp global, et ciel HDR. La focale seule ne sauve pas un prompt esthétique contradictoire. Penche la key, baisse le sharp sur la peau, contrôle les hautes.
+
+**Comment tester rapidement trois focales ?**
+
+Même prompt socle, change uniquement `24mm`, `35mm`, `50mm` sur trois générations, garde plan et distance identiques. Compare les épaules, le nez, et la séparation sujet fond.
+
+**Les objectifs vintage changent-ils le rendu dans le prompt ?**
+
+Parfois, via corrélations dataset. Teste avec modération. Si le mot « vintage » lisse la peau, retire-le et décris flare, vignette légère, grain fin à la place.
+
+**Puis-je simuler un zoom optique pendant une prise vidéo ?**
+
+Si l’outil vidéo le permet, décris un **slow zoom in** plutôt qu’un changement de focale brutal. Les deux ne se comportent pas pareil en réel, les modèles confondent parfois.
+
+**Comment éviter que deux personnages aient des échelles différentes avec la même focale ?**
+
+Mentionne qu’ils sont **côte à côte** à la même distance de la caméra, ou donne une indication de hauteur relative. Sinon le modèle compresse l’un plus que l’autre.
+
+**La focale influence-t-elle la profondeur de champ seule ?**
+
+Non, l’ouverture et la distance comptent autant. Dans un prompt, la focale + distance + « shallow dof » forment un trio plus stable que « shallow dof » seul.
+
+**Dois-je apprendre les équivalents capteur ?**
+
+Utile si tu compares à ton expérience photo réelle. Sinon commence par des focales « plein format équivalent » explicites pour réduire l’ambiguïté.
+
+**Comment intégrer un objectif anamorphique sans flare ?**
+
+Demande **anamorphic lens, minimal flare, oval bokeh subtle**. Sinon le modèle peut ajouter des traits lumineux partout.
+
+**Pourquoi mon arrière-plan « saute » entre deux focales sur le même sujet ?**
+
+Tu as peut-être changé la distance sans t’en rendre compte dans le texte. Verrouille distance sujet et mur, change seulement la focale, observe.
+
+**Le prompt focal length suffit-il pour la vidéo ?**
+
+Souvent non : ajoute amplitude de mouvement, durée, et fidélité à l’image source si disponible. La vidéo révèle les incohérences spatiales que le still masquait.
+
+**Comment enseigner la focale à un client non technique ?**
+
+Montre trois images côte à côte 24, 35, 50 mm sur le même sujet. Demande laquelle « ressemble à une photo prise trop près du visage ». Le client comprend vite sans jargon, tu peux ensuite verrouiller la focale dans le brief signé.
+
+**Faut-il aligner focale et ratio d’image ?**
+
+Le ratio ne change pas la focale physique, mais il change ce que tu cadres. En vertical, une focale qui marchait en horizontal peut sembler plus agressive. Réévalue après recadrage.
+
+**Les extensions de champ par IA annulent-elles le choix de focale ?**
+
+Elles peuvent contredire la perspective si tu outrepasses les limites. Utilise l’extension pour petits ajustements, pas pour transformer un serré en plan large sans regénérer.
+
+**Comment noter les focales gagnantes dans un fichier partagé ?**
+
+Une ligne par victoire : date, sujet, focale, plan, distance, checkpoint, lien fichier image. Évite les dossiers « final_final » sans métadonnées.
+
+**La focale influence-t-elle la couleur ?**
+
+Indirectement via les corrélations dataset : certains styles « ciné » arrivent avec des focales longues dans les données. Si la couleur part en teal orange dès que tu mets 85 mm, corrige la lumière dans le prompt avant d’accuser la focale.

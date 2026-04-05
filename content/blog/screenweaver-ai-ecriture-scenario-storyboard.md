@@ -6,117 +6,79 @@ excerpt: "Pourquoi l’éclatement des fichiers tue vos projets IA, comment Scre
 thumbnail: "/images/blog/screenweaver-ai-ecriture-scenario-storyboard/hero.png"
 ---
 
-Tu connais ce moment. Il est deux heures du matin. Ton slugline est propre. Ta scène respire. Puis tu ouvres un cinquième onglet, un quatrième dossier, une troisième appli qui promet “l’IA miracle”. Le lendemain, personne ne lit ton PDF comme tu l’entendais. Les images ne collent plus aux dialogues. Ton personnage a trois visages différents selon le fichier. Ce n’est pas que l’IA est nulle. C’est que **ton histoire a été découpée en morceaux** qui ne se parlent plus.
+Il est deux heures du matin. Ta scène tient sur le papier. Puis tu ouvres le quatrième onglet, le troisième chat, le drive où traînent les refs, et le générateur d’images qui promet la lune. Le lendemain, ton PDF existe, mais **personne ne voit le même film** : le storyboard ne colle plus aux répliques, le personnage a trois visages selon le fichier, et l’IA a amplifié chaque maladresse de brief parce qu’elle n’a jamais eu le **contexte de la scène 12** — seulement un prompt orphelin copié depuis Slack.
 
-Ici, on parle de [ScreenWeaver](https://screenweaver.ai). Pas comme d’un jouet. Comme d’un poste de travail où le **scénario reste la colonne vertébrale**, et où storyboard, bible de continuité et workflows visuels restent **attachés aux scènes que tu as réellement écrites**. Si tu arrives de la pub, du clip, du court ou de la série, la logique est la même : **moins de rebriefings équivalent “on reprend depuis zéro”, plus de décisions qui traversent le projet sans se perdre**.
+Ici, on parle de [ScreenWeaver](https://screenweaver.ai) comme d’un **poste de travail** où le texte reste la colonne vertébrale : écriture pro, storyboard accroché aux sluglines, workflows visuels générés à partir du scénario plutôt que décousus dans cinq applis. L’outil se présente autour de **Write, See, Build** — écrire, voir le film en panneaux, construire des pipelines d’images ou de vidéo **indexés** sur ce que tu as réellement écrit. **Point d’honneur :** ScreenWeaver est annoncé en **bêta** ; les fonctionnalités et tarifs évoluent. Recoupe avec leur site, leur blog et le support pour tout ce qui est contractuel ou sensible. Je ne suis pas leur équipe ; je te donne une **grille de métier** qui reste vraie même quand un menu change de nom.
 
-Ce guide est une masterclass de terrain. Tu y trouveras trois scénarios débutants réalistes, une table de repères pour trancher vite, un workflow pas à pas avec le niveau de détail que j’exigerais d’un stagiaire en studio, une section “tranchée” sur les erreurs habituelles, puis une FAQ. J’assume un point avec toi : **je déteste le plastique**. Si un outil t’oblige à en produire, tu n’es pas obligé de le suivre aveuglément. L’idée, c’est de **câbler le sérieux de l’écriture pro** avec une couche visuelle qui sert la mise en scène, pas l’inverse.
+Ce guide mélange pourquoi l’éclatement des fichiers tue les projets IA, comment un outil type ScreenWeaver peut **recoller** intention et média, trois histoires de débutants, un workflow pas à pas, une tranchée d’erreurs, puis une **FAQ**. J’assume : **je déteste le plastique**. Si un flux te pousse vers le lisse, tu peux contrer par brief, par choix de modèle, et par post-traitement — comme ailleurs sur ce site.
+
+**Pourquoi la fragmentation fait si mal avec l’IA.** Chaque copier-coller entre un chat, un générateur et un tableur est une occasion de **perdre** : la température de couleur implicite, l’heure du jour, le costume du personnage, l’interdit « pas de néon ». L’IA ne « comprend » que ce qui est encore présent dans le contexte qu’on lui donne. Un outil qui rattache l’image à la slugline réduit le bruit de transmission — exactement comme une fiche de service en vrai prod.
+
+**Engagement.** Avant d’explorer chaque nœud du graphe, termine **une** séquence avec trois panneaux validés sur l’émotion et la géométrie. Les outils changent ; l’habitude de finir un cycle reste.
 
 ![Écrivain la nuit, lampe chaude, pages de scénario, ambiance grain et imperfect skin, même ton que la vignette d’en tête.](hero.png)
 
-## Ce que ScreenWeaver promet, en langage plateau
+## Ce que ScreenWeaver met sur la table (langage plateau)
 
-ScreenWeaver se présente autour d’une phrase simple : **Write, See, Build**. Écris comme dans une vraie cabine d’écriture. Vois le film via un storyboard **lié aux sluglines et aux beats**. Construis des pipelines visuels **pré-câblés à partir du contexte du scénario**, avec des nœuds modifiables, pas une boîte noire unique.
+**Write.** Formatage scénario pro, projets et pages — selon leur communication publique, le **noyau d’écriture** est pensé pour rester accessible gratuitement (projets illimités, exports PDF et Final Draft). Traduction : tu peux **installer une discipline d’écriture** sans que l’image te mette la pression du paywall dès la première ligne.
 
-Le pivot, c’est la fragmentation. Quand l’outline vit dans un doc, le scénario dans un autre, les refs dans un drive, les prompts dans un chat, tu recopies l’intention à chaque étape. ScreenWeaver veut **garder le scénario comme source de vérité** et faire voyager la continuité des personnages, lieux et objets avec le texte. Pour quelqu’un qui utilise déjà l’IA pour des images ou de la vidéo, c’est exactement le genre d’ossature qui évite le “génial sur un plan, catastrophique sur le suivant”.
+**See.** Storyboard assisté, descriptions de cadre, liens aux scènes — l’image n’est plus un fichier perdu : elle traîne avec **sa scène d’origine**. Pour une équipe qui génère déjà des images ou de la vidéo ailleurs, c’est une façon de réduire le « superbe sur un plan, faux sur le suivant ».
 
-### Repères rapides : gratuit payant, sans langue de bois
+**Build.** Graphes de workflow visuels générés à partir du contexte du scénario, nœuds modifiables, modèles interchangeables selon ce qu’ils annoncent (exemples type **Seedance 2** ou autres noms d’outils sur leur site — **ça change**). L’idée : tu restes **dans la boucle**, pas devant une boîte noire unique.
 
-| Besoin | Ce que tu peux viser | Ce que ça change pour toi |
+**Collaboration.** Ils mettent en avant commentaires, rôles, temps réel dans leur discours marketing. Pour toi, l’enjeu n’est pas le slogan : c’est d’éviter l’effet **téléphone arabe** quand l’IA multiplie les versions.
+
+### Gratuit / payant : sans langue de bois
+
+| Besoin | Ce que tu vises | Pourquoi c’est utile |
 | --- | --- | --- |
-| Forme pro, volume, export | **Noyau “Screenwriter” gratuit** selon leur discours marketing : projets et pages illimités, PDF et Final Draft | Tu peux **tester la discipline d’écriture** sans te sentir pris en otage par un essai de quatorze jours |
-| Storyboard généré, bible, research IA, workflows visuels | **Palier “Filmmaker”** (tarif annoncé sur le site à l’heure où j’écris, beta ouverte) | Tu passes d’un fichier texte à **un espace où l’image est indexée sur la scène**, pas sur un prompt orphelin |
-| Contrôle créatif | Graphe éditable, modèles interchangeables, imports de tes propres refs | Tu évites l’illusion du “one click film”, tu **gardes la main sur chaque nœud** |
+| Écriture sérieuse, volume, export | Noyau screenwriting gratuit (selon leur offre actuelle) | Tu poses les fondations sans te sentir otage |
+| Storyboard IA, bible, recherche, workflows | Palier type « Filmmaker » payant | L’image devient **outillée** sur le texte |
+| Contrôle créatif | Graphe éditable, refs importées | Tu évites le mythe du one-click |
 
-> **Regarde de l’œil d’un EP.** Un outil qui ne sait pas dire “cette image appartient à la scène 12, pas à une conversation Slack de mardi”, il te fera gagner du temps sur une image et t’en fera perdre trois sur la cohérence globale.
+> Regarde avec l’œil d’un EP : si une image ne peut pas dire « je viens de la scène 12 », tu vas gagner une image et en perdre trois en cohérence.
 
-Trois micro histoires, parce que la théorie sans visage, ça ne colle jamais longtemps.
+### Trois mini histoires
 
-### Scénario débutant A : “J’ai le prompt parfait, j’ai oublié le film”
+**A — « J’ai le prompt parfait, j’ai oublié le film. »** Léa attaque dans le générateur. Ses plans sont beaux isolément ; au montage, le sweat change de couleur et la forêt change d’essence. Avec une approche **scène d’abord**, elle ancre personnage et lieu dans la bible **pendant** l’écriture ; le board naît avec un ancrage de scène, pas avec un pavé poétique seul.
 
-Léa écrit un spot sombre pour une marque outdoor. Elle attaque directement dans un générateur d’images. Ses plans sont beaux isolément. Au montage, **le sweat du héros change de couleur**, la forêt passe du sapin au feuillus sans qu’on ait bougé, le cadrage “héroïque” devient comic book sans qu’elle sache pourquoi. Sa frustration est légitime.
+**B — « Je sais structurer, pas cadrer. »** Marc vient du théâtre. Il a honte de son storyboard tableur qu’il ne rouvre plus. Le lien slugline / panneau lui permet de **verrouiller** ce qui est juste, régénérer ce qui ment, importer une photo de lieu réel — il apprend le cinéma par la pratique sans lâcher la rigueur dramatique.
 
-Avec une approche type ScreenWeaver, **elle ancre d’abord le personnage et le lieu dans la bible** pendant qu’elle écrit la séquence. Quand elle ouvre le volet storyboard ou workflow, **chaque image naît avec un ancrage de scène**, pas seulement avec un pavé poétique dans un chat. Ce n’est pas magique. C’est **moins de dérive** parce que le contexte voyage avec le média.
+**C — « Petite équipe, gros chaos. »** Deux associés, deux vitesses de lecture, deux « versions officielles ». Un document unique avec commentaires réduit la dérive — surtout quand l’IA amplifie toute consigne floue.
 
-### Scénario débutant B : “Je suis fort en structure, faible en visuel”
+## Workflow terrain : phases 0 à 3
 
-Marc vient du théâtre. Il maîtrise les actes, les retournements, les silences. Mais quand il doit parler “wide / medium / close”, il se sent trahi par son vocabulaire interne. Il accumule des storyboards faits à la va vite dans un tableur, **puis il ne les rouvre plus** parce que la honte est trop grande.
+### Phase 0 — Laboratoire mental
 
-Là, l’intérêt d’un lien slugline / panneau est clair. **Il peut verrouiller ce qui est juste**, régénérer ce qui ment, importer une photo de référence de ses lieux réels. Il apprend le cinéma par la pratique, sans abandonner la rigueur dramatique. Pour un mentor, c’est le meilleur des deux mondes.
+Règle d’or : une séquence pilote, dix à quinze pages max pour apprendre le geste. Écris trois lignes de **contrat visuel** pour l’acte un : heure/météo par défaut ; deux interdits esthétiques ; une décision d’objectif / lumière dominante. Quand le moteur proposera du « propre mais mort », tu auras déjà une boussole.
 
-### Scénario débutant C : “Petite équipe, gros chaos”
+Ajoute une **ligne sonore par défaut** pour ton univers (ville dense, campagne humide, intérieur calme) — même si tu ne produis pas le son dans l’outil. Ça évite les panneaux « beaux mais silencieux dans ta tête » qui cassent au montage. Pour une chaîne vidéo plus loin, relie mentalement à [comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia).
 
-Deux associés, un producteur qui lit vite, une créa qui lit lentement. Chacun a sa version “officielle” du traitement. Ils perdent vingt minutes par jour à **synchroniser ce qui a déjà été validé**.
+### Phase 1 — Write
 
-ScreenWeaver met en avant **collab temps réel, commentaires, rôles** dans leur communication publique. L’important pour toi, ce n’est pas le slogan. C’est que **le document unique évite l’effet “téléphone arabe”**, surtout quand tu ajoutes une couche IA qui amplifie toute maladresse de brief.
+Structure séquences, beats, scènes comme pour un lecteur pro vendredi. Nomme les personnages comme des humains, pas « DÉTECTIVE A ». Remplis la bible au fil de l’eau : visage, garde-robe, motivation en une phrase — c’est la rampe de **continuité**. Exporte un PDF archive du jour même si tout est synchronisé : quelqu’un demandera « la version d’avant la note du producteur ».
 
-## Workflow terrain : écriture, storyboard, graphe, sans te saboter
-
-On descend dans le concret. Adapte les menus exacts à la version que tu as sous la main, l’esprit reste le même.
-
-### Phase 0 : installer le laboratoire mental (avant même de cliquer)
-
-**Fixe une règle d’or.** Une séquence pilote, dix à quinze pages max pour commencer. Pas tout le long métrage. Tu veux apprendre le geste avant de l’industrialiser.
-
-**Écris trois lignes de “contrat visuel” collées à ton acte un.**
-
-1. Heure et météo par défaut de ton univers.
-2. Deux interdits esthétiques (exemple : pas de néon, pas de peau lissée façon publicité dentifrice).
-3. Un objectif photo principal (exemple : anamorphique, lumière latérale dure, grain visible).
-
-Ça te servira quand le moteur proposera quelque chose de “propre mais mort”.
-
-### Phase 1 : Write, la donnée brute qui t’appartient toujours
-
-**Ouvre un projet neuf.** Structure d’abord **séquences, beats, scènes** comme tu le ferais si un lecteur pro allait poser ton pdf sur une table vendredi.
-
-**Nomme les personnages comme des humains, pas comme des placeholders.** Même si tu changes plus tard, “DÉTECTIVE A” t’invite à la paresse en visualisation.
-
-**Remplis la bible au fil de l’eau**, visages, garde robe, une phrase sur la motivation. Ce n’est pas du fan service. C’est **la rampe de lancement de ta continuité**.
-
-**Exporte un PDF “archive du jour”.** Oui, même si tout est sync. Parce qu’un jour quelqu’un demandera “tu as la version d’avant la note du producteur ?”. Tu souriras au lieu de pleurer.
-
-### Phase 2 : See, quand le texte devient cadre
+### Phase 2 — See
 
 ![Storyboard et préparation visuelle au feeling “vrai studio”, refs épinglées, mains dans le cadre, lumière du matin.](workflow-voir.png)
 
-**Choisis une scène courte, deux à trois beats maximum pour ton premier board.** Pas la poursuite entière.
+Choisis **une** scène courte, deux ou trois beats pour le premier board. Lis ton INT./EXT. à voix haute ; souligne les **verbes de mouvement** — ce sont des indices caméra gratuits. Avant le look, définis une **fonction dramatique** par panneau : révélation, mensonge, silence trop long. Ça évite les images décoratives.
 
-**Lis ton INT. ou EXT. à voix haute.** Souligne les verbes de mouvement. Ce sont **tes indices caméra gratuits**.
+**Si tu génères :** premier passage modeste en mouvement, lisibilité visages et mains ; deuxième passe sur la lumière, pas sur la netteté artificielle ; troisième sur une variante de **cadrage**, pas seulement de prompt poétique. Verrouille ce qui est vrai ; laisse vivre le reste sans guerre de religion sur chaque case.
 
-**Pour chaque panneau, définis une “fonction dramatique” avant le look.** Légende interne possible : “révélation”, “mensonge”, “silence trop long”. Ça évite les images décoratives.
+Astuce terrain : quand une image « sent l’IA » sans que tu saches pourquoi, ce n’est souvent ni la résolution ni le modèle — c’est une **lumière impossible**, une **peau sans histoire**, un **cadrage sans décision**. Corrige l’intention d’abord. Croise [comment décrire la lumière comme un directeur photo dans ton prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) et [comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia).
 
-**Si tu génères :**
-
-- **Premier passage**, reste modeste sur le mouvement, privilégie **lisibilité des visages et des mains**.
-- **Deuxième passage**, pousse la lumière, pas la netteté artificielle.
-- **Troisième passage**, teste une variante de cadrage, pas seulement une variante de prompt poétique.
-
-**Verrouille ce qui est vrai.** Laisse vivre le reste. Sinon tu reconstructs une guerre de religion sur chaque panneau.
-
-> **Astuce terrain.** Quand une image “semble IA” sans que tu saches pourquoi, ce n’est souvent ni la résolution ni le modèle. C’est une **lumière impossible**, une **peau sans histoire**, un **cadrage qui ne raconte aucune décision**. Corrige l’intention, pas seulement les adjectifs.
-
-### Phase 3 : Build, le graphe comme carnet de rushes
+### Phase 3 — Build
 
 ![Petit lieu de post production, veille sur un film, références physiques sur le bureau, écran en arrière plan, ambiance humaine.](workflow-build.png)
 
-**Ouvre le workflow généré à partir de la scène.** Regarde comment le contexte descend de **source scène** vers **direction de cadre**, puis **image**, puis **vid** éventuelle.
+Ouvre le workflow généré depuis la scène. Observe comment le contexte descend de **source scène** vers direction de cadre, puis image, puis vidéo éventuelle. **Un nœud à la fois** : changer cinq curseurs d’un coup, c’est la recette pour perdre la cohérence.
 
-**Ne touche pas à cinq paramètres d’un coup.** Change **un nœud**, observe, documente. Les débutants explosent la cohérence en “optimisant” trois curseurs en même temps.
+Pour un nœud de direction, pense DP : distance focale implicite, hauteur de caméra, qualité d’air, contraste — pas « belle image ». Pour l’image, garde les **refs personnage** à portée (certaines interfaces permettent de mapper un personnage : utilise-le pour éviter le clone inquiet). Pour la vidéo, commence **mouvement minimal** ; le spectaculaire peut monter au montage. Nomme les exports avec slugline et version : `SEQ02_INT_COFFEE_V03` bat `final_final_vrai.mp4`.
 
-**Pour un nœud de direction de cadre**, pense comme avec un directeur photo humain. Tu n’écris pas “belle image”. Tu écris **distance focale implicite, hauteur de caméra, qualité d’air, contraste**.
+Les noms de modèles sur leur site (ex. **Seedance 2** pour du scénario vers multi-plans vidéo) sont des **exemples** qui vieillissent. La méthode qui reste : **scène d’abord, média ensuite**.
 
-**Pour un nœud image**, garde les refs de personnage à portée. **Si ton outil mappe @personnage**, utilise le. C’est la différence entre “visage stable” et “clone inquiet”.
-
-**Pour un nœud vidéo**, commence par **mouvement minimal**. Un plan qui respire vaut mieux qu’un travelling qui casse la géométrie. Tu ajoutes le spectaculaire au montage, pas toujours dans la génération pure.
-
-**Nomme tes exports** avec slugline et version. `SEQ02_INT_COFFEE_V03.mp4` bat `final_final_vraiment.mp4` à chaque fois.
-
-Les noms “Nano Banana” ou “Seedance 2” apparaissent sur leur site comme **exemples** de modèles dans l’interface. Traduction pour toi : **ça change avec le temps**. Ce qui ne change pas, c’est la méthode : **scène d’abord, média ensuite**.
-
-### Les trois prompts “still cinema” utilisés pour les visuels de cet article
-
-Même si tu travailles dans ComfyUI, Forge ou un pipeline maison, garde **une base stable** et ne change que le cœur de la scène.
+### Les trois prompts « still cinema » pour tes propres tests hors ScreenWeaver
 
 ```text
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, écrivain seul la nuit, lampe de bureau chaude, pages de scénario et crayon, pluie sur la fenêtre en bokeh, fatigue authentique, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
@@ -127,104 +89,90 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 ```
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, petite suite de post de nuit, lampe pratique, présence d’une timeline floue à l’écran non lisible, pellicules et tirages sur table, concentration humaine, natural skin texture, subtle imperfections, film grain, realistic color grading, pas d’holgrammes, pas d’effets futuristes --ar 16:9
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, petite suite de post de nuit, lampe pratique, présence d’une timeline floue à l’écran non lisible, pellicules et tirages sur table, concentration humaine, natural skin texture, subtle imperfections, film grain, realistic color grading, pas d’hologrammes, pas d’effets futuristes --ar 16:9
 ```
 
-### Vidéo : ce qu’il faut regarder, lentement
+### Vidéo de repère (hors ScreenWeaver)
 
-Pour calibrer le passage **entre intention écrite et découpage visuel**, cette vidéo vaut une vraie session de notes : [storyboard et découpage, repères pour débutants](https://www.youtube.com/watch?v=238eypcdOzU)
+Pour l’attention au découpage case par case : [storyboard et découpage pour débutants](https://www.youtube.com/watch?v=238eypcdOzU)
 
-Ce n’est pas une pub pour ScreenWeaver. C’est un exercice d’attention. Regarde **comment chaque case change l’information donnée au spectateur**, comment une même ligne de dialogue vit différemment selon le cadrage. Quand tu reviens dans ton outil, **tu juges tes panneaux comme un réalisateur**, pas comme un concours de jolis fonds.
+## Trench warfare : erreurs fréquentes
 
-## Trench warfare : ce que les débutants se trompent, et comment corriger
+**Traiter le scénario comme un long prompt.** Tu passes plus de temps sur des annotations IA que sur une réplique trop longue. **Fix :** réécris la scène ; le média suivra une meilleure base.
 
-### Erreur 1 : traiter le scénario comme un long prompt
+**Multiplier les styles entre panneaux sans raison narrative.** **Fix :** document look (palette, grain, objectif implicite) ; varie le **cadrage**, pas la « saison » du monde.
 
-**Symptôme.** Tu passes plus de temps à polir des annotations “pour l’IA” qu’à vérifier si la scène tient dramatiquement.
+**Confondre continuité et copie conforme.** **Fix :** liste ce qui est contractuel (cicatrice, objet) vs ce qui peut respirer (boucle d’oreille sous un autre angle).
 
-**Fix.** **Réécris une réplique trop longue** avant de regénérer une image. Le média suivra un texte plus propre sans que tu burns des crédits.
+**Sous-briefer la scène, sur-briefer les effets.** **Fix :** une ligne de désir ou de peur dans le synopsis de scène.
 
-### Erreur 2 : multiplier les styles entre deux panneaux sans raison
+**Négliger l’audio dans la tête.** **Fix :** trente secondes d’ambiance en lisant le board.
 
-**Symptôme.** Ton board ressemble à quatre films différents collés avec de la colle forte.
+**Vouloir le grade final au storyboard.** **Fix :** valider d’abord la **fonction** du panneau, puis une passe « vente » si besoin.
 
-**Fix.** **Verrouille un look document** : palette, grain, objectif implicite. Puis **varie uniquement le cadrage**, pas la “saison” de ton monde.
+**Oublier que la bêta bouge.** **Fix :** captures d’écran de ce qui marche, exports locaux, patience sur les bugs.
 
-### Erreur 3 : confondre “continuité” et “copie conforme”
+## Où ça rejoint ta pratique IA Studio
 
-**Symptôme.** Tu refuses toute variation organique, alors que le réel bouge légèrement entre deux plans.
+ScreenWeaver ou pas, les muscles restent les mêmes : **script utile à la génération**, **univers cohérent**, **structure de film**. L’outil propose de les tenir dans une table ; tu peux aussi les tenir avec une discipline de dossiers — tant que le **texte** reste la source de vérité.
 
-**Fix.** Note **ce qui est contractuel** (tatouage, cicatrice, objet distinctif) versus **ce qui peut respirer** (boucle d’oreille vue sous un autre angle). **Dis le noir sur blanc dans la bible**.
+- Brief écrit avant média : [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia)  
+- Enchaînement global : [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste)  
+- Dérive visuelle entre plans : [comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia)  
+- Montage mental : [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)  
+- Prompts image : [comment écrire un prompt cinematic ultra réaliste pour l'IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia)
 
-### Erreur 4 : sous brief la scène, sur brief les effets
+## Transparence sur l’outil
 
-**Symptôme.** Trois phrases sur la brume, aucune sur ce que le personnage veut.
+ScreenWeaver est en **bêta** : fonctionnalités qui arrivent par vagues, bugs possibles, marketing à recouper avec ton usage. Ce qui est intéressant dans leur posture publique : **gratuit pour l’écriture sérieuse**, paiement quand tu veux l’image **outillée** — ça aligne un peu les incitations. Pour le juridique ou la confidentialité, lis leurs conditions et contacte leur support (ex. **hello@screenweaver.ai** selon leur site au moment où j’écris — vérifie).
 
-**Fix.** **Ajoute une ligne de désir ou de peur dans le synopsis de scène**. Les images deviennent moins décoratives instantanément.
+## FAQ
 
-### Erreur 5 : négliger l’audio dans la tête
+**ScreenWeaver remplace-t-il Final Draft ?**  
+Ils se positionnent en alternative crédible avec export `.fdx` et PDF. Si ton studio est 100 % Final Draft, teste un **aller-retour** sur une séquence courte avant de migrer toute une writers’ room.
 
-**Symptôme.** Tu validates des plans “réalistes” qui tueraient au montage parce que le son imaginaire n’existait pas.
+**Puis-je rester sur la partie gratuite ?**  
+Oui pour le **noyau screenwriting** selon leur offre actuelle ; le payant concerne storyboard assisté, recherche avancée, workflows visuels, etc.
 
-**Fix.** **Écoute une ambience bruitée en lisant le board**. Même trente secondes. Ton œil change.
+**L’IA écrit-elle le film à ma place ?**  
+Dans l’esprit qu’ils décrivent, l’IA assiste (recherche, cohérence, itération visuelle) ; **l’auteur reste responsable**.
 
-### Erreur 6 : vouloir la version finale au storyboard
+**Comment éviter trois visages pour un même personnage ?**  
+Bible utilisée, références attachées, validation progressive, panneaux verrouillés quand ils sont justes.
 
-**Symptôme.** Tu bloques la prod parce qu’un panneau n’est pas “grade”.
+**Puis-je importer mes propres images ?**  
+D’après leur communication : refs, croquis, rendus externes pour nourrir le board.
 
-**Fix.** **Deux niveaux de validation**, storyboard de vérité fonctionnelle, puis storyboard de vente. Ne mélange pas les critères.
+**Offline ?**  
+Ils annoncent une **écriture offline** avec synchronisation au retour via une installation type appli depuis le navigateur. Garde toujours une **copie export** locale si tu es prudent.
 
-## Où ça te rejoint dans ton parcours IA Studio
+**Ça vaut le coup pour une pub de quinze secondes ?**  
+Si c’est simple, peut-être pas. Si tu enchaînes versions légales / formats / continuité produit, **oui vite**.
 
-Tu as déjà des guides ici pour **écrire des scripts utiles à la génération**, pour **tenir un univers visuel cohérent**, et pour **structurer une vidéo comme un film**. ScreenWeaver, vu depuis mon siège, c’est **l’outil qui essaye de faire tenir ces compétences dans une seule table**, sans te voler le texte.
+**Premier test honnête ?**  
+Une scène, **trois panneaux**, une itération de graphe, puis un montage rapide sur bruitage ou musique. Si la lecture tient, continue ; sinon reviens au texte avant d’acheter.
 
-- Si ton problème est le **brief écrit** avant tout média, commence par [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia).
-- Si ton problème est **l’enchaînement global**, recoupe avec [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste).
-- Si tu **derves visuellement entre les plans**, serre la vis avec [comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia).
-- Enfin, pour le **montage mental avant la boîte à outils**, rappelle toi [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
+**ScreenWeaver et Seedance 2 ?**  
+Leur site met en avant une intégration **Seedance 2** pour du passage scénario → séquences multi-plans ; vérifie l’état actuel de l’intégration et les prérequis sur leur documentation.
 
-Ce n’est pas une liste de corvées. C’est **une grille de lecture**. ScreenWeaver ou pas, ces muscles restent les mêmes.
+**Comment ne pas sombrer dans le plastique ?**  
+Même consigne que partout sur AI Studio : lumière plausible, grain modéré, prompts caméra concrets — voir [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique).
 
-## Transparence honnête sur l’outil lui même
+**Je suis seul, sans équipe : ça sert ?**  
+Oui si tu souffres de la **dispersion des fichiers** ; le gain est organisationnel autant que visuel.
 
-ScreenWeaver est en **beta**. Ça veut dire : fonctionnalités qui arrivent par vagues, petits bugs de jeunesse possibles, promesses marketing à recouper avec ton usage réel. Ce que j’aime dans leur posture publique, c’est **l’accent mis sur le gratuit pour l’écriture sérieuse** et le paiement **quand tu veux l’image outillée**. Ça aligne les incentives : tu peux **constituer une biblio de scénarios propres** sans pression, puis décider si tu industrialises.
+**Les workflows remplacent-ils ComfyUI ?**  
+Ce sont des philosophies différentes : ici le graphe est **attaché au scénario**. Tu peux combiner les deux mondes si tu exportes des briefs propres.
 
-Je ne remplace pas leur support. Si ton cas est juridique, contractuel ou de confidentialité forte, **lis leurs conditions et écris hello@screenweaver.ai**.
+**Je suis auteur, pas technicien : par où commencer ?**  
+Écris une scène parfaite **sur le plan dramatique** avant d’ouvrir le volet image. Puis un seul panneau par beat ; accepte la laideur des premiers cadres comme apprentissage, pas comme jugement sur ta valeur.
 
-## Foire aux questions
+**Comment documenter pour un producteur externe ?**  
+PDF scénario + export storyboard + une page « décisions visuelles verrouillées » (LUT, grain, interdits). Même hors ScreenWeaver, ce trio évite les malentendus.
 
-**ScreenWeaver remplace t il Final Draft ?**
-
-Pour l’écriture, ils se positionnent comme alternative crédible avec export Final Draft et PDF. Si tu vis dans un studio 100 % Final Draft, teste **un aller retour export** sur une séquence courte avant de migrer tout un writers’ room.
-
-**Est ce que je peux rester seulement sur la partie gratuite ?**
-
-Oui côté **noyau screenwriting** selon leur offre actuelle. Tu ne paies **que si** tu veux storyboard assisté, recherche doc, workflows visuels avancés, etc.
-
-**Est ce que l’IA écrit à ma place ?**
-
-Non dans l’esprit qu’ils décrivent. L’IA est présentée comme **assistante** recherche, cohérence, itération visuelle. **L’auteur reste responsable**.
-
-**Comment éviter trois visages pour un même personnage ?**
-
-**Bible utilisée**, références attachées, validation progressive, et **verrouillage** des panneaux qui sont justes. La technologie aide, la discipline fait le reste.
-
-**Puis je importer mes propres images ?**
-
-Oui d’après leur communication : **refs, croquis, rendus externes** pour nourrir le board.
-
-**Offline ?**
-
-Ils annoncent **écriture offline** avec sync au retour via installation “app like” depuis le navigateur. Garde toujours **une copie export** locale si tu es parano, c’est sain.
-
-**Ça vaut le coup pour une pub de quinze secondes ?**
-
-Si la pub est simple, peut être que non. Si tu enchaînes **plusieurs versions légales**, régions, formats, et que la continuité produit **parle à la marque**, alors oui, **très vite**.
-
-**Quel est le premier test honnête que je devrais faire ?**
-
-**Une scène, trois panneaux, une itération de graphe**, puis **montage rapide** sur musique ou bruitage. Si la lecture tient, continue. Si ça se délite, reviens à ton texte avant d’acheter quoi que ce soit.
+**Décision finale ?**  
+ScreenWeaver ne fera pas le film à ta place. Il peut réduire la distance entre ce que tu écris et ce que tu montres. Dans un océan de contenus interchangeables, **la colonne vertébrale** et la **cohérence** restent un avantage — outil ou pas.
 
 ---
 
-**Décision finale.** ScreenWeaver ne fera pas le film à ta place. Il peut **réduire la distance** entre ce que tu écris et ce que tu montres. Dans un monde qui inonde les écrans de **contenus interchangeables**, celui qui maîtrise **la colonne vertébrale** et la **cohérence** finit par prendre le dessus. À toi de jouer.
+À toi de jouer : une scène, trois panneaux, une preuve sonore, une date dans le nom de fichier. Le reste est de la répétition honnête.

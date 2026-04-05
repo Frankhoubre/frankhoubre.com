@@ -5,187 +5,212 @@ category: "tutoriels"
 excerpt: "Cadrage, résolution, négatifs utiles, inpainting et itérations sans tout casser."
 thumbnail: "/images/blog/comment-eviter-visages-deformes-generation-ia/hero.webp"
 ---
-Tu es ici pour : Comment éviter les visages déformés en génération IA. Bien. On va éviter deux pièges tout de suite.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Un visage déformé n’est pas une fatalité ni une preuve que « l’IA ne sait pas ». C’est un signal que le problème est mal posé : trop de contraintes contradictoires, pas assez de pixels sur la zone critique, ou un angle que le modèle tente de deviner au lieu de recevoir une instruction claire.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+Quand tu travailles pour un client, un visage raté coûte plus cher qu’un décor raté. Le public pardonne parfois une chaise bizarre ; il ne pardonne presque jamais une bouche qui fond. Priorise donc la géométrie du visage dans ton ordre de contrôle qualité, même si tu dois simplifier le décor. C’est presque toujours un **mauvais compromis** entre résolution, angle, complexité du prompt, et surcharge de détail. Les modèles ont des zones sensibles : yeux, bouche, dents, oreilles, mains près du visage. Ton travail consiste à **réduire la pression** sur ces zones avant de cliquer cinquante fois au hasard.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+Ce guide liste des gestes concrets : cadrage, lumière, résolution de travail, négatifs ciblés, inpainting, et moments où il vaut mieux changer d’angle que forcer.
 
-Pour Comment éviter les visages déformés en génération IA, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+Tu peux l’utiliser comme checklist avant chaque session : cinq cases à cocher (cadrage, lumière, résolution, négatifs, plan B angle). Si une case manque, tu acceptes volontairement un risque plus élevé sur le visage.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+Le vocabulaire « qualité ultime » autour de l’image générée n’aide pas à diagnostiquer une oreille manquante. Ici, on nomme des **symptômes** et des **leviers**, pas des jugements de valeur sur ton talent.
 
-Les reflets dans les yeux racontent la pièce. Un catchlight rectangulaire sur une scène « bougie seulement » ment. Harmonise la forme de la source avec le décor. Les petits détails de cohérence font taire le cerveau critique.
+## Pourquoi le visage casse en premier
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+Le cerveau humain est **spécialisé** dans la lecture des visages. Une légère asymétrie naturelle passe. Une asymétrie incohérente entre les deux yeux, une bouche qui fond dans la joue, ou une dent qui fusionne avec la lèvre déclenche le rejet immédiat. Tu es un critique sévère sans formation, parce que ton espèce a passé des millénaires à lire des regards.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+Les générateurs optimisent des statistiques globales. Quand tu pousses trop de détail, trop de style, ou un angle difficile, la distribution statistique se **casse** localement sur le visage. D’où l’intérêt de simplifier le problème.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Pour stabiliser l’identité sur une série, [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant) reste la référence complémentaire : moins de traits contradictoires, plus d’ancrage répétable.
 
-Les séquences dialogue en IA demandent des plans de réaction. Même si tu n’as pas d’acteur réel, pense coupe, contre coupe, silence. Le montage porte le dialogue, pas un seul plan qui parle pendant trente secondes.
+## Angles et cadrage : le levier gratuit
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
-## Notes de plateau, détails qui changent tout
+**Face caméra** avec une lumière douce latérale est souvent plus stable que **profil complet** ou **trois quarts extrême**. Si tu n’as pas besoin du profil, ne le demande pas. Si tu en as besoin pour le récit, prévois un **chapeau**, une **mèche**, ou une **ombre** qui simplifie la zone problématique. Ce n’est pas tricher : c’est du cadrage de plateau.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Le **gros plan extrême** révèle les erreurs de peau et de bouche. Recule d’un cran de cadrage : plan américain ou poitrine. Tu gagnes en stabilité et tu perds peu en émotion si la lumière et le regard tiennent.
 
-Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
+Pour que le style global ne sabote pas les traits, [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia) aide à séparer look graphique et lecture du visage.
 
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
+## Résolution, guidance, et checkpoints
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+Travaille à une résolution où le visage a assez de pixels pour exister, mais pas tant que le modèle invente des micro structures. Si tu es trop bas, les yeux deviennent des taches. Si tu es trop haut trop tôt, la surdéfinition transforme la peau en grille.
 
-Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
+**Guidance** trop haute fige des traits impossibles. Baisse par paliers. **Checkpoints** orientés « beauty » ou « fantasy » peuvent déformer les proportions réalistes. Teste une base plus neutre sur le même prompt court.
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+Le choix du moteur importe. [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes) encourage un test A B honnête sur **ton** angle et **ton** éclairage.
 
-Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+## Lumière et ombres du visage
 
-### Étape 1 : une phrase d’intention, puis la géométrie
+Une key latérale avec ombre sous le nez lisible structure le volume. Une lumière frontale dure aplatit puis fait **fondre** les transitions sous les yeux quand le modèle cherche du contraste. Pour du naturel, [comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia) donne des repères de fenêtre et de fill.
 
-Avant les adjectifs, écris ce que la caméra doit montrer. Plan américain, plan taille, gros plan. Hauteur de caméra : niveau œil, légèrement en contre plongée, ou à hauteur de poitrine pour une tension douce.
+Les catchlights doivent correspondre aux sources. Un reflet rectangulaire sur une scène « bougie seule » ment. Harmonise ou simplifie.
 
-Ensuite seulement, ajoute l’émotion. L’émotion sans géométrie, les modèles la traduisent par des néons et des poses catalogue.
+Les ombres sous les yeux trop **vectorielles** donnent un look maquillage 3D. Demande des transitions douces, une micro variation de couleur dans les cernes, pas une bande dure. Les joues ont des couches, pas des calques.
 
-**Test rapide :** si tu retires tous les adjectifs « cinematic », est ce que ton prompt tient encore debout ? Sinon, il était creux.
+La **symétrie parfaite** du visage est rare chez les humains. Une légère asymétrie crédible peut aider à éviter le mannequin. Par contre, des yeux de tailles différentes ou une bouche décalée de façon incohérente cassent l’image : là, tu n’es plus dans l’asymétrie naturelle, tu es dans l’erreur.
 
-### Étape 2 : lumière en trois lignes, comme un chef op
+## Expression et performance
 
-Ligne A : source principale, taille apparente, couleur, direction. Exemple : fenêtre large nord, lumière douce, légèrement froide.
+**Neutre** ou **légère** expression est plus stable que rire ou cri au premier essai. Si tu veux une émotion forte, obtiens d’abord une structure faciale stable en expression calme, puis pousse l’émotion par img2img ou inpainting avec une force modérée.
 
-Ligne B : fill ou absence de fill. Exemple : pas de fill, ombre dure sous le nez, contraste fort.
+Le **regard caméra** versus **regard hors champ** change la pression sur les yeux. Le hors champ peut cacher une asymétrie, mais si tu montres trop de blanc des yeux sans raison, le résultat part en caricature.
 
-Ligne C : arrière plan. Exemple : pièce sombre, une lampe practical chaude au fond, bokeh large.
+## Âge, proportions, et « morphing » involontaire
 
-Tu viens de remplacer dix adjectifs vagues par une hiérarchie lisible.
+Les très jeunes et les très âgés ont des proportions que certains checkpoints rendent mal : joues trop lisses ou trop marquées, yeux trop grands. Si ton sujet est sensible, utilise des références textuelles **mesurées** : « adulte », « quarante ans environ », plutôt qu’une pile d’adjectifs.
 
-### Étape 3 : objectif et champs, sans jargon inutile
+Quand tu mélanges « enfant » et « détail extrême », tu augmentes le risque de proportions animées. Simplifie le décor et la lumière avant d’ajouter du détail sur le visage.
 
-Choisis une famille : 24 mm large, 35 mm polyvalent, 50 mm portrait sobre, 85 mm compression douce. Ajoute anamorphique seulement si tu assumes des ovales de bokeh et une chute de netteté caractéristique.
+## Mains, cheveux, accessoires
 
-**Écris la distance sujet arrière plan** en une phrase courte. Même fausse au millimètre près, l’idée de profondeur aide le modèle à séparer les plans.
+Les **mains près du visage** multiplient les erreurs. Éloigne les mains, mets les hors champ, ou floute légèrement l’avant plan. Les **lunettes** ajoutent reflets et géométrie fine : angle de caméra où le reflet ne montre pas un décor impossible.
 
-### Étape 4 : matière et imperfections contrôlées
+Les **cheveux** sur le visage demandent une transition propre. Si le modèle mélange mèche et peau, change de coiffure dans le prompt ou recadre.
 
-Ajoute trois imperfection réelles : grain fin, poussière en suspension légère, micro texture de peau visible au zoom. Pas vingt. Trois.
+## Workflow
 
-Puis ajoute deux interdits explicites : pas de peau porcelaine, pas de sharp global agressif, pas de catchlights symétriques parfaits si la scène est naturelle.
+### Étape 1 : géométrie du plan
 
-### Étape 5 : personnage, fiche courte et stable
+Plan, focale, hauteur de caméra, direction du regard. Retire les adjectifs « cinematic » si la géométrie disparaît avec eux.
 
-Âge approximatif, vêtement ancré, coiffure réaliste, accessoire rare mais mémorable. Évite les listes de vingt traits. **Moins de traits, plus stables.**
+### Étape 2 : lumière en trois lignes
 
-Si tu enchaînes plusieurs plans, garde la même fiche et change seulement le cadrage ou l’action.
+Key, fill, fond. Une phrase chacune.
 
-### Étape 6 : itération en trois passes
+### Étape 3 : génération à résolution de labo
 
-Passe 1 : composition et lumière. Passe 2 : peau et tissus. Passe 3 : netteté et grain. Ne touche pas aux trois en même temps, sinon tu ne sauras pas ce qui a sauvé l’image.
+Itère vite. Choisis la meilleure structure de visage avant beauté.
 
-### Étape 7 : négatif utile, pas encyclopédique
+### Étape 4 : zoom yeux bouche
 
-Quatre à huit négatifs précis battent trente négatifs génériques. Cible ce que ton modèle produit par défaut sur ton sujet : mains supplémentaires, dents fusionnées, texte illisible, horizon courbe.
+Rejette tôt les images où les yeux ne partagent pas la même géométrie. Vérifie aussi la **cohérence des paupières** : une paupière qui coupe l’iris de façon différente de l’autre côté est un défaut fréquent avant même que la bouche ne bouge.
 
-### Étape 8 : verrouillage
+### Étape 5 : inpainting ciblé
 
-Quand une image tient, note seed, note prompt final, note réglages critiques. Ton futur toi est un collaborateur impatient, il déteste le mystère.
-## Micro réglages avant de figer une séquence
+Yeux ou bouche seulement si le reste tient. Masque doux, prompt court.
 
-Le contraste n’est pas la saturation. Monter les couleurs pour cacher une image plate, ça donne une pub télé années 90. Travaille d’abord la courbe : noirs qui ne tombent pas en boue, hautes lumières qui ne crament pas la peau. Quand la courbe tient, la saturation a besoin de beaucoup moins.
+### Étape 6 : upscale tardif
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
+Quand les traits sont stables.
 
-Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
+### Étape 7 : sélection rapide avec critères
 
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
+Sur un batch, élimine d’abord tout ce qui a une **erreur de géométrie faciale**, même si la lumière est belle. Ensuite seulement compare l’esthétique. Sinon tu retombes sur une image séduisante mais fausse que tu essaieras de sauver pendant une heure.
 
-Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
+### Étape 8 : plan B angle
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
+Si trois itérations honnêtes échouent sur un profil, change l’angle ou le storytelling : montrer le personnage dans un miroir, derrière une vitre, en silhouette. Le récit peut porter l’absence de profil parfait.
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+```text
+50mm eye-level medium close-up, single soft window key camera left.
+Adult face, relaxed expression, eyes open toward lens, natural asymmetry.
+Natural skin texture, subtle pores, no beauty retouch.
+Negative: deformed eyes, melted mouth, fused teeth, extra fingers near face, plastic skin, watermark, text.
+```
 
-La résolution intermédiaire est ton laboratoire. Travaille où tu peux itérer en dix minutes, pas en trois heures. Quand une séquence tient, upscaler ou regénérer haut a un sens. Sinon tu optimises un pixel parfait dans une scène fausse.
+```text
+35mm medium shot, subject turned 30 degrees, hat brim shadows upper eyes slightly (stylized but stable).
+Soft fill from opposite side, low contrast shadows on cheeks.
+Negative: profile collapse, duplicated ears, warped jaw, cartoon features.
+```
+
+## Négatifs utiles
+
+Cible ce que **ton** modèle produit souvent : yeux de tailles différentes, bouche trop basse, dents fusionnées. Évite une liste de trente négatifs qui se contredisent.
+
+Quand tu ajoutes « perfect face » ou « symmetrical face » comme positif, tu peux paradoxalement forcer une **sur régularisation** qui ressemble à une poupée. Préfère des formulations physiques : deux yeux ouverts, bouche fermée, lèvres humides naturelles, paupières relaxed.
+
+## Sommeil, fatigue visuelle, et relecture
+
+Après trente minutes sur des visages, tu acceptes des erreurs que tu verrais en dix secondes le matin. Fais une pause ou change de tâche. Le contrôle qualité visage est **fatigant** ; ce n’est pas de la procrastination que de dormir sur une sélection.
+
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Les transitions IA « cinéma » sont souvent des transitions de démo. Le vrai cinéma coupe. Si tu utilises un fondu IA entre deux images différentes, tu mélanges deux géométries. Préfère une coupe sèche avec un son qui enchaîne. L’oreille fait la continuité, pas le fondu.
+## Références, contrôle, et limites des outils
 
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
+Si ton pipeline permet une **image de référence** pour l’identité, garde la stable et bien cadrée. Si la référence est floue ou de profil alors que tu génères face, tu mélanges des signaux. Documente le poids de la référence : trop fort fige parfois des défauts de la source, trop faible ne tient pas l’identité.
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
+Les outils de pose peuvent aider, mais une pose extrême sur un modèle statique peut **forcer** des torsions faciales impossibles. Préfère des poses sobres pour les premiers essais.
 
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
+## Cas difficiles : foule, miroir, écran
+
+**Foule.** Plus il y a de visages, plus la probabilité d’erreur monte. Réduis le nombre de visages nets, éloigne la foule, ou floute les arrière plans.
+
+**Miroir.** Le reflet doit correspondre au sujet. Si tu n’as pas besoin du miroir, retire le. Si tu en as besoin, simplifie l’angle pour que le reflet montre moins de géométrie.
+
+**Écrans et téléphones** devant le visage : surfaces réfléchissantes et texte illisible. Souvent plus simple de les retirer du prompt.
+
+## Post léger
+
+Tu peux corriger une légère asymétrie des sclères ou une micro ombre sous une paupière en retouche locale. Tu ne sauveras pas une mâchoire liquide par du sharp. **Sépare** les problèmes de géométrie des problèmes de grade couleur.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+### Table de diagnostic visage
 
-### Table de décision rapide
+| Défaut | Cause fréquente | Premier levier |
+| --- | --- | --- |
+| Yeux différents | gros plan + CFG haut | recule, baisse guidance |
+| Bouche fondue | key frontale dure | key latérale |
+| Dents en fusion | sourire large demandé | bouche presque fermée |
+| Oreille manquante | profil extrême | trois quarts modéré |
+| Main sur joue | contact peau peau | éloigne la main |
 
-| Couche | Tu écris quoi | Erreur fréquente | Bon signal |
-| --- | --- | --- | --- |
-| Caméra | plan, hauteur, focale | seulement « cinematic » | tu visualises le cadre |
-| Lumière | key, fill, fond | « belle lumière » | tu sais où est la source |
-| Matière | grain, texture peau | 20 adjectifs | 3 défauts réels assumés |
-| Négatif | 4 à 8 cibles précises | liste encyclopédique | tu corriges un défaut mesuré |
-| Lock | seed + fichier txt | tout en tête | reproductible demain |
-> Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.
+> Un visage crédible tient souvent par un cadrage plus sage et une lumière plus claire, pas par vingt adjectifs.
 
+Si tu livres une série d’images pour une campagne, garde une **référence visage** interne : une capture du personnage validé. Chaque nouvelle image se compare à cette référence avant validation. Sinon tu obtiens « le même personnage » avec cinq mâchoires différentes à la fin de la semaine.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+## Éthique courte : ressemblance et stéréotypes
 
-Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
+Évite les prompts qui ciblent des personnes réelles par nom pour obtenir une copie. Évite aussi les chaînes de stéréotypes « ethniques » réducteurs : décris la lumière sur la peau, la coiffure, les vêtements, le contexte, sans transformer l’identité en liste de clichés. Ce n’est pas seulement une question morale : les clichés produisent souvent des visages **génériques** et instables parce que le modèle mélange des motifs contradictoires.
 
-Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
+## Trench warfare
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+**Changer de seed en boucle sans changer le prompt.** Tu tires à la roulette.
 
-La limite d’un outil n’est pas une insulte personnelle. Si un modèle ne tient pas les mains, contourne. Si un autre ne tient pas les visages de profil, change l’angle. Le studio professionnel choisit l’outil pour la tâche, pas l’inverse.
+**Demander « hyper realistic » sans géométrie.** Le modèle compense par du plastique.
 
-La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière dure sans direction. Dis d’où vient la source, sa taille, sa couleur. Fenêtre nord, néon vert en contre, lampe de bureau tungstène. Même si le modèle simplifie, ton cerveau de spectateur cherche une hiérarchie lumineuse. Sans hiérarchie, tu obtiens ce plat gris qui crie l’IA.
+**Profil + sourire large + mains + lunettes** au premier essai. Tu empiles les risques.
 
-Les ambiances cuisine ou bar avec mille reflets demandent des angles prudents. Si tu simplifies une rangée de bouteilles en un mur sombre, tu gagnes en crédibilité. **Réduis la complexité** quand le modèle montre des limites.
+**Sharp global sur une bouche déjà fragile.** Tu cristallises l’erreur.
 
-La fatigue visuelle du spectateur augmente avec les néons saturés. Si ton monde est coloré, offre des respirations neutres entre deux pics. Le contraste de saturation structure l’acte, comme une scène de jour après une nuit.
+**Croire qu’un upscaler « répare » une mâchoire liquide.** L’upscale extrapole ; il ne reconstruit pas une anatomie cohérente.
 
-Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
-Pour calibrer l’œil, regarde cette référence : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc)
+La vallée de l’[étrange](nf:https://en.wikipedia.org/wiki/Uncanny_valley) décrit ce rejet quand une figure humaine est presque convaincante mais pas tout à fait. En génération, tu la traverses souvent quand les traits sont presque bons mais les micro incohérences s’accumulent. Réduis une couche de complexité à la fois pour revenir sur le rivage du « presque vrai mais stable ».
 
-## Liens utiles dans la série AI Studio
+Quand tu montres une image à un non initié, observe **où** il regarde en premier. Si ce n’est pas le regard du personnage alors que l’histoire le demande, ton cadrage ou ton contraste guide mal l’attention, et les défauts faciaux deviennent secondaires mais réels.
 
-- [Comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant)
-- [Comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia)
-- [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes)
-- [Comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia)
+## Frequently Asked Questions (FAQ)
 
-## Foire aux questions (FAQ)
+**Je dois toujours du face caméra ?**
 
-**Pourquoi la lumière ne suit pas ?**
+Non, mais c’est plus stable pour commencer. Introduis les angles difficiles quand la base tient. Si ton histoire exige un profil, prévois du temps supplémentaire ou un plan de secours stylistique.
 
-Tu n’as pas nommé de source, seulement un mood. Décris fenêtre, lampe, heure, dureté.
+**L’inpainting détruit la lumière : pourquoi ?**
 
-**Le style « film » suffit ?**
+Force trop haute ou masque trop large. Réduis les deux. Copie la partie du prompt qui décrit la key dans le prompt d’inpainting pour ré ancrer la lumière.
 
-Non. « Film » sans caméra et sans lumière, c’est un fond d’écran.
+**Les fixeurs externes ?**
 
-**Mes visages fondent, que mettre dans le prompt ?**
+Utiles en post ciblé. Ils ne remplacent pas un mauvais cadrage. Utilise les comme dernier kilomètre, pas comme première ligne.
 
-Moins de beauté, plus de lumière latérale, mains hors champ si possible.
+**Pourquoi les yeux « brillent » trop ?**
 
-**Mon prompt est long et moche, normal ?**
+Catchlights durs et saturation élevée sur le blanc. Adoucis localement. Vérifie aussi si le modèle ajoute un contour noir trop marqué autour de l’iris : c’est un signal fréquent de faux regard.
 
-Non. Un prompt long est souvent un prompt qui se combat lui même. Raccourcis, hiérarchise, teste.
+**Les dents ?**
 
-**Anamorphique à tout va ?**
+Souvent : demander moins de sourire, ou bouche presque fermée, ou ombre sur les dents. Évite les rangées complètes visibles en très gros plan au début.
 
-Seulement si tu assumes bokeh ovale et falloff. Sinon tu ajoutes du flou sale.
+**Résolution minimale pour un portrait ?**
 
-**Les négatifs, j’en mets trente ?**
+Assez pour que chaque œil ait une structure, pas seulement une tache. Teste sur ton outil. Si tu es trop bas, monte la résolution avant d’ajouter du détail dans le prompt.
 
-Tu crées des interférences. Prends quatre négatifs qui ciblent tes défauts réels.
+**Plusieurs visages ?**
 
-**Je dois tout mettre dans un seul prompt ?**
+Réduis le nombre, augmente la distance entre sujets, ou traite chaque visage en inpainting séparé si nécessaire. Sinon, accepte que le second plan soit légèrement moins parfait que le premier.
 
-Pour Comment éviter les visages déformés en génération IA, sépare parfois en deux passes : lumière d’abord, détail ensuite.
+**La vidéo après ?**
+
+Fige le visage en image pilote stable, mouvement modeste, amplitude basse. Si le visage pulse, reviens à l’image fixe : la vidéo ne corrige pas une géométrie déjà fausse. Pour du dialogue, préfère des plans courts et des réactions plutôt qu’un seul long plan qui expose les micro dérives.

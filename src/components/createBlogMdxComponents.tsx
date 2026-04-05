@@ -118,13 +118,24 @@ export function createBlogMdxComponents(
     ),
     li: (props) => <li className="leading-relaxed" {...props} />,
     a: ({ href, children, className, ...rest }) => {
-      const external = href?.startsWith("http");
+      const nofollowPrefix = "nf:";
+      const rawHref = href ?? "#";
+      const isNofollowExternal =
+        rawHref.startsWith("nf:http://") || rawHref.startsWith("nf:https://");
+      const resolvedHref = isNofollowExternal
+        ? rawHref.slice(nofollowPrefix.length)
+        : rawHref;
+      const external = resolvedHref.startsWith("http");
       if (external) {
         return (
           <a
-            href={href}
+            href={resolvedHref}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={
+              isNofollowExternal
+                ? "nofollow noopener noreferrer"
+                : "noopener noreferrer"
+            }
             className={`${baseLink} ${className ?? ""}`}
             {...rest}
           >
@@ -133,7 +144,11 @@ export function createBlogMdxComponents(
         );
       }
       return (
-        <Link href={href ?? "#"} className={`${baseLink} ${className ?? ""}`} {...rest}>
+        <Link
+          href={resolvedHref}
+          className={`${baseLink} ${className ?? ""}`}
+          {...rest}
+        >
           {children}
         </Link>
       );

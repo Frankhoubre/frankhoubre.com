@@ -6,95 +6,82 @@ excerpt: "Découper un prompt comme un brief de tournage, verrouiller le context
 thumbnail: "/images/blog/prompt-chatgpt/hero.png"
 ---
 
-Tu ouvres ChatGPT. Tu veux du pro. Tu écris trois mots molles. Et tu attends un miracle. Voilà le drame quotidien.
+Tu ouvres une conversation avec ChatGPT, chez OpenAI, dans le navigateur ou une appli dédiée. Tu veux du pro. Tu écris trois mots vagues. Tu attends qu’il lise dans tes pensées. Puis tu le blâmes quand la sortie est creuse. Le problème rarement nommé : **un prompt, c’est un brief**, pas une prière. Comme en tournage, si tu n’écris pas le cadre, la lumière dominante et ce qui est hors cadrage, quelqu’un d’autre décide à ta place — sauf qu’ici « quelqu’un », c’est la moyenne statistique du modèle.
 
-Un prompt ChatGPT, ce n'est pas une formule magique trouvée sur un fil Reddit. C'est une **consigne lisible**, avec un résultat testable, et une façon de corriger sans tout jeter. Ici, je te donne la même grille que j'utilise quand je briefe une image, un script, ou une structure de scène, sauf que le « chef op », c'est le modèle. Si tu traites ChatGPT comme un stagiaire intelligent qui ne devine pas ton intérieur, tu gagnes du temps. Si tu le traites comme une boule de cristal, tu perds des heures.
+Ce guide t’explique ce qu’est un prompt utile avec ChatGPT : rôle court, tâche mesurable, contraintes, format de sortie, itération **une variable à la fois**. On relie ça à ton usage créatif (brief image, découpage, script, liste de négatifs pour la diffusion) sans promettre que le texte remplace un humain en responsabilité. ChatGPT est un **assistant de langage** : il assemble des formulations plausibles à partir de ton contexte visible ; il ne « sait » pas ton projet s’il n’est pas écrit, et il peut **halluciner** des faits si tu lui demandes du chiffré ou de l’historique sans garde-fou. L’interface peut afficher des suggestions ou des réponses rapides : à toi de garder le **brief** comme source de vérité, pas la première phrase confortable du modèle.
 
-Ce guide est pour toi si tu débutes, si tu crées des visuels ou des vidéos avec l'IA, et si tu veux que le texte qui sorte serve vraiment ton film, ta pub, ou ton storyboard. On parle champ lexical de la prod, pas jargon inutile.
+Trois silhouettes. **Sarah**, freelance social, veut un brief image pour trois plans ; elle obtient du vent parce qu’elle a écrit « inspire-toi d’Instagram ». **Marc**, étudiant ciné, veut un découpage ; il reçoit huit plans impossibles parce qu’il n’a pas dit qu’il n’a pas de travelling. **L’agence K**, pitch lundi, laisse ChatGPT être complaisant ; ils gagnent du confort et perdent la critique. Les workflows ci-dessous corrigent ça avec la même rigueur qu’un **tableau de tournage** : colonnes, livrables, risques.
 
-### Le visuel d'ouverture, généré comme une image de plateau
+## Ce que ChatGPT reçoit vraiment (sans magie)
 
-Avant de plonger dans le texte, voilà l'esprit que je veux pour ce sujet : une scène crédible, humaine, lumière practical, grain discret, pas une illu « tech » avec des néons partout. Si tu génères cette image en local avec Flux, SDXL, ou un flux équivalent, reprends la structure suivante mot pour mot, puis remplace uniquement la scène entre crochets.
+**Tokens, pas intentions.** Le modèle traîne une fenêtre de contexte : texte visible, instructions système éventuelles, messages récents. Ce qui est **vieux** dans la conversation peut être partiellement oublié ou compressé mentalement par le modèle. Les contraintes critiques (format 16:9, interdiction de néon, ton sec) : **réinjecte-les** quand tu changes de sujet ou passes de la rédaction à la critique.
 
-```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, dim writers room at night, laptop open with sticky notes, single warm desk lamp on face and hands, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
-```
+**Rôle, tâche, contraintes.** Le rôle (« tu aides un créateur solo ») calibre le ton. La tâche (« livre un tableau cinq lignes ») calibre la forme. Les contraintes (« pas de jargon juridique, pas de moraline ») calibrent les bords. Si tu mélanges tout en un poème, le modèle trie et jette.
 
-> Un prompt image et un prompt ChatGPT, c'est la même obsession : nommer le cadre, la lumière, ce qui compte au premier plan, et ce qui est interdit. Si tu n'écris pas ces décisions, un autre goût les prendra à ta place.
+**Format explicite.** « Explique » produit de la prose. « Donne **cinq puces** », « **un tableau** Plan / Action / Risque », « **deux paragraphes** puis **six questions** de contrôle » produisent de la densité utile. Le format est un **compresseur d’intention**.
 
-## Concepts clés : ce que « prompt » veut vraiment dire
+**Exemples courts.** Un mini-exemple de ligne de prompt image ou de réplique cadrée vaut dix adjectifs. Ce n’est pas une consigne de plagier : c’est une **ancre de forme**.
 
-ChatGPT lit des tokens, pas tes intentions cachées. Quand tu écris « fais mieux », le modèle invente une définition de « mieux ». Quand tu écris « **mieux** signifie : moins d'adjectifs, plus d'actions, trois fois plus court », tu viens de donner un critère mesurable.
+Pour le lien avec les prompts visuels purs, voir [comment écrire un prompt cinematic ultra réaliste pour l'IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia) et [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle).
 
-Trois couches utiles. La couche **rôle**, brève, pour caler le ton et le niveau. La couche **tâche**, avec livrable explicite. La couche **contraintes**, techniques ou créatives, selon ton projet. Si tu mélanges tout en un pavé poétique, le modèle fera du tri et oubliera le tiers.
+**Itération disciplinée.** Quand tu changes trois paramètres entre deux messages (ton, longueur, structure), tu ne sais pas ce qui a amélioré la réponse. Note mentalement : « ce tour-ci, je ne change que la **longueur** ». C’est la même logique qu’en génération d’image : une variable à la fois.
 
-Le contexte n'est pas une option. « Tu es un expert » sans préciser l'univers, c'est du décor vide. « Tu aides un débutant à écrire un prompt image pour une scène intérieure, lumière fenêtre nord, objectif 35 mm » : là, tu ancreras le vocabulaire.
+**Connecteurs visuels.** Tu peux demander explicitement : « pour chaque plan, donne une ligne **copiable** pour un générateur d’image type SDXL/Flux » avec les champs caméra / lumière / matière / interdits. ChatGPT devient alors un **traducteur** entre ton intention narrative et un format technique — sous réserve que tu valides le résultat dans le moteur réel.
 
-L'itération doit être **une variable à la fois**. Tu changes la structure, ou le ton, ou la longueur, pas les trois d'un coup. Sinon tu ne sauras jamais ce qui a sauvé la réponse.
+**Limites honnêtes.** Les capacités exactes (navigation web, analyse de fichiers, longueur max, modèles disponibles) **changent** selon ton abonnement et la date. Ce qui reste stable, c’est la méthode : brief clair, format, validation humaine.
 
-Les exemples dans ta consigne, même miniatures, valent dix paragraphes d'adjectifs. Un exemple n'est pas une contrainte de copie, c'est un repère de forme.
+### Trois scénarios débutants (avec pivot)
 
-Enfin, ChatGPT n'est pas ton chef de projet. Toi, tu décides. L'outil propose, tu vérifies, tu coupes, tu réinjectes.
+**Brief image trois plans.** Avant : « fais un truc créatif pour une marque café ». Après : public, tonalité, interdits visuels, ratio, puis « tableau : Plan, Intention, Lumière, Focale, Mouvement, Erreur à éviter ». Le livrable devient une **check-list** que tu peux coller dans un autre outil.
 
-Une nuance de terrain : la fenêtre de contexte, même large, n'est pas une mémoire sentimentale. Si tu enchaînes vingt tournures différentes dans la même discussion, le modèle **priorise** ce qui est récent et visible. Les contraintes critiques, **réinjecte les** quand tu changes de sujet, ou quand tu passes de « écriture » à « critique ». Sinon tu crois qu'il « sait » encore que tu voulais du 35 mm, alors que la conversation a dérivé sur le casting.
+**Découpage avec contraintes terrain.** Avant : « découpe ma scène ». Après : lieu réel, deux comédiens, pas de travelling ; « **deux** propositions max, une phrase de justification par plan, signale où le son sauve une coupe ».
 
-Un pont direct avec ton pipeline image et vidéo : utilise ChatGPT pour fabriquer des **négatifs utiles**, quatre à huit lignes, ciblées sur ce que ton modèle local fait mal chez toi. Tu lui colles une sortie ratée décrite en mots, tu lui demandes « qu'est-ce qui sonne faux pour un œil ciné » puis « traduis en négatifs précis ». Tu repasses ça dans ComfyUI ou ton UI de diffusion. Ce n'est pas de la triche, c'est du **couplage** entre langage et rendu.
+**Pitch storyboard.** Avant : une version « smooth ». Après : « liste **trois incohérences** possibles entre les trois images clés, puis corrige le texte ». Tu forces une passe **critique**, pas complaisante.
 
-### Scénario débutant 1 : la freelance qui doit rendre un brief client lundi midi
+## Workflow pratique : le prompt comme mini-contrat
 
-Sarah écrit des tournées court format pour marques modestes. Elle n'a pas de réalisateur sous la main. Elle veut que ChatGPT lui sorte un **brief image** pour trois plans : produit, main, ambiance restaurant. Elle tape « inspire toi Instagram ». Résultat : phrases creuses, hashtags mentaux, aucune charpente lumière.
+### Étape 0 — Quatre lignes de cadre
 
-Ce qu'elle change. Elle ouvre la conversation avec cinq lignes fixes : public, tonalité, interdits visuels, taille de sortie, et vocabulaire de caméra qu'elle accepte. Puis elle demande un tableau : plan, intention, lumière, focale, mouvement, erreur à éviter. **Le livrable n'est plus une « inspo », c'est une check list de tournage.** Elle gagne trois heures et son prestataire IA image arrête de lui renvoyer du néon gratuit.
+- **A** — Qui tu es dans l’histoire utilisateur (solo, étudiant, créa).  
+- **B** — Ce que tu livres vraiment (script, brief, critique, négatifs).  
+- **C** — Niveau de langue et de précision.  
+- **D** — Interdits de sortie (clichés, jugements sur concurrents, etc.).
 
-### Scénario débutant 2 : l'étudiant en ciné qui apprend le découpage sans se noyer
+Si tu utilises des **instructions personnalisées** (Custom instructions) ou un **GPT** personnalisé dans l’écosystème OpenAI, investis-y ce cadre : tu ne réécris pas un roman à chaque message.
 
-Marc veut comprendre comment passer d'une scène dialogue à des plans. Il pose une question large à minuit. ChatGPT lui balance huit plans génériques, dont quatre impossibles avec son budget.
+### Étape 1 — Nommer le livrable + format
 
-Ce qu'il change. Il colle trois lignes de contexte : lieu réel disponible, deux comédiens, pas de travelling. Il demande **deux propositions** de découpage, pas dix, et une justification en une phrase par plan. Il force le modèle à signaler où le son sauve une coupe. D'un coup, la réponse redevient pédagogique au lieu d'encyclopédique.
+Évite « améliore ». Préfère « réécris en **40 mots max** » ou « donne **A/B** avec une phrase de conséquence ».
 
-### Scénario débutant 3 : la petite agence qui prépare un storyboard oral avant pitch
+### Étape 2 — Coller la matière première
 
-Deux associés doivent présenter une promesse visuelle. Ils utilisent ChatGPT pour aligner un **fil narratif** entre trois images clés. Le piège : ils acceptent la première version « smooth » sans contradiction.
+Un brouillon laid bat un vide absolu. Si tu n’as pas de texte, donne trois références **observables** (lumière, rythme), pas trois titres de films sans précision.
 
-Ce qu'ils changent. Ils ajoutent une consigne tardive : « liste trois incohérences possibles entre les trois images, puis corrige le texte ». ChatGPT devient critique, pas complaisant. **La présentation tient** parce que quelqu'un a simulé la question du client au fond de la salle.
+### Étape 3 — Passe « risque »
 
-## Workflow pratique : le prompt ChatGPT comme un mini contrat
+« Qu’est-ce qui pourrait rendre cette sortie **inutilisable** pour un tournage réel ? » Puis correction ciblée. Tu obtiens un garde-fou gratuit.
 
-### Étape 0 : pose le cadre en quatre lignes, avant toute poésie
+### Étape 4 — Figer la version utile
 
-Ligne A : qui tu es dans l'histoire utilisateur, créateur solo, étudiant, chef de pub. Ligne B : ce que tu livres vraiment, script, brief image, liste d'erreurs, critique. Ligne C : niveau de langue et de précision. Ligne D : ce qui est **interdit** dans la sortie, clichés, morale, jugement sur un concurrent.
+Copie la meilleure sortie dans un fichier, date, note ce qui a marché dans ta consigne.
 
-Si tu utilises des instructions personnalisées ou un GPT custom, c'est ici que tu dois investir. Tu ne réécris pas un roman à chaque message, tu poses la loi une fois.
+### Étape 5 — Boucle courte : une variable
 
-### Étape 1 : nomme le livrable avec un format
+Message suivant : plus court, plus technique, autre point de vue — **pas les trois**. Compare deux versions comme deux prises.
 
-Évite « explique ». Prefère « donne **cinq puces** », ou « **un tableau** colonnes : Plan, Action, Risque », ou « **deux paragraphes**, puis **six questions** de contrôle ». Le format force une densité utile.
+### Étape 6 — Export vers l’outil visuel
 
-### Étape 2 : injecte la matière première
+Demande une **version minimaliste** : lignes actionnables seules. Puis, si besoin, « copier-coller prompt image » avec une ligne caméra, lumière, matière, interdits. Tu transformes la conversation en **fiche technique**.
 
-Colle ton brouillon même laid. ChatGPT travaille mieux sur du concret imparfait que sur du vide. Si tu n'as pas de texte, donne trois références de lumière ou de rythme, pas trois films cultes sans précision.
+### Étape 7 — Revue « client pressé »
 
-### Étape 3 : demande une passe « risque »
+« Adopte le rôle d’un client qui dit non trois fois. » Tu récupères des objections courtes et tu révises. Jeu de rôle bête, efficace en solo tard le soir.
 
-Une question simple : « Qu'est-ce qui pourrait rendre cette sortie inutilisable pour un tournage réel ? » Puis une passe correction. Tu obtiens un **garde-fou** sans payer un consultant.
+### Étape 8 — Passerelle vers la vidéo
 
-### Étape 4 : fige la version utile
+Si tu enchaînes vers un pipeline vidéo, demande une **liste de sons** attendus par plan (ambiance, effets, musique indicative) et une **durée indicative** par beat. Ça aligne le texte avec [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) sans que tu réécrives tout au montage.
 
-Tu copies la meilleure sortie dans un fichier texte, tu nommes la date, tu notes ce qui a marché dans ta consigne. Ton futur toi est impatient, il déteste deviner.
-
-### Étape 5 : boucle courte
-
-Message suivant, **une modification** : plus court, moins formel, plus technique, autre point de vue caméra. Tu compares deux versions côte à côte comme deux prises.
-
-### Étape 6 : export vers ton outil visuel sans perdre l'intention
-
-Quand la sortie te convient, demande une **version minimaliste** : uniquement les lignes actionnables, sans prose. Puis une version « copier coller image prompt » si tu en as besoin, avec une ligne caméra, une ligne lumière, une ligne matière, une ligne interdits. Tu viens de transformer une conversation en **fiche technique** que tu peux coller ailleurs. Si tu travailles en équipe, ajoute une ligne « questions restantes » pour que ton binôme sache où c'est encore fragile.
-
-### Étape 7 : revue « comme un client »
-
-Une dernière demande utile : « Adopte le rôle d'un client pressé qui dit non trois fois. » Tu récupères des objections courtes, tu réponds avec une **révision ciblée**. Ce jeu role bête évite le ton complaisant quand tu es seul devant l'écran le soir.
-
-Voici un repère visuel pour l'étape « écrire sur le papier numérique avant d'enchaîner », même esprit documentaire, mains, matière, pas de surcompression.
+Voici un repère visuel pour l’étape « écrire avant d’enchaîner », même esprit documentaire.
 
 ```text
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, hands typing on laptop keyboard, coffee mug soft in foreground, morning side light on wooden desk, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
@@ -102,17 +89,17 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Mains au clavier et lumière du matin, repère pour le travail d'écriture itérative.](workflow-1.png)
 
-### Table de lecture : quoi écrire au lieu de supplier
+### Table de lecture : remplacer la supplication par la consigne
 
-| Ta phrase actuelle | Ce qui manque | Ta **action** de remplacement |
+| Ta phrase actuelle | Ce qui manque | Action de remplacement |
 | --- | --- | --- |
-| Fais un beau script | critères de beauté | « Donne 12 lignes max, ton sec, une action visible par phrase » |
-| Comme un pro | niveau | « Style brief agence, pas académique, jargon caméra assumé » |
-| Sois créatif | cadre | « Propose **deux** directions opposées, puis tranche selon le budget » |
-| Corrige tout | variable inconnue | « Corrige uniquement la logique temporelle, ne touche pas aux dialogues » |
-| Inspire toi de | référence floue | « Fenêtre nord, pluie fine, néons loin derrière, pas de slow mo » |
+| Fais un beau script | critères de beauté | « 12 lignes max, ton sec, une action visible par phrase » |
+| Comme un pro | niveau | « brief agence, jargon caméra assumé » |
+| Sois créatif | cadre | « **deux** directions opposées, puis tranche selon budget » |
+| Corrige tout | variable inconnue | « corrige **uniquement** la logique temporelle » |
+| Inspire-toi de X | référence floue | « fenêtre nord, pluie fine, néons loin derrière » |
 
-Et quand tu passes du texte au **storyboard mental**, pense cadrage. Voici un prompt de référence pour une image type « lecture de plans sur table », utile pour te rappeler que ChatGPT doit t'aider à trancher, pas à multiplier les idées floues.
+Deuxième repère visuel, esprit « choix de plans ».
 
 ```text
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, printed storyboard frames and pencil on table, director hands reviewing shots, soft overhead practical, oval anamorphic bokeh in background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
@@ -120,33 +107,33 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Feuilles et crayon sur table, esprit « choix de plans » plutôt que dispersion.](workflow-2.png)
 
-> Quand tu demandes à ChatGPT de « structurer », force un choix final explicite, A ou B, avec une phrase de conséquence. La structure sans décision, c'est du remplissage confortable.
+> Quand tu demandes de « structurer », force un **choix final** explicite (A ou B) avec une phrase de conséquence. La structure sans décision, c’est du remplissage confortable qui simule du travail sans avancer le projet d’un plan.
 
-Pour calibrer l'œil sur la clarté des consignes en général, cette référence aide à voir comment une explication efficace **pose le cadre avant le détail** : [prompting et structure d'une consigne utile](https://www.youtube.com/watch?v=hHWkvFH8u9I)
+Pour la clarté des consignes en général (vidéo pédagogique, pas un substitut à la vérification des faits) : [prompting et structure](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+## Trench warfare : erreurs fréquentes
 
-**Le roman introductif.** Tu passes vingt lignes à contextualiser avant la question. Le modèle sature. Répare : cinq lignes de contexte max, puis la demande, puis un exemple.
+**Roman introductif.** Vingt lignes de contexte avant la question : le signal utile se dilue. **Fix :** cinq lignes max, puis la demande, puis un exemple.
 
-**Le « tu sais quoi je veux ».** ChatGPT ne sait pas. Répare : une phrase qui décrit le résultat **visible** ou **testable**.
+**« Tu sais ce que je veux ».** Non. **Fix :** résultat **visible** ou **testable** en une phrase.
 
-**Le mélange des tâches.** Rédaction plus traduction plus critique dans le même message. Répare : trois messages courts, trois passes nettes.
+**Mélange des tâches.** Rédaction + traduction + critique dans un seul message. **Fix :** trois messages, trois passes.
 
-**L'absence de niveau.** « Explique » sans public = vulgarité flottante. Répare : « pour quelqu'un qui connaît déjà les bases du montage » ou l'inverse.
+**Absence de niveau de public.** **Fix :** « pour quelqu’un qui connaît déjà le montage » ou l’inverse.
 
-**La fuite en avant créative.** Plus de variations au lieu de valider une base. Répare : **fige la V1** qui tient, puis seulement des variantes de détail.
+**Fuite en avant créative.** Variations sans base validée. **Fix :** fige la V1 qui tient, puis variantes de détail.
 
-**La peur du copier coller.** Tu hache mal ton propre texte par peur du plagier toi même. Répare : assume le copier coller de ton brief, c'est ta matière première.
+**Peur du copier-coller de ton propre brief.** C’est ta matière première : assume-la.
 
-**L'oubli du son.** Même pour de l'image, le son change le rythme des titres et des dialogues. Répare : une ligne « précise si la scène entend quoi au premier plan ».
+**Oubli du son** même quand tu prépares de l’image. **Fix :** une ligne « qu’entend-on au premier plan ? »
 
-**Promesse légale ou médicale sans relecture humaine.** Répare : tu **ajoutes toujours** une couche humaine pour tout ce qui engage une responsabilité.
+**Faits chiffrés, légal, médical** repris sans vérification humaine. **Fix :** ChatGPT n’est pas une base de vérité ; recoupe toujours des sources primaires. Pour la fiction et le brief créatif, vise la **cohérence interne** ; ne confonds pas une réponse plausible avec une fiche encyclopédique vérifiée, et ne t’appuie pas sur une encyclopédie en ligne comme autorité sans lecture critique des sources originales.
 
-**Copier une sortie trop longue dans un outil qui refuse le pavé.** Répare : demande d'abord une **compression** en respectant une structure, puis colle. Le modèle sait souvent réduire mieux quand tu lui donnes le format cible exact, par exemple quarante mots maximum pour une superposition vidéo.
+**Sortie trop longue pour l’outil suivant.** **Fix :** demande une compression au **format cible** (ex. quarante mots pour une incrustation).
 
-**Abus du mot « cinematic ».** Répare : remplace par **une décision**, hauteur de caméra, focale, dureté de la source, distance sujet fond. Même en texte, le cinéma est géométrie et lumière, pas un adjectif.
+**Abus de « cinematic ».** **Fix :** remplace par des décisions : hauteur caméra, focale, dureté de source, distance sujet–fond.
 
-**Comparer ChatGPT à l'aléatoire d'une image IA.** Répare : sépare les problèmes. Le texte peut être cohérent alors que l'image dérive, et l'inverse. Note dans deux colonnes ce qui vient du **langage** et ce qui vient du **moteur visuel**, sinon tu mélanges les torts.
+**Confondre échec texte et échec image.** Note en deux colonnes ce qui vient du **langage** et du **moteur visuel**.
 
 ## Liens utiles dans la série AI Studio
 
@@ -155,32 +142,61 @@ Pour calibrer l'œil sur la clarté des consignes en général, cette référenc
 - [Les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle)
 - [Comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia)
 
-## Foire aux questions (FAQ)
+## FAQ
 
-**Un prompt ChatGPT, c'est toujours en anglais ?**
+**Un prompt ChatGPT, c'est toujours en anglais ?**  
+Non. L’anglais aide pour certains tags techniques ; tu peux structurer en français et **injecter** les termes outils dans un tableau.
 
-Non. L'anglais aide pour certains tags techniques photo, mais tu peux structurer en français et **injecter** les mots outils anglais nécessaires dans les cases du tableau.
+**« System » et « user », concrètement ?**  
+Pense charte (system) vs consigne du jour (user). Si une seule zone de texte, mets la charte au début et **répète** les contraintes critiques avant chaque grosse question.
 
-**« System » et « user », je dois comprendre quoi en vrai ?**
+**ChatGPT invente des faits : je fais quoi ?**  
+Tu vérifies ailleurs pour tout ce qui engage une responsabilité. Pour la fiction / brief, tu cherches la cohérence interne — pas une vérité type encyclopédie sans recoupement.
 
-Pense studio. Le system, c'est la charte. Le user, c'est le contre jour du jour. Si tu n'as accès qu'à une seule zone, mets la charte au début et **répète** les contraintes critiques avant la question suivante.
+**C'est quoi un bon prompt en une phrase ?**  
+« Livre X au format Y sous contraintes Z, avec un paragraphe sur les risques. »
 
-**ChatGPT invente des faits, je fais quoi ?**
+**La température / le réglage de variabilité ?**  
+Pour du brief créatif, souvent milieu : variété contrôlée. Pour des listes strictes, un peu plus bas. Le nom exact du réglage dépend de l’interface OpenAI du moment ; l’idée est moins d’aléatoire quand tu veux de la **répétabilité**.
 
-Tu demandes des sources **uniquement** quand c'est pertinent, et tu vérifies ailleurs pour tout ce qui est chiffré, légal, ou médical. Pour la fiction et le brief créatif, tu cherches la **cohérence interne**, pas la vérité Wikipedia.
+**Ça remplace un scénariste ?**  
+Non. Ça aide à débloquer, structurer, reformuler. Le regard humain sur l’émotion et la responsabilité éditoriale reste nécessaire.
 
-**C'est quoi un bon prompt en une phrase ?**
+**Je perds mes conversations : astuce ?**  
+Archive : date, version, prompt exact qui a marché. Comme pour une seed d’image stable que tu veux reproduire demain.
 
-« Livre X au format Y sous contraintes Z, avec un paragraphe sur les risques. » Remplace X, Y, Z.
+**Custom instructions vs message unique ?**  
+Les instructions personnalisées portent ce qui est **stable** sur tous tes projets ; le message porte ce qui est **spécifique** à la tâche du jour.
 
-**Je dois mettre la température où ?**
+**Les GPTs personnalisés changent quoi ?**  
+Ils peuvent embarquer instructions, fichiers, outils — utiles pour un workflow répété. Tu restes responsable du brief et de la validation.
 
-Pour du brief créatif, valeur médium, tu veux de la variété contrôlée. Pour du contrôle de liste, un peu plus bas. Le réglage précis dépend de ton interface, l'idée est **moins d'aléatoire** quand tu veux du répétable.
+**ChatGPT et données sensibles ?**  
+Ne colle pas de secrets, données personnelles tiers, ou info confidentielle client sans cadre légal clair avec ton organisation et les conditions OpenAI du moment.
 
-**Ça remplace un scénariste ?**
+**Comment générer des négatifs pour la diffusion ?**  
+Colle une description d’image ratée, demande « qu’est-ce qui sonne faux pour un œil ciné ? » puis « traduis en négatifs courts ». Passe le résultat dans ComfyUI / SD / autre ; voir [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique).
 
-Non. Ça remplace le blanc de la page si tu pilotes, ça ne remplace pas le regard humain sur l'émotion ni la responsabilité éditoriale.
+**Le modèle refuse ma demande : pourquoi ?**  
+Politiques de sécurité et garde-fous évoluent ; reformule le but (éducation, fiction, brief technique) sans contourner de mauvaise foi.
 
-**Je perds mes conversations, astuce ?**
+**Plusieurs comptes ou équipes ?**  
+Alignez une **charte de prompt** partagée (format de tableau, interdits, glossaire caméra) pour éviter que chaque membre réinvente un dialecte incompatible.
 
-Archive dans un dossier projet : date, version, prompt exact qui a marché. **Copier le succès** comme on duplique un réglage qui tient sur une image.
+**Je veux du code / du JSON pour automatiser.**  
+Demande un schéma strict et des exemples ; vérifie dans un linter. Le modèle peut décaler une virgule : garde une relecture humaine pour tout ce qui part en production.
+
+**Comment éviter le ton « assistant trop enthousiaste » ?**  
+Ajoute : « ton sec, pas de compliments, pas de phrases de transition ». Le style est une contrainte comme une autre.
+
+**Les pièces jointes (PDF, images) : bonne idée ?**  
+Oui pour résumer ou extraire des tableaux **si** ton offre le permet ; vérifie échantillon contre source pour les chiffres.
+
+**Différence avec un moteur de recherche ?**  
+Le moteur liste des pages ; ChatGPT **génère** du texte cohérent qui peut être faux. Pour les faits, tu veux souvent les deux : recherche, puis rédaction assistée à partir de sources ouvertes que **tu** juges fiables.
+
+**Comment brief-er une scène pour un personnage constant ?**  
+Utilise la même fiche personnage en tête de chaque sous-tâche ; relie à [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant).
+
+**Je prépare un workshop équipe : par où commencer ?**  
+Fixe trois formats de sortie obligatoires (tableau, liste de risques, version courte « copier dans Slack ») et un glossaire caméra commun ; fais un exercice live sur **une** scène et compare les livrables au tableau blanc, puis votez sur la version la plus **tournable** demain matin.

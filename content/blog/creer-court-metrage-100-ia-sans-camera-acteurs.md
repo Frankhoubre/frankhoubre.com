@@ -5,181 +5,223 @@ category: "tutoriels"
 excerpt: "Structure narrative, cohérence des personnages, limitations honnêtes, et finishing pour tenir un festival en ligne."
 thumbnail: "/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/hero.webp"
 ---
-Tu es ici pour : Créer un court métrage 100 % IA sans caméra ni acteurs. Bien. On va éviter deux pièges tout de suite.
+Tu veux raconter une histoire complète sans lever une caméra, sans casting, sans location payante. L’excitation dure jusqu’au troisième plan, quand le visage change, le mur ondule, et le silence absolu transforme ton drame en démo logiciel. Un court intégralement généré est possible, mais il demande **les mêmes disciplines qu’un vrai tournage**, brief, storyboard, raccords, son, et acceptation des limites. La différence, c’est que tu remplaces la lumière du soleil par une phrase, et le bruit du plateau par une piste que tu dois inventer.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Trois portraits. **Étienne**, musicien à Rennes, voulait un clip narratif de deux minutes : il a d’abord échoué en voulant des plans trop larges et des mains partout, puis a gagné en resserrant et en cachant. **Farah**, étudiante en arts à Montréal, préparait un pitch pour un festival en ligne : elle a documenté chaque étape générée pour rassurer le comité sur la chaîne de production. **Giorgio**, autodidacte à Milan, pensait sauter le montage : il est revenu à DaVinci parce que le rythme ne se génère pas tout seul dans un seul clip long. Les trois se sont entendus sur une évidence simple après coup : **finir** vaut mieux qu’explorer dix outils en parallèle sans livrable final ni archive propre pour plus tard ou pour le festival suivant éventuel.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+Le format court a une histoire et des contraintes narratives reconnues, utiles pour calibrer tes ambitions, voir [court métrage](nf:https://en.wikipedia.org/wiki/Short_film) sur Wikipédia. L’IA ne supprime pas le besoin d’une structure, elle le rend plus visible quand elle manque.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+## Ce que « 100 % IA » engage vraiment
 
-Pour Créer un court métrage 100 % IA sans caméra ni acteurs, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+### Limites honnêtes à accepter tôt
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+Les interactions mains objets précises restent fragiles sur beaucoup de pipelines. Les profils de visage extrêmes peuvent dériver. Les foules détaillées explosent en artefacts. Les longs dialogues sur un seul gros plan bouche posent problème. Ce n’est pas une liste pour te décourager, c’est une **carte des contournements** : hors champ, suggestion, découpe, son.
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
+Cent pour cent généré ne veut pas dire zéro intervention humaine. Ça veut dire : pas de pixels capturés par une caméra sur le plateau. Tu interviens encore sur le brief, le prompt, le choix des plans, le montage, l’étalonnage, le mix, parfois l’inpainting. Soyons clairs pour éviter la déception : **tu remplaces la caméra**, pas la décision. Si tu annonces autre chose à ton public, prépare-toi à un retour bancal.
 
-La résolution intermédiaire est ton laboratoire. Travaille où tu peux itérer en dix minutes, pas en trois heures. Quand une séquence tient, upscaler ou regénérer haut a un sens. Sinon tu optimises un pixel parfait dans une scène fausse.
+## Durée cible et promesse honnête
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+Pour un premier projet viable, vise **soixante à quatre-vingt-dix secondes** finales, pas cinq minutes. Une minute bien montée bat trois minutes de séquence unique qui s’effondre. Écris ta promesse en une phrase : « le spectateur découvre X au bout de Y secondes ». Si tu ne peux pas la remplir, ton histoire est trop large.
 
-Les mains et les dents sont des capteurs de mensonge. Si tu n’as pas besoin des mains, mets les hors champ ou en lointain flou. Si tu en as besoin, prévois un recadrage serré sur le visage et laisse les mains hors cadre. Ce n’est pas de la lâcheté, c’est du métier.
+Le [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste) détaille les phases brief, pilote image, mouvement, son, que tu peux boucler plusieurs fois sur une minute.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+> **Astuce pro :** une minute, c’est environ quinze à vingt-cinq plans selon ton style. Compte-les au storyboard avant de générer.
 
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
-## Notes de plateau, détails qui changent tout
+## Script oral et structure
 
-Le flou d’arrière plan doit suivre une loi de distance. Si le nez est net et le mur derrière est flou comme de la crème alors qu’il est à cinquante centimètres, le cerveau crie fake. **Décris la distance caméra sujet** et la distance sujet arrière plan, même approximative.
+Écris pour la voix et l’image, pas pour le roman. Phrases courtes, verbes d’action, pauses marquées par des points. Lis à voix haute, si tu t’essouffles, le spectateur aussi. Le guide [comment écrire un script efficace pour une vidéo générée par l’IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia) colle à cette étape.
 
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
+Structure simple qui fonctionne encore : **équilibre**, perturbation, conséquence, image finale qui pose une question ou un geste. Tu n’as pas besoin d’un twist hollywoodien, tu as besoin d’une **émotion claire** à la fin.
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+## Feuille de personnage et raccords
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
+Une fiche par personnage : âge approximatif, vêtement avec matière, coiffure, accessoire rare, marque de temps. Tu recopies la fiche dans chaque prompt de plan. Tu changes seulement cadrage et action. Pour les enchaînements, [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia) évite les ruptures de costume ou de lumière.
 
-Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
+Si un plan exige des mains au premier plan et que ton outil faiblit, **recadre** ou remplace le geste par un détail objet, tasse, clé, lettre.
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+## Storyboard stylo, trois cases minimum par beat
 
-La limite d’un outil n’est pas une insulte personnelle. Si un modèle ne tient pas les mains, contourne. Si un autre ne tient pas les visages de profil, change l’angle. Le studio professionnel choisit l’outil pour la tâche, pas l’inverse.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+Même moche. Case A entrée, case B tension, case C conséquence. Sous chaque case : type de plan, focale, mouvement modeste. Le storyboard est le contrat entre ton imagination et le modèle qui ne lit pas dans tes pensées.
 
-### Étape 1 : brief en une page, sans poésie creuse
+### Dossier projet type
 
-Ouvre un doc. Écris cinq lignes.
+Crée `COURT2026/` avec `brief.txt`, `storyboard.jpg` (photo du papier), `prompts.txt`, `audio/`, `renders/img/`, `renders/vid/`, `exports/`. À chaque plan validé, tu déplaces le fichier dans `renders` avec un nom qui contient scène, plan, version. Quand tu dois rouvrir le projet dans un mois, tu ne dépend pas de ta mémoire.
 
-Ligne 1 : le sujet, physique, situé dans un lieu précis. Pas « une femme », mais « une femme en laine, près d’une fenêtre nord, pluie dehors ».
+## Génération : pilote, puis série
 
-Ligne 2 : l’émotion dominante. Peur, soulagement, désir, fatigue. Un seul mot fort.
+**Étape 1** : trois images fixes pour le look, même socle, variation lumière seulement.
 
-Ligne 3 : la durée cible et le format. 12 secondes, 16:9, voix off ou pas.
+**Étape 2** : valide peau et tissu au zoom, choisis une **référence pilote**.
 
-Ligne 4 : trois références visuelles humaines. Des films, pas des mots. « Blade Runner 2049 intérieurs », « Dune sable et brume », « Winter’s Bone naturel ».
+**Étape 3** : pour chaque plan, génère image puis courte vidéo si besoin, amplitude **20 à 45 %** sur les tests, jamais orbite d’emblée sur décor chargé.
 
-Ligne 5 : interdits. « Pas de néon », « pas de peau lisse », « pas de flou de mouvement extrême ».
+**Étape 4** : exporte PNG propres, nomme `sc01_pl02_v03.png`, copie le prompt dans `prompts.txt`.
 
-**Sauvegarde ce doc.** C’est ton contrat avec toi même.
+### Journée type de production
 
-### Étape 2 : moodboard rapide, trois images fixes
+Matin : tu ne génères pas, tu mets à jour le storyboard et tu lis le script à voix haute. Après-midi : tu fais trois plans maximum, image puis vidéo, avec critique immédiate sur téléphone. Soir : tu montes ce que tu as, même brut, pour entendre les trous de rythme. Cette cadence évite l’illusion du progrès par le nombre de fichiers sans montage.
 
-Génère trois images fixes avec le même prompt de base, en ne changeant que la lumière ou l’heure. Compare au zoom. Choisis celle qui tient la peau et les tissus. C’est ton pilote.
+Pour le rythme global et les actes, [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) aide à éviter le plat du milieu.
 
-Réglages types côté image : démarre avec un modèle photoréaliste, évite les presets « fantasy ». Steps ou force équivalente : assez pour la texture, pas assez pour l’hyper netteté. CFG ou guidance : milieu de plage, pas le max, sinon tu obtiens du plastique.
+```text
+Scene 01 plan 02: 35mm eye level medium shot, same woman cream sweater,
+same kitchen north window rain, side key, practical warm back,
+slow push in 3 percent, no orbit, hands out of frame
+```
 
-### Étape 3 : mouvement minimal, comme un opérateur humain
-
-Passe à la vidéo seulement quand le pilote est validé. Décris un mouvement de caméra simple. Truck lent, pan très lent, push in discret. **Évite 360° et les orbites** au début, c’est là que la géométrie explose.
-
-Si ton outil propose force de mouvement, reste entre 20% et 45% au début. Au dessus, tu paies en déformation. Si tu as un réglage de cohérence avec l’image source, monte le légèrement jusqu’à ce que les mains restent stables.
-
-### Étape 4 : son et ambiance, tout de suite
-
-Ne finis pas visuel avant d’poser une piste d’ambiance. Même mauvaise. Le cerveau associe le son au réalisme. Bruit de pièce, ventilation, rue lointaine, pluie. Puis voix si besoin, traitée avec un peu de chambre.
-
-### Étape 5 : montage, recadrage, grain
-
-Importe dans ton NLE préféré. Recadre légèrement pour casser l’effet « cadrage IA parfait ». Ajoute une courbe douce, baisse un peu les hautes lumières, monte légèrement les mids pour garder du visage. **Ajoute du grain** en overlay, 8 mm léger ou 35 mm fin selon ton look.
-
-Exporte une première version en qualité moyenne, regarde sur téléphone et sur écran calibré. Corrige, reboucle.
-
-### Étape 6 : critique en cinq minutes
-
-Pose un minuteur. Note trois défauts maximum. Corrige ceux qui touchent à la cohérence avant ceux qui touchent au détail cosmétique. Une main bizarre bat une tache de lumière discutable.
-## Micro réglages avant de figer une séquence
-
-Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
-
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
-
-La fatigue visuelle du spectateur augmente avec les néons saturés. Si ton monde est coloré, offre des respirations neutres entre deux pics. Le contraste de saturation structure l’acte, comme une scène de jour après une nuit.
-
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
-
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
-
-Les mains et les dents sont des capteurs de mensonge. Si tu n’as pas besoin des mains, mets les hors champ ou en lointain flou. Si tu en as besoin, prévois un recadrage serré sur le visage et laisse les mains hors cadre. Ce n’est pas de la lâcheté, c’est du métier.
-
-La constance de palette sur plusieurs plans, c’est un LUT ou une courbe, pas un espoir. Exporte une référence, colle la sur le bord de ton écran, mate plan par plan. L’œil se fatigue vite, la référence non.
-
-Les fichiers de travail doivent survivre à un changement d’ordinateur. Exporte aussi une version lisible pour toi dans dix ans : mp4 h264 pour preview, wav pour son, png pour références. La technologie change, les archives restent.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
+### Tableau : choix créatif, risque IA, mitigation
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
+| Choix | Risque | Mitigation |
+| --- | --- | --- |
+| Plan large intérieur | murs ondulants | resserrer, moins de lignes |
+| Dialogue long même plan | bouche et joues | découper, inserts |
+| Travelling long | géométrie | trois plans fixes + son |
+| Multiples personnages | identité | fiches + cadrage serré |
+| Nuit sans practical | boue visuelle | lampe visible dans le cadre |
+| Mains au 18 mm | doigts longs | focale plus longue |
 
-La fatigue visuelle du spectateur augmente avec les néons saturés. Si ton monde est coloré, offre des respirations neutres entre deux pics. Le contraste de saturation structure l’acte, comme une scène de jour après une nuit.
+> **Astuce pro :** le son masque des raccords durs. Une porte, un pas, un souffle, valent trois fondus IA douteux.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+Pour le rythme visuel, cette référence vidéo reste utile : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I).
 
-### Table de décision rapide
+## Montage, étalonnage, mix
 
-| Phase | But | Levier | Test rapide |
-| --- | --- | --- | --- |
-| Brief | clarifier | 5 lignes max | lisible à voix haute |
-| Pilote | look | image fixe 16:9 | zoom peau et tissu |
-| Mouvement | crédibilité | amplitude 20 à 45 % | mains stables |
-| Son | ancrage | room tone | pas de silence absolu |
-| Master | diffusion | grain + courbe | lecture sur téléphone |
-> Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.
+Importe tout dans ton NLE. Recadre légèrement pour casser la symétrie parfaite. Courbe globale, masque peau si besoin, **grain overlay** fin. Mix : room tone dès le début, bruitages discrets, musique qui laisse des silences. Exporte **deux masters** si tu dois : un propre et un « social » avec compression anticipée.
 
+### Clics DaVinci Resolve (exemple)
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+Crée un projet `CourtIA`, paramètre timeline 24 fps, résolution selon ton master. Importe les clips dans un bin par scène. Sur la page Edit, pose une piste audio pour room tone en A1, voix en A2, musique en A3. Coupe sur les beats respiratoires du dialogue, pas sur chaque respiration artificielle de l’IA. Passe en Color : node 1 courbe globale, node 2 masque visage doux pour protéger les rouges, node 3 grain si besoin. Sur la page Deliver, exporte `master_h264.mp4` et une archive `master_prores.mov` si tu dois ré-encoder plus tard.
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+Si tu utilises Premiere ou Final Cut, la logique est identique : **étalonnage avant compression**, pas l’inverse.
 
-La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière dure sans direction. Dis d’où vient la source, sa taille, sa couleur. Fenêtre nord, néon vert en contre, lampe de bureau tungstène. Même si le modèle simplifie, ton cerveau de spectateur cherche une hiérarchie lumineuse. Sans hiérarchie, tu obtiens ce plat gris qui crie l’IA.
+## Guerre des tranchées : ce que les débutants ratent, et comment réparer
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+Tu veux un plan séquence parce que « ça fait cinéma ». Tu obtiens une géométrie molle. **Découpe** en trois plans, le spectateur préfère trois vérités.
 
-La cohérence personnage, ce n’est pas copier coller le même prompt vingt fois. C’est une fiche courte : âge approximatif, vêtement ancré, marque de temps, cicatrice discrète, coiffure réelle. Puis une image de référence fixe que tu réinjectes. Si tu changes un détail majeur entre deux plans, le cerveau humain détecte avant même qu’il sache pourquoi.
+Tu changes de modèle entre les scènes sans étalonnage commun. Les personnages changent de peau. **LUT ou courbe de série** sur toute la timeline.
 
-Les mains et les dents sont des capteurs de mensonge. Si tu n’as pas besoin des mains, mets les hors champ ou en lointain flou. Si tu en as besoin, prévois un recadrage serré sur le visage et laisse les mains hors cadre. Ce n’est pas de la lâcheté, c’est du métier.
+Tu oublies le son jusqu’au dernier jour. Tu te demandes pourquoi ça sonne fake. **Ambiance dès le premier montage**.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
+Tu livres sans readme sur ce qui est généré et retouché. Les festivals et clients posent la question. **Documente**.
 
-Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
+Tu vises le 4K avant d’avoir une histoire. Tu optimises des erreurs. **Histoire d’abord**, résolution ensuite.
 
-Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
-Pour calibrer l’œil, regarde cette référence : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I)
+Tu copies des prompts sans les adapter à ton personnage. Tu obtiens un casting différent à chaque fois. **Fiche stable**.
 
-## Liens utiles dans la série AI Studio
+Tu refuses le montage parce que « l’IA fait la vidéo ». Le rythme reste ton métier humain.
 
-- [Comment obtenir un rendu cinéma avec Seedance 2](/blog/comment-obtenir-rendu-cinema-avec-seedance-2)
-- [Comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia)
-- [Comment créer une pub vidéo avec l’IA comme une agence pro](/blog/comment-creer-pub-video-avec-ia-comme-agence-pro)
-- [Comment utiliser les objectifs caméra dans un prompt IA](/blog/comment-utiliser-objectifs-camera-dans-prompt-ia)
+Tu veux une scène de foule : chaque figure est une bombe à mains et visages. **Silhouettes**, arrière-plan flou, ou foule suggérée par son et ombres.
 
-## Foire aux questions (FAQ)
+Tu mélanges deux styles visuels parce que tu as changé de checkpoint au milieu. Le spectateur lit une coupure de pub. **Verrouille le stack** pour le projet ou re-grade tout sur une courbe commune.
 
-**Le handheld, comment sans casser la géométrie ?**
+Tu négliges les sous-titres accessibles : même si ta cible parle la langue, les festivals en ligne et les réseaux récompensent la lisibilité. Exporte un `.srt` simple aligné sur ton montage final.
 
-Amplitude faible, décor simple, ou flou de mouvement léger en post sur l’arrière plan seulement.
+> **Astuce pro :** regarde le montage avec le son coupé, puis avec le son seul. Les deux passes révèlent des problèmes différents.
 
-**Je dois absolument du 4K ?**
+> **Astuce pro :** garde une version « brut IA » et une version « grade » dans deux dossiers. Quand un plan doit être regénéré, tu sais quel prompt a servi.
 
-Non. Itère là où c’est rapide, upscale quand la direction est bonne.
+## Frequently Asked Questions (FAQ)
 
-**Où apprendre le vocabulaire opérateur ?**
+**Quelle durée pour un premier court viable ?**
 
-En regardant des films avec le son coupé, en nommant plan par plan. Puis en recopiant ce vocabulaire dans Créer un court métrage 100 % IA sans caméra ni acteurs.
+Soixante à quatre-vingt-dix secondes finales sont un bon premier objectif. Monte seulement quand la structure tient.
 
-**Combien de temps pour un premier clip propre ?**
+**Dois-je absolument du 4K ?**
 
-Pour Créer un court métrage 100 % IA sans caméra ni acteurs, compte plusieurs sessions courtes plutôt qu’un marathon. Le sommeil est un outil de correction.
+Non pour apprendre. Oui pour certaines projections si ton pipeline tient. Itère bas, finalise haut.
 
-**Pourquoi mon clip ressemble à une pub télé ?**
+**Comment gérer les droits et la transparence festival ?**
 
-Souvent trop de saturation, trop de netteté, trop de lumière frontale. Baisse la clarté locale, penche la lumière, ajoute du grain.
+Documente outils, retouches humaines, éléments musicaux et leur licence. Chaque festival a ses règles, prépare un PDF court.
 
-**Pourquoi mes ciels sont trop HDR ?**
+**Le handheld sans tournage ?**
 
-Tu n’as pas bridé les hautes lumières. Courbe et roll off doux avant de saturer.
+Amplitude très faible sur la génération, ou tremblement ajouté en post sur l’arrière-plan seulement si le visage se déforme.
 
-**Le mouvement déforme tout, que faire ?**
+**Combien de personnages maximum au début ?**
 
-Réduis l’amplitude, raccourcis la durée, simplifie le décor, ou repars d’une image fixe corrigée.
+Un ou deux avec fiches solides. Chaque personnage multiplie les risques de rupture.
+
+**Puis-je mélanger IA et une seule prise réelle ?**
+
+Oui, c’est même souvent plus crédible. Ce guide parle 100 % généré, mais l’hybride est une porte de secours intelligente.
+
+**Où apprendre le vocabulaire des plans ?**
+
+Films muets avec arrêt image, nommer le cadrage à voix haute, recopier dans tes prompts.
+
+**Pourquoi mon clip ressemble à une pub ?**
+
+Saturation, netteté, lumière frontale. Penche la key, baisse le sharp sur la peau, ajoute du grain.
+
+**Comment éviter les visages qui changent ?**
+
+Même lumière, même fiche, même checkpoint quand possible, références fixes.
+
+**Le mouvement déforme tout ?**
+
+Baisse l’amplitude, simplifie le décor, ou repars d’une frame corrigée.
+
+**Comment choisir la musique sans tuer le récit ?**
+
+Évite les morceaux qui montent en permanence sans respiration. Coupe la musique sous les répliques importantes. Laisse trois secondes de quasi silence après une information forte. Teste avec quelqu’un qui n’a pas travaillé sur le projet, demande ce qu’il a compris sans regarder l’écran, seulement le son.
+
+**Puis-je utiliser des voix clonées ou synthétiques ?**
+
+Selon ton territoire légal et les conditions des outils. Documente la source de la voix dans ton readme festival. Si la voix est recognisable comme une célébrité, évite, même « pour un essai ». Pour un personnage fictif, garde une cohérence de timbre entre les plans en réutilisant le même preset ou le même service documenté.
+
+**Comment gérer les textes à l’écran ?**
+
+Garde les cartons courts, typographie sobre, lisibles sur téléphone. Génère le fond d’image sans texte si le modèle déforme les lettres, ajoute le texte en post vectoriel. Aligné sur la safe zone des réseaux si tu doubles la sortie.
+
+**Faut-il un storyboard numérique ?**
+
+Pas obligatoire. Une photo de feuille suffit si tu la nommes et la dates. L’important est la **décision de cadrage** fixée avant la génération, pas l’outil de dessin.
+
+**Comment savoir si mon histoire tient sans image ?**
+
+Lis le script seul à quelqu’un. Si la personne demande des clarifications sur qui fait quoi, ton image ne sauvera pas la scène. Serre le texte avant de payer en GPU.
+
+**Dois-je storyboard tous les plans dès le début ?**
+
+Au minimum les **beats** : entrée, pivot émotionnel, climax, chute. Les plans intermédiaires peuvent se préciser pendant la génération si tu gardes la même promesse.
+
+**Comment éviter la fatigue des réseaux sur le format ?**
+
+Le format compte moins que l’intention claire en cinq secondes. Recadre pour le vertical si besoin, mais repense la composition, ne recadre pas aveuglément un horizontal.
+
+**Que faire si un plan clé refuse de se stabiliser ?**
+
+Change le lieu dans le brief, simplifie l’action, ou remplace le plan par un insert objet qui porte la même information narrative. L’histoire est plus importante que le plan fanfaron.
+
+**Comment archiver pour moi dans dix ans ?**
+
+Exporte un master lisible, note les versions d’outils dans un fichier texte, garde les prompts et un échantillon des frames brutes. Les codecs changent, les fichiers texte restent.
+
+**Puis-je collaborer à deux sur le même projet ?**
+
+Oui si vous partagez la même convention de noms, le même dossier `prompts.txt`, et la même fiche personnage. Sinon vous créez deux films différents dans le même dossier.
+
+**Le grain masque-t-il les défauts de l’IA ?**
+
+Un peu, mais c’est un pansement. Le grain harmonise, il ne remplace pas une géométrie cassée. Utilise-le après avoir minimisé les erreurs structurelles.
+
+**Comment présenter le projet à un festival en ligne ?**
+
+Vidéo finale, synopsis court, readme technique avec outils, musique sous licence, captures du storyboard. Certains festivals demandent une déclaration sur l’usage de l’IA, prépare une phrase honnête sans jargon marketing.
+
+**Comment éviter le décalage entre bande-annonce et film ?**
+
+Si tu montes un teaser avant le film fini, utilise des plans que tu es prêt à garder, ou marque clairement le teaser comme « work in progress ». Rien ne fatigue plus un jury que des attentes créées par un trailer sur-généré et un corps de film instable.
+
+**Faut-il un coloriste externe ?**
+
+Si tu as le budget et une projection cinéma prévue, oui ça peut aider. Pour un premier projet en ligne, une courbe maîtrisée, des masques peau prudents, et un grain cohérent suffisent souvent si ton image source est propre.
+
+**Comment intégrer des bruitages sans bibliothèque payante ?**
+
+Enregistre cinq sons toi-même avec un téléphone propre, porte, pas, eau, chaises. Même basiques, ils ancrent plus qu’une banque générique mal choisie. Nettoie le bruit de fond extrême, normalise doucement, place sous la vidéo avant la musique.

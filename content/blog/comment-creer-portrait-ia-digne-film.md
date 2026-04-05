@@ -5,173 +5,239 @@ category: "tutoriels"
 excerpt: "Focale, catchlights, profondeur, imperfection et direction du regard pour un plan crédible."
 thumbnail: "/images/blog/comment-creer-portrait-ia-digne-film/hero.webp"
 ---
-Tu es ici pour : Comment créer un portrait IA digne d’un film. Bien. On va éviter deux pièges tout de suite.
+Un portrait « digne d’un film » n’est pas un selfie lissé avec un filtre cinéma, ni un rendu 3D de démo où la peau ressemble à de la résine et les yeux à des billes. C’est un plan où **la lumière a une direction**, où **la focale** raconte la distance, où **le regard** porte une intention, où **les imperfections** sont mesurées, et où le spectateur oublie de chercher les erreurs d’IA. Ce guide assemble **scénarios**, **workflow**, **table**, **trench warfare**, liens encyclopédiques, quatre liens internes, et **FAQ**.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+**Scénario A.** Un créateur veut un gros plan dramatique. Il obtient une peau de porcelaine et des yeux trop brillants. Il ajoute « 8K detail ». Le problème n’était pas la résolution, c’était la **key** et le **sharp**.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+**Scénario B.** Une photographe veut un 85 mm cinéma. Elle ne note pas la distance sujet fond. Le bokeh ressemble à un flou gaussien sans géométrie.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+**Scénario C.** Un réalisateur veut un portrait en anamorphique. Il oublie les compromis. Le flou devient sale sans structure.
 
-Pour Comment créer un portrait IA digne d’un film, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+## Ce que le cinéma fait différemment du studio photo cosplay
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+Au cinéma, le portrait vit dans une **durée** et une **scène**. Même en image fixe, le spectateur devine si le personnage est dans un couloir, une voiture, une cuisine. La lumière doit **appartenir au lieu**, pas seulement au visage. Un portrait « film » avec une key qui ne peut pas exister dans le décor affiché casse la suspension d’incrédule avant même que l’on parle de pores.
 
-Les mains et les dents sont des capteurs de mensonge. Si tu n’as pas besoin des mains, mets les hors champ ou en lointain flou. Si tu en as besoin, prévois un recadrage serré sur le visage et laisse les mains hors cadre. Ce n’est pas de la lâcheté, c’est du métier.
+**Le mouvement implicite.** Un portrait filmé a souvent une micro-chute de lumière sur la joue quand la tête bouge. En still, tu peux suggérer cette vie par une transition douce ombre lumière sur la peau, pas par un gradient Photoshop lourd sur une joue isolée.
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+**Le costume et le monde.** Un col de manteau, une épaule de veste, la texture d’un pull, participent au portrait autant que les yeux. Si tu simplifies trop le vêtement, tu obtiens une tête flottante de catalogue.
 
-Le format carré historique Instagram n’est pas le même que le vertical TikTok. Le centre de gravité visuel monte en vertical. Place l’information importante dans le tiers supérieur, sinon le téléphone la mange sous le pouce du spectateur.
+## Focale, distance, et ce que le spectateur croit
 
-Le cache du visage partiel, chapeau, mèche, peut aider la cohérence si ton outil galère sur les traits. Ce n’est pas tricher, c’est styliser. Beaucoup de films réels utilisent le hors champ pour la même raison.
+**35 mm** environ pour un portrait avec contexte d’épaules et décor lisible. **50 mm** pour un portrait sobre et naturel en sensation plein format. **85 mm** pour une compression douce du fond. **Plus long** si tu veux isoler le visage d’un décor lointain.
 
-Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
+**Grande focale et espace.** Plus tu montes en focale, plus tu dois souvent reculer physiquement dans la vraie vie. En prompt, si tu écris 135 mm mais décris un cadre serré sur le visage avec un bras visible étendu vers la caméra, la géométrie peut mentir. Harmonise **champ** et **focale** comme une seule décision.
 
-Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
-## Notes de plateau, détails qui changent tout
+Écris la **distance caméra sujet** en mots simples, proche, à bout de bras, à trois mètres. Même approximatif, ça aide la cohérence du flou.
 
-Le sharpening global est l’ennemi. Si tu veux du piqué, masque le visage et sharp très peu sur les textiles ou les détails éloignés. Jamais sur la peau au premier plan, sauf si tu cherches un look publicitaire années 2000 volontaire.
+**Le gros plan bouche** est à haut risque. Préfère plan poitrine ou plan épaules si tu n’as pas de retouche. Si tu dois aller serré, garde une key latérale pour le modelé.
 
-Le timecode mental compte. Si ton clip est une pub de quinze secondes, chaque seconde a une fonction. Note ce qui se passe à 0, 3, 7, 12. Sinon tu tournes en rond sur un plan qui n’apporte rien à la structure.
+> Le cinéma regarde les yeux, puis la bouche. Si l’un est faux, le portrait tombe.
 
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
+## Lumière portrait, trois lignes utiles
 
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
+**Ligne 1**, source principale, fenêtre latérale, softbox large, soleil bas à travers persiennes.
 
-La musique générique « épique » tue une scène intime. Choisis une musique qui laisse de l’air aux silences. Coupe la musique sous une phrase importante. Le cinéma, c’est aussi ce que tu enlèves.
+**Ligne 2**, fill ou pas, bounce plancher, mur clair, ou ombre assumée.
 
-Le temps météo dans une scène extérieure change tout. Même rue, même acteur, brouillard ou soleil bas, ce n’est pas la même émotion. Fixe l’heure et la météo dans le brief, sinon le modèle mélange des nuages dramatiques avec une lumière de midi.
+**Ligne 3**, séparation du fond, fond plus sombre, rim léger, practical chaud au loin.
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+Les **catchlights** doivent matcher la source. Une fenêtre à gauche, un reflet cohérent dans l’œil, pas deux soleils.
 
-### Étape 1 : choisir le bon moteur pour la tâche
+**Ombre du nez et bouche.** En key latérale douce, l’ombre du nez ne doit pas couper la lèvre comme un sticker. Si ton modèle produit cette coupure dure, réduis la dureté perçue en décrivant une source plus large ou ajoute un bounce très léger depuis le côté opposé. En key dure assumée, la coupure peut être belle, mais elle doit être **cohérente** avec la direction annoncée.
 
-Flux brille souvent sur les transitions douces, la matière, les scènes complexes avec beaucoup d’objets. SDXL reste un couteau suisse avec un écosystème énorme de LoRA et de workflows ComfyUI.
+**Dents et sourire.** Le sourire large en très gros plan est un test de stress. Bouche presque fermée, léger espace entre les lèvres, ou plan plus large. Si tu montres des dents, prévois retouche locale.
 
-**Règle simple :** si tu veux du portrait peau et yeux avec contrôle fin, teste les deux sur le même prompt court. Garde celui qui ment le moins sur les mains et les dents.
+**Maquillage et numérique.** Le génératif aime le maquillage « parfait ». Pour du cinéma contemporain, demande une application réelle, micro-finitions, pas une surface de pub. Les joues gardent du sous-ton sang.
 
-### Étape 2 : résolution et recadrage avant beauté
+**Cou et épaules.** La lumière sur le cou doit prolonger la key du visage. Si le cou est plat alors que le visage est sculpté, le portrait devient un masque collé. Une phrase sur la continuité ombre sur le cou aide.
 
-Travaille en 16:9 ou 2:3 selon la sortie, pas en carré si ton film est horizontal. Monte en résolution seulement quand la composition est figée. Sinon tu optimises des erreurs en haute définition.
+**Cheveux contre le ciel ou un mur clair.** Sépare les cheveins avec un rim léger ou un fond légèrement plus sombre que la chevelure, sinon tu obtiens une auréole de détourage.
 
-### Étape 3 : steps, CFG, scheduler, sans religion
+## Regard, intention, et ligne d’âme
 
-Monte les steps jusqu’au point où la texture apparaît, puis arrête avant la surdéfinition. CFG trop haut = plastique. CFG trop bas = boue. **Cherche une fenêtre**, note la, réutilise la.
+**Direction du regard** vers l’objectif, vers un hors champ précis, vers le bas en introspection. Évite « regarde quelque part » sans précision, le modèle choisit au hasard et casse la lecture émotionnelle.
 
-### Étape 4 : peau en deux temps
+**Asymétrie du visage.** Les visages humains sont asymétriques. Une légère asymétrie contrôlée dans le prompt ou acceptée en post paraît plus réelle qu’une symétrie de poupée. Ne confonds pas avec des erreurs d’œil de tailles différentes, ça c’est un bug à corriger.
 
-Temps 1 : génération avec lumière plausible et ombre sous le nez. Temps 2 : retouche locale légère ou inpainting sur la zone yeux bouche si nécessaire. Évite de régénérer toute la scène pour une micro zone.
+**Distance psychologique.** Un 85 mm serré avec une key douche crée une intimité. Un 35 mm avec une key dure peut créer une tension documentaire. Choisis l’accord **focale + lumière** comme un réalisateur choisit une scène.
 
-### Étape 5 : grain cinéma en post souvent mieux qu’en prompt seul
-
-Un grain overlay contrôlé, adapté à la densité des ombres, réagit mieux que « add grain » jeté dans le prompt sans mesure. Combine les deux seulement si tu sais ce que chaque couche apporte.
-
-### Étape 6 : contraste et couleur
-
-Courbe d’abord, saturation ensuite. Isole les peaux si tu pousses un look teal orange. **Garde du sang dans les rouges** des joues, sinon tu passes en mannequin 3D.
-
-### Étape 7 : profondeur de champ crédible
-
-Décris la distance et la focale. Vérifie les transitions net vers flou : trop abruptes = collage. Un léger flou gaussien sur l’arrière plan en post peut sauver une scène presque bonne.
-
-### Étape 8 : export pour la suite vidéo
-
-Exporte PNG ou TIFF propre pour l’image pilote, garde une variante avec grain si tu enchaînes directement vers un outil vidéo. Documente la focale et la lumière dans un fichier texte à côté, la vidéo te remerciera.
-## Micro réglages avant de figer une séquence
-
-Le bruit de compression social est une seconde couche de design. Si tu exportes trop propre, la plateforme ajoute son propre moche. Exporte avec un léger grain et un contrôle des hautes, tu gagneras en stabilité après upload. Ce n’est pas de la triche, c’est connaître le média.
-
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
-
-Les références film doivent être des références de lumière, pas de sujet. Dire « comme Blade Runner » sans préciser intérieur, pluie, néon indirect, ça ne veut rien dire pour un modèle. Dis plutôt : pluie, reflets au sol, néons en arrière plan, visage éclairé par une source douce proche.
-
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
-
-Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
-
-Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
-
-Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
-
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Quand tu parles de cinéma à un modèle, pense caméra physique. Un 35 mm en intérieur, ce n’est pas la même chose qu’un 18 mm au même endroit. Le 35 mm rapproche le visage sans déformer les épaules. Le 18 mm allonge les mains vers la caméra et transforme un simple geste en catastrophe géométrique. Si ton personnage a des mains au premier plan, **choisis une focale plus longue** ou recule virtuellement la caméra.
+## Workflow en huit étapes
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+### Étape 1 : intention et cadrage
 
-Les prompts en anglais ne sont pas une trahison du français. Beaucoup de modèles ont plus de données sur des tags anglais techniques. Tu peux écrire en français pour toi, puis traduire les termes photo : key light, fill, rim, bokeh, anamorphic, stop, ISO mental.
+Émotion dominante, espace négatif pour le regard. Note si le portrait doit laisser place à un titre client en post.
 
-Les fichiers de travail doivent survivre à un changement d’ordinateur. Exporte aussi une version lisible pour toi dans dix ans : mp4 h264 pour preview, wav pour son, png pour références. La technologie change, les archives restent.
+### Étape 2 : lumière écrite comme un DP
+
+Key, fill, fond, en phrases courtes. Ajoute la température relative entre avant-plan et arrière-plan si le fond est une fenêtre ou une rue.
+
+### Étape 3 : focale et distance
+
+### Étape 4 : peau crédible
+
+Texture suggérée, pas pores dessinés. Interdis le « plastic skin » et le « wax » si ton outil comprend ces tags.
+
+### Étape 5 : yeux
+
+Catchlights simples, pas blanc pur total. Iris avec variation de ton, limite le bleu oversaturé par défaut.
+
+### Étape 6 : vêtements et cheveux
+
+Ancres stables, matière matte si tu veux moins de specular IA. Évite les motifs microscopiques qui deviennent du bruit aliasing.
+
+### Étape 7 : grain léger
+
+Aligne le grain sur le type de film ou capteur que tu simules, fin pour numérique propre, plus présent pour argentique.
+
+### Étape 8 : post courbe avant saturation
+
+Note les zones à protéger avant toute LUT agressive, peau, cheveux noirs, textiles clairs.
+
+### Étape 9 : relecture à taille vignette
+
+Réduis l’image à la taille d’une vignette YouTube. Si la lecture tombe, le contraste global ou le regard ne porte pas. Le cinéma moderne passe aussi par des thumbnails.
+
+### Étape 10 : version sans sharpen pour la vidéo
+
+Si tu animés ensuite, garde une variante sans sharpening agressif sur la peau pour éviter les artefacts en mouvement.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+## Post-production honnête pour un portrait qui reste humain
 
-### Table de décision rapide
+**Courbe** pour caler les noirs des cheveux et les hautes sur le front sans cramer. **Saturation** sélective, protège les rouges de peau si tu pousses un look. **Dodge and burn** très léger sur le volume du visage peut remplacer un prompt qui demande « dimensionnel » en mots vagues.
 
-| Choix | Critère | Flux | SDXL |
-| --- | --- | --- | --- |
-| Portrait | peau et yeux | tester en priorité | LoRA énorme, très flexible |
-| Scène | objets multiples | souvent très fort | dépend du checkpoint |
-| Vitesse locale | VRAM | selon quant | optimisé DIY |
-| Post grain | contrôle fin | combine prompt + overlay | idem |
-| Vidéo next | image pilote propre | export PNG + meta | export PNG + meta |
-> Le réalisme n’est pas la netteté max. C’est une suite de petites erreurs cohérentes avec le monde physique.
+**Fréquences séparées** si tu maîtrises : travaille la texture sur une couche haute fréquence sans toucher aux couleurs globales. C’est souvent plus propre qu’un prompt qui demande « skin detail extreme ».
 
+**Vignette optique** légère versus vignette IA agressive. Préfère une vignette qui suit une lentille réelle, coins assombris progressivement, pas un cercle noir centré sur le nez.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+### Table portrait
 
-Les ombres portées trop noires sans transition donnent un look collage. Ajoute un fill très léger ou une réflexion indirecte crédible. L’IA aime le contraste facile. Toi, tu dois ramener la lumière ambiante qui existe dans une vraie pièce.
+| Problème | Piste | Fix |
+| --- | --- | --- |
+| Peau plastique | sharp global | masque visage, courbe |
+| Yeux IA | catchlights symétriques | asymétrie légère |
+| Oreilles | gros plan profil | recadre ou ombre douce |
+| Mains | au premier plan | hors champ |
+| Fond | trop net | focale ou distance écrite |
 
-Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
+## Genres filmiques et portaits types
 
-Le sharpening global est l’ennemi. Si tu veux du piqué, masque le visage et sharp très peu sur les textiles ou les détails éloignés. Jamais sur la peau au premier plan, sauf si tu cherches un look publicitaire années 2000 volontaire.
+**Thriller politique**, key latérale dure, ombres sous les yeux mais pas caricature, fond institutionnel neutre. **Comédie lumineuse**, key douce, fill plus présent, couleurs chaudes sans saturation ketchup. **Science-fiction** peut être crédible si la lumière reste géométrique, néon avec motivation, pas sept sources sans hiérarchie.
 
-Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
+Tu n’es pas obligé de nommer un genre dans le prompt. Tu es obligé d’être **compatible** avec le genre que tu montres au client. Si le brief dit « drame intérieur », évite le beauty three points parfait de pub cosmétique sauf intention de dissonance.
 
-Les reflets dans les yeux racontent la pièce. Un catchlight rectangulaire sur une scène « bougie seulement » ment. Harmonise la forme de la source avec le décor. Les petits détails de cohérence font taire le cerveau critique.
+> Un portrait film, c’est une scène coupée au mauvais moment, pas une affiche de festival mal cadrée.
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
+## Itérations : une couche esthétique par passe
 
-Le rendu peau « porcelaine » vient souvent d’un mélange trop haut de détail plus une lumière frontale dure. Penche la lumière, ajoute une ombre douce sous le nez, baisse la clarté sur les hautes fréquences de peau en post. La peau a des pores, pas une grille.
+**Passe A**, géométrie et lumière seulement, visage acceptable mais pas parfait. **Passe B**, expression et regard. **Passe C**, texture peau et cheveux. Si tu mélanges tout dès le départ, tu ne sauras pas quoi répliquer sur le portrait suivant d’une série.
 
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
-Pour calibrer l’œil, regarde cette référence : [préparation de tournage](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+Quand une image est bonne, **gèle** le prompt et les réglages dans un fichier. Le portrait suivant d’un casting visuel pour un pitch doit pouvoir être régénéré sans improvisation.
+
+## Accessoires, mains, et objets du quotidien
+
+**Tasse, téléphone, stylo.** Si l’objet touche les mains, prévois un plan où les doigts sont simples, ou une partie de main hors netteté. Si l’objet est au second plan, vérifie qu’il ne vole pas avec une perspective impossible.
+
+**Bijoux.** Reflets pointilles sur une bague peuvent être magnifiques ou faux. Une montre simple avec cadran lisible est un risque de chiffres absurdes, préfère des montres sobres sans texte.
+
+## Portrait et compression des plateformes
+
+Avant livraison LinkedIn, Instagram, ou bannière site, exporte avec une marge sur les hautes lumières. **La compression** mangera le grain fin et pourra créer des bandes dans le ciel du fond. Si le portrait a un fond dégradé doux, vérifie le banding après encode test.
+
+## Ratios de contrôle lumière, même approximatifs
+
+Tu peux écrire « key environ trois fois plus forte que le fill » ou « fill minimal, une ou deux ouvertures sous la key » même si le modèle ne calcule pas en stops. L’important est de **forcer une hiérarchie** plutôt qu’un flattening HDR. Les portraits IA aiment le flattening parce qu’il maximise le détail partout, ce qui ressemble à de la pub.
+
+**Peau et hautes lumières.** Sur le front et le nez, garde du détail recoverable. Sur les joues, accepte une transition douce vers l’ombre. C’est plus film que le contour dur façon jeu vidéo.
+
+## Couleur et peau sous plusieurs lumières
+
+**Néon + tungstène + jour.** Si tu mixes, écris qui gagne sur le visage. Sinon tu obtiens un patchwork magenta/cyan sur les joues. Pour un portrait urbain nocturne, choisis **une** teinte dominante sur la peau et laisse les autres comme rim lointain.
+
+**Balance de blancs créative.** Tu peux pousser le froid sur les ombres et le chaud sur les hautes si c’est contrôlé. Note l’intention dans ton fichier pour reproduire sur le portrait suivant du même personnage.
+
+## Collaboration avec maquilleur ou acteur réel en référence
+
+Si tu as une photo de référence légale du talent, utilise-la comme guide d’img2img plutôt que de décrire vingt traits. Si tu n’as pas de talent réel, évite de copier une célébrité. Construis un archétype avec des **décisions de costume** fortes.
+
+## Trench warfare
+
+**Beauty dish mental sans beauty dish réel.** Nomme la taille de source.
+
+**HDR sur le visage.** Compresse les hautes sur la peau.
+
+**Négliger la direction du cou.** Le cou trahit la lumière si la face est retouchée seule.
+
+**Sur-détailler les pores en prompt.** Tu obtiens du stuc. Suggère, ne grave pas.
+
+**Catchlights doubles par défaut du studio IA.** Corrige par prompt ou post sur les yeux.
+
+**Oublier la température des blancs des vêtements.** Une chemise blanche qui tire magenta casse la peau.
+
+**Portrait centre cadre systématique.** Le cinéma utilise le hors champ et le décalage. Essaie le tiers.
+
+**Combiner bokeh extrême et contexte narratif chargé.** Si le décor doit être lu, le bokeh doit être modéré.
+
+Pour le portrait photo, [portrait photographique](https://fr.wikipedia.org/wiki/Portrait_photographique). Pour la profondeur, [profondeur de champ](https://fr.wikipedia.org/wiki/Profondeur_de_champ). Pour le bokeh, [bokeh](https://fr.wikipedia.org/wiki/Bokeh). Pour le **cadrage** et le vocabulaire des plans, [plan (cadrage)](https://fr.wikipedia.org/wiki/Plan_(cadrage)).
 
 ## Liens utiles dans la série AI Studio
 
-- [Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia)
-- [Comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ)
-- [Pourquoi tes images IA manquent de contraste, et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger)
-- [Comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible)
+- [Comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt)
+- [Comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant)
+- [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique)
+- [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
 
-## Foire aux questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
-**Inpainting ou regénération totale ?**
+**Anamorphique pour portrait ?** Possible, assume le flou et les ovales de bokeh. Sinon reste sphérique.
 
-Inpaint pour yeux ou mains, regénère tout seulement si la lumière globale est fausse.
+**Noir et blanc ?** Convertis en post souvent mieux que prompt seul, tu contrôles les rouges qui portent la peau.
 
-**Le grain seulement en prompt ?**
+**Lunettes ?** Angles qui simplifient reflets, ou monture matte fine.
 
-Souvent non. Un overlay en post contrôle mieux les ombres.
+**Diversité et respect ?** Évite stéréotypes, brief humain, représentations responsables.
 
-**Je veux une ambiance sombre ?**
+**Combien de mots dans le prompt ?** Peu si hiérarchisés, une ligne lumière, une ligne caméra, une ligne interdits.
 
-Garde une petite accroche lumineuse sur le visage ou un practical, sinon boue.
+**RAW ?** Exporte propre pour post, PNG ou TIFF selon pipeline.
 
-**Mes noirs sont gris ?**
+**Retouche peau ?** Locale, pas globale, préserve les transitions ombre lumière.
 
-Courbe, pas saturation. Remets du vrai noir cinéma.
+**Format vertical ?** Compose pour le crop, place le regard dans le tiers supérieur si UI mobile.
 
-**Je prépare une image pour vidéo ?**
+**Portrait de profil ?** Exigeant sur l’oreille et la ligne de mâchoire, teste ou recadre.
 
-Oui : export propre, note focale et lumière, garde une piste sans sharpen agressif pour Comment créer un portrait IA digne d’un film.
+**Peau foncée sous lumière dure ?** Ajoute bounce ou fill indirect décrit, sinon ombres bouchées.
 
-**Je travaille en local, conseil VRAM ?**
+**Faut-il un reflet d’écran sur le visage ?** Seulement si motivé par la scène, sinon retire les écrans.
 
-Résolution modeste pour itérer, upscale propre à la fin pour Comment créer un portrait IA digne d’un film.
+**Comment éviter le « glow » IA sur les contours ?** Réduis contraste local et sharpen, vérifie halo sur fond sombre.
 
-**Pourquoi ma peau est plastique ?**
+**Même personnage sur deux portraits ?** Fiche stable, même préfixe lumière, références si possible.
 
-Guidance trop haute, lumière frontale dure, sharp en post. Corrige dans cet ordre.
+**Faut-il un fond flou à chaque fois ?** Non. Un fond légèrement défini peut ancrer le film. Le flou extrême est un choix, pas une obligation esthétique.
+
+**Comment gérer la barbe et les poils ?** Demande une transition douce peau poils, évite le masque net. Post léger si nécessaire.
+
+**Les portraits duo ?** Deux fiches courtes, une key commune, positions relatives écrites.
+
+**Est-ce différent pour enfants ou personnes âgées ?** Oui, traits et texture de peau, adapte les prompts et évite le lissage agressif sur les rides si tu veux du respect.
+
+**Dois-je citer un objectif vintage ?** Utile si tu connais son rendu, sinon reste sur des équivalents simples 50 mm, 85 mm.
+
+**Peut-on mélanger stil et photoréalisme ?** Oui si assumé, sinon le milieu fait « IA ».
+
+**Comment livrer à un étalonneur ?** Master plat avec marge, notes de lumière jointes, pas huit LUT déjà grillés dessus.
+
+**Les portraits avec chapeau ou casquette ?** Utiles pour réduire la zone de peau exposée aux erreurs si ton outil est capricieux, garde une ombre crédible sur le front.
+
+**Faut-il toujours un rim ?** Non. Le rim est une signature, pas une obligation. Un portrait peut être lisible avec un fond sombre et une key douce sans rim.
+
+**Comment tester un nouveau checkpoint ?** Même prompt, trois seeds, compare yeux et dents avant d’engager une série client.
+
+**Le portrait de dos ou trois quarts dos ?** Exigeant pour la coiffure et les épaules, utile pour varier une séquence sans montrer le visage en gros plan, pense au costume visible.
+
+**Dois-je calibrer mon écran ?** Oui si tu juges des peaux pour livraison, sinon tu livres des surprises sur les machines des autres.

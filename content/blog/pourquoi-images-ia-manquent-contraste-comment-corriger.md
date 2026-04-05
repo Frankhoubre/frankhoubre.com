@@ -5,173 +5,175 @@ category: "tutoriels"
 excerpt: "Histogramme, courbes, saturation sélective, et rapport ombres lumières façon cinéma."
 thumbnail: "/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/hero.webp"
 ---
-Tu es ici pour : Pourquoi tes images IA manquent de contraste, et comment corriger. Bien. On va éviter deux pièges tout de suite.
+Tu zoomes sur ton export, tu vois du gris partout, tu montes la saturation dans l’espoir d’un miracle, tu obtiens une affiche de supermarché. Ce réflexe est universel, il ne dit rien de ton niveau, seulement que personne ne t’a encore montré l’ordre des opérations entre prompt, génération, et étalonnage. Le problème n’est pas que ton œil est trop exigeant, c’est que **le contraste** a été confondu avec « plus de couleur ». Les modèles aiment les images lisibles en miniature, souvent plates, souvent lissées. Ton travail commence quand tu reprends la courbe.
 
-Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.
+Trois histoires courtes. **Vincent**, retoucheur à Paris, livrait des portraits IA pour une agence : les visages semblaient maquillés en 3D parce qu’il poussait les rouges avant d’avoir des noirs propres. **Clara**, illustratrice à Marseille, préparait des keyframes pour une vidéo : chaque plan avait un ciel différent parce qu’elle saturait le bleu au lieu de verrouiller une **référence de courbe**. **Omar**, développeur amateur à Casablanca, croyait que « high contrast » dans le prompt suffisait : le modèle a ajouté des halos et des ombres bouchées sans hiérarchie. Les trois auraient gagné du temps avec une feuille de route commune : lire l’histogramme, corriger la lumière dans le texte, puis seulement pousser la couleur.
 
-Ce que je te propose ici, c’est une lecture de terrain. Pas une promesse. Tu vas comprendre pourquoi certaines images « passent » et d’autres déclenchent instantanément le réflexe « IA » chez le spectateur. Souvent ce n’est pas la résolution. C’est la lumière menteuse, la peau trop lisse, le bokeh incohérent, ou un mouvement qui défie la physique.
+Le contraste, au sens image, c’est la relation entre zones claires et zones sombres dans une image. La notion de base est bien résumée sur [le contraste en vision](nf:https://en.wikipedia.org/wiki/Contrast_(vision)), utile pour ne plus mélanger luminance et saturation dans ta tête.
 
-Trois mini scénarios. Un créateur veut du beau sans contrainte : il obtient du générique. Un autre veut du détail partout : il obtient du plastique. Un troisième veut du cinéma sans son : il obtient une vitrine.
+## Histogramme : lire avant de toucher
 
-Pour Pourquoi tes images IA manquent de contraste, et comment corriger, garde une règle simple. Une décision forte vaut trois compromis. Une source lumineuse claire vaut dix adjectifs. Un export avec une histoire de fichiers propre vaut une nuit de chaos.
+Ouvre ton histogramme. Si tout est empilé au milieu, tu as une image **plate**.
 
-On descend dans le concret. Note au stylo ce que tu faisais avant, applique une seule modification aujourd’hui, compare demain. Si tu ne vois pas la différence, ce n’est pas grave, tu auras au moins un critère de plus. L’œil s’entraîne comme un muscle, avec des répétitions honnêtes.
-## Concepts clés (ce que tu dois retenir avant de cliquer partout)
+### Exercice dix minutes sans générer
 
-La fatigue visuelle du spectateur augmente avec les néons saturés. Si ton monde est coloré, offre des respirations neutres entre deux pics. Le contraste de saturation structure l’acte, comme une scène de jour après une nuit.
+Prends trois images IA anciennes que tu n’aimes plus. Pour chacune, note en une phrase : est-ce que le problème est **global** (toute l’image est grise) ou **local** (le visage est bon mais le ciel ment) ? Dans le premier cas, courbe globale et prompt de lumière. Dans le second cas, masques et peut-être regénération ciblée. Ce tri évite de saturer une image déjà condamnée sur la géométrie.
 
-Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est mauvaise, changer de seed au hasard, c’est jouer à la roulette. Change le prompt, change la lumière, puis verrouille une seed quand tu approches du but. **Note la seed** dans ton fichier de session, comme un opérateur note une focale.
+Si les bords touchent les deux extrêmes sans détail, tu as du **crush** ou du **clip** sur les hautes. L’objectif cinéma n’est pas toujours d’étirer au maximum, c’est de **placer l’information** là où le regard doit aller.
 
-Les fichiers de travail doivent survivre à un changement d’ordinateur. Exporte aussi une version lisible pour toi dans dix ans : mp4 h264 pour preview, wav pour son, png pour références. La technologie change, les archives restent.
+Pour un portrait, tu veux souvent garder du détail dans les cheveux sombres et dans une partie du ciel ou du mur, tout en laissant un **noir crédible** quelque part dans le cadre pour donner du volume. Pour une scène de nuit, tu veux du noir réel, pas du gris boueux, mais tu gardes une petite accroche sur le visage ou un practical.
 
-Les cadrages trop centrés donnent une affiche, pas une scène. Décale le sujet, laisse de l’espace dans la direction du regard. La règle des tiers n’est pas une loi, c’est un outil pour éviter la carte postale symétrique par défaut.
+> **Astuce pro :** si tu ne sais pas par où commencer, tire légèrement les ombres vers le bas sur une courbe douce, puis remonte le milieu pour ne pas perdre le visage. Une seule courbe avant toute saturation.
 
-Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
+## Prompt : lumière avec hiérarchie
 
-Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
-## Notes de plateau, détails qui changent tout
+Le contraste commence dans le texte. Écris une **key** dominante, une fill faible ou absente, et ce qui se passe dans le fond. Exemple :
 
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
+```text
+single strong key from window left, weak ambient bounce, deep shadows,
+no fill light, practical warm lamp in background, subject lit by window,
+skin retains midtone detail, not HDR sky
+```
 
-Le monitoring sur téléphone n’est pas optionnel. La moitié de ton audience verra ton clip sur un écran petit et brillant. Si ton grain disparaît et ton contraste explose, tu dois rééquilibrer. Le cinéma moderne est double cible, cinéma et poche.
+Si tu demandes « beautiful soft light everywhere », tu demandes une image **plate** par définition. Le doux et le contrasté peuvent coexister si tu précises : doux sur la transition joue vers ombre, fort sur le rapport global pièce.
 
-Les couleurs de peau sous néon doivent rester dans une famille crédible. Le néon teinte, oui, mais laisse une part de sang dans les joues. Si tout part magenta, baisse la saturation sélective sur les rouges de peau, remonte légèrement la luminance.
+Pour décrire la lumière comme en plateau, [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) prolonge cette section.
 
-La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière dure sans direction. Dis d’où vient la source, sa taille, sa couleur. Fenêtre nord, néon vert en contre, lampe de bureau tungstène. Même si le modèle simplifie, ton cerveau de spectateur cherche une hiérarchie lumineuse. Sans hiérarchie, tu obtiens ce plat gris qui crie l’IA.
+## Post : courbe d’abord, saturation ensuite
 
-Le format carré historique Instagram n’est pas le même que le vertical TikTok. Le centre de gravité visuel monte en vertical. Place l’information importante dans le tiers supérieur, sinon le téléphone la mange sous le pouce du spectateur.
+**Étape 1.** Duplique ton calque ou ton node, travaille en non destructif si possible.
 
-Le format vertical impose une autre lecture. Un plan large horizontal raconte l’environnement. Un vertical demande un sujet clair, une ligne forte, peu d’éléments parasites sur les bords. Si tu recadres un horizontal en vertical sans repenser la compo, tu obtiens des têtes coupées et des mains qui entrent par surprise.
+**Étape 2.** Courbe RGB globale : établis un **point d’ancrage** sur les tons moyens du visage si c’est un portrait. Tire les ombres vers le bas jusqu’à voir un noir qui respire encore, pas une boue.
 
-Le dossier projet propre vaut toutes les promesses de workflow viral. Nomme tes fichiers, garde une capture d’écran des réglages, copie le prompt dans un txt. Dans deux semaines, tu te remercieras quand un client dira « on reprend comme la version 2 ».
-## Workflow pratique, comme sur un vrai tournage (mais avec l’IA)
+**Étape 3.** Hautes lumières : baisse légèrement si le ciel ou une lampe crame. Cherche un **roll off** doux, pas une ligne droite brutale sur tout le cadre.
 
-### Étape 1 : choisir le bon moteur pour la tâche
+**Étape 4.** Saturation **sélective** : si tu veux du teal sur l’ombre, isole d’abord les peaux avec un masque doux pour ne pas brûler les rouges du visage.
 
-Flux brille souvent sur les transitions douces, la matière, les scènes complexes avec beaucoup d’objets. SDXL reste un couteau suisse avec un écosystème énorme de LoRA et de workflows ComfyUI.
+**Étape 5.** Grain fin en overlay pour lier les zones trop propres aux zones texturées.
 
-**Règle simple :** si tu veux du portrait peau et yeux avec contrôle fin, teste les deux sur le même prompt court. Garde celui qui ment le moins sur les mains et les dents.
+### Clics type Lightroom ou équivalent
 
-### Étape 2 : résolution et recadrage avant beauté
+Importe ton PNG. Passe en module Développement ou équivalent. Monte légèrement **Texture** sur les vêtements si tu veux du relief sans toucher la peau, mais masque d’abord le visage. Utilise le pinceau ou le masque linéaire sur le ciel pour baisser les hautes lumières sans ternir le buste. Active le **cible de saturation** et clique sur un bleu de ciel trop néon, tire la saturation vers le bas jusqu’à retrouver un ciel qui respire, puis remonte la luminance si le ciel devient boue.
 
-Travaille en 16:9 ou 2:3 selon la sortie, pas en carré si ton film est horizontal. Monte en résolution seulement quand la composition est figée. Sinon tu optimises des erreurs en haute définition.
+Si tu n’as pas Lightroom, la logique reste identique dans DaVinci Resolve (page Color), Capture One, ou même des nodes dans un workflow node-based : **séparer les problèmes par zone** au lieu d’une courbe unique qui martyrise tout le cadre.
 
-### Étape 3 : steps, CFG, scheduler, sans religion
+Pour le look sombre sans boue, [comment créer une ambiance sombre et cinématique avec l’IA](/blog/comment-creer-ambiance-sombre-cinematique-avec-ia) donne des repères compatibles avec cette correction.
 
-Monte les steps jusqu’au point où la texture apparaît, puis arrête avant la surdéfinition. CFG trop haut = plastique. CFG trop bas = boue. **Cherche une fenêtre**, note la, réutilise la.
-
-### Étape 4 : peau en deux temps
-
-Temps 1 : génération avec lumière plausible et ombre sous le nez. Temps 2 : retouche locale légère ou inpainting sur la zone yeux bouche si nécessaire. Évite de régénérer toute la scène pour une micro zone.
-
-### Étape 5 : grain cinéma en post souvent mieux qu’en prompt seul
-
-Un grain overlay contrôlé, adapté à la densité des ombres, réagit mieux que « add grain » jeté dans le prompt sans mesure. Combine les deux seulement si tu sais ce que chaque couche apporte.
-
-### Étape 6 : contraste et couleur
-
-Courbe d’abord, saturation ensuite. Isole les peaux si tu pousses un look teal orange. **Garde du sang dans les rouges** des joues, sinon tu passes en mannequin 3D.
-
-### Étape 7 : profondeur de champ crédible
-
-Décris la distance et la focale. Vérifie les transitions net vers flou : trop abruptes = collage. Un léger flou gaussien sur l’arrière plan en post peut sauver une scène presque bonne.
-
-### Étape 8 : export pour la suite vidéo
-
-Exporte PNG ou TIFF propre pour l’image pilote, garde une variante avec grain si tu enchaînes directement vers un outil vidéo. Documente la focale et la lumière dans un fichier texte à côté, la vidéo te remerciera.
-## Micro réglages avant de figer une séquence
-
-Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
-
-Les plans trop larges en IA révèlent la géométrie. Si tu n’as pas besoin du plafond et de cinq fenêtres, resserre. Moins de monde dans le cadre, moins de chances qu’un mur respire. Le cadrage est une décision de réalisateur, pas un défaut de capteur.
-
-Le plan séquence IA est séduisant et rarement propre. Si tu en veux un, isole un décor simple, une action claire, un mouvement lent. Sinon découpe en trois plans, le spectateur préférera trois vérités qu’une séquence menteuse.
-
-Le son est la moitié du réalisme. Un clip IA visuellement propre avec un silence absolu ressemble à une vitrine. Ajoute une chambre, une rue lointaine, un frigo, un vent léger. Puis compresse légèrement pour coller au média social. **Pose l’ambiance avant de figer le master vidéo**, sinon tu te racontes des histoires sur la qualité.
-
-Les transitions sonores masquent des coupures dures. Un whoosh discret, un impact de porte, un cut de musique sur le downbeat. Le son te permet de garder des images simples sans fondus IA douteux.
-
-Les textures de tissu trahissent le plastique avant la peau. Un pull en laine doit avoir de la micro variation, pas un lissage de mannequin. Si ton pull ressemble à de la résine, baisse la clarté locale sur les vêtements, monte un peu le grain, reprends une photo de référence de tricot réel.
-
-La fatigue visuelle du spectateur augmente avec les néons saturés. Si ton monde est coloré, offre des respirations neutres entre deux pics. Le contraste de saturation structure l’acte, comme une scène de jour après une nuit.
-
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-Le sharpening global est l’ennemi. Si tu veux du piqué, masque le visage et sharp très peu sur les textiles ou les détails éloignés. Jamais sur la peau au premier plan, sauf si tu cherches un look publicitaire années 2000 volontaire.
+### Tableau : symptôme, mauvais réflexe, meilleur réflexe
 
-L’étalonnage « teal and orange » fonctionne quand les peaux restent humaines. Si tout part en orange, les visages brûlent. Isole la peau avec un masque doux, ramène une teinte sang réel dans les rouges. Même en IA, tu finiras souvent en post. Accepte le round trip.
+| Symptôme | Mauvais réflexe | Meilleur réflexe |
+| --- | --- | --- |
+| Image grise | saturation +30 | courbe, noirs |
+| Ciel néon | vibrance globale | masque ciel, roll off |
+| Peau orange | moins de jaune au hasard | masque peau, rouges sang |
+| Ombres boueuses | remonter tout | contraste local masqué |
+| Halos bizarres | sharpen | retirer « HDR » du prompt |
+| Détails plastiques | clarity max | baisser micro contraste |
 
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
+> **Astuce pro :** compare toujours avec une référence fixe sur le bord de l’écran. L’œil s’adapte, la référence non.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+## Flux, SDXL, et contraste « à la source »
+
+Si tu génères en local, **Flux** et **SDXL** n’ont pas le même rendu par défaut sur les transitions ombre lumière. La comparaison d’outils et de workflows utile se lit dans [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes). Quel que soit le moteur, garde une fenêtre de **guidance modérée** : trop haut, la peau devient cire et le micro contraste disparaît dans du lissage.
+
+Monte les steps jusqu’au point où la texture apparaît, arrête avant la surdéfinition qui **mange** le contraste local. Note tes réglages dans un fichier texte à côté du PNG.
+
+Quand tu compares deux moteurs, garde **strictement** le même prompt, le même ratio, la même résolution de base, et change seulement le checkpoint. Sinon tu crois que « Flux fait plus de contraste » alors que c’est ta résolution ou ton scheduler qui a bougé. Note aussi la température de sampling si l’interface l’expose : une variation de bruit peut simuler du contraste en trompe-l’œil sans être stable entre deux seeds.
+
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
+Pour l’œil sur la couleur et le contraste en image, cette vidéo reste une bonne boussole : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc).
 
-### Table de décision rapide
+## Préparer l’image pour une suite vidéo
 
-| Choix | Critère | Flux | SDXL |
-| --- | --- | --- | --- |
-| Portrait | peau et yeux | tester en priorité | LoRA énorme, très flexible |
-| Scène | objets multiples | souvent très fort | dépend du checkpoint |
-| Vitesse locale | VRAM | selon quant | optimisé DIY |
-| Post grain | contrôle fin | combine prompt + overlay | idem |
-| Vidéo next | image pilote propre | export PNG + meta | export PNG + meta |
-> Le réalisme n’est pas la netteté max. C’est une suite de petites erreurs cohérentes avec le monde physique.
+Si ton still part vers un outil vidéo, évite le **sharpen agressif** et les halos sur les contours. Garde une marge sur les hautes pour que la compression vidéo ne crée pas de flicker. Exporte une version « plate » et une version « grade » dans deux fichiers nommés clairement. Documente la **focale** et la direction de lumière dans un txt, [le workflow idée vers film](/blog/workflow-complet-idee-film-ia-realiste) insiste sur cette habitude.
 
+> **Astuce pro :** une image trop contrastée avant interpolation vidéo peut faire sauter la texture sur les joues. Mieux vaut un contraste maîtrisé et un peu de grain global.
 
-## Trench warfare : ce que les débutants ratent, et comment réparer
+## Guerre des tranchées : ce que les débutants ratent, et comment réparer
 
-Le travelling latéral en IA demande souvent un décor simplifié. Plus il y a de lignes verticales, plus le modèle devra les tenir droites pendant le mouvement. Si tu vois des murs onduler, réduis la distance du travelling ou ajoute du flou de mouvement léger en post pour masquer sans mentir trop.
+Tu confonds **contraste global** et **contraste local**. Le premier donne l’architecture de l’image, le second donne la texture agressive type HDR smartphone. Pousse le global avec la courbe, garde le local sous contrôle.
 
-La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
+Tu as peur du noir, tu remontes les ombres jusqu’au gris universel. Tu obtiens une démo plate. **Garde un point noir** quelque part dans le cadre, même petit, pour ancrer l’œil.
 
-Les transitions sonores masquent des coupures dures. Un whoosh discret, un impact de porte, un cut de musique sur le downbeat. Le son te permet de garder des images simples sans fondus IA douteux.
+Tu appliques un LUT cinéma sur tout sans masque, les visages partent en orange. **Isole la peau**, ramène du sang dans les rouges, puis applique le look sur l’environnement.
 
-La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphique donne des ovales de bokeh et une chute douce. Spherical net en 50 mm donne un bokeh plus rond et plus neutre. Si tu ne précises rien, le modèle te sort un bokeh « générique », souvent trop net et trop propre.
+Tu veux du teal and orange sans discipline chromatique. Tu obtiens un poster. Sépare les axes : refroidis les ombres **sans** saturer le ciel au néon, réchauffe les hautes **sans** cramer la peau.
 
-Quand tu parles de cinéma à un modèle, pense caméra physique. Un 35 mm en intérieur, ce n’est pas la même chose qu’un 18 mm au même endroit. Le 35 mm rapproche le visage sans déformer les épaules. Le 18 mm allonge les mains vers la caméra et transforme un simple geste en catastrophe géométrique. Si ton personnage a des mains au premier plan, **choisis une focale plus longue** ou recule virtuellement la caméra.
+Tu génères en 16:9 puis tu recadres en vertical sans rééquilibrer. Le contraste perçu change avec le cadrage. **Réévalue** la courbe après recadrage.
 
-Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
+Tu compares sur un seul écran consumer trop lumineux. Sur un écran calibré froid, ton image change. **Teste deux écrans** avant validation client.
 
-La voix off demande un texte oral, pas un texte écrit collé. Raccourcis les phrases. Ajoute des respirations. Lis à voix haute avant de générer. Si tu t’essouffles, le spectateur aussi. **Marque les pauses** avec des points, pas avec des virgules partout.
+Tu ajoutes du vignettage lourd pour « faire cinéma ». Tu manges l’information dans les coins sans raison narrative. Vignette légère seulement si ça guide le regard.
 
-Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
-Pour calibrer l’œil, regarde cette référence : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc)
+Tu veux du « film look » en collant un LUT random trouvé en ligne. Le LUT suppose une exposition neutre en entrée. Si ton IA est déjà bancale, le LUT **caramelise** le problème. Corrige l’exposition de base, puis applique un LUT doux à 40 ou 50 % d’intensité pour commencer.
 
-## Liens utiles dans la série AI Studio
+Tu travailles sur un laptop en plein soleil près d’une fenêtre, tu pousses le contraste pour « voir quelque chose », puis tu ouvres le même fichier le soir et tout est trop dur. **Stabilise ton environnement** de travail ou teste sur téléphone avant livraison.
 
-- [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
-- [Comment créer une ambiance sombre et cinématique avec l’IA](/blog/comment-creer-ambiance-sombre-cinematique-avec-ia)
-- [Workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste)
-- [Comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)
+Tu oublies le **gamma perceptif** : une correction qui semble bonne sur une image seule devient agressive quand l’image est à côté d’une autre dans une grille Instagram. Si tu prépares une série, applique la même courbe de base à tous les exports, puis ajuste localement.
 
-## Foire aux questions (FAQ)
+> **Astuce pro :** si une zone est fausse en lumière, aucune courbe ne la sauvera. Regénère avec une key plus claire, corrige en post seulement quand la physique est presque bonne.
 
-**Inpainting ou regénération totale ?**
+> **Astuce pro :** pour les néons, garde une respiration neutre dans l’image, une surface grise, un mur délavé, sinon la fatigue visuelle monte et le spectateur te lit comme « IA saturée ».
 
-Inpaint pour yeux ou mains, regénère tout seulement si la lumière globale est fausse.
+Quand tu auras intégré cette routine, garde trois images « références maîtresses » dans un dossier : une intérieure douce, une extérieure dure, une nuit avec practical. Tu les ouvres en coin d’écran à chaque session de grade. Ce petit rituel prend trente secondes et t’empêche de dériver vers le gris ou le néon à chaque nouveau modèle sorti.
 
-**Le grain seulement en prompt ?**
+## Frequently Asked Questions (FAQ)
 
-Souvent non. Un overlay en post contrôle mieux les ombres.
+**Mes noirs sont toujours gris, pourquoi ?**
 
-**Je veux une ambiance sombre ?**
+Souvent peur du noir combinée à un prompt qui demande trop de fill ambiant, ou un export pour réseau trop protégé sur les ombres. Courbe d’abord, vérifie le histogramme, puis décide si tu veux vraiment du noir cinéma ou du lift discret.
 
-Garde une petite accroche lumineuse sur le visage ou un practical, sinon boue.
+**Saturation ou vibrance en premier ?**
 
-**Mes noirs sont gris ?**
+Ni l’un ni l’autre en premier. **Courbe et balance** d’abord. Ensuite saturation sélective si besoin. La vibrance globale est un dernier recours, pas une fondation.
 
-Courbe, pas saturation. Remets du vrai noir cinéma.
+**Le prompt « high contrast » suffit-il ?**
 
-**Je prépare une image pour vidéo ?**
+Rarement seul. Sans direction de lumière, le modèle ajoute des halos et des ombres dures au mauvais endroit. Décris la key, la profondeur, et ce qui doit rester lisible.
 
-Oui : export propre, note focale et lumière, garde une piste sans sharpen agressif pour Pourquoi tes images IA manquent de contraste, et comment corriger.
+**Comment garder le ciel sans cramer le visage ?**
 
-**Je travaille en local, conseil VRAM ?**
+Masque le ciel, roll off sur les hautes du ciel seulement, ou regénère avec une exposition plus équilibrée. Le masque doux sur le visage protège les tons chair pendant que tu traites le haut du cadre.
 
-Résolution modeste pour itérer, upscale propre à la fin pour Pourquoi tes images IA manquent de contraste, et comment corriger.
+**Je prépare une image pour vidéo, quel contraste viser ?**
 
-**Pourquoi ma peau est plastique ?**
+Un peu moins agressif que pour un poster, des hautes avec marge, pas de sharpen extrême. Le mouvement révélera les halos que le still cachait.
 
-Guidance trop haute, lumière frontale dure, sharp en post. Corrige dans cet ordre.
+**Pourquoi mon image « saute » après upload sur les réseaux ?**
+
+Compression et écrans téléphone. Prévois un grain léger, maîtrise les hautes, teste en privé. Le réseau ajoute sa couche, tu ne peux pas l’ignorer.
+
+**Flux ou SDXL pour du contraste naturel sur peau ?**
+
+Ça dépend du checkpoint et de ton prompt. Fais un test AB en vingt minutes sur le même brief, note lequel ment le moins sur les transitions joue vers ombre. L’article comparatif du site t’aide à structurer ce test.
+
+**L’inpainting peut-il corriger le contraste local ?**
+
+Oui pour de petites zones, non pour une scène entière fausse. Inpaint yeux, mains, petites surfaces. Si la key est incohérente sur tout le buste, repars d’une génération plus honnête.
+
+**Comment éviter que le teal and orange tue les peaux ?**
+
+Travaille en deux passes de masque : d’abord protège le visage et le cou avec un masque doux, applique le look sur le reste, puis reviens sur les rouges des joues avec un réglage séparé plus petit. Si tu fais tout en un clic, tu obtiens des visages en confiture d’abricot.
+
+**Le HDR du prompt est-il toujours une erreur ?**
+
+Non si tu assumes un monde stylisé. Oui si tu vises du photoréalisme urbain ou documentaire. Pour le réalisme, remplace « HDR » par une description d’exposition : ciel légèrement compressé, visage encore lisible, ombres profondes sous les rebords de toit, pas de halo autour des branches.
+
+**Dois-je calibrer mon écran avant de grader ?**
+
+Idéalement oui, au minimum stabilise la luminosité et évite les modes « vivid » du moniteur pendant la session. Sinon, garde une référence externe, une image que tu connais par cœur sur plusieurs appareils, pour ne pas livrer uniquement pour ton écran du moment.
+
+**Comment aligner le contraste entre plusieurs personnages dans un même plan ?**
+
+Génère d’abord avec une key unique claire dans le prompt, « both faces lit by same window left ». Si l’un est encore plus contrasté que l’autre, masque par personnage et harmonise les mids. Évite de saturer pour compenser un déséquilibre d’exposition.
+
+**La conversion noir et blanc révèle-t-elle les problèmes de contraste ?**
+
+Oui. Une passe noir et blanc rapide montre si tu as encore de la matière dans les tons moyens ou si tu as tout écrasé en deux plaques grises. Utilise ce test avant d’envoyer au client.
+
+**Peut-on utiliser l’IA pour re-grader une image déjà contrastée trop fort ?**
+
+Parfois, avec des outils de restauration ou de « relight », mais c’est hasardeux. Mieux vaut repartir du fichier le moins destructif possible, PNG ou TIFF sans sharpen, et refaire la courbe calmement. Si tu n’as plus le fichier source, sauve ce que tu peux avec une courbe inverse douce et accepte que certaines zones soient définitivement perdues en détail.

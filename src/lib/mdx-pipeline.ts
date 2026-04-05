@@ -7,6 +7,7 @@ const FAQ_HEADINGS = [
   "Foire aux questions (FAQ)",
   "Questions fréquentes (FAQ)",
   "Frequently Asked Questions (FAQ)",
+  "Frequently Asked Questions",
 ] as const;
 
 export function buildFaqDelimiterRegex(): RegExp {
