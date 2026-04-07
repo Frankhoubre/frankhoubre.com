@@ -15,6 +15,7 @@ import { RelatedPosts } from "@/components/RelatedPosts";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
+import { getRecommendedYouTubeVideoId } from "@/lib/blog-video-map";
 import {
   extractYouTubeVideoIds,
   getAllPosts,
@@ -26,28 +27,9 @@ import {
 } from "@/lib/blog";
 import type { FaqPair } from "@/lib/mdx-pipeline";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
-import { baseUrl, person, siteName } from "@/lib/site";
+import { baseUrl, getCategoryLabel, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
-
-const BUSINESS_DYNAMITE_VIDEO_IDS = [
-  "np4psaXVUj4",
-  "t04XewJmivk",
-  "wRu-n0nkGP0",
-  "GnehsGYjBqU",
-  "ujfa2W6mNAI",
-  "uyjRNhz6qN4",
-  "x1avmtj3Gyc",
-  "3PO1Sm2M1QA",
-  "3nYr8skCv9E",
-  "MJvEhyP9ed0",
-];
-
-function fallbackVideoId(slug: string): string {
-  let acc = 0;
-  for (const c of slug) acc += c.charCodeAt(0);
-  return BUSINESS_DYNAMITE_VIDEO_IDS[acc % BUSINESS_DYNAMITE_VIDEO_IDS.length];
-}
 
 function trunc(s: string, max: number): string {
   const t = s.trim();
@@ -119,6 +101,7 @@ function buildJsonLd(opts: {
 }) {
   const { post, slug, videoIds, faqPairs } = opts;
   const url = `${baseUrl}/blog/${slug}`;
+  const categoryLabel = getCategoryLabel(post.frontmatter.category);
   const thumb = getPostThumbnail(post);
   const img = thumb
     ? thumb.startsWith("http")
@@ -134,10 +117,33 @@ function buildJsonLd(opts: {
     "@type": "NewsArticle",
     headline: post.frontmatter.title,
     description: post.frontmatter.excerpt,
+    inLanguage: "fr-FR",
     datePublished: post.frontmatter.date,
     dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
     url,
     mainEntityOfPage: url,
+    articleSection: categoryLabel,
+    isPartOf: {
+      "@type": "Blog",
+      name: `${siteName} Blog`,
+      url: `${baseUrl}/blog`,
+    },
+    about: [
+      "IA générative",
+      "vidéo IA",
+      "image IA",
+      "workflow cinématographique",
+    ],
+    keywords: [
+      post.frontmatter.category,
+      categoryLabel,
+      "IA",
+      "intelligence artificielle",
+      "prompt",
+      "vidéo IA",
+      "image IA",
+      "cinématique",
+    ],
     ...(img ? { image: [img] } : {}),
     author: {
       "@type": "Person",
@@ -154,6 +160,10 @@ function buildJsonLd(opts: {
       "@type": "Organization",
       name: siteName,
       url: baseUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/favicon.ico`,
+      },
     },
   };
 
@@ -219,10 +229,20 @@ function buildJsonLd(opts: {
       "@type": "VideoObject",
       name: post.frontmatter.title,
       description: post.frontmatter.excerpt,
+      inLanguage: "fr-FR",
       thumbnailUrl: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
       uploadDate: post.frontmatter.date,
       contentUrl: `https://www.youtube.com/watch?v=${id}`,
       embedUrl: `https://www.youtube-nocookie.com/embed/${id}`,
+      publisher: {
+        "@type": "Organization",
+        name: "BusinessDynamite",
+        url: "https://www.youtube.com/@BusinessDynamite",
+      },
+      potentialAction: {
+        "@type": "WatchAction",
+        target: `https://www.youtube.com/watch?v=${id}`,
+      },
     });
   }
 
@@ -244,7 +264,7 @@ export default async function BlogArticlePage({ params }: Props) {
   const videoIds =
     contentVideoIds.length > 0
       ? contentVideoIds
-      : [fallbackVideoId(post.slug)];
+      : [getRecommendedYouTubeVideoId(post)];
   const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
