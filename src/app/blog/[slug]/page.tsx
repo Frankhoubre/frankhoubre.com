@@ -5,12 +5,14 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import remarkGfm from "remark-gfm";
 import { ArticleShareButtons } from "@/components/ArticleShareButtons";
+import { ArticleSidebarSearch } from "@/components/ArticleSidebarSearch";
 import { ArticleToc } from "@/components/ArticleToc";
 import { Badge } from "@/components/Badge";
 import { createBlogMdxComponents } from "@/components/createBlogMdxComponents";
 import { FaqSection } from "@/components/FaqSection";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { RelatedPosts } from "@/components/RelatedPosts";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import {
@@ -27,6 +29,25 @@ import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
 import { baseUrl, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
+
+const BUSINESS_DYNAMITE_VIDEO_IDS = [
+  "np4psaXVUj4",
+  "t04XewJmivk",
+  "wRu-n0nkGP0",
+  "GnehsGYjBqU",
+  "ujfa2W6mNAI",
+  "uyjRNhz6qN4",
+  "x1avmtj3Gyc",
+  "3PO1Sm2M1QA",
+  "3nYr8skCv9E",
+  "MJvEhyP9ed0",
+];
+
+function fallbackVideoId(slug: string): string {
+  let acc = 0;
+  for (const c of slug) acc += c.charCodeAt(0);
+  return BUSINESS_DYNAMITE_VIDEO_IDS[acc % BUSINESS_DYNAMITE_VIDEO_IDS.length];
+}
 
 function trunc(s: string, max: number): string {
   const t = s.trim();
@@ -137,6 +158,47 @@ function buildJsonLd(opts: {
   };
 
   const graph: object[] = [article];
+  graph.push({
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Accueil",
+        item: baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${baseUrl}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.frontmatter.title,
+        item: url,
+      },
+    ],
+  });
+  graph.push({
+    "@type": "Review",
+    itemReviewed: {
+      "@type": "CreativeWork",
+      name: post.frontmatter.title,
+      url,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: "5",
+      bestRating: "5",
+    },
+    author: {
+      "@type": "Person",
+      name: person.name,
+    },
+    reviewBody: post.frontmatter.excerpt,
+  });
 
   if (faqPairs?.length) {
     graph.push({
@@ -177,7 +239,12 @@ export default async function BlogArticlePage({ params }: Props) {
 
   const raw = post.content;
   const toc = buildArticleToc(raw);
-  const videoIds = extractYouTubeVideoIds(raw);
+  const allPosts = getAllPosts();
+  const contentVideoIds = extractYouTubeVideoIds(raw);
+  const videoIds =
+    contentVideoIds.length > 0
+      ? contentVideoIds
+      : [fallbackVideoId(post.slug)];
   const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
@@ -188,6 +255,10 @@ export default async function BlogArticlePage({ params }: Props) {
   const minutes = readingTimeMinutes(raw);
   const related = getRelatedPosts(slug, 3);
   const shareUrl = `${baseUrl}/blog/${slug}`;
+  const sidebarPosts = allPosts.map((p) => ({
+    slug: p.slug,
+    title: p.frontmatter.title,
+  }));
 
   const mdxOpts = {
     mdxOptions: {
@@ -219,6 +290,29 @@ export default async function BlogArticlePage({ params }: Props) {
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,42rem)_minmax(0,1fr)] lg:gap-10">
           <div className="hidden lg:block" aria-hidden />
           <article className="min-w-0 max-w-2xl justify-self-center lg:col-start-2">
+            <nav
+              className="mb-4 text-sm text-neutral-700"
+              aria-label="Fil d'Ariane"
+            >
+              <ol className="flex flex-wrap items-center gap-2">
+                <li>
+                  <Link href="/" className="hover:text-neutral-950 hover:underline">
+                    Accueil
+                  </Link>
+                </li>
+                <li aria-hidden>›</li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className="hover:text-neutral-950 hover:underline"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li aria-hidden>›</li>
+                <li className="text-neutral-950">{post.frontmatter.title}</li>
+              </ol>
+            </nav>
             <Link
               href="/blog"
               className="text-sm font-medium text-neutral-800 hover:text-neutral-950"
@@ -245,6 +339,10 @@ export default async function BlogArticlePage({ params }: Props) {
             <div className="mt-6">
               <ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />
             </div>
+            <YouTubeEmbed
+              videoId={videoIds[0]}
+              title={`Vidéo liée: ${post.frontmatter.title}`}
+            />
 
             {thumb ? (
               <div className="relative mt-10 aspect-[2/1] w-full overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100">
@@ -352,6 +450,7 @@ export default async function BlogArticlePage({ params }: Props) {
           <div className="mt-12 hidden lg:col-start-3 lg:mt-0 lg:block lg:justify-self-start">
             <div className="sticky top-24">
               <ArticleToc items={toc} />
+              <ArticleSidebarSearch posts={sidebarPosts} currentSlug={slug} />
             </div>
           </div>
         </div>
