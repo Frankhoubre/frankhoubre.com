@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi mes vidéos IA ont l’air fake, et comment les rendre réalistes"
-date: "2026-03-29"
+date: "2026-04-09"
 category: "tutoriels"
 excerpt: "Les signaux qui trahissent l’IA, du plastique à la géométrie, et des corrections concrètes pour un rendu crédible."
 thumbnail: "/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/hero.webp"
