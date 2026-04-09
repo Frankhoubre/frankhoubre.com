@@ -142,28 +142,28 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 ## FAQ
 
 ### Faut-il toujours preciser key et fill ?
-Oui, surtout pour les portraits et scenes interieures.
+Oui, surtout pour les portraits et scenes interieures. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment obtenir une ambiance sombre sans perdre les details ?
-Baisse le fill, garde une key lisible, protege les midtones.
+Baisse le fill, garde une key lisible, protege les midtones. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Puis-je ecrire “Rembrandt lighting” directement ?
-Tu peux, mais decris quand meme direction et ombre pour plus de stabilite.
+Tu peux, mais decris quand meme direction et ombre pour plus de stabilite. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Que faire si les yeux brillent trop ?
-Reduire intensite speculaire et verifier la taille de source.
+Reduire intensite speculaire et verifier la taille de source. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il indiquer la temperature de couleur ?
-Oui, au moins la relation chaude/froide dominante.
+Oui, au moins la relation chaude/froide dominante. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment eviter l’effet neon faux ?
-Limiter la saturation et la surface de peau touchee par le neon.
+Limiter la saturation et la surface de peau touchee par le neon. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### La lumiere doit-elle changer entre deux plans d’une meme scene ?
-Oui seulement si c’est motive par l’action ou le temps.
+Oui seulement si c’est motive par l’action ou le temps. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Meilleur test rapide ?
-Comparer deux rendus en ne changeant qu’une seule variable de lumiere.
+Comparer deux rendus en ne changeant qu’une seule variable de lumiere. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Bloc avancé, écrire la lumière comme une narration
 
@@ -286,28 +286,28 @@ Fix: documenter les prompts gagnants.
 ## FAQ additionnelle
 
 ### Combien de sources maximum pour débuter ?
-Une principale, une secondaire légère.
+Une principale, une secondaire légère. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il toujours un rim ?
-Non, seulement si la séparation le demande.
+Non, seulement si la séparation le demande. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on faire une scène crédible sans practicals ?
-Oui, si la source hors champ est clairement motivée.
+Oui, si la source hors champ est clairement motivée. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment éviter la peau grise en lumière froide ?
-Ajouter un fill neutre très discret.
+Ajouter un fill neutre très discret. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je préciser le type de lampe ?
-Utile si tu veux verrouiller la couleur.
+Utile si tu veux verrouiller la couleur. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel test dit que la lumière est juste ?
-Si tu peux dessiner la source sans hésiter.
+Si tu peux dessiner la source sans hésiter. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### L’ombre peut-elle être très noire ?
-Oui, si le récit le justifie et reste lisible.
+Oui, si le récit le justifie et reste lisible. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le pire réflexe débutant ?
-Demander “belle lumière” sans géométrie.
+Demander “belle lumière” sans géométrie. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Atelier pratique, de zéro à scène crédible
 
@@ -360,16 +360,16 @@ Fix: correction primaire d’abord.
 ## FAQ complémentaire 2
 
 ### Peut-on éclairer une scène sans key claire ?
-Oui, mais c’est un choix rare et risqué pour débuter.
+Oui, mais c’est un choix rare et risqué pour débuter. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le fill doit-il être coloré ?
-Parfois, mais garde-le discret.
+Parfois, mais garde-le discret. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment faire une nuit crédible sans noirs bouchés ?
-Préserver les midtones et limiter le contraste global.
+Préserver les midtones et limiter le contraste global. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le volumétrique est-il obligatoire pour un rendu cinéma ?
-Non, et souvent trop utilisé.
+Non, et souvent trop utilisé. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Annexe de plateau, construire une charte lumière réutilisable
 
@@ -459,13 +459,13 @@ Vérification:
 ## FAQ extra
 
 ### Faut-il verrouiller la lumière avant le cadrage ?
-Les deux se construisent ensemble, mais la source doit rester claire.
+Les deux se construisent ensemble, mais la source doit rester claire. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment former un oeil lumière rapidement ?
-Comparer 2 variantes avec une seule différence de key.
+Comparer 2 variantes avec une seule différence de key. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quand la scène est-elle “trop plate” ?
-Quand aucune zone d’ombre ne crée de relief utile.
+Quand aucune zone d’ombre ne crée de relief utile. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on avoir une scène réaliste avec une seule source ?
 Oui, souvent c’est même plus crédible.

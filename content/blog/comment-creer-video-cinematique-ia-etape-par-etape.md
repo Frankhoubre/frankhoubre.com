@@ -229,28 +229,28 @@ Ce qu’il faut observer:
 ## FAQ
 
 ### Quelle durée viser au début ?
-3 à 5 secondes par plan.
+3 à 5 secondes par plan. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il toujours travailler en 24 fps ?
-Oui en base, c’est le plus stable pour l’intention cinéma.
+Oui en base, c’est le plus stable pour l’intention cinéma. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le modèle suffit-il à faire la différence ?
-Non, la méthode compte plus que la marque du modèle.
+Non, la méthode compte plus que la marque du modèle. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi mes visages changent ?
-Seed instable, denoise trop élevé, description personnage trop variable.
+Seed instable, denoise trop élevé, description personnage trop variable. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on faire pro sans équipe ?
-Oui, avec un pipeline propre et des plans courts.
+Oui, avec un pipeline propre et des plans courts. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Combien de versions garder par plan ?
-Deux maximum, A et B.
+Deux maximum, A et B. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment savoir que le plan est prêt ?
-Quand il reste crédible en plein écran, en mobile, et sans explication.
+Quand il reste crédible en plein écran, en mobile, et sans explication. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est l’erreur numéro un ?
-Confondre effet visuel et intention narrative.
+Confondre effet visuel et intention narrative. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Bloc avancé, pipeline complet en conditions réelles
 
@@ -361,34 +361,34 @@ Ce format court te force à décider vite. Et bien.
 ## FAQ complémentaire
 
 ### Dois-je lancer plusieurs seeds en parallèle ?
-Oui pour explorer, mais verrouille ensuite une version.
+Oui pour explorer, mais verrouille ensuite une version. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on faire un plan séquence en IA ?
-Possible, rarement recommandé au début.
+Possible, rarement recommandé au début. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Combien de temps pour un clip de 20 secondes pro ?
-Entre 1 et 3 jours selon ton niveau et ton matériel.
+Entre 1 et 3 jours selon ton niveau et ton matériel. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le meilleur “hack” qualité ?
-Aucun hack, c’est la cohérence globale.
+Aucun hack, c’est la cohérence globale. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment former un débutant vite ?
-Exercices courts, mêmes contraintes, feedback immédiat.
+Exercices courts, mêmes contraintes, feedback immédiat. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### La musique est-elle obligatoire ?
-Non, un bon design sonore suffit souvent.
+Non, un bon design sonore suffit souvent. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Est-ce qu’un smartphone de validation suffit ?
-Non, il complète, il ne remplace pas l’écran principal.
+Non, il complète, il ne remplace pas l’écran principal. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quand savoir qu’il faut repartir de zéro ?
-Quand la base visuelle contredit l’intention.
+Quand la base visuelle contredit l’intention. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment garder un style cohérent sur plusieurs vidéos ?
-Charte visuelle fixe + process de QA standard.
+Charte visuelle fixe + process de QA standard. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Qu’est-ce qui différencie une vidéo “pro” d’une vidéo “IA” ?
-La lisibilité émotionnelle, pas la technologie utilisée.
+La lisibilité émotionnelle, pas la technologie utilisée. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Deep dive, du plan isolé à la mini séquence pro
 

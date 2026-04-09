@@ -69,13 +69,13 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 ## FAQ
 
 ### La règle des tiers est-elle obligatoire ?
-Non, mais très utile pour débuter.
+Non, mais très utile pour débuter. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on centrer un sujet ?
-Oui, si c’est un choix narratif.
+Oui, si c’est un choix narratif. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment progresser vite ?
-Comparer version centrée vs version tiers sur chaque scène.
+Comparer version centrée vs version tiers sur chaque scène. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Pourquoi la règle des tiers marche si bien en IA
 
@@ -206,28 +206,28 @@ Tu répètes ça sur 5 scènes, ton œil progresse très vite.
 ## FAQ complémentaire
 
 ### La règle des tiers est-elle utile en vidéo aussi ?
-Oui, surtout pour stabiliser la lecture plan à plan.
+Oui, surtout pour stabiliser la lecture plan à plan. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on faire un cadre centré et fort ?
-Oui, si c’est un choix dramatique clair.
+Oui, si c’est un choix dramatique clair. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est l’indicateur numéro un de réussite ?
-Le regard du spectateur arrive immédiatement sur le sujet utile.
+Le regard du spectateur arrive immédiatement sur le sujet utile. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il appliquer les tiers sur les yeux en portrait ?
-Souvent oui, c’est très efficace.
+Souvent oui, c’est très efficace. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on combiner tiers et symétrie ?
-Oui, en alternance selon la tension voulue.
+Oui, en alternance selon la tension voulue. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Que faire si le modèle recadre mal ?
-Regénérer avec description de placement plus explicite.
+Regénérer avec description de placement plus explicite. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Les tiers suffisent-ils à faire “cinéma” ?
-Non, ils servent la base, il faut aussi lumière, rythme, texture.
+Non, ils servent la base, il faut aussi lumière, rythme, texture. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel piège revient le plus ?
-Confondre composition correcte et composition narrative.
+Confondre composition correcte et composition narrative. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Bloc avancé, tiers et storytelling
 
@@ -310,19 +310,19 @@ Fix: relecture externe et test mobile.
 ## FAQ finale 2
 
 ### Est-ce utile pour des vidéos courtes sociales ?
-Oui, surtout pour capter rapidement l’attention.
+Oui, surtout pour capter rapidement l’attention. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on utiliser les tiers en plan serré ?
-Oui, notamment sur les yeux et la direction du regard.
+Oui, notamment sur les yeux et la direction du regard. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est l’erreur la plus coûteuse ?
-Un cadre lisible techniquement mais vide narrativement.
+Un cadre lisible techniquement mais vide narrativement. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment entraîner son œil ?
-Comparer systématiquement version centrée et version tiers.
+Comparer systématiquement version centrée et version tiers. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quand ne pas utiliser les tiers ?
-Quand la symétrie frontale est un choix dramatique clair.
+Quand la symétrie frontale est un choix dramatique clair. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Bloc final, règle des tiers en production réelle
 
@@ -375,19 +375,19 @@ Fix: varier la dynamique des tiers selon l’histoire.
 ## FAQ finale 3
 
 ### Les tiers suffisent-ils à rendre une image pro ?
-Non, ils soutiennent la lisibilité, pas tout le style.
+Non, ils soutiennent la lisibilité, pas tout le style. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Puis-je casser la règle des tiers souvent ?
-Oui, si tu sais pourquoi tu la casses.
+Oui, si tu sais pourquoi tu la casses. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment entraîner vite son placement ?
-Faire des A/B centré vs tiers sur la même scène.
+Faire des A/B centré vs tiers sur la même scène. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est l’indicateur de maturité ?
-Ton placement sert la narration sans effort visible.
+Ton placement sert la narration sans effort visible. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il documenter les placements gagnants ?
-Oui, surtout en production d’équipe.
+Oui, surtout en production d’équipe. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Dernière passe, tiers et cohérence de série
 

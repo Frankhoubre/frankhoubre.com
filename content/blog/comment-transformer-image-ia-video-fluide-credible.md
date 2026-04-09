@@ -158,25 +158,25 @@ Ce qu’il faut observer:
 ## FAQ
 
 ### Durée optimale pour débuter ?
-3 à 5 secondes.
+3 à 5 secondes. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Mouvement caméra ou sujet en premier ?
-Caméra subtile d’abord, plus stable.
+Caméra subtile d’abord, plus stable. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi mes visages se déforment ?
-Motion trop fort + durée trop longue + source faible.
+Motion trop fort + durée trop longue + source faible. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on corriger un plan instable en post ?
-Parfois, mais mieux vaut régénérer tôt.
+Parfois, mais mieux vaut régénérer tôt. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### 24 fps ou 30 fps ?
-24 fps en base pour un rendu plus organique.
+24 fps en base pour un rendu plus organique. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le seed compte vraiment ?
-Oui, essentiel pour comparer et stabiliser.
+Oui, essentiel pour comparer et stabiliser. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel indicateur dit “c’est crédible” ?
-Quand le spectateur regarde l’action, pas les défauts.
+Quand le spectateur regarde l’action, pas les défauts. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Extension avancée, stabiliser le passage still -> motion
 
@@ -303,34 +303,34 @@ Avec cette routine, tu accumules des décisions reproductibles.
 ## FAQ complémentaire
 
 ### Est-ce que je dois animer tous les plans ?
-Non, des plans fixes respirants sont souvent plus forts.
+Non, des plans fixes respirants sont souvent plus forts. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quand faut-il passer en interpolation externe ?
-Quand la cadence est bonne mais la fluidité insuffisante.
+Quand la cadence est bonne mais la fluidité insuffisante. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on corriger les mains en post ?
-Parfois, mais c’est rarement propre. Mieux vaut régénérer.
+Parfois, mais c’est rarement propre. Mieux vaut régénérer. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le meilleur test rapide de crédibilité ?
-Lecture silencieuse puis lecture audio seule.
+Lecture silencieuse puis lecture audio seule. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment éviter le “look IA du mois” ?
-Réduire effets à la mode, renforcer logique scène.
+Réduire effets à la mode, renforcer logique scène. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le noir et blanc aide-t-il à masquer les défauts ?
-Parfois, mais il ne corrige pas la géométrie.
+Parfois, mais il ne corrige pas la géométrie. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je viser la perfection ?
-Non, vise la cohérence perçue.
+Non, vise la cohérence perçue. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment documenter mes réglages ?
-Fichier simple: date, prompt, seed, paramètres, résultat.
+Fichier simple: date, prompt, seed, paramètres, résultat. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi un plan excellent seul échoue en séquence ?
-Différences de lumière, de rythme, de texture.
+Différences de lumière, de rythme, de texture. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le premier réflexe quand un plan casse ?
-Baisser motion et durée avant tout.
+Baisser motion et durée avant tout. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Workflow expert, conserver l’illusion de réalité
 
@@ -440,49 +440,49 @@ Pour élargir cette méthode à un projet complet, reconnecte avec [workflow com
 ## FAQ supplémentaire
 
 ### Puis-je ajouter du motion blur pour masquer les artefacts ?
-Très légèrement, oui, mais jamais pour cacher une géométrie cassée.
+Très légèrement, oui, mais jamais pour cacher une géométrie cassée. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Que faire si le client veut “plus de mouvement” ?
-Proposer une version B plus dynamique, sans casser la version crédible.
+Proposer une version B plus dynamique, sans casser la version crédible. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Combien de tests max avant de rejeter un plan ?
-En général trois passes propres suffisent.
+En général trois passes propres suffisent. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il conserver les ratés ?
-Oui, annotés, c’est ta base d’apprentissage la plus précieuse.
+Oui, annotés, c’est ta base d’apprentissage la plus précieuse. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment savoir si un plan est “fini” et pas juste “acceptable” ?
-Quand tu peux le revoir 3 fois sans te focaliser sur un défaut précis.
+Quand tu peux le revoir 3 fois sans te focaliser sur un défaut précis. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je exporter en plusieurs qualités pour tester ?
-Oui, master haute qualité puis version web, c’est là que tu détectes les défauts de compression.
+Oui, master haute qualité puis version web, c’est là que tu détectes les défauts de compression. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le son peut-il sauver une image moyenne ?
-Il peut renforcer, jamais masquer durablement.
+Il peut renforcer, jamais masquer durablement. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi un plan crédible à l’écran principal paraît faux sur téléphone ?
-Parce que le contraste et la netteté perçue changent radicalement. Vérifie toujours les deux.
+Parce que le contraste et la netteté perçue changent radicalement. Vérifie toujours les deux. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le meilleur ordre de correction en urgence ?
-Stabilité visage, cohérence lumière, puis texture globale.
+Stabilité visage, cohérence lumière, puis texture globale. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je utiliser la même musique pendant toute l’itération ?
-Oui, pour juger le rythme de manière comparable.
+Oui, pour juger le rythme de manière comparable. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment éviter la fatigue de décision ?
-Sessions courtes, règles de rejet claires, et pauses.
+Sessions courtes, règles de rejet claires, et pauses. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Que faire quand deux versions semblent bonnes ?
-Choisis celle qui reste crédible sans son, puis valide avec son.
+Choisis celle qui reste crédible sans son, puis valide avec son. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je garder le même grade entre tous les plans ?
-Base commune oui, ajustements locaux ensuite.
+Base commune oui, ajustements locaux ensuite. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quelle est la pire erreur de dernière minute ?
-Ajouter de la netteté globale juste avant export.
+Ajouter de la netteté globale juste avant export. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on automatiser le QA ?
-Partiellement, mais la validation humaine reste indispensable.
+Partiellement, mais la validation humaine reste indispensable. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel réflexe final évite les mauvaises publications ?
 Faire une dernière lecture à froid le lendemain, même 5 minutes.

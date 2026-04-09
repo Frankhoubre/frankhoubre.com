@@ -184,28 +184,28 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 ## FAQ
 
 ### Pourquoi “photorealistic” seul ne suffit pas ?
-Parce que ce mot ne decrit ni lumiere, ni geometri e, ni intention de plan.
+Parce que ce mot ne decrit ni lumiere, ni geometri e, ni intention de plan. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Combien de negatifs faut-il mettre ?
-En general 4 a 8, cibles sur tes erreurs recurrentes.
+En general 4 a 8, cibles sur tes erreurs recurrentes. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il toujours preciser la focale ?
-Oui, surtout si tu veux stabiliser les visages et la perspective.
+Oui, surtout si tu veux stabiliser les visages et la perspective. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment savoir qu’un prompt est trop long ?
-Quand il se contredit ou repete les memes idees sous dix formes.
+Quand il se contredit ou repete les memes idees sous dix formes. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le grain dans le prompt ou en post ?
-Les deux peuvent marcher, mais le grain ne doit jamais masquer une lumiere mal pensee.
+Les deux peuvent marcher, mais le grain ne doit jamais masquer une lumiere mal pensee. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi mes resultats changent d’une session a l’autre ?
-Modele, seed, reglages, et contexte de generation changent la sortie. Documente tout.
+Modele, seed, reglages, et contexte de generation changent la sortie. Documente tout. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Je peux garder un style “propre” sans effet plastique ?
-Oui, si la lumiere reste motivee et la texture peau conservee.
+Oui, si la lumiere reste motivee et la texture peau conservee. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment progresser vite ?
-Tester peu de variantes, bien notees, avec une seule variable modifiee a la fois.
+Tester peu de variantes, bien notees, avec une seule variable modifiee a la fois. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Atelier avancé, protocole de correction reproductible
 
@@ -358,28 +358,28 @@ Fix: sessions courtes, critères de rejet clairs.
 ## FAQ additionnelle
 
 ### Je peux rester en français intégral ?
-Oui, mais certains tags techniques anglais restent plus fiables selon modèle.
+Oui, mais certains tags techniques anglais restent plus fiables selon modèle. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le mot “cinematic” suffit-il ?
-Non, jamais sans contexte caméra/lumière.
+Non, jamais sans contexte caméra/lumière. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il toujours donner l’heure ?
-Oui si la lumière dépend d’une source naturelle.
+Oui si la lumière dépend d’une source naturelle. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment savoir si j’ai trop d’éléments ?
-Si ton regard ne sait pas où aller, il y en a trop.
+Si ton regard ne sait pas où aller, il y en a trop. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je mentionner le capteur ?
-Optionnel, utile surtout pour la cohérence inter-plans.
+Optionnel, utile surtout pour la cohérence inter-plans. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on corriger sans tout réécrire ?
-Oui, en changeant une variable à la fois.
+Oui, en changeant une variable à la fois. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le meilleur réflexe anti fake ?
-Remplacer les superlatifs par des données de tournage.
+Remplacer les superlatifs par des données de tournage. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quand valider un prompt ?
-Quand deux générations consécutives restent crédibles avec variations mineures.
+Quand deux générations consécutives restent crédibles avec variations mineures. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Extension finale, méthode de production hebdomadaire
 
@@ -498,16 +498,16 @@ Fix: préciser ce que regarde le personnage.
 ## FAQ avancée
 
 ### Dois-je créer des presets de prompts ?
-Oui, mais par famille de scènes, pas universels.
+Oui, mais par famille de scènes, pas universels. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Combien de temps garder un prompt baseline ?
-Tant qu’il reste stable sur plusieurs sessions.
+Tant qu’il reste stable sur plusieurs sessions. Ce chiffre est un point de depart fiable, mais ajuste-le selon le type de mouvement, la densite du cadre et le niveau de realisme attendu. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on industrialiser cette méthode ?
-Oui, avec templates + revue visuelle + logs.
+Oui, avec templates + revue visuelle + logs. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le bon ratio rejet/validation au début ?
-60/40 est déjà très correct.
+60/40 est déjà très correct. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment éviter l’effet mode du moment ?
-Rester ancré dans des descriptions physiques.
+Rester ancré dans des descriptions physiques. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.

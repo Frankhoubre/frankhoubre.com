@@ -76,16 +76,16 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 ## FAQ
 
 ### Le meilleur modèle suffit-il pour éviter l’effet plastique ?
-Non, c’est le pipeline complet qui compte.
+Non, c’est le pipeline complet qui compte. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il toujours ajouter du grain ?
-Souvent oui, mais léger et cohérent.
+Souvent oui, mais léger et cohérent. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment garder la peau réaliste ?
-Texture naturelle, lumière motivée, netteté modérée.
+Texture naturelle, lumière motivée, netteté modérée. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi mes images sont belles mais fake ?
-Souvent parce qu’elles sont trop propres et trop parfaites.
+Souvent parce qu’elles sont trop propres et trop parfaites. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Ce qui déclenche l’effet plastique, en vrai
 
@@ -298,28 +298,28 @@ Si une case échoue, tu corriges avant diffusion.
 ## FAQ complémentaire
 
 ### Combien d’images faut-il générer avant de choisir ?
-Entre 6 et 20 selon complexité, pas 200 au hasard.
+Entre 6 et 20 selon complexité, pas 200 au hasard. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on viser un rendu clean sans plastique ?
-Oui, clean ne veut pas dire lisse artificiel.
+Oui, clean ne veut pas dire lisse artificiel. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il toujours mentionner “film grain” ?
-Souvent utile, mais subtil et cohérent.
+Souvent utile, mais subtil et cohérent. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Le meilleur modèle résout-il tout ?
-Non, sans méthode il produira aussi des sorties fake.
+Non, sans méthode il produira aussi des sorties fake. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi mes hautes lumières brûlent vite ?
-Source mal placée ou contraste global trop poussé.
+Source mal placée ou contraste global trop poussé. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment éviter le “look IA du mois” ?
-Décris le réel, pas les tendances.
+Décris le réel, pas les tendances. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Dois-je travailler en lot de scènes ou image par image ?
-Commence image par image, puis passe en lot cohérent.
+Commence image par image, puis passe en lot cohérent. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel signal montre que je progresse ?
-Tu rejettes plus vite les faux positifs et tu reproduis plus facilement les bonnes sorties.
+Tu rejettes plus vite les faux positifs et tu reproduis plus facilement les bonnes sorties. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Méthode avancée, construire un rendu crédible en série
 
@@ -445,19 +445,19 @@ Fix: règle stop après 3 essais sans progrès.
 ## FAQ additionnelle 2
 
 ### Comment tenir la qualité sur 20 images ?
-Avec charte visuelle + validation stricte image par image.
+Avec charte visuelle + validation stricte image par image. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il faire une post lourde ?
-Non, juste une finition maîtrisée.
+Non, juste une finition maîtrisée. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment accélérer sans perdre le réalisme ?
-Limiter les variables et documenter.
+Limiter les variables et documenter. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel indicateur dit “prêt à publier” ?
-Aucun défaut majeur au zoom, et cohérence globale à distance normale.
+Aucun défaut majeur au zoom, et cohérence globale à distance normale. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Peut-on rester “stylé” sans être fake ?
-Oui, si le style reste ancré dans des lois physiques crédibles.
+Oui, si le style reste ancré dans des lois physiques crédibles. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ## Annexe pratique, pipeline pro en 3 niveaux
 
@@ -535,19 +535,19 @@ Fix: journal prompt/seed/réglages.
 ## FAQ finale
 
 ### Faut-il travailler par séries d’images ?
-Oui, c’est le meilleur moyen de stabiliser le style.
+Oui, c’est le meilleur moyen de stabiliser le style. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Puis-je garder un rendu “propre” sans être fake ?
-Oui, en conservant texture et logique lumière.
+Oui, en conservant texture et logique lumière. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Quel est le meilleur test rapide ?
-Comparer avant/après sur peau, yeux, tissus.
+Comparer avant/après sur peau, yeux, tissus. En pratique, traite cette decision comme un parametre narratif, pas comme un simple reglage technique, sinon le rendu devient vite incoherent d'un plan a l'autre. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Pourquoi mes images changent tant d’un jour à l’autre ?
-Réglages, seed et contexte varient, documente tout.
+Réglages, seed et contexte varient, documente tout. La raison principale est que le modele complete les zones ambiguës avec des approximations, ce qui cree des incoherences visibles quand la scene devient complexe. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Faut-il tout retoucher en post ?
-Non, la base doit déjà être crédible.
+Non, la base doit déjà être crédible. La bonne reponse depend surtout de l'intention de scene et de la constance entre les plans, pas d'une regle absolue appliquee partout. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
 
 ### Comment savoir qu’une image est prête ?
-Quand elle tient au zoom et à distance normale.
+Quand elle tient au zoom et à distance normale. Commence par une version simple et stable, puis ajoute une seule contrainte a la fois pour voir clairement ce qui ameliore ou deteriore le resultat. La methode la plus fiable consiste a tester deux variantes proches avec les memes conditions (seed, lumiere, cadrage), puis garder celle qui reste lisible apres plusieurs revisions. Si tu hesites, privilegie la coherence globale de la sequence et documente ton choix, car c'est ce qui donne un resultat credible sur la duree.
