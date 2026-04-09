@@ -195,3 +195,19 @@ Mélange courant : français pour toi, tags techniques en anglais si ton modèle
 **C’est « tricher » d’étirer le bokeh en post ?**
 
 Non si tu assumes un look et que tu restes cohérent sur la série. Le cinéma numérique combine capture, optique et finition depuis longtemps.
+
+Dernier principe, garde la cohérence d’un plan à l’autre.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-simuler-objectif-anamorphique-generation-ia/comment-simuler-objectif-anamorphique-generation-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment simuler objectif anamorphique generation ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

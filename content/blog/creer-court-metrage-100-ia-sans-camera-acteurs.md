@@ -225,3 +225,17 @@ Si tu as le budget et une projection cinéma prévue, oui ça peut aider. Pour u
 **Comment intégrer des bruitages sans bibliothèque payante ?**
 
 Enregistre cinq sons toi-même avec un téléphone propre, porte, pas, eau, chaises. Même basiques, ils ancrent plus qu’une banque générique mal choisie. Nettoie le bruit de fond extrême, normalise doucement, place sous la vidéo avant la musique.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/creer-court-metrage-100-ia-sans-camera-acteurs-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene creer court metrage 100 ia sans camera acteurs, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

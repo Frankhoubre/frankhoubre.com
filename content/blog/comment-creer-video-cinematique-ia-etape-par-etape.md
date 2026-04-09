@@ -501,3 +501,5 @@ Et surtout, reproductible projet après projet.
 Tu fais moins d’erreurs, et tu progresses beaucoup plus vite.
 
 Vraiment, projet après projet.
+
+Et si tu veux renforcer la cohérence des scènes, utilise aussi [les principes de construction plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan).

@@ -200,3 +200,17 @@ Utilise la même fiche personnage en tête de chaque sous-tâche ; relie à [com
 
 **Je prépare un workshop équipe : par où commencer ?**  
 Fixe trois formats de sortie obligatoires (tableau, liste de risques, version courte « copier dans Slack ») et un glossaire caméra commun ; fais un exercice live sur **une** scène et compare les livrables au tableau blanc, puis votez sur la version la plus **tournable** demain matin.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/prompt-chatgpt/prompt-chatgpt-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene prompt chatgpt, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

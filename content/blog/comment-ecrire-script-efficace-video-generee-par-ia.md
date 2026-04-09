@@ -183,3 +183,17 @@ Parce que le noyau de continuité n’est pas assez verrouillé entre les plans.
 **Le handheld, comment sans casser la géométrie ?**
 
 Reste sur une amplitude faible et des mouvements lisibles, surtout au départ. Choisis un décor plus simple, avec moins de lignes critiques et de reflets, pour limiter les ondulations. Si besoin, ajoute un flou de mouvement très léger en post sur l’arrière-plan plutôt que sur le visage.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-ecrire-script-efficace-video-generee-par-ia/comment-ecrire-script-efficace-video-generee-par-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ecrire script efficace video generee par ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

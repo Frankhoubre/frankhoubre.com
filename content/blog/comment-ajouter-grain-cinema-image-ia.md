@@ -190,3 +190,17 @@ Parfois c’est du bruit de compression ou d’upscale, pas du grain esthétique
 
 **Je combine avec du halation / glow ?**  
 Ordre courant : halation douce sur les sources lumineuses, puis grain fin global pour lier. Inverse parfois utile si le glow adoucit trop les hautes : teste sur une copie.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-ajouter-grain-cinema-image-ia/comment-ajouter-grain-cinema-image-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ajouter grain cinema image ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

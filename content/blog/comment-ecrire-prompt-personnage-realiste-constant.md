@@ -173,3 +173,17 @@ Pour la **profondeur de champ** et le lien entre focale et séparation des plans
 **Comment livrer « le même héros » à un client ?** Documente prompt, seed, réglages, et fournis une planche de trois angles validés plutôt que cinq hasards « proches ».
 
 **La coiffure change entre deux images du même jour de tournage fictif, est-ce grave ?** Pour le spectateur, oui, sauf si ton récit montre explicitement un passage de temps ou une scène différente.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-ecrire-prompt-personnage-realiste-constant/comment-ecrire-prompt-personnage-realiste-constant-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ecrire prompt personnage realiste constant, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

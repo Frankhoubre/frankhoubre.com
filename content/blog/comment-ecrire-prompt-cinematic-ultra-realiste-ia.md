@@ -181,3 +181,17 @@ Si tu sors d’un shooting photo et que tu veux parler comme sur un plateau, gar
 **Est-ce que « cinematic lighting » suffit ?** Rarement. C’est un aimant à clichés. Remplace par une phrase de source et une phrase de contraste.
 
 **Dois-je décrire l’objectif photo même si je n’y connais rien ?** Oui, avec des équivalents simples, 35 mm, 50 mm, ou « portrait téléobjectif léger ». Le modèle a besoin d’une échelle, pas d’un cours magistral.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia/comment-ecrire-prompt-cinematic-ultra-realiste-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ecrire prompt cinematic ultra realiste ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

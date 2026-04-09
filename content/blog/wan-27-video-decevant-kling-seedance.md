@@ -198,3 +198,12 @@ Le grading peut améliorer la cohérence de contraste et masquer des défauts l�
 **Je fais quoi cette semaine si je suis bloqué ?**
 
 **Abaisse** la complexité, **raccourcis** les plans, **ajoute** le son tôt, et **pivot** d’outil si la règle de temps est dépassée.
+
+## Référence vidéo `@BusinessDynamite`
+
+Pour comparer les rendus vidéo en gardant un cadre narratif clair, regarde cette vidéo `@BusinessDynamite`  
+[https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+
+Observe surtout la cohérence mouvement + coupe + intention de plan, puis applique ce triptyque dans ton benchmark WAN, Kling, Seedance.
+
+À croiser avec [le workflow complet idée film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste) et [l’amélioration du réalisme des mouvements](/blog/comment-ameliorer-realisme-mouvements-video-ia).

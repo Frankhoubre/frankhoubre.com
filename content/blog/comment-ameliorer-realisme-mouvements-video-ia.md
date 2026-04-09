@@ -199,3 +199,17 @@ Vérifie niveaux légaux, safe zones, et surtout **motion** jugée sur grand éc
 
 **Pourquoi mes ciels « HDR » cassent le réalisme ?**  
 Hautes lumières non maîtrisées : applique un roll-off doux et baisse le contraste local sur le ciel avant de repousser la saturation. Même logique que sur stills trop « drone ».
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-ameliorer-realisme-mouvements-video-ia/comment-ameliorer-realisme-mouvements-video-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ameliorer realisme mouvements video ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

@@ -163,3 +163,17 @@ Affiche les dix images en grille et regarde-les d’abord en petit, puis en plei
 
 **Ça s’applique à la vidéo ?**  
 Oui, et c’est même la meilleure façon de sécuriser une vidéo IA. Verrouille d’abord le look sur des stills pilotes, puis transfère le même noyau de lumière/matière dans les clips animés pour limiter la dérive frame à frame. Ensuite, la cohérence se joue au montage et à l’étalonnage de série, pas seulement dans le prompt.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-controler-style-visuel-generation-ia/comment-controler-style-visuel-generation-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment controler style visuel generation ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

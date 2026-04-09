@@ -176,3 +176,12 @@ ScreenWeaver ne fera pas le film à ta place. Il peut réduire la distance entre
 ---
 
 À toi de jouer : une scène, trois panneaux, une preuve sonore, une date dans le nom de fichier. Le reste est de la répétition honnête.
+
+## Référence vidéo `@BusinessDynamite`
+
+Pour renforcer ton passage scénario vers storyboard, cette référence `@BusinessDynamite` est pertinente  
+[https://www.youtube.com/watch?v=hHWkvFH8u9I](https://www.youtube.com/watch?v=hHWkvFH8u9I)
+
+Ce que tu dois observer, la clarté des intentions de plan, la progression des actions, et la manière dont une structure lisible simplifie toute la production.
+
+Tu peux aussi relier cette méthode à [l’écriture de script vidéo IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia) et [la construction plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan).

@@ -177,3 +177,17 @@ Oui. Une passe noir et blanc rapide montre si tu as encore de la matière dans l
 **Peut-on utiliser l’IA pour re-grader une image déjà contrastée trop fort ?**
 
 Parfois, avec des outils de restauration ou de « relight », mais c’est hasardeux. Mieux vaut repartir du fichier le moins destructif possible, PNG ou TIFF sans sharpen, et refaire la courbe calmement. Si tu n’as plus le fichier source, sauve ce que tu peux avec une courbe inverse douce et accepte que certaines zones soient définitivement perdues en détail.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/pourquoi-images-ia-manquent-contraste-comment-corriger-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene pourquoi images ia manquent contraste comment corriger, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

@@ -370,3 +370,108 @@ Préserver les midtones et limiter le contraste global.
 
 ### Le volumétrique est-il obligatoire pour un rendu cinéma ?
 Non, et souvent trop utilisé.
+
+## Annexe de plateau, construire une charte lumière réutilisable
+
+Quand tu veux garder une cohérence sur plusieurs scènes, crée une charte lumière:
+- source dominante
+- niveau moyen de fill
+- palette température
+- traitement des practicals
+- degré de contraste cible
+
+Cette charte devient ton garde-fou.
+
+### Exemple de charte “drame urbain”
+
+- key: latérale douce, 45 degrés
+- fill: faible, ombres lisibles
+- practicals: tungstène localisé
+- fond: légèrement plus froid
+- contraste: medium, pas de noirs bouchés
+
+Tu utilises ensuite cette base pour chaque scène.  
+Tu ajustes seulement ce qui sert le récit.
+
+> **Pro insight**  
+> La cohérence lumière est plus importante que la beauté isolée d’un plan.
+
+## Workflow calibrage équipe
+
+1. choisir une scène test commune  
+2. générer 3 variantes lumière  
+3. revue collective sur écran principal  
+4. notation lisibilité/émotion/réalisme  
+5. sélection baseline
+
+Ce protocole évite les débats stériles.
+
+## Trench warfare extension
+
+### 26) Sur-utilisation de la backlight
+Fix: limiter la séparation à ce qui est narrativement utile.
+
+### 27) Mélange de températures contradictoires
+Fix: une dominante, une contre-note.
+
+### 28) Fill frontal “selfie”
+Fix: déplacer fill hors axe caméra.
+
+### 29) Shadows clipping
+Fix: préserver détail ombres avant look.
+
+### 30) Highlights brûlés sur peau
+Fix: baisser intensité key ou modifier angle incidence.
+
+### 31) Practicals décoratifs mais faux
+Fix: chaque practical doit influencer la scène.
+
+### 32) Atmosphère trop “marketing”
+Fix: réduire saturation, renforcer volumes.
+
+### 33) Ombres sans direction
+Fix: verrouiller orientation key dès le prompt.
+
+### 34) Reflets incohérents dans les yeux
+Fix: corriger nombre/forme des catchlights.
+
+### 35) Contraste global sans hiérarchie locale
+Fix: placer d’abord le contraste sur le sujet.
+
+## Cas pratique détaillé, scène cuisine nuit
+
+Objectif émotionnel:
+- fatigue
+- doute
+- proximité
+
+Recette:
+- key fenêtre latérale
+- fill rebond table
+- practical fond chaud
+- contrastes moyens
+
+Vérification:
+- lisibilité regard
+- volume visage
+- fond non compétitif
+
+## FAQ extra
+
+### Faut-il verrouiller la lumière avant le cadrage ?
+Les deux se construisent ensemble, mais la source doit rester claire.
+
+### Comment former un oeil lumière rapidement ?
+Comparer 2 variantes avec une seule différence de key.
+
+### Quand la scène est-elle “trop plate” ?
+Quand aucune zone d’ombre ne crée de relief utile.
+
+### Peut-on avoir une scène réaliste avec une seule source ?
+Oui, souvent c’est même plus crédible.
+
+Si tu gardes cette discipline, tu construis une vraie signature visuelle.  
+Et surtout, tu évites le rendu “beau mais faux” qui casse la confiance du spectateur.
+
+Ce travail paraît minutieux.  
+Mais c’est exactement ce qui fait la différence entre un rendu IA visible et une image vraiment crédible.

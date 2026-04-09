@@ -182,3 +182,17 @@ Pas automatiquement. Sur de la matière générée, plus de images par seconde p
 ## Pour aller plus loin sans se perdre
 
 Quand tu auras stabilisé un clip de six secondes, duplique le projet et tente une variante « nuit » ou « pluie » en ne changeant que la couche météo dans le prompt de frame, pas toute la géométrie. Tu apprends ainsi à isoler les variables qui cassent la cohérence temporelle. Garde un journal d’une ligne par session : date, outil, pourcentage mouvement gagnant, note sur le son. Au bout d’un mois, tu as un **petit manuel personnel** plus utile que dix tutoriels génériques.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene pourquoi mes videos ia ont l air fake comment rendre realistes, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

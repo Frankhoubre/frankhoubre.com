@@ -175,3 +175,17 @@ C’est souvent un cumul guidance trop haute + lumière frontale + netteté glob
 **Contraste faible, pourquoi ?**
 
 Soit le modèle est trop conservateur sur les basses lumières, soit ton export/grade est trop plat. Monte d’abord le contraste global et ajuste le roll-off des hautes, puis seulement la saturation. Si tu satures avant, tu obtiens vite un look artificiel sans vraie profondeur.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-creer-ambiance-sombre-cinematique-avec-ia/comment-creer-ambiance-sombre-cinematique-avec-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer ambiance sombre cinematique avec ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

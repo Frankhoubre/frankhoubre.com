@@ -271,3 +271,17 @@ Pour le vocabulaire marketing, [marketing](https://fr.wikipedia.org/wiki/Marketi
 **Faut-il une assurance erreurs et omissions ?** Selon taille d’agence et clients, à discuter avec ton conseil, surtout si tu livres des campagnes réglementées.
 
 **Les démos internes peuvent-elles être publiques ?** Non sans droits musicaux et marque, utilise des assets de démo séparés.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-creer-pub-video-avec-ia-comme-agence-pro/comment-creer-pub-video-avec-ia-comme-agence-pro-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer pub video avec ia comme agence pro, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

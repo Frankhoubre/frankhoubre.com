@@ -241,3 +241,17 @@ Pour le portrait photo, [portrait photographique](https://fr.wikipedia.org/wiki/
 **Le portrait de dos ou trois quarts dos ?** Exigeant pour la coiffure et les épaules, utile pour varier une séquence sans montrer le visage en gros plan, pense au costume visible.
 
 **Dois-je calibrer mon écran ?** Oui si tu juges des peaux pour livraison, sinon tu livres des surprises sur les machines des autres.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-creer-portrait-ia-digne-film/comment-creer-portrait-ia-digne-film-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer portrait ia digne film, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

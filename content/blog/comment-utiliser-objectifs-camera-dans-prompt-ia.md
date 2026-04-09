@@ -305,3 +305,136 @@ Distance fond insuffisante ou lumière trop plate.
 
 ### Comment former une équipe sur ce sujet ?
 Tests comparatifs 24-35-50 sur une scène identique.
+
+## Annexe production, cohérence focale multi-projets
+
+Quand tu travailles en série, la cohérence devient un avantage énorme.  
+Tu dois pouvoir relancer un plan trois semaines plus tard sans casser le style.
+
+Crée un document “bible focale” avec:
+- focale de base par type de plan
+- exceptions autorisées
+- ratio de diffusion cible
+- repères d’angle caméra
+
+Ensuite, chaque nouveau plan est validé contre cette bible.
+
+> **Pro insight**  
+> Une focale cohérente donne une identité de projet, comme une signature visuelle.
+
+## QA focales, checklist finale
+
+- focale justifiée par l’intention
+- distance sujet-camera explicite
+- distance sujet-fond explicite
+- angle caméra cohérent
+- raccord de focale entre plans voisins
+- validation 16:9 et 9:16 si nécessaire
+
+Si deux points sont rouges, regénération.
+
+## FAQ complémentaire 3
+
+### Peut-on standardiser les focales sur toute une équipe ?
+Oui, et c’est même recommandé pour la cohérence.
+
+### Quelle erreur coûte le plus cher en post ?
+La contradiction focale/cadrage.
+
+### Comment garder un rendu cinéma sans surcharger le prompt ?
+Utiliser une focale claire, un angle clair, une lumière claire.
+
+### Le plus grand gain débutant ?
+Passer du “cinematic lens” vague à une focale explicitement choisie.
+
+## Extension opérationnelle, méthode de production hebdomadaire
+
+Semaine type:
+- lundi, tests focale 24/35/50 sur une scène fixe
+- mardi, tests focales + angles
+- mercredi, tests focales + lumière
+- jeudi, montage comparatif
+- vendredi, validation d’une charte focale projet
+
+Tu accumules des décisions solides.
+
+### Journal de bord recommandé
+
+Pour chaque test:
+- date
+- scène
+- focale
+- angle
+- distance sujet
+- distance fond
+- résultat perçu
+
+Au bout de 3 semaines, tu vois des motifs très clairs.
+
+> **Pro insight**  
+> La focale devient un réflexe de narration quand tu la documentes méthodiquement.
+
+## Dépannage expert additionnel
+
+### 41) Plans raccordés mais sensation de rupture
+Fix: vérifier différence d’angle avant de blâmer la focale.
+
+### 42) Décor “compressé” involontaire
+Fix: réduire focale ou augmenter profondeur de décor.
+
+### 43) Sujet trop dominant en plan large
+Fix: reculer caméra et rééquilibrer composition.
+
+### 44) Perspective incohérente entre champs/contrechamps
+Fix: garder focale proche et axe cohérent.
+
+### 45) Rendu trop “flat social”
+Fix: lumière directionnelle + focale narrative.
+
+### 46) Sujet déformé en mouvement
+Fix: réduire amplitude caméra avec focale courte.
+
+### 47) Visage naturel mais fond faux
+Fix: retravailler distance et matière du fond.
+
+### 48) Trop de variation d’échelle
+Fix: établir une progression focale stable.
+
+### 49) Cadrage vertical agressif sur visage
+Fix: passer à focale plus longue ou recadrer.
+
+### 50) Difficulté à expliquer les choix à un client
+Fix: montrer comparatif visuel focales sur même plan.
+
+## FAQ finale
+
+### Quelle focale pour pub produit + humain ?
+Souvent 35 pour contexte, 50 pour usage, 85 pour émotion.
+
+### Peut-on éviter totalement le 24 mm ?
+Non, utile pour installer l’espace, mais avec prudence.
+
+### Comment savoir qu’une focale est “fausse” ?
+Quand la perception du sujet contredit l’intention du plan.
+
+### Combien de focales max par scène ?
+Deux ou trois bien justifiées suffisent.
+
+### Quel réflexe garde la cohérence globale ?
+Toujours vérifier focale + angle + lumière ensemble.
+
+### Comment décider vite en tournage IA quand on hésite ?
+Revenir à la question narrative, qu’est-ce que ce plan doit faire ressentir, puis choisir la focale la plus simple qui sert cette émotion.
+
+### Faut-il adapter la focale au type de peau et au maquillage ?
+Indirectement oui, certaines focales et distances accentuent trop les textures brillantes, il faut équilibrer avec la lumière.
+
+### Le même prompt focale fonctionne-t-il sur tous les modèles ?
+Non, mais la logique reste stable, c’est la force de cette méthode.
+
+### Quel est le meilleur indicateur de maîtrise ?
+Quand tu peux expliquer en 10 secondes pourquoi chaque focale est à sa place dans la séquence.
+
+Cette clarté crée de la confiance, pour toi, pour ton équipe, et pour le client qui valide le rendu final.
+
+Et elle te permet de répéter un style visuel cohérent sur des séries complètes, sans hasard.

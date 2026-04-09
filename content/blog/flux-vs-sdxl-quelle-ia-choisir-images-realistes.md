@@ -198,3 +198,17 @@ Teste-le sur trois prompts courts que tu maîtrises. Si trois sujets différents
 **L’upscale change-t-il le verdict du test AB ?**
 
 Oui si tu upscales différemment entre les deux branches. Si tu veux comparer les moteurs, reste à la même résolution post-traitement ou upscale avec le même outil et les mêmes paramètres, sinon tu juges l’upscaler, pas le générateur de base.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/flux-vs-sdxl-quelle-ia-choisir-images-realistes-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene flux vs sdxl quelle ia choisir images realistes, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

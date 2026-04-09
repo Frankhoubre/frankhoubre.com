@@ -411,3 +411,103 @@ Ce rythme transforme la progression en système.
 - **fond narratif propre**
 
 Si une case échoue, tu corriges avant publication.
+
+## Annexe terrain, calibration avancée sur 7 jours
+
+Jour 1, tu isoles tes 3 erreurs les plus fréquentes.  
+Jour 2, tu construis 3 prompts propres, chacun centré sur une seule correction.  
+Jour 3, tu compares ces prompts sur 2 scènes différentes.  
+Jour 4, tu verrouilles une version baseline.  
+Jour 5, tu testes uniquement la lumière.  
+Jour 6, tu testes uniquement la focale.  
+Jour 7, tu valides une mini bibliothèque de prompts robustes.
+
+Cette routine paraît simple. Elle est redoutable.
+
+### Mesure de progression
+
+Note chaque session:
+- nombre de rendus rejetés
+- nombre de rendus “presque bons”
+- nombre de rendus validés
+
+Si ta courbe de rejets baisse et tes validations montent, ton système fonctionne.
+
+## Guide de décision rapide avant publication
+
+Question 1, l’image est-elle crédible à distance normale de lecture ?  
+Question 2, l’image reste-t-elle crédible au zoom ?  
+Question 3, le sujet reste-t-il le point focal principal ?  
+Question 4, la lumière raconte-t-elle une source plausible ?  
+Question 5, la peau semble-t-elle humaine, pas synthétique ?
+
+Si tu réponds non à deux questions, publication reportée.
+
+### Focus important, les “faux positifs”
+
+Certaines images donnent une impression “waouh” immédiate mais ne tiennent pas plus de 3 secondes d’observation.  
+C’est un faux positif.
+
+Tu dois t’entraîner à les rejeter vite.
+
+> **Pro insight**  
+> L’exigence de réalisme se joue dans la deuxième lecture, pas dans le premier effet.
+
+## Section dépannage expert
+
+### 31) Teint “glacé”
+Cause: désaturation mal répartie.  
+Fix: restaurer micro variation dans les tons chair.
+
+### 32) Ombres “collées”
+Cause: contraste local trop dur.  
+Fix: adoucir transitions sur pommettes et mâchoire.
+
+### 33) Décor “carton”
+Cause: matériaux non décrits.  
+Fix: ajouter matière mur/sol dans prompt.
+
+### 34) Cils excessivement nets
+Cause: sharpen global.  
+Fix: netteté sélective seulement hors peau.
+
+### 35) Front brillant
+Cause: highlights non contrôlés.  
+Fix: source plus diffuse ou angle ajusté.
+
+### 36) Lèvres “gel”
+Cause: rendu glossy artificiel.  
+Fix: texture matte subtile et saturation modérée.
+
+### 37) Oreilles incohérentes
+Cause: angle + cheveux mal définis.  
+Fix: simplifier coiffure et inclinaison tête.
+
+### 38) Couleurs “teal-orange” involontaires
+Cause: corrélation style trop forte.  
+Fix: limiter vocabulaire style et préciser palette.
+
+### 39) Pores trop visibles
+Cause: sur-interprétation texture.  
+Fix: réduire détails micro au prompt.
+
+### 40) Regard vide
+Cause: pas d’intention d’action.  
+Fix: préciser ce que regarde le personnage.
+
+## FAQ avancée
+
+### Dois-je créer des presets de prompts ?
+Oui, mais par famille de scènes, pas universels.
+
+### Combien de temps garder un prompt baseline ?
+Tant qu’il reste stable sur plusieurs sessions.
+
+### Peut-on industrialiser cette méthode ?
+Oui, avec templates + revue visuelle + logs.
+
+### Quel est le bon ratio rejet/validation au début ?
+60/40 est déjà très correct.
+
+### Comment éviter l’effet mode du moment ?
+Rester ancré dans des descriptions physiques.

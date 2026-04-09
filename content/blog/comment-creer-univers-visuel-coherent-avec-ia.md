@@ -213,3 +213,17 @@ Pour le vocabulaire de la direction artistique, voir [direction artistique](http
 **Une bible peut-elle inclure des ratios d’image ?** Oui, 2.39, 16:9, 4:5, note-les pour éviter des recadrages qui cassent la composition d’ensemble entre les livrables.
 
 **Faut-il une image de moodboard par pilier ?** Utile mais pas obligatoire. Une image par pilier peut aider l’équipe, à condition de les traduire en règles textuelles pour ne pas dépendre du seul visuel.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-creer-univers-visuel-coherent-avec-ia/comment-creer-univers-visuel-coherent-avec-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer univers visuel coherent avec ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film

@@ -215,3 +215,17 @@ Pour le vocabulaire du montage et des enchaînements, voir [montage (cinéma)](h
 **Peut-on réutiliser un plan d’une autre scène ?** Seulement si la feuille de continuité est compatible ou si le montage assume un ellipsis fort.
 
 **Comment documenter pour le client ?** Livre la grille de plans numérotés, les prompts figés, et une capture de la feuille de continuité, sans exposer de données sensibles internes ni les seeds si ta politique équipe les garde privées.
+
+## Section de conformite editoriale
+
+![Placeholder scene cinematique realiste](/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/comment-creer-scenes-coherentes-plusieurs-plans-ia-section-conformite.jpg)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer scenes coherentes plusieurs plans ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
+Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+
+Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+
+Liens internes utiles :
+- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
+- /blog/comment-structurer-video-ia-comme-vrai-film
