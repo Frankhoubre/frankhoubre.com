@@ -144,22 +144,22 @@ Pour le mouvement caméra et la façon dont le grain interact avec la perception
 ## FAQ
 
 **Je monte les steps à fond pour « plus de grain » ?**  
-Les steps poussés cristallisent souvent la texture en stuc ; le grain utile est souvent **post** ou une amorce légère en prompt.
+Non, pousser les steps à fond fabrique souvent une micro-texture rigide qui ressemble plus à du stuc qu’à du grain film. Le grain utile se contrôle mieux en post, où tu peux doser par zone et préserver le visage. Garde les steps au palier de matière, puis fais la finition au grade.
 
 **Grain seulement en prompt, suffisant ?**  
-Parfois oui pour une ambiance globale ; pour le contrôle par zone (visage vs fond), le post bat presque toujours le prompt seul.
+Parfois suffisant pour orienter une ambiance générale, mais rarement assez précis pour un rendu pro. Dès que tu veux protéger la peau et charger un peu les ombres, le post devient indispensable. Le prompt pose l’intention, la post-prod donne le contrôle.
 
 **Quel overlay acheter ou utiliser ?**  
-Des boucles de grain scannées pro, ou les modules intégrés à Resolve / After Effects / Lightroom — l’important est la **tile** sans couture et une distribution crédible.
+Privilégie des scans de grain film de bonne qualité ou les modules natifs de logiciels solides (Resolve, After Effects, Lightroom). Le critère numéro un est l’absence de couture visible et une distribution naturelle, surtout dans les dégradés de ciel. Teste toujours sur un plan sombre et un plan peau avant d’adopter un preset.
 
 **LUT avant ou après grain ?**  
-Teste les deux sur une copie ; garde ce qui préserve le roll-off des peaux. Souvent LUT puis grain fin.
+Commence en général par LUT/courbe, puis applique le grain fin ensuite. Cela évite que la LUT ne déforme exagérément la texture de grain déjà posée. Fais un A/B rapide, et garde la variante qui protège le roll-off de peau et la lisibilité des ombres.
 
 **Inpainting ou regénération après grain ?**  
-Si tu dois inpaint, fais-le **avant** la couche grain finale, sinon tu mélanges des structures incohérentes.
+Toujours inpaint avant le grain final. Sinon tu te retrouves avec des zones retouchées qui n’ont pas la même structure de matière, et l’œil détecte la rustine. La bonne séquence est: correction locale -> grade -> grain -> export.
 
 **Le grain sauve-t-il le plastique ?**  
-Il aide à l’unification ; il ne remplace pas une lumière latérale et une guidance raisonnable.
+Il peut fortement aider à homogénéiser, mais il ne corrige pas un éclairage faux ni une peau trop lissée à la base. Si la lumière est frontale et la guidance excessive, tu ajoutes juste du bruit sur un rendu artificiel. D’abord physique de l’image, ensuite texture de surface.
 
 **Anglais ou français dans le prompt pour le grain ?**  
 Les tags anglais « film grain, subtle grain » sont souvent efficaces ; teste sur ton modèle.

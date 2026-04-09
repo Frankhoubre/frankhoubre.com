@@ -150,28 +150,28 @@ Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](ht
 
 **L’anamorphique en prompt marche ?**
 
-Oui si tu décris bokeh, falloff, et souvent des imperfections d’objectif légères.
+Oui, mais seulement si tu décris des éléments concrets (bokeh ovale, falloff plus doux, léger caractère optique). Si tu écris juste « anamorphic », beaucoup de modèles renvoient une imitation cosmétique sans cohérence de lumière ni de profondeur. Valide toujours au zoom et en lecture globale pour éviter l’effet « filtre ».
 
 **Flux ou SDXL pour {topic} ?**
 
-Teste les deux avec le même prompt court. Garde le moteur qui ment le moins sur ton sujet précis.
+Teste les deux sur exactement le même brief court, même ratio et même intention de lumière. Ensuite compare les zones qui trahissent vite: peau, mains, transitions net/flou, et tenue des ombres. Le bon choix est celui qui demande le moins de réparation pour ton sujet, pas celui qui a la meilleure réputation générale.
 
 **Inpainting ou regénération totale ?**
 
-Inpaint pour yeux ou mains, regénère tout seulement si la lumière globale est fausse.
+Utilise l’inpainting quand le problème est local (yeux, bouche, main, petit artefact textile) et que la lumière de la scène est déjà juste. Regénère tout quand la hiérarchie lumineuse ou la géométrie du plan est fausse, car une retouche locale ne corrigera pas un éclairage incohérent. Cette décision te fait gagner des heures de cycles inutiles.
 
 **Le grain seulement en prompt ?**
 
-Souvent non. Un overlay en post contrôle mieux les ombres.
+Souvent insuffisant pour un rendu vraiment propre. Le prompt peut amorcer une texture moins lisse, mais le contrôle fin par zone (ombres, visage, arrière-plan) se fait mieux en post. En pratique, une amorce légère en génération puis un overlay maîtrisé donne la meilleure cohérence.
 
 **Je veux une ambiance sombre ?**
 
-Garde une petite accroche lumineuse sur le visage ou un practical, sinon boue.
+Garde toujours une accroche de lumière lisible: reflet d’œil, practical dans le cadre, fenêtre, enseigne ou halo directionnel. Sans cette ancre, le sombre devient vite gris-boueux et la scène perd son relief narratif. Le secret d’une bonne ambiance sombre, c’est le contraste piloté, pas l’absence de lumière.
 
 **Mes noirs sont gris ?**
 
-Courbe, pas saturation. Remets du vrai noir cinéma.
+Corrige d’abord la courbe et le point noir, pas la saturation. Les noirs gris viennent souvent d’ombres trop relevées ou d’un grade trop prudent sur les basses lumières. Réinstalle du noir réel en gardant un minimum de détail utile près du sujet pour éviter l’écrasement.
 
 **Je prépare une image pour vidéo ?**
 
-Oui : export propre, note focale et lumière, garde une piste sans sharpen agressif pour Comment créer des lumières naturelles en image IA.
+Oui, prépare-la comme une image pilote de tournage: export propre (PNG/TIFF), note focale implicite, direction de lumière, ambiance colorée et contraintes. Garde une version neutre sans sharpen agressif, car la vidéo amplifie vite les artefacts de netteté. Une bonne base still réduit fortement la dérive quand tu passes en animation.

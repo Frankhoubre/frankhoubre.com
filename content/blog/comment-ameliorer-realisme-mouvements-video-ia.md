@@ -153,28 +153,28 @@ Pour calibrer l’œil sur le mouvement caméra et la lisibilité du geste : [mo
 ## FAQ
 
 **Combien de temps pour un premier clip propre ?**  
-Plusieurs sessions courtes battent un marathon ; le sommeil est un correcteur.
+Compter plusieurs sessions courtes est plus réaliste qu’un long sprint unique. Le mouvement crédible demande des boucles test/correction/montage, et ton jugement baisse vite après quelques heures. Une bonne routine est de viser un micro-livrable par session, puis d’ajuster à tête reposée.
 
 **Pourquoi mon clip ressemble à une pub télé ?**  
-Souvent saturation élevée, netteté globale, lumière frontale. Penche la lumière, baisse le sharp sur le visage, ajoute grain modéré.
+Souvent parce que l’image est trop propre partout: saturation forte, netteté uniforme, lumière frontale sans relief, et mouvements « showroom ». Réintroduis une hiérarchie de lumière, baisse le sharp sur le visage, et garde un mouvement caméra plus modeste. Un grain fin et un meilleur son d’ambiance aident aussi à sortir du rendu démonstration.
 
 **Le mouvement déforme tout : que faire ?**  
-Baisse l’amplitude, raccourcis, simplifie le décor, repars d’une image pilote corrigée, ou coupe au montage.
+Réduis d’abord l’amplitude du mouvement et la durée du plan, puis simplifie le décor (lignes verticales, reflets, foule). Si la base est déjà fragile, repars d’une image pilote corrigée avant de réanimer. Et n’hésite pas à couper au montage: trois plans stables battent un plan long qui se décompose.
 
 **Je perds la motivation.**  
-Réduis la durée cible : huit secondes solides valent mieux qu’une minute bancale.
+Réduis la portée du livrable immédiatement: 8 à 12 secondes finalisées avec son valent mieux qu’une minute inachevée. Découpe le projet en étapes visibles (pilot still, mouvement, son, master) pour retrouver de la progression. La motivation revient quand tu termines des séquences, pas quand tu accumules des tests.
 
 **Le son est facultatif ?**  
-Non pour le jugement réaliste. Même une ambi basse change la perception du mouvement.
+Non, le son est indispensable pour juger le réalisme perçu. Même une ambiance simple (room tone, rue lointaine, souffle) change fortement la lecture du mouvement et du rythme. Sans son, tu valides souvent de faux bons plans qui s’effondrent au montage final.
 
 **Je commence par quel logiciel ?**  
-Celui qui te donne une **image pilote stable** pour ton sujet, pas celui avec la meilleure bande-annonce marketing.
+Commence par l’outil qui te donne le plus vite une image pilote stable sur ton sujet exact. Les promesses marketing comptent moins que ton taux de plans exploitables par heure. Si un outil te force à corriger constamment les mêmes défauts, pivote sans culpabilité.
 
 **Quand préférer plusieurs plans courts à un plan séquence ?**  
-Quand le décor est chargé ou les mains visibles : trois vérités courtes battent une séquence longue qui ment.
+Dès que tu as décor dense, interactions main-objet, visage proche ou mouvement caméra complexe. Ces combinaisons augmentent vite les artefacts temporels. Plusieurs plans courts te donnent du contrôle narratif, plus de sécurité visuelle, et un montage plus lisible.
 
 **La 4K d’abord ou le mouvement d’abord ?**  
-Mouvement crédible à résolution de travail, puis upscale si nécessaire. Upscaler une trajectoire fausse ne fait qu’une belle erreur.
+D’abord le mouvement crédible à résolution de travail, ensuite l’upscale. La 4K ne corrige ni trajectoire incohérente ni morphing de visage, elle les rend juste plus visibles. Valide physique et rythme avant d’investir dans la définition.
 
 **Les transitions IA « cinéma » entre deux images ?**  
 Souvent elles mélangent deux géométries : préfère coupe + son. Voir aussi [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).

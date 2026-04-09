@@ -169,19 +169,19 @@ Si tu débutes, le pire scénario est de te battre contre un moteur au lieu d’
 
 **WAN 2.7 est il bon à jeter ?**
 
-Non. Il peut servir pour des **micro plans** simples, des tests d’idée, ou des workflows hybrides où tu assumes les limites. Pour des livrables clients exigeants sans marge de retouche, il est souvent **désavantagé** face aux alternatives citées.
+Non, il reste exploitable pour des micro-plans simples, du prototypage rapide, ou des workflows hybrides où tu assumes une part de retouche. Le problème n’est pas son inutilité totale, mais son coût de convergence sur des briefs ambitieux. Pour des livrables clients serrés, il est souvent moins rentable que des alternatives plus stables.
 
 **Pourquoi j’ai l’impression d’être nul ?**
 
-Parce que les modèles **varient** et que l’interface flatte parfois l’ego des démos marketing. **Isole** tes variables, documente, puis juge.
+Parce que la variabilité des modèles est réelle et les démos marketing cachent les cas difficiles. Si tu compares ton tournage réel à une vitrine ultra-curée, tu te sous-évalues forcément. Isole une variable, mesure ton taux de plans exploitables, et juge ton progrès sur des critères de prod, pas sur l’ego.
 
 **Je monte en 4K tout de suite ?**
 
-Attends d’avoir un **mouvement** propre à une résolution de travail plus modeste. Sinon tu upscales du chaos.
+Non, valide d’abord le mouvement, la cohérence visage/mains et la stabilité des contours en résolution de travail. Upscaler tôt ne corrige rien: tu amplifies juste les défauts temporels. La 4K devient utile quand la scène tient déjà en lecture normale.
 
 **Kling 3 ou Seedance 2 en premier ?**
 
-Celui qui maximise **plans exploitables par heure** sur **ton** matériel et **ton** brief du mois. Pas de religion.
+Commence par celui qui te donne le meilleur ratio plans exploitables/heure sur ton matériel et ton style de briefs. Fais un benchmark court A/B avec même durée, même action et même complexité de décor. Choisis avec des chiffres, pas avec une préférence communautaire.
 
 **Les prompts « ciné » génériques aident ?**
 
@@ -189,7 +189,7 @@ Peu. Les **contraintes physiques** (source lumineuse, distance, action unique) a
 
 **Je peux sauver tout en color grading ?**
 
-Tu peux masquer un peu. Tu ne répares pas un visage qui changes de structure toutes les quatre frames.
+Le grading peut améliorer la cohérence de contraste et masquer des défauts légers, mais il ne répare pas une géométrie instable. Si le visage, les mains ou les objets changent de structure frame à frame, le problème est en amont. Dans ce cas, il faut raccourcir, recadrer, ou regénérer.
 
 **C’est légal / OK client d’utiliser ces moteurs ?**
 

@@ -158,22 +158,22 @@ Pour calibrer l’œil : [cinéma, mouvement et lisibilité](https://www.youtube
 ## FAQ
 
 **Dzine remplace un studio d'animation traditionnel ?**  
-Non. Ça peut accélérer certaines itérations visuelles si tu pilotes. Direction, jugement, montage sérieux restent humains.
+Non, pas pour un pipeline complet de studio. Dzine peut accélérer la phase d’itération et de prévisualisation, mais la direction artistique, la cohérence narrative et les arbitrages de production restent humains. C’est un multiplicateur de méthode, pas un remplaçant de métier.
 
 **Les fonctionnalités listées ici seront-elles identiques dans six mois ?**  
-Probablement pas toutes aujourd’hui. Vérifie [dzine.ai](https://dzine.ai) et les release notes pour les modules (animation, édition, motion) disponibles sur ton compte.
+Probablement pas à l’identique, car les modules évoluent vite et parfois changent de nom ou de périmètre. Avant un engagement client, vérifie l’état exact dans ton compte et les notes de version officielles. Ce qui doit rester stable, c’est ton process, pas le libellé d’un bouton.
 
 **Comment éviter le look « démo IA » ?**  
-Moins d’effets gratuits, plus de matière réelle, lumière plausible, grain final, poses non catalogue.
+Réduis les effets gratuits et renforce les décisions physiques: lumière cohérente, matières crédibles, poses lisibles, et post sobre. Ajoute du grain en fin de chaîne pour unifier, sans masquer des erreurs structurelles. Le rendu « film » vient de la cohérence entre plans, pas d’un style agressif sur un plan isolé.
 
 **Je dois tout faire dans Dzine seul ?**  
-Pas obligatoire. Beaucoup chaînent génération, retouche, étalonnage, NLE. L’élégance du pipeline bat le bouton unique.
+Non, et c’est souvent mieux d’assumer un pipeline hybride. Beaucoup de créateurs génèrent dans Dzine, corrigent localement ailleurs, puis finalisent grade et montage dans un NLE dédié. Le but est la qualité et la répétabilité, pas la pureté d’un outil unique.
 
 **Texte et logos dans l'image ?**  
-Souvent illisibles ou instables en pur génératif. Compo manuelle pour le branding critique.
+Pour du branding critique, évite de compter sur le génératif pur. Les logos et textes restent sensibles aux artefacts et aux dérives d’alignement, surtout entre variations. La meilleure pratique est d’insérer ces éléments en compositing manuel à la fin.
 
 **Lèvre et voix : conseil ?**  
-Plans plus larges au début, tests courts ; voix off parfois plus propre qu’un gros plan bavard.
+Commence avec des répliques courtes et des plans un peu plus larges pour réduire les défauts de synchro. Teste par segments courts avant d’allonger la scène. Quand la labiale n’est pas stable, une voix off bien montée est souvent plus crédible qu’un gros plan fragile.
 
 **Viser la 4K tout de suite ?**  
 Non tant que le design et le mouvement ne sont pas stables à résolution de travail.

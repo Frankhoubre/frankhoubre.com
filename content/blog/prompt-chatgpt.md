@@ -145,22 +145,22 @@ Pour la clarté des consignes en général (vidéo pédagogique, pas un substitu
 ## FAQ
 
 **Un prompt ChatGPT, c'est toujours en anglais ?**  
-Non. L’anglais aide pour certains tags techniques ; tu peux structurer en français et **injecter** les termes outils dans un tableau.
+Non, tu peux parfaitement structurer en français si c’est ta langue de travail. L’anglais peut aider sur certains termes techniques, mais l’important est surtout la clarté du format et des contraintes. Une bonne pratique est de garder la logique en français et d’injecter les tags techniques utiles en anglais.
 
 **« System » et « user », concrètement ?**  
-Pense charte (system) vs consigne du jour (user). Si une seule zone de texte, mets la charte au début et **répète** les contraintes critiques avant chaque grosse question.
+Pense « cadre permanent » pour le system, et « tâche du jour » pour le user. Le premier fixe ton style, les limites et la méthode; le second donne le besoin concret du moment. Si tu n’as qu’un seul champ, écris la charte en tête puis répète les contraintes critiques avant chaque demande importante.
 
 **ChatGPT invente des faits : je fais quoi ?**  
-Tu vérifies ailleurs pour tout ce qui engage une responsabilité. Pour la fiction / brief, tu cherches la cohérence interne — pas une vérité type encyclopédie sans recoupement.
+Tu traites toute sortie factuelle comme un brouillon à vérifier, surtout pour juridique, santé, chiffres, historique ou citations. Demande explicitement les zones d’incertitude et recoupe avec des sources primaires. Pour la fiction et le brief créatif, vise la cohérence interne, pas l’autorité factuelle.
 
 **C'est quoi un bon prompt en une phrase ?**  
-« Livre X au format Y sous contraintes Z, avec un paragraphe sur les risques. »
+Un bon prompt tient en une phrase claire: livrable attendu, format de sortie, contraintes, et critère d’évaluation. Exemple: « livre X au format Y sous contraintes Z et ajoute les risques majeurs ». Ce cadre évite les réponses vagues et accélère les itérations utiles.
 
 **La température / le réglage de variabilité ?**  
 Pour du brief créatif, souvent milieu : variété contrôlée. Pour des listes strictes, un peu plus bas. Le nom exact du réglage dépend de l’interface OpenAI du moment ; l’idée est moins d’aléatoire quand tu veux de la **répétabilité**.
 
 **Ça remplace un scénariste ?**  
-Non. Ça aide à débloquer, structurer, reformuler. Le regard humain sur l’émotion et la responsabilité éditoriale reste nécessaire.
+Non, ChatGPT assiste l’écriture, il ne remplace pas un regard d’auteur. Il est excellent pour structurer, reformuler, proposer des variantes et accélérer les brouillons. Mais l’intention émotionnelle, la cohérence dramaturgique finale et la responsabilité éditoriale restent humaines.
 
 **Je perds mes conversations : astuce ?**  
 Archive : date, version, prompt exact qui a marché. Comme pour une seed d’image stable que tu veux reproduire demain.

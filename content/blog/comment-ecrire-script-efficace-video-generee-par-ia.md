@@ -158,28 +158,28 @@ Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](ht
 
 **Le mouvement déforme tout, que faire ?**
 
-Réduis l’amplitude, raccourcis la durée, simplifie le décor, ou repars d’une image fixe corrigée.
+Réduis d’abord l’amplitude et la durée du plan, car ce sont les leviers les plus rentables pour retrouver de la stabilité. Simplifie ensuite le décor et évite les interactions complexes dans la même prise. Si la frame de départ est déjà bancale, repars d’une image fixe corrigée avant de réanimer.
 
 **Je perds la motivation ?**
 
-Réduis la durée du projet. Un clip de huit secondes bien fini vaut mieux qu’un long métrage IA bancal.
+Réduis immédiatement l’objectif: un clip court finalisé est meilleur pour progresser qu’un projet long abandonné. Découpe le travail en étapes fermées (brief, pilote, mouvement, son, export) pour matérialiser les victoires. Cette discipline protège ton énergie et améliore la qualité.
 
 **Le son est facultatif ?**
 
-Jamais. Même une ambi basse change le jugement sur l’image.
+Non, le son est structurel, pas décoratif. Une simple ambiance de pièce ou de rue change déjà la perception du rythme, de la gravité des gestes et de la continuité entre coupes. Sans son, tu risques de valider des plans qui paraissent faux dès la première diffusion.
 
 **Je commence par quel logiciel ?**
 
-Par celui qui te donne une image pilote stable pour Comment écrire un script efficace pour une vidéo générée par IA. Pas celui qui a la meilleure bande annonce marketing.
+Par celui qui te donne une image pilote stable et exploitable le plus vite sur ton cas réel. Le critère utile est le taux de plans montables par heure, pas la promesse marketing. Si un outil échoue systématiquement sur ton sujet, pivote tôt au lieu d’insister.
 
 **C’est utilisable pour un client ?**
 
-Techniquement possible, juridiquement ça dépend des contrats et des droits. Documente ta chaîne de production.
+Oui sur le plan technique, mais la viabilité client dépend des droits, des CGU des outils et du contrat de livraison. Documente clairement ce qui est généré, retouché et monté pour éviter les ambiguïtés. Cette transparence protège la relation commerciale autant que la qualité du rendu.
 
 **Mes personnages changent entre les plans, pourquoi ?**
 
-Tu n’as pas verrouillé identité et lumière. Feuille de personnage courte, références fixes, prompts qui ne se contredisent pas.
+Parce que le noyau de continuité n’est pas assez verrouillé entre les plans. Garde une fiche personnage stable, une lumière dominante cohérente, et des références visuelles réinjectées à chaque variation. Évite de modifier style, angle et action en même temps.
 
 **Le handheld, comment sans casser la géométrie ?**
 
-Amplitude faible, décor simple, ou flou de mouvement léger en post sur l’arrière plan seulement.
+Reste sur une amplitude faible et des mouvements lisibles, surtout au départ. Choisis un décor plus simple, avec moins de lignes critiques et de reflets, pour limiter les ondulations. Si besoin, ajoute un flou de mouvement très léger en post sur l’arrière-plan plutôt que sur le visage.

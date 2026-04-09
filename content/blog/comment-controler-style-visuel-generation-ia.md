@@ -135,31 +135,31 @@ Pour calibrer l’œil sur la couleur et le contraste comme langage de style, ce
 ## FAQ
 
 **Je dois tout mettre dans un seul prompt ?**  
-Pas toujours. Deux passes (lumière d’abord, détail ensuite) ou prompt + post-traitement LUT/grain peuvent stabiliser plus vite qu’un pavé unique.
+Pas toujours, et c’est souvent contre-productif. Un prompt unique très long mélange facilement composition, lumière, style et corrections locales, ce qui rend les itérations illisibles. En pratique, deux passes (fondations visuelles puis détails) ou un couple prompt + post (LUT/grain) donnent un rendu plus stable et surtout plus reproductible.
 
 **Comment garder un personnage dans le même style ?**  
-Fiche courte stable, références image, seed ou équivalent quand c’est pertinent, et mêmes termes de matière/lumière sur chaque plan.
+Verrouille une fiche courte (silhouette, matière des vêtements, palette, lumière dominante), puis réutilise-la mot pour mot à chaque plan. Ajoute une ou deux images de référence et ne change qu’une variable à la fois (cadrage, action, angle), sinon tu perds la continuité. Si ton outil propose seed/référence persistante, utilise-la comme ancre, pas comme solution miracle.
 
 **Où noter mes tests ?**  
-Dans un fichier à côté des exports, avec date et version. Sinon tu réinventes la même erreur chaque semaine.
+Dans un fichier texte versionné à côté des exports, avec date, prompt final, seed, réglages clés et verdict rapide. L’objectif est de pouvoir reproduire un bon résultat une semaine plus tard sans rejouer toute la séance. Sans journal, tu progresses moins vite parce que tu répètes les mêmes essais « à l’intuition ».
 
 **Anglais ou français dans le prompt ?**  
-Teste les deux sur ton modèle. Souvent les tags photo anglais sont plus stables ; tu peux penser en français et injecter les termes techniques qui marchent chez toi.
+Les deux fonctionnent, mais beaucoup de tags photo/cinéma sont mieux reconnus en anglais selon les modèles. Le plus efficace est souvent d’écrire la logique en français puis d’injecter les mots techniques qui se comportent bien dans ton setup. Fais un mini A/B sur trois générations, puis garde un glossaire stable pour ton projet.
 
 **Pourquoi ma « nuit ciné » ressemble à une démo ?**  
-Souvent trop de gris dans les ombres, trop de HDR dans les hautes, pas de source practical crédible. Nomme une lampe, une fenêtre, une heure.
+Parce que la scène manque souvent de hiérarchie lumineuse réelle : ombres levées au gris, hautes lumières trop HDR, et aucune source plausible dans le cadre. Décris une source principale claire (practical, fenêtre, enseigne), son orientation, et une heure/météo. Ensuite ajuste la courbe avant la saturation pour retrouver un noir lisible plutôt qu’un « sombre boueux ».
 
 **Le style seulement en négatif, ça marche ?**  
-Les négatifs corrigent des défauts ; ils ne remplacent pas une direction positive (lumière, palette, objectif). Combine les deux.
+Partiellement, mais jamais seul. Les négatifs sont excellents pour retirer des artefacts récurrents (oversharpen, mains ratées, texte parasite), pas pour définir un univers visuel. Il te faut toujours une direction positive explicite (palette, lumière, optique, matière), puis des négatifs ciblés pour nettoyer.
 
 **Je copie des prompts sur Discord ?**  
-Inspire-toi, réécris pour ton sujet et ton modèle. Un prompt générique te colle un style générique.
+Oui comme point de départ, pas comme recette finale. Un prompt public contient des biais de modèle, de seed et de sujet qui ne sont pas les tiens. Prends la structure utile, réécris pour ton décor, ton personnage et tes contraintes, puis documente ce qui marche sur ton pipeline.
 
 **LUT avant ou après retouches locales ?**  
-En général : retouches locales sur peau et propreté, puis LUT/courbe globale, puis grain. Sinon tu te bats contre ta propre courbe sur chaque zone.
+Ordre recommandé: corrections locales d’abord (peau, défauts, propreté), LUT/courbe ensuite, grain en dernier. Si tu appliques la LUT trop tôt, tu risques de corriger des défauts déjà déformés par l’étalonnage et de perdre du temps. Garde une variante sans LUT pour revenir en arrière rapidement si la série dérive.
 
 **Comment savoir si mon style tient sur dix images ?**  
-Affiche-les en grille petite : si tu vois cinq « mondes » différents, ton glossaire ou ton étalonnage n’est pas verrouillé.
+Affiche les dix images en grille et regarde-les d’abord en petit, puis en plein écran. Si tu lis plusieurs « mondes » visuels (peaux, contrastes, températures, focales implicites), ton vocabulaire et ton post ne sont pas verrouillés. La bonne validation est double: cohérence globale en vignette, crédibilité matière au zoom.
 
 **Ça s’applique à la vidéo ?**  
-Oui : verrouille d’abord le look sur des images pilotes, puis enchaîne vers le mouvement avec les mêmes termes de lumière et de matière ; voir [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
+Oui, et c’est même la meilleure façon de sécuriser une vidéo IA. Verrouille d’abord le look sur des stills pilotes, puis transfère le même noyau de lumière/matière dans les clips animés pour limiter la dérive frame à frame. Ensuite, la cohérence se joue au montage et à l’étalonnage de série, pas seulement dans le prompt.

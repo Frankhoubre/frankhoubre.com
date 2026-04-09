@@ -150,28 +150,28 @@ Pour calibrer l’œil, regarde cette référence : [préparation de tournage](h
 
 **Le grain seulement en prompt ?**
 
-Souvent non. Un overlay en post contrôle mieux les ombres.
+Souvent non, car le prompt seul te donne peu de contrôle par zone. Un overlay en post permet d’ajuster précisément l’intensité dans les ombres, sur la peau et dans le décor. Le combo le plus solide reste amorce légère en génération, puis réglage fin au grade.
 
 **Je veux une ambiance sombre ?**
 
-Garde une petite accroche lumineuse sur le visage ou un practical, sinon boue.
+Garde toujours une accroche lumineuse lisible (reflet d’œil, practical, fenêtre, néon indirect), sinon le cadre tombe dans une boue grise. Une ambiance sombre réussie ne veut pas dire « pas de lumière », mais « lumière hiérarchisée ». Le spectateur doit comprendre d’où vient la source principale.
 
 **Mes noirs sont gris ?**
 
-Courbe, pas saturation. Remets du vrai noir cinéma.
+Travaille d’abord la courbe et le point noir, pas la saturation. Les noirs gris sont souvent un signe d’ombres trop relevées et de contraste mal structuré. Replace du noir réel tout en gardant un peu d’information autour du sujet pour préserver le relief.
 
 **Je prépare une image pour vidéo ?**
 
-Oui : export propre, note focale et lumière, garde une piste sans sharpen agressif pour Comment créer une ambiance sombre et cinématique avec l’IA.
+Oui, traite-la comme une image pilote: export propre, note focale, direction de lumière et température de couleur. Garde une version sans sharpen agressif pour éviter de figer des artefacts qui deviendront visibles en mouvement. Plus ta still de base est saine, plus la vidéo reste crédible.
 
 **Je travaille en local, conseil VRAM ?**
 
-Résolution modeste pour itérer, upscale propre à la fin pour Comment créer une ambiance sombre et cinématique avec l’IA.
+Travaille à résolution modeste pour itérer vite, puis monte en définition seulement quand la compo et la lumière sont validées. Sur des scènes sombres, pousser la résolution trop tôt accentue le bruit inutile et ralentit les tests. La logique gagnante: itération rapide, upscale final propre.
 
 **Pourquoi ma peau est plastique ?**
 
-Guidance trop haute, lumière frontale dure, sharp en post. Corrige dans cet ordre.
+C’est souvent un cumul guidance trop haute + lumière frontale + netteté globale excessive en post. Corrige dans cet ordre: lumière et direction des ombres, guidance/steps, puis sharp local très léger si nécessaire. Une peau crédible est texturée de façon subtile, pas « dessinée » partout.
 
 **Contraste faible, pourquoi ?**
 
-Modèle prudent ou export plat. Monte le contraste global avant la saturation.
+Soit le modèle est trop conservateur sur les basses lumières, soit ton export/grade est trop plat. Monte d’abord le contraste global et ajuste le roll-off des hautes, puis seulement la saturation. Si tu satures avant, tu obtiens vite un look artificiel sans vraie profondeur.

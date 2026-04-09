@@ -132,25 +132,25 @@ Pour calibrer l’œil sur la couleur et le contraste (qui façonnent autant la 
 ## FAQ
 
 **Pourquoi ma peau est plastique ?**  
-Souvent guidance trop haute, lumière trop frontale, sharp global ou steps au-delà du palier utile. Corrige dans cet ordre.
+Parce que plusieurs facteurs s’additionnent: guidance trop élevée, lumière frontale plate, steps trop poussés et netteté globale en post. Commence par corriger la lumière, puis ajuste guidance/steps, et garde le sharp en dernier recours local. Ce workflow évite de « polir » un défaut structurel.
 
 **Je monte les steps à fond ?**  
-Non si la texture devient une grille. Cherche un palier et note-le.
+Non, car au-delà d’un certain seuil la texture de peau devient artificielle et répétitive. Cherche le palier où les pores sont suggérés sans être gravés, puis documente ce réglage pour ton modèle. La constance bat toujours le maximum théorique.
 
 **Inpainting ou regénération totale ?**  
-Inpaint pour yeux, bouche ou petite zone si la lumière globale est bonne. Regénère tout si l’ombre principale est incohérente.
+Inpaint quand le problème est local et que la structure lumineuse tient déjà. Si l’ombre principale est fausse ou que le volume du visage ne fonctionne pas, repars en génération complète. Corriger localement une lumière globale incohérente fait perdre du temps.
 
 **SDXL ou Flux pour les portraits ?**  
-Teste les deux avec le même brief court sur ton machine. Le gagnant dépend du checkpoint et du sujet.
+Teste les deux dans les mêmes conditions (prompt, ratio, durée d’itération) pour comparer proprement. Juge surtout la transition peau/lumière, la bouche et les mains si visibles. Le meilleur choix est celui qui demande le moins de retouches pour ton brief réel.
 
 **L’anamorphique aide la peau ?**  
 Indirectement : il change la chute de netteté et le bokeh ; la peau doit rester cohérente avec cette optique. Ne confonds pas « look objectif » et « texture dermique ».
 
 **Comment garder la peau sur plusieurs images d’une série ?**  
-Même brief lumière, même post-traitement (LUT/grain), mêmes termes de texture dans le prompt ; référence visuelle du pilote sous les yeux.
+Verrouille un pilote visuel et réutilise exactement le même noyau de lumière, de texture et de post-traitement sur toute la série. Ne change qu’une variable par image (pose, cadrage, action) pour éviter la dérive. Une grille de contrôle en vignettes t’aide à détecter vite les écarts.
 
 **La peau sombre est plus dure ?**  
-Souvent le dataset biaise les expositions. Surexpose légèrement en génération ou rétablis les ombres en post sans écraser les noirs ; vérifie sur plusieurs écrans.
+Oui, certains jeux de données et pipelines gèrent mal l’exposition des peaux foncées et écrasent vite les basses lumières. Compense avec une exposition plus juste à la génération, puis protège les ombres en post sans noyer les détails. Vérifie sur plusieurs écrans pour éviter des corrections biaisées.
 
 **J’imprime grand format : quand upscaler ?**  
 Après verrouillage lumière et texture à résolution de travail. Upscaler tôt, c’est upscaler les erreurs.

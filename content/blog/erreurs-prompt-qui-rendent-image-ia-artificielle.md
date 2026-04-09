@@ -5,216 +5,204 @@ category: "tutoriels"
 excerpt: "Liste des tics de langage et des réglages implicites qui poussent le modèle vers le plastique."
 thumbnail: "/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/hero.webp"
 ---
-Tu demandes du « ultra réaliste 8K masterpiece », tu obtiens un mannequin cireux sous un ciel qui brûle, et tu te demandes pourquoi « réaliste » sonne comme une insulte. Ce n’est pas une malédiction, c’est une **liste courte de biais** que ton texte active sans que tu le voies. Les modèles ont vu des millions d’images étiquetées « quality, detailed, award winning » : souvent ce sont des photos retouchées agressives ou des rendus 3D lisses. Quand tu reprends les mêmes mots, tu hérites du même plastique.
+Tu écris un prompt en pensant “je vais faire cinéma”.  
+Tu génères.  
+Et tu vois immédiatement l’effet plastique.
 
-Trois cas vécus. **Camille**, DA junior à Bordeaux, empilait les superlatifs par peur du vide : chaque génération ajoutait du sharp et du glow. **Mehdi**, développeur à Nice, mélangeait « film grain » et « spotless clean studio » dans la même phrase : le grain devenait une texture Photoshop collée sur une peau de poupée. **Sarah**, autrice de jeu vidéo à Québec, copiait des prompts Discord entiers : les LoRA implicites du message d’origine manquaient chez elle, le résultat était boueux sans qu’elle comprenne pourquoi. Les trois ont fini par une règle commune : **décomposer** le prompt avant de le juger, comme on décompose une recette au lieu d’avaler la bouteille d’épices.
+Peau lissée, lumière impossible, décor brillant comme un showroom, yeux trop nets, ombres qui ne racontent rien. Ce n’est pas parce que tu manques de talent. C’est parce que certaines erreurs de prompt déclenchent des corrélations visuelles ultra artificielles, presque automatiquement.
 
-Pour une vue d’ensemble du phénomène texte vers image, l’article [text-to-image model](nf:https://en.wikipedia.org/wiki/Text-to-image_model) sur Wikipédia pose le cadre : tu conditionnes une distribution d’images avec du langage, chaque mot pousse des corrélations statistiques.
+L’objectif de cette masterclass, t’apprendre à repérer ces erreurs en amont, puis à les corriger avec une méthode claire, reproductible, pro.
 
-## Le plastique n’est pas une personnalité
+![Hero image, erreurs de prompt.](hero.webp)
 
-Quand une image « sent l’IA », le spectateur pointe souvent la peau. En coulisses, c’est souvent un **paquet de signaux** : netteté globale, catchlights symétriques, ciel saturé, ombres sans bounce, tissu sans micro-variation. Ton prompt peut activer ce paquet en cinq mots si tu reprends le vocabulaire des fiches stock. L’objectif de ce guide est de te faire **entendre ton propre texte** comme un dataset entendrait des tags.
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, frustrated creator comparing two generated portraits on monitor in a dim studio, one fake plastic output and one corrected realistic output, practical desk lamp and textured shadows, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
-## Erreur 1 : superlatifs sans géométrie
+## Pourquoi une image devient artificielle en quelques mots
 
-« Cinematic, epic, stunning, best quality » sans plan, sans focale, sans heure du jour, ça envoie le modèle vers des **poses catalogue** et des lumières génériques. Remplace la moitié des adjectifs par des données physiques : plan américain, 35 mm, niveau œil, fenêtre à gauche, pluie derrière la vitre.
+Les mots d’un prompt ne sont pas neutres. Ils activent des “familles” d’images apprises par le modèle. Quand tu empiles `masterpiece`, `8k`, `insane details`, `perfect skin`, tu pousses souvent vers un rendu de vitrine, pas vers un cadre de film crédible.
 
-Le correctif passe aussi par la hiérarchie décrite dans [pourquoi ton prompt ne marche pas et comment le corriger](/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger).
+Le piège, c’est que le résultat peut paraitre impressionnant au premier regard. Puis l’œil humain décroche. Trop propre. Trop net. Trop faux.
 
-> **Astuce pro :** si tu retires tous les mots « quality » et que ton prompt ne décrit plus rien, il était vide.
+> **Insight plateau**  
+> Un prompt réaliste décrit une scène tournable, pas une affiche de concours.
 
-## Erreur 2 : beauté par défaut
+Quand ton prompt “ne marche pas”, la base de correction reste la même que dans [pourquoi ton prompt ne marche pas et comment le corriger](/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger), mais ici on pousse plus loin sur les erreurs visuelles concrètes qui créent l’aspect artificiel.
 
-« Beautiful face, perfect skin, symmetrical eyes » pousse vers la **porcelaine**. Pour du réalisme, tu demandes texture, pores visibles au zoom, asymétrie légère, micro ombres sous les paupières.
+## 3 scénarios débutants qui reviennent chaque semaine
 
-Pour la lumière qui sculpte sans mentir, [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) détaille les formulations utiles.
+### Scénario 1, portrait “premium” qui ressemble à un mannequin 3D
 
-## Erreur 3 : cinq films en une ligne
+Prompt habituel: trop de beauté abstraite, pas assez de géométrie lumineuse.  
+Résultat: porcelaine, yeux billes, bouche trop parfaite.
 
-Les références doivent parler de **lumière et matière**, pas de synopsis. Une ligne « Blade Runner, Dune, Amélie » mélange néons, sable, et pastel parisien. Choisis un régime visuel, ou sépare en deux générations.
+Fix:
+- remplacer les superlatifs par des infos caméra/lumière
+- ajouter texture peau et micro imperfections
+- limiter la netteté globale
 
-## Erreur 4 : grand-angle et mains au premier plan
+### Scénario 2, scène urbaine “ciné” qui devient néon cartoon
 
-Le 18 mm près du visage étire les mains vers la caméra. Si tu vois des doigts longs, ce n’est pas « l’IA est nulle », c’est la **focale** qui ment. Passe en 35 mm ou 50 mm, ou recule le sujet dans le texte.
+Prompt habituel: “dark cinematic cyberpunk realistic” sans contexte.  
+Résultat: reflets saturés, couleurs incohérentes, fond bruité.
 
-## Erreur 5 : négatif encyclopédique
+Fix:
+- décrire le lieu réel
+- choisir une source lumière principale
+- restreindre palette et contraste
 
-Trente négatifs génériques se battent entre eux. Utilise **quatre à huit** cibles mesurées sur tes échecs : dents fusionnées, doigts en trop, texte illisible, horizon courbe.
+### Scénario 3, ambiance dramatique qui devient fake “HDR”
 
-## Erreur 6 : steps et guidance au maximum
+Prompt habituel: “dramatic light, high contrast, ultra detailed”.  
+Résultat: ciel cramé, peau brillante, ombres sans matière.
 
-Plus de steps peuvent **cristalliser** la peau en stuc. Une guidance trop haute fige les transitions. Cherche une fenêtre au milieu de la plage, note-la, réutilise-la.
+Fix:
+- décrire l’exposition et le sens des ombres
+- retirer le vocabulaire “punch” générique
+- corriger d’abord la structure lumineuse
 
-## Erreur 7 : reflets et surfaces miroir sans discipline
+## Les 12 erreurs de prompt qui plastifient une image
 
-Lunettes, écrans, vitrines demandent une **géométrie de reflet** cohérente avec la caméra. Si tu ajoutes « glasses » sans angle, le modèle invente un monde dans le verre. Précise trois quarts, reflet flou, ou retire les lunettes si la scène n’en a pas besoin.
+### 1) Superlatifs sans informations physiques
+`stunning`, `masterpiece`, `epic` ne remplacent pas un plan, une focale, une source.
 
-## Erreur 8 : « clean » partout
+### 2) “Perfect skin”
+Ce couple de mots pousse directement vers une texture cire.
 
-« Clean kitchen, clean face, clean background » pousse vers le **studio stérile**. Le réel a poussière, traces, imperfection. Choisis une saleté contrôlée : eau sur le comptoir, doigts sur la vitre, grain de café échappé.
+### 3) Mélanger 3 styles contradictoires
+“film noir + fashion glossy + sci-fi neon” dans une ligne, image incohérente garantie.
 
-Pour choisir un moteur qui tolère mieux ton sujet, [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes) propose un test AB reproductible.
+### 4) Oublier la lumière motivée
+Sans source lisible, le modèle invente des highlights artificiels.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+### 5) Oublier la distance
+Sans distance sujet/fond, la profondeur semble fausse.
 
-### Tableau : phrase typique, effet, remplacement
+### 6) Focale incohérente avec le cadre
+Demander “85mm portrait” sur un plan large est contradictoire. Pour maitriser ce point, relie ton prompt à [comment utiliser les objectifs caméra dans un prompt IA](/blog/comment-utiliser-objectifs-camera-dans-prompt-ia).
 
-| Phrase typique | Effet probable | Remplacement |
-| --- | --- | --- |
-| masterpiece 8k | sharp global | retirer, décrire capteur ou grain |
-| soft light everywhere | image plate | key + fill faible |
-| beautiful perfect skin | porcelaine | texture peau, pores |
-| cinematic bokeh | blob générique | focale, distance, forme |
-| like [film A,B,C] | style bouillie | une référence lumière |
-| ultra detailed eyes | yeux HDR | catchlight simple |
-| no blur | image dure | flou optique cohérent |
+### 7) Négatif trop long
+30 interdits font se battre les priorités internes.
 
-> **Astuce pro :** un prompt est une liste de décisions. Sans décisions, le modèle choisit des défauts moyens qui sentent le stock.
+### 8) Trop de “clean”
+`clean background`, `clean face`, `clean style` tue le réel.
 
-Quand tu enseignes cette méthode à quelqu’un dans ton équipe, fais-lui faire l’exercice **à voix haute** : lire le prompt comme une liste de consignes de tournage. Si la personne ne visualise pas le cadre en cinq secondes, le modèle non plus. Cet exercice vaut toutes les feuilles de synonymes « pour varier ».
+### 9) Teinte sans hiérarchie
+Pousser la couleur avant la lumière produit des peaux non crédibles.
 
-## Workflow de réécriture en huit minutes
+### 10) Ajouter du grain pour cacher des défauts structurels
+Le grain n’est pas une rustine magique.
 
-**Minute 1-2 :** copie ton prompt dans un éditeur texte brut.
+### 11) Modifier 10 paramètres à la fois
+Tu n’apprends jamais ce qui a réellement corrigé l’image.
 
-**Minute 2-4 :** barre tous les superlatifs, note-les sur le côté si tu y tiens émotionnellement.
+### 12) Copier des prompts viraux sans contexte
+Les prompts “copiés-collés” transportent souvent des biais non adaptés à ton sujet.
 
-**Minute 4-6 :** ajoute plan, focale, hauteur caméra, direction de key, heure.
-
-**Minute 6-8 :** ajoute trois imperfections réelles max, grain fin, poussière légère, asymétrie du visage. Relis à voix haute.
-
-### Double passe « décor puis visage »
-
-Quand une seule image mélange un lieu chargé et un gros plan expressif, le modèle sacrifie une couche. Fais une première passe **wide** avec visage plus petit ou tourné, valide lumière et mur, puis recadre ou regénère serré avec la même key. Tu copies la ligne lumière telle quelle pour éviter que le néon change de côté.
-
-Exemple réécrit, bloc texte :
+## Template strict qui évite 70% des dérives
 
 ```text
-35mm spherical, eye level, medium shot, woman early 40s,
-linen shirt slightly wrinkled, kitchen north window, rain on glass,
-soft side light, weak bounce from table, visible skin texture,
-small pores, slight under-eye shadow, shallow depth of field,
-warm practical lamp in background bokeh, no beauty retouch
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
-Pour garder un personnage stable entre les plans, [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant) complète cette page.
+La partie critique reste `[SCENE DESCRIPTION]`. Elle doit décrire un plan tournable:
+- qui
+- où
+- action
+- lumière
+- relation sujet/fond
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+## Workflow de correction en 8 minutes
 
-Pour calibrer l’œil sur le mouvement et le cadrage, cette vidéo aide : [mouvement caméra crédible](https://www.youtube.com/watch?v=pLDTXnovoBc).
+1. Copie ton prompt brut dans un fichier texte.  
+2. Supprime les adjectifs vides.  
+3. Ajoute plan/focale/hauteur caméra.  
+4. Ajoute source lumière principale.  
+5. Ajoute une imperfection réelle du décor.  
+6. Ajoute contraintes anti rendu fake.  
+7. Génère deux variantes avec une seule différence.  
+8. Compare au zoom et en plein écran.
 
-## Checklist rapide avant de cliquer sur Générer
+### Exemple brut -> corrigé
 
-Coche mentalement : j’ai un **plan** nommé, une **focale** ou une famille de focale, une **direction de lumière**, une **heure** ou une météo, au moins une **imperfection** réelle, et moins de dix superlatifs vides. Si un item manque, tu n’es pas obligé d’arrêter ton travail, mais tu sais à l’avance quel défaut risque d’apparaître. Cette checklist prend quinze secondes et remplace des heures de régénération aveugle.
+Brut:
+```text
+beautiful cinematic woman portrait masterpiece 8k ultra detailed
+```
 
-Si tu livres pour un client, ajoute : j’ai un **interdit** lié à la marque (pas de néon rose, pas de logo inventé) et une note sur le **ratio** final. Les prompts professionnels ressemblent souvent à des briefs courts, pas à des poèmes, et c’est une bonne nouvelle pour la reproductibilité.
+Corrigé:
+```text
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, medium close-up of a woman in her early 40s standing near rainy kitchen window at dusk with soft side key from camera-left and warm practical lamp in background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+```
 
-## Guerre des tranchées : ce que les débutants ratent, et comment réparer
+## Tableau diagnostic rapide
 
-Tu penses que l’anglais technique est snob. Les checkpoints réagissent souvent mieux à **key, fill, rim, bokeh**. Écris en français dans ton carnet, traduis les tags pour le modèle.
+| Symptôme visible | Cause probable dans le prompt | Correction immédiate |
+| --- | --- | --- |
+| Peau cireuse | “perfect skin”, trop de clean | texture peau + imperfections |
+| Yeux trop brillants | lumière non décrite | source + direction + intensité |
+| Décor “jeu vidéo” | palette et contraste non cadrés | réduire saturation, ancrer matière |
+| Visage déformé | focale/cadre incohérents | fixer focale réaliste + distance |
+| Image artificielle malgré netteté | manque de hiérarchie | simplifier prompt et priorités |
 
-Tu ajoutes « film grain » sans équilibrer la netteté ailleurs. Le grain devient un autocollant sur du plastique. **Baisse le sharp implicite** dans les autres lignes avant de monter le grain.
+![Image contextuelle 1, comparaison prompt brut vs corrigé.](workflow-1.webp)
 
-Tu demandes symétrie parfaite sur tout le visage. Les humains ne le sont pas. Une légère asymétrie des sourcils ou des paupières casse l’effet poupée.
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, split comparison board with failed AI portrait and corrected cinematic portrait pinned in studio, neutral practical lighting and paper notes, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
-Tu oublies les **catchlights** cohérents avec la scène. Une fenêtre rectangulaire doit donner une forme de reflet plausible, pas deux soleils ronds.
+## Vidéo YouTube a intégrer dans l'article
 
-Tu mets « HDR » parce que tu veux du punch. Tu obtiens un ciel en feu et une peau encore lisse. Remplace par une description d’**exposition** : ciel légèrement compressé, visage protégé par une key latérale.
+Utilise cette video de `@BusinessDynamite` dans la section analyse:
 
-Tu copies un prompt qui incluait un LoRA ou un embedding chez l’auteur. Chez toi, sans ces poids, le prompt est une coquille vide qui **promet** un style impossible.
+[https://www.youtube.com/watch?v=hHWkvFH8u9I](https://www.youtube.com/watch?v=hHWkvFH8u9I)
 
-Tu refuses les mains : tu les mets en gros plan quand même. **Recadre** ou lointain flou.
+Ce qu’il faut observer:
+- comment une demande vague devient une consigne exploitable
+- comment la structure de phrase change le résultat final
+- comment simplifier sans perdre l’intention
 
-Tu utilises « vibrant colors » sur une scène qui devrait être crasse et terne. Le modèle obéit, tu perds la narration. Remplace par une palette **limitée** et des matériaux délavés.
+Exercice pratique:
+- prends un prompt qui rate
+- applique le workflow ci-dessus
+- compare avant/après sur 3 generations
 
-Tu demandes « sharp focus everywhere » : en optique réelle, le sharp partout n’existe pas avec une grande ouverture. Choisis un **plan de netteté** : yeux, puis dégradé.
+## Trench warfare, ce que les debutants font mal
 
-Tu mets « professional lighting » sans dire quoi : trois sources studio par défaut apparaissent. Nomme une key, une fill faible, peut-être une rim, et leur couleur.
+- **Empiler les references**: trois films, deux styles photo, une tendance social, resultat incoherent.
+- **Chercher la perfection peau**: plus tu demandes “perfect”, plus tu perds l’humain.
+- **Confondre propre et realiste**: le reel contient texture, poussiere, micro defauts.
+- **Nier la lumiere**: si la source n’existe pas, le visage ne peut pas sembler vrai.
+- **Fixer tout en post**: la postprod aide, elle ne sauve pas une base fausse.
+- **Ne pas verrouiller les acquis**: un prompt qui marche doit etre versionne.
+- **Ignorer la coherence de personnage**: pour les series d’images, applique la logique de [comment ecrire un prompt pour un personnage realiste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant).
 
-Tu crois que « natural » suffit : c’est le mot le plus vide du paquet. Remplace par heure, météo, taille de source, direction.
+> **Insight plateau**  
+> Le realisme est une somme de petites verites visuelles, pas une option “high quality”.
 
-> **Astuce pro :** garde une « galerie de honte », trois images ratées annotées avec la ligne fautive du prompt. Tu progresses plus vite qu’avec cent images oubliées.
+![Image contextuelle 2, verification texture et lumiere en post.](workflow-2.webp)
 
-> **Astuce pro :** quand un mot « marche » une fois, ne le répète pas partout. La corrélation peut devenir une tique plastique.
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor checking skin texture and shadow consistency on calibrated monitor in a dark grading room, practical side lamp and realistic color chart, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
-## Frequently Asked Questions (FAQ)
+## FAQ
 
-**Je dois tout écrire en anglais ?**
+### Pourquoi “photorealistic” seul ne suffit pas ?
+Parce que ce mot ne decrit ni lumiere, ni geometri e, ni intention de plan.
 
-Pas forcément pour toi, souvent oui pour les tags techniques dans le prompt si ton modèle les comprend mieux. Teste une paire français anglais sur trois scènes et garde ce qui stabilise.
+### Combien de negatifs faut-il mettre ?
+En general 4 a 8, cibles sur tes erreurs recurrentes.
 
-**Les mots « photorealistic » aident-ils ?**
+### Faut-il toujours preciser la focale ?
+Oui, surtout si tu veux stabiliser les visages et la perspective.
 
-Parfois, mais seuls ils ne remplacent pas la lumière et la focale. Si tu les ajoutes sans géométrie, tu restes dans le stock.
+### Comment savoir qu’un prompt est trop long ?
+Quand il se contredit ou repete les memes idees sous dix formes.
 
-**Comment savoir si mon prompt est trop long ?**
+### Le grain dans le prompt ou en post ?
+Les deux peuvent marcher, mais le grain ne doit jamais masquer une lumiere mal pensee.
 
-S’il contient trois styles contradictoires ou répète la même idée cinq fois, raccourcis. La longueur n’est pas le problème, la cohérence oui.
+### Pourquoi mes resultats changent d’une session a l’autre ?
+Modele, seed, reglages, et contexte de generation changent la sortie. Documente tout.
 
-**Pourquoi mes yeux brillent comme des billes ?**
+### Je peux garder un style “propre” sans effet plastique ?
+Oui, si la lumiere reste motivee et la texture peau conservee.
 
-Catchlights symétriques et saturation élevée sur le blanc. Demande une ombre sous la paupière, baisse la saturation sur le sclère, un seul reflet principal.
-
-**Le négatif « ugly » inverse-t-il la beauté plastique ?**
-
-Souvent non, ça crée des artefacts bizarres. Précise plutôt « waxy skin, plastic texture, oversharpened » si c’est ce que tu veux éviter.
-
-**Dois-je lister tout ce que je ne veux pas ?**
-
-Non. Cible quatre à huit défauts que ton modèle produit réellement sur ton sujet.
-
-**Comment tester sans gaspiller de crédits cloud ?**
-
-Réduis résolution et nombre d’images par batch pour le diagnostic, monte seulement quand une direction tient.
-
-**Mes tissus ressemblent à de la résine, que faire ?**
-
-Retire les mots qui lissent, ajoute des mots de matière réelle, froissé, pulls, grain de bois brut, et baisse la guidance d’un cran.
-
-**Pourquoi mon décor change entre deux seeds ?**
-
-Le seed change l’échantillonnage. Si la géométrie saute trop, ton prompt décor est sous-déterminé. Ajoute des ancres physiques, matériau du sol, largeur de fenêtre, couleur du mur.
-
-**Le même prompt donnait mieux la semaine dernière ?**
-
-Mise à jour du modèle, interface, ou case cochée différemment. Archive captures d’écran des réglages avec la date.
-
-**Comment intégrer du texte lisible dans l’image sans tout casser ?**
-
-Garde la phrase courte, mentionne la typo dans le prompt, évite les polices fantaisie. Si le modèle échoue trois fois, place le texte en post en vectoriel plutôt que de saturer le négatif. Le texte est souvent le point où les corrélations plastiques apparaissent parce que le modèle mélange lettres et matière.
-
-**Pourquoi mes images « sentent le générateur du mois » ?**
-
-Tu utilises les mêmes mots mode que tout le monde en même temps. Les checkpoints réagissent aux modes collectives. Évite les prompts viral copy-paste, réécris avec tes propres ancres de lieu et de lumière.
-
-**Dois-je mentionner la marque d’appareil photo ?**
-
-Parfois ça aide, parfois ça déclenche des corrélations publicitaires lisses. Teste avec et sans « shot on » sur trois scènes. Garde seulement si ça améliore la texture sans lisser.
-
-**Comment équilibrer grain et netteté ?**
-
-Grain dans le prompt léger, netteté sélective en post sur les bords éloignés, jamais sur la peau au premier plan sauf intention publicitaire assumée. Si le grain du prompt crée du bruit sur la peau, passe le grain en overlay uniforme après coup.
-
-**Les embeddings et triggers invisibles comptent-ils ?**
-
-Oui si tu utilisais un fichier qui les contenait sans le savoir. Ouvre tes prompts dans un éditeur brut, cherche les chevrons ou noms de styles cachés. Recopie ligne par ligne pour isoler le déclencheur fantôme.
-
-**Puis-je demander « comme une photo argentique » sans préciser ?**
-
-Tu obtiendras du grain aléatoire et des couleurs aléatoires. Précise plutôt ISO mental, sous-exposition légère, grain fin, highlights rolloff, pour guider sans laisser le modèle choisir un pack vintage au hasard.
-
-**Comment éviter les dents parfaites en ligne blanche ?**
-
-Demande des dents naturelles, légère asymétrie, micro-espaces, ou cache la bouche avec un geste ou une ombre si le plan le permet. Évite « perfect smile » si tu veux du réel.
-
-**Le prompt doit-il suivre un ordre précis ?**
-
-Beaucoup de praticiens placent caméra et lumière tôt, matière et grain ensuite, interdits en fin. Ce n’est pas une loi physique, mais ça aide ton cerveau à hiérarchiser et aide certains encodeurs à pondérer correctement.
-
-**Que faire si mon style « propre » est voulu ?**
-
-Alors assume le plastique comme esthétique : éclairage studio trois points, peau lisse, pas de contradiction avec « documentary natural skin ». Le fake vient du mélange involontaire de signaux contradictoires, pas du choix honnête d’un look.
-
-**Comment documenter mes prompts pour une équipe ?**
-
-Un fichier partagé avec date, modèle, résolution, prompt final, capture des curseurs, et lien vers l’image dans le drive. Une ligne « ce qui a échoué avant » évite que le collègue répète la même erreur. La documentation est aussi une compétence créative, souvent sous-estimée dans les petites équipes pressées par les deadlines courtes et les revues client fréquentes.
+### Comment progresser vite ?
+Tester peu de variantes, bien notees, avec une seule variable modifiee a la fois.

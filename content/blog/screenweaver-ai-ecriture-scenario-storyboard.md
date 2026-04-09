@@ -129,16 +129,16 @@ ScreenWeaver est en **bêta** : fonctionnalités qui arrivent par vagues, bugs p
 ## FAQ
 
 **ScreenWeaver remplace-t-il Final Draft ?**  
-Ils se positionnent en alternative crédible avec export `.fdx` et PDF. Si ton studio est 100 % Final Draft, teste un **aller-retour** sur une séquence courte avant de migrer toute une writers’ room.
+Pas en mode « switch aveugle » immédiat, mais comme alternative crédible selon tes besoins. L’important est de vérifier le round-trip réel (`.fdx`, PDF, commentaires, versioning) sur une séquence test avant toute migration d’équipe. Une transition maîtrisée vaut mieux qu’un changement brutal qui casse les habitudes de prod.
 
 **Puis-je rester sur la partie gratuite ?**  
-Oui pour le **noyau screenwriting** selon leur offre actuelle ; le payant concerne storyboard assisté, recherche avancée, workflows visuels, etc.
+Oui, si ton besoin principal est l’écriture structurée et l’export scénario. Dès que tu veux accélérer storyboard, recherche, et workflows visuels liés aux scènes, les fonctions payantes prennent du sens. Décide selon ton flux réel, pas selon la grille marketing seule.
 
 **L’IA écrit-elle le film à ma place ?**  
-Dans l’esprit qu’ils décrivent, l’IA assiste (recherche, cohérence, itération visuelle) ; **l’auteur reste responsable**.
+Non, elle assiste mais ne remplace pas la responsabilité narrative. Elle peut aider à itérer, reformuler et visualiser plus vite, mais les choix dramaturgiques restent humains. Le film échoue ou réussit sur les décisions d’auteur, pas sur la quantité d’autocomplétion.
 
 **Comment éviter trois visages pour un même personnage ?**  
-Bible utilisée, références attachées, validation progressive, panneaux verrouillés quand ils sont justes.
+Utilise une bible personnage stable dès l’écriture, avec références visuelles reliées aux scènes. Verrouille les panneaux corrects au fur et à mesure et évite de régénérer tout en bloc à chaque itération. La constance vient d’un protocole de continuité, pas d’un seul prompt.
 
 **Puis-je importer mes propres images ?**  
 D’après leur communication : refs, croquis, rendus externes pour nourrir le board.
@@ -147,7 +147,7 @@ D’après leur communication : refs, croquis, rendus externes pour nourrir le b
 Ils annoncent une **écriture offline** avec synchronisation au retour via une installation type appli depuis le navigateur. Garde toujours une **copie export** locale si tu es prudent.
 
 **Ça vaut le coup pour une pub de quinze secondes ?**  
-Si c’est simple, peut-être pas. Si tu enchaînes versions légales / formats / continuité produit, **oui vite**.
+Si la pub est ultra simple et mono-format, l’intérêt peut être limité. Mais dès que tu gères variantes, formats, validations client et continuité produit, le gain organisationnel devient rapide. Le vrai retour vient de la réduction d’erreurs de transmission entre écriture, board et exécution.
 
 **Premier test honnête ?**  
 Une scène, **trois panneaux**, une itération de graphe, puis un montage rapide sur bruitage ou musique. Si la lecture tient, continue ; sinon reviens au texte avant d’acheter.
