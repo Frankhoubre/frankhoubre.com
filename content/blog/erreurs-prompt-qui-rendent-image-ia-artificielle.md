@@ -206,3 +206,208 @@ Oui, si la lumiere reste motivee et la texture peau conservee.
 
 ### Comment progresser vite ?
 Tester peu de variantes, bien notees, avec une seule variable modifiee a la fois.
+
+## Atelier avancé, protocole de correction reproductible
+
+Tu veux progresser vite, voici un protocole simple à répéter.
+
+### Session 1, nettoyer le bruit sémantique
+
+Tu prends un prompt raté.  
+Tu enlèves tous les mots non mesurables.
+
+Tu gardes seulement:
+- sujet
+- action
+- lieu
+- lumière
+- focale
+- texture
+
+Puis tu régénères.
+
+### Session 2, ajouter la structure optique
+
+Tu imposes:
+- type de plan
+- angle caméra
+- distance sujet/fond
+- source principale
+
+Tu observes si la géométrie s’améliore.  
+Si oui, tu verrouilles cette version comme baseline.
+
+### Session 3, affiner la matière
+
+Tu ajoutes:
+- texture peau naturelle
+- micro imperfection
+- grain subtil
+- interdits anti rendu fake
+
+Tu compares les trois générations côte à côte.
+
+> **Pro insight**  
+> Le but n’est pas de trouver un prompt “génial”, le but est de construire un système stable qui évite les erreurs.
+
+## Diagnostics visuels, grille d’analyse express
+
+Quand une image semble artificielle, réponds à ces questions:
+
+1. La lumière a-t-elle une source crédible ?  
+2. La peau garde-t-elle du relief naturel ?  
+3. Les reflets sont-ils cohérents avec la source ?  
+4. La profondeur de champ suit-elle une logique physique ?  
+5. Le fond soutient-il le sujet ou le parasite-t-il ?
+
+Si tu as deux réponses “non”, le prompt doit être réécrit.
+
+## Cas pratique détaillé
+
+### Prompt initial
+`cinematic masterpiece portrait ultra detailed perfect skin`
+
+### Problèmes observés
+- peau lisse
+- yeux artificiels
+- contraste sans volume
+
+### Réécriture structurée
+
+```text
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, medium close-up portrait of a woman in her late thirties standing by rainy kitchen window at dusk with side key from camera-left and warm practical lamp in deep background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+```
+
+### Résultat
+- peau plus crédible
+- lumière lisible
+- profondeur cohérente
+
+## Erreurs de post qui renforcent le fake
+
+- sharpen global trop fort  
+- contraste en S agressive  
+- saturation rouge peau excessive  
+- halos sur contours  
+- grain “sale” non homogène
+
+Le prompt n’est pas seul responsable.  
+La finition peut ruiner une base saine.
+
+## Méthode de travail en équipe
+
+Si vous êtes plusieurs:
+- un auteur prompt
+- un reviewer visuel
+- un reviewer narration
+
+Chacun donne un retour court:
+- ce qui marche
+- ce qui casse
+- ce qu’on teste ensuite
+
+Tu évites les débats flous, tu gardes des décisions traçables.
+
+## Troubleshooting massif, bloc complémentaire
+
+### 16) Portrait trop “pub beauté”
+Fix: réduire lissage implicite, renforcer micro-ombres.
+
+### 17) Décor sans profondeur
+Fix: ajouter distance sujet-fond et lumière arrière.
+
+### 18) Trop de flare
+Fix: limiter anamorphique forcé, garder flare subtil.
+
+### 19) Yeux trop clairs
+Fix: réduire highlights et saturation locale.
+
+### 20) Lèvres plastiques
+Fix: texture subtile, éviter mots “perfect makeup”.
+
+### 21) Reflets lunettes incohérents
+Fix: angle trois quarts, reflet simplifié.
+
+### 22) Arrière-plan trop net
+Fix: préciser profondeur de champ et distance.
+
+### 23) Teint “orange”
+Fix: contrôler température de key et balance finale.
+
+### 24) Ombres sans détail
+Fix: fill léger ou rebond naturel.
+
+### 25) Rendu trop “jeux vidéo”
+Fix: réduire saturation et netteté, prioriser matière.
+
+### 26) Incohérence entre versions
+Fix: seed stable pendant le diagnostic.
+
+### 27) Prompt long mais vide
+Fix: retirer les adjectifs décoratifs.
+
+### 28) Prompt court trop abstrait
+Fix: ajouter données physiques minimales.
+
+### 29) Texte faux dans l’image
+Fix: texte court ou ajout en post.
+
+### 30) Fatigue de décision
+Fix: sessions courtes, critères de rejet clairs.
+
+## FAQ additionnelle
+
+### Je peux rester en français intégral ?
+Oui, mais certains tags techniques anglais restent plus fiables selon modèle.
+
+### Le mot “cinematic” suffit-il ?
+Non, jamais sans contexte caméra/lumière.
+
+### Faut-il toujours donner l’heure ?
+Oui si la lumière dépend d’une source naturelle.
+
+### Comment savoir si j’ai trop d’éléments ?
+Si ton regard ne sait pas où aller, il y en a trop.
+
+### Dois-je mentionner le capteur ?
+Optionnel, utile surtout pour la cohérence inter-plans.
+
+### Peut-on corriger sans tout réécrire ?
+Oui, en changeant une variable à la fois.
+
+### Quel est le meilleur réflexe anti fake ?
+Remplacer les superlatifs par des données de tournage.
+
+### Quand valider un prompt ?
+Quand deux générations consécutives restent crédibles avec variations mineures.
+
+## Extension finale, méthode de production hebdomadaire
+
+Si tu veux professionnaliser ton niveau, organise tes sessions en cycles:
+
+### Lundi, diagnostic
+Tu collectes 10 sorties ratées et tu classes les défauts.
+
+### Mardi, correction ciblée
+Tu réécris 3 prompts avec une variable changée.
+
+### Mercredi, stress test
+Tu testes ces prompts sur plusieurs scènes proches.
+
+### Jeudi, consolidation
+Tu fixes un template interne et des interdits de style.
+
+### Vendredi, livraison
+Tu publies uniquement les sorties validées selon checklist.
+
+Ce rythme transforme la progression en système.
+
+### Mini checklist finale
+
+- **source lumineuse lisible**  
+- **peau non plastique**  
+- **géométrie stable**  
+- **reflets cohérents**  
+- **fond narratif propre**
+
+Si une case échoue, tu corriges avant publication.

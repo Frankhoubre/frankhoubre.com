@@ -16,6 +16,10 @@ Tu peux l’utiliser comme checklist avant chaque session : cinq cases à cocher
 
 Le vocabulaire « qualité ultime » autour de l’image générée n’aide pas à diagnostiquer une oreille manquante. Ici, on nomme des **symptômes** et des **leviers**, pas des jugements de valeur sur ton talent.
 
+![Hero, contrôle des visages en génération IA.](hero.webp)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor examining facial geometry and eye symmetry on a calibrated monitor in dark studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
 ## Pourquoi le visage casse en premier
 
 Le cerveau humain est **spécialisé** dans la lecture des visages. Une légère asymétrie naturelle passe. Une asymétrie incohérente entre les deux yeux, une bouche qui fond dans la joue, ou une dent qui fusionne avec la lèvre déclenche le rejet immédiat. Tu es un critique sévère sans formation, parce que ton espèce a passé des millénaires à lire des regards.
@@ -214,3 +218,14 @@ Réduis le nombre, augmente la distance entre sujets, ou traite chaque visage en
 **La vidéo après ?**
 
 Fige le visage en image pilote stable, mouvement modeste, amplitude basse. Si le visage pulse, reviens à l’image fixe : la vidéo ne corrige pas une géométrie déjà fausse. Pour du dialogue, préfère des plans courts et des réactions plutôt qu’un seul long plan qui expose les micro dérives.
+
+## Vidéo YouTube à intégrer
+
+Référence `@BusinessDynamite` : [https://www.youtube.com/watch?v=hHWkvFH8u9I](https://www.youtube.com/watch?v=hHWkvFH8u9I)
+
+Ce qu’il faut regarder:
+- comment passer d’une demande vague à une instruction actionnable,
+- comment clarifier les critères de réussite avant génération,
+- comment éviter les itérations “au hasard” qui aggravent les défauts.
+
+Dernier réflexe utile, fais toujours une vérification à froid avant validation finale.

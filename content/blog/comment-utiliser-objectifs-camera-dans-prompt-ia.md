@@ -161,3 +161,147 @@ Prompt identique, seule la focale change, puis comparaison objective.
 
 ### Comment eviter les mains monstrueuses ?
 Focale plus longue, cadrage plus prudent, mains hors champ partiel si besoin.
+
+## Bloc avancé, focale et narration
+
+La focale ne sert pas seulement à “faire joli”.  
+Elle porte l’émotion.
+
+Un 24 mm peut donner une sensation de tension spatiale.  
+Un 50 mm peut donner une proximité humaine.  
+Un 85 mm peut isoler une décision dramatique.
+
+> **Pro insight**  
+> Choisis la focale en fonction de l’intention du plan, pas du mot à la mode.
+
+## Protocole de test focales
+
+1. Même scène, même lumière, même sujet.  
+2. Trois rendus, 24, 35, 50 mm.  
+3. Compare perspective, visage, fond.  
+4. Verrouille la focale de référence pour la séquence.
+
+## Tableau avancé, focale et intention
+
+| Intention | Focale | Risque | Correction |
+| --- | --- | --- | --- |
+| Isolement | 85 mm | fond trop plat | augmenter distance fond |
+| Immersion | 24-35 mm | déformation visage | éloigner caméra |
+| Dialogue | 35-50 mm | rendu neutre | renforcer axe lumière |
+| Tension | 50 mm | manque de relief | jouer sur angle caméra |
+
+## Trench warfare complémentaire
+
+### 11) Mélanger plusieurs focales dans un seul prompt
+Fix: une focale par plan.
+
+### 12) Contradiction focale/cadrage
+Fix: large en focale courte, émotion en focale moyenne/longue.
+
+### 13) Oublier les distances
+Fix: préciser sujet-camera et sujet-fond.
+
+### 14) Changer focale sans raison narrative
+Fix: n’utiliser le changement qu’en rupture assumée.
+
+### 15) Dépendre du mot “cinematic lens”
+Fix: indiquer valeur et contexte, pas seulement une étiquette.
+
+### 16) Ignorer le ratio final
+Fix: valider en 16:9 et 9:16 selon diffusion.
+
+### 17) Macro utilisée par défaut
+Fix: garder macro pour inserts objets.
+
+### 18) Focale longue et travelling trop agressif
+Fix: réduire mouvement ou revenir focale moyenne.
+
+## FAQ additionnelle
+
+### 35 ou 50 pour débuter ?
+35 pour polyvalence, 50 pour portrait stable.
+
+### La focale suffit-elle pour un rendu ciné ?
+Non, elle doit s’aligner avec lumière, cadre et récit.
+
+### Dois-je indiquer l’axe caméra ?
+Oui, ça améliore fortement la cohérence.
+
+### Peut-on garder la même focale tout le film ?
+Oui, c’est même une très bonne base de cohérence.
+
+## Atelier avancé, focales par séquence
+
+Pour une séquence de 4 plans, tu peux utiliser cette progression:
+- plan 1 établissement: 35 mm
+- plan 2 action: 50 mm
+- plan 3 émotion: 85 mm
+- plan 4 conséquence: 50 mm
+
+Tu gardes la cohérence et tu fais progresser la perception.
+
+### Exemple opérationnel
+
+Scène:
+- arrêt de bus nuit
+- personnage hésite
+- décision de départ
+
+Règles:
+- angle stable
+- lumière stable
+- variation focale motivée
+
+Effet:
+- plan large lisible
+- émotion plus intense au close-up
+- retour stable sur la conséquence
+
+> **Pro insight**  
+> La variation de focale doit servir une progression narrative, jamais un effet gratuit.
+
+## Bloc dépannage supplémentaire
+
+### 21) Sujet trop “plat” en 50 mm
+Fix: augmenter profondeur du décor et contraste local.
+
+### 22) Bokeh incohérent
+Fix: préciser distance sujet-fond.
+
+### 23) Perspective étrange en 35 mm
+Fix: reculer la caméra, garder même cadre.
+
+### 24) Impression “fish-eye” non voulue
+Fix: éviter focales trop courtes en portrait.
+
+### 25) Incohérence entre plans successifs
+Fix: fiche focale par plan dans la shotlist.
+
+### 26) Trop de compression en 85 mm
+Fix: ajouter espace arrière-plan.
+
+### 27) Difficulté en format vertical
+Fix: adapter cadre et focale au 9:16 dès la génération.
+
+### 28) Changement de focale invisiblement inutile
+Fix: revenir à focale baseline et juger objectivement.
+
+### 29) Aspect “publicité lisse”
+Fix: réduire netteté + texture matière.
+
+### 30) Pipeline non reproductible
+Fix: documenter prompt/focale/seed systématiquement.
+
+## FAQ complémentaire 2
+
+### Quel combo focale pour interview crédible ?
+35 mm pour contexte, 50 mm pour parole principale.
+
+### Peut-on faire du 85 mm en intérieur petit ?
+Oui, si tu adaptes distance et cadre.
+
+### Pourquoi mes plans semblent “sans profondeur” ?
+Distance fond insuffisante ou lumière trop plate.
+
+### Comment former une équipe sur ce sujet ?
+Tests comparatifs 24-35-50 sur une scène identique.

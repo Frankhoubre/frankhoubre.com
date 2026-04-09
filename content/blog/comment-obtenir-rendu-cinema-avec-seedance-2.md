@@ -14,6 +14,10 @@ Si tu arrives avec une attente de « bouton cinéma », tu seras frustré en une
 
 Ce guide suppose que tu acceptes des allers retours. Pas vingt réglages mystiques : quelques principes stables, une routine de fichiers, et une oreille branchée tôt.
 
+![Hero, rendu cinéma avec Seedance 2.](hero.webp)
+
+Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, filmmaker reviewing realistic night sequence on calibrated monitor in dark studio with practical tungsten lamp, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
+
 ## Ce que « cinéma » veut dire ici
 
 **Pas** une image ultra nette partout. **Pas** une saturation qui crie. **Pas** un travelling impossible qui tord l’architecture. Le cinéma classique vit sur des **choix de lumière**, des **cadres** qui dirigent le regard, des **silences** sonores, et des **coupes** qui compressent le temps.
@@ -144,6 +148,15 @@ Si tu montres à quelqu’un, demande une question précise : « où regardes tu
 
 Pour un client, présente **deux options** maximum avec des différences nommées : « version calme » versus « version plus contrastée ». Dix options floues paralysent la décision et te forcent à multiplier les rendus gratuits.
 
+## Vidéo YouTube à intégrer
+
+Référence `@BusinessDynamite` : [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+
+Ce qu’il faut observer:
+- comment la préparation réduit les erreurs de pipeline,
+- comment la clarté des choix améliore la cohérence finale,
+- comment rester narratif sans tomber dans la démonstration technique.
+
 ## Limites honnêtes
 
 Les mains, les interactions objets, les foules denses, les reflets complexes restent des zones à risque. Ce n’est pas une critique personnelle de ton talent : c’est l’état des outils. Contourne par cadrage, par découpe, par simplification du décor, ou par plan de réaction au lieu du gros plan main.
@@ -225,3 +238,5 @@ Choisis des plages avec du vide dynamique. Évite le mur orchestral sur des phra
 **C’est utilisable client ?**
 
 Ça dépend des droits, du contrat, et de la transparence sur la chaîne de production. Documente tout, y compris les retouches, les sources sonores, et les limitations connues du pipeline.
+
+Dernier rappel utile, avance par itérations courtes et mesurables.

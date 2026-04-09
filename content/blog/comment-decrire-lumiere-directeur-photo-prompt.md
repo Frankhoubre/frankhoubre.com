@@ -164,3 +164,209 @@ Oui seulement si c’est motive par l’action ou le temps.
 
 ### Meilleur test rapide ?
 Comparer deux rendus en ne changeant qu’une seule variable de lumiere.
+
+## Bloc avancé, écrire la lumière comme une narration
+
+La lumière ne sert pas seulement à “voir”.  
+Elle raconte.
+
+Une key latérale peut suggérer le doute.  
+Une key frontale peut neutraliser l’émotion.  
+Un contre discret peut isoler un personnage.
+
+Quand tu écris un prompt lumière, pense d’abord en intention dramatique.
+
+### Question clé avant chaque prompt
+
+Que doit ressentir le spectateur dans ce plan:
+- proximité
+- tension
+- fatigue
+- soulagement
+- menace
+
+Ensuite seulement tu traduis en paramètres visuels.
+
+> **Pro insight**  
+> Le meilleur réglage lumière est celui qui rend l’émotion lisible sans explication.
+
+## Protocole de calibration lumière
+
+### Test A, direction
+Tu gardes tout fixe, tu changes uniquement la direction de key.
+
+### Test B, dureté
+Tu gardes direction fixe, tu changes la taille apparente de source.
+
+### Test C, température
+Tu gardes géométrie fixe, tu ajustes chaud/froid.
+
+Tu identifies vite ce que ton modèle interprète réellement.
+
+## Erreurs subtiles qui détruisent le réalisme
+
+### 1) Fill trop propre
+Le visage flotte, plus de volume.
+
+### 2) Rim trop fort
+Contour de détourage, effet faux.
+
+### 3) Practicals sans logique
+Sources visibles mais sans impact sur la scène.
+
+### 4) Couleur sans structure
+Dominantes contradictoires, peau incohérente.
+
+### 5) Ombres “digitales”
+Transitions abruptes sans motif lumineux.
+
+## Cas pratique, intérieur soir réaliste
+
+Objectif:
+- ambiance intime
+- tension faible
+- lisibilité des traits
+
+Setup prompt:
+- key fenêtre latérale douce
+- fill très léger rebond mur
+- practical tungstène fond
+- ombres conservées sur côté opposé
+
+Résultat attendu:
+- volume visage naturel
+- fond présent mais discret
+- contraste émotionnel lisible
+
+## Tableau avancé, diagnostics lumière
+
+| Symptôme | Cause probable | Correction |
+| --- | --- | --- |
+| Peau plate | fill excessif | réduire fill et renforcer key |
+| Ombres boueuses | contraste post trop poussé | corriger source avant grade |
+| Reflets incohérents | practicals mal décrits | nommer source et position |
+| Atmosphère “fausse” | température aléatoire | limiter à une dominante + contre |
+| Halo contours | rim excessif | diminuer intensité rim |
+
+## Trench warfare complémentaire
+
+### 10) Changer lumière entre plans sans raison
+Fix: justifier par l’action ou le temps.
+
+### 11) Ignorer l’arrière-plan
+Fix: prévoir une hiérarchie fond/sujet.
+
+### 12) Lumière trop uniforme
+Fix: créer une zone de contraste local.
+
+### 13) “Golden hour” partout
+Fix: préciser orientation et intensité.
+
+### 14) Volumétrique abusif
+Fix: l’utiliser comme accent, pas comme base.
+
+### 15) Teinte peau non contrôlée
+Fix: protéger tons chair dès la source.
+
+### 16) Sources multiples fortes
+Fix: désigner une dominante claire.
+
+### 17) Oublier le plafond et le sol
+Fix: décrire rebonds de matière.
+
+### 18) Compter sur le LUT
+Fix: structure lumière d’abord, style ensuite.
+
+### 19) Vérifier seulement sur un écran
+Fix: double validation, écran principal + mobile.
+
+### 20) Pas de journal de session
+Fix: documenter les prompts gagnants.
+
+## FAQ additionnelle
+
+### Combien de sources maximum pour débuter ?
+Une principale, une secondaire légère.
+
+### Faut-il toujours un rim ?
+Non, seulement si la séparation le demande.
+
+### Peut-on faire une scène crédible sans practicals ?
+Oui, si la source hors champ est clairement motivée.
+
+### Comment éviter la peau grise en lumière froide ?
+Ajouter un fill neutre très discret.
+
+### Dois-je préciser le type de lampe ?
+Utile si tu veux verrouiller la couleur.
+
+### Quel test dit que la lumière est juste ?
+Si tu peux dessiner la source sans hésiter.
+
+### L’ombre peut-elle être très noire ?
+Oui, si le récit le justifie et reste lisible.
+
+### Quel est le pire réflexe débutant ?
+Demander “belle lumière” sans géométrie.
+
+## Atelier pratique, de zéro à scène crédible
+
+### Brief
+- intérieur nuit
+- personnage isolé
+- tension douce
+
+### Construction lumière
+1. key latérale douce
+2. fill très léger
+3. practical chaud au fond
+4. ombres préservées côté opposé
+
+### Vérification
+- triangle lumière sur visage lisible
+- reflets yeux cohérents
+- fond plus sombre que sujet
+
+### Ajustements avancés
+- si peau trop plate, réduire fill
+- si contour trop dur, réduire rim
+- si ambiance trop froide, réchauffer practical
+
+> **Pro insight**  
+> Une scène réaliste se corrige d’abord à la source, jamais au filtre final.
+
+## Troubleshooting extra
+
+### 21) Ombres doubles
+Cause: deux sources dominantes.  
+Fix: désigner une key unique.
+
+### 22) Peau “métallique”
+Cause: specular trop fort.  
+Fix: adoucir source et angle.
+
+### 23) Fond plus lumineux que le sujet
+Cause: hiérarchie inversée.  
+Fix: baisser fond ou remonter key sujet.
+
+### 24) Couleur de peau incohérente entre plans
+Cause: température non verrouillée.  
+Fix: charte lumière de scène.
+
+### 25) Atmosphère “preset”
+Cause: LUT agressif.  
+Fix: correction primaire d’abord.
+
+## FAQ complémentaire 2
+
+### Peut-on éclairer une scène sans key claire ?
+Oui, mais c’est un choix rare et risqué pour débuter.
+
+### Le fill doit-il être coloré ?
+Parfois, mais garde-le discret.
+
+### Comment faire une nuit crédible sans noirs bouchés ?
+Préserver les midtones et limiter le contraste global.
+
+### Le volumétrique est-il obligatoire pour un rendu cinéma ?
+Non, et souvent trop utilisé.
