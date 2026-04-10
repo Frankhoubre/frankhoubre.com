@@ -81,34 +81,27 @@ export default function AboutPage() {
             Parcours
           </h2>
           <p className="text-lg leading-relaxed text-neutral-800">
-            Son parcours débute dans la musique. Guitariste passionné, Frank Houbre commence très
-            jeune à enseigner, puis transforme cette expérience en projet entrepreneurial avec la
-            création de MyMusicTeacher en 2014. La plateforme propose une approche innovante de
-            l’apprentissage musical en ligne, mêlant pédagogie interactive et technologie.
+            Son parcours débute dans la musique. Guitariste passionné, il commence très jeune à
+            enseigner, puis transforme cette expérience en projet entrepreneurial avec la création de
+            MyMusicTeacher en 2014. La plateforme propose une approche innovante de l’apprentissage
+            musical en ligne, mêlant pédagogie interactive et technologie. Rapidement remarquée, la
+            startup remporte plusieurs distinctions, dont une médaille d’or au Concours Lépine, et
+            réalise une levée de fonds de 200 000 euros. Ce premier projet pose les bases de ce qui
+            deviendra sa signature: rendre accessibles des compétences complexes grâce à des systèmes
+            intelligents et bien structurés.
           </p>
           <p className="text-lg leading-relaxed text-neutral-800">
-            Rapidement remarquée, la startup remporte plusieurs distinctions, dont une médaille d’or
-            au Concours Lépine, et réalise une levée de fonds de 200 000 euros. Ce premier projet
-            pose les bases de sa signature: rendre accessibles des compétences complexes grâce à des
-            systèmes intelligents et bien structurés.
-          </p>
-          <p className="text-lg leading-relaxed text-neutral-800">
-            Frank Houbre élargit ensuite son champ d’action au digital et à la formation en ligne en
-            fondant Business Dynamite, une plateforme dédiée à l’entrepreneuriat et aux opportunités
-            offertes par Internet. À travers ses contenus, ses formations et sa chaîne YouTube, il
-            accompagne des milliers de créateurs et d’entrepreneurs dans le développement de leurs
-            projets, avec un accent fort sur l’autonomie, la compréhension des systèmes et la
-            capacité d’exécution.
+            Après cette première aventure, Frank Houbre élargit son champ d’action au digital et à la
+            formation en ligne. Il fonde Business Dynamite, une plateforme dédiée à l’entrepreneuriat
+            et aux opportunités offertes par Internet. À travers ses contenus, ses formations et sa
+            chaîne YouTube, il accompagne des milliers de créateurs et d’entrepreneurs dans le
+            développement de leurs projets, en mettant l’accent sur l’autonomie, la compréhension des
+            systèmes et la capacité à exécuter.
           </p>
           <p className="text-lg leading-relaxed text-neutral-800">
             Cette phase marque une évolution importante: au-delà de la création d’outils, il devient
-            un pédagogue reconnu, capable de vulgariser des sujets techniques et d’en faire des
-            leviers concrets d’action.
-          </p>
-          <p className="text-lg leading-relaxed text-neutral-800">
-            Aujourd’hui, son parcours relie entrepreneuriat, pédagogie et création visuelle, avec une
-            ligne directrice constante: transformer des systèmes complexes en méthodes actionnables
-            pour les créateurs.
+            également un pédagogue reconnu, capable de vulgariser des sujets techniques et d’en faire
+            des leviers concrets d’action.
           </p>
         </section>
 
@@ -121,28 +114,36 @@ export default function AboutPage() {
           </h2>
           <p className="text-lg leading-relaxed text-neutral-800">
             À partir des années 2020, son travail s’oriente progressivement vers l’intelligence
-            artificielle et ses applications créatives. Il explore la génération d’images, de vidéos
-            et de musiques autour d’une question centrale: comment transformer ces technologies en
-            véritables outils de narration, et non en simples générateurs de contenu.
+            artificielle et ses applications créatives. Il explore notamment la génération d’images,
+            de vidéos et de musiques, et s’intéresse à une question centrale: comment transformer ces
+            technologies en véritables outils de narration, et non en simples générateurs de contenu.
+          </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            C’est dans cette logique qu’il développe plusieurs projets structurants.
           </p>
           <div className="space-y-3 text-lg leading-relaxed text-neutral-800">
             <p>
-              <strong className="text-neutral-950">AI Studios.</strong> Une communauté et un programme
-              de formation destinés aux créateurs souhaitant produire des films, des publicités et
-              des contenus visuels grâce à l’IA, avec un objectif de maîtrise complète des workflows
-              créatifs et des fondamentaux du cinéma.
+              Avec AI Studios, il crée une communauté et un programme de formation dédiés aux
+              créateurs qui souhaitent produire des films, des publicités et des contenus visuels
+              grâce à l’IA. L’objectif est clair: passer d’une utilisation superficielle des outils à
+              une maîtrise complète des workflows créatifs, en intégrant les fondamentaux du cinéma.
             </p>
             <p>
-              <strong className="text-neutral-950">ScreenWeaver.</strong> Un outil d’écriture nouvelle
-              génération conçu comme un pont entre le scénario et l’image. La plateforme permet de
-              structurer une histoire, visualiser les scènes et préparer leur transformation en
-              storyboard puis en production visuelle.
+              En parallèle, il conçoit ScreenWeaver, un outil d’écriture nouvelle génération pensé
+              comme un pont entre le scénario et l’image. Contrairement aux logiciels traditionnels,
+              ScreenWeaver ne se limite pas à la rédaction: il permet de structurer une histoire, de
+              visualiser ses scènes, et de préparer sa transformation en storyboard et en production
+              visuelle. Le projet s’inscrit dans une vision plus large du futur de la création, où
+              l’écriture, la mise en scène et la fabrication de l’image convergent au sein d’un même
+              espace.
             </p>
             <p>
-              <strong className="text-neutral-950">VOIDBORN.</strong> Un projet de fiction réalisé avec
-              des outils d’intelligence artificielle, sélectionné et récompensé dans plusieurs
-              festivals internationaux dédiés à l’IA, confirmant son positionnement à la frontière
-              entre cinéma et innovation.
+              Sur le plan artistique, Frank Houbre développe également VOIDBORN, un projet de fiction
+              réalisé avec des outils d’intelligence artificielle. À travers cette œuvre, il explore
+              les nouvelles possibilités offertes par ces technologies pour produire des univers
+              visuels ambitieux, sans les contraintes traditionnelles de production. Le projet a été
+              sélectionné et récompensé dans plusieurs festivals internationaux dédiés à l’IA,
+              confirmant son positionnement à la frontière entre cinéma et innovation.
             </p>
           </div>
         </section>
@@ -152,18 +153,18 @@ export default function AboutPage() {
             Vision
           </h2>
           <p className="text-lg leading-relaxed text-neutral-800">
-            Frank Houbre s’inscrit dans une nouvelle génération de créateurs qui ne séparent plus
-            l’écriture, la technologie et la production, mais les considèrent comme un processus
-            unique.
+            Aujourd’hui, Frank Houbre s’inscrit dans une nouvelle génération de créateurs: ceux qui
+            ne séparent plus l’écriture, la technologie et la production, mais les considèrent comme
+            un seul et même processus.
           </p>
           <p className="text-lg leading-relaxed text-neutral-800">
             Son travail repose sur une conviction simple: les outils seuls ne suffisent pas. Ce qui
-            fait la différence réside dans la méthode, la compréhension des fondamentaux et la
-            capacité à transformer une idée en vision claire.
+            fait la différence, c’est la méthode, la compréhension des fondamentaux, et la capacité à
+            transformer une idée en vision claire.
           </p>
           <p className="text-lg leading-relaxed text-neutral-800">
             À travers ses projets, ses contenus et ses outils, il cherche à donner aux créateurs les
-            moyens de ne plus créer à l’aveugle, mais de voir, structurer et construire leurs
+            moyens de ne plus “créer à l’aveugle”, mais de voir, structurer et construire leurs
             histoires avec précision.
           </p>
         </section>
