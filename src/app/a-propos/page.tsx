@@ -63,15 +63,15 @@ export default function AboutPage() {
               création.
             </p>
           </div>
-          <figure className="mt-6 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100">
+          <figure className="mt-6 max-w-sm overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100">
             <Image
               src="/images/frank-houbre-about.png"
               alt="Portrait de Frank Houbre"
-              width={768}
-              height={768}
+              width={520}
+              height={520}
               priority
               className="h-auto w-full object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
+              sizes="(max-width: 640px) 100vw, 520px"
             />
           </figure>
         </header>
@@ -104,6 +104,11 @@ export default function AboutPage() {
             Cette phase marque une évolution importante: au-delà de la création d’outils, il devient
             un pédagogue reconnu, capable de vulgariser des sujets techniques et d’en faire des
             leviers concrets d’action.
+          </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Aujourd’hui, son parcours relie entrepreneuriat, pédagogie et création visuelle, avec une
+            ligne directrice constante: transformer des systèmes complexes en méthodes actionnables
+            pour les créateurs.
           </p>
         </section>
 
@@ -161,6 +166,67 @@ export default function AboutPage() {
             moyens de ne plus créer à l’aveugle, mais de voir, structurer et construire leurs
             histoires avec précision.
           </p>
+        </section>
+
+        <section aria-labelledby="reseaux" className="mt-12 space-y-4">
+          <h2 id="reseaux" className="text-2xl font-semibold tracking-tight text-neutral-950">
+            Réseaux sociaux et profils
+          </h2>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Retrouvez Frank Houbre sur les principales plateformes et bases de données publiques:
+          </p>
+          <ul className="list-disc space-y-2 pl-5 text-lg leading-relaxed text-neutral-800">
+            <li>
+              <a
+                href="https://www.tiktok.com/@frankhoubre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                TikTok
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/frank-houbre/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/frank.houbre/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@BusinessDynamite"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.imdb.com/name/nm17957426/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                IMDb
+              </a>
+            </li>
+          </ul>
           <p className="text-lg leading-relaxed text-neutral-800">
             Pour en savoir plus, consultez le{" "}
             <Link
