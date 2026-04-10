@@ -1,104 +1,175 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { baseUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "À propos",
-  description: "Parcours, vision et méthode de Frank Houbre autour de l’IA vidéo.",
+  description:
+    "Biographie de Frank Houbre, entrepreneur, réalisateur et créateur spécialisé dans la narration à l’ère de l’intelligence artificielle.",
   alternates: { canonical: `${baseUrl}/a-propos` },
 };
 
 export default function AboutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Frank Houbre",
+    url: `${baseUrl}/a-propos`,
+    mainEntityOfPage: `${baseUrl}/a-propos`,
+    jobTitle:
+      "Entrepreneur, réalisateur et créateur spécialisé dans les nouvelles formes de narration à l’ère de l’intelligence artificielle",
+    nationality: "Française",
+    image: `${baseUrl}/images/frank-houbre-about.png`,
+    description:
+      "Frank Houbre est un entrepreneur français, réalisateur et créateur spécialisé dans les nouvelles formes de narration à l’ère de l’intelligence artificielle.",
+    knowsAbout: [
+      "Intelligence artificielle générative",
+      "Narration visuelle",
+      "Storytelling",
+      "Réalisation",
+      "Écriture de scénario",
+      "Formation en ligne",
+      "Entrepreneuriat digital",
+    ],
+    sameAs: [
+      "https://www.tiktok.com/@frankhoubre",
+      "https://www.linkedin.com/in/frank-houbre/",
+      "https://www.instagram.com/frank.houbre/",
+      "https://www.youtube.com/@BusinessDynamite",
+      "https://www.imdb.com/name/nm17957426/",
+    ],
+  };
+
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-20">
-      <h1 className="text-3xl font-semibold tracking-tight">À propos</h1>
-      <div className="mt-6 space-y-8 text-lg leading-relaxed text-neutral-800">
-        <p>
-          <strong className="text-neutral-950">Frank Houbre</strong> explore l’IA générative comme un
-          terrain de création, au croisement de l’entrepreneuriat tech et de la réalisation
-          cinématographique.
-        </p>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
-        <p>
-          Son approche est simple : ne pas subir la révolution de l’IA, mais en comprendre les
-          mécanismes pour construire des workflows solides, reproductibles et orientés résultat.
-        </p>
+      <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+        <header className="space-y-5">
+          <p className="font-mono text-xs uppercase tracking-wide text-neutral-500">À propos</p>
+          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Frank Houbre</h1>
+          <div className="space-y-4 text-lg leading-relaxed text-neutral-800">
+            <p>
+              Frank Houbre est un entrepreneur français, réalisateur et créateur spécialisé dans les
+              nouvelles formes de narration à l’ère de l’intelligence artificielle.
+            </p>
+            <p>
+              À la croisée de la technologie, du storytelling et de l’image, il développe depuis plus
+              de dix ans des outils, des projets et des formats visant à repousser les limites de la
+              création.
+            </p>
+          </div>
+          <figure className="mt-6 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100">
+            <Image
+              src="/images/frank-houbre-about.png"
+              alt="Portrait de Frank Houbre"
+              width={768}
+              height={768}
+              priority
+              className="h-auto w-full object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </figure>
+        </header>
 
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            15 ans d’entrepreneuriat appliqué
+        <section aria-labelledby="parcours" className="mt-12 space-y-4">
+          <h2 id="parcours" className="text-2xl font-semibold tracking-tight text-neutral-950">
+            Parcours
           </h2>
-          <p>
-            Avec un parcours en informatique et management de l’innovation, Frank a passé plus de 15
-            ans à lancer, structurer et faire grandir des projets tech. Cette expérience du terrain
-            nourrit aujourd’hui sa méthodologie en IA image et vidéo.
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Son parcours débute dans la musique. Guitariste passionné, Frank Houbre commence très
+            jeune à enseigner, puis transforme cette expérience en projet entrepreneurial avec la
+            création de MyMusicTeacher en 2014. La plateforme propose une approche innovante de
+            l’apprentissage musical en ligne, mêlant pédagogie interactive et technologie.
           </p>
-          <ul className="list-disc space-y-2 pl-5">
-            <li>Formation hybride : technique solide et vision produit orientée exécution.</li>
-            <li>Scale-up & financement : gestion d’équipes et de pipelines de production complexes.</li>
-            <li>Web3 & gaming : culture de l’innovation rapide et des écosystèmes créateurs.</li>
-            <li>Pédagogie : vulgarisation claire de sujets techniques avancés.</li>
-          </ul>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            Une vision de réalisateur IA
-          </h2>
-          <p>
-            Ici, l’IA n’est pas un gadget. C’est un levier de production qui permet de transformer
-            une intention artistique en images cohérentes, avec un niveau d’exigence proche des
-            standards cinéma.
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Rapidement remarquée, la startup remporte plusieurs distinctions, dont une médaille d’or
+            au Concours Lépine, et réalise une levée de fonds de 200 000 euros. Ce premier projet
+            pose les bases de sa signature: rendre accessibles des compétences complexes grâce à des
+            systèmes intelligents et bien structurés.
           </p>
-          <ul className="list-disc space-y-2 pl-5">
-            <li>Cohérence des personnages et des univers sur des séquences longues.</li>
-            <li>Storyboard, world-building et direction artistique assistés par IA.</li>
-            <li>Contrôle de la lumière, du cadrage et du mouvement caméra.</li>
-            <li>Workflows pensés pour livrer vite, sans sacrifier la qualité visuelle.</li>
-          </ul>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            Distinctions et reconnaissance internationale
-          </h2>
-          <p>
-            Le travail de Frank a été distingué dans plusieurs festivals IA et cinéma indépendant,
-            notamment à Séoul, à Hollywood et lors des Mondial Chroma Awards.
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Frank Houbre élargit ensuite son champ d’action au digital et à la formation en ligne en
+            fondant Business Dynamite, une plateforme dédiée à l’entrepreneuriat et aux opportunités
+            offertes par Internet. À travers ses contenus, ses formations et sa chaîne YouTube, il
+            accompagne des milliers de créateurs et d’entrepreneurs dans le développement de leurs
+            projets, avec un accent fort sur l’autonomie, la compréhension des systèmes et la
+            capacité d’exécution.
           </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            AI Studios : un écosystème pour créer mieux
-          </h2>
-          <p>
-            À travers AI Studios, il accompagne débutants et professionnels pour passer de l’idée au
-            film final : outils, méthode, direction artistique et rentabilité de production.
-          </p>
-          <p>
-            L’objectif est de former des créateurs augmentés, capables de produire des contenus plus
-            ambitieux, plus vite et avec une vraie signature visuelle.
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Cette phase marque une évolution importante: au-delà de la création d’outils, il devient
+            un pédagogue reconnu, capable de vulgariser des sujets techniques et d’en faire des
+            leviers concrets d’action.
           </p>
         </section>
 
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            Une approche humaine et exigeante
+        <section aria-labelledby="projets-phares" className="mt-12 space-y-4">
+          <h2
+            id="projets-phares"
+            className="text-2xl font-semibold tracking-tight text-neutral-950"
+          >
+            Projets phares
           </h2>
-          <p>
-            Au-delà de la technologie, Frank défend une création responsable : transparence, exigence
-            de qualité et respect des personnes derrière chaque projet.
+          <p className="text-lg leading-relaxed text-neutral-800">
+            À partir des années 2020, son travail s’oriente progressivement vers l’intelligence
+            artificielle et ses applications créatives. Il explore la génération d’images, de vidéos
+            et de musiques autour d’une question centrale: comment transformer ces technologies en
+            véritables outils de narration, et non en simples générateurs de contenu.
           </p>
-          <p>
-            Tu peux retrouver ses contenus sur le{" "}
+          <div className="space-y-3 text-lg leading-relaxed text-neutral-800">
+            <p>
+              <strong className="text-neutral-950">AI Studios.</strong> Une communauté et un programme
+              de formation destinés aux créateurs souhaitant produire des films, des publicités et
+              des contenus visuels grâce à l’IA, avec un objectif de maîtrise complète des workflows
+              créatifs et des fondamentaux du cinéma.
+            </p>
+            <p>
+              <strong className="text-neutral-950">ScreenWeaver.</strong> Un outil d’écriture nouvelle
+              génération conçu comme un pont entre le scénario et l’image. La plateforme permet de
+              structurer une histoire, visualiser les scènes et préparer leur transformation en
+              storyboard puis en production visuelle.
+            </p>
+            <p>
+              <strong className="text-neutral-950">VOIDBORN.</strong> Un projet de fiction réalisé avec
+              des outils d’intelligence artificielle, sélectionné et récompensé dans plusieurs
+              festivals internationaux dédiés à l’IA, confirmant son positionnement à la frontière
+              entre cinéma et innovation.
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="vision" className="mt-12 space-y-4">
+          <h2 id="vision" className="text-2xl font-semibold tracking-tight text-neutral-950">
+            Vision
+          </h2>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Frank Houbre s’inscrit dans une nouvelle génération de créateurs qui ne séparent plus
+            l’écriture, la technologie et la production, mais les considèrent comme un processus
+            unique.
+          </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Son travail repose sur une conviction simple: les outils seuls ne suffisent pas. Ce qui
+            fait la différence réside dans la méthode, la compréhension des fondamentaux et la
+            capacité à transformer une idée en vision claire.
+          </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            À travers ses projets, ses contenus et ses outils, il cherche à donner aux créateurs les
+            moyens de ne plus créer à l’aveugle, mais de voir, structurer et construire leurs
+            histoires avec précision.
+          </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Pour en savoir plus, consultez le{" "}
             <Link
               href="/blog"
               className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
             >
               blog
             </Link>{" "}
-            ou prendre contact via la page{" "}
+            ou la page{" "}
             <Link
               href="/contact"
               className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
@@ -108,7 +179,7 @@ export default function AboutPage() {
             .
           </p>
         </section>
-      </div>
-    </div>
+      </article>
+    </>
   );
 }
