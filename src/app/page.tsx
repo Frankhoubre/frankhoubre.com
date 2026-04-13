@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { HomeLatestPostGrid } from "@/components/HomeLatestPostGrid";
 import { getHomeLatestPosts } from "@/lib/blog";
-import { baseUrl, person, siteName, socialLinks } from "@/lib/site";
+import { baseUrl, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
 
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/images/home-hero-banner.png`,
-        width: 1536,
-        height: 1024,
+        url: `${baseUrl}/images/home-hero-frank-houbre.png`,
+        width: 1024,
+        height: 434,
         alt: "Frank Houbre, formateur IA et réalisateur IA",
       },
     ],
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: homeTitle,
     description: homeDescription,
-    images: [`${baseUrl}/images/home-hero-banner.png`],
+    images: [`${baseUrl}/images/home-hero-frank-houbre.png`],
   },
 };
 
@@ -161,19 +161,18 @@ export default function HomePage() {
           aria-hidden
         />
 
-        <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden border-b border-neutral-200/80 bg-neutral-950">
+        <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-neutral-200/80 bg-neutral-950">
           <Image
-            src="/images/home-hero-banner-4k.webp"
-            alt=""
+            src="/images/home-hero-frank-houbre.png"
+            alt="Frank Houbre, formateur IA, réalisateur IA et créateur vidéo"
             fill
-            className="object-cover object-center"
+            className="h-full w-full min-h-[100svh] object-cover object-right"
             sizes="100vw"
-            quality={100}
+            quality={95}
             priority
-            aria-hidden
           />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/30"
+            className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/25"
             aria-hidden
           />
           <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
@@ -190,14 +189,8 @@ export default function HomePage() {
                 avec une vraie méthode de direction artistique, de narration visuelle et de
                 workflow de production.
               </p>
-              <p className="mt-4 max-w-3xl leading-relaxed text-white/80">
-                Sur ce site, je partage des tutoriels IA, des retours d’expérience terrain, des
-                analyses d’outils, des prompts pensés comme un brief réalisateur, et des projets
-                concrets comme <span className="text-white">Ronces</span> et{" "}
-                <span className="text-white">VOIDBORN</span>.
-              </p>
 
-              <div className="mt-10 flex flex-wrap gap-3">
+              <div className="mt-10">
                 <a
                   href="https://www.skool.com/ai-studios"
                   target="_blank"
@@ -206,54 +199,6 @@ export default function HomePage() {
                 >
                   Formation gratuite 7 jours
                 </a>
-                <Link
-                  href="/blog"
-                  className="inline-flex items-center justify-center rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white transition hover:border-white/45 hover:bg-white/10"
-                >
-                  Lire les tutoriels IA
-                </Link>
-                <Link
-                  href="/a-propos"
-                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-white/35 hover:bg-white/10 hover:text-white"
-                >
-                  Parcours et distinctions
-                </Link>
-              </div>
-
-              <ul className="mt-8 grid gap-3 text-sm text-white/85 sm:grid-cols-2">
-                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
-                  Formation IA vidéo et image avec méthode, pas uniquement des démonstrations
-                  d’outils.
-                </li>
-                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
-                  Réalisation IA, direction artistique et workflows pour films, pubs et contenus.
-                </li>
-                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
-                  Tutoriels sur prompts, caméra, lumière, cohérence visuelle et montage.
-                </li>
-                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
-                  Projets visibles, blog actif et présence publique sur plusieurs plateformes.
-                </li>
-              </ul>
-
-              <div className="mt-10 border-t border-white/25 pt-8">
-                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/70">
-                  Ailleurs sur le web
-                </p>
-                <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                  {socialLinks.map((item) => (
-                    <li key={item.href}>
-                      <a
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-white/90 underline decoration-white/35 underline-offset-4 transition hover:text-white hover:decoration-white/60"
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>
