@@ -7,12 +7,81 @@ import { baseUrl, person, siteName, socialLinks } from "@/lib/site";
 
 export const revalidate = 3600;
 
-const homeDescription = `${siteName} : entrepreneur, réalisateur et créateur autour de l’IA et du cinéma. Présentation, articles et tutoriels image & vidéo.`;
+const homeTitle = `${siteName} | Formateur IA, Réalisateur IA et Créateur vidéo`;
+const homeDescription =
+  "Frank Houbre est formateur IA, réalisateur IA et créateur vidéo. Tutoriels, films, workflows image et vidéo, direction artistique, prompts et méthodes pour produire des contenus IA crédibles.";
+const homeKeywords = [
+  "Frank Houbre",
+  "formateur IA",
+  "formation IA",
+  "réalisateur IA",
+  "créateur IA",
+  "créateur vidéo IA",
+  "vidéo IA",
+  "image IA",
+  "film IA",
+  "tutoriel IA",
+  "workflow IA",
+  "prompt image IA",
+  "prompt vidéo IA",
+  "direction artistique IA",
+] as const;
+const awardHighlights = [
+  "Seoul International AI Film Festival",
+  "Hollywood Indie Festival",
+  "Australian AI Festival",
+  "Mondial Chroma Awards",
+] as const;
+const faqEntries = [
+  {
+    question: "Qui est Frank Houbre ?",
+    answer:
+      "Frank Houbre est un formateur IA, réalisateur IA et entrepreneur français spécialisé dans la création d’images, de vidéos et de films assistés par intelligence artificielle.",
+  },
+  {
+    question: "Que trouve-t-on sur frankhoubre.com ?",
+    answer:
+      "Le site regroupe des tutoriels IA, des analyses d’outils, des méthodes de direction artistique, des workflows image vers vidéo, ainsi que des projets créatifs comme Ronces et VOIDBORN.",
+  },
+  {
+    question: "À qui s’adressent les contenus de Frank Houbre ?",
+    answer:
+      "Les contenus s’adressent aux créateurs, freelances, indépendants, agences, marques et passionnés qui veulent produire des images et vidéos IA plus crédibles avec une vraie méthode.",
+  },
+  {
+    question: "Pourquoi parler de réalisation pour l’IA ?",
+    answer:
+      "Parce qu’un bon résultat ne dépend pas seulement du prompt. Il faut aussi penser cadre, lumière, rythme, continuité visuelle, montage et direction artistique comme dans une vraie production.",
+  },
+] as const;
 
 export const metadata: Metadata = {
-  title: "Accueil",
+  title: homeTitle,
   description: homeDescription,
   alternates: { canonical: `${baseUrl}/` },
+  keywords: [...homeKeywords],
+  openGraph: {
+    title: homeTitle,
+    description: homeDescription,
+    url: `${baseUrl}/`,
+    siteName,
+    locale: "fr_FR",
+    type: "website",
+    images: [
+      {
+        url: `${baseUrl}/images/home-hero-banner.png`,
+        width: 1536,
+        height: 1024,
+        alt: "Frank Houbre, formateur IA et réalisateur IA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: homeTitle,
+    description: homeDescription,
+    images: [`${baseUrl}/images/home-hero-banner.png`],
+  },
 };
 
 const LATEST_COUNT = 6;
@@ -36,7 +105,35 @@ const homeJsonLd = {
       jobTitle: person.jobTitle,
       description: person.description,
       image: `${baseUrl}/images/frank-houbre-about.png`,
+      knowsAbout: [
+        "Formation IA",
+        "Vidéo IA",
+        "Image IA",
+        "Films IA",
+        "Narration visuelle",
+        "Direction artistique",
+        "Prompts",
+        "Workflows image et vidéo",
+      ],
+      award: [...awardHighlights],
+      worksFor: {
+        "@type": "Organization",
+        name: "AI Studios",
+        url: "https://www.ai-studios.fr/",
+      },
       sameAs: [...person.sameAs],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${baseUrl}/#faq`,
+      mainEntity: faqEntries.map((entry) => ({
+        "@type": "Question",
+        name: entry.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: entry.answer,
+        },
+      })),
     },
   ],
 };
@@ -55,7 +152,6 @@ export default function HomePage() {
       />
 
       <div className="relative overflow-hidden">
-        {/* Fond : grain léger + halos */}
         <div
           className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_90%_55%_at_15%_-10%,rgba(120,90,60,0.09),transparent_55%),radial-gradient(ellipse_70%_50%_at_100%_15%,rgba(40,60,90,0.06),transparent_50%)]"
           aria-hidden
@@ -65,7 +161,6 @@ export default function HomePage() {
           aria-hidden
         />
 
-        {/* Hero / Présentation */}
         <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden border-b border-neutral-200/80 bg-neutral-950">
           <Image
             src="/images/home-hero-banner-4k.webp"
@@ -78,35 +173,31 @@ export default function HomePage() {
             aria-hidden
           />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/25"
+            className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/30"
             aria-hidden
           />
           <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
-            <div className="mx-auto max-w-3xl min-w-0">
+            <div className="mx-auto max-w-4xl min-w-0">
               <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-white/75">
-                Présentation
+                Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
-              <h1 className="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-[3.25rem] xl:leading-[1.08]">
-                {siteName}
+              <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-[3.45rem] xl:leading-[1.05]">
+                Frank Houbre, formateur IA, créateur vidéo IA et réalisateur orienté cinéma
               </h1>
-              <p className="mt-4 text-lg font-medium text-white/90 sm:text-xl">
-                {person.jobTitle}
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90 sm:text-xl">
+                J’aide les créateurs, indépendants, agences et marques à produire des{" "}
+                <span className="text-white">images, vidéos et films IA plus crédibles</span>,
+                avec une vraie méthode de direction artistique, de narration visuelle et de
+                workflow de production.
               </p>
-              <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/90">
-                Entrepreneur français, réalisateur et créateur, j’explore les{" "}
-                <span className="text-white">
-                  nouvelles formes de narration
-                </span>{" "}
-                à l’ère de l’intelligence artificielle, entre cinéma,
-                storytelling et workflows d’image &amp; vidéo crédibles.
-              </p>
-              <p className="mt-4 max-w-2xl leading-relaxed text-white/80">
-                J’y partage méthodes, tutoriels et retours d’expérience :
-                prompts pensés comme un brief réalisateur, lumière, grain,
-                cohérence des plans, pas seulement des effets « IA ».
+              <p className="mt-4 max-w-3xl leading-relaxed text-white/80">
+                Sur ce site, je partage des tutoriels IA, des retours d’expérience terrain, des
+                analyses d’outils, des prompts pensés comme un brief réalisateur, et des projets
+                concrets comme <span className="text-white">Ronces</span> et{" "}
+                <span className="text-white">VOIDBORN</span>.
               </p>
 
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap gap-3">
                 <a
                   href="https://www.skool.com/ai-studios"
                   target="_blank"
@@ -115,7 +206,35 @@ export default function HomePage() {
                 >
                   Formation gratuite 7 jours
                 </a>
+                <Link
+                  href="/blog"
+                  className="inline-flex items-center justify-center rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white transition hover:border-white/45 hover:bg-white/10"
+                >
+                  Lire les tutoriels IA
+                </Link>
+                <Link
+                  href="/a-propos"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 px-7 py-3 text-sm font-semibold text-white/90 transition hover:border-white/35 hover:bg-white/10 hover:text-white"
+                >
+                  Parcours et distinctions
+                </Link>
               </div>
+
+              <ul className="mt-8 grid gap-3 text-sm text-white/85 sm:grid-cols-2">
+                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
+                  Formation IA vidéo et image avec méthode, pas uniquement des démonstrations
+                  d’outils.
+                </li>
+                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
+                  Réalisation IA, direction artistique et workflows pour films, pubs et contenus.
+                </li>
+                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
+                  Tutoriels sur prompts, caméra, lumière, cohérence visuelle et montage.
+                </li>
+                <li className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm">
+                  Projets visibles, blog actif et présence publique sur plusieurs plateformes.
+                </li>
+              </ul>
 
               <div className="mt-10 border-t border-white/25 pt-8">
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-white/70">
@@ -140,80 +259,189 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Piliers */}
         <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <div className="max-w-2xl">
-            <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
-              Mon approche
-            </h2>
-            <p className="mt-3 text-neutral-700">
-              Trois entrées pour comprendre mon travail et ce que vous pouvez
-              tirer des articles.
-            </p>
-          </div>
+          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
+                Un positionnement clair entre formation IA, création vidéo et réalisation
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+                Mon travail se situe à la croisée de la <strong>formation IA vidéo et image</strong>,
+                de la création de projets narratifs et de la direction artistique. L’objectif n’est
+                pas de produire plus de contenu médiocre, mais de comprendre comment tirer de l’IA un
+                rendu plus cohérent, plus cinématographique et plus utile pour un vrai projet.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+                Si vous cherchez un <strong>formateur IA</strong> capable de parler autant de
+                structure, de pipeline, de production et de mise en scène que d’outils, cette page
+                sert de point d’entrée. Vous trouverez ici des ressources pour apprendre, des projets
+                pour juger le niveau créatif, et un blog pour suivre l’évolution rapide de l’IA.
+              </p>
+            </div>
 
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <li>
-              <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition hover:border-neutral-300 hover:shadow-md">
-                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-amber-900/80">
-                  01 - Cinéma &amp; fiction
-                </span>
-                <h3 className="mt-3 text-lg font-semibold text-neutral-950">
-                  Narration et réalisation
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-700">
-                  De la conception à l’image : projets comme VOIDBORN, festivals,
-                  et une approche où l’outil sert l’histoire, pas l’inverse.
-                </p>
-              </article>
-            </li>
-            <li>
-              <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition hover:border-neutral-300 hover:shadow-md">
-                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-sky-900/75">
-                  02 - Méthode &amp; IA
-                </span>
-                <h3 className="mt-3 text-lg font-semibold text-neutral-950">
-                  Workflows et outils
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-700">
-                  Chaînes image → vidéo, cohérence des personnages, erreurs qui
-                  trahissent le « fake » : des guides pour travailler comme en
-                  tournage.
-                </p>
-              </article>
-            </li>
-            <li className="sm:col-span-2 lg:col-span-1">
-              <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-gradient-to-br from-neutral-950 to-neutral-900 p-6 text-white shadow-lg shadow-neutral-900/20 sm:min-h-0">
-                <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/55">
-                  03 - Blog
-                </span>
-                <h3 className="mt-3 text-lg font-semibold">
-                  Tutoriels &amp; actualités
-                </h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-white/85">
-                  Articles récents : prompts, comparaisons de modèles, veille
-                  sur les outils, toujours avec un angle réalisation.
-                </p>
-                <Link
-                  href="/blog"
-                  className="mt-5 inline-flex w-fit text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition hover:decoration-white"
-                >
-                  Ouvrir le blog
-                </Link>
-              </article>
-            </li>
-          </ul>
+            <aside className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+                Signaux publics
+              </p>
+              <ul className="mt-4 space-y-3 text-sm leading-relaxed text-neutral-700">
+                <li>Entrepreneuriat tech, création de contenus et pédagogie autour de l’IA.</li>
+                <li>Projets visibles en court film IA et animation IA avec Ronces et VOIDBORN.</li>
+                <li>Présence publique via LinkedIn, YouTube, IMDb, Instagram et TikTok.</li>
+                <li>Distinctions et sélections citées publiquement sur les sites AI Studios.</li>
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {awardHighlights.map((award) => (
+                  <span
+                    key={award}
+                    className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium text-neutral-700"
+                  >
+                    {award}
+                  </span>
+                ))}
+              </div>
+            </aside>
+          </div>
         </section>
 
-        {/* Projets */}
+        <section className="border-t border-neutral-200/80 bg-white/60">
+          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
+                Ce que vous trouverez sur frankhoubre.com
+              </h2>
+              <p className="mt-3 text-neutral-700">
+                Une base solide pour comprendre le positionnement, apprendre une méthode et explorer
+                des projets de réalisation IA.
+              </p>
+            </div>
+
+            <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <li>
+                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-amber-900/80">
+                    01 - Formation IA
+                  </span>
+                  <h3 className="mt-3 text-lg font-semibold text-neutral-950">
+                    Image, vidéo et prompts
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-700">
+                    Tutoriels pour apprendre les fondamentaux utiles : structurer un prompt,
+                    maintenir une cohérence visuelle, comprendre les outils et éviter les erreurs qui
+                    trahissent le faux.
+                  </p>
+                </article>
+              </li>
+              <li>
+                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-sky-900/75">
+                    02 - Réalisation IA
+                  </span>
+                  <h3 className="mt-3 text-lg font-semibold text-neutral-950">
+                    Direction artistique et narration
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-700">
+                    Cadre, lumière, caméra, rythme, montage et intention visuelle : une approche où
+                    l’IA sert la mise en scène au lieu de la remplacer.
+                  </p>
+                </article>
+              </li>
+              <li>
+                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-emerald-900/75">
+                    03 - Workflows
+                  </span>
+                  <h3 className="mt-3 text-lg font-semibold text-neutral-950">
+                    De l’idée au film IA
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-700">
+                    Passer d’une intuition à un rendu exploitable grâce à des pipelines concrets :
+                    préproduction, génération, itérations, sélection, montage et finition.
+                  </p>
+                </article>
+              </li>
+              <li>
+                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-gradient-to-br from-neutral-950 to-neutral-900 p-6 text-white shadow-lg shadow-neutral-900/20">
+                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/55">
+                    04 - Ressources
+                  </span>
+                  <h3 className="mt-3 text-lg font-semibold">
+                    Blog, veille et parcours
+                  </h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-white/85">
+                    Articles récents, analyses d’outils IA, page à propos et liens publics pour
+                    vérifier le parcours, les projets et les plateformes associées.
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-4">
+                    <Link
+                      href="/blog"
+                      className="inline-flex w-fit text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition hover:decoration-white"
+                    >
+                      Ouvrir le blog
+                    </Link>
+                    <Link
+                      href="/a-propos"
+                      className="inline-flex w-fit text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition hover:decoration-white"
+                    >
+                      Lire le parcours
+                    </Link>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="border-t border-neutral-200/80 bg-neutral-50/60">
+          <div className="mx-auto grid max-w-6xl gap-6 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-3">
+            <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+                Pour apprendre
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
+                Une formation IA orientée exécution
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+                L’accent est mis sur la compréhension des systèmes, pas sur la simple consommation de
+                nouveautés. Le but est de savoir quoi faire, dans quel ordre, et pourquoi cela
+                fonctionne.
+              </p>
+            </article>
+            <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+                Pour créer
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
+                Une approche de réalisateur IA
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+                Chaque image ou séquence est pensée comme un choix de mise en scène : focale,
+                composition, lumière, texture, continuité et rapport entre les plans.
+              </p>
+            </article>
+            <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+                Pour se positionner
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
+                Un parcours entre tech, pédagogie et production
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+                Entrepreneuriat, enseignement, création de contenus, outils et projets de fiction :
+                cet ensemble donne un cadre plus solide pour parler d’IA que la seule mode du moment.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section className="border-t border-neutral-200/80 bg-white">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
             <div className="max-w-2xl">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
-                Projets
+                Projets de réalisation IA
               </h2>
               <p className="mt-3 text-neutral-700">
-                Deux œuvres IA récentes entre court film et animé.
+                Deux exemples visibles de création IA orientée narration, direction artistique et
+                mise en scène.
               </p>
             </div>
 
@@ -238,7 +466,8 @@ export default function HomePage() {
                     </div>
                   </div>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-700">
-                    Un short film IA orienté narration visuelle et ambiance cinématographique.
+                    Un court film IA centré sur l’ambiance, le rythme et une narration visuelle
+                    cinématographique.
                   </p>
                   <a
                     href="https://vimeo.com/1164434045?fl=ip&fe=ec"
@@ -270,7 +499,8 @@ export default function HomePage() {
                     </div>
                   </div>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-700">
-                    Un projet d’animation IA avec une direction artistique orientée fiction.
+                    Un projet d’animation IA de fiction qui montre une approche de réalisation,
+                    d’univers visuel et de cohérence de direction artistique.
                   </p>
                   <a
                     href="https://youtu.be/TaoYARoU7Lc?si=csVLgOV_wuQs4uA0"
@@ -286,7 +516,32 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Derniers articles */}
+        <section className="border-t border-neutral-200/80 bg-neutral-50/60">
+          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
+                Questions fréquentes sur Frank Houbre et la formation IA
+              </h2>
+              <p className="mt-3 text-neutral-700">
+                Quelques réponses directes pour clarifier le positionnement du site et les sujets
+                traités.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {faqEntries.map((entry) => (
+                <article
+                  key={entry.question}
+                  className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm"
+                >
+                  <h3 className="text-lg font-semibold text-neutral-950">{entry.question}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-neutral-700">{entry.answer}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="border-t border-neutral-200/80 bg-white/50">
           <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
@@ -298,8 +553,8 @@ export default function HomePage() {
                 </h2>
                 <p className="mt-2 max-w-xl text-neutral-700">
                   {hasActualiteOnly
-                    ? "Nouveautés et tendances autour de l’IA créative."
-                    : "Les publications les plus récentes : actualités lorsqu’elles sont publiées, complétées par les derniers tutoriels."}
+                    ? "Nouveautés et tendances autour de l’IA créative, de la vidéo IA et des workflows de production."
+                    : "Les publications les plus récentes couvrent formation IA, actualités, outils, direction artistique et tutoriels image et vidéo."}
                 </p>
               </div>
               <Link
@@ -316,8 +571,7 @@ export default function HomePage() {
               </div>
             ) : (
               <p className="mt-10 text-neutral-700">
-                Les articles arrivent bientôt. En attendant, vous pouvez
-                consulter le{" "}
+                Les articles arrivent bientôt. En attendant, vous pouvez consulter le{" "}
                 <Link
                   href="/blog"
                   className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2"
