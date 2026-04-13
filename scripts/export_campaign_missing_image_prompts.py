@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,9 @@ BLOG = ROOT / "content" / "blog"
 PUBLIC = ROOT / "public" / "images" / "blog"
 OUT_JSON = ROOT / "tmp-ai-studio-missing-prompts.json"
 OUT_TXT = ROOT / "tmp-ai-studio-missing-prompts.txt"
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from blog_cinematic_prompts import extract_three_prompts  # noqa: E402
 
 
 def _campaign_files() -> list[Path]:
@@ -49,16 +53,17 @@ def main() -> None:
     for md in _campaign_files():
         slug = md.stem
         text = md.read_text(encoding="utf-8")
-        prompts = re.findall(r"^Prompt:\s*(.+)$", text, re.M)
-        if len(prompts) < 3:
+        try:
+            hero, w1, w2 = extract_three_prompts(text)
+        except ValueError:
             continue
         missing = _missing_slots(slug)
         if not missing:
             continue
         mapping = {
-            "hero": prompts[0],
-            "workflow_1": prompts[1],
-            "workflow_2": prompts[2],
+            "hero": hero,
+            "workflow_1": w1,
+            "workflow_2": w2,
         }
         rec = {"slug": slug, "missing": missing}
         for slot in missing:
