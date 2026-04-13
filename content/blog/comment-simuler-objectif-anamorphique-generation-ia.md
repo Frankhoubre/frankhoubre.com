@@ -200,7 +200,7 @@ Dernier principe, garde la cohérence d’un plan à l’autre.
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/comment-simuler-objectif-anamorphique-generation-ia/comment-simuler-objectif-anamorphique-generation-ia-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-simuler-objectif-anamorphique-generation-ia/comment-simuler-objectif-anamorphique-generation-ia-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment simuler objectif anamorphique generation ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

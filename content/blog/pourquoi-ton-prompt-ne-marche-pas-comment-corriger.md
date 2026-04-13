@@ -177,7 +177,7 @@ Quand une seule image mélange un décor complexe, une action précise des mains
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger/pourquoi-ton-prompt-ne-marche-pas-comment-corriger-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger/pourquoi-ton-prompt-ne-marche-pas-comment-corriger-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene pourquoi ton prompt ne marche pas comment corriger, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

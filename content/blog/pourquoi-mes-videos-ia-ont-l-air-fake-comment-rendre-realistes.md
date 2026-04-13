@@ -185,7 +185,7 @@ Quand tu auras stabilisé un clip de six secondes, duplique le projet et tente u
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene pourquoi mes videos ia ont l air fake comment rendre realistes, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

@@ -192,12 +192,17 @@ export function extractToc(content: string): TocItem[] {
 }
 
 export function extractYouTubeVideoIds(content: string): string[] {
-  const ids = new Set<string>();
-  const re1 =
-    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})/g;
-  const re2 = /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9_-]{11})/g;
+  const seen = new Set<string>();
+  const out: string[] = [];
+  const re =
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})|(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9_-]{11})/g;
   let m: RegExpExecArray | null;
-  while ((m = re1.exec(content)) !== null) ids.add(m[1]);
-  while ((m = re2.exec(content)) !== null) ids.add(m[1]);
-  return [...ids];
+  while ((m = re.exec(content)) !== null) {
+    const id = m[1] ?? m[2];
+    if (id && !seen.has(id)) {
+      seen.add(id);
+      out.push(id);
+    }
+  }
+  return out;
 }

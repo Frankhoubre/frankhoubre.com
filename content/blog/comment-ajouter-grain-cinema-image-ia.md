@@ -193,7 +193,7 @@ Ordre courant : halation douce sur les sources lumineuses, puis grain fin global
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/comment-ajouter-grain-cinema-image-ia/comment-ajouter-grain-cinema-image-ia-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-ajouter-grain-cinema-image-ia/comment-ajouter-grain-cinema-image-ia-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ajouter grain cinema image ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

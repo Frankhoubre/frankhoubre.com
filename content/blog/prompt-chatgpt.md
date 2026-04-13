@@ -203,7 +203,7 @@ Fixe trois formats de sortie obligatoires (tableau, liste de risques, version co
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/prompt-chatgpt/prompt-chatgpt-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/prompt-chatgpt/prompt-chatgpt-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene prompt chatgpt, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

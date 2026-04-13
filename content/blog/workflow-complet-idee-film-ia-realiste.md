@@ -153,7 +153,7 @@ Regarde des extraits avec le son coupé, nomme chaque plan à voix haute, recopi
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/workflow-complet-idee-film-ia-realiste/workflow-complet-idee-film-ia-realiste-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/workflow-complet-idee-film-ia-realiste/workflow-complet-idee-film-ia-realiste-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene workflow complet idee film ia realiste, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

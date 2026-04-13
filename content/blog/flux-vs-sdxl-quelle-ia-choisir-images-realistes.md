@@ -201,7 +201,7 @@ Oui si tu upscales différemment entre les deux branches. Si tu veux comparer le
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/flux-vs-sdxl-quelle-ia-choisir-images-realistes-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/flux-vs-sdxl-quelle-ia-choisir-images-realistes-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene flux vs sdxl quelle ia choisir images realistes, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

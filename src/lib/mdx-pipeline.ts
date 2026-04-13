@@ -3,6 +3,7 @@ import { slugify, stripMarkdownInline } from "@/lib/slugify";
 export const SECTION_BOUNDARY_TOKEN = "<<<SECTION_BOUNDARY>>>";
 
 const FAQ_HEADINGS = [
+  "FAQ",
   "Foire aux questions",
   "Foire aux questions (FAQ)",
   "Questions fréquentes (FAQ)",
@@ -63,6 +64,42 @@ export function splitFaqContent(raw: string): FaqSplit | null {
 
 export type FaqPair = { question: string; answer: string };
 
+/** H2 de FAQ « suite » à fusionner dans Foire aux questions (pas ## FAQ seul). */
+const SUPPLEMENTARY_FAQ_H2 =
+  /^##\s+FAQ\s+(?:complémentaire(?:\s+\d+)?|additionnelle|finale|extra|avancée)\s*$/;
+
+export function extractSupplementaryFaqSections(after: string): {
+  cleanedAfter: string;
+  extraPairs: FaqPair[];
+} {
+  const lines = after.split("\n");
+  const extraPairs: FaqPair[] = [];
+  const out: string[] = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i]!;
+    const t = line.trimStart();
+    if (/^##\s+/.test(t) && !/^###\s+/.test(t)) {
+      if (SUPPLEMENTARY_FAQ_H2.test(t)) {
+        i += 1;
+        const bodyLines: string[] = [];
+        while (i < lines.length) {
+          const L = lines[i]!;
+          const lt = L.trimStart();
+          if (/^##\s+/.test(lt) && !/^###\s+/.test(lt)) break;
+          bodyLines.push(L);
+          i += 1;
+        }
+        extraPairs.push(...parseFaqBody(bodyLines.join("\n")));
+        continue;
+      }
+    }
+    out.push(line);
+    i += 1;
+  }
+  return { cleanedAfter: out.join("\n"), extraPairs };
+}
+
 export function parseFaqBody(faqBody: string): FaqPair[] {
   const trimmed = faqBody.trim();
   if (!trimmed) return [];
@@ -84,6 +121,14 @@ export function parseFaqBody(faqBody: string): FaqPair[] {
   };
 
   for (const block of blocks) {
+    const firstLine = block.split("\n")[0]?.trimStart() ?? "";
+    if (firstLine.startsWith("### ")) {
+      flush();
+      const rest = block.split("\n").slice(1).join("\n").trim();
+      currentQ = stripMarkdownInline(firstLine.replace(/^###\s+/, "").trim());
+      currentA = rest ? [rest] : [];
+      continue;
+    }
     const bold = block.match(/^\*\*([^*]+)\*\*\s*([\s\S]*)$/);
     if (bold) {
       flush();
@@ -156,6 +201,10 @@ const LINE_INTRO_LINK =
 /** Ligne : uniquement le lien markdown YouTube. */
 const LINE_LINK_ONLY = /^\s*\[([^\]]*)\]\(([^)]+)\)\s*$/m;
 
+/** Ligne : préfixe optionnel + URL YouTube brute (ex. « Reference … : https://… »). */
+const LINE_BARE_YOUTUBE =
+  /^\s*(?:.+?:\s*)?(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?[^\s]+|youtu\.be\/[^\s]+))\s*$/i;
+
 export function embedYouTubeLinks(content: string): string {
   const lines = content.split("\n");
   const out: string[] = [];
@@ -183,6 +232,18 @@ export function embedYouTubeLinks(content: string): string {
         out.push("");
         out.push(
           `<YouTubeEmbed videoId="${id}" title="${escapeJsxAttr(title)}" />`,
+        );
+        out.push("");
+        continue;
+      }
+    }
+    const bare = line.match(LINE_BARE_YOUTUBE);
+    if (bare && isYoutubeUrl(bare[1])) {
+      const id = extractYoutubeId(bare[1]);
+      if (id) {
+        out.push("");
+        out.push(
+          `<YouTubeEmbed videoId="${id}" title="${escapeJsxAttr("Vidéo YouTube")}" />`,
         );
         out.push("");
         continue;
@@ -223,7 +284,9 @@ export function prepareArticleMdxParts(rawContent: string): {
     return { beforeMdx: single, afterMdx: "", faqPairs: null };
   }
 
-  const pairs = parseFaqBody(faq.faqBody);
+  const { cleanedAfter, extraPairs } = extractSupplementaryFaqSections(faq.after);
+  const mainPairs = parseFaqBody(faq.faqBody);
+  const pairs = [...mainPairs, ...extraPairs];
   if (!pairs.length) {
     const merged = [faq.before, faq.headingLine, faq.faqBody, faq.after]
       .filter(Boolean)
@@ -232,7 +295,7 @@ export function prepareArticleMdxParts(rawContent: string): {
     return { beforeMdx: single, afterMdx: "", faqPairs: null };
   }
 
-  const main = `${faq.before}\n\n${SECTION_BOUNDARY_TOKEN}\n\n${faq.after}`;
+  const main = `${faq.before}\n\n${SECTION_BOUNDARY_TOKEN}\n\n${cleanedAfter}`;
   const processedMain = injectMiddleBanner(runMdxPipeline(main));
   const boundaryRe = new RegExp(
     `\\n*${SECTION_BOUNDARY_TOKEN.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\n*`,

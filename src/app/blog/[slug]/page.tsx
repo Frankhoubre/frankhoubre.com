@@ -15,7 +15,10 @@ import { RelatedPosts } from "@/components/RelatedPosts";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
-import { getRecommendedYouTubeVideoId } from "@/lib/blog-video-map";
+import {
+  getHeroYouTubeVideoId,
+  getRecommendedYouTubeVideoId,
+} from "@/lib/blog-video-map";
 import {
   extractYouTubeVideoIds,
   getAllPosts,
@@ -265,6 +268,11 @@ export default async function BlogArticlePage({ params }: Props) {
     contentVideoIds.length > 0
       ? contentVideoIds
       : [getRecommendedYouTubeVideoId(post)];
+  const heroVideoId = getHeroYouTubeVideoId(post, contentVideoIds);
+  const videoIdsForSchema = [
+    heroVideoId,
+    ...videoIds.filter((id) => id !== heroVideoId),
+  ];
   const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
@@ -286,7 +294,7 @@ export default async function BlogArticlePage({ params }: Props) {
     },
   };
 
-  const jsonLd = buildJsonLd({ post, slug, videoIds, faqPairs });
+  const jsonLd = buildJsonLd({ post, slug, videoIds: videoIdsForSchema, faqPairs });
 
   const authorImg =
     typeof person.image === "string" && person.image.startsWith("http")
@@ -360,7 +368,7 @@ export default async function BlogArticlePage({ params }: Props) {
               <ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />
             </div>
             <YouTubeEmbed
-              videoId={videoIds[0]}
+              videoId={heroVideoId}
               title={`Vidéo liée: ${post.frontmatter.title}`}
             />
 

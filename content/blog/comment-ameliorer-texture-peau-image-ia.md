@@ -178,7 +178,7 @@ Aligne-toi sur [comment écrire un prompt pour un personnage réaliste et consta
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/comment-ameliorer-texture-peau-image-ia/comment-ameliorer-texture-peau-image-ia-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-ameliorer-texture-peau-image-ia/comment-ameliorer-texture-peau-image-ia-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ameliorer texture peau image ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

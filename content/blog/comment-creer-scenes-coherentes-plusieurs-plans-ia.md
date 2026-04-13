@@ -218,7 +218,7 @@ Pour le vocabulaire du montage et des enchaînements, voir [montage (cinéma)](h
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/comment-creer-scenes-coherentes-plusieurs-plans-ia-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/comment-creer-scenes-coherentes-plusieurs-plans-ia-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer scenes coherentes plusieurs plans ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 

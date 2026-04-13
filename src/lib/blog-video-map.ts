@@ -1,6 +1,10 @@
 import type { Post } from "@/lib/blog";
 
+/** Référence récurrente dans les articles (chaîne Business Dynamite) — préférée pour l’embed principal quand elle est citée. */
+export const CANONICAL_CHANNEL_VIDEO_ID = "KJbLaSGOPPk";
+
 const DEFAULT_VIDEO_IDS = [
+  CANONICAL_CHANNEL_VIDEO_ID,
   "60RXHCo3d84",
   "x1avmtj3Gyc",
   "TBBkUSFAGSU",
@@ -55,4 +59,18 @@ export function getRecommendedYouTubeVideoId(post: Post): string {
   let hash = 0;
   for (const c of post.slug) hash += c.charCodeAt(0);
   return DEFAULT_VIDEO_IDS[hash % DEFAULT_VIDEO_IDS.length];
+}
+
+/**
+ * ID pour le lecteur en tête d’article : entrée dédiée par slug si présente,
+ * sinon la vidéo canonique du site si elle est citée dans le texte (souvent la seule fiable en embed),
+ * sinon la première URL YouTube dans l’ordre de lecture.
+ */
+export function getHeroYouTubeVideoId(post: Post, contentIds: string[]): string {
+  const mapped = VIDEO_BY_SLUG[post.slug];
+  if (mapped) return mapped;
+  if (contentIds.length === 0) return getRecommendedYouTubeVideoId(post);
+  if (contentIds.includes(CANONICAL_CHANNEL_VIDEO_ID))
+    return CANONICAL_CHANNEL_VIDEO_ID;
+  return contentIds[0];
 }

@@ -1,5 +1,9 @@
 import { extractToc, type TocItem } from "@/lib/blog";
-import { parseFaqBody, splitFaqContent } from "@/lib/mdx-pipeline";
+import {
+  extractSupplementaryFaqSections,
+  parseFaqBody,
+  splitFaqContent,
+} from "@/lib/mdx-pipeline";
 
 const FAQ_TOC_ITEM: TocItem = {
   id: "foire-aux-questions",
@@ -11,7 +15,9 @@ export function buildArticleToc(raw: string): TocItem[] {
   const faq = splitFaqContent(raw);
   if (!faq) return extractToc(raw);
 
-  const pairs = parseFaqBody(faq.faqBody);
+  const { cleanedAfter, extraPairs } = extractSupplementaryFaqSections(faq.after);
+  const mainPairs = parseFaqBody(faq.faqBody);
+  const pairs = [...mainPairs, ...extraPairs];
   if (!pairs.length) {
     const merged = [faq.before, faq.headingLine, faq.faqBody, faq.after]
       .filter(Boolean)
@@ -22,6 +28,6 @@ export function buildArticleToc(raw: string): TocItem[] {
   return [
     ...extractToc(faq.before),
     FAQ_TOC_ITEM,
-    ...extractToc(faq.after),
+    ...extractToc(cleanedAfter),
   ];
 }

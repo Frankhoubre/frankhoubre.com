@@ -202,7 +202,7 @@ Hautes lumières non maîtrisées : applique un roll-off doux et baisse le contr
 
 ## Section de conformite editoriale
 
-![Placeholder scene cinematique realiste](/images/blog/comment-ameliorer-realisme-mouvements-video-ia/comment-ameliorer-realisme-mouvements-video-ia-section-conformite.jpg)
+![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-ameliorer-realisme-mouvements-video-ia/comment-ameliorer-realisme-mouvements-video-ia-section-conformite.jpg)
 
 Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment ameliorer realisme mouvements video ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
