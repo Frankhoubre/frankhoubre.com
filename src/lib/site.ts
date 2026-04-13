@@ -29,6 +29,15 @@ export const baseUrl = trimTrailingSlash(
 
 export const siteName = "Frank Houbre";
 
+/** Profils publics (accueil, JSON-LD `sameAs`). */
+export const socialLinks = [
+  { label: "TikTok", href: "https://www.tiktok.com/@frankhoubre" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/frank-houbre/" },
+  { label: "Instagram", href: "https://www.instagram.com/frank.houbre/" },
+  { label: "YouTube", href: "https://www.youtube.com/@BusinessDynamite" },
+  { label: "IMDb", href: "https://www.imdb.com/name/nm17957426/" },
+] as const;
+
 export const person = {
   name: "Frank Houbre",
   authorDisplayName: "Frank Houbre",
@@ -43,5 +52,5 @@ export const person = {
   ] as const,
   url: baseUrl,
   image: "/images/author.svg",
-  sameAs: [] as string[],
+  sameAs: socialLinks.map((item) => item.href),
 } as const;

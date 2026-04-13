@@ -138,12 +138,29 @@ export default function AboutPage() {
               espace.
             </p>
             <p>
-              Sur le plan artistique, Frank Houbre développe également VOIDBORN, un projet de fiction
-              réalisé avec des outils d’intelligence artificielle. À travers cette œuvre, il explore
-              les nouvelles possibilités offertes par ces technologies pour produire des univers
-              visuels ambitieux, sans les contraintes traditionnelles de production. Le projet a été
-              sélectionné et récompensé dans plusieurs festivals internationaux dédiés à l’IA,
-              confirmant son positionnement à la frontière entre cinéma et innovation.
+              Sur le plan artistique, Frank Houbre développe également des films IA comme{" "}
+              <a
+                href="https://vimeo.com/1164434045?fl=ip&fe=ec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                Ronces
+              </a>{" "}
+              (court film IA) et{" "}
+              <a
+                href="https://youtu.be/TaoYARoU7Lc?si=csVLgOV_wuQs4uA0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              >
+                VOIDBORN
+              </a>{" "}
+              (animé IA). À travers ces œuvres, il explore les nouvelles possibilités offertes par
+              ces technologies pour produire des univers visuels ambitieux, sans les contraintes
+              traditionnelles de production. Le projet VOIDBORN a été sélectionné et récompensé dans
+              plusieurs festivals internationaux dédiés à l’IA, confirmant son positionnement à la
+              frontière entre cinéma et innovation.
             </p>
           </div>
         </section>
