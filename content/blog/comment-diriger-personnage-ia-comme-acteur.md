@@ -375,9 +375,9 @@ Tu dois privilégier la lisibilité puis la cohérence, ensuite seulement le sty
 Analyse les décryptages de mise en scène de `@BusinessDynamite` ici, https://www.youtube.com/@BusinessDynamite. Regarde comment les décisions de cadre, de rythme et de lumière servent toujours une intention précise.
 
 
-## Atelier avancé, passer du test au niveau production
+## Atelier avancé, diriger une performance crédible
 
-Tu veux une progression rapide, réelle, mesurable. Voici un atelier que j’utilise avec des profils débutants qui veulent livrer des images et des séquences crédibles en conditions réelles.
+Tu veux un personnage qui joue vraiment, pas un mannequin animé. Cet atelier se concentre sur objectif interne, gestes, micro réactions, et continuité de jeu.
 
 ### Module 1, préparation stricte
 

@@ -394,9 +394,9 @@ Tu dois privilégier la lisibilité puis la cohérence, ensuite seulement le sty
 Analyse les décryptages de mise en scène de `@BusinessDynamite` ici, https://www.youtube.com/@BusinessDynamite. Regarde comment les décisions de cadre, de rythme et de lumière servent toujours une intention précise.
 
 
-## Atelier avancé, passer du test au niveau production
+## Atelier avancé, solidifier les raccords plan par plan
 
-Tu veux une progression rapide, réelle, mesurable. Voici un atelier que j’utilise avec des profils débutants qui veulent livrer des images et des séquences crédibles en conditions réelles.
+Tu veux arrêter les scènes collage. Cet atelier est calibré pour verrouiller géographie, regards, focales, et progression dramatique sur toute la séquence.
 
 ### Module 1, préparation stricte
 

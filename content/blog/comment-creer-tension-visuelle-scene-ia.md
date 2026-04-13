@@ -366,9 +366,9 @@ Tu dois privilégier la lisibilité puis la cohérence, ensuite seulement le sty
 Analyse les décryptages de mise en scène de `@BusinessDynamite` ici, https://www.youtube.com/@BusinessDynamite. Regarde comment les décisions de cadre, de rythme et de lumière servent toujours une intention précise.
 
 
-## Atelier avancé, passer du test au niveau production
+## Atelier avancé, fabriquer une tension qui monte vraiment
 
-Tu veux une progression rapide, réelle, mesurable. Voici un atelier que j’utilise avec des profils débutants qui veulent livrer des images et des séquences crédibles en conditions réelles.
+Tu veux que la tension monte sans effet artificiel. Cet atelier te fait travailler conflit visuel, silence, espace négatif, et timing de coupe avec précision.
 
 ### Module 1, préparation stricte
 

@@ -419,9 +419,9 @@ Tu dois privilégier la lisibilité puis la cohérence, ensuite seulement le sty
 Analyse les décryptages de mise en scène de `@BusinessDynamite` ici, https://www.youtube.com/@BusinessDynamite. Regarde comment les décisions de cadre, de rythme et de lumière servent toujours une intention précise.
 
 
-## Atelier avancé, passer du test au niveau production
+## Atelier avancé, raconter sans une ligne de dialogue
 
-Tu veux une progression rapide, réelle, mesurable. Voici un atelier que j’utilise avec des profils débutants qui veulent livrer des images et des séquences crédibles en conditions réelles.
+Tu veux que le public comprenne tout sans voix off. Cet atelier te force à structurer intention, action, conséquence, uniquement par l’image et le rythme.
 
 ### Module 1, préparation stricte
 
