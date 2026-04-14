@@ -32,13 +32,13 @@ export function HomeLatestPostGrid({ posts }: Props) {
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={thumb}
-                        alt=""
+                        alt={`Aperçu : ${post.frontmatter.title}`}
                         className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
                       />
                     ) : (
                       <Image
                         src={thumb}
-                        alt=""
+                        alt={`Aperçu : ${post.frontmatter.title}`}
                         fill
                         className="object-cover transition duration-300 group-hover:scale-[1.02]"
                         sizes="(max-width: 1024px) 50vw, 33vw"

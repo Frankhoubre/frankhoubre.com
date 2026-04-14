@@ -276,9 +276,14 @@ export default async function BlogArticlePage({ params }: Props) {
   const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
-  const components = createBlogMdxComponents(slug, { skipFirstBodyImage });
+  const articleTitle = post.frontmatter.title;
+  const components = createBlogMdxComponents(slug, {
+    skipFirstBodyImage,
+    articleTitle,
+  });
   const faqComponents = createBlogMdxComponents(slug, {
     skipFirstBodyImage: false,
+    articleTitle,
   });
   const minutes = readingTimeMinutes(raw);
   const related = getRelatedPosts(slug, 3);
@@ -378,13 +383,13 @@ export default async function BlogArticlePage({ params }: Props) {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={thumb}
-                    alt=""
+                    alt={`Illustration pour « ${post.frontmatter.title} »`}
                     className="h-full w-full object-cover"
                   />
                 ) : (
                   <Image
                     src={thumb}
-                    alt=""
+                    alt={`Illustration pour « ${post.frontmatter.title} »`}
                     fill
                     className="object-cover"
                     priority

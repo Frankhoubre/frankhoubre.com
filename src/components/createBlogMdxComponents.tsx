@@ -44,10 +44,14 @@ function makeHeading(
 
 export function createBlogMdxComponents(
   slug: string,
-  options: { skipFirstBodyImage: boolean },
+  options: { skipFirstBodyImage: boolean; articleTitle?: string },
 ): MDXComponents {
   const headingSeen = new Map<string, number>();
   const bodyImageIndex = { n: 0 };
+
+  const fallbackAlt =
+    options.articleTitle?.trim() &&
+    `Illustration pour « ${options.articleTitle.trim()} »`;
 
   const Img = ({
     src,
@@ -66,13 +70,18 @@ export function createBlogMdxComponents(
     bodyImageIndex.n += 1;
     if (skip) return null;
     const remote = /^https?:\/\//i.test(resolved);
+    const resolvedAlt =
+      (typeof alt === "string" && alt.trim()) ||
+      fallbackAlt ||
+      "Illustration";
+
     if (remote) {
       return (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           {...rest}
           src={resolved}
-          alt={alt ?? ""}
+          alt={resolvedAlt}
           className="my-6 w-full rounded-lg border border-neutral-200"
         />
       );
@@ -81,7 +90,7 @@ export function createBlogMdxComponents(
       <span className="my-6 block overflow-hidden rounded-lg border border-neutral-200">
         <Image
           src={resolved}
-          alt={alt ?? ""}
+          alt={resolvedAlt}
           width={1200}
           height={630}
           className="h-auto w-full"
