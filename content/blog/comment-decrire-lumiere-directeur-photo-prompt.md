@@ -13,7 +13,6 @@ C’est exactement cette logique qu’on va traduire en langage prompt.
 
 ![Hero image, direction de lumiere en prompt.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, cinematographer planning key and fill placement on a storyboard in a dim studio with practical tungsten lamp and window spill, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Le principe qui change tout
 
@@ -56,7 +55,6 @@ Quand tu nommes ces roles clairement, le modele improvise moins.
 ## Template strict (a garder)
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Dans `[SCENE DESCRIPTION]`, ajoute toujours:
@@ -80,13 +78,11 @@ Dans `[SCENE DESCRIPTION]`, ajoute toujours:
 ### Exemple interieur doux, realiste
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, morning kitchen interior with a tired woman seated near large north window key from camera-left, very light fill from pale wall bounce and warm practical lamp in background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ### Exemple nuit dramatique controlee
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, medium shot of a man in rainy bus shelter at night with sodium key from camera-right, minimal fill and subtle cool rim from street reflections, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Pour eviter l’effet “peau plastique” dans ces configurations, applique aussi [comment ameliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia), surtout sur les plans rapproches.
@@ -103,7 +99,6 @@ Pour eviter l’effet “peau plastique” dans ces configurations, applique aus
 
 ![Image contextuelle 1, schema key fill rim en pratique.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, lighting diagram board with key fill rim annotations next to realistic generated portrait references in studio, practical desk light and paper texture, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Video YouTube a integrer dans l'article
 
@@ -137,7 +132,6 @@ Pour lier lumiere et profondeur de plan sans incoherence, reconnecte avec [comme
 
 ![Image contextuelle 2, verification coherence lumiere peau reflets.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, colorist checking skin highlights and catchlight consistency on monitor in dim grading suite with practical side lamp, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## FAQ
 

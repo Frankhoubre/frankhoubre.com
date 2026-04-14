@@ -18,7 +18,6 @@ Le vocabulaire « qualité ultime » autour de l’image générée n’aide pas
 
 ![Hero, contrôle des visages en génération IA.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor examining facial geometry and eye symmetry on a calibrated monitor in dark studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Pourquoi le visage casse en premier
 

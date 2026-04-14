@@ -142,7 +142,7 @@ Pour calibrer l’œil, regarde cette référence : [préparation de tournage](h
 ## Liens utiles dans la série AI Studio
 
 - [Pourquoi tes images IA manquent de contraste, et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger)
-- [Comment créer une vidéo cinématique avec l’IA, étape par étape](/blog/comment-creer-une-video-cinematique-avec-l-ia-etape-par-etape)
+- [Comment créer une vidéo cinématique avec l’IA, étape par étape](/blog/comment-creer-video-cinematique-ia-etape-par-etape)
 - [Comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible)
 - [Comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia)
 
@@ -180,7 +180,6 @@ Soit le modèle est trop conservateur sur les basses lumières, soit ton export/
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-creer-ambiance-sombre-cinematique-avec-ia/comment-creer-ambiance-sombre-cinematique-avec-ia-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer ambiance sombre cinematique avec ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

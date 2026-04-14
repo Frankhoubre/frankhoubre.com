@@ -200,7 +200,6 @@ Un peu, pour coller net et flou. Ce n’est pas un remplacement d’une scène m
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-generer-scene-realiste-profondeur-champ/comment-generer-scene-realiste-profondeur-champ-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment generer scene realiste profondeur champ, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

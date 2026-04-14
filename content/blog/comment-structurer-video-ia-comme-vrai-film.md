@@ -192,7 +192,6 @@ Coupe le son : si l’image seule ne suggère plus la progression, ton montage i
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-structurer-video-ia-comme-vrai-film/comment-structurer-video-ia-comme-vrai-film-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment structurer video ia comme vrai film, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

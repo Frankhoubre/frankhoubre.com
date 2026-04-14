@@ -14,7 +14,6 @@ Il commence par une intention.
 
 ![Hero image, penser comme realisateur.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, filmmaker planning scene beats on paper beside AI-generated frame references in dark studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Ici, on va faire exactement ça. Tu vas apprendre à penser comme un metteur en scène, même si tu débutes, même si tu n’as jamais touché une vraie caméra. Et oui, c’est possible avec l’IA locale, à condition de respecter une méthode dure, claire, reproductible.
 
@@ -87,7 +86,6 @@ Pour verrouiller la cohérence entre séquences, prends aussi ce guide, [comment
 Tu peux l’utiliser pour chaque image clé.
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Mais retiens bien ceci, le template n’est qu’un contenant. Ce qui fait la qualité, c’est ton `[SCENE DESCRIPTION]`, donc ta direction.
@@ -216,7 +214,6 @@ Pas dix variantes. Tu noies ta décision.
 
 ![Image contextuelle 1, storyboard et intention.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, storyboard wall with intention notes and camera angle sketches in production room, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ### Étape 6, pré-montage narratif
 
@@ -332,7 +329,6 @@ Fix: log simple par plan, seed, cfg, steps, version.
 
 ![Image contextuelle 2, montage basé sur beats narratifs.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor arranging narrative beats on timeline in moody post-production suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Cas d’étude complet, teaser de 45 secondes construit comme un réalisateur
 

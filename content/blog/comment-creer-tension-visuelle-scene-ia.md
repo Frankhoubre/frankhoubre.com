@@ -10,7 +10,6 @@ Elle vient d’un conflit dans l’image.
 
 ![Hero image, tension visuelle.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, tense night corridor scene with character paused before door under directional practical light and deep negative space, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 En IA, tu crées la tension avec des oppositions lisibles, lumière vs ombre, proximité vs isolement, mouvement vs immobilité. Si tu veux qu’elle tienne sur toute une séquence, aligne-la avec [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
 
@@ -25,7 +24,6 @@ En IA, tu crées la tension avec des oppositions lisibles, lumière vs ombre, pr
 ## Template strict
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 | Problème | Cause | Correction |
@@ -36,7 +34,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Image contextuelle 1, compositions en tension.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, composition study board showing visual tension through negative space and directional lighting, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube intégrée
 
@@ -59,7 +56,6 @@ Pour mieux contrôler les erreurs de prompt qui cassent cette tension, applique 
 
 ![Image contextuelle 2, tension validée en montage.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor reviewing suspense scene pacing on timeline with dark room practical glow, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Ce que la tension visuelle veut dire concrètement
 

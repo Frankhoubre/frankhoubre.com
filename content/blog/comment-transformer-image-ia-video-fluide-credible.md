@@ -13,7 +13,6 @@ Visage qui dérive, cheveux qui vibrent, murs qui ondulent, lumière qui saute: 
 
 ![Hero, image vers vidéo crédible.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor comparing static keyframe and animated sequence on grading monitor in dark studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Le principe simple qui change tout
 
@@ -91,7 +90,6 @@ Assemble des segments courts, puis harmonise couleur, texture et son avant expor
 
 ![Image contextuelle, préparation avant animation.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, workstation with keyframe still, motion notes, and timeline preview in dim practical light, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Tableau de réglages et risques
 
@@ -133,7 +131,6 @@ Pour garder une continuité solide entre plans, complète avec [comment créer d
 
 ![Image contextuelle, contrôle qualité animation.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor performing frame-by-frame artifact check on cinematic sequence in dark suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Routine 30 minutes (pratique)
 

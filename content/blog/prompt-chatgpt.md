@@ -84,7 +84,6 @@ Si tu enchaînes vers un pipeline vidéo, demande une **liste de sons** attendus
 Voici un repère visuel pour l’étape « écrire avant d’enchaîner », même esprit documentaire.
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, hands typing on laptop keyboard, coffee mug soft in foreground, morning side light on wooden desk, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ![Mains au clavier et lumière du matin, repère pour le travail d'écriture itérative.](workflow-1.png)
@@ -102,7 +101,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 Deuxième repère visuel, esprit « choix de plans ».
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, printed storyboard frames and pencil on table, director hands reviewing shots, soft overhead practical, oval anamorphic bokeh in background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ![Feuilles et crayon sur table, esprit « choix de plans » plutôt que dispersion.](workflow-2.png)
@@ -205,7 +203,6 @@ Fixe trois formats de sortie obligatoires (tableau, liste de risques, version co
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/prompt-chatgpt/prompt-chatgpt-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene prompt chatgpt, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

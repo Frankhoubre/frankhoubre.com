@@ -230,7 +230,6 @@ Enregistre cinq sons toi-même avec un téléphone propre, porte, pas, eau, chai
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/creer-court-metrage-100-ia-sans-camera-acteurs-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene creer court metrage 100 ia sans camera acteurs, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

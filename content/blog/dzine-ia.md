@@ -19,7 +19,6 @@ Trois figures. **Léa** enchaîne dix visages « stylés » pour un héros : auc
 Si tu génères une illu d’ambiance en local (Flux, SDXL, etc.), garde cette tête de série et change seulement la scène entre crochets mentaux.
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, small animation sculptor workspace, maquette on stand, tools and reference photos, soft overcast window light, dust in air, worn wooden desk, natural textures, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ## Concepts clés : personnage, cohérence, mouvement
@@ -68,7 +67,6 @@ Pour le texte structurant (fiches personnage, brief), tu peux t’aider d’un L
 Repère visuel atelier (généré localement si tu veux matérialiser l’article) :
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, small animation sculptor workspace, maquette on stand, tools and reference photos, soft overcast window light, dust in air, worn wooden desk, natural textures, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 > La cohérence d’un personnage animé commence comme une cohérence de plateau : mêmes sources, mêmes proportions, mêmes défauts assumés. Si tu poursuis la perfection lisse, tu obtiens le plastique ; si tu poursuis une vérité matière, l’œil pardonne un grain en plus.
@@ -78,7 +76,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 Étape « feuilles et crayon » pour forcer le design avant le mouvement :
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, character turnaround sketches and colored pencils spread on desk, artists hand pointing at drawing, warm desk lamp mixed with cool window daylight, paper texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ### Phase B — Mouvement avec référence et retenue
@@ -102,7 +99,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 15. Documente ce qui est 100 % généré vs retouché vs composité externe pour la transparence avec client ou équipe — surtout si la marque impose des disclaimers.
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, dim edit suite, monitor showing neutral character frame, headphones, notebook shot list, single window slash of light, film grain, realistic color grading, no neon glow, no CGI look --ar 16:9
 ```
 
 ![Table de montage, moment où tu juges le réalisme du mouvement et non plus seulement le design.](workflow-2.png)
@@ -212,7 +208,6 @@ Commence par des répliques courtes et des plans moins serrés ; monte en diffic
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/dzine-ia/dzine-ia-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene dzine ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

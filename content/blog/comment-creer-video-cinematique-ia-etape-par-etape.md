@@ -3,7 +3,7 @@ title: "Comment créer une vidéo cinématique avec l’IA étape par étape"
 date: "2026-04-09"
 category: "tutoriels"
 excerpt: "Méthode complète pour passer d’une idée floue à une vidéo IA crédible, plan par plan, sans rendu plastique."
-thumbnail: "/images/blog/comment-creer-une-video-cinematique-avec-l-ia-etape-par-etape/hero.webp"
+thumbnail: "/images/blog/comment-creer-video-cinematique-ia-etape-par-etape/hero.webp"
 ---
 Tu ouvres ton générateur.  
 Tu tapes un prompt.  
@@ -15,7 +15,6 @@ Ce guide est fait pour t’éviter ça. Pas de magie. Pas de jargon inutile. Une
 
 ![Hero, cadre cinématique réaliste.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, night exterior with lone character under rainy bus shelter and sodium practical light reflecting on wet asphalt, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Le vrai point de départ
 
@@ -80,7 +79,6 @@ Ce qu’on corrige:
 ## Prompt template obligatoire
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Ce template ne suffit pas seul.  
@@ -155,7 +153,6 @@ Base:
 
 ![Image contextuelle, workflow de génération.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, filmmaker pinning keyframes and continuity notes on wall in low-light studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Tableau de réglages de départ
 
@@ -214,7 +211,6 @@ Pour éviter les dérives de texture qui cassent le réalisme, complète avec [c
 
 ![Image contextuelle, validation qualité avant export.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor reviewing before-after realism corrections on calibrated monitor in dark grading suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube à intégrer
 

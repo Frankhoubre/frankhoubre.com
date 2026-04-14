@@ -10,7 +10,6 @@ Si la texture est fausse, ton image sonne fake en deux secondes.
 
 ![Hero image, photo réalisme sans plastique.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, realistic portrait scene in natural morning window light with visible skin pores and subtle cloth texture, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Le rendu plastique vient presque toujours d’un mélange de mauvais signaux, trop de netteté, trop de lissage, lumière non motivée, prompt décoratif. Pour éviter ça, construis ton image comme un plan de tournage. Commence par la logique lumière, puis matière, puis composition. Tu peux t’appuyer sur [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) avant d’attaquer les détails peau.
 
@@ -25,7 +24,6 @@ Le rendu plastique vient presque toujours d’un mélange de mauvais signaux, tr
 ## Template strict
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ## Erreurs qui créent l’effet plastique
@@ -47,7 +45,6 @@ Pour corriger les prompts trop artificiels, relie directement ce guide à [les e
 
 ![Image contextuelle 1, contrôle texture peau et tissu.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close-up of realistic skin and textile textures under soft side key in a modest interior scene, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube intégrée
 
@@ -71,7 +68,6 @@ Si tu veux stabiliser ce rendu sur plusieurs plans, enchaîne avec [comment cré
 
 ![Image contextuelle 2, comparaison avant/après correction réaliste.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editing desk showing before and after realistic image correction with subtle grain and natural skin rendering, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 
 ## Hook, la frustration qu’on voit en production

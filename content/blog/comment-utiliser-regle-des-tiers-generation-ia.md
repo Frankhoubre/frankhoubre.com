@@ -15,7 +15,6 @@ C’est une arme de narration.
 
 ![Hero image, regle des tiers.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, subject framed on upper left third intersection in moody interior scene with balanced negative space, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Dans ce guide, tu vas apprendre à l’utiliser comme un réalisateur, pas comme un élève qui applique une règle en pilote automatique.
 
@@ -69,7 +68,6 @@ Pour approfondir la logique de mise en scène autour de ces choix, regarde aussi
 ## Template de prompt strict
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Dans `[SCENE DESCRIPTION]`, ajoute des instructions de tiers explicites:
@@ -176,7 +174,6 @@ Tu compares et tu choisis selon l’intention narrative, pas selon la seule beau
 
 ![Image contextuelle 1, grille de tiers sur différents plans.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, composition board showing rule-of-thirds overlays on portrait and street scenes, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ### Étape 6, test de lecture humaine
 
@@ -290,7 +287,6 @@ Fix: dernier plan doit montrer une transformation perceptible.
 
 ![Image contextuelle 2, validation composition en montage.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor comparing centered vs rule-of-thirds compositions on timeline in dark post suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Cas pratique détaillé, scène de suspense en 4 plans
 

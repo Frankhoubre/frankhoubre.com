@@ -10,7 +10,6 @@ Elle se construit plan par plan.
 
 ![Hero image, construction scene plan par plan.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, filmmaker arranging shot cards labeled wide medium close-up reaction on a wall, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Le secret, c’est la continuité. Même personnage, même logique lumière, même intention narrative qui progresse. Pour verrouiller ce flux, garde en tête [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste).
 
@@ -24,7 +23,6 @@ Le secret, c’est la continuité. Même personnage, même logique lumière, mê
 ## Prompt template
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ## Checklist par plan
@@ -44,7 +42,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Image contextuelle 1, shotlist narrative.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, shotlist board with wide medium close-up reaction labels and continuity notes, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube intégrée
 
@@ -67,7 +64,6 @@ Pour améliorer les raccords de mouvement entre plans, relie aussi avec [comment
 
 ![Image contextuelle 2, raccords et continuité en post.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor checking continuity of shot sequence on timeline with annotations for matching gaze and light direction, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Pourquoi le plan par plan change tout
 

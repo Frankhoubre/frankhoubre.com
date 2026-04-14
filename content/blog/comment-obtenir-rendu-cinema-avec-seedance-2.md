@@ -16,7 +16,6 @@ Ce guide suppose que tu acceptes des allers retours. Pas vingt réglages mystiqu
 
 ![Hero, rendu cinéma avec Seedance 2.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, filmmaker reviewing realistic night sequence on calibrated monitor in dark studio with practical tungsten lamp, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Ce que « cinéma » veut dire ici
 

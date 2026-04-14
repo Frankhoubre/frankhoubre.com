@@ -15,7 +15,6 @@ L’objectif de cette masterclass, t’apprendre à repérer ces erreurs en amon
 
 ![Hero image, erreurs de prompt.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, frustrated creator comparing two generated portraits on monitor in a dim studio, one fake plastic output and one corrected realistic output, practical desk lamp and textured shadows, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Pourquoi une image devient artificielle en quelques mots
 
@@ -101,7 +100,6 @@ Les prompts “copiés-collés” transportent souvent des biais non adaptés à
 ## Template strict qui évite 70% des dérives
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 La partie critique reste `[SCENE DESCRIPTION]`. Elle doit décrire un plan tournable:
@@ -131,7 +129,6 @@ beautiful cinematic woman portrait masterpiece 8k ultra detailed
 
 Corrigé:
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, medium close-up of a woman in her early 40s standing near rainy kitchen window at dusk with soft side key from camera-left and warm practical lamp in background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ## Tableau diagnostic rapide
@@ -146,7 +143,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Image contextuelle 1, comparaison prompt brut vs corrigé.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, split comparison board with failed AI portrait and corrected cinematic portrait pinned in studio, neutral practical lighting and paper notes, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube a intégrer dans l'article
 
@@ -179,7 +175,6 @@ Exercice pratique:
 
 ![Image contextuelle 2, verification texture et lumiere en post.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor checking skin texture and shadow consistency on calibrated monitor in a dark grading room, practical side lamp and realistic color chart, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## FAQ
 
@@ -275,7 +270,6 @@ Si tu as deux réponses “non”, le prompt doit être réécrit.
 ### Réécriture structurée
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, medium close-up portrait of a woman in her late thirties standing by rainy kitchen window at dusk with side key from camera-left and warm practical lamp in deep background, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ### Résultat

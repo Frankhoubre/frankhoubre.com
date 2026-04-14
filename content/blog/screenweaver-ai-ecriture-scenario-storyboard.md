@@ -81,15 +81,12 @@ Les noms de modèles sur leur site (ex. **Seedance 2** pour du scénario vers mu
 ### Les trois prompts « still cinema » pour tes propres tests hors ScreenWeaver
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, écrivain seul la nuit, lampe de bureau chaude, pages de scénario et crayon, pluie sur la fenêtre en bokeh, fatigue authentique, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, mains qui épinglent des storyboards sur un mur, lumière du matin latérale, chaos créatif d’un bureau indé, pins, taches de café, natural skin texture, subtle imperfections, film grain, poussière dans le rayon de soleil, realistic color grading, no CGI look, no futuristic UI --ar 16:9
 ```
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, petite suite de post de nuit, lampe pratique, présence d’une timeline floue à l’écran non lisible, pellicules et tirages sur table, concentration humaine, natural skin texture, subtle imperfections, film grain, realistic color grading, pas d’hologrammes, pas d’effets futuristes --ar 16:9
 ```
 
 ### Vidéo de repère (hors ScreenWeaver)

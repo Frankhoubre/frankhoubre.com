@@ -10,7 +10,6 @@ Même sujet, même lumière, autre angle, autre émotion.
 
 ![Hero image, angles camera.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, side-by-side camera angle study with eye-level low-angle and high-angle variations on same subject in moody room, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 En prompt IA, l’angle évite l’effet “catalogue frontal”. Un angle juste sert le récit, pas l’ego visuel. Pour garder une cohérence d’angles sur une séquence, couple ce travail avec [comment construire une scène cinématique plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan).
 
@@ -24,14 +23,12 @@ En prompt IA, l’angle évite l’effet “catalogue frontal”. Un angle juste
 ## Prompt template
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Ajoute dans la scène: `eye level`, `slight low-angle`, `high-angle`.
 
 ![Image contextuelle 1, planches d’angles narratifs.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, storyboard board with camera angle notations for dramatic scene progression, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube intégrée
 
@@ -54,7 +51,6 @@ Pour éviter les incohérences optiques en changeant d’angle, complète avec [
 
 ![Image contextuelle 2, continuité des angles au montage.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor checking angle continuity across narrative sequence in dark post suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Comprendre l’effet narratif des angles
 

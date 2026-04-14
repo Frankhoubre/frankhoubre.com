@@ -143,7 +143,7 @@ Pour calibrer l’œil, regarde cette référence : [lumière et atmosphère](ht
 
 - [Comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ)
 - [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
-- [Comment créer une vidéo cinématique avec l’IA, étape par étape](/blog/comment-creer-une-video-cinematique-avec-l-ia-etape-par-etape)
+- [Comment créer une vidéo cinématique avec l’IA, étape par étape](/blog/comment-creer-video-cinematique-ia-etape-par-etape)
 - [Créer un court métrage 100 % IA sans caméra ni acteurs](/blog/creer-court-metrage-100-ia-sans-camera-acteurs)
 
 ## Foire aux questions (FAQ)
@@ -180,7 +180,6 @@ Oui, prépare-la comme une image pilote de tournage: export propre (PNG/TIFF), n
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-creer-lumieres-naturelles-image-ia/comment-creer-lumieres-naturelles-image-ia-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer lumieres naturelles image ia, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

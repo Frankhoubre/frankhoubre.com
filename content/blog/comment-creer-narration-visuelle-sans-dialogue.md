@@ -10,7 +10,6 @@ Elle montre. Elle suggère. Elle fait ressentir.
 
 ![Hero image, narration visuelle sans dialogue.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, silent dramatic scene with character holding unsent letter near rainy window at dusk, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 En IA, c’est même souvent plus efficace. Les dialogues longs exposent vite les limites de sync et de rythme. Une narration visuelle bien pensée tient mieux, surtout en format court. Pour construire cette logique, appuie-toi aussi sur [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia).
 
@@ -25,7 +24,6 @@ En IA, c’est même souvent plus efficace. Les dialogues longs exposent vite le
 ## Prompt template
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ## Mini structure visuelle
@@ -43,7 +41,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Image contextuelle 1, beats narratifs sans texte.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, visual storytelling board with four silent narrative beats pinned in studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube intégrée
 
@@ -66,7 +63,6 @@ Pour maintenir cette narration sur plusieurs plans, combine avec [comment struct
 
 ![Image contextuelle 2, montage silencieux avec impact émotionnel.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor cutting silent cinematic sequence with emotional pacing markers in dark suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Pourquoi la narration sans dialogue est un super pouvoir
 

@@ -14,7 +14,6 @@ Il faut decrire une geometrie, pas une intention vague.
 
 ![Hero image, choix d'objectifs camera en prompt.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, filmmaker comparing lens focal length notes and generated frame references on desk in moody studio, practical tungsten lamp and realistic paper texture, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Pourquoi la focale change tout
 
@@ -54,7 +53,6 @@ Fix: ajouter distance sujet-camera et sujet-fond.
 ## Template strict a conserver
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Dans `[SCENE DESCRIPTION]`, ajoute:
@@ -77,20 +75,17 @@ Dans `[SCENE DESCRIPTION]`, ajoute:
 ### Plan narratif naturel 35mm
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, 35mm eye-level medium shot of a woman in rainy bus shelter at night, subject two meters from camera and wet street lights six meters behind, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 ### Portrait emotion 85mm
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, 85mm close-up portrait of a tired father in dawn kitchen near window key with practical lamp in soft background bokeh, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Quand tu veux renforcer l’aspect anamorphique sans tomber dans le flare artificiel, la logique detaillee est dans [comment simuler un objectif anamorphique en generation IA](/blog/comment-simuler-objectif-anamorphique-generation-ia).
 
 ![Image contextuelle 1, comparaison 24mm 35mm 50mm 85mm.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, side-by-side lens comparison board showing same subject framed at 24mm 35mm 50mm and 85mm in studio notes, practical desk light and realistic textures, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Video YouTube a integrer dans l'article
 
@@ -125,7 +120,6 @@ Pour corriger les prompts qui deviennent artificiels a cause d’un mauvais mix 
 
 ![Image contextuelle 2, verification geometrie et profondeur au montage.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor checking lens consistency and depth relationships across sequence on timeline in dark suite with practical monitor light, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Checklist QA avant validation
 

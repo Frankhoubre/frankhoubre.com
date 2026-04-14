@@ -10,7 +10,6 @@ Pas quand il “pose”.
 
 ![Hero image, direction personnage IA.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, close-up of a character showing subtle emotional shift in eyes and posture in moody interior, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Diriger un personnage IA, c’est écrire des actions jouables, pas des adjectifs de personnalité. “triste” donne peu d’information. “regarde la porte puis serre la mâchoire avant de respirer” donne une performance. Pour stabiliser cette direction sur plusieurs plans, connecte avec [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant).
 
@@ -24,7 +23,6 @@ Diriger un personnage IA, c’est écrire des actions jouables, pas des adjectif
 ## Prompt template
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 | Erreur | Effet | Correction |
@@ -35,7 +33,6 @@ Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic
 
 ![Image contextuelle 1, direction d’action et micro-expressions.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, acting direction notes with micro-expression references pinned in studio, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Vidéo YouTube intégrée
 
@@ -58,7 +55,6 @@ Pour garder cette direction dans un vrai découpage, complète avec [comment con
 
 ![Image contextuelle 2, cohérence de performance au montage.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor reviewing character performance continuity across shots in dark timeline suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Ce que “diriger” veut dire en IA
 

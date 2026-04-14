@@ -246,7 +246,6 @@ Pour le portrait photo, [portrait photographique](https://fr.wikipedia.org/wiki/
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/comment-creer-portrait-ia-digne-film/comment-creer-portrait-ia-digne-film-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene comment creer portrait ia digne film, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

@@ -182,7 +182,6 @@ Parfois, avec des outils de restauration ou de « relight », mais c’est hasar
 
 ![Illustration cinématique, section conformité éditoriale.](/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/pourquoi-images-ia-manquent-contraste-comment-corriger-section-conformite.jpg)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, scene pourquoi images ia manquent contraste comment corriger, composition cinematographique naturelle, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
 

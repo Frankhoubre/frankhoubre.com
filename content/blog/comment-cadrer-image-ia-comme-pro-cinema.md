@@ -12,7 +12,6 @@ Sans ce pilotage, même une image techniquement propre devient confuse.
 
 ![Hero image, cadrage cinematographique.](hero.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, cinematographer framing a subject with monitor guides in a moody interior, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 Dans ce masterclass, tu vas apprendre une méthode de cadrage pensée pour la génération locale, Flux, SDXL, ComfyUI, avec des décisions claires, des réglages concrets, et surtout une logique de récit.
 
@@ -70,7 +69,6 @@ Pour construire cette continuité dans une scène complète, enchaîne avec [com
 ## Prompt template obligatoire
 
 ```text
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, [SCENE DESCRIPTION], natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 ```
 
 Dans `[SCENE DESCRIPTION]`, tu dois ajouter des informations de cadrage précises:
@@ -185,7 +183,6 @@ Tu compares, tu décides, tu avances.
 
 ![Image contextuelle 1, schémas de cadre.](workflow-1.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, framing guide sketches with large medium and close-up examples pinned near monitor, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ### Étape 7, test de lecture rapide
 
@@ -287,7 +284,6 @@ Fix: corriger à la source, dans le prompt et la composition.
 
 ![Image contextuelle 2, verification lisibilite du cadre en montage.](workflow-2.webp)
 
-Prompt: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, editor validating framing readability on multiple shots in dark post suite, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9
 
 ## Cas pratique complet, pub de 30 secondes cadrée comme un film
 

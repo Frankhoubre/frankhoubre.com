@@ -16,8 +16,7 @@ const DEFAULT_VIDEO_IDS = [
 const VIDEO_BY_SLUG: Record<string, string> = {
   "comment-obtenir-rendu-cinema-avec-seedance-2": "60RXHCo3d84",
   "workflow-complet-idee-film-ia-realiste": "x1avmtj3Gyc",
-  "comment-creer-une-video-cinematique-avec-l-ia-etape-par-etape":
-    "TBBkUSFAGSU",
+  "comment-creer-video-cinematique-ia-etape-par-etape": "TBBkUSFAGSU",
   "comment-transformer-image-ia-video-fluide-credible": "G8vvBNPslDY",
   "comment-ameliorer-realisme-mouvements-video-ia": "H9rVqbLLljc",
   "comment-structurer-video-ia-comme-vrai-film": "03YtZqcE6ro",
