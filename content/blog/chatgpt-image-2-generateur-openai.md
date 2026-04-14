@@ -8,8 +8,6 @@ thumbnail: "/images/blog/chatgpt-image-2-generateur-openai/hero.webp"
 
 ![Étalonnage de frames IA dans une suite de montage, lumière chaude sur le poste de travail](/images/blog/chatgpt-image-2-generateur-openai/hero.webp)
 
-[IMAGE PROMPT: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, film editor in dim grading suite comparing two frames on calibrated monitor, warm practical lamp, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9]
-
 Tu passes trois heures à polir un prompt dans un outil local, tu obtiens enfin une image « presque » bonne, tu l’ouvres sur ton téléphone, et là tu vois la vérité : ça ressemble à une affiche, pas à une prise de vue. Tu te demandes si le prochain modèle cloud va régler ça d’un coup, ou te donner juste plus de vitesse pour produire du faux beau plus vite.
 
 Quand ChatGPT annonce une **Image 2** (la nouvelle génération du moteur d’images intégré, côté OpenAI souvent rattachée à l’évolution des modèles type **GPT Image** dans l’API et à l’expérience **Images** dans l’app), la promesse n’est pas « plus de pixels magiques ». C’est surtout : **moins de friction entre ton intention et le rendu**, des **éditions** qui ne cassent pas la lumière, et une vitesse qui change la donne quand tu itères comme en salle de montage.
@@ -51,8 +49,6 @@ Tu ne « testes » pas Image 2 comme une curiosité. Tu passes par un **protocol
 **Étape 4, contrôle mobile.** Tu exportes, tu regardes sur **téléphone** en taille réelle. Si ça ressemble à une **affiche**, tu ajoutes du **grain** et tu baisses la **saturation** des rouges.
 
 ![Mains au clavier, storyboard imprimé, lumière de fenêtre sur un bureau créatif](/images/blog/chatgpt-image-2-generateur-openai/workflow-1.webp)
-
-[IMAGE PROMPT: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, over-the-shoulder hands on keyboard beside printed storyboard frames, soft window light, creative desk clutter, natural skin texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9]
 
 ### Scénario B : plan large intérieur (profondeur, géométrie, lisibilité)
 
@@ -96,8 +92,6 @@ Ce n’est pas un match « vainqueur unique ». C’est un choix de **contrainte
 > 💡 **Frank's Cut :** si tu fais de la pub pour une vraie marque, ton problème n’est pas le modèle, c’est la **preuve**. Documente ce qui est **généré**, ce qui est **retouché**, et ce qui est **filmé**. Le jour où un client compare ton visuel à un tournage, tu veux que la transition tienne, pas que le logiciel ait gagné un concours de beauté.
 
 ![Objectif cinéma et notes de réalisateur sur une table en bois, grain et poussière dans la lumière](/images/blog/chatgpt-image-2-generateur-openai/workflow-2.webp)
-
-[IMAGE PROMPT: cinematic still, ultra photorealistic, shot on ARRI Alexa 65, anamorphic lens, shallow depth of field, vintage cinema lens and folded director notes on wooden table, dust in light beam, shallow focus on glass, natural texture, subtle imperfections, film grain, volumetric lighting, realistic color grading, no CGI look, no artificial sharpness --ar 16:9]
 
 ## Dépannage massif : ce que les débutants cassent (et le réglage exact)
 
