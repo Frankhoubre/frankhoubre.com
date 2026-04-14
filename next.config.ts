@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/dzine-ia",
         permanent: true,
       },
+      {
+        source: "/outils/reverse-prompting-image-ia",
+        destination: "/outils/reverse-prompting-image-ia/index.html",
+        permanent: false,
+      },
     ];
   },
   turbopack: {

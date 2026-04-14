@@ -54,6 +54,12 @@ export function SiteHeader() {
             Blog
           </Link>
           <Link
+            href="/outils"
+            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+          >
+            Outils
+          </Link>
+          <Link
             href="/a-propos"
             className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
           >

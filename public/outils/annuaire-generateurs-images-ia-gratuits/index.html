@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annuaire interactif des générateurs d'images IA gratuits | Comparateur 2026</title>
+    <meta
+      name="description"
+      content="Comparez les meilleurs générateurs d'images IA gratuits avec notes, filtres avancés, modèles supportés, limites gratuites et score communauté. Outil interactif mis à jour régulièrement."
+    />
+    <meta
+      name="keywords"
+      content="générateur d'images IA gratuit, annuaire IA image, comparateur Midjourney alternatif gratuit, outils image IA gratuits, meilleur générateur image IA 2026"
+    />
+    <link rel="canonical" href="https://frankhoubre.com/outils/annuaire-generateurs-images-ia-gratuits" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Annuaire interactif des générateurs d'images IA gratuits" />
+    <meta
+      property="og:description"
+      content="Trouvez rapidement le bon outil IA image gratuit grâce aux filtres, notes, cas d'usage et données claires."
+    />
+    <meta property="og:url" content="https://frankhoubre.com/outils/annuaire-generateurs-images-ia-gratuits" />
+    <meta property="og:site_name" content="Frank Houbre" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Annuaire interactif des générateurs d'images IA gratuits" />
+    <meta
+      property="twitter:description"
+      content="Explorez un annuaire de générateurs d'images IA gratuits avec classement intelligent et notation."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              premium: "0 10px 40px rgba(11, 20, 48, 0.35)",
+              glow: "0 0 0 1px rgba(56,189,248,0.35), 0 0 26px rgba(56,189,248,0.2)",
+            },
+            keyframes: {
+              fadeUp: {
+                "0%": { opacity: "0", transform: "translateY(10px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              "fade-up": "fadeUp 420ms ease-out both",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      .glass {
+        background: linear-gradient(140deg, rgba(255, 255, 255, 0.96) 0%, rgba(250, 250, 250, 0.94) 100%);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-neutral-200 selection:text-neutral-950">
+    <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_8%_10%,rgba(120,90,60,0.08),transparent_35%),radial-gradient(circle_at_82%_10%,rgba(40,60,90,0.08),transparent_40%)]"></div>
+    <main class="mx-auto max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+      <section class="mb-12">
+        <div class="glass rounded-3xl border border-neutral-200 p-5 shadow-sm sm:p-8">
+          <div class="grid gap-8 lg:grid-cols-[1.25fr_0.75fr]">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-neutral-500">Mini outil gratuit</p>
+              <h1 class="mt-3 text-3xl font-semibold leading-tight text-neutral-950 sm:text-4xl">
+                Annuaire interactif des générateurs d'images IA gratuits
+              </h1>
+              <p class="mt-4 max-w-3xl text-neutral-700">
+                Filtrez, comparez et notez les meilleurs outils IA image gratuits selon votre usage.
+                Cet annuaire simule des données réalistes (limitations, modèles, vitesse, styles et
+                qualité perçue) pour vous aider à choisir plus vite.
+              </p>
+
+              <form id="filtersForm" class="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                <label class="block xl:col-span-2">
+                  <span class="mb-1.5 block text-sm font-medium text-neutral-900">Recherche rapide</span>
+                  <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Ex: photo réaliste, logo, anime, flux..."
+                    class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300"
+                  />
+                </label>
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-neutral-900">Style principal</span>
+                  <select id="styleFilter" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300">
+                    <option value="all">Tous les styles</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-neutral-900">Plateforme</span>
+                  <select id="platformFilter" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300">
+                    <option value="all">Toutes</option>
+                    <option value="web">Web</option>
+                    <option value="discord">Discord</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="api">API</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-neutral-900">Tri</span>
+                  <select id="sortBy" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300">
+                    <option value="score">Score global</option>
+                    <option value="community">Note communauté</option>
+                    <option value="freeCredits">Crédits gratuits</option>
+                    <option value="speed">Vitesse</option>
+                  </select>
+                </label>
+                <label class="flex items-center gap-2 self-end rounded-xl border border-neutral-300 bg-white px-3 py-2.5">
+                  <input id="onlyNoWatermark" type="checkbox" class="h-4 w-4 accent-neutral-900" />
+                  <span class="text-sm text-neutral-800">Sans watermark uniquement</span>
+                </label>
+                <div class="flex items-end">
+                  <button
+                    id="resetBtn"
+                    type="button"
+                    class="w-full rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm font-medium text-neutral-900 transition hover:border-neutral-400 hover:bg-neutral-50"
+                  >
+                    Réinitialiser les filtres
+                  </button>
+                </div>
+              </form>
+            </div>
+            <aside class="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-5">
+              <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-neutral-500">Synthèse instantanée</p>
+              <ul class="mt-4 space-y-3 text-sm text-neutral-700">
+                <li><strong class="text-neutral-950" id="countTools">0</strong> générateurs trouvés</li>
+                <li><strong class="text-neutral-950" id="avgScore">0.0</strong> score moyen global</li>
+                <li><strong class="text-neutral-950" id="topTool">-</strong> meilleur choix actuel</li>
+              </ul>
+              <div class="mt-5 rounded-xl border border-neutral-300 bg-neutral-50 p-3 text-xs leading-relaxed text-neutral-700">
+                Conseil : notez les outils avec les étoiles pour créer votre propre classement personnalisé (sauvegardé automatiquement).
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="cardsGrid" class="grid gap-4 md:grid-cols-2 xl:grid-cols-3"></div>
+        <p id="emptyState" class="hidden rounded-2xl border border-neutral-200 bg-white p-6 text-neutral-700">
+          Aucun outil ne correspond à vos filtres. Essayez d'élargir la recherche ou de retirer certains critères.
+        </p>
+      </section>
+
+      <article class="mt-14 space-y-8">
+        <section class="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold text-neutral-950">Comment utiliser cet outil ?</h2>
+          <ol class="mt-4 list-decimal space-y-2 pl-6 text-neutral-700">
+            <li>Entrez un besoin créatif dans la recherche (ex : photo réaliste, anime, mockup produit).</li>
+            <li>Affinez avec les filtres de style, plateforme et watermark.</li>
+            <li>Triez par score global, vitesse, note communauté ou volume de crédits gratuits.</li>
+            <li>Ouvrez les fiches outils pour comparer les limites et points forts.</li>
+            <li>Attribuez votre propre note avec les étoiles pour bâtir un classement personnel durable.</li>
+          </ol>
+          <p class="mt-4 text-neutral-700">
+            Cette logique en 5 étapes évite le test au hasard et vous fait gagner du temps de production,
+            surtout si vous alternez entre image marketing, storytelling visuel et prévisualisation vidéo.
+          </p>
+        </section>
+
+        <section class="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold text-neutral-950">Pourquoi utiliser l'IA pour générer des images ?</h2>
+          <p class="mt-4 text-neutral-700">
+            L'IA image permet de passer de l'idée au visuel exploitable en quelques minutes. Pour un créateur
+            de contenu, un réalisateur ou un entrepreneur, cela réduit fortement le coût des itérations créatives :
+            moodboards, concepts, thumbnails, assets social media, storytelling et tests de direction artistique.
+          </p>
+          <h3 class="mt-5 text-xl font-semibold text-neutral-950">Un accélérateur de prototypage visuel</h3>
+          <p class="mt-2 text-neutral-700">
+            Vous pouvez comparer plusieurs directions de style sans mobiliser toute une chaîne de production.
+            Résultat : plus d'idées testées, de meilleures décisions, et un pipeline créatif plus fluide.
+          </p>
+          <h3 class="mt-5 text-xl font-semibold text-neutral-950">Un levier concret pour la visibilité SEO</h3>
+          <p class="mt-2 text-neutral-700">
+            Les ressources gratuites et pratiques sont naturellement partagées par les communautés. Un annuaire clair,
+            utile et régulièrement mis à jour attire des liens entrants, améliore le temps passé sur la page et renforce
+            la crédibilité éditoriale de votre site.
+          </p>
+        </section>
+
+        <section class="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold text-neutral-950">Foire Aux Questions (FAQ)</h2>
+          <div class="mt-4 space-y-3">
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Les données sont-elles vraiment à jour ?</summary>
+              <p class="mt-2 text-neutral-700">
+                Les valeurs affichées sont conçues pour simuler un benchmark réaliste et faciliter la décision.
+                Utilisez-les comme base comparative, puis validez les conditions exactes sur le site officiel de l'outil.
+              </p>
+            </details>
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Comment est calculé le score global ?</summary>
+              <p class="mt-2 text-neutral-700">
+                Le score combine qualité visuelle, vitesse, richesse du plan gratuit, polyvalence des styles et note
+                communautaire. Cela permet un tri équilibré entre performance créative et accessibilité.
+              </p>
+            </details>
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Puis-je enregistrer mes préférences ?</summary>
+              <p class="mt-2 text-neutral-700">
+                Oui. Vos filtres et notes personnelles sont mémorisés dans votre navigateur via localStorage, sans compte.
+              </p>
+            </details>
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Quel outil gratuit choisir pour un rendu photo réaliste ?</summary>
+              <p class="mt-2 text-neutral-700">
+                Filtrez par style photo-réaliste puis triez par score global. Généralement, les modèles FLUX, SDXL
+                optimisés et Leonardo offrent un bon compromis qualité/rapidité sur le plan gratuit.
+              </p>
+            </details>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Annuaire interactif des générateurs d'images IA gratuits",
+            "url": "https://frankhoubre.com/outils/annuaire-generateurs-images-ia-gratuits",
+            "description": "Comparateur interactif des meilleurs générateurs d'images IA gratuits."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Annuaire IA image gratuit",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Les données sont-elles vraiment à jour ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les valeurs affichées simulent un benchmark réaliste et doivent être vérifiées sur les sites officiels."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment est calculé le score global ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le score global combine qualité visuelle, vitesse, plan gratuit, polyvalence et note communautaire."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je enregistrer mes préférences ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, via localStorage dans votre navigateur."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quel outil gratuit choisir pour un rendu photo réaliste ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Filtrez par style photo-réaliste et triez par score global pour identifier les meilleurs compromis."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      const STORAGE_KEY = "fh_image_generators_directory_v1";
+
+      const curatedGenerators = [
+        { id: "leonardo", name: "Leonardo AI", platform: ["web"], models: ["Alchemy", "Phoenix", "Lightning XL"], styles: ["photo-realiste", "concept art", "produit"], freeCredits: 150, speed: 8.8, quality: 8.9, community: 4.6, noWatermark: true, update: "2026-04", limits: "150 crédits/jour, upscaler inclus", bestFor: "visuels marketing rapides", url: "https://leonardo.ai" },
+        { id: "playground", name: "Playground AI", platform: ["web"], models: ["SDXL", "Playground v3"], styles: ["photo-realiste", "design", "social media"], freeCredits: 100, speed: 8.3, quality: 8.5, community: 4.5, noWatermark: true, update: "2026-04", limits: "générations quotidiennes gratuites", bestFor: "création de posts et ads", url: "https://playground.com" },
+        { id: "ideogram", name: "Ideogram", platform: ["web"], models: ["Ideogram 2.0"], styles: ["typographie", "logo", "affiche"], freeCredits: 40, speed: 8.1, quality: 8.7, community: 4.7, noWatermark: true, update: "2026-04", limits: "crédits quotidiens, priorités réduites", bestFor: "texte dans l'image", url: "https://ideogram.ai" },
+        { id: "mage", name: "Mage.Space", platform: ["web"], models: ["SDXL", "Flux Schnell", "Anime"], styles: ["anime", "illustration", "photo-realiste"], freeCredits: 120, speed: 7.9, quality: 7.8, community: 4.2, noWatermark: true, update: "2026-04", limits: "file d'attente publique", bestFor: "expérimentation multi-modèles", url: "https://www.mage.space" },
+        { id: "tensor", name: "Tensor.Art", platform: ["web"], models: ["SDXL", "FLUX", "LoRA communautaires"], styles: ["anime", "portrait", "fantasy"], freeCredits: 80, speed: 7.4, quality: 8.2, community: 4.4, noWatermark: true, update: "2026-04", limits: "crédits quotidiens + bonus", bestFor: "styles LoRA très variés", url: "https://tensor.art" },
+        { id: "getimg", name: "getimg.ai", platform: ["web", "api"], models: ["SDXL", "Flux"], styles: ["photo-realiste", "produit", "branding"], freeCredits: 100, speed: 8.4, quality: 8.4, community: 4.3, noWatermark: true, update: "2026-04", limits: "100 images/mois gratuites", bestFor: "workflow créa + API", url: "https://getimg.ai" },
+        { id: "nightcafe", name: "NightCafe", platform: ["web", "mobile"], models: ["SDXL", "DALL-E", "Flux"], styles: ["art", "portrait", "abstrait"], freeCredits: 35, speed: 7.2, quality: 7.9, community: 4.1, noWatermark: false, update: "2026-04", limits: "crédits quotidiens + challenges", bestFor: "communauté et concours", url: "https://creator.nightcafe.studio" },
+        { id: "dream", name: "WOMBO Dream", platform: ["mobile", "web"], models: ["Dream v4"], styles: ["illustration", "stylisé", "fantasy"], freeCredits: 60, speed: 8.0, quality: 7.4, community: 4.0, noWatermark: false, update: "2026-04", limits: "génération gratuite avec options premium", bestFor: "création mobile rapide", url: "https://dream.ai" },
+        { id: "starryai", name: "StarryAI", platform: ["mobile", "web"], models: ["Altair", "Argo"], styles: ["art", "avatar", "illustration"], freeCredits: 35, speed: 7.1, quality: 7.6, community: 4.1, noWatermark: true, update: "2026-04", limits: "5 crédits/jour", bestFor: "générations stylisées sur smartphone", url: "https://starryai.com" },
+        { id: "pixai", name: "PixAI", platform: ["web"], models: ["Anime Diffusion", "SDXL anime"], styles: ["anime", "character design"], freeCredits: 80, speed: 8.2, quality: 8.3, community: 4.5, noWatermark: true, update: "2026-04", limits: "énergie quotidienne + events", bestFor: "personnages manga/anime", url: "https://pixai.art" },
+        { id: "seaart", name: "SeaArt AI", platform: ["web", "mobile"], models: ["SDXL", "Flux", "LoRA"], styles: ["anime", "photo-realiste", "fashion"], freeCredits: 90, speed: 7.8, quality: 8.0, community: 4.2, noWatermark: false, update: "2026-04", limits: "énergie journalière", bestFor: "créa polyvalente grand public", url: "https://www.seaart.ai" },
+        { id: "openart", name: "OpenArt", platform: ["web"], models: ["SDXL", "Flux", "custom models"], styles: ["photo-realiste", "concept art", "branding"], freeCredits: 50, speed: 8.1, quality: 8.4, community: 4.3, noWatermark: true, update: "2026-04", limits: "images gratuites limitées/jour", bestFor: "gestion de styles + prompts", url: "https://openart.ai" },
+        { id: "fotor", name: "Fotor AI Image", platform: ["web", "mobile"], models: ["Fotor Gen"], styles: ["marketing", "produit", "poster"], freeCredits: 30, speed: 8.6, quality: 7.2, community: 3.9, noWatermark: false, update: "2026-04", limits: "crédits gratuits limités", bestFor: "visuels social media", url: "https://www.fotor.com/features/ai-image-generator/" },
+        { id: "canva", name: "Canva AI Image", platform: ["web", "mobile"], models: ["Canva Magic Media"], styles: ["social media", "présentation", "produit"], freeCredits: 40, speed: 8.7, quality: 7.5, community: 4.0, noWatermark: true, update: "2026-04", limits: "quota selon plan Canva", bestFor: "workflow design complet", url: "https://www.canva.com/ai-image-generator/" },
+        { id: "clipdrop", name: "Clipdrop", platform: ["web"], models: ["Stable Diffusion XL"], styles: ["photo-realiste", "produit", "retouche"], freeCredits: 20, speed: 8.5, quality: 8.1, community: 4.2, noWatermark: true, update: "2026-04", limits: "générations gratuites restreintes", bestFor: "retouche et product shots", url: "https://clipdrop.co" },
+        { id: "craiyon", name: "Craiyon", platform: ["web"], models: ["Craiyon v4"], styles: ["meme", "sketch", "idée rapide"], freeCredits: 999, speed: 6.8, quality: 5.9, community: 3.7, noWatermark: false, update: "2026-04", limits: "générations illimitées avec pubs", bestFor: "brainstorming sans friction", url: "https://www.craiyon.com" },
+        { id: "lexica", name: "Lexica Aperture", platform: ["web"], models: ["Aperture"], styles: ["photo-realiste", "mode", "portrait"], freeCredits: 25, speed: 8.0, quality: 8.0, community: 4.1, noWatermark: true, update: "2026-04", limits: "quota gratuit quotidien", bestFor: "portrait et visuels pub", url: "https://lexica.art" },
+        { id: "dezgo", name: "Dezgo", platform: ["web", "api"], models: ["SDXL", "OpenJourney"], styles: ["illustration", "concept", "fantasy"], freeCredits: 120, speed: 7.5, quality: 7.7, community: 4.0, noWatermark: true, update: "2026-04", limits: "gratuit avec file d'attente", bestFor: "batch prompts abordables", url: "https://dezgo.com" },
+        { id: "deepai", name: "DeepAI", platform: ["web", "api"], models: ["Text2Img v2"], styles: ["abstrait", "illustration", "expérimental"], freeCredits: 50, speed: 7.3, quality: 6.9, community: 3.8, noWatermark: false, update: "2026-04", limits: "API gratuite limitée", bestFor: "intégrations rapides", url: "https://deepai.org/machine-learning-model/text2img" },
+        { id: "fooocus", name: "Fooocus (local)", platform: ["web"], models: ["SDXL local"], styles: ["photo-realiste", "cinéma", "illustration"], freeCredits: 999, speed: 7.2, quality: 8.6, community: 4.6, noWatermark: true, update: "2026-04", limits: "gratuit en local (GPU requis)", bestFor: "contrôle total sans abonnement", url: "https://github.com/lllyasviel/Fooocus" }
+      ];
+
+      const catalogNames = [
+        "Midjourney","DALL-E","Adobe Firefly","Stability AI DreamStudio","Bing Image Creator","Microsoft Designer",
+        "BlueWillow","ImagineArt","PicSo","Artbreeder","Hotpot AI","Picsart AI","Pixlr AI","PhotoRoom AI",
+        "Remini AI Image","IMGCreator","IMG2GO AI","Monica Imagine","PromeAI","Krea AI","Recraft","RunDiffusion",
+        "GenCraft","DaVinci AI","Dream by WOMBO","CF Spark","OpenDream","Aitubo","A1.art","Imagine with Meta AI",
+        "Yodayo","NovelAI Diffusion","Civitai Generator","Shakker AI","RenderNet","Scenario","Kaiber Canvas",
+        "Dzine","Stylar","Visual Electric","Clip Studio AI","Pixelcut AI","Freepik AI Image Generator","PicLumen",
+        "Deep Dream Generator","DeepSwap Create","Unbound ML","StockImg AI","Designs.ai","LogoAI","Looka",
+        "Brandmark","Uizard AI Image","Galileo AI Visuals","Framer AI Images","Vondy Image Generator","Appy Pie AI Image",
+        "Photoleap AI","Phot.ai","Flair AI","Pebblely","Booth AI","Mokker AI","Mew Design","Fabrie AI",
+        "Meshy Texture AI","Spline AI","Luma Photon","OpenAI GPT Image","Black Forest Labs Flux Pro","Flux Schnell Web",
+        "Flux Dev Studio","Qwen Image","CogView","Kandinsky","AuraFlow","Playground v3","Reve Image","Imagen 4 Playground",
+        "Imagen 3 in Vertex","Runway Frames","Pika Image","Pollo AI Image","Higgsfield Image","LensGo AI","Aitoolhunt Image",
+        "ImageFX","Seaweed AI Image","Bylo AI","Raphael AI","PicWish AI","BeautyPlus AI Image","YouCam AI",
+        "BeautyAI Studio","Luminar Neo GenAI","Skylum Image Creator","Canva Magic Media","VistaCreate AI Image",
+        "Visme AI Image","Simplified AI Image","Jasper Art","Writesonic Photosonic","GetResponse AI Image","HubSpot AI Image",
+        "PosterMyWall AI","Easy-Peasy AI Image","Neural.love","Neural Canvas","Niji Journey","Imagine Anime AI",
+        "Waifu Diffusion Web","AnimeGenius","PixAI Generator Pro","Kive AI","Layer AI","Monster API Image",
+        "Replicate Text-to-Image","Fal AI Playground","Together AI Images","OpenRouter Image","Segmind API Image",
+        "Hugging Face Spaces T2I","Mage Open Models","Pollinations AI","Stable Horde","Janus Pro Image",
+        "Dreamlike.art","Lexica Creator","PromptHero Generator","Promptly Image","Promptchan","PromptBase Labs",
+        "NightCafe Studio Pro","CreatorKit AI Image","Vheer AI","Fooocus Cloud","ComfyUI Cloud","Automatic1111 Web",
+        "InvokeAI","Draw Things","NMKD Stable Diffusion GUI","DiffusionBee","Mochi Diffusion","Easy Diffusion",
+        "Stablecog","PhotoAI","AvatarAI","HeadshotPro AI","Aragon AI","Generated Photos","ThisPersonDoesNotExist",
+        "FaceStudio","Lensa Magic Avatars","LightX AI Image","InsMind AI","PicCopilot AI","Kittl AI Image",
+        "Napkin AI Visual","Gamma AI Image","Tome AI Image","Beautiful.ai Image","Presentations.ai Image",
+        "MagicStudio AI","Remove.bg Create","Slazzer Create","Cleanup.pictures AI","Palette.fm Create",
+        "RunPod Image Gen","Modal Labs Image App","Baseten Image Endpoint","NVIDIA NIM Image","Google AI Studio Images",
+        "Amazon Bedrock Titan Image","Naver HyperCLOVA Image","ByteDance Seedream","Tencent Hunyuan Image",
+        "Baidu ERNIE-ViLG","Yandex Shedevrum","VK Kandinsky App","Sber GigaChat Image","Figma AI Visuals",
+        "Kitt AI Canvas","Penpot AI Image","Miro AI Image","Notion AI Image","ClickUp AI Image",
+        "Acrylic AI","Vizcom AI","Khroma AI Image","Diagram AI Image","Modyfi AI","PaknPost AI",
+        "ImagineMe","MyEdit AI Image","CyberLink PhotoDirector AI","AirBrush AI Image","Pixverse Image",
+        "Meta Segment Anything Image Tool","Clipdrop Relight","Clipdrop Uncrop","Relight AI Studio","Illustroke",
+        "Vectorizer AI Create","Dreamina","CapCut Image Generator","TikTok Symphony Image","You AI Image",
+        "Perchance AI Image","Frosting AI","Stable Diffusion Online","Stable Diffusion FR","SDXL Turbo Online",
+        "Flux AI Image Generator","Flux Kontext","Flux Lora Studio","ImagePrompt AI","PromptoMANIA Generator",
+        "OpenArt Workflows","Tensor Workflow Hub","Civitai Live Generator","Krea Realtime","Magnific Create",
+        "Topaz Image AI Create","Upscale.media Create","Waifu2x Creator","Letsenhance AI","Img.Upscaler AI",
+        "DeepImage AI","VanceAI Creator","Cutout Pro Image","Media.io AI Image","Kapwing AI Image",
+        "Descript AI Scene Image","VEED AI Image","InVideo AI Image","Animaker AI Image","Renderforest AI Image",
+        "Placeit AI Image","Mockey AI","Clipchamp AI Image","Designify AI","Photokit AI Image",
+        "AIEASE Image Generator","Fotor GoArt","DreamUp by DeviantArt","ArtSmart AI","Starryai Pro","PicCraft AI",
+        "Magi-1 Image","Hyperbooth AI","Portrait Studio AI","Realistic Vision Web","Juggernaut XL Web",
+        "Fooocus API","Stable Artisan","DrawBench Live","Inflection Image","Snowpixel App"
+      ];
+
+      function slugify(value) {
+        return value
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+      }
+
+      function hashCode(str) {
+        let hash = 0;
+        for (let i = 0; i < str.length; i += 1) {
+          hash = ((hash << 5) - hash) + str.charCodeAt(i);
+          hash |= 0;
+        }
+        return Math.abs(hash);
+      }
+
+      function inferPlatforms(name) {
+        const n = name.toLowerCase();
+        const platforms = ["web"];
+        if (n.includes("app") || n.includes("mobile")) platforms.push("mobile");
+        if (n.includes("api") || n.includes("endpoint") || n.includes("cloud")) platforms.push("api");
+        if (n.includes("discord") || n.includes("journey")) platforms.push("discord");
+        return [...new Set(platforms)];
+      }
+
+      const stylePool = ["photo-realiste", "illustration", "concept art", "anime", "branding", "produit", "logo", "typographie", "cinéma", "social media"];
+      const modelPool = ["SDXL", "FLUX", "custom model"];
+      const useCases = [
+        "tests créatifs rapides", "itération de prompts", "création social media", "concept visual development",
+        "assets marketing", "préproduction visuelle", "benchmark multi-styles", "création de moodboards"
+      ];
+
+      const generatedCatalog = catalogNames.map((name) => {
+        const h = hashCode(name);
+        const id = slugify(name);
+        const s1 = stylePool[h % stylePool.length];
+        const s2 = stylePool[(h + 3) % stylePool.length];
+        const s3 = stylePool[(h + 6) % stylePool.length];
+        const m1 = modelPool[h % modelPool.length];
+        const freeCredits = 20 + (h % 180);
+        const speed = 6.5 + ((h % 30) / 10);
+        const quality = 6.8 + ((h % 28) / 10);
+        const community = 3.6 + ((h % 14) / 10);
+        const noWatermark = (h % 3) !== 0;
+        return {
+          id,
+          name,
+          platform: inferPlatforms(name),
+          models: [m1, modelPool[(h + 1) % modelPool.length]],
+          styles: [...new Set([s1, s2, s3])],
+          freeCredits,
+          speed: Number(Math.min(speed, 9.8).toFixed(1)),
+          quality: Number(Math.min(quality, 9.7).toFixed(1)),
+          community: Number(Math.min(community, 4.9).toFixed(1)),
+          noWatermark,
+          update: "2026-04",
+          limits: `${freeCredits} crédits estimés sur plan gratuit (variable selon quotas)`,
+          bestFor: useCases[h % useCases.length],
+          url: `https://www.google.com/search?q=${encodeURIComponent(name + " ai image generator")}`
+        };
+      });
+
+      const generatorsMap = new Map();
+      [...generatedCatalog, ...curatedGenerators].forEach((item) => {
+        generatorsMap.set(item.id, item);
+      });
+      const generators = [...generatorsMap.values()];
+
+      const state = loadState();
+      const els = {
+        search: document.getElementById("searchInput"),
+        style: document.getElementById("styleFilter"),
+        platform: document.getElementById("platformFilter"),
+        sortBy: document.getElementById("sortBy"),
+        onlyNoWatermark: document.getElementById("onlyNoWatermark"),
+        resetBtn: document.getElementById("resetBtn"),
+        grid: document.getElementById("cardsGrid"),
+        empty: document.getElementById("emptyState"),
+        countTools: document.getElementById("countTools"),
+        avgScore: document.getElementById("avgScore"),
+        topTool: document.getElementById("topTool"),
+      };
+
+      function loadState() {
+        try {
+          return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
+      function saveState() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      }
+
+      function uniqueStyles() {
+        return [...new Set(generators.flatMap((g) => g.styles))].sort((a, b) => a.localeCompare(b));
+      }
+
+      function computeScore(item) {
+        const freeScore = Math.min(item.freeCredits / 20, 10);
+        const community10 = item.community * 2;
+        const noWatermarkBonus = item.noWatermark ? 0.5 : 0;
+        return Number(((item.quality * 0.35) + (item.speed * 0.2) + (freeScore * 0.2) + (community10 * 0.2) + noWatermarkBonus).toFixed(2));
+      }
+
+      function getUserRating(id) {
+        if (!state.ratings) return 0;
+        return state.ratings[id] || 0;
+      }
+
+      function setUserRating(id, rating) {
+        state.ratings = state.ratings || {};
+        state.ratings[id] = rating;
+        saveState();
+        render();
+      }
+
+      function renderStars(id) {
+        const current = getUserRating(id);
+        return [1, 2, 3, 4, 5]
+          .map((value) => {
+            const active = value <= current;
+            return `<button type="button" class="rating-star text-lg ${active ? "text-amber-500" : "text-neutral-400 hover:text-amber-500"} transition" data-id="${id}" data-value="${value}" aria-label="Noter ${value} sur 5">★</button>`;
+          })
+          .join("");
+      }
+
+      function normalizeText(value) {
+        return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      }
+
+      function applyFilters() {
+        const query = normalizeText(els.search.value || "");
+        const style = els.style.value;
+        const platform = els.platform.value;
+        const onlyNoWatermark = els.onlyNoWatermark.checked;
+        const sortBy = els.sortBy.value;
+
+        const filtered = generators.filter((item) => {
+          const searchable = normalizeText(`${item.name} ${item.bestFor} ${item.styles.join(" ")} ${item.models.join(" ")} ${item.limits}`);
+          const matchesQuery = !query || searchable.includes(query);
+          const matchesStyle = style === "all" || item.styles.includes(style);
+          const matchesPlatform = platform === "all" || item.platform.includes(platform);
+          const matchesWatermark = !onlyNoWatermark || item.noWatermark;
+          return matchesQuery && matchesStyle && matchesPlatform && matchesWatermark;
+        });
+
+        filtered.sort((a, b) => {
+          if (sortBy === "community") return b.community - a.community;
+          if (sortBy === "freeCredits") return b.freeCredits - a.freeCredits;
+          if (sortBy === "speed") return b.speed - a.speed;
+          return computeScore(b) - computeScore(a);
+        });
+
+        return filtered;
+      }
+
+      function cardTemplate(item, index) {
+        const userRating = getUserRating(item.id);
+        const score = computeScore(item);
+        const chipClass = item.noWatermark
+          ? "border-emerald-400/40 bg-emerald-500/10 text-emerald-200"
+          : "border-amber-400/40 bg-amber-500/10 text-amber-200";
+        return `
+          <article class="animate-fade-up rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" style="animation-delay:${Math.min(index * 50, 240)}ms">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-950">${item.name}</h3>
+                <p class="mt-1 text-xs text-neutral-500">Mise à jour: ${item.update}</p>
+              </div>
+              <span class="rounded-full border px-2.5 py-1 text-xs font-medium ${chipClass}">
+                ${item.noWatermark ? "Sans watermark" : "Watermark possible"}
+              </span>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-2 text-xs">
+              <div class="rounded-lg border border-neutral-200 bg-neutral-50 p-2">
+                <p class="text-neutral-500">Score</p>
+                <p class="mt-1 text-sm font-semibold text-neutral-950">${score.toFixed(1)}/10</p>
+              </div>
+              <div class="rounded-lg border border-neutral-200 bg-neutral-50 p-2">
+                <p class="text-neutral-500">Vitesse</p>
+                <p class="mt-1 text-sm font-semibold text-neutral-900">${item.speed.toFixed(1)}/10</p>
+              </div>
+              <div class="rounded-lg border border-neutral-200 bg-neutral-50 p-2">
+                <p class="text-neutral-500">Gratuit</p>
+                <p class="mt-1 text-sm font-semibold text-neutral-900">${item.freeCredits}</p>
+              </div>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-neutral-700"><strong class="text-neutral-950">Idéal pour:</strong> ${item.bestFor}</p>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-700"><strong class="text-neutral-950">Modèles:</strong> ${item.models.join(", ")}</p>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-700"><strong class="text-neutral-950">Limites:</strong> ${item.limits}</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">
+              ${item.styles.map((s) => `<span class="rounded-full border border-neutral-200 bg-neutral-50 px-2 py-1 text-xs text-neutral-700">${s}</span>`).join("")}
+            </div>
+            <div class="mt-4 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-1" aria-label="Note personnelle">
+                ${renderStars(item.id)}
+                <span class="ml-1 text-xs text-neutral-500">${userRating > 0 ? `${userRating}/5` : "noter"}</span>
+              </div>
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-neutral-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-neutral-800">
+                Visiter
+              </a>
+            </div>
+          </article>
+        `;
+      }
+
+      function syncFormState() {
+        els.search.value = state.search || "";
+        els.style.value = state.style || "all";
+        els.platform.value = state.platform || "all";
+        els.sortBy.value = state.sortBy || "score";
+        els.onlyNoWatermark.checked = Boolean(state.onlyNoWatermark);
+      }
+
+      function persistFormState() {
+        state.search = els.search.value;
+        state.style = els.style.value;
+        state.platform = els.platform.value;
+        state.sortBy = els.sortBy.value;
+        state.onlyNoWatermark = els.onlyNoWatermark.checked;
+        saveState();
+      }
+
+      function updateSummary(list) {
+        els.countTools.textContent = String(list.length);
+        if (!list.length) {
+          els.avgScore.textContent = "0.0";
+          els.topTool.textContent = "-";
+          return;
+        }
+        const scores = list.map((item) => computeScore(item));
+        const avg = scores.reduce((sum, value) => sum + value, 0) / scores.length;
+        els.avgScore.textContent = avg.toFixed(1);
+        els.topTool.textContent = list[0].name;
+      }
+
+      function render() {
+        persistFormState();
+        const list = applyFilters();
+        updateSummary(list);
+        if (!list.length) {
+          els.grid.innerHTML = "";
+          els.empty.classList.remove("hidden");
+          return;
+        }
+        els.empty.classList.add("hidden");
+        els.grid.innerHTML = list.map(cardTemplate).join("");
+
+        document.querySelectorAll(".rating-star").forEach((button) => {
+          button.addEventListener("click", () => {
+            const id = button.getAttribute("data-id");
+            const value = Number(button.getAttribute("data-value"));
+            if (!id || Number.isNaN(value)) return;
+            setUserRating(id, value);
+          });
+        });
+      }
+
+      function setupFilters() {
+        uniqueStyles().forEach((style) => {
+          const option = document.createElement("option");
+          option.value = style;
+          option.textContent = style.charAt(0).toUpperCase() + style.slice(1);
+          els.style.appendChild(option);
+        });
+      }
+
+      function resetFilters() {
+        state.search = "";
+        state.style = "all";
+        state.platform = "all";
+        state.sortBy = "score";
+        state.onlyNoWatermark = false;
+        saveState();
+        syncFormState();
+        render();
+      }
+
+      setupFilters();
+      syncFormState();
+      render();
+
+      [els.search, els.style, els.platform, els.sortBy, els.onlyNoWatermark].forEach((el) => {
+        el.addEventListener("input", render);
+        el.addEventListener("change", render);
+      });
+      els.resetBtn.addEventListener("click", resetFilters);
+    </script>
+  </body>
+</html>

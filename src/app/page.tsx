@@ -163,12 +163,12 @@ export default function HomePage() {
 
         <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-neutral-200/80 bg-neutral-950">
           <Image
-            src="/images/home-hero-frank-houbre.png"
+            src="/images/home-hero-banner-4k.webp"
             alt="Frank Houbre, formateur IA, réalisateur IA et créateur vidéo"
             fill
             className="h-full w-full min-h-[100svh] object-cover object-right"
             sizes="100vw"
-            quality={95}
+            quality={90}
             priority
           />
           <div
