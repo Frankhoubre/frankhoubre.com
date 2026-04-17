@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Blog Publishing Protocol (AI Studio)
+
+When creating blog articles for this project, follow this default workflow:
+
+1. Publish in batches of **exactly 3 articles per day**.
+2. Set the correct `date` in frontmatter for each scheduled batch day.
+3. Ensure each article is added under `content/blog/`.
+4. Run `npm run build` before deployment and fix any MDX/frontmatter issues.
+5. Deploy to production on Vercel.
+6. Verify live URLs on `https://frankhoubre.com/blog` and direct post slugs.
+7. Confirm the custom domain aliases (`frankhoubre.com` and `www.frankhoubre.com`) point to the latest production deployment.
+
+This is the expected default behavior unless explicitly overridden.
+
+For the full mandatory writing and publishing ruleset, see:
+
+- `BLOG_WORKFLOW.md`
