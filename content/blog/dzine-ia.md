@@ -8,7 +8,7 @@ thumbnail: "/images/blog/dzine-ia/hero.png"
 
 Tu veux un personnage qui **reste lui-même** sur plusieurs plans, puis une courte séquence qui ne ressemble pas à la pub de démo « IA 2024 » reconnaissable au premier reflet plastique. Tu génères, tu souris, tu zoomes : la matière du vêtement a changé, la mâchoire a glissé, la lampe du fond éclaire maintenant l’autre côté du visage sans raison narrative. Ce n’est pas un défaut personnel : c’est le coût d’un **brief flou** et d’une chaîne où design et mouvement ne sont pas verrouillés comme sur un petit plateau.
 
-[Dzine](https://dzine.ai) se présente comme une plateforme d’image et de design IA axée sur la **contrôlabilité** — en pratique, des outils pour générer, éditer, animer, parfois à partir de références (image, vidéo) selon les modules disponibles à la date où tu lis ces lignes. L’argument marketing « most controllable » se traduit pour toi en **questions simples** : puis-je verrouiller un look, répéter un personnage, et corriger une zone sans tout détruire ? **Les fonctionnalités évoluent vite** : recoupe toujours avec le site officiel et les notes de version pour les noms exacts des outils et les limites d’export. Ce que je décris ici, c’est un **esprit de pipeline** : figer un design, animer avec retenue, critiquer, corriger localement, finir en post — pas le fantasme du long métrage en un clic.
+[Dzine](https://dzine.ai) se présente comme une plateforme d’image et de design IA axée sur la **contrôlabilité** : en pratique, des outils pour générer, éditer, animer, parfois à partir de références (image, vidéo) selon les modules disponibles à la date où tu lis ces lignes. L’argument marketing « most controllable » se traduit pour toi en **questions simples** : puis-je verrouiller un look, répéter un personnage, et corriger une zone sans tout détruire ? **Les fonctionnalités évoluent vite** : recoupe toujours avec le site officiel et les notes de version pour les noms exacts des outils et les limites d’export. Ce que je décris ici, c’est un **esprit de pipeline** : figer un design, animer avec retenue, critiquer, corriger localement, finir en post : pas le fantasme du long métrage en un clic.
 
 Trois figures. **Léa** enchaîne dix visages « stylés » pour un héros : aucun n’est le même acteur. **Karim** veut une mascotte à côté d’un produit réel : le logo fond et la main a six doigts. **Les deux associés** tiennent l’épisode 1, perdent le visage à l’épisode 3. La méthode ci-dessous transpose ce qu’un mini studio ferait : **bible, master canon, journal de session, corrections ciblées**.
 
@@ -31,15 +31,15 @@ Si tu génères une illu d’ambiance en local (Flux, SDXL, etc.), garde cette t
 
 **Référence vidéo.** Sur certains flux (par exemple des outils du type **Wan 2.2 Animate** présentés sur le site Dzine pour animer une image à partir d’une vidéo de référence, ou pour du remplacement de personnage dans une vidéo), la qualité du clip source **conditionne** le résultat : coupe propre, pas de saut de focale sauvage si tu veux de la stabilité. Vérifie les modes proposés (animation du personnage vs remplacement) dans l’interface actuelle.
 
-**Génération de personnage 3D / fiches vues.** Dzine met en avant un **générateur de personnages 3D** avec vues multiples (face, profil, dos) utiles pour la prévisualisation et l’alignement — utile pour verrouiller une silhouette avant d’aller vers de l’animation ou des planches. Encore une fois, les options exactes (styles, import photo) sont sur leur documentation.
+**Génération de personnage 3D / fiches vues.** Dzine met en avant un **générateur de personnages 3D** avec vues multiples (face, profil, dos) utiles pour la prévisualisation et l’alignement : utile pour verrouiller une silhouette avant d’aller vers de l’animation ou des planches. Encore une fois, les options exactes (styles, import photo) sont sur leur documentation.
 
-**Motion Control et intégrations.** Les release notes publiques mentionnent par exemple l’intégration de **Motion Control** avec **Kling 3.0** pour des capacités de mouvement avancées, ainsi que des évolutions d’éditeurs et de panneaux de résultats. Traduction terrain : **les noms changent**, la discipline non — note ce que **ton** compte affiche aujourd’hui.
+**Motion Control et intégrations.** Les release notes publiques mentionnent par exemple l’intégration de **Motion Control** avec **Kling 3.0** pour des capacités de mouvement avancées, ainsi que des évolutions d’éditeurs et de panneaux de résultats. Traduction terrain : **les noms changent**, la discipline non : note ce que **ton** compte affiche aujourd’hui.
 
 **Édition conversationnelle / chat d’édition.** Certaines mises à jour parlent d’éditeurs assistés par modèles type Qwen pour retoucher une région sans tout regénérer. Principe utile : **zone petite, consigne précise**, sinon tu réintroduis du chaos dans les mains ou le textile.
 
 **Post-production.** Grain léger, étalonnage cohérent, parfois compo hors ligne pour logo et typo. Le grain **colle** les zones trop propres ; voir [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia).
 
-Pour le texte structurant (fiches personnage, brief), tu peux t’aider d’un LLM avec [prompt ChatGPT : essentiel, mais c'est quoi ?](/blog/prompt-chatgpt) — la validation reste humaine.
+Pour le texte structurant (fiches personnage, brief), tu peux t’aider d’un LLM avec [prompt ChatGPT : essentiel, mais c'est quoi ?](/blog/prompt-chatgpt) : la validation reste humaine.
 
 **Curseurs mentaux.** Imagine trois axes : **cohérence** du design, **amplitude** du mouvement, **temps** passé en correction. Monter l’amplitude avant la cohérence coûte cher. Monter le temps de polish sans changer le brief, c’est polir du vide. Ordre sain : cohérence → mouvement modeste → finitions.
 
@@ -57,12 +57,12 @@ Pour le texte structurant (fiches personnage, brief), tu peux t’aider d’un L
 
 ## Workflow pratique : design, mouvement, multi-plans
 
-### Phase A — Design et vérité matière
+### Phase A : Design et vérité matière
 
 1. Fiche personnage en texte : âge ressenti, costume ancré (matière, couleur, usure), accessoire rare, interdits.  
 2. Génère **peu mais profond** : planche compacte, pas vingt styles parallèles.  
 3. Critique « novice expert » : mains, dents, oreilles, ombres sur le tissu.  
-4. Export **master** nommé, daté — ta référence canon.
+4. Export **master** nommé, daté : ta référence canon.
 
 Repère visuel atelier (généré localement si tu veux matérialiser l’article) :
 
@@ -78,25 +78,25 @@ Repère visuel atelier (généré localement si tu veux matérialiser l’articl
 ```text
 ```
 
-### Phase B — Mouvement avec référence et retenue
+### Phase B : Mouvement avec référence et retenue
 
 5. **Geste test** simple : trois pas, arrêt, respiration.  
 6. Si tu utilises une vidéo de référence : clip **stable**, pas de jump cut interne si tu veux du propre.  
-7. **Lumière source** : harmonise la direction entre portrait de départ et performance de référence quand c’est possible — sinon le composite ment.  
+7. **Lumière source** : harmonise la direction entre portrait de départ et performance de référence quand c’est possible : sinon le composite ment.  
 8. **Cadence** : laisse un demi-battement visuel ; la pub courte n’a pas besoin d’enchaîner dix beats.  
 9. Chaînage multi-outils : export **couleur neutre** avant transferts successifs pour éviter l’empilement de contrastes qui brûle la peau.
 
-### Phase C — Cohérence multi-plans
+### Phase C : Cohérence multi-plans
 
 10. Table par plan : cadrage, intention, action, lien suivant.  
 11. Regénère **seulement** ce qui casse ; inpainting ciblé plutôt que tout jeter.  
 12. Visionnage **vitesse réelle** sur téléphone avant master.
 
-### Phase D — Livraison client ou réseau
+### Phase D : Livraison client ou réseau
 
 13. Exporte une **preview** compressée et un **master** haute qualité si le module le permet ; garde les deux chemins dans ton dossier.  
 14. Si tu livres plusieurs formats (16:9, 1:1, 9:16), **re-grade** légèrement par ratio : le même LUT aveugle peut écraser le visage différemment quand le cadrage change.  
-15. Documente ce qui est 100 % généré vs retouché vs composité externe pour la transparence avec client ou équipe — surtout si la marque impose des disclaimers.
+15. Documente ce qui est 100 % généré vs retouché vs composité externe pour la transparence avec client ou équipe : surtout si la marque impose des disclaimers.
 
 ```text
 ```
@@ -142,7 +142,7 @@ Pour calibrer l’œil : [cinéma, mouvement et lisibilité](https://www.youtube
 
 **Oublier la direction de la lumière entre modules.** Si tu passes d’un générateur d’images à un module vidéo ou d’un éditeur à un autre, réinjecte la même phrase lumière ; sinon les ombres « tournent » sans que la scène change.
 
-**Saturer tôt dans la chaîne.** Chaque transfert ajoute du contraste latent. Travaille neutre au milieu du pipeline, stylise en fin — sauf look volontairement extrême dès le départ.
+**Saturer tôt dans la chaîne.** Chaque transfert ajoute du contraste latent. Travaille neutre au milieu du pipeline, stylise en fin : sauf look volontairement extrême dès le départ.
 
 ## Liens utiles dans la série AI Studio
 
@@ -178,7 +178,7 @@ Non tant que le design et le mouvement ne sont pas stables à résolution de tra
 Les effets changent la lecture de la lumière. Ré-exporte des refs après effets modérés ou fige le look avant tempête VFX.
 
 **Éthique des vidéos de référence ?**  
-Droits clairs ou prises perso — traite ça comme du matériel de prod.
+Droits clairs ou prises perso : traite ça comme du matériel de prod.
 
 **Dzine vs Blender / After Effects ?**  
 Pas un concours : Dzine pour itérations rapides et certains transferts ; Blender/AE pour géométrie, rigs, compo pro équipe selon ton temps et tes compétences.
@@ -190,7 +190,7 @@ Profils d’écran, tags couleur, recompression. Vérifie sur un second écran, 
 [Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia) et [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).
 
 **Le « 3D character generator » sert à quoi concrètement ?**  
-À obtenir une lecture **multi-vues** d’un design pour verrouiller silhouette et costume avant animation — pas à remplacer un rig complet pour un long format sans travail supplémentaire.
+À obtenir une lecture **multi-vues** d’un design pour verrouiller silhouette et costume avant animation : pas à remplacer un rig complet pour un long format sans travail supplémentaire.
 
 **Je fais du style anime vs photoréaliste : même pipeline ?**  
 Même **discipline** (bible, refs, journal), pas les mêmes critères de défaut : l’œil tolère des mains simplifiées en toon mais pas des incohérences de ligne ou de couleur flat entre plans.

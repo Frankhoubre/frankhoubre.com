@@ -24,7 +24,7 @@ Le troisième critère est la compatibilité pipeline. Un outil peut générer d
 
 Le quatrième critère est le rapport itération/qualité. Tu veux une boucle courte qui améliore vraiment le plan à chaque version. Les outils qui produisent des variantes spectaculaires mais imprévisibles fatiguent vite en production.
 
-Pour cadrer ton workflow global, connecte ce comparatif à [notre workflow complet de montage clip IA](/blog/workflow-montage-clip-ia), [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), et [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia).
+Pour cadrer ton workflow global, connecte ce comparatif à [notre workflow complet de montage clip IA](/blog/workflow-complet-idee-film-ia-realiste), [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), et [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible).
 
 ## Top 5 des IA video maker en 2026 pour clip musical
 

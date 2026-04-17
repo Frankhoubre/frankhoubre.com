@@ -41,7 +41,7 @@ Brief minimal recommandé:
 
 Ce brief tient en 8 lignes, mais il te protège contre la dispersion.
 
-Ensuite, définis une bible visuelle légère: sujet, décor, texture, mouvement dominant. Tu peux renforcer cette étape avec [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre protocole de continuité visuelle](/blog/protocole-continuite-visuelle), [notre workflow complet de montage clip IA](/blog/workflow-montage-clip-ia), et [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia).
+Ensuite, définis une bible visuelle légère: sujet, décor, texture, mouvement dominant. Tu peux renforcer cette étape avec [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre protocole de continuité visuelle](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia), [notre workflow complet de montage clip IA](/blog/workflow-complet-idee-film-ia-realiste), et [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible).
 
 ## Workflow de tranchée: générer vite sans sacrifier la qualité
 

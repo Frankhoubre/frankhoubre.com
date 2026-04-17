@@ -16,11 +16,11 @@ Trois portraits rapides. **Julien** veut un thriller urbain mais décrit seuleme
 
 ### Trois scénarios débutants (avec pivot concret)
 
-**Scénario 1 — La série « trois portraits » pour un book créatif.** Tu veux trois cadrages du même personnage avec la même « saison » visuelle. Tu génères : le premier est doux fenêtre nord, le deuxième devient néon sans que tu l’aies demandé, le troisième est saturé façon pub. **Pivot :** tu écris un paragraphe « look » identique copié-collé, tu ne changes que plan et action ; tu appliques la même courbe ou LUT après coup sur les trois exports.
+**Scénario 1 : La série « trois portraits » pour un book créatif.** Tu veux trois cadrages du même personnage avec la même « saison » visuelle. Tu génères : le premier est doux fenêtre nord, le deuxième devient néon sans que tu l’aies demandé, le troisième est saturé façon pub. **Pivot :** tu écris un paragraphe « look » identique copié-collé, tu ne changes que plan et action ; tu appliques la même courbe ou LUT après coup sur les trois exports.
 
-**Scénario 2 — Le clip marque quinze secondes.** Le client veut « premium ». Tu pousses la netteté et la propreté : résultat vitrine IA. **Pivot :** tu baisses le sharp global, tu ajoutes grain léger, tu gardes une practical chaude visible, tu acceptes une micro imperfection sur une matière non critique.
+**Scénario 2 : Le clip marque quinze secondes.** Le client veut « premium ». Tu pousses la netteté et la propreté : résultat vitrine IA. **Pivot :** tu baisses le sharp global, tu ajoutes grain léger, tu gardes une practical chaude visible, tu acceptes une micro imperfection sur une matière non critique.
 
-**Scénario 3 — L’adaptation jeu / animation vers faux réel.** Tu veux un personnage reconnaissable mais photographique. Le modèle oscille entre cartoon et uncanny. **Pivot :** tu simplifies le costume en matières réelles (coton, laine, cuir usé), tu évites les surfaces métalliques miroir au début, tu verrouilles la lumière latérale et une seule température de couleur dominante.
+**Scénario 3 : L’adaptation jeu / animation vers faux réel.** Tu veux un personnage reconnaissable mais photographique. Le modèle oscille entre cartoon et uncanny. **Pivot :** tu simplifies le costume en matières réelles (coton, laine, cuir usé), tu évites les surfaces métalliques miroir au début, tu verrouilles la lumière latérale et une seule température de couleur dominante.
 
 ## Ce que « style » veut dire pour un modèle (et ce que ça n’est pas)
 
@@ -50,43 +50,43 @@ Pour un humain, le style, c’est souvent une étiquette : « années 70 », « 
 
 ## Workflow pratique : du mood à une série d’images qui se ressemblent
 
-### Étape 1 — Phrase d’intention, puis géométrie
+### Étape 1 : Phrase d’intention, puis géométrie
 
 Avant les adjectifs, écris ce que la caméra montre : plan américain, taille, gros plan ; hauteur de caméra (niveau œil, contre-plongée légère). Ensuite seulement l’émotion dominante. Sans géométrie, l’émotion devient souvent néon et pose catalogue.
 
 **Test :** retire tous les « cinematic » de ton prompt. S’il s’effondre, il était creux.
 
-### Étape 2 — Lumière en trois lignes (esprit chef op)
+### Étape 2 : Lumière en trois lignes (esprit chef op)
 
-- **Ligne A** — Source principale : taille apparente, couleur, direction (ex. fenêtre nord, douce, légèrement froide).
-- **Ligne B** — Fill ou absence (ex. pas de fill, ombre dure sous le nez).
-- **Ligne C** — Arrière-plan (ex. pièce sombre, practical chaud, bokeh large).
+- **Ligne A** : Source principale : taille apparente, couleur, direction (ex. fenêtre nord, douce, légèrement froide).
+- **Ligne B** : Fill ou absence (ex. pas de fill, ombre dure sous le nez).
+- **Ligne C** : Arrière-plan (ex. pièce sombre, practical chaud, bokeh large).
 
 Tu remplaces dix adjectifs vagues par une hiérarchie lisible pour le modèle et pour toi.
 
-### Étape 3 — Style visuel : palette et contraintes, pas buzzwords
+### Étape 3 : Style visuel : palette et contraintes, pas buzzwords
 
 Choisis **une** direction dominante : documentaire naturel, thriller contrasté, romance douce, science-fiction sale. Puis fixe deux paramètres chiffrables ou comparables : contraste global (fort / modéré / bas), saturation (naturelle / stylisée), netteté (optique douce / neutre). Évite de mélanger trois « genres » dans le même paragraphe.
 
-### Étape 4 — Personnage ou sujet récurrent
+### Étape 4 : Personnage ou sujet récurrent
 
 Fiche courte : âge ressenti, vêtement ancré (matière, couleur), coiffure, un accessoire mémorable. Moins de traits, plus de stabilité entre plans. Pour la cohérence d’ensemble, recoupe avec [comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia).
 
-### Étape 5 — Itération en passes séparées
+### Étape 5 : Itération en passes séparées
 
-**Passe 1** — Composition et lumière. **Passe 2** — Peau et tissus. **Passe 3** — Netteté et grain. Ne touche pas aux trois à la fois : sinon tu ne sauras pas ce qui a sauvé l’image.
+**Passe 1** : Composition et lumière. **Passe 2** : Peau et tissus. **Passe 3** : Netteté et grain. Ne touche pas aux trois à la fois : sinon tu ne sauras pas ce qui a sauvé l’image.
 
-### Étape 6 — Négatifs utiles
+### Étape 6 : Négatifs utiles
 
 Quatre à huit négatifs **ciblés** selon ton modèle battent une liste encyclopédique : mains en trop, dents fusionnées, texte illisible, horizon courbe, oversharpening. Adapte à ce que **ton** setup produit par défaut.
 
-### Étape 7 — Post : LUT, courbe, grain
+### Étape 7 : Post : LUT, courbe, grain
 
 Quand l’image est presque bonne, exporte une version « plate » et une version étalonnée avec la même LUT ou la même courbe sur toute la série. Le grain en overlay lie les zones trop propres aux zones travaillées ; voir [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia).
 
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-### Étape 8 — Verrouillage projet
+### Étape 8 : Verrouillage projet
 
 Nomme les fichiers (`SEQ01_INT_window_v04.png`), garde une capture des réglages, colle le prompt final dans un `.txt`. Ton futur toi n’a pas à deviner.
 

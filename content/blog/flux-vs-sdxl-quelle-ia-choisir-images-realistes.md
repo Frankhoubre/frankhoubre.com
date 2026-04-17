@@ -46,7 +46,7 @@ Si ton usage inclut une enseigne lisible, ajoute une ligne avec le texte exact e
 
 > **Astuce pro :** si tu changes trois variables entre les deux tests, tu compares tes erreurs, pas les moteurs.
 
-Pour éviter le rendu plastique quel que soit le moteur, [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique) complète cette page.
+Pour éviter le rendu plastique quel que soit le moteur, [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique) complète cette page.
 
 ## Portrait : peau, yeux, et stabilité
 

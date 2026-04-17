@@ -68,7 +68,7 @@ Teste tes exports sur mobile et desktop. Une extension qui passe en plein écran
 
 Documente ton prompt et la version retenue dans un fichier notes. Tu pourras reproduire rapidement le même rendu sur les autres plans de la séquence.
 
-Intègre enfin l’image dans ton workflow global de postprod. Si tu utilises un pipeline cohérent, lis aussi [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia), [notre protocole de continuité visuelle](/blog/protocole-continuite-visuelle), et [notre check-list raccords et continuité](/blog/checklist-raccords-continuite).
+Intègre enfin l’image dans ton workflow global de postprod. Si tu utilises un pipeline cohérent, lis aussi [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible), [notre protocole de continuité visuelle](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia), et [notre check-list raccords et continuité](/blog/comment-construire-scene-cinematique-plan-par-plan).
 
 ## Tableau comparatif: extension rapide vs extension pro
 

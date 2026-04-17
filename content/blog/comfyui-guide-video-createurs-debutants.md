@@ -72,7 +72,7 @@ Maintiens une bibliothèque de prompts et de réglages validés. Tu accélères 
 
 Planifie une revue qualité fréquente: cohérence visuelle, stabilité, rendu final multi-support.
 
-Pour connecter ComfyUI à un pipeline complet, travaille aussi avec [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia), [notre workflow complet de montage clip IA](/blog/workflow-montage-clip-ia), et [notre protocole de continuité visuelle](/blog/protocole-continuite-visuelle).
+Pour connecter ComfyUI à un pipeline complet, travaille aussi avec [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible), [notre workflow complet de montage clip IA](/blog/workflow-complet-idee-film-ia-realiste), et [notre protocole de continuité visuelle](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
 
 ## Tableau comparatif: débutant improvisé vs débutant structuré
 

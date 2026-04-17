@@ -22,7 +22,7 @@ Deuxième pilier: la continuité visuelle stricte. Identité de personnage, dire
 
 Troisième pilier: la logique d’axe caméra. Un storyboard pro n’est pas une collection de “beaux angles”. C’est un enchaînement intelligible. Où est l’axe principal ? Quand le casser ? Pourquoi ? Si tu ne réponds pas à ces trois questions, ton découpage sera confus même avec des images superbes.
 
-Quatrième pilier: la faisabilité terrain. Un plan peut être magnifique et impossible à produire proprement dans ton contexte. Le storyboard doit intégrer contraintes de durée, mouvements réalistes, et plan B. Tu peux renforcer ce cadre avec [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre template de découpage caméra IA](/blog/template-decoupage-camera-ia), [notre check-list raccords et continuité](/blog/checklist-raccords-continuite), et [notre méthode colorimétrie pour films IA](/blog/colorimetrie-films-ia).
+Quatrième pilier: la faisabilité terrain. Un plan peut être magnifique et impossible à produire proprement dans ton contexte. Le storyboard doit intégrer contraintes de durée, mouvements réalistes, et plan B. Tu peux renforcer ce cadre avec [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre template de découpage caméra IA](/blog/comment-structurer-video-ia-comme-vrai-film), [notre check-list raccords et continuité](/blog/comment-construire-scene-cinematique-plan-par-plan), et [notre méthode colorimétrie pour films IA](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger).
 
 ## Workflow de tranchée: construire un storyboard complet avec l'IA
 

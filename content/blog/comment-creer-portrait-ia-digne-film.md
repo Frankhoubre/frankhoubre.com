@@ -187,7 +187,7 @@ Pour le portrait photo, [portrait photographique](https://fr.wikipedia.org/wiki/
 
 - [Comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt)
 - [Comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant)
-- [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique)
+- [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique)
 - [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
 
 ## Frequently Asked Questions (FAQ)

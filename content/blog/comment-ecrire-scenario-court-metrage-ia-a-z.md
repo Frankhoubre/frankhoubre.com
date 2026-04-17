@@ -22,7 +22,7 @@ Le second concept, c’est la promesse émotionnelle finale. Tu dois écrire une
 
 Le troisième concept, c’est la contrainte de production intégrée à l’écriture. But this is where it breaks: la plupart des débutants écrivent un scénario “idéal”, puis tentent de le rendre faisable après coup. Mauvaise approche. Tu dois intégrer dès le prompt la réalité de tournage: 2 lieux, 2 à 3 personnages, 2 jours de prod, peu d’effets fragiles. Ton script devient plus fort, pas plus pauvre.
 
-Le quatrième concept, c’est l’action visuelle comme langage principal. Un bon scénario IA n’est pas un PDF bavard. C’est un plan de mise en scène implicite. Si ta scène ne fonctionne pas sans dialogue, elle est fragile. Pour renforcer cette logique visuelle, appuie-toi sur [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre méthode de direction visuelle pour films IA](/blog/direction-visuelle-films-ia), et [notre check-list de préproduction légère](/blog/checklist-preproduction-court-metrage).
+Le quatrième concept, c’est l’action visuelle comme langage principal. Un bon scénario IA n’est pas un PDF bavard. C’est un plan de mise en scène implicite. Si ta scène ne fonctionne pas sans dialogue, elle est fragile. Pour renforcer cette logique visuelle, appuie-toi sur [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre méthode de direction visuelle pour films IA](/blog/comment-creer-univers-visuel-coherent-avec-ia), et [notre check-list de préproduction légère](/blog/comment-ecrire-scenario-court-metrage-ia-a-z).
 
 ## Workflow de tranchée pour écrire un scénario IA de A à Z
 

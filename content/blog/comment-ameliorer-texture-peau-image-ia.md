@@ -16,7 +16,7 @@ Je pars de trois situations réelles. **Élodie** livre des portraits pour une c
 
 ### Trois mini scénarios avec pivot
 
-**Campagne beauté « naturelle ».** Le client veut « authenticité » mais refuse les cernes et les pores visibles. **Pivot :** texture **suggérée** plutôt que documentaire brut — lumière douce latérale, pas de sharp sur le visage, rétention d’une micro irrégularité sur une joue pour éviter la poupée.
+**Campagne beauté « naturelle ».** Le client veut « authenticité » mais refuse les cernes et les pores visibles. **Pivot :** texture **suggérée** plutôt que documentaire brut : lumière douce latérale, pas de sharp sur le visage, rétention d’une micro irrégularité sur une joue pour éviter la poupée.
 
 **Portrait dramatique ombre dure.** Tu pousses le contraste : la peau craque en zones mortes ou en halos. **Pivot :** roll-off plus doux sur les transitions ombre-lumière, fill très léger non visible comme « studio », ou recadre pour qu’une partie du visage reste dans une zone d’exposition lisible.
 
@@ -46,47 +46,47 @@ Je pars de trois situations réelles. **Élodie** livre des portraits pour une c
 
 **Brief honnête en trois phrases.** Qui, où, quelle heure ; ce que le spectateur doit ressentir ; ce qui est interdit visuellement (ex. pas de peau porcelaine, pas de sharp global). Les interdits évitent le pack « sci-fi néon » par défaut.
 
-**Compression réseaux sociaux.** Une image trop propre subit ensuite le codec de la plateforme ; tu peux obtenir du bouillonnement autour des contours du visage. Un léger grain maîtrisé et des hautes lumières non cramées stabilisent souvent le rendu après upload — même principe que pour les clips dans [pourquoi mes vidéos IA ont l’air fake (et comment les rendre réalistes)](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes).
+**Compression réseaux sociaux.** Une image trop propre subit ensuite le codec de la plateforme ; tu peux obtenir du bouillonnement autour des contours du visage. Un léger grain maîtrisé et des hautes lumières non cramées stabilisent souvent le rendu après upload : même principe que pour les clips dans [pourquoi mes vidéos IA ont l’air fake (et comment les rendre réalistes)](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes).
 
 **Documentation légale / client.** Si tu livres pour une marque, trace ce qui est généré, retouché, upscalé. La technique ne remplace pas le cadre contractuel ; elle vit à côté.
 
 ## Workflow pratique : de la génération à l’export propre
 
-### Étape 1 — Choisir le moteur pour **ton** portrait
+### Étape 1 : Choisir le moteur pour **ton** portrait
 
 Flux excelle souvent sur la matière et les scènes denses ; SDXL offre un écosystème énorme (LoRA, ControlNet, ComfyUI). **Règle :** même prompt court, deux moteurs, même résolution de test. Garde celui qui ment le moins sur **mains et dents** si elles sont visibles, et sur la transition net–flou du visage.
 
-### Étape 2 — Ratio et cadrage avant « beauté »
+### Étape 2 : Ratio et cadrage avant « beauté »
 
 Travaille dans le ratio final (16:9, 2:3, etc.). Recadrer après coup pour « sauver » une peau déjà fausse ne fait que recentrer le problème.
 
-### Étape 3 — Prompt : géométrie du visage puis lumière
+### Étape 3 : Prompt : géométrie du visage puis lumière
 
-Plan (gros plan, poitrine), hauteur de caméra, direction de la source, dureté (fenêtre large = doux, soleil direct = dur). Ajoute **une** ligne sur la texture souhaitée : natural skin texture, subtle pores, not plastic skin — adapte à la langue qui marche sur ton modèle.
+Plan (gros plan, poitrine), hauteur de caméra, direction de la source, dureté (fenêtre large = doux, soleil direct = dur). Ajoute **une** ligne sur la texture souhaitée : natural skin texture, subtle pores, not plastic skin : adapte à la langue qui marche sur ton modèle.
 
-### Étape 4 — Steps, guidance, scheduler : chercher le palier
+### Étape 4 : Steps, guidance, scheduler : chercher le palier
 
 Monte les steps jusqu’à l’apparition de la texture, puis **arrête** avant la surdéfinition. Note le couple (steps, guidance) gagnant dans un fichier texte. Le scheduler et le sampler changent parfois la « texture perçue » à réglages égaux : si tu bloques sur un checkpoint, fais **une** série de tests A/B sur deux schedulers, pas dix changements simultanés. Pour aller plus loin sur les erreurs de formulation, voir [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle).
 
-### Étape 5 — Peau en deux temps
+### Étape 5 : Peau en deux temps
 
 **Temps 1** : génération avec lumière plausible et ombre sous le nez. **Temps 2** : inpainting ou retouche locale sur yeux / bouche si nécessaire. Évite de régénérer toute la scène pour une micro-zone.
 
-### Étape 6 — Grain et collage visuel
+### Étape 6 : Grain et collage visuel
 
 Un grain cinéma léger en overlay **après** coup lie souvent mieux les zones trop propres au reste du cadre que « film grain » répété sans mesure dans le prompt. Guide dédié : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia).
 
-### Étape 7 — Courbe et saturation
+### Étape 7 : Courbe et saturation
 
 Courbe d’abord (noirs qui ne tombent pas en boue, hautes qui ne crament pas la peau), saturation ensuite. Si tu pousses un look teal-orange, **isole les peaux** pour ne pas brûler les rouges.
 
-### Étape 8 — Export pour la suite
+### Étape 8 : Export pour la suite
 
-PNG ou TIFF propre pour image pilote ; variante avec grain si tu enchaînes vers la vidéo. Fichier `.txt` à côté : focale implicite, direction lumière, réglages — la vidéo te remerciera. Pont avec [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
+PNG ou TIFF propre pour image pilote ; variante avec grain si tu enchaînes vers la vidéo. Fichier `.txt` à côté : focale implicite, direction lumière, réglages : la vidéo te remerciera. Pont avec [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
 
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-### Étape 9 — Contrôle sur deux écrans
+### Étape 9 : Contrôle sur deux écrans
 
 Laptop consumer : le grain disparaît, tu risques d’en rajouter trop. Écran plus fidèle ou calibré : le grain reparaît en boue. **Teste les deux** avant le master, idéalement sur téléphone aussi.
 
@@ -110,7 +110,7 @@ Laptop consumer : le grain disparaît, tu risques d’en rajouter trop. Écran p
 
 **Inpainting sans consigne physique.** « Refais la peau » donne une autre peau, pas une meilleure lumière. Écris : « même lumière latérale, garder ombre sous nez, texture pores suggérés, pas lisse ».
 
-**Négliger les mains au bord du cadre.** Si elles entrent, elles doivent être crédibles ou hors champ. Recadre ou masque si l’outil faiblit — ce n’est pas une défaite, c’est du cadrage.
+**Négliger les mains au bord du cadre.** Si elles entrent, elles doivent être crédibles ou hors champ. Recadre ou masque si l’outil faiblit : ce n’est pas une défaite, c’est du cadrage.
 
 **Teal-orange sans masque peau.** Visages orange-brique. Isole les rouges, ramène une teinte sang réaliste.
 

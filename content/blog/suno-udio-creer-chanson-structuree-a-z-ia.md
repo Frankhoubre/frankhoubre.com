@@ -72,7 +72,7 @@ Fais des exports de contrôle sur écouteurs, enceintes simples et smartphone. U
 
 Archive ton projet proprement avec notes de génération. Tu pourras reproduire ta méthode rapidement sur les prochains morceaux.
 
-Pour renforcer ton pipeline audio global, connecte aussi avec [notre méthode de sound design IA cinéma](/blog/sound-design-ia-cinema), [notre guide de mixage voix off pour films courts](/blog/mixage-voix-off-films-courts), [notre workflow complet de montage clip IA](/blog/workflow-montage-clip-ia), et [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux).
+Pour renforcer ton pipeline audio global, connecte aussi avec [notre méthode de sound design IA cinéma](/blog/comment-ameliorer-realisme-mouvements-video-ia), [notre guide de mixage voix off pour films courts](/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes), [notre workflow complet de montage clip IA](/blog/workflow-complet-idee-film-ia-realiste), et [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes).
 
 ## Tableau comparatif: génération brute vs production structurée
 

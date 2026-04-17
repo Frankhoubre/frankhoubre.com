@@ -84,7 +84,7 @@ Teste la lisibilité sur différents écrans. Un rendu qui paraît premium en mo
 
 Archive toujours base + versions + notes de réglages. Cette traçabilité te fait gagner énormément de temps sur les futurs projets.
 
-Pour garder une cohérence de pipeline, connecte cette méthode avec [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia), [notre protocole de continuité visuelle](/blog/protocole-continuite-visuelle), et [notre check-list raccords et continuité](/blog/checklist-raccords-continuite).
+Pour garder une cohérence de pipeline, connecte cette méthode avec [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible), [notre protocole de continuité visuelle](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia), et [notre check-list raccords et continuité](/blog/comment-construire-scene-cinematique-plan-par-plan).
 
 ## Tableau comparatif: enhancement rapide vs enhancement contrôlé
 

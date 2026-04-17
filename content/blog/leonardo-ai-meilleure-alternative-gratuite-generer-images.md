@@ -92,7 +92,7 @@ Vérifie la robustesse sur différents écrans.
 
 Archive prompt + réglages + version finale. C’est ta base de reproductibilité.
 
-Pour renforcer ton pipeline d’images, connecte ce process à [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre protocole de continuité visuelle](/blog/protocole-continuite-visuelle), [notre check-list raccords et continuité](/blog/checklist-raccords-continuite), et [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia).
+Pour renforcer ton pipeline d’images, connecte ce process à [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre protocole de continuité visuelle](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia), [notre check-list raccords et continuité](/blog/comment-construire-scene-cinematique-plan-par-plan), et [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible).
 
 ## Tableau comparatif: usage Leonardo AI selon contexte
 

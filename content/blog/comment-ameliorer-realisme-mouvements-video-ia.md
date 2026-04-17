@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-ameliorer-realisme-mouvements-video-ia/hero.web
 
 Un bras qui traverse l’air sans anticipation, un mur qui respire pendant un travelling, une main qui fusionne avec une tasse : le réalisme d’une vidéo IA se joue souvent **avant** la résolution 4K annoncée sur la page marketing. Tu peux exporter en haute définition un geste impossible : tu n’auras qu’une **haute définition d’impossible**, lisible en un écran sur deux. Le spectateur ne mesure pas tes pixels ; il mesure **la physique du geste**, la cohérence de la lumière pendant le déplacement, et la façon dont le son colle (ou non) à l’image. Quand ces signaux divergent, le cerveau classe le clip en « démo » en quelques secondes, même si le color grading est joli.
 
-Ce texte est une grille de travail pour **réduire l’incohérence du mouvement** sans te promettre une caméra virtuelle parfaite. On traitera la vitesse, la complexité du décor, les interactions main–objet, le rôle du son et du montage, et le moment où il vaut mieux **couper** que générer un plan unique impossible. L’idée directrice : **moins d’amplitude dans la génération, plus d’intention au montage** — comme sur un plateau où l’opérateur sait qu’un push-in discret vend mieux qu’une orbite qui casse la géométrie.
+Ce texte est une grille de travail pour **réduire l’incohérence du mouvement** sans te promettre une caméra virtuelle parfaite. On traitera la vitesse, la complexité du décor, les interactions main–objet, le rôle du son et du montage, et le moment où il vaut mieux **couper** que générer un plan unique impossible. L’idée directrice : **moins d’amplitude dans la génération, plus d’intention au montage** : comme sur un plateau où l’opérateur sait qu’un push-in discret vend mieux qu’une orbite qui casse la géométrie.
 
 Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt : elle obtient des métamorphoses de mobilier. **Paul** pousse le curseur mouvement à fond pour « du dynamisme » : les visages ondulent. **Amina** fige une belle image puis ajoute une orbite 360° : le plafond devient liquide. La méthode ci-dessous les ramène à des **briefs tenables** et à une chaîne image → mouvement → critique → correction.
 
@@ -32,13 +32,13 @@ Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt 
 
 **Décors denses = risque.** Lignes verticales (étagères, fenêtres) pendant un travelling latéral demandent une stabilité géométrique élevée. Simplifie le fond, raccourcis le déplacement, ou ajoute un **léger** flou de mouvement en post sur l’arrière-plan si tu assumes une esthétique « handheld ».
 
-**Son comme ancrage.** Une image douteuse survit parfois avec une bande-son crédible ; l’inverse est rare. Pose un room tone, une rue lointaine, une pièce vide avec souffle — avant de figer le master. Même une piste temporaire change ton jugement sur le mouvement.
+**Son comme ancrage.** Une image douteuse survit parfois avec une bande-son crédible ; l’inverse est rare. Pose un room tone, une rue lointaine, une pièce vide avec souffle : avant de figer le master. Même une piste temporaire change ton jugement sur le mouvement.
 
 **Image pilote avant vidéo.** Si ton outil part d’une frame, investis dans une image **lumineusement juste** : ombre du nez, direction de la key, distance focale cohérente. Sinon la vidéo amplifie l’erreur. Pont avec [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
 
 **Cadence et motion blur.** Un mouvement rapide à 24 images/s avec peu de flou naturel peut « stroboscoper » ; un flou excessif ressemble à du smear. Si ton outil permet un réglage de shutter implicite ou de flou de mouvement, teste une valeur **moyenne** plutôt que les extrêmes. L’objectif est que le spectateur suive le sujet sans lire des doubles contours sur les bords.
 
-**Cohérence temporelle vs changement de prompt.** Changer plusieurs termes entre deux segments d’une même scène peut casser la géométrie du décor. Pour une continuité longue, garde un **noyau de prompt stable** (lumière, matériaux, focale) et ne fais varier que l’action ou le cadrage — ou coupe explicitement au montage pour marquer le temps.
+**Cohérence temporelle vs changement de prompt.** Changer plusieurs termes entre deux segments d’une même scène peut casser la géométrie du décor. Pour une continuité longue, garde un **noyau de prompt stable** (lumière, matériaux, focale) et ne fais varier que l’action ou le cadrage : ou coupe explicitement au montage pour marquer le temps.
 
 ## Notes de plateau : interactions, profondeur, compression
 
@@ -58,7 +58,7 @@ Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt 
 
 ## Workflow pratique : du brief au clip lisible
 
-### Étape 1 — Brief d’une page, cinq lignes fixes
+### Étape 1 : Brief d’une page, cinq lignes fixes
 
 1. Sujet situé (physique, lieu, heure).  
 2. Émotion dominante en un mot.  
@@ -68,39 +68,39 @@ Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt 
 
 Sauvegarde ce bloc : c’est ton contrat avec toi-même.
 
-### Étape 2 — Pilote image
+### Étape 2 : Pilote image
 
 Trois images fixes avec le même cœur de prompt ; varie seulement l’heure ou la qualité d’air. Choisis celle qui tient peau, tissu et perspective au zoom. Réglages : guidance modérée, évite les presets « fantasy » si tu vises du réel.
 
-### Étape 3 — Mouvement minimal
+### Étape 3 : Mouvement minimal
 
 Un seul type de mouvement par essai : lent push-in, pan lent, ou truck court. **Pas** 360° au début. Si l’outil a cohérence / adhérence à l’image source, monte légèrement jusqu’à stabilité des mains, puis stop.
 
-### Étape 4 — Durée générée > durée finale
+### Étape 4 : Durée générée > durée finale
 
 Génère plus long que nécessaire, coupe **sec** au montage. La coupe porte l’intention ; le fondu enchaîné masque parfois une incohérence mais peut aussi donner un look « démo IA » si abusé.
 
-### Étape 5 — Son tôt
+### Étape 5 : Son tôt
 
 Room tone + bruit contextuel. Puis voix ou musique. Le son révèle les moments où le mouvement « flotte » sans que tu aies vu le problème en muet.
 
-### Étape 6 — Montage, recadrage, grain léger
+### Étape 6 : Montage, recadrage, grain léger
 
 Recadre 2–3 % pour casser le cadrage « parfait par défaut ». Courbe douce : évite les hautes cramées sur la peau. Grain overlay fin pour coller les plans. Référence grain : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia) (transposable en vidéo).
 
-### Étape 7 — Critique en cinq minutes
+### Étape 7 : Critique en cinq minutes
 
 Minuteur. Trois défauts max par passe. Tu corriges d’abord **cohérence** (main, perspective), puis cosmétique.
 
 ![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
 
-### Étape 8 — Itération une variable à la fois
+### Étape 8 : Itération une variable à la fois
 
-Mouvement OU lumière OU durée — pas les trois. Sinon tu ne sais pas ce qui a sauvé le clip.
+Mouvement OU lumière OU durée : pas les trois. Sinon tu ne sais pas ce qui a sauvé le clip.
 
-### Étape 9 — Revue « ralenti »
+### Étape 9 : Revue « ralenti »
 
-Regarde une fois en **demi-vitesse** : les déformations subtiles (murs, grille de fenêtre, dents) apparaissent souvent là où l’œil les rate à vitesse normale. Note-les, puis décide : regénération, recadrage, ou masquage par son et coupe — pas toutes les trois en panique.
+Regarde une fois en **demi-vitesse** : les déformations subtiles (murs, grille de fenêtre, dents) apparaissent souvent là où l’œil les rate à vitesse normale. Note-les, puis décide : regénération, recadrage, ou masquage par son et coupe : pas toutes les trois en panique.
 
 ![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
 
@@ -115,7 +115,7 @@ Regarde une fois en **demi-vitesse** : les déformations subtiles (murs, grille 
 | Montage | rythme | coupes sèches | lecture mobile |
 | Master | diffusion | grain + courbe | export test plateforme |
 
-> Un prompt vidéo, c’est une liste de décisions physiques. Sans ça, le modèle improvise une chorégraphie de dataset — et ce n’est jamais ta chorégraphie.
+> Un prompt vidéo, c’est une liste de décisions physiques. Sans ça, le modèle improvise une chorégraphie de dataset : et ce n’est jamais ta chorégraphie.
 
 ## Trench warfare : erreurs fréquentes
 

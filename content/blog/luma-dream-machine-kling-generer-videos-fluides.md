@@ -100,7 +100,7 @@ Ajoute un design sonore cohérent. Le son stabilise la perception temporelle.
 
 Teste enfin sur mobile et desktop. La fluidité doit tenir dans les deux contextes.
 
-Pour un pipeline robuste, connecte cette méthode avec [notre guide complet sur les modèles Flux](/blog/guide-complet-modeles-flux), [notre protocole de continuité visuelle](/blog/protocole-continuite-visuelle), [notre workflow complet de montage clip IA](/blog/workflow-montage-clip-ia), et [notre méthode d’étalonnage pour vidéos IA](/blog/etalonnage-videos-ia).
+Pour un pipeline robuste, connecte cette méthode avec [notre guide complet sur les modèles Flux](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes), [notre protocole de continuité visuelle](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia), [notre workflow complet de montage clip IA](/blog/workflow-complet-idee-film-ia-realiste), et [notre méthode d’étalonnage pour vidéos IA](/blog/comment-transformer-image-ia-video-fluide-credible).
 
 ## Tableau comparatif: Luma vs Kling selon objectif
 

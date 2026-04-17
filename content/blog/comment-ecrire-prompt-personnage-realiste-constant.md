@@ -153,7 +153,7 @@ Pour la **profondeur de champ** et le lien entre focale et séparation des plans
 
 - [Comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia)
 - [Comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia)
-- [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photoréalistes-sans-effet-plastique)
+- [Comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique)
 - [Comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible)
 
 ## Frequently Asked Questions (FAQ)
