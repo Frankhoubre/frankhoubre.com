@@ -124,4 +124,4 @@ Oui, au moins en intention visuelle (compression, proximité, perspective). La c
 
 Oui, si tu gardes une méthode disciplinée: découpage clair, génération contrôlée, annotations, validation séquentielle.
 
-<!-- PUBLICATION DATE: 2026-04-17 -->
+{/* PUBLICATION DATE: 2026-04-17 */}

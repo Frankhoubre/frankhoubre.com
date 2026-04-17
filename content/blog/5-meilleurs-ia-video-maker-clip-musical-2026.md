@@ -111,4 +111,4 @@ Oui, mais la cohérence demande une méthode stricte. Le workflow hybride reste 
 
 Entre 3 et 10 jours selon ton niveau, ton ambition visuelle et la quantité d’itérations.
 
-<!-- PUBLICATION DATE: 2026-04-17 -->
+{/* PUBLICATION DATE: 2026-04-17 */}

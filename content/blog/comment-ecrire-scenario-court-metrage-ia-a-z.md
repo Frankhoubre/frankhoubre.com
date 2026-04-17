@@ -114,4 +114,4 @@ Commence par poser ton intention seul, puis utilise l’IA pour variantes de str
 
 Lecture à voix haute, découpage rapide en plans, puis audit de faisabilité (temps, lieux, budget). Si tout tient sans acrobatie, tu peux passer en storyboard.
 
-<!-- PUBLICATION DATE: 2026-04-17 -->
+{/* PUBLICATION DATE: 2026-04-17 */}
