@@ -119,3 +119,72 @@ Utilise une grille binaire en cinq points: lisibilité narrative, cohérence per
 Le plus grand piège est de confondre vitesse de génération et maturité de mise en scène. Tu peux sortir 100 images en une heure et ne rien avoir de tournable. Le cerveau est flatté par la quantité, mais la production souffre de l’absence de structure. La solution est simple et exigeante: pipeline court, critères fixes, revues fréquentes, suppression agressive des plans décoratifs. En storyboard IA, la qualité vient de la décision, jamais de l’accumulation.
 
 {/* PUBLICATION DATE: 2026-04-17 */}
+
+## Approfondissement terrain
+
+**Générer un storyboard professionnel complet avec l'IA** — Ce chapitre prolonge l’angle « Masterclass pas à pas pour créer un storyboard IA complet, cohérent et prêt production, sans dérive visuelle ni plans inutilisables. » pour le sujet réel derrière `generer-storyboard-professionnel-complet-ia`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+
+### Protocole « une variable » (30 minutes)
+
+Minute 0 à 5 : écris la phrase « ce que le spectateur doit croire sans légende ». Minute 5 à 12 : liste trois preuves visuelles possibles (ombre portée, prop d’usage, reflet cohérent). Minute 12 à 22 : génère deux images qui ne diffèrent que par **une** de ces preuves. Minute 22 à 28 : teste en miniature mobile et en plein écran. Minute 28 à 30 : choisis A ou B et nomme le critère gagnant dans le fichier projet. Ce protocole évite la dérive où chaque regen change tout sauf le problème initial.
+
+### Scénarios A, B, C avec pivot
+
+**Scénario A.** Rendu trop propre, trop vitrine. Pivot : ajoute une trace d’usage localisée et une lumière latérale plus marquée, sans toucher au sujet si la géométrie est bonne. **Scénario B.** Image chargée sans hiérarchie. Pivot : retire deux objets du prompt, recentre le contraste sur le sujet, ou resserre le cadrage. **Scénario C.** Image spectaculaire mais froide. Pivot : baisse légèrement la saturation globale, ajoute un grain fin homogène en post, puis regénère seulement si la géométrie ou la perspective ment encore.
+
+### Trench warfare : dix pièges fréquents
+
+1. **Tout corriger en même temps.** Tu ne sais plus ce qui a sauvé l’image.  
+2. **Comparer seulement en plein écran.** Le mobile trahit souvent le faux luxe.  
+3. **Ignorer le rythme en amont vidéo.** Même en amont, pense au découpage et à la respiration des plans.  
+4. **Copier-coller des prompts sans brief local.** Les mots doivent coller à ton sujet réel.  
+5. **Sharpen global agressif.** Les contours criards lisent « numérique ».  
+6. **Trop d’adjectifs contradictoires.** Une intention dominante suffit au début.  
+7. **Pas de fichier texte d’archive.** Tu perds seed, version, et raison du choix.  
+8. **Valider fatigué.** La fatigue rend « beau » ce qui est seulement familier.  
+9. **Multiplier les modèles le même jour.** Tu compares des chaînes différentes, pas des réglages.  
+10. **Livrer sans A/B.** Le client ou toi futur ne saura pas ce qui était acceptable.
+
+### Tableau de décision rapide
+
+| Si tu observes | Action prioritaire |
+| --- | --- |
+| incohérence lumière | simplifier les sources |
+| sujet noyé | cadrage ou hiérarchie de contraste |
+| texture plastique | grain fin ou moins de HDR |
+| mains impossibles | hors champ ou action triviale |
+| décor catalogue | micro usure et prop fonctionnel |
+| ciel vide | volume nuageux ou brume motivée |
+| reflets impossibles | réduire les sources contradictoires |
+
+### Atelier client ou commanditaire
+
+Même pour toi-même, rédige un mini brief : public, canal, durée de lecture attendue, interdits (violence, marques, visages réels). Pour une équipe, ajoute une colonne « preuve de conformité » : capture des CGU du service, version du modèle, date d’export. Cette colonne te sauve quand un diffuseur demande d’où vient l’image.
+
+### FAQ élargie
+
+**Dois-je livrer deux versions ?** Oui, A et B avec une phrase de différence nommée, sinon la discussion reste floue. **Faut-il documenter les prompts ?** Oui, même partiellement : c’est ton assurance qualité interne. **Que faire si le modèle change ?** Fixe un brief test et compare avant de poursuivre une série. **La retouche manuelle triche-t-elle ?** Non si tu assumes la chaîne et les limites contractuelles. **Combien de temps par image sérieuse ?** Souvent plus long en validation qu’en génération brute, prévois-le au devis. **Faut-il une cible technique ?** Oui : résolution finale, espace colorimétrique, marge sur hautes lumières si compression sociale. **Et la propriété intellectuelle ?** Vérifie les CGU et les droits sur les références incluses dans le prompt.
+
+### Poste de contrôle multi-écrans
+
+Chaîne minimale : moniteur principal, laptop standard, smartphone. Si tu n’as que deux écrans, envoie un export test sur ton téléphone via un canal propre (pas un messager qui recompresse à l’infini). Note la différence perçue sur les peaux, les contours, et les micro-contrastes. Beaucoup d’images « IA » le deviennent surtout après une deuxième compression involontaire.
+
+### Liens internes utiles
+
+Croise avec [pourquoi ton prompt ne marche pas, et comment le corriger](/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger), [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle), et [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia). Si ton sujet touche la vidéo, relie aussi à [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) et à [comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia).
+
+### Journal de fin de session (modèle)
+
+```
+Date :
+Slug / fichier :
+Hypothèse du jour :
+Variable testée :
+Résultat A vs B :
+Décision :
+Prochain test :
+```
+
+### Synthèse opérationnelle
+
+Pour `generer-storyboard-professionnel-complet-ia`, retiens trois lignes dans ton carnet : intention en une phrase, loi lumière en une phrase, preuve matérielle en une phrase. Si l’une manque, tu n’es pas prêt à regénérer massivement : tu es prêt à diagnostiquer. La qualité long terme vient de cette discipline, pas du dernier modèle sorti mardi.
