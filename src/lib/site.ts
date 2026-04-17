@@ -2,6 +2,7 @@ export const blogCategories = [
   { slug: "actualite", label: "Actualité" },
   { slug: "tutoriels", label: "Tutoriels" },
   { slug: "notes", label: "Notes" },
+  { slug: "business", label: "Business" },
 ] as const;
 
 export type BlogCategorySlug = (typeof blogCategories)[number]["slug"];

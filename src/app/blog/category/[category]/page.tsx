@@ -18,6 +18,8 @@ const CATEGORY_DESCRIPTIONS: Partial<Record<BlogCategorySlug, string>> = {
     "Guides pas à pas et tutoriels pratiques pour aller droit au but.",
   notes:
     "Notes de travail, réflexions courtes et brouillons utiles partagés.",
+  business:
+    "Studio, pricing, acquisition et stratégie pour monétiser une pratique créative IA.",
 };
 
 export function generateStaticParams() {
