@@ -85,17 +85,3 @@ export function getRecommendedYouTubeVideoId(post: Post): string {
   for (const c of post.slug) hash += c.charCodeAt(0);
   return DEFAULT_VIDEO_IDS[hash % DEFAULT_VIDEO_IDS.length];
 }
-
-/**
- * ID pour le lecteur en tête d’article : entrée dédiée par slug si présente,
- * sinon la vidéo canonique du site si elle est citée dans le texte (souvent la seule fiable en embed),
- * sinon la première URL YouTube dans l’ordre de lecture.
- */
-export function getHeroYouTubeVideoId(post: Post, contentIds: string[]): string {
-  const mapped = VIDEO_BY_SLUG[post.slug];
-  if (mapped) return mapped;
-  if (contentIds.length === 0) return getRecommendedYouTubeVideoId(post);
-  if (contentIds.includes(CANONICAL_CHANNEL_VIDEO_ID))
-    return CANONICAL_CHANNEL_VIDEO_ID;
-  return contentIds[0];
-}
