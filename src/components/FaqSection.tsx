@@ -19,15 +19,15 @@ export function FaqSection({ pairs, components }: Props) {
       itemScope
       itemType="https://schema.org/FAQPage"
     >
-      <p className="font-mono text-xs uppercase tracking-wide text-neutral-600">
-        FAQ
-      </p>
       <h2
         id="faq-heading"
-        className="mt-2 text-2xl font-semibold tracking-tight text-neutral-950"
+        className="font-mono text-xs uppercase tracking-wide text-neutral-600"
       >
-        Foire aux questions
+        FAQ
       </h2>
+      <p className="mt-2 text-2xl font-semibold tracking-tight text-neutral-950">
+        Foire aux questions
+      </p>
       <p className="mt-2 text-sm text-neutral-700">
         Réponses rapides aux questions les plus fréquentes sur cet article.
       </p>
@@ -40,9 +40,11 @@ export function FaqSection({ pairs, components }: Props) {
             itemProp="mainEntity"
             itemType="https://schema.org/Question"
           >
-            <summary className="cursor-pointer list-none px-4 py-3 font-semibold text-neutral-950 marker:content-none [&::-webkit-details-marker]:hidden">
+            <summary className="cursor-pointer list-none px-4 py-3 marker:content-none [&::-webkit-details-marker]:hidden">
               <span className="flex items-center justify-between gap-2">
-                <span itemProp="name">{pair.question}</span>
+                <h3 className="text-base font-semibold text-neutral-950" itemProp="name">
+                  {pair.question}
+                </h3>
                 <span
                   className="text-neutral-500 transition group-open:rotate-45"
                   aria-hidden
