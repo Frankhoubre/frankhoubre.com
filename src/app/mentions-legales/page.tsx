@@ -17,11 +17,29 @@ export default function LegalPage() {
             Éditeur du site
           </h2>
           <p className="mt-2">
-            <strong className="text-neutral-950">{siteName}</strong>
+            <strong className="text-neutral-950">BUSINESSDYNAMITE</strong>
             <br />
-            Remplacez ce bloc par votre identité, statut (personne physique /
-            entreprise), adresse et coordonnées conformément à l’obligation
-            d’information en ligne.
+            Société par actions simplifiée
+            <br />
+            ZAC LES TERRASSES DE LA SARRE PEPINIERE SYNERGIE 4, 57400 SARREBOURG
+            <br />
+            Dirigeant : Frank HOUBRE
+          </p>
+        </section>
+        <section>
+          <h2 className="text-xl font-semibold text-neutral-950">
+            Informations légales
+          </h2>
+          <p className="mt-2">
+            SIREN : 840 854 129
+            <br />
+            SIRET du siege social : 840 854 129 00011
+            <br />
+            Numero de TVA : FR90840854129
+            <br />
+            Date de creation : 06 juillet 2018
+            <br />
+            Activite (NAF / APE) : Autres enseignements - 8559B
           </p>
         </section>
         <section>
@@ -53,6 +71,11 @@ export default function LegalPage() {
             Les contenus publiés sur ce site (textes, visuels, code mis en ligne
             dans les articles) sont la propriété de leur auteur sauf mention
             contraire. Toute reproduction non autorisée est interdite.
+          </p>
+        </section>
+        <section>
+          <p className="mt-2 text-sm text-neutral-600">
+            Sources et mises a jour le 18/04/2026.
           </p>
         </section>
       </div>
