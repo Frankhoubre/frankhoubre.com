@@ -165,7 +165,7 @@ export default function LiensPage() {
         />
 
         <section className="mx-auto max-w-5xl px-4 pb-10 pt-14 sm:px-6 sm:pt-20">
-          <div className="relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 p-6 text-white shadow-xl shadow-zinc-900/30 sm:p-8">
+          <div className="ds-cinematic-frame ds-reveal relative overflow-hidden rounded-3xl p-6 text-white shadow-xl shadow-zinc-900/30 sm:p-8">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.24),transparent_45%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_40%)]"
@@ -174,10 +174,10 @@ export default function LiensPage() {
               <p className="inline-flex rounded-full border border-blue-300/40 bg-blue-300/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-blue-100">
                 Hub officiel - Frank Houbre
               </p>
-              <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h1 className="ds-reveal ds-reveal-delay-1 mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
                 Tous mes liens IA, podcast, plateformes et ressources en un seul endroit
               </h1>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
+              <p className="ds-reveal ds-reveal-delay-2 mt-4 max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
                 Cette page regroupe mes outils utilises au quotidien, mes canaux de diffusion et
                 les ressources pour apprendre a creer des images et videos IA de facon credible.
               </p>
@@ -186,7 +186,7 @@ export default function LiensPage() {
                   href="https://www.ai-studios.fr/formation-ia-gratuite-video"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex cursor-pointer items-center justify-center rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                  className="ds-cta-primary ds-glow !rounded-xl !px-5 !py-3 !text-sm !font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
                   Recevoir la formation gratuite
                 </a>
@@ -194,7 +194,7 @@ export default function LiensPage() {
                   href="https://www.skool.com/ai-studios"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex cursor-pointer items-center justify-center rounded-xl border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+                  className="ds-cta-ghost-light !rounded-xl !px-5 !py-3 !text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
                 >
                   Rejoindre AI Studios
                 </a>
@@ -227,7 +227,7 @@ export default function LiensPage() {
               {featuredTools.map((tool) => (
                 <article
                   key={tool.name}
-                  className="ds-card flex h-full flex-col p-5 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5 sm:p-6"
+                  className="ds-card ds-reveal flex h-full flex-col p-5 sm:p-6"
                 >
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="text-xl font-semibold tracking-tight text-zinc-950">{tool.name}</h3>
@@ -240,7 +240,7 @@ export default function LiensPage() {
                     href={tool.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex w-fit cursor-pointer items-center justify-center rounded-xl bg-zinc-950 px-4 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                    className="ds-cta-dark mt-5 w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                   >
                     {tool.cta}
                   </a>
@@ -263,7 +263,7 @@ export default function LiensPage() {
 
             <div className="space-y-8">
               {linkGroups.map((group) => (
-                <section key={group.title} aria-label={group.title} className="ds-card rounded-2xl p-5 sm:p-6">
+                <section key={group.title} aria-label={group.title} className="ds-card ds-reveal rounded-2xl p-5 sm:p-6">
                   <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">
                     {group.title}
                   </h3>

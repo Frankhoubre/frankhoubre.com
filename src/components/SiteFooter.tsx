@@ -4,7 +4,7 @@ import { siteName, socialLinks } from "@/lib/site";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-auto border-t border-zinc-200/90 bg-white/75 py-8 text-sm text-zinc-800 backdrop-blur-xl">
+    <footer className="relative z-10 mt-auto border-t border-zinc-200/90 bg-white/75 py-8 text-sm text-zinc-800 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <p className="font-medium text-zinc-900">
           © {year} {siteName}

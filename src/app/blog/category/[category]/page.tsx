@@ -66,12 +66,18 @@ export default async function BlogCategoryPage({ params }: Props) {
   const posts = getPostsByCategory(category);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
-      <header className="mb-12 max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          {getCategoryLabel(category)}
+    <div className="ds-page max-w-5xl">
+      <header className="ds-cinematic-frame mb-12 max-w-4xl p-6 sm:p-8">
+        <div className="ds-cinematic-beam" aria-hidden />
+        <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
+          Categorie blog
+        </p>
+        <h1 className="relative z-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <span className="ds-title-line">
+            <span>{getCategoryLabel(category)}</span>
+          </span>
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+        <p className="relative z-10 mt-4 text-lg leading-relaxed text-white/85">
           {CATEGORY_DESCRIPTIONS[category] ??
             `Tous les articles publiés dans cette catégorie.`}
         </p>

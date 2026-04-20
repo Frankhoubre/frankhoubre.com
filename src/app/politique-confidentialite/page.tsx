@@ -10,13 +10,16 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-20">
-      <h1 className="text-3xl font-semibold tracking-tight">
-        Politique de confidentialité
-      </h1>
-      <p className="mt-4 text-sm text-neutral-600">
-        Dernière mise à jour : mars 2026.
-      </p>
+    <div className="ds-page max-w-3xl">
+      <section className="ds-hero p-6 sm:p-8">
+        <p className="ds-eyebrow">RGPD</p>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+          Politique de confidentialité
+        </h1>
+        <p className="mt-4 text-sm text-neutral-600">
+          Dernière mise à jour : mars 2026.
+        </p>
+      </section>
       <div className="prose-cinema mt-8 max-w-none space-y-6 text-neutral-800">
         <section>
           <h2 className="text-xl font-semibold text-neutral-950">
@@ -29,7 +32,7 @@ export default function PrivacyPage() {
             (courriel) pour l’exercice de vos droits, comme pour la page{" "}
             <Link
               href="/mentions-legales"
-              className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              className="ds-link font-medium text-neutral-950"
             >
               Mentions légales
             </Link>
@@ -68,7 +71,7 @@ export default function PrivacyPage() {
               des cookies ou traiter des données selon{" "}
               <a
                 href="https://policies.google.com/privacy?hl=fr"
-                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+                className="ds-link font-medium text-neutral-950"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -143,7 +146,7 @@ export default function PrivacyPage() {
             vous pouvez utiliser les coordonnées indiquées sur la page{" "}
             <Link
               href="/contact"
-              className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              className="ds-link font-medium text-neutral-950"
             >
               Contact
             </Link>{" "}

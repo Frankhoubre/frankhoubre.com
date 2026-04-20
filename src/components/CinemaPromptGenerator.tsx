@@ -394,7 +394,7 @@ export function CinemaPromptGenerator() {
                 <select
                   value={state.camera}
                   onChange={(e) => updateField("camera", e.target.value)}
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 >
                   {toolData.cameras.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -409,7 +409,7 @@ export function CinemaPromptGenerator() {
                 <select
                   value={state.lens}
                   onChange={(e) => updateField("lens", e.target.value)}
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 >
                   {toolData.lenses.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -424,7 +424,7 @@ export function CinemaPromptGenerator() {
                 <select
                   value={state.aperture}
                   onChange={(e) => updateField("aperture", e.target.value)}
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 >
                   {toolData.apertures.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -439,7 +439,7 @@ export function CinemaPromptGenerator() {
                 <select
                   value={state.iso}
                   onChange={(e) => updateField("iso", e.target.value)}
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 >
                   {toolData.isos.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -454,7 +454,7 @@ export function CinemaPromptGenerator() {
                 <select
                   value={state.style}
                   onChange={(e) => updateField("style", e.target.value)}
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 >
                   {toolData.styles.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -469,7 +469,7 @@ export function CinemaPromptGenerator() {
                 <select
                   value={state.lighting}
                   onChange={(e) => updateField("lighting", e.target.value)}
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 >
                   {toolData.lightings.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -486,21 +486,21 @@ export function CinemaPromptGenerator() {
                   value={state.subject}
                   onChange={(e) => updateField("subject", e.target.value)}
                   placeholder="ex: a lone detective crossing a rain-soaked neon street at night"
-                  className="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none ring-neutral-400 transition placeholder:text-neutral-500 focus:border-neutral-500 focus:ring-2"
+                  className="ds-input"
                 />
               </label>
 
               <div className="flex flex-wrap items-center gap-3 pt-1 sm:col-span-2">
                 <button
                   type="submit"
-                  className="rounded-xl bg-neutral-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-neutral-800"
+                  className="ds-cta-dark"
                 >
                   Generer le prompt
                 </button>
                 <button
                   type="button"
                   onClick={copyPrompt}
-                  className="rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm font-medium text-neutral-900 transition hover:border-neutral-400 hover:bg-neutral-50"
+                  className="ds-button-secondary text-sm font-medium text-neutral-900"
                 >
                   Copier le prompt
                 </button>

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function OutilsPage() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+    <div className="ds-page max-w-5xl">
       <header className="ds-surface max-w-3xl p-6 sm:p-8">
         <p className="text-xs uppercase tracking-[0.18em] text-neutral-500">
           Ressources
@@ -51,7 +51,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/annuaire-ia-audio-sfx-musicales"
-                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
               </Link>
@@ -71,7 +71,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/annuaire-generateurs-images-ia-gratuits"
-                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
               </Link>
@@ -91,7 +91,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/generateur-storyboard-pdf"
-                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
               </Link>
@@ -111,7 +111,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/calculateur-budget-production-ia/"
-                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
               </Link>
@@ -131,7 +131,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/reverse-prompting-image-ia"
-                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
               </Link>
@@ -151,7 +151,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/generateur-prompt-cinema"
-                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
               </Link>

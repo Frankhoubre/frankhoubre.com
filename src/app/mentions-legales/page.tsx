@@ -9,8 +9,13 @@ export const metadata: Metadata = {
 
 export default function LegalPage() {
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-20">
-      <h1 className="text-3xl font-semibold tracking-tight">Mentions légales</h1>
+    <div className="ds-page max-w-3xl">
+      <section className="ds-hero p-6 sm:p-8">
+        <p className="ds-eyebrow">Conformite</p>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+          Mentions légales
+        </h1>
+      </section>
       <div className="prose-cinema mt-8 max-w-none space-y-6 text-neutral-800">
         <section>
           <h2 className="text-xl font-semibold text-neutral-950">
@@ -57,7 +62,7 @@ export default function LegalPage() {
             <br />
             <a
               href="https://vercel.com"
-              className="text-neutral-950 underline underline-offset-2 hover:text-neutral-600"
+              className="ds-link text-neutral-950 hover:text-neutral-600"
             >
               vercel.com
             </a>

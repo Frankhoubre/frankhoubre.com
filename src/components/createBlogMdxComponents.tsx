@@ -99,8 +99,7 @@ export function createBlogMdxComponents(
     );
   };
 
-  const baseLink =
-    "font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600";
+  const baseLink = "ds-link font-medium text-neutral-950";
 
   return {
     h1: makeHeading("h1", headingSeen),

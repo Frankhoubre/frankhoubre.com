@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Space_Grotesk } from "next/font/google";
+import { FormationPromoModal } from "@/components/FormationPromoModal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { baseUrl, siteName } from "@/lib/site";
@@ -40,10 +41,11 @@ export default function RootLayout({
       lang="fr"
       className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground">
+      <body className="relative isolate flex min-h-full flex-col bg-background text-foreground">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main className="relative z-10 flex-1">{children}</main>
         <SiteFooter />
+        <FormationPromoModal />
       </body>
     </html>
   );

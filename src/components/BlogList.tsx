@@ -108,10 +108,10 @@ export function BlogList({
           <button
             type="button"
             onClick={() => setCategory("")}
-            className={`cursor-pointer rounded-full px-3 py-1.5 text-sm font-medium transition ${
+            className={`ds-chip ${
               category === ""
-                ? "bg-blue-600 text-white"
-                : "bg-neutral-100 text-neutral-800 hover:bg-neutral-200"
+                ? "ds-chip-active"
+                : ""
             }`}
           >
             Toutes
@@ -121,10 +121,10 @@ export function BlogList({
               key={c.slug}
               type="button"
               onClick={() => setCategory(c.slug)}
-              className={`cursor-pointer rounded-full px-3 py-1.5 text-sm font-medium transition ${
+              className={`ds-chip ${
                 category === c.slug
-                  ? "bg-blue-600 text-white"
-                  : "bg-neutral-100 text-neutral-800 hover:bg-neutral-200"
+                  ? "ds-chip-active"
+                  : ""
               }`}
             >
               {c.label}
@@ -284,7 +284,7 @@ export function BlogList({
               type="button"
               disabled={currentPage <= 1}
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              className="cursor-pointer rounded-md border border-neutral-200 px-3 py-1.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
+              className="ds-chip rounded-md px-3 py-1.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
             >
               Précédent
             </button>
@@ -302,10 +302,10 @@ export function BlogList({
                     key={n}
                     type="button"
                     onClick={() => setCurrentPage(n)}
-                    className={`min-w-9 cursor-pointer rounded-md px-2 py-1.5 text-sm font-medium ${
+                    className={`ds-chip min-w-9 rounded-md px-2 py-1.5 text-sm font-medium ${
                       n === currentPage
-                        ? "bg-blue-600 text-white"
-                        : "border border-neutral-200 hover:bg-neutral-100"
+                        ? "ds-chip-active"
+                        : ""
                     }`}
                   >
                     {n}
@@ -319,7 +319,7 @@ export function BlogList({
               onClick={() =>
                 setCurrentPage((p) => Math.min(totalPages, p + 1))
               }
-              className="cursor-pointer rounded-md border border-neutral-200 px-3 py-1.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
+              className="ds-chip rounded-md px-3 py-1.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
             >
               Suivant
             </button>

@@ -1,11 +1,12 @@
+import { ToolIframePage } from "@/components/ToolIframePage";
+
 export default function AnnuaireGenerateursImagesIaGratuitsPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-16 pt-8 sm:px-6 lg:px-8">
-      <iframe
-        title="Annuaire generateurs images IA gratuits"
-        src="/outils/annuaire-generateurs-images-ia-gratuits/index.html"
-        className="h-[80vh] w-full rounded-2xl border border-neutral-200 bg-white"
-      />
-    </div>
+    <ToolIframePage
+      title="Annuaire des generateurs d'images IA gratuits"
+      subtitle="Compare les plateformes image IA gratuites avec une interface claire pour trouver rapidement l'outil adapte a ton style et ton niveau."
+      iframeTitle="Annuaire generateurs images IA gratuits"
+      iframeSrc="/outils/annuaire-generateurs-images-ia-gratuits/index.html"
+    />
   );
 }

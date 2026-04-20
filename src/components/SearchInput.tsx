@@ -20,7 +20,7 @@ export function SearchInput({
       value={value}
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
-      className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2 text-sm text-neutral-950 shadow-sm outline-none ring-neutral-400 placeholder:text-neutral-600 focus:ring-2"
+      className="ds-input shadow-sm"
       autoComplete="off"
     />
   );

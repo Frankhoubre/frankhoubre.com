@@ -175,30 +175,47 @@ export default function HomePage() {
             className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/25"
             aria-hidden
           />
+          <div className="ds-cinematic-beam" aria-hidden />
           <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
             <div className="mx-auto max-w-4xl min-w-0">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/75">
                 Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
-              <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-white motion-safe:animate-[var(--reveal)] sm:text-5xl xl:text-[3.45rem] xl:leading-[1.05]">
-                Frank Houbre, formateur IA, créateur vidéo IA et réalisateur orienté cinéma
+              <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-[3.45rem] xl:leading-[1.05]">
+                <span className="ds-title-line">
+                  <span>Frank Houbre, formateur IA</span>
+                </span>
+                <span className="ds-title-line delay-1">
+                  <span>créateur vidéo IA</span>
+                </span>
+                <span className="ds-title-line delay-2">
+                  <span>et réalisateur orienté cinéma</span>
+                </span>
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90 motion-safe:animate-[var(--reveal)] motion-safe:[animation-delay:120ms] sm:text-xl">
+              <p className="ds-reveal ds-reveal-delay-1 mt-5 max-w-3xl text-lg leading-relaxed text-white/90 sm:text-xl">
                 J’aide les créateurs, indépendants, agences et marques à produire des{" "}
                 <span className="text-white">images, vidéos et films IA plus crédibles</span>,
                 avec une vraie méthode de direction artistique, de narration visuelle et de
                 workflow de production.
               </p>
 
-              <div className="mt-10 motion-safe:animate-[var(--reveal)] motion-safe:[animation-delay:220ms]">
-                <a
-                  href="https://www.skool.com/ai-studios"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex cursor-pointer items-center justify-center rounded-full bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/25 transition-colors duration-200 hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
-                >
-                  Formation gratuite 7 jours
-                </a>
+              <div className="ds-reveal ds-reveal-delay-2 mt-10">
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://www.skool.com/ai-studios"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ds-cta-primary ds-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                  >
+                    Formation gratuite 7 jours
+                  </a>
+                  <Link
+                    href="/liens"
+                    className="ds-cta-ghost-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+                  >
+                    Voir tous mes liens
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -224,7 +241,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <aside className="ds-card rounded-3xl p-6">
+            <aside className="ds-card ds-reveal ds-reveal-delay-1 rounded-3xl p-6">
               <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
                 Signaux publics
               </p>
@@ -262,7 +279,7 @@ export default function HomePage() {
 
             <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               <li>
-                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                <article className="ds-card ds-reveal flex h-full flex-col p-6">
                   <span className="text-[11px] uppercase tracking-[0.15em] text-amber-900/80">
                     01 - Formation IA
                   </span>
@@ -277,7 +294,7 @@ export default function HomePage() {
                 </article>
               </li>
               <li>
-                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                <article className="ds-card ds-reveal ds-reveal-delay-1 flex h-full flex-col p-6">
                   <span className="text-[11px] uppercase tracking-[0.15em] text-sky-900/75">
                     02 - Réalisation IA
                   </span>
@@ -291,7 +308,7 @@ export default function HomePage() {
                 </article>
               </li>
               <li>
-                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                <article className="ds-card ds-reveal ds-reveal-delay-2 flex h-full flex-col p-6">
                   <span className="text-[11px] uppercase tracking-[0.15em] text-emerald-900/75">
                     03 - Workflows
                   </span>
@@ -338,7 +355,7 @@ export default function HomePage() {
 
         <section className="ds-section bg-zinc-50/60">
           <div className="mx-auto grid max-w-5xl gap-6 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-3">
-            <article className="ds-card rounded-3xl p-6">
+                <article className="ds-card ds-reveal rounded-3xl p-6">
               <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
                 Pour apprendre
               </p>
@@ -392,7 +409,7 @@ export default function HomePage() {
 
             <ul className="mt-10 grid gap-5 md:grid-cols-2">
               <li>
-                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                <article className="ds-card ds-reveal flex h-full flex-col p-6">
                   <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                     Court film IA
                   </p>
@@ -418,14 +435,14 @@ export default function HomePage() {
                     href="https://vimeo.com/1164434045?fl=ip&fe=ec"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-200 hover:decoration-neutral-600"
+                    className="ds-link mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950"
                   >
                     Voir sur Vimeo
                   </a>
                 </article>
               </li>
               <li>
-                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                <article className="ds-card ds-reveal ds-reveal-delay-1 flex h-full flex-col p-6">
                   <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                     Animé IA
                   </p>
@@ -451,7 +468,7 @@ export default function HomePage() {
                     href="https://youtu.be/TaoYARoU7Lc?si=csVLgOV_wuQs4uA0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-200 hover:decoration-neutral-600"
+                    className="ds-link mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950"
                   >
                     Voir sur YouTube
                   </a>
@@ -504,7 +521,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/blog"
-                className="shrink-0 cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-200 hover:decoration-neutral-600"
+                className="ds-link shrink-0 cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Tout le blog
               </Link>
@@ -519,7 +536,7 @@ export default function HomePage() {
                 Les articles arrivent bientôt. En attendant, vous pouvez consulter le{" "}
                 <Link
                   href="/blog"
-                  className="cursor-pointer font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2"
+                  className="ds-link cursor-pointer font-medium text-neutral-950"
                 >
                   blog
                 </Link>

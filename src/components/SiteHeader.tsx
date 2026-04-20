@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
 import { siteName } from "@/lib/site";
 
 export function SiteHeader() {
@@ -69,6 +70,18 @@ export function SiteHeader() {
           >
             Outils
           </Link>
+          <a
+            href={FORMATION_PROMO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
+          >
+            Formation gratuite
+          </a>
           <Link
             href="/a-propos"
             className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${

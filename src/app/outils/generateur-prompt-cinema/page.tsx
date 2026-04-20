@@ -82,7 +82,7 @@ const jsonLd = {
 
 export default function CinemaPromptGeneratorPage() {
   return (
-    <main className="mx-auto max-w-6xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+    <main className="ds-page max-w-6xl !pt-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -91,15 +91,15 @@ export default function CinemaPromptGeneratorPage() {
       <CinemaPromptGenerator />
 
       <article className="max-w-none space-y-8">
-        <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-8">
+        <section className="ds-card p-6 sm:p-8">
           <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
             Comment utiliser cet outil ?
           </h2>
           <ol className="mt-4 list-decimal space-y-2 pl-6 text-neutral-700">
-            <li>Choisissez votre camera pour definir la texture globale de l'image.</li>
+            <li>Choisissez votre camera pour definir la texture globale de l&apos;image.</li>
             <li>Selectionnez un objectif pour controler la profondeur de champ et la perspective.</li>
-            <li>Reglez l'ouverture et l'ISO pour piloter profondeur de champ et grain.</li>
-            <li>Choisissez un style visuel puis l'eclairage pour obtenir l'ambiance voulue.</li>
+            <li>Reglez l&apos;ouverture et l&apos;ISO pour piloter profondeur de champ et grain.</li>
+            <li>Choisissez un style visuel puis l&apos;eclairage pour obtenir l&apos;ambiance voulue.</li>
             <li>Generez puis copiez le prompt en anglais dans votre IA preferee.</li>
           </ol>
           <p className="mt-4 leading-relaxed text-neutral-700">
@@ -109,7 +109,7 @@ export default function CinemaPromptGeneratorPage() {
           </p>
         </section>
 
-        <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-8">
+        <section className="ds-card p-6 sm:p-8">
           <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
             Pourquoi utiliser l&apos;IA pour structurer un prompt cinema ?
           </h2>
@@ -134,7 +134,7 @@ export default function CinemaPromptGeneratorPage() {
           </p>
         </section>
 
-        <section className="rounded-2xl border border-neutral-200/90 bg-white p-6 sm:p-8">
+        <section className="ds-card p-6 sm:p-8">
           <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">Foire Aux Questions (FAQ)</h2>
           <div className="mt-4 space-y-3">
             {faqEntries.map((entry) => (

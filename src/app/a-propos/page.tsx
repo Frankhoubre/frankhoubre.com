@@ -78,7 +78,8 @@ export default function AboutPage() {
       />
 
       <article className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-        <header className="grid gap-8 lg:grid-cols-[0.55fr_1.45fr] lg:items-start">
+        <header className="ds-cinematic-frame grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.55fr_1.45fr] lg:items-start">
+          <div className="ds-cinematic-beam" aria-hidden />
           <figure className="mx-auto w-full max-w-[170px] overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-100 shadow-sm sm:max-w-[200px] lg:mx-0 lg:max-w-[220px]">
             <Image
               src="/images/frank-houbre-about.png"
@@ -91,12 +92,20 @@ export default function AboutPage() {
             />
           </figure>
 
-          <div className="space-y-5">
-            <p className="text-xs uppercase tracking-wide text-neutral-500">À propos</p>
-            <h1 className="text-3xl font-semibold tracking-tight text-neutral-950 sm:text-5xl">
-              Frank Houbre, formateur IA, réalisateur IA et entrepreneur
+          <div className="relative z-10 space-y-5">
+            <p className="text-xs uppercase tracking-wide text-white/70">À propos</p>
+            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+              <span className="ds-title-line">
+                <span>Frank Houbre</span>
+              </span>
+              <span className="ds-title-line delay-1">
+                <span>formateur IA et realisateur IA</span>
+              </span>
+              <span className="ds-title-line delay-2">
+                <span>entrepreneur et createur</span>
+              </span>
             </h1>
-            <div className="space-y-4 text-lg leading-relaxed text-neutral-800">
+            <div className="space-y-4 text-lg leading-relaxed text-white/85">
               <p>
                 Frank Houbre est un <strong>entrepreneur français</strong>, <strong>formateur IA</strong> et{" "}
                 <strong>réalisateur IA</strong> spécialisé dans la création d’<strong>images</strong>,
@@ -209,7 +218,7 @@ export default function AboutPage() {
               href="https://businessdynamite.xyz/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              className="ds-link font-medium text-neutral-950"
             >
               Business Dynamite
             </a>
@@ -255,7 +264,7 @@ export default function AboutPage() {
                 href="https://www.skool.com/ai-studios"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+                className="ds-link font-medium text-neutral-950"
               >
                 AI Studios
               </a>
@@ -271,7 +280,7 @@ export default function AboutPage() {
                 href="https://screenweaver.ai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+                className="ds-link font-medium text-neutral-950"
               >
                 ScreenWeaver
               </a>
@@ -289,7 +298,7 @@ export default function AboutPage() {
                 href="https://vimeo.com/1164434045?fl=ip&fe=ec"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+                className="ds-link font-medium text-neutral-950"
               >
                 Ronces
               </a>{" "}
@@ -298,7 +307,7 @@ export default function AboutPage() {
                 href="https://youtu.be/TaoYARoU7Lc?si=csVLgOV_wuQs4uA0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+                className="ds-link font-medium text-neutral-950"
               >
                 VOIDBORN
               </a>{" "}
@@ -396,7 +405,7 @@ export default function AboutPage() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+                  className="ds-link font-medium text-neutral-950"
                 >
                   {item.label}
                 </a>
@@ -407,7 +416,7 @@ export default function AboutPage() {
             Pour en savoir plus, consultez le{" "}
             <Link
               href="/blog"
-              className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              className="ds-link font-medium text-neutral-950"
             >
               blog
             </Link>{" "}
@@ -415,14 +424,14 @@ export default function AboutPage() {
             {" "}la page{" "}
             <Link
               href="/"
-              className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              className="ds-link font-medium text-neutral-950"
             >
               d’accueil
             </Link>{" "}
             pour le positionnement général, ou la page{" "}
             <Link
               href="/contact"
-              className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2 hover:decoration-neutral-600"
+              className="ds-link font-medium text-neutral-950"
             >
               Contact
             </Link>

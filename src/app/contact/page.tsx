@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { baseUrl, siteName } from "@/lib/site";
-import { ContactForm } from "./ContactForm";
+
+const contactEmail = "hello@businessdynamite.xyz";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -17,11 +18,17 @@ export default function ContactPage() {
         </p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Contact</h1>
         <p className="mt-4 text-neutral-800">
-          Une question, un besoin ou un projet ? Envoyez votre message via le
-          formulaire ci-dessous.
+          Une question, un besoin ou un projet ? Écrivez à :
+        </p>
+        <p className="mt-6">
+          <a
+            href={`mailto:${contactEmail}`}
+            className="ds-link break-all text-xl font-semibold text-neutral-950"
+          >
+            {contactEmail}
+          </a>
         </p>
       </div>
-      <ContactForm />
     </div>
   );
 }

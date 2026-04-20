@@ -9,12 +9,11 @@ type Props = {
 
 export function Badge({ category, href, className = "" }: Props) {
   const label = getCategoryLabel(category);
-  const base =
-    "inline-flex items-center rounded-full bg-neutral-950 px-2.5 py-0.5 text-xs font-medium text-white backdrop-blur-sm";
+  const base = "ds-badge";
 
   if (href) {
     return (
-      <Link href={href} className={`${base} ${className} hover:opacity-90`}>
+      <Link href={href} className={`${base} ${className}`}>
         {label}
       </Link>
     );

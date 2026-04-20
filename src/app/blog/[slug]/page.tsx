@@ -319,17 +319,18 @@ export default async function BlogArticlePage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ReadingProgressBar />
-      <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,42rem)_minmax(0,1fr)] lg:gap-10">
           <div className="hidden lg:block" aria-hidden />
           <article className="min-w-0 max-w-2xl justify-self-center lg:col-start-2">
-            <nav
-              className="mb-4 text-sm text-neutral-700"
-              aria-label="Fil d'Ariane"
-            >
+            <section className="ds-hero p-5 sm:p-6">
+              <nav
+                className="mb-4 text-sm text-neutral-700"
+                aria-label="Fil d'Ariane"
+              >
               <ol className="flex flex-wrap items-center gap-2">
                 <li>
-                  <Link href="/" className="hover:text-neutral-950 hover:underline">
+                  <Link href="/" className="ds-link hover:text-neutral-950">
                     Accueil
                   </Link>
                 </li>
@@ -337,7 +338,7 @@ export default async function BlogArticlePage({ params }: Props) {
                 <li>
                   <Link
                     href="/blog"
-                    className="hover:text-neutral-950 hover:underline"
+                    className="ds-link hover:text-neutral-950"
                   >
                     Blog
                   </Link>
@@ -345,33 +346,34 @@ export default async function BlogArticlePage({ params }: Props) {
                 <li aria-hidden>›</li>
                 <li className="text-neutral-950">{post.frontmatter.title}</li>
               </ol>
-            </nav>
-            <Link
-              href="/blog"
-              className="text-sm font-medium text-neutral-800 hover:text-neutral-950"
-            >
-              ← Blog
-            </Link>
-            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-neutral-800">
-              <Badge
-                category={post.frontmatter.category}
-                href={`/blog/category/${post.frontmatter.category}`}
-              />
-              <time dateTime={post.frontmatter.date}>
-                {dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
-              </time>
-              <span aria-hidden>·</span>
-              <span>{minutes} min de lecture</span>
-            </div>
-            <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-              {post.frontmatter.title}
-            </h1>
-            <p className="mt-4 text-lg leading-relaxed text-neutral-800">
-              {post.frontmatter.excerpt}
-            </p>
-            <div className="mt-6">
-              <ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />
-            </div>
+              </nav>
+              <Link
+                href="/blog"
+                className="text-sm font-medium text-neutral-800 hover:text-neutral-950"
+              >
+                ← Blog
+              </Link>
+              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-neutral-800">
+                <Badge
+                  category={post.frontmatter.category}
+                  href={`/blog/category/${post.frontmatter.category}`}
+                />
+                <time dateTime={post.frontmatter.date}>
+                  {dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
+                </time>
+                <span aria-hidden>·</span>
+                <span>{minutes} min de lecture</span>
+              </div>
+              <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+                {post.frontmatter.title}
+              </h1>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+                {post.frontmatter.excerpt}
+              </p>
+              <div className="mt-6">
+                <ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />
+              </div>
+            </section>
             <YouTubeEmbed
               videoId={heroVideoId}
               title={`Vidéo liée: ${post.frontmatter.title}`}
@@ -419,8 +421,8 @@ export default async function BlogArticlePage({ params }: Props) {
               ) : null}
             </div>
 
-            <footer className="mt-14 rounded-2xl border border-neutral-200 bg-[var(--background)] px-5 py-8 sm:px-6">
-              <p className="font-mono text-xs uppercase tracking-wide text-neutral-500">
+            <footer className="ds-hero mt-14 rounded-2xl px-5 py-8 sm:px-6">
+              <p className="text-xs uppercase tracking-wide text-neutral-500">
                 Auteur
               </p>
               <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-start">
@@ -450,7 +452,7 @@ export default async function BlogArticlePage({ params }: Props) {
                   >
                     <Link
                       href="/a-propos"
-                      className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                      className="ds-link text-neutral-950"
                     >
                       À propos
                     </Link>
@@ -459,7 +461,7 @@ export default async function BlogArticlePage({ params }: Props) {
                     </span>
                     <Link
                       href="/contact"
-                      className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                      className="ds-link text-neutral-950"
                     >
                       Contact
                     </Link>
@@ -468,7 +470,7 @@ export default async function BlogArticlePage({ params }: Props) {
                     </span>
                     <Link
                       href="/blog"
-                      className="text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                      className="ds-link text-neutral-950"
                     >
                       Tous les articles
                     </Link>
