@@ -71,6 +71,12 @@ export function SiteHeader() {
           >
             Contact
           </Link>
+          <Link
+            href="/liens"
+            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+          >
+            Liens
+          </Link>
         </nav>
       </div>
     </header>
