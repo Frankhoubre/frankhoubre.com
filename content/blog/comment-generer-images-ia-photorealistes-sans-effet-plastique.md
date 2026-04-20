@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-generer-images-ia-photorealistes-sans-effet-pla
 Tu peux avoir un prompt propre, un modèle puissant, une belle idée.  
 Si la texture est fausse, ton image sonne fake en deux secondes.
 
-![Hero image, photo réalisme sans plastique.](hero.webp)
+![Hero image, photo réalisme sans plastique.](/images/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique/hero.webp)
 
 
 Le rendu plastique vient presque toujours d’un mélange de mauvais signaux, trop de netteté, trop de lissage, lumière non motivée, prompt décoratif. Pour éviter ça, construis ton image comme un plan de tournage. Commence par la logique lumière, puis matière, puis composition. Tu peux t’appuyer sur [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) avant d’attaquer les détails peau.
@@ -43,7 +43,7 @@ Pour corriger les prompts trop artificiels, relie directement ce guide à [les e
 | Tissus faux | netteté globale | matière décrite + sharp réduit |
 | Décor CGI | style trop propre | imperfection locale contrôlée |
 
-![Image contextuelle 1, contrôle texture peau et tissu.](workflow-1.webp)
+![Image contextuelle 1, contrôle texture peau et tissu.](/images/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique/workflow-1.webp)
 
 
 ## Vidéo YouTube intégrée
@@ -66,7 +66,7 @@ Observe surtout:
 
 Si tu veux stabiliser ce rendu sur plusieurs plans, enchaîne avec [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
 
-![Image contextuelle 2, comparaison avant/après correction réaliste.](workflow-2.webp)
+![Image contextuelle 2, comparaison avant/après correction réaliste.](/images/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique/workflow-2.webp)
 
 
 

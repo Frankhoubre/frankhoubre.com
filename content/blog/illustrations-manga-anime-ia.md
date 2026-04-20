@@ -19,7 +19,7 @@ Pour les personnages sur plusieurs vues, [tutoriel complet : comment créer des 
 
 Demande des **lignes fermées**, mais garde une légère irrégularité contrôlée si tu veux éviter le rendu vectoriel froid. Teste zoom 100 % sur les yeux et les mains stylisées.
 
-![Repère de workflow : ligne, aplats, ombres codées.](workflow-1.webp)
+![Repère de workflow : ligne, aplats, ombres codées.](/images/blog/illustrations-manga-anime-ia/workflow-1.webp)
 
 ## Couleur : palettes réduites
 
@@ -172,7 +172,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : style = contraintes, pas accumulation de mots.
 
-![Second repère : palette et cases lisibles mobile.](workflow-2.webp)
+![Second repère : palette et cases lisibles mobile.](/images/blog/illustrations-manga-anime-ia/workflow-2.webp)
 
 ## FAQ
 

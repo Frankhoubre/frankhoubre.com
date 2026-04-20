@@ -13,7 +13,7 @@ Et là, le mur. L’image bouge, oui, mais elle ne vit pas. Peau plastique, lumi
 
 Ce guide est fait pour t’éviter ça. Pas de magie. Pas de jargon inutile. Une méthode de plateau, adaptée à l’IA locale, pour produire une vraie vidéo cinématique crédible.
 
-![Hero, cadre cinématique réaliste.](hero.webp)
+![Hero, cadre cinématique réaliste.](/images/blog/comment-creer-video-cinematique-ia-etape-par-etape/hero.webp)
 
 
 ## Le vrai point de départ
@@ -151,7 +151,7 @@ Base:
 - effets ponctuels à -18/-14
 - musique en support, pas en camouflage
 
-![Image contextuelle, workflow de génération.](workflow-1.webp)
+![Image contextuelle, workflow de génération.](/images/blog/comment-creer-video-cinematique-ia-etape-par-etape/workflow-1.webp)
 
 
 ## Tableau de réglages de départ
@@ -209,7 +209,7 @@ Fix: une variable par itération.
 
 Pour éviter les dérives de texture qui cassent le réalisme, complète avec [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique).
 
-![Image contextuelle, validation qualité avant export.](workflow-2.webp)
+![Image contextuelle, validation qualité avant export.](/images/blog/comment-creer-video-cinematique-ia-etape-par-etape/workflow-2.webp)
 
 
 ## Vidéo YouTube à intégrer

@@ -61,7 +61,7 @@ Les **catchlights** doivent matcher la source. Une fenêtre à gauche, un reflet
 
 **Distance psychologique.** Un 85 mm serré avec une key douche crée une intimité. Un 35 mm avec une key dure peut créer une tension documentaire. Choisis l’accord **focale + lumière** comme un réalisateur choisit une scène.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-portrait-ia-digne-film/workflow-1.webp)
 
 ## Workflow en huit étapes
 
@@ -103,7 +103,7 @@ Réduis l’image à la taille d’une vignette YouTube. Si la lecture tombe, le
 
 Si tu animés ensuite, garde une variante sans sharpening agressif sur la peau pour éviter les artefacts en mouvement.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-creer-portrait-ia-digne-film/workflow-2.webp)
 
 ## Post-production honnête pour un portrait qui reste humain
 

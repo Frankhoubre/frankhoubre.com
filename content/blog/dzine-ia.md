@@ -71,7 +71,7 @@ Repère visuel atelier (généré localement si tu veux matérialiser l’articl
 
 > La cohérence d’un personnage animé commence comme une cohérence de plateau : mêmes sources, mêmes proportions, mêmes défauts assumés. Si tu poursuis la perfection lisse, tu obtiens le plastique ; si tu poursuis une vérité matière, l’œil pardonne un grain en plus.
 
-![Feuilles de recherche personnage avant de lancer l'animation.](workflow-1.png)
+![Feuilles de recherche personnage avant de lancer l'animation.](/images/blog/dzine-ia/workflow-1.png)
 
 Étape « feuilles et crayon » pour forcer le design avant le mouvement :
 
@@ -101,7 +101,7 @@ Repère visuel atelier (généré localement si tu veux matérialiser l’articl
 ```text
 ```
 
-![Table de montage, moment où tu juges le réalisme du mouvement et non plus seulement le design.](workflow-2.png)
+![Table de montage, moment où tu juges le réalisme du mouvement et non plus seulement le design.](/images/blog/dzine-ia/workflow-2.png)
 
 ### Table de décision : symptôme → action
 

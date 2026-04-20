@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f5f2;
-  --foreground: #0a0a0a;
+  --background: #fafafa;
+  --foreground: #09090b;
+  --color-primary: #18181b;
+  --color-secondary: #3f3f46;
+  --color-cta: #2563eb;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px rgb(0 0 0 / 0.15);
 }
 
 html {
@@ -12,14 +26,97 @@ html {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(1200px 500px at 8% -5%, rgb(37 99 235 / 0.08), transparent 60%),
+    radial-gradient(900px 420px at 92% 2%, rgb(24 24 27 / 0.06), transparent 60%),
+    var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+.ds-section {
+  border-top: 1px solid rgb(228 228 231 / 0.8);
+  background: #fafafa;
+}
+
+.ds-card {
+  border: 1px solid rgb(228 228 231 / 0.9);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 250ms ease, border-color 250ms ease;
+}
+
+.ds-card:hover {
+  border-color: rgb(161 161 170 / 0.7);
+  box-shadow: var(--shadow-md);
+}
+
+.ds-surface {
+  border: 1px solid rgb(228 228 231 / 0.9);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 0.78);
+  backdrop-filter: blur(10px);
+}
+
+.ds-button-primary {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: var(--color-cta);
+  padding: 0.7rem 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.ds-button-primary:hover {
+  background: #1d4ed8;
+  box-shadow: 0 10px 20px rgb(29 78 216 / 0.25);
+}
+
+.ds-button-secondary {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(161 161 170 / 0.7);
+  background: rgb(255 255 255 / 0.75);
+  padding: 0.7rem 1.1rem;
+  color: #18181b;
+  font-weight: 600;
+  transition: border-color 200ms ease, background-color 200ms ease, transform 200ms ease;
+}
+
+.ds-button-secondary:hover {
+  border-color: rgb(113 113 122 / 0.8);
+  background: #fff;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .prose-cinema {

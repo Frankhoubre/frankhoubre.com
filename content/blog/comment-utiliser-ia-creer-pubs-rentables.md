@@ -268,7 +268,7 @@ Angle "coût caché du process actuel", preuve via mini-chiffres, visuels sobrem
 
 Angle "erreurs débutants", preuves pédagogiques, voix claire, montage dynamique sans sur-stylisation. Résultat: meilleure complétion vidéo et amélioration ROAS sur audiences lookalike.
 
-![Responsable ads comparant dashboards ROAS et variantes créatives gagnantes](https://images.unsplash.com/photo-1551281044-8b7e5f3f1f82)
+![Responsable ads comparant dashboards ROAS et variantes créatives gagnantes](/images/blog/comment-utiliser-ia-creer-pubs-rentables/external-1.png)
 
 ## Système d'équipe: qui décide quoi
 

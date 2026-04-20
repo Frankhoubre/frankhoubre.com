@@ -12,7 +12,7 @@ La plupart des debutants ecrivent “cinematic lens” en esperant un miracle.
 Ce n’est pas assez.  
 Il faut decrire une geometrie, pas une intention vague.
 
-![Hero image, choix d'objectifs camera en prompt.](hero.webp)
+![Hero image, choix d'objectifs camera en prompt.](/images/blog/comment-utiliser-objectifs-camera-dans-prompt-ia/hero.webp)
 
 
 ## Pourquoi la focale change tout
@@ -84,7 +84,7 @@ Dans `[SCENE DESCRIPTION]`, ajoute:
 
 Quand tu veux renforcer l’aspect anamorphique sans tomber dans le flare artificiel, la logique detaillee est dans [comment simuler un objectif anamorphique en generation IA](/blog/comment-simuler-objectif-anamorphique-generation-ia).
 
-![Image contextuelle 1, comparaison 24mm 35mm 50mm 85mm.](workflow-1.webp)
+![Image contextuelle 1, comparaison 24mm 35mm 50mm 85mm.](/images/blog/comment-utiliser-objectifs-camera-dans-prompt-ia/workflow-1.webp)
 
 
 ## Video YouTube a integrer dans l'article
@@ -118,7 +118,7 @@ Pour corriger les prompts qui deviennent artificiels a cause d’un mauvais mix 
 > **Insight plateau**  
 > Une focale bien choisie simplifie tout le reste du pipeline.
 
-![Image contextuelle 2, verification geometrie et profondeur au montage.](workflow-2.webp)
+![Image contextuelle 2, verification geometrie et profondeur au montage.](/images/blog/comment-utiliser-objectifs-camera-dans-prompt-ia/workflow-2.webp)
 
 
 ## Checklist QA avant validation

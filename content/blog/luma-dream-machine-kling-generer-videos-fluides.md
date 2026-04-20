@@ -3,7 +3,7 @@ title: "Luma Dream Machine / Kling : comment générer des vidéos fluides"
 date: "2026-04-20"
 category: "tutoriels"
 excerpt: "Méthode complète pour obtenir des vidéos IA fluides avec Luma Dream Machine et Kling, sans artefacts ni rendu artificiel."
-thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279"
+thumbnail: "/images/blog/luma-dream-machine-kling-generer-videos-fluides/hero.png"
 ---
 
 # Luma Dream Machine / Kling : comment générer des vidéos fluides
@@ -14,7 +14,7 @@ Le vrai enjeu n’est pas de générer vite. Le vrai enjeu est de générer flui
 
 Dans cette masterclass, tu vas apprendre à utiliser Luma Dream Machine et Kling comme des outils de production, pas comme des machines à “wow”. On va parler préproduction, prompts, contrôle mouvement, segmentation, postproduction, et validation multi-support.
 
-![Créateur vidéo comparant une séquence Luma et Kling sur une station de postproduction](https://images.unsplash.com/photo-1536240478700-b869070f9279)
+![Créateur vidéo comparant une séquence Luma et Kling sur une station de postproduction](/images/blog/luma-dream-machine-kling-generer-videos-fluides/hero.png)
 
 ## Ce que “vidéo fluide” signifie vraiment en production
 
@@ -62,7 +62,7 @@ Conserve les versions retenues avec un nommage strict (`S03_P02_v4_luma`). Sans 
 
 > 💡 **Frank's Cut:** si un plan commence à dériver après la 3e seconde, coupe-le avant la dérive. Le spectateur ne voit pas la triche, il ressent la fluidité.
 
-![Timeline vidéo avec segments courts Luma et Kling assemblés plan par plan](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d)
+![Timeline vidéo avec segments courts Luma et Kling assemblés plan par plan](/images/blog/luma-dream-machine-kling-generer-videos-fluides/workflow-1.png)
 
 ### Étape 3: prompts orientés mouvement contrôlé
 
@@ -335,7 +335,7 @@ Luma et Kling peuvent produire d’excellents plans. Mais sans méthode, ils pro
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on generating fluid AI videos with stable cinematic motion].
 
-![Étalonnage final d’une séquence IA pour harmoniser fluidité et texture entre plans](https://images.unsplash.com/photo-1551281044-8b7e5f3f1f82)
+![Étalonnage final d’une séquence IA pour harmoniser fluidité et texture entre plans](/images/blog/luma-dream-machine-kling-generer-videos-fluides/workflow-2.png)
 
 ## Références externes utiles
 

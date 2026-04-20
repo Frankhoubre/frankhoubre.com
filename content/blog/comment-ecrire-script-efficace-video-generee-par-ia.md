@@ -104,7 +104,7 @@ Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles
 Le sharpening global est l’ennemi. Si tu veux du piqué, masque le visage et sharp très peu sur les textiles ou les détails éloignés. Jamais sur la peau au premier plan, sauf si tu cherches un look publicitaire années 2000 volontaire.
 
 Le spectateur regarde les yeux en premier, puis la bouche. Si les yeux sont nets mais la bouche fond, c’est fini. Priorise la netteté sur le triangle du visage, laisse le reste respirer dans le flou optique. C’est aussi comme ça que fonctionnent beaucoup d’objectifs réels.
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-ecrire-script-efficace-video-generee-par-ia/workflow-1.webp)
 
 Le format vertical impose une autre lecture. Un plan large horizontal raconte l’environnement. Un vertical demande un sujet clair, une ligne forte, peu d’éléments parasites sur les bords. Si tu recadres un horizontal en vertical sans repenser la compo, tu obtiens des têtes coupées et des mains qui entrent par surprise.
 
@@ -113,7 +113,7 @@ Les yeux trop brillants et trop bleus sont un signal IA classique. Baisse la sat
 Les copyrights et l’éthique client ne sont pas un paragraphe à la fin. Si tu bosses pour une marque, documente ce qui est généré, ce qui est retouché, ce qui est stock. La technique ici ne remplace pas le cadre légal. Elle vit à côté.
 
 La limite d’un outil n’est pas une insulte personnelle. Si un modèle ne tient pas les mains, contourne. Si un autre ne tient pas les visages de profil, change l’angle. Le studio professionnel choisit l’outil pour la tâche, pas l’inverse.
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-ecrire-script-efficace-video-generee-par-ia/workflow-2.webp)
 
 
 ### Table de décision rapide

@@ -21,7 +21,7 @@ Trop fort : tu perds le dessin. Trop faible : tu n’ajoutes rien. Commence cons
 
 Pour des photos hyper réalistes si tu passes en rendu photo, [comment utiliser l’IA pour générer des photos hyper-réalistes](/blog/photos-hyper-realistes-ia).
 
-![Repère de workflow : scan, dénoise, overlay.](workflow-1.webp)
+![Repère de workflow : scan, dénoise, overlay.](/images/blog/croquis-en-chef-d-oeuvre-ia/workflow-1.webp)
 
 ## ControlNet ou équivalent : quoi verrouiller
 
@@ -171,7 +171,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : une intention claire, puis itération disciplinée.
 
-![Second repère : ordre des passes lumière puis texture.](workflow-2.webp)
+![Second repère : ordre des passes lumière puis texture.](/images/blog/croquis-en-chef-d-oeuvre-ia/workflow-2.webp)
 
 ## FAQ
 

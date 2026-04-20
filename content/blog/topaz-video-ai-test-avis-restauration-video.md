@@ -13,7 +13,7 @@ Ce test résume un usage réel : ce que Topaz fait très bien, ce qu’il casse 
 
 Pour la chaîne image avant vidéo, relie à [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible) et au [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste).
 
-![Station de postproduction, idée de comparatif avant après restauration.](workflow-1.webp)
+![Station de postproduction, idée de comparatif avant après restauration.](/images/blog/topaz-video-ai-test-avis-restauration-video/workflow-1.webp)
 
 ## Ce que Topaz Video AI change vraiment en restauration
 
@@ -45,7 +45,7 @@ Deux versions comparatives seulement : modérée et légèrement poussée. Éval
 
 > **Astuce terrain :** si le plan impressionne mais ne ressemble plus à ta matière d’origine, tu es déjà allé trop loin.
 
-![Idée d’interface de réglages et comparaison de deux passes.](workflow-2.webp)
+![Idée d’interface de réglages et comparaison de deux passes.](/images/blog/topaz-video-ai-test-avis-restauration-video/workflow-2.webp)
 
 ### Étape 3 : régler sans casser la matière
 

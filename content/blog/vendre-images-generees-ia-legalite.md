@@ -23,7 +23,7 @@ Tu peux annoncer « assisté par IA » sans livrer ton prompt Word complet, mais
 
 Pour les logos et identité, rappelle les limites : [création de logo avec l’IA : outils gratuits et astuces de pro](/blog/creation-logo-ia-outils-gratuits-astuces).
 
-![Repère de workflow : packs, droits, transparence.](workflow-1.webp)
+![Repère de workflow : packs, droits, transparence.](/images/blog/vendre-images-generees-ia-legalite/workflow-1.webp)
 
 ## Stock et places de marché
 
@@ -165,7 +165,7 @@ Référence `@BusinessDynamite` :
 
 Pour la posture : preuve et process, pas promesse magique.
 
-![Second repère : grille droits par pack.](workflow-2.webp)
+![Second repère : grille droits par pack.](/images/blog/vendre-images-generees-ia-legalite/workflow-2.webp)
 
 ## FAQ
 

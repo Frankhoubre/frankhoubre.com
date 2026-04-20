@@ -21,7 +21,7 @@ Un débruitage fort lisse les pores et tue les micro-lignes. L’œil lit ça co
 
 **Correctif :** baisse le débruitage, accepte un peu de grain organique. Voir [comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia).
 
-![Repère de workflow : source, upscale, netteté locale.](workflow-1.webp)
+![Repère de workflow : source, upscale, netteté locale.](/images/blog/pourquoi-images-ia-floues-comment-corriger/workflow-1.webp)
 
 ## Diagnostic 3 : flou de mouvement implicite
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : une variable à la fois, pas six réglages en même temps.
 
-![Second repère : zoom 100 % sur yeux et texture.](workflow-2.webp)
+![Second repère : zoom 100 % sur yeux et texture.](/images/blog/pourquoi-images-ia-floues-comment-corriger/workflow-2.webp)
 
 ## FAQ
 

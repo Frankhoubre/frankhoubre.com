@@ -23,7 +23,7 @@ Ajoute une focale plausible (35 mm, 50 mm) et une distance sujet / arrière-plan
 
 Si tu fais du portrait, [comment créer un portrait IA digne d’un film](/blog/comment-creer-portrait-ia-digne-film) croise utilement ce guide.
 
-![Repère de workflow : clé, fill, rim, focale.](workflow-1.webp)
+![Repère de workflow : clé, fill, rim, focale.](/images/blog/photos-hyper-realistes-ia/workflow-1.webp)
 
 ## Texture de peau : sous-décrire plutôt que surcharger
 
@@ -178,7 +178,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : critères clairs avant volume de génération.
 
-![Second repère : chaine export et upscale.](workflow-2.webp)
+![Second repère : chaine export et upscale.](/images/blog/photos-hyper-realistes-ia/workflow-2.webp)
 
 ## FAQ
 

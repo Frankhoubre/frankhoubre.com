@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-creer-tension-visuelle-scene-ia/hero.webp"
 La tension visuelle ne vient pas d’un filtre sombre.  
 Elle vient d’un conflit dans l’image.
 
-![Hero image, tension visuelle.](hero.webp)
+![Hero image, tension visuelle.](/images/blog/comment-creer-tension-visuelle-scene-ia/hero.webp)
 
 
 En IA, tu crées la tension avec des oppositions lisibles, lumière vs ombre, proximité vs isolement, mouvement vs immobilité. Si tu veux qu’elle tienne sur toute une séquence, aligne-la avec [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
@@ -32,7 +32,7 @@ En IA, tu crées la tension avec des oppositions lisibles, lumière vs ombre, pr
 | Tension fake | contraste forcé | revenir à une source motivée |
 | Lecture confuse | trop de détails | simplifier la scène |
 
-![Image contextuelle 1, compositions en tension.](workflow-1.webp)
+![Image contextuelle 1, compositions en tension.](/images/blog/comment-creer-tension-visuelle-scene-ia/workflow-1.webp)
 
 
 ## Vidéo YouTube intégrée
@@ -54,7 +54,7 @@ Pour mieux contrôler les erreurs de prompt qui cassent cette tension, applique 
 - oublier la direction du regard  
 - trop couper au montage
 
-![Image contextuelle 2, tension validée en montage.](workflow-2.webp)
+![Image contextuelle 2, tension validée en montage.](/images/blog/comment-creer-tension-visuelle-scene-ia/workflow-2.webp)
 
 
 ## Ce que la tension visuelle veut dire concrètement

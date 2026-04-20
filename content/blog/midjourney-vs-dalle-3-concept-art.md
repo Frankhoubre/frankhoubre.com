@@ -25,7 +25,7 @@ Si une main ou une symétrie casse, tu notes si c’est récupérable en **repro
 
 Pour les erreurs de langage prompt qui donnent un look artificiel, voir [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle).
 
-![Repère de comparaison : même brief, deux pipelines.](workflow-1.webp)
+![Repère de comparaison : même brief, deux pipelines.](/images/blog/midjourney-vs-dalle-3-concept-art/workflow-1.webp)
 
 ## Mission 3 : architecture et perspective
 
@@ -183,7 +183,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : décider tôt, itérer proprement, éviter la dispersion d’outils.
 
-![Second repère : nommage et planches pour la prod.](workflow-2.webp)
+![Second repère : nommage et planches pour la prod.](/images/blog/midjourney-vs-dalle-3-concept-art/workflow-2.webp)
 
 ## FAQ
 

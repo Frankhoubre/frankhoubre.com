@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 export default function OutilsPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
-      <header className="max-w-2xl">
-        <p className="font-mono text-xs uppercase tracking-[0.18em] text-neutral-500">
+      <header className="ds-surface max-w-3xl p-6 sm:p-8">
+        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500">
           Ressources
         </p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
@@ -38,8 +38,8 @@ export default function OutilsPage() {
       <section className="mt-10">
         <ul className="grid gap-4">
           <li>
-            <article className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-              <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+            <article className="ds-card p-6 motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5">
+              <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
@@ -51,15 +51,15 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/annuaire-ia-audio-sfx-musicales"
-                className="mt-4 inline-flex text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
               >
                 Ouvrir l&apos;outil
               </Link>
             </article>
           </li>
           <li>
-            <article className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-              <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+            <article className="ds-card p-6 motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5">
+              <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
@@ -71,15 +71,15 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/annuaire-generateurs-images-ia-gratuits"
-                className="mt-4 inline-flex text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
               >
                 Ouvrir l&apos;outil
               </Link>
             </article>
           </li>
           <li>
-            <article className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-              <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+            <article className="ds-card p-6 motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5">
+              <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
@@ -91,15 +91,15 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/generateur-storyboard-pdf"
-                className="mt-4 inline-flex text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
               >
                 Ouvrir l&apos;outil
               </Link>
             </article>
           </li>
           <li>
-            <article className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-              <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+            <article className="ds-card p-6 motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5">
+              <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
@@ -111,15 +111,15 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/calculateur-budget-production-ia/"
-                className="mt-4 inline-flex text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
               >
                 Ouvrir l&apos;outil
               </Link>
             </article>
           </li>
           <li>
-            <article className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-              <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+            <article className="ds-card p-6 motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5">
+              <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
@@ -131,15 +131,15 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/reverse-prompting-image-ia"
-                className="mt-4 inline-flex text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
               >
                 Ouvrir l&apos;outil
               </Link>
             </article>
           </li>
           <li>
-            <article className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-              <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+            <article className="ds-card p-6 motion-safe:transition-all motion-safe:duration-200 motion-safe:hover:-translate-y-0.5">
+              <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
@@ -151,7 +151,7 @@ export default function OutilsPage() {
               </p>
               <Link
                 href="/outils/generateur-prompt-cinema"
-                className="mt-4 inline-flex text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
+                className="mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-700"
               >
                 Ouvrir l&apos;outil
               </Link>

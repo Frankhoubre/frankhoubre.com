@@ -76,7 +76,7 @@ Beaucoup de checkpoints réagissent mieux aux **tags photo en anglais** : key li
 
 Pour la cohérence multi-plans, [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia) complète cette page sur la stabilité des prompts.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger/workflow-1.webp)
 
 ### Tableau : symptôme, cause probable, correction
 
@@ -99,7 +99,7 @@ Le contraste n’est pas la saturation. Si tu montes les couleurs pour sauver un
 
 Quand tu boucles depuis trois jours sur la même scène, change de critère de victoire : au lieu de « plus beau », utilise « plus lisible en une seconde sur téléphone » ou « moins de mensonge sur la lumière ». Souvent le prompt qui gagne est moins spectaculaire mais plus honnête, et c’est lui qui arrête de te faire perdre du temps.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger/workflow-2.webp)
 
 Pour calibrer l’œil sur la lumière, cette référence vidéo reste utile : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ).
 

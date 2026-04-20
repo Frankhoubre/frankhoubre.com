@@ -35,7 +35,7 @@ Quand une image est validée, archive **seed** (si disponible), **modèle**, **r
 
 Si la seed « saute » entre deux sessions, ne panique pas : repars de l’image validée en **img2img** léger plutôt que de retenter zéro depuis le texte seul.
 
-![Repère de workflow : fiche + squelette prompt + journal.](workflow-1.webp)
+![Repère de workflow : fiche + squelette prompt + journal.](/images/blog/personnages-coherents-plusieurs-images-ia/workflow-1.webp)
 
 ## Étape 4 : angles et mains
 
@@ -192,7 +192,7 @@ Référence `@BusinessDynamite` :
 
 Pour la discipline : une série pro se juge sur la continuité, pas sur le meilleur plan isolé.
 
-![Second repère : grille QA visage et costume.](workflow-2.webp)
+![Second repère : grille QA visage et costume.](/images/blog/personnages-coherents-plusieurs-images-ia/workflow-2.webp)
 
 ## FAQ
 

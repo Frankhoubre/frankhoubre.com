@@ -21,7 +21,7 @@ Si tu colles un LUT sur une image sans hiérarchie de valeurs, tu obtiens du « 
 
 Voir [pourquoi tes images IA manquent de contraste et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger).
 
-![Repère de workflow : primaire puis look.](workflow-1.webp)
+![Repère de workflow : primaire puis look.](/images/blog/comment-passer-rendu-amateur-a-cinema-ia/workflow-1.webp)
 
 ## Passe 3 : grain comme colle, pas comme effet
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la posture : décider, documenter, livrer.
 
-![Second repère : timeline A/B et readme look.](workflow-2.webp)
+![Second repère : timeline A/B et readme look.](/images/blog/comment-passer-rendu-amateur-a-cinema-ia/workflow-2.webp)
 
 ## FAQ
 

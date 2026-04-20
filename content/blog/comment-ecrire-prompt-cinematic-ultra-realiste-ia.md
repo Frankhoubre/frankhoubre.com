@@ -71,7 +71,7 @@ Teste en lisant à voix haute. Si une phrase ne change rien à l’image que tu 
 
 Quand tu réutilises un prompt entre deux checkpoints différents, copie aussi la **liste des interdits** et la **phrase caméra** tel quel avant d’adapter. Beaucoup de gens gardent les adjectifs et jettent la géométrie, puis s’étonnent que le second modèle « ne fasse pas pareil ». Les modèles ne partagent pas une âme commune, ils partagent parfois des statistiques voisines. Ton travail est de rendre la géométrie explicite pour chaque moteur.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia/workflow-1.webp)
 
 ## Workflow en sept étapes
 
@@ -103,7 +103,7 @@ Tu attends dix minutes, tu rouvres l’image. Tu notes trois défauts précis. T
 
 Prompt final, réglages, seed si utile, capture des métadonnées dans un fichier texte. Tu prépares la suite, storyboard ou vidéo, sans perdre la recette.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia/workflow-2.webp)
 
 ### Table de décision rapide
 

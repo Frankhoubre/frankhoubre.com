@@ -72,7 +72,7 @@ Tu recadres légèrement pour casser la symétrie « parfaite » des générateu
 
 Pour la structure narrative et le rythme, [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) évite le clip unique qui s’essouffle.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/workflow-1.webp)
 
 ### Tableau : problème, levier, ordre d’action
 
@@ -87,7 +87,7 @@ Pour la structure narrative et le rythme, [comment structurer une vidéo IA comm
 
 > **Astuce pro :** exporte une preview H.264, regarde sur téléphone dans un bus ou un couloir. L’attention partielle révèle le fake que ton écran calibré masquait.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/workflow-2.webp)
 
 Pour l’œil sur l’atmosphère lumineuse, cette vidéo aide : [lumière et atmosphère](https://www.youtube.com/watch?v=Y2h4HkJL2XQ).
 

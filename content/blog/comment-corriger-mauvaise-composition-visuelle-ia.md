@@ -19,7 +19,7 @@ Place l’œil ou le pivot narratif sur un nœud tiers, pas parce que c’est jo
 
 Voir [comment utiliser la règle des tiers en génération IA](/blog/comment-utiliser-regle-des-tiers-generation-ia).
 
-![Repère de workflow : grille tiers + horizon.](workflow-1.webp)
+![Repère de workflow : grille tiers + horizon.](/images/blog/comment-corriger-mauvaise-composition-visuelle-ia/workflow-1.webp)
 
 ## Étape 3 : couper une branche qui vole
 
@@ -172,7 +172,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : composition = décision, pas chance.
 
-![Second repère : avant après recadrage.](workflow-2.webp)
+![Second repère : avant après recadrage.](/images/blog/comment-corriger-mauvaise-composition-visuelle-ia/workflow-2.webp)
 
 ## FAQ
 

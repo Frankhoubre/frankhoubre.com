@@ -13,7 +13,7 @@ En génération IA, c’est encore plus flagrant. Le modèle adore recentrer, li
 La règle des tiers n’est pas une recette déco.  
 C’est une arme de narration.
 
-![Hero image, regle des tiers.](hero.webp)
+![Hero image, regle des tiers.](/images/blog/comment-utiliser-regle-des-tiers-generation-ia/hero.webp)
 
 
 Dans ce guide, tu vas apprendre à l’utiliser comme un réalisateur, pas comme un élève qui applique une règle en pilote automatique.
@@ -172,7 +172,7 @@ Base recommandée:
 
 Tu compares et tu choisis selon l’intention narrative, pas selon la seule beauté.
 
-![Image contextuelle 1, grille de tiers sur différents plans.](workflow-1.webp)
+![Image contextuelle 1, grille de tiers sur différents plans.](/images/blog/comment-utiliser-regle-des-tiers-generation-ia/workflow-1.webp)
 
 
 ### Étape 6, test de lecture humaine
@@ -285,7 +285,7 @@ Fix: dernier plan doit montrer une transformation perceptible.
 
 ## Validation de composition en montage
 
-![Image contextuelle 2, validation composition en montage.](workflow-2.webp)
+![Image contextuelle 2, validation composition en montage.](/images/blog/comment-utiliser-regle-des-tiers-generation-ia/workflow-2.webp)
 
 
 ## Cas pratique détaillé, scène de suspense en 4 plans

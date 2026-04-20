@@ -13,7 +13,7 @@ Peau lissée, lumière impossible, décor brillant comme un showroom, yeux trop 
 
 L’objectif de cette masterclass, t’apprendre à repérer ces erreurs en amont, puis à les corriger avec une méthode claire, reproductible, pro.
 
-![Hero image, erreurs de prompt.](hero.webp)
+![Hero image, erreurs de prompt.](/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/hero.webp)
 
 
 ## Pourquoi une image devient artificielle en quelques mots
@@ -141,7 +141,7 @@ Corrigé:
 | Visage déformé | focale/cadre incohérents | fixer focale réaliste + distance |
 | Image artificielle malgré netteté | manque de hiérarchie | simplifier prompt et priorités |
 
-![Image contextuelle 1, comparaison prompt brut vs corrigé.](workflow-1.webp)
+![Image contextuelle 1, comparaison prompt brut vs corrigé.](/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/workflow-1.webp)
 
 
 ## Vidéo YouTube a intégrer dans l'article
@@ -173,7 +173,7 @@ Exercice pratique:
 > **Insight plateau**  
 > Le realisme est une somme de petites verites visuelles, pas une option “high quality”.
 
-![Image contextuelle 2, verification texture et lumiere en post.](workflow-2.webp)
+![Image contextuelle 2, verification texture et lumiere en post.](/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/workflow-2.webp)
 
 
 ## FAQ

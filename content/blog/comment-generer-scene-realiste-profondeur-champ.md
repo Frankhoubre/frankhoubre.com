@@ -118,7 +118,7 @@ Les cheveux sur fond flou demandent une transition propre. Les mailles de vêtem
 
 Les vitres entre caméra et sujet changent la lecture de profondeur : une vitre salie ou une buée peut justifier des transitions étranges, mais une vitre invisible et floue incohérente tue la scène. Décide si la vitre existe et comment elle se lit.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-generer-scene-realiste-profondeur-champ/workflow-1.webp)
 
 ## Couleur du bokeh et température
 
@@ -130,7 +130,7 @@ La saturation du bokeh suit souvent la saturation du décor. Si tu pousses une i
 
 Si tu ajoutes du flou sur le fond, fais le **après** une courbe qui fixe les noirs et les hautes. Sinon tu floutes du gris boueux et du blanc crame, ce qui ressemble à un filtre cheap. Le roll off des hautes sur les sources du fond aide à dessiner des bulles de bokeh crédibles.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-generer-scene-realiste-profondeur-champ/workflow-2.webp)
 
 ### Table de diagnostic profondeur
 

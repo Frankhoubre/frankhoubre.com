@@ -21,7 +21,7 @@ La couleur masque les défauts de silhouette. Travaille monochrome, teste en **6
 
 Pour des visuels rapides multi-supports, [Canva IA pour la création de visuels rapides](/blog/canva-ia-creation-visuels-rapides) peut compléter la phase mockup.
 
-![Repère de workflow : monochrome d’abord, couleur ensuite.](workflow-1.webp)
+![Repère de workflow : monochrome d’abord, couleur ensuite.](/images/blog/creation-logo-ia-outils-gratuits-astuces/workflow-1.webp)
 
 ## Étape 3 : vectoriser proprement
 
@@ -180,7 +180,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : itérer vite, trancher sur critères, documenter.
 
-![Second repère : test favicon et monochrome.](workflow-2.webp)
+![Second repère : test favicon et monochrome.](/images/blog/creation-logo-ia-outils-gratuits-astuces/workflow-2.webp)
 
 ## FAQ
 

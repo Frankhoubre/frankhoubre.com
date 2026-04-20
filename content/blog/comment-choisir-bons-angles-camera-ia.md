@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-choisir-bons-angles-camera-ia/hero.webp"
 L’angle caméra change tout.  
 Même sujet, même lumière, autre angle, autre émotion.
 
-![Hero image, angles camera.](hero.webp)
+![Hero image, angles camera.](/images/blog/comment-choisir-bons-angles-camera-ia/hero.webp)
 
 
 En prompt IA, l’angle évite l’effet “catalogue frontal”. Un angle juste sert le récit, pas l’ego visuel. Pour garder une cohérence d’angles sur une séquence, couple ce travail avec [comment construire une scène cinématique plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan).
@@ -27,7 +27,7 @@ En prompt IA, l’angle évite l’effet “catalogue frontal”. Un angle juste
 
 Ajoute dans la scène: `eye level`, `slight low-angle`, `high-angle`.
 
-![Image contextuelle 1, planches d’angles narratifs.](workflow-1.webp)
+![Image contextuelle 1, planches d’angles narratifs.](/images/blog/comment-choisir-bons-angles-camera-ia/workflow-1.webp)
 
 
 ## Vidéo YouTube intégrée
@@ -49,7 +49,7 @@ Pour éviter les incohérences optiques en changeant d’angle, complète avec [
 - high-angle qui écrase le sujet  
 - frontal systématique
 
-![Image contextuelle 2, continuité des angles au montage.](workflow-2.webp)
+![Image contextuelle 2, continuité des angles au montage.](/images/blog/comment-choisir-bons-angles-camera-ia/workflow-2.webp)
 
 
 ## Comprendre l’effet narratif des angles

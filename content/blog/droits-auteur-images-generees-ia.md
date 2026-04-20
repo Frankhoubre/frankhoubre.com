@@ -28,7 +28,7 @@ Avant le droit « abstrait », tu as signé (ou accepté) des **conditions d’u
 
 Garde une **capture datée** des CGU du jour de livraison.
 
-![Repère de workflow : CGU, pays, usage client.](workflow-1.webp)
+![Repère de workflow : CGU, pays, usage client.](/images/blog/droits-auteur-images-generees-ia/workflow-1.webp)
 
 ## Union européenne et voisinage : tendances
 
@@ -182,7 +182,7 @@ Référence `@BusinessDynamite` :
 
 Pour la rigueur : prouver, documenter, ne pas improviser les clauses.
 
-![Second repère : checklist et captures datées.](workflow-2.webp)
+![Second repère : checklist et captures datées.](/images/blog/droits-auteur-images-generees-ia/workflow-2.webp)
 
 ## FAQ
 

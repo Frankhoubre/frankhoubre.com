@@ -21,7 +21,7 @@ Certaines interfaces laissent tester quelques générations avant de demander un
 
 Guide d’entrée : [Stable Diffusion : guide d’installation et premiers pas pour les débutants](/blog/stable-diffusion-installation-debutants).
 
-![Repère de workflow : guest vs local.](workflow-1.webp)
+![Repère de workflow : guest vs local.](/images/blog/generateur-image-ia-sans-inscription/workflow-1.webp)
 
 ## Option C : API ou app tierce avec clé jetable
 
@@ -174,7 +174,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : choisir l’outil selon la contrainte réelle, pas selon la landing page.
 
-![Second repère : check export et CGU avant prod.](workflow-2.webp)
+![Second repère : check export et CGU avant prod.](/images/blog/generateur-image-ia-sans-inscription/workflow-2.webp)
 
 ## FAQ
 

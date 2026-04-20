@@ -35,7 +35,7 @@ Pour débuter vite, Forge ou **AUTOMATIC1111** restent souvent recommandés. Com
 
 Ne mélange pas cinq installs dans le même dossier utilisateur sans les renommer.
 
-![Repère de workflow : dossier models + notes version.](workflow-1.webp)
+![Repère de workflow : dossier models + notes version.](/images/blog/stable-diffusion-installation-debutants/workflow-1.webp)
 
 ## Télécharger un premier checkpoint
 
@@ -200,7 +200,7 @@ Référence `@BusinessDynamite` :
 
 Pour la discipline : versions notées, résultats reproductibles.
 
-![Second repère : première grille 2x2 et rejet.](workflow-2.webp)
+![Second repère : première grille 2x2 et rejet.](/images/blog/stable-diffusion-installation-debutants/workflow-2.webp)
 
 ## FAQ
 

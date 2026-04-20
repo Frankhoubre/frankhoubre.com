@@ -14,7 +14,7 @@ Si tu arrives avec une attente de « bouton cinéma », tu seras frustré en une
 
 Ce guide suppose que tu acceptes des allers retours. Pas vingt réglages mystiques : quelques principes stables, une routine de fichiers, et une oreille branchée tôt.
 
-![Hero, rendu cinéma avec Seedance 2.](hero.webp)
+![Hero, rendu cinéma avec Seedance 2.](/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/hero.webp)
 
 
 ## Ce que « cinéma » veut dire ici
@@ -125,7 +125,7 @@ Avoid: extreme motion blur, duplicated reflections, warped windows.
 
 **B roll urbain.** Courtes boucles de six secondes sans sujet humain au premier plan : reflets, passants en flou, enseignes. Tu montes ensuite la ville par assemblage, pas par un seul plan miracle.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/workflow-1.webp)
 
 ## Formats et cadrage pour la livraison
 
@@ -235,7 +235,7 @@ Les visages de profil ou trois quarts arrière demandent souvent plus de discipl
 
 Le grain fin masque des micro instabilités d’encodage. Le sharpening agressif les révèle. Sur les réseaux, l’upload ré encode : garde une marge sur les blancs et un grain léger pour éviter le « plastique numérique » après compression.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/workflow-2.webp)
 
 ### Table de diagnostic
 

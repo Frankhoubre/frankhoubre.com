@@ -86,7 +86,7 @@ Voici un repère visuel pour l’étape « écrire avant d’enchaîner », mêm
 ```text
 ```
 
-![Mains au clavier et lumière du matin, repère pour le travail d'écriture itérative.](workflow-1.png)
+![Mains au clavier et lumière du matin, repère pour le travail d'écriture itérative.](/images/blog/prompt-chatgpt/workflow-1.png)
 
 ### Table de lecture : remplacer la supplication par la consigne
 
@@ -103,7 +103,7 @@ Deuxième repère visuel, esprit « choix de plans ».
 ```text
 ```
 
-![Feuilles et crayon sur table, esprit « choix de plans » plutôt que dispersion.](workflow-2.png)
+![Feuilles et crayon sur table, esprit « choix de plans » plutôt que dispersion.](/images/blog/prompt-chatgpt/workflow-2.png)
 
 > Quand tu demandes de « structurer », force un **choix final** explicite (A ou B) avec une phrase de conséquence. La structure sans décision, c’est du remplissage confortable qui simule du travail sans avancer le projet d’un plan.
 

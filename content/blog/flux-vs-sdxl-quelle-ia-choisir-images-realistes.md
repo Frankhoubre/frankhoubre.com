@@ -56,7 +56,7 @@ Tu testes avec **mains hors champ** d’abord, puis une version avec mains visib
 
 Pour le grain et la finition après coup, [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia) s’applique aux deux pipelines.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/workflow-1.webp)
 
 ## Scène chargée : objets, profondeur, et lisibilité
 
@@ -79,7 +79,7 @@ Si la profondeur de champ ment, [comment générer une scène réaliste avec pro
 
 > **Astuce pro :** le meilleur moteur est celui que tu sais **documenter**. Un modèle moyen avec un fichier `readme` propre bat un géant mystérieux.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/workflow-2.webp)
 
 ## VRAM, vitesse, et itérations
 

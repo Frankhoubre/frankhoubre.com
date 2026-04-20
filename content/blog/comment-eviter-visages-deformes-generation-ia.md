@@ -16,7 +16,7 @@ Tu peux l’utiliser comme checklist avant chaque session : cinq cases à cocher
 
 Le vocabulaire « qualité ultime » autour de l’image générée n’aide pas à diagnostiquer une oreille manquante. Ici, on nomme des **symptômes** et des **leviers**, pas des jugements de valeur sur ton talent.
 
-![Hero, contrôle des visages en génération IA.](hero.webp)
+![Hero, contrôle des visages en génération IA.](/images/blog/comment-eviter-visages-deformes-generation-ia/hero.webp)
 
 
 ## Pourquoi le visage casse en premier
@@ -128,7 +128,7 @@ Quand tu ajoutes « perfect face » ou « symmetrical face » comme positif, tu 
 
 Après trente minutes sur des visages, tu acceptes des erreurs que tu verrais en dix secondes le matin. Fais une pause ou change de tâche. Le contrôle qualité visage est **fatigant** ; ce n’est pas de la procrastination que de dormir sur une sélection.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-eviter-visages-deformes-generation-ia/workflow-1.webp)
 
 ## Références, contrôle, et limites des outils
 
@@ -148,7 +148,7 @@ Les outils de pose peuvent aider, mais une pose extrême sur un modèle statique
 
 Tu peux corriger une légère asymétrie des sclères ou une micro ombre sous une paupière en retouche locale. Tu ne sauveras pas une mâchoire liquide par du sharp. **Sépare** les problèmes de géométrie des problèmes de grade couleur.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-eviter-visages-deformes-generation-ia/workflow-2.webp)
 
 ### Table de diagnostic visage
 

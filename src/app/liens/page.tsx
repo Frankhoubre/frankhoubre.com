@@ -128,7 +128,7 @@ function ExternalLinkButton({ label, href }: { label: string; href: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group inline-flex w-full items-center justify-center rounded-xl border border-neutral-300 bg-black px-5 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-neutral-400 hover:bg-neutral-900"
+      className="group inline-flex w-full cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
     >
       {label}
     </a>
@@ -158,108 +158,139 @@ export default function LiensPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
-        <section className="mb-10">
-          <div className="relative overflow-hidden rounded-3xl border border-neutral-800 bg-black p-5 shadow-[0_14px_36px_rgba(0,0,0,0.35)] sm:p-6">
+      <div className="relative overflow-hidden bg-background text-foreground">
+        <div
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_90%_55%_at_10%_-15%,rgba(37,99,235,0.09),transparent_55%),radial-gradient(ellipse_70%_50%_at_100%_12%,rgba(24,24,27,0.08),transparent_55%)]"
+          aria-hidden
+        />
+
+        <section className="mx-auto max-w-5xl px-4 pb-10 pt-14 sm:px-6 sm:pt-20">
+          <div className="relative overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 p-6 text-white shadow-xl shadow-zinc-900/30 sm:p-8">
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(251,191,36,0.16),transparent_45%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_40%)]"
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.24),transparent_45%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_40%)]"
             />
             <div className="relative">
-              <p className="inline-flex rounded-full border border-amber-300/60 bg-amber-200/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-amber-200">
-                Offre exclusive - Formation gratuite
+              <p className="inline-flex rounded-full border border-blue-300/40 bg-blue-300/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-blue-100">
+                Hub officiel - Frank Houbre
               </p>
-              <h2 className="mt-3 text-lg font-semibold tracking-tight text-white sm:text-xl">
-                Transformez une simple idée en film IA captivant
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-white/85">
-                Accédez gratuitement à une méthode pas à pas pour passer d'une
-                page blanche à un storyboard solide, puis à une vidéo IA
-                convaincante, même si vous débutez complètement.
+              <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
+                Tous mes liens IA, podcast, plateformes et ressources en un seul endroit
+              </h1>
+              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
+                Cette page regroupe mes outils utilises au quotidien, mes canaux de diffusion et
+                les ressources pour apprendre a creer des images et videos IA de facon credible.
               </p>
-              <figure className="mt-4 overflow-hidden rounded-2xl border border-neutral-700 bg-neutral-950/95 shadow-sm">
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="https://www.ai-studios.fr/formation-ia-gratuite-video"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex cursor-pointer items-center justify-center rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white transition-colors duration-200 hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                >
+                  Recevoir la formation gratuite
+                </a>
+                <a
+                  href="https://www.skool.com/ai-studios"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex cursor-pointer items-center justify-center rounded-xl border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+                >
+                  Rejoindre AI Studios
+                </a>
+              </div>
+              <figure className="mt-6 overflow-hidden rounded-2xl border border-zinc-700 bg-zinc-950/95 shadow-sm">
                 <Image
                   src="/images/liens-formation-workflow.png"
-                  alt="Workflow de création : idée, personnage, storyboard, puis film IA."
+                  alt="Workflow de creation: idee, personnage, storyboard, puis film IA."
                   width={2048}
                   height={501}
                   className="h-auto w-full object-cover"
-                  sizes="(max-width: 768px) 100vw, 768px"
+                  sizes="(max-width: 1024px) 100vw, 896px"
                 />
               </figure>
-              <a
-                href="https://www.ai-studios.fr/formation-ia-gratuite-video"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-center text-sm font-bold text-black transition hover:-translate-y-0.5 hover:bg-neutral-100 sm:w-auto"
-              >
-                Recevoir la formation gratuite pour réaliser votre film IA
-                <span aria-hidden="true">→</span>
-              </a>
             </div>
           </div>
         </section>
 
-        <section className="mt-2" aria-label="Outils vedettes">
-          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">
-            Mes outils préférés
-          </h2>
-          <div className="mt-4 flex flex-col gap-4">
-            {featuredTools.map((tool) => (
-              <article
-                key={tool.name}
-                className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-6"
-              >
-                <div className="flex flex-wrap items-start justify-between gap-3">
-                  <div className="min-w-0 flex-1">
-                    <h3 className="text-xl font-semibold tracking-tight text-neutral-950">
-                      {tool.name}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-                      {tool.description}
-                    </p>
-                  </div>
-                  <span className="rounded-full bg-neutral-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-700">
-                    {tool.badge}
-                  </span>
-                </div>
-                <a
-                  href={tool.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center justify-center rounded-xl bg-black px-4 py-3 text-sm font-semibold text-white transition hover:bg-neutral-900"
+        <section className="ds-section bg-white/70">
+          <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-16">
+            <div className="mb-7">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+                Selection principale
+              </p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl">
+                Les outils qui structurent mon workflow IA
+              </h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              {featuredTools.map((tool) => (
+                <article
+                  key={tool.name}
+                  className="ds-card flex h-full flex-col p-5 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5 sm:p-6"
                 >
-                  {tool.cta}
-                </a>
-              </article>
-            ))}
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-xl font-semibold tracking-tight text-zinc-950">{tool.name}</h3>
+                    <span className="rounded-full bg-zinc-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-zinc-700">
+                      {tool.badge}
+                    </span>
+                  </div>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-zinc-700">{tool.description}</p>
+                  <a
+                    href={tool.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex w-fit cursor-pointer items-center justify-center rounded-xl bg-zinc-950 px-4 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                  >
+                    {tool.cta}
+                  </a>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
-        <div className="mt-12 space-y-9">
-          {linkGroups.map((group) => (
-            <section key={group.title} aria-label={group.title}>
-              <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">
-                {group.title}
+        <section className="ds-section bg-zinc-50/70">
+          <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-16">
+            <div className="mb-7">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+                Ecosysteme complet
+              </p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl">
+                Acces rapide a toutes mes plateformes
               </h2>
-              <div className="mt-3 grid gap-2 sm:grid-cols-2">
-                {group.links.map((link) =>
-                  link.external ? (
-                    <ExternalLinkButton key={`${group.title}-${link.label}`} label={link.label} href={link.href} />
-                  ) : (
-                    <Link
-                      key={`${group.title}-${link.label}`}
-                      href={link.href}
-                      className="group inline-flex w-full items-center justify-center rounded-xl border border-neutral-300 bg-black px-5 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-neutral-400 hover:bg-neutral-900"
-                    >
-                      {link.label}
-                    </Link>
-                  ),
-                )}
-              </div>
-            </section>
-          ))}
-        </div>
+            </div>
+
+            <div className="space-y-8">
+              {linkGroups.map((group) => (
+                <section key={group.title} aria-label={group.title} className="ds-card rounded-2xl p-5 sm:p-6">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-zinc-500">
+                    {group.title}
+                  </h3>
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    {group.links.map((link) =>
+                      link.external ? (
+                        <ExternalLinkButton
+                          key={`${group.title}-${link.label}`}
+                          label={link.label}
+                          href={link.href}
+                        />
+                      ) : (
+                        <Link
+                          key={`${group.title}-${link.label}`}
+                          href={link.href}
+                          className="group inline-flex w-full cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                        >
+                          {link.label}
+                        </Link>
+                      ),
+                    )}
+                  </div>
+                </section>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

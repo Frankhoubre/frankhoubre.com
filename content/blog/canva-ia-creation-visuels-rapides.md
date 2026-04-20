@@ -23,7 +23,7 @@ Tu veux des **templates** testés mobile sans refaire la grille à la main.
 
 Pour le rendu photo hors Canva si besoin, [comment utiliser l’IA pour générer des photos hyper-réalistes](/blog/photos-hyper-realistes-ia).
 
-![Repère de workflow : charte, ratios, fond IA.](workflow-1.webp)
+![Repère de workflow : charte, ratios, fond IA.](/images/blog/canva-ia-creation-visuels-rapides/workflow-1.webp)
 
 ## Brand Kit : ton antidote au chaos
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : shipper vite mais avec critères de validation.
 
-![Second repère : export multi ratios et relecture mobile.](workflow-2.webp)
+![Second repère : export multi ratios et relecture mobile.](/images/blog/canva-ia-creation-visuels-rapides/workflow-2.webp)
 
 ## FAQ
 

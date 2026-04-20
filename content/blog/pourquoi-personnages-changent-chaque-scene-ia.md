@@ -21,7 +21,7 @@ Sans même prompt stable, la seed ne sauve pas. Avec prompt stable, elle aide à
 
 **Correctif :** journal texte : prompt, seed, modèle, date.
 
-![Repère de workflow : fiche + bloc identité figé.](workflow-1.webp)
+![Repère de workflow : fiche + bloc identité figé.](/images/blog/pourquoi-personnages-changent-chaque-scene-ia/workflow-1.webp)
 
 ## Erreur 3 : le costume a trois noms différents
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la discipline : continuité = process, pas chance.
 
-![Second repère : journal de seeds et versions.](workflow-2.webp)
+![Second repère : journal de seeds et versions.](/images/blog/pourquoi-personnages-changent-chaque-scene-ia/workflow-2.webp)
 
 ## FAQ
 

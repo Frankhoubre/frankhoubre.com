@@ -108,9 +108,9 @@ export function BlogList({
           <button
             type="button"
             onClick={() => setCategory("")}
-            className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
+            className={`cursor-pointer rounded-full px-3 py-1.5 text-sm font-medium transition ${
               category === ""
-                ? "bg-neutral-950 text-white"
+                ? "bg-blue-600 text-white"
                 : "bg-neutral-100 text-neutral-800 hover:bg-neutral-200"
             }`}
           >
@@ -121,9 +121,9 @@ export function BlogList({
               key={c.slug}
               type="button"
               onClick={() => setCategory(c.slug)}
-              className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
+              className={`cursor-pointer rounded-full px-3 py-1.5 text-sm font-medium transition ${
                 category === c.slug
-                  ? "bg-neutral-950 text-white"
+                  ? "bg-blue-600 text-white"
                   : "bg-neutral-100 text-neutral-800 hover:bg-neutral-200"
               }`}
             >
@@ -143,7 +143,7 @@ export function BlogList({
             const thumb = getPostThumbnail(post);
             return (
               <li key={post.slug}>
-                <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:border-neutral-300">
+                <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md">
                   <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
                     <Link
                       href={`/blog/${post.slug}`}
@@ -284,7 +284,7 @@ export function BlogList({
               type="button"
               disabled={currentPage <= 1}
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              className="rounded-md border border-neutral-200 px-3 py-1.5 text-sm font-medium disabled:opacity-40"
+              className="cursor-pointer rounded-md border border-neutral-200 px-3 py-1.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
             >
               Précédent
             </button>
@@ -302,9 +302,9 @@ export function BlogList({
                     key={n}
                     type="button"
                     onClick={() => setCurrentPage(n)}
-                    className={`min-w-9 rounded-md px-2 py-1.5 text-sm font-medium ${
+                    className={`min-w-9 cursor-pointer rounded-md px-2 py-1.5 text-sm font-medium ${
                       n === currentPage
-                        ? "bg-neutral-950 text-white"
+                        ? "bg-blue-600 text-white"
                         : "border border-neutral-200 hover:bg-neutral-100"
                     }`}
                   >
@@ -319,7 +319,7 @@ export function BlogList({
               onClick={() =>
                 setCurrentPage((p) => Math.min(totalPages, p + 1))
               }
-              className="rounded-md border border-neutral-200 px-3 py-1.5 text-sm font-medium disabled:opacity-40"
+              className="cursor-pointer rounded-md border border-neutral-200 px-3 py-1.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-40"
             >
               Suivant
             </button>

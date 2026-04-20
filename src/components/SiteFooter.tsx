@@ -4,9 +4,9 @@ import { siteName, socialLinks } from "@/lib/site";
 export function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-auto border-t border-neutral-200 bg-white/85 py-8 text-sm text-neutral-800">
+    <footer className="mt-auto border-t border-zinc-200/90 bg-white/75 py-8 text-sm text-zinc-800 backdrop-blur-xl">
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-        <p>
+        <p className="font-medium text-zinc-900">
           © {year} {siteName}
         </p>
         <div className="flex flex-col gap-2 sm:items-end">
@@ -16,13 +16,13 @@ export function SiteFooter() {
           >
             <Link
               href="/mentions-legales"
-              className="hover:text-neutral-950"
+              className="transition-colors duration-200 hover:text-zinc-950"
             >
               Mentions légales
             </Link>
             <Link
               href="/politique-confidentialite"
-              className="hover:text-neutral-950"
+              className="transition-colors duration-200 hover:text-zinc-950"
             >
               Confidentialité
             </Link>
@@ -34,7 +34,7 @@ export function SiteFooter() {
                 href={social.href}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-neutral-950"
+                className="transition-colors duration-200 hover:text-zinc-950"
               >
                 {social.label}
               </a>

@@ -19,7 +19,7 @@ Si le prompt mentionne néon + soleil + projecteur scène + lampe pratique sans 
 
 **Correctif :** une clé, un fill, un rim optionnel. Rien de plus au début.
 
-![Repère de workflow : schéma clé fill rim.](workflow-1.webp)
+![Repère de workflow : schéma clé fill rim.](/images/blog/comment-corriger-mauvais-lighting-ia/workflow-1.webp)
 
 ## Étape 3 : regen partielle ou img2img léger
 
@@ -172,7 +172,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : une loi physique par plan.
 
-![Second repère : avant après masque local.](workflow-2.webp)
+![Second repère : avant après masque local.](/images/blog/comment-corriger-mauvais-lighting-ia/workflow-2.webp)
 
 ## FAQ
 

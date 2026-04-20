@@ -69,7 +69,7 @@ same kitchen north window rain, side key, practical warm back,
 slow push in 3 percent, no orbit, hands out of frame
 ```
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/workflow-1.webp)
 
 ### Tableau : choix créatif, risque IA, mitigation
 
@@ -84,7 +84,7 @@ slow push in 3 percent, no orbit, hands out of frame
 
 > **Astuce pro :** le son masque des raccords durs. Une porte, un pas, un souffle, valent trois fondus IA douteux.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/workflow-2.webp)
 
 Pour le rythme visuel, cette référence vidéo reste utile : [rythme et composition](https://www.youtube.com/watch?v=hHWkvFH8u9I).
 

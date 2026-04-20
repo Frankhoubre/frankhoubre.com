@@ -139,7 +139,7 @@ Si tu maîtrises:
 
 tu te différencies immédiatement sur la perception qualité.
 
-![Plans vidéo IA avec finition cinéma et textures naturelles pour différenciation qualité](https://images.unsplash.com/photo-1551281044-8b7e5f3f1f82)
+![Plans vidéo IA avec finition cinéma et textures naturelles pour différenciation qualité](/images/blog/comment-se-differencier-marche-ia-creative/external-1.png)
 
 ## Différenciation service: ce que les clients payent en silence
 

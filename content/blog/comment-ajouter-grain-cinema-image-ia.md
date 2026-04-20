@@ -90,7 +90,7 @@ Laptop, téléphone, deuxième écran si dispo. Ajuste l’opacité ; note la va
 
 Master : PNG/TIFF avec grain intégré ou, si workflow pro, exports séparés (sans grain) + couche grain pour flexibilité. Web : variante légèrement moins granuleuse si la compression mange le détail.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-ajouter-grain-cinema-image-ia/workflow-1.webp)
 
 ### Étape 9 : Documenter le preset
 
@@ -100,7 +100,7 @@ Nom du fichier overlay, opacité, mode de fusion, LUT utilisée. Ton futur toi r
 
 Exporte **deux** versions (avec / sans grain, ou grain A vs grain B), mets-les en plein écran, regarde à distance de « canapé » puis au zoom. Le grain doit survivre à la **lecture lointaine** sans casser la silhouette du sujet.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-ajouter-grain-cinema-image-ia/workflow-2.webp)
 
 ### Table de décision rapide
 

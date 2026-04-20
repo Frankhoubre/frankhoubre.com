@@ -63,7 +63,7 @@ Si tu dois improviser l’ordre, documente quand même la feuille après coup, s
 
 **Raccords de regard.** Si le personnage regarde un objet hors champ au plan 1, le plan 2 peut montrer l’objet avec un angle qui respecte la ligne d’action. Note l’orientation du regard sur la feuille, « regarde vers la droite du cadre, vers la fenêtre ».
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/workflow-1.webp)
 
 ## Workflow en huit étapes
 
@@ -109,7 +109,7 @@ Même sans vidéo finale, place les images dans une timeline ou une planche avec
 
 Une ligne sur ce que chaque plan devrait entendre aide à choisir des cadrages avec de l’espace pour le son plus tard, respiration avant la ligne de dialogue, silence après une action.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/workflow-2.webp)
 
 ### Table de contrôle rapide
 

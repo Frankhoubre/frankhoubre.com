@@ -96,7 +96,7 @@ La cohérence personnage, ce n’est pas copier coller le même prompt vingt foi
 Les mouvements de caméra en IA récompensent la modestie. Un push in de 5% sur dix secondes vend l’émotion mieux qu’une orbite complète qui déforme l’architecture. Si tu veux du dynamisme, coupe en montage, ne forces pas la physique dans la génération. Le montage ment à la caméra, le spectateur accepte.
 
 Les ombres sous les yeux trop propres donnent un maquillage 3D. Ajoute une micro variation de couleur, un peu de rouge sous le bleu, une transition moins nette. Les humains ont des couches, pas des calques.
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-ambiance-sombre-cinematique-avec-ia/workflow-1.webp)
 
 Le brief en une phrase ne marche jamais. En trois phrases honnêtes, souvent oui. Phrase 1 : qui, où, quelle heure. Phrase 2 : ce que le spectateur doit ressentir à la fin. Phrase 3 : ce qui est interdit visuellement. Les interdits t’évitent le pack néon sci fi par défaut.
 
@@ -105,7 +105,7 @@ La profondeur de champ en prompt, décris l’objectif et la distance. Anamorphi
 La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
 
 Le bruit de fond d’une scène de nuit n’est jamais silencieux. Même « silence » a un souffle. Ajoute un room tone bas, puis coupe au montage là où tu veux le vrai vide. Le contraste entre presque rien et rien fait la tension.
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-creer-ambiance-sombre-cinematique-avec-ia/workflow-2.webp)
 
 
 ### Table de décision rapide

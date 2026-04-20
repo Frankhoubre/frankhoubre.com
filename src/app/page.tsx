@@ -151,7 +151,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
       />
 
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
         <div
           className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_90%_55%_at_15%_-10%,rgba(120,90,60,0.09),transparent_55%),radial-gradient(ellipse_70%_50%_at_100%_15%,rgba(40,60,90,0.06),transparent_50%)]"
           aria-hidden
@@ -161,7 +161,7 @@ export default function HomePage() {
           aria-hidden
         />
 
-        <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-neutral-200/80 bg-neutral-950">
+        <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-zinc-800 bg-zinc-950">
           <Image
             src="/images/home-hero-banner-4k.webp"
             alt="Frank Houbre, formateur IA, réalisateur IA et créateur vidéo"
@@ -177,25 +177,25 @@ export default function HomePage() {
           />
           <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
             <div className="mx-auto max-w-4xl min-w-0">
-              <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-white/75">
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/75">
                 Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
-              <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl xl:text-[3.45rem] xl:leading-[1.05]">
+              <h1 className="mt-3 max-w-4xl text-4xl font-semibold tracking-tight text-white motion-safe:animate-[var(--reveal)] sm:text-5xl xl:text-[3.45rem] xl:leading-[1.05]">
                 Frank Houbre, formateur IA, créateur vidéo IA et réalisateur orienté cinéma
               </h1>
-              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90 sm:text-xl">
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/90 motion-safe:animate-[var(--reveal)] motion-safe:[animation-delay:120ms] sm:text-xl">
                 J’aide les créateurs, indépendants, agences et marques à produire des{" "}
                 <span className="text-white">images, vidéos et films IA plus crédibles</span>,
                 avec une vraie méthode de direction artistique, de narration visuelle et de
                 workflow de production.
               </p>
 
-              <div className="mt-10">
+              <div className="mt-10 motion-safe:animate-[var(--reveal)] motion-safe:[animation-delay:220ms]">
                 <a
                   href="https://www.skool.com/ai-studios"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-neutral-950 shadow-lg shadow-black/25 transition hover:bg-neutral-100"
+                  className="inline-flex cursor-pointer items-center justify-center rounded-full bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/25 transition-colors duration-200 hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
                   Formation gratuite 7 jours
                 </a>
@@ -204,9 +204,9 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-            <div className="max-w-3xl">
+        <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+            <div className="max-w-2xl">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
                 Un positionnement clair entre formation IA, création vidéo et réalisation
               </h2>
@@ -224,8 +224,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <aside className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+            <aside className="ds-card rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
                 Signaux publics
               </p>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-neutral-700">
@@ -238,7 +238,7 @@ export default function HomePage() {
                 {awardHighlights.map((award) => (
                   <span
                     key={award}
-                    className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium text-neutral-700"
+                    className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
                   >
                     {award}
                   </span>
@@ -248,8 +248,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-t border-neutral-200/80 bg-white/60">
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <section className="ds-section bg-white/70">
+          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
             <div className="max-w-2xl">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
                 Ce que vous trouverez sur frankhoubre.com
@@ -262,8 +262,8 @@ export default function HomePage() {
 
             <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               <li>
-                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-amber-900/80">
+                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                  <span className="text-[11px] uppercase tracking-[0.15em] text-amber-900/80">
                     01 - Formation IA
                   </span>
                   <h3 className="mt-3 text-lg font-semibold text-neutral-950">
@@ -277,8 +277,8 @@ export default function HomePage() {
                 </article>
               </li>
               <li>
-                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-sky-900/75">
+                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                  <span className="text-[11px] uppercase tracking-[0.15em] text-sky-900/75">
                     02 - Réalisation IA
                   </span>
                   <h3 className="mt-3 text-lg font-semibold text-neutral-950">
@@ -291,8 +291,8 @@ export default function HomePage() {
                 </article>
               </li>
               <li>
-                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-emerald-900/75">
+                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                  <span className="text-[11px] uppercase tracking-[0.15em] text-emerald-900/75">
                     03 - Workflows
                   </span>
                   <h3 className="mt-3 text-lg font-semibold text-neutral-950">
@@ -305,8 +305,8 @@ export default function HomePage() {
                 </article>
               </li>
               <li>
-                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-gradient-to-br from-neutral-950 to-neutral-900 p-6 text-white shadow-lg shadow-neutral-900/20">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-white/55">
+                <article className="flex h-full flex-col rounded-2xl border border-zinc-800/90 bg-gradient-to-br from-zinc-950 to-zinc-900 p-6 text-white shadow-lg shadow-zinc-900/20">
+                  <span className="text-[11px] uppercase tracking-[0.15em] text-white/55">
                     04 - Ressources
                   </span>
                   <h3 className="mt-3 text-lg font-semibold">
@@ -319,13 +319,13 @@ export default function HomePage() {
                   <div className="mt-5 flex flex-wrap gap-4">
                     <Link
                       href="/blog"
-                      className="inline-flex w-fit text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition hover:decoration-white"
+                      className="inline-flex w-fit cursor-pointer text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition-colors duration-200 hover:decoration-white"
                     >
                       Ouvrir le blog
                     </Link>
                     <Link
                       href="/a-propos"
-                      className="inline-flex w-fit text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition hover:decoration-white"
+                      className="inline-flex w-fit cursor-pointer text-sm font-medium text-white underline decoration-white/35 underline-offset-4 transition-colors duration-200 hover:decoration-white"
                     >
                       Lire le parcours
                     </Link>
@@ -336,10 +336,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-t border-neutral-200/80 bg-neutral-50/60">
-          <div className="mx-auto grid max-w-6xl gap-6 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-3">
-            <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+        <section className="ds-section bg-zinc-50/60">
+          <div className="mx-auto grid max-w-5xl gap-6 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-3">
+            <article className="ds-card rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
                 Pour apprendre
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
@@ -351,8 +351,8 @@ export default function HomePage() {
                 fonctionne.
               </p>
             </article>
-            <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+            <article className="ds-card rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
                 Pour créer
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
@@ -363,8 +363,8 @@ export default function HomePage() {
                 composition, lumière, texture, continuité et rapport entre les plans.
               </p>
             </article>
-            <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+            <article className="ds-card rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-500">
                 Pour se positionner
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
@@ -378,8 +378,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-t border-neutral-200/80 bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+        <section className="ds-section bg-white">
+          <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
             <div className="max-w-2xl">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
                 Projets de réalisation IA
@@ -392,8 +392,8 @@ export default function HomePage() {
 
             <ul className="mt-10 grid gap-5 md:grid-cols-2">
               <li>
-                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                  <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                     Court film IA
                   </p>
                   <h3 className="mt-3 text-xl font-semibold text-neutral-950">Ronces</h3>
@@ -418,15 +418,15 @@ export default function HomePage() {
                     href="https://vimeo.com/1164434045?fl=ip&fe=ec"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex w-fit text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                    className="mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-200 hover:decoration-neutral-600"
                   >
                     Voir sur Vimeo
                   </a>
                 </article>
               </li>
               <li>
-                <article className="flex h-full flex-col rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm transition hover:border-neutral-300 hover:shadow-md">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+                <article className="ds-card flex h-full flex-col p-6 motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5">
+                  <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                     Animé IA
                   </p>
                   <h3 className="mt-3 text-xl font-semibold text-neutral-950">VOIDBORN</h3>
@@ -451,7 +451,7 @@ export default function HomePage() {
                     href="https://youtu.be/TaoYARoU7Lc?si=csVLgOV_wuQs4uA0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-5 inline-flex w-fit text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition hover:decoration-neutral-600"
+                    className="mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-200 hover:decoration-neutral-600"
                   >
                     Voir sur YouTube
                   </a>
@@ -461,8 +461,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-t border-neutral-200/80 bg-neutral-50/60">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+        <section className="ds-section bg-zinc-50/60">
+          <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
             <div className="max-w-2xl">
               <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
                 Questions fréquentes sur Frank Houbre et la formation IA
@@ -477,7 +477,7 @@ export default function HomePage() {
               {faqEntries.map((entry) => (
                 <article
                   key={entry.question}
-                  className="rounded-2xl border border-neutral-200/90 bg-white p-6 shadow-sm"
+                  className="ds-card p-6"
                 >
                   <h3 className="text-lg font-semibold text-neutral-950">{entry.question}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-neutral-700">{entry.answer}</p>
@@ -487,8 +487,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-t border-neutral-200/80 bg-white/50">
-          <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
+        <section className="ds-section bg-white/70">
+          <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-20">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 sm:text-3xl">
@@ -504,7 +504,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/blog"
-                className="shrink-0 text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 hover:decoration-neutral-600"
+                className="shrink-0 cursor-pointer text-sm font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-200 hover:decoration-neutral-600"
               >
                 Tout le blog
               </Link>
@@ -519,7 +519,7 @@ export default function HomePage() {
                 Les articles arrivent bientôt. En attendant, vous pouvez consulter le{" "}
                 <Link
                   href="/blog"
-                  className="font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2"
+                  className="cursor-pointer font-medium text-neutral-950 underline decoration-neutral-400 underline-offset-2"
                 >
                   blog
                 </Link>

@@ -44,7 +44,7 @@ Dans ton interface, tu restes dans une fenêtre de **guidance modérée** : si t
 
 Tu compares au zoom à 100 % sur le triangle visage : yeux, bouche, transition net vers flou. Si le mur derrière le sujet est flou comme de la crème alors qu’il est proche, tu corriges en décrivant **distance caméra sujet** et **distance sujet arrière-plan**, même approximative.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/workflow-complet-idee-film-ia-realiste/workflow-1.webp)
 
 ## Passage vidéo : mouvement modeste, cohérence d’abord
 
@@ -76,7 +76,7 @@ Tu ajoutes un **grain overlay** fin, 35 mm ou 16 mm léger selon ton goût, tu �
 
 Pour la structure des idées en séquences, la lecture de [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) aide à éviter le clip unique interminable.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/workflow-complet-idee-film-ia-realiste/workflow-2.webp)
 
 ### Tableau : phases, livrables, critères de validation
 

@@ -21,7 +21,7 @@ Même « positivement », ils orientent vers une géométrie lisse.
 
 **Correctif :** une intention dominante.
 
-![Repère de workflow : liste de mots interdits et remplaçants.](workflow-1.webp)
+![Repère de workflow : liste de mots interdits et remplaçants.](/images/blog/comment-eviter-rendu-cartoon-non-voulu-ia/workflow-1.webp)
 
 ## Levier 3 : checkpoint et négatif minimal ciblé
 
@@ -174,7 +174,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : style = contraintes, pas accumulation.
 
-![Second repère : courbe saturation vs regen.](workflow-2.webp)
+![Second repère : courbe saturation vs regen.](/images/blog/comment-eviter-rendu-cartoon-non-voulu-ia/workflow-2.webp)
 
 ## FAQ
 

@@ -11,7 +11,7 @@ Il place une source. Il choisit une direction. Il accepte une ombre.
 
 C’est exactement cette logique qu’on va traduire en langage prompt.
 
-![Hero image, direction de lumiere en prompt.](hero.webp)
+![Hero image, direction de lumiere en prompt.](/images/blog/comment-decrire-lumiere-directeur-photo-prompt/hero.webp)
 
 
 ## Le principe qui change tout
@@ -97,7 +97,7 @@ Pour eviter l’effet “peau plastique” dans ces configurations, applique aus
 | Separation sujet/fond | rim discret ou fond plus sombre | contour detoure artificiel |
 | Nuit credible | practicals limites et motivees | neon partout |
 
-![Image contextuelle 1, schema key fill rim en pratique.](workflow-1.webp)
+![Image contextuelle 1, schema key fill rim en pratique.](/images/blog/comment-decrire-lumiere-directeur-photo-prompt/workflow-1.webp)
 
 
 ## Video YouTube a integrer dans l'article
@@ -130,7 +130,7 @@ Exercice:
 
 Pour lier lumiere et profondeur de plan sans incoherence, reconnecte avec [comment generer une scene realiste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ), ca evite beaucoup de faux bokeh.
 
-![Image contextuelle 2, verification coherence lumiere peau reflets.](workflow-2.webp)
+![Image contextuelle 2, verification coherence lumiere peau reflets.](/images/blog/comment-decrire-lumiere-directeur-photo-prompt/workflow-2.webp)
 
 
 ## FAQ

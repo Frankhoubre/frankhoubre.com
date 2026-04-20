@@ -84,13 +84,13 @@ Courbe d’abord (noirs qui ne tombent pas en boue, hautes qui ne crament pas la
 
 PNG ou TIFF propre pour image pilote ; variante avec grain si tu enchaînes vers la vidéo. Fichier `.txt` à côté : focale implicite, direction lumière, réglages : la vidéo te remerciera. Pont avec [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-ameliorer-texture-peau-image-ia/workflow-1.webp)
 
 ### Étape 9 : Contrôle sur deux écrans
 
 Laptop consumer : le grain disparaît, tu risques d’en rajouter trop. Écran plus fidèle ou calibré : le grain reparaît en boue. **Teste les deux** avant le master, idéalement sur téléphone aussi.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-ameliorer-texture-peau-image-ia/workflow-2.webp)
 
 ### Table de décision rapide
 

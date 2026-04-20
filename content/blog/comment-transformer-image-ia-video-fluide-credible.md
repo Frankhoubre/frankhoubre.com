@@ -11,7 +11,7 @@ Et soudain, tout sonne faux.
 
 Visage qui dérive, cheveux qui vibrent, murs qui ondulent, lumière qui saute: le passage image -> vidéo casse vite le réalisme. La bonne nouvelle, c'est que ce n'est pas un problème de talent. C'est un problème de méthode.
 
-![Hero, image vers vidéo crédible.](hero.webp)
+![Hero, image vers vidéo crédible.](/images/blog/comment-transformer-image-ia-video-fluide-credible/hero.webp)
 
 
 ## Le principe simple qui change tout
@@ -88,7 +88,7 @@ Vérifie en:
 ### Étape 6: monter et harmoniser
 Assemble des segments courts, puis harmonise couleur, texture et son avant export.
 
-![Image contextuelle, préparation avant animation.](workflow-1.webp)
+![Image contextuelle, préparation avant animation.](/images/blog/comment-transformer-image-ia-video-fluide-credible/workflow-1.webp)
 
 
 ## Tableau de réglages et risques
@@ -129,7 +129,7 @@ Si au bout de 4 à 5 essais rien n'est stable, la source ou la consigne est à r
 
 Pour garder une continuité solide entre plans, complète avec [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
 
-![Image contextuelle, contrôle qualité animation.](workflow-2.webp)
+![Image contextuelle, contrôle qualité animation.](/images/blog/comment-transformer-image-ia-video-fluide-credible/workflow-2.webp)
 
 
 ## Routine 30 minutes (pratique)

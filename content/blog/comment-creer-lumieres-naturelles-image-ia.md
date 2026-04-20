@@ -96,7 +96,7 @@ Les seeds servent à reproduire, pas à magiquement améliorer. Si une image est
 Les objets réfléchissants, lunettes, vitres, écrans, sont des pièges. Si tu n’en as pas besoin, retire les. Si tu en as besoin, prévois un angle de caméra où le reflet ne montre pas un décor impossible. **Simplifie le reflet** avant de complexifier le décor.
 
 Le rythme d’un clip IA se construit au montage. Si tu attends que la génération te donne le rythme, tu seras dépendant des hasards. Génère des plans plus longs que nécessaire, puis coupe sec. La coupe sec donne l’intention. Le fondu donne la parenthèse. Trop de fondus, et tu retombes sur le clip de démo.
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-lumieres-naturelles-image-ia/workflow-1.webp)
 
 La peur du noir pousse les débutants à remonter les ombres jusqu’au gris. Garde du noir réel, surtout en cinéma. Le noir donne le volume. Le gris donne la démo.
 
@@ -105,7 +105,7 @@ Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui 
 Le bruit de caméra subtil, micro tremblement, peut sauver un plan trop propre. Mais un pixel qui danse sur une joue, c’est une alerte. Si le tremblement modifie la peau, réduis l’amplitude ou fige le visage et bouge seulement l’environnement. **Sépare visage et décor** dans ta stratégie de mouvement.
 
 Les prompts « ultra détaillés » se contredisent souvent. Ajouter cinq styles différents dans le même paragraphe, c’est demander au modèle de tricher. Un style dominant, une concession, un interdit. Trois couches, pas quinze.
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-creer-lumieres-naturelles-image-ia/workflow-2.webp)
 
 
 ### Table de décision rapide

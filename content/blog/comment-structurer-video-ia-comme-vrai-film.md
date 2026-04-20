@@ -103,13 +103,13 @@ Le sharpening global reste l’ennemi du visage. Si tu veux du piqué, masque la
 
 Le grain colle les plans entre eux quand les niveaux de bruit diffèrent. Commence fin, teste sur téléphone : beaucoup de grain disparaît sur écran petit, ce qui pousse à en trop mettre sur bureau.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-structurer-video-ia-comme-vrai-film/workflow-1.webp)
 
 ## Formats : horizontal, vertical, carré
 
 Le vertical n’est pas un horizontal recadré sans penser. Le centre de gravité monte : informations cruciales dans le tiers supérieur, mains et regards anticipés plus haut qu’en 16:9. Le carré impose une symétrie différente ; le large permet l’environnement. **Choisis le format avant les prompts**, pas après coup.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-structurer-video-ia-comme-vrai-film/workflow-2.webp)
 
 ### Table de décision : structure vs longueur
 

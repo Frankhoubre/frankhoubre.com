@@ -16,7 +16,7 @@ Ce guide mélange pourquoi l’éclatement des fichiers tue les projets IA, comm
 
 **Engagement.** Avant d’explorer chaque nœud du graphe, termine **une** séquence avec trois panneaux validés sur l’émotion et la géométrie. Les outils changent ; l’habitude de finir un cycle reste.
 
-![Écrivain la nuit, lampe chaude, pages de scénario, ambiance grain et imperfect skin, même ton que la vignette d’en tête.](hero.png)
+![Écrivain la nuit, lampe chaude, pages de scénario, ambiance grain et imperfect skin, même ton que la vignette d’en tête.](/images/blog/screenweaver-ai-ecriture-scenario-storyboard/hero.png)
 
 ## Ce que ScreenWeaver met sur la table (langage plateau)
 
@@ -60,7 +60,7 @@ Structure séquences, beats, scènes comme pour un lecteur pro vendredi. Nomme l
 
 ### Phase 2 : See
 
-![Storyboard et préparation visuelle au feeling “vrai studio”, refs épinglées, mains dans le cadre, lumière du matin.](workflow-voir.png)
+![Storyboard et préparation visuelle au feeling “vrai studio”, refs épinglées, mains dans le cadre, lumière du matin.](/images/blog/screenweaver-ai-ecriture-scenario-storyboard/workflow-voir.png)
 
 Choisis **une** scène courte, deux ou trois beats pour le premier board. Lis ton INT./EXT. à voix haute ; souligne les **verbes de mouvement** : ce sont des indices caméra gratuits. Avant le look, définis une **fonction dramatique** par panneau : révélation, mensonge, silence trop long. Ça évite les images décoratives.
 
@@ -70,7 +70,7 @@ Astuce terrain : quand une image « sent l’IA » sans que tu saches pourquoi, 
 
 ### Phase 3 : Build
 
-![Petit lieu de post production, veille sur un film, références physiques sur le bureau, écran en arrière plan, ambiance humaine.](workflow-build.png)
+![Petit lieu de post production, veille sur un film, références physiques sur le bureau, écran en arrière plan, ambiance humaine.](/images/blog/screenweaver-ai-ecriture-scenario-storyboard/workflow-build.png)
 
 Ouvre le workflow généré depuis la scène. Observe comment le contexte descend de **source scène** vers direction de cadre, puis image, puis vidéo éventuelle. **Un nœud à la fois** : changer cinq curseurs d’un coup, c’est la recette pour perdre la cohérence.
 

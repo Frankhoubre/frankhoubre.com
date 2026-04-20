@@ -92,7 +92,7 @@ export default function AboutPage() {
           </figure>
 
           <div className="space-y-5">
-            <p className="font-mono text-xs uppercase tracking-wide text-neutral-500">À propos</p>
+            <p className="text-xs uppercase tracking-wide text-neutral-500">À propos</p>
             <h1 className="text-3xl font-semibold tracking-tight text-neutral-950 sm:text-5xl">
               Frank Houbre, formateur IA, réalisateur IA et entrepreneur
             </h1>
@@ -118,24 +118,24 @@ export default function AboutPage() {
             </div>
 
             <div className="grid gap-3 pt-2 sm:grid-cols-3">
-              <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-                <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+              <div className="ds-card p-4">
+                <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                   Positionnement
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-700">
                   Formation IA, vidéo IA, image IA et réalisation orientée cinéma.
                 </p>
               </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-                <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+              <div className="ds-card p-4">
+                <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                   Projets
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-700">
                   AI Studios, ScreenWeaver, Ronces, VOIDBORN et contenus pédagogiques.
                 </p>
               </div>
-              <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm">
-                <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+              <div className="ds-card p-4">
+                <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
                   Distinctions
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-700">
@@ -147,8 +147,8 @@ export default function AboutPage() {
         </header>
 
         <section aria-labelledby="positionnement" className="mt-14 grid gap-6 lg:grid-cols-3">
-          <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+          <article className="ds-card rounded-3xl p-6">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500">
               Formateur IA
             </p>
             <h2 id="positionnement" className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
@@ -160,8 +160,8 @@ export default function AboutPage() {
               narration et exploitation créative des outils d’IA.
             </p>
           </article>
-          <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+          <article className="ds-card rounded-3xl p-6">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500">
               Réalisateur IA
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
@@ -173,8 +173,8 @@ export default function AboutPage() {
               construction d’<strong>univers visuels plus crédibles</strong>.
             </p>
           </article>
-          <article className="rounded-3xl border border-neutral-200/90 bg-white p-6 shadow-sm">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+          <article className="ds-card rounded-3xl p-6">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500">
               Entrepreneur
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-neutral-950">
@@ -326,8 +326,8 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-8 grid gap-6 lg:grid-cols-2">
-            <section className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+            <section className="ds-card rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500">
                 Prix et distinctions
               </p>
               <ul className="mt-4 space-y-3 text-base leading-relaxed text-neutral-800">
@@ -339,8 +339,8 @@ export default function AboutPage() {
               </ul>
             </section>
 
-            <section className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+            <section className="ds-card rounded-3xl p-6">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-neutral-500">
                 Sélections et finaliste
               </p>
               <ul className="mt-4 space-y-3 text-base leading-relaxed text-neutral-800">

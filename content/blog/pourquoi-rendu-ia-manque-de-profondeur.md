@@ -21,7 +21,7 @@ Un sujet seul sur fond uni peut rester « autocollant ».
 
 **Correctif :** ajoute un premier plan partiel flou, un sol avec perspective, ou un objet volumétrique qui coupe le cadre.
 
-![Repère de workflow : premier plan, sujet, fond.](workflow-1.webp)
+![Repère de workflow : premier plan, sujet, fond.](/images/blog/pourquoi-rendu-ia-manque-de-profondeur/workflow-1.webp)
 
 ## Cause 3 : lumière frontale partout
 
@@ -178,7 +178,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : une intention spatiale par image.
 
-![Second repère : valeurs en niveaux de gris.](workflow-2.webp)
+![Second repère : valeurs en niveaux de gris.](/images/blog/pourquoi-rendu-ia-manque-de-profondeur/workflow-2.webp)
 
 ## FAQ
 

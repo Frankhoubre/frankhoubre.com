@@ -28,8 +28,11 @@ export default function BlogIndexPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
-      <header className="mb-12 max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+      <header className="ds-surface mb-12 max-w-3xl p-6 sm:p-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
+          Journal IA
+        </p>
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
           Blog
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-neutral-800">

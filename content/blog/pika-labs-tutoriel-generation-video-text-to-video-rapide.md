@@ -328,7 +328,7 @@ Cette progression te fait passer du mode “test IA” au mode “production cr�
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on fast text-to-video production with consistent cinematic results].
 
-![Montage final d’une séquence Pika avec étalonnage et mix audio léger](https://images.unsplash.com/photo-1551281044-8b7e5f3f1f82)
+![Montage final d’une séquence Pika avec étalonnage et mix audio léger](/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/external-1.png)
 
 ## Références externes utiles
 

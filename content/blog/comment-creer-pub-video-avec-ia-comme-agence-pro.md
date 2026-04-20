@@ -55,7 +55,7 @@ Adapte les durées au média. Un pre-roll de six secondes compresse tout en deux
 
 > Une pub pro est un contrat de compréhension en quelques secondes. Si tu ne sais pas ce que le spectateur doit comprendre à la seconde 3, le génératif ne le inventera pas à ta place.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-pub-video-avec-ia-comme-agence-pro/workflow-1.webp)
 
 ## Workflow agence, de la mood à la livraison
 
@@ -109,7 +109,7 @@ Dossier figé, checksum si politique interne, accès lecture pour reprise six mo
 
 **Devis et variantes.** Indique clairement « inclus : 2 directions mood, 1 direction retenue, 3 tailles, 1 master sans texte ». Chaque variante hors périmètre est une ligne de facturation ou un change order signé.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-creer-pub-video-avec-ia-comme-agence-pro/workflow-2.webp)
 
 ### Table conformité livraison
 

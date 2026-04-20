@@ -40,7 +40,7 @@ Choisis une interface qui exporte en **PNG propre** sans compression agressive. 
 
 Pour le rendu « photo » sans plastique, enchaîne avec [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique).
 
-![Repère de workflow : critères quota, droits, résolution.](workflow-1.webp)
+![Repère de workflow : critères quota, droits, résolution.](/images/blog/meilleur-generateur-image-ia-gratuit/workflow-1.webp)
 
 ## Profil B : tu as 8 à 12 Go de VRAM ou plus
 
@@ -194,7 +194,7 @@ Référence `@BusinessDynamite` :
 
 Utile pour ancrer la méthode : itérer vite, mais avec un critère de qualité clair avant de multiplier les outils.
 
-![Second repère : local vs cloud, même brief test.](workflow-2.webp)
+![Second repère : local vs cloud, même brief test.](/images/blog/meilleur-generateur-image-ia-gratuit/workflow-2.webp)
 
 ## FAQ
 

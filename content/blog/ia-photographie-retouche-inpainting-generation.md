@@ -19,7 +19,7 @@ Définis la zone **au pixel près**. Documente avant / après. Si tu modifies un
 
 Pour la lumière cohérente après inpainting, [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt) aide aussi à recaler le brief.
 
-![Repère de workflow : masque serré, preview 100%.](workflow-1.webp)
+![Repère de workflow : masque serré, preview 100%.](/images/blog/ia-photographie-retouche-inpainting-generation/workflow-1.webp)
 
 ## Génération : quand tu quittes la photo pour l’illustration
 
@@ -172,7 +172,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : critères de vérité avant effet waouh.
 
-![Second repère : calques et readme dossier.](workflow-2.webp)
+![Second repère : calques et readme dossier.](/images/blog/ia-photographie-retouche-inpainting-generation/workflow-2.webp)
 
 ## FAQ
 

@@ -25,7 +25,7 @@ Un personnage dont les pieds flottent par rapport au sol casse tout.
 
 **Correctif :** mentionne le contact au sol, l’ombre portée courte ou longue selon source.
 
-![Repère de workflow : ombre portée + contact sol.](workflow-1.webp)
+![Repère de workflow : ombre portée + contact sol.](/images/blog/comment-rendre-scene-ia-plus-credible/workflow-1.webp)
 
 ## Levier 4 : une imperfection maîtrisée
 
@@ -253,7 +253,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : crédibilité = décisions, pas détails au hasard.
 
-![Second repère : props fonctionnels vs décor fourre-tout.](workflow-2.webp)
+![Second repère : props fonctionnels vs décor fourre-tout.](/images/blog/comment-rendre-scene-ia-plus-credible/workflow-2.webp)
 
 ## FAQ
 

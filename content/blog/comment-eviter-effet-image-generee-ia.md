@@ -21,7 +21,7 @@ Un cadre trop équilibré sans raison narrative sent la génération.
 
 **Correctif :** recadrage léger, prop décentré, ombre portée désaxée.
 
-![Repère de workflow : symétrie vs désax léger.](workflow-1.webp)
+![Repère de workflow : symétrie vs désax léger.](/images/blog/comment-eviter-effet-image-generee-ia/workflow-1.webp)
 
 ## Checklist 3 : grain et netteté globale
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : critères de rejet avant polish.
 
-![Second repère : sharpen local vs global.](workflow-2.webp)
+![Second repère : sharpen local vs global.](/images/blog/comment-eviter-effet-image-generee-ia/workflow-2.webp)
 
 ## FAQ
 

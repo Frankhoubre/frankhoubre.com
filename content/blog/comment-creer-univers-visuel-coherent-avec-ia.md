@@ -67,7 +67,7 @@ Pour une série narrative, ajoute une **feuille de continuité** par session : h
 
 **Cohérence multi-outils.** Image dans un moteur, vidéo dans un autre, la bible doit voyager. Exporte un still de référence et une ligne sur la lumière pour l’outil suivant. Ne suppose pas que « le même style » se transmet par magie entre APIs.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-univers-visuel-coherent-avec-ia/workflow-1.webp)
 
 ## Workflow pour dix images ou plus
 
@@ -113,7 +113,7 @@ Imprime ou affiche en petit toutes les vignettes. Le cerveau voit les sauts de b
 
 Quand une série est validée, copie le dossier en lecture seule ou tague la version git. Les « petites retouches » non tracées sont la source n°1 des ruptures au pick-up.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-creer-univers-visuel-coherent-avec-ia/workflow-2.webp)
 
 ### Table de décision
 

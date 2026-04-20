@@ -29,7 +29,7 @@ export function SiteHeader() {
       className={`top-0 z-50 transition-all duration-300 ${
         homeAtTop
           ? "fixed inset-x-0 border-b border-transparent bg-transparent"
-          : "sticky border-b border-neutral-200/90 bg-white/85 backdrop-blur-md"
+          : "sticky border-b border-zinc-200/90 bg-white/80 backdrop-blur-xl"
       }`}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
@@ -42,38 +42,60 @@ export function SiteHeader() {
           {siteName}
         </Link>
         <nav
-          className={`flex items-center gap-5 text-sm font-medium transition ${
-            homeAtTop ? "text-white/90" : "text-neutral-800"
+          className={`flex items-center gap-3 rounded-full px-2 py-1 text-sm font-medium transition ${
+            homeAtTop
+              ? "bg-white/10 text-white/90 backdrop-blur-md"
+              : "bg-zinc-100/80 text-zinc-800"
           }`}
           aria-label="Navigation principale"
         >
           <Link
             href="/blog"
-            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
           >
             Blog
           </Link>
           <Link
             href="/outils"
-            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
           >
             Outils
           </Link>
           <Link
             href="/a-propos"
-            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
           >
             À propos
           </Link>
           <Link
             href="/contact"
-            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
           >
             Contact
           </Link>
           <Link
             href="/liens"
-            className={`transition ${homeAtTop ? "hover:text-white" : "hover:text-neutral-950"}`}
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
           >
             Liens
           </Link>

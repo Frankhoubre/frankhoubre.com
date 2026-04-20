@@ -21,7 +21,7 @@ Tu dupliques le carré en grille 2x2 et tu regardes les **coutures**. Si l’œi
 
 Beaucoup de workflows passent par une passe **offset** + retouche ou outil « make seamless ».
 
-![Repère de workflow : grille 2x2 et coutures.](workflow-1.webp)
+![Repère de workflow : grille 2x2 et coutures.](/images/blog/textures-3d-intelligence-artificielle/workflow-1.webp)
 
 ## UV et échelle
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : valider tôt dans le moteur cible, pas seulement en PNG isolé.
 
-![Second repère : sphère shader preview.](workflow-2.webp)
+![Second repère : sphère shader preview.](/images/blog/textures-3d-intelligence-artificielle/workflow-2.webp)
 
 ## FAQ
 

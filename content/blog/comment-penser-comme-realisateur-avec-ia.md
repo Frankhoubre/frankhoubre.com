@@ -12,7 +12,7 @@ Je vois ce problème toutes les semaines avec des débutants brillants. Ils boss
 Un réalisateur ne commence pas par le preset.  
 Il commence par une intention.
 
-![Hero image, penser comme realisateur.](hero.webp)
+![Hero image, penser comme realisateur.](/images/blog/comment-penser-comme-realisateur-avec-ia/hero.webp)
 
 
 Ici, on va faire exactement ça. Tu vas apprendre à penser comme un metteur en scène, même si tu débutes, même si tu n’as jamais touché une vraie caméra. Et oui, c’est possible avec l’IA locale, à condition de respecter une méthode dure, claire, reproductible.
@@ -212,7 +212,7 @@ Deux variantes max par plan:
 
 Pas dix variantes. Tu noies ta décision.
 
-![Image contextuelle 1, storyboard et intention.](workflow-1.webp)
+![Image contextuelle 1, storyboard et intention.](/images/blog/comment-penser-comme-realisateur-avec-ia/workflow-1.webp)
 
 
 ### Étape 6, pré-montage narratif
@@ -327,7 +327,7 @@ Fix: log simple par plan, seed, cfg, steps, version.
 
 ## Deuxième image contextuelle, pensée de montage
 
-![Image contextuelle 2, montage basé sur beats narratifs.](workflow-2.webp)
+![Image contextuelle 2, montage basé sur beats narratifs.](/images/blog/comment-penser-comme-realisateur-avec-ia/workflow-2.webp)
 
 
 ## Cas d’étude complet, teaser de 45 secondes construit comme un réalisateur

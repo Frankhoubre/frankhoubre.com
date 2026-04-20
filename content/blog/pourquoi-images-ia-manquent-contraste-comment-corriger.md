@@ -59,7 +59,7 @@ Si tu n’as pas Lightroom, la logique reste identique dans DaVinci Resolve (pag
 
 Pour le look sombre sans boue, [comment créer une ambiance sombre et cinématique avec l’IA](/blog/comment-creer-ambiance-sombre-cinematique-avec-ia) donne des repères compatibles avec cette correction.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/workflow-1.webp)
 
 ### Tableau : symptôme, mauvais réflexe, meilleur réflexe
 
@@ -82,7 +82,7 @@ Monte les steps jusqu’au point où la texture apparaît, arrête avant la surd
 
 Quand tu compares deux moteurs, garde **strictement** le même prompt, le même ratio, la même résolution de base, et change seulement le checkpoint. Sinon tu crois que « Flux fait plus de contraste » alors que c’est ta résolution ou ton scheduler qui a bougé. Note aussi la température de sampling si l’interface l’expose : une variation de bruit peut simuler du contraste en trompe-l’œil sans être stable entre deux seeds.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/workflow-2.webp)
 
 Pour l’œil sur la couleur et le contraste en image, cette vidéo reste une bonne boussole : [couleur et contraste](https://www.youtube.com/watch?v=vP4YH5886nc).
 

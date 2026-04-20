@@ -21,7 +21,7 @@ Travelling hyper fluide sans vibration ni inertie : ça sent la caméra virtuell
 
 **Correctif :** ralentis, ajoute une intention de poids (épaule, mini shake crédible), évite les arcs impossibles autour du sujet.
 
-![Repère de workflow : continuité lumière entre plans.](workflow-1.webp)
+![Repère de workflow : continuité lumière entre plans.](/images/blog/pourquoi-videos-ia-manquent-de-realisme/workflow-1.webp)
 
 ## Cause 3 : la texture peau « slide »
 
@@ -176,7 +176,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : critères de rejet avant effets spectaculaires.
 
-![Second repère : timeline son + image.](workflow-2.webp)
+![Second repère : timeline son + image.](/images/blog/pourquoi-videos-ia-manquent-de-realisme/workflow-2.webp)
 
 ## FAQ
 

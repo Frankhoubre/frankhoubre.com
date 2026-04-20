@@ -84,13 +84,13 @@ Quatre à huit négatifs **ciblés** selon ton modèle battent une liste encyclo
 
 Quand l’image est presque bonne, exporte une version « plate » et une version étalonnée avec la même LUT ou la même courbe sur toute la série. Le grain en overlay lie les zones trop propres aux zones travaillées ; voir [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia).
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-controler-style-visuel-generation-ia/workflow-1.webp)
 
 ### Étape 8 : Verrouillage projet
 
 Nomme les fichiers (`SEQ01_INT_window_v04.png`), garde une capture des réglages, colle le prompt final dans un `.txt`. Ton futur toi n’a pas à deviner.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-controler-style-visuel-generation-ia/workflow-2.webp)
 
 ### Table de décision rapide
 

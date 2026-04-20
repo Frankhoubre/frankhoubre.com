@@ -118,7 +118,7 @@ Ajoute une section “délais types” pour ancrer le réalisme.
 
 Pour structurer des vidéos démo crédibles, appuie-toi sur [notre guide pour structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
 
-![Portfolio vidéo présenté sur tablette avec études de cas et process de production IA](https://images.unsplash.com/photo-1542744173-8e7e5348bb0c)
+![Portfolio vidéo présenté sur tablette avec études de cas et process de production IA](/images/blog/comment-trouver-clients-video-ia-acquisition/external-1.png)
 
 ## Réseaux: LinkedIn sans performance toxique
 

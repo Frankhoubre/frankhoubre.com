@@ -92,7 +92,7 @@ Recadre 2–3 % pour casser le cadrage « parfait par défaut ». Courbe douce :
 
 Minuteur. Trois défauts max par passe. Tu corriges d’abord **cohérence** (main, perspective), puis cosmétique.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-ameliorer-realisme-mouvements-video-ia/workflow-1.webp)
 
 ### Étape 8 : Itération une variable à la fois
 
@@ -102,7 +102,7 @@ Mouvement OU lumière OU durée : pas les trois. Sinon tu ne sais pas ce qui a s
 
 Regarde une fois en **demi-vitesse** : les déformations subtiles (murs, grille de fenêtre, dents) apparaissent souvent là où l’œil les rate à vitesse normale. Note-les, puis décide : regénération, recadrage, ou masquage par son et coupe : pas toutes les trois en panique.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-ameliorer-realisme-mouvements-video-ia/workflow-2.webp)
 
 ### Table de décision rapide
 

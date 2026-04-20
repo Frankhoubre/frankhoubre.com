@@ -49,7 +49,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="mt-8 space-y-4 rounded-xl border border-neutral-200 p-5 sm:p-6">
+    <form onSubmit={onSubmit} className="ds-card mt-8 space-y-4 p-5 sm:p-6">
       <div>
         <label htmlFor="name" className="mb-1 block text-sm font-medium text-neutral-900">
           Nom
@@ -60,7 +60,7 @@ export function ContactForm() {
           type="text"
           required
           maxLength={120}
-          className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm outline-none ring-0 focus:border-neutral-500"
+          className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm outline-none ring-0 focus:border-blue-500"
         />
       </div>
 
@@ -74,7 +74,7 @@ export function ContactForm() {
           type="email"
           required
           maxLength={200}
-          className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm outline-none ring-0 focus:border-neutral-500"
+          className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm outline-none ring-0 focus:border-blue-500"
         />
       </div>
 
@@ -88,7 +88,7 @@ export function ContactForm() {
           type="text"
           required
           maxLength={200}
-          className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm outline-none ring-0 focus:border-neutral-500"
+          className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm outline-none ring-0 focus:border-blue-500"
         />
       </div>
 
@@ -102,14 +102,14 @@ export function ContactForm() {
           rows={6}
           required
           maxLength={5000}
-          className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm outline-none ring-0 focus:border-neutral-500"
+          className="w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm outline-none ring-0 focus:border-blue-500"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex items-center rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-neutral-700 disabled:cursor-not-allowed disabled:opacity-60"
+        className="inline-flex cursor-pointer items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "loading" ? "Envoi..." : "Envoyer"}
       </button>

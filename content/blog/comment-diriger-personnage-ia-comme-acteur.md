@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-diriger-personnage-ia-comme-acteur/hero.webp"
 Un personnage IA devient crédible quand il joue une intention.  
 Pas quand il “pose”.
 
-![Hero image, direction personnage IA.](hero.webp)
+![Hero image, direction personnage IA.](/images/blog/comment-diriger-personnage-ia-comme-acteur/hero.webp)
 
 
 Diriger un personnage IA, c’est écrire des actions jouables, pas des adjectifs de personnalité. “triste” donne peu d’information. “regarde la porte puis serre la mâchoire avant de respirer” donne une performance. Pour stabiliser cette direction sur plusieurs plans, connecte avec [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant).
@@ -31,7 +31,7 @@ Diriger un personnage IA, c’est écrire des actions jouables, pas des adjectif
 | trop de gestes | confusion | une action clé par plan |
 | émotion figée | personnage inerte | micro progression |
 
-![Image contextuelle 1, direction d’action et micro-expressions.](workflow-1.webp)
+![Image contextuelle 1, direction d’action et micro-expressions.](/images/blog/comment-diriger-personnage-ia-comme-acteur/workflow-1.webp)
 
 
 ## Vidéo YouTube intégrée
@@ -53,7 +53,7 @@ Pour garder cette direction dans un vrai découpage, complète avec [comment con
 - trop de mouvement parasite  
 - couper avant la fin de l’intention
 
-![Image contextuelle 2, cohérence de performance au montage.](workflow-2.webp)
+![Image contextuelle 2, cohérence de performance au montage.](/images/blog/comment-diriger-personnage-ia-comme-acteur/workflow-2.webp)
 
 
 ## Ce que “diriger” veut dire en IA

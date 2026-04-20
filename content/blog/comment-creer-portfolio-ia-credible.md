@@ -3,7 +3,7 @@ title: "Comment créer un portfolio IA crédible (qui fait signer, pas juste lik
 date: "2026-04-23"
 category: "business"
 excerpt: "Structure, preuves, cas d'usage, et finition: la méthode pour montrer une pratique IA sérieuse sans effet vitrine creuse."
-thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07a534b4"
+thumbnail: "/images/blog/comment-creer-portfolio-ia-credible/external-1.png"
 ---
 
 # Comment créer un portfolio IA crédible (qui fait signer, pas juste liker)
@@ -14,7 +14,7 @@ La crédibilité vient de la cohérence, du contexte business, et de la finition
 
 Ce guide te donne une structure de portfolio orientée signature: pages, cas, preuves, storytelling, et erreurs à éviter pour ne pas passer pour un compte "prompt du jour".
 
-![Créateur présentant un portfolio vidéo et image IA sur tablette en réunion client](https://images.unsplash.com/photo-1492691527719-9d1e07a534b4)
+![Créateur présentant un portfolio vidéo et image IA sur tablette en réunion client](/images/blog/comment-creer-portfolio-ia-credible/external-1.png)
 
 ## Ce qu'un acheteur cherche dans ton portfolio
 

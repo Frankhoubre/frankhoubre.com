@@ -51,7 +51,7 @@ Garde un document texte à côté de tes exports. Une ligne pour l’identité s
 
 **Ligne interdits.** Pas de mains en premier plan si ton pipeline les dégrade, pas de dents visibles en très gros plan, pas de texte sur les vêtements, ce que tu refuses est aussi un pilier du contrat.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-ecrire-prompt-personnage-realiste-constant/workflow-1.webp)
 
 ## Géométrie et angles qui réduisent les erreurs
 
@@ -117,7 +117,7 @@ Si deux visages sont proches mais pas identiques, parfois un léger **harmonisat
 
 Les **LUT** ou presets couleur doivent servir de colle entre plans, pas de cache. Si la lumière de base ment, un LUT transforme le mensonge en style cohérent mais toujours faux pour qui regarde les ombres du nez et des joues.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-ecrire-prompt-personnage-realiste-constant/workflow-2.webp)
 
 ### Table de décision rapide
 

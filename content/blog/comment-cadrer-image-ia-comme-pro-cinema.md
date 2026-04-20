@@ -10,7 +10,7 @@ Tu as peut-être déjà vécu ça. Tu génères une image qui te semble impressi
 Le cadrage, c’est exactement ça, dire au spectateur où regarder, dans quel ordre, et pourquoi.  
 Sans ce pilotage, même une image techniquement propre devient confuse.
 
-![Hero image, cadrage cinematographique.](hero.webp)
+![Hero image, cadrage cinematographique.](/images/blog/comment-cadrer-image-ia-comme-pro-cinema/hero.webp)
 
 
 Dans ce masterclass, tu vas apprendre une méthode de cadrage pensée pour la génération locale, Flux, SDXL, ComfyUI, avec des décisions claires, des réglages concrets, et surtout une logique de récit.
@@ -181,7 +181,7 @@ Pas plus:
 
 Tu compares, tu décides, tu avances.
 
-![Image contextuelle 1, schémas de cadre.](workflow-1.webp)
+![Image contextuelle 1, schémas de cadre.](/images/blog/comment-cadrer-image-ia-comme-pro-cinema/workflow-1.webp)
 
 
 ### Étape 7, test de lecture rapide
@@ -282,7 +282,7 @@ Fix: corriger à la source, dans le prompt et la composition.
 
 ## Validation en montage
 
-![Image contextuelle 2, verification lisibilite du cadre en montage.](workflow-2.webp)
+![Image contextuelle 2, verification lisibilite du cadre en montage.](/images/blog/comment-cadrer-image-ia-comme-pro-cinema/workflow-2.webp)
 
 
 ## Cas pratique complet, pub de 30 secondes cadrée comme un film

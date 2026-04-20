@@ -21,7 +21,7 @@ Si tu mélanges tout en vrac, le modèle mélange tout en vrac aussi.
 
 Pour les objectifs et le langage focal, [comment utiliser les objectifs caméra dans un prompt IA](/blog/comment-utiliser-objectifs-camera-dans-prompt-ia).
 
-![Repère de structure en trois blocs.](workflow-1.webp)
+![Repère de structure en trois blocs.](/images/blog/secrets-prompts-rendu-photographique-ia/workflow-1.webp)
 
 ## Secret 3 : le négatif minimal ciblé
 
@@ -178,7 +178,7 @@ Référence `@BusinessDynamite` :
 
 Pour la méthode : décider vite, documenter, ne pas collectionner des prompts inutilisables.
 
-![Second repère : test AB et miniature.](workflow-2.webp)
+![Second repère : test AB et miniature.](/images/blog/secrets-prompts-rendu-photographique-ia/workflow-2.webp)
 
 ## FAQ
 

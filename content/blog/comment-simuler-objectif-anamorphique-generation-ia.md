@@ -116,11 +116,11 @@ Les modèles confondent parfois **aberration chromatique** et style anamorphique
 
 Les lignes droites en bord de cadre : un léger moustiquaire peut aller avec le look, mais des murs en vague trahissent la génération. Recadre pour mettre les verticales loin du bord ou simplifie le décor.
 
-![Repère de workflow, lumière et texture pour caler ton œil.](workflow-1.webp)
+![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-simuler-objectif-anamorphique-generation-ia/workflow-1.webp)
 
 La peau en premier plan doit rester **lisible** : pores suggérés, pas grille. Si le modèle lisse tout pour « faire cinéma », baisse la guidance ou ajoute des imperfection contrôlées dans le prompt.
 
-![Second repère, profondeur et grain, avant passage vidéo ou post.](workflow-2.webp)
+![Second repère, profondeur et grain, avant passage vidéo ou post.](/images/blog/comment-simuler-objectif-anamorphique-generation-ia/workflow-2.webp)
 
 ### Table de choix : anamorphique ou pas
 

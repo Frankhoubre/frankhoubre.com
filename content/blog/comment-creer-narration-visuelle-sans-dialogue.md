@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-creer-narration-visuelle-sans-dialogue/hero.web
 Une narration visuelle forte n’a pas besoin de parler.  
 Elle montre. Elle suggère. Elle fait ressentir.
 
-![Hero image, narration visuelle sans dialogue.](hero.webp)
+![Hero image, narration visuelle sans dialogue.](/images/blog/comment-creer-narration-visuelle-sans-dialogue/hero.webp)
 
 
 En IA, c’est même souvent plus efficace. Les dialogues longs exposent vite les limites de sync et de rythme. Une narration visuelle bien pensée tient mieux, surtout en format court. Pour construire cette logique, appuie-toi aussi sur [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia).
@@ -39,7 +39,7 @@ En IA, c’est même souvent plus efficace. Les dialogues longs exposent vite le
 | Pas de point focal | image plate | placer un objet narratif |
 | Fin sans conséquence | vide émotionnel | montrer l’après-décision |
 
-![Image contextuelle 1, beats narratifs sans texte.](workflow-1.webp)
+![Image contextuelle 1, beats narratifs sans texte.](/images/blog/comment-creer-narration-visuelle-sans-dialogue/workflow-1.webp)
 
 
 ## Vidéo YouTube intégrée
@@ -61,7 +61,7 @@ Pour maintenir cette narration sur plusieurs plans, combine avec [comment struct
 - surcharger l’image d’objets  
 - oublier le rôle du rythme de coupe
 
-![Image contextuelle 2, montage silencieux avec impact émotionnel.](workflow-2.webp)
+![Image contextuelle 2, montage silencieux avec impact émotionnel.](/images/blog/comment-creer-narration-visuelle-sans-dialogue/workflow-2.webp)
 
 
 ## Pourquoi la narration sans dialogue est un super pouvoir

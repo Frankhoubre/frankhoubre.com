@@ -8,7 +8,7 @@ thumbnail: "/images/blog/comment-construire-scene-cinematique-plan-par-plan/hero
 Une scène cinématique ne se génère pas en un bloc.  
 Elle se construit plan par plan.
 
-![Hero image, construction scene plan par plan.](hero.webp)
+![Hero image, construction scene plan par plan.](/images/blog/comment-construire-scene-cinematique-plan-par-plan/hero.webp)
 
 
 Le secret, c’est la continuité. Même personnage, même logique lumière, même intention narrative qui progresse. Pour verrouiller ce flux, garde en tête [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste).
@@ -40,7 +40,7 @@ Le secret, c’est la continuité. Même personnage, même logique lumière, mê
 | Close-up | émotion | visage instable |
 | Reaction | conséquence | coupe trop rapide |
 
-![Image contextuelle 1, shotlist narrative.](workflow-1.webp)
+![Image contextuelle 1, shotlist narrative.](/images/blog/comment-construire-scene-cinematique-plan-par-plan/workflow-1.webp)
 
 
 ## Vidéo YouTube intégrée
@@ -62,7 +62,7 @@ Pour améliorer les raccords de mouvement entre plans, relie aussi avec [comment
 - vouloir des plans trop longs  
 - ignorer la continuité costume/décor
 
-![Image contextuelle 2, raccords et continuité en post.](workflow-2.webp)
+![Image contextuelle 2, raccords et continuité en post.](/images/blog/comment-construire-scene-cinematique-plan-par-plan/workflow-2.webp)
 
 
 ## Pourquoi le plan par plan change tout
