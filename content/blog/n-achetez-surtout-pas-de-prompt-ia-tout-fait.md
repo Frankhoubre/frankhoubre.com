@@ -3,7 +3,7 @@ title: "N'achetez surtout pas de prompt IA tout fait !"
 date: "2026-04-22"
 category: "business"
 excerpt: "Pourquoi les packs de prompts IA prets a l'emploi ruinent tes resultats, et comment construire un systeme de prompts rentable et durable."
-thumbnail: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+thumbnail: "/images/blog/n-achetez-surtout-pas-de-prompt-ia-tout-fait/hero.webp"
 ---
 
 # N'achetez surtout pas de prompt IA tout fait !
@@ -20,7 +20,7 @@ Le probleme n'est pas que les prompts sont inutiles. Le probleme, c'est d'achete
 
 Un prompt tout fait peut te depanner pour tester une idee. Il ne peut pas porter ton positionnement, tes objections clients, ta tonalite de marque, et tes contraintes de diffusion en meme temps.
 
-![Prompt engineering reel en production creative IA](https://images.unsplash.com/photo-1516321318423-f06f85e504b3)
+![Prompt engineering reel en production creative IA](/images/blog/n-achetez-surtout-pas-de-prompt-ia-tout-fait/hero.webp)
 
 ## Pourquoi les prompts tout faits te freinent
 
@@ -96,7 +96,7 @@ Pour chaque test, note:
 
 En quelques semaines, tu construis une bibliotheque de decisions, pas une collection de recettes.
 
-![Comparaison de variations de prompts IA et performances](https://images.unsplash.com/photo-1460925895917-afdab827c52f)
+![Comparaison de variations de prompts IA et performances](/images/blog/n-achetez-surtout-pas-de-prompt-ia-tout-fait/workflow-1.webp)
 
 ## Tableau: prompt pack vs systeme maison
 
@@ -122,7 +122,7 @@ Cinquieme erreur: copier les codes UGC sans honnetete editoriale. Si tu produis 
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building prompt systems that scale]
 
-![Creation de prompts IA sur un tableau de strategie creative](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40)
+![Creation de prompts IA sur un tableau de strategie creative](/images/blog/n-achetez-surtout-pas-de-prompt-ia-tout-fait/workflow-2.webp)
 
 ## Ressources utiles pour progresser
 

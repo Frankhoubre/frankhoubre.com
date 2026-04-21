@@ -3,7 +3,7 @@ title: "Pourquoi les faux témoignages UGC IA sont interdits et comment vendre l
 date: "2026-04-22"
 category: "business"
 excerpt: "Le cadre concret pour créer des UGC IA crédibles sans tomber dans la pratique commerciale trompeuse."
-thumbnail: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+thumbnail: "/images/blog/pourquoi-faux-temoignages-ugc-ia-interdits/hero.webp"
 ---
 
 # Pourquoi les faux témoignages UGC IA sont interdits et comment vendre légalement
@@ -14,7 +14,7 @@ Je vais le dire sans filtre: les faux témoignages sont interdits. Pas "déconse
 
 Quand un contenu UGC synthétique est présenté comme l'avis authentique d'une personne réelle alors que c'est faux, tu bascules dans la pratique commerciale trompeuse. Et ce n'est pas un débat créatif, c'est un risque business direct: refus de campagne, suspension de compte, réputation abîmée, et parfois litige.
 
-![Cadre legal des contenus UGC IA et validation publicitaire](https://images.unsplash.com/photo-1450101499163-c8848c66ca85)
+![Cadre legal des contenus UGC IA et validation publicitaire](/images/blog/pourquoi-faux-temoignages-ugc-ia-interdits/hero.webp)
 
 ## Ce qui est interdit, exactement
 
@@ -87,7 +87,7 @@ Conserve dans un dossier:
 
 Sans archive, tu ne peux pas defendre ta bonne foi.
 
-![Checklist de conformite UGC IA avant publication](https://images.unsplash.com/photo-1554224155-6726b3ff858f)
+![Checklist de conformite UGC IA avant publication](/images/blog/pourquoi-faux-temoignages-ugc-ia-interdits/workflow-1.webp)
 
 ## Tableau pratique: formulation risquee vs formulation conforme
 
@@ -110,7 +110,7 @@ La quatrieme erreur est de ne pas documenter les decisions. Le jour ou il y a co
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on legal-safe testimonial scripting]
 
-![Validation editoriale et juridique d une campagne UGC IA](https://images.unsplash.com/photo-1551836022-deb4988cc6c0)
+![Validation editoriale et juridique d une campagne UGC IA](/images/blog/pourquoi-faux-temoignages-ugc-ia-interdits/workflow-2.webp)
 
 ## FAQ
 
