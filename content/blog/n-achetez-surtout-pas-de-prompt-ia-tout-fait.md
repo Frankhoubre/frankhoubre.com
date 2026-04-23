@@ -162,5 +162,3 @@ Travaille a partir de ton contexte reel: produit, audience, objection, preuve. P
 ### Que faire si un client exige un "prompt secret garanti viral" ?
 
 Recadre immediatement. Explique qu'il n'existe pas de formule garantie, seulement des hypotheses testables. Propose un plan d'experimentation clair avec jalons, variantes et criteres de decision. Tu montres du professionnalisme et tu deplaces la discussion du fantasme vers un process mesurable.
-
-<!-- PUBLICATION DATE: 2026-04-22 -->

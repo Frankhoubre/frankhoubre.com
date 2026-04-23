@@ -137,5 +137,3 @@ Oui, si c'est vrai et que tu n'inventes pas un faux avis individuel. Cette formu
 ### Que faire si un client insiste pour un faux avis ?
 
 Refuse et recadre. Propose une version legale: porte-parole fictif assume + preuves produit concretes. Tu proteges le client et ton activite.
-
-<!-- PUBLICATION DATE: 2026-04-22 -->
