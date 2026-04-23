@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:main": "bash scripts/safe-sync.sh main origin"
   },
   "dependencies": {
     "@21st-sdk/agent": "^0.0.16",
