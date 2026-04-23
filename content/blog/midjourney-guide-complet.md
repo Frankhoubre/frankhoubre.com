@@ -170,4 +170,4 @@ Pense comme un directeur photo, pas comme un collectionneur de mots-clés visuel
 
 > *J’ai perdu assez d’heures à courir après des rendus “wow” inutilisables. Le jour où j’ai commencé à noter mes décisions et à tester variable par variable, la qualité a décollé. Fais pareil, et ta progression sera visible en quelques semaines, pas en quelques années.*
 
-<!-- PUBLICATION DATE: 2026-04-23 -->
+{/* PUBLICATION DATE: 2026-04-23 */}
