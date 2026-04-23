@@ -26,7 +26,7 @@ const featuredTools: FeaturedTool[] = [
     description:
       "Mon outil principal pour générer des vidéos et images IA au quotidien.",
     badge: "Outil principal",
-    href: "https://higgsfield.ai/?fpr=frank70",
+    href: "https://goto.higgsfield.ai/YRxK5O",
     cta: "Essayer Higgsfield",
   },
   {
