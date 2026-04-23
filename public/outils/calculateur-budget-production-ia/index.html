@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculateur Budget Production IA Gratuit | Convertisseur Credits IA en Euros</title>
+    <meta
+      name="description"
+      content="Estimez instantanement le budget d'un projet video IA et convertissez les credits Midjourney, Runway, ElevenLabs et autres plateformes en euros reels."
+    />
+    <meta
+      name="keywords"
+      content="calculateur budget production IA, convertisseur credits IA euros, cout Midjourney Runway ElevenLabs, budget video IA, estimation projet IA"
+    />
+    <link rel="canonical" href="https://frankhoubre.com/outils/calculateur-budget-production-ia/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Calculateur Budget Production IA Gratuit | Convertisseur Credits IA en Euros"
+    />
+    <meta
+      property="og:description"
+      content="Un outil interactif gratuit pour estimer le cout complet d'un projet video IA et traduire les credits en euros."
+    />
+    <meta property="og:url" content="https://frankhoubre.com/outils/calculateur-budget-production-ia/" />
+    <meta property="og:site_name" content="Frank Houbre" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Calculateur Budget Production IA Gratuit | Convertisseur Credits IA en Euros"
+    />
+    <meta
+      property="twitter:description"
+      content="Calculez votre budget IA (abonnements + credits + marge de securite) et convertissez les credits en euros reels."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              neon: "0 0 0 1px rgba(34,211,238,.28), 0 0 28px rgba(56,189,248,.22)",
+            },
+            keyframes: {
+              fadeUp: {
+                "0%": { opacity: "0", transform: "translateY(10px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              pulseGlow: {
+                "0%,100%": { boxShadow: "0 0 0 1px rgba(34,211,238,.25), 0 0 20px rgba(34,211,238,.18)" },
+                "50%": { boxShadow: "0 0 0 1px rgba(168,85,247,.4), 0 0 28px rgba(168,85,247,.24)" },
+              },
+            },
+            animation: {
+              "fade-up": "fadeUp .45s ease-out both",
+              "pulse-glow": "pulseGlow 2.2s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        background: #fafafa;
+        color: #171717;
+      }
+      .glass {
+        background: #ffffff;
+        border-color: #e5e5e5 !important;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      }
+      .bg-slate-900\/80,
+      .bg-slate-900\/60,
+      .bg-slate-900\/55,
+      .bg-slate-900\/40,
+      .bg-slate-950\/80,
+      .bg-slate-950\/75,
+      .bg-slate-950\/70,
+      .bg-slate-950\/50,
+      .bg-slate-950 {
+        background: #ffffff !important;
+      }
+      .border-slate-800\/80,
+      .border-slate-700\/70,
+      .border-slate-700,
+      .border-slate-600 {
+        border-color: #e5e5e5 !important;
+      }
+      .text-white {
+        color: #0a0a0a !important;
+      }
+      .text-slate-100,
+      .text-slate-200 {
+        color: #171717 !important;
+      }
+      .text-slate-300,
+      .text-slate-400 {
+        color: #525252 !important;
+      }
+      .text-cyan-300,
+      .text-cyan-200 {
+        color: #404040 !important;
+      }
+      .from-cyan-400,
+      .to-indigo-500 {
+        --tw-gradient-from: #171717 var(--tw-gradient-from-position) !important;
+        --tw-gradient-to: rgb(23 23 23 / 0) var(--tw-gradient-to-position) !important;
+        --tw-gradient-stops: var(--tw-gradient-from), #404040 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+      }
+      input,
+      select,
+      textarea {
+        border-color: #d4d4d4 !important;
+        background: #ffffff !important;
+        color: #171717 !important;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-neutral-300/60">
+
+    <main class="mx-auto max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+      <section class="mb-14">
+        <div class="glass rounded-3xl border p-5 animate-fade-up sm:p-8">
+          <div class="grid gap-6 lg:grid-cols-[1.1fr_.9fr]">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[.2em] text-cyan-300">Mini outil gratuit</p>
+              <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">
+                Calculateur de budget de production IA
+              </h1>
+              <p class="mt-4 max-w-2xl text-slate-300">
+                Estimez en quelques clics le cout reel d'un projet video IA: abonnements, volume de credits,
+                voix off, upscaling, marge de securite et prix de vente recommande.
+              </p>
+
+              <form id="budgetForm" class="mt-7 grid gap-4 sm:grid-cols-2">
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-slate-200">Duree finale cible (minutes)</span>
+                  <input id="duration" type="number" min="1" max="120" value="5" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400" />
+                </label>
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-slate-200">Complexite du projet</span>
+                  <select id="complexity" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400">
+                    <option value="basic">Essentiel (social / UGC)</option>
+                    <option value="pro" selected>Professionnel (pub / formation)</option>
+                    <option value="premium">Premium (cinema / brand film)</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-slate-200">Nombre de revisions prevues</span>
+                  <input id="revisions" type="number" min="0" max="12" value="2" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400" />
+                </label>
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-slate-200">Marge de securite (%)</span>
+                  <input id="buffer" type="number" min="0" max="100" value="18" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400" />
+                </label>
+
+                <fieldset class="sm:col-span-2 rounded-xl border border-slate-700/70 bg-slate-900/55 p-4">
+                  <legend class="px-1 text-sm font-medium text-slate-200">Abonnements requis</legend>
+                  <div id="subscriptions" class="mt-3 grid gap-3 sm:grid-cols-2"></div>
+                </fieldset>
+
+                <div class="sm:col-span-2 flex flex-wrap items-center gap-3 pt-1">
+                  <button id="estimateBtn" type="submit" class="animate-pulse-glow rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:brightness-110">
+                    Estimer mon budget IA
+                  </button>
+                  <button id="resetBtn" type="button" class="rounded-xl border border-slate-600 bg-slate-800 px-4 py-2.5 text-sm font-medium text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200">
+                    Reinitialiser
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <aside class="space-y-4">
+              <div class="rounded-2xl border border-slate-700/70 bg-slate-900/60 p-5">
+                <p class="font-mono text-[11px] uppercase tracking-[.2em] text-slate-400">Estimation budget</p>
+                <div id="loadingState" class="mt-3 hidden items-center gap-2 text-sm text-cyan-300">
+                  <span class="inline-block h-2.5 w-2.5 animate-ping rounded-full bg-cyan-300"></span>
+                  Calcul en cours...
+                </div>
+                <div id="budgetResult" class="mt-4 space-y-3 text-sm text-slate-200"></div>
+              </div>
+
+              <div class="rounded-2xl border border-slate-700/70 bg-slate-900/60 p-5">
+                <h2 class="text-lg font-semibold text-white">Convertisseur de credits IA en Euros</h2>
+                <p class="mt-1 text-sm text-slate-300">Selectionnez la plateforme puis entrez votre volume de credits.</p>
+                <div class="mt-3 grid gap-3">
+                  <label>
+                    <span class="mb-1 block text-xs uppercase tracking-[.12em] text-slate-400">Plateforme</span>
+                    <select id="platform" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400"></select>
+                  </label>
+                  <label>
+                    <span class="mb-1 block text-xs uppercase tracking-[.12em] text-slate-400">Credits utilises</span>
+                    <input id="creditsInput" type="number" min="1" value="1200" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none transition focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400" />
+                  </label>
+                  <div id="creditsResult" class="rounded-xl border border-slate-700 bg-slate-950/80 p-3 text-sm text-slate-200"></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <article class="space-y-8">
+        <section class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold tracking-tight text-white">Comment utiliser cet outil ?</h2>
+          <ol class="mt-4 list-decimal space-y-2 pl-6 text-slate-300">
+            <li>Renseignez la duree finale cible et le niveau de complexite du projet.</li>
+            <li>Cochez les plateformes IA necessaires selon votre pipeline (image, video, voix, upscaling).</li>
+            <li>Definissez le nombre de revisions et votre marge de securite budgetaire.</li>
+            <li>Lancez l'estimation pour obtenir un cout de production detaille et un prix de vente recommande.</li>
+            <li>Utilisez le convertisseur de credits pour transformer vos volumes en euros reels par plateforme.</li>
+          </ol>
+          <p class="mt-4 leading-relaxed text-slate-300">
+            L'outil est pense pour une utilisation terrain: chiffrage rapide avant devis, ajustement de budget
+            en preproduction, et arbitrage clair entre qualite de rendu et rentabilite.
+          </p>
+        </section>
+
+        <section class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold tracking-tight text-white">
+            Pourquoi utiliser l'IA pour estimer un budget de production video ?
+          </h2>
+          <p class="mt-4 leading-relaxed text-slate-300">
+            Les projets video IA melangent abonnements, credits variables et iterations creatives. Sans cadre
+            de calcul, les devis sont souvent sous-estimes et la marge disparait en phase de revisions. Une
+            estimation structuree permet de visualiser le cout reel de la chaine complete: generation visuelle,
+            motion, voix, sound design et post-production.
+          </p>
+          <h3 class="mt-5 text-xl font-semibold text-white">Mieux vendre vos prestations</h3>
+          <p class="mt-2 leading-relaxed text-slate-300">
+            En liant vos besoins techniques a un budget transparent, vous justifiez facilement votre prix
+            aupres d'un client. Vous montrez ou part chaque euro et vous limitez les discussions floues
+            autour des "credits IA".
+          </p>
+          <h3 class="mt-5 text-xl font-semibold text-white">Garder la rentabilite sous controle</h3>
+          <p class="mt-2 leading-relaxed text-slate-300">
+            Le calcul de marge de securite et l'impact des revisions aident a maintenir un projet profitable.
+            Vous pouvez adapter rapidement vos choix d'outils et votre niveau de qualite sans risquer
+            un depassement budgetaire.
+          </p>
+        </section>
+
+        <section class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold tracking-tight text-white">Foire Aux Questions (FAQ)</h2>
+          <div class="mt-4 space-y-3">
+            <details class="rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+              <summary class="cursor-pointer font-medium text-white">
+                Ce calculateur est-il adapte aux projets courts pour les reseaux sociaux ?
+              </summary>
+              <p class="mt-2 text-slate-300">
+                Oui. Choisissez un niveau de complexite "Essentiel" et reduisez le nombre de plateformes
+                cochees. Vous obtenez une estimation rapide pour des formats courts, reels ou ads verticales.
+              </p>
+            </details>
+            <details class="rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+              <summary class="cursor-pointer font-medium text-white">
+                Comment le convertisseur de credits IA calcule-t-il le cout reel ?
+              </summary>
+              <p class="mt-2 text-slate-300">
+                L'outil utilise un referentiel interne de plans tarifaires realistes (credits inclus et cout
+                mensuel). Il derive un cout moyen par credit puis applique ce ratio a votre consommation.
+              </p>
+            </details>
+            <details class="rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+              <summary class="cursor-pointer font-medium text-white">
+                Puis-je sauvegarder mes reglages entre deux sessions ?
+              </summary>
+              <p class="mt-2 text-slate-300">
+                Oui. Les selections (duree, complexite, outils coches, revisions et marge) sont conservees
+                dans votre navigateur via localStorage.
+              </p>
+            </details>
+            <details class="rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+              <summary class="cursor-pointer font-medium text-white">
+                L'estimation remplace-t-elle un devis final client ?
+              </summary>
+              <p class="mt-2 text-slate-300">
+                Non. C'est une base de decision tres fiable pour cadrer un devis. Vous pouvez ensuite ajuster
+                selon les droits musicaux, l'equipe humaine, les delais urgents et les exigences juridiques.
+              </p>
+            </details>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Calculateur de budget de production IA",
+            "url": "https://frankhoubre.com/outils/calculateur-budget-production-ia/",
+            "description": "Outil gratuit pour estimer le cout d'un projet video IA et convertir des credits IA en euros."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Calculateur de budget de production IA",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Ce calculateur est-il adapte aux projets courts pour les reseaux sociaux ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui. Il permet d'estimer rapidement les budgets de formats courts en ajustant la complexite et les plateformes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment le convertisseur de credits IA calcule-t-il le cout reel ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Il utilise un referentiel de plans tarifaires avec credits inclus pour determiner un cout moyen par credit."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je sauvegarder mes reglages entre deux sessions ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, les choix sont sauvegardes localement via localStorage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "L'estimation remplace-t-elle un devis final client ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non. L'outil fournit une estimation robuste a completer selon le contexte commercial et juridique."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      const STORAGE_KEY = "fh_budget_production_ia_v1";
+
+      const platforms = [
+        { id: "midjourney", name: "Midjourney", monthlyPrice: 60, includedCredits: 1200, unit: "GPU-min approx." },
+        { id: "runway", name: "Runway", monthlyPrice: 76, includedCredits: 2250, unit: "credits" },
+        { id: "elevenlabs", name: "ElevenLabs", monthlyPrice: 99, includedCredits: 100000, unit: "characters" },
+        { id: "kling", name: "Kling", monthlyPrice: 48, includedCredits: 660, unit: "credits" },
+        { id: "pika", name: "Pika", monthlyPrice: 35, includedCredits: 900, unit: "credits" },
+        { id: "sora", name: "Sora", monthlyPrice: 24, includedCredits: 1000, unit: "compute credits" },
+        { id: "topaz", name: "Topaz Video AI", monthlyPrice: 25, includedCredits: 1, unit: "license equivalent" }
+      ];
+
+      const complexityModel = {
+        basic: { creditsPerMinute: 320, retryFactor: 1.1, postProdHoursPerMinute: 0.8, risk: 0.06 },
+        pro: { creditsPerMinute: 760, retryFactor: 1.35, postProdHoursPerMinute: 1.6, risk: 0.11 },
+        premium: { creditsPerMinute: 1400, retryFactor: 1.65, postProdHoursPerMinute: 2.7, risk: 0.18 }
+      };
+
+      const hourlyCreativeRate = 65;
+      const recommendedMargin = 0.32;
+
+      const els = {
+        budgetForm: document.getElementById("budgetForm"),
+        subscriptions: document.getElementById("subscriptions"),
+        duration: document.getElementById("duration"),
+        complexity: document.getElementById("complexity"),
+        revisions: document.getElementById("revisions"),
+        buffer: document.getElementById("buffer"),
+        loadingState: document.getElementById("loadingState"),
+        budgetResult: document.getElementById("budgetResult"),
+        resetBtn: document.getElementById("resetBtn"),
+        platform: document.getElementById("platform"),
+        creditsInput: document.getElementById("creditsInput"),
+        creditsResult: document.getElementById("creditsResult")
+      };
+
+      function eur(value) {
+        return new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 2 }).format(value);
+      }
+
+      function saveState(state) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      }
+
+      function loadState() {
+        try {
+          return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
+      function selectedPlatforms() {
+        const checks = Array.from(document.querySelectorAll("input[name='platformCheck']:checked"));
+        return checks.map((c) => platforms.find((p) => p.id === c.value)).filter(Boolean);
+      }
+
+      function renderSubscriptions(savedIds) {
+        els.subscriptions.innerHTML = platforms
+          .map((p) => {
+            const checked = savedIds.includes(p.id) || (!savedIds.length && ["midjourney", "runway", "elevenlabs"].includes(p.id));
+            return `<label class="flex items-start gap-2 rounded-lg border border-slate-700 bg-slate-950/70 p-3">
+              <input type="checkbox" name="platformCheck" value="${p.id}" ${checked ? "checked" : ""} class="mt-1 h-4 w-4 rounded border-slate-600 bg-slate-900 text-cyan-400 focus:ring-cyan-400" />
+              <span>
+                <span class="block text-sm font-medium text-slate-100">${p.name}</span>
+                <span class="block text-xs text-slate-400">${eur(p.monthlyPrice)} / mois - ${p.includedCredits} ${p.unit}</span>
+              </span>
+            </label>`;
+          })
+          .join("");
+      }
+
+      function buildPlatformSelect() {
+        els.platform.innerHTML = platforms.map((p) => `<option value="${p.id}">${p.name}</option>`).join("");
+      }
+
+      function estimate() {
+        const duration = Math.max(1, Number(els.duration.value) || 1);
+        const complexity = complexityModel[els.complexity.value] || complexityModel.pro;
+        const revisions = Math.max(0, Number(els.revisions.value) || 0);
+        const userBuffer = Math.max(0, Number(els.buffer.value) || 0) / 100;
+        const selected = selectedPlatforms();
+        const safeSelected = selected.length ? selected : [platforms[0], platforms[1]];
+
+        const monthlySubscriptions = safeSelected.reduce((sum, p) => sum + p.monthlyPrice, 0);
+        const productionCredits = duration * complexity.creditsPerMinute * complexity.retryFactor * (1 + revisions * 0.08);
+        const avgCostPerCredit = safeSelected.reduce((sum, p) => sum + p.monthlyPrice / Math.max(1, p.includedCredits), 0) / safeSelected.length;
+        const variableCreditsCost = productionCredits * avgCostPerCredit;
+
+        const postProdHours = duration * complexity.postProdHoursPerMinute * (1 + revisions * 0.06);
+        const postProdCost = postProdHours * hourlyCreativeRate;
+
+        const riskReserve = (monthlySubscriptions + variableCreditsCost + postProdCost) * (complexity.risk + userBuffer);
+        const totalCost = monthlySubscriptions + variableCreditsCost + postProdCost + riskReserve;
+        const recommendedSellPrice = totalCost * (1 + recommendedMargin);
+        const breakEvenPrice = totalCost / Math.max(0.55, 1 - recommendedMargin);
+
+        return {
+          monthlySubscriptions,
+          productionCredits,
+          avgCostPerCredit,
+          variableCreditsCost,
+          postProdHours,
+          postProdCost,
+          riskReserve,
+          totalCost,
+          recommendedSellPrice,
+          breakEvenPrice,
+          selectedNames: safeSelected.map((p) => p.name).join(", ")
+        };
+      }
+
+      function renderBudget(result, withLoading) {
+        const html = `
+          <div class="grid grid-cols-1 gap-2 rounded-xl border border-slate-700 bg-slate-950/75 p-3">
+            <p><span class="text-slate-400">Stack selectionnee:</span> ${result.selectedNames}</p>
+            <p><span class="text-slate-400">Credits estimes:</span> ${Math.round(result.productionCredits).toLocaleString("fr-FR")}</p>
+            <p><span class="text-slate-400">Cout moyen par credit:</span> ${eur(result.avgCostPerCredit)}</p>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="rounded-lg border border-slate-700 bg-slate-950/70 p-3"><p class="text-xs uppercase tracking-[.11em] text-slate-400">Abonnements</p><p class="mt-1 text-base font-semibold text-white">${eur(result.monthlySubscriptions)}</p></div>
+            <div class="rounded-lg border border-slate-700 bg-slate-950/70 p-3"><p class="text-xs uppercase tracking-[.11em] text-slate-400">Credits variables</p><p class="mt-1 text-base font-semibold text-white">${eur(result.variableCreditsCost)}</p></div>
+            <div class="rounded-lg border border-slate-700 bg-slate-950/70 p-3"><p class="text-xs uppercase tracking-[.11em] text-slate-400">Post-production</p><p class="mt-1 text-base font-semibold text-white">${eur(result.postProdCost)}</p></div>
+            <div class="rounded-lg border border-slate-700 bg-slate-950/70 p-3"><p class="text-xs uppercase tracking-[.11em] text-slate-400">Reserve risque</p><p class="mt-1 text-base font-semibold text-white">${eur(result.riskReserve)}</p></div>
+          </div>
+          <div class="rounded-xl border border-cyan-500/45 bg-cyan-900/10 p-4 animate-fade-up">
+            <p class="text-xs uppercase tracking-[.12em] text-cyan-300">Budget total estime</p>
+            <p class="mt-1 text-2xl font-semibold text-white">${eur(result.totalCost)}</p>
+            <p class="mt-2 text-sm text-slate-300">Prix de vente recommande: <strong class="text-cyan-200">${eur(result.recommendedSellPrice)}</strong></p>
+            <p class="text-sm text-slate-400">Point mort prudent: ${eur(result.breakEvenPrice)}</p>
+          </div>
+        `;
+
+        if (!withLoading) {
+          els.budgetResult.innerHTML = html;
+          return;
+        }
+
+        els.loadingState.classList.remove("hidden");
+        els.loadingState.classList.add("flex");
+        els.budgetResult.style.opacity = ".65";
+        setTimeout(() => {
+          els.budgetResult.innerHTML = html;
+          els.budgetResult.style.opacity = "1";
+          els.loadingState.classList.add("hidden");
+          els.loadingState.classList.remove("flex");
+        }, 380);
+      }
+
+      function convertCredits() {
+        const current = platforms.find((p) => p.id === els.platform.value) || platforms[0];
+        const credits = Math.max(1, Number(els.creditsInput.value) || 1);
+        const costPerCredit = current.monthlyPrice / Math.max(1, current.includedCredits);
+        const realCost = credits * costPerCredit;
+        const monthlyEquivalent = realCost / Math.max(1, current.monthlyPrice);
+
+        els.creditsResult.innerHTML = `
+          <p><span class="text-slate-400">Plateforme:</span> ${current.name}</p>
+          <p><span class="text-slate-400">Volume:</span> ${credits.toLocaleString("fr-FR")} ${current.unit}</p>
+          <p><span class="text-slate-400">Cout reel estime:</span> <strong class="text-cyan-200">${eur(realCost)}</strong></p>
+          <p class="text-xs text-slate-400 mt-1">Equivalent a ${monthlyEquivalent.toFixed(2)} mois de plan ${current.name} au rythme indique.</p>
+        `;
+      }
+
+      function currentState() {
+        return {
+          duration: els.duration.value,
+          complexity: els.complexity.value,
+          revisions: els.revisions.value,
+          buffer: els.buffer.value,
+          checked: selectedPlatforms().map((p) => p.id),
+          platform: els.platform.value,
+          creditsInput: els.creditsInput.value
+        };
+      }
+
+      function hydrate() {
+        const saved = loadState();
+        renderSubscriptions(saved.checked || []);
+        buildPlatformSelect();
+
+        if (saved.duration) els.duration.value = saved.duration;
+        if (saved.complexity) els.complexity.value = saved.complexity;
+        if (saved.revisions) els.revisions.value = saved.revisions;
+        if (saved.buffer) els.buffer.value = saved.buffer;
+        if (saved.platform) els.platform.value = saved.platform;
+        if (saved.creditsInput) els.creditsInput.value = saved.creditsInput;
+
+        renderBudget(estimate(), false);
+        convertCredits();
+      }
+
+      els.budgetForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        renderBudget(estimate(), true);
+        saveState(currentState());
+      });
+
+      els.budgetForm.addEventListener("change", () => {
+        renderBudget(estimate(), false);
+        saveState(currentState());
+      });
+
+      els.creditsInput.addEventListener("input", () => {
+        convertCredits();
+        saveState(currentState());
+      });
+      els.platform.addEventListener("change", () => {
+        convertCredits();
+        saveState(currentState());
+      });
+
+      els.resetBtn.addEventListener("click", () => {
+        localStorage.removeItem(STORAGE_KEY);
+        els.duration.value = 5;
+        els.complexity.value = "pro";
+        els.revisions.value = 2;
+        els.buffer.value = 18;
+        els.creditsInput.value = 1200;
+        renderSubscriptions([]);
+        els.platform.value = "midjourney";
+        renderBudget(estimate(), false);
+        convertCredits();
+      });
+
+      hydrate();
+    </script>
+  </body>
+</html>

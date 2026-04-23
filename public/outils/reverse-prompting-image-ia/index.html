@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse Prompting Image IA Gratuit | Devine le prompt d'une image</title>
+    <meta
+      name="description"
+      content="Uploadez une image et obtenez un prompt IA détaillé pour la reproduire. Outil gratuit de reverse prompting image IA avec analyse visuelle, styles cinématographiques et FAQ experte."
+    />
+    <meta
+      name="keywords"
+      content="reverse prompting image ia, générateur prompt image, deviner prompt image ia, prompt midjourney, prompt flux, prompt sora, analyse image ia"
+    />
+    <link rel="canonical" href="https://frankhoubre.com/outils/reverse-prompting-image-ia" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Frank Houbre" />
+    <meta property="og:url" content="https://frankhoubre.com/outils/reverse-prompting-image-ia" />
+    <meta property="og:title" content="Reverse Prompting Image IA Gratuit" />
+    <meta
+      property="og:description"
+      content="Analysez une image et récupérez un prompt IA structuré pour la reproduire plus rapidement."
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Reverse Prompting Image IA Gratuit" />
+    <meta
+      property="twitter:description"
+      content="Mini outil gratuit de reverse prompting image IA pour créateurs visuels."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              neon: "0 0 0 1px rgba(34,211,238,0.3), 0 0 26px rgba(59,130,246,0.22)",
+            },
+            animation: {
+              "fade-up": "fadeUp 480ms ease-out both",
+              "soft-pulse": "softPulse 2.3s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeUp: {
+                "0%": { opacity: "0", transform: "translateY(10px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              softPulse: {
+                "0%,100%": { boxShadow: "0 0 0 1px rgba(34,211,238,0.32), 0 0 18px rgba(59,130,246,0.15)" },
+                "50%": { boxShadow: "0 0 0 1px rgba(139,92,246,0.48), 0 0 24px rgba(139,92,246,0.25)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      .glass {
+        background: linear-gradient(150deg, rgba(15, 23, 42, 0.88), rgba(2, 6, 23, 0.9), rgba(17, 24, 39, 0.9));
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-400/30 selection:text-cyan-100">
+    <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_18%,rgba(56,189,248,0.2),transparent_36%),radial-gradient(circle_at_87%_12%,rgba(168,85,247,0.16),transparent_34%),radial-gradient(circle_at_50%_88%,rgba(34,197,94,0.12),transparent_40%)]"></div>
+
+    <main class="mx-auto max-w-6xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+      <section class="mb-12">
+        <div class="glass animate-fade-up rounded-3xl border border-slate-700/60 p-5 shadow-neon sm:p-8">
+          <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-cyan-300">Mini outil gratuit</p>
+              <h1 class="mt-3 text-3xl font-semibold leading-tight text-white sm:text-4xl">
+                Reverse Prompting Image IA : devine le prompt d'une image
+              </h1>
+              <p class="mt-4 max-w-2xl text-slate-300">
+                Importez une image, lancez l'analyse Vision, puis récupérez un prompt en anglais prêt à
+                l'emploi pour Midjourney, Flux, Recraft, Runway, Sora ou Kling.
+              </p>
+
+              <form id="reversePromptForm" class="mt-7 space-y-4">
+                <div
+                  id="dropzone"
+                  class="cursor-pointer rounded-2xl border border-dashed border-slate-600 bg-slate-900/65 p-5 transition hover:border-cyan-400 hover:bg-slate-900"
+                >
+                  <input id="imageInput" type="file" accept="image/*" class="hidden" />
+                  <p class="text-sm font-medium text-slate-200">Uploader votre image</p>
+                  <p class="mt-1 text-sm text-slate-400">Cliquez ou glissez-déposez un fichier JPG, PNG ou WebP.</p>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="mb-1.5 block text-sm font-medium text-slate-200">Type de scène</span>
+                    <select id="sceneType" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none ring-cyan-400 focus:border-cyan-400 focus:ring-2">
+                      <option value="auto">Auto-détection</option>
+                      <option value="portrait">Portrait / Personnage</option>
+                      <option value="landscape">Paysage</option>
+                      <option value="product">Produit</option>
+                      <option value="architecture">Architecture</option>
+                      <option value="fantasy">Fantasy / Concept art</option>
+                    </select>
+                  </label>
+                  <label class="block">
+                    <span class="mb-1.5 block text-sm font-medium text-slate-200">Niveau de détail</span>
+                    <select id="detailLevel" class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none ring-cyan-400 focus:border-cyan-400 focus:ring-2">
+                      <option value="balanced">Équilibré</option>
+                      <option value="high">Très détaillé</option>
+                      <option value="ultra">Ultra cinématographique</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label class="block">
+                  <span class="mb-1.5 block text-sm font-medium text-slate-200">Intention créative (optionnel)</span>
+                  <input
+                    id="creativeIntent"
+                    type="text"
+                    placeholder="ex: ambiance thriller nocturne avec pluie et néons"
+                    class="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3 py-2.5 text-sm outline-none ring-cyan-400 placeholder:text-slate-500 focus:border-cyan-400 focus:ring-2"
+                  />
+                </label>
+
+                <div class="flex flex-wrap items-center gap-3">
+                  <button id="analyzeBtn" type="submit" class="animate-soft-pulse rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-5 py-2.5 text-sm font-semibold text-slate-950 transition hover:brightness-110">
+                    Analyser l'image et générer le prompt
+                  </button>
+                  <button id="copyBtn" type="button" class="rounded-xl border border-slate-600 bg-slate-800 px-4 py-2.5 text-sm font-medium text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200">
+                    Copier le prompt
+                  </button>
+                  <span id="copyFeedback" class="text-sm text-emerald-300 opacity-0 transition-opacity">Prompt copié.</span>
+                </div>
+              </form>
+            </div>
+
+            <aside class="space-y-4">
+              <div class="rounded-2xl border border-slate-700/70 bg-slate-900/60 p-4">
+                <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-400">Aperçu image</p>
+                <div class="mt-3 overflow-hidden rounded-xl border border-slate-700 bg-slate-950/80">
+                  <img id="previewImage" alt="Aperçu de l'image importée" class="hidden h-56 w-full object-cover" />
+                  <div id="previewPlaceholder" class="flex h-56 items-center justify-center text-sm text-slate-500">
+                    Aucune image importée
+                  </div>
+                </div>
+              </div>
+              <div class="rounded-2xl border border-slate-700/70 bg-slate-900/60 p-4">
+                <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-400">Analyse Vision</p>
+                <div id="loadingState" class="mt-3 hidden items-center gap-2 text-sm text-cyan-300">
+                  <span class="inline-block h-2.5 w-2.5 animate-ping rounded-full bg-cyan-300"></span>
+                  Analyse en cours...
+                </div>
+                <ul id="analysisOutput" class="mt-3 space-y-2 text-sm text-slate-300"></ul>
+              </div>
+              <div class="rounded-2xl border border-slate-700/70 bg-slate-900/60 p-4">
+                <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-400">Prompt final</p>
+                <pre id="promptOutput" class="mt-3 min-h-[180px] whitespace-pre-wrap rounded-xl border border-slate-700 bg-slate-950/80 p-4 text-sm leading-relaxed text-slate-200"></pre>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <article class="prose prose-invert prose-slate max-w-none prose-headings:scroll-mt-24">
+        <section class="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 sm:p-8">
+          <h2>Comment utiliser cet outil ?</h2>
+          <ol>
+            <li>Importez une image de référence depuis votre ordinateur.</li>
+            <li>L'outil extrait automatiquement les signaux visuels (composition, lumière, contraste, style couleur).</li>
+            <li>Ajoutez votre intention créative pour orienter le rendu final.</li>
+            <li>Lancez l'analyse pour générer un prompt IA complet en anglais.</li>
+            <li>Copiez le prompt et testez-le dans votre générateur préféré.</li>
+          </ol>
+          <p>
+            Le système est conçu pour éviter les prompts trop vagues. Vous obtenez une base structurée,
+            réutilisable et simple à itérer sur plusieurs variations d'image.
+          </p>
+        </section>
+
+        <section class="mt-8 rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 sm:p-8">
+          <h2>Pourquoi utiliser l'IA pour le reverse prompting d'image ?</h2>
+          <p>
+            Le reverse prompting permet de comprendre pourquoi une image fonctionne visuellement. En
+            traduisant des signaux comme la palette, la direction lumière, la focale perçue et la
+            densité de détail en texte exploitable, vous gagnez un cadre reproductible.
+          </p>
+          <h3>Accélérer la préproduction créative</h3>
+          <p>
+            Au lieu de repartir de zéro, vous partez d'une image forte et obtenez une structure de prompt
+            crédible en quelques secondes. C'est idéal pour des moodboards, des tests clients et des
+            itérations rapides de direction artistique.
+          </p>
+          <h3>Créer une cohérence visuelle sur une série</h3>
+          <p>
+            En conservant la même base de prompt puis en ajustant uniquement le sujet ou l'action, vous
+            gardez une signature visuelle cohérente sur plusieurs plans, thumbnails ou séquences vidéo.
+          </p>
+        </section>
+
+        <section class="mt-8 rounded-2xl border border-slate-800/80 bg-slate-900/40 p-6 sm:p-8">
+          <h2>Foire Aux Questions (FAQ)</h2>
+
+          <details class="mb-3 rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+            <summary class="cursor-pointer font-medium text-white">Le reverse prompting fonctionne-t-il sans API payante ?</summary>
+            <p class="mt-2 text-slate-300">
+              Oui. Cet outil fonctionne en local dans votre navigateur : il analyse directement l'image
+              importée et génère un prompt sans backend.
+            </p>
+          </details>
+
+          <details class="mb-3 rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+            <summary class="cursor-pointer font-medium text-white">Est-ce utile uniquement pour Midjourney ?</summary>
+            <p class="mt-2 text-slate-300">
+              Non. Le prompt généré est compatible avec plusieurs modèles image et vidéo (Midjourney, Flux,
+              Runway, Sora, Kling), avec adaptation mineure des paramètres finaux.
+            </p>
+          </details>
+
+          <details class="mb-3 rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+            <summary class="cursor-pointer font-medium text-white">Mes images sont-elles envoyées sur un serveur ?</summary>
+            <p class="mt-2 text-slate-300">
+              Non. L'analyse se fait localement dans le navigateur via JavaScript. Vos fichiers restent sur
+              votre machine.
+            </p>
+          </details>
+
+          <details class="rounded-xl border border-slate-700/70 bg-slate-950/50 p-4">
+            <summary class="cursor-pointer font-medium text-white">Comment obtenir un prompt encore plus précis ?</summary>
+            <p class="mt-2 text-slate-300">
+              Ajoutez une intention créative claire : émotion, époque, météo, angle caméra, et matière
+              visuelle recherchée. Plus le contexte est précis, plus le rendu converge vite.
+            </p>
+          </details>
+        </section>
+      </article>
+    </main>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Reverse Prompting Image IA",
+            "url": "https://frankhoubre.com/outils/reverse-prompting-image-ia",
+            "description": "Outil gratuit pour analyser une image et générer un prompt IA de reproduction."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Reverse Prompting Image IA",
+            "applicationCategory": "MultimediaApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Le reverse prompting fonctionne-t-il sans API payante ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, l'analyse fonctionne localement dans le navigateur sans backend." }
+              },
+              {
+                "@type": "Question",
+                "name": "Est-ce utile uniquement pour Midjourney ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Non, le prompt reste adaptable à plusieurs générateurs image et vidéo." }
+              },
+              {
+                "@type": "Question",
+                "name": "Mes images sont-elles envoyées sur un serveur ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Non, les images restent locales et sont traitées côté navigateur." }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment obtenir un prompt encore plus précis ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Ajoutez des contraintes créatives précises comme l'ambiance, l'optique et la lumière." }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      const STORAGE_KEY = "fh_reverse_prompting_v1";
+
+      const promptVocabulary = {
+        sceneRoots: {
+          portrait: "cinematic portrait of a character",
+          landscape: "epic landscape scene",
+          product: "premium product shot",
+          architecture: "architectural editorial scene",
+          fantasy: "fantasy concept art scene",
+          auto: "cinematic scene",
+        },
+        lightingByBrightness: [
+          { max: 70, label: "low-key dramatic lighting, deep shadows, selective highlights" },
+          { max: 130, label: "balanced cinematic lighting, controlled contrast, soft key light" },
+          { max: 255, label: "bright high-key lighting, clean highlights, soft ambient fill" },
+        ],
+        contrastByScore: [
+          { max: 35, label: "low contrast tonal range, smooth transitions" },
+          { max: 70, label: "medium contrast with controlled dynamic range" },
+          { max: 255, label: "high contrast grading, bold blacks and crisp highlights" },
+        ],
+        saturationByScore: [
+          { max: 45, label: "desaturated palette, muted cinematic colors" },
+          { max: 95, label: "balanced color saturation with natural tone mapping" },
+          { max: 255, label: "vibrant color palette with stylized saturation" },
+        ],
+        ratioHints: [
+          { condition: (r) => r >= 1.7, label: "wide cinematic framing, strong horizontal composition" },
+          { condition: (r) => r <= 0.8, label: "vertical composition, portrait-first framing logic" },
+          { condition: () => true, label: "balanced frame composition with centered visual hierarchy" },
+        ],
+        detailByLevel: {
+          balanced: "high quality render, realistic textures, natural skin and material response",
+          high: "ultra-detailed render, micro-textures, photoreal depth, advanced global illumination",
+          ultra: "masterpiece cinematic render, hyper-detailed production design, volumetric atmosphere, premium color science",
+        },
+        lensByEdgeDensity: [
+          { max: 14, label: "50mm prime lens look, clean depth of field separation" },
+          { max: 24, label: "35mm cinematic lens look, immersive environmental storytelling" },
+          { max: 100, label: "24mm wide-angle look, dynamic perspective and strong spatial depth" },
+        ],
+      };
+
+      const els = {
+        form: document.getElementById("reversePromptForm"),
+        imageInput: document.getElementById("imageInput"),
+        dropzone: document.getElementById("dropzone"),
+        previewImage: document.getElementById("previewImage"),
+        previewPlaceholder: document.getElementById("previewPlaceholder"),
+        sceneType: document.getElementById("sceneType"),
+        detailLevel: document.getElementById("detailLevel"),
+        creativeIntent: document.getElementById("creativeIntent"),
+        loadingState: document.getElementById("loadingState"),
+        analysisOutput: document.getElementById("analysisOutput"),
+        promptOutput: document.getElementById("promptOutput"),
+        copyBtn: document.getElementById("copyBtn"),
+        copyFeedback: document.getElementById("copyFeedback"),
+      };
+
+      let currentImageDataUrl = "";
+      let currentAnalysis = null;
+
+      function pickByThreshold(value, table) {
+        for (const item of table) {
+          if (value <= item.max) return item.label;
+        }
+        return table[table.length - 1].label;
+      }
+
+      function getRatioHint(ratio) {
+        return promptVocabulary.ratioHints.find((hint) => hint.condition(ratio)).label;
+      }
+
+      function estimateDominantColor(avgR, avgG, avgB) {
+        if (avgR > avgG + 18 && avgR > avgB + 18) return "warm red and orange dominant tones";
+        if (avgG > avgR + 18 && avgG > avgB + 18) return "green dominant color atmosphere";
+        if (avgB > avgR + 18 && avgB > avgG + 18) return "blue and cyan dominant atmosphere";
+        if (avgR > 125 && avgG > 125 && avgB > 125) return "neutral bright palette";
+        return "balanced neutral cinematic palette";
+      }
+
+      function computeImageMetrics(img) {
+        const canvas = document.createElement("canvas");
+        const maxW = 320;
+        const ratio = img.height / img.width;
+        canvas.width = maxW;
+        canvas.height = Math.max(1, Math.round(maxW * ratio));
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+        let sumR = 0, sumG = 0, sumB = 0, sumLum = 0, sumSat = 0;
+        let edgeCounter = 0;
+        const luminances = [];
+        const total = width * height;
+
+        for (let i = 0; i < data.length; i += 4) {
+          const r = data[i];
+          const g = data[i + 1];
+          const b = data[i + 2];
+          const max = Math.max(r, g, b);
+          const min = Math.min(r, g, b);
+          const sat = max === 0 ? 0 : ((max - min) / max) * 255;
+          const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+          sumR += r; sumG += g; sumB += b; sumLum += lum; sumSat += sat;
+          luminances.push(lum);
+        }
+
+        const avgLum = sumLum / total;
+        let variance = 0;
+        for (const l of luminances) variance += (l - avgLum) ** 2;
+        const contrast = Math.sqrt(variance / total);
+
+        for (let y = 1; y < height - 1; y++) {
+          for (let x = 1; x < width - 1; x++) {
+            const i = (y * width + x) * 4;
+            const left = data[i - 4] + data[i - 3] + data[i - 2];
+            const right = data[i + 4] + data[i + 5] + data[i + 6];
+            const top = data[i - width * 4] + data[i - width * 4 + 1] + data[i - width * 4 + 2];
+            const bottom = data[i + width * 4] + data[i + width * 4 + 1] + data[i + width * 4 + 2];
+            const gx = Math.abs(right - left);
+            const gy = Math.abs(bottom - top);
+            if (gx + gy > 140) edgeCounter++;
+          }
+        }
+
+        return {
+          width: img.width,
+          height: img.height,
+          ratio: img.width / img.height,
+          avgR: Math.round(sumR / total),
+          avgG: Math.round(sumG / total),
+          avgB: Math.round(sumB / total),
+          brightness: Math.round(avgLum),
+          saturation: Math.round(sumSat / total),
+          contrast: Math.round(contrast),
+          edgeDensity: Number(((edgeCounter / total) * 100).toFixed(2)),
+        };
+      }
+
+      function detectSceneType(metrics, selectedScene) {
+        if (selectedScene !== "auto") return selectedScene;
+        if (metrics.ratio < 0.85) return "portrait";
+        if (metrics.edgeDensity > 22 && metrics.contrast > 62) return "architecture";
+        if (metrics.saturation > 96 && metrics.brightness > 132) return "fantasy";
+        if (metrics.edgeDensity < 11 && metrics.brightness > 125) return "landscape";
+        return "portrait";
+      }
+
+      function renderAnalysis(analysis) {
+        els.analysisOutput.innerHTML = `
+          <li><strong>Résolution:</strong> ${analysis.metrics.width}x${analysis.metrics.height}</li>
+          <li><strong>Lumière estimée:</strong> ${analysis.lightingLabel}</li>
+          <li><strong>Contraste:</strong> ${analysis.contrastLabel}</li>
+          <li><strong>Palette:</strong> ${analysis.paletteLabel}</li>
+          <li><strong>Composition:</strong> ${analysis.ratioLabel}</li>
+          <li><strong>Optique probable:</strong> ${analysis.lensLabel}</li>
+          <li><strong>Type de scène détecté:</strong> ${analysis.sceneTypeLabel}</li>
+        `;
+      }
+
+      function generatePrompt(analysis, intent, detailLevel) {
+        const sceneRoot = promptVocabulary.sceneRoots[analysis.sceneType];
+        const detailBlock = promptVocabulary.detailByLevel[detailLevel];
+        const intentBlock = intent.trim() ? `creative direction: ${intent.trim()},` : "";
+        return [
+          `${sceneRoot},`,
+          `${analysis.paletteLabel},`,
+          `${analysis.lightingLabel},`,
+          `${analysis.contrastLabel},`,
+          `${analysis.lensLabel},`,
+          `${analysis.ratioLabel},`,
+          "professional composition, strong visual storytelling,",
+          intentBlock,
+          `${detailBlock}, 8k, cinematic color grading, realistic textures`,
+        ].join(" ");
+      }
+
+      function analyzeImageAndGeneratePrompt() {
+        if (!currentImageDataUrl) {
+          alert("Importez une image avant de lancer l'analyse.");
+          return;
+        }
+        const img = new Image();
+        img.onload = () => {
+          const metrics = computeImageMetrics(img);
+          const sceneType = detectSceneType(metrics, els.sceneType.value);
+          const sceneTypeLabels = {
+            portrait: "Portrait / Personnage",
+            landscape: "Paysage",
+            product: "Produit",
+            architecture: "Architecture",
+            fantasy: "Fantasy / Concept art",
+            auto: "Auto-détection",
+          };
+
+          currentAnalysis = {
+            metrics,
+            sceneType,
+            sceneTypeLabel: sceneTypeLabels[sceneType],
+            lightingLabel: pickByThreshold(metrics.brightness, promptVocabulary.lightingByBrightness),
+            contrastLabel: pickByThreshold(metrics.contrast, promptVocabulary.contrastByScore),
+            paletteLabel: `${estimateDominantColor(metrics.avgR, metrics.avgG, metrics.avgB)}, ${pickByThreshold(metrics.saturation, promptVocabulary.saturationByScore)}`,
+            ratioLabel: getRatioHint(metrics.ratio),
+            lensLabel: pickByThreshold(metrics.edgeDensity, promptVocabulary.lensByEdgeDensity),
+          };
+
+          renderAnalysis(currentAnalysis);
+          const prompt = generatePrompt(currentAnalysis, els.creativeIntent.value, els.detailLevel.value);
+          els.promptOutput.textContent = prompt;
+          persistState();
+        };
+        img.src = currentImageDataUrl;
+      }
+
+      function setPreview(dataUrl) {
+        currentImageDataUrl = dataUrl;
+        els.previewImage.src = dataUrl;
+        els.previewImage.classList.remove("hidden");
+        els.previewPlaceholder.classList.add("hidden");
+      }
+
+      function handleFile(file) {
+        if (!file || !file.type.startsWith("image/")) {
+          alert("Veuillez sélectionner une image valide (JPG, PNG, WebP).");
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = () => setPreview(reader.result);
+        reader.readAsDataURL(file);
+      }
+
+      function persistState() {
+        localStorage.setItem(
+          STORAGE_KEY,
+          JSON.stringify({
+            sceneType: els.sceneType.value,
+            detailLevel: els.detailLevel.value,
+            creativeIntent: els.creativeIntent.value,
+            prompt: els.promptOutput.textContent,
+            analysisHtml: els.analysisOutput.innerHTML,
+            image: currentImageDataUrl,
+          }),
+        );
+      }
+
+      function restoreState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return;
+          const saved = JSON.parse(raw);
+          if (saved.sceneType) els.sceneType.value = saved.sceneType;
+          if (saved.detailLevel) els.detailLevel.value = saved.detailLevel;
+          if (saved.creativeIntent) els.creativeIntent.value = saved.creativeIntent;
+          if (saved.prompt) els.promptOutput.textContent = saved.prompt;
+          if (saved.analysisHtml) els.analysisOutput.innerHTML = saved.analysisHtml;
+          if (saved.image) setPreview(saved.image);
+        } catch {
+          // Ignore invalid localStorage payload.
+        }
+      }
+
+      els.dropzone.addEventListener("click", () => els.imageInput.click());
+      els.imageInput.addEventListener("change", (e) => handleFile(e.target.files[0]));
+
+      els.dropzone.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        els.dropzone.classList.add("border-cyan-400");
+      });
+      els.dropzone.addEventListener("dragleave", () => els.dropzone.classList.remove("border-cyan-400"));
+      els.dropzone.addEventListener("drop", (e) => {
+        e.preventDefault();
+        els.dropzone.classList.remove("border-cyan-400");
+        handleFile(e.dataTransfer.files[0]);
+      });
+
+      els.form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        els.loadingState.classList.remove("hidden");
+        els.loadingState.classList.add("flex");
+        setTimeout(() => {
+          analyzeImageAndGeneratePrompt();
+          els.loadingState.classList.add("hidden");
+          els.loadingState.classList.remove("flex");
+        }, 620);
+      });
+
+      [els.sceneType, els.detailLevel, els.creativeIntent].forEach((el) => {
+        el.addEventListener("change", persistState);
+        if (el.tagName === "INPUT") el.addEventListener("input", persistState);
+      });
+
+      els.copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(els.promptOutput.textContent || "");
+          els.copyFeedback.classList.remove("opacity-0");
+          setTimeout(() => els.copyFeedback.classList.add("opacity-0"), 1400);
+        } catch {
+          alert("Copie automatique impossible. Copiez le prompt manuellement.");
+        }
+      });
+
+      restoreState();
+      if (!els.promptOutput.textContent.trim()) {
+        els.promptOutput.textContent =
+          "Le prompt généré apparaîtra ici après l'analyse de votre image.";
+      }
+    </script>
+  </body>
+</html>

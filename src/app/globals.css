@@ -1,0 +1,501 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #09090b;
+  --color-primary: #18181b;
+  --color-secondary: #3f3f46;
+  --color-cta: #2563eb;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px rgb(0 0 0 / 0.15);
+}
+
+html {
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+}
+
+body {
+  position: relative;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Motif micro-points, discret et sans effet "grand bloc" répété. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  background-image:
+    radial-gradient(circle, rgb(24 24 27 / 0.09) 0.7px, transparent 0.8px);
+  background-size: 18px 18px;
+  background-repeat: repeat;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(ellipse at center, transparent 52%, rgb(9 9 11 / 0.08) 100%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+.ds-section {
+  border-top: 1px solid rgb(228 228 231 / 0.8);
+  background: #fafafa;
+}
+
+.ds-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(228 228 231 / 0.9);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform 300ms ease, box-shadow 300ms ease, border-color 300ms ease;
+}
+
+.ds-card:hover {
+  border-color: rgb(161 161 170 / 0.7);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.ds-card::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgb(37 99 235 / 0.12), transparent 45%);
+}
+
+.ds-card:hover::after {
+  opacity: 1;
+}
+
+.ds-cinematic-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(63 63 70 / 0.45);
+  border-radius: 1.75rem;
+  background:
+    linear-gradient(140deg, rgb(24 24 27 / 0.97), rgb(9 9 11 / 0.97)),
+    #09090b;
+  color: #fff;
+  box-shadow: 0 20px 45px rgb(9 9 11 / 0.45);
+}
+
+.ds-cinematic-frame::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 8%, rgb(96 165 250 / 0.24), transparent 34%),
+    radial-gradient(circle at 90% 82%, rgb(255 255 255 / 0.08), transparent 30%);
+}
+
+.ds-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding: 4rem 1rem 5rem;
+}
+
+@media (min-width: 640px) {
+  .ds-page {
+    padding-inline: 1.5rem;
+    padding-top: 4.5rem;
+  }
+}
+
+.ds-hero {
+  border: 1px solid rgb(228 228 231 / 0.9);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 0.82);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 42px rgb(24 24 27 / 0.08);
+}
+
+.ds-eyebrow {
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #52525b;
+}
+
+.ds-link {
+  text-decoration: underline;
+  text-underline-offset: 0.24rem;
+  text-decoration-color: #a1a1aa;
+  transition: text-decoration-color 200ms ease;
+}
+
+.ds-link:hover {
+  text-decoration-color: #27272a;
+}
+
+.ds-surface {
+  border: 1px solid rgb(228 228 231 / 0.9);
+  border-radius: 1.5rem;
+  background: rgb(255 255 255 / 0.78);
+  backdrop-filter: blur(10px);
+}
+
+.ds-button-primary {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: var(--color-cta);
+  padding: 0.7rem 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.ds-button-primary:hover {
+  background: #1d4ed8;
+  box-shadow: 0 10px 20px rgb(29 78 216 / 0.25);
+}
+
+.ds-button-secondary {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(161 161 170 / 0.7);
+  background: rgb(255 255 255 / 0.75);
+  padding: 0.7rem 1.1rem;
+  color: #18181b;
+  font-weight: 600;
+  transition: border-color 200ms ease, background-color 200ms ease, transform 200ms ease;
+}
+
+.ds-button-secondary:hover {
+  border-color: rgb(113 113 122 / 0.8);
+  background: #fff;
+}
+
+.ds-cta-primary {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  padding: 0.75rem 1.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 12px 28px rgb(29 78 216 / 0.26);
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.ds-cta-primary:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+  box-shadow: 0 16px 34px rgb(29 78 216 / 0.34);
+}
+
+.ds-cta-dark {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: linear-gradient(140deg, #18181b, #09090b);
+  padding: 0.72rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 10px 24px rgb(9 9 11 / 0.22);
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.ds-cta-dark:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 14px 30px rgb(9 9 11 / 0.3);
+}
+
+.ds-cta-ghost-light {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgb(255 255 255 / 0.34);
+  background: rgb(255 255 255 / 0.1);
+  padding: 0.75rem 1.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: blur(7px);
+  transition: transform 220ms ease, background-color 220ms ease, border-color 220ms ease;
+}
+
+.ds-cta-ghost-light:hover {
+  transform: translateY(-1px);
+  border-color: rgb(255 255 255 / 0.5);
+  background: rgb(255 255 255 / 0.16);
+}
+
+.ds-chip {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgb(228 228 231 / 0.9);
+  background: rgb(244 244 245 / 0.8);
+  padding: 0.36rem 0.78rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #3f3f46;
+  transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease, color 200ms ease;
+}
+
+.ds-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgb(161 161 170 / 0.8);
+  background: #fff;
+  color: #18181b;
+}
+
+.ds-chip-active {
+  border-color: rgb(29 78 216 / 0.55);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  box-shadow: 0 8px 18px rgb(29 78 216 / 0.22);
+}
+
+.ds-chip-active:hover {
+  border-color: rgb(29 78 216 / 0.75);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+}
+
+.ds-badge {
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid rgb(24 24 27 / 0.65);
+  background: linear-gradient(140deg, #18181b, #09090b);
+  padding: 0.2rem 0.62rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.01em;
+  box-shadow: 0 8px 16px rgb(9 9 11 / 0.2);
+  transition: transform 200ms ease, filter 200ms ease;
+}
+
+.ds-badge:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+.ds-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(212 212 216 / 0.95);
+  background: rgb(255 255 255 / 0.92);
+  padding: 0.62rem 0.82rem;
+  font-size: 0.9rem;
+  color: #18181b;
+  outline: none;
+  transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+
+.ds-input::placeholder {
+  color: #71717a;
+}
+
+.ds-input:focus {
+  border-color: rgb(59 130 246 / 0.75);
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 0.2);
+  background: #fff;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-gentle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 12px 28px rgb(29 78 216 / 0.2);
+  }
+  50% {
+    box-shadow: 0 16px 34px rgb(29 78 216 / 0.32);
+  }
+}
+
+@keyframes title-mask-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes beam-pan {
+  0% {
+    transform: translateX(-28%) skewX(-14deg);
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(28%) skewX(-14deg);
+    opacity: 0;
+  }
+}
+
+.ds-reveal {
+  opacity: 0;
+  animation: reveal-up 650ms ease-out forwards;
+}
+
+.ds-reveal-delay-1 {
+  animation-delay: 120ms;
+}
+
+.ds-reveal-delay-2 {
+  animation-delay: 220ms;
+}
+
+.ds-reveal-delay-3 {
+  animation-delay: 320ms;
+}
+
+.ds-float {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+.ds-glow {
+  animation: glow-pulse 2.8s ease-in-out infinite;
+}
+
+.ds-title-line {
+  display: block;
+  overflow: hidden;
+}
+
+.ds-title-line > span {
+  display: inline-block;
+  transform: translateY(120%);
+  opacity: 0;
+  animation: title-mask-reveal 700ms cubic-bezier(0.2, 0.7, 0, 1) forwards;
+}
+
+.ds-title-line.delay-1 > span {
+  animation-delay: 90ms;
+}
+
+.ds-title-line.delay-2 > span {
+  animation-delay: 220ms;
+}
+
+.ds-title-line.delay-3 > span {
+  animation-delay: 350ms;
+}
+
+.ds-cinematic-beam {
+  position: absolute;
+  inset: -20% -30%;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 26%,
+    rgb(255 255 255 / 0.08) 45%,
+    rgb(96 165 250 / 0.18) 52%,
+    transparent 72%
+  );
+  mix-blend-mode: screen;
+  animation: beam-pan 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-reveal,
+  .ds-float,
+  .ds-glow,
+  .ds-title-line > span,
+  .ds-cinematic-beam {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .ds-card,
+  .ds-card::after {
+    transition: none !important;
+  }
+}
+
+.prose-cinema {
+  max-width: 42rem;
+}
+
+.prose-cinema pre code {
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+}
