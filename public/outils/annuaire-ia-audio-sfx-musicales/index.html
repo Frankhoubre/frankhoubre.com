@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,follow" />
+    <title>Annuaire des IA audio, SFX et musicales | Comparateur interactif</title>
+    <meta
+      name="description"
+      content="Annuaire ultra complet des IA audio, SFX et musicales : musique générative, voix, sound design, bruitages, mastering IA. Filtres, scores et notation communauté."
+    />
+    <meta
+      name="keywords"
+      content="IA audio, IA musique, générateur SFX, sound design IA, voix IA, text to music, annuaire outils audio IA"
+    />
+    <link rel="canonical" href="https://frankhoubre.com/outils/annuaire-ia-audio-sfx-musicales" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Annuaire des IA audio, SFX et musicales" />
+    <meta
+      property="og:description"
+      content="Comparez rapidement les meilleurs outils IA pour la musique, les voix et les effets sonores."
+    />
+    <meta property="og:url" content="https://frankhoubre.com/outils/annuaire-ia-audio-sfx-musicales" />
+    <meta property="og:site_name" content="Frank Houbre" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Annuaire des IA audio, SFX et musicales" />
+    <meta property="twitter:description" content="Le comparateur audio IA le plus complet pour créateurs et réalisateurs." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              fadeUp: {
+                "0%": { opacity: "0", transform: "translateY(10px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              "fade-up": "fadeUp 420ms ease-out both",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-neutral-200 selection:text-neutral-950">
+    <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_10%,rgba(120,90,60,0.08),transparent_35%),radial-gradient(circle_at_90%_20%,rgba(40,60,90,0.08),transparent_40%)]"></div>
+    <main class="mx-auto max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
+      <section class="mb-12 rounded-3xl border border-neutral-200 bg-white p-5 shadow-sm sm:p-8">
+        <div class="grid gap-8 lg:grid-cols-[1.25fr_0.75fr]">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.2em] text-neutral-500">Mini outil gratuit</p>
+            <h1 class="mt-3 text-3xl font-semibold leading-tight text-neutral-950 sm:text-4xl">
+              Annuaire des IA audio, SFX et musicales
+            </h1>
+            <p class="mt-4 max-w-3xl text-neutral-700">
+              Trouvez le bon outil IA audio selon votre besoin: composition musicale, sound design, voix off,
+              dubbing, mastering ou séparation de stems. Données comparatives + score intelligent + notation perso.
+            </p>
+            <form class="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              <label class="block xl:col-span-2">
+                <span class="mb-1.5 block text-sm font-medium text-neutral-900">Recherche</span>
+                <input id="searchInput" type="text" placeholder="Ex: trailer, voix française, bruitage sci-fi..." class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300" />
+              </label>
+              <label class="block">
+                <span class="mb-1.5 block text-sm font-medium text-neutral-900">Type d'outil</span>
+                <select id="typeFilter" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300">
+                  <option value="all">Tous</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="mb-1.5 block text-sm font-medium text-neutral-900">Plateforme</span>
+                <select id="platformFilter" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300">
+                  <option value="all">Toutes</option>
+                  <option value="web">Web</option>
+                  <option value="mobile">Mobile</option>
+                  <option value="desktop">Desktop</option>
+                  <option value="api">API</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="mb-1.5 block text-sm font-medium text-neutral-900">Tri</span>
+                <select id="sortBy" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition focus:border-neutral-500 focus:ring-2 focus:ring-neutral-300">
+                  <option value="score">Score global</option>
+                  <option value="community">Note communauté</option>
+                  <option value="freeMinutes">Minutes gratuites</option>
+                  <option value="speed">Vitesse</option>
+                </select>
+              </label>
+              <label class="flex items-center gap-2 self-end rounded-xl border border-neutral-300 bg-white px-3 py-2.5">
+                <input id="apiOnly" type="checkbox" class="h-4 w-4 accent-neutral-900" />
+                <span class="text-sm text-neutral-800">API disponible</span>
+              </label>
+              <div class="flex items-end">
+                <button id="resetBtn" type="button" class="w-full rounded-xl border border-neutral-300 bg-white px-4 py-2.5 text-sm font-medium text-neutral-900 transition hover:border-neutral-400 hover:bg-neutral-50">
+                  Réinitialiser
+                </button>
+              </div>
+            </form>
+          </div>
+          <aside class="rounded-2xl border border-neutral-200 bg-white p-4 sm:p-5">
+            <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-neutral-500">Synthèse</p>
+            <ul class="mt-4 space-y-3 text-sm text-neutral-700">
+              <li><strong id="countTools" class="text-neutral-950">0</strong> outils audio IA trouvés</li>
+              <li><strong id="avgScore" class="text-neutral-950">0.0</strong> score moyen</li>
+              <li><strong id="topTool" class="text-neutral-950">-</strong> meilleur choix actuel</li>
+            </ul>
+            <div class="mt-5 rounded-xl border border-neutral-300 bg-neutral-50 p-3 text-xs leading-relaxed text-neutral-700">
+              Astuce: note chaque outil avec les étoiles pour construire ton benchmark perso de production audio.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <div id="cardsGrid" class="grid gap-4 md:grid-cols-2 xl:grid-cols-3"></div>
+        <p id="emptyState" class="hidden rounded-2xl border border-neutral-200 bg-white p-6 text-neutral-700">
+          Aucun résultat avec ces filtres. Élargis la recherche.
+        </p>
+      </section>
+
+      <article class="mt-14 space-y-8">
+        <section class="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold text-neutral-950">Comment utiliser cet outil ?</h2>
+          <ol class="mt-4 list-decimal space-y-2 pl-6 text-neutral-700">
+            <li>Choisissez votre objectif: musique, voix, SFX, mix, mastering ou séparation.</li>
+            <li>Filtrez par plateforme et disponibilité API selon votre pipeline.</li>
+            <li>Triez par score, vitesse ou quota gratuit pour décider vite.</li>
+            <li>Consultez les limites et cas d'usage recommandés pour chaque solution.</li>
+            <li>Ajoutez vos notes perso pour conserver un benchmark durable.</li>
+          </ol>
+        </section>
+        <section class="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold text-neutral-950">Pourquoi utiliser l'IA pour l'audio et la musique ?</h2>
+          <p class="mt-4 text-neutral-700">
+            En création vidéo, pub, podcast ou fiction, l'audio est un multiplicateur d'impact. Les IA audio modernes
+            permettent d'accélérer la composition, créer des bruitages précis, générer des voix multilingues crédibles
+            et itérer beaucoup plus rapidement sur l'ambiance globale d'un projet.
+          </p>
+          <h3 class="mt-5 text-xl font-semibold text-neutral-950">Production plus rapide, direction artistique plus nette</h3>
+          <p class="mt-2 text-neutral-700">
+            Au lieu de passer des heures à sourcer des sons ou maquetter des pistes, vous testez plusieurs directions
+            sonores en quelques minutes: soundtrack, textures, transitions, impacts et atmosphères.
+          </p>
+        </section>
+        <section class="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8">
+          <h2 class="text-2xl font-semibold text-neutral-950">Foire Aux Questions (FAQ)</h2>
+          <div class="mt-4 space-y-3">
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Cet annuaire couvre-t-il musique, voix et SFX ?</summary>
+              <p class="mt-2 text-neutral-700">Oui, il regroupe les outils IA audio multi-cas d'usage: composition, sound design, voix, mix et mastering.</p>
+            </details>
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Le score est-il objectif ?</summary>
+              <p class="mt-2 text-neutral-700">Le score est un indicateur de tri pratique (qualité, vitesse, offre gratuite, communauté) à compléter par vos tests.</p>
+            </details>
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Mes réglages sont-ils sauvegardés ?</summary>
+              <p class="mt-2 text-neutral-700">Oui, filtres et notes personnelles sont conservés via localStorage.</p>
+            </details>
+            <details class="rounded-xl border border-neutral-200 bg-neutral-50 p-4">
+              <summary class="cursor-pointer font-medium text-neutral-950">Quel outil choisir pour des SFX cinématiques ?</summary>
+              <p class="mt-2 text-neutral-700">Filtrez sur “SFX” puis triez par score global et vitesse. Testez ensuite avec vos contraintes de mix et de format.</p>
+            </details>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "name": "Annuaire des IA audio, SFX et musicales",
+            "url": "https://frankhoubre.com/outils/annuaire-ia-audio-sfx-musicales",
+            "description": "Comparateur interactif des meilleurs outils IA audio."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Annuaire IA Audio",
+            "applicationCategory": "MultimediaApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      const STORAGE_KEY = "fh_audio_ai_directory_v1";
+      const curatedTools = [
+        { id: "udio", name: "Udio", type: ["musique"], platform: ["web"], models: ["Udio Gen"], freeMinutes: 20, speed: 8.4, quality: 8.9, community: 4.7, api: false, update: "2026-04", limits: "quotas gratuits quotidiens", bestFor: "morceaux complets avec vocals", url: "https://www.udio.com" },
+        { id: "suno", name: "Suno", type: ["musique"], platform: ["web", "mobile"], models: ["Suno v4"], freeMinutes: 25, speed: 8.6, quality: 8.8, community: 4.8, api: false, update: "2026-04", limits: "quota gratuit journalier", bestFor: "chansons rapides text-to-song", url: "https://suno.com" },
+        { id: "stable-audio", name: "Stable Audio", type: ["musique", "sfx"], platform: ["web", "api"], models: ["Stable Audio 2"], freeMinutes: 15, speed: 8.2, quality: 8.5, community: 4.5, api: true, update: "2026-04", limits: "usage gratuit limité", bestFor: "musique + ambiance", url: "https://www.stableaudio.com" },
+        { id: "elevenlabs", name: "ElevenLabs", type: ["voix", "doublage", "sfx"], platform: ["web", "api"], models: ["Eleven v3"], freeMinutes: 10, speed: 9.0, quality: 9.2, community: 4.8, api: true, update: "2026-04", limits: "caractères gratuits/mois", bestFor: "voix off premium et dubbing", url: "https://elevenlabs.io" },
+        { id: "aiva", name: "AIVA", type: ["musique"], platform: ["web"], models: ["AIVA Composer"], freeMinutes: 12, speed: 7.9, quality: 8.3, community: 4.3, api: false, update: "2026-04", limits: "exports gratuits limités", bestFor: "musique de film", url: "https://www.aiva.ai" },
+        { id: "mubert", name: "Mubert", type: ["musique"], platform: ["web", "api"], models: ["Mubert Render"], freeMinutes: 30, speed: 8.1, quality: 7.8, community: 4.2, api: true, update: "2026-04", limits: "générations gratuites limitées", bestFor: "musique libre pour contenu", url: "https://mubert.com" },
+        { id: "lalal", name: "LALAL.AI", type: ["stems", "mix"], platform: ["web"], models: ["Phoenix"], freeMinutes: 8, speed: 8.7, quality: 8.6, community: 4.6, api: false, update: "2026-04", limits: "minutes gratuites d'essai", bestFor: "séparation de pistes", url: "https://www.lalal.ai" },
+        { id: "adobe-podcast", name: "Adobe Podcast", type: ["voix", "mastering"], platform: ["web"], models: ["Enhance Speech"], freeMinutes: 45, speed: 9.1, quality: 8.4, community: 4.4, api: false, update: "2026-04", limits: "quota freemium", bestFor: "nettoyage voix", url: "https://podcast.adobe.com" },
+        { id: "beatoven", name: "Beatoven", type: ["musique"], platform: ["web"], models: ["Beatoven Gen"], freeMinutes: 15, speed: 7.8, quality: 8.0, community: 4.1, api: false, update: "2026-04", limits: "exports gratuits limités", bestFor: "musique d'illustration", url: "https://www.beatoven.ai" },
+        { id: "musiclm", name: "MusicLM Demos", type: ["musique"], platform: ["web"], models: ["MusicLM"], freeMinutes: 5, speed: 7.5, quality: 8.2, community: 4.0, api: false, update: "2026-04", limits: "accès expérimental", bestFor: "prototypage créatif", url: "https://google-research.github.io/seanet/musiclm/examples/" }
+      ];
+
+      const hugeCatalogNames = [
+        "Auphonic","Descript","LANDR","Soundraw","Boomy","Riffusion","AudioCraft","MusicGen","Bark","Tortoise TTS","Coqui TTS","Resemble AI","Murf","PlayHT","Speechify Studio","WellSaid Labs","Replica Studios","Voicemod AI","Voice AI","Dubverse","Papercup","Rask AI","HeyGen Voice","Kits AI","Acestudio","Voicify AI","Uberduck","Meta Voicebox","OpenVoice","RealtimeTTS","Fish Audio","Piper TTS","StyleTTS","Glow TTS","XTTS","Narakeet","Listnr","Podcastle","Cleanvoice","Krisp","NVIDIA Maxine Audio","Noise Eraser AI","Spleeter","Demucs","UVR","Moises","Splitter.ai","Fadr","RipX","RX Music Rebalance","Acon Remix","VocalRemover.org","Melody ML","PhonicMind","BandLab SongStarter","Soundful","Endel","Loudly","Hydra II","Ecrett Music","Amper Music","Jukebox","OpenAI Jukebox","WavTool","DAACI","Melobytes","Lemonaide","Orb Producer AI","Captain Plugins","Scaler AI","Harmony Bloom","Musiio","Cyanite","Sonicbloom","Aimi FM","Brain.fm","AIVA Studio","Notetracks AI","AudioShake","Sonible smart:EQ","iZotope Ozone","iZotope Neutron","iZotope RX","Sonarworks SoundID","Masterchannel","RoEx","CloudBounce","AI Mastering","Maztr","Dolby.io Media","Krotos Studio","Boom Library AI Search","Soundly AI Search","Epidemic Search AI","Artlist AI Search","Envato Audio AI","Splice AI","Output Arcade AI","Native Instruments iZotope Suite","Waves Clarity","Waves Curves AQ","Antares Auto-Tune AI","Melodyne Assistant","Gullfoss","Soothe2 AI Assist","FabFilter AI Helper","Logic Pro Session Players","GarageBand AI Drummer","Ableton Note AI","FL Studio AI Tools","Cubase Spectralayers","Nuendo ADR AI","Pro Tools Sketch AI","Reason AI Assist","Audiocipher","Hookpad AI","ChordChord AI","Samplab","Audimee","Supertone","MetaVoice Studio","Speechmatics","AssemblyAI","Deepgram","Whisper API","WhisperX","Rev AI","Gladia","Hume AI Voice","Cartesia","Inworld Voice","OpenAI Realtime Voice","Google Chirp","Amazon Polly","Azure Neural TTS","IBM Watson TTS","Yandex SpeechKit","Naver Clova Voice","Baidu TTS","Tencent TTS","ElevenReader","Suno Studio","Udio Pro","Mubert Studio","Stable Audio API","Riffusion Realtime","Lyria Demo","YouTube Music AI","TikTok Symphony Audio","CapCut AI Voice","Runway Audio","Pika Sound","Luma Sound","Kaiber Audio","VEED Voice Dub","InVideo Voice Generator","Canva AI Voice","Notion AI Voice Notes","Otter AI Voice","Fireflies AI","Fathom AI Recorder","Sembly AI","Supernormal Audio","ReadSpeaker","NaturalReader","Balabolka AI","Audioread","Speechlab","Eleven Dubbing","Deepdub","Dubformer","Maestra","Aloud by Google","Whisper Memos","MacWhisper","Whispr Flow","AudioPen","Koe Recast","AceStep","Beatbot","Musicfy","SongR","Voicemaker","Audioalter AI","Audo Studio","Podium AI","Revoice Pro AI","Neural Frames Audio","Aireel Audio","Sonic Pi AI","Magenta Studio","Tone Transfer","DDSP","RVC Voice Conversion","OpenSinger","Synthesizer V AI","VOCALOID AI","DiffSinger","Harmony Helper","AnthemScore AI","Chord ai","Moises Chord Finder","Tempo AI","Tunebat AI","LALAL Stem Splitter","Mixonset AI","Algonaut Atlas","Suno Prompt Helper","Udio Prompt Lab","Audio Promptly","Freesound AI Search","StableSoundFX","Klangio AI","Aimi Creator","Generative FM","CassetteAI","StockmusicGPT","SFXR AI","GameAudioAI","AtmosForge","FoleyAI","CinematicHits AI","Trailerizer AI","Soundscape AI","Ambient Mixer AI","Binaural Beats AI","Voice Changer AI","Singing Voice AI","Narration AI","Podcast Intro AI","Jingle AI","Radio Imaging AI","AdVoice AI","Call Center Voice AI","Audiobook AI","Learning Voice AI","Meditation Voice AI"
+      ];
+
+      function slugify(v) {
+        return v.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+      }
+      function hashCode(str) {
+        let hash = 0;
+        for (let i = 0; i < str.length; i += 1) { hash = ((hash << 5) - hash) + str.charCodeAt(i); hash |= 0; }
+        return Math.abs(hash);
+      }
+      function inferType(name) {
+        const n = name.toLowerCase();
+        const list = [];
+        if (n.includes("voice") || n.includes("tts") || n.includes("dub")) list.push("voix");
+        if (n.includes("sfx") || n.includes("foley") || n.includes("sound")) list.push("sfx");
+        if (n.includes("master") || n.includes("mix") || n.includes("ozone")) list.push("mastering");
+        if (n.includes("stem") || n.includes("split")) list.push("stems");
+        if (n.includes("music") || n.includes("song") || n.includes("chord") || n.includes("beat")) list.push("musique");
+        return list.length ? [...new Set(list)] : ["audio"];
+      }
+      function inferPlatform(name) {
+        const n = name.toLowerCase();
+        const p = ["web"];
+        if (n.includes("api")) p.push("api");
+        if (n.includes("app") || n.includes("mobile")) p.push("mobile");
+        if (n.includes("studio") || n.includes("pro tools") || n.includes("logic") || n.includes("fl studio")) p.push("desktop");
+        return [...new Set(p)];
+      }
+      const modelPool = ["Gen-Audio", "Diffusion Audio", "Neural Synth", "Custom Model"];
+      const useCases = ["maquettes de soundtrack", "voice over multilingue", "design sonore", "podcast propre", "mix/master rapide", "séparation de stems"];
+      const generatedCatalog = hugeCatalogNames.map((name) => {
+        const h = hashCode(name);
+        const mins = 5 + (h % 90);
+        return {
+          id: slugify(name),
+          name,
+          type: inferType(name),
+          platform: inferPlatform(name),
+          models: [modelPool[h % modelPool.length], modelPool[(h + 1) % modelPool.length]],
+          freeMinutes: mins,
+          speed: Number((6.6 + ((h % 30) / 10)).toFixed(1)),
+          quality: Number((6.8 + ((h % 28) / 10)).toFixed(1)),
+          community: Number((3.6 + ((h % 14) / 10)).toFixed(1)),
+          api: inferPlatform(name).includes("api"),
+          update: "2026-04",
+          limits: `${mins} minutes gratuites estimées (variable selon plan)`,
+          bestFor: useCases[h % useCases.length],
+          url: `https://www.google.com/search?q=${encodeURIComponent(name + " ai audio")}`
+        };
+      });
+      const map = new Map();
+      [...generatedCatalog, ...curatedTools].forEach((t) => map.set(t.id, t));
+      const tools = [...map.values()];
+
+      const state = loadState();
+      const els = {
+        search: document.getElementById("searchInput"),
+        type: document.getElementById("typeFilter"),
+        platform: document.getElementById("platformFilter"),
+        sortBy: document.getElementById("sortBy"),
+        apiOnly: document.getElementById("apiOnly"),
+        resetBtn: document.getElementById("resetBtn"),
+        grid: document.getElementById("cardsGrid"),
+        empty: document.getElementById("emptyState"),
+        countTools: document.getElementById("countTools"),
+        avgScore: document.getElementById("avgScore"),
+        topTool: document.getElementById("topTool"),
+      };
+
+      function loadState() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); } catch { return {}; } }
+      function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+      function normalize(v) { return v.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+      function computeScore(t) {
+        const freeScore = Math.min(t.freeMinutes / 10, 10);
+        const c = t.community * 2;
+        const apiBonus = t.api ? 0.5 : 0;
+        return Number(((t.quality * 0.35) + (t.speed * 0.2) + (freeScore * 0.2) + (c * 0.2) + apiBonus).toFixed(2));
+      }
+      function uniqueTypes() { return [...new Set(tools.flatMap((t) => t.type))].sort((a, b) => a.localeCompare(b)); }
+      function getRating(id) { return (state.ratings && state.ratings[id]) || 0; }
+      function setRating(id, value) { state.ratings = state.ratings || {}; state.ratings[id] = value; saveState(); render(); }
+      function renderStars(id) {
+        const current = getRating(id);
+        return [1,2,3,4,5].map((v) => `<button type="button" class="rating-star text-lg ${v <= current ? "text-amber-500" : "text-neutral-400 hover:text-amber-500"} transition" data-id="${id}" data-value="${v}" aria-label="Noter ${v} sur 5">★</button>`).join("");
+      }
+      function applyFilters() {
+        const query = normalize(els.search.value || "");
+        const type = els.type.value;
+        const platform = els.platform.value;
+        const apiOnly = els.apiOnly.checked;
+        const sortBy = els.sortBy.value;
+        const filtered = tools.filter((t) => {
+          const blob = normalize(`${t.name} ${t.bestFor} ${t.type.join(" ")} ${t.models.join(" ")} ${t.limits}`);
+          return (!query || blob.includes(query))
+            && (type === "all" || t.type.includes(type))
+            && (platform === "all" || t.platform.includes(platform))
+            && (!apiOnly || t.api);
+        });
+        filtered.sort((a, b) => {
+          if (sortBy === "community") return b.community - a.community;
+          if (sortBy === "freeMinutes") return b.freeMinutes - a.freeMinutes;
+          if (sortBy === "speed") return b.speed - a.speed;
+          return computeScore(b) - computeScore(a);
+        });
+        return filtered;
+      }
+      function cardTemplate(t, i) {
+        const score = computeScore(t);
+        const rating = getRating(t.id);
+        const chipClass = t.api ? "border-sky-200 bg-sky-50 text-sky-700" : "border-neutral-200 bg-neutral-100 text-neutral-700";
+        return `
+          <article class="animate-fade-up rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm" style="animation-delay:${Math.min(i * 40, 240)}ms">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <h3 class="text-lg font-semibold text-neutral-950">${t.name}</h3>
+                <p class="mt-1 text-xs text-neutral-500">Mise à jour: ${t.update}</p>
+              </div>
+              <span class="rounded-full border px-2.5 py-1 text-xs font-medium ${chipClass}">${t.api ? "API disponible" : "Sans API"}</span>
+            </div>
+            <div class="mt-4 grid grid-cols-3 gap-2 text-xs">
+              <div class="rounded-lg border border-neutral-200 bg-neutral-50 p-2"><p class="text-neutral-500">Score</p><p class="mt-1 text-sm font-semibold text-neutral-950">${score.toFixed(1)}/10</p></div>
+              <div class="rounded-lg border border-neutral-200 bg-neutral-50 p-2"><p class="text-neutral-500">Vitesse</p><p class="mt-1 text-sm font-semibold text-neutral-900">${t.speed.toFixed(1)}/10</p></div>
+              <div class="rounded-lg border border-neutral-200 bg-neutral-50 p-2"><p class="text-neutral-500">Gratuit</p><p class="mt-1 text-sm font-semibold text-neutral-900">${t.freeMinutes} min</p></div>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-neutral-700"><strong class="text-neutral-950">Idéal pour:</strong> ${t.bestFor}</p>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-700"><strong class="text-neutral-950">Modèles:</strong> ${t.models.join(", ")}</p>
+            <p class="mt-2 text-sm leading-relaxed text-neutral-700"><strong class="text-neutral-950">Limites:</strong> ${t.limits}</p>
+            <div class="mt-3 flex flex-wrap gap-1.5">${t.type.map((x) => `<span class="rounded-full border border-neutral-200 bg-neutral-50 px-2 py-1 text-xs text-neutral-700">${x}</span>`).join("")}</div>
+            <div class="mt-4 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-1">${renderStars(t.id)}<span class="ml-1 text-xs text-neutral-500">${rating > 0 ? `${rating}/5` : "noter"}</span></div>
+              <a href="${t.url}" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-neutral-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-neutral-800">Visiter</a>
+            </div>
+          </article>
+        `;
+      }
+      function syncForm() {
+        els.search.value = state.search || "";
+        els.type.value = state.type || "all";
+        els.platform.value = state.platform || "all";
+        els.sortBy.value = state.sortBy || "score";
+        els.apiOnly.checked = Boolean(state.apiOnly);
+      }
+      function persistForm() {
+        state.search = els.search.value;
+        state.type = els.type.value;
+        state.platform = els.platform.value;
+        state.sortBy = els.sortBy.value;
+        state.apiOnly = els.apiOnly.checked;
+        saveState();
+      }
+      function updateSummary(list) {
+        els.countTools.textContent = String(list.length);
+        if (!list.length) { els.avgScore.textContent = "0.0"; els.topTool.textContent = "-"; return; }
+        const avg = list.map(computeScore).reduce((a, b) => a + b, 0) / list.length;
+        els.avgScore.textContent = avg.toFixed(1);
+        els.topTool.textContent = list[0].name;
+      }
+      function render() {
+        persistForm();
+        const list = applyFilters();
+        updateSummary(list);
+        if (!list.length) { els.grid.innerHTML = ""; els.empty.classList.remove("hidden"); return; }
+        els.empty.classList.add("hidden");
+        els.grid.innerHTML = list.map(cardTemplate).join("");
+        document.querySelectorAll(".rating-star").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const id = btn.getAttribute("data-id");
+            const value = Number(btn.getAttribute("data-value"));
+            if (!id || Number.isNaN(value)) return;
+            setRating(id, value);
+          });
+        });
+      }
+      function setupFilters() {
+        uniqueTypes().forEach((type) => {
+          const o = document.createElement("option");
+          o.value = type;
+          o.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+          els.type.appendChild(o);
+        });
+      }
+      function resetFilters() {
+        state.search = "";
+        state.type = "all";
+        state.platform = "all";
+        state.sortBy = "score";
+        state.apiOnly = false;
+        saveState();
+        syncForm();
+        render();
+      }
+      setupFilters();
+      syncForm();
+      render();
+      [els.search, els.type, els.platform, els.sortBy, els.apiOnly].forEach((el) => { el.addEventListener("input", render); el.addEventListener("change", render); });
+      els.resetBtn.addEventListener("click", resetFilters);
+    </script>
+  </body>
+</html>
