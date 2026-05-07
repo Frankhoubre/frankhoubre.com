@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { HomeFilmGallery } from "@/components/HomeFilmGallery";
 import { HomeLatestPostGrid } from "@/components/HomeLatestPostGrid";
-import { JsonLd } from "@/components/JsonLd";
 import { getHomeLatestPosts } from "@/lib/blog";
 import { getHomeGalleryImages } from "@/lib/home-gallery";
 import { baseUrl, person, siteName } from "@/lib/site";
@@ -162,7 +161,10 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={homeJsonLd} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
+      />
 
       <div className="relative overflow-x-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
         <div
