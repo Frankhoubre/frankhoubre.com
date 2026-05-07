@@ -162,22 +162,23 @@ export default function HomePage() {
         />
 
         <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-zinc-800 bg-zinc-950">
-          <Image
-            src="/images/home-hero-banner-4k.webp"
-            alt="Frank Houbre, formateur IA, réalisateur IA et créateur vidéo"
-            fill
-            className="h-full w-full min-h-[100svh] object-cover object-right"
-            sizes="100vw"
-            quality={90}
-            priority
-          />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/25"
+            className="absolute inset-0 bg-gradient-to-r from-black/92 via-black/75 to-black/55"
             aria-hidden
           />
           <div className="ds-cinematic-beam" aria-hidden />
           <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
             <div className="mx-auto max-w-4xl min-w-0">
+              <div className="mb-6 inline-flex rounded-full border border-white/20 bg-white/10 p-1 backdrop-blur-sm">
+                <Image
+                  src="/images/frank-houbre-about.png"
+                  alt="Photo de Frank Houbre"
+                  width={72}
+                  height={72}
+                  className="h-16 w-16 rounded-full object-cover object-center sm:h-[72px] sm:w-[72px]"
+                  priority
+                />
+              </div>
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/75">
                 Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
