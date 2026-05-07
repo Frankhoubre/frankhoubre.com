@@ -493,7 +493,6 @@ h4 {
 
 .ds-marquee-track {
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
 .ds-marquee-slide-left,

@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { HomeFilmGallery } from "@/components/HomeFilmGallery";
 import { HomeLatestPostGrid } from "@/components/HomeLatestPostGrid";
 import { JsonLd } from "@/components/JsonLd";
 import { getHomeLatestPosts } from "@/lib/blog";
+import { getHomeGalleryImages } from "@/lib/home-gallery";
 import { baseUrl, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -55,11 +57,6 @@ const faqEntries = [
       "Parce qu’un bon résultat ne dépend pas seulement du prompt. Il faut aussi penser cadre, lumière, rythme, continuité visuelle, montage et direction artistique comme dans une vraie production.",
   },
 ] as const;
-
-const showcaseImages = Array.from({ length: 37 }, (_, index) => ({
-  src: `/images/home/gallery/shot-${String(index + 1).padStart(2, "0")}.webp`,
-  alt: `Extrait cinématique IA ${index + 1}`,
-}));
 
 export const metadata: Metadata = {
   title: homeTitle,
@@ -161,14 +158,13 @@ export default function HomePage() {
   const hasActualiteOnly =
     latestPosts.length > 0 &&
     latestPosts.every((p) => p.frontmatter.category === "actualite");
-  const firstRow = showcaseImages.filter((_, index) => index % 2 === 0);
-  const secondRow = showcaseImages.filter((_, index) => index % 2 !== 0);
+  const galleryImages = getHomeGalleryImages();
 
   return (
     <>
       <JsonLd data={homeJsonLd} />
 
-      <div className="relative overflow-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
+      <div className="relative overflow-x-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
         <div
           className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_90%_55%_at_15%_-10%,rgba(120,90,60,0.09),transparent_55%),radial-gradient(ellipse_70%_50%_at_100%_15%,rgba(40,60,90,0.06),transparent_50%)]"
           aria-hidden
@@ -178,7 +174,7 @@ export default function HomePage() {
           aria-hidden
         />
 
-        <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-zinc-800 bg-zinc-950">
+        <section className="relative isolate min-h-[100svh] w-full overflow-hidden border-b border-zinc-800 bg-zinc-950">
           <Image
             src="/images/home-hero-banner-4k.webp"
             alt="Frank Houbre, formateur IA, réalisateur IA et créateur vidéo"
@@ -193,8 +189,8 @@ export default function HomePage() {
             aria-hidden
           />
           <div className="ds-cinematic-beam" aria-hidden />
-          <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
-            <div className="mx-auto max-w-4xl min-w-0">
+          <div className="relative mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col px-4 py-24 sm:px-6 sm:py-28">
+            <div className="mx-auto flex w-full max-w-4xl min-w-0 flex-1 flex-col justify-center">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/75">
                 Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
@@ -235,61 +231,12 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section className="border-b border-zinc-200/80 bg-gradient-to-b from-zinc-950 via-zinc-900 to-zinc-950 py-12 text-white sm:py-16">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <div className="max-w-3xl">
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-300">
-                Galerie inspiration
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-                Concevez les films que vous avez en tête
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-zinc-300 sm:text-base">
-                Des univers variés, du style animation au rendu cinématique, pour stimuler vos idées
-                de direction artistique.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8 space-y-4 sm:mt-10 sm:space-y-5">
-            <div className="ds-marquee-track">
-              <div className="ds-marquee-slide-left">
-                {[...firstRow, ...firstRow].map((image, index) => (
-                  <article
-                    key={`row1-${image.src}-${index}`}
-                    className="relative h-40 w-72 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/60 shadow-lg shadow-black/25 sm:h-44 sm:w-80"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
-                    />
-                  </article>
-                ))}
+            {galleryImages.length > 0 ? (
+              <div className="relative mt-10 w-screen max-w-[100vw] shrink-0 -translate-x-1/2 left-1/2 sm:mt-14">
+                <HomeFilmGallery images={galleryImages} />
               </div>
-            </div>
-
-            <div className="ds-marquee-track">
-              <div className="ds-marquee-slide-right">
-                {[...secondRow, ...secondRow].map((image, index) => (
-                  <article
-                    key={`row2-${image.src}-${index}`}
-                    className="relative h-40 w-72 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/60 shadow-lg shadow-black/25 sm:h-44 sm:w-80"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
-                    />
-                  </article>
-                ))}
-              </div>
-            </div>
+            ) : null}
           </div>
         </section>
 
