@@ -174,7 +174,7 @@ ScreenWeaver ne fera pas le film à ta place. Il peut réduire la distance entre
 
 À toi de jouer : une scène, trois panneaux, une preuve sonore, une date dans le nom de fichier. Le reste est de la répétition honnête.
 
-## Référence vidéo `@BusinessDynamite`
+## Vidéo de référence
 
 Pour renforcer ton passage scénario vers storyboard, cette référence `@BusinessDynamite` est pertinente  
 [https://www.youtube.com/watch?v=hHWkvFH8u9I](https://www.youtube.com/watch?v=hHWkvFH8u9I)

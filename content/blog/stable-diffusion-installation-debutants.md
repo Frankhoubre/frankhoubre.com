@@ -193,9 +193,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Stable Diffusion : guide d’installation et premiers pas pour les débutants** et le périmètre `stable-diffusion-installation-debutants`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Windows ou macOS, GPU ou plan B, téléchargement des poids, première image, et erreurs classiques à éviter dès le jour 1. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la discipline : versions notées, résultats reproductibles.

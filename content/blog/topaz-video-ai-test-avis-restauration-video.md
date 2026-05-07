@@ -221,9 +221,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Topaz Video AI : test et avis complet sur la restauration vidéo** et le périmètre `topaz-video-ai-test-avis-restauration-video`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Test terrain complet de Topaz Video AI pour restaurer des vidéos anciennes, avec workflow pro, réglages utiles et limites réelles. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Utile pour la méthode : décisions de pipeline, pas accumulation d’effets.

@@ -246,9 +246,9 @@ Prochain test :
 
 Pour `comment-rendre-scene-ia-plus-credible`, retiens trois lignes dans ton carnet : intention en une phrase, loi lumière en une phrase, preuve matérielle en une phrase. Si l’une manque, tu n’es pas prêt à regénérer massivement : tu es prêt à diagnostiquer. La qualité long terme vient de cette discipline, pas du dernier modèle sorti mardi.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la méthode : crédibilité = décisions, pas détails au hasard.

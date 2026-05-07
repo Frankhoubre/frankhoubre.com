@@ -145,7 +145,7 @@ Cette routine force des décisions reproductibles et évite les itérations infi
 
 ## Vidéo de référence
 
-Référence `@BusinessDynamite`:  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=pLDTXnovoBc](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
 À observer:

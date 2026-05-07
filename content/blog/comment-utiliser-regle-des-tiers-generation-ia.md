@@ -211,7 +211,7 @@ Tu dois sentir du film, pas du rendu CGI.
 
 ## Vidéo YouTube à étudier
 
-Référence `@BusinessDynamite`:
+Chaîne YouTube Business Dynamite :
 [https://www.youtube.com/watch?v=pLDTXnovoBc](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
 Regarde bien:

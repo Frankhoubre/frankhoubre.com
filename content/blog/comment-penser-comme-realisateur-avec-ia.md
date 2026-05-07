@@ -255,7 +255,7 @@ Si elle hésite, tu recoupes.
 
 ## Vidéo YouTube à analyser
 
-Référence `@BusinessDynamite`:
+Chaîne YouTube Business Dynamite :
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Ce que tu dois observer:

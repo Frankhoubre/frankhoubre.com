@@ -48,7 +48,7 @@ Pour corriger les prompts trop artificiels, relie directement ce guide à [les e
 
 ## Vidéo YouTube intégrée
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=Y2h4HkJL2XQ](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
 
 Observe surtout:

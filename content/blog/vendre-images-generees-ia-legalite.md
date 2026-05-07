@@ -158,9 +158,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Comment vendre ses images générées par l’IA (et est-ce légal ?)** et le périmètre `vendre-images-generees-ia-legalite`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la posture : preuve et process, pas promesse magique.

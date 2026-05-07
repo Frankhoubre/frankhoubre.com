@@ -185,9 +185,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Tutoriel complet : comment créer des personnages cohérents sur plusieurs images** et le périmètre `personnages-coherents-plusieurs-images-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Fiche personnage, prompts stables, seeds, LoRA, et QA visuelle : une méthode de studio appliquée à l’IA image. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la discipline : une série pro se juge sur la continuité, pas sur le meilleur plan isolé.

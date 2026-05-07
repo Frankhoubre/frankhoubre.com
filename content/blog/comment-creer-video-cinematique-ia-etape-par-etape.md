@@ -212,9 +212,9 @@ Pour éviter les dérives de texture qui cassent le réalisme, complète avec [c
 ![Image contextuelle, validation qualité avant export.](/images/blog/comment-creer-video-cinematique-ia-etape-par-etape/workflow-2.webp)
 
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite`:  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Ce qu’il faut observer:

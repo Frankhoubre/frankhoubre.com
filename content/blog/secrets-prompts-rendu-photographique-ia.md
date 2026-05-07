@@ -171,9 +171,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Les secrets des prompts pour générer des images au rendu photographique** et le périmètre `secrets-prompts-rendu-photographique-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Ce qui marche vraiment : hiérarchie d’information, vocabulaire optique, et pièges à éviter pour ne pas retomber sur un cliché IA. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la méthode : décider vite, documenter, ne pas collectionner des prompts inutilisables.

@@ -11,7 +11,7 @@ Tu as un script solide. Dialogues, intentions, rythme. Mais quand il faut le vis
 
 Le storyboarding IA change tout, à condition de l'utiliser comme un outil de mise en scène et pas comme une machine à faire de jolies images. L'objectif n'est pas d'impressionner. L'objectif est de clarifier les plans, sécuriser les raccords et préparer ton équipe.
 
-![Storyboarding IA pour visualiser un film avant le tournage](https://placehold.co/1280x720?text=Storyboarding+IA+Hero)
+![Storyboarding IA pour visualiser un film avant le tournage](/images/art16-hero.png)
 
 ## Core concepts : ce qui fait un storyboard vraiment utile
 
@@ -35,7 +35,7 @@ Génère en lot court. Cinq à dix cases à la fois. Tu compares, tu ajustes, tu
 
 Puis assemble dans l'ordre narratif avec annotations : type de plan, mouvement, durée estimée, note d'intention. C'est cette couche qui transforme des images IA en document de réalisation.
 
-![Workflow de génération de cases de storyboard avec IA](https://placehold.co/1280x720?text=Workflow+Storyboard+IA)
+![Workflow de génération de cases de storyboard avec IA](/images/art16-wf1.png)
 
 ### Étape 1 : traduire le script en plans concrets
 
@@ -67,7 +67,7 @@ Transforme ensuite le storyboard en animatique rapide. Même rudimentaire, cette
 
 Pour aller plus loin sur l'animation d'images fixes en plan film, lis [notre tutoriel Runway Gen-3](/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film).
 
-![Assemblage d'une animatique IA pour tester le rythme du film](https://placehold.co/1280x720?text=Animatique+IA+Workflow)
+![Assemblage d'une animatique IA pour tester le rythme du film](/images/art16-wf2.png)
 
 ## Tableau comparatif : méthodes de prévisualisation
 

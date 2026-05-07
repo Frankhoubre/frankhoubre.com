@@ -11,7 +11,7 @@ Ton montage est fini. L'histoire tient. Mais visuellement, ça reste brut. C'est
 
 L'étalonnage IA peut te faire gagner un temps énorme, mais seulement si tu respectes l'ordre de travail : correction, continuité, puis style. Si tu inverses ces étapes, même les meilleurs outils te donneront un rendu amateur.
 
-![Étalonnage et color grading IA pour un look cinéma professionnel](https://placehold.co/1280x720?text=Etalonnage+IA+Hero)
+![Étalonnage et color grading IA pour un look cinéma professionnel](/images/art17-hero.png)
 
 ## Core concepts : ce qui change vraiment la qualité d'image
 
@@ -35,7 +35,7 @@ Lance ensuite le color matching IA par groupe de plans similaires. Pas sur tout 
 
 Termine avec un look créatif léger et un contrôle global de cohérence, puis export test sur plusieurs écrans.
 
-![Interface d'étalonnage IA avec scopes et color matching](https://placehold.co/1280x720?text=Workflow+Etalonnage+IA)
+![Interface d'étalonnage IA avec scopes et color matching](/images/art17-wf1.png)
 
 ### Étape 1 : préparer les rushes correctement
 
@@ -67,7 +67,7 @@ Uniformise texture et grain sur toute la séquence. Ce liant visuel aide énorm�
 
 Pour garder une continuité globale en projet hybride, relie ce travail à [notre guide des erreurs de raccord IA](/blog/film-ia-erreurs-raccord-incoherences-visuelles-eviter).
 
-![Application de grain filmique et look créatif IA](https://placehold.co/1280x720?text=Finition+Etalonnage+IA)
+![Application de grain filmique et look créatif IA](/images/art17-wf2.png)
 
 ## Tableau comparatif : approches d'étalonnage
 

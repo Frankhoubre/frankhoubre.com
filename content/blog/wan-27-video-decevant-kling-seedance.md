@@ -199,7 +199,7 @@ Le grading peut améliorer la cohérence de contraste et masquer des défauts l�
 
 **Abaisse** la complexité, **raccourcis** les plans, **ajoute** le son tôt, et **pivot** d’outil si la règle de temps est dépassée.
 
-## Référence vidéo `@BusinessDynamite`
+## Vidéo de référence
 
 Pour comparer les rendus vidéo en gardant un cadre narratif clair, regarde cette vidéo `@BusinessDynamite`  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)

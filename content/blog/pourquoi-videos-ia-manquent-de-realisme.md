@@ -169,9 +169,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Pourquoi mes vidéos IA manquent de réalisme** et le périmètre `pourquoi-videos-ia-manquent-de-realisme`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Lumière incohérente, texture qui glisse, mouvement de caméra invraisemblable, et son déconnecté : les causes les plus fréquentes. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la méthode : critères de rejet avant effets spectaculaires.

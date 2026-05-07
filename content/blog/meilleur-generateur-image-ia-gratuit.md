@@ -187,9 +187,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Quel est le meilleur générateur d’image IA gratuit ?** et le périmètre `meilleur-generateur-image-ia-gratuit`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Grille de décision honnête : gratuit « vrai », freemium, local GPU, et ce que tu paies en réalité en temps ou en données. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Utile pour ancrer la méthode : itérer vite, mais avec un critère de qualité clair avant de multiplier les outils.

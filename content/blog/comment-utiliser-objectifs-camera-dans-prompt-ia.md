@@ -89,7 +89,7 @@ Quand tu veux renforcer l’aspect anamorphique sans tomber dans le flare artifi
 
 ## Video YouTube a integrer dans l'article
 
-Reference `@BusinessDynamite`:
+Chaîne YouTube Business Dynamite :
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Ce qu’il faut observer:

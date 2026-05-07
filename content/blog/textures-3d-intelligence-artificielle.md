@@ -169,9 +169,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Créer des textures 3D avec l’intelligence artificielle pour vos projets** et le périmètre `textures-3d-intelligence-artificielle`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Tile seamless, UV, PBR plausible, et intégration Blender ou moteur jeu : un pipeline propre entre IA et 3D. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la méthode : valider tôt dans le moteur cible, pas seulement en PNG isolé.

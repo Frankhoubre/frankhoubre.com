@@ -208,7 +208,7 @@ Check final:
 
 ## Vidéo YouTube à regarder
 
-Référence `@BusinessDynamite`:
+Chaîne YouTube Business Dynamite :
 [https://www.youtube.com/watch?v=pLDTXnovoBc](https://www.youtube.com/watch?v=pLDTXnovoBc)
 
 Regarde surtout:

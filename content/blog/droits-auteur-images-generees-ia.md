@@ -175,9 +175,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir** et le périmètre `droits-auteur-images-generees-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « EU, UK, USA : grands principes, incertitudes, et checklist pratique pour créateurs et clients, sans remplacer un avocat. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la rigueur : prouver, documenter, ne pas improviser les clauses.

@@ -11,7 +11,7 @@ Faire le film n'est plus la partie la plus dure. Le vrai mur, c'est la distribut
 
 En 2026, un film IA se distribue comme un écosystème. Une oeuvre principale et des dizaines de formats satellites pour capter l'audience là où elle est. Si tu ne fais pas ça, ton film reste invisible même s'il est excellent.
 
-![Stratégies de distribution et marketing de film IA](https://placehold.co/1280x720?text=Distribution+Film+IA+Hero)
+![Stratégies de distribution et marketing de film IA](/images/art18-hero.png)
 
 ## Core concepts : nouvelle logique de distribution
 
@@ -35,7 +35,7 @@ Active ensuite les canaux pro : festivals ciblés, curateurs, newsletters spéci
 
 Enfin, mesure ce qui convertit vraiment : rétention, clic, partages qualifiés, demandes entrantes.
 
-![Stratégie de micro-contenus IA pour les réseaux sociaux](https://placehold.co/1280x720?text=Marketing+Omnicanal+IA)
+![Stratégie de micro-contenus IA pour les réseaux sociaux](/images/art18-wf1.png)
 
 ### Étape 1 : créer le pack de lancement
 
@@ -67,7 +67,7 @@ Relance les programmateurs avec un message court, contextualisé, jamais génér
 
 Maintiens une base de suivi simple pour ne perdre aucun contact utile.
 
-![Analyse des données de distribution et monétisation](https://placehold.co/1280x720?text=Analyse+Distribution+IA)
+![Analyse des données de distribution et monétisation](/images/art18-wf2.png)
 
 ## Tableau comparatif : canaux de distribution
 

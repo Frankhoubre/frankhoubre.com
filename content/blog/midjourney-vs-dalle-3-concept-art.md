@@ -176,9 +176,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Midjourney vs DALL·E 3 : lequel choisir pour le concept art ?** et le périmètre `midjourney-vs-dalle-3-concept-art`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Itération, cohérence de direction artistique, contrôle des poses, et livrables : le bon outil dépend du type de concept, pas du logo sur la slide. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo YouTube à intégrer
+## Vidéo de référence
 
-Référence `@BusinessDynamite` :  
+Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Pour la méthode : décider tôt, itérer proprement, éviter la dispersion d’outils.
