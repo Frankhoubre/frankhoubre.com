@@ -93,6 +93,16 @@ export function SiteHeader() {
             À propos
           </Link>
           <Link
+            href="/prestation"
+            className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
+              homeAtTop
+                ? "hover:bg-white/15 hover:text-white"
+                : "hover:bg-white hover:text-zinc-950"
+            }`}
+          >
+            Prestation
+          </Link>
+          <Link
             href="/contact"
             className={`rounded-full px-3 py-1.5 transition-colors duration-200 ${
               homeAtTop
