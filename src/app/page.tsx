@@ -262,12 +262,11 @@ export default function HomePage() {
                     key={`row1-${image.src}-${index}`}
                     className="relative h-40 w-72 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/60 shadow-lg shadow-black/25 sm:h-44 sm:w-80"
                   >
-                    <Image
+                    <img
                       src={image.src}
                       alt={image.alt}
-                      fill
-                      sizes="(max-width: 640px) 70vw, 320px"
-                      className="object-cover transition-transform duration-500 hover:scale-[1.03]"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
                     />
                   </article>
                 ))}
@@ -281,12 +280,11 @@ export default function HomePage() {
                     key={`row2-${image.src}-${index}`}
                     className="relative h-40 w-72 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/60 shadow-lg shadow-black/25 sm:h-44 sm:w-80"
                   >
-                    <Image
+                    <img
                       src={image.src}
                       alt={image.alt}
-                      fill
-                      sizes="(max-width: 640px) 70vw, 320px"
-                      className="object-cover transition-transform duration-500 hover:scale-[1.03]"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
                     />
                   </article>
                 ))}
