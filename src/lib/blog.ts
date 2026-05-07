@@ -119,15 +119,9 @@ export function getLatestPosts(n: number): Post[] {
   return getAllPosts().slice(0, n);
 }
 
-/** Actualité en tête lorsqu’il y en a ; sinon les derniers articles publiés. */
+/** Derniers articles publiés, toutes catégories confondues. */
 export function getHomeLatestPosts(limit: number): Post[] {
-  const byActualite = getPostsByCategory("actualite");
-  if (byActualite.length >= limit) {
-    return byActualite.slice(0, limit);
-  }
-  const seen = new Set(byActualite.map((p) => p.slug));
-  const rest = getAllPosts().filter((p) => !seen.has(p.slug));
-  return [...byActualite, ...rest].slice(0, limit);
+  return getAllPosts().slice(0, limit);
 }
 
 export function getRelatedPosts(

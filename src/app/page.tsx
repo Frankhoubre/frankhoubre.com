@@ -184,16 +184,14 @@ export default function HomePage() {
           <div className="ds-cinematic-beam" aria-hidden />
           <div className="relative mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col px-4 py-24 sm:px-6 sm:py-28">
             <div className="mx-auto flex w-full max-w-4xl min-w-0 flex-1 flex-col justify-center">
-              <div className="mb-6 inline-flex rounded-full border border-white/20 bg-white/10 p-1 backdrop-blur-sm">
-                <Image
-                  src="/images/frank-houbre-about.png"
-                  alt="Photo de Frank Houbre"
-                  width={72}
-                  height={72}
-                  className="h-16 w-16 rounded-full object-cover object-center sm:h-[72px] sm:w-[72px]"
-                  priority
-                />
-              </div>
+              <Image
+                src="/images/frank-houbre-about.png"
+                alt="Photo de Frank Houbre"
+                width={72}
+                height={72}
+                className="mb-6 h-16 w-16 rounded-full border border-white/20 object-cover object-center sm:h-[72px] sm:w-[72px]"
+                priority
+              />
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/75">
                 Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
@@ -257,8 +255,8 @@ export default function HomePage() {
               </p>
               <p className="mt-4 text-lg leading-relaxed text-neutral-800">
                 Si vous cherchez un <strong>formateur IA</strong> capable de parler autant de
-                structure, de pipeline, de production et de mise en scène que d’outils, cette page
-                sert de point d’entrée. Vous trouverez ici des ressources pour apprendre, des projets
+                structure, de pipeline, de production et de mise en scène que d’outils, vous êtes au
+                bon endroit. Vous trouverez ici des ressources pour apprendre, des projets
                 pour juger le niveau créatif, et un blog pour suivre l’évolution rapide de l’IA.
               </p>
             </div>
