@@ -266,6 +266,30 @@ export function injectMiddleBanner(content: string): string {
   return next.join("\n\n");
 }
 
+/**
+ * Neutralise les pièges MDX qui cassent systématiquement le build Vercel
+ * quand un article contient du contenu copié/généré ailleurs :
+ *  - Commentaires HTML `<!-- ... -->` → convertis en commentaires MDX `{/* ... *\/}`.
+ *    MDX interprète `<!` comme du JSX invalide et fait échouer le prerender.
+ *  - Sections `<![CDATA[ ... ]]>` → supprimées (jamais utilisables en MDX).
+ *
+ * Appelé en tout début de pipeline sur le contenu brut, avant toute autre
+ * transformation. Volontairement conservateur : on ne touche pas aux `<`
+ * isolés pour ne pas abîmer les blocs de code (ex. « x < 5 » en C++).
+ */
+export function sanitizeMdxUnsafeSyntax(content: string): string {
+  let s = content;
+
+  s = s.replace(
+    /<!--([\s\S]*?)-->/g,
+    (_, inner: string) => `{/*${inner.replace(/\*\//g, "*\\/")}*/}`,
+  );
+
+  s = s.replace(/<!\[CDATA\[[\s\S]*?\]\]>/g, "");
+
+  return s;
+}
+
 export function runMdxPipeline(segment: string): string {
   let s = segment;
   s = injectHeadingIds(s);
@@ -278,9 +302,10 @@ export function prepareArticleMdxParts(rawContent: string): {
   afterMdx: string;
   faqPairs: FaqPair[] | null;
 } {
-  const faq = splitFaqContent(rawContent);
+  const safeContent = sanitizeMdxUnsafeSyntax(rawContent);
+  const faq = splitFaqContent(safeContent);
   if (!faq) {
-    const single = injectMiddleBanner(runMdxPipeline(rawContent));
+    const single = injectMiddleBanner(runMdxPipeline(safeContent));
     return { beforeMdx: single, afterMdx: "", faqPairs: null };
   }
 

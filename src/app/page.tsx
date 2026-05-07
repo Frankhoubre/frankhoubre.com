@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { HomeFilmGallery } from "@/components/HomeFilmGallery";
 import { HomeLatestPostGrid } from "@/components/HomeLatestPostGrid";
 import { getHomeLatestPosts } from "@/lib/blog";
+import { getHomeGalleryImages } from "@/lib/home-gallery";
 import { baseUrl, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -90,12 +92,24 @@ const homeJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": `${baseUrl}/#organization`,
+      name: siteName,
+      url: baseUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/favicon.ico`,
+      },
+      sameAs: [...person.sameAs],
+      founder: { "@id": `${baseUrl}/#person` },
+    },
+    {
       "@type": "WebSite",
       "@id": `${baseUrl}/#website`,
       name: siteName,
       url: baseUrl,
       description: homeDescription,
-      publisher: { "@id": `${baseUrl}/#person` },
+      publisher: { "@id": `${baseUrl}/#organization` },
     },
     {
       "@type": "Person",
@@ -143,6 +157,7 @@ export default function HomePage() {
   const hasActualiteOnly =
     latestPosts.length > 0 &&
     latestPosts.every((p) => p.frontmatter.category === "actualite");
+  const galleryImages = getHomeGalleryImages();
 
   return (
     <>
@@ -151,7 +166,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
       />
 
-      <div className="relative overflow-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
+      <div className="relative overflow-x-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
         <div
           className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_90%_55%_at_15%_-10%,rgba(120,90,60,0.09),transparent_55%),radial-gradient(ellipse_70%_50%_at_100%_15%,rgba(40,60,90,0.06),transparent_50%)]"
           aria-hidden
@@ -161,24 +176,23 @@ export default function HomePage() {
           aria-hidden
         />
 
-        <section className="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden border-b border-zinc-800 bg-zinc-950">
+        <section className="relative isolate min-h-[100svh] w-full overflow-hidden border-b border-zinc-800 bg-zinc-950">
+          <Image
+            src="/images/home-hero-banner-4k.webp"
+            alt="Frank Houbre, formateur IA, réalisateur IA et créateur vidéo"
+            fill
+            className="h-full w-full min-h-[100svh] object-cover object-right"
+            sizes="100vw"
+            quality={90}
+            priority
+          />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-black/92 via-black/75 to-black/55"
+            className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-black/25"
             aria-hidden
           />
           <div className="ds-cinematic-beam" aria-hidden />
-          <div className="relative mx-auto w-full max-w-6xl px-4 py-24 sm:px-6 sm:py-28">
-            <div className="mx-auto max-w-4xl min-w-0">
-              <div className="mb-6 inline-flex rounded-full border border-white/20 bg-white/10 p-1 backdrop-blur-sm">
-                <Image
-                  src="/images/frank-houbre-about.png"
-                  alt="Photo de Frank Houbre"
-                  width={72}
-                  height={72}
-                  className="h-16 w-16 rounded-full object-cover object-center sm:h-[72px] sm:w-[72px]"
-                  priority
-                />
-              </div>
+          <div className="relative mx-auto flex min-h-[100svh] w-full max-w-6xl flex-col px-4 py-24 sm:px-6 sm:py-28">
+            <div className="mx-auto flex w-full max-w-4xl min-w-0 flex-1 flex-col justify-center">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/75">
                 Formateur IA vidéo &amp; image • Réalisateur IA
               </p>
@@ -219,6 +233,12 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+
+            {galleryImages.length > 0 ? (
+              <div className="relative mt-10 w-screen max-w-[100vw] shrink-0 -translate-x-1/2 left-1/2 sm:mt-14">
+                <HomeFilmGallery images={galleryImages} />
+              </div>
+            ) : null}
           </div>
         </section>
 
