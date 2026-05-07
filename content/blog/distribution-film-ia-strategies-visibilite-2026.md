@@ -11,7 +11,7 @@ Faire le film n'est plus la partie la plus dure. Le vrai mur, c'est la distribut
 
 En 2026, un film IA se distribue comme un écosystème. Une oeuvre principale et des dizaines de formats satellites pour capter l'audience là où elle est. Si tu ne fais pas ça, ton film reste invisible même s'il est excellent.
 
-![Stratégies de distribution et marketing de film IA](/images/art18-hero.png)
+![Stratégies de distribution et marketing de film IA](/images/art18-hero-new.png)
 
 ## Core concepts : nouvelle logique de distribution
 

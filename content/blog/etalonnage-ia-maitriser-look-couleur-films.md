@@ -11,7 +11,7 @@ Ton montage est fini. L'histoire tient. Mais visuellement, ça reste brut. C'est
 
 L'étalonnage IA peut te faire gagner un temps énorme, mais seulement si tu respectes l'ordre de travail : correction, continuité, puis style. Si tu inverses ces étapes, même les meilleurs outils te donneront un rendu amateur.
 
-![Étalonnage et color grading IA pour un look cinéma professionnel](/images/art17-hero.png)
+![Étalonnage et color grading IA pour un look cinéma professionnel](/images/art17-hero-new.png)
 
 ## Core concepts : ce qui change vraiment la qualité d'image
 

@@ -11,7 +11,7 @@ Tu as un script solide. Dialogues, intentions, rythme. Mais quand il faut le vis
 
 Le storyboarding IA change tout, à condition de l'utiliser comme un outil de mise en scène et pas comme une machine à faire de jolies images. L'objectif n'est pas d'impressionner. L'objectif est de clarifier les plans, sécuriser les raccords et préparer ton équipe.
 
-![Storyboarding IA pour visualiser un film avant le tournage](/images/art16-hero.png)
+![Storyboarding IA pour visualiser un film avant le tournage](/images/art16-hero-new.png)
 
 ## Core concepts : ce qui fait un storyboard vraiment utile
 
