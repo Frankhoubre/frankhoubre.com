@@ -13,7 +13,7 @@ J’ai vu des équipes produire en deux jours l’équivalent visuel d’une sem
 
 Le vrai changement, c’est que le réalisateur devient architecte de workflow. Tu dois savoir ce que tu veux raconter, dans quel ordre, avec quelle cohérence, puis décider comment répartir le travail entre réel, généré, et hybride. Les outils te donnent des options. Ton job, c’est d’éliminer les options qui nuisent au film.
 
-![Réalisateur pilotant un workflow génération vidéo IA en préproduction cinématographique](hero-generation-video-realisateur-ia.webp)
+![Réalisateur pilotant un workflow génération vidéo IA en préproduction cinématographique](/images/art5-hero-new.png)
 
 ## Core concepts: ce que les nouveaux outils changent vraiment
 
@@ -64,7 +64,7 @@ La direction d’acteur reste centrale. Les outils ne remplacent pas la vérité
 
 Quand tu planifies bien, le tournage hybride devient une force. Tu captes ce qui doit être vivant sur plateau et tu laisses aux outils IA ce qui peut être optimisé sans sacrifier l’émotion.
 
-![Plateau de tournage hybride avec capture réelle et inserts vidéo générés par IA](workflow-tournage-hybride-ia.webp)
+![Plateau de tournage hybride avec capture réelle et inserts vidéo générés par IA](/images/art5-wf1.png)
 
 > 💡 **Frank's Cut:** la question utile n’est pas "peut-on générer ce plan ?" La vraie question est "doit-on le générer pour mieux raconter ?"
 
@@ -120,7 +120,7 @@ En post, contrôle la convergence plutôt que la perfection isolée. Un plan par
 
 Après livraison, fais un retour d’expérience documenté. Qu’est-ce qui a vraiment accéléré ? Qu’est-ce qui a ralenti ? Quelles règles garder au prochain projet ? Sans cette boucle d’apprentissage, chaque nouveau film repart à zéro.
 
-![Réunion de postproduction où le réalisateur arbitre les variantes vidéo IA](workflow-role-realisateur-ia.webp)
+![Réunion de postproduction où le réalisateur arbitre les variantes vidéo IA](/images/art5-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on directing hybrid AI-video productions]
 

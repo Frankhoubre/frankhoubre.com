@@ -13,7 +13,7 @@ Je vois la même erreur partout. Les débutants traitent l’IA comme une machin
 
 Dans ce guide, on va faire exactement l’inverse du contenu générique. Tu vas apprendre à structurer un script de conversion, générer des plans qui prouvent, monter pour la rétention, tester les variantes qui comptent, et piloter tes créations avec des métriques. Tu vas aussi voir comment éviter l’esthétique plastique "AI demo" qui détruit la confiance dès les premières secondes, surtout sur mobile en diffusion payante.
 
-![Publicité vidéo IA cinématographique en cours de montage avec hook de conversion sur timeline](/images/blog/creer-publicite-video-percutante-intelligence-artificielle/hero-publicite-video-ia-percutante.webp)
+![Publicité vidéo IA cinématographique en cours de montage avec hook de conversion sur timeline](/images/art7-hero-new.png)
 
 ## Core concepts: ce qui rend une publicité IA vraiment percutante
 
@@ -64,7 +64,7 @@ Si tu dois générer des personnages, garde une continuité stricte de look et d
 
 Pense aussi à la lisibilité du produit ou de l’offre. Trop de profondeur de champ peut rendre la preuve illisible. En publicité, l’esthétique doit servir la clarté. Si ton produit est flou au moment critique, la vidéo peut être belle et pourtant inefficace.
 
-![Storyboard publicitaire IA avec plans de preuve avant après et bénéfices visibles produit](/images/blog/creer-publicite-video-percutante-intelligence-artificielle/workflow-plans-preuve-publicite-ia.webp)
+![Storyboard publicitaire IA avec plans de preuve avant après et bénéfices visibles produit](/images/art7-wf1.png)
 
 > 💡 **Frank's Cut:** quand un plan est esthétiquement fort mais ne sert ni la preuve ni la promesse, supprime-le. En pub performance, le courage de couper est un avantage concurrentiel.
 
@@ -88,7 +88,7 @@ N’interprète pas trop tôt. Laisse un volume minimal de données avant de con
 
 Documente enfin chaque test dans une feuille simple: hypothèse, variante, résultat, décision. Au bout de quelques cycles, tu construis un système qui s’améliore en continu. C’est ce système qui crée l’avantage, pas une vidéo isolée.
 
-![Tableau de test A B publicitaire IA avec variantes de hook CTA et mesure de conversion](/images/blog/creer-publicite-video-percutante-intelligence-artificielle/workflow-test-ab-publicite-ia.webp)
+![Tableau de test A B publicitaire IA avec variantes de hook CTA et mesure de conversion](/images/art7-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI ad hooks and conversion testing]
 

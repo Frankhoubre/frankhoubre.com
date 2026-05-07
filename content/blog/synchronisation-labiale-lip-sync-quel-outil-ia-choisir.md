@@ -15,7 +15,7 @@ Dans ce guide, tu vas apprendre comment sélectionner un outil selon ton usage r
 
 Tu repars avec un plan d’action utilisable dès aujourd’hui, même si tu débutes complètement, et une méthode reproductible pour améliorer chaque nouveau projet sans repartir de zéro à chaque session.
 
-![Synchronisation labiale IA sur acteur virtuel avec contrôle précis des phonèmes et expressions](hero-lip-sync-acteur-virtuel-ia.webp)
+![Synchronisation labiale IA sur acteur virtuel avec contrôle précis des phonèmes et expressions](/images/art8-hero-new.png)
 
 ## Core concepts: ce qui fait un lip-sync crédible en production
 
@@ -68,7 +68,7 @@ Enregistre ou génère deux à trois versions émotionnelles du même texte. Tu 
 
 Pense enfin au mix de prévisualisation. Place une ambiance légère et une musique basse avant validation finale. Une bouche peut sembler "off" en solo et devenir crédible en contexte de scène. L’inverse est vrai aussi. Tu dois juger en conditions réalistes.
 
-![Comparaison de pistes audio préparées pour améliorer la précision de lip-sync IA en gros plan](workflow-audio-lip-sync-ia.webp)
+![Comparaison de pistes audio préparées pour améliorer la précision de lip-sync IA en gros plan](/images/art8-wf1.png)
 
 > 💡 **Frank's Cut:** si une réplique ne marche pas après deux retakes, ne force pas le moteur. Réécris la phrase pour simplifier l’articulation. C’est souvent plus rapide et plus humain.
 
@@ -92,7 +92,7 @@ Garde toujours une version sécurité. Si ton ajustement fin détériore la perf
 
 Quand la correction est validée, passe directement à une vérification multi-support. Mobile, laptop, écran principal. Les défauts de bouche ne se lisent pas pareil selon la taille et la compression. Ce test final évite des surprises après publication.
 
-![Validation finale de synchronisation labiale IA sur timeline avec contrôles multi-écrans](workflow-validation-lip-sync-ia.webp)
+![Validation finale de synchronisation labiale IA sur timeline avec contrôles multi-écrans](/images/art8-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI lip-sync quality control for close-up shots]
 

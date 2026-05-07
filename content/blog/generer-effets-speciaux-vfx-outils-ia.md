@@ -13,7 +13,7 @@ Je vais être direct. Les outils IA ne remplacent pas la logique VFX. Ils accél
 
 Dans ce guide, on va travailler comme en production réelle: diagnostic du plan, génération en passes, compositing obligatoire, contrôle timeline, et validation multi-support. Tu vas aussi voir les erreurs qui coûtent des heures et la méthode pour les corriger rapidement sans dégrader toute la séquence.
 
-![Plan VFX IA en compositing avec intégration lumière perspective et texture cinématographique](hero-vfx-ia-outils.webp)
+![Plan VFX IA en compositing avec intégration lumière perspective et texture cinématographique](/images/art11-hero-new.png)
 
 ## Core concepts: ce qui rend un VFX IA crédible
 
@@ -72,7 +72,7 @@ Troisième pass, interaction avec la scène. Ombres, rebonds lumineux, occlusion
 
 Garde un versioning strict: `sc05_pl012_vfx_struct_v1`, puis `style_v2`, puis `integr_v3`. Si tu ne peux pas revenir proprement à une base stable, tu vas perdre le contrôle du pipeline.
 
-![Workflow VFX IA en trois passes avec structure style et intégration lumière](workflow-vfx-passes-ia.webp)
+![Workflow VFX IA en trois passes avec structure style et intégration lumière](/images/art11-wf1.png)
 
 > 💡 **Frank's Cut:** si une pass "wow" te plaît mais casse la cohérence lumière, supprime-la sans hésiter. Le spectateur choisit toujours la plausibilité contre la démonstration.
 
@@ -100,7 +100,7 @@ Prends une pause de 20 à 30 minutes, puis reviens à froid. Ton oeil habitué a
 
 Valide enfin la version "safe" et la version "ambitieuse". Garde les deux. En deadline réelle, la version safe te protège. La version ambitieuse te permet d’apprendre sans risquer la livraison.
 
-![Contrôle qualité VFX IA en timeline complète avec tests mobile et grand écran](workflow-validation-vfx-ia.webp)
+![Contrôle qualité VFX IA en timeline complète avec tests mobile et grand écran](/images/art11-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI VFX compositing and realism checks]
 

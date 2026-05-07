@@ -13,7 +13,7 @@ Le montage vidéo assisté par l’intelligence artificielle n’est pas "moins 
 
 Dans cet article, je te donne le workflow que j’utilise avec des débutants qui veulent produire des contenus crédibles pour YouTube, pub, formation, et narration cinématographique courte. Tu vas apprendre à organiser ton projet avant de couper, construire un rough cut robuste, affiner ton rythme, intégrer le son correctement, puis finaliser un rendu stable en diffusion réelle, sans panique de dernière minute.
 
-![Montage vidéo assisté par IA sur timeline multicouche avec structure narrative claire](hero-montage-video-assiste-ia.webp)
+![Montage vidéo assisté par IA sur timeline multicouche avec structure narrative claire](/images/art9-hero-new.png)
 
 ## Core concepts: ce que l’IA change vraiment dans le montage
 
@@ -68,7 +68,7 @@ Pense aussi aux transitions de logique, pas seulement de style. Passer d’une p
 
 Je te conseille un test très simple à ce stade. Lance la séquence sans le son pendant un passage, puis avec le son les yeux fermés pendant un autre passage. Sans le son, tu vérifies la logique visuelle pure. Sans l’image, tu vérifies la logique rythmique et l’intelligibilité du message. Si l’une des deux lectures s’effondre, ton fine cut n’est pas fini. Ce protocole est redoutable pour détecter les montages "jolis mais flous" et les montages "clairs mais sans souffle".
 
-![Fine cut sur montage IA avec marqueurs de rythme respirations et continuité visuelle](workflow-fine-cut-montage-ia.webp)
+![Fine cut sur montage IA avec marqueurs de rythme respirations et continuité visuelle](/images/art9-wf1.png)
 
 > 💡 **Frank's Cut:** si tu hésites entre deux coupes, choisis celle qui facilite la compréhension au premier visionnage. L’élégance vient après la clarté.
 
@@ -92,7 +92,7 @@ Prépare plusieurs exports selon les plateformes. Une version 16:9, une version 
 
 Fais un contrôle final à froid. Laisse passer quelques heures, reviens, regarde sur mobile et laptop, note trois défauts maximum, corrige, puis exporte. Ce protocole évite la dérive de retouches infinies.
 
-![Contrôle final de montage vidéo IA avec exports multi-format et vérification mobile](workflow-export-final-montage-ia.webp)
+![Contrôle final de montage vidéo IA avec exports multi-format et vérification mobile](/images/art9-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI-assisted editing workflow and retention pacing]
 

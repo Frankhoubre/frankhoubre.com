@@ -13,7 +13,7 @@ Je vais être clair. Générer une bande originale avec l’IA musicale, ce n’
 
 Dans ce guide, on va travailler comme en studio de postproduction: cartographie émotionnelle, création de motifs courts, agencement par blocs dramatiques, intégration timeline, puis mix et contrôle de diffusion. Le but est simple: produire une BO qui sert la scène, pas une musique qui se sert de la scène pour exister, durablement, vraiment.
 
-![Composition de bande originale IA sur timeline film avec structure émotionnelle et points d’impact](hero-bo-ia-film-clip.webp)
+![Composition de bande originale IA sur timeline film avec structure émotionnelle et points d’impact](/images/art15-hero-new.png)
 
 ## Core concepts: ce qui sépare une BO IA crédible d’une boucle générique
 
@@ -68,7 +68,7 @@ Teste plusieurs densités pour chaque cellule. Version minimale, version standar
 
 Garde une bibliothèque projet nommée proprement: `bo_intro_a1`, `bo_tension_b2`, `bo_drop_c1`. Tu dois retrouver une variante en 5 secondes. Le chaos de fichiers tue la vitesse créative.
 
-![Bibliothèque de motifs musicaux IA segmentés par tension, transition et résolution narrative](workflow-cellules-musicales-ia.webp)
+![Bibliothèque de motifs musicaux IA segmentés par tension, transition et résolution narrative](/images/art15-wf1.png)
 
 > 💡 **Frank's Cut:** si une cellule est "impressionnante" mais ne se raccorde à rien, archive-la. Ne force jamais le montage pour sauver une idée sonore.
 
@@ -96,7 +96,7 @@ Si ta vidéo inclut des plans générés très texturés, harmonise aussi la sen
 
 Avant export final, fais une passe "fatigue auditive". Écoute à faible volume, puis reviens à volume normal. Les défauts de densité, les conflits de fréquences et les éléments trop agressifs apparaissent mieux dans cette alternance. C’est une astuce simple, mais redoutablement efficace quand tu as passé plusieurs heures sur la même séquence.
 
-![Mixage final de bande originale IA avec zones voix dégagées et contrôle multi-support](workflow-mix-bo-ia.webp)
+![Mixage final de bande originale IA avec zones voix dégagées et contrôle multi-support](/images/art15-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on scoring emotional arcs with AI music tools]
 

@@ -13,7 +13,7 @@ La première lecture table a été brutale. Les scènes s’enchaînaient sans n
 
 Cette étude de cas est là pour ça. Te faire gagner les semaines que j’ai perdues en croyant que la vitesse d’écriture suffisait. Tu vas voir ce qui a cassé, ce qui a débloqué, puis la méthode concrète qui m’a permis de transformer un script artificiel en scénario tournable.
 
-![Session de co-écriture film IA avec annotations dramaturgiques et versioning de scénario](hero-coecriture-film-ia.webp)
+![Session de co-écriture film IA avec annotations dramaturgiques et versioning de scénario](/images/art13-hero-new.png)
 
 ## Core concepts: ce que co-écrire avec l’IA veut vraiment dire
 
@@ -66,7 +66,7 @@ Ensuite, j’ai figé la voix des personnages dans une mini bible. Vocabulaire, 
 
 Ce cadre m’a permis de récupérer la direction d’auteur sans renoncer à la vitesse IA. L’outil ne pilotait plus le récit. Il alimentait un processus dirigé.
 
-![Tableau de versioning scénaristique IA avec contraintes de scène et décisions d’auteur](workflow-versioning-scenario-ia.webp)
+![Tableau de versioning scénaristique IA avec contraintes de scène et décisions d’auteur](/images/art13-wf1.png)
 
 > 💡 **Frank's Cut:** si une version est brillante mais ne sert pas le conflit central, supprime-la. La qualité locale ne compense jamais une faiblesse structurelle.
 
@@ -90,7 +90,7 @@ Si tu veux relier cette logique d’écriture à la fabrication concrète des sc
 
 Et si ton projet inclut beaucoup de dialogues ou narration, pense à valider tôt la dimension vocale. [Notre méthode voix-off et doublage IA](/blog/doublage-voix-off-cloner-diriger-voix-film) peut t’éviter de lourdes retouches en postproduction.
 
-![Lecture à voix haute d’un script co-écrit avec IA pour valider oralité et tension dramatique](workflow-lecture-table-ia.webp)
+![Lecture à voix haute d’un script co-écrit avec IA pour valider oralité et tension dramatique](/images/art13-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI-assisted screenplay iteration and scene-level rewrites]
 

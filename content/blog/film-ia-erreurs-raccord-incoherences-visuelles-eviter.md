@@ -13,7 +13,7 @@ Je vais être brutal parce que c’est utile. Les erreurs de raccord sont la pre
 
 Bonne nouvelle, tu peux régler ça avec une méthode claire. Pas avec des incantations. Pas avec dix plugins magiques. Dans cet article, je te montre comment verrouiller la continuité avant génération, contrôler tes plans pendant la production, corriger intelligemment au montage, puis livrer une version stable visuellement sur toute la timeline. Et surtout garder ton identité de mise en scène.
 
-![Contrôle de raccord film IA sur timeline avec notes de continuité cinématographique](hero-raccord-film-ia.webp)
+![Contrôle de raccord film IA sur timeline avec notes de continuité cinématographique](/images/art12-hero-new.png)
 
 ## Core concepts: la continuité visuelle dans un film IA
 
@@ -69,7 +69,7 @@ N’oublie pas les matières. Bois sec, métal brossé, cuir usé, verre sale. C
 
 Enfin, pense météo et ambiance. Une scène humide doit rester humide visuellement. Une scène froide doit conserver sa logique colorimétrique. Si tu alternes sans justification, ton récit perd sa colonne vertébrale émotionnelle.
 
-![Tableau de continuité visuelle avec contrôle lumière décor et accessoires dans film IA](workflow-continuite-lumiere-decor-ia.webp)
+![Tableau de continuité visuelle avec contrôle lumière décor et accessoires dans film IA](/images/art12-wf1.png)
 
 > 💡 **Frank's Cut:** quand une séquence résiste, simplifie. Moins de variables donne plus de stabilité. Une scène simple et cohérente gagne presque toujours face à une scène ambitieuse mais instable.
 
@@ -93,7 +93,7 @@ Teste ta séquence sur différents écrans. Les incohérences de contraste et de
 
 Si tu travailles l’aspect rendu final, [notre guide sur le grain cinéma en image IA](/blog/comment-ajouter-grain-cinema-image-ia) t’aide à garder une matière organique sans tomber dans la sur-texture artificielle.
 
-![Revue de raccord au montage avec corrections plan par plan pour continuité film IA](workflow-raccord-montage-ia.webp)
+![Revue de raccord au montage avec corrections plan par plan pour continuité film IA](/images/art12-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on visual continuity and continuity checks in AI filmmaking]
 

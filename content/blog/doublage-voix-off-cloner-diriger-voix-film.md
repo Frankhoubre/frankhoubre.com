@@ -13,7 +13,7 @@ Je vais être franc. Le doublage et la voix-off IA ne sont pas un bouton magique
 
 La bonne nouvelle, c’est que tu peux apprendre vite. Dans ce guide, je te donne le pipeline que j’utilise en production: préparation de la voix source, génération par blocs d’intention, direction fine de l’interprétation, lip sync propre, puis intégration audio au niveau d’un livrable pro. L’objectif n’est pas juste d’entendre des mots. L’objectif est de faire croire que quelqu’un vit réellement la scène.
 
-![Doublage voix off IA en studio avec waveform réaliste et interprétation cinématographique](/images/blog/doublage-voix-off-cloner-diriger-voix-film/hero-doublage-voix-off-ia.webp)
+![Doublage voix off IA en studio avec waveform réaliste et interprétation cinématographique](/images/art10-hero-new.png)
 
 ## Core concepts: ce qui fait une voix IA crédible à l’écran
 
@@ -64,7 +64,7 @@ Fais au moins trois variantes par bloc. Variante A sécurisée, variante B plus 
 
 Nommes tes fichiers intelligemment: `sc03_bl02_tension_B_v2.wav`. Ce système paraît trivial. En réalité, il te permet de revenir vite sur une intention qui marchait, sans perdre une heure à réécouter vingt exports anonymes.
 
-![Comparaison de trois prises voix IA avec variations d'intention pour doublage de film](/images/blog/doublage-voix-off-cloner-diriger-voix-film/workflow-variantes-intention-voix-ia.webp)
+![Comparaison de trois prises voix IA avec variations d'intention pour doublage de film](/images/art10-wf1.png)
 
 > 💡 **Frank's Cut:** quand une réplique sonne artificielle, diminue le niveau d’émotion demandé. L’IA surjoue facilement. Une intention à 70 pour cent semble souvent plus humaine qu’une intention à 100 pour cent.
 
@@ -88,7 +88,7 @@ Ajoute une réverbération cohérente avec le décor, très discrète. Une petit
 
 Finalise avec un contrôle de contexte. Teste la voix avec la musique, les ambiances, et les effets. Une voix superbe en solo peut disparaître sous un design sonore dense. Je recommande de vérifier la lisibilité sur téléphone et laptop, pas seulement en monitoring studio.
 
-![Mixage final d'une voix off IA intégrée dans une scène avec ambiance et musique filmique](/images/blog/doublage-voix-off-cloner-diriger-voix-film/workflow-mixage-voix-off-ia.webp)
+![Mixage final d'une voix off IA intégrée dans une scène avec ambiance et musique filmique](/images/art10-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on directing AI voice performance for film dubbing]
 

@@ -13,7 +13,7 @@ Je vais être direct. L’upscaling vidéo 4K avec l’IA ne pardonne pas les ra
 
 La bonne nouvelle, c’est qu’il existe une méthode claire. Tu vas apprendre à faire un audit technique propre, à choisir un workflow robuste, à régler les paramètres qui comptent vraiment, puis à valider ton résultat comme un pro qui prépare une diffusion réelle. L’objectif est simple: obtenir un rendu crédible, texturé, cinématographique, sans cet effet plastique qui crie "traitement IA".
 
-![Upscaling vidéo 4K IA sur station d'étalonnage avec rendu cinématographique naturel](/images/blog/upscaling-video-passer-vieux-court-metrage-4k-ia/hero-upscaling-video-4k-ia.webp)
+![Upscaling vidéo 4K IA sur station d'étalonnage avec rendu cinématographique naturel](/images/art14-hero-new.png)
 
 ## Core concepts: ce que l’upscaling vidéo IA change vraiment dans l’image
 
@@ -56,7 +56,7 @@ Quand la matière est propre, upscale en deux étapes si besoin. Une passe douce
 
 Teste ensuite sur trois plans critiques: visage en mouvement, texture de décor, et basses lumières. Si l’un des trois casse, tu ajustes le modèle avant de batcher tout le film. Cette étape paraît basique, mais c’est le vrai passage pro. Batcher trop tôt, c’est la recette garantie pour refaire une nuit entière de rendu.
 
-![Comparaison avant après upscaling 4K IA sur plan visage en mouvement avec texture peau naturelle](/images/blog/upscaling-video-passer-vieux-court-metrage-4k-ia/workflow-upscale-visage-4k.webp)
+![Comparaison avant après upscaling 4K IA sur plan visage en mouvement avec texture peau naturelle](/images/art14-wf1.png)
 
 > 💡 **Frank's Cut:** quand tu hésites entre deux versions, prends celle qui semble légèrement moins "impressionnante" en pause mais plus stable en lecture. Le spectateur juge la fluidité et la cohérence, pas la surenchère de détails.
 
@@ -80,7 +80,7 @@ Pense aussi au cadrage pendant cette phase. Un upscale qui accentue des détails
 
 À ce stade, valide chaque famille sur une séquence de 20 à 30 secondes, pas sur un seul shot. Si la continuité visuelle tient sur cette plage, alors tu peux lancer les rendus complets. C’est cette discipline qui transforme un montage disparate en film cohérent.
 
-![Pipeline de restauration multi-sources avec profils d'upscaling IA par famille de plans](/images/blog/upscaling-video-passer-vieux-court-metrage-4k-ia/workflow-pipeline-multisource-4k.webp)
+![Pipeline de restauration multi-sources avec profils d'upscaling IA par famille de plans](/images/art14-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on upscale pipeline for cinematic consistency]
 

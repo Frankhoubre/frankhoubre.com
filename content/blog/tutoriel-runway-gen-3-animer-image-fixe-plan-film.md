@@ -13,7 +13,7 @@ Animer une image fixe en rendu crédible demande une discipline plus proche du V
 
 Dans ce tutoriel Runway Gen-3, je te donne une routine de terrain pour produire des plans exploitables, pas des tests instagrammables. On va voir comment sécuriser tes images, écrire des prompts utiles, corriger les dérives, puis intégrer le résultat dans une séquence qui tient.
 
-![Animation d’image fixe avec Runway Gen-3 dans une timeline de plan filmique réaliste](hero-runway-gen3-image-fixe.webp)
+![Animation d’image fixe avec Runway Gen-3 dans une timeline de plan filmique réaliste](/images/art4-hero-new.png)
 
 ## Core concepts: ce qui fait tenir un plan animé Runway Gen-3
 
@@ -74,7 +74,7 @@ Pass 3, variation créative contrôlée. Tu peux introduire une micro-vie suppl�
 
 Quand une version échoue, n’essaie pas de "sauver" à tout prix. Revenir à une base stable est souvent plus rapide et plus propre que corriger un plan déjà bancal.
 
-![Passes successives Runway Gen-3 avec stabilité sujet puis mouvement caméra contrôlé](workflow-passes-runway-gen3.webp)
+![Passes successives Runway Gen-3 avec stabilité sujet puis mouvement caméra contrôlé](/images/art4-wf1.png)
 
 > 💡 **Frank's Cut:** un plan de 3 secondes propre bat toujours un plan de 8 secondes qui se dégrade. Coupe plus court, gagne en crédibilité.
 
@@ -128,7 +128,7 @@ Dernier conseil de plateau: fais toujours une passe "spectateur neuf". Reviens q
 
 Garde ce rituel à chaque projet, même court. C’est une habitude discrète qui élève rapidement ton niveau de réalisation.
 
-![Validation timeline d’un plan animé Runway avec contrôle raccord avant après](workflow-integration-montage-runway.webp)
+![Validation timeline d’un plan animé Runway avec contrôle raccord avant après](/images/art4-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on Runway Gen-3 still-image animation quality control]
 

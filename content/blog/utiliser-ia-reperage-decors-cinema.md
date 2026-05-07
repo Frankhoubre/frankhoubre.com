@@ -13,7 +13,7 @@ L’IA peut t’aider à éviter ça, mais seulement si tu l’utilises comme un
 
 Dans ce guide, tu vas apprendre à utiliser l’IA pour trier les options, simuler les angles caméra, anticiper les risques, puis livrer un dossier décisionnel solide. L’objectif est simple: réduire les faux positifs, sécuriser les choix, et arriver sur tournage avec un plan clair.
 
-![Repérage de décors de cinéma assisté par IA avec comparaison simulation et terrain réel](hero-reperage-decors-cinema-ia.webp)
+![Repérage de décors de cinéma assisté par IA avec comparaison simulation et terrain réel](/images/art6-hero-new.png)
 
 ## Core concepts: ce que l’IA peut vraiment faire au repérage
 
@@ -68,7 +68,7 @@ Crée des mini moodboards par décor candidat. Trois images suffisent: plan d’
 
 Reste discipliné sur le volume de tests. Trop de variantes crée du bruit décisionnel. Limite-toi à ce qui influence vraiment le choix terrain.
 
-![Prévisualisation IA des décors cinéma avec tests d’angles caméra et variations de lumière](workflow-simulation-decors-ia.webp)
+![Prévisualisation IA des décors cinéma avec tests d’angles caméra et variations de lumière](/images/art6-wf1.png)
 
 > 💡 **Frank's Cut:** si un décor n’est beau qu’en angle unique, méfie-toi. En tournage réel, tu as besoin d’au moins deux à trois axes fiables.
 
@@ -92,7 +92,7 @@ Intègre une section "conditions de validité". Exemple: "go si tournage 7h-11h"
 
 Partage enfin le dossier aux pôles clés: réal, chef op, régie, prod. Un repérage utile est un repérage transmis correctement.
 
-![Dossier de repérage décor cinéma avec statut go no go et plan logistique de tournage](workflow-dossier-reperage-cinema.webp)
+![Dossier de repérage décor cinéma avec statut go no go et plan logistique de tournage](/images/art6-wf2.png)
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI location scouting and production risk checks]
 
