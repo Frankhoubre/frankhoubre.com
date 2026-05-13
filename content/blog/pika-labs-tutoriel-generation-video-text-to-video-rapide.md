@@ -3,7 +3,7 @@ title: "Pika Labs : tutoriel pour la génération de vidéo text-to-video rapide
 date: "2026-04-20"
 category: "tutoriels"
 excerpt: "Masterclass complète pour utiliser Pika Labs en text-to-video rapide, avec workflow pro, réglages utiles et contrôle de cohérence."
-thumbnail: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d"
+thumbnail: "/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/hero.webp"
 ---
 
 # Pika Labs : tutoriel pour la génération de vidéo text-to-video rapide
@@ -14,7 +14,7 @@ Here’s the thing: Pika est excellent pour la vitesse. Mais la vitesse brute n�
 
 Dans ce guide, tu vas apprendre un workflow text-to-video rapide mais contrôlé: cadrage du prompt, itérations intelligentes, contrôle visuel, correction des défauts, puis intégration en montage. Tu avances vite, mais sans tomber dans le rendu “démo IA”.
 
-![Créateur vidéo ajustant un prompt Pika Labs sur une timeline de montage](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d)
+![Créateur vidéo ajustant un prompt Pika Labs sur une timeline de montage](/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/hero.webp)
 
 ## Ce que Pika Labs fait très bien et ce qu'il ne fera pas pour toi
 
@@ -67,7 +67,7 @@ Tu documentes chaque version retenue avec une note courte. En fin de session, tu
 
 > 💡 **Frank's Cut:** si une itération semble “incroyable” mais ne peut pas s’intégrer à la séquence, c’est un test créatif, pas un plan de production.
 
-![Écran Pika Labs avec versions de prompts comparées et notes de sélection](https://images.unsplash.com/photo-1518770660439-4636190af475)
+![Écran Pika Labs avec versions de prompts comparées et notes de sélection](/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/workflow-1.webp)
 
 ### Étape 3: structurer les plans en micro-séquence
 
@@ -328,7 +328,7 @@ Cette progression te fait passer du mode “test IA” au mode “production cr�
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on fast text-to-video production with consistent cinematic results].
 
-![Montage final d’une séquence Pika avec étalonnage et mix audio léger](/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/external-1.png)
+![Montage final d’une séquence Pika avec étalonnage et mix audio léger](/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/workflow-2.webp)
 
 ## Références externes utiles
 

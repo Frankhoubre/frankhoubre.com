@@ -3,7 +3,7 @@ title: "Leonardo AI : la meilleure alternative gratuite pour générer des image
 date: "2026-04-20"
 category: "actualite"
 excerpt: "Test complet de Leonardo AI pour savoir s’il peut vraiment remplacer des outils payants, avec workflow réaliste et limites concrètes."
-thumbnail: "https://images.unsplash.com/photo-1555255707-c07966088b7b"
+thumbnail: "/images/blog/leonardo-ai-meilleure-alternative-gratuite-generer-images/hero.webp"
 ---
 
 # Leonardo AI : la meilleure alternative gratuite pour générer des images ?
@@ -14,7 +14,7 @@ Let’s be real. “Gratuit” ne veut rien dire si tu perds du temps en itérat
 
 Dans ce guide, on va tester Leonardo AI comme un outil de production, pas comme un jouet. Tu vas voir ce qu’il fait bien, ce qu’il fait moins bien, comment structurer ton workflow, et dans quels cas il mérite vraiment sa place dans ton stack créatif.
 
-![Créateur IA testant des variations d’images sur interface de génération en studio](https://images.unsplash.com/photo-1555255707-c07966088b7b)
+![Créateur IA testant des variations d’images sur interface de génération en studio](/images/blog/leonardo-ai-meilleure-alternative-gratuite-generer-images/hero.webp)
 
 ## Ce que “meilleure alternative gratuite” veut dire en vrai
 
@@ -70,7 +70,7 @@ Ne mélange pas objectifs créatifs dans la même session. Une session = une int
 
 > 💡 **Frank's Cut:** ton meilleur gain de qualité vient souvent d’un prompt plus court et plus précis, pas d’un prompt plus long.
 
-![Comparaison de batches Leonardo AI avec variations contrôlées de prompts](https://images.unsplash.com/photo-1518770660439-4636190af475)
+![Comparaison de batches Leonardo AI avec variations contrôlées de prompts](/images/blog/leonardo-ai-meilleure-alternative-gratuite-generer-images/workflow-1.webp)
 
 ### Étape 3: sélectionner comme un directeur artistique
 
@@ -334,7 +334,7 @@ En production réelle, la discipline de vérification vaut souvent plus que le c
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on choosing free AI image tools without sacrificing production quality].
 
-![Direction artistique validant une série d’images cohérentes générées avec Leonardo AI](https://images.unsplash.com/photo-1552664730-d307ca884978)
+![Direction artistique validant une série d’images cohérentes générées avec Leonardo AI](/images/blog/leonardo-ai-meilleure-alternative-gratuite-generer-images/workflow-2.webp)
 
 ## Références externes utiles
 

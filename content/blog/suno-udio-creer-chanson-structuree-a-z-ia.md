@@ -3,7 +3,7 @@ title: "Suno / Udio : créer une chanson structurée de A à Z avec l'IA"
 date: "2026-04-19"
 category: "tutoriels"
 excerpt: "Méthode complète pour composer une chanson structurée avec Suno et Udio, de l’idée initiale au morceau final prêt à diffuser."
-thumbnail: "https://images.unsplash.com/photo-1461784121038-f088ca1e7714"
+thumbnail: "/images/blog/suno-udio-creer-chanson-structuree-a-z-ia/hero.webp"
 ---
 
 # Suno / Udio : créer une chanson structurée de A à Z avec l'IA
@@ -14,7 +14,7 @@ Let’s be real. Générer “un son cool” et écrire une chanson structurée 
 
 Ce guide te donne un workflow solide pour passer de zéro à une chanson complète, exploitable pour film, pub, clip ou contenu social, sans rester bloqué dans la boucle des snippets.
 
-![Producteur musical préparant une structure de chanson IA sur station audio](https://images.unsplash.com/photo-1461784121038-f088ca1e7714)
+![Producteur musical préparant une structure de chanson IA sur station audio](/images/blog/suno-udio-creer-chanson-structuree-a-z-ia/hero.webp)
 
 ## Les bases qui font une vraie chanson et pas un simple extrait
 
@@ -50,7 +50,7 @@ Conserve les meilleures sections dans une bibliothèque versionnée (`refrain_v3
 
 > 💡 **Frank's Cut:** si ton refrain ne marche pas a cappella + kick simple, il ne marchera pas mieux avec une prod plus lourde.
 
-![Session de composition IA avec versions de refrains et couplets comparés](https://images.unsplash.com/photo-1516280440614-37939bbacd81)
+![Session de composition IA avec versions de refrains et couplets comparés](/images/blog/suno-udio-creer-chanson-structuree-a-z-ia/workflow-1.webp)
 
 ### Étape 3: assemblage et continuité musicale
 
@@ -252,7 +252,7 @@ Cette bascule mentale change tout dans la qualité finale.
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structuring AI-generated songs for real productions].
 
-![Montage audio final avec stems séparés pour clip et publicité](https://images.unsplash.com/photo-1598488035139-bdbb2231ce04)
+![Montage audio final avec stems séparés pour clip et publicité](/images/blog/suno-udio-creer-chanson-structuree-a-z-ia/workflow-2.webp)
 
 ## Références externes utiles
 

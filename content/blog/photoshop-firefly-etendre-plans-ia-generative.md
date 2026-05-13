@@ -3,6 +3,7 @@ title: "Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre 
 date: "2026-04-18"
 category: "tutoriels"
 excerpt: "Masterclass pratique pour étendre des plans avec Photoshop Firefly sans casser perspective, lumière et continuité visuelle."
+thumbnail: "/images/blog/photoshop-firefly-etendre-plans-ia-generative/hero.webp"
 ---
 
 # Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre ses plans
@@ -11,7 +12,7 @@ Tu as un plan fort. Belle compo, bonne émotion. Puis tu dois l’adapter en 16:
 
 Le point clé : Firefly est excellent pour étendre un plan si tu traites l’outil comme un assistant VFX, pas comme une baguette magique. Le vrai levier est ta préparation du cadre, ta méthode de sélection, et ta discipline de correction locale. Ce guide te donne un workflow propre pour étendre des plans sans perdre le rendu cinéma.
 
-![Étalonneur visuel étendant un cadre dans Photoshop sur station de postproduction](https://images.unsplash.com/photo-1461749280684-dccba630e2f6)
+![Étalonneur visuel étendant un cadre dans Photoshop sur station de postproduction](/images/blog/photoshop-firefly-etendre-plans-ia-generative/hero.webp)
 
 ## Ce qui fait une extension de plan crédible avec Firefly
 
@@ -47,7 +48,7 @@ Ne valide pas trop vite. Fais un zoom 100% sur les jonctions. Si la texture est 
 
 > 💡 **Frank's Cut:** fais toujours une première extension sans prompt (prompt vide), puis une seconde avec prompt. Souvent, la base sans prompt donne une continuité plus naturelle que la version surdirigée.
 
-![Interface Photoshop avec zone d’extension Firefly et contrôles de masque actifs](https://images.unsplash.com/photo-1518770660439-4636190af475)
+![Interface Photoshop avec zone d’extension Firefly et contrôles de masque actifs](/images/blog/photoshop-firefly-etendre-plans-ia-generative/workflow-1.webp)
 
 ### Étape 3: correction locale pour invisible seam
 
@@ -91,7 +92,7 @@ Erreur 5: pas de vérification format final. Fix: test 16:9 + 9:16 avant validat
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on cinematic frame extension workflows].
 
-![Comparaison avant/après extension Firefly avec correction de texture et lumière](https://images.unsplash.com/photo-1489515217757-5fd1be406fef)
+![Comparaison avant/après extension Firefly avec correction de texture et lumière](/images/blog/photoshop-firefly-etendre-plans-ia-generative/workflow-2.webp)
 
 ## Extensions selon le type de plan (portrait, architecture, nature)
 

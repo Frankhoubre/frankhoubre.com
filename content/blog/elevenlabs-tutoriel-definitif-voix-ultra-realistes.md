@@ -3,6 +3,7 @@ title: "ElevenLabs : le tutoriel définitif pour des voix ultra-réalistes"
 date: "2026-04-18"
 category: "tutoriels"
 excerpt: "Guide complet pour créer, diriger et mixer des voix ElevenLabs crédibles pour films, pubs et contenus de formation."
+thumbnail: "/images/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes/hero.webp"
 ---
 
 # ElevenLabs : le tutoriel définitif pour des voix ultra-réalistes
@@ -11,7 +12,7 @@ Tu génères une voix IA en 30 secondes. Techniquement, c’est impressionnant. 
 
 ElevenLabs est puissant, mais il devient vraiment utile quand tu le traites comme un vrai studio voix. Ce guide te montre comment passer de “texte lu par IA” à “interprétation audio crédible”, avec des réglages concrets, des workflows de direction, et une finition son digne d’un projet diffusable. Tu n’as pas besoin d’un mastering hollywoodien pour progresser. Tu as besoin d’une méthode : segmenter, diriger, choisir, mixer, archiver.
 
-![Ingénieur son pilotant une session voix IA sur station audio professionnelle](https://images.unsplash.com/photo-1511379938547-c1f69419868d)
+![Ingénieur son pilotant une session voix IA sur station audio professionnelle](/images/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes/hero.webp)
 
 ## Les bases qui font une voix réaliste sur ElevenLabs
 
@@ -65,7 +66,7 @@ Ajoute une étape de **relecture à froid** : exporte trois segments, marche dix
 
 > 💡 **Frank's Cut:** quand une phrase sonne faux, raccourcis la phrase avant de toucher aux réglages. Le texte est souvent le problème réel.
 
-![Timeline audio avec variantes ElevenLabs et marqueurs d’intonation](https://images.unsplash.com/photo-1598488035139-bdbb2231ce04)
+![Timeline audio avec variantes ElevenLabs et marqueurs d’intonation](/images/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes/workflow-1.webp)
 
 ### Étape 4: direction fine et cohérence sur la durée
 
@@ -115,7 +116,7 @@ Erreur 8: **voix parfaite mais jeu plat**. Fix: direction émotionnelle par bloc
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on ultra-realistic AI voice direction].
 
-![Console de mixage avec piste voix-off IA, musique et ambiances calibrées](https://images.unsplash.com/photo-1461784121038-f088ca1e7714)
+![Console de mixage avec piste voix-off IA, musique et ambiances calibrées](/images/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes/workflow-2.webp)
 
 ## Références externes utiles
 

@@ -3,7 +3,7 @@ title: "ComfyUI : le guide vidéo pour les créateurs débutants"
 date: "2026-04-19"
 category: "tutoriels"
 excerpt: "Guide pas à pas pour démarrer sur ComfyUI, créer des workflows stables et éviter les erreurs techniques les plus fréquentes."
-thumbnail: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+thumbnail: "/images/blog/comfyui-guide-video-createurs-debutants/hero.webp"
 ---
 
 # ComfyUI : le guide vidéo pour les créateurs débutants
@@ -14,7 +14,7 @@ Here’s the thing: ComfyUI n’est pas compliqué parce qu’il est mauvais. Il
 
 Ce guide est conçu pour les débutants complets qui veulent produire vite et proprement: installation stable, workflow minimal viable, itérations utiles, et passage vers des pipelines plus avancés sans casser la cohérence.
 
-![Interface ComfyUI avec graphe de base sur écran de workstation créative](https://images.unsplash.com/photo-1515879218367-8466d910aaa4)
+![Interface ComfyUI avec graphe de base sur écran de workstation créative](/images/blog/comfyui-guide-video-createurs-debutants/hero.webp)
 
 ## Comprendre ComfyUI sans jargon inutile
 
@@ -50,7 +50,7 @@ Valide d’abord un style cohérent sur 5 sorties avant d’ajouter des modules 
 
 > 💡 **Frank's Cut:** si tu n’arrives pas à reproduire un bon résultat deux fois de suite, tu n’as pas un workflow. Tu as un accident heureux.
 
-![Workflow ComfyUI minimal avec nodes essentiels annotés pour débutant](https://images.unsplash.com/photo-1461749280684-dccba630e2f6)
+![Workflow ComfyUI minimal avec nodes essentiels annotés pour débutant](/images/blog/comfyui-guide-video-createurs-debutants/workflow-1.webp)
 
 ### Étape 3: passer à la vidéo sans exploser la complexité
 
@@ -280,7 +280,7 @@ Et c’est précisément ce niveau de fiabilité qui te permet de travailler en 
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on beginner-friendly ComfyUI workflows for creators].
 
-![Édition vidéo finale après génération ComfyUI sur timeline de postproduction](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d)
+![Édition vidéo finale après génération ComfyUI sur timeline de postproduction](/images/blog/comfyui-guide-video-createurs-debutants/workflow-2.webp)
 
 ## Ressources externes utiles
 

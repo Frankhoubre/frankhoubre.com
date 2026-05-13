@@ -3,7 +3,7 @@ title: "Magnific AI : améliorer les détails de ses images 3D et rendus"
 date: "2026-04-20"
 category: "tutoriels"
 excerpt: "Guide masterclass pour utiliser Magnific AI sur des rendus 3D, avec workflow pro, réglages précis et contrôle du réalisme."
-thumbnail: "https://images.unsplash.com/photo-1633412802994-5c058f151b66"
+thumbnail: "/images/blog/magnific-ai-ameliorer-details-images-3d-rendus/hero.webp"
 ---
 
 # Magnific AI : améliorer les détails de ses images 3D et rendus
@@ -14,7 +14,7 @@ Here’s the thing: Magnific AI n’est pas un bouton “rendre beau”. C’est
 
 Ce guide est conçu pour les débutants ambitieux qui veulent passer d’un rendu “correct” à une image vraiment diffusable, sans effet fake. On va couvrir la méthode complète, les réglages critiques, les scénarios réels, les erreurs qui reviennent tout le temps, et la validation finale avant livraison.
 
-![Artiste 3D ajustant un rendu sur station de travail avec contrôle des micro-détails](https://images.unsplash.com/photo-1633412802994-5c058f151b66)
+![Artiste 3D ajustant un rendu sur station de travail avec contrôle des micro-détails](/images/blog/magnific-ai-ameliorer-details-images-3d-rendus/hero.webp)
 
 ## Ce que Magnific AI change réellement sur un rendu 3D
 
@@ -62,7 +62,7 @@ Conserve les versions intermédiaires. Une version “moins impressionnante” e
 
 > 💡 **Frank's Cut:** si l’image te semble “wow” au premier regard mais fatigue l’oeil au bout de 10 secondes, tu as probablement trop poussé les détails.
 
-![Comparaison avant après enhancement Magnific AI sur rendu 3D avec zoom matériaux](https://images.unsplash.com/photo-1545239351-1141bd82e8a6)
+![Comparaison avant après enhancement Magnific AI sur rendu 3D avec zoom matériaux](/images/blog/magnific-ai-ameliorer-details-images-3d-rendus/workflow-1.webp)
 
 ### Étape 3: contrôle de réalisme
 
@@ -258,7 +258,7 @@ Cette routine évite les retours “on dirait trop retouché” qui arrivent sou
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on enhancing 3D renders without losing realism].
 
-![Équipe créative validant un rendu 3D amélioré avant livraison client](https://images.unsplash.com/photo-1552664730-d307ca884978)
+![Équipe créative validant un rendu 3D amélioré avant livraison client](/images/blog/magnific-ai-ameliorer-details-images-3d-rendus/workflow-2.webp)
 
 ## Références externes utiles
 

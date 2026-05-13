@@ -3,7 +3,7 @@ title: "Créer un avatar parlant pour ses vidéos de formation avec HeyGen"
 date: "2026-04-18"
 category: "tutoriels"
 excerpt: "Guide complet pour créer un avatar HeyGen crédible, pédagogique et cohérent pour des vidéos de formation professionnelles."
-thumbnail: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+thumbnail: "/images/blog/creer-avatar-parlant-videos-formation-heygen/hero.webp"
 ---
 
 # Créer un avatar parlant pour ses vidéos de formation avec HeyGen
@@ -12,7 +12,7 @@ Tu veux produire des vidéos de formation vite. Tu testes HeyGen. Le résultat e
 
 Un avatar parlant convaincant n’est pas une question de bouton. C’est un travail de pédagogie, de rythme, de voix, et de mise en page visuelle. Ce guide te montre comment transformer HeyGen en outil de production sérieuse pour des modules de formation clairs et engageants.
 
-![Formateur digital préparant un script avatar HeyGen sur station de création](https://images.unsplash.com/photo-1521737604893-d14cc237f11d)
+![Formateur digital préparant un script avatar HeyGen sur station de création](/images/blog/creer-avatar-parlant-videos-formation-heygen/hero.webp)
 
 ## Les fondamentaux d'un avatar de formation crédible
 
@@ -58,7 +58,7 @@ Contrôle systématiquement les transitions bouche/yeux sur les mots techniques.
 
 > 💡 **Frank's Cut:** si l’avatar paraît “froid”, ce n’est pas l’avatar. C’est souvent un script sans respiration et sans exemples concrets.
 
-![Timeline de module e-learning avec avatar HeyGen, slides et chapitrage](https://images.unsplash.com/photo-1498050108023-c5249f4df085)
+![Timeline de module e-learning avec avatar HeyGen, slides et chapitrage](/images/blog/creer-avatar-parlant-videos-formation-heygen/workflow-1.webp)
 
 ### Étape 4: finition pour diffusion formation
 
@@ -102,7 +102,7 @@ Erreur 5: pas de test utilisateur. Fix: review externe avant publication.
 
 [🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on creating engaging AI-led training videos].
 
-![Montage final d’un module de formation avec avatar, sous-titres et habillage visuel](https://images.unsplash.com/photo-1552664730-d307ca884978)
+![Montage final d’un module de formation avec avatar, sous-titres et habillage visuel](/images/blog/creer-avatar-parlant-videos-formation-heygen/workflow-2.webp)
 
 ## Références externes utiles
 
