@@ -20,6 +20,14 @@ const CATEGORY_DESCRIPTIONS: Partial<Record<BlogCategorySlug, string>> = {
     "Notes de travail, réflexions courtes et brouillons utiles partagés.",
   business:
     "Studio, pricing, acquisition et stratégie pour monétiser une pratique créative IA.",
+  comparatifs:
+    "Comparatifs d’outils et de modèles pour choisir ce qui convient à ton usage.",
+  postproduction:
+    "Étalonnage, finitions et chaîne image après tournage ou génération.",
+  analyses:
+    "Analyses de fond sur les usages, les limites et les évolutions de l’IA créative.",
+  guides:
+    "Guides thématiques et parcours structurés pour avancer étape par étape.",
 };
 
 export function generateStaticParams() {
