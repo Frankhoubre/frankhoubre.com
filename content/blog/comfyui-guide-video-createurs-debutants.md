@@ -1,6 +1,6 @@
 ---
 title: "ComfyUI : le guide vidéo pour les créateurs débutants"
-date: "2026-04-19"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Guide pas à pas pour démarrer sur ComfyUI, créer des workflows stables et éviter les erreurs techniques les plus fréquentes."
 thumbnail: "/images/blog/comfyui-guide-video-createurs-debutants/hero.webp"

@@ -1,6 +1,6 @@
 ---
 title: "Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre ses plans"
-date: "2026-04-18"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Masterclass pratique pour étendre des plans avec Photoshop Firefly sans casser perspective, lumière et continuité visuelle."
 thumbnail: "/images/blog/photoshop-firefly-etendre-plans-ia-generative/hero.webp"

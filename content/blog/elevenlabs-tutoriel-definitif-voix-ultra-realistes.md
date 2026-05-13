@@ -1,6 +1,6 @@
 ---
 title: "ElevenLabs : le tutoriel définitif pour des voix ultra-réalistes"
-date: "2026-04-18"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Guide complet pour créer, diriger et mixer des voix ElevenLabs crédibles pour films, pubs et contenus de formation."
 thumbnail: "/images/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes/hero.webp"

@@ -1,6 +1,6 @@
 ---
 title: "Suno / Udio : créer une chanson structurée de A à Z avec l'IA"
-date: "2026-04-19"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Méthode complète pour composer une chanson structurée avec Suno et Udio, de l’idée initiale au morceau final prêt à diffuser."
 thumbnail: "/images/blog/suno-udio-creer-chanson-structuree-a-z-ia/hero.webp"

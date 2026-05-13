@@ -1,6 +1,6 @@
 ---
 title: "Pika Labs : tutoriel pour la génération de vidéo text-to-video rapide"
-date: "2026-04-20"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Masterclass complète pour utiliser Pika Labs en text-to-video rapide, avec workflow pro, réglages utiles et contrôle de cohérence."
 thumbnail: "/images/blog/pika-labs-tutoriel-generation-video-text-to-video-rapide/hero.webp"

@@ -1,6 +1,6 @@
 ---
 title: "Leonardo AI : la meilleure alternative gratuite pour générer des images ?"
-date: "2026-04-20"
+date: "2026-05-13"
 category: "actualite"
 excerpt: "Test complet de Leonardo AI pour savoir s’il peut vraiment remplacer des outils payants, avec workflow réaliste et limites concrètes."
 thumbnail: "/images/blog/leonardo-ai-meilleure-alternative-gratuite-generer-images/hero.webp"

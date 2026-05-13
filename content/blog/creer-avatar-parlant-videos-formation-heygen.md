@@ -1,6 +1,6 @@
 ---
 title: "Créer un avatar parlant pour ses vidéos de formation avec HeyGen"
-date: "2026-04-18"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Guide complet pour créer un avatar HeyGen crédible, pédagogique et cohérent pour des vidéos de formation professionnelles."
 thumbnail: "/images/blog/creer-avatar-parlant-videos-formation-heygen/hero.webp"

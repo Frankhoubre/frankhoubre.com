@@ -1,6 +1,6 @@
 ---
 title: "Magnific AI : améliorer les détails de ses images 3D et rendus"
-date: "2026-04-20"
+date: "2026-05-13"
 category: "tutoriels"
 excerpt: "Guide masterclass pour utiliser Magnific AI sur des rendus 3D, avec workflow pro, réglages précis et contrôle du réalisme."
 thumbnail: "/images/blog/magnific-ai-ameliorer-details-images-3d-rendus/hero.webp"
