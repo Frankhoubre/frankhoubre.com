@@ -3,7 +3,6 @@ title: "Comment penser comme un réalisateur avec l’IA"
 date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Passer du simple prompt à une vraie logique de mise en scène pour des images et vidéos IA crédibles."
-thumbnail: "/images/blog/comment-penser-comme-realisateur-avec-ia/hero.webp"
 ---
 Tu ouvres ton outil, tu lances un prompt, tu obtiens une image belle, puis une autre belle, puis une autre belle. Et pourtant ton film ne raconte rien.
 
@@ -79,13 +78,26 @@ Tu dois prévoir une progression d’échelle et d’intensité:
 
 Même personnage, même matière de peau, même logique colorimétrique, mêmes contraintes d’optique. C’est exactement là que beaucoup de productions IA explosent.
 
-Pour verrouiller la cohérence entre séquences, prends aussi ce guide, [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
+Pour verrouiller la cohérence entre séquences, prends aussi ce guide, [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia). Pour la lecture du cadre lui-même, enchaîne ensuite avec [comment cadrer une image IA comme un pro du cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema).
+
+La mise en scène n’est pas une liste de buzzwords : elle relie intention, espace et temps. Pour situer ton vocabulaire, une entrée de référence comme [mise en scène](https://fr.wikipedia.org/wiki/Mise_en_sc%C3%A8ne) aide à nommer ce que tu fais déjà intuitivement. Pour la lisibilité du mouvement dans le cadre, cette analyse courte reste utile : [cinéma, mouvement et lisibilité](https://www.youtube.com/watch?v=pLDTXnovoBc).
 
 ## Le template de prompt obligatoire
 
 Tu peux l’utiliser pour chaque image clé.
 
 ```text
+[POINT_DE_VUE_NARRATIF] : qui porte la scène (héros, observateur, antagoniste hors champ).
+[OBJECTIF_EMOTIONNEL] : une phrase mesurable (ex. malaise qui monte puis coup sec).
+[HIÉRARCHIE_VISUELLE] : où l’œil lit en premier, second, dernier.
+[LOI_LUMIÈRE] : source dominante + direction + dureté + fill/rim si besoin.
+[SENS_OPTIQUE_RESSENTI] : focale ressentie, distance caméra, hauteur plausible.
+[ACTION_ET_ENJEU] : verbe fort + obstacle visible ou suggéré.
+[TAGS_CONTINUITÉ] : costume, texture peau, palette, optique figée pour la série.
+[MISSION_DU_PLAN] : installer / tendre / décider / payer le prix (une seule fonction).
+
+Negative : pas de catalogue symétrique vide, pas trois soleils contradictoires,
+pas de beauty shot décoratif sans fonction narrative.
 ```
 
 Mais retiens bien ceci, le template n’est qu’un contenant. Ce qui fait la qualité, c’est ton `[SCENE DESCRIPTION]`, donc ta direction.
@@ -253,7 +265,7 @@ Pose seulement trois questions:
 
 Si elle hésite, tu recoupes.
 
-## Vidéo YouTube à analyser
+## Vidéo YouTube Business Dynamite à visionner
 
 Chaîne YouTube Business Dynamite :
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
@@ -411,36 +423,44 @@ Documente toujours:
 
 C’est comme ça que tu construis une vraie méthode personnelle.
 
-## FAQ
+## Préparation courte, rendement énorme
+
+Avant de parler outil, écris trois lignes que tu relis à voix haute. Première ligne : situation et lieu en une phrase courte. Deuxième ligne : désir du personnage principal et obstacle principal. Troisième ligne : ce qui doit changer dans le corps ou le regard entre le début et la fin de la scène. Ces trois lignes ne remplacent pas un script, mais elles évitent la dispersion quand tu passes à la génération. Quand tu oublies ces lignes, tu retombes dans la collection de vignettes.
+
+Ajoute une colonne « risque » dans ta shotlist. Pour chaque plan, note ce qui peut casser si le modèle dérive : texture de peau, symétrie du décor, incohérence de lumière, mains au bord du cadre. Quand tu préviens le risque dans le brief, tu réduis les surprises coûteuses. Ce n’est pas de la paranoïa de prod, c’est du temps gagné au montage.
+
+Termine chaque session par une phrase honnête : « la scène dit X » ou « la scène ne dit pas encore X ». Si tu ne peux pas compléter la phrase, tu n’as pas fini la passe réalisateur, seulement la passe texture. Beaucoup de portfolios IA sont beaux parce qu’ils sautent cette phrase finale.
+
+## Foire aux questions
 
 ### Faut-il avoir fait une école de cinéma pour penser comme un réalisateur avec l’IA
 
-Non. Tu dois surtout apprendre à décider. La réalisation n’est pas un mystère réservé à une élite, c’est une discipline de choix. Si tu peux expliquer en une phrase ce que le spectateur doit ressentir à chaque moment, tu es déjà dans la bonne direction. La technique vient ensuite pour exécuter cette intention.
+Non. Tu dois surtout apprendre à décider sous contrainte : qui porte le regard, ce qui change entre deux plans, et pourquoi tu coupes maintenant plutôt que dans trois secondes. La réalisation n’est pas une boutique secrète réservée à une élite : c’est une discipline de choix que tu peux entraîner sur des scènes courtes, même sans plateau physique. Si tu peux expliquer en une phrase ce que le spectateur doit ressentir à chaque moment, tu es déjà dans la bonne direction. La technique vient ensuite pour exécuter cette intention avec Flux, SDXL, ou tout autre pipeline.
 
 ### Je dois d’abord maîtriser Flux ou d’abord la narration
 
-D’abord la narration. Un opérateur très technique sans intention produira des images creuses. Un narrateur clair avec un niveau technique moyen produira un film plus fort. Ensuite, quand tes décisions sont nettes, l’apprentissage de Flux ou SDXL te donne de la vitesse et de la précision.
+D’abord la narration. Un opérateur très technique sans intention produira des images creuses et une séquence confuse dès que tu montes plusieurs plans. Un narrateur clair avec un niveau technique moyen produira un film plus fort parce que le spectateur comprend le jeu émotionnel avant de juger la perfection du rendu. Ensuite, quand tes décisions sont nettes, l’apprentissage de Flux ou SDXL te donne de la vitesse et de la précision. Tu achètes alors du temps machine, pas une intention toute faite.
 
 ### Combien de plans pour une scène débutant
 
-Commence court, 6 à 10 plans pour 30 à 60 secondes. C’est largement suffisant pour installer un contexte, créer une tension et conclure sur une conséquence. Au-delà, les débutants perdent souvent la cohérence des raccords et multiplient les plans de remplissage.
+Commence court : 6 à 10 plans pour 30 à 60 secondes. C’est largement suffisant pour installer un contexte, créer une tension et conclure sur une conséquence nette. Au-delà, les débutants perdent souvent la cohérence des raccords et multiplient les plans de remplissage qui diluent l’intention. Si tu tiens à ajouter des plans, ajoute-les seulement si chaque nouveau cadre change la lecture du conflit ou de l’espace. Sinon, tu construis un diaporama décoratif.
 
 ### Comment savoir si ma scène est lisible
 
-Fais le test des 10 secondes avec une personne externe. Si elle comprend où elle est, qui veut quoi, et ce qui est en train de changer, ta scène tient. Si elle décrit seulement "c’est joli", tu as un problème de narration visuelle.
+Fais le test des 10 secondes avec une personne externe qui ne connaît pas ton brief. Si elle comprend où elle est, qui veut quoi, et ce qui est en train de changer sans sous-titres, ta scène tient. Si elle décrit seulement « c’est joli » ou cite des détails de texture sans récit, tu as un problème de narration visuelle : au mieux tu as une image forte, au pire une série de poses. Reformule alors la mission de chaque plan avec un verbe d’action observable.
 
 ### Je fais quoi quand un plan est superbe mais casse la continuité
 
-Tu le retires. C’est dur au début, mais c’est un vrai saut pro. Un plan magnifique hors système détruit la confiance du spectateur. Garde-le dans une banque d’inspiration, pas dans le montage final.
+Tu le retires du montage livré. C’est dur au début, mais c’est un vrai saut professionnel. Un plan magnifique hors système détruit la confiance du spectateur parce qu’il sent une rupture de règle sans justification narrative. Garde ce plan dans une banque d’inspiration ou un dossier « B-side », pas dans la timeline finale. Si tu tiens absolument à le garder, tu dois réécrire les plans voisins pour que la géographie, la lumière et le regard recollent.
 
 ### Comment éviter l’effet IA trop propre
 
-Travaille en couches, matière peau, textile, profondeur atmosphérique légère, grain subtil, colorimétrie réaliste, micro-imperfections. Puis vérifie ton rendu sur écran normal, pas uniquement dans ton viewer technique zoomé à fond.
+Travaille en couches : matière de peau crédible, textile avec défauts légers, profondeur atmosphérique discrète, grain homogène en fin de chaîne, colorimétrie réaliste sans LUT caricatural. Puis vérifie ton rendu sur écran « normal », smartphone inclus, pas uniquement dans ton viewer technique zoomé à fond. Le réalisme ne vit pas dans le pixel mort : il vit dans la cohérence des imperfections et dans la stabilité des décisions optiques.
 
 ### Quelle est la plus grosse erreur des débutants motivés
 
-Ils cherchent la "bonne image" au lieu de construire la "bonne séquence". Le cinéma, même en IA, est une logique de relations entre plans. Tu ne vends pas une image. Tu vends une expérience qui évolue.
+Ils cherchent la « bonne image » au lieu de construire la « bonne séquence ». Le cinéma, même en IA, est une logique de relations entre plans : regards, déplacements, réactions, silences. Tu ne vends pas une affiche unique : tu vends une expérience qui évolue dans le temps. Quand tu traites chaque image comme une fin en soi, tu optimises la médiane du portfolio et tu sacrifies la ligne narrative.
 
 ### Quel guide lire après celui-ci
 
-Passe sur [comment cadrer une image IA comme un pro du cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema) pour solidifier la lecture plan par plan, puis reviens sur [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste) pour industrialiser ton pipeline.
+Passe sur [comment cadrer une image IA comme un pro du cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema) pour solidifier la lecture plan par plan. Enchaîne avec [workflow complet pour passer d’une idée à un film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste) pour industrialiser ton pipeline et documenter tes passes. Si tu travailles la vidéo, [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) complète bien cette lecture.

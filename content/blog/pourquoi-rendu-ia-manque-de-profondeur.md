@@ -3,11 +3,12 @@ title: "Pourquoi mon rendu IA manque de profondeur"
 date: "2026-04-30"
 category: "tutoriels"
 excerpt: "Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief."
-thumbnail: "/images/blog/pourquoi-rendu-ia-manque-de-profondeur/hero.webp"
 ---
 La profondeur, ce n’est pas « flou d’arrière-plan » collé sur une image plate. C’est une **hiérarchie de valeurs**, des **chevauchements** lisibles, des **tailles relatives** cohérentes, et une **lumière** qui sculpte le volume. Quand l’IA « aplatit », c’est souvent parce que le prompt demande tout net partout, ou parce que le sujet et le fond partagent la même gamme de gris.
 
-Le guide terrain dédié : [comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ).
+Le guide terrain dédié : [comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ). Pour les angles « collage » et incohérence de décor : [comment rendre une scène IA plus crédible](/blog/comment-rendre-scene-ia-plus-credible). Pour éviter que la simplification des volumes ne bascule en faux cartoon : [comment éviter le rendu cartoon non voulu](/blog/comment-eviter-rendu-cartoon-non-voulu-ia). Pour le cadrage qui structure l’espace : [cadrer une image IA comme un cadreur cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema).
+
+![Vue synthétique : trois plans (avant-plan flou, sujet, fond) pour sortir du collage binaire.](/images/blog/pourquoi-rendu-ia-manque-de-profondeur/hero.webp)
 
 ## Cause 1 : focale et distance contradictoires
 
@@ -45,6 +46,18 @@ Quand les mids montent ensemble, la profondeur disparaît.
 | tout net | dof cohérente |
 | boue | moins d’éléments rivaux |
 | ciel plat | nuages avec volume |
+
+## Du relief sans « faux bokeh »
+
+Ajouter du flou Gaussian sur l’arrière-plan ne suffit pas si les **valeurs** du sujet et du fond restent identiques : le spectateur lit encore une surface unique. Commence par séparer les plans en niveaux de gris : le premier plan peut être plus sombre ou plus lumineux que le sujet, le fond peut perdre un peu de contraste local sans forcément devenir flou. Les indices de profondeur incluent aussi la **perspective atmosphérique** : léger voile, reflets moins saturés au loin, détails qui diminuent progressivement.
+
+Sur une scène intérieure, crée des **chevauchements** : un rebord de table qui coupe le cadre, une lampe qui passe devant une partie du mur, une chaise qui masque une jambe de table. Ces micro-recouvrements construisent une lecture spatiale bien plus robuste qu’une simple mention « shallow depth of field » dans le prompt. Si tu restes bloqué après trois regens, passe par une correction locale en post ou par un réajustement de composition avant de changer de modèle.
+
+Pour les séquences vidéo ou les multi-plans, garde une **continuité des distances focales** dans ton brief : une coupe ultra-large suivie d’un macro sans transition narrative peut accentuer l’effet collage même si chaque image isolée est correcte. Si tu exportes pour le web, vérifie aussi que la compression ne « mange » pas les fins détails du fond : une perte de micro-contrast lointain peut faire replanter le sujet sur une toile uniforme.
+
+## Références externes utiles
+
+Pour les indices psychophysiques de profondeur : l’article [Depth perception](https://en.wikipedia.org/wiki/Depth_perception) sur la perception binoculaire et les indices picturaux. Pour la perspective atmosphérique et la lecture tonale : [Atmospheric perspective](https://en.wikipedia.org/wiki/Atmospheric_perspective). Pour relier profondeur et photographie numérique : le tutoriel Cambridge in Colour sur la [profondeur de champ](https://www.cambridgeincolour.com/tutorials/depth-of-field.htm).
 
 ## Approfondissement terrain : Pourquoi mon rendu IA manque de profondeur
 
@@ -87,7 +100,7 @@ Minute 0 à 5 : écris la phrase « ce que le spectateur doit croire sans légen
 
 Même pour toi-même, rédige un mini brief : public, canal, durée de lecture attendue, interdits (violence, marques, visages réels). Pour une équipe, ajoute une colonne « preuve de conformité » : capture des CGU du service, version du modèle, date d’export. Cette colonne te sauve quand un diffuseur demande d’où vient l’image.
 
-### FAQ élargie
+### Questions récurrentes (atelier)
 
 **Dois-je livrer deux versions ?** Oui, A et B avec une phrase de différence nommée, sinon la discussion reste floue. **Faut-il documenter les prompts ?** Oui, même partiellement : c’est ton assurance qualité interne. **Que faire si le modèle change ?** Fixe un brief test et compare avant de poursuivre une série. **La retouche manuelle triche-t-elle ?** Non si tu assumes la chaîne et les limites contractuelles. **Combien de temps par image sérieuse ?** Souvent plus long en validation qu’en génération brute, prévois-le au devis. **Faut-il une cible technique ?** Oui : résolution finale, espace colorimétrique, marge sur hautes lumières si compression sociale. **Et la propriété intellectuelle ?** Vérifie les CGU et les droits sur les références incluses dans le prompt.
 
@@ -117,7 +130,7 @@ Pour `pourquoi-rendu-ia-manque-de-profondeur`, retiens trois lignes dans ton car
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Pourquoi mon rendu IA manque de profondeur** — L’extrait « Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-rendu-ia-manque-de-profondeur` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Pourquoi mon rendu IA manque de profondeur** : l’extrait « Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-rendu-ia-manque-de-profondeur` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 
@@ -163,7 +176,7 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 - Nommage stable et version claire.  
 - Note légère ou mail de livraison qui résume les limites connues.  
 
-### FAQ série B
+### Questions série B (contrats et livrables)
 
 **Faut-il un contrat écrit pour une micro-prestation ?** Un court échange mail avec périmètre et nombre de allers-retours évite 80 % des tensions. **Dois-je livrer le prompt ?** Selon le contrat ; sinon, livre une description fonctionnelle équivalente. **Que faire si la plateforme compresse ?** Prévois une marge sur les hautes lumières et teste un export « pire cas ». **Comment gérer un retour tardif ?** Si c’est hors scope, propose un addendum chiffré plutôt qu’une négociation floue.
 
@@ -171,16 +184,11 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Pourquoi mon rendu IA manque de profondeur** et le périmètre `pourquoi-rendu-ia-manque-de-profondeur`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo de référence
-
-Chaîne YouTube Business Dynamite :  
-[https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
-
-Pour la méthode : une intention spatiale par image.
+[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on spatial cues and depth cues in AI-generated frames].
 
 ![Second repère : valeurs en niveaux de gris.](/images/blog/pourquoi-rendu-ia-manque-de-profondeur/workflow-2.webp)
 
-## FAQ
+## Foire aux questions
 
 ### Le flou suffit-il ?
 Non sans hiérarchie de valeurs.

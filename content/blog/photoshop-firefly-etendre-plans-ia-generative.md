@@ -3,14 +3,13 @@ title: "Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre 
 date: "2026-04-18"
 category: "tutoriels"
 excerpt: "Masterclass pratique pour étendre des plans avec Photoshop Firefly sans casser perspective, lumière et continuité visuelle."
-thumbnail: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
 ---
 
 # Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre ses plans
 
 Tu as un plan fort. Belle compo, bonne émotion. Puis tu dois l’adapter en 16:9, en vertical, en version safe title pour YouTube, et tout part en vrille. L’extension générative invente des murs impossibles, des textures plastiques, et des lignes qui trahissent immédiatement le fake. *C’est exactement le mur que prennent tous les débutants sur Firefly.*
 
-Here’s the thing: Firefly est excellent pour étendre un plan si tu traites l’outil comme un assistant VFX, pas comme une baguette magique. Le vrai levier est ta préparation du cadre, ta méthode de sélection, et ta discipline de correction locale. Ce guide te donne un workflow propre pour étendre des plans sans perdre le rendu cinéma.
+Le point clé : Firefly est excellent pour étendre un plan si tu traites l’outil comme un assistant VFX, pas comme une baguette magique. Le vrai levier est ta préparation du cadre, ta méthode de sélection, et ta discipline de correction locale. Ce guide te donne un workflow propre pour étendre des plans sans perdre le rendu cinéma.
 
 ![Étalonneur visuel étendant un cadre dans Photoshop sur station de postproduction](https://images.unsplash.com/photo-1461749280684-dccba630e2f6)
 
@@ -94,41 +93,57 @@ Erreur 5: pas de vérification format final. Fix: test 16:9 + 9:16 avant validat
 
 ![Comparaison avant/après extension Firefly avec correction de texture et lumière](https://images.unsplash.com/photo-1489515217757-5fd1be406fef)
 
-## Références externes utiles
+## Extensions selon le type de plan (portrait, architecture, nature)
 
-Pour des bases fiables, consulte la [documentation Adobe Firefly](https://www.adobe.com/products/firefly.html), les guides [Adobe Photoshop](https://helpx.adobe.com/photoshop/user-guide.html), et les analyses de workflow de [Frame.io Insider](https://blog.frame.io/).
+Toutes les images ne réagissent pas pareil au Generative Fill. Sur un **portrait serré**, le danger principal est la dérive du visage et des mains : tu dois verrouiller la silhouette avant même de penser au décor. Sur une **architecture**, la géométrie impose une progression par bandes horizontales ou verticales qui suivent les lignes du bâtiment ; une sélection “libre” qui coupe une fenêtre au milieu produit presque toujours une symétrie bizarre ou un reflet qui ne correspond à aucune source. Sur une **scène naturelle** avec feuillage, le grain et la micro-variation sont tes amis : là où les débutants sharpenent, les pros harmonisent et ajoutent une texture résiduelle cohérente avec le capteur simulé dans ton brief.
 
-## FAQ
+Quand tu prépares une série pour plusieurs ratios (YouTube, reels, vignette boutique), travaille à partir du **master le plus large** et réduit ensuite. Étendre plusieurs fois à partir d’un fichier déjà recadré accumule les artefacts aux bords successifs. Si tu dois livrer un 16:9 et un 9:16 à partir d’un 4:5, considère deux masters intermédiaires plutôt qu’une chaîne de cinq passes IA sur les mêmes pixels. Pour les textes incrustés (titres safe zone), garde une marge réelle dans Photoshop avec des guides : Firefly ne lit pas ton grille After Effects ; c’est à toi d’anticiper où la lisibilité doit rester intacte.
 
-## Firefly peut-il remplacer un vrai décor en postproduction ?
+Enfin, relie ce workflow aux autres guides du site quand tu mixes IA pure et postprod classique : la [continuité entre plusieurs plans](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia), le passage [d’une image IA à une vidéo crédible](/blog/comment-transformer-image-ia-video-fluide-credible), et le choix [entre approches photoréalistes et stylisées](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes) pour ne pas mélanger deux philosophies de rendu dans une même séquence.
+
+### Brief léger avant chaque session Firefly
+
+Note cinq lignes dans un fichier texte collé au dossier PSD : ratio final, direction de la lumière observée sur le master, distance focale « plausible », liste des zones interdites à la génération, et le niveau de grain de référence sur une capture du plan source. Cette mini-fiche évite la dérive où tu réessaies au hasard parce que tu as oublié ta propre contrainte principale. Elle sert aussi à quelqu’un d’autre qui rouvre le projet trois semaines plus tard.
+
+### Quand préférer une extension « géométrique » à une extension « descriptive »
+
+Sur des surfaces régulières (mur intérieur lisse, ciel dégagé modéré, route asphaltée), commence par une extension sans prompt pour laisser Firefly interpoler la répétition structurelle. Sur des motifs riches (brique ancienne, vitrail, rayures irrégulières), ajoute vite un prompt qui nomme la matière et l’échelle des motifs, sinon le modèle invente une version trop régulière qui se lit comme une texture procédurale. Si tu hésites entre deux stratégies, fais une passe courte sur une bande étroite du cadre avant d’engager toute la hauteur : tu valides la logique sans payer le coût cognitif d’un grand masque raté.
+
+## Foire aux questions
+
+### Firefly peut-il remplacer un vrai décor en postproduction ?
 
 Firefly peut étendre efficacement un décor existant, mais il ne remplace pas une direction artistique complète quand la scène demande une reconstruction complexe. Sur des extensions de cadre raisonnables, les résultats peuvent être très propres. Sur des reconstructions massives, les incohérences de perspective et de lumière deviennent plus probables. Le bon usage est d’ajouter de l’espace narratif autour d’un plan solide, pas de transformer totalement l’environnement. Pense “extension ciblée” plutôt que “reconstruction globale”.
 
-## Quelle taille d’extension est la plus sûre pour débuter ?
+### Quelle taille d’extension est la plus sûre pour débuter ?
 
 Pour débuter, vise des extensions de 10 à 25% du cadre sur un côté, puis valide. Cette plage permet de garder une logique visuelle forte sans forcer le modèle à inventer trop de structure. Si tu dois étendre davantage, fais-le en plusieurs passes avec contrôles intermédiaires. Plus l’extension est brutale, plus le risque de rupture matière/lumière augmente. Les meilleures pipelines pro avancent en petits incréments, avec validation continue.
 
-## Faut-il toujours écrire un prompt pour Generative Fill ?
+### Faut-il toujours écrire un prompt pour Generative Fill ?
 
-Non. Dans beaucoup de cas, surtout sur fonds simples, un prompt vide donne une continuité plus naturelle car Firefly extrapole directement le contexte visuel. Le prompt devient utile quand tu veux guider un matériau spécifique ou une direction de lumière précise. La bonne méthode est comparative: version sans prompt, puis version avec prompt, puis choix sur critères objectifs (perspective, texture, lumière). Ne suppose jamais qu’un prompt long fera mieux.
+Non. Dans beaucoup de cas, surtout sur fonds simples, un prompt vide donne une continuité plus naturelle car Firefly extrapole directement le contexte visuel. Le prompt devient utile quand tu veux guider un matériau spécifique ou une direction de lumière précise. La bonne méthode est comparative : version sans prompt, puis version avec prompt, puis choix sur critères objectifs (perspective, texture, lumière). Ne suppose jamais qu’un prompt long fera mieux.
 
-## Comment éviter les bords visibles entre source et extension ?
+### Comment éviter les bords visibles entre source et extension ?
 
 Utilise des sélections progressives, corrige localement la luminance, puis unifie le grain sur l’ensemble du plan. Les bords visibles viennent souvent d’un contraste local différent, pas d’un “mauvais modèle”. Une passe dodge/burn légère peut suffire à rendre la transition invisible. Évite aussi les sélections trop dures en lignes droites sur des textures organiques. Le blending réaliste est un travail de finition, pas seulement une génération.
 
-## Firefly est-il adapté à un workflow vidéo de film ?
+### Firefly est-il adapté à un workflow vidéo de film ?
 
 Oui, surtout pour préparer des keyframes ou des plans fixes utilisés dans un pipeline vidéo plus large. Il fonctionne très bien pour recadrages, extensions de matte et variations de format. Pour des séquences animées, tu dois ensuite gérer la cohérence temporelle avec d’autres outils et un montage rigoureux. Firefly est une brique très utile, pas un pipeline vidéo complet à lui seul.
 
-## Quels formats exporter pour garder de la flexibilité ?
+### Quels formats exporter pour garder de la flexibilité ?
 
 Garde toujours un master PSD avec calques nommés, puis exporte en TIFF ou PNG selon ton pipeline. Pour diffusion, dérive des formats compressés à partir d’un master propre, jamais l’inverse. Si tu travailles multi-plateformes, prépare les ratios principaux dès la phase d’extension. Cette anticipation évite de relancer des générations au dernier moment quand un recadrage social casse la composition.
+
+## Références externes utiles
+
+Pour des bases fiables, consulte la [documentation Adobe Firefly](https://www.adobe.com/products/firefly.html), les guides [Adobe Photoshop](https://helpx.adobe.com/photoshop/user-guide.html), et les analyses de workflow de [Frame.io Insider](https://blog.frame.io/).
 
 {/* PUBLICATION DATE: 2026-04-18 */}
 
 ## Approfondissement terrain
 
-**Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre ses plans** — Ce chapitre prolonge l’angle « Masterclass pratique pour étendre des plans avec Photoshop Firefly sans casser perspective, lumière et continuité visuelle. » pour le sujet réel derrière `photoshop-firefly-etendre-plans-ia-generative`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Comment utiliser l'IA générative de Photoshop (Firefly) pour étendre ses plans** : ce chapitre prolonge l’angle « Masterclass pratique pour étendre des plans avec Photoshop Firefly sans casser perspective, lumière et continuité visuelle. » pour le sujet réel derrière `photoshop-firefly-etendre-plans-ia-generative`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 
@@ -167,7 +182,7 @@ Minute 0 à 5 : écris la phrase « ce que le spectateur doit croire sans légen
 
 Même pour toi-même, rédige un mini brief : public, canal, durée de lecture attendue, interdits (violence, marques, visages réels). Pour une équipe, ajoute une colonne « preuve de conformité » : capture des CGU du service, version du modèle, date d’export. Cette colonne te sauve quand un diffuseur demande d’où vient l’image.
 
-### FAQ élargie
+### Questions récurrentes (atelier)
 
 **Dois-je livrer deux versions ?** Oui, A et B avec une phrase de différence nommée, sinon la discussion reste floue. **Faut-il documenter les prompts ?** Oui, même partiellement : c’est ton assurance qualité interne. **Que faire si le modèle change ?** Fixe un brief test et compare avant de poursuivre une série. **La retouche manuelle triche-t-elle ?** Non si tu assumes la chaîne et les limites contractuelles. **Combien de temps par image sérieuse ?** Souvent plus long en validation qu’en génération brute, prévois-le au devis. **Faut-il une cible technique ?** Oui : résolution finale, espace colorimétrique, marge sur hautes lumières si compression sociale. **Et la propriété intellectuelle ?** Vérifie les CGU et les droits sur les références incluses dans le prompt.
 

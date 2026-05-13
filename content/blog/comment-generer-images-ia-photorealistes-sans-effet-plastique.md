@@ -3,7 +3,6 @@ title: "Comment générer des images IA photoréalistes sans effet plastique"
 date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Méthode terrain pour obtenir une image réaliste, texturée et crédible, sans peau cireuse ni rendu artificiel."
-thumbnail: "/images/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique/hero.webp"
 ---
 Tu peux avoir un prompt propre, un modèle puissant, une belle idée.  
 Si la texture est fausse, ton image sonne fake en deux secondes.
@@ -24,6 +23,15 @@ Le rendu plastique vient presque toujours d’un mélange de mauvais signaux, tr
 ## Template strict
 
 ```text
+MISSION: plan [large|moyen|serré], émotion [une ligne]
+LIEU: intérieur/extérieur, heure, météo implicite
+LUMIÈRE: source dominante + direction + contraste (motivée)
+SUJET: action visible, état de fatigue, vêtement (matière)
+CAMÉRA: hauteur ressentie, focale ressentie, distance
+MATIÈRE: peau avec pores discrets, textile avec plis, métal avec micro-rayures si présent
+PROFONDEUR: séparation sujet/fond sans faux bokeh cartoon
+INTERDITS: perfect skin, ultra sharp global, HDR mental
+FORMAT: ratio final
 ```
 
 ## Erreurs qui créent l’effet plastique
@@ -46,15 +54,7 @@ Pour corriger les prompts trop artificiels, relie directement ce guide à [les e
 ![Image contextuelle 1, contrôle texture peau et tissu.](/images/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique/workflow-1.webp)
 
 
-## Vidéo YouTube intégrée
-
-Chaîne YouTube Business Dynamite :  
-[https://www.youtube.com/watch?v=Y2h4HkJL2XQ](https://www.youtube.com/watch?v=Y2h4HkJL2XQ)
-
-Observe surtout:
-- la hiérarchie lumière avant la colorimétrie
-- la différence entre style et crédibilité
-- les micro ajustements qui font disparaître le rendu fake
+[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on photorealistic AI imagery and lighting hierarchy]
 
 ## Trench warfare, erreurs débutants
 
@@ -327,7 +327,7 @@ Ensuite seulement, tu corriges.
 9) Tu ignores la fatigue décisionnelle. Fix, sessions courtes et objectifs clairs.  
 10) Tu livres sans pause. Fix, validation à froid le lendemain matin.
 
-## FAQ complémentaire
+## Foire aux questions
 
 ### Comment savoir que je suis vraiment prêt à publier
 
@@ -370,3 +370,43 @@ Minute 10 à 12, décision:
 - rejeter et regénérer avec prompt matière plus précis
 
 Ce protocole semble simple. Il te fait gagner un temps énorme, et surtout il casse l’habitude de livrer une image propre en apparence mais fausse en sensation.
+
+## Core addendum : la peau comme système, pas comme filtre
+
+Le plastique arrive souvent quand tu traites la peau comme un *effet* à ajouter en fin de prompt. En réalité, la peau est un **système** : micro géométrie, sous-surface perçue, variation de rougeurs, pores visibles mais non caricaturaux, et relation à la lumière. Si ta lumière est molle et frontale, aucune texture ne sauvera le portrait : tu obtiendras une peau *propre* et morte. Commence par une source latérale modeste, puis décris la transition ombre-lumière sur la joue comme une phrase de réalisateur, pas comme une liste d’adjectifs.
+
+Pour les plans serrés, évite les catchlights doubles contradictoires. Un œil qui annonce deux studios différents tue le réalisme avant la texture. Pour les plans larges, la peau compte moins que le **contexte matière** : vêtement, poussière dans l’air, saleté plausible sur les surfaces. Ces éléments ancrent le spectateur dans un monde physique. Pour aller plus loin sur la peau en génération, relie ce guide à [notre article sur l’amélioration de la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia).
+
+## Troubleshooting addendum : cinq cas studio et leur correction
+
+**Cas 1, peau cire sous lumière douce.** Tu as peur du contraste, donc tu aplatis, donc le modèle lisse. Corrige en réintroduisant un contraste local *modéré* et une imperfection localisée (petite rougeur, texture légère).
+
+**Cas 2, yeux trop nets, visage trop doux.** Le sharpening implicite cible les yeux. Corrige en demandant une netteté *optique* cohérente avec la focale, pas une netteté *numérique*.
+
+**Cas 3, cheveux en casque.** Ajoute gravité, mèche rebelle, friction avec l’oreille, lumière qui coupe des mèches. Les cheveux parfaits lisent *rendu 3D*.
+
+**Cas 4, tissu sans plis au bon endroit.** Décris le poids du tissu et le point de tension (épaule, coude, ceinture). Le textile est une preuve de gravité.
+
+**Cas 5, fond hyper détaillé qui mange le sujet.** Réduis la complexité du fond dans le prompt, pas la saturation. La hiérarchie prime.
+
+Pour choisir un modèle adapté au photoréalisme, [notre comparatif Flux et SDXL](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes) aide à calibrer attentes et contraintes. Pour éviter l’effet *image IA* au niveau composition, [notre guide pour corriger une mauvaise composition visuelle](/blog/comment-corriger-mauvaise-composition-visuelle-ia) complète la partie cadrage.
+
+## Références externes utiles
+
+La perception de la profondeur et des indices picturaux est documentée de façon accessible sur [Wikipedia : Depth perception](https://en.wikipedia.org/wiki/Depth_perception). Pour la couleur et le contraste en photographie, [Cambridge in Colour](https://www.cambridgeincolour.com/) reste une base stable pour comprendre sans jargon inutile ce que ton image fait aux yeux.
+
+### Comment intégrer ce réalisme dans une vidéo IA ?
+
+Une image photoréaliste sert souvent de première frame ou de référence de palette. Si tu passes au mouvement, tu dois anticiper le *motion blur* et la cohérence de grain. Sinon, ton plan fixe crédible devient une vidéo *shimmer* ou plastique. Garde une bible lumière simple et répète-la entre images clés. Pour une chaîne vidéo, [notre guide pour structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) évite de casser le réalisme en montage.
+
+> 💡 **Frank's Cut:** si tu ne peux pas expliquer la source principale de lumière en une phrase simple, ton image plastique n’est pas un accident. C’est une conséquence.
+
+### Faut-il toujours ajouter du grain ?
+
+Non. Le grain est un *liant*, pas une baguette magique. Il masque parfois des erreurs de matière, mais il ne remplace pas une lumière motivée. Utilise-le quand la chaîne est déjà cohérente, pour rapprocher des sources ou des rendus trop propres. Sinon tu ajoutes du bruit sur du faux.
+
+### Quelle est la plus grosse erreur de débutant sur le photoréalisme ?
+
+Confondre *détail* et *preuve*. Les détails partout ressemblent à un catalogue. La preuve est localisée : une rayure, une couture, une poussière, une ombre portée juste. Choisis deux preuves fortes par plan, pas vingt.
+
+<!-- PUBLICATION DATE: 2026-04-11 -->

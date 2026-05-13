@@ -3,7 +3,6 @@ title: "Comment cadrer une image IA comme un pro du cinéma"
 date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Méthodes concrètes de cadrage pour donner à tes images IA une lecture visuelle claire et cinématographique."
-thumbnail: "/images/blog/comment-cadrer-image-ia-comme-pro-cinema/hero.webp"
 ---
 Tu as peut-être déjà vécu ça. Tu génères une image qui te semble impressionnante. Puis tu la montres à quelqu’un et la réaction est froide, "oui, c’est joli, mais je ne comprends pas ce que je dois regarder".
 
@@ -64,7 +63,7 @@ Les bords du cadre racontent autant que le centre. Un bord sale, un objet coupé
 
 Le cadrage d’un plan prépare le suivant. C’est la base d’une séquence crédible.
 
-Pour construire cette continuité dans une scène complète, enchaîne avec [comment construire une scène cinématique plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan).
+Pour construire cette continuité dans une scène complète, enchaîne avec [comment construire une scène cinématique plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan). Pour décider comment le sujet occupe le cadre sans tomber dans le centrage décoratif, croise avec [comment utiliser la règle des tiers en génération IA](/blog/comment-utiliser-regle-des-tiers-generation-ia).
 
 ## Prompt template obligatoire
 
@@ -206,17 +205,9 @@ Check final:
 - zone de vide assumée
 - aucun élément parasite en concurrence
 
-## Vidéo YouTube à regarder
+[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on cinematic framing and reading order]
 
-Chaîne YouTube Business Dynamite :
-[https://www.youtube.com/watch?v=pLDTXnovoBc](https://www.youtube.com/watch?v=pLDTXnovoBc)
-
-Regarde surtout:
-- comment le cadre guide l’attention sans effet forcé
-- comment un plan simple peut porter une émotion forte
-- comment la cohérence des plans augmente la crédibilité globale
-
-Pour renforcer le travail de lumière dans ton cadre, utilise aussi [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt).
+Pour renforcer le travail de lumière dans ton cadre, utilise aussi [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt). Si ton cadre est propre mais la géométrie reste confuse, passe par [comment corriger une mauvaise composition visuelle](/blog/comment-corriger-mauvaise-composition-visuelle-ia) avant de multiplier les rendus.
 
 ## Trench warfare massif, erreurs débutants et fixes
 
@@ -379,32 +370,52 @@ Si un de ces points n’est pas validé, ce n’est pas "presque prêt". Ce n’
 
 Dernier conseil de plateau, imprime ta shotlist de cadrage et garde-la visible pendant toute la session. Quand la fatigue monte, le cerveau revient aux automatismes. Ta feuille te ramène à l’intention.
 
-## FAQ
+## Core addendum
+
+Le cadrage n’est pas une décoration : c’est une promesse sur ce que le spectateur doit découvrir en premier, puis en second. Les entrées de référence sur la [composition visuelle](https://en.wikipedia.org/wiki/Composition_(visual_arts)) rappellent souvent qu’un plan agit comme une fenêtre morale autant que spatiale : ce que tu exclus du cadre parle autant que ce que tu inclus. Pour une base technique et culturelle plus large, la [BFI](https://www.bfi.org.uk/) recense analyses et contextes de lecture qui t’aident à éviter les citations vides de « look Netflix » sans structure. Enfin, les publications de [theasc.com](https://theasc.com/) montrent comment les équipes traitent l’écriture du cadre comme une suite de décisions lumineuses et géométriques, pas comme un hasard esthétique.
+
+Ton addendum pratique pour l’IA : fixe un vocabulaire de cadre partagé dans ton équipe (wide, medium, close, profondeur, axe), et impose une phrase de mission avant chaque prompt. Le cadre devient reproductible quand il est nommé, pas quand il est seulement ressenti après coup.
+
+## Troubleshooting addendum
+
+Quand un plan semble « presque bon », commence par le test mobile : si la hiérarchie disparaît sur un petit écran, ton cadrage est trop dépendant de détails illisibles. Ensuite, vérifie la ligne des yeux et les bords : une main coupée sans motif, un reflet trop fort dans un coin, ou un horizon flottant peuvent ruiner un cadrage théoriquement équilibré. Si tu corriges en recadrage agressif, tu changes la focale apparente et tu perds la cohérence avec le plan suivant.
+
+En génération locale, sépare les problèmes de composition des problèmes de matière. Un prompt plus sobre sur la texture rétablit parfois la lecture avant même que tu retouches le placement du sujet. Documente la version « bord propre » comme référence de série : c’est elle qui définit ton standard, pas la version la plus spectaculaire du jour.
+
+## Scenarios
+
+**Scénario interview fictive IA.** Tu installes le sujet sur un tiers, avec de l’espace regard du côté opposé, et une lumière latérale douce qui sculpte le visage sans brûler l’arrière-plan. L’erreur fréquente, c’est un décor trop riche qui vole l’endroit où les yeux doivent se poser en premier.
+
+**Scénario séquence de poursuite courte.** Tu progresses du large (géographie) au moyen (action) au serré (décision), en gardant constante la direction de course et l’axe droite gauche. Si tu mélanges des angles extrêmes sans motif, la vitesse narrative s’effondre même si chaque image est belle seule.
+
+**Scénario packshot premium.** Tu utilises un centre contrôlé pour l’instant hero, mais tu entoures ce moment de plans sur tiers pour raconter la matière, le contexte, et la main qui manipule le produit. Sans cette alternance, le centre devient une habitude, pas un choc ponctuel.
+
+## Foire aux questions
 
 ### Est-ce que la règle des tiers suffit pour bien cadrer
 
-Non. C’est une base puissante, mais pas une formule magique. Tu dois aussi gérer l’échelle de plan, la direction du regard, les bords du cadre, la profondeur, et surtout la mission narrative du plan. La règle des tiers sans intention reste mécanique.
+Non, la grille des tiers est un outil parmi d’autres, pas une fin en soi. Elle t’aide à sortir du centrage automatique et à organiser l’attention, mais le cadrage complet demande aussi une échelle de plan juste, une ligne de force claire, une gestion des bords, et une continuité avec les plans voisins. Une image peut suivre les tiers et rester confuse si deux zones rivalisent, si la profondeur est absente, ou si la direction du regard ment par rapport à l’action. Tu dois donc traiter la règle des tiers comme une étape de calibration : utile pour stabiliser la lecture, puis soluble dans des choix plus fins selon la dramaturgie.
 
 ### Je peux casser les règles de cadrage
 
-Oui, et c’est souvent nécessaire. Mais il faut les casser consciemment. Si tu casses une règle pour créer un malaise ou une rupture, c’est du langage visuel. Si tu la casses par hasard, c’est une erreur de fabrication.
+Oui, et c’est souvent nécessaire quand tu veux un malaise, une rupture, ou une subjectivité forte. La différence entre un choix et une erreur, c’est la lisibilité de ton intention : si le spectateur comprend que l’instabilité appartient à la scène, tu parles le langage du cinéma ; si l’instabilité ressemble à un accident de ligne ou de horizon, tu perds la confiance. Avant de casser, assure-toi que ta base « propre » tient sur un plan témoin : c’est ce contrôle qui autorise la transgression. Note aussi pourquoi tu casses en une phrase, sinon tu ne pourras pas reproduire l’effet sur la série.
 
 ### Quelle différence entre cadrage photo et cadrage de séquence
 
-En photo isolée, l’image doit tenir seule. En séquence, chaque cadre doit préparer le suivant. C’est pour ça qu’un plan peut être "moins spectaculaire" mais beaucoup plus utile dans un montage.
+Une photo doit tenir seule, alors qu’un plan de film doit aussi préparer le suivant en conservant géographie, rythme, et crédibilité matière. En séquence, tu acceptes parfois un plan moins « héroïque » parce qu’il clarifie l’espace ou annonce un mouvement de caméra. En photographie éditoriale, tu optimises souvent un instant d’impact maximal sans te soucier du raccord suivant. En IA, mélanger ces deux logiques sans le savoir produit des images brillantes mais incohérentes au montage. Écris donc sur ta shotlist si le plan est autobiographique ou relationnel : ça change la pression sur le cadrage.
 
 ### Comment savoir si je dois passer en plan serré
 
-Quand l’enjeu devient intérieur, décision, peur, hésitation, mensonge. Si l’information est émotionnelle, rapproche-toi. Si l’information est spatiale, recule.
+Passe en serré lorsque l’information principale devient intérieure : hésitation, mensonge, décision, peur, désir contenu. Reste plus large lorsque l’information est spatiale : où sont les obstacles, quelle est la géométrie du danger, quel est le rapport entre plusieurs corps ou objets. Si tu sères trop tôt, tu sacrifies la compréhension ; si tu restes trop large trop longtemps, tu dilues l’émotion. Un bon repère est la question du spectateur : a-t-il encore besoin de cartographier la scène, ou commence-t-il à vouloir lire une vérité sur le visage.
 
 ### Quelle est l’erreur qui fait le plus fake
 
-Le manque de cohérence inter-plans. Pas seulement un mauvais plan, mais une série de plans sans logique de regard, d’échelle et de lumière. L’œil humain le détecte immédiatement.
+Ce n’est pas un seul mauvais plan, c’est l’incohérence entre plans successifs : sauts d’axe, regard qui ne trouve pas son espace, lumière qui change sans motif, fougues de focale qui ne racontent rien. L’œil humain tolère l’hyperréalisme si la géographie mentale reste stable ; il rejette vite ce qui ressemble à un montage de tests sans dramaturgie. En IA, ce problème est aggravé parce que chaque rendu peut être séduisant isolément. La discipline consiste à refuser l’image jolie qui ment sur la scène, même si elle coûte cher en temps de calcul.
 
 ### Je suis débutant, par quoi commencer dès aujourd’hui
 
-Choisis une scène de 30 secondes. Fais 6 plans maximum. Écris la mission de chaque plan avant de générer. Garde un ratio, une charte lumière, et une progression d’échelle. Tu verras la différence dès le premier montage.
+Choisis une scène courte, écris la mission de chaque plan avant tout prompt, puis limite-toi à six prises maximum avec les mêmes contraintes de ratio et de lumière dominante. Valide d’abord la lecture en deux secondes, ensuite le détail. Fais regarder le montage par une personne externe et interdis-toi d’expliquer : si tu dois défendre ton intention à l’oral, le cadrage n’est pas encore au niveau. Réduis les variables pendant une semaine : tu apprendras plus vite qu’en accumulant des styles différents chaque soir.
 
 ### Quel article lire ensuite
 
-Passe sur [comment utiliser la règle des tiers en génération IA](/blog/comment-utiliser-regle-des-tiers-generation-ia) pour renforcer ta composition, puis enchaîne avec [comment penser comme un réalisateur avec l’IA](/blog/comment-penser-comme-realisateur-avec-ia) pour verrouiller l’intention globale.
+Passe sur [comment utiliser la règle des tiers en génération IA](/blog/comment-utiliser-regle-des-tiers-generation-ia) pour solidifier tes décisions géométriques, puis enchaîne avec [comment penser comme un réalisateur avec l’IA](/blog/comment-penser-comme-realisateur-avec-ia) pour relier cadrage, rythme, et intention d’ensemble. Si tu travailles déjà une séquence dialoguée, garde sous la main [comment choisir les bons angles caméra en IA](/blog/comment-choisir-bons-angles-camera-ia) afin d’aligner hauteur de caméra et dynamique des regards.

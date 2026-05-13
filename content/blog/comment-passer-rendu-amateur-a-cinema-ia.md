@@ -3,11 +3,12 @@ title: "Comment passer d’un rendu amateur à un rendu cinéma"
 date: "2026-05-02"
 category: "tutoriels"
 excerpt: "Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset."
-thumbnail: "/images/blog/comment-passer-rendu-amateur-a-cinema-ia/hero.webp"
 ---
 Le rendu « cinéma » n’est pas un filtre « teal and orange ». C’est une **suite de décisions** : lumière avec direction, contraste maîtrisé, grain cohérent, cadrage qui sert la lecture, et surtout un **rythme** qui accepte de ne pas montrer tout. L’amateur empile les effets visibles. Le cinéma retire jusqu’à ce qu’il ne reste que l’intention.
 
 La méthode longue vidéo : [comment créer une vidéo cinématique avec l’IA étape par étape](/blog/comment-creer-video-cinematique-ia-etape-par-etape). Pour le grain : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia). Pour Seedance : [comment obtenir un rendu cinéma avec Seedance 2](/blog/comment-obtenir-rendu-cinema-avec-seedance-2).
+
+Pour relier ton vocabulaire à une entrée courte et stable sur la notion même de « cinématisme », lis aussi en parallèle [cinéaste](https://fr.wikipedia.org/wiki/Cin%C3%A9aste). Pour la lisibilité du mouvement une fois ton image figée, cette analyse vidéo reste une boussole simple : [cinéma, mouvement et lisibilité](https://www.youtube.com/watch?v=pLDTXnovoBc).
 
 ## Passe 1 : une loi lumière par plan
 
@@ -34,6 +35,12 @@ Le cinéma assume des hauteurs de caméra et des focales **motivées**. Voir [co
 ## Passe 5 : rejet
 
 Garde deux versions A/B par plan max. Au-delà, tu confonds exploration et livraison.
+
+### Pourquoi le cinéma « IA » rate encore sans cette passe
+
+Le rendu cinéma n’est pas une accumulation de modules impressionnants : c’est une décision de ce que tu refuses de montrer. Quand tu gardes quatorze variantes par plan, tu retardes le moment où tu écoutes la séquence comme spectateur. Le rejet calibré te force à assumer une hiérarchie : tel plan est là pour respirer, tel autre pour payer une tension. Sans discipline de rejet, tu livres un catalogue pour créatif fatigué, pas une narration.
+
+Documente ton look comme une recette de cuisine, pas comme une liste de plugins : note température dominante, contraste de la cheville aux épaules du histogramme, grain par passe, et ce que tu interdis sur les peaux. Quand tu rouvres le projet trois semaines plus tard, cette fiche te sauve des regressions silencieuses où tu « améliores » une zone et casses le pacte global.
 
 ## Tableau : habitude amateur, habitude ciné
 
@@ -85,10 +92,6 @@ Minute 0 à 5 : écris la phrase « ce que le spectateur doit croire sans légen
 
 Même pour toi-même, rédige un mini brief : public, canal, durée de lecture attendue, interdits (violence, marques, visages réels). Pour une équipe, ajoute une colonne « preuve de conformité » : capture des CGU du service, version du modèle, date d’export. Cette colonne te sauve quand un diffuseur demande d’où vient l’image.
 
-### FAQ élargie
-
-**Dois-je livrer deux versions ?** Oui, A et B avec une phrase de différence nommée, sinon la discussion reste floue. **Faut-il documenter les prompts ?** Oui, même partiellement : c’est ton assurance qualité interne. **Que faire si le modèle change ?** Fixe un brief test et compare avant de poursuivre une série. **La retouche manuelle triche-t-elle ?** Non si tu assumes la chaîne et les limites contractuelles. **Combien de temps par image sérieuse ?** Souvent plus long en validation qu’en génération brute, prévois-le au devis. **Faut-il une cible technique ?** Oui : résolution finale, espace colorimétrique, marge sur hautes lumières si compression sociale. **Et la propriété intellectuelle ?** Vérifie les CGU et les droits sur les références incluses dans le prompt.
-
 ### Poste de contrôle multi-écrans
 
 Chaîne minimale : moniteur principal, laptop standard, smartphone. Si tu n’as que deux écrans, envoie un export test sur ton téléphone via un canal propre (pas un messager qui recompresse à l’infini). Note la différence perçue sur les peaux, les contours, et les micro-contrastes. Beaucoup d’images « IA » le deviennent surtout après une deuxième compression involontaire.
@@ -115,7 +118,7 @@ Pour `comment-passer-rendu-amateur-a-cinema-ia`, retiens trois lignes dans ton c
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Comment passer d’un rendu amateur à un rendu cinéma** — L’extrait « Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `comment-passer-rendu-amateur-a-cinema-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Comment passer d’un rendu amateur à un rendu cinéma** reprend l’extrait « Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset » et pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `comment-passer-rendu-amateur-a-cinema-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 
@@ -161,15 +164,11 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 - Nommage stable et version claire.  
 - Note légère ou mail de livraison qui résume les limites connues.  
 
-### FAQ série B
-
-**Faut-il un contrat écrit pour une micro-prestation ?** Un court échange mail avec périmètre et nombre de allers-retours évite 80 % des tensions. **Dois-je livrer le prompt ?** Selon le contrat ; sinon, livre une description fonctionnelle équivalente. **Que faire si la plateforme compresse ?** Prévois une marge sur les hautes lumières et teste un export « pire cas ». **Comment gérer un retour tardif ?** Si c’est hors scope, propose un addendum chiffré plutôt qu’une négociation floue.
-
 ### Synthèse série B
 
 Pour **Comment passer d’un rendu amateur à un rendu cinéma** et le périmètre `comment-passer-rendu-amateur-a-cinema-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo de référence
+## Vidéo YouTube Business Dynamite à visionner
 
 Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
@@ -178,27 +177,36 @@ Pour la posture : décider, documenter, livrer.
 
 ![Second repère : timeline A/B et readme look.](/images/blog/comment-passer-rendu-amateur-a-cinema-ia/workflow-2.webp)
 
-## FAQ
+## Foire aux questions
 
-### Un preset suffit ?
-Rarement sans correction primaire.
+### Un preset ciné suffit-il sans correction primaire
 
-### Ultra wide partout ?
-Non : la focale porte une émotion.
+Rarement. Le preset ou le LUT colore une hiérarchie de valeurs qui doit déjà exister : sinon tu obtiens un grade qui « flotte » au-dessus du sujet sans l’ancrer. Travaille d’abord la séparation des plans par contrôle local raisonnable, puis applique un look documenté. Si tu inverses l’ordre, tu masques des problèmes de lumière avec de la couleur et tu crées du artefacts en zones mi-ton.
 
-### Scène crédible ?
-[comment rendre une scène IA plus crédible](/blog/comment-rendre-scene-ia-plus-credible).
+### Faut-il mettre de l’ultra grand-angle partout pour impressionner
 
-### Effet IA ?
-[comment éviter l’effet « image générée »](/blog/comment-eviter-effet-image-generee-ia).
+Non : la focale porte une émotion et une distance psychologique. Le cinéma amateur adore le champ ultra-large spectaculaire parce qu’il est facile à vendre en vignette. Le cinéma mesuré choisit une focale motivée par la proximité avec le personnage ou par la géographie réelle du lieu. Si tu « élargis » sans raison narrative, tu dilues la tension et tu exposes les défauts de géométrie IA au bord du cadre.
 
-### Prompts ciné ?
-[comment écrire un prompt cinematic ultra réaliste pour l’IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia).
+### Comment savoir si ma scène est crédible avant le polish cosmétique
 
-### Mouvement vidéo ?
-[comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia).
+Compare trois lectures rapides : miniature téléphone, plein écran bureau, export compressé test. Si la géographie et la direction du regard tiennent encore après compression, tu es sur une base saine. Sinon, reviens à [comment rendre une scène IA plus crédible](/blog/comment-rendre-scene-ia-plus-credible) avant de pousser les textures.
 
-### Flou image ?
-[pourquoi mes images IA sont floues et comment corriger](/blog/pourquoi-images-ia-floues-comment-corriger).
+### Comment éviter l’effet « image IA » dans un contexte ciné
 
-{/* PUBLICATION DATE: 2026-05-02 */}
+Réduis HDR gratuit, poses catalogue, symétries décoratives et netteté globale agressive. Renforce les motivations physiques : une source qui impose une ombre cohérente, un textile avec usage, une respiration dans le cadrage. Le guide [comment éviter l’effet « image générée »](/blog/comment-eviter-effet-image-generee-ia) compile les erreurs fréquentes que tu peux éliminer avant même le grade final.
+
+### Comment écrire des prompts plus ciné sans empiler des adjectifs
+
+Une intention dominante par plan, une loi lumière par phrase, une focale ressentie plausible. Évite les listes de cinquante qualificatifs qui se contredisent : le modèle choisit au hasard. Pour une structure de phrase complète, pars de [comment écrire un prompt cinematic ultra réaliste pour l’IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia).
+
+### Comment stabiliser le mouvement quand je passe à la vidéo
+
+Aligne la même loi lumière entre les frames clés, évite les zooms numériques sauvages dans les transferts, et teste des segments courts avant la séquence longue. Pour les défauts structurels de mouvement, enchaîne avec [comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia).
+
+### Pourquoi mes images semblent molles même après upscale
+
+Souvent parce que tu traites le flou comme un problème de résolution alors que c’est un problème de hiérarchie de contraste ou de micro-contrastes numériques lissés. Lis [pourquoi mes images IA sont floues et comment corriger](/blog/pourquoi-images-ia-floues-comment-corriger) avant de multiplier les passes de sharpen destructrices.
+
+### Quelle suite de lecture après cet article
+
+Garde [pourquoi tes images IA manquent de contraste et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger) sous la main pour tes étalonnages, puis [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) si tu enchaînes vers le montage.

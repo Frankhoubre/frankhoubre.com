@@ -3,11 +3,12 @@ title: "Comment vendre ses images générées par l’IA (et est-ce légal ?)"
 date: "2026-04-28"
 category: "business"
 excerpt: "Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve."
-thumbnail: "/images/blog/vendre-images-generees-ia-legalite/hero.webp"
 ---
 Vendre une image IA n’est pas illégal **en soi** dans beaucoup de juridictions, mais la légalité dépend de **ce que tu promets**, **ce que contient l’image**, et **ce que permettent les CGU** de l’outil et de la place de marché. Ce guide pose un cadre business propre : packaging de l’offre, transparence, et clauses minimales.
 
-Pour le cadre PI large, [droits d’auteur et images générées par IA : ce qu’il faut absolument savoir](/blog/droits-auteur-images-generees-ia). Pour les tarifs vidéo proches comme analogie méthodo, [combien facturer une vidéo IA professionnelle](/blog/combien-facturer-video-ia-professionnelle-grille-prix).
+Pour le cadre PI large, [droits d’auteur et images générées par IA : ce qu’il faut absolument savoir](/blog/droits-auteur-images-generees-ia). Pour les tarifs vidéo proches comme analogie méthodo, [combien facturer une vidéo IA professionnelle](/blog/combien-facturer-video-ia-professionnelle-grille-prix). Pour une approche pack et wording « branding », relie aussi [comment vendre des visuels IA aux marques](/blog/comment-vendre-visuels-ia-marques).
+
+Pour situer la propriété intellectuelle sans caricature, la page d’introduction de l’[OMPI sur le droit d’auteur](https://www.wipo.int/copyright/fr/) reste une rampe utile. Pour les licences standard que tu attaches souvent à un zip client, le catalogue [Creative Commons](https://creativecommons.org/?lang=fr) aide à nommer clairement ce que tu offres ou refuses.
 
 ## Ce qu’un client achète vraiment
 
@@ -74,10 +75,6 @@ Minute 0 à 5 : écris la phrase « ce que le spectateur doit croire sans légen
 
 Même pour toi-même, rédige un mini brief : public, canal, durée de lecture attendue, interdits (violence, marques, visages réels). Pour une équipe, ajoute une colonne « preuve de conformité » : capture des CGU du service, version du modèle, date d’export. Cette colonne te sauve quand un diffuseur demande d’où vient l’image.
 
-### FAQ élargie
-
-**Dois-je livrer deux versions ?** Oui, A et B avec une phrase de différence nommée, sinon la discussion reste floue. **Faut-il documenter les prompts ?** Oui, même partiellement : c’est ton assurance qualité interne. **Que faire si le modèle change ?** Fixe un brief test et compare avant de poursuivre une série. **La retouche manuelle triche-t-elle ?** Non si tu assumes la chaîne et les limites contractuelles. **Combien de temps par image sérieuse ?** Souvent plus long en validation qu’en génération brute, prévois-le au devis. **Faut-il une cible technique ?** Oui : résolution finale, espace colorimétrique, marge sur hautes lumières si compression sociale. **Et la propriété intellectuelle ?** Vérifie les CGU et les droits sur les références incluses dans le prompt.
-
 ### Poste de contrôle multi-écrans
 
 Chaîne minimale : moniteur principal, laptop standard, smartphone. Si tu n’as que deux écrans, envoie un export test sur ton téléphone via un canal propre (pas un messager qui recompresse à l’infini). Note la différence perçue sur les peaux, les contours, et les micro-contrastes. Beaucoup d’images « IA » le deviennent surtout après une deuxième compression involontaire.
@@ -104,7 +101,7 @@ Pour `vendre-images-generees-ia-legalite`, retiens trois lignes dans ton carnet 
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Comment vendre ses images générées par l’IA (et est-ce légal ?)** — L’extrait « Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `vendre-images-generees-ia-legalite` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Comment vendre ses images générées par l’IA (et est-ce légal ?)** reprend l’extrait « Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve » et pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `vendre-images-generees-ia-legalite` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 
@@ -150,15 +147,11 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 - Nommage stable et version claire.  
 - Note légère ou mail de livraison qui résume les limites connues.  
 
-### FAQ série B
-
-**Faut-il un contrat écrit pour une micro-prestation ?** Un court échange mail avec périmètre et nombre de allers-retours évite 80 % des tensions. **Dois-je livrer le prompt ?** Selon le contrat ; sinon, livre une description fonctionnelle équivalente. **Que faire si la plateforme compresse ?** Prévois une marge sur les hautes lumières et teste un export « pire cas ». **Comment gérer un retour tardif ?** Si c’est hors scope, propose un addendum chiffré plutôt qu’une négociation floue.
-
 ### Synthèse série B
 
 Pour **Comment vendre ses images générées par l’IA (et est-ce légal ?)** et le périmètre `vendre-images-generees-ia-legalite`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-## Vidéo de référence
+## Vidéo YouTube Business Dynamite à visionner
 
 Chaîne YouTube Business Dynamite :  
 [https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
@@ -167,27 +160,44 @@ Pour la posture : preuve et process, pas promesse magique.
 
 ![Second repère : grille droits par pack.](/images/blog/vendre-images-generees-ia-legalite/workflow-2.webp)
 
-## FAQ
+## Foire aux questions
 
-### C’est légal de vendre en France / UE ?
-Souvent oui avec transparence et chaîne propre, mais cas sensibles existent : avocat si doute.
+### C’est légal de vendre mes images IA en France ou dans l’Union européenne
 
-### Dois-je donner ma seed ?
-Seulement si contractuellement demandé ou pour reproduire une série.
+Souvent oui dans une chaîne propre : tu assumes la transparence sur l’outil, tu respectes les CGU du générateur et de la place de marché, tu évites les emprunts identifiables à des œuvres protégées sans cadre clair, et tu livres un périmètre de droits rédigé ou validé par ton conseil. Les zones sensibles restent le portrait réel sans consentement, les marques visibles, les bases entraînées litigieuses dans certains débats, et les promesses contractuelles trop larges sur « aucun risque ». Si tu touches à une campagne majeure ou à une acquisition média sérieuse, un juriste qui connaît la création numérique te fait économiser plus cher que ton temps perdu en litige flou.
 
-### L’exclusivité totale monde existe-t-elle ?
-Rare et chère. Précise secteur et durée.
+### Dois-je systématiquement livrer ma seed et mes prompts bruts
 
-### Puis-je revendre le même visuel à dix clients ?
-Sans exclusivité oui, mais risque réputation si détecté.
+Non par défaut. Tu livres ce qui est utile à la reproductibilité ou ce qui est explicitement prévu au contrat : seed figée par série, description fonctionnelle équivalente, captures des réglages majeurs. Si le client veut la seed pour rejouer une série à l’identique, fais-en une ligne tarifée ou un addendum : tu évites qu’un tiers réexporte ton bundle sans budget correction. Documenter « suffisamment » bat livrer un bloc-notes illisible personne ne relira.
 
-### Et les marques dans l’image ?
-Interdit de livrer sans nettoyage si logos non autorisés.
+### L’exclusivité « monde entier pour toujours » existe-t-elle et à quel prix
 
-### Comment prouver la main humaine ?
-Journal de retouches, calques, fichiers intermédiaires.
+Rarement sous cette forme brute dans les petits contrats : tout le monde négocie une exclusivité sectorielle et temporelle parce qu’elle est défendable et assurable. Si un acheteur insiste sur « monde », réponds avec une fourchette réaliste et une définition de secteur par codes NAF ou par liste de concurrents. Sinon tu bloques ton catalogue pour une phrase vague qui te dessert dans douze mois.
 
-### Où apprendre l’acquisition ?
-[Comment trouver des clients avec la vidéo IA](/blog/comment-trouver-clients-video-ia-acquisition) transpose en partie à l’image.
+### Puis-je revendre le même visuel à plusieurs clients sans risque
 
-{/* PUBLICATION DATE: 2026-04-28 */}
+Sans clause d’exclusivité, oui sur le papier contractuel simple, mais le risque réputationnel existe si deux campagnes se croisent dans un même marché. Préviens dans ton pack ce qui est « licence multi-client » et ce qui est « série réservée ». Ajoute une variante de cadrage ou de palette pour les usages sociaux si tu veux réduire la sensation de copier-coller détectable au scroll.
+
+### Que faire des marques, logos et packaging visibles dans une image IA
+
+Tu assumes soit un décor sans marques lisibles, soit une autorisation, soit une retouche en aval avant livraison. Livrer un logo concurrent ou une silhouette produit reconnaissable sans cadre, c’est inviter le client à te renvoyer la facture et parfois plus. Pour les mockups, sépare la couche brand que tu contrôles en vectoriel propre plutôt que fondue dans un génératif hasardeux.
+
+### Comment je prouve une contribution humaine sérieuse si on me challenge
+
+Garde un journal court : brief initial, deux captures annotées A/B, exports intermédiaires (même légers), calques ou masques si retouche, mail de validation avec date. Tu ne joues pas au tribunal dans ton markdown : tu montres une méthode reproductible compatible avec une diligence raisonnable. Croise avec [droits d’auteur et images générées par IA : ce qu’il faut absolument savoir](/blog/droits-auteur-images-generees-ia) pour aligner langage technique et langage juridique.
+
+### Dois-je livrer deux versions quand le client hésite entre deux directions
+
+Oui, mais avec une phrase qui nomme la différence (« version A clé latérale froide », « version B top light doux »). Sinon tu retombes dans « je préfère l’autre » sans critère. Limite-toi à deux variantes facturées dans le scope pour éviter la spirale gratuite.
+
+### Que faire si la plateforme compresse mon master à l’upload
+
+Prévois une marge sur les hautes lumières, teste un export « pire cas » JPEG ou MP4 de passage, et documente la chaîne : « master livré ProRes / PNG 16 bits, versions réseaux séparées ». Si la diffusion impose une bouillie, ton fichier propre reste la référence contractuelle.
+
+### Comment gérer un retour client tardif hors délai de révision
+
+Tu réponds avec le périmètre signé : deux tours inclus, puis addendum chiffré. Évite la négociation à vide : propose une fourchette et une date de reprise. Pour les équipes marketing, un tableau « déjà validé le JJ/MM » coup court aux débats de mémoire.
+
+### Où approfondir la vente et l’acquisition sans bullshit
+
+Le guide [comment trouver des clients avec la vidéo IA](/blog/comment-trouver-clients-video-ia-acquisition) transpose une partie des séquences commerciales à l’image : brief court, preuve visuelle, cycle de validation. Pour maîtriser ton vocabulaire contrat sans erreur, relis la synthèse [droits d’auteur et images générées par IA : ce qu’il faut absolument savoir](/blog/droits-auteur-images-generees-ia) avant d’envoyer une proposition finale.

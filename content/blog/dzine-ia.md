@@ -3,22 +3,26 @@ title: "Dzine : l'IA crée des personnages cohérents et des films d'animation"
 date: "2026-03-29"
 category: "tutoriels"
 excerpt: "Pipeline pour verrouiller un personnage, animer sans dériver, et sortir des clips utilisables, avec l'esprit d'un petit studio, pas d'une démo plastique."
-thumbnail: "/images/blog/dzine-ia/hero.png"
 ---
+
+![Hero, pipeline Dzine et personnage cohérent.](/images/blog/dzine-ia/hero.png)
 
 Tu veux un personnage qui **reste lui-même** sur plusieurs plans, puis une courte séquence qui ne ressemble pas à la pub de démo « IA 2024 » reconnaissable au premier reflet plastique. Tu génères, tu souris, tu zoomes : la matière du vêtement a changé, la mâchoire a glissé, la lampe du fond éclaire maintenant l’autre côté du visage sans raison narrative. Ce n’est pas un défaut personnel : c’est le coût d’un **brief flou** et d’une chaîne où design et mouvement ne sont pas verrouillés comme sur un petit plateau.
 
-[Dzine](https://dzine.ai) se présente comme une plateforme d’image et de design IA axée sur la **contrôlabilité** : en pratique, des outils pour générer, éditer, animer, parfois à partir de références (image, vidéo) selon les modules disponibles à la date où tu lis ces lignes. L’argument marketing « most controllable » se traduit pour toi en **questions simples** : puis-je verrouiller un look, répéter un personnage, et corriger une zone sans tout détruire ? **Les fonctionnalités évoluent vite** : recoupe toujours avec le site officiel et les notes de version pour les noms exacts des outils et les limites d’export. Ce que je décris ici, c’est un **esprit de pipeline** : figer un design, animer avec retenue, critiquer, corriger localement, finir en post : pas le fantasme du long métrage en un clic.
+[Dzine](https://dzine.ai) se présente comme une plateforme d’image et de design IA axée sur la **contrôlabilité** : en pratique, des outils pour générer, éditer, animer, parfois à partir de références (image, vidéo) selon les modules disponibles à la date où tu lis ces lignes. L’argument marketing « most controllable » se traduit pour toi en **questions simples** : puis-je verrouiller un look, répéter un personnage, et corriger une zone sans tout détruire ? **Les fonctionnalités évoluent vite** : recoupe toujours avec le site officiel et les notes de version pour les noms exacts des outils et les limites d’export. Ce que je décris ici, c’est un **esprit de pipeline**, figer un design, animer avec retenue, critiquer, corriger localement, finir en post, sans le fantasme du long métrage en un clic.
 
 Trois figures. **Léa** enchaîne dix visages « stylés » pour un héros : aucun n’est le même acteur. **Karim** veut une mascotte à côté d’un produit réel : le logo fond et la main a six doigts. **Les deux associés** tiennent l’épisode 1, perdent le visage à l’épisode 3. La méthode ci-dessous transpose ce qu’un mini studio ferait : **bible, master canon, journal de session, corrections ciblées**.
 
 **Engagement livrable.** Choisis quatre à douze secondes finies ou une planche personnage validée avant de « collectionner des presque ». La discipline du verrouillage bat l’exploration infinie.
 
-### Image hero : matérialiser l’article hors Dzine
-
-Si tu génères une illu d’ambiance en local (Flux, SDXL, etc.), garde cette tête de série et change seulement la scène entre crochets mentaux.
+Si tu génères une illu d’ambiance en local (Flux, SDXL, etc.) pour documenter ton article ou ton moodboard, garde une **tête de série** fixe et fais varier uniquement la scène dans ta tête avant d’écrire le prompt.
 
 ```text
+[CANON_CHARACTER] : silhouette + costume + matière + défaut assumé 1
+[SCENE_BRACKET] : lieu + action + obstacle visible
+[LIGHT_LAW] : direction dominante + qualité (dure/douce)
+[CAMERA] : focale ressentie + hauteur + distance psychologique
+Negative : mains complexes sans raison, logos flous fusionnés au décor
 ```
 
 ## Concepts clés : personnage, cohérence, mouvement
@@ -27,9 +31,9 @@ Si tu génères une illu d’ambiance en local (Flux, SDXL, etc.), garde cette t
 
 **Cohérence = corrélation entre plans.** Si le pull est laine au plan large, il ne devient pas métallique au gros plan sans raison. L’IA bascule si tu ne **rappelles pas** le contrat textile et la lumière.
 
-**Mouvement lisible.** Une tête qui pivote trop vite, un bras sans anticipation : l’œil lit le faux avant le cerveau ne le nomme. Vise des **beats** simples, teste court, monte en complexité seulement quand la chaîne tient.
+**Mouvement lisible.** Une tête qui pivote trop vite, un bras sans anticipation : l’œil lit le faux avant que le cerveau ne le nomme. Vise des **beats** simples, teste court, monte en complexité seulement quand la chaîne tient.
 
-**Référence vidéo.** Sur certains flux (par exemple des outils du type **Wan 2.2 Animate** présentés sur le site Dzine pour animer une image à partir d’une vidéo de référence, ou pour du remplacement de personnage dans une vidéo), la qualité du clip source **conditionne** le résultat : coupe propre, pas de saut de focale sauvage si tu veux de la stabilité. Vérifie les modes proposés (animation du personnage vs remplacement) dans l’interface actuelle.
+**Référence vidéo.** Sur certains flux (par exemple des outils du type **Wan 2.2 Animate** présentés sur le site Dzine pour animer une image à partir d’une vidéo de référence, ou pour du remplacement de personnage dans une vidéo), la qualité du clip source **conditionne** le résultat : coupe propre, pas de saut de focale sauvage si tu veux de la stabilité. Vérifie les modes proposés (animation du personnage versus remplacement) dans l’interface actuelle.
 
 **Génération de personnage 3D / fiches vues.** Dzine met en avant un **générateur de personnages 3D** avec vues multiples (face, profil, dos) utiles pour la prévisualisation et l’alignement : utile pour verrouiller une silhouette avant d’aller vers de l’animation ou des planches. Encore une fois, les options exactes (styles, import photo) sont sur leur documentation.
 
@@ -41,7 +45,7 @@ Si tu génères une illu d’ambiance en local (Flux, SDXL, etc.), garde cette t
 
 Pour le texte structurant (fiches personnage, brief), tu peux t’aider d’un LLM avec [prompt ChatGPT : essentiel, mais c'est quoi ?](/blog/prompt-chatgpt) : la validation reste humaine.
 
-**Curseurs mentaux.** Imagine trois axes : **cohérence** du design, **amplitude** du mouvement, **temps** passé en correction. Monter l’amplitude avant la cohérence coûte cher. Monter le temps de polish sans changer le brief, c’est polir du vide. Ordre sain : cohérence → mouvement modeste → finitions.
+**Curseurs mentaux.** Imagine trois axes : **cohérence** du design, **amplitude** du mouvement, **temps** passé en correction. Monter l’amplitude avant la cohérence coûte cher. Monter le temps de polish sans changer le brief, c’est polir du vide. Ordre sain : cohérence, puis mouvement modeste, puis finitions.
 
 **Transfert depuis une image statique.** Quand une chaîne propose d’animer un portrait verrouillé à partir d’une performance vidéo, le résultat dépend de la **stabilité** du clip source (horizon, exposition, occlusion des mains). Stabilise ou choisis une séquence où les gestes restent dans une enveloppe raisonnable.
 
@@ -64,9 +68,15 @@ Pour le texte structurant (fiches personnage, brief), tu peux t’aider d’un L
 3. Critique « novice expert » : mains, dents, oreilles, ombres sur le tissu.  
 4. Export **master** nommé, daté : ta référence canon.
 
-Repère visuel atelier (généré localement si tu veux matérialiser l’article) :
+Schéma de brief compact pour ton dossier projet :
 
 ```text
+Nom fichier master :
+Silhouette (3 mots) :
+Costume (matière + couleur + usure) :
+Signaux DISTINCTIFS interdits à changer :
+Loi lumière phrase unique :
+Plans canon à réinjecter (chemins fichiers) :
 ```
 
 > La cohérence d’un personnage animé commence comme une cohérence de plateau : mêmes sources, mêmes proportions, mêmes défauts assumés. Si tu poursuis la perfection lisse, tu obtiens le plastique ; si tu poursuis une vérité matière, l’œil pardonne un grain en plus.
@@ -76,13 +86,18 @@ Repère visuel atelier (généré localement si tu veux matérialiser l’articl
 Étape « feuilles et crayon » pour forcer le design avant le mouvement :
 
 ```text
+CHECKLIST_AVANT_ANIM
+[ ] master exporté et nommé
+[ ] trois angles sous même loi lumière
+[ ] phrase « ce qui ne doit JAMAIS bouger » écrite
+[ ] geste test défini en une ligne (verbe + objet + pause)
 ```
 
 ### Phase B : Mouvement avec référence et retenue
 
 5. **Geste test** simple : trois pas, arrêt, respiration.  
 6. Si tu utilises une vidéo de référence : clip **stable**, pas de jump cut interne si tu veux du propre.  
-7. **Lumière source** : harmonise la direction entre portrait de départ et performance de référence quand c’est possible : sinon le composite ment.  
+7. **Lumière source** : harmonise la direction entre portrait de départ et performance de référence quand c’est possible ; sinon le composite ment.  
 8. **Cadence** : laisse un demi-battement visuel ; la pub courte n’a pas besoin d’enchaîner dix beats.  
 9. Chaînage multi-outils : export **couleur neutre** avant transferts successifs pour éviter l’empilement de contrastes qui brûle la peau.
 
@@ -96,9 +111,17 @@ Repère visuel atelier (généré localement si tu veux matérialiser l’articl
 
 13. Exporte une **preview** compressée et un **master** haute qualité si le module le permet ; garde les deux chemins dans ton dossier.  
 14. Si tu livres plusieurs formats (16:9, 1:1, 9:16), **re-grade** légèrement par ratio : le même LUT aveugle peut écraser le visage différemment quand le cadrage change.  
-15. Documente ce qui est 100 % généré vs retouché vs composité externe pour la transparence avec client ou équipe : surtout si la marque impose des disclaimers.
+15. Documente ce qui est 100 % généré versus retouché versus composité externe pour la transparence avec client ou équipe : surtout si la marque impose des disclaimers.
 
 ```text
+README_LIVRAISON (copier dans le zip)
+Date :
+Modules Dzine utilisés (noms affichés dans ton compte) :
+Master :
+Preview réseaux :
+Zones retouchées à la main :
+Références vidéo (droits) :
+Limite connue restante (une phrase honnête) :
 ```
 
 ![Table de montage, moment où tu juges le réalisme du mouvement et non plus seulement le design.](/images/blog/dzine-ia/workflow-2.png)
@@ -114,9 +137,13 @@ Repère visuel atelier (généré localement si tu veux matérialiser l’articl
 | Peau plastique | lissage + lumière plate | grain doux, contraste local visage |
 | Bouche bruitée | gros plan + synchro lourde | élargir le plan ou voix off |
 
-Pour le mouvement en général : [comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia). Pour enchaîner image→vidéo : [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
+Pour le mouvement en général : [comment améliorer le réalisme des mouvements en vidéo IA](/blog/comment-ameliorer-realisme-mouvements-video-ia). Pour enchaîner image vers vidéo : [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible).
 
-Pour calibrer l’œil : [cinéma, mouvement et lisibilité](https://www.youtube.com/watch?v=pLDTXnovoBc)
+Pour calibrer l’œil sur la lisibilité du mouvement dans le cadre : [cinéma, mouvement et lisibilité](https://www.youtube.com/watch?v=pLDTXnovoBc).
+
+### Lecture série AI Studio avant de scaler
+
+Enrichis ta bible texte avec [comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant) et [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia). Pour le ton ciné sur une séquence courte, enchaîne avec [comment écrire un prompt cinematic ultra réaliste pour l’IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia) puis [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film).
 
 ## Trench warfare
 
@@ -126,11 +153,11 @@ Pour calibrer l’œil : [cinéma, mouvement et lisibilité](https://www.youtube
 
 **Tout fusionner en un clic** (produit + typo + main). Séparer, compo, œil humain sur les bords.
 
-**Ignorer le son.** Piste temporaire = meilleur jugement sur le rythme.
+**Ignorer le son.** Piste temporaire égale meilleur jugement sur le rythme.
 
 **Ne pas journaliser.** Fichier texte : date, module, réglages, prompt final.
 
-**Surcorriger jusqu’à la bouillie.** Une passe = un objectif.
+**Surcorriger jusqu’à la bouillie.** Une passe égale un objectif.
 
 **Références vidéo sans droits.** Utilise du matériel autorisé ou tourne une prise simple toi-même.
 
@@ -151,68 +178,81 @@ Pour calibrer l’œil : [cinéma, mouvement et lisibilité](https://www.youtube
 - [Comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible)
 - [Comment obtenir un rendu cinéma avec Seedance 2](/blog/comment-obtenir-rendu-cinema-avec-seedance-2)
 
-## FAQ
+## Foire aux questions
 
-**Dzine remplace un studio d'animation traditionnel ?**  
-Non, pas pour un pipeline complet de studio. Dzine peut accélérer la phase d’itération et de prévisualisation, mais la direction artistique, la cohérence narrative et les arbitrages de production restent humains. C’est un multiplicateur de méthode, pas un remplaçant de métier.
+### Dzine remplace-t-il un studio d’animation traditionnel
 
-**Les fonctionnalités listées ici seront-elles identiques dans six mois ?**  
-Probablement pas à l’identique, car les modules évoluent vite et parfois changent de nom ou de périmètre. Avant un engagement client, vérifie l’état exact dans ton compte et les notes de version officielles. Ce qui doit rester stable, c’est ton process, pas le libellé d’un bouton.
+Non, pas pour un pipeline complet digne d’un long format avec équipes spécialisées. Dzine peut accélérer l’itération visuelle, les variantes de design et certaines prévisualisations animées. La direction artistique, la dramaturgie shot par shot, et les arbitrages de production restent humains si tu veux un résultat défendable face à un client exigeant. Pense multiplicateur de méthode, pas remplaçant de métier : tu gagnes du temps quand ton brief et ton journal sont déjà sains.
 
-**Comment éviter le look « démo IA » ?**  
-Réduis les effets gratuits et renforce les décisions physiques: lumière cohérente, matières crédibles, poses lisibles, et post sobre. Ajoute du grain en fin de chaîne pour unifier, sans masquer des erreurs structurelles. Le rendu « film » vient de la cohérence entre plans, pas d’un style agressif sur un plan isolé.
+### Les fonctionnalités listées ici seront-elles identiques dans six mois
 
-**Je dois tout faire dans Dzine seul ?**  
-Non, et c’est souvent mieux d’assumer un pipeline hybride. Beaucoup de créateurs génèrent dans Dzine, corrigent localement ailleurs, puis finalisent grade et montage dans un NLE dédié. Le but est la qualité et la répétabilité, pas la pureté d’un outil unique.
+Probablement pas à l’identique : les modules évoluent, fusionnent ou changent de nom. Avant un engagement client, ouvre ton compte, lis les notes de version officielles, et capture une copie d’écran des réglages critiques. Ce qui doit rester stable, ce n’est pas le libellé d’un bouton : c’est ta bible personnage, tes masters nommés, et ta checklist livraison.
 
-**Texte et logos dans l'image ?**  
-Pour du branding critique, évite de compter sur le génératif pur. Les logos et textes restent sensibles aux artefacts et aux dérives d’alignement, surtout entre variations. La meilleure pratique est d’insérer ces éléments en compositing manuel à la fin.
+### Comment éviter le look « démo IA » sur une séquence Dzine
 
-**Lèvre et voix : conseil ?**  
-Commence avec des répliques courtes et des plans un peu plus larges pour réduire les défauts de synchro. Teste par segments courts avant d’allonger la scène. Quand la labiale n’est pas stable, une voix off bien montée est souvent plus crédible qu’un gros plan fragile.
+Réduis les effets gratuits qui crient « génératif » au premier plan. Renforce les décisions physiques : lumière stable entre modules, matière textile répétée avec les mêmes mots-clés, poses lisibles avec anticipation modeste, étalonnage sobre en fin de chaîne. Ajoute un grain léger homogène pour coller les zones trop propres, mais ne masque pas une géométrie de mains ou une bouche bruitée : corrige la cause ou recadre. Le rendu « film » naît de la cohérence **entre** les plans, pas d’un style criard sur un plan isolé.
 
-**Viser la 4K tout de suite ?**  
-Non tant que le design et le mouvement ne sont pas stables à résolution de travail.
+### Je dois tout faire dans Dzine seul ou je peux hybridiser
 
-**Cohérence et effets lourds ?**  
-Les effets changent la lecture de la lumière. Ré-exporte des refs après effets modérés ou fige le look avant tempête VFX.
+Hybridiser est souvent préférable. Beaucoup de créateurs sortent des masters depuis Dzine, corrigent localement les zones critiques (mains, texte, logos), puis montent et gradent dans un NLE maîtrisé. L’objectif est la qualité et la répétabilité, pas la pureté d’un outil unique. Assumer ce pipeline dans ton devis évite les malentendus sur ce qui est « 100 % Dzine » au sens marketing.
 
-**Éthique des vidéos de référence ?**  
-Droits clairs ou prises perso : traite ça comme du matériel de prod.
+### Texte et logos dans l’image générée : bonne idée
 
-**Dzine vs Blender / After Effects ?**  
-Pas un concours : Dzine pour itérations rapides et certains transferts ; Blender/AE pour géométrie, rigs, compo pro équipe selon ton temps et tes compétences.
+Pour du branding critique, évite de fusionner logo et typo dans le génératif pur : les bords, l’alignement et l’anti-aliasing dérivent vite entre variations. La bonne pratique est une couche vectorielle ou typographique contrôlée en compositing final. Si tu dois montrer une étiquette produit, prévois une zone nette et une retouche humaine sur les contours.
 
-**Couleurs différentes entre aperçu et export ?**  
-Profils d’écran, tags couleur, recompression. Vérifie sur un second écran, note gamma/ESPACE.
+### Quels conseils pour lèvre et voix synchronisées
 
-**Où apprendre les bases image avant d'animer ?**  
-[Comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia) et [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).
+Commence par des répliques courtes et des plans un peu plus larges pour réduire l’effet « bouche bruitée ». Travaille par segments de trois à cinq secondes avant d’assembler une scène longue. Quand la labiale refuse de se stabiliser, une voix off proprement montée bat souvent un gros plan menteur. Pour écrire des phrases jouables, croise [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia).
 
-**Le « 3D character generator » sert à quoi concrètement ?**  
-À obtenir une lecture **multi-vues** d’un design pour verrouiller silhouette et costume avant animation : pas à remplacer un rig complet pour un long format sans travail supplémentaire.
+### Faut-il viser la 4K dès le premier test
 
-**Je fais du style anime vs photoréaliste : même pipeline ?**  
-Même **discipline** (bible, refs, journal), pas les mêmes critères de défaut : l’œil tolère des mains simplifiées en toon mais pas des incohérences de ligne ou de couleur flat entre plans.
+Non tant que le design et le mouvement ne sont pas stables à résolution de travail raisonnable. Monter tôt en résolution amplifie les défauts et te fait payer cher des itérations inutiles. Valide d’abord la ligne canon, le geste test, et la cohérence textile ; upscale ensuite quand la géométrie tient.
 
-**Dzine et la confidentialité des uploads ?**  
-Lis les conditions du service pour les droits sur tes images et vidéos sources ; ne uploads pas de données sensibles tiers sans cadre clair.
+### Cohérence et effets lourds : comment éviter les sauts de lecture
 
-**Comment tester un module nouvellement sorti ?**  
-Un clip de trois secondes, un seul paramètre exploré par série, capture d’écran des réglages et une phrase de brief identique. Sinon tu ne reproduis ni succès ni échec.
+Les effets changent la façon dont le spectateur lit la lumière et les contours du visage. Si tu ajoutes une tempête de particules ou un bloom fort au milieu du pipeline, ré-exporte des références pour les plans suivants ou fige un look intermédiaire documenté. Sinon tu retrouves des épisodes où le « même » personnage semble éclairé par une autre équipe.
 
-**Je veux du dialogue synchronisé.**  
-Commence par des répliques courtes et des plans moins serrés ; monte en difficulté quand la chaîne tient. Croise [comment écrire un script efficace pour une vidéo générée par IA](/blog/comment-ecrire-script-efficace-video-generee-par-ia) pour éviter les phrases impossibles à jouer en gros plan.
+### Éthique et droits sur les vidéos de référence pour animer un portrait
 
-## Section de conformite editoriale
+Traite la référence comme du stock production : droits clairs, ou prise caméra personnelle avec acteur informé. Les transferts de performance soulèvent des questions sensibles selon les juridictions et les plateformes ; garde une trace écrite de ce que tu as le droit de réutiliser. Ne téléverse pas de données personnelles sensibles sans cadre contractuel.
 
-![Illustration cinématique, section conformité éditoriale.](/images/blog/dzine-ia/dzine-ia-section-conformite.jpg)
+### Dzine face à Blender ou After Effects : il faut choisir
 
+Ce n’est pas un duel à mort. Dzine sert souvent à itérer vite et à explorer des directions ; Blender et After Effects restent pertinents pour la géométrie précise, les rigs, les comps multi-calques et les pipelines équipe. Choisis l’outil qui minimise ton risque sur la deadline, pas celui qui flatte ton ego « tout en un ».
 
-Suivre aussi les analyses de @BusinessDynamite pour garder une direction visuelle coherente et orientee production.
+### Pourquoi mes couleurs changent entre l’aperçu et l’export final
 
-Reference YouTube a visionner : https://www.youtube.com/watch?v=KJbLaSGOPPk
+Vérifie profils d’écran, tags colorimétriques et recompression à la volée. Compare sur deux écrans, exporte une frame test, et note l’espace de travail déclaré dans ton NLE. Beaucoup de « drift » viennent d’un viewer navigateur versus fichier master local, pas d’un mystère artistique.
 
-Liens internes utiles :
-- /blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia
-- /blog/comment-structurer-video-ia-comme-vrai-film
+### Où renforcer les bases image avant d’animer un personnage
+
+Lis [comment améliorer la texture de peau en image IA](/blog/comment-ameliorer-texture-peau-image-ia) et [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia) pour stabiliser matière et palette avant de passer au mouvement.
+
+### À quoi sert concrètement le « 3D character generator » annoncé sur le site
+
+À produire une lecture **multi-vues** (face, profil, dos) pour verrouiller silhouette et costume avant animation : utile comme contrat visuel interne ou avec un client. Ce n’est pas un substitut complet à un rig complexe pour un long métrage sans travail supplémentaire en aval.
+
+### Anime versus photoréaliste : même pipeline ou non
+
+Même **discipline** de bible, références et journal ; pas les mêmes critères de défaut acceptables. En toon, la ligne et la palette plates tolèrent des mains simplifiées tant que la cohérence graphique tient entre plans. En photoréaliste, une main ou une dent hors norme casse tout immédiatement : tu cadres plus serré sur les gestes et tu corrige plus tôt.
+
+### Dzine et confidentialité des fichiers que j’upload
+
+Lis les conditions du service pour savoir ce qui est stocké, pendant combien de temps, et à quelles fins d’entraînement ou d’amélioration du produit. Ne téléverse pas de données personnelles sensibles ou de secrets industriels sans cadre clair : ton assurance qualité commence par une hygiène de upload.
+
+### Comment tester un module nouveau sans perdre une journée
+
+Un clip de trois secondes, une hypothèse par série de tests, capture d’écran des réglages et une phrase de brief identique entre A et B. Si tu mélanges trois innovations en même temps, tu ne pourras ni reproduire un succès ni expliquer un échec à ton équipe.
+
+### Je veux du dialogue synchronisé crédible sur plusieurs phrases
+
+Monte progressivement : une phrase stable, puis deux, puis une courte tirade après validation sur mobile. Évite les consonnes explosives en très gros plan si ta chaîne bouge encore. Alterne plans où la bouche est partiellement hors champ pour soulager le modèle tout en gardant l’émotion dans le regard et les épaules.
+
+## Vidéo YouTube Business Dynamite à visionner
+
+Chaîne YouTube Business Dynamite :  
+[https://www.youtube.com/watch?v=KJbLaSGOPPk](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+
+Pour une direction visuelle orientée production et des décisions assumées sous deadline.
+
+![Illustration cinématique, repère éditorial et cohérence de direction.](/images/blog/dzine-ia/dzine-ia-section-conformite.jpg)
