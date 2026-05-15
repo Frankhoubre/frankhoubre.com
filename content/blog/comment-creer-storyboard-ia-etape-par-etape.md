@@ -1,6 +1,6 @@
 ---
 title: "Comment créer un storyboard avec l'IA étape par étape"
-date: "2026-04-16"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Pour créer un storyboard IA étape par étape sans rendu plastique ni galerie décorative : découpage script, bible visuelle, prompts stables, QA séquentielle et livrable production."
 thumbnail: "/images/blog/comment-creer-storyboard-ia-etape-par-etape/hero.webp"
@@ -205,4 +205,4 @@ Le livrable humain reste le PDF annoté et une présentation courte en réunion 
 
 Oui car tu gardes les mêmes lois de lecture : géographie crédible, rythme, intentions nettes. La différence est dans la colonne risque technique et dans les alternatives si la physique refuse une pose. Tu anticipes alors surtout les collisions animation cohérence : mains, cheveux, tissus, perspectives lors des passages image vers vidéo. Ton spectateur reste humain avec les attentes cinématographiques habituelles : aide-le avec des décisions franches et une continuité qui ne dépend pas du miracle du modèle entre deux plans adjacents. Le storyboard reste ton contrat interne même si aucune caméra physique ne passe sur un plateau traditionnel.
 
-<!-- PUBLICATION DATE: 2026-04-16 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

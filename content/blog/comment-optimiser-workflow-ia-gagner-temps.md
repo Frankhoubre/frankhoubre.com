@@ -1,11 +1,11 @@
 ---
 title: "Comment optimiser son workflow IA pour gagner du temps"
-date: "2026-04-16"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Méthode concrète pour optimiser workflow IA et gagner du temps : diagnostic des fuites, timeboxing, organisation des assets, QA et itérations sans dispersion."
 thumbnail: "/images/blog/comment-optimiser-workflow-ia-gagner-temps/hero.webp"
 ---
-<!-- PUBLICATION DATE: 2026-04-16 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->
 
 # Comment optimiser son workflow IA pour gagner du temps
 

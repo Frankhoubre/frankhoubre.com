@@ -1,6 +1,6 @@
 ---
 title: "Workflow Kling 3 pour une animation fluide et réaliste"
-date: "2026-04-14"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Pipeline Kling 3 de A à Z : image pilote, contrôle du mouvement, QA temporelle et post pour des animations fluides et crédibles, sans effet démo."
 thumbnail: "/images/blog/workflow-kling-3-animation-fluide-realiste/hero.webp"
@@ -261,4 +261,4 @@ Le **workflow Kling 3 pour animation fluide et réaliste**, ce n'est pas « plus
 
 Pour des prompts cinéma qui nourrissent tes pilotes, [comment écrire un prompt cinematic ultra réaliste](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia) complète la couche texte amont.
 
-<!-- PUBLICATION DATE: 2026-04-14 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

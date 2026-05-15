@@ -1,12 +1,12 @@
 ---
 title: "Comment produire une vidéo IA en 24h"
-date: "2026-04-17"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Méthode terrain pour produire une vidéo IA en 24h : brief serré, assets disciplinés, génération sans dérive, montage orienté livrable. Idéal quand la deadline est réelle et que le mot-clé produire vidéo IA 24h doit devenir un plan d’exécution, pas une promesse marketing."
 thumbnail: "/images/blog/comment-produire-video-ia-24h/hero.webp"
 ---
 
-<!-- PUBLICATION DATE: 2026-04-17 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->
 
 Tu as promis une vidéo pour demain matin. Pas un « laboratoire créatif » de trois semaines. Une **proposition claire**, des **plans exploitables**, un **son qui tient**, et un fichier que tu peux envoyer sans rougir. Si tu cherches comment **produire vidéo IA 24h** sans retomber dans le chaos des variations infinies, ce guide est ta checklist opérationnelle.
 

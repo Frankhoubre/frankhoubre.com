@@ -1,6 +1,6 @@
 ---
 title: "Workflow complet Seedance 2 pour un rendu cinéma"
-date: "2026-04-14"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "De la fiche plateau à l'export final : pipeline Seedance 2 bout en bout pour un rendu film crédible, sans look démo ni nuit blanche stérile."
 thumbnail: "/images/blog/workflow-complet-seedance-2-rendu-cinema/hero.webp"
@@ -245,4 +245,4 @@ Tu n'as pas besoin d'un preset « cinéma ». Tu as besoin d'une chaîne qui ref
 
 **Checklist livraison client** : master 24p, LUT documentée, liste des plans avec dettes assumées, chaîne IA mentionnée si contrat l'exige. La crédibilité long terme vaut plus qu'un clip « wow » non reproductible.
 
-<!-- PUBLICATION DATE: 2026-04-14 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

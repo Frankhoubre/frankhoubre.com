@@ -1,6 +1,6 @@
 ---
 title: "Comment passer du storyboard à la vidéo finale"
-date: "2026-04-16"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Méthode complète pour passer du storyboard à la vidéo finale avec l’IA : verrouillage image pilote, animation disciplinée, QA temporelle, montage et livraison sans dérive ni surprise client."
 thumbnail: "/images/blog/comment-passer-storyboard-video-finale/hero.webp"
@@ -192,4 +192,4 @@ Ton storyboard était la promesse de lecture ; ta vidéo finale est la promesse 
 
 Pour garder le lien méthode vers image stable puis mouvement dans un seul parcours documenté, réinvestis aussi la logique dossiers et couches du [pipeline complet image vers vidéo IA](/blog/pipeline-complet-image-vers-video-ia). Elle prolonge naturellement ce que tu viens de verrouiller sur le mur des pilotes.
 
-<!-- PUBLICATION DATE: 2026-04-16 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

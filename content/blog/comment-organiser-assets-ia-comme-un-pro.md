@@ -1,6 +1,6 @@
 ---
 title: "Comment organiser ses assets IA comme un pro"
-date: "2026-04-15"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Méthode complète pour organiser assets IA, dossiers, nommage, métadonnées, versions et livraison sans perdre le fil entre image, vidéo, voix et montage."
 thumbnail: "/images/blog/comment-organiser-assets-ia-comme-un-pro/hero.webp"
@@ -272,4 +272,4 @@ Le temps moyen pour répondre à cette question : "où est le master du plan 7 ?
 
 *Une bonne arborescence ne remplace pas le goût. Mais elle protège le goût des accidents évitables.*
 
-<!-- PUBLICATION DATE: 2026-04-15 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

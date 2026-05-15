@@ -1,6 +1,6 @@
 ---
 title: "Pipeline complet image vers vidéo avec l'IA"
-date: "2026-04-15"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Du brief à la livraison : chaîne image pilote, animation IA, contrôle qualité, post et son pour un pipeline complet image vers vidéo crédible, sans surprises ni nuits blanches."
 thumbnail: "/images/blog/pipeline-complet-image-vers-video-ia/hero.webp"
@@ -247,4 +247,4 @@ Tu n'as pas besoin d'une chaîne d'outils plus chère pour commencer : tu as bes
 
 **Checklist livraison minimale** : master avec cadence documentée, LUT ou correction décrite en deux lignes, liste des plans avec dettes assumées, preview compressée validée sur téléphone, mention des briques IA si ton contrat l'exige.
 
-<!-- PUBLICATION DATE: 2026-04-15 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

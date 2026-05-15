@@ -1,6 +1,6 @@
 ---
 title: "Workflow Nano Banana pour créer des personnages cohérents"
-date: "2026-04-14"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Fiche identité, prompts figés, QA visuelle et itérations disciplinées : le pipeline Nano Banana pour des personnages cohérents sur toute une série d'images."
 thumbnail: "/images/blog/workflow-nano-banana-personnages-coherents/hero.webp"
@@ -284,4 +284,4 @@ Une seule personne « gardienne de la bible » par projet. Deux validateurs avec
 
 Le **workflow Nano Banana pour créer des personnages cohérents**, ce n'est pas cliquer plus vite. C'est rejeter plus vite tout ce qui n'est pas la même personne. Fais ça, et Nano Banana redevient un accélérateur, pas un générateur de casting multiples.
 
-<!-- PUBLICATION DATE: 2026-04-14 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->

@@ -1,6 +1,6 @@
 ---
 title: "Workflow Flux pour des images ultra détaillées"
-date: "2026-04-15"
+date: "2026-05-15"
 category: "tutoriels"
 excerpt: "Un protocole de bout en bout pour obtenir des détails crédibles, de la microtexture à la cohérence globale, sans l’effet plastique qui tue le réalisme."
 thumbnail: "/images/blog/workflow-flux-images-ultra-detaillees/hero.webp"
@@ -211,4 +211,4 @@ Pas obligatoirement, mais **ça aide** si tu veux des pipelines reproductibles e
 
 Tu ne construis pas une image « plus nette ». Tu construis une image **plus lisible optiquement**, avec une hiérarchie de matière qui survive au zoom. Flux peut être le moteur central de cette aventure, à condition de traiter le détail comme une conséquence de lumière et de distance, pas comme un filtre après coup. Reviens aux fondamentaux anti‑plastique, compare honnêtement avec d’autres familles de modèles quand tu hésites sur un investissement GPU, et exporte avec une trace de tes passes pour que le succès soit reproductible, pas magique.
 
-<!-- PUBLICATION DATE: 2026-04-15 -->
+<!-- PUBLICATION DATE: 2026-05-15 -->
