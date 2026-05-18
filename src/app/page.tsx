@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { HomeFilmGallery } from "@/components/HomeFilmGallery";
 import { HomeLatestPostGrid } from "@/components/HomeLatestPostGrid";
 import { getHomeLatestPosts } from "@/lib/blog";
 import { getHomeGalleryImages } from "@/lib/home-gallery";
+import { DEFAULT_OG_IMAGE, buildPageMetadata } from "@/lib/metadata";
 import { baseUrl, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -57,34 +59,29 @@ const faqEntries = [
   },
 ] as const;
 
-export const metadata: Metadata = {
-  title: homeTitle,
+export const metadata: Metadata = buildPageMetadata({
+  title: siteName,
+  titleAbsolute: homeTitle,
   description: homeDescription,
-  alternates: { canonical: `${baseUrl}/` },
+  path: "/",
   keywords: [...homeKeywords],
   openGraph: {
     title: homeTitle,
     description: homeDescription,
-    url: `${baseUrl}/`,
-    siteName,
-    locale: "fr_FR",
-    type: "website",
     images: [
       {
-        url: `${baseUrl}/images/home-hero-frank-houbre.png`,
-        width: 1024,
-        height: 434,
-        alt: "Frank Houbre, formateur IA et réalisateur IA",
+        path: DEFAULT_OG_IMAGE.path,
+        width: DEFAULT_OG_IMAGE.width,
+        height: DEFAULT_OG_IMAGE.height,
+        alt: DEFAULT_OG_IMAGE.alt,
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
     title: homeTitle,
     description: homeDescription,
-    images: [`${baseUrl}/images/home-hero-frank-houbre.png`],
   },
-};
+});
 
 const LATEST_COUNT = 6;
 
@@ -161,10 +158,7 @@ export default function HomePage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }}
-      />
+      <JsonLd data={homeJsonLd} />
 
       <div className="relative overflow-x-hidden bg-background text-foreground motion-safe:[--reveal:reveal-up_700ms_ease-out_both]">
         <div

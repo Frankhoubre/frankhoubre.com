@@ -1,16 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
+import { siteName } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Politique de confidentialité",
-  description: `Traitement des données personnelles sur le site de ${siteName} (RGPD).`,
-  alternates: { canonical: `${baseUrl}/politique-confidentialite` },
-};
+  description: `Données personnelles, cookies et droits RGPD sur ${siteName}. Découvrez comment vos informations sont collectées et protégées.`,
+  path: "/politique-confidentialite",
+  openGraph: {
+    title: `Politique de confidentialité | ${siteName}`,
+  },
+});
 
 export default function PrivacyPage() {
   return (
-    <div className="ds-page max-w-3xl">
+    <>
+      <JsonLd
+        data={buildBreadcrumbList([
+          { name: "Accueil", path: "/" },
+          { name: "Politique de confidentialité", path: "/politique-confidentialite" },
+        ])}
+      />
+      <div className="ds-page max-w-3xl">
       <section className="ds-hero p-6 sm:p-8">
         <p className="ds-eyebrow">RGPD</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -155,5 +167,6 @@ export default function PrivacyPage() {
         </section>
       </div>
     </div>
+    </>
   );
 }

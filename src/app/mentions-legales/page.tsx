@@ -1,15 +1,27 @@
 import type { Metadata } from "next";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
+import { siteName } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Mentions légales",
-  description: `Informations légales concernant le site de ${siteName}.`,
-  alternates: { canonical: `${baseUrl}/mentions-legales` },
-};
+  description: `Éditeur, hébergeur et propriété intellectuelle du site ${siteName}. Informations légales et conditions d’utilisation.`,
+  path: "/mentions-legales",
+  openGraph: {
+    title: `Mentions légales | ${siteName}`,
+  },
+});
 
 export default function LegalPage() {
   return (
-    <div className="ds-page max-w-3xl">
+    <>
+      <JsonLd
+        data={buildBreadcrumbList([
+          { name: "Accueil", path: "/" },
+          { name: "Mentions légales", path: "/mentions-legales" },
+        ])}
+      />
+      <div className="ds-page max-w-3xl">
       <section className="ds-hero p-6 sm:p-8">
         <p className="ds-eyebrow">Conformite</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -85,5 +97,6 @@ export default function LegalPage() {
         </section>
       </div>
     </div>
+    </>
   );
 }

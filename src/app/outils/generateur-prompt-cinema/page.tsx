@@ -1,27 +1,16 @@
-import type { Metadata } from "next";
 import { CinemaPromptGenerator } from "@/components/CinemaPromptGenerator";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  buildGraphJsonLd,
+  buildWebApplicationJsonLd,
+  pageUrl,
+} from "@/lib/metadata";
+import {
+  buildOutilPageMetadata,
+  getOutilStructuredData,
+} from "@/lib/outils-metadata";
 
-export const metadata: Metadata = {
-  title: "Generateur de Prompt Cinema IA Gratuit",
-  description:
-    "Creez un prompt cinema IA ultra precis en quelques clics. Choisissez camera, objectif, realisateur et eclairage pour obtenir un prompt en anglais pret a l'emploi.",
-  alternates: { canonical: `${baseUrl}/outils/generateur-prompt-cinema` },
-  openGraph: {
-    title: `Generateur de Prompt Cinema IA Gratuit | ${siteName}`,
-    description:
-      "Un mini-outil gratuit pour generer des prompts cinema puissants pour l'image et la video IA.",
-    url: `${baseUrl}/outils/generateur-prompt-cinema`,
-    siteName,
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `Generateur de Prompt Cinema IA Gratuit | ${siteName}`,
-    description:
-      "Generez un prompt cinema en anglais en 30 secondes avec des reglages visuels professionnels.",
-  },
-};
+export const metadata = buildOutilPageMetadata("promptCinema");
 
 const faqEntries = [
   {
@@ -46,47 +35,28 @@ const faqEntries = [
   },
 ] as const;
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      name: "Generateur de Prompt Cinema IA",
-      url: `${baseUrl}/outils/generateur-prompt-cinema`,
-      description: "Mini-outil interactif gratuit pour generer des prompts cinema en anglais.",
-    },
-    {
-      "@type": "SoftwareApplication",
-      name: "Generateur de Prompt Cinema IA",
-      applicationCategory: "MultimediaApplication",
-      operatingSystem: "Web",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "EUR",
+const toolData = getOutilStructuredData("promptCinema");
+const toolJsonLd = buildWebApplicationJsonLd(toolData);
+const jsonLd = buildGraphJsonLd(
+  ...(toolJsonLd["@graph"] as object[]),
+  {
+    "@type": "FAQPage",
+    url: pageUrl(toolData.path),
+    mainEntity: faqEntries.map((entry) => ({
+      "@type": "Question",
+      name: entry.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: entry.answer,
       },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqEntries.map((entry) => ({
-        "@type": "Question",
-        name: entry.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: entry.answer,
-        },
-      })),
-    },
-  ],
-};
+    })),
+  },
+);
 
 export default function CinemaPromptGeneratorPage() {
   return (
     <main className="ds-page max-w-6xl !pt-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
 
       <CinemaPromptGenerator />
 

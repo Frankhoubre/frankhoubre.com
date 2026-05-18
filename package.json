@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
     "sync:main": "bash scripts/safe-sync.sh main origin"
   },
   "dependencies": {

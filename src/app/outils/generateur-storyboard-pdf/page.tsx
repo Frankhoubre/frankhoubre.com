@@ -1,12 +1,25 @@
+import { JsonLd } from "@/components/JsonLd";
 import { ToolIframePage } from "@/components/ToolIframePage";
+import { buildWebApplicationJsonLd } from "@/lib/metadata";
+import {
+  buildOutilPageMetadata,
+  getOutilStructuredData,
+} from "@/lib/outils-metadata";
 
-export default function StoryboardPdfToolPage() {
+export const metadata = buildOutilPageMetadata("storyboard");
+
+const structuredData = getOutilStructuredData("storyboard");
+
+export default function GenerateurStoryboardPdfPage() {
   return (
-    <ToolIframePage
-      title="Generateur de storyboard PDF IA"
-      subtitle="Transforme tes images IA en storyboard presentable avec mise en page propre, annotations et export PDF pour production ou client."
-      iframeTitle="Generateur storyboard PDF IA"
-      iframeSrc="/outils/generateur-storyboard-pdf/index.html"
-    />
+    <>
+      <JsonLd data={buildWebApplicationJsonLd(structuredData)} />
+      <ToolIframePage
+        title="Generateur de storyboard PDF IA"
+        subtitle="Collez vos images generees, ajoutez vos notes de plan, puis exportez un storyboard PDF pagine avec cases de texte pour presenter votre projet."
+        iframeTitle="Generateur storyboard PDF IA"
+        iframeSrc="/outils/generateur-storyboard-pdf/index.html"
+      />
+    </>
   );
 }

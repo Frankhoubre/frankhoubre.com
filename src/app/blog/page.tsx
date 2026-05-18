@@ -1,33 +1,36 @@
 import type { Metadata } from "next";
 import { BlogList } from "@/components/BlogList";
 import { getAllPosts } from "@/lib/blog";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
+import { siteName } from "@/lib/site";
 
 export const revalidate = 3600;
 
-export const metadata: Metadata = {
-  title: "Blog",
-  description: `Articles et notes de ${siteName}.`,
-  alternates: { canonical: `${baseUrl}/blog` },
+const blogDescription = `Tutoriels IA, workflows image et vidéo, analyses d’outils et méthodes de direction artistique par ${siteName}. Lisez le blog pour progresser vite.`;
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Blog IA vidéo et image",
+  description: blogDescription,
+  path: "/blog",
   openGraph: {
-    title: `Blog | ${siteName}`,
-    description: `Articles et notes de ${siteName}.`,
-    url: `${baseUrl}/blog`,
-    siteName,
-    type: "website",
+    title: `Blog IA vidéo et image | ${siteName}`,
+    description: blogDescription,
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `Blog | ${siteName}`,
-    description: `Articles et notes de ${siteName}.`,
-  },
-};
+});
 
 export default function BlogIndexPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="ds-page max-w-5xl">
+    <>
+      <JsonLd
+        data={buildBreadcrumbList([
+          { name: "Accueil", path: "/" },
+          { name: "Blog", path: "/blog" },
+        ])}
+      />
+      <div className="ds-page max-w-5xl">
       <header className="ds-cinematic-frame mb-12 max-w-4xl p-6 sm:p-8">
         <div className="ds-cinematic-beam" aria-hidden />
         <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
@@ -48,5 +51,6 @@ export default function BlogIndexPage() {
       </header>
       <BlogList posts={posts} gridLayout />
     </div>
+    </>
   );
 }

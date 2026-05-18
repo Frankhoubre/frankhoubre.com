@@ -88,7 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/outils/calculateur-budget-production-ia/`,
+      url: `${baseUrl}/outils/calculateur-budget-production-ia`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
@@ -110,6 +110,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/liens`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/prestation`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.75,
     },
     {
       url: `${baseUrl}/contact`,

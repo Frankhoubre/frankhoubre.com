@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogList } from "@/components/BlogList";
 import { getPostsByCategory } from "@/lib/blog";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
 import {
-  baseUrl,
   blogCategories,
   getCategoryLabel,
   isBlogCategorySlug,
@@ -46,23 +47,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     CATEGORY_DESCRIPTIONS[category] ??
     `Articles de la catégorie « ${label} » sur le blog de ${siteName}.`;
 
-  return {
-    title: label,
-    description: desc,
-    alternates: { canonical: `${baseUrl}/blog/category/${category}` },
+  return buildPageMetadata({
+    title: `${label} — blog IA`,
+    description: `${desc} Parcourez les articles et tutoriels de la catégorie ${label}.`,
+    path: `/blog/category/${category}`,
     openGraph: {
-      title: `${label} | ${siteName}`,
-      description: desc,
-      url: `${baseUrl}/blog/category/${category}`,
-      siteName,
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${label} | ${siteName}`,
+      title: `${label} | Blog ${siteName}`,
       description: desc,
     },
-  };
+  });
 }
 
 export const revalidate = 3600;
@@ -72,9 +65,18 @@ export default async function BlogCategoryPage({ params }: Props) {
   if (!isBlogCategorySlug(category)) notFound();
 
   const posts = getPostsByCategory(category);
+  const label = getCategoryLabel(category);
 
   return (
-    <div className="ds-page max-w-5xl">
+    <>
+      <JsonLd
+        data={buildBreadcrumbList([
+          { name: "Accueil", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: label, path: `/blog/category/${category}` },
+        ])}
+      />
+      <div className="ds-page max-w-5xl">
       <header className="ds-cinematic-frame mb-12 max-w-4xl p-6 sm:p-8">
         <div className="ds-cinematic-beam" aria-hidden />
         <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
@@ -92,5 +94,6 @@ export default async function BlogCategoryPage({ params }: Props) {
       </header>
       <BlogList posts={posts} initialCategory={category} gridLayout />
     </div>
+    </>
   );
 }

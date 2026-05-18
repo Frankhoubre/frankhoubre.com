@@ -1,28 +1,31 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
+import { siteName } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Outils",
-  description: `Sélection d'outils IA recommandés par ${siteName}.`,
-  alternates: { canonical: `${baseUrl}/outils` },
+const outilsDescription = `Outils IA gratuits : annuaires image et audio, storyboard PDF, calculateur budget, reverse prompting et générateur de prompts cinéma par ${siteName}.`;
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Outils IA gratuits",
+  description: outilsDescription,
+  path: "/outils",
   openGraph: {
-    title: `Outils | ${siteName}`,
-    description: `Sélection d'outils IA recommandés par ${siteName}.`,
-    url: `${baseUrl}/outils`,
-    siteName,
-    type: "website",
+    title: `Outils IA gratuits | ${siteName}`,
+    description: outilsDescription,
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `Outils | ${siteName}`,
-    description: `Sélection d'outils IA recommandés par ${siteName}.`,
-  },
-};
+});
 
 export default function OutilsPage() {
   return (
-    <div className="ds-page max-w-5xl">
+    <>
+      <JsonLd
+        data={buildBreadcrumbList([
+          { name: "Accueil", path: "/" },
+          { name: "Outils", path: "/outils" },
+        ])}
+      />
+      <div className="ds-page max-w-5xl">
       <header className="ds-surface max-w-3xl p-6 sm:p-8">
         <p className="text-xs uppercase tracking-[0.18em] text-neutral-500">
           Ressources
@@ -160,5 +163,6 @@ export default function OutilsPage() {
         </ul>
       </section>
     </div>
+    </>
   );
 }

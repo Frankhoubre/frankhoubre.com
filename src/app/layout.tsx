@@ -3,7 +3,8 @@ import { Archivo, Space_Grotesk } from "next/font/google";
 import { FormationPromoModal } from "@/components/FormationPromoModal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { baseUrl, siteName } from "@/lib/site";
+import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/metadata";
+import { baseUrl, person, siteName } from "@/lib/site";
 import "./globals.css";
 
 const headingFont = Archivo({
@@ -28,6 +29,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName,
+    images: [
+      {
+        url: absoluteUrl(DEFAULT_OG_IMAGE.path),
+        width: DEFAULT_OG_IMAGE.width,
+        height: DEFAULT_OG_IMAGE.height,
+        alt: DEFAULT_OG_IMAGE.alt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: person.description,
+    images: [absoluteUrl(DEFAULT_OG_IMAGE.path)],
   },
 };
 

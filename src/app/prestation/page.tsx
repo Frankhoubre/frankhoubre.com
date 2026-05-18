@@ -3,32 +3,69 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { HomeFilmGallery } from "@/components/HomeFilmGallery";
 import { getHomeGalleryImages } from "@/lib/home-gallery";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  buildBreadcrumbList,
+  buildGraphJsonLd,
+  buildPageMetadata,
+  pageUrl,
+} from "@/lib/metadata";
+import { person, siteName } from "@/lib/site";
 
-const pageTitle = "Prestation conseil IA pour entreprises et boîtes de prod";
+const pageTitle = "Conseil IA production vidéo et image";
 const pageDescription =
-  "Accompagnement conseil IA pour entreprises et boîtes de production : optimisation des workflows, des coûts et de la vitesse d'exécution. Tarif fixe 4200EUR HT / jour, en distanciel ou sur Paris et Strasbourg, avec déplacements possibles.";
+  "Conseil IA pour entreprises et boîtes de prod : workflows, coûts et vitesse d’exécution. 4 200 € HT/jour, distanciel ou Paris/Strasbourg. Contactez-moi pour un premier échange.";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: pageTitle,
   description: pageDescription,
-  alternates: { canonical: `${baseUrl}/prestation` },
+  path: "/prestation",
   openGraph: {
     title: `${pageTitle} | ${siteName}`,
     description: pageDescription,
-    url: `${baseUrl}/prestation`,
-    locale: "fr_FR",
-    type: "website",
     images: [
       {
-        url: `${baseUrl}/images/home-hero-frank-houbre.png`,
-        width: 1024,
-        height: 434,
-        alt: "Conseil IA pour production video et image",
+        path: "/images/home-hero-frank-houbre.png",
+        alt: "Conseil IA pour production vidéo et image",
       },
     ],
   },
-};
+});
+
+const prestationJsonLd = buildGraphJsonLd(
+  {
+    "@type": "Service",
+    name: "Conseil IA production vidéo et image",
+    description: pageDescription,
+    url: pageUrl("/prestation"),
+    provider: {
+      "@type": "Person",
+      name: person.name,
+      url: person.url,
+      jobTitle: person.jobTitle,
+    },
+    areaServed: [
+      { "@type": "City", name: "Paris" },
+      { "@type": "City", name: "Strasbourg" },
+      { "@type": "Country", name: "France" },
+    ],
+    offers: {
+      "@type": "Offer",
+      price: "4200",
+      priceCurrency: "EUR",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "4200",
+        priceCurrency: "EUR",
+        unitText: "jour",
+      },
+    },
+  },
+  buildBreadcrumbList([
+    { name: "Accueil", path: "/" },
+    { name: "Prestation", path: "/prestation" },
+  ]),
+);
 
 const keyBenefits = [
   {
@@ -60,7 +97,9 @@ export default function PrestationPage() {
   const galleryImages = getHomeGalleryImages();
 
   return (
-    <div className="relative overflow-hidden bg-background text-foreground">
+    <>
+      <JsonLd data={prestationJsonLd} />
+      <div className="relative overflow-hidden bg-background text-foreground">
       <section className="relative isolate overflow-hidden border-b border-zinc-800 bg-zinc-950">
         <div
           className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/55"
@@ -227,5 +266,6 @@ export default function PrestationPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

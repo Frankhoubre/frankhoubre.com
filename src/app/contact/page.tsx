@@ -1,17 +1,52 @@
 import type { Metadata } from "next";
-import { baseUrl, siteName } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  buildBreadcrumbList,
+  buildGraphJsonLd,
+  buildPageMetadata,
+  pageUrl,
+} from "@/lib/metadata";
+import { person, siteName } from "@/lib/site";
 
 const contactEmail = "hello@businessdynamite.xyz";
+const contactTitle = `Contact ${siteName}`;
+const contactDescription = `Une question ou un projet IA vidéo/image ? Écrivez à ${contactEmail} pour un échange sur formation, réalisation ou conseil. Réponse sous 48 h.`;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Contact",
-  description: `Contacter ${siteName}.`,
-  alternates: { canonical: `${baseUrl}/contact` },
-};
+  description: contactDescription,
+  path: "/contact",
+  openGraph: {
+    title: contactTitle,
+    description: contactDescription,
+  },
+});
+
+const contactJsonLd = buildGraphJsonLd(
+  {
+    "@type": "ContactPage",
+    name: contactTitle,
+    url: pageUrl("/contact"),
+    description: contactDescription,
+    mainEntity: {
+      "@type": "Person",
+      name: person.name,
+      email: contactEmail,
+      url: person.url,
+      jobTitle: person.jobTitle,
+    },
+  },
+  buildBreadcrumbList([
+    { name: "Accueil", path: "/" },
+    { name: "Contact", path: "/contact" },
+  ]),
+);
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+    <>
+      <JsonLd data={contactJsonLd} />
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
       <div className="ds-surface p-6 sm:p-8">
         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
           Parlons de ton projet
@@ -30,5 +65,6 @@ export default function ContactPage() {
         </p>
       </div>
     </div>
+    </>
   );
 }

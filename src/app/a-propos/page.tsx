@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  ABOUT_OG_IMAGE,
+  buildBreadcrumbList,
+  buildGraphJsonLd,
+  buildPageMetadata,
+} from "@/lib/metadata";
 import { baseUrl, person, socialLinks } from "@/lib/site";
 
 const aboutTitle = "À propos de Frank Houbre | Formateur IA, réalisateur IA et entrepreneur";
@@ -20,26 +27,35 @@ const selections = [
   "Bangkok Movie Awards - Finaliste",
 ] as const;
 
-export const metadata: Metadata = {
-  title: aboutTitle,
+export const metadata: Metadata = buildPageMetadata({
+  title: "À propos",
+  titleAbsolute: aboutTitle,
   description: aboutDescription,
-  alternates: { canonical: `${baseUrl}/a-propos` },
+  path: "/a-propos",
   openGraph: {
+    type: "profile",
     title: aboutTitle,
     description: aboutDescription,
-    url: `${baseUrl}/a-propos`,
-    type: "profile",
-    locale: "fr_FR",
     images: [
       {
-        url: `${baseUrl}/images/frank-houbre-about.png`,
-        width: 520,
-        height: 520,
-        alt: "Portrait de Frank Houbre",
+        path: ABOUT_OG_IMAGE.path,
+        width: ABOUT_OG_IMAGE.width,
+        height: ABOUT_OG_IMAGE.height,
+        alt: ABOUT_OG_IMAGE.alt,
       },
     ],
   },
-};
+  twitter: {
+    title: aboutTitle,
+    description: aboutDescription,
+    images: [`${baseUrl}${ABOUT_OG_IMAGE.path}`],
+  },
+});
+
+const aboutBreadcrumbJsonLd = buildBreadcrumbList([
+  { name: "Accueil", path: "/" },
+  { name: "À propos", path: "/a-propos" },
+]);
 
 export default function AboutPage() {
   const jsonLd = {
@@ -72,10 +88,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={buildGraphJsonLd(jsonLd, aboutBreadcrumbJsonLd)} />
 
       <article className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <header className="ds-cinematic-frame grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.55fr_1.45fr] lg:items-start">

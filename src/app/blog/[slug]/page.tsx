@@ -9,6 +9,7 @@ import { ArticleSidebarSearch } from "@/components/ArticleSidebarSearch";
 import { ArticleToc } from "@/components/ArticleToc";
 import { Badge } from "@/components/Badge";
 import { createBlogMdxComponents } from "@/components/createBlogMdxComponents";
+import { JsonLd } from "@/components/JsonLd";
 import { FaqSection } from "@/components/FaqSection";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { RelatedPosts } from "@/components/RelatedPosts";
@@ -26,6 +27,7 @@ import {
 } from "@/lib/blog";
 import type { FaqPair } from "@/lib/mdx-pipeline";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
+import { buildPageMetadata } from "@/lib/metadata";
 import { baseUrl, getCategoryLabel, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -67,29 +69,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${baseUrl}${thumb}`
     : undefined;
 
-  return {
+  return buildPageMetadata({
     title,
     description,
-    alternates: { canonical: `${baseUrl}/blog/${slug}` },
+    path: `/blog/${slug}`,
     openGraph: {
       type: "article",
-      title,
+      title: `${title} | ${siteName}`,
       description,
       publishedTime: post.frontmatter.date,
       modifiedTime: post.frontmatter.dateModified ?? post.frontmatter.date,
-      url: `${baseUrl}/blog/${slug}`,
-      siteName,
       ...(ogImage
-        ? { images: [{ url: ogImage, width: 1200, height: 630 }] }
+        ? { images: [{ path: ogImage, width: 1200, height: 630 }] }
         : {}),
     },
     twitter: {
-      card: "summary_large_image",
       title,
       description,
       ...(ogImage ? { images: [ogImage] } : {}),
     },
-  };
+    authors: [{ name: person.name, url: person.url }],
+  });
 }
 
 function buildJsonLd(opts: {
@@ -305,10 +305,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <ReadingProgressBar />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,42rem)_minmax(0,1fr)] lg:gap-10">

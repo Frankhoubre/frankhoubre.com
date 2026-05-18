@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { baseUrl } from "@/lib/site";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  buildBreadcrumbList,
+  buildGraphJsonLd,
+  buildPageMetadata,
+  pageUrl,
+} from "@/lib/metadata";
+import { siteName } from "@/lib/site";
 
-const pageTitle = "Liens - Podcast, réseaux et outils IA";
+const pageTitle = "Liens — podcast, réseaux et outils IA";
 const pageDescription =
-  "Tous mes liens utiles : outils IA, podcast Génération IA, réseaux sociaux et ressources AI Studios.";
+  "Liens utiles de Frank Houbre : outils IA, podcast Génération IA, réseaux sociaux et ressources AI Studios. Suivez et accédez aux ressources en un clic.";
 
 type FeaturedTool = {
   name: string;
@@ -104,23 +111,20 @@ const linkGroups: LinkGroup[] = [
   },
 ];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: pageTitle,
   description: pageDescription,
-  alternates: { canonical: `${baseUrl}/liens` },
+  path: "/liens",
   openGraph: {
-    title: "Liens - Podcast, réseaux et outils IA | AI Studio",
+    title: `${pageTitle} | ${siteName}`,
     description: pageDescription,
-    url: `${baseUrl}/liens`,
-    type: "website",
-    locale: "fr_FR",
   },
   twitter: {
-    card: "summary",
-    title: "Liens - Podcast, réseaux et outils IA | AI Studio",
+    card: "summary_large_image",
+    title: `${pageTitle} | ${siteName}`,
     description: pageDescription,
   },
-};
+});
 
 function ExternalLinkButton({ label, href }: { label: string; href: string }) {
   return (
@@ -136,27 +140,29 @@ function ExternalLinkButton({ label, href }: { label: string; href: string }) {
 }
 
 export default function LiensPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Liens AI Studio",
-    description: pageDescription,
-    url: `${baseUrl}/liens`,
-    numberOfItems: featuredTools.length,
-    itemListElement: featuredTools.map((tool, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: tool.name,
-      url: tool.href,
-    })),
-  };
+  const jsonLd = buildGraphJsonLd(
+    {
+      "@type": "ItemList",
+      name: `Liens | ${siteName}`,
+      description: pageDescription,
+      url: pageUrl("/liens"),
+      numberOfItems: featuredTools.length,
+      itemListElement: featuredTools.map((tool, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: tool.name,
+        url: tool.href,
+      })),
+    },
+    buildBreadcrumbList([
+      { name: "Accueil", path: "/" },
+      { name: "Liens", path: "/liens" },
+    ]),
+  );
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
 
       <div className="relative overflow-hidden bg-background text-foreground">
         <div
