@@ -8,17 +8,29 @@ d’article**. Le frontmatter est détecté par la **première** paire de lignes
 `---` seules, pour ne pas couper le corps si un séparateur horizontal apparaît
 plus bas.
 
-Usage: python3 scripts/enrich_blog_posts_min_2000_words.py
+Usage:
+
+  python3 scripts/enrich_blog_posts_min_2000_words.py
+
+Optionnel :
+
+  BLOG_ENRICH_MIN_WORDS=2800   # seuil cible (défaut 2000)
+  BLOG_ENRICH_ONLY=slug-a,slug-b   # n’enrichir que ces slugs (sinon tous les .md)
 """
 from __future__ import annotations
 
+import os
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOG = ROOT / "content" / "blog"
 MARKER = "## Vidéo YouTube à intégrer"
-MIN_WORDS = 2000
+MIN_WORDS = int(os.environ.get("BLOG_ENRICH_MIN_WORDS", "2000"))
+ENRICH_ONLY = os.environ.get("BLOG_ENRICH_ONLY", "").strip()
+ENRICH_ONLY_SLUGS = (
+    {s.strip() for s in ENRICH_ONLY.split(",") if s.strip()} if ENRICH_ONLY else None
+)
 PH1 = "## Approfondissement terrain"
 PH2 = "## Prolongement série B : livrables, risques et gouvernance"
 
@@ -245,6 +257,8 @@ def apply_enrichment(
 def main() -> None:
     updated = 0
     for path in sorted(BLOG.glob("*.md")):
+        if ENRICH_ONLY_SLUGS is not None and path.stem not in ENRICH_ONLY_SLUGS:
+            continue
         raw = path.read_text(encoding="utf-8")
         parsed = parse_frontmatter(raw)
         if not parsed:
