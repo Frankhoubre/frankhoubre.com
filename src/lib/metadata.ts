@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { baseUrl, siteName } from "@/lib/site";
 
-/** Default social share image (declare 1200×630 for platforms; file may differ). */
+/** Default social share image (real 1200×630 JPEG). */
 export const DEFAULT_OG_IMAGE = {
-  path: "/images/home-hero-frank-houbre.png",
+  path: "/images/og-default.jpg",
   width: 1200,
   height: 630,
   alt: "Frank Houbre — formateur IA et réalisateur IA",

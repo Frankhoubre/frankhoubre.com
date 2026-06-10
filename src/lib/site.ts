@@ -28,8 +28,15 @@ function trimTrailingSlash(url: string): string {
   return url.replace(/\/+$/, "");
 }
 
+/**
+ * URL canonique de production en repli : garantit des canonicals, sitemap et
+ * JSON-LD corrects même si NEXT_PUBLIC_SITE_URL n'est pas défini au build.
+ */
 export const baseUrl = trimTrailingSlash(
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://www.frankhoubre.com"),
 );
 
 export const siteName = "Frank Houbre";
@@ -59,6 +66,6 @@ export const person = {
     "Mon objectif est d’aider les créateurs à produire des images, vidéos et films IA plus crédibles, en s’appuyant sur un vrai langage de réalisation : lumière, cadre, mouvement, montage et continuité visuelle.",
   ] as const,
   url: baseUrl,
-  image: "/images/author.svg",
+  image: "/images/frank-houbre-about.png",
   sameAs: socialLinks.map((item) => item.href),
 } as const;

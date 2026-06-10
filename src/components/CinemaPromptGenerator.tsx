@@ -327,6 +327,7 @@ export function CinemaPromptGenerator() {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (!saved) return;
       const parsed = JSON.parse(saved) as Partial<FormState>;
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- hydratation localStorage post-SSR
       setState((prev) => ({
         camera: parsed.camera ?? prev.camera,
         lens: parsed.lens ?? prev.lens,
@@ -373,12 +374,12 @@ export function CinemaPromptGenerator() {
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-neutral-500">Mini outil gratuit</p>
             <h1 className="mt-3 text-3xl font-semibold leading-tight text-neutral-950 sm:text-4xl">
-              Generateur de prompt cinema IA
+              Générateur de prompt cinéma IA
             </h1>
             <p className="mt-4 max-w-2xl text-neutral-700">
               Choisissez une camera, un objectif, une ouverture, un ISO, un style visuel et un
-              setup lumiere.
-              L&apos;outil genere automatiquement un prompt professionnel en anglais, pret pour
+              setup lumière.
+              L&apos;outil génère automatiquement un prompt professionnel en anglais, prêt pour
               Midjourney, Runway, Kling, Sora ou Flux.
             </p>
 
@@ -390,7 +391,7 @@ export function CinemaPromptGenerator() {
               }}
             >
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Camera</span>
+                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Caméra</span>
                 <select
                   value={state.camera}
                   onChange={(e) => updateField("camera", e.target.value)}
@@ -465,7 +466,7 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Eclairage</span>
+                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Éclairage</span>
                 <select
                   value={state.lighting}
                   onChange={(e) => updateField("lighting", e.target.value)}
@@ -480,7 +481,7 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block sm:col-span-2">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Sujet / scene (optionnel)</span>
+                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Sujet / scène (optionnel)</span>
                 <input
                   type="text"
                   value={state.subject}
@@ -495,7 +496,7 @@ export function CinemaPromptGenerator() {
                   type="submit"
                   className="ds-cta-dark"
                 >
-                  Generer le prompt
+                  Générer le prompt
                 </button>
                 <button
                   type="button"
@@ -505,7 +506,7 @@ export function CinemaPromptGenerator() {
                   Copier le prompt
                 </button>
                 <span className={`text-sm text-emerald-700 transition-opacity ${copied ? "opacity-100" : "opacity-0"}`}>
-                  Prompt copie.
+                  Prompt copié.
                 </span>
               </div>
             </form>
@@ -516,7 +517,7 @@ export function CinemaPromptGenerator() {
             {loading ? (
               <div className="mt-3 flex items-center gap-2 text-sm text-neutral-700">
                 <span className="inline-block h-2.5 w-2.5 animate-ping rounded-full bg-neutral-700"></span>
-                Generation en cours...
+                Génération en cours…
               </div>
             ) : null}
             <pre className="mt-3 min-h-[240px] whitespace-pre-wrap rounded-xl border border-neutral-200 bg-white p-4 text-sm leading-relaxed text-neutral-800">

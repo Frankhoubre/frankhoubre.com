@@ -23,7 +23,7 @@ export default function LegalPage() {
       />
       <div className="ds-page max-w-3xl">
       <section className="ds-hero p-6 sm:p-8">
-        <p className="ds-eyebrow">Conformite</p>
+        <p className="ds-eyebrow">Conformité</p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
           Mentions légales
         </h1>

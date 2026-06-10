@@ -25,7 +25,7 @@ export const metadata: Metadata = buildPageMetadata({
     description: pageDescription,
     images: [
       {
-        path: "/images/home-hero-frank-houbre.png",
+        path: "/images/og-default.jpg",
         alt: "Conseil IA pour production vidéo et image",
       },
     ],
@@ -154,7 +154,7 @@ export default function PrestationPage() {
             <dl className="mt-5 space-y-4 text-sm">
               <div>
                 <dt className="font-medium text-zinc-900">Tarif journalier</dt>
-                <dd className="mt-1 text-zinc-700">4200EUR HT / jour (tarif fixe)</dd>
+                <dd className="mt-1 text-zinc-700">4 200 € HT / jour (tarif fixe)</dd>
               </div>
               <div>
                 <dt className="font-medium text-zinc-900">Modalités</dt>
@@ -259,7 +259,7 @@ export default function PrestationPage() {
               Me contacter pour une mission
             </Link>
             <p className="text-sm text-zinc-600">
-              Tarif fixe: <strong>4200EUR HT / jour</strong> - distanciel, Paris, Strasbourg,
+              Tarif fixe : <strong>4 200 € HT / jour</strong> — distanciel, Paris, Strasbourg,
               déplacements possibles.
             </p>
           </div>

@@ -7,9 +7,10 @@ const OFFSET = 120;
 
 type Props = {
   items: TocItem[];
+  layout?: "sidebar" | "inline";
 };
 
-export function ArticleToc({ items }: Props) {
+export function ArticleToc({ items, layout = "sidebar" }: Props) {
   const [active, setActive] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
   const [trackH, setTrackH] = useState(0);
@@ -72,7 +73,9 @@ export function ArticleToc({ items }: Props) {
   return (
     <nav
       aria-label="Sommaire"
-      className="relative w-56 shrink-0 text-sm text-neutral-800"
+      className={`relative text-sm text-neutral-800 ${
+        layout === "inline" ? "w-full" : "w-56 shrink-0"
+      }`}
     >
       <p className="mb-3 font-semibold text-neutral-950">
         Sommaire

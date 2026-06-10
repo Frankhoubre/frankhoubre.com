@@ -80,7 +80,7 @@ export default async function BlogCategoryPage({ params }: Props) {
       <header className="ds-cinematic-frame mb-12 max-w-4xl p-6 sm:p-8">
         <div className="ds-cinematic-beam" aria-hidden />
         <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
-          Categorie blog
+          Catégorie blog
         </p>
         <h1 className="relative z-10 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           <span className="ds-title-line">

@@ -86,11 +86,11 @@ export default function OutilsPage() {
                 Mini outil interactif
               </p>
               <h2 className="mt-2 text-xl font-semibold text-neutral-950">
-                Generateur de storyboard PDF IA
+                Générateur de storyboard PDF IA
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-                Collez vos images generees, ajoutez vos notes de plan, puis exportez un storyboard PDF
-                pagine avec cases de texte pour presenter votre projet.
+                Collez vos images générées, ajoutez vos notes de plan, puis exportez un storyboard PDF
+                paginé avec cases de texte pour présenter votre projet.
               </p>
               <Link
                 href="/outils/generateur-storyboard-pdf"
@@ -109,11 +109,11 @@ export default function OutilsPage() {
                 Calculateur budget production IA
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-                Estimez le cout reel d&apos;un projet video IA (abonnements, credits, revisions) et
-                convertissez les credits Midjourney, Runway ou ElevenLabs en euros.
+                Estimez le coût réel d&apos;un projet vidéo IA (abonnements, crédits, révisions) et
+                convertissez les crédits Midjourney, Runway ou ElevenLabs en euros.
               </p>
               <Link
-                href="/outils/calculateur-budget-production-ia/"
+                href="/outils/calculateur-budget-production-ia"
                 className="ds-link mt-4 inline-flex cursor-pointer text-sm font-medium text-neutral-950"
               >
                 Ouvrir l&apos;outil
@@ -129,7 +129,7 @@ export default function OutilsPage() {
                 Reverse Prompting Image IA
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-                Uploadez une image et laissez l&apos;outil analyser composition, lumiere et style pour
+                Uploadez une image et laissez l&apos;outil analyser composition, lumière et style pour
                 reconstruire automatiquement un prompt IA exploitable.
               </p>
               <Link

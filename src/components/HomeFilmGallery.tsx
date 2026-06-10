@@ -32,7 +32,7 @@ export function HomeFilmGallery({ images }: HomeFilmGalleryProps) {
             {[...firstRow, ...firstRow].map((image, index) => (
               <article
                 key={`row1-${image.src}-${index}`}
-                className="relative h-40 w-72 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/40 shadow-lg shadow-black/30 sm:h-44 sm:w-80"
+                className="relative h-32 w-56 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/40 shadow-lg shadow-black/30 sm:h-44 sm:w-80"
               >
                 <img
                   src={image.src}
@@ -51,7 +51,7 @@ export function HomeFilmGallery({ images }: HomeFilmGalleryProps) {
             {[...secondRow, ...secondRow].map((image, index) => (
               <article
                 key={`row2-${image.src}-${index}`}
-                className="relative h-40 w-72 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/40 shadow-lg shadow-black/30 sm:h-44 sm:w-80"
+                className="relative h-32 w-56 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-zinc-900/40 shadow-lg shadow-black/30 sm:h-44 sm:w-80"
               >
                 <img
                   src={image.src}

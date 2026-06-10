@@ -16,7 +16,7 @@ export default function ReversePromptingImageIaPage() {
       <JsonLd data={buildWebApplicationJsonLd(structuredData)} />
       <ToolIframePage
       title="Reverse prompting image IA"
-      subtitle="Upload une image et reconstruis un prompt exploitable avec une experience visuelle premium orientee direction artistique."
+      subtitle="Uploadez une image et reconstruisez un prompt exploitable avec une expérience visuelle premium orientée direction artistique."
       iframeTitle="Reverse prompting image IA"
       iframeSrc="/outils/reverse-prompting-image-ia/index.html"
     />

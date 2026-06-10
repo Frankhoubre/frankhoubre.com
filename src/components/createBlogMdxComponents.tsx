@@ -82,6 +82,8 @@ export function createBlogMdxComponents(
           {...rest}
           src={resolved}
           alt={resolvedAlt}
+          loading="lazy"
+          decoding="async"
           className="my-6 w-full rounded-lg border border-neutral-200"
         />
       );
@@ -93,6 +95,7 @@ export function createBlogMdxComponents(
           alt={resolvedAlt}
           width={1200}
           height={630}
+          sizes="(max-width: 768px) 100vw, 672px"
           className="h-auto w-full"
         />
       </span>

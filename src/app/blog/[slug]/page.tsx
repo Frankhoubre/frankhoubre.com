@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import remarkGfm from "remark-gfm";
 import { ArticleShareButtons } from "@/components/ArticleShareButtons";
 import { ArticleSidebarSearch } from "@/components/ArticleSidebarSearch";
+import { ArticleMobileToc } from "@/components/ArticleMobileToc";
 import { ArticleToc } from "@/components/ArticleToc";
 import { Badge } from "@/components/Badge";
 import { createBlogMdxComponents } from "@/components/createBlogMdxComponents";
@@ -15,7 +16,6 @@ import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { RelatedPosts } from "@/components/RelatedPosts";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
-import { getRecommendedYouTubeVideoId } from "@/lib/blog-video-map";
 import {
   extractYouTubeVideoIds,
   getAllPosts,
@@ -113,7 +113,7 @@ function buildJsonLd(opts: {
       : `${baseUrl}${person.image}`;
 
   const article = {
-    "@type": "NewsArticle",
+    "@type": "BlogPosting",
     headline: post.frontmatter.title,
     description: post.frontmatter.excerpt,
     inLanguage: "fr-FR",
@@ -161,7 +161,9 @@ function buildJsonLd(opts: {
       url: baseUrl,
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}/favicon.ico`,
+        url: `${baseUrl}/images/frank-houbre-about.png`,
+        width: 1024,
+        height: 1024,
       },
     },
   };
@@ -190,25 +192,6 @@ function buildJsonLd(opts: {
       },
     ],
   });
-  graph.push({
-    "@type": "Review",
-    itemReviewed: {
-      "@type": "CreativeWork",
-      name: post.frontmatter.title,
-      url,
-    },
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: "5",
-      bestRating: "5",
-    },
-    author: {
-      "@type": "Person",
-      name: person.name,
-    },
-    reviewBody: post.frontmatter.excerpt,
-  });
-
   if (faqPairs?.length) {
     graph.push({
       "@type": "FAQPage",
@@ -259,11 +242,8 @@ export default async function BlogArticlePage({ params }: Props) {
   const raw = post.content;
   const toc = buildArticleToc(raw);
   const allPosts = getAllPosts();
-  const contentVideoIds = extractYouTubeVideoIds(raw);
-  const videoIds =
-    contentVideoIds.length > 0
-      ? contentVideoIds
-      : [getRecommendedYouTubeVideoId(post)];
+  // JSON-LD VideoObject : uniquement les vidéos réellement intégrées dans l'article.
+  const videoIds = extractYouTubeVideoIds(raw);
   const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
@@ -307,7 +287,7 @@ export default async function BlogArticlePage({ params }: Props) {
     <>
       <JsonLd data={jsonLd} />
       <ReadingProgressBar />
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-14">
         <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,42rem)_minmax(0,1fr)] lg:gap-10">
           <div className="hidden lg:block" aria-hidden />
           <article className="min-w-0 max-w-2xl justify-self-center lg:col-start-2">
@@ -332,7 +312,9 @@ export default async function BlogArticlePage({ params }: Props) {
                   </Link>
                 </li>
                 <li aria-hidden>›</li>
-                <li className="text-neutral-950">{post.frontmatter.title}</li>
+                <li className="line-clamp-2 text-neutral-950 sm:line-clamp-none">
+                  {post.frontmatter.title}
+                </li>
               </ol>
               </nav>
               <Link
@@ -352,7 +334,7 @@ export default async function BlogArticlePage({ params }: Props) {
                 <span aria-hidden>·</span>
                 <span>{minutes} min de lecture</span>
               </div>
-              <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
+              <h1 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
                 {post.frontmatter.title}
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-neutral-800">
@@ -384,6 +366,8 @@ export default async function BlogArticlePage({ params }: Props) {
                 )}
               </div>
             ) : null}
+
+            <ArticleMobileToc items={toc} />
 
             <div className="prose-cinema mt-10 max-w-none">
               {beforeMdx ? (

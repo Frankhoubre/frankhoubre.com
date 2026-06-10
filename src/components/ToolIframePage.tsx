@@ -29,7 +29,8 @@ export function ToolIframePage({
         <iframe
           title={iframeTitle}
           src={iframeSrc}
-          className="h-[80vh] w-full rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/5"
+          loading="lazy"
+          className="h-[75svh] min-h-[480px] w-full rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/5 sm:h-[80vh]"
         />
       </section>
     </div>

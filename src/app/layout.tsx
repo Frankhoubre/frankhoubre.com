@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Archivo, Space_Grotesk } from "next/font/google";
 import { FormationPromoModal } from "@/components/FormationPromoModal";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -17,14 +17,31 @@ const bodyFont = Space_Grotesk({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#fafafa",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: siteName,
     template: `%s | ${siteName}`,
   },
-  description:
-    "Site personnel de Frank Houbre : articles, notes et ressources autour du web et de la création.",
+  description: person.description,
+  applicationName: siteName,
+  authors: [{ name: person.name, url: baseUrl }],
+  creator: person.name,
+  publisher: siteName,
+  formatDetection: {
+    telephone: false,
+  },
+  alternates: {
+    types: {
+      "application/rss+xml": `${baseUrl}/feed.xml`,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -57,8 +74,13 @@ export default function RootLayout({
       className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
       <body className="relative isolate flex min-h-full flex-col bg-background text-foreground">
+        <a href="#main-content" className="ds-skip-link">
+          Aller au contenu principal
+        </a>
         <SiteHeader />
-        <main className="relative z-10 flex-1">{children}</main>
+        <main id="main-content" className="relative z-10 flex-1">
+          {children}
+        </main>
         <SiteFooter />
         <FormationPromoModal />
       </body>

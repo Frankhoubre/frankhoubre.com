@@ -95,7 +95,9 @@ const homeJsonLd = {
       url: baseUrl,
       logo: {
         "@type": "ImageObject",
-        url: `${baseUrl}/favicon.ico`,
+        url: `${baseUrl}/images/frank-houbre-about.png`,
+        width: 1024,
+        height: 1024,
       },
       sameAs: [...person.sameAs],
       founder: { "@id": `${baseUrl}/#person` },
@@ -107,6 +109,15 @@ const homeJsonLd = {
       url: baseUrl,
       description: homeDescription,
       publisher: { "@id": `${baseUrl}/#organization` },
+      inLanguage: "fr-FR",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${baseUrl}/blog?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
     },
     {
       "@type": "Person",

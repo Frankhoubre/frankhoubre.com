@@ -36,21 +36,27 @@ export function getPageNumbers(
 type Props = {
   posts?: Post[];
   initialCategory?: string;
+  initialSearch?: string;
   gridLayout?: boolean;
 };
 
 export function BlogList({
   posts = [],
   initialCategory = "",
+  initialSearch = "",
   gridLayout = false,
 }: Props) {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(initialSearch);
   const [category, setCategory] = useState(initialCategory);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     setCategory(initialCategory);
   }, [initialCategory]);
+
+  useEffect(() => {
+    setSearch(initialSearch);
+  }, [initialSearch]);
 
   const filtered = useMemo(() => {
     let list = posts;

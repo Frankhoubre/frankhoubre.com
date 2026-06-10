@@ -112,10 +112,10 @@ export default function AboutPage() {
                 <span>Frank Houbre</span>
               </span>
               <span className="ds-title-line delay-1">
-                <span>formateur IA et realisateur IA</span>
+                <span>formateur IA et réalisateur IA</span>
               </span>
               <span className="ds-title-line delay-2">
-                <span>entrepreneur et createur</span>
+                <span>entrepreneur et créateur</span>
               </span>
             </h1>
             <div className="space-y-4 text-lg leading-relaxed text-white/85">
