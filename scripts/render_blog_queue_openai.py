@@ -25,7 +25,7 @@ import requests
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-QUEUE = ROOT / "tmp-blog-gen-queue.json"
+DEFAULT_QUEUE = ROOT / "tmp-blog-gen-queue.json"
 PUBLIC = ROOT / "public"
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -61,6 +61,12 @@ def main() -> None:
     )
     parser.add_argument("--sleep", type=float, default=1.2, help="Pause entre requêtes")
     parser.add_argument(
+        "--queue",
+        type=Path,
+        default=DEFAULT_QUEUE,
+        help="Fichier JSON de queue (défaut: tmp-blog-gen-queue.json)",
+    )
+    parser.add_argument(
         "--min-bytes",
         type=int,
         default=150_000,
@@ -74,13 +80,13 @@ def main() -> None:
             "  export OPENAI_API_KEY=...",
         )
 
-    if not QUEUE.is_file():
-        raise SystemExit(f"Fichier queue introuvable: {QUEUE}")
+    if not args.queue.is_file():
+        raise SystemExit(f"Fichier queue introuvable: {args.queue}")
 
     from openai import OpenAI
 
     client = OpenAI()
-    records = json.loads(QUEUE.read_text(encoding="utf-8"))
+    records = json.loads(args.queue.read_text(encoding="utf-8"))
     written = 0
     skipped = 0
 
