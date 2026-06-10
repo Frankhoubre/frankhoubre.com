@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Continuité lumière, personnage, décor, et découpe des prompts pour une séquence lisible."
 thumbnail: "/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/hero.webp"
 ---
+
 Une séquence ce n’est pas trois belles images qui se suivent, c’est une chaîne où chaque maillon accepte d’être comparé au précédent par un œil qui n’a pas besoin de ton commentaire pour juger. C’est une promesse que le spectateur reconnaît le même espace, la même heure, la même pression de lumière, les mêmes vêtements, les mêmes proportions. Avec l’IA, chaque clic est une nouvelle pièce tirée au sort si tu ne **verrouilles** pas explicitement ce qui doit rester. Ce guide pose une méthode de **feuille de continuité**, des **scénarios** d’échec classiques, un **workflow** par plans, une **table** de contrôle, une section **trench warfare**, des liens encyclopédiques, quatre liens internes, et une **FAQ**.
 
 **Scénario A.** Un clip de douze secondes montre un personnage qui entre dans un bar, et chaque plan semble tourner dans un autre quartier. Plan 1, rue de nuit. Plan 2, intérieur. Plan 3, gros plan visage. La rue est humide, l’intérieur est sec et ensoleillé, le visage a une key opposée aux deux plans précédents. Le spectateur ne dit pas « incohérent », il dit « bizarre ».

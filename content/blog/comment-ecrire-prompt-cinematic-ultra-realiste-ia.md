@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Structure, lumière, focale, imperfections et verrouillage pour des images qui tiennent au cinéma."
 thumbnail: "/images/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia/hero.webp"
 ---
+
 Le mot « cinematic » dans un prompt est souvent un autocollant collé sur une image qui reste plate, et le spectateur a déjà vu cette étiquette mille fois sur des miniatures de démo. Les modèles l’ont vu des millions de fois à côté de néons, de flous de fond et de contrastes poussés. Si tu veux un rendu **cinéma** crédible, tu dois déplacer le poids du texte vers la **caméra**, la **lumière**, la **profondeur**, et les **imperfections** mesurées. Ce n’est pas une question de talent poétique, c’est une question de liste de décisions cohérentes.
 
 Tu liras ici trois **scénarios** de blocage, un **workflow** en passes, une **table** pour trancher vite, une section **trench warfare**, des liens encyclopédiques pour le vocabulaire, quatre renvois internes, et une **FAQ**. Pas de formule unique, une grille que tu réutilises d’un projet à l’autre, avec des cases à cocher mentales avant chaque génération.

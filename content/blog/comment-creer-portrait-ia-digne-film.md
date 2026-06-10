@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Focale, catchlights, profondeur, imperfection et direction du regard pour un plan crédible."
 thumbnail: "/images/blog/comment-creer-portrait-ia-digne-film/hero.webp"
 ---
+
 Un portrait « digne d’un film » n’est pas un selfie lissé avec un filtre cinéma, ni un rendu 3D de démo où la peau ressemble à de la résine et les yeux à des billes. C’est un plan où **la lumière a une direction**, où **la focale** raconte la distance, où **le regard** porte une intention, où **les imperfections** sont mesurées, et où le spectateur oublie de chercher les erreurs d’IA. Ce guide assemble **scénarios**, **workflow**, **table**, **trench warfare**, liens encyclopédiques, quatre liens internes, et **FAQ**.
 
 **Scénario A.** Un créateur veut un gros plan dramatique. Il obtient une peau de porcelaine et des yeux trop brillants. Il ajoute « 8K detail ». Le problème n’était pas la résolution, c’était la **key** et le **sharp**.

@@ -4,6 +4,7 @@ date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Utiliser la règle des tiers pour améliorer immédiatement lisibilité, équilibre et impact visuel en image IA."
 ---
+
 La règle des tiers, tout le monde la cite.  
 Peu de gens l’utilisent vraiment.
 

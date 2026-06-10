@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Prises, phonèmes, plans sûrs et outils pour un doublage qui colle aux lèvres sans effet marionnette."
 thumbnail: "/images/blog/doublage-artistique-lip-sync-preparation/hero.webp"
 ---
+
 Tu poses la voix générée sur le plan. Les lèvres bougent comme une marionnette. Le client dit « ça fait doublage polonais années 80 ». *Le lip-sync n'est pas un bouton magique.* C'est la **dernière couche** d'un travail qui commence sur le choix des plans et la prise voix.
 
 Ce guide : préparer l'image avant lip-sync IA, phonèmes, plans sûrs, segmentation, et outils pour coller aux lèvres sans effet horreur.

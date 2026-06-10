@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Shot reverse shot, 180° et fiches personnages pour un dialogue IA qui ne casse pas à la coupe."
 thumbnail: "/images/blog/scene-dialogue-deux-personnages-raccord-ia/hero.webp"
 ---
+
 Le moment le plus fragile d'une scène IA, c'est la coupe entre deux personnages. Tu peux avoir deux plans superbes séparément, puis perdre toute crédibilité quand le regard saute, que la lumière tourne de 40 degrés, ou que la hauteur d'yeux change entre champ et contrechamp.
 
 Dans un dialogue à deux, le spectateur ne pardonne rien. Il lit d'abord les yeux, ensuite la direction du regard, puis la cohérence de lumière. Si un seul de ces repères casse, la scène devient une démonstration technique au lieu d'un vrai échange dramatique.

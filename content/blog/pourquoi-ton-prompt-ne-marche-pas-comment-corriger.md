@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Diagnostiquer contradictions, mauvaise hiérarchie, et tests en trois passes pour retrouver le contrôle."
 thumbnail: "/images/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger/hero.webp"
 ---
+
 Tu recopies un prompt qui a marché pour quelqu’un d’autre, tu obtiens un visage lisse, un ciel HDR, et un décor qui ressemble à une carte postale générique. La colère monte, tu ajoutes des adjectifs, la situation empire. Rien de tout cela ne prouve que tu es nul en « prompt ». Ça prouve surtout que **ton texte se contredit**, ou qu’il ne donne aucune priorité au modèle.
 
 Ici on parle diagnostic, pas magie. Trois situations réelles. **Nadia**, photographe de mariage à Bruxelles, voulait un portrait « doux et dramatique » avec « contraste fort » et « peau parfaite » : le modèle a choisi le glamour plastique parce que les instructions se neutralisaient. **Julien**, motion designer à Lyon, empilait cinq films de référence dans un seul paragraphe : chaque style a pris une bouchée du cadre. **Amina**, community manager pour une marque outdoor, écrivait en français poétique sans aucun terme de caméra ni de lumière : le moteur a inventé un néon par défaut.

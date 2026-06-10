@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Comparaison terrain, cas d’usage, VRAM, et comment décider en vingt minutes de tests."
 thumbnail: "/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/hero.webp"
 ---
+
 Tu lis un thread qui crie victoire pour Flux, un autre qui jure souvent que SDXL reste roi avec les bons LoRA. Tu ouvres ton portefeuille GPU, tu regardes ta VRAM, tu te demandes si tu dois tout réapprendre vite. La bonne nouvelle simple : **tu n’as pas besoin d’une religion**, tu as besoin d’un protocole de test vingt minutes sur ton sujet réel du jour.
 
 Ce guide compare les deux familles sur le terrain : portrait, scène chargée, vitesse locale, passage vers la vidéo, et surtout **habitudes de fichiers** qui survivront au prochain modèle sorti mardi prochain. Trois profils pour ancrer la discussion. **Thomas** à Nantes fait des portraits corporate : il voulait des yeux stables et des vestes en laine crédibles, il a comparé les deux moteurs sur le même brief avant de choisir un pipeline. **Inès** à Dakar produit des illustrations de lieux urbains : elle valorisait l’écosystème ComfyUI et les centaines de checkpoints SDXL. **Roberto** à Barcelone prépare des keyframes pour de la vidéo : il lui fallait des PNG propres, des métadonnées de focale, et une chaîne reproductible. Aucun des trois n’a « raison » en absolu : ils ont aligné l’outil sur une contrainte précise, budget GPU, liberté de graphe, ou livrable animé.

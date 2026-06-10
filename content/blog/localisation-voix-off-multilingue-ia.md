@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Scripts adaptés, voix, rythme et QA pour versions FR / EN / ES sans perdre l'intention du montage."
 thumbnail: "/images/blog/localisation-voix-off-multilingue-ia/hero.webp"
 ---
+
 Version française validée. Le client veut l'anglais et l'espagnol pour demain. Tu colles une traduction mot à mot dans ElevenLabs. Les phrases dépassent le montage. Les respirations tombent au milieu des coupes. *La localisation voix off multilingue* n'est pas une traduction : c'est une **réécriture pour la bouche et le tempo**.
 
 Ce guide pose un workflow IA + humain pour livrer FR / EN / ES sans perdre l'intention du montage : scripts adaptés, voix, rythme, QA native, et lip-sync seulement quand l'image l'exige.

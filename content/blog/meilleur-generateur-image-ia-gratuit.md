@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Grille de décision honnête : gratuit « vrai », freemium, local GPU, et ce que tu paies en réalité en temps ou en données."
 thumbnail: "/images/blog/meilleur-generateur-image-ia-gratuit/hero.webp"
 ---
+
 « Gratuit » veut rarement dire « sans coût ». Tu paies en quota, en file d’attente, en basse résolution, en watermark, ou en données d’usage. Ce guide classe les options **réellement utilisables** en 2026 pour un créateur qui veut produire, pas seulement cliquer une démo.
 
 Tu verras trois familles : **cloud freemium**, **local open source**, et **offres « essai » marketing**. L’objectif est de choisir en quinze minutes selon ton matériel, ton besoin de confidentialité, et ton niveau de patience face aux files.

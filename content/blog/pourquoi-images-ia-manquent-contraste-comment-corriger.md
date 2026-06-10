@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Histogramme, courbes, saturation sélective, et rapport ombres lumières façon cinéma."
 thumbnail: "/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/hero.webp"
 ---
+
 Tu zoomes sur ton export, tu vois du gris partout, tu montes la saturation dans l’espoir d’un miracle, tu obtiens une affiche de supermarché. Ce réflexe est universel, il ne dit rien de ton niveau, seulement que personne ne t’a encore montré l’ordre des opérations entre prompt, génération, et étalonnage. Le problème n’est pas que ton œil est trop exigeant, c’est que **le contraste** a été confondu avec « plus de couleur ». Les modèles aiment les images lisibles en miniature, souvent plates, souvent lissées. Ton travail commence quand tu reprends la courbe.
 
 Trois histoires courtes. **Vincent**, retoucheur à Paris, livrait des portraits IA pour une agence : les visages semblaient maquillés en 3D parce qu’il poussait les rouges avant d’avoir des noirs propres. **Clara**, illustratrice à Marseille, préparait des keyframes pour une vidéo : chaque plan avait un ciel différent parce qu’elle saturait le bleu au lieu de verrouiller une **référence de courbe**. **Omar**, développeur amateur à Casablanca, croyait que « high contrast » dans le prompt suffisait : le modèle a ajouté des halos et des ombres bouchées sans hiérarchie. Les trois auraient gagné du temps avec une feuille de route commune : lire l’histogramme, corriger la lumière dans le texte, puis seulement pousser la couleur.

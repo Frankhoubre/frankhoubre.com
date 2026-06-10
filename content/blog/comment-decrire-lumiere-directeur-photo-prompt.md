@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Key, fill, couleur, dureté, practicals, et comment éviter le « bel éclairage » sans géométrie."
 thumbnail: "/images/blog/comment-decrire-lumiere-directeur-photo-prompt/hero.webp"
 ---
+
 La plupart des prompts lumiere echouent pour une raison simple, ils disent “belle lumiere” au lieu de decrire une geometrie lumineuse.  
 Un chef operateur ne dit jamais “rends ca joli”.  
 Il place une source. Il choisit une direction. Il accepte une ombre.

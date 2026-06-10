@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Vectorisation, lisibilité en petit, dépôt marque, et limites des générateurs : un workflow pro sans promesse magique."
 thumbnail: "/images/blog/creation-logo-ia-outils-gratuits-astuces/hero.webp"
 ---
+
 Un logo IA peut accélérer l’exploration, mais **la signature** se joue sur la lisibilité favicon, la reproduction monochrome, et la distinctivité juridique. Ce guide mélange outils accessibles (dont gratuits ou freemium), astuces de studio, et **ligne rouge** : l’IA ne remplace pas l’avis d’un conseil en propriété intellectuelle quand tu déposes une marque.
 
 Pour le cadre large des droits sur images générées, [droits d’auteur et images générées par IA : ce qu’il faut absolument savoir](/blog/droits-auteur-images-generees-ia).

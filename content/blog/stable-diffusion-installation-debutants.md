@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Windows ou macOS, GPU ou plan B, téléchargement des poids, première image, et erreurs classiques à éviter dès le jour 1."
 thumbnail: "/images/blog/stable-diffusion-installation-debutants/hero.webp"
 ---
+
 Stable Diffusion n’est pas « une app magique » : c’est un **écosystème** (moteur, interface, poids, extensions). Ce guide te fait arriver à **une première image propre** sans te perdre dans dix tutoriels contradictoires. Les versions exactes changent : note la date de lecture et les numéros de release que tu installes.
 
 Pour décider ensuite quel famille de modèle te convient, [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes).

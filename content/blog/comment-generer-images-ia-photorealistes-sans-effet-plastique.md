@@ -4,6 +4,7 @@ date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Méthode terrain pour obtenir une image réaliste, texturée et crédible, sans peau cireuse ni rendu artificiel."
 ---
+
 Tu peux avoir un prompt propre, un modèle puissant, une belle idée.  
 Si la texture est fausse, ton image sonne fake en deux secondes.
 

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Un plan de formation réaliste pour créateurs : bases, outils image et vidéo, éthique, portfolio et mise à jour continue sans se noyer dans les hype cycles."
 thumbnail: "/images/blog/pourquoi-comment-se-former-ia-2026/hero.webp"
 ---
+
 # Pourquoi et comment se former à l'intelligence artificielle en 2026
 
 Tu ouvres cinq onglets. Tu installes deux logiciels. Tu regardes un tutoriel accéléré à 1,75x. Puis tu te retrouves avec un rendu lisse, un personnage qui change de visage entre deux plans, et une vague impression d'avoir raté le train.

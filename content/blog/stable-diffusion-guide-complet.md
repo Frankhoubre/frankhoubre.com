@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Comprendre stable diffusion, installer un workflow local solide, exploiter SDXL, comparer avec Midjourney, et produire des images crédibles sans rendu plastique."
 thumbnail: "/images/blog/stable-diffusion-guide-complet/hero.webp"
 ---
+
 # Stable Diffusion en 2026 : guide complet pour créer des images en local
 
 Tu veux créer des images en local, tu tapes `stable diffusion`, tu installes trois trucs, et ça casse au premier lancement. Ou pire, ça marche, mais tes images ont ce fameux look “IA générique” que personne n’ose dire franchement. Je te parle d’expérience. J’ai planté des installations, perdu des modèles, et livré des tests trop propres pour être crédibles. Ce guide est là pour t’éviter ce tunnel. On va parler vrai: matériel, workflow, qualité, erreurs, business, et surtout méthode pour passer d’essais aléatoires à une production propre.

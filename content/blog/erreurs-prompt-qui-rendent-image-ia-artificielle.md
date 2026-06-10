@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Liste des tics de langage et des réglages implicites qui poussent le modèle vers le plastique."
 thumbnail: "/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/hero.webp"
 ---
+
 Tu écris un prompt en pensant “je vais faire cinéma”.  
 Tu génères.  
 Et tu vois immédiatement l’effet plastique.

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Lumière motivée, objectif plausible, texture de peau, et post-traitement : le réalisme se gagne en couches, pas en adjectifs."
 thumbnail: "/images/blog/photos-hyper-realistes-ia/hero.webp"
 ---
+
 Hyper-réaliste ne veut pas dire « 8K cinematic masterpiece » en boucle. Le cerveau repère le faux surtout sur **lumière**, **peau**, **profondeur**, et **micro-contradictions** de matière. Ce guide aligne ton brief sur une logique photo, puis te propose une finition sobre pour éviter le plastique.
 
 Pour une base solide sur le rendu « photo » sans effet cire, [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique) complète cette page.

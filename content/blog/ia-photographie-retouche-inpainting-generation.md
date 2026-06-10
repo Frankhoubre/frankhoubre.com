@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Quand l’IA aide sans mentir : nettoyage local, extension de cadrage, et génération contrôlée avec garde-fous éthiques."
 thumbnail: "/images/blog/ia-photographie-retouche-inpainting-generation/hero.webp"
 ---
+
 La photographie professionnelle vit déjà avec des outils destructifs depuis des décennies. L’IA change surtout **la vitesse** et le **risque d’invention** : un inpainting qui « complète » un décor peut ajouter des objets qui n’existaient pas. Ce guide sépare **retouche acceptable**, **inpainting risqué**, et **génération pure**, avec une ligne claire pour la transparence client.
 
 Pour le rendu photo crédible côté prompt, [les secrets des prompts pour générer des images au rendu photographique](/blog/secrets-prompts-rendu-photographique-ia).

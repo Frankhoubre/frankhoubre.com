@@ -5,6 +5,7 @@ category: "analyses"
 excerpt: "Gemini, la recherche enrichie et les workflows créatifs : ce qui change pour le SEO, la preuve, la production audiovisuelle, et comment éviter de publier du contenu « plausible mais faux »."
 thumbnail: "/images/blog/google-ia-recherche-creation-contenu/hero.webp"
 ---
+
 # Comment l'IA de Google révolutionne la recherche et la création de contenu
 
 La recherche n'est plus seulement une page de liens bleus. Elle devient une interface où un modèle **résume**, **reformule**, et parfois **invente** avec une voix confiante. Pour un créateur, ce n'est pas un gadget : c'est un changement de **distribution d'attention**, de **format de réponse**, et de **barre de preuve**. *Si tu continues à produire comme en 2019, tu ne seras pas invisible : tu seras mal compris.*

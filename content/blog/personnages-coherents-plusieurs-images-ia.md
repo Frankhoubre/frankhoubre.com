@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Fiche personnage, prompts stables, seeds, LoRA, et QA visuelle : une méthode de studio appliquée à l’IA image."
 thumbnail: "/images/blog/personnages-coherents-plusieurs-images-ia/hero.webp"
 ---
+
 La cohérence n’est pas une case à cocher du modèle. C’est une **chaîne** : description figée, variations contrôlées, rejet explicite des plans qui glissent sur le costume ou la morphologie. Ce tutoriel te donne un workflow reproductible, du premier portrait à la série de trois quarts et demi-profil.
 
 Si tu utilises déjà un outil orienté personnages, croise avec [Dzine : l’IA crée des personnages cohérents et des films d’animation](/blog/dzine-ia) pour voir où automatiser et où garder la main.

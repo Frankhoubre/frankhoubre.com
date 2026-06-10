@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Itération, cohérence de direction artistique, contrôle des poses, et livrables : le bon outil dépend du type de concept, pas du logo sur la slide."
 thumbnail: "/images/blog/midjourney-vs-dalle-3-concept-art/hero.webp"
 ---
+
 Concept art, ce n’est pas « une belle image ». C’est une **décision de production** figée assez tôt pour guider modélisation, lighting, costumes, ou keyframes. Midjourney et DALL·E 3 répondent à des ergonomies différentes : l’un pousse l’exploration stylistique, l’autre simplifie le langage naturel et la correction par conversation.
 
 Ce comparatif évite la guerre de chapelle. On part de **cinq missions** fréquentes : moodboard rapide, personnage tourné trois quarts, environnement architectural, véhicule readable en silhouette, props de près avec matière.

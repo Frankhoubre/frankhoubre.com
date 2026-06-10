@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "ControlNet, img2img, conservation des masses, et reprise main : du trait utile au rendu final sans perdre l’âme du dessin."
 thumbnail: "/images/blog/croquis-en-chef-d-oeuvre-ia/hero.webp"
 ---
+
 Un croquis fort porte déjà **les masses** et le rythme. L’IA peut amplifier la matière, la lumière, et le détail, mais si tu lui donnes un gribouillis sans intention, tu obtiens un gribouillis HD. Ce tutoriel part d’un dessin scanné ou photo propre, et monte une chaîne **img2img** + contrôle de contours, puis une passe humaine ciblée.
 
 Pour le contrôle du style global après la première passe, [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).

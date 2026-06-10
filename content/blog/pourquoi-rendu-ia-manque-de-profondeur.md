@@ -4,6 +4,7 @@ date: "2026-04-30"
 category: "tutoriels"
 excerpt: "Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief."
 ---
+
 La profondeur, ce n’est pas « flou d’arrière-plan » collé sur une image plate. C’est une **hiérarchie de valeurs**, des **chevauchements** lisibles, des **tailles relatives** cohérentes, et une **lumière** qui sculpte le volume. Quand l’IA « aplatit », c’est souvent parce que le prompt demande tout net partout, ou parce que le sujet et le fond partagent la même gamme de gris.
 
 Le guide terrain dédié : [comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ). Pour les angles « collage » et incohérence de décor : [comment rendre une scène IA plus crédible](/blog/comment-rendre-scene-ia-plus-credible). Pour éviter que la simplification des volumes ne bascule en faux cartoon : [comment éviter le rendu cartoon non voulu](/blog/comment-eviter-rendu-cartoon-non-voulu-ia). Pour le cadrage qui structure l’espace : [cadrer une image IA comme un cadreur cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema).

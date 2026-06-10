@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Bible lumière, palette, architecture, et règles de décision pour dix images ou plus."
 thumbnail: "/images/blog/comment-creer-univers-visuel-coherent-avec-ia/hero.webp"
 ---
+
 Un univers visuel n’est pas une esthétique Instagram collée sur dix images différentes, ni une collection de « meilleures sorties » triées au jugé sans grille commune, ni une démo de capacité technique sans fil narratif. C’est un système : mêmes lois de lumière, même gamme de matériaux, même échelle d’architecture, même grain, même manière de traiter la peau et les reflets. Avec l’IA, la dérive est la norme, parce que chaque image est une nouvelle optimisation. Ce texte te donne une **bible** légère, des **scénarios** de dérapage, un **workflow** pour séries longues, une **table** de décision, une section **trench warfare**, des liens encyclopédiques, quatre liens internes, et une **FAQ**.
 
 **Scénario A.** Une équipe produit douze keyframes pour un pitch. Chaque image est belle seule. Ensemble, elles racontent six mondes : néons 80, sci fi clinique, nature douce, thriller bleu nuit, comédie lumineuse, documentaire granuleux. Le client dit « il manque une identité ». Il manquait une **feuille de règles** partagée avant la génération.

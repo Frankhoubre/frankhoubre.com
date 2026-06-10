@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Créer des performances plus crédibles en IA en dirigeant gestes, regard, rythme et continuité émotionnelle."
 thumbnail: "/images/blog/comment-diriger-personnage-ia-comme-acteur/hero.webp"
 ---
+
 Un personnage IA devient crédible quand il joue une intention.  
 Pas quand il “pose”.
 

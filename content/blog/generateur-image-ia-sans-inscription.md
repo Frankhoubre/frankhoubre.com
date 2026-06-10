@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Transparence honnête : compte léger, session anonyme limitée, ou local zéro compte, avec les vrais compromis 2026."
 thumbnail: "/images/blog/generateur-image-ia-sans-inscription/hero.webp"
 ---
+
 « Sans inscription » promet souvent **zéro friction** et livre **zéro garantie** : quotas cachés, watermark, conservation floue des fichiers, ou besoin d’un compte au moment de l’export HD. Ce guide propose **trois familles** réalistes, avec ce qu’elles valent vraiment en prod.
 
 Pour un panorama plus large des modèles gratuits ou freemium, [quel est le meilleur générateur d’image IA gratuit](/blog/meilleur-generateur-image-ia-gratuit).

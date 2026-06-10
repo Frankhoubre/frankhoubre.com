@@ -4,6 +4,7 @@ date: "2026-04-30"
 category: "tutoriels"
 excerpt: "Motivation des sources, hiérarchie clé fill rim, et reprompt vs post : quand sauver en génération et quand finir en étalo."
 ---
+
 Un mauvais lighting IA n’est pas seulement « trop sombre ». C’est souvent **sans direction** : tout est éclairé pareil, les ombres ne tombent pas où la géométrie l’exige, ou trois soleils se battent dans le cadre. Corriger, c’est d’abord **décider quelle source domine**, puis aligner prompt, regénération ciblée, ou post-traitement.
 
 La bible vocabulaire lumière : [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt). Pour les intérieurs naturels : [comment créer des lumières naturelles en image IA](/blog/comment-creer-lumieres-naturelles-image-ia). Pour passer au niveau séquence quand plusieurs plans doivent partager la même loi : [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).

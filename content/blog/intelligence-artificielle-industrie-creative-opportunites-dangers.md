@@ -5,6 +5,7 @@ category: "analyses"
 excerpt: "Une grille de lecture pour marques, studios et indépendants : où l'IA crée de la valeur, où elle fragilise la confiance, et comment décider sans se faire piéger par le marketing."
 thumbnail: "/images/blog/intelligence-artificielle-industrie-creative-opportunites-dangers/hero.webp"
 ---
+
 # Intelligence artificielle et industrie créative : opportunités ou dangers ?
 
 Si tu veux une réponse confortable, va sur LinkedIn : tout est « game changer ». *Si tu veux une réponse utile, il te faut une balance avec des poids réels : droit, crédibilité, coût marginal, talent, et temps humain.*

@@ -4,6 +4,7 @@ date: "2026-04-30"
 category: "tutoriels"
 excerpt: "Mots déclencheurs, saturation implicite, contours durs, et styles contradictoires : revenir au photo sans tomber dans le plastique."
 ---
+
 Le cartoon non voulu arrive quand le modèle lit des **indices de stylisation** plus forts que tes indices « réel » : contours trop propres, couleurs en aplats, yeux agrandis, matière plastique. Souvent, ce n’est pas un réglage caché, c’est le **langage du prompt** ou un **checkpoint** orienté illustration.
 
 Pour le contrôle de style global : [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia). Pour les erreurs de langage : [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle). Pour garder du relief sans basculer en faux dessin animé : [pourquoi ton rendu IA manque de profondeur](/blog/pourquoi-rendu-ia-manque-de-profondeur). Pour un premier jet déjà « photo » : [les secrets des prompts au rendu photographique](/blog/secrets-prompts-rendu-photographique-ia).

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Prompt instable, seed non maîtrisée, costume synonyme, et absence de fiche : la continuité est un protocole, pas une option du modèle."
 thumbnail: "/images/blog/pourquoi-personnages-changent-chaque-scene-ia/hero.webp"
 ---
+
 Si le visage, la veste, ou la morphologie glissent dès que tu changes de plan, ce n’est pas « parce que l’IA est nulle ». C’est presque toujours parce que **le brief n’est pas verrouillé** : tu réécris le personnage à chaque prompt, tu permutes des synonymes, ou tu changes de modèle sans archiver la ligne gagnante.
 
 La méthode complète est ici : [tutoriel : personnages cohérents sur plusieurs images](/blog/personnages-coherents-plusieurs-images-ia). Cette page résume les causes les plus fréquentes en tournage.

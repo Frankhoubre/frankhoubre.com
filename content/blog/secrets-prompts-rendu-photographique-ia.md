@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Ce qui marche vraiment : hiérarchie d’information, vocabulaire optique, et pièges à éviter pour ne pas retomber sur un cliché IA."
 thumbnail: "/images/blog/secrets-prompts-rendu-photographique-ia/hero.webp"
 ---
+
 Les « secrets » utiles sont ennuyeux : **ordre stable**, **moins de mots**, **contraintes mesurables**. Ce qui fait briller un prompt photo, ce n’est pas un bloc de cinquante adjectifs, c’est une scène lisible en une seconde, avec une lumière qui a une direction.
 
 Pour les erreurs classiques de langage, [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle) est le complément naturel de ce guide.

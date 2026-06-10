@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "10 prompts terrain pour trouver des idées de vidéos YouTube filmables, originales, optimisées SEO et adaptées à une vraie stratégie de chaîne."
 thumbnail: "/images/blog/prompts-idees-videos-youtube/hero.webp"
 ---
+
 # Les 10 meilleurs prompts pour trouver des idées de vidéos YouTube quand ton cerveau te lâche
 
 Tu ouvres YouTube Studio.  

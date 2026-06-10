@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Structure narrative, cohérence des personnages, limitations honnêtes, et finishing pour tenir un festival en ligne."
 thumbnail: "/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/hero.webp"
 ---
+
 Tu veux raconter une histoire complète sans lever une caméra, sans casting, sans location payante. L’excitation dure jusqu’au troisième plan, quand le visage change, le mur ondule, et le silence absolu transforme ton drame en démo logiciel. Un court intégralement généré est possible, mais il demande **les mêmes disciplines qu’un vrai tournage**, brief, storyboard, raccords, son, et acceptation des limites. La différence, c’est que tu remplaces la lumière du soleil par une phrase, et le bruit du plateau par une piste que tu dois inventer.
 
 Trois portraits. **Étienne**, musicien à Rennes, voulait un clip narratif de deux minutes : il a d’abord échoué en voulant des plans trop larges et des mains partout, puis a gagné en resserrant et en cachant. **Farah**, étudiante en arts à Montréal, préparait un pitch pour un festival en ligne : elle a documenté chaque étape générée pour rassurer le comité sur la chaîne de production. **Giorgio**, autodidacte à Milan, pensait sauter le montage : il est revenu à DaVinci parce que le rythme ne se génère pas tout seul dans un seul clip long. Les trois se sont entendus sur une évidence simple après coup : **finir** vaut mieux qu’explorer dix outils en parallèle sans livrable final ni archive propre pour plus tard ou pour le festival suivant éventuel.

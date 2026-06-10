@@ -5,6 +5,7 @@ category: "guides"
 excerpt: "Le workflow IA créatif complet pour passer de l’idée à la livraison: image, vidéo, voix, pipeline, production et contrôle qualité en conditions réelles."
 thumbnail: "/images/blog/workflow-ia-creatif/hero.webp"
 ---
+
 # Le vrai workflow IA créatif en 2026 : image, vidéo, voix et production
 
 Tu peux avoir les meilleurs outils du marché et quand même livrer un résultat bancal. C’est dur à entendre, mais c’est la vérité du terrain. Le problème n’est presque jamais “quel modèle utiliser”. Le problème, c’est l’absence de `workflow ia créatif`. Sans pipeline clair, tu passes ton temps à corriger des incohérences que tu aurais pu éviter dès le brief.

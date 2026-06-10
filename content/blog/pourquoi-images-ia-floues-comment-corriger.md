@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Upscale trop tôt, débruitage agressif, motion blur implicite, et mauvaise résolution de base : diagnostic et correctifs concrets."
 thumbnail: "/images/blog/pourquoi-images-ia-floues-comment-corriger/hero.webp"
 ---
+
 Le flou n’est pas toujours une « erreur du modèle ». Souvent, c’est une **chaîne** : résolution de base trop basse, upscale agressif, débruitage qui fond les micro-contrastes, ou un prompt qui demande sans le savoir du **mouvement** ou une **profondeur de champ** extrême. Ce guide te fait trancher en dix minutes entre flou « technique » et flou « intention ».
 
 Pour la profondeur de champ maîtrisée, [comment générer une scène réaliste avec profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ) complète cette page.

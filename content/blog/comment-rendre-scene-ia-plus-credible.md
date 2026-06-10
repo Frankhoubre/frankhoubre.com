@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Cohérence lumière, props qui ont une fonction, échelle humaine, et micro-imperfections : le réel se lit dans les détails utiles."
 thumbnail: "/images/blog/comment-rendre-scene-ia-plus-credible/hero.webp"
 ---
+
 Une scène crédible n’est pas une scène chargée. C’est une scène où **chaque objet semble avoir une raison d’être**, où la lumière tombe dans une direction lisible, où l’échelle humaine tient, et où une ou deux **imperfections** organisées évitent le showroom neuf.
 
 Pour la structure multi-plans : [comment construire une scène cinématique plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan). Pour l’univers durable : [comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia).

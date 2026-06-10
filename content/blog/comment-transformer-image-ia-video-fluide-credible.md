@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Processus précis pour animer une image IA sans casser le réalisme, du keyframe au rendu final."
 thumbnail: "/images/blog/comment-transformer-image-ia-video-fluide-credible/hero.webp"
 ---
+
 Tu as une image superbe.  
 Tu cliques sur "animate".  
 Et soudain, tout sonne faux.

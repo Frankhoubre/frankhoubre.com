@@ -5,6 +5,7 @@ category: "business"
 excerpt: "Offres, packaging, preuve, pricing et risques : un cadre pour vendre de la création IA sans te faire écraser par le marché du prompt à deux euros."
 thumbnail: "/images/blog/monetiser-competences-creation-ia-freelance-agence/hero.webp"
 ---
+
 # Comment monétiser ses compétences en création IA (freelance, agence)
 
 Tu sais générer une image « correcte ». *Le marché s'en fout.*

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Workflow complet pour écrire des descriptions YouTube optimisées SEO avec l'IA: accroche, chapitres, mots-clés, ressources et CTA."
 thumbnail: "/images/blog/ia-descriptions-youtube-seo/hero.webp"
 ---
+
 # L’IA pour écrire des descriptions YouTube optimisées SEO
 
 Tu viens de finir le montage.  

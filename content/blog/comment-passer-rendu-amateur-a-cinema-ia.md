@@ -4,6 +4,7 @@ date: "2026-05-02"
 category: "tutoriels"
 excerpt: "Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset."
 ---
+
 Le rendu « cinéma » n’est pas un filtre « teal and orange ». C’est une **suite de décisions** : lumière avec direction, contraste maîtrisé, grain cohérent, cadrage qui sert la lecture, et surtout un **rythme** qui accepte de ne pas montrer tout. L’amateur empile les effets visibles. Le cinéma retire jusqu’à ce qu’il ne reste que l’intention.
 
 La méthode longue vidéo : [comment créer une vidéo cinématique avec l’IA étape par étape](/blog/comment-creer-video-cinematique-ia-etape-par-etape). Pour le grain : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia). Pour Seedance : [comment obtenir un rendu cinéma avec Seedance 2](/blog/comment-obtenir-rendu-cinema-avec-seedance-2).

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Magic Edit, fonds, mockups réseaux, et limites : gagner du temps sans sacrifier la charte ni les droits."
 thumbnail: "/images/blog/canva-ia-creation-visuels-rapides/hero.webp"
 ---
+
 Canva brille quand tu dois **livrer vite** des visuels réseaux cohérents avec une charte existante : posts carrés, stories, miniatures YouTube, slides pitch. L’IA intégrée accélère retouches, variations de fond, et idées de composition, tant que tu gardes un **garde-fou** qualité et droits.
 
 Pour les logos et identité plus poussée, [création de logo avec l’IA : outils gratuits et astuces de pro](/blog/creation-logo-ia-outils-gratuits-astuces).

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Les signaux qui trahissent l’IA, du plastique à la géométrie, et des corrections concrètes pour un rendu crédible."
 thumbnail: "/images/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes/hero.webp"
 ---
+
 Tu postes un clip, les commentaires disent « sympa » avec un sourire gêné. Toi tu vois la peau qui ondule, le mur qui respire, le ciel qui brûle en néon. Ce n’est pas la honte du bouton « générer », c’est un ensemble de **signaux perceptifs** que ton cerveau a appris à lire en regardant du vrai cinéma pendant des années.
 
 Ce texte liste ces signaux et propose des corrections actionnables, sans te promettre un miracle logiciel. On part de trois portraits réels. **Élodie** à Toulouse filmait un portrait parlant pour LinkedIn : les lèvres glissaient, elle a baissé l’intensité de mouvement et recadré sur le buste. **Marc** à Genève voulait un travelling dans une gare : les piliers ondulaient, il a coupé le travelling en trois plans fixes avec faux raccord sonore. **Hiba** à Alger livrait une pub produit : l’image était nickel mais muette, l’ajout d’un room tone bas a fait passer le jugement de « démo » à « pub acceptable ».

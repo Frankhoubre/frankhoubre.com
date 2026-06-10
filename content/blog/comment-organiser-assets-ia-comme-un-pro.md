@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Méthode complète pour organiser assets IA, dossiers, nommage, métadonnées, versions et livraison sans perdre le fil entre image, vidéo, voix et montage."
 thumbnail: "/images/blog/comment-organiser-assets-ia-comme-un-pro/hero.webp"
 ---
+
 # Comment organiser ses assets IA comme un pro
 
 Si tu passes tes soirées à chercher "la bonne version" d'un plan, tu ne manques pas de talent. Tu manques d'architecture. Apprendre à organiser assets IA, ce n'est pas une corvée d'administrateur. C'est un levier de vitesse, de qualité et de sérénité quand les deadlines se rapprochent.

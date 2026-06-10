@@ -4,6 +4,7 @@ date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Méthodes concrètes de cadrage pour donner à tes images IA une lecture visuelle claire et cinématographique."
 ---
+
 Tu as peut-être déjà vécu ça. Tu génères une image qui te semble impressionnante. Puis tu la montres à quelqu’un et la réaction est froide, "oui, c’est joli, mais je ne comprends pas ce que je dois regarder".
 
 Le cadrage, c’est exactement ça, dire au spectateur où regarder, dans quel ordre, et pourquoi.  

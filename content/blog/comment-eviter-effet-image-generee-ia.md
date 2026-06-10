@@ -4,6 +4,7 @@ date: "2026-05-01"
 category: "tutoriels"
 excerpt: "Symétries suspectes, matière plastique, HDR gratuit, et poses « catalogue » : une checklist pour passer sous le radar visuel."
 ---
+
 L’effet « image générée » n’est pas une étiquette technique. C’est une **lecture sociale** : trop propre, trop symétrique, trop saturé, trop « parfait dans tous les axes à la fois ». Pour le éviter, tu ne cherches pas la perfection, tu cherches une **cohérence humaine** mesurée.
 
 Les erreurs de langage : [les erreurs de prompt qui rendent une image IA artificielle](/blog/erreurs-prompt-qui-rendent-image-ia-artificielle). Pour le plastique peau : [comment générer des images IA photoréalistes sans effet plastique](/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique). Pour structurer le cadre avant de polisher les textures : [corriger une composition IA sans tout regénérer](/blog/comment-corriger-mauvaise-composition-visuelle-ia). Pour la hiérarchie tonale qui évite le faux HDR : [pourquoi tes images IA manquent de contraste et comment corriger](/blog/pourquoi-images-ia-manquent-contraste-comment-corriger).

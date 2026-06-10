@@ -4,6 +4,7 @@ date: "2026-04-11"
 category: "tutoriels"
 excerpt: "Passer du simple prompt à une vraie logique de mise en scène pour des images et vidéos IA crédibles."
 ---
+
 Tu ouvres ton outil, tu lances un prompt, tu obtiens une image belle, puis une autre belle, puis une autre belle. Et pourtant ton film ne raconte rien.
 
 Je vois ce problème toutes les semaines avec des débutants brillants. Ils bossent beaucoup. Ils apprennent vite. Ils testent Flux, SDXL, ComfyUI, plein de workflows. Mais ils pensent en opérateur d’outil, pas en réalisateur.

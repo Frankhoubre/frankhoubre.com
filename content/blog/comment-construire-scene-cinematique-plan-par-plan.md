@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Méthode plan par plan pour créer une scène IA cohérente, lisible et émotionnellement efficace."
 thumbnail: "/images/blog/comment-construire-scene-cinematique-plan-par-plan/hero.webp"
 ---
+
 Une scène cinématique ne se génère pas en un bloc.  
 Elle se construit plan par plan.
 

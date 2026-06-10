@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Format page, beats, descriptions visuelles exploitables, et dialogues qui survivent à la génération."
 thumbnail: "/images/blog/comment-ecrire-script-efficace-video-generee-par-ia/hero.webp"
 ---
+
 Tu es ici pour : Comment écrire un script efficace pour une vidéo générée par IA. Bien. On va éviter deux pièges tout de suite.
 
 Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.

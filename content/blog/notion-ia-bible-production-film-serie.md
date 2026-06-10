@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Structure complète pour organiser personnages, scènes, décors, références, décisions et planning de production dans Notion IA."
 thumbnail: "/images/blog/notion-ia-bible-production-film-serie/hero.webp"
 ---
+
 # Notion IA : organiser la bible de production de son film ou de sa série
 
 Tu as des notes partout.  

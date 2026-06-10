@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Composition, lumière commune et inpainting pour un packshot tenu en main crédible en pub."
 thumbnail: "/images/blog/inserer-produit-main-acteur-sans-artefacts/hero.webp"
 ---
+
 Le client veut le flacon **en main**, naturel, héro du plan. Tu composes. La lumière ne colle pas. Les doigts fusionnent au mouvement. Le logo flotte comme un autocollant. *Bienvenue dans le packshot main acteur en IA*, le exercice où la plupart des pubs perdent leur crédibilité en trois secondes.
 
 Insérer un produit en main d'acteur sans artefacts, ce n'est pas « demander une main qui tient X » dans un prompt géant. C'est aligner perspective, échelle, lumière, contact des doigts, puis valider le mouvement sur un clip court. Ce guide suit la chaîne que j'utilise en pub produit et démo tech : pilote main, pilote produit, fusion contrôlée, vidéo modeste, inpainting de secours.

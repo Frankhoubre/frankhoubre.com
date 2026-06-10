@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "LUFS cibles, dynamique et musique pour des masters qui passent TikTok, Reels et YouTube sans écraser la voix."
 thumbnail: "/images/blog/mastering-loudness-pub-reseaux-sociaux-ia/hero.webp"
 ---
+
 Ta pub IA est belle. Tu montes la musique « pour qu'on entende l'ambiance ». Sur TikTok, la plateforme écrase ton master et la voix disparaît. Le message part avec. *Le mastering loudness* pour pubs sur réseaux, c'est la différence entre un spot qui convertit et un mur sonore fatigant.
 
 Objectif : **LUFS cibles** par plateforme, dynamique contrôlée, voix toujours intelligible, musique en support. Applicable à 6 s, 15 s, 30 s, qu'ils viennent de Seedance, Runway ou montage hybride.

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Lisibilité, contrastes, safe zones et export multi plateformes pour sous-titres qui survivent à la compression."
 thumbnail: "/images/blog/sous-titres-burn-in-accessibles-video-ia/hero.webp"
 ---
+
 Tu exportes ta vidéo IA avec des sous-titres blancs fins en bas. Sur TikTok en plein soleil, personne ne lit. Sur Reels, le texte passe sous l'UI. *Accessibilité ratée*, message perdu, et algorithme qui pénalise la rétention. Les **sous-titres burn-in** ne sont pas une option « si on a le temps » : sur le social, ils sont souvent le seul canal de compréhension.
 
 Ce guide couvre lisibilité, contrastes, safe zones, rythme de lecture et exports multi plateformes pour des sous-titres qui survivent à la compression et servent vraiment les spectateurs sourds, malentendants, et ceux qui regardent sans son.

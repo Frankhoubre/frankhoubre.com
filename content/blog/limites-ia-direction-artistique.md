@@ -5,6 +5,7 @@ category: "analyses"
 excerpt: "Goût, cohérence, responsabilité, relation au plateau : pourquoi l'IA accélère les variantes mais ne remplace pas une direction artistique qui assume des choix risqués."
 thumbnail: "/images/blog/limites-ia-direction-artistique/hero.webp"
 ---
+
 # Les limites de l'IA dans la direction artistique (et ce que le humain doit garder)
 
 L'IA génère des moodboards à la vitesse d'un scroll. Elle propose des palettes, des lumières, des cadrages « cinéma ». Et pourtant, sur un vrai projet, la direction artistique reste un métier de **décision sous incertitude** : budget, ego, politique interne, contraintes techniques, goût du producteur à trois heures du matin. *Une machine peut te donner dix options crédibles : elle ne peut pas porter la responsabilité du choix qui coûte cent mille euros.*

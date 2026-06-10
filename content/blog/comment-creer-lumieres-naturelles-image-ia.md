@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Fenêtre, heure, météo, bounce intérieur, et ce qui différencie jour gris de golden hour."
 thumbnail: "/images/blog/comment-creer-lumieres-naturelles-image-ia/hero.webp"
 ---
+
 Tu es ici pour : Comment créer des lumières naturelles en image IA. Bien. On va éviter deux pièges tout de suite.
 
 Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.

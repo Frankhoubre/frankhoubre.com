@@ -309,6 +309,7 @@ Protège les jaunes et rouges alimentaires, évite les LUT extrêmes, et vérifi
 
 <!-- PUBLICATION DATE: 2026-07-07 -->
 ---
+
 title: "Cuisine, fumée et vapeur : rendu réaliste en vidéo IA"
 date: "2026-07-07"
 category: "tutoriels"

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Raconter une histoire claire avec l’image, le cadre, la lumière et le rythme, sans dépendre des dialogues."
 thumbnail: "/images/blog/comment-creer-narration-visuelle-sans-dialogue/hero.webp"
 ---
+
 Une narration visuelle forte n’a pas besoin de parler.  
 Elle montre. Elle suggère. Elle fait ressentir.
 

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Fiche personnage, invariants, angles sûrs, et gestion des mains et du profil."
 thumbnail: "/images/blog/comment-ecrire-prompt-personnage-realiste-constant/hero.webp"
 ---
+
 Un même visage qui devient un cousin différent à chaque régénération, ce n’est pas de la malchance, c’est le défaut normal d’un outil qui optimise une image, pas une identité, et qui n’a aucune obligation de se souvenir pour toi. Si tu veux un personnage **réaliste** et **constant**, tu dois traiter le prompt comme un contrat de tournage, pas comme une liste de souhaits. Le modèle n’a pas ta mémoire. Toi, tu dois la remplacer par des invariants écrits, des angles qui limitent les mensonges, et une discipline de fichiers qui te permet de revenir en arrière sans deviner.
 
 Ce guide part du terrain. Tu y trouveras des **scénarios** concrets, un **workflow** en passes, une **table** de décision, une section **trench warfare** sur ce que les débutants cassent en premier, des renvois vers la culture image utile, et une **FAQ** en fin de page. L’objectif est simple, passer du tir aléatoire à une méthode reproductible, quitte à produire moins d’images mais plus utiles.

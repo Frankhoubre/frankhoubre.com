@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Focales, anamorphique, profondeur de champ, et erreurs classiques de compression de visage."
 thumbnail: "/images/blog/comment-utiliser-objectifs-camera-dans-prompt-ia/hero.webp"
 ---
+
 La focale est l’un des leviers les plus sous-estimes en prompt IA.  
 Tu peux avoir une bonne lumiere, une bonne texture, un bon sujet, si la focale est incoherente avec le cadre, ton image semblera artificielle.
 

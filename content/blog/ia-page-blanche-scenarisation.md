@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Une méthode concrète pour utiliser l'IA comme script doctor, débloquer une scène, retrouver le conflit et écrire sans perdre sa voix."
 thumbnail: "/images/blog/ia-page-blanche-scenarisation/hero.webp"
 ---
+
 # Comment l’IA peut vous aider à vaincre la page blanche en scénarisation
 
 Tu connais ce moment.  

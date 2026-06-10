@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Points de boucle, mouvement cyclique, crossfade et export pour loops seamless en 6 et 15 secondes."
 thumbnail: "/images/blog/boucles-anim-sns-parfaites-video-ia/hero.webp"
 ---
+
 Tu veux une boucle parfaite pour TikTok : 6 secondes qui tournent sans couture visible. Tu génères 8 s, tu coupes au feeling, et au cycle 2 tout saute : lumière, nuage, épaule. *La boucle seamless* se **conçoit** avant la génération, pas dans un fondu désespéré.
 
 Technique vidéo IA pour loops 6 et 15 s : points d'entrée/sortie, mouvement cyclique, crossfade minimal, export et test sur plateforme.

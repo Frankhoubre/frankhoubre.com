@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Lumière incohérente, texture qui glisse, mouvement de caméra invraisemblable, et son déconnecté : les causes les plus fréquentes."
 thumbnail: "/images/blog/pourquoi-videos-ia-manquent-de-realisme/hero.webp"
 ---
+
 Le réalisme vidéo ne se joue pas sur la résolution. Il se joue sur **continuité lumière**, **cohérence matière**, **physique du mouvement**, et **contexte sonore**. Une vidéo peut être nette et pourtant « fake » parce que le visage change de structure entre deux images clés, ou parce que la caméra accélère sans masse.
 
 Tu as déjà une base proche : [pourquoi mes vidéos IA ont l’air fake, et comment les rendre réalistes](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes). Ici, on recentre sur le mot **réalisme** comme crédibilité physique et narrative.

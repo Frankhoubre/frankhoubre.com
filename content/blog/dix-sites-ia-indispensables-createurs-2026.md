@@ -5,6 +5,7 @@ category: "comparatifs"
 excerpt: "Une carte des plateformes réellement utiles en production : image, vidéo, son, écriture, recherche et workflow, avec critères de choix pour ne pas diluer ton budget."
 thumbnail: "/images/blog/dix-sites-ia-indispensables-createurs-2026/hero.webp"
 ---
+
 # Les 10 sites d'intelligence artificielle à connaître absolument pour les créateurs (2026)
 
 Tu n'as pas besoin de cinquante onglets. Tu as besoin d'une **carte** : dix sites qui couvrent image, vidéo, son, écriture, recherche, et l'organisation du travail. *Le reste, c'est du bruit.*

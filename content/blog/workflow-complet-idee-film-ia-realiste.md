@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "De la note sur papier au master, enchaînement des étapes, fichiers, et points de contrôle comme en studio."
 thumbnail: "/images/blog/workflow-complet-idee-film-ia-realiste/hero.webp"
 ---
+
 Il est deux heures du matin, ton export vient de finir, et quelque chose cloche avant même que tu saches quoi. Le clip est net, propre, même un peu trop propre. Ta mère dirait « c’est beau », ton cerveau crie « démo logiciel ». Ce n’est pas une question de talent. C’est une question de chaîne : tu as généré des images, pas une décision de film.
 
 Ce guide te propose une méthode de studio miniature, celle qu’on utilise quand on n’a ni équipe ni budget, mais qu’on veut quand même finir. L’objectif n’est pas de remplacer un tournage réel, c’est de **produire un court morceau cohérent** avec des points de contrôle clairs, des fichiers nommés, et une fin qui tient debout quand on la regarde sur téléphone.

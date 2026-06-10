@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Tile seamless, UV, PBR plausible, et intégration Blender ou moteur jeu : un pipeline propre entre IA et 3D."
 thumbnail: "/images/blog/textures-3d-intelligence-artificielle/hero.webp"
 ---
+
 Une texture 3D utile n’est pas un joli carré : c’est une surface **tilable**, lisible sous **éclairages variés**, et cohérente avec l’échelle du modèle. L’IA peut accélérer la phase d’idée et de base color, mais le **seamless** et les passes PBR demandent encore du contrôle humain ou des outils spécialisés.
 
 Pour le rendu « matière photo » en image fixe avant de passer en 3D, [comment utiliser l’IA pour générer des photos hyper-réalistes](/blog/photos-hyper-realistes-ia).

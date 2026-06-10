@@ -5,6 +5,7 @@ category: "comparatifs"
 excerpt: "Comparatif et workflow pour traduire, adapter et localiser vos scripts vidéo avec l'IA sans perdre le ton, le rythme ni l'intention."
 thumbnail: "/images/blog/traduction-scripts-ia-internationalisation-videos/hero.webp"
 ---
+
 # Traduction de scripts : les meilleures IA pour l’internationalisation de vos vidéos
 
 Tu as une vidéo qui fonctionne en français.  

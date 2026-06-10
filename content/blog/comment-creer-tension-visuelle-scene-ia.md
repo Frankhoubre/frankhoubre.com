@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Construire une tension visuelle crédible en IA avec cadre, lumière, rythme et contraste narratif."
 thumbnail: "/images/blog/comment-creer-tension-visuelle-scene-ia/hero.webp"
 ---
+
 La tension visuelle ne vient pas d’un filtre sombre.  
 Elle vient d’un conflit dans l’image.
 

@@ -5,6 +5,7 @@ category: "analyses"
 excerpt: "Une lecture honnête des métiers qui résistent, de ceux qui se recomposent, et des compétences qui deviennent rares quand tout le monde génère des images « correctes »."
 thumbnail: "/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/hero.webp"
 ---
+
 # Les métiers de l'audiovisuel menacés ou transformés par l'IA : mon avis
 
 Tu veux la liste Twitter : « mort / pas mort ». *La réalité d'un plateau ou d'une agence ne fonctionne pas comme ça.*

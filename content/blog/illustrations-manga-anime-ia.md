@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Ligne claire, aplats, ombres portées codées, et respect des codes : éviter le pastiche illisible ou le vol de style."
 thumbnail: "/images/blog/illustrations-manga-anime-ia/hero.webp"
 ---
+
 Le manga n’est pas « un filtre ». C’est une **grammaire** : ligne variable, aplats de couleur, codage des ombres, lecture des yeux et des cheveux en silhouette. L’IA peut accélérer des planches ou des covers, mais si tu ne maîtrises pas cette grammaire, tu obtiens un mélange vague entre 3D lisse et BD américaine saturée.
 
 Pour le contrôle du style global, [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).

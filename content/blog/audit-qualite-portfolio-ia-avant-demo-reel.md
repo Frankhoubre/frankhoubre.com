@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Grille de lecture, signaux fake, et plan de correction pour un reel qui convainc des directeurs créatifs."
 thumbnail: "/images/blog/audit-qualite-portfolio-ia-avant-demo-reel/hero.webp"
 ---
+
 Tu peux avoir un portfolio IA très impressionnant en silence, puis perdre un directeur créatif en trente secondes quand il lance ton démo reel avec son critique. Ce qui manque n'est pas la résolution. Ce qui manque, c'est une grille d'audit cohérente appliquée plan par plan.
 
 Un audit qualité de portfolio n'est pas un concours de goûts. C'est un protocole de lecture: cohérence de style, stabilité temporelle, lisibilité narrative, sound design, et capacité à reproduire le niveau montré. Sans ce protocole, tu présentes des coups de chance au lieu de présenter une signature.

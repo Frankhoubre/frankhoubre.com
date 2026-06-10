@@ -5,99 +5,175 @@ category: "tutoriels"
 excerpt: "Systeme de suivi des objets clefs pour eviter les incoherences de forme, couleur et position d un plan a l autre."
 thumbnail: "/images/blog/gerer-props-accessoires-coherents-projet-ia/hero.webp"
 ---
+Plan 3 : le verre de whisky est court, épais, avec une base carrée. Plan 7 : le même verre est haut, cylindrique, et la couleur du liquide a viré au cognac. Plan 12 : le verre a disparu, remplacé par une tasse. Tu n'as pas un problème de génération. Tu as un problème de **props non verrouillés**.
 
-Tu lances ton projet avec une bonne intention, puis les versions s accumulent, les details divergent, et tu perds du temps sur des corrections qui auraient pu etre evitees. C est exactement pour ca que j utilise une methode claire sur **gerer les props et accessoires coherents sur un projet ia**. L objectif est simple: produire vite, garder un rendu credible, et livrer sans stress de derniere minute.
+Sur un projet vidéo IA, les accessoires sont les premiers traîtres. Les visages attirent l'attention, mais ce sont les objets qui trahent la continuité : forme, matière, position dans le cadre, reflet, usure. Un client ne formule pas toujours « le verre a changé », il dit « ça fait cheap » ou « on dirait un montage YouTube ». **Gérer les props et accessoires cohérents sur un projet IA** demande un registre d'objets, des références visuelles, et une discipline de nommage que la plupart des débutants n'installent jamais.
 
-Ce guide te montre un workflow terrain que tu peux appliquer des aujourd hui. Tu vas cadrer la preparation, poser des regles de production, et construire une validation qui tient en reel. Pas de theorie decorative. Juste ce qui evite les erreurs repetitives et ce qui te donne un resultat propre du premier briefing a la publication.
+Ce guide pose un système terrain : inventaire, fiche par prop, génération avec référence, contrôle au montage, correction ciblée. Pas de magie. Juste ce qui évite de refaire douze plans parce qu'un stylo a changé de couleur entre deux coupes.
 
-![Plan de travail IA en studio avec notes de production et ecrans de controle](/images/blog/gerer-props-accessoires-coherents-projet-ia/hero.webp)
+![Table de props et accessoires cohérents sur projet vidéo IA, verres et objets référencés](/images/blog/gerer-props-accessoires-coherents-projet-ia/hero.webp)
 
-## Le point de rupture que les debutants sous estiment
+## Pourquoi les props cassent avant les visages
 
-La plupart des blocages ne viennent pas de l outil, mais d un process flou. Quand les instructions changent a chaque essai, le moteur cree des variantes incoherentes et le montage devient une suite de compromis. Tu dois donc verrouiller ce qui ne bouge jamais, et laisser respirer uniquement ce qui sert la scene.
+Les moteurs image et vidéo traitent les objets comme des suggestions contextuelles, pas comme des entités persistantes. Tu écris « verre sur la table » et le modèle invente une forme plausible à chaque passe. Sans ancrage, tu obtiens une variante crédible isolément, incohérente en séquence.
 
-Le deuxieme probleme est la surcharge. Trop de contraintes, trop d adjectifs, trop de corrections simultanees. En pratique, tu ne sais plus pourquoi une version marche ou echoue. La regle que j applique est simple: un seul levier modifie par iteration. C est la seule facon de progresser de maniere reproductible.
+Le deuxième facteur, c'est le prompt qui dérive. Tu ajoutes « lumière dorée », puis « plan serré », puis « ambiance premium ». Chaque couche réinterprète les accessoires. Le verre devient autre chose sans que tu aies touché au mot « verre ». La règle : **séparer le bloc prop du bloc lumière et du bloc action**. Un seul levier par itération.
 
-Le troisieme probleme est la validation tardive. Beaucoup de createurs attendent la fin pour verifier mobile, son, et coherence d ensemble. C est trop tard. Une QA intermediaire de 20 secondes par clip elimine les dettes visuelles avant qu elles contaminent toute la sequence.
+Le troisième facteur, c'est l'absence de registre. En tournage réel, le scripte note « Verre A, plan 3, 7, 12 ». En IA, personne ne note rien. Résultat : tu découvres l'incohérence au montage, quand regenerer coûte cher en temps et en crédits.
 
-Pour renforcer cette base, relis [comment optimiser son workflow IA pour gagner du temps](/blog/comment-optimiser-workflow-ia-gagner-temps) et [comment structurer une video IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film). Ces deux guides posent le socle de discipline qui fait la difference en production.
+Enfin, les props « secondaires » passent sous le radar. Un livre en arrière-plan, une montre, un badge, un packaging. Le spectateur les enregistre inconsciemment. Une rupture subtile suffit à casser la crédibilité globale, même si le héros est parfait.
 
-> 💡 **Frank's Cut:** si tu hesites entre deux versions, choisis toujours celle qui tient sur mobile sans explication. Une image qui demande une justification en reunion est deja une dette.
+Pour poser le socle narratif, lis [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia) et [insérer un produit en main d'acteur sans artefacts](/blog/inserer-produit-main-acteur-sans-artefacts). Les props en main et les props de décor obéissent à la même logique de verrouillage.
 
-## Workflow terrain en 5 phases
+> 💡 **Frank's Cut:** crée une **fiche prop** avant la première génération : trois angles photo ou renders, dimensions relatives, matière, couleur exacte, état d'usure. Sans ça, tu négocies avec le hasard.
 
-| Phase | Objectif | Livrable |
-|-------|----------|----------|
-| Brief | Verrouiller intention et contraintes | `brief-plan.txt` |
-| Generation | Produire un batch court et lisible | `raw-v1` |
-| Tri | Classer A B C rapidement | `selection` |
-| Post | Corriger sans surtraiter | `master-v1` |
-| QA | Valider multi ecrans et son | `ready-to-publish` |
+## Registre d'objets : la colonne vertébrale
 
-### Phase 1: brief operationnel
+Avant de générer, ouvre un fichier `props-registry.md` ou une colonne Notion. Chaque prop critique reçoit un ID : `PROP-01-verre-whisky`, `PROP-02-montre-or`, etc.
 
-Ecris une fiche breve: sujet, decor, lumiere, action principale, interdits. Cette fiche doit pouvoir etre lue en trente secondes. Si elle ressemble a un roman, elle ne sert plus la production.
+Pour chaque ID, documente la description physique, la position type dans le cadre, les plans concernés, la référence visuelle validée, et les interdits (reflet miroir, logo lisible, condensation). Ce registre devient ton contrat avec toi-même et avec le client.
 
-### Phase 2: generation par batch court
+Ne traite pas tout au même niveau de verrouillage. Réserve l'effort maximal aux objets que le spectateur doit reconnaître d'un plan à l'autre.
 
-Genere peu, mais mieux. Quatre a six variations avec un cadre constant donnent plus d informations utiles que vingt essais aleatoires. Archive immediatement ce qui marche pour eviter les pertes de temps.
+### Tableau de criticité des props
 
-### Phase 3: tri A B C
+| Niveau | Type d'objet | Action | Exemple |
+| --- | --- | --- | --- |
+| A | Héros produit, main, packaging | Verrouillage total + référence IP | Bouteille cosmétique, téléphone |
+| B | Secondaire récurrent | Fiche + même seed/référence | Verre, stylo, clés |
+| C | Décor amovible | Palette et style verrouillés | Livres flous, plante |
+| D | Bruit de fond | Laisser varier légèrement | Affiche floue, passants |
 
-Classe chaque sortie. A signifie utilisable tout de suite. B signifie recuperable avec correction legere. C signifie rejet sans discussion. Cette brutalite au tri est ce qui protege ton rythme hebdo.
+## Workflow terrain en six phases
 
-![Comparaison de versions A B C sur une timeline de montage avec annotations visuelles](/images/blog/gerer-props-accessoires-coherents-projet-ia/workflow-1.webp)
+### Phase 1 : inventaire depuis le script
 
-### Phase 4: post production avec retenue
+Lis le script ou le storyboard plan par plan. Surligne chaque objet qui apparaît deux fois ou plus. Surligne aussi tout objet « marque » ou « produit » même s'il n'apparaît qu'une fois en gros plan.
 
-Corrige d abord la balance globale et la coherence de contraste. Ajoute ensuite un grain fin si necessaire, sans chercher a maquiller un plan structurellement faux. Un post agressif amplifie souvent les artefacts que tu voulais cacher.
+Écris une phrase par prop : « Ce que le spectateur doit croire à son sujet. » Cette phrase guide toutes les générations suivantes.
 
-### Phase 5: QA finale orientee diffusion
+### Phase 2 : image pilote par prop niveau A et B
 
-Teste sur desktop et mobile. Verifie les transitions, l intelligibilite du son, la lisibilite des visages et la coherence des couleurs entre plans consecutifs. Cette verification prend peu de temps et evite la majorite des retours clients.
+Génère une image still par prop, fond neutre ou contexte minimal. Valide forme et matière avant d'intégrer en scène. Archive sous `PROP-01-pilote-v3.webp`.
 
-## Erreurs frequentes et correctifs immediats
+Pour Flux ou SDXL, utilise un prompt structuré : sujet isolé, matière, éclairage studio doux, pas de mains, pas de texte. **CFG Scale** autour de 4 à 5 pour éviter la sur-saturation.
 
-Premiere erreur: modifier plusieurs variables en meme temps. Fix: change un seul parametre par passe et note l effet observe.
+### Phase 3 : intégration scène avec référence
 
-Deuxieme erreur: confondre clip impressionnant et clip utile. Fix: valide uniquement ce qui sert la narration, meme si une autre version est plus spectaculaire en miniature.
+Quand tu passes en vidéo, injecte la pilote en image de référence ou premier frame. Garde le bloc prop identique mot pour mot entre les plans du même décor. Varie uniquement angle caméra, action, lumière globale.
 
-Troisieme erreur: surcorriger en post. Fix: accepte de regenerer un plan faible plutot que d accumuler des rustines qui degradent le rendu.
+### Phase 4 : contrôle au montage
 
-Quatrieme erreur: ne pas preparer la livraison. Fix: definis des le depart le format de sortie, le codec, et le support principal de lecture.
+À chaque raccord entre plans partageant un prop, vérifie forme, couleur, position, échelle et usure. Note OK ou KO dans ta timeline.
 
-Pour les references techniques de diffusion, les recommandations d encodage de [YouTube](https://support.google.com/youtube/answer/1722171) et les bonnes pratiques de [Vimeo](https://help.vimeo.com/hc/en-us/articles/12426043233169-Video-compression-guidelines) sont une base solide.
+![Comparaison props cohérents vs incohérents entre plans IA sur timeline de montage](/images/blog/gerer-props-accessoires-coherents-projet-ia/workflow-1.webp)
 
-![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/gerer-props-accessoires-coherents-projet-ia/workflow-2.webp)
+### Phase 5 : correction sans tout casser
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on transformer un workflow IA flou en pipeline clair avec tri A B C et validation multi ecrans.]
+**Inpainting local** pour un prop isolé. **Régénération plan entier** si main, lumière et prop sont tous faux. **Compo 2D** pour packaging ou logo client quand le modèle échoue sur le texte.
+
+### Phase 6 : livraison et bible props
+
+Livre vidéo master + `props-registry.md` + images pilotes. Les déclinaisons futures reprennent les mêmes IDs.
+
+## Props réfléchissants et texte : cas limites
+
+Les lunettes, écrans, vitrines et métal poli sont des pièges majeurs en IA. Si tu n'as pas besoin du reflet, choisis un angle où la surface est mate ou tourne le prop pour éviter le miroir. Si le reflet est narratif (ville dans une vitre), génère le reflet comme élément contrôlé dans le prompt plutôt que de laisser le modèle inventer un décor impossible dans le verre.
+
+Le texte sur les props (étiquettes, écrans, packaging) doit être traité comme niveau A avec compositing en backup. Demander « logo Nike » ou une typo précise au modèle est une loterie. Workflow pro : surface neutre générée, logo posé en post avec fichier vectoriel client.
+
+Les mains qui tiennent un prop changent sa silhouette. Verrouille d'abord la **prise** en still (main + objet), puis anime. Sinon tu corriges la montre et la main mute en même temps.
+
+## Scénarios réels
+
+**Pub spiritueux.** Même pilote verre sur plans bar, salon, gros plan main. La bouteille garde la face caméra verrouillée. Reflets alcool ajustés en post léger uniquement.
+
+**Série bureau.** Laptop couleur fixe, mug blanc anse à droite sur tous les plans open space. Écran laptop peut changer de contenu, pas la couleur de coque.
+
+**Documentaire objet.** Dix angles still avant toute vidéo sur un artefact unique. Mouvement caméra minimal ensuite. Chaque plan cite `PROP-01-medaille` dans le nom de fichier.
+
+**Pub montre luxe.** PROP montre niveau A : boîtier, bracelet, cadran. Pas de gros plan date changeante entre plans. L'heure affichée figée ou composée en post.
+
+## Erreurs fréquentes et correctifs
+
+**Tout décrire dans un prompt roman.** Fix : blocs séparés `PROP`, `LIGHT`, `ACTION`, `CAMERA`.
+
+**Confondre style et identité objet.** Fix : le verre peut chauffer en lumière sans changer de forme.
+
+**Ignorer l'échelle.** Fix : note « verre = 12 % hauteur cadre » sur la fiche.
+
+**Fondu pour masquer.** Fix : coupe sur action ou régénère.
+
+**Pas de nommage fichiers.** Fix : `P07_PROP01_verre_v2_take4.mp4`.
+
+Références : [YouTube encoding](https://support.google.com/youtube/answer/1722171), [Vimeo compression](https://help.vimeo.com/hc/en-us/articles/12426043233169-Video-compression-guidelines), [structurer vidéo IA comme un film](/blog/comment-structurer-video-ia-comme-vrai-film).
+
+![Validation finale cohérence props sur moniteur étalonné et écran mobile](/images/blog/gerer-props-accessoires-coherents-projet-ia/workflow-2.webp)
+
+[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on verrouiller produits et accessoires entre plans IA avec registre d'objets et références visuelles]
 
 ## FAQ
 
-**Faut il tout noter dans un journal de production ?**
+**Combien de props faut-il verrouiller sur un spot de trente secondes ?**
 
-Oui, parce qu un projet IA sans traces devient impossible a reprendre proprement. Note au minimum le prompt valide, la seed quand elle existe, la date, le statut A B C et la raison d un rejet. Cette discipline parait lourde au debut, mais elle fait gagner des jours quand tu dois relivrer une version ou reouvrir le projet un mois plus tard.
+En pratique, entre deux et cinq objets niveau A ou B suffisent pour la majorité des pubs. Au-delà, tu passes plus de temps à maintenir le registre qu'à raconter l'histoire. Fais l'inventaire script d'abord, puis classe chaque objet. Tout ce qui apparaît une seule fois en arrière-plan flou reste niveau C ou D. Cette priorisation évite la paralysie et concentre tes crédits là où le client regardera vraiment.
 
-**Comment savoir si un plan est vraiment livrable ?**
+**IP-Adapter ou ControlNet pour les props ?**
 
-Un plan est livrable quand il tient sur trois niveaux en meme temps: lisibilite narrative, stabilite visuelle et integration sonore. Si le plan est beau mais casse le rythme ou cree une rupture de lumiere, il devient une dette. Utilise une grille courte et repetee a chaque review pour garder un niveau constant.
+IP-Adapter convient pour l'identité visuelle d'un objet injectée dans une scène variée. ControlNet aide à verrouiller position et perspective. Souvent le combo pilote still + img2vid avec première frame verrouillée donne le meilleur ratio temps/résultat pour les débutants.
 
-**Dois je viser la perfection avant le montage ?**
+**Que faire si le prop doit changer dans l'histoire ?**
 
-Non. Cherche un niveau de qualite coherent avec le role du plan dans la sequence. Un plan de transition n a pas besoin du meme niveau de precision qu un gros plan visage. Le bon reflexe est de trier vite, garder ce qui sert l histoire et corriger uniquement ce qui bloque la lecture.
+Documente deux états avec deux pilotes. Au montage, la coupe doit justifier le changement. Ne laisse jamais le modèle improviser l'état du liquide entre plans sans transition narrative.
 
-**Les presets peuvent ils remplacer un vrai jugement creatif ?**
+**Les props générés peuvent-ils porter une marque cliente ?**
 
-Jamais. Un preset accelere des operations mecaniques, mais il ne comprend ni l intention ni le contexte du plan. Utilise les presets comme base, puis ajuste selon la lumiere, la matiere et l emotion voulue. Le rendu final doit paraitre dirige, pas applique automatiquement.
+Évite de demander un logo précis au modèle. Génère un prop générique propre, puis pose le logo en compositing. Pour l'emballage, une photo studio réelle en référence forte bat presque toujours un prompt texte seul.
 
-**Comment eviter la cannibalisation entre mes articles IA ?**
+**Faut-il le même seed pour tous les plans avec le même verre ?**
 
-Donne a chaque article une promesse precise, un angle terrain unique et un vocabulaire cible differencie. Un article parle d un probleme operationnel clair, pas d un theme generaliste. Cette logique editoriale aide le SEO et surtout aide le lecteur a trouver exactement la reponse qu il cherchait.
+La seed aide en image still quand tout le reste est identique. En vidéo, appuie-toi sur référence visuelle + bloc prompt prop figé + checklist montage. La seed reste un bonus à noter, pas la stratégie principale.
 
-**Combien de temps reserver pour la QA finale ?**
+**Comment brief un client sur les limites des props IA ?**
 
-Reserve au minimum quinze pour cent du temps total de production pour la QA. Sans ce tampon, tu publies des details qui paraissent mineurs en studio et enormes sur mobile. Une QA serieuse couvre image, son, rythme, coherence et contraintes de plateforme avant toute livraison.
+Montre un exemple avant/après : plan sans registre vs avec registre. Explique que chaque objet récurrent coûte en temps de verrouillage, comme un accessoire de plateau.
 
-En production IA, la vitesse sans methode donne du volume mais pas de valeur. Quand tu poses un cadre simple et repetable, chaque iteration devient utile et la qualite monte naturellement. Applique cette logique sur **gerer les props et accessoires coherents sur un projet ia** et tu verras vite la difference sur tes livraisons.
+**Inpainting ou régénération complète pour un prop KO ?**
+
+Si le reste du plan est A, inpainting local. Si plus de deux critères critiques sont KO, régénère. L'inpainting sur une main qui tient mal l'objet crée souvent des artefacts pires que la régénération.
+
+**Le registre props est-il utile en solo ?**
+
+Même en solo, indispensable. Tu oublies en quarante-huit heures quelle pilote correspond au plan 7. Le registre est ta mémoire externe.
+
+Quand les accessoires tiennent, le spectateur ne les remarque pas. Il croit à la scène. C'est ça, **gérer les props et accessoires cohérents sur un projet IA** : invisible quand c'est bien fait, catastrophique quand tu l'ignores.
+
+## Atelier registre props : exercice 45 minutes
+
+Minute 0 a 10 : liste tous les objets recurrents du script sur une feuille. Classe chaque objet A B C D selon criticite. Minute 10 a 25 : genere une still pilote pour chaque objet A. Minute 25 a 35 : copie le bloc prompt prop dans un fichier texte separe, sans lumiere ni action. Minute 35 a 45 : monte mentalement les raccords et note les paires de plans a risque.
+
+Cet atelier evite la generation aveugle. Tu sais combien d'objets tu dois verrouiller avant de depenser des credits video. Sur un spot trente secondes, quinze minutes d'atelier registre economisent souvent deux heures de regen au montage.
+
+Quand un client demande « plus premium », ne touche pas au prop en premier. Verifie si la rupture vient d'un changement de verre, de montre ou d'emballage. Montre-lui la comparaison cote a cote avec et sans registre. Le client comprend vite que la coherence objet n'est pas du caprice creatif.
+
+Les equipes a deux divisent le registre : un generateur, un monteur gardien des IDs. Le monteur refuse les plans sans tag PROP dans le nom de fichier. Brutal mais efficace sur les series de six episodes ou plus.
+
+Pour les scenes cuisine et bar, limite le nombre de verres et bouteilles visibles. Chaque reflet est une dette. Un mur de bouteilles floues niveau C bat cinq verres nets niveau B mal tenus.
+
+Archive les pilotes dans un dossier `props/` a la racine du projet, pas dans le dossier downloads du navigateur. Dans six mois, le client revient pour une saison 2 : tu remercies ton toi du passe.
+
+## FAQ complementaire
+
+**Comment gerer les props quand plusieurs generateurs travaillent en parallele ?**
+
+Un seul fichier registre partage, en lecture seule pour tous sauf le lead. Chaque generateur copie le bloc PROP depuis ce fichier, jamais depuis un vieux prompt Discord. Les conflits de version sur le registre sont resolus par le lead une fois par jour, pas en direct sur chaque plan. Sans cette regle, tu obtiens trois verres differents le meme jour de production.
+
+**Les props IA doivent-ils matcher une photo produit client a 100 pour cent ?**
+
+Pour le packaging hero oui, via compositing ou img2img fort. Pour les accessoires de decor non, vise la famille visuelle (forme, couleur, matiere) pas la copie pixel par pixel. Le client valide une still pilote signee ; tout ecart visible au montage declenche inpainting ou compo, pas une dispute vague en fin de projet.
+
+Chaque prop niveau A merite une ligne dans le contrat de livraison : forme verrouillee, reference fournie, pas de substitution sans validation ecrite.
+
+Le registre props est aussi un outil de devis : chaque objet niveau A ajoute du temps de verrouillage a facturer.
 
 <!-- PUBLICATION DATE: 2026-06-10 -->

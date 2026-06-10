@@ -5,6 +5,7 @@ category: "guides"
 excerpt: "Au delà des listes de mots magiques : comment structurer des prompts comme des briefs cinéma, livrer en équipe, et construire une carrière autour de l'IA vidéo et image sans te faire remplacer par le prochain modèle."
 thumbnail: "/images/blog/devenir-prompt-engineer-audiovisuel/hero.webp"
 ---
+
 # Devenir prompt engineer audiovisuel : compétences, débouchés et méthode (2026)
 
 « Prompt engineer » est devenu un titre LinkedIn aussi vague que « consultant ». En audiovisuel, le métier utile n'est pas d'écrire des phrases mystiques : c'est de **traduire une intention de réalisation** en contraintes exploitables par un modèle, puis de **vérifier** le résultat comme on vérifie un rush. *Si tu ne sais pas ce qu'est un plan large, ton prompt ne sauvera pas ton film.*

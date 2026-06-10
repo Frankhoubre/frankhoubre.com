@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Quand générer du texte, quand le créer en post, et workflow After Effects pour titres film propres."
 thumbnail: "/images/blog/generer-typographie-titres-sans-gibberish/hero.webp"
 ---
+
 Tu demandes au modèle d'écrire « LANCEMENT ÉTÉ 2026 » sur l'affiche. Tu obtiens « LANCENENT ÉTÉ 2O26 » avec des lettres qui fondent. Le client lit en trois secondes. *Game over.* La **typographie en production IA** n'est pas un détail graphique : c'est un point de rupture entre une vidéo premium et une démo qui crie fake.
 
 Ce guide tranche : quand tenter de générer du texte, quand le créer en post (After Effects, Premiere, Figma), et comment livrer des titres film propres sans gibberish. Même logique que sur un vrai générique : le texte est conçu, pas improvisé par un moteur qui ne sait pas épeler.

@@ -4,6 +4,7 @@ date: "2026-05-01"
 category: "tutoriels"
 excerpt: "Horizon, lignes de force, hiérarchie du sujet, et respiration du cadre : corriger avant de regénérer à l’infini."
 ---
+
 Une composition faible survit rarement au **recadrage** ou à un **regen ciblé**. Avant de blâmer le modèle, vérifie cinq classiques : horizon qui fuit, sujet coincé au centre sans raison, lignes parasites qui sortent du cadre, trop d’objets rivaux, et absence de **respiration** (espace négatif).
 
 Le guide cadrage proche : [comment cadrer une image IA comme un pro du cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema). Pour la profondeur : [pourquoi mon rendu IA manque de profondeur](/blog/pourquoi-rendu-ia-manque-de-profondeur). Quand la géométrie « colle » mais la caméra semble mentir, vérifie aussi [comment choisir les bons angles caméra en IA](/blog/comment-choisir-bons-angles-camera-ia).

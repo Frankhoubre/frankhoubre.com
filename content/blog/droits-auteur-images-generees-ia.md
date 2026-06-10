@@ -5,6 +5,7 @@ category: "notes"
 excerpt: "EU, UK, USA : grands principes, incertitudes, et checklist pratique pour créateurs et clients, sans remplacer un avocat."
 thumbnail: "/images/blog/droits-auteur-images-generees-ia/hero.webp"
 ---
+
 Ce texte est une **carte de lecture** pour créateur ou chef de projet, pas un conseil juridique personnalisé. Les cadres évoluent vite : quand tu signes un contrat ou un dossier PI, tu fais valider par un **professionnel du droit** adapté à ton pays et ton secteur.
 
 L’objectif ici est d’éviter les erreurs grossières : confondre « image générée » et « image libre de tout risque », ignorer les **CGU** des outils, ou promettre au client une exclusivité que tu ne contrôles pas.

@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Cadrage OTS, axes et prompts pour lier deux personnages sans sauter la ligne d'action."
 thumbnail: "/images/blog/plan-over-epaule-continuite-regard-ia/hero.webp"
 ---
+
 Tu montes ton premier dialogue IA. Plan A : over épaule, magnifique en miniature. Plan B : face au personnage B. Et là, le regard ne tombe plus au bon endroit. Le spectateur ne sait plus qui parle à qui. *Ce n'est pas ton monteur qui a raté.* C'est la **ligne d'action** qui n'a jamais été verrouillée avant la génération.
 
 Le **plan over épaule** (OTS) est l'arme la plus utilisée du cinéma de dialogue. En IA, c'est aussi l'un des cadrages qui trahissent le plus vite une production amateur : épaule qui change de taille, regard qui flotte, profondeur de champ incohérente entre les deux faces du champ contrechamp. Ce guide te donne la méthode plateau que j'utilise sur des scènes fiction, pub et contenus sociaux quand il faut que deux personnages **se parlent vraiment**.

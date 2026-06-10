@@ -5,6 +5,7 @@ category: "actualite"
 excerpt: "Test terrain complet de Topaz Video AI pour restaurer des vidéos anciennes, avec workflow pro, réglages utiles et limites réelles."
 thumbnail: "/images/blog/topaz-video-ai-test-avis-restauration-video/hero.webp"
 ---
+
 Tu retrouves un vieux court-métrage. L’image est douce, bruitée, parfois instable. Tu passes Topaz Video AI en mode « amélioration automatique » et tu obtiens une version plus nette, oui, mais aussi plus artificielle. Peaux plastifiées, détails inventés, mouvement bizarre sur les contours. C’est le classique quand on confond **restauration** et **surtraitement**.
 
 Topaz Video AI est un excellent outil, mais il punit l’impatience. Si tu le pilotes comme un one click, tu perds la matière du plan. Si tu le pilotes comme une étape de finishing contrôlée, tu peux sauver des archives, des rushes faibles et des masters anciens avec un vrai gain de lisibilité.

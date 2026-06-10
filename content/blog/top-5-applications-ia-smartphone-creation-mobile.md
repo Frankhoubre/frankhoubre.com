@@ -5,6 +5,7 @@ category: "comparatifs"
 excerpt: "Une sélection réaliste pour tourner, générer, retoucher et monter depuis le téléphone : critères de qualité, pièges du mobile, et workflows qui survivent au 4G."
 thumbnail: "/images/blog/top-5-applications-ia-smartphone-creation-mobile/hero.webp"
 ---
+
 # Top 5 des applications IA sur smartphone pour créer en mobilité (2026)
 
 Le smartphone est une **caméra de secours**, un **studio miniature**, et parfois une machine à mauvaises décisions. *La mobilité accélère tout, y compris les erreurs.*

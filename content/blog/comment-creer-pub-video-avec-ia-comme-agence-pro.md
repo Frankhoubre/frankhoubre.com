@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Brief client, variantes, conformité, livrables, et finitions qui passent la review créa."
 thumbnail: "/images/blog/comment-creer-pub-video-avec-ia-comme-agence-pro/hero.webp"
 ---
+
 Une pub pro n’est pas une démo de capacité d’outil, ni une course au effet waouh si le message produit disparaît sous la technique. C’est un **brief** traduit en images acceptées par une chaîne de validation, livrée avec des **masters** propres, des **variantes** utiles, et une **traçabilité** de ce qui est généré ou retouché. L’IA change la vitesse, pas l’obligation de clarté client. Ce guide mélange méthode agence et technique génératif : **scénarios** réels, **workflow** de production, **table** de conformité, **trench warfare**, liens encyclopédiques, quatre liens internes, **FAQ**.
 
 **Scénario A.** L’équipe livre un master magnifique. Le client demande la version sans sous-titres intégrés, la version 1:1, la version six secondes, et la version avec packshot finale. Personne n’a gardé les calques ni les prompts. Refaire coûte plus cher que prévu.

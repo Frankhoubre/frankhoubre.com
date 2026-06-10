@@ -4,6 +4,7 @@ date: "2026-04-28"
 category: "business"
 excerpt: "Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve."
 ---
+
 Vendre une image IA n’est pas illégal **en soi** dans beaucoup de juridictions, mais la légalité dépend de **ce que tu promets**, **ce que contient l’image**, et **ce que permettent les CGU** de l’outil et de la place de marché. Ce guide pose un cadre business propre : packaging de l’offre, transparence, et clauses minimales.
 
 Pour le cadre PI large, [droits d’auteur et images générées par IA : ce qu’il faut absolument savoir](/blog/droits-auteur-images-generees-ia). Pour les tarifs vidéo proches comme analogie méthodo, [combien facturer une vidéo IA professionnelle](/blog/combien-facturer-video-ia-professionnelle-grille-prix). Pour une approche pack et wording « branding », relie aussi [comment vendre des visuels IA aux marques](/blog/comment-vendre-visuels-ia-marques).

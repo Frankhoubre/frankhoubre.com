@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Noir réel, practicals, visages dans l’ombre, grain et export sans boue ni HDR cheap."
 thumbnail: "/images/blog/comment-creer-ambiance-sombre-cinematique-avec-ia/hero.webp"
 ---
+
 Tu es ici pour : Comment créer une ambiance sombre et cinématique avec l’IA. Bien. On va éviter deux pièges tout de suite.
 
 Le premier piège, c’est croire qu’un seul réglage magique règle tout. Le second, c’est accumuler des tutos sans jamais finir un mini projet. **Choisis une durée courte**, huit à quinze secondes ou une image unique, et va jusqu’au bout avec une méthode.

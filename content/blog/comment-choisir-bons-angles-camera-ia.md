@@ -4,6 +4,7 @@ date: "2026-04-12"
 category: "tutoriels"
 excerpt: "Choisir des angles caméra crédibles et narratifs pour éviter les images IA plates ou artificielles."
 ---
+
 L’angle caméra change tout.  
 Même sujet, même lumière, autre angle, autre émotion.
 

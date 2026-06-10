@@ -5,6 +5,7 @@ category: "analyses"
 excerpt: "Parcours, idées fortes et ce qu'un créateur peut en retirer : entre souveraineté, ingénierie et pragmatisme industriel, sans angélisme ni catastrophisme."
 thumbnail: "/images/blog/luc-julia-vision-francaise-intelligence-artificielle/hero.webp"
 ---
+
 # Luc Julia et la vision française de l'intelligence artificielle
 
 Tu veux une figure française de l'IA qui parle aux médias, aux entreprises, et aux politiques. *Tu tombes souvent sur des slogans.* Puis tu découvres un ingénieur qui a passé des décennies entre recherche, Silicon Valley, grands groupes, et livres grand public.

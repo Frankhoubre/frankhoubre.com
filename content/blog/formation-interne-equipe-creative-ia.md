@@ -5,6 +5,7 @@ category: "tutoriels"
 excerpt: "Programme 4 semaines, exercices, QA commune et montée en compétence sans sacrifier la charte marque."
 thumbnail: "/images/blog/formation-interne-equipe-creative-ia/hero.webp"
 ---
+
 La plupart des équipes créatives ne manquent pas d'idées sur l'IA. Elles manquent d'un langage commun pour juger la qualité, documenter les tests, et transformer des essais isolés en méthode collective.
 
 Former une équipe interne à la vidéo IA, ce n'est pas empiler des outils dans un Slack. C'est instaurer des rituels de production: brief court, pilote verrouillée, tri A/B/C, revue QA partagée, et retour client documenté. Sans ce cadre, le niveau moyen stagne même si les talents progressent individuellement.
