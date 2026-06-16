@@ -3,6 +3,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // Canonicalise l'hôte : www → non-www (308) pour éviter le contenu
+      // dupliqué. Géré ici (et non côté Vercel) pour rester dans le repo.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.frankhoubre.com" }],
+        destination: "https://frankhoubre.com/:path*",
+        permanent: true,
+      },
       {
         source: "/prompt-chatgpt",
         destination: "/blog/prompt-chatgpt",

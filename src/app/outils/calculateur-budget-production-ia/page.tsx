@@ -5,20 +5,25 @@ import {
   buildOutilPageMetadata,
   getOutilStructuredData,
 } from "@/lib/outils-metadata";
+import { getOutilContent } from "@/lib/outils-content";
 
 export const metadata = buildOutilPageMetadata("budget");
 
 const structuredData = getOutilStructuredData("budget");
+const content = getOutilContent("budget");
 
 export default function CalculateurBudgetProductionIaPage() {
   return (
     <>
-      <JsonLd data={buildWebApplicationJsonLd(structuredData)} />
+      <JsonLd
+        data={buildWebApplicationJsonLd({ ...structuredData, faq: content.faq })}
+      />
       <ToolIframePage
         title="Calculateur budget production IA"
         subtitle="Estimez le cout reel d'un projet video IA (abonnements, credits, revisions) et convertissez les credits Midjourney, Runway ou ElevenLabs en euros."
         iframeTitle="Calculateur budget production IA"
         iframeSrc="/outils/calculateur-budget-production-ia/index.html"
+        content={content}
       />
     </>
   );

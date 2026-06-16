@@ -157,6 +157,7 @@ export function buildWebApplicationJsonLd(opts: {
   path: string;
   description: string;
   breadcrumbs?: BreadcrumbItem[];
+  faq?: { question: string; answer: string }[];
 }) {
   const url = pageUrl(opts.path);
   const graph: object[] = [
@@ -188,6 +189,20 @@ export function buildWebApplicationJsonLd(opts: {
 
   if (opts.breadcrumbs?.length) {
     graph.push(buildBreadcrumbList(opts.breadcrumbs));
+  }
+
+  if (opts.faq?.length) {
+    graph.push({
+      "@type": "FAQPage",
+      mainEntity: opts.faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    });
   }
 
   return {

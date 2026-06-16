@@ -64,12 +64,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/feed.xml`,
-      lastModified: blogLastMod,
-      changeFrequency: "daily",
-      priority: 0.4,
-    },
-    {
       url: `${baseUrl}/a-propos`,
       lastModified: now,
       changeFrequency: "yearly",

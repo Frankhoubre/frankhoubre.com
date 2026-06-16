@@ -60,7 +60,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post || !isPostPublished(post)) {
     return { title: "Blog" };
   }
-  const title = trunc(post.frontmatter.title, 70);
+  // Titre SERP : on vise ≤ 60 caractères. Le layout ajoute « | Frank Houbre »
+  // (~15 car.) via son template ; quand le titre est déjà long, ce suffixe le
+  // ferait tronquer. On retire alors la marque (titleAbsolute) et on plafonne.
+  const title = trunc(post.frontmatter.title, 60);
+  const fitsWithBrand = `${title} | ${siteName}`.length <= 60;
+  const titleAbsolute = fitsWithBrand ? undefined : title;
   const description = trunc(post.frontmatter.excerpt, 160);
   const thumb = getPostThumbnail(post);
   const ogImage = thumb
@@ -71,6 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildPageMetadata({
     title,
+    titleAbsolute,
     description,
     path: `/blog/${slug}`,
     openGraph: {
