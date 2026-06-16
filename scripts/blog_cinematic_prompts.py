@@ -9,6 +9,8 @@ FILM_STILL_SUFFIX = (
     ", 35mm photochemical film look, halation on bright practicals, "
     "subtle chromatic aberration at frame edges, soft shadow rolloff, "
     "natural lens imperfections and micro-contrast, slight anamorphic squeeze character, "
+    "shot on a fast prime lens (50mm or 85mm), shallow depth of field, "
+    "creamy natural bokeh, dynamic off-axis camera angle, "
     "documentary handheld still frame, not a 3d render, not cgi"
 )
 
