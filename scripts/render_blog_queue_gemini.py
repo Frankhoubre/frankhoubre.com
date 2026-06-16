@@ -24,6 +24,7 @@ import argparse
 import base64
 import json
 import os
+import re
 import sys
 import time
 from io import BytesIO
@@ -42,6 +43,55 @@ from cinematic_still_post import apply_cinematic_post  # noqa: E402
 GEMINI_ENDPOINT = (
     "https://generativelanguage.googleapis.com/v1beta/models/{model}:predict"
 )
+
+# Interdiction de texte renforcée : Imagen 4 n'accepte pas de negativePrompt,
+# donc on l'écrit dans le prompt positif.
+NO_TEXT_CLAUSE = (
+    "absolutely no text, no typography, no letters, no words, no captions, "
+    "no title cards, no subtitles, no watermark, no logo, no graphic overlay, "
+    "no UI, no infographic"
+)
+
+# Discipline « still » : formulé en POSITIF (nommer « no collage / grid »
+# amorce justement le collage chez les modèles diffusion). On décrit un plan
+# unique cohérent.
+SINGLE_FRAME_CLAUSE = (
+    "composed as one single cohesive photographic frame, one continuous "
+    "camera shot, unified composition, a single moment in time, "
+    "shallow depth of field with natural bokeh"
+)
+
+# Mots du sujet (issus de la queue) qui poussent vers une planche-contact /
+# grille de cases ou des panneaux multiples — on les neutralise.
+_COLLAGE_TRIGGERS = re.compile(
+    r"\b(montage|s[ée]quence|sequence|split[- ]?screen|collage|grid|"
+    r"contact sheet|editorial photography(?:\s+style)?|moodboard|planche)\b",
+    re.I,
+)
+
+
+def _sanitize_prompt(prompt: str) -> str:
+    """Retire les métadonnées d'article (qui font « écrire » du texte au modèle)
+    et renforce l'interdiction de texte. Garde la description visuelle."""
+    p = re.sub(
+        r"Article theme:\s*.*?(?=Context:|Visual focus:|Cinematic|$)",
+        "",
+        prompt,
+        flags=re.I | re.S,
+    )
+    p = re.sub(
+        r"Context:\s*.*?(?=Visual focus:|Cinematic|$)", "", p, flags=re.I | re.S
+    )
+    p = re.sub(r"Visual focus:\s*", "", p, flags=re.I)
+    p = _COLLAGE_TRIGGERS.sub("", p)
+    p = re.sub(r"\s+", " ", p).strip(" .,")
+    # Ancre un plan unique dès les premiers tokens (poids fort).
+    p = f"A single cinematic film still, one cohesive frame. {p}"
+    if "no typography" not in p.lower():
+        p = f"{p}, {NO_TEXT_CLAUSE}"
+    if "one single cohesive photographic frame" not in p.lower():
+        p = f"{p}, {SINGLE_FRAME_CLAUSE}"
+    return p
 
 
 def _load_env_local() -> None:
@@ -128,6 +178,12 @@ def main() -> None:
     parser.add_argument(
         "--size", default="1K", choices=["1K", "2K"], help="Résolution Imagen 4"
     )
+    parser.add_argument(
+        "--prompt",
+        default=None,
+        help="Sujet personnalisé (remplace celui de la queue ; cible un seul "
+        "index via --start/--end). Passe quand même par le nettoyage/style.",
+    )
     parser.add_argument("--queue", type=Path, default=DEFAULT_QUEUE)
     parser.add_argument("--min-bytes", type=int, default=8000)
     parser.add_argument("--timeout", type=int, default=120)
@@ -163,7 +219,7 @@ def main() -> None:
             skipped += 1
             continue
 
-        prompt = rec["prompt"]
+        prompt = _sanitize_prompt(args.prompt or rec["prompt"])
         if len(prompt) > 3500:
             prompt = prompt[:3490] + "…"
 
