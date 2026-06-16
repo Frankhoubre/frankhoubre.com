@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser l’IA pour le repérage de décors de cinéma"
 date: "2026-04-18"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode pratique pour présélectionner, tester et valider des décors de cinéma avec l’IA sans perdre le réalisme terrain."
 ---

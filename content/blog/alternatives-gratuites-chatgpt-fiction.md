@@ -1,6 +1,7 @@
 ---
 title: "Les alternatives gratuites à ChatGPT pour l'écriture de fiction"
 date: "2026-04-16"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif des alternatives gratuites à ChatGPT pour écrire fiction, scènes, dialogues, synopsis et romans sans perdre sa voix d'auteur."
 thumbnail: "/images/blog/alternatives-gratuites-chatgpt-fiction/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Devenir prompt engineer audiovisuel : compétences, débouchés et méthode (2026)"
 date: "2026-04-17"
+dateModified: "2026-06-10"
 category: "guides"
 excerpt: "Au delà des listes de mots magiques : comment structurer des prompts comme des briefs cinéma, livrer en équipe, et construire une carrière autour de l'IA vidéo et image sans te faire remplacer par le prochain modèle."
 thumbnail: "/images/blog/devenir-prompt-engineer-audiovisuel/hero.webp"

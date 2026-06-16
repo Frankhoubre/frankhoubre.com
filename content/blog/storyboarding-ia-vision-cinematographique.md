@@ -1,6 +1,7 @@
 ---
 title: "Storyboarding IA : transformer son script en vision cinématographique"
 date: "2026-05-07"
+dateModified: "2026-05-13"
 category: "tutoriels"
 excerpt: "Méthode terrain pour storyboarder avec l'IA sans galerie décorative : plans clés, cohérence spatiale, prompts de mise en scène, animatique et erreurs fréquentes."
 ---

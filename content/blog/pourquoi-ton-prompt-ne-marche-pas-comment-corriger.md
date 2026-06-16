@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi ton prompt ne marche pas, et comment le corriger"
 date: "2026-04-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Diagnostiquer contradictions, mauvaise hiérarchie, et tests en trois passes pour retrouver le contrôle."
 thumbnail: "/images/blog/pourquoi-ton-prompt-ne-marche-pas-comment-corriger/hero.webp"

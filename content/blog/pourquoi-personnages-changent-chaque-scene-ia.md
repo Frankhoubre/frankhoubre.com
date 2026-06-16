@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi mes personnages changent à chaque scène"
 date: "2026-04-29"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Prompt instable, seed non maîtrisée, costume synonyme, et absence de fiche : la continuité est un protocole, pas une option du modèle."
 thumbnail: "/images/blog/pourquoi-personnages-changent-chaque-scene-ia/hero.webp"

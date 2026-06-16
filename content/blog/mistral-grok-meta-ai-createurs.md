@@ -1,6 +1,7 @@
 ---
 title: "Mistral AI, Grok AI, Meta AI : lesquelles sont utiles aux créateurs ?"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif terrain Mistral AI, Grok AI et Meta AI pour créateurs: idées, scripts, research, production, limites réelles et workflow pro."
 thumbnail: "/images/blog/mistral-grok-meta-ai-createurs/hero.webp"

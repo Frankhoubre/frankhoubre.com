@@ -1,6 +1,7 @@
 ---
 title: "Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir"
 date: "2026-04-27"
+dateModified: "2026-06-10"
 category: "notes"
 excerpt: "EU, UK, USA : grands principes, incertitudes, et checklist pratique pour créateurs et clients, sans remplacer un avocat."
 thumbnail: "/images/blog/droits-auteur-images-generees-ia/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio)"
 date: "2026-03-30"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Pourquoi l’éclatement des fichiers tue vos projets IA, comment ScreenWeaver recolle écriture et images, et un workflow terrain avec réglages concrets pour rester maître du rendu."
 thumbnail: "/images/blog/screenweaver-ai-ecriture-scenario-storyboard/hero.png"

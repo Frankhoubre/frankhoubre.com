@@ -1,6 +1,7 @@
 ---
 title: "Comment mixer audio et image pour un rendu cinéma"
 date: "2026-05-23"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Mixer audio et image pour un rendu cinéma sur vidéo IA : hiérarchie sonore, stems, dynamique, spatialisation, calibration avec l’étalonnage et livraison sans fatigue ni sensation « démo »."
 thumbnail: "/images/blog/comment-mixer-audio-image-rendu-cinema-video-ia/hero.webp"

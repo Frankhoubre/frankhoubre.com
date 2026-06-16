@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi mes images IA sont floues et comment corriger"
 date: "2026-04-29"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Upscale trop tôt, débruitage agressif, motion blur implicite, et mauvaise résolution de base : diagnostic et correctifs concrets."
 thumbnail: "/images/blog/pourquoi-images-ia-floues-comment-corriger/hero.webp"

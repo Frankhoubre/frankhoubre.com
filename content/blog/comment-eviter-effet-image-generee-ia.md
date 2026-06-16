@@ -1,6 +1,7 @@
 ---
 title: "Comment éviter l’effet « image générée »"
 date: "2026-05-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Symétries suspectes, matière plastique, HDR gratuit, et poses « catalogue » : une checklist pour passer sous le radar visuel."
 ---

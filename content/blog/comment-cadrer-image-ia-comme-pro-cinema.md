@@ -1,6 +1,7 @@
 ---
 title: "Comment cadrer une image IA comme un pro du cinéma"
 date: "2026-04-11"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthodes concrètes de cadrage pour donner à tes images IA une lecture visuelle claire et cinématographique."
 ---

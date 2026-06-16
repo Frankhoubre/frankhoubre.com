@@ -1,6 +1,7 @@
 ---
 title: "Comment écrire un prompt pour un personnage réaliste et constant"
 date: "2026-04-03"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Fiche personnage, invariants, angles sûrs, et gestion des mains et du profil."
 thumbnail: "/images/blog/comment-ecrire-prompt-personnage-realiste-constant/hero.webp"

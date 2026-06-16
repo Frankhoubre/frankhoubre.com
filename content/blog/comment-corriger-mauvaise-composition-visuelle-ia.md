@@ -1,6 +1,7 @@
 ---
 title: "Comment corriger une mauvaise composition visuelle"
 date: "2026-05-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Horizon, lignes de force, hiérarchie du sujet, et respiration du cadre : corriger avant de regénérer à l’infini."
 ---

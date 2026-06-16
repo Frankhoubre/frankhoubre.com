@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser la règle des tiers en génération IA"
 date: "2026-04-11"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Utiliser la règle des tiers pour améliorer immédiatement lisibilité, équilibre et impact visuel en image IA."
 ---

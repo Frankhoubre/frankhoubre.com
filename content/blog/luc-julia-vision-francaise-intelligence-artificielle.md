@@ -1,6 +1,7 @@
 ---
 title: "Luc Julia et la vision française de l'intelligence artificielle"
 date: "2026-04-15"
+dateModified: "2026-06-10"
 category: "analyses"
 excerpt: "Parcours, idées fortes et ce qu'un créateur peut en retirer : entre souveraineté, ingénierie et pragmatisme industriel, sans angélisme ni catastrophisme."
 thumbnail: "/images/blog/luc-julia-vision-francaise-intelligence-artificielle/hero.webp"

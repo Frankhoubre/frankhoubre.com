@@ -1,6 +1,7 @@
 ---
 title: "Les meilleures alternatives à Midjourney en 2026"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif terrain des meilleures alternatives Midjourney en 2026: Recraft, Ideogram AI, Leonardo IA, Bing Image Creator, Firefly, Craiyon et Nano Banana."
 thumbnail: "/images/blog/alternatives-midjourney/hero.webp"

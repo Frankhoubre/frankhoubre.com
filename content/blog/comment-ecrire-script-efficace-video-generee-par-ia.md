@@ -1,6 +1,7 @@
 ---
 title: "Comment écrire un script efficace pour une vidéo générée par IA"
 date: "2026-03-31"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Format page, beats, descriptions visuelles exploitables, et dialogues qui survivent à la génération."
 thumbnail: "/images/blog/comment-ecrire-script-efficace-video-generee-par-ia/hero.webp"

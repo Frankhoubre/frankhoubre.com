@@ -1,6 +1,7 @@
 ---
 title: "Le guide complet du montage vidéo assisté par l’intelligence artificielle"
 date: "2026-04-19"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Guide de terrain pour monter des vidéos assistées par IA sans perdre la narration, avec une méthode pro de l’organisation au rendu final."
 ---

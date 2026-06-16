@@ -1,6 +1,7 @@
 ---
 title: "Quel est le meilleur générateur d’image IA gratuit ?"
 date: "2026-04-24"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Grille de décision honnête : gratuit « vrai », freemium, local GPU, et ce que tu paies en réalité en temps ou en données."
 thumbnail: "/images/blog/meilleur-generateur-image-ia-gratuit/hero.webp"

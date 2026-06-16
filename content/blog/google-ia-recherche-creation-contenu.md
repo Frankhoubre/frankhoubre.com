@@ -1,6 +1,7 @@
 ---
 title: "Comment l'IA de Google révolutionne la recherche et la création de contenu"
 date: "2026-04-16"
+dateModified: "2026-06-10"
 category: "analyses"
 excerpt: "Gemini, la recherche enrichie et les workflows créatifs : ce qui change pour le SEO, la preuve, la production audiovisuelle, et comment éviter de publier du contenu « plausible mais faux »."
 thumbnail: "/images/blog/google-ia-recherche-creation-contenu/hero.webp"

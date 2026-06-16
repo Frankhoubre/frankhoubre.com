@@ -1,6 +1,7 @@
 ---
 title: "Créer une note d'intention de réalisation visuelle avec Tome IA"
 date: "2026-04-14"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode complète pour transformer une intuition visuelle en note d'intention claire, cinématographique et présentable avec Tome IA."
 thumbnail: "/images/blog/tome-ia-note-intention-realisation-visuelle/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "DALL·E et ChatGPT Image : guide complet, différences, prix et usages"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Comprendre la vraie différence entre DALL·E, DALL·E 3 et ChatGPT Image, avec workflow terrain, limites réelles, coûts, comparatif Midjourney, et méthodes pour un rendu crédible."
 thumbnail: "/images/blog/chatgpt-image-dalle-guide/hero.webp"

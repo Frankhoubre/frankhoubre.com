@@ -1,6 +1,7 @@
 ---
 title: "Les 5 meilleurs IA video maker pour créer un clip musical en 2026"
 date: "2026-04-17"
+dateModified: "2026-04-23"
 category: "actualite"
 excerpt: "Comparatif expert des meilleurs IA video maker en 2026 pour créer un clip musical cinématographique, cohérent et diffusables."
 thumbnail: "https://images.unsplash.com/photo-1516280440614-37939bbacd81"

@@ -1,6 +1,7 @@
 ---
 title: "Comment éviter le rendu cartoon non voulu"
 date: "2026-04-30"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Mots déclencheurs, saturation implicite, contours durs, et styles contradictoires : revenir au photo sans tomber dans le plastique."
 ---

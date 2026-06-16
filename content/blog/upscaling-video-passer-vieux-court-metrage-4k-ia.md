@@ -1,6 +1,7 @@
 ---
 title: "Upscaling vidéo : passer son vieux court-métrage en 4K avec l’IA"
 date: "2026-04-21"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode de terrain pour upscaler un vieux court-métrage en 4K avec l’IA, préserver la texture cinéma et éviter les artefacts qui trahissent un rendu amateur."
 ---

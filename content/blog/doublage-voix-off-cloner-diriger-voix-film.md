@@ -1,6 +1,7 @@
 ---
 title: "Doublage et voix-off : cloner et diriger une voix pour son film"
 date: "2026-04-20"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode complète de doublage et voix-off avec IA pour cloner, diriger et mixer une voix crédible, sans rendu robotique ni artefacts audio."
 ---

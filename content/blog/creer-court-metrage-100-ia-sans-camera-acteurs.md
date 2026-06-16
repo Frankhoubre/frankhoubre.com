@@ -1,6 +1,7 @@
 ---
 title: "Créer un court métrage 100 % IA sans caméra ni acteurs"
 date: "2026-03-30"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Structure narrative, cohérence des personnages, limitations honnêtes, et finishing pour tenir un festival en ligne."
 thumbnail: "/images/blog/creer-court-metrage-100-ia-sans-camera-acteurs/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Comment écrire un prompt cinematic ultra réaliste pour l’IA"
 date: "2026-04-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Structure, lumière, focale, imperfections et verrouillage pour des images qui tiennent au cinéma."
 thumbnail: "/images/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia/hero.webp"

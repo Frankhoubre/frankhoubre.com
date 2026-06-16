@@ -1,6 +1,7 @@
 ---
 title: "Comment construire une scène cinématique plan par plan"
 date: "2026-04-12"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode plan par plan pour créer une scène IA cohérente, lisible et émotionnellement efficace."
 thumbnail: "/images/blog/comment-construire-scene-cinematique-plan-par-plan/hero.webp"

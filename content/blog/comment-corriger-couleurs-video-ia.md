@@ -1,6 +1,7 @@
 ---
 title: "Comment corriger les couleurs d'une vidéo IA"
 date: "2026-05-19"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode complète pour corriger les couleurs d'une vidéo IA : diagnostic des défauts typiques, ordre des corrections, scopes, continuité entre plans, peau et compression mobile. Pensée pour passer du rendu « démo » à une livraison défendable."
 thumbnail: "/images/blog/comment-corriger-couleurs-video-ia/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Comment rendre une scène IA plus crédible"
 date: "2026-05-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Cohérence lumière, props qui ont une fonction, échelle humaine, et micro-imperfections : le réel se lit dans les détails utiles."
 thumbnail: "/images/blog/comment-rendre-scene-ia-plus-credible/hero.webp"

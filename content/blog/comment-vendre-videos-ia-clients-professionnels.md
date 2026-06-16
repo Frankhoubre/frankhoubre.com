@@ -1,6 +1,7 @@
 ---
 title: "Comment vendre des vidéos IA à des clients (sans passer pour un bricoleur)"
 date: "2026-04-21"
+dateModified: "2026-04-23"
 category: "business"
 excerpt: "Packaging, preuve, juridique, et process: la méthode terrain pour vendre des vidéos IA comme un studio pro, pas comme une démo TikTok."
 thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978"

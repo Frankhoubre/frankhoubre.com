@@ -1,6 +1,7 @@
 ---
 title: "Comment l'IA générative transforme l'écriture créative dans l'audiovisuel"
 date: "2026-04-16"
+dateModified: "2026-06-10"
 category: "analyses"
 excerpt: "Comment l'IA générative change le développement d'idées, de scènes, de personnages, de pitchs et de workflows d'écriture audiovisuelle."
 thumbnail: "/images/blog/ia-generative-ecriture-creative-audiovisuel/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Comment créer un univers visuel cohérent avec l’IA"
 date: "2026-04-04"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Bible lumière, palette, architecture, et règles de décision pour dix images ou plus."
 thumbnail: "/images/blog/comment-creer-univers-visuel-coherent-avec-ia/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Création de logo avec l’IA : outils gratuits et astuces de pro"
 date: "2026-04-25"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Vectorisation, lisibilité en petit, dépôt marque, et limites des générateurs : un workflow pro sans promesse magique."
 thumbnail: "/images/blog/creation-logo-ia-outils-gratuits-astuces/hero.webp"

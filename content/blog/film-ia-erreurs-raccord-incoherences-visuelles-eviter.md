@@ -1,6 +1,7 @@
 ---
 title: "Film IA : les erreurs de raccord (incohérences visuelles) et comment les éviter"
 date: "2026-04-20"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode terrain pour éliminer les erreurs de raccord dans un film IA et garder une continuité visuelle cinématographique de bout en bout."
 ---

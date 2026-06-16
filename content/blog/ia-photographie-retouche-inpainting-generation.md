@@ -1,6 +1,7 @@
 ---
 title: "L’IA au service de la photographie : retouche, inpainting et génération"
 date: "2026-04-27"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Quand l’IA aide sans mentir : nettoyage local, extension de cadrage, et génération contrôlée avec garde-fous éthiques."
 thumbnail: "/images/blog/ia-photographie-retouche-inpainting-generation/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Les métiers de l'audiovisuel menacés ou transformés par l'IA : mon avis"
 date: "2026-04-14"
+dateModified: "2026-06-10"
 category: "analyses"
 excerpt: "Une lecture honnête des métiers qui résistent, de ceux qui se recomposent, et des compétences qui deviennent rares quand tout le monde génère des images « correctes »."
 thumbnail: "/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/hero.webp"

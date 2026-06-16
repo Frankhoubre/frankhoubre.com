@@ -1,6 +1,7 @@
 ---
 title: "Stable Diffusion : guide d’installation et premiers pas pour les débutants"
 date: "2026-04-28"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Windows ou macOS, GPU ou plan B, téléchargement des poids, première image, et erreurs classiques à éviter dès le jour 1."
 thumbnail: "/images/blog/stable-diffusion-installation-debutants/hero.webp"

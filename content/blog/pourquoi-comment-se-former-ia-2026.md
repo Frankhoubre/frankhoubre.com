@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi et comment se former à l'intelligence artificielle en 2026"
 date: "2026-04-14"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Un plan de formation réaliste pour créateurs : bases, outils image et vidéo, éthique, portfolio et mise à jour continue sans se noyer dans les hype cycles."
 thumbnail: "/images/blog/pourquoi-comment-se-former-ia-2026/hero.webp"

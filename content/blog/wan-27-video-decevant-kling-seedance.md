@@ -1,6 +1,7 @@
 ---
 title: "WAN 2.7 est sorti, et c’est décevant : retard réel face à Kling 3 et Seedance 2"
 date: "2026-04-07"
+dateModified: "2026-05-07"
 category: "actualite"
 excerpt: "Retour de terrain après tests : lenteur, qualité inégale, artefacts visibles. Voici comment diagnostiquer, quoi faire en workflow, et quand pivoter sans te dévaloriser."
 thumbnail: "/images/blog/wan-27-video-decevant-kling-seedance/hero.png"

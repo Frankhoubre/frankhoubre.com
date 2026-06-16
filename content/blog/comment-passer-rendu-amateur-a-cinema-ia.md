@@ -1,6 +1,7 @@
 ---
 title: "Comment passer d’un rendu amateur à un rendu cinéma"
 date: "2026-05-02"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset."
 ---

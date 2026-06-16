@@ -1,6 +1,7 @@
 ---
 title: "Comment créer une tension visuelle dans une scène IA"
 date: "2026-04-12"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Construire une tension visuelle crédible en IA avec cadre, lumière, rythme et contraste narratif."
 thumbnail: "/images/blog/comment-creer-tension-visuelle-scene-ia/hero.webp"

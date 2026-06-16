@@ -1,6 +1,7 @@
 ---
 title: "Comment écrire un scénario de court-métrage de A à Z avec l'IA"
 date: "2026-04-17"
+dateModified: "2026-05-13"
 category: "tutoriels"
 excerpt: "Masterclass complète pour écrire un court-métrage avec l’IA, de l’idée brute au script tournable, sans dialogues artificiels ni structure bancale."
 ---

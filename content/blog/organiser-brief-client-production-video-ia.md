@@ -1,6 +1,7 @@
 ---
 title: "Organiser un brief client pour production video IA sans flou"
 date: "2026-06-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Structure de brief orientee resultat pour cadrer attentes, budget et niveau de realisme avant la premiere generation."
 thumbnail: "/images/blog/organiser-brief-client-production-video-ia/hero.webp"

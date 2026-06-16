@@ -1,6 +1,7 @@
 ---
 title: "Comment améliorer le réalisme des mouvements en vidéo IA"
 date: "2026-03-31"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Vitesses, trajectoires, interactions mains objets, et quand préférer le montage à la génération brute."
 thumbnail: "/images/blog/comment-ameliorer-realisme-mouvements-video-ia/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Produire des variantes verticales Reels Shorts avec IA"
 date: "2026-06-07"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Pipeline réel pour adapter un master horizontal en formats verticales sans perdre composition ni impact."
 thumbnail: "/images/blog/produire-variantes-verticales-reels-shorts-ia/hero.webp"

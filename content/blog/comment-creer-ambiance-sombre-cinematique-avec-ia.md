@@ -1,6 +1,7 @@
 ---
 title: "Comment créer une ambiance sombre et cinématique avec l’IA"
 date: "2026-04-07"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Noir réel, practicals, visages dans l’ombre, grain et export sans boue ni HDR cheap."
 thumbnail: "/images/blog/comment-creer-ambiance-sombre-cinematique-avec-ia/hero.webp"

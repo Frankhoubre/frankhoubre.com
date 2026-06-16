@@ -1,6 +1,7 @@
 ---
 title: "Flux vs SDXL : quelle IA choisir pour des images réalistes"
 date: "2026-04-05"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Comparaison terrain, cas d’usage, VRAM, et comment décider en vingt minutes de tests."
 thumbnail: "/images/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes/hero.webp"

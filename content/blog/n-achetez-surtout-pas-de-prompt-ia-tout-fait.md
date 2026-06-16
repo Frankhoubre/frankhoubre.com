@@ -1,6 +1,7 @@
 ---
 title: "N'achetez surtout pas de prompt IA tout fait !"
 date: "2026-04-22"
+dateModified: "2026-05-13"
 category: "business"
 excerpt: "Pourquoi les packs de prompts prêts à l'emploi standardisent tes sorties, et comment bâtir un système de prompts mesurable, adaptable aux modèles, et aligné avec ton business."
 ---

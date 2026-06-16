@@ -1,6 +1,7 @@
 ---
 title: "Créer des dialogues réalistes avec l'aide d'outils conversationnels"
 date: "2026-04-16"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode terrain pour utiliser ChatGPT, Claude, Gemini ou Mistral comme partenaires d'improvisation et écrire des dialogues plus vrais."
 thumbnail: "/images/blog/ia-dialogues-realistes-outils-conversationnels/hero.webp"

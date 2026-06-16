@@ -1,6 +1,7 @@
 ---
 title: "Comment ajouter du grain cinéma sur une image IA"
 date: "2026-04-05"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Types de grain, intensité par zone, combinaison prompt et post, et pièges sur écran consumer."
 thumbnail: "/images/blog/comment-ajouter-grain-cinema-image-ia/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Comment gerer la continuite costume entre plusieurs scenes IA"
 date: "2026-05-28"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Methode simple pour verrouiller costume, matieres et accessoires sur toute une sequence IA sans perdre des heures en retouches."
 thumbnail: "/images/blog/comment-gerer-continuite-costume-scenes-ia/hero.webp"

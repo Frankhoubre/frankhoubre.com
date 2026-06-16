@@ -1,6 +1,7 @@
 ---
 title: "Topaz Video AI : test et avis complet sur la restauration vidéo"
 date: "2026-04-19"
+dateModified: "2026-06-10"
 category: "actualite"
 excerpt: "Test terrain complet de Topaz Video AI pour restaurer des vidéos anciennes, avec workflow pro, réglages utiles et limites réelles."
 thumbnail: "/images/blog/topaz-video-ai-test-avis-restauration-video/hero.webp"

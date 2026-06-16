@@ -1,6 +1,7 @@
 ---
 title: "Tutoriel Runway Gen-3 : animer une image fixe pour un plan de film"
 date: "2026-04-18"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode détaillée pour animer une image fixe avec Runway Gen-3 sans rendu artificiel ni déformations."
 ---

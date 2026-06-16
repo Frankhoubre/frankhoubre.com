@@ -1,6 +1,7 @@
 ---
 title: "Comment générer des effets spéciaux (VFX) avec des outils IA"
 date: "2026-04-20"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode complète pour créer des VFX IA crédibles, du diagnostic de plan au compositing final sans rendu artificiel."
 ---

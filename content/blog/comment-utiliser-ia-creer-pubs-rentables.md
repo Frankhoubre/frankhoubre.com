@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser l'IA pour créer des pubs rentables (et pas juste jolies)"
 date: "2026-04-22"
+dateModified: "2026-04-23"
 category: "business"
 excerpt: "Méthode créative et media pour produire des publicités IA qui performent: angle, hooks, tests, budget et itérations."
 thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"

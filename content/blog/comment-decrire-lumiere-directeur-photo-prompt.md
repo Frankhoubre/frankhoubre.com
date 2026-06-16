@@ -1,6 +1,7 @@
 ---
 title: "Comment décrire la lumière comme un directeur photo dans un prompt"
 date: "2026-04-02"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Key, fill, couleur, dureté, practicals, et comment éviter le « bel éclairage » sans géométrie."
 thumbnail: "/images/blog/comment-decrire-lumiere-directeur-photo-prompt/hero.webp"

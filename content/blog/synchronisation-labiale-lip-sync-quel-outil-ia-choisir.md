@@ -1,6 +1,7 @@
 ---
 title: "Synchronisation labiale (Lip-sync) : quel outil IA choisir pour ses acteurs virtuels ?"
 date: "2026-04-19"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Comparatif terrain et méthode complète pour choisir un outil de lip-sync IA, diriger la performance et obtenir une synchronisation labiale crédible."
 ---

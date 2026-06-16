@@ -1,6 +1,7 @@
 ---
 title: "L'IA pour écrire des descriptions YouTube optimisées SEO"
 date: "2026-04-15"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Workflow complet pour écrire des descriptions YouTube optimisées SEO avec l'IA: accroche, chapitres, mots-clés, ressources et CTA."
 thumbnail: "/images/blog/ia-descriptions-youtube-seo/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Creer une bible de lieux et decors pour projet IA"
 date: "2026-06-06"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Comment documenter chaque decor pour garder la meme ambiance visuelle du pilote a la livraison finale."
 thumbnail: "/images/blog/creer-bible-lieux-decor-projet-ia/hero.webp"

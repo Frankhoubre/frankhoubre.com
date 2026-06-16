@@ -1,6 +1,7 @@
 ---
 title: "Intelligence artificielle et industrie créative : opportunités ou dangers ?"
 date: "2026-04-14"
+dateModified: "2026-06-10"
 category: "analyses"
 excerpt: "Une grille de lecture pour marques, studios et indépendants : où l'IA crée de la valeur, où elle fragilise la confiance, et comment décider sans se faire piéger par le marketing."
 thumbnail: "/images/blog/intelligence-artificielle-industrie-creative-opportunites-dangers/hero.webp"

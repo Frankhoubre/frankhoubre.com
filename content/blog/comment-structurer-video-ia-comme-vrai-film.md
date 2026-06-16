@@ -1,6 +1,7 @@
 ---
 title: "Comment structurer une vidéo IA comme un vrai film"
 date: "2026-03-31"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Actes, transitions, rythme, et grammes de montage pour dépasser le clip unique plan."
 thumbnail: "/images/blog/comment-structurer-video-ia-comme-vrai-film/hero.webp"

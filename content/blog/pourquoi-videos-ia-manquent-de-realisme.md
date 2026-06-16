@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi mes vidéos IA manquent de réalisme"
 date: "2026-04-29"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Lumière incohérente, texture qui glisse, mouvement de caméra invraisemblable, et son déconnecté : les causes les plus fréquentes."
 thumbnail: "/images/blog/pourquoi-videos-ia-manquent-de-realisme/hero.webp"

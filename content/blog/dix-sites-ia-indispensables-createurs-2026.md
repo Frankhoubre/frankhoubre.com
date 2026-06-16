@@ -1,6 +1,7 @@
 ---
 title: "Les 10 sites d'intelligence artificielle à connaître absolument pour les créateurs (2026)"
 date: "2026-04-15"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Une carte des plateformes réellement utiles en production : image, vidéo, son, écriture, recherche et workflow, avec critères de choix pour ne pas diluer ton budget."
 thumbnail: "/images/blog/dix-sites-ia-indispensables-createurs-2026/hero.webp"

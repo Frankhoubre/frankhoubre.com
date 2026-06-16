@@ -1,6 +1,7 @@
 ---
 title: "Comment organiser ses assets IA comme un pro"
 date: "2026-05-15"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode complète pour organiser assets IA, dossiers, nommage, métadonnées, versions et livraison sans perdre le fil entre image, vidéo, voix et montage."
 thumbnail: "/images/blog/comment-organiser-assets-ia-comme-un-pro/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Générer des illustrations style « manga / anime » avec l’IA"
 date: "2026-04-28"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Ligne claire, aplats, ombres portées codées, et respect des codes : éviter le pastiche illisible ou le vol de style."
 thumbnail: "/images/blog/illustrations-manga-anime-ia/hero.webp"

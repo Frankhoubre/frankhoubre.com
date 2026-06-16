@@ -1,6 +1,7 @@
 ---
 title: "Diriger regards et micro expressions des personnages IA"
 date: "2026-05-31"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Technique de direction d'acteur appliquée aux prompts pour obtenir des regards justes et des expressions stables."
 thumbnail: "/images/blog/diriger-regards-micro-expressions-personnages-ia/hero.webp"

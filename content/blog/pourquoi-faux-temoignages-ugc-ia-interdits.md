@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi les faux témoignages UGC IA sont interdits et comment vendre légalement"
 date: "2026-04-22"
+dateModified: "2026-05-13"
 category: "business"
 excerpt: "Cadre pratique pour utiliser des contenus UGC synthétiques sans pratique commerciale trompeuse : preuves, mentions, alternatives performantes et checklists avant publication."
 ---

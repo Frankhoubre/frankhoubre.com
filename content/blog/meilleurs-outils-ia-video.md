@@ -1,6 +1,7 @@
 ---
 title: "Les meilleurs outils IA vidéo en 2026 : Sora, Runway, Higgsfield, Pika Labs"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif terrain des meilleurs outils IA vidéo 2026: Sora, Runway, Higgsfield et Pika Labs pour produire des plans crédibles sans rendu fake."
 thumbnail: "/images/blog/meilleurs-outils-ia-video/hero.webp"

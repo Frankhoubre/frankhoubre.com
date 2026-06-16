@@ -1,6 +1,7 @@
 ---
 title: "Comment penser comme un réalisateur avec l’IA"
 date: "2026-04-11"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Passer du simple prompt à une vraie logique de mise en scène pour des images et vidéos IA crédibles."
 ---

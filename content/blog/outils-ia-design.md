@@ -1,6 +1,7 @@
 ---
 title: "Les meilleurs outils IA pour créer, détourer et designer plus vite"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif terrain des outils IA design 2026: Photopea, Remove.bg, Looka, Figma, Microsoft Designer, Freepik, Pexels et Shutterstock."
 thumbnail: "/images/blog/outils-ia-design/hero.webp"

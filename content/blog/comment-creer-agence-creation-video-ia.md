@@ -1,6 +1,7 @@
 ---
 title: "Comment créer une agence de création vidéo IA (sans chaos opérationnel)"
 date: "2026-04-22"
+dateModified: "2026-04-23"
 category: "business"
 excerpt: "Positionnement, offres, process, staffing et rentabilité: le guide terrain pour bâtir une agence vidéo IA crédible et scalable."
 thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978"

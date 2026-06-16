@@ -1,6 +1,7 @@
 ---
 title: "Comment diriger un personnage IA comme un acteur"
 date: "2026-04-12"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Créer des performances plus crédibles en IA en dirigeant gestes, regard, rythme et continuité émotionnelle."
 thumbnail: "/images/blog/comment-diriger-personnage-ia-comme-acteur/hero.webp"

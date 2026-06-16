@@ -1,6 +1,7 @@
 ---
 title: "Le vrai workflow IA créatif en 2026 : image, vidéo, voix et production"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "guides"
 excerpt: "Le workflow IA créatif complet pour passer de l’idée à la livraison: image, vidéo, voix, pipeline, production et contrôle qualité en conditions réelles."
 thumbnail: "/images/blog/workflow-ia-creatif/hero.webp"

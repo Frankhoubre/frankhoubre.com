@@ -1,6 +1,7 @@
 ---
 title: "Comment créer une pub vidéo avec l’IA comme une agence pro"
 date: "2026-04-01"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Brief client, variantes, conformité, livrables, et finitions qui passent la review créa."
 thumbnail: "/images/blog/comment-creer-pub-video-avec-ia-comme-agence-pro/hero.webp"

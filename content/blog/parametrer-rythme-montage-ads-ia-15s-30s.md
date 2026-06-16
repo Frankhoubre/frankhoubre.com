@@ -1,6 +1,7 @@
 ---
 title: "Parametrer le rythme de montage ads IA 15s et 30s"
 date: "2026-06-08"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Cadence de plans, respiration et points d accroche pour transformer des clips IA en vraies pubs performantes."
 thumbnail: "/images/blog/parametrer-rythme-montage-ads-ia-15s-30s/hero.webp"

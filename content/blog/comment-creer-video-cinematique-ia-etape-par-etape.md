@@ -1,6 +1,7 @@
 ---
 title: "Comment créer une vidéo cinématique avec l’IA étape par étape"
 date: "2026-04-09"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode complète pour passer d’une idée floue à une vidéo IA crédible, plan par plan, sans rendu plastique."
 thumbnail: "/images/blog/comment-creer-video-cinematique-ia-etape-par-etape/hero.webp"

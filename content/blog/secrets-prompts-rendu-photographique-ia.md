@@ -1,6 +1,7 @@
 ---
 title: "Les secrets des prompts pour générer des images au rendu photographique"
 date: "2026-04-25"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Ce qui marche vraiment : hiérarchie d’information, vocabulaire optique, et pièges à éviter pour ne pas retomber sur un cliché IA."
 thumbnail: "/images/blog/secrets-prompts-rendu-photographique-ia/hero.webp"

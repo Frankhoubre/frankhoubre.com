@@ -1,6 +1,7 @@
 ---
 title: "Créer des textures 3D avec l’intelligence artificielle pour vos projets"
 date: "2026-04-27"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Tile seamless, UV, PBR plausible, et intégration Blender ou moteur jeu : un pipeline propre entre IA et 3D."
 thumbnail: "/images/blog/textures-3d-intelligence-artificielle/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Étude de cas : comment j’ai co-écrit mon film en utilisant l’intelligence artificielle"
 date: "2026-04-21"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Retour terrain sur une co-écriture de film assistée par IA : ce qui a marché, ce qui a échoué, et la méthode finale."
 ---

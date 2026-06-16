@@ -1,6 +1,7 @@
 ---
 title: "Comment simuler un objectif anamorphique en génération IA"
 date: "2026-04-07"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Bokeh, falloff, flare, distorsion légère, et quand ne pas utiliser le mot anamorphic."
 thumbnail: "/images/blog/comment-simuler-objectif-anamorphique-generation-ia/hero.webp"

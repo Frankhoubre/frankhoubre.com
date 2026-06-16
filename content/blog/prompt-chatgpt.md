@@ -1,6 +1,7 @@
 ---
 title: "Prompt ChatGPT : essentiel, mais c'est quoi ?"
 date: "2026-03-30"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Découper un prompt comme un brief de tournage, verrouiller le contexte, itérer sans tourner en rond, et arrêter de supplier l'outil avec des phrases vagues."
 thumbnail: "/images/blog/prompt-chatgpt/hero.png"

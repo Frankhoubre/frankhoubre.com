@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser Canva IA pour la création de visuels rapides"
 date: "2026-04-26"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Magic Edit, fonds, mockups réseaux, et limites : gagner du temps sans sacrifier la charte ni les droits."
 thumbnail: "/images/blog/canva-ia-creation-visuels-rapides/hero.webp"

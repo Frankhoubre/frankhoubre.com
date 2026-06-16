@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi mon rendu IA manque de profondeur"
 date: "2026-04-30"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief."
 ---

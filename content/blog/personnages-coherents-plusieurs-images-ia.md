@@ -1,6 +1,7 @@
 ---
 title: "Tutoriel complet : comment créer des personnages cohérents sur plusieurs images"
 date: "2026-04-24"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Fiche personnage, prompts stables, seeds, LoRA, et QA visuelle : une méthode de studio appliquée à l’IA image."
 thumbnail: "/images/blog/personnages-coherents-plusieurs-images-ia/hero.webp"

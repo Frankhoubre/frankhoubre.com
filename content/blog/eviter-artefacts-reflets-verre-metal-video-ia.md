@@ -1,6 +1,7 @@
 ---
 title: "Éviter les artefacts sur verre et métal en vidéo IA"
 date: "2026-06-05"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Réglages et astuces de tournage virtuel pour limiter les reflets faux sur objets brillants et surfaces complexes."
 thumbnail: "/images/blog/eviter-artefacts-reflets-verre-metal-video-ia/hero.webp"

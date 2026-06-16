@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser les objectifs caméra dans un prompt IA"
 date: "2026-04-02"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Focales, anamorphique, profondeur de champ, et erreurs classiques de compression de visage."
 thumbnail: "/images/blog/comment-utiliser-objectifs-camera-dans-prompt-ia/hero.webp"

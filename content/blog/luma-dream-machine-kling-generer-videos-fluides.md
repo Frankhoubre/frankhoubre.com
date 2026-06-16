@@ -1,6 +1,7 @@
 ---
 title: "Luma Dream Machine / Kling : comment générer des vidéos fluides"
 date: "2026-04-20"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Méthode complète pour obtenir des vidéos IA fluides avec Luma Dream Machine et Kling, sans artefacts ni rendu artificiel."
 thumbnail: "/images/blog/luma-dream-machine-kling-generer-videos-fluides/hero.png"

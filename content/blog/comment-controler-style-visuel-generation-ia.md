@@ -1,6 +1,7 @@
 ---
 title: "Comment contrôler le style visuel dans une génération IA"
 date: "2026-04-04"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Références, LUT, mots qui mentent, et séparation style sujet pour ne pas tout mélanger."
 thumbnail: "/images/blog/comment-controler-style-visuel-generation-ia/hero.webp"

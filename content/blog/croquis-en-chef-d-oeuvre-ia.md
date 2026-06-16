@@ -1,6 +1,7 @@
 ---
 title: "Transformer un simple croquis (dessin) en chef-d’œuvre avec l’IA"
 date: "2026-04-26"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "ControlNet, img2img, conservation des masses, et reprise main : du trait utile au rendu final sans perdre l’âme du dessin."
 thumbnail: "/images/blog/croquis-en-chef-d-oeuvre-ia/hero.webp"

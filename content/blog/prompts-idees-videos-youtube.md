@@ -1,6 +1,7 @@
 ---
 title: "Les 10 meilleurs prompts pour trouver des idées de vidéos YouTube"
 date: "2026-04-14"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "10 prompts terrain pour trouver des idées de vidéos YouTube filmables, originales, optimisées SEO et adaptées à une vraie stratégie de chaîne."
 thumbnail: "/images/blog/prompts-idees-videos-youtube/hero.webp"

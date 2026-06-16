@@ -1,6 +1,7 @@
 ---
 title: "Stable Diffusion en 2026 : guide complet pour créer des images en local"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Comprendre stable diffusion, installer un workflow local solide, exploiter SDXL, comparer avec Midjourney, et produire des images crédibles sans rendu plastique."
 thumbnail: "/images/blog/stable-diffusion-guide-complet/hero.webp"

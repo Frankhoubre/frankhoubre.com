@@ -1,6 +1,7 @@
 ---
 title: "Comment créer un portrait IA digne d’un film"
 date: "2026-04-06"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Focale, catchlights, profondeur, imperfection et direction du regard pour un plan crédible."
 thumbnail: "/images/blog/comment-creer-portrait-ia-digne-film/hero.webp"

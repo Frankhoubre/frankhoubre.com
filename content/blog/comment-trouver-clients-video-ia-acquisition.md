@@ -1,6 +1,7 @@
 ---
 title: "Comment trouver des clients avec la vidéo IA (acquisition sans spam)"
 date: "2026-04-21"
+dateModified: "2026-04-23"
 category: "business"
 excerpt: "Outbound, contenus preuve, partenariats, et niches: une méthode terrain pour remplir ton pipeline avec des clients qui paient une production sérieuse."
 thumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"

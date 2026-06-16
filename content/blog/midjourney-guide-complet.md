@@ -1,6 +1,7 @@
 ---
 title: "Midjourney en 2026 : guide complet pour créer des images bluffantes"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Le guide terrain pour comprendre Midjourney, obtenir un rendu crédible, maîtriser Discord, midjourney.com, SREF et éviter le look IA artificiel."
 thumbnail: "/images/blog/midjourney-guide-complet/hero.webp"

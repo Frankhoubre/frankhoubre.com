@@ -1,6 +1,7 @@
 ---
 title: "Créer des scènes pluie et neige réalistes avec IA"
 date: "2026-06-09"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Approche couche par couche pour rendre météo, matières et mouvements plus crédibles sans surcharge de prompt."
 thumbnail: "/images/blog/creer-scenes-pluie-neige-realistes-ia/hero.webp"

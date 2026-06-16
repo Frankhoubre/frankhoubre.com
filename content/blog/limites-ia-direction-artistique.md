@@ -1,6 +1,7 @@
 ---
 title: "Les limites de l'IA dans la direction artistique (et ce que le humain doit garder)"
 date: "2026-04-16"
+dateModified: "2026-06-10"
 category: "analyses"
 excerpt: "Goût, cohérence, responsabilité, relation au plateau : pourquoi l'IA accélère les variantes mais ne remplace pas une direction artistique qui assume des choix risqués."
 thumbnail: "/images/blog/limites-ia-direction-artistique/hero.webp"

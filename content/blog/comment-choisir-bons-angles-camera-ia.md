@@ -1,6 +1,7 @@
 ---
 title: "Comment choisir les bons angles caméra en IA"
 date: "2026-04-12"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Choisir des angles caméra crédibles et narratifs pour éviter les images IA plates ou artificielles."
 ---

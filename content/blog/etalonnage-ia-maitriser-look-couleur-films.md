@@ -1,6 +1,7 @@
 ---
 title: "Étalonnage IA : maîtriser le look et la couleur de ses films"
 date: "2026-05-07"
+dateModified: "2026-05-13"
 category: "postproduction"
 excerpt: "Pipeline complet pour corriger, harmoniser et styliser une image avec l'IA sans casser les peaux ni la continuité : scopes, groupes de plans, masques intelligents et exports fiables."
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Comment créer des lumières naturelles en image IA"
 date: "2026-04-06"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Fenêtre, heure, météo, bounce intérieur, et ce qui différencie jour gris de golden hour."
 thumbnail: "/images/blog/comment-creer-lumieres-naturelles-image-ia/hero.webp"

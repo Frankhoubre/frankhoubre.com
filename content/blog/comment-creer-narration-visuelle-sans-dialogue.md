@@ -1,6 +1,7 @@
 ---
 title: "Comment créer une narration visuelle sans dialogue"
 date: "2026-04-12"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Raconter une histoire claire avec l’image, le cadre, la lumière et le rythme, sans dépendre des dialogues."
 thumbnail: "/images/blog/comment-creer-narration-visuelle-sans-dialogue/hero.webp"

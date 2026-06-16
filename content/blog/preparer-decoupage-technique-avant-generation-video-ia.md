@@ -1,6 +1,7 @@
 ---
 title: "Préparer un découpage technique avant génération vidéo IA"
 date: "2026-05-29"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Le plan de tournage version IA pour éviter les générations inutiles et livrer plus vite des plans exploitables."
 thumbnail: "/images/blog/preparer-decoupage-technique-avant-generation-video-ia/hero.webp"

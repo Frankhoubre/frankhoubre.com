@@ -1,6 +1,7 @@
 ---
 title: "Comment générer une scène réaliste avec profondeur de champ"
 date: "2026-04-06"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Séparation des plans, bokeh cohérent, distance sujet décor, et post pour adoucir les transitions."
 thumbnail: "/images/blog/comment-generer-scene-realiste-profondeur-champ/hero.webp"

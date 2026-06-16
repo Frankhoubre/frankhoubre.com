@@ -1,6 +1,7 @@
 ---
 title: "Workflow complet pour passer d’une idée à un film IA réaliste"
 date: "2026-04-09"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "De la note sur papier au master, enchaînement des étapes, fichiers, et points de contrôle comme en studio."
 thumbnail: "/images/blog/workflow-complet-idee-film-ia-realiste/hero.webp"

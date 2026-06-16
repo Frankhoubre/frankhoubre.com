@@ -1,6 +1,7 @@
 ---
 title: "Générateur d’image IA sans inscription : les 3 meilleures options du moment"
 date: "2026-04-26"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Transparence honnête : compte léger, session anonyme limitée, ou local zéro compte, avec les vrais compromis 2026."
 thumbnail: "/images/blog/generateur-image-ia-sans-inscription/hero.webp"

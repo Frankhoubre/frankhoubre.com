@@ -1,6 +1,7 @@
 ---
 title: "Comment générer des images IA photoréalistes sans effet plastique"
 date: "2026-04-11"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Méthode terrain pour obtenir une image réaliste, texturée et crédible, sans peau cireuse ni rendu artificiel."
 ---

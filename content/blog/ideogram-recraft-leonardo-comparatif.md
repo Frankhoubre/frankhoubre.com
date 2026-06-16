@@ -1,6 +1,7 @@
 ---
 title: "Ideogram, Recraft ou Leonardo IA : quel outil choisir ?"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif terrain entre Ideogram AI, Recraft et Leonardo IA pour choisir le meilleur outil selon ton objectif: texte dans l’image, cohérence de marque, vitesse et qualité réelle."
 thumbnail: "/images/blog/ideogram-recraft-leonardo-comparatif/hero.webp"

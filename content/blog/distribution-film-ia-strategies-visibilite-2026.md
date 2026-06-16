@@ -1,6 +1,7 @@
 ---
 title: "Distribution de film IA : stratégies pour faire exploser sa visibilité"
 date: "2026-05-07"
+dateModified: "2026-05-13"
 category: "business"
 excerpt: "Plan d'action concret pour distribuer un film IA, activer les bons canaux et transformer un projet terminé en audience réelle, avec un workflow de lancement, des KPI utiles et une FAQ orientée créateurs."
 ---

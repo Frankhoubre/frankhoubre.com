@@ -1,6 +1,7 @@
 ---
 title: "Créer une publicité vidéo percutante avec l’intelligence artificielle"
 date: "2026-04-19"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Guide complet pour créer une publicité vidéo percutante avec l’intelligence artificielle, de l’idée au montage final orienté conversion."
 ---

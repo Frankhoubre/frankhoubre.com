@@ -1,6 +1,7 @@
 ---
 title: "Midjourney vs DALL·E 3 : lequel choisir pour le concept art ?"
 date: "2026-04-24"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Itération, cohérence de direction artistique, contrôle des poses, et livrables : le bon outil dépend du type de concept, pas du logo sur la slide."
 thumbnail: "/images/blog/midjourney-vs-dalle-3-concept-art/hero.webp"

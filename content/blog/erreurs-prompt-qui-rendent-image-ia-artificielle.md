@@ -1,6 +1,7 @@
 ---
 title: "Les erreurs de prompt qui rendent une image IA artificielle"
 date: "2026-04-02"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Liste des tics de langage et des réglages implicites qui poussent le modèle vers le plastique."
 thumbnail: "/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/hero.webp"

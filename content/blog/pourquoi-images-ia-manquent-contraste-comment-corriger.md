@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi tes images IA manquent de contraste, et comment corriger"
 date: "2026-04-07"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Histogramme, courbes, saturation sélective, et rapport ombres lumières façon cinéma."
 thumbnail: "/images/blog/pourquoi-images-ia-manquent-contraste-comment-corriger/hero.webp"

@@ -1,6 +1,7 @@
 ---
 title: "Adobe Firefly : test complet, qualité, limites et cas d’usage"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Mon test terrain d’Adobe Firefly en 2026: qualité réelle, limites, workflow marketing, comparaison pratique et méthode pour éviter les rendus IA artificiels."
 thumbnail: "/images/blog/adobe-firefly-avis/hero.webp"

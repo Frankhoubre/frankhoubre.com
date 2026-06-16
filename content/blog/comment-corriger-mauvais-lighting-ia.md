@@ -1,6 +1,7 @@
 ---
 title: "Comment corriger un mauvais lighting en IA"
 date: "2026-04-30"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Motivation des sources, hiérarchie clé fill rim, et reprompt vs post : quand sauver en génération et quand finir en étalo."
 ---

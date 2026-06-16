@@ -1,6 +1,7 @@
 ---
 title: "Comment étalonner une vidéo IA dans DaVinci Resolve"
 date: "2026-05-17"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Workflow DaVinci Resolve pour étalonner vidéo IA : normalisation Rec.709, scopes, Color Warper, continuité de séquence, grain cinéma et livraison sans surprise sur mobile."
 thumbnail: "/images/blog/comment-etalonner-video-ia-davinci-resolve/hero.webp"

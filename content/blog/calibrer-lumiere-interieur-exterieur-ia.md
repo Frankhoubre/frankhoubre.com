@@ -1,6 +1,7 @@
 ---
 title: "Calibrer la lumiere interieur exterieur en generation IA"
 date: "2026-06-04"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Methode pour garder une coherence lumineuse solide quand une scene alterne interieur, exterieur et heures differentes."
 thumbnail: "/images/blog/calibrer-lumiere-interieur-exterieur-ia/hero.webp"

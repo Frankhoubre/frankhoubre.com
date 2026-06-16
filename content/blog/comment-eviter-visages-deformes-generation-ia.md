@@ -1,6 +1,7 @@
 ---
 title: "Comment éviter les visages déformés en génération IA"
 date: "2026-04-03"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Cadrage, résolution, négatifs utiles, inpainting et itérations sans tout casser."
 thumbnail: "/images/blog/comment-eviter-visages-deformes-generation-ia/hero.webp"

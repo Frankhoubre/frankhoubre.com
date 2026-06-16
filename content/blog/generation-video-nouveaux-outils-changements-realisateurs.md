@@ -1,6 +1,7 @@
 ---
 title: "Génération vidéo : ce que les nouveaux outils changent pour les réalisateurs"
 date: "2026-04-18"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Impact concret des nouveaux outils de génération vidéo IA sur la préproduction, le tournage hybride et la post-production."
 ---

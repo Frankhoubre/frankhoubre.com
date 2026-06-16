@@ -1,6 +1,7 @@
 ---
 title: "Notion IA : organiser la bible de production de son film ou de sa série"
 date: "2026-04-15"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Structure complète pour organiser personnages, scènes, décors, références, décisions et planning de production dans Notion IA."
 thumbnail: "/images/blog/notion-ia-bible-production-film-serie/hero.webp"

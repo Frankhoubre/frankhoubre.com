@@ -1,6 +1,7 @@
 ---
 title: "ChatGPT annonce Image 2 : le nouveau générateur d’images OpenAI, décrypté comme un brief prod"
 date: "2026-04-13"
+dateModified: "2026-04-23"
 category: "actualite"
 excerpt: "Ce que change la nouvelle génération d’images dans ChatGPT pour le cinéma et la pub, comment l’intégrer sans retomber dans le plastique, et le workflow terrain pour passer du prompt à un plan crédible."
 thumbnail: "/images/blog/chatgpt-image-2-generateur-openai/hero.webp"

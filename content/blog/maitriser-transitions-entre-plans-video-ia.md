@@ -1,6 +1,7 @@
 ---
 title: "Maitriser les transitions entre plans video IA sans effet fake"
 date: "2026-06-03"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Comment choisir coupe, raccord et rythme pour relier des plans IA sans casser la credibilite de la scene."
 thumbnail: "/images/blog/maitriser-transitions-entre-plans-video-ia/hero.webp"

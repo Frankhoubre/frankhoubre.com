@@ -1,6 +1,7 @@
 ---
 title: "Comment vendre ses images générées par l’IA (et est-ce légal ?)"
 date: "2026-04-28"
+dateModified: "2026-06-10"
 category: "business"
 excerpt: "Offres, contrats, transparence, plateformes stock, et ce qu’un acheteur sérieux attend comme preuve."
 ---

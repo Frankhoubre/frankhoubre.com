@@ -1,6 +1,7 @@
 ---
 title: "Comment utiliser l’IA pour générer des photos hyper-réalistes"
 date: "2026-04-25"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Lumière motivée, objectif plausible, texture de peau, et post-traitement : le réalisme se gagne en couches, pas en adjectifs."
 thumbnail: "/images/blog/photos-hyper-realistes-ia/hero.webp"

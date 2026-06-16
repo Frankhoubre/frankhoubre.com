@@ -1,6 +1,7 @@
 ---
 title: "Meilleur générateur d’images IA : comparatif complet 2026"
 date: "2026-04-23"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Comparatif terrain 2026 des meilleurs outils AI image generator: ChatGPT Image, Midjourney, Firefly, Ideogram, Recraft et Bing Image Creator."
 thumbnail: "/images/blog/meilleur-generateur-image-ia/hero.webp"

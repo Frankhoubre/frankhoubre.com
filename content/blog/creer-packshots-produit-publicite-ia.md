@@ -1,6 +1,7 @@
 ---
 title: "Créer des packshots produit publicité IA qui tiennent en post"
 date: "2026-05-30"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Workflow packshot debrief à export pour produire des plans produit propres et crédibles avec l'IA."
 thumbnail: "/images/blog/creer-packshots-produit-publicite-ia/hero.webp"

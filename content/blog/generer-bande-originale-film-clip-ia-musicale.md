@@ -1,6 +1,7 @@
 ---
 title: "Générer la bande originale de son film ou clip avec l’IA musicale"
 date: "2026-04-21"
+dateModified: "2026-05-07"
 category: "tutoriels"
 excerpt: "Méthode complète pour générer une bande originale IA qui sert la narration, le rythme et l’émotion d’un film ou d’un clip."
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Comment transformer une image IA en vidéo fluide et crédible"
 date: "2026-04-10"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Processus précis pour animer une image IA sans casser le réalisme, du keyframe au rendu final."
 thumbnail: "/images/blog/comment-transformer-image-ia-video-fluide-credible/hero.webp"

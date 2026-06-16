@@ -1,6 +1,7 @@
 ---
 title: "Comment améliorer la texture de peau en image IA"
 date: "2026-04-05"
+dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Lumière latérale, fréquences, retouche locale et export pour la vidéo ou l’impression."
 thumbnail: "/images/blog/comment-ameliorer-texture-peau-image-ia/hero.webp"

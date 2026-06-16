@@ -1,6 +1,7 @@
 ---
 title: "Dzine : l'IA crée des personnages cohérents et des films d'animation"
 date: "2026-03-29"
+dateModified: "2026-05-13"
 category: "tutoriels"
 excerpt: "Pipeline pour verrouiller un personnage, animer sans dériver, et sortir des clips utilisables, avec l'esprit d'un petit studio, pas d'une démo plastique."
 ---

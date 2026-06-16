@@ -1,6 +1,7 @@
 ---
 title: "Top 5 des applications IA sur smartphone pour créer en mobilité (2026)"
 date: "2026-04-16"
+dateModified: "2026-06-10"
 category: "comparatifs"
 excerpt: "Une sélection réaliste pour tourner, générer, retoucher et monter depuis le téléphone : critères de qualité, pièges du mobile, et workflows qui survivent au 4G."
 thumbnail: "/images/blog/top-5-applications-ia-smartphone-creation-mobile/hero.webp"

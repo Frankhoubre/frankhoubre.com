@@ -1,6 +1,7 @@
 ---
 title: "Construire une shotlist video IA qui evite les plans inutiles"
 date: "2026-06-02"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Modele de shotlist terrain pour planifier les plans qui servent vraiment le montage et limiter la dette visuelle."
 thumbnail: "/images/blog/construire-liste-plans-shotlist-video-ia/hero.webp"

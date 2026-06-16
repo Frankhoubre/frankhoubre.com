@@ -1,6 +1,7 @@
 ---
 title: "Comment créer des scènes cohérentes avec plusieurs plans en IA"
 date: "2026-04-03"
+dateModified: "2026-06-10"
 category: "tutoriels"
 excerpt: "Continuité lumière, personnage, décor, et découpe des prompts pour une séquence lisible."
 thumbnail: "/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/hero.webp"
