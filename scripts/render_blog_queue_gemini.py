@@ -74,10 +74,16 @@ def _generate_imagen(
     api_key: str, model: str, prompt: str, size: str, timeout: int
 ) -> bytes:
     """Appelle Imagen (:predict) et retourne les octets PNG de la 1re image."""
+    # Clés API Gemini (AIza… ou nouveau format AQ.…) → en-tête x-goog-api-key.
+    # Un vrai token OAuth (ya29.…) passerait par Authorization: Bearer.
+    if api_key.startswith("ya29."):
+        auth_headers = {"Authorization": f"Bearer {api_key}"}
+    else:
+        auth_headers = {"x-goog-api-key": api_key}
     resp = requests.post(
         GEMINI_ENDPOINT.format(model=model),
         headers={
-            "x-goog-api-key": api_key,
+            **auth_headers,
             "Content-Type": "application/json",
         },
         json={
@@ -85,7 +91,9 @@ def _generate_imagen(
             "parameters": {
                 "sampleCount": 1,
                 "aspectRatio": "16:9",
-                "sampleImageSize": size,  # "1K" ou "2K" (Imagen 4)
+                # imagen-*-fast a une taille fixe (1K) ; sampleImageSize n'est
+                # accepté que par imagen-4.0-generate-001 / ultra.
+                **({"sampleImageSize": size} if "fast" not in model else {}),
                 "personGeneration": "allow_adult",
             },
         },
@@ -132,10 +140,10 @@ def main() -> None:
             "GEMINI_API_KEY manquante. Ajoute-la dans .env.local :\n"
             "  GEMINI_API_KEY=AIza...   (Google AI Studio → Get API key)"
         )
-    if not api_key.startswith("AIza"):
+    if not (api_key.startswith("AIza") or api_key.startswith("AQ.")):
         print(
-            "⚠️  La clé ne commence pas par 'AIza' — vérifie que c'est bien une "
-            "clé API Gemini (et non un token OAuth).",
+            "⚠️  La clé n'a pas un format de clé API Gemini connu (AIza… ou AQ.…) — "
+            "vérifie qu'elle vient bien de Google AI Studio.",
             file=sys.stderr,
         )
 
