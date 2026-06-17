@@ -428,12 +428,12 @@ export default function HomePage() {
                 Projets de réalisation IA
               </h2>
               <p className="mt-3 text-neutral-700">
-                Deux exemples visibles de création IA orientée narration, direction artistique et
+                Trois exemples visibles de création IA orientée narration, direction artistique et
                 mise en scène.
               </p>
             </div>
 
-            <ul className="mt-10 grid gap-5 md:grid-cols-2">
+            <ul className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               <li>
                 <article className="ds-card ds-reveal flex h-full flex-col p-6">
                   <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
@@ -492,6 +492,39 @@ export default function HomePage() {
                   </p>
                   <a
                     href="https://youtu.be/TaoYARoU7Lc?si=csVLgOV_wuQs4uA0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ds-link mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950"
+                  >
+                    Voir sur YouTube
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article className="ds-card ds-reveal ds-reveal-delay-2 flex h-full flex-col p-6">
+                  <p className="text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+                    Court film IA
+                  </p>
+                  <h3 className="mt-3 text-xl font-semibold text-neutral-950">Lost Garden</h3>
+                  <div className="mt-4 overflow-hidden rounded-xl border border-neutral-200">
+                    <div className="relative aspect-video w-full bg-neutral-100">
+                      <iframe
+                        src="https://www.youtube.com/embed/eZ_JlaLDJ-8"
+                        title="Lost Garden - court film IA"
+                        className="absolute inset-0 h-full w-full"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-neutral-700">
+                    Un court film IA qui travaille l’ambiance, l’univers visuel et une
+                    narration portée par l’image.
+                  </p>
+                  <a
+                    href="https://youtu.be/eZ_JlaLDJ-8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="ds-link mt-5 inline-flex w-fit cursor-pointer text-sm font-medium text-neutral-950"
