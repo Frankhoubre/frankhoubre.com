@@ -53,6 +53,24 @@ re-check KEYWORD_MAP.md for cannibalization before writing.
 - ComfyUI ecosystem (major nodes, official releases).
 - Adobe / Canva / capcut shipping AI video into mass tools.
 
+## Quality debt found 2026-06-17 (careful rewrite, not auto-fix)
+
+Several of these 25 FR articles are mostly templated filler. Removing the
+"## Approfondissement terrain" / "## Prolongement série B" block collapses them
+to ~250-600 real words. They need a genuine rewrite by Claude (real value, no
+filler), not an auto-strip. Highest priority (dropped to <400 words on strip):
+canva-ia-creation-visuels-rapides, creation-logo-ia-outils-gratuits-astuces,
+croquis-en-chef-d-oeuvre-ia, generateur-image-ia-sans-inscription,
+ia-photographie-retouche-inpainting-generation, illustrations-manga-anime-ia,
+pourquoi-images-ia-floues-comment-corriger,
+pourquoi-personnages-changent-chaque-scene-ia,
+pourquoi-videos-ia-manquent-de-realisme, secrets-prompts-rendu-photographique-ia,
+textures-3d-intelligence-artificielle, droits-auteur-images-generees-ia,
+personnages-coherents-plusieurs-images-ia, photos-hyper-realistes-ia,
+stable-diffusion-installation-debutants, midjourney-vs-dalle-3-concept-art.
+Approach: keep the genuine opening + any real sections, delete the filler block,
+rewrite to 1500+ words of real substance, set `dateModified`.
+
 ## Notes
 - Keep evergreen useful even without any product.
 - One intent per article. If an idea overlaps an existing post, prefer updating

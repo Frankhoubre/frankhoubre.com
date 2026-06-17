@@ -24,19 +24,31 @@
   when safe. See ERRORS_AND_BLOCKERS.md.
 
 ### In progress / not done
-- Loop system files are written to disk but NOT yet committed (avoided racing
-  the active translation loop on a shared HEAD on the first pass).
+- Loop system files (22) ARE committed + pushed to origin/main, but they were
+  swept into the translation loop's `git add -A` commit `db3313b` (mislabeled
+  "Add EN translation: fixing bad lighting in AI"). Files intact + inert.
+  History left as-is (rewriting shared, actively-pushed main is unsafe).
 - No news, evergreen, or content fixes published (correct for a setup run).
+- LESSON: explicit-path staging is not enough against the other loop's
+  `git add -A`. Before publishing ANY article content, set up a separate git
+  worktree for this loop (see ERRORS_AND_BLOCKERS B1).
 
 ### What failed
 - Nothing failed. Build green, audit green-enough.
 
 ### What was fixed
-- Nothing in content yet (by design for the setup run).
+- First operational SEO fix applied in an isolated worktree: all 25 em-dash
+  errors cleared (audit 25 -> 0) by replacing ` — ` with ` : ` in 25 FR
+  articles. Committed on branch `loop/seo-fixes-2026-06-17`, pushed (preview).
+  NOT merged to main (would break the translation loop's fast-forward push);
+  merge when that loop is idle. See SEO_AUDIT_LOG + PUBLISH_LOG.
+- Found quality debt: a subset of those 25 articles are mostly filler; queued
+  for careful rewrite in IDEAS_BACKLOG (did NOT auto-strip, which gutted them).
 
 ### Next run should
-1. Confirm the translation loop is idle (or accept staging only own paths),
-   then commit the loop system files.
+1. Set up a dedicated git worktree (`git worktree add ../frankhoubre-loop main`)
+   so this loop stops sharing a working tree with the translation loop. This is
+   a prerequisite before publishing any article content with clean commits.
 2. First safe content fix: remediate the 25 em-dash errors. Prefer removing the
    templated "gouvernance + risques + livrables" boilerplate block entirely
    (it is banned filler) rather than just swapping the dash. Verify build, log.

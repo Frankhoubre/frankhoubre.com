@@ -12,17 +12,25 @@ loop in this same working directory, committing to `main` every ~90s, writing
 - Risk: `git add -A` would sweep its in-progress files into our commit; racing
   `git commit`/`push` on a shared HEAD can hit `index.lock` errors or interleave
   unrelated changes.
+- CONFIRMED 2026-06-17: the translation loop runs `git add -A` (it swept our
+  separately-staged `.loop_*` files into its own commit `db3313b`, mislabeled
+  "Add EN translation: fixing bad lighting in AI"). Our files are tracked,
+  intact, and pushed, just under the wrong message. We did NOT rewrite history
+  (unsafe while the other loop is actively committing + pushing main).
 - Mitigation (mandatory for this loop):
-  - Only stage explicit paths: `git add .loop_memory .loop_scripts SETUP_LOOP.md`
-    plus the specific content files this loop authors. Never `git add -A`/`.`.
-  - Before committing, `git status` and confirm only intended paths are staged.
-  - If `index.lock` exists, wait and retry; do not delete it (the other process
-    may be mid-commit).
-  - Do not `git push` content changes while the translation loop is pushing,
-    unless coordinating; a local commit is fine and the other loop's next push
-    will carry it (our files are inert `.loop_*` and do not affect the build).
-- Needs human: confirm both loops writing to `main` is acceptable, or give this
-  loop its own branch / worktree.
+  - Staging explicit paths is NOT enough on its own, because the other loop's
+    `git add -A` will grab anything untracked/modified in the tree before our
+    commit fires. To truly isolate, use a **separate git worktree** for this
+    loop (e.g. `git worktree add ../frankhoubre-loop main`) so the two loops do
+    not share a working tree. STRONGLY RECOMMENDED for any content commits.
+  - Until a worktree exists: accept that edits may be carried by the other
+    loop's commits. That is acceptable for inert `.loop_*` files, but NOT for
+    article content (we want our own clean, well-messaged commits for content).
+  - Never `git add -A`/`.` ourselves. Never delete `.git/index.lock`.
+  - Never switch/create branches in the shared working tree (it changes HEAD
+    for the other process too). Use a worktree instead.
+- Needs human: confirm both loops writing to `main` is acceptable, or approve
+  giving this loop its own worktree (preferred) before it publishes content.
 
 ### B2 — Em-dash + boilerplate in 25 FR articles (MEDIUM, ready to fix)
 The audit flags 25 em-dash errors, all inside a templated
@@ -38,11 +46,11 @@ The audit flags 25 em-dash errors, all inside a templated
 - **Deploy model**: Vercel auto-deploys from `main`. The loop assumes pushing
   `main` deploys production. Confirm. (vercel.json present; remote is
   github.com/Frankhoubre/frankhoubre.com.)
-- **Image generation**: new articles want local cinematic images under
-  `public/images/blog/<slug>/`. The python scripts use `GEMINI_API_KEY` (present
-  in `.env.local`). Confirm the loop may invoke them, or news ships with the
-  default OG image until images land. Bash is available in THIS session; the
-  translation session has Bash disabled.
+- **Image generation**: RESOLVED 2026-06-17 (Frank). The `GEMINI_API_KEY` is
+  for IMAGE generation ONLY. ALL article writing/rédaction is done by Claude
+  directly in-session, never by Gemini or any other model. Use the python image
+  scripts (Gemini/Imagen) to produce `public/images/blog/<slug>/hero.webp` etc.;
+  do all prose here.
 - **Analytics / SEO data**: Ahrefs MCP + GSC tools are available in this
   environment. Confirm the frankhoubre.com Ahrefs project id / GSC property so
   the loop can pull real keyword + traffic data instead of guessing.

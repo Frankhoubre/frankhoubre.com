@@ -3,6 +3,25 @@
 Run `node .loop_scripts/seo_audit.mjs` each day. Log the summary, what was
 fixed, and what was deferred. Newest entry on top.
 
+## 2026-06-17 — First operational SEO fix (em dashes)
+
+Worked in an isolated git worktree (`../frankhoubre-loop`, branch
+`loop/seo-fixes-2026-06-17`) to avoid the concurrent translation loop.
+
+- Fixed all **25 em-dash errors** -> audit now **0 errors** (306 warnings, 1 info).
+  Replaced ` — ` with ` : ` (French colon) in the templated filler lead lines.
+  Body text only, frontmatter untouched, exactly 25 files, +27/-27 lines.
+- IMPORTANT discovery (logged, NOT auto-applied): those em dashes live in a
+  generic "## Approfondissement terrain" / "## Prolongement série B" filler
+  block. Running the repo's `scripts/strip_campaign_boilerplate.py` to remove it
+  GUTTED several articles (e.g. canva-ia-creation-visuels-rapides 2210->273
+  words, pourquoi-personnages-changent-chaque-scene-ia 2168->245). That means a
+  subset of these 25 articles are largely filler with thin real content. Do NOT
+  auto-strip. Queued for careful per-article rewrite by Claude (IDEAS_BACKLOG).
+- Status: committed on branch `loop/seo-fixes-2026-06-17`, pushed to origin
+  (Vercel preview). NOT merged to main yet (merging out-of-band would make the
+  translation loop's next push non-fast-forward). Merge when that loop is idle.
+
 ## 2026-06-17 — Baseline audit (setup run, read-only)
 
 Build: `npm run build` PASS (exit 0, Next.js 16.2.1).

@@ -19,6 +19,12 @@ Simple. Direct. Curious. Useful. Opinionated when it earns it. Concrete.
 Human. Fluid. A little cinematic when it helps. Never robotic, never a content
 farm, never fake-excited.
 
+## Who writes what (locked by Frank, 2026-06-17)
+
+ALL writing is done by Claude directly, in-session. No prose is ever generated
+by Gemini or any other model. The `GEMINI_API_KEY` is used ONLY to generate
+images. Everything runs locally on Frank's machine.
+
 ## Language
 
 - FR articles in `content/blog/` are the primary site, written in French.

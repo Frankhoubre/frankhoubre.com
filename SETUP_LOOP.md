@@ -99,7 +99,12 @@ two loops share one git HEAD. Rules:
   paths only and verifies `git status` before committing.
 - If `.git/index.lock` exists, the other loop is mid-commit. Wait and retry;
   never delete the lock.
-- Consider giving each loop its own git worktree if you want full isolation.
+- CONFIRMED on 2026-06-17: the translation loop uses `git add -A`, so even
+  separately-staged files get swept into its commits. **Give this loop its own
+  git worktree** before it publishes content:
+  `git worktree add ../frankhoubre-loop main`, then run the loop from there.
+  Do NOT switch/create branches in the shared working tree (changes HEAD for
+  the other process too).
 
 ## 6. Credentials / decisions still needed
 
