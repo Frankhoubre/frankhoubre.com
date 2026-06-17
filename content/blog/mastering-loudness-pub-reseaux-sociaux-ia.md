@@ -61,7 +61,9 @@ Limiter transparent, viser cible LUFS, vérifier true peak. Export WAV 48 kHz pu
 
 **Voix enterree** : baisser musique, pas booster voix à distorsion. **Pumping** : release compression trop court. **Saturation après upload** : true peak trop haut. **Spot « petit »** : cible LUFS ok, problème EQ pas volume.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on viser les LUFS des réseaux sociaux sans écraser la voix sur une pub IA]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ![Courbe loudness avant après normalisation plateforme](/images/blog/mastering-loudness-pub-reseaux-sociaux-ia/workflow-2.webp)
 

@@ -104,7 +104,9 @@ Erreur 5: oublier la vérification factuelle sur infos sensibles.
 
 Erreur 6: changer d’outil à chaque jour sans méthode stable.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structurer un pipeline créatif avec plusieurs IA conversationnelles].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Core Concepts pour une utilisation vraiment pro
 

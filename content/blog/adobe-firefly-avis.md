@@ -115,7 +115,9 @@ Erreur 5: absence de grille de tri. Sans critères fixes, tu choisis “à l’�
 
 Erreur 6: oubli des contraintes négatives. Sans consignes anti-lissage ou anti-rendu CGI, tu retombes vite dans un style artificiel.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on la production d’assets marketing IA qui convertissent sans paraître artificiels].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Core Concepts pour bien exploiter Firefly
 

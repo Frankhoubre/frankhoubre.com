@@ -386,7 +386,9 @@ Cette clarté est rare. C'est pourquoi elle se paie.
 
 Si tu ne fais qu'une chose cette semaine, fais celle-ci: remplace ta page d'accueil par trois cas expliqués comme des mini-livrables, pas comme une vitrine. C'est petit, mais c'est puissant.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building a credible AI creative portfolio that converts clients].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## FAQ
 

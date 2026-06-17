@@ -99,7 +99,9 @@ La page Wikipédia sur [l'ingénierie de prompts](https://en.wikipedia.org/wiki/
 | Traçabilité business | Faible | Très élevée |
 | Risque d'allégations hasardeuses | Élevé si copié brut | Plus faible si cadré |
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building prompt systems that scale]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Troubleshooting : erreurs fréquentes qui tuent la performance
 

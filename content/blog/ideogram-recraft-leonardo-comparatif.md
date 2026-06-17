@@ -110,7 +110,9 @@ Erreur 5: pas de journal de test. Sans trace, tu répètes les mêmes erreurs à
 
 Erreur 6: choisir l’outil à la mode, pas l’outil adapté. La hype ne paie pas tes heures perdues.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on comment choisir un outil IA image selon objectif business et workflow réel].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Cas réels: quel outil je choisis selon le besoin
 

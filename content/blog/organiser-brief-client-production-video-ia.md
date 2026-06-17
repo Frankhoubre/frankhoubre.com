@@ -170,7 +170,9 @@ Brief signé email, styleframe validé, livrables listés, planning avec buffer 
 
 ![Validation brief client et styleframe avant génération vidéo IA](/images/blog/organiser-brief-client-production-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on transformer un call client flou en brief une page validé avec grille réalisme IA et email de GO avant génération]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## FAQ
 

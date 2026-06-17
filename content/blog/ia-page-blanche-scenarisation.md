@@ -92,7 +92,9 @@ Prompt: "Je veux une scène de thriller dans un lieu banal. Propose 10 lieux quo
 
 Ensuite: "Choisis le concept le plus filmable avec petit budget et propose une montée de tension en 7 beats." Là, l’IA peut structurer une progression. Beat 1: normalité. Beat 2: détail étrange. Beat 3: rationalisation. Beat 4: répétition. Beat 5: preuve. Beat 6: choix. Beat 7: bascule.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on overcoming creative blocks with structured AI prompts]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Ce que les débutants cassent quand ils utilisent l’IA pour scénariser
 

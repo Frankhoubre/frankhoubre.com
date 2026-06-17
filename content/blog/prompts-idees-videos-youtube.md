@@ -91,7 +91,9 @@ Prompt à utiliser: "Propose 15 concepts YouTube pour aider des freelances créa
 
 Ce type de prompt génère des vidéos avec une vraie promesse business: devis, brief, révisions client, livraison, droits d’usage. Tu n’es plus dans "l’IA va changer le monde". Tu montres comment envoyer un email, cadrer un projet, éviter de promettre un film Pixar à 300 euros, et livrer quelque chose de propre.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on YouTube content ideation and offer positioning]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ### Scénario 3: chaîne éducative grand public
 

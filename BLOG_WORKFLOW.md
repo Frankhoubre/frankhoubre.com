@@ -60,7 +60,7 @@ Go extremely deep. Expand every technical detail with tons of advice, examples, 
 2. Core Concepts (H2): Theory explained simply but with technical precision (rich paragraphs).
 3. The Trench Workflow (H2/H3s): Ultra-granular step-by-step. Detail every slider, node, prompt tweak, and rendering step. Include 2-3 specific real scenarios with full examples.
 4. Troubleshooting - What Beginners Break (H2): Massive section with exact failure points and precise fixes.
-5. Business Dynamite Video: Insert exactly once: `[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on (insert relevant topic)]`.
+5. Business Dynamite Video (FRENCH articles only): NEVER output the literal `[🎥 WATCH: ...]` placeholder or the bare channel URL `youtube.com/@BusinessDynamite` as text — it renders as ugly raw text. The site automatically embeds a relevant Business Dynamite video at the right place on every French article (see `getRecommendedYouTubeVideoId`). If you want to place a specific video contextually, insert a real watch URL on its own line as a markdown link, e.g. `[Voir l'explication en vidéo](https://www.youtube.com/watch?v=VIDEO_ID)`, which the pipeline turns into an embed. ENGLISH articles must contain NO YouTube video.
 6. FAQ (PAA Optimization) (H2): 6 to 8 precise questions. Each answer must be a full, rich paragraph of 80-120 words (never a single sentence).
 
 ## 📅 PUBLISHING SCHEDULE PROTOCOL

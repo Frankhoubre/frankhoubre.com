@@ -96,7 +96,9 @@ Si tu travailles l’aspect rendu final, [notre guide sur le grain cinéma en im
 
 ![Revue de raccord au montage avec corrections plan par plan pour continuité film IA](/images/art12-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on visual continuity and continuity checks in AI filmmaking]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Troubleshooting: ce que les débutants cassent le plus et les fixes exacts
 

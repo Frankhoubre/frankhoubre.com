@@ -91,7 +91,9 @@ Documente enfin chaque test dans une feuille simple: hypothèse, variante, résu
 
 ![Tableau de test A B publicitaire IA avec variantes de hook CTA et mesure de conversion](/images/art7-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI ad hooks and conversion testing]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Troubleshooting: les erreurs qui sabotent une pub IA et comment les corriger
 

@@ -203,7 +203,9 @@ Dans `notes.txt`, une ligne par essai : date, seed, amplitude, verdict A/B/C, ca
 
 La compression [H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding) en livraison web mangera encore un peu de texture : prévois un léger grain en amont plutôt qu'une image trop propre qui devient cire après upload.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on transformer une image fixe en plan cinéma crédible et calibrer le mouvement caméra avant d'enchaîner les plans.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## FAQ
 

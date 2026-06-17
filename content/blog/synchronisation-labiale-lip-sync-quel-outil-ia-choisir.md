@@ -95,7 +95,9 @@ Quand la correction est validée, passe directement à une vérification multi-s
 
 ![Validation finale de synchronisation labiale IA sur timeline avec contrôles multi-écrans](/images/art8-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI lip-sync quality control for close-up shots]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Troubleshooting: ce que les débutants cassent et comment corriger vite
 

@@ -84,7 +84,9 @@ Quand tu relances un programmateur, reste bref. Une phrase contextuelle, un lien
 | Newsletter et communautés | Audience chaude | Coulisses, breakdown | Taux de clic | Temps éditorial |
 | Partenariats créateurs | Transfert d'audience | Collab courte, échange de valeur | Nouveaux abonnés qualifiés | Décalage de ton |
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on short film distribution and creator growth]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Troubleshooting : ce que les débutants cassent en distribution
 

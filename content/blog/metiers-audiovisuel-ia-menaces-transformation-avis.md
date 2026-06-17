@@ -163,7 +163,9 @@ Ils ne paient pas toujours pour « encore plus de variantes » si ces variantes 
 
 ![Salle de grading sombre, scopes vidéo, silhouette coloriste ajustant courbes, ambiance cinéma](/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/workflow-post.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on lire une campagne IA comme un producteur, pas comme un concours de démo]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ
 

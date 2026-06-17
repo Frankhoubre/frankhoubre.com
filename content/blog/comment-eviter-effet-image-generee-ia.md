@@ -186,7 +186,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Comment éviter l’effet « image générée »** et le périmètre `comment-eviter-effet-image-generee-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Symétries suspectes, matière plastique, HDR gratuit, et poses « catalogue » : une checklist pour passer sous le radar visuel. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on spotting and fixing the generic AI look before final polish].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=bshuJgY3zUM)
 
 ![Second repère : sharpen local vs global.](/images/blog/comment-eviter-effet-image-generee-ia/workflow-2.webp)
 

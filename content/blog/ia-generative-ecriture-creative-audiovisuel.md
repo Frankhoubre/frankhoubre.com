@@ -110,7 +110,9 @@ References techniques : [YouTube encoding](https://support.google.com/youtube/an
 
 ![Validation finale ia-generative-ecriture-creative-audiovisuel](/images/blog/ia-generative-ecriture-creative-audiovisuel/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on mettre en place un workflow clair sur ia generative ecriture creative audiovisuel.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Notes de plateau (details qui changent tout)
 

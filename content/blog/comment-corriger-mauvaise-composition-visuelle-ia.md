@@ -180,7 +180,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Comment corriger une mauvaise composition visuelle** et le périmètre `comment-corriger-mauvaise-composition-visuelle-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Horizon, lignes de force, hiérarchie du sujet, et respiration du cadre : corriger avant de regénérer à l’infini. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret. Un court échange mail sur le périmètre et le nombre d’allers-retours évite beaucoup de tensions sur les micro-prestations ; livrer le prompt dépend du contrat, sinon fournis une description fonctionnelle équivalente ; anticipe la compression plateforme par un export « pire cas » ; pour un retour tardif hors scope, propose un addendum chiffré plutôt qu’une négociation floue.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on fixing composition and leading lines]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=03YtZqcE6ro)
 
 ![Second repère : avant après recadrage.](/images/blog/comment-corriger-mauvaise-composition-visuelle-ia/workflow-2.webp)
 

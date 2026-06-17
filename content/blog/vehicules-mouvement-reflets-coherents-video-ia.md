@@ -122,7 +122,9 @@ Pour la culture visuelle auto réelle, étudie les breakdowns de pub automobile 
 
 ![Gros plan capot voiture avec reflet néon cohérent et route mouillée synchronisée](/images/blog/vehicules-mouvement-reflets-coherents-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on les reflets carrosserie et surfaces métalliques en vidéo IA pour un rendu premium crédible.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Outils et paramètres : ce qui marche aujourd'hui
 

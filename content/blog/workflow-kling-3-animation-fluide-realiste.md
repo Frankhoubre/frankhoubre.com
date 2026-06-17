@@ -209,7 +209,9 @@ Si après deux sessions propres (brief inchangé, pilote validée, 12 variations
 
 **Échelle du sujet dans le cadre.** Un personnage trop petit force le modèle à « inventer » du détail de visage en mouvement. Un plan plus serré avec pilote nette tient souvent mieux qu'un plan large où le visage est un smear en mouvement.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on calibrer la force de mouvement et éviter les morphings de mains sur les plans image-to-video.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## FAQ
 

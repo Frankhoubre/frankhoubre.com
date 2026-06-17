@@ -370,7 +370,6 @@ Tu dois privilégier la lisibilité puis la cohérence, ensuite seulement le sty
 
 ### Une dernière ressource vidéo à regarder
 
-Analyse les décryptages de mise en scène de `@BusinessDynamite` ici, https://www.youtube.com/@BusinessDynamite. Regarde comment les décisions de cadre, de rythme et de lumière servent toujours une intention précise.
 
 
 ## Atelier avancé, diriger une performance crédible

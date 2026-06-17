@@ -123,7 +123,9 @@ Erreur 5: publier sans test smartphone.
 
 Erreur 6: absence de bibliothèque de prompts et décisions.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on construire un pipeline IA créatif complet pour livrer comme un studio].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Core Concepts pour scaler proprement
 

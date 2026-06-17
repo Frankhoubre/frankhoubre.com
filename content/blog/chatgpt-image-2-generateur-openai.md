@@ -142,7 +142,9 @@ Ce n’est pas un match « vainqueur unique ». C’est un choix de **contrainte
 
 ## Business Dynamite : la chaîne valeur, pas le gadget
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on **monétiser une compétence créative sans te brûler sur les outils** (pipeline, offre, livrables répétables)]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 L’annonce d’une **Image 2** ne te rend pas entrepreneur. Elle te donne un **levier**. Le levier se transforme en argent quand tu packages une **méthode** : brief, itérations, validation client, export propre.
 

@@ -564,7 +564,9 @@ Pour approfondir:
 
 Une vapeur crédible en IA est un signal de maîtrise visuelle. Ce n'est pas un effet décoratif. C'est un outil narratif qui transmet chaleur, texture et temporalité. Quand tu la diriges correctement, tu passes d'un rendu artificiel à une scène qui donne faim et qui raconte quelque chose.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structurer la lumière de cuisine pour révéler une vapeur fine sans transformer la scène en brume artificielle.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## Hotte, fenêtre, et logique d'air (souvent oubliée)
 

@@ -90,7 +90,9 @@ La documentation sur la grammaire filmique aide à nommer clairement ce que tu v
 | Improvisation plateau | Rapide au départ | Variable | Faible | Retards et pertes |
 | Script seul + moodboard | Très rapide | Faible | Faible | Malentendus équipe |
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI storyboarding for cinematic planning]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Troubleshooting : ce que les débutants cassent en storyboard IA
 

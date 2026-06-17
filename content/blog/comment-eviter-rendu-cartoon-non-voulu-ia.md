@@ -182,7 +182,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Comment éviter le rendu cartoon non voulu** et le périmètre `comment-eviter-rendu-cartoon-non-voulu-ia`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Mots déclencheurs, saturation implicite, contours durs, et styles contradictoires : revenir au photo sans tomber dans le plastique. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on keeping prompts photo-real instead of drifting into stylized 3D].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ![Second repère : courbe saturation vs regen.](/images/blog/comment-eviter-rendu-cartoon-non-voulu-ia/workflow-2.webp)
 

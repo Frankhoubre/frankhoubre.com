@@ -465,7 +465,9 @@ Quand ce réflexe devient naturel, les campagnes cessent d'être des paris émot
 Et c'est précisément là que la création IA cesse d'être une dépense et devient un actif de croissance.
 Durable, mesurable, et défendable face aux objectifs business.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building profitable AI ad creatives].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## FAQ
 

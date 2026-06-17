@@ -70,7 +70,9 @@ Un générateur peut reproduire des motifs trop proches d'œuvres existantes. Le
 
 ![Storyboard épingle mur annotations main stylo photoréaliste](/images/blog/limites-ia-direction-artistique/workflow-storyboard-mur.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on direction artistique et décisions sous contrainte réelle de tournage]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Programme 14 jours : retrouver ton œil quand l'IA te nuit
 

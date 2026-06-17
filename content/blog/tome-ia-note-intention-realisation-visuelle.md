@@ -105,7 +105,9 @@ Dans Tome, tu peux créer une note destinée au client: ambiance, palette, rythm
 
 Pour travailler ce type de projet avec des images IA réalistes, consulte notre guide sur [Adobe Firefly et les générateurs d’images pour créatifs](/blog/adobe-firefly-avis).
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on visual positioning and pitch decks for creative projects]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ## Ce que les débutants cassent dans une note d’intention visuelle
 

@@ -98,7 +98,9 @@ Si un bloc manque, le modèle le remplit avec la moyenne internet. *La moyenne i
 
 ![Étalonnage scopes vectorscope et frame IA côte à côte photoréaliste](/images/blog/devenir-prompt-engineer-audiovisuel/workflow-grade-qa.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on prompts audiovisuels structurés comme un brief de plateau]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Débouchés : où ça mène concrètement
 

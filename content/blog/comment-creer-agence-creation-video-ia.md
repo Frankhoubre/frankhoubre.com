@@ -423,7 +423,9 @@ Ce passage n'est pas glamour tous les jours. Il demande de la rigueur, des arbit
 Une agence se construit projet après projet, décision après décision, sans raccourci magique.
 Cette constance quotidienne devient, avec le temps, ton meilleur avantage concurrentiel.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building a creative AI agency with repeatable operations].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## FAQ
 

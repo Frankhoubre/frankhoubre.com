@@ -90,7 +90,9 @@ Quelqu'un qui n'a pas écrit le script regarde la vidéo sans brief. Tu lui pose
 | *Expert recommande* sans identité vérifiable | Autorité fictive | *Présentation des fonctionnalités et critères de choix* |
 | *100% de clients satisfaits* sans méthode | Statistique non soutenable | *Retours clients anonymisés et vérifiables en interne* |
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on legal-safe testimonial scripting]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting : erreurs classiques qui coûtent cher
 

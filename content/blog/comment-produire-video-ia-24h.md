@@ -87,7 +87,9 @@ Les erreurs classiques en fin de sprint : corriger le pixel pendant que la struc
 
 Tu exportes un **master** et une **copie légère** si besoin. Tu refais une passe QC courte : trois secondes début, trois secondes milieu, trois secondes fin, puis au moins un point aléatoire. Tu vérifies aussi la synchro labiale si tu en as. Tu nommes le fichier avec `_FINAL` seulement quand tu as validé la checklist.
 
-Pour une perspective marketing sur les hooks et les tests de performance, tu peux aussi voir comment Business Dynamite structure l’analyse de créatives sur sa chaîne YouTube : [https://www.youtube.com/@BusinessDynamite](https://www.youtube.com/@BusinessDynamite). Ce n’est pas obligatoire pour exporter, mais ça peut cadrer ta prochaine itération quand tu auras plus de vingt-quatre heures.
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Timeline finale montage sprint avec couches audio, marqueurs QC et exports master](/images/blog/comment-produire-video-ia-24h/timeline-qc.webp)
 

@@ -95,7 +95,9 @@ Fais un contrôle final à froid. Laisse passer quelques heures, reviens, regard
 
 ![Contrôle final de montage vidéo IA avec exports multi-format et vérification mobile](/images/art9-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI-assisted editing workflow and retention pacing]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## Troubleshooting: ce que les débutants cassent au montage IA
 

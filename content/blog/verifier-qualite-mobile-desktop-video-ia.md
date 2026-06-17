@@ -143,7 +143,9 @@ Pour les specs encodeur, [YouTube recommandations upload](https://support.google
 
 ![Fiche QA multi-écrans avec statuts OK KO et corrections loudness contraste](/images/blog/verifier-qualite-mobile-desktop-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on tester sa vidéo sur mobile et desktop avant publication pour éviter les mauvaises surprises.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## Versions dérivées : faut-il un master par écran ?
 

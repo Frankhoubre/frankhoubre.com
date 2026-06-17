@@ -167,7 +167,9 @@ Signe classique : transitions peau cheveux qui deviennent un bourrelet sombre. A
 
 Le brief hybride tue la matière. Un portrait « studio propre » avec « grain 16 mm sale » peut se faire, mais il faut **prioriser**. Sinon le modèle fera un compromis moche. Écris noir sur blanc ta priorité : **propreté d’abord**, ou **saleté optique d’abord**, puis ajuste le pipeline dans ce sens.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on how lighting hierarchy affects perceived sharpness and material read in promotional imagery.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ### Le piège des couches empilées sans naming rigoureux
 

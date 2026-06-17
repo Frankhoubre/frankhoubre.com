@@ -141,7 +141,9 @@ Checklist courte mais honnête :
 
 Une philosophie utile : **rejette tôt, rejette vite**. L’attachement émotionnel à un plan coûteux en prompts ne doit pas bloquer un montage plus solide au global.
 
-Pour structurer des diagnostics et des tests créatifs une fois la campagne en ligne, la chaîne YouTube [Business Dynamite](https://www.youtube.com/@BusinessDynamite) propose des analyses utiles sur la performance publicitaire. Ce n’est pas une obligation de production, mais une veille qui aide à relier sensations d’équipe et signaux réels lorsque le budget scale.
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Packaging livrable et nomenclature qui facilitent l’exploitation média
 

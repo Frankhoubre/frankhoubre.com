@@ -148,7 +148,9 @@ Harmonise les deux plans dans une session étalonnage commune. Même LUT, même 
 
 La [continuité cinématographique](https://en.wikipedia.org/wiki/Continuity_(fiction)) et la [cinématographie](https://en.wikipedia.org/wiki/Cinematography) rappellent que l'espace partagé entre les plans est narratif, pas décoratif. Même en IA, tu dois le construire volontairement.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on verrouiller la ligne d'action et la direction du regard avant de générer un champ contrechamp over épaule]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ![Étalonnage commun et contrôle des raccords de regard sur timeline dialogue](/images/blog/plan-over-epaule-continuite-regard-ia/workflow-2.webp)
 

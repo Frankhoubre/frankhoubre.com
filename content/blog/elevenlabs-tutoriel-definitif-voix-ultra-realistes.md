@@ -114,7 +114,9 @@ Erreur 7: **double compression** : normalisation agressive dans ElevenLabs puis 
 
 Erreur 8: **voix parfaite mais jeu plat**. Fix: direction émotionnelle par blocs, pas par mots isolés.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on ultra-realistic AI voice direction].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Console de mixage avec piste voix-off IA, musique et ambiances calibrées](/images/blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes/workflow-2.webp)
 

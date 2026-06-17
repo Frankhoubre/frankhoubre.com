@@ -234,7 +234,9 @@ Note dans la fiche : teinte lèvres naturelle, pas de rouge à lèvres vif sauf 
 
 Garde aussi une copie cloud en lecture seule pour le client : il voit la bible, il ne la mélange pas avec des essais non validés partagés par erreur.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on verrouiller une fiche personnage et éviter les synonymes qui cassent la cohérence entre les plans.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ## FAQ
 

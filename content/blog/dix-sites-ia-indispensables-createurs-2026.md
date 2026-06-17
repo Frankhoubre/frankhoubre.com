@@ -178,7 +178,9 @@ Pour le cadre européen qui monte en importance dans les briefs, garde une réf�
 
 ![Mur de post it et tableau Notion projet film, laptop ouvert, ambiance agence créative photoréaliste](/images/blog/dix-sites-ia-indispensables-createurs-2026/workflow-notion.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on construire une stack IA réaliste sans doubler tous les abonnements inutiles]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Troubleshooting : pourquoi ta stack explose
 

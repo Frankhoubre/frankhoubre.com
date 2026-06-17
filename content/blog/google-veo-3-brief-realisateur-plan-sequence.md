@@ -113,7 +113,9 @@ renforcer. Il ne peut pas rendre crédible un visage qui change de structure tou
 Troisième règle: test mobile obligatoire avant validation. Une scène peut sembler premium sur écran studio et se casser
 en compression réseau. Ce test simple t évite des retours douloureux après publication.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Segment recommandé: comment transformer une idée brute en plan IA crédible, puis la livrer sans dérive visuelle en production réelle.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Scénarios terrain: Élodie, Marc, Hiba
 

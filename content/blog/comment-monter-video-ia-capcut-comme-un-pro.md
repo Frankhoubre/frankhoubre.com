@@ -101,7 +101,9 @@ Pour les transitions, fais confiance aux **fondus courts** et aux respirations n
 
 ![Vérification export multi-format et lecture mobile après montage CapCut d'une production vidéo IA](/images/blog/comment-monter-video-ia-capcut-comme-un-pro/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on pacing, retention edits, and how rough cuts become watchable final videos]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ### 9. Export : la diffusion est une étape de l’image
 

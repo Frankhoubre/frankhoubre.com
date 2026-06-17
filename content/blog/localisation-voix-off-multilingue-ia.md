@@ -70,7 +70,9 @@ Si le plan montre la bouche qui parle clairement, prépare l'image pour le lip-s
 
 **Phrase trop longue** : réécrire, pas accélérer à 1,3x. **Désync montage** : recaler VO, pas étirer vidéo IA. **Accent faux** : changer profil voix, pas plus de prompt vidéo.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on adapter scripts et respirations pour trois langues sans casser le montage verrouillé]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ![Export stems multilingues et fiche QA par langue](/images/blog/localisation-voix-off-multilingue-ia/workflow-2.webp)
 

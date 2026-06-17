@@ -105,7 +105,9 @@ Pour les scènes intérieures véhicule, layer : moteur bas mid, route texture f
 
 La musique peut occuper une « profondeur » : thème proche et présent au début, même thème filtré et lointain sous le climax dialogue. Pas un nouveau morceau à chaque scène. Une identité musicale traitée en couches comme les ambiances.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on sound design depth for AI short films]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ![Mix final court métrage LUFS dialogue ambiance musique équilibrés](/images/blog/gerer-profondeur-sons-ambiances-court-metrage-ia/workflow-2.webp)
 

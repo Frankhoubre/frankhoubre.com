@@ -171,7 +171,9 @@ Pour une base de vocabulaire sur l'IP quand tu mixes sources et génération, vo
 
 ![Smartphone et casque audio sur table mixage miniature, onde sonore à l'écran, ambiance créateur mobile photoréaliste](/images/blog/top-5-applications-ia-smartphone-creation-mobile/workflow-audio-notes.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on workflows mobile pour créer sans sacrifier la qualité perçue]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting : ce qui casse sur téléphone
 

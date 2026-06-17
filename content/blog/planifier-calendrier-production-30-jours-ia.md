@@ -173,7 +173,9 @@ Références : [Notion project templates](https://www.notion.so/templates), [Goo
 
 ![Revue fin de mois production IA, checklist validation et planning mois suivant](/images/blog/planifier-calendrier-production-30-jours-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on grille 30 jours, ratios temps réalistes et buffers pour production vidéo IA sans burn-out]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ
 

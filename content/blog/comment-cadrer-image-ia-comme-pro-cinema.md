@@ -207,7 +207,9 @@ Check final:
 - zone de vide assumée
 - aucun élément parasite en concurrence
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on cinematic framing and reading order]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 Pour renforcer le travail de lumière dans ton cadre, utilise aussi [comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt). Si ton cadre est propre mais la géométrie reste confuse, passe par [comment corriger une mauvaise composition visuelle](/blog/comment-corriger-mauvaise-composition-visuelle-ia) avant de multiplier les rendus.
 

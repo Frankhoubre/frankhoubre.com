@@ -165,7 +165,9 @@ Pour le SEO texte autour de la vidéo : [IA descriptions YouTube et SEO](/blog/i
 
 ![Revue hebdomadaire performance vidéo IA, fiches projet et courbes comparées](/images/blog/mesurer-performance-contenu-video-ia-apres-publication/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on relier métriques de rétention aux choix de production IA via fiche hypothèses et tableau de bord hebdo]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## FAQ
 

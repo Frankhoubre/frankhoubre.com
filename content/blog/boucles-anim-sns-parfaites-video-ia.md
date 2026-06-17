@@ -61,7 +61,9 @@ Exporte H.264 avec bitrate suffisant. Voir [workflow complet Seedance 2](/blog/w
 
 **Saut lumineux** : régénérer avec lumière constante, pas de time-lapse ciel. **Saut position** : réduire amplitude mouvement. **Fondu visible** : raccourcir crossfade, améliorer match frames. **Audio clic** : crossfade audio ou point zero crossing.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on concevoir un mouvement cyclique et tester la boucle dix fois avant publication]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Comparaison frame 0 et frame fin avant crossfade](/images/blog/boucles-anim-sns-parfaites-video-ia/workflow-2.webp)
 

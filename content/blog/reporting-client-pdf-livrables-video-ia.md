@@ -287,7 +287,9 @@ Un bon reporting rend la post-production plus rentable.
 
 Le cadre rappelle les bonnes pratiques de [gestion de projet](https://en.wikipedia.org/wiki/Project_management): documenter les décisions réduit le coût des changements tardifs.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on transformer une livraison vidéo IA en dossier client clair, versionné et juridiquement propre.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Post-production, scopes et référence couleur pour Reporting client PDF : livrables vidéo IA professionnels](/images/blog/reporting-client-pdf-livrables-video-ia/workflow-2.webp)
 

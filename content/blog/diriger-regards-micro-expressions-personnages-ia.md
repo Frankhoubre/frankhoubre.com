@@ -99,7 +99,9 @@ Les plans de réaction sans dialogue sont ton arme secrète. Un personnage qui �
 
 Quand tu bosses en langue française mais prompts en anglais pour la direction, garde un glossaire fixe : `looking off-camera left` toujours traduit pareil dans ton équipe. Les synonymes changent parfois le comportement du modèle. La constance vocabulaire est une forme de direction.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on directing AI characters with eyeline and micro-expressions]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Avant après correction regard hors champ micro expression gros plan IA](/images/blog/diriger-regards-micro-expressions-personnages-ia/workflow-2.webp)
 

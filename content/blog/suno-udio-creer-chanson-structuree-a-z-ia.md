@@ -250,7 +250,9 @@ Sur le long terme, cette approche te donne un avantage énorme: tu n’évalues 
 
 Cette bascule mentale change tout dans la qualité finale.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structuring AI-generated songs for real productions].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ![Montage audio final avec stems séparés pour clip et publicité](/images/blog/suno-udio-creer-chanson-structuree-a-z-ia/workflow-2.webp)
 

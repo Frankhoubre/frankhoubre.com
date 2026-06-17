@@ -103,7 +103,9 @@ Vois [comment utiliser l'IA pour le repérage de décors](/blog/utiliser-ia-repe
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/creer-bible-lieux-decor-projet-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on documenter chaque décor IA dans une bible de lieux réutilisable.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## FAQ
 

@@ -101,7 +101,9 @@ Les [recherches YouTube sur les premières secondes](https://support.google.com/
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/concevoir-intro-hooks-video-ia-premieres-3-secondes/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on concevoir un hook IA de trois secondes qui convertit sans clickbait.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ
 

@@ -162,7 +162,9 @@ Pour une entrée méthode très orientée découpage et grammaire film avant pro
 
 Tu veux une phrase simple pour résumer tout ce guide sur **comment passer du storyboard à la vidéo finale** quand l’IA est au centre : écris ce contrat avant le mouvement, impose des quotas comparables, et laisse montage plus son faire une partie du réalisme que tes prompts ne pourront jamais acheter seuls.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Segments utiles sur la préparation board avant animation et la lecture critique sur timeline avant polish final pour éviter les erreurs coûteuses de dernière minute.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ (Frank's Cut)
 

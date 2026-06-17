@@ -83,7 +83,9 @@ Pense aussi au cadrage pendant cette phase. Un upscale qui accentue des détails
 
 ![Pipeline de restauration multi-sources avec profils d'upscaling IA par famille de plans](/images/art14-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on upscale pipeline for cinematic consistency]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting: ce que les débutants cassent et comment le réparer vite
 

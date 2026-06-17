@@ -144,7 +144,9 @@ Tu maîtrises mieux cette chaîne quand tu refuses deux pièges culturels : le p
 
 ---
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Utile pour calibrer ton regard sur la lisibilité des créatives compressées et la discipline de tests lorsque tu grades pour des formats courts qui doivent survivre aux flux sociaux.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ---
 

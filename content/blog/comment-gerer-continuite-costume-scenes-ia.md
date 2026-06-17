@@ -100,7 +100,9 @@ La [American Costume Society](https://www.costumesocietyamerica.com/) et [Smiths
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/comment-gerer-continuite-costume-scenes-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on créer une fiche costume et verrouiller tenue et accessoires sur une séquence IA complète.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## FAQ
 

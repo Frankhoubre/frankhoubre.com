@@ -58,7 +58,9 @@ Si une frame casse, inpainting bouche ou recoupe. Ne relance pas tout le plan po
 
 **Marionnette** : amplitude outil trop forte, réduire. **Désync fin de phrase** : recaler audio, pas régénérer visage. **Dents qui fondent** : plan plus large, moins de sourire extrême.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on choisir des plans et des prises voix compatibles avant d'appliquer un lip-sync IA]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ![Contrôle frame par frame fermeture labiale P et M](/images/blog/doublage-artistique-lip-sync-preparation/workflow-2.webp)
 

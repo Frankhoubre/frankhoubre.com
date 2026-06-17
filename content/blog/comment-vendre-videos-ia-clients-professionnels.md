@@ -199,7 +199,9 @@ Vendre des vidéos IA, c’est vendre de la production moderne avec des garde-fo
 
 Ta différence n’est pas le modèle. Ta différence est ta méthode.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on packaging AI video services for paying clients].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ![Montage vidéo professionnel avec timeline multicouche et contrôle qualité livrable client](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d)
 

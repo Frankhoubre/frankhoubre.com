@@ -121,7 +121,9 @@ Les [recommandations colour management de Netflix](https://partnerhelp.netflixst
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/calibrer-lumiere-interieur-exterieur-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on construire une bible lumière et maintenir la continuité entre plans intérieurs et extérieurs en IA.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## Cas limites : fenêtres, reflets et météo
 

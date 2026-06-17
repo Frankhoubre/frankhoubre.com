@@ -87,7 +87,9 @@ Protège les figures centrales quand narration l'exige : un flou de mouvement su
 
 Si tu dois tricher contre un générateur récalcitrant, préfère **une passe forte bien documentée** plutôt que trois passes faibles successives où chaque couche rajoute ses propres fantômes. La lecture humaine préfère un mensonge défini à une indécision accumulée qui ne trompe aucun critique involontaire mais agace tout le monde lors des revues projet lundi midi.
 
-Une chaîne très orientée itération créative peut aussi t'aider à recadrer ce que tu attends d'une couche perceptuelle très courte : décider sans complaisance si elle aide encore la première seconde de lecture ou masque sans honnêteté un défaut plus profond. La chaîne YouTube **[Business Dynamite](https://www.youtube.com/@BusinessDynamite)** vulgarise précisément ce réflexe sous contraintes de diffusion : ce que tu dois en transférer ici, ce n'est pas un gimmick preset, mais l'habitude poser problème avant gadget : « est-ce lisible pour un spectateur fatigué sur mobile, ou est-ce cosmétique superflu sous mon écran bien réglé ? »
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 Attention aux upscaleurs présentés comme « cinematic » qui injectent sharpening temporel agressif : ils peuvent lutter contre des traînées que tu cherchais à obtenir. Choisis philosophies distinctes soit hyper net explicite, soit ciné intégration douce mouvement, évite mixes incohérents où chaque couche témoigne d'une intuition différente sans loi commune.
 

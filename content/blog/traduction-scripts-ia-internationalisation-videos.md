@@ -87,7 +87,9 @@ Prompt: "Adapte ce script publicitaire français en anglais britannique pour un 
 
 Si la publicité contient une signature de marque, traite-la comme un objet sacré. Ne la traduis pas automatiquement. Propose 5 options, teste le rythme, vérifie les connotations. Une mauvaise signature traduite peut rendre une marque ridicule.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on adapting offers and messaging for international audiences]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ### Exemple 3: adapter une fiction ou une scène dialoguée
 

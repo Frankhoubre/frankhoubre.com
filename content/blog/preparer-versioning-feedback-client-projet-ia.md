@@ -112,7 +112,9 @@ Pour les bonnes pratiques de livraison fichier et métadonnées, la documentatio
 
 ![Archive projet validé avec changelog, exports LOCK et prompts verrouillés par plan](/images/blog/preparer-versioning-feedback-client-projet-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structurer les retours client et les versions de livraison pour éviter les allers-retours infinis sur un projet créatif.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## Plan d'exécution sur une semaine type
 

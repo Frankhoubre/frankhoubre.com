@@ -159,7 +159,9 @@ Pour une grille d'idées sur le pricing vidéo, voir notre article sur [combien 
 
 ![Signature contrat et storyboard annoté, main tenant stylo, lumière bureau fin journée photoréaliste](/images/blog/monetiser-competences-creation-ia-freelance-agence/workflow-contrat.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on packaging d'offres créatives IA qui se vendent sans course au bottom]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Revue des clauses qui font signer (ou fuir)
 

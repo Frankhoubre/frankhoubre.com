@@ -72,7 +72,9 @@ Si l'image est bonne mais le son rate, ne régénère pas tout en croisant les d
 
 Même avec un son natif réussi, garde l'habitude de sortir une version sans la musique, ou avec l'ambiance isolée, quand le modèle te le permet. Tu veux pouvoir remixer au montage. L'audio natif te donne une base juste, il ne te retire pas ta table de mixage. Un réalisateur qui se prive de cette couche de contrôle se condamne à subir le rendu d'usine.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on la direction du son dans les plans vidéo IA]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Troubleshooting: ce que les débutants cassent avec l'audio natif
 

@@ -98,7 +98,9 @@ Une vidéo business doit clarifier la valeur. Si tu parles de vendre des pubs IA
 
 Prompt: "À partir de ce script, écris une description YouTube pour freelances créatifs qui veulent vendre des vidéos IA à des commerces locaux. Mets en avant les étapes business, pas seulement les outils." Tu forces l’IA à ne pas rester dans la technique.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on YouTube SEO descriptions and offer clarity]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 Dans ce type de description, l’appel à l’action peut proposer un template de brief, un exemple de devis ou une checklist. Plus le CTA est concret, plus il convertit. "Télécharge mon modèle de brief client vidéo IA" bat "clique sur le lien".
 

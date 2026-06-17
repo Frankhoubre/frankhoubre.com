@@ -84,7 +84,9 @@ Termine par une couche de grain cohérente et un contrôle sharpening très mod�
 | LUT unique | Très rapide | Faible | Désastre peau / décors mixtes | Sources déjà parfaites |
 | Étage nodes + masques | Modéré | Très élevé | Complexité | Fiction, publicité |
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI color matching and cinematic grading]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting : ce que les débutants cassent en étalonnage IA
 

@@ -120,7 +120,9 @@ Souveraineté, pour toi, c'est aussi : maîtriser tes assets, tes voix, tes réf
 
 Pour la légalité des images générées et leur commercialisation, voir notre article sur la [légalité de la vente d'images générées par IA](/blog/vendre-images-generees-ia-legalite).
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on expliquer l'IA à un client sans jargon inutile ni promesse magique]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## Troubleshooting : où le discours « vision française » devient contre productif
 

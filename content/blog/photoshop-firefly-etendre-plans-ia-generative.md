@@ -90,7 +90,9 @@ Erreur 4: sujet touché par la génération. Fix: masque de protection strict.
 
 Erreur 5: pas de vérification format final. Fix: test 16:9 + 9:16 avant validation.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on cinematic frame extension workflows].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Comparaison avant/après extension Firefly avec correction de texture et lumière](/images/blog/photoshop-firefly-etendre-plans-ia-generative/workflow-2.webp)
 

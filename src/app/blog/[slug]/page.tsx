@@ -14,8 +14,10 @@ import { JsonLd } from "@/components/JsonLd";
 import { FaqSection } from "@/components/FaqSection";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { RelatedPosts } from "@/components/RelatedPosts";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
+import { getRecommendedYouTubeVideoId } from "@/lib/blog-video-map";
 import {
   extractYouTubeVideoIds,
   getAllPosts,
@@ -250,6 +252,10 @@ export default async function BlogArticlePage({ params }: Props) {
   const allPosts = getAllPosts();
   // JSON-LD VideoObject : uniquement les vidéos réellement intégrées dans l'article.
   const videoIds = extractYouTubeVideoIds(raw);
+  // Si l'article FR ne contient pas déjà de vidéo, on en suggère une de la
+  // chaîne @BusinessDynamite (pertinente par sujet via la map, sinon défaut).
+  const recommendedVideoId =
+    videoIds.length === 0 ? getRecommendedYouTubeVideoId(post) : null;
   const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
@@ -276,7 +282,12 @@ export default async function BlogArticlePage({ params }: Props) {
     },
   };
 
-  const jsonLd = buildJsonLd({ post, slug, videoIds, faqPairs });
+  const jsonLd = buildJsonLd({
+    post,
+    slug,
+    videoIds: recommendedVideoId ? [recommendedVideoId] : videoIds,
+    faqPairs,
+  });
 
   const authorImg =
     typeof person.image === "string" && person.image.startsWith("http")
@@ -394,6 +405,24 @@ export default async function BlogArticlePage({ params }: Props) {
                 />
               ) : null}
             </div>
+
+            {recommendedVideoId ? (
+              <section className="mt-14">
+                <h2 className="text-xl font-semibold tracking-tight text-neutral-950">
+                  À voir sur ma chaîne
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+                  Je décortique ce genre de workflow en vidéo sur ma chaîne
+                  YouTube Business Dynamite.
+                </p>
+                <div className="mt-4">
+                  <YouTubeEmbed
+                    videoId={recommendedVideoId}
+                    title={`${articleTitle} — Business Dynamite`}
+                  />
+                </div>
+              </section>
+            ) : null}
 
             <footer className="ds-hero mt-14 rounded-2xl px-5 py-8 sm:px-6">
               <p className="text-xs uppercase tracking-wide text-neutral-500">

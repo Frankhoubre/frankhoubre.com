@@ -93,7 +93,9 @@ Et si ton projet inclut beaucoup de dialogues ou narration, pense à valider tô
 
 ![Lecture à voix haute d’un script co-écrit avec IA pour valider oralité et tension dramatique](/images/art13-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI-assisted screenplay iteration and scene-level rewrites]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Troubleshooting: ce que les débutants cassent en co-écriture IA
 

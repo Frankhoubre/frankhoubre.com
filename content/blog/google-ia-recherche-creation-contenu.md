@@ -93,7 +93,9 @@ Pour un cadre large sur l'IA et la propriété intellectuelle quand tu mixes rec
 
 ![Recherche web et carnet papier annotations sources, café bureau créatif photoréaliste](/images/blog/google-ia-recherche-creation-contenu/workflow-recherche-sources.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on workflows de recherche et validation des faits avant publication]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Workflow recommandé : du brief à la vidéo sans dérive
 

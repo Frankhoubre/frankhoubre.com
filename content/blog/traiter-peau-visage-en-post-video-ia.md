@@ -118,7 +118,9 @@ Pour les fondements colorimétriques peau, la [documentation DaVinci Resolve sur
 
 ![Avant après traitement peau IA avec texture naturelle préservée et flicker réduit](/images/blog/traiter-peau-visage-en-post-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on corriger les visages IA en post sans tomber dans l'effet plastique ou cire.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## Quand post-traiter vs regénérer
 

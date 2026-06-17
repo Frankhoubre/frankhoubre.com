@@ -163,7 +163,9 @@ Références : [Meta video ad specs](https://www.facebook.com/business/ads-guide
 
 ![Contrôle rythme pub IA 15s sur mobile, safe zones et lisibilité CTA](/images/blog/parametrer-rythme-montage-ads-ia-15s-30s/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on grilles de rythme 15 et 30 secondes, marqueurs beat et structure hook CTA pour pubs IA]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ## FAQ
 
