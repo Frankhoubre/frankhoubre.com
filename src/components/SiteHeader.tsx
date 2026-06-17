@@ -5,12 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
 import { siteName } from "@/lib/site";
-import {
-  getDictionary,
-  localeFromPathname,
-  switchLocalePath,
-  withLocale,
-} from "@/lib/i18n";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { getDictionary, localeFromPathname, withLocale } from "@/lib/i18n";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -18,7 +14,6 @@ export function SiteHeader() {
   const dict = getDictionary(locale);
   const navItems = dict.nav;
   const homeHref = withLocale("/", locale);
-  const switchHref = switchLocalePath(pathname);
   const ctaLabel = locale === "en" ? "Free training" : "Formation gratuite";
   const isHome = pathname === homeHref;
   const [isScrolled, setIsScrolled] = useState(false);
@@ -85,15 +80,9 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href={switchHref}
-            className={desktopLinkClass}
-            aria-label={
-              locale === "fr" ? "Switch to English" : "Passer en français"
-            }
-          >
-            {dict.switchTo.label}
-          </Link>
+          <span className="mx-1">
+            <LanguageSwitcher onDark={homeAtTop} />
+          </span>
           <a
             href={FORMATION_PROMO_URL}
             target="_blank"
@@ -174,14 +163,8 @@ export function SiteHeader() {
               </Link>
             </li>
           ))}
-          <li>
-            <Link
-              href={switchHref}
-              onClick={() => setMenuOpen(false)}
-              className="block rounded-xl px-4 py-3 text-base font-medium text-zinc-800 transition-colors hover:bg-zinc-100 hover:text-zinc-950"
-            >
-              {locale === "fr" ? "English" : "Français"}
-            </Link>
+          <li className="px-4 py-3">
+            <LanguageSwitcher onNavigate={() => setMenuOpen(false)} />
           </li>
           <li className="pt-2">
             <a

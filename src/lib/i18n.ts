@@ -47,6 +47,14 @@ export function switchLocalePath(pathname: string): string {
   return locale === "fr" ? "/en" : "/";
 }
 
+/** URL de la page courante dans la locale cible (la page elle-même si déjà
+ * dans cette langue, sinon son équivalent via switchLocalePath). */
+export function localizedHref(pathname: string, target: Locale): string {
+  return target === localeFromPathname(pathname)
+    ? pathname
+    : switchLocalePath(pathname);
+}
+
 type NavItem = { label: string; href: string };
 
 type Dictionary = {
