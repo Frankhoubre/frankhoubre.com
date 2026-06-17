@@ -27,6 +27,26 @@ export function withLocale(path: string, locale: Locale): string {
   return clean === "/" ? "/en" : `/en${clean}`;
 }
 
+/** Pages ayant un équivalent dans les deux langues : [chemin FR, chemin EN]. */
+const LOCALE_PAIRS: ReadonlyArray<readonly [string, string]> = [
+  ["/", "/en"],
+  ["/blog", "/en/blog"],
+  ["/a-propos", "/en/about"],
+];
+
+/**
+ * Cible du sélecteur de langue : l'équivalent de la page courante dans l'autre
+ * langue s'il existe, sinon l'accueil de l'autre langue.
+ */
+export function switchLocalePath(pathname: string): string {
+  const locale = localeFromPathname(pathname);
+  for (const [fr, en] of LOCALE_PAIRS) {
+    if (locale === "fr" && pathname === fr) return en;
+    if (locale === "en" && pathname === en) return fr;
+  }
+  return locale === "fr" ? "/en" : "/";
+}
+
 type NavItem = { label: string; href: string };
 
 type Dictionary = {
