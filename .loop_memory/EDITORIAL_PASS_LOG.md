@@ -60,6 +60,31 @@ composés). Aucun changement de sens.
 - `corriger-scintillement-flicker-video-ia` → DaVinci Resolve (Deflicker).
 - `comment-organiser-assets-ia-comme-un-pro` → Gestion des actifs numériques.
 
+## Passe 2 (mode maximum, 2026-06-17)
+
+### Anti-cannibalisation
+Analyse de tout le corpus (clustering TF-IDF + 6 agents de vérification sur les
+clusters à risque). 15 liens internes hiérarchiques ajoutés (pilier -> variante).
+Détail et décisions laissées à Frank (fusions potentielles) : `CANNIBALIZATION_MAP.md`.
+
+### Maillage vers les pages piliers / argent
+Constat : 1 seul article sur 222 liait vers une page `/outils/*` ou `/prestation`.
+15 liens contextuels ajoutés vers : générateur de prompt cinéma, générateur de
+storyboard PDF, calculateur de budget, reverse prompting, annuaire images gratuits,
+annuaire audio, page prestation. Couverture passée de 1 à 16 articles. Chaque
+pilier a maintenant 1 à 4 liens entrants (avant : 0).
+
+### Scan voix
+Recherche corpus des tics anglais/IA ("let's be real", "here's the thing",
+"game changer", etc.). Corpus propre. Seule occurrence : "game changer" entre
+guillemets comme exemple ironique (volontaire, conservé). Un "Let's be real"
+résiduel corrigé en "Soyons clairs" dans generer-storyboard-professionnel-complet-ia.
+
+### Points signalés (hors périmètre)
+- `generer-storyboard-professionnel-complet-ia` utilise une image externe Unsplash
+  (`images.unsplash.com`) alors que le STYLE_GUIDE impose des images locales
+  `/images/blog/...`. À remplacer par un asset local.
+
 ## Reste à faire (passes futures, hors périmètre de cette passe ciblée)
 - Relecture humaine ton + valeur sur l'ensemble (le score mécanique ne juge pas
   le « sonne humain »). Prioriser par trafic GSC/impressions.
