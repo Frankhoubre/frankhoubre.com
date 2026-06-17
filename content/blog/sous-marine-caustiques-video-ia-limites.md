@@ -6,7 +6,7 @@ excerpt: "Ce que les moteurs tiennent sous l'eau, quand préférer le compositin
 thumbnail: "/images/blog/sous-marine-caustiques-video-ia-limites/hero.webp"
 ---
 
-Le sous marin est l'un des décors les plus séduisants en IA vidéo, et l'un des plus impitoyables. L'eau impose une physique optique complexe: diffusion, absorption, particules, caustiques, flottabilité, distorsion. Si un seul de ces éléments est incohérent, l'image perd son ancrage.
+Le sous marin est l'un des décors les plus séduisants en IA vidéo, et l'un des plus impitoyables. L'eau impose une physique optique complexe: diffusion, absorption, particules, [caustiques](https://fr.wikipedia.org/wiki/Caustique), flottabilité, distorsion. Si un seul de ces éléments est incohérent, l'image perd son ancrage.
 
 Beaucoup de créateurs tentent de tout obtenir en un seul prompt: personnage, eau réaliste, faune, caustiques dynamiques, caméra mobile. C'est la recette du faux. En production, les plans sous marins solides se construisent en couches et en compromis assumés.
 

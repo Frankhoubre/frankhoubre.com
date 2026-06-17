@@ -71,7 +71,7 @@ Les clips très longs multiplient les zones où le modèle peut dériver. Pour *
 - tu peux **réutiliser** la meilleure portion sans recycler trois pistes entières ;
 - tu alignes le motion blur et la grain sur chaque segment avec une intention différente si nécessaire.
 
-Sur la cadence, 24 images par seconde reste un réflexe raisonnable pour une lecture « cinéma ». Monter à 30 peut servir si ta diffusion finale est télé ou réseaux qui privilégient cette base, mais harmonise toute la timeline pour éviter des conversions sauvages qui créent du judder à l'œil.
+Sur la cadence, [24 images par seconde](https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27images) reste un réflexe raisonnable pour une lecture « cinéma ». Monter à 30 peut servir si ta diffusion finale est télé ou réseaux qui privilégient cette base, mais harmonise toute la timeline pour éviter des conversions sauvages qui créent du judder à l'œil.
 
 Si tu dois livrer plusieurs formats, exporte à partir d'un **master intermédiaire** stable avant déclinaison. Recompresser trois fois la même génération fragile amplifie les micro-artefacts qui passent pour du manque de fluidité.
 

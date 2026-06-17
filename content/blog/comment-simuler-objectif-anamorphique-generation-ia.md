@@ -7,7 +7,7 @@ excerpt: "Bokeh, falloff, flare, distorsion légère, et quand ne pas utiliser l
 thumbnail: "/images/blog/comment-simuler-objectif-anamorphique-generation-ia/hero.webp"
 ---
 
-Un objectif anamorphique réel compresse l’image sur la pellicule ou le capteur puis la décompresse en projection. Ce n’est pas qu’un filtre Instagram. Tu peux t’en servir comme référence culturelle sans prétendre reproduire une série d’optiques précise au micron près.
+Un [objectif anamorphique](https://fr.wikipedia.org/wiki/Format_large_anamorphos%C3%A9) réel compresse l’image sur la pellicule ou le capteur puis la décompresse en projection. Ce n’est pas qu’un filtre Instagram. Tu peux t’en servir comme référence culturelle sans prétendre reproduire une série d’optiques précise au micron près.
 
 L’objectif ici est simple : donner des **leviers de langage** pour guider le modèle, puis vérifier au zoom et au recul d’œil. Si une image te plaît immédiatement mais ment sur la lumière, tu la garderas pour une vignette, pas pour une scène longue. Tu obtiens une géométrie particulière, un bokeh souvent étiré, des flare en ligne, une chute de netteté qui n’a rien à voir avec un simple flou gaussien. En génération d’image, le mot « anamorphic » devient vite un autocollant : tu crois avoir du cinéma, tu obtiens souvent du flou sale et des ovales incohérents.
 

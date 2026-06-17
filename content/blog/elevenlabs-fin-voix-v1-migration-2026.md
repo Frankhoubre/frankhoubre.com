@@ -8,7 +8,7 @@ thumbnail: "/images/blog/elevenlabs-fin-voix-v1-migration-2026/hero.webp"
 
 # ElevenLabs retire ses voix v1 le 9 juillet : que faire
 
-Si une partie de tes voix off ou de tes dialogues IA passe par ElevenLabs, tu as une date à noter tout de suite : le 9 juillet 2026. Selon le changelog officiel daté du 8 juin, ElevenLabs arrête ses modèles de synthèse vocale `v1`. Pas une mise à jour cosmétique. Un retrait. Les anciens modèles disparaissent, et avec eux la voix exacte que tu utilisais peut-être depuis des mois.
+Si une partie de tes voix off ou de tes dialogues IA passe par ElevenLabs, tu as une date à noter tout de suite : le 9 juillet 2026. Selon le [changelog officiel d'ElevenLabs](https://elevenlabs.io/docs/changelog) daté du 8 juin, ElevenLabs arrête ses modèles de synthèse vocale `v1`. Pas une mise à jour cosmétique. Un retrait. Les anciens modèles disparaissent, et avec eux la voix exacte que tu utilisais peut-être depuis des mois.
 
 Le réflexe, c'est de hausser les épaules. Mauvaise idée. Sur un projet de film ou de série, une voix n'est pas un détail technique, c'est un personnage. Si tu changes de modèle la veille d'une livraison, tu changes le grain, le timbre, le rythme. Le client l'entend. Et toi, tu repars en réenregistrement alors que tu pensais avoir bouclé.
 

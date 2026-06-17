@@ -22,7 +22,7 @@ Causes typiques:
    Les zones hautes deviennent bleues et contaminent le plan.
 
 2. **Absence de source chaude locale**  
-   Sans lampe ou contraste chaud, le moteur choisit la froideur.
+   Sans lampe ou contraste chaud, le moteur choisit la froideur. C'est une question de [température de couleur](https://fr.wikipedia.org/wiki/Temp%C3%A9rature_de_couleur) : il faut une dominante chaude pour contrebalancer le bleu des fenêtres.
 
 3. **Écrans trop dominants**  
    Les moniteurs deviennent la lumière principale.

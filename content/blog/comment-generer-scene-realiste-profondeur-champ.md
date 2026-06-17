@@ -7,7 +7,7 @@ excerpt: "Séparation des plans, bokeh cohérent, distance sujet décor, et post
 thumbnail: "/images/blog/comment-generer-scene-realiste-profondeur-champ/hero.webp"
 ---
 
-La profondeur de champ n’est pas un interrupteur « arrière plan flou ». C’est une relation entre **focale**, **distance de mise au point**, **ouverture** (ou son équivalent conceptuel dans ton outil), et **géométrie de la scène**. Quand l’une de ces variables ment, le spectateur ne sait pas toujours pourquoi l’image « fait IA », mais il sent que le flou ne suit pas les lois du regard.
+La [profondeur de champ](https://fr.wikipedia.org/wiki/Profondeur_de_champ) n’est pas un interrupteur « arrière plan flou ». C’est une relation entre **focale**, **distance de mise au point**, **ouverture** (ou son équivalent conceptuel dans ton outil), et **géométrie de la scène**. Quand l’une de ces variables ment, le spectateur ne sait pas toujours pourquoi l’image « fait IA », mais il sent que le flou ne suit pas les lois du regard.
 
 Ce guide t’aide à décrire une scène où le passage net vers flou est **homogène**, où le sujet reste lisible, et où le bokeh ne ressemble pas à un calque flou posé derrière une découpe nette. On reste sur des formulations exploitables dans un prompt et des vérifs visuelles après coup.
 

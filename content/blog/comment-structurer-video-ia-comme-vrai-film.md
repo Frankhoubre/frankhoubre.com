@@ -9,7 +9,7 @@ thumbnail: "/images/blog/comment-structurer-video-ia-comme-vrai-film/hero.webp"
 
 Tu as peut être déjà produit un plan magnifique, puis une deuxième image qui ne vit pas dans le même univers, puis un troisième clip où le rythme s’effondre. Ce n’est pas une fatalité : c’est presque toujours un problème d’ossature, pas de « moteur pas assez puissant ».
 
-Beaucoup de créateurs accumulent des assets sans timeline claire. Le résultat ressemble à une démo de capacités plutôt qu’à un film. Ici, on inverse la priorité : la timeline et les beats commandent les générations, pas l’inverse. Le problème rarement technique seul : c’est une absence de squelette narratif et de grammaire de montage. Structurer une vidéo IA comme un film, ce n’est pas ajouter le mot « cinématique » dans un prompt. C’est décider qui regarde quoi, quand, et pourquoi le spectateur tourne la tête au bon moment.
+Beaucoup de créateurs accumulent des assets sans timeline claire. Le résultat ressemble à une démo de capacités plutôt qu’à un film. Ici, on inverse la priorité : la timeline et les beats commandent les générations, pas l’inverse. Le problème rarement technique seul : c’est une absence de [squelette narratif](https://fr.wikipedia.org/wiki/Structure_en_trois_actes) et de grammaire de montage. Structurer une vidéo IA comme un film, ce n’est pas ajouter le mot « cinématique » dans un prompt. C’est décider qui regarde quoi, quand, et pourquoi le spectateur tourne la tête au bon moment.
 
 Ce guide pose une méthode de travail : du brief à la timeline, en passant par des plans générés avec des intentions claires. On évite le vocabulaire de vitrine. On reste sur des choix vérifiables : durée, fonction de chaque plan, son, coupe.
 

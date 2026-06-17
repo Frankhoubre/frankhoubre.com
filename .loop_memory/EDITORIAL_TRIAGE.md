@@ -1,6 +1,6 @@
 # Triage éditorial FR (auto-généré)
 
-Total 222 | Faibles 0 | Moyens 19 | Bons 203
+Total 222 | Faibles 0 | Moyens 1 | Bons 221
 
 
 ## FAIBLES — réécriture en profondeur (0)
@@ -8,49 +8,37 @@ Total 222 | Faibles 0 | Moyens 19 | Bons 203
 | Score | Slug | Mots | H2 | Int | Ext | Problèmes |
 | --- | --- | --- | --- | --- | --- | --- |
 
-## MOYENS — retravail sérieux (19)
+## MOYENS — retravail sérieux (1)
 
 | Score | Slug | Mots | H2 | Int | Ext | Problèmes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 62 | `dzine-ia` | 3129 | 6 | 19 | 3 | tiret long, H1=0, titre 68c |
-| 65 | `comment-ajouter-grain-cinema-image-ia` | 2634 | 7 | 10 | 1 | tiret long, H1=0 |
-| 65 | `comment-ameliorer-realisme-mouvements-video-ia` | 2712 | 7 | 15 | 1 | tiret long, H1=0 |
-| 65 | `comment-ameliorer-texture-peau-image-ia` | 2627 | 7 | 14 | 1 | tiret long, H1=0 |
-| 65 | `comment-controler-style-visuel-generation-ia` | 2847 | 7 | 12 | 1 | tiret long, H1=0 |
-| 65 | `comment-creer-pub-video-avec-ia-comme-agence-pro` | 2603 | 20 | 7 | 4 | tiret long, H1=0 |
-| 65 | `prompt-chatgpt` | 2475 | 6 | 12 | 1 | tiret long, H1=0 |
-| 72 | `comment-structurer-video-ia-comme-vrai-film` | 2482 | 13 | 7 | 0 | IA/filler x1, H1=0, 0 lien externe |
-| 74 | `animaux-domestiques-plan-action-ia` | 2755 | 35 | 1 | 0 | H1=0, 1 lien interne, 0 lien externe |
-| 74 | `comment-ajouter-realisme-post-production-video-ia` | 3393 | 12 | 7 | 0 | H1=0, 0 lien externe, meta 199c |
-| 74 | `comment-ameliorer-fluidite-video-generee` | 2990 | 18 | 13 | 0 | H1=0, 0 lien externe, meta 174c |
-| 74 | `comment-ameliorer-rendu-moyen-rendu-pro-video-ia` | 3293 | 12 | 12 | 0 | H1=0, 0 lien externe, meta 230c |
-| 74 | `exterieur-foret-brume-profondeur-video-ia` | 2755 | 40 | 1 | 0 | H1=0, 1 lien interne, 0 lien externe |
-| 74 | `interieur-bureau-lumiere-cyan-correction-ia` | 2754 | 39 | 1 | 0 | H1=0, 1 lien interne, 0 lien externe |
-| 74 | `nuit-neon-peau-credible-sans-magenta` | 2764 | 38 | 1 | 0 | H1=0, 1 lien interne, 0 lien externe |
-| 74 | `sous-marine-caustiques-video-ia-limites` | 2759 | 44 | 1 | 0 | H1=0, 1 lien interne, 0 lien externe |
-| 78 | `comment-mixer-audio-image-rendu-cinema-video-ia` | 2786 | 15 | 7 | 0 | 0 lien externe, pas de FAQ, meta 188c |
-| 78 | `comment-transformer-video-ia-publicite-premium` | 2834 | 14 | 11 | 1 | H1=0, pas de FAQ, meta 293c |
 | 79 | `comment-monter-video-ia-capcut-comme-un-pro` | 3095 | 4 | 7 | 4 | H1=0, meta 188c |
 
-## BONS — optimisation légère (203)
+## BONS — optimisation légère (221)
 
 | Score | Slug | Mots | H2 | Int | Ext | Problèmes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 80 | `comment-generer-scene-realiste-profondeur-champ` | 2481 | 15 | 7 | 0 | H1=0, 0 lien externe |
-| 80 | `comment-simuler-objectif-anamorphique-generation-ia` | 2490 | 12 | 7 | 0 | H1=0, 0 lien externe |
 | 81 | `chatgpt-image-2-generateur-openai` | 2435 | 6 | 7 | 1 | H1=0, meta 201c, titre 93c |
 | 81 | `screenweaver-ai-ecriture-scenario-storyboard` | 2453 | 7 | 14 | 3 | H1=0, meta 178c, titre 81c |
 | 81 | `wan-27-video-decevant-kling-seedance` | 2644 | 8 | 9 | 2 | H1=0, meta 168c, titre 79c |
-| 82 | `elevenlabs-fin-voix-v1-migration-2026` | 1466 | 6 | 4 | 0 | 1466w, 0 lien externe |
-| 82 | `flux-2-open-weights-images-ia-local-2026` | 1457 | 6 | 4 | 0 | 1457w, 0 lien externe |
-| 83 | `metiers-audiovisuel-ia-menaces-transformation-avis` | 2804 | 10 | 7 | 4 | IA/filler x1, meta 167c, titre 71c |
+| 82 | `comment-structurer-video-ia-comme-vrai-film` | 2482 | 13 | 7 | 1 | IA/filler x1, H1=0 |
+| 84 | `animaux-domestiques-plan-action-ia` | 2761 | 35 | 1 | 1 | H1=0, 1 lien interne |
 | 84 | `comment-ajouter-motion-blur-realiste-video-ia` | 3214 | 9 | 7 | 1 | H1=0, meta 276c |
+| 84 | `comment-ajouter-realisme-post-production-video-ia` | 3393 | 12 | 7 | 1 | H1=0, meta 199c |
+| 84 | `comment-ameliorer-fluidite-video-generee` | 2990 | 18 | 13 | 1 | H1=0, meta 174c |
+| 84 | `comment-ameliorer-rendu-moyen-rendu-pro-video-ia` | 3293 | 12 | 12 | 1 | H1=0, meta 230c |
 | 84 | `comment-creer-storyboard-ia-etape-par-etape` | 2930 | 15 | 7 | 4 | H1=0, meta 179c |
 | 84 | `comment-integrer-sound-design-video-ia` | 2804 | 12 | 7 | 1 | H1=0, meta 287c |
 | 84 | `comment-produire-video-ia-24h` | 2778 | 11 | 7 | 1 | H1=0, meta 271c |
+| 84 | `comment-transformer-video-ia-publicite-premium` | 3250 | 15 | 12 | 1 | H1=0, meta 293c |
+| 84 | `exterieur-foret-brume-profondeur-video-ia` | 2755 | 40 | 1 | 1 | H1=0, 1 lien interne |
+| 84 | `interieur-bureau-lumiere-cyan-correction-ia` | 2773 | 39 | 1 | 1 | H1=0, 1 lien interne |
+| 84 | `nuit-neon-peau-credible-sans-magenta` | 2771 | 38 | 1 | 1 | H1=0, 1 lien interne |
+| 84 | `sous-marine-caustiques-video-ia-limites` | 2759 | 44 | 1 | 1 | H1=0, 1 lien interne |
 | 85 | `workflow-flux-images-ultra-detaillees` | 4323 | 4 | 7 | 4 | H1=0 |
 | 87 | `comment-decrire-lumiere-directeur-photo-prompt` | 3884 | 25 | 6 | 1 | H1=0, titre 66c |
 | 87 | `droits-auteur-images-generees-ia` | 2600 | 9 | 9 | 1 | H1=0, titre 75c |
+| 87 | `dzine-ia` | 3129 | 6 | 19 | 3 | H1=0, titre 68c |
 | 87 | `generateur-image-ia-sans-inscription` | 2485 | 9 | 10 | 1 | H1=0, titre 75c |
 | 87 | `ia-dialogues-realistes-outils-conversationnels` | 2747 | 8 | 10 | 3 | H1=0, titre 67c |
 | 87 | `ia-generative-ecriture-creative-audiovisuel` | 2787 | 8 | 10 | 3 | H1=0, titre 73c |
@@ -71,15 +59,20 @@ Total 222 | Faibles 0 | Moyens 19 | Bons 203
 | 90 | `choisir-bonne-duree-plan-selon-intention-ia` | 2148 | 10 | 9 | 3 | H1=0 |
 | 90 | `clause-contrat-client-contenu-genere-ia` | 2715 | 25 | 7 | 2 | H1=0 |
 | 90 | `comfyui-noeuds-debutant-pipeline-cinema` | 2771 | 9 | 3 | 1 | H1=0 |
+| 90 | `comment-ajouter-grain-cinema-image-ia` | 2634 | 7 | 10 | 1 | H1=0 |
+| 90 | `comment-ameliorer-realisme-mouvements-video-ia` | 2712 | 7 | 15 | 1 | H1=0 |
+| 90 | `comment-ameliorer-texture-peau-image-ia` | 2627 | 7 | 14 | 1 | H1=0 |
 | 90 | `comment-cadrer-image-ia-comme-pro-cinema` | 3197 | 15 | 10 | 4 | H1=0 |
 | 90 | `comment-choisir-bons-angles-camera-ia` | 2764 | 17 | 12 | 4 | H1=0 |
 | 90 | `comment-construire-scene-cinematique-plan-par-plan` | 2534 | 21 | 5 | 1 | H1=0 |
+| 90 | `comment-controler-style-visuel-generation-ia` | 2847 | 7 | 12 | 1 | H1=0 |
 | 90 | `comment-corriger-mauvais-lighting-ia` | 2963 | 9 | 18 | 3 | H1=0 |
 | 90 | `comment-corriger-mauvaise-composition-visuelle-ia` | 3543 | 11 | 19 | 4 | H1=0 |
 | 90 | `comment-creer-ambiance-sombre-cinematique-avec-ia` | 2692 | 8 | 7 | 1 | H1=0 |
 | 90 | `comment-creer-lumieres-naturelles-image-ia` | 2833 | 8 | 7 | 1 | H1=0 |
 | 90 | `comment-creer-narration-visuelle-sans-dialogue` | 2648 | 21 | 5 | 1 | H1=0 |
 | 90 | `comment-creer-portrait-ia-digne-film` | 2609 | 17 | 7 | 4 | H1=0 |
+| 90 | `comment-creer-pub-video-avec-ia-comme-agence-pro` | 2603 | 20 | 7 | 4 | H1=0 |
 | 90 | `comment-creer-scenes-coherentes-plusieurs-plans-ia` | 2627 | 14 | 7 | 4 | H1=0 |
 | 90 | `comment-creer-tension-visuelle-scene-ia` | 2447 | 19 | 5 | 1 | H1=0 |
 | 90 | `comment-creer-univers-visuel-coherent-avec-ia` | 2634 | 12 | 7 | 4 | H1=0 |
@@ -92,18 +85,18 @@ Total 222 | Faibles 0 | Moyens 19 | Bons 203
 | 90 | `comment-eviter-rendu-cartoon-non-voulu-ia` | 2756 | 10 | 19 | 4 | H1=0 |
 | 90 | `comment-eviter-visages-deformes-generation-ia` | 3335 | 18 | 12 | 1 | H1=0 |
 | 90 | `comment-generer-images-ia-photorealistes-sans-effet-plastique` | 2937 | 18 | 10 | 3 | H1=0 |
+| 90 | `comment-generer-scene-realiste-profondeur-champ` | 2481 | 15 | 7 | 1 | H1=0 |
 | 90 | `comment-gerer-continuite-costume-scenes-ia` | 2186 | 13 | 10 | 4 | H1=0 |
 | 90 | `comment-obtenir-rendu-cinema-avec-seedance-2` | 3421 | 17 | 12 | 1 | H1=0 |
-| 90 | `comment-organiser-assets-ia-comme-un-pro` | 2814 | 17 | 7 | 0 | 0 lien externe |
 | 90 | `comment-passer-rendu-amateur-a-cinema-ia` | 2822 | 10 | 20 | 3 | H1=0 |
 | 90 | `comment-penser-comme-realisateur-avec-ia` | 3107 | 13 | 9 | 3 | H1=0 |
 | 90 | `comment-rendre-scene-ia-plus-credible` | 2778 | 24 | 19 | 1 | H1=0 |
+| 90 | `comment-simuler-objectif-anamorphique-generation-ia` | 2490 | 12 | 7 | 1 | H1=0 |
 | 90 | `comment-transformer-image-ia-video-fluide-credible` | 2967 | 12 | 10 | 1 | H1=0 |
 | 90 | `comment-utiliser-objectifs-camera-dans-prompt-ia` | 4344 | 24 | 6 | 1 | H1=0 |
 | 90 | `comment-utiliser-regle-des-tiers-generation-ia` | 3265 | 16 | 9 | 4 | H1=0 |
 | 90 | `concevoir-intro-hooks-video-ia-premieres-3-secondes` | 2166 | 16 | 12 | 5 | H1=0 |
 | 90 | `construire-liste-plans-shotlist-video-ia` | 2261 | 15 | 9 | 3 | H1=0 |
-| 90 | `corriger-scintillement-flicker-video-ia` | 1891 | 7 | 4 | 0 | 0 lien externe |
 | 90 | `creation-logo-ia-outils-gratuits-astuces` | 2519 | 9 | 9 | 1 | H1=0 |
 | 90 | `creer-bible-lieux-decor-projet-ia` | 2205 | 16 | 14 | 3 | H1=0 |
 | 90 | `creer-court-metrage-100-ia-sans-camera-acteurs` | 2478 | 10 | 7 | 1 | H1=0 |
@@ -155,6 +148,7 @@ Total 222 | Faibles 0 | Moyens 19 | Bons 203
 | 90 | `preparer-decoupage-technique-avant-generation-video-ia` | 2871 | 7 | 6 | 3 | H1=0 |
 | 90 | `preparer-versioning-feedback-client-projet-ia` | 2715 | 8 | 7 | 3 | H1=0 |
 | 90 | `produire-variantes-verticales-reels-shorts-ia` | 2229 | 7 | 6 | 3 | H1=0 |
+| 90 | `prompt-chatgpt` | 2475 | 6 | 12 | 1 | H1=0 |
 | 90 | `reporting-client-pdf-livrables-video-ia` | 2715 | 27 | 11 | 2 | H1=0 |
 | 90 | `scene-dialogue-deux-personnages-raccord-ia` | 3130 | 5 | 7 | 3 | H1=0 |
 | 90 | `sous-titres-burn-in-accessibles-video-ia` | 3090 | 13 | 14 | 2 | H1=0 |
@@ -175,13 +169,17 @@ Total 222 | Faibles 0 | Moyens 19 | Bons 203
 | 91 | `google-ia-recherche-creation-contenu` | 2732 | 17 | 7 | 5 | meta 189c, titre 74c |
 | 91 | `intelligence-artificielle-industrie-creative-opportunites-dangers` | 2696 | 9 | 7 | 5 | meta 178c, titre 75c |
 | 91 | `limites-ia-direction-artistique` | 2716 | 22 | 7 | 4 | meta 167c, titre 82c |
+| 91 | `metiers-audiovisuel-ia-menaces-transformation-avis` | 2804 | 10 | 7 | 4 | meta 167c, titre 71c |
 | 91 | `pourquoi-faux-temoignages-ugc-ia-interdits` | 2725 | 5 | 7 | 3 | meta 174c, titre 80c |
 | 92 | `creer-publicite-video-percutante-intelligence-artificielle` | 2747 | 4 | 7 | 4 | titre 69c |
+| 92 | `elevenlabs-fin-voix-v1-migration-2026` | 1467 | 6 | 4 | 1 | 1467w |
 | 92 | `film-ia-erreurs-raccord-incoherences-visuelles-eviter` | 2753 | 4 | 6 | 4 | titre 79c |
+| 92 | `flux-2-open-weights-images-ia-local-2026` | 1457 | 6 | 4 | 1 | 1457w |
 | 92 | `guide-complet-montage-video-assiste-intelligence-artificielle` | 2753 | 4 | 6 | 4 | titre 73c |
 | 92 | `synchronisation-labiale-lip-sync-quel-outil-ia-choisir` | 2753 | 4 | 6 | 4 | titre 86c |
 | 94 | `comment-corriger-couleurs-video-ia` | 2798 | 13 | 7 | 1 | meta 241c |
 | 94 | `comment-etalonner-video-ia-davinci-resolve` | 2697 | 11 | 10 | 1 | meta 171c |
+| 94 | `comment-mixer-audio-image-rendu-cinema-video-ia` | 3221 | 16 | 8 | 1 | meta 188c |
 | 94 | `comment-passer-storyboard-video-finale` | 3013 | 14 | 9 | 1 | meta 190c |
 | 94 | `etalonnage-ia-maitriser-look-couleur-films` | 2735 | 5 | 7 | 3 | meta 182c |
 | 94 | `ideogram-recraft-leonardo-comparatif` | 2767 | 12 | 8 | 4 | meta 179c |
@@ -226,6 +224,8 @@ Total 222 | Faibles 0 | Moyens 19 | Bons 203
 | 100 | `comfyui-guide-video-createurs-debutants` | 2844 | 24 | 7 | 4 | - |
 | 100 | `comment-ecrire-scenario-court-metrage-ia-a-z` | 2719 | 5 | 4 | 7 | - |
 | 100 | `comment-optimiser-workflow-ia-gagner-temps` | 2758 | 22 | 11 | 1 | - |
+| 100 | `comment-organiser-assets-ia-comme-un-pro` | 2814 | 17 | 7 | 1 | - |
+| 100 | `corriger-scintillement-flicker-video-ia` | 1899 | 7 | 4 | 1 | - |
 | 100 | `creer-avatar-parlant-videos-formation-heygen` | 3040 | 14 | 8 | 4 | - |
 | 100 | `elevenlabs-tutoriel-definitif-voix-ultra-realistes` | 2728 | 8 | 8 | 6 | - |
 | 100 | `generer-effets-speciaux-vfx-outils-ia` | 3081 | 6 | 6 | 4 | - |

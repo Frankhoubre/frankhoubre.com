@@ -11,7 +11,7 @@ thumbnail: "/images/blog/comment-organiser-assets-ia-comme-un-pro/hero.webp"
 
 Si tu passes tes soirées à chercher "la bonne version" d'un plan, tu ne manques pas de talent. Tu manques d'architecture. Apprendre à organiser assets IA, ce n'est pas une corvée d'administrateur. C'est un levier de vitesse, de qualité et de sérénité quand les deadlines se rapprochent.
 
-Dans ce guide, je te propose une méthode de terrain : structure de dossiers, conventions de nommage, gestion des versions, métadonnées utiles, habitude de tri, et lien direct avec ton pipeline créatif. L'objectif est simple : retrouver n'importe quel fichier en moins de trente secondes, savoir pourquoi il existe, et décider vite s'il est livrable ou jetable.
+Dans ce guide, je te propose une méthode de terrain : structure de dossiers, conventions de nommage, gestion des versions, [métadonnées](https://fr.wikipedia.org/wiki/Gestion_des_actifs_num%C3%A9riques) utiles, habitude de tri, et lien direct avec ton pipeline créatif. L'objectif est simple : retrouver n'importe quel fichier en moins de trente secondes, savoir pourquoi il existe, et décider vite s'il est livrable ou jetable.
 
 ![organisation professionnelle des assets IA sur poste créatif avec arborescence claire et vignettes rangées](/images/blog/comment-organiser-assets-ia-comme-un-pro/hero.webp)
 

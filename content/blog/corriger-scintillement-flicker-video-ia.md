@@ -12,7 +12,7 @@ Tu génères un plan IA. Le mouvement est correct, le cadre tient, et pourtant q
 
 Il faut distinguer deux choses qu'on confond souvent. La fluidité, c'est la qualité du mouvement dans le temps : est-ce que ça bouge naturellement. Le scintillement, c'est autre chose : c'est l'instabilité de la matière d'une frame à l'autre, même quand le mouvement est bon. Tu peux avoir un plan parfaitement fluide qui scintille, et un plan stable au mouvement saccadé. Ce sont deux réglages différents, deux corrections différentes.
 
-Cet article traite uniquement du flicker. On va voir d'où il vient vraiment, comment l'attaquer dès la génération, et comment le rattraper au montage quand il est déjà là.
+Cet article traite uniquement du flicker. On va voir d'où il vient vraiment, comment l'attaquer dès la génération, et comment le rattraper au montage, par exemple avec l'outil Deflicker de [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), quand il est déjà là.
 
 ![Comparaison entre un plan vidéo IA qui scintille et un plan stabilisé, texture de matière cohérente](/images/blog/corriger-scintillement-flicker-video-ia/hero.webp)
 

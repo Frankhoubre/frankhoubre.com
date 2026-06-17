@@ -8,7 +8,7 @@ thumbnail: "/images/blog/flux-2-open-weights-images-ia-local-2026/hero.webp"
 
 # FLUX.2 et la bascule open-weights : l'image IA en local
 
-Pendant des mois, le débat sur l'image IA tournait autour des API cloud : qui paie le plus de crédits, qui attend dans la file, qui se fait limiter au pire moment. En 2026, la question a changé. Avec la famille FLUX.2 de Black Forest Labs et la vague de modèles à poids ouverts, générer des images crédibles directement sur ta machine n'est plus un fantasme de bidouilleur. C'est devenu une option de production.
+Pendant des mois, le débat sur l'image IA tournait autour des API cloud : qui paie le plus de crédits, qui attend dans la file, qui se fait limiter au pire moment. En 2026, la question a changé. Avec la famille [FLUX.2 de Black Forest Labs](https://bfl.ai/blog/flux-2) et la vague de modèles à poids ouverts, générer des images crédibles directement sur ta machine n'est plus un fantasme de bidouilleur. C'est devenu une option de production.
 
 Et ça compte. Parce que le nerf de la guerre pour un créateur, ce n'est pas la claque d'une image isolée. C'est le contrôle, la vitesse d'itération, et le coût quand tu produis des dizaines de variantes pour un client qui change d'avis trois fois par jour.
 

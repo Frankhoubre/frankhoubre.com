@@ -8,7 +8,7 @@ thumbnail: "/images/blog/exterieur-foret-brume-profondeur-video-ia/hero.webp"
 
 La forêt en vidéo IA peut être sublime, ou devenir une boue visuelle en quelques secondes. La cause principale est presque toujours la même: profondeur mal gérée. Troncs qui fusionnent, brume uniforme, ciel surexposé, sujet noyé dans un vert sans hiérarchie.
 
-En extérieur forêt, la difficulté n'est pas de générer des arbres. La difficulté est de séparer les plans. Premier plan, plan médian, fond, atmosphère: chaque couche doit rester lisible, sinon ton plan paraît synthétique.
+En extérieur forêt, la difficulté n'est pas de générer des arbres. La difficulté est de séparer les plans. Premier plan, plan médian, fond, [atmosphère](https://fr.wikipedia.org/wiki/Perspective_a%C3%A9rienne): chaque couche doit rester lisible, sinon ton plan paraît synthétique.
 
 Ce guide te donne une méthode de terrain pour créer des plans forêt crédibles, avec brume maîtrisée et profondeur exploitable au montage.
 

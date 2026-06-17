@@ -140,7 +140,7 @@ Si tu tournes en rond, ce protocole reste bête et efficace :
 
 ## Outils, formats, et sobriété technique
 
-Je ne vends aucun logiciel ici. La logique importe plus que la marque : travaille en **espace colorimétrique cohérent**, préfère des exports intermédiaires **sans ré-encodage répété inutile**, et garde des masters **non destructifs** quand la plateforme le permet. Si tu travailles entre plusieurs applis, nomme les versions et note la **transformation** appliquée à chaque saut (rec.709, log intermédiaire, etc.) pour éviter le double étalonnage involontaire.
+Je ne vends aucun logiciel ici. La logique importe plus que la marque : travaille en **[espace colorimétrique](https://fr.wikipedia.org/wiki/Espace_de_couleur) cohérent**, préfère des exports intermédiaires **sans ré-encodage répété inutile**, et garde des masters **non destructifs** quand la plateforme le permet. Si tu travailles entre plusieurs applis, nomme les versions et note la **transformation** appliquée à chaque saut (rec.709, log intermédiaire, etc.) pour éviter le double étalonnage involontaire.
 
 Les upscalers et débruiteurs IA en post peuvent aider sur des plans précis, mais ils peuvent aussi **réécrire la texture** de manière inégale : teste sur une boucle courte avant d'appliquer sur dix minutes. Souviens-toi qu'un plan qui devient « trop propre » suite à un débruit agressif demande souvent un grain de rappel calibré.
 

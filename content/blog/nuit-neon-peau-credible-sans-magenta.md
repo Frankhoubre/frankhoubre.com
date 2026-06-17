@@ -8,7 +8,7 @@ thumbnail: "/images/blog/nuit-neon-peau-credible-sans-magenta/hero.webp"
 
 La nuit néon est l'un des styles les plus demandés et les plus mal exécutés en vidéo IA. On voit souvent des visages noyés dans le magenta, des contrastes agressifs, des noirs bouchés et des peaux qui ressemblent à du plastique coloré. C'est spectaculaire en miniature, catastrophique en lecture continue.
 
-Le problème n'est pas le néon. Le problème, c'est l'absence de hiérarchie lumineuse. Une scène de nuit réussie garde une base de peau crédible, même dans un environnement coloré. Les accents néon servent l'atmosphère, ils ne doivent pas détruire l'humanité du sujet.
+Le problème n'est pas le néon. Le problème, c'est l'absence de hiérarchie lumineuse. Une scène de nuit réussie garde une base de peau crédible, ancrée sur une [balance des blancs](https://fr.wikipedia.org/wiki/Balance_des_blancs) maîtrisée, même dans un environnement coloré. Les accents néon servent l'atmosphère, ils ne doivent pas détruire l'humanité du sujet.
 
 Ce guide te montre comment tenir cet équilibre de manière reproductible, de la préparation au grade final.
 

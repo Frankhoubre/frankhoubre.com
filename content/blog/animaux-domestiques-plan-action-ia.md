@@ -6,7 +6,7 @@ excerpt: "Cadrage, durée courte et prompts matière pour chiens et chats en sc�
 thumbnail: "/images/blog/animaux-domestiques-plan-action-ia/hero.webp"
 ---
 
-Un chien qui court, un chat qui saute, une laisse qui tend, une oreille qui réagit au vent: c'est là que les moteurs vidéo IA montrent leur niveau réel. L'animal domestique est un sujet difficile parce qu'il combine texture complexe, anatomie subtile et mouvement rapide. Si tu rates un seul de ces trois axes, le rendu devient peluche animée.
+Un chien qui court, un chat qui saute, une laisse qui tend, une oreille qui réagit au vent: c'est là que les moteurs vidéo IA montrent leur niveau réel. L'animal domestique est un sujet difficile parce qu'il combine texture complexe, anatomie subtile et mouvement rapide, qui réclame un [flou cinétique](https://fr.wikipedia.org/wiki/Flou_cin%C3%A9tique) crédible. Si tu rates un seul de ces trois axes, le rendu devient peluche animée.
 
 La bonne nouvelle, c'est qu'on peut sortir des plans crédibles avec une méthode stricte. La mauvaise, c'est qu'il faut oublier les plans longs héroïques au début. Sur les animaux, la discipline de découpage fait la différence entre un clip diffusable et une démo fragile.
 
