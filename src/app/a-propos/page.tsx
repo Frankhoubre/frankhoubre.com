@@ -32,6 +32,11 @@ export const metadata: Metadata = buildPageMetadata({
   titleAbsolute: aboutTitle,
   description: aboutDescription,
   path: "/a-propos",
+  alternateLanguages: {
+    fr: "/a-propos",
+    en: "/en/about",
+    "x-default": "/a-propos",
+  },
   openGraph: {
     type: "profile",
     title: aboutTitle,

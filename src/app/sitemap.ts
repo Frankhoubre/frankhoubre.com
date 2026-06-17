@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts, getPostsByCategory } from "@/lib/blog";
+import { getAllEnPosts } from "@/lib/blog-en";
 import { baseUrl, blogCategories, type BlogCategorySlug } from "@/lib/site";
 
 function maxDate(dates: (string | undefined)[]): Date {
@@ -50,6 +51,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
       )
     : now;
 
+  const enPosts = getAllEnPosts();
+  const enEntries: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/en`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/en/blog`,
+      lastModified: enPosts.length
+        ? maxDate(
+            enPosts.flatMap((p) => [
+              p.frontmatter.dateModified,
+              p.frontmatter.date,
+            ]),
+          )
+        : now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/about`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
+    ...enPosts.map((p) => ({
+      url: `${baseUrl}/en/blog/${p.slug}`,
+      lastModified: p.frontmatter.dateModified
+        ? new Date(p.frontmatter.dateModified)
+        : new Date(p.frontmatter.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
   return [
     {
       url: `${baseUrl}/`,
@@ -57,6 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    ...enEntries,
     {
       url: `${baseUrl}/blog`,
       lastModified: blogLastMod,

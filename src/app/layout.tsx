@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Space_Grotesk } from "next/font/google";
 import { FormationPromoModal } from "@/components/FormationPromoModal";
+import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { DEFAULT_OG_IMAGE, absoluteUrl } from "@/lib/metadata";
@@ -74,6 +75,7 @@ export default function RootLayout({
       className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
       <body className="relative isolate flex min-h-full flex-col bg-background text-foreground">
+        <HtmlLangSync />
         <a href="#main-content" className="ds-skip-link">
           Aller au contenu principal
         </a>

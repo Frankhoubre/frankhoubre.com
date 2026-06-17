@@ -5,19 +5,16 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
 import { siteName } from "@/lib/site";
-
-const NAV_ITEMS = [
-  { label: "Blog", href: "/blog" },
-  { label: "Outils", href: "/outils" },
-  { label: "À propos", href: "/a-propos" },
-  { label: "Prestation", href: "/prestation" },
-  { label: "Contact", href: "/contact" },
-  { label: "Liens", href: "/liens" },
-] as const;
+import { getDictionary, localeFromPathname, withLocale } from "@/lib/i18n";
 
 export function SiteHeader() {
   const pathname = usePathname();
-  const isHome = pathname === "/";
+  const locale = localeFromPathname(pathname);
+  const dict = getDictionary(locale);
+  const navItems = dict.nav;
+  const homeHref = withLocale("/", locale);
+  const ctaLabel = locale === "en" ? "Free training" : "Formation gratuite";
+  const isHome = pathname === homeHref;
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -60,7 +57,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link
-          href="/"
+          href={homeHref}
           className={`shrink-0 text-base font-semibold tracking-tight transition ${
             homeAtTop ? "text-white" : "text-neutral-950"
           }`}
@@ -77,11 +74,20 @@ export function SiteHeader() {
           }`}
           aria-label="Navigation principale"
         >
-          {NAV_ITEMS.map((item) => (
+          {navItems.map((item) => (
             <Link key={item.href} href={item.href} className={desktopLinkClass}>
               {item.label}
             </Link>
           ))}
+          <Link
+            href={dict.switchTo.href}
+            className={desktopLinkClass}
+            aria-label={
+              locale === "fr" ? "Switch to English" : "Passer en français"
+            }
+          >
+            {dict.switchTo.label}
+          </Link>
           <a
             href={FORMATION_PROMO_URL}
             target="_blank"
@@ -92,7 +98,7 @@ export function SiteHeader() {
                 : "bg-zinc-950 text-white hover:bg-zinc-800"
             }`}
           >
-            Formation gratuite
+            {ctaLabel}
           </a>
         </nav>
 
@@ -146,7 +152,7 @@ export function SiteHeader() {
         }`}
       >
         <ul className="mx-auto max-w-5xl space-y-1 px-4 py-4 sm:px-6">
-          {NAV_ITEMS.map((item) => (
+          {navItems.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
@@ -162,6 +168,15 @@ export function SiteHeader() {
               </Link>
             </li>
           ))}
+          <li>
+            <Link
+              href={dict.switchTo.href}
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-xl px-4 py-3 text-base font-medium text-zinc-800 transition-colors hover:bg-zinc-100 hover:text-zinc-950"
+            >
+              {locale === "fr" ? "English" : "Français"}
+            </Link>
+          </li>
           <li className="pt-2">
             <a
               href={FORMATION_PROMO_URL}
@@ -170,7 +185,7 @@ export function SiteHeader() {
               onClick={() => setMenuOpen(false)}
               className="block rounded-xl bg-zinc-950 px-4 py-3 text-center text-base font-semibold text-white transition-colors hover:bg-zinc-800"
             >
-              Formation gratuite
+              {ctaLabel}
             </a>
           </li>
         </ul>

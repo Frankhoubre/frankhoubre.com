@@ -49,6 +49,8 @@ export type BuildPageMetadataOptions = {
   titleAbsolute?: string;
   keywords?: string[];
   noIndex?: boolean;
+  /** Versions de langue (hreflang). Clé = hreflang, valeur = chemin local. */
+  alternateLanguages?: Record<string, string>;
   openGraph?: {
     type?: "website" | "article" | "profile";
     title?: string;
@@ -103,10 +105,19 @@ export function buildPageMetadata(opts: BuildPageMetadataOptions): Metadata {
   const twitterDescription = opts.twitter?.description ?? opts.description;
   const twitterImages = opts.twitter?.images ?? ogImages.map((img) => img.url);
 
+  const languages = opts.alternateLanguages
+    ? Object.fromEntries(
+        Object.entries(opts.alternateLanguages).map(([hl, p]) => [
+          hl,
+          pageUrl(p),
+        ]),
+      )
+    : undefined;
+
   return {
     title: opts.titleAbsolute ? { absolute: opts.titleAbsolute } : opts.title,
     description: opts.description,
-    alternates: { canonical },
+    alternates: { canonical, ...(languages ? { languages } : {}) },
     ...(opts.keywords?.length ? { keywords: opts.keywords } : {}),
     ...(opts.noIndex ? { robots: { index: false, follow: true } } : {}),
     ...(opts.authors?.length ? { authors: opts.authors } : {}),

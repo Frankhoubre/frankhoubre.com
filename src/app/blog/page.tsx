@@ -13,6 +13,7 @@ export const metadata: Metadata = buildPageMetadata({
   title: "Blog IA vidéo et image",
   description: blogDescription,
   path: "/blog",
+  alternateLanguages: { fr: "/blog", en: "/en/blog", "x-default": "/blog" },
   openGraph: {
     title: `Blog IA vidéo et image | ${siteName}`,
     description: blogDescription,

@@ -64,6 +64,7 @@ export const metadata: Metadata = buildPageMetadata({
   titleAbsolute: homeTitle,
   description: homeDescription,
   path: "/",
+  alternateLanguages: { fr: "/", en: "/en", "x-default": "/" },
   keywords: [...homeKeywords],
   openGraph: {
     title: homeTitle,
