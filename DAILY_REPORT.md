@@ -1,6 +1,7 @@
-# DAILY REPORT — 2026-06-17 (Run 0: SETUP)
+# DAILY REPORT — 2026-06-17 (Setup + first SEO fix)
 
-**Mode:** first run / setup. No content published (by design).
+**Mode:** setup run, then first operational SEO fix. No new articles yet
+(content cycle starts next run); one safe SEO fix prepared on a branch.
 
 ## Date
 2026-06-17
@@ -16,9 +17,12 @@
 - Repo inspection only (no external news fetched this run).
 
 ## SEO fixes made
-- None applied to content (first run does not edit content, and a concurrent
-  loop is writing to the repo). All findings logged for the first operational
-  run.
+- **Em dashes: 25 -> 0.** Removed the banned em dash (—) from 25 FR articles
+  (replaced with a French colon). Done in an isolated git worktree, committed
+  on branch `loop/seo-fixes-2026-06-17`, pushed to origin (Vercel preview).
+  Ready to merge to main when the translation loop is idle.
+- Did NOT auto-strip the filler block the dashes live in: that gutted several
+  thin articles, so they are queued for careful rewrite (IDEAS_BACKLOG).
 
 ## Build status
 - `npm run build`: PASS (Next.js 16.2.1, exit 0).
@@ -48,12 +52,16 @@
   (see ERRORS_AND_BLOCKERS.md).
 
 ## Next recommended actions
-1. Confirm the deploy path, image-generation permission, and Ahrefs/GSC access
-   (ERRORS_AND_BLOCKERS.md, SETUP_LOOP.md section 6).
-2. Commit the loop system (explicit paths only) when the translation loop is
-   idle, or accept path-scoped commits on the shared HEAD.
-3. First operational run: fix the 25 em-dash/boilerplate errors, then start the
-   daily cycle (2 news + 1 evergreen + audit), FR first.
+1. Merge `loop/seo-fixes-2026-06-17` into main when the translation loop is idle
+   (`git merge loop/seo-fixes-2026-06-17 && git push origin main`) to ship the
+   em-dash fix to production. (Held back to avoid breaking the translation
+   loop's fast-forward push.)
+2. Start the daily content cycle: 2 news (actualite) + 1 evergreen, written by
+   Claude, FR first, with cannibalization checks. Generate hero images via the
+   Gemini scripts. Run in the worktree to keep commits clean.
+3. Begin the careful rewrite of the thin filler articles (IDEAS_BACKLOG).
+4. Optional: confirm Ahrefs/GSC project IDs to drive keyword choice with real
+   data instead of judgment.
 
 ## How to run tomorrow
 Open this repo in a Claude Code session and say "Run the daily content loop"
