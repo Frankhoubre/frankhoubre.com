@@ -10,7 +10,7 @@ Tu ouvres ton outil image. Tu demandes « storyboard cinéma ultra réaliste ».
 
 Ce guide répond à une question précise : **comment créer un storyboard IA étape par étape** avec une méthode de plateau, pas avec une démonstration technologique. L'objectif n'est pas de remplacer un storyboardeur par un générateur. L'objectif est d'aller plus vite sans trahir la direction, sans sacrifier les raccords, et sans livrer un document que personne ne peut tourner ou générer proprement ensuite.
 
-Si tu veux déjà une vision macro d'un livrable client complet, relie ce fil à [générer un storyboard professionnel complet avec l'IA](/blog/generer-storyboard-professionnel-complet-ia). Si tu préfères l'angle « grammaire filmique avant pixels », ouvre en parallèle [storyboarding IA : vision cinématographique](/blog/storyboarding-ia-vision-cinematographique). Ici, on reste au plus près du terrain : case par case, décision par décision.
+Si tu veux déjà une vision macro d'un livrable client complet, relie ce fil à [générer un storyboard professionnel complet avec l'IA](/blog/generer-storyboard-professionnel-complet-ia). Si tu préfères l'angle « grammaire filmique avant pixels », ouvre en parallèle [storyboarding IA : vision cinématographique](/blog/storyboarding-ia-vision-cinematographique). Ici, on reste au plus près du terrain : case par case, décision par décision. Et pour assembler tes images en document présentable, notre [générateur de storyboard PDF](/outils/generateur-storyboard-pdf) sort un livrable propre en quelques minutes.
 
 ![Storyboard IA : du script aux cases filmables sans dérive visuelle](/images/blog/comment-creer-storyboard-ia-etape-par-etape/hero.webp)
 

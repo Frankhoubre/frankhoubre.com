@@ -9,7 +9,7 @@ thumbnail: "/images/blog/meilleur-generateur-image-ia-gratuit/hero.webp"
 
 « Gratuit » veut rarement dire « sans coût ». Tu paies en quota, en file d’attente, en basse résolution, en watermark, ou en données d’usage. Ce guide classe les options **réellement utilisables** en 2026 pour un créateur qui veut produire, pas seulement cliquer une démo.
 
-Tu verras trois familles : **cloud freemium**, **local open source**, et **offres « essai » marketing**. L’objectif est de choisir en quinze minutes selon ton matériel, ton besoin de confidentialité, et ton niveau de patience face aux files.
+Tu verras trois familles : **cloud freemium**, **local open source**, et **offres « essai » marketing**. L’objectif est de choisir en quinze minutes selon ton matériel, ton besoin de confidentialité, et ton niveau de patience face aux files. Pour comparer les plateformes côte à côte, parcours notre [annuaire des générateurs d’images IA gratuits](/outils/annuaire-generateurs-images-ia-gratuits).
 
 Pour comparer deux gros moteurs open quand tu as déjà un peu de VRAM, [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes) complète cette page.
 

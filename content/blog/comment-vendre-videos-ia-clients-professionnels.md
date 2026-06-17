@@ -13,7 +13,7 @@ Tu sais générer des plans. Tu sais monter. Tu sais parfois sortir une séquenc
 
 Vendre une vidéo IA n’est pas vendre un effet. C’est vendre un livrable: objectif, délais, droits, révisions, validation, diffusion. Si tu ne cadres pas ces points, le client te compare à un outil gratuit et tu perds sur le prix.
 
-Dans cette masterclass business, tu vas apprendre à transformer ton savoir-faire IA en offre achetable. On parle positionnement, preuve, packaging, appels d’offre, objections, et hybride humain-machine pour rester crédible.
+Dans cette masterclass business, tu vas apprendre à transformer ton savoir-faire IA en offre achetable. On parle positionnement, preuve, packaging, appels d’offre, objections, et hybride humain-machine pour rester crédible. Pour t’inspirer d’une offre déjà structurée, regarde comment je présente mes [prestations vidéo IA](/prestation).
 
 ![Réunion créative avec storyboard et maquette vidéo pour présenter un projet IA à un client](https://images.unsplash.com/photo-1552664730-d307ca884978)
 

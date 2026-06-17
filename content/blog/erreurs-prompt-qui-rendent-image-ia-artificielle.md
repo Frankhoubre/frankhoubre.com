@@ -13,7 +13,7 @@ Et tu vois immédiatement l’effet plastique.
 
 Peau lissée, lumière impossible, décor brillant comme un showroom, yeux trop nets, ombres qui ne racontent rien. Ce n’est pas parce que tu manques de talent. C’est parce que certaines erreurs de prompt déclenchent des corrélations visuelles ultra artificielles, presque automatiquement.
 
-L’objectif de cette masterclass, t’apprendre à repérer ces erreurs en amont, puis à les corriger avec une méthode claire, reproductible, pro.
+L’objectif de cette masterclass, t’apprendre à repérer ces erreurs en amont, puis à les corriger avec une méthode claire, reproductible, pro. Pour construire un prompt propre dès le départ, pars de notre [générateur de prompt cinéma](/outils/generateur-prompt-cinema).
 
 ![Hero image, erreurs de prompt.](/images/blog/erreurs-prompt-qui-rendent-image-ia-artificielle/hero.webp)
 

@@ -13,7 +13,7 @@ Tu postes une démo magnifique. Tu attends. Rien. Tu envoies cinquante DM “je 
 
 Trouver des clients, c’est résoudre un problème de distribution. Tu dois choisir qui tu sers, quel signal tu envoies, et quel premier livrable tu proposes. Cette masterclass te donne un plan d’acquisition réaliste, orienté studio, pas loterie virale.
 
-Tu vas apprendre à construire une cible, un message, un portfolio preuve, des canaux outbound et inbound, et des partenariats agences. On finira sur les erreurs qui te font passer pour un compte spam.
+Tu vas apprendre à construire une cible, un message, un portfolio preuve, des canaux outbound et inbound, et des partenariats agences. On finira sur les erreurs qui te font passer pour un compte spam. Au moment de chiffrer ta première offre, appuie-toi sur notre [calculateur de budget de production IA](/outils/calculateur-budget-production-ia).
 
 ![Équipe marketing analysant un funnel et des créations vidéo pour acquisition client B2B](https://images.unsplash.com/photo-1522071820081-009f0129c71c)
 

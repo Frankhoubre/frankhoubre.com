@@ -11,7 +11,7 @@ thumbnail: "https://images.unsplash.com/photo-1497032205916-ac775f0649ae"
 
 Tu as un bon script. Tu ouvres ton outil image. Tu génères trente frames “cinéma”. Et le lendemain, ton équipe ne peut rien en faire. Axes contradictoires. Personnages incohérents. Lumière instable. C’est la plus grosse confusion des débutants: un moodboard n’est pas un storyboard.
 
-Let’s be real. Un storyboard professionnel est un document d’exécution. Il doit guider mise en scène, lumière, montage, et production. L’IA accélère la fabrication de cadres, mais elle n’apporte pas automatiquement une grammaire de plan. Cette grammaire, c’est toi qui la poses.
+Soyons clairs. Un storyboard professionnel est un document d’exécution. Il doit guider mise en scène, lumière, montage, et production. L’IA accélère la fabrication de cadres, mais elle n’apporte pas automatiquement une grammaire de plan. Cette grammaire, c’est toi qui la poses. Pour livrer ce document en PDF propre, notre [générateur de storyboard PDF](/outils/generateur-storyboard-pdf) assemble tes cases en quelques minutes.
 
 ![Réalisateur et cheffe opératrice analysant une séquence storyboard sur écran de studio](https://images.unsplash.com/photo-1497032205916-ac775f0649ae)
 

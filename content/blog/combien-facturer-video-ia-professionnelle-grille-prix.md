@@ -13,7 +13,7 @@ Tu ouvres Excel. Tu mets un chiffre au feeling. Tu fermes l’onglet. Trois jour
 
 Facturer une vidéo IA professionnelle, c’est facturer une chaîne: brief, direction, génération segmentée, montage, son, QA, droits, révisions. Si tu ne décomposes pas, tu sous-vends ou tu sur-vends sans le savoir.
 
-Dans cette masterclass pricing, tu vas apprendre une grille simple, des options qui augmentent la valeur perçue, et des clauses qui protègent ton temps. On reste sur du terrain: petites marques, scale-ups, agences partenaires, pas du fantasme “tarif Hollywood”.
+Dans cette masterclass pricing, tu vas apprendre une grille simple, des options qui augmentent la valeur perçue, et des clauses qui protègent ton temps. On reste sur du terrain: petites marques, scale-ups, agences partenaires, pas du fantasme “tarif Hollywood”. Pour estimer le coût réel d’un projet avant de poser ton prix, passe par notre [calculateur de budget de production IA](/outils/calculateur-budget-production-ia).
 
 ![Tableur et contrat avec estimation de budget pour production vidéo IA professionnelle](https://images.unsplash.com/photo-1554224155-6726b3ff858f)
 

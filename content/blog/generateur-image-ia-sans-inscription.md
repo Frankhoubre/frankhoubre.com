@@ -9,7 +9,7 @@ thumbnail: "/images/blog/generateur-image-ia-sans-inscription/hero.webp"
 
 « Sans inscription » promet souvent **zéro friction** et livre **zéro garantie** : quotas cachés, watermark, conservation floue des fichiers, ou besoin d’un compte au moment de l’export HD. Ce guide propose **trois familles** réalistes, avec ce qu’elles valent vraiment en prod.
 
-Pour un panorama plus large des modèles gratuits ou freemium, [quel est le meilleur générateur d’image IA gratuit](/blog/meilleur-generateur-image-ia-gratuit).
+Pour un panorama plus large des modèles gratuits ou freemium, [quel est le meilleur générateur d’image IA gratuit](/blog/meilleur-generateur-image-ia-gratuit). Pour comparer les plateformes côte à côte, ouvre notre [annuaire des générateurs d’images IA gratuits](/outils/annuaire-generateurs-images-ia-gratuits).
 
 ## Option A : session navigateur « guest » sur une suite connue
 
