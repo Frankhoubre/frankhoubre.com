@@ -21,7 +21,7 @@ Ce guide est la version que j’aurais aimé avoir au début. Une méthode compl
 
 Un workflow IA créatif n’est pas une liste d’outils. C’est une chaîne de décisions. Chaque étape prépare la suivante. Si une étape est floue, tu paies la note à l’étape finale.
 
-La chaîne minimale ressemble à ça: intention narrative, bible visuelle, génération image, transformation vidéo, design sonore et voix, montage, contrôle qualité, livraison formatée. Tu peux adapter les outils, mais pas cette logique.
+La chaîne minimale ressemble à ça: intention narrative, bible visuelle, génération image, transformation vidéo, design sonore et voix, montage, contrôle qualité, livraison formatée. Tu peux adapter les outils, mais pas cette logique. Pour approfondir l’étage image vers vidéo en particulier, vois [le pipeline complet image vers vidéo](/blog/pipeline-complet-image-vers-video-ia).
 
 Le piège débutant, c’est de commencer par générer sans intention. Résultat: belle matière brute mais inutilisable en série. Tu veux éviter ça ? Commence toujours par une phrase de promesse: “ce que le spectateur doit ressentir en 3 secondes”.
 

@@ -77,7 +77,7 @@ Si ton objectif est de prototyper vite des idées avec allers-retours textuels n
 
 En environnement pro, je conseille souvent cette logique: utilise ChatGPT Image pour cadrer la direction narrative et stabiliser le brief visuel. Puis compare une passe Midjourney sur les plans clés où la signature artistique doit être plus forte. Tu choisis ensuite selon le rendu réel, pas selon la réputation d’outil.
 
-Si tu veux approfondir cette logique de comparaison en conditions réelles, lis [notre retour terrain Midjourney vs DALL·E pour concept art](/blog/midjourney-vs-dalle-3-concept-art). Le point important n’est pas “qui gagne”, mais “dans quel contexte de production”.
+Si tu veux approfondir cette logique de comparaison en conditions réelles, lis [notre retour terrain Midjourney vs DALL·E pour concept art](/blog/midjourney-vs-dalle-3-concept-art). Le point important n’est pas “qui gagne”, mais “dans quel contexte de production”. Pour une vue d’ensemble de tous les générateurs, vois aussi [notre comparatif du meilleur générateur d’images IA](/blog/meilleur-generateur-image-ia).
 
 | Critère | ChatGPT Image / DALL·E | Midjourney |
 | --- | --- | --- |

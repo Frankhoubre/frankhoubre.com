@@ -65,7 +65,7 @@ Sa limite arrive quand tu passes en exigence de livraison. Tu dois cadrer fortem
 
 Je conseille souvent Pika Labs pour tester un storyboard motion rapidement, puis basculer sur un outil plus stable pour les plans clés finals.
 
-C’est un super laboratoire, moins un pipeline complet autonome sur des projets premium exigeants.
+C’est un super laboratoire, moins un pipeline complet autonome sur des projets premium exigeants. Si tu hésites précisément entre ces deux moteurs, lis [Pika Labs vs Runway pour choisir le bon moteur](/blog/pika-labs-vs-runway-choisir-moteur-plan-action).
 
 ## Mon comparatif rapide outil par outil
 

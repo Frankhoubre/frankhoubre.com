@@ -34,7 +34,7 @@ Le pipeline impose une question avant le rendu : « Qu'est-ce qui doit rester in
 
 Une autre confusion fréquente : croire que « plus de résolution au départ » sécurise la vidéo. Grossir une pilote qui ment, c'est grossir le mensonge. Tu itères en résolution modeste jusqu'à ce que le mouvement soit acceptable, puis tu montes quand la direction est validée. Sinon tu passes tes journées à stabiliser des artefacts en 4K.
 
-Enfin, le pipeline complet inclut **la livraison**. Si tu valides sur un moniteur large sans tester compression mobile, tu prépares une désillusion client. La chaîne de diffusion fait partie du rendu, pas du bonus.
+Enfin, le pipeline complet inclut **la livraison**. Si tu valides sur un moniteur large sans [tester la qualité sur mobile et desktop](/blog/verifier-qualite-mobile-desktop-video-ia), tu prépares une désillusion client. La chaîne de diffusion fait partie du rendu, pas du bonus.
 
 ## Les quatre couches que tout pipeline sérieux doit nommer
 

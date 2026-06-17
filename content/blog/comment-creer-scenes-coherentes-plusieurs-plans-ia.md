@@ -63,7 +63,7 @@ Si tu dois improviser l’ordre, documente quand même la feuille après coup, s
 
 **Plans de transition.** Une porte, un couloir, un reflet dans une vitre peuvent aider à justifier un léger changement de key sans casser la scène. Écris-les comme plans dédiés plutôt que comme accidents.
 
-**Raccords de regard.** Si le personnage regarde un objet hors champ au plan 1, le plan 2 peut montrer l’objet avec un angle qui respecte la ligne d’action. Note l’orientation du regard sur la feuille, « regarde vers la droite du cadre, vers la fenêtre ».
+**Raccords de regard.** Si le personnage regarde un objet hors champ au plan 1, le plan 2 peut montrer l’objet avec un angle qui respecte la ligne d’action. Note l’orientation du regard sur la feuille, « regarde vers la droite du cadre, vers la fenêtre ». Pour une direction d’acteur plus fine sur l’objet du regard et les micro-expressions, vois [diriger les regards et micro-expressions des personnages IA](/blog/diriger-regards-micro-expressions-personnages-ia).
 
 ![Repère de workflow, lumière et texture pour caler ton œil.](/images/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia/workflow-1.webp)
 
@@ -122,6 +122,8 @@ Une ligne sur ce que chaque plan devrait entendre aide à choisir des cadrages a
 | Serré | key sur le visage | ombre nez incohérente |
 | Coupure | axis jump | regard ligne brisée |
 | Fond | profondeur | bokeh qui change de loi |
+
+La continuité du costume est l’un des sauts les plus visibles d’un plan à l’autre. Pour la verrouiller en détail (matières, accessoires, reflets), vois [comment gérer la continuité costume entre les scènes](/blog/comment-gerer-continuite-costume-scenes-ia).
 
 ## Cas d’école : conversation à table
 

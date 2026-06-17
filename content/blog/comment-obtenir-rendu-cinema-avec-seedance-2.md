@@ -70,6 +70,8 @@ Un clip muet propre ressemble encore à une vitrine. Ajoute un **room tone**, un
 
 ## Workflow recommandé
 
+Ce workflow reste volontairement resserré sur les réglages et les habitudes de travail. Pour l orchestration complète du projet, du brief à la livraison client, vois [le workflow complet Seedance 2 pour un rendu cinéma](/blog/workflow-complet-seedance-2-rendu-cinema).
+
 ### Étape 1 : brief cinq lignes
 
 Sujet, lieu, heure, émotion, interdits visuels. Pas de poésie creuse.

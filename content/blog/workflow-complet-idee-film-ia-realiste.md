@@ -50,7 +50,7 @@ Tu compares au zoom à 100 % sur le triangle visage : yeux, bouche, transition n
 
 ## Passage vidéo : mouvement modeste, cohérence d’abord
 
-Quand le pilote est validé, tu exportes une **PNG propre** ou tu gardes la frame dans l’outil qui enchaîne vers la vidéo. Tu décris un mouvement simple : **slow push in**, **gentle pan**, **short lateral truck**. Tu évites orbite 360° et travelling long dans un couloir chargé de lignes verticales au début.
+Quand le pilote est validé, tu exportes une **PNG propre** ou tu gardes la frame dans l’outil qui enchaîne vers la vidéo. Pour un workflow détaillé sur deux moteurs précis, vois [le workflow court métrage HaiLuo et MiniMax](/blog/hailuo-minimax-workflow-court-metrage-realiste). Tu décris un mouvement simple : **slow push in**, **gentle pan**, **short lateral truck**. Tu évites orbite 360° et travelling long dans un couloir chargé de lignes verticales au début.
 
 Si l’outil propose une force de mouvement en pourcentage, **teste entre 20 % et 45 %** sur un clip de quatre à six secondes avant d’aller plus haut. Si tu as un curseur de fidélité à l’image source, monte-le par paliers jusqu’à ce que les mains restent stables sur deux essais consécutifs.
 

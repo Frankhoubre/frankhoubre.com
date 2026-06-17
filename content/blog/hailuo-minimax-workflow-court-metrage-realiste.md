@@ -11,7 +11,7 @@ le plan 3. Le personnage change de veste, le décor respire, et le montage devie
 regarder deux fois.
 
 La bonne nouvelle, c est que un court métrage réaliste piloté avec HaiLuo et MiniMax peut devenir reproductible très
-vite quand tu poses des règles simples. Ici tu as un guide d exécution, pas une théorie de salon. Je te donne ce qui
+vite quand tu poses des règles simples. Ici tu as un guide d exécution, pas une théorie de salon. Pour la méthode générique applicable à n importe quel moteur, pars du [workflow complet de l idée au film IA réaliste](/blog/workflow-complet-idee-film-ia-realiste). Je te donne ce qui
 tient en prod, ce qui casse, et comment corriger sans perdre ton identité visuelle.
 
 Ce texte suit une logique terrain: préparer, générer, rejeter vite, corriger localement, livrer proprement. Tu n as pas

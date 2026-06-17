@@ -49,7 +49,7 @@ Voir aussi [comment éviter les visages déformés en génération IA](/blog/com
 
 ## Étape 5 : LoRA et styles
 
-Un LoRA personnage ou costume peut verrouiller une texture. La contrepartie : rigidité et besoin de doser le poids. Documente le poids gagnant dans ton fichier texte.
+Un LoRA personnage ou costume peut verrouiller une texture. La contrepartie : rigidité et besoin de doser le poids. Documente le poids gagnant dans ton fichier texte. Si tu génères à cadence rapide avec Nano Banana, applique cette même discipline avec [le workflow Nano Banana pour personnages cohérents](/blog/workflow-nano-banana-personnages-coherents).
 
 Si le style global dérive, reviens à [comment contrôler le style visuel dans une génération IA](/blog/comment-controler-style-visuel-generation-ia).
 

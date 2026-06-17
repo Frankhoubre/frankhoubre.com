@@ -28,7 +28,7 @@ Un autre basculement important concerne la préparation des sources. Avant, tu c
 
 Quatrième point, le son est un pilier de crédibilité, pas un appendice. Une vidéo visuellement forte peut sembler amateur si les transitions audio sont brutales, la voix flotte, ou les ambiances ne raccordent pas. L’intégration audio doit être pensée dès le montage, pas repoussée en dernière minute.
 
-Enfin, tu dois dissocier vitesse et précipitation. L’IA te rend rapide. Elle ne te donne pas automatiquement du jugement éditorial. La qualité vient d’un protocole. C’est exactement ce qu’on va construire ici, pas à pas.
+Enfin, tu dois dissocier vitesse et précipitation. L’IA te rend rapide. Elle ne te donne pas automatiquement du jugement éditorial. La qualité vient d’un protocole. C’est exactement ce qu’on va construire ici, pas à pas. La méthode reste agnostique de l’outil. Si tu montes dans CapCut, [notre tutoriel CapCut pas à pas](/blog/comment-monter-video-ia-capcut-comme-un-pro) applique ces phases directement dans l’interface.
 
 | Phase de montage IA | Objectif | Livrable concret | Erreur fréquente | Correction pro |
 | --- | --- | --- | --- | --- |

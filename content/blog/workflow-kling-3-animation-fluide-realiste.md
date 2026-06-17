@@ -20,7 +20,7 @@ Ce guide est le pipeline complet que j'utilise quand le brief exige **animation 
 
 Les bandes annonces d'outils montrent des prompts triés et des durées courtes. Ton quotidien, c'est brief client, retour à 18 h, et dix plans à livrer. Le **workflow Kling 3 pour animation fluide et réaliste** doit donc être **rapide à diagnostiquer** : tu sais en trente secondes si un clip est une dette ou un asset.
 
-Pour le socle image vers vidéo, ouvre [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible). Kling 3 amplifie ce que tu lui donnes. Une pilote contradictoire donne une animation « wow » puis morte.
+Pour le socle image vers vidéo, ouvre [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible), et pour la structure complète, [le pipeline complet image vers vidéo](/blog/pipeline-complet-image-vers-video-ia). Kling 3 amplifie ce que tu lui donnes. Une pilote contradictoire donne une animation « wow » puis morte.
 
 > 💡 **Frank's Cut:** sur Kling 3, commence toujours par **mouvement caméra faible + action sujet unique**. Monte l'amplitude seulement quand le visage tient sur 4 s. L'ordre inverse te coûte des soirées.
 

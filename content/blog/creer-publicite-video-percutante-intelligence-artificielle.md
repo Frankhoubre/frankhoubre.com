@@ -137,4 +137,6 @@ Oui, à condition d’avoir un processus clair. Un créateur solo peut produire 
 8. **Quelle routine appliquer cette semaine pour progresser rapidement en publicité vidéo IA ?**  
 Fais un sprint de 90 minutes orienté conversion. 20 minutes pour cadrer audience et promesse, 25 minutes pour écrire deux scripts courts, 25 minutes pour générer et monter deux variantes, 20 minutes pour préparer le plan de test et la publication. Garde une version "safe" prête à diffuser et une version "bold" à challenger. Ensuite, analyse les premiers retours avec sang-froid. Le but n’est pas de sortir une oeuvre parfaite. Le but est de créer une boucle d’apprentissage rapide, mesurable, et reproductible semaine après semaine.
 
+Une fois ta structure validée, passe à la finition. Notre guide pour [transformer une vidéo IA en publicité premium](/blog/comment-transformer-video-ia-publicite-premium) couvre l’étalonnage, le grain, le mastering audio et le contrôle qualité média, la couche qui sépare une bonne pub d’une créa que tu confierais à un client sérieux.
+
 {/* PUBLICATION DATE: 2026-04-19 */}

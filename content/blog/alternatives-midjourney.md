@@ -41,7 +41,7 @@ Mon conseil de terrain: utilise les options gratuites pour entraîner ton regard
 
 Pour le design marketing, le critère principal n’est pas “la plus belle image”. C’est la capacité à produire des visuels exploitables en série, avec une hiérarchie claire, une lisibilité mobile, et des déclinaisons rapides. Dans ce contexte, `adobe firefly` peut être très pratique grâce à son ancrage dans l’écosystème Adobe.
 
-`ideogram ai` est souvent choisi quand le texte dans l’image doit mieux tenir que la moyenne. Pour des créations orientées affichage, thumb, ou social avec promesse forte, cette capacité peut accélérer la production. Mais garde un contrôle qualité strict, car un texte lisible ne compense pas une lumière incohérente ou une matière artificielle.
+`ideogram ai` est souvent choisi quand le texte dans l’image doit mieux tenir que la moyenne. Pour des créations orientées affichage, thumb, ou social avec promesse forte, cette capacité peut accélérer la production. Mais garde un contrôle qualité strict, car un texte lisible ne compense pas une lumière incohérente ou une matière artificielle. Si tu hésites précisément entre ces trois là, vois [Ideogram, Recraft ou Leonardo : quel outil choisir](/blog/ideogram-recraft-leonardo-comparatif).
 
 `recraft` peut être un très bon choix pour des besoins design plus structurés, notamment quand tu veux produire des assets propres avec une logique graphique plus contrôlée. Si ton objectif est brand content répétable, cet angle peut faire gagner du temps à l’équipe.
 
