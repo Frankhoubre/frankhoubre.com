@@ -9,7 +9,7 @@ thumbnail: "/images/blog/comment-ameliorer-realisme-mouvements-video-ia/hero.web
 
 Un bras qui traverse l’air sans anticipation, un mur qui respire pendant un travelling, une main qui fusionne avec une tasse : le réalisme d’une vidéo IA se joue souvent **avant** la résolution 4K annoncée sur la page marketing. Tu peux exporter en haute définition un geste impossible : tu n’auras qu’une **haute définition d’impossible**, lisible en un écran sur deux. Le spectateur ne mesure pas tes pixels ; il mesure **la physique du geste**, la cohérence de la lumière pendant le déplacement, et la façon dont le son colle (ou non) à l’image. Quand ces signaux divergent, le cerveau classe le clip en « démo » en quelques secondes, même si le color grading est joli.
 
-Ce texte est une grille de travail pour **réduire l’incohérence du mouvement** sans te promettre une caméra virtuelle parfaite. On traitera la vitesse, la complexité du décor, les interactions main–objet, le rôle du son et du montage, et le moment où il vaut mieux **couper** que générer un plan unique impossible. L’idée directrice : **moins d’amplitude dans la génération, plus d’intention au montage** : comme sur un plateau où l’opérateur sait qu’un push-in discret vend mieux qu’une orbite qui casse la géométrie.
+Ce texte est une grille de travail pour **réduire l’incohérence du mouvement** sans te promettre une caméra virtuelle parfaite. On traitera la vitesse, la complexité du décor, les interactions main-objet, le rôle du son et du montage, et le moment où il vaut mieux **couper** que générer un plan unique impossible. L’idée directrice : **moins d’amplitude dans la génération, plus d’intention au montage** : comme sur un plateau où l’opérateur sait qu’un push-in discret vend mieux qu’une orbite qui casse la géométrie.
 
 Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt : elle obtient des métamorphoses de mobilier. **Paul** pousse le curseur mouvement à fond pour « du dynamisme » : les visages ondulent. **Amina** fige une belle image puis ajoute une orbite 360° : le plafond devient liquide. La méthode ci-dessous les ramène à des **briefs tenables** et à une chaîne image → mouvement → critique → correction.
 
@@ -45,7 +45,7 @@ Trois cas d’école. **Inès** veut une minute « cinéma » en un seul prompt 
 
 **Mains et objets.** Saisir, poser, tourner une clé : ce sont des cas limites. Réduis la vitesse, évite les gros plans extrêmes sur les doigts, ou **triche par cadrage** (main hors champ, objet déjà en place). Pour les visages en mouvement, garde [comment éviter les visages déformés en génération IA](/blog/comment-eviter-visages-deformes-generation-ia) sous la main.
 
-**Profondeur de champ vs mouvement.** Si le flou d’arrière-plan n’évolue pas logiquement quand la caméra avance, la 3D implicite est cassée. Décris la distance sujet–fond ; accepte parfois un plan moins « bokeh extrême » pour gagner de la stabilité.
+**Profondeur de champ vs mouvement.** Si le flou d’arrière-plan n’évolue pas logiquement quand la caméra avance, la 3D implicite est cassée. Décris la distance sujet-fond ; accepte parfois un plan moins « bokeh extrême » pour gagner de la stabilité.
 
 **Compression sociale.** Export trop propre + upload = artefacts autour des contours en mouvement. Un grain léger et des hautes lumières maîtrisées aident souvent après encodage. Même logique que pour les images « plastique » dans [pourquoi mes vidéos IA ont l’air fake (et comment les rendre réalistes)](/blog/pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes).
 
@@ -87,7 +87,7 @@ Room tone + bruit contextuel. Puis voix ou musique. Le son révèle les moments 
 
 ### Étape 6 : Montage, recadrage, grain léger
 
-Recadre 2–3 % pour casser le cadrage « parfait par défaut ». Courbe douce : évite les hautes cramées sur la peau. Grain overlay fin pour coller les plans. Référence grain : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia) (transposable en vidéo).
+Recadre 2-3 % pour casser le cadrage « parfait par défaut ». Courbe douce : évite les hautes cramées sur la peau. Grain overlay fin pour coller les plans. Référence grain : [comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia) (transposable en vidéo).
 
 ### Étape 7 : Critique en cinq minutes
 
@@ -180,7 +180,7 @@ D’abord le mouvement crédible à résolution de travail, ensuite l’upscale.
 **Les transitions IA « cinéma » entre deux images ?**  
 Souvent elles mélangent deux géométries : préfère coupe + son. Voir aussi [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
 
-**Comment brief-er une interaction main–objet ?**  
+**Comment brief-er une interaction main-objet ?**  
 Vitesse basse, cadrage plus large, action en deux temps (approche, contact), et retakes courts plutôt qu’un long take unique.
 
 **Seed / variation : à quoi ça sert en vidéo ?**  

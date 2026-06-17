@@ -43,7 +43,7 @@ Pour un humain, le style, c’est souvent une étiquette : « années 70 », « 
 
 **Cadrage et intention.** Les cadrages trop centrés lisent « affiche ». Décale le sujet, laisse de l’espace dans la direction du regard. Ce n’est pas une règle d’école : c’est un **outil** pour éviter la symétrie par défaut du modèle.
 
-**Objectif et profondeur de champ.** Décris une famille de focale (24 mm large, 35 mm polyvalent, 50 mm sobre, 85 mm portrait) et la distance sujet–arrière-plan, même approximative. Sinon le bokeh « générique » arrive, souvent trop net et trop propre. Pour l’anamorphique, assume ovales de bokeh et chute de netteté caractéristique ; sinon reste sphérique. Plus de détails dans [comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia).
+**Objectif et profondeur de champ.** Décris une famille de focale (24 mm large, 35 mm polyvalent, 50 mm sobre, 85 mm portrait) et la distance sujet-arrière-plan, même approximative. Sinon le bokeh « générique » arrive, souvent trop net et trop propre. Pour l’anamorphique, assume ovales de bokeh et chute de netteté caractéristique ; sinon reste sphérique. Plus de détails dans [comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia).
 
 **Matière et imperfections.** Trois imperfections réelles contrôlées valent mieux que vingt tags esthétiques : grain fin, micro-texture de peau au zoom, poussière légère dans un rayon de lumière. Ajoute deux **interdits** explicites pour contrer les défauts de ton modèle : pas de peau porcelaine, pas de sharp global agressif, pas de catchlights symétriques parfaits si tu vises le naturel.
 
@@ -101,7 +101,7 @@ Nomme les fichiers (`SEQ01_INT_window_v04.png`), garde une capture des réglages
 | Lumière | key, fill, fond | « belle lumière » | tu sais où est la source |
 | Style | palette + contraste + grain | cinq genres mélangés | une direction dominante |
 | Matière | 3 imperfections réelles | 20 adjectifs | défauts cohérents avec le lieu |
-| Négatif | 4–8 cibles | liste infinie | tu corriges un défaut mesuré |
+| Négatif | 4-8 cibles | liste infinie | tu corriges un défaut mesuré |
 | Lock | seed + fichier txt | tout en tête | reproductible demain |
 
 > Un prompt, c’est une liste de décisions. Si tu n’en prends pas, le modèle les prendra pour toi, et tu n’aimeras pas ses goûts.

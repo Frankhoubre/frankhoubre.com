@@ -41,7 +41,7 @@ Je pars de trois situations réelles. **Élodie** livre des portraits pour une c
 
 **Peau sous néon ou sous tungstène.** La couleur de peau **doit rester dans une famille crédible** même sous teinte forte. Le néon colore ; il ne doit pas transformer le visage en objet monochrome. En post, isole les rouges de peau, baisse la saturation si tout part magenta, remonte un peu la luminance pour garder du « sang » dans les joues.
 
-**Profondeur de champ et texture.** Si le nez est net et le mur à cinquante centimètres est flou comme de la crème, le cerveau hurie. Décris distance sujet–caméra et sujet–fond, même approximativement. Voir [comment générer une scène réaliste avec une vraie profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ).
+**Profondeur de champ et texture.** Si le nez est net et le mur à cinquante centimètres est flou comme de la crème, le cerveau hurie. Décris distance sujet-caméra et sujet-fond, même approximativement. Voir [comment générer une scène réaliste avec une vraie profondeur de champ](/blog/comment-generer-scene-realiste-profondeur-champ).
 
 **Résolution de travail.** Travaille là où tu peux itérer vite ; n’upscale que quand la composition et la lumière sont figées. Sinon tu passes des heures sur des pores dans une scène dont l’ombre du nez est au mauvais endroit.
 
@@ -55,7 +55,7 @@ Je pars de trois situations réelles. **Élodie** livre des portraits pour une c
 
 ### Étape 1 : Choisir le moteur pour **ton** portrait
 
-Flux excelle souvent sur la matière et les scènes denses ; SDXL offre un écosystème énorme (LoRA, ControlNet, ComfyUI). **Règle :** même prompt court, deux moteurs, même résolution de test. Garde celui qui ment le moins sur **mains et dents** si elles sont visibles, et sur la transition net–flou du visage.
+Flux excelle souvent sur la matière et les scènes denses ; SDXL offre un écosystème énorme (LoRA, ControlNet, ComfyUI). **Règle :** même prompt court, deux moteurs, même résolution de test. Garde celui qui ment le moins sur **mains et dents** si elles sont visibles, et sur la transition net-flou du visage.
 
 ### Étape 2 : Ratio et cadrage avant « beauté »
 

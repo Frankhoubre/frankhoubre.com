@@ -130,7 +130,7 @@ Pour la clarté des consignes en général (vidéo pédagogique, pas un substitu
 
 **Sortie trop longue pour l’outil suivant.** **Fix :** demande une compression au **format cible** (ex. quarante mots pour une incrustation).
 
-**Abus de « cinematic ».** **Fix :** remplace par des décisions : hauteur caméra, focale, dureté de source, distance sujet–fond.
+**Abus de « cinematic ».** **Fix :** remplace par des décisions : hauteur caméra, focale, dureté de source, distance sujet-fond.
 
 **Confondre échec texte et échec image.** Note en deux colonnes ce qui vient du **langage** et du **moteur visuel**.
 

@@ -149,7 +149,7 @@ Si une case est vide, tu refuses de lancer la prod ou tu marques l’hypothèse 
 
 ## Calendrier réaliste, même avec l’IA
 
-**Jour 1–2**, brief et validation direction. **Jour 3–5**, storyboard et pilotes. **Jour 6–8**, motion et montage. **Jour 9–10**, conformité et exports. **Marge** pour retours client.
+**Jour 1-2**, brief et validation direction. **Jour 3-5**, storyboard et pilotes. **Jour 6-8**, motion et montage. **Jour 9-10**, conformité et exports. **Marge** pour retours client.
 
 Compresser ce calendrier est possible, mais chaque compression retire une marge de reprise. Les accidents IA coûtent cher quand ils arrivent la veille du media buy.
 

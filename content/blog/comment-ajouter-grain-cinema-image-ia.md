@@ -27,7 +27,7 @@ Trois anecdotes de coulisse. **Tom** empile « film grain » dans le prompt et e
 
 **Grain vs bruit numérique.** Le grain cinéma a souvent une **structure** (particules, distribution inégale selon la densité) ; le bruit de capteur pauvre est plus uniforme et électronique. Les overlays « film stock » dans les logiciels de grade imitent la première ; un simple bruit monochrone ajouté à outrance imite rarement la seconde correctement : et encore moins la première.
 
-**Dépendance à l’exposition implicite.** Sur pellicule, le grain monte dans les ombres. En post sur une image IA, beaucoup d’artistes **masquent le grain sur les hautes lumières** du visage pour garder de la propreté sur le triangle yeux–nez–bouche, et le renforcent légèrement dans les noirs pour donner du volume. C’est une approximation du comportement réel, mais surtout un **outil de direction du regard**.
+**Dépendance à l’exposition implicite.** Sur pellicule, le grain monte dans les ombres. En post sur une image IA, beaucoup d’artistes **masquent le grain sur les hautes lumières** du visage pour garder de la propreté sur le triangle yeux-nez-bouche, et le renforcent légèrement dans les noirs pour donner du volume. C’est une approximation du comportement réel, mais surtout un **outil de direction du regard**.
 
 **Le prompt comme amorce.** Ajouter « subtle film grain » ou équivalent peut aider le modèle à **cesser de lisser** certaines zones. Ce n’est pas une garantie : parfois le grain prompt devient une texture dessinée sur la peau. D’où l’intérêt du **double pipeline** : amorce légère en génération, contrôle précis en post.
 

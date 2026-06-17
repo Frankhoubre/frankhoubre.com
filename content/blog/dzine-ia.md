@@ -150,7 +150,7 @@ Enrichis ta bible texte avec [comment écrire un prompt pour un personnage réal
 
 **Accumuler les styles avant l’histoire.** Synopsis en une phrase, trois beats, puis look.
 
-**Une minute épique sans budget correction.** Segmenter en **4–8 s** validées.
+**Une minute épique sans budget correction.** Segmenter en **4-8 s** validées.
 
 **Tout fusionner en un clic** (produit + typo + main). Séparer, compo, œil humain sur les bords.
 
