@@ -1,69 +1,66 @@
-# DAILY REPORT — 2026-06-17 (Setup + first SEO fix)
+# DAILY REPORT — 2026-06-17
 
-**Mode:** setup run, then first operational SEO fix. No new articles yet
-(content cycle starts next run); one safe SEO fix prepared on a branch.
+**Mode:** setup + first operational day. System built, one SEO fix shipped, and
+the first daily content batch (2 news + 1 evergreen) published live.
 
 ## Date
 2026-06-17
 
-## Articles created
-- News: 0 (setup run)
-- Evergreen: 0 (setup run)
+## Articles created (3, all live)
+- **News / actualite:** [ElevenLabs retire ses voix v1 le 9 juillet](https://frankhoubre.com/blog/elevenlabs-fin-voix-v1-migration-2026)
+- **News / actualite:** [FLUX.2 et la bascule open-weights : l'image IA en local](https://frankhoubre.com/blog/flux-2-open-weights-images-ia-local-2026)
+- **Evergreen / tutoriels:** [Scintillement (flicker) en vidéo IA : causes et solutions](https://frankhoubre.com/blog/corriger-scintillement-flicker-video-ia)
 
-## Published URLs
-- None.
+All FR, Frank's voice, no em dash, FAQ + 2-3 internal links each, 1 Imagen hero
+image each (generated via the Gemini key).
 
 ## Sources used
-- Repo inspection only (no external news fetched this run).
+- ElevenLabs official changelog 2026-06-08 (primary). Dropped a "Music v2"
+  claim that SEO summaries asserted but the changelog did NOT contain.
+- FLUX.2: Black Forest Labs (bfl.ai, github), NVIDIA RTX AI Garage blog,
+  Hugging Face.
+- Flicker article: craft/evergreen, no external sources needed.
 
-## SEO fixes made
-- **Em dashes: 25 -> 0.** Removed the banned em dash (—) from 25 FR articles
-  (replaced with a French colon). Done in an isolated git worktree, committed
-  on branch `loop/seo-fixes-2026-06-17`, pushed to origin (Vercel preview).
-  Ready to merge to main when the translation loop is idle.
-- Did NOT auto-strip the filler block the dashes live in: that gutted several
-  thin articles, so they are queued for careful rewrite (IDEAS_BACKLOG).
+## SEO fixes made (live)
+- Em dashes: **25 -> 0** across 25 FR articles (merged, verified live).
 
 ## Build status
-- `npm run build`: PASS (Next.js 16.2.1, exit 0).
-- `node .loop_scripts/seo_audit.mjs`: 266 files (FR 219, EN 47) — 25 errors,
-  ~298 warnings, 1 info.
+- `seo_audit.mjs`: **0 errors** maintained (was 25). ~314 warnings (non-blocking).
+- `npm run build`: PASS. All 3 new pages prerendered (137-149 KB).
 
 ## Deployment status
-- N/A (nothing published or pushed).
+- Pushed to `origin/main` (commit ad2e2b0), Vercel deployed. **Verified live**:
+  the flicker article and the em-dash fix both render correctly on
+  frankhoubre.com.
 
 ## Problems found
-- 25 em-dash errors, all inside a templated "gouvernance + risques + livrables"
-  filler block in old FR articles (also a style-guide filler violation).
-- A separate translation loop is actively committing to `main` in this same
-  repo; shared HEAD requires careful, path-scoped commits.
-- News (`actualite`) is the thinnest cluster (6 posts) — the main content gap.
-- ~298 non-blocking warnings (excerpt lengths, internal-link counts, headings).
+- **Site-wide duplicate H1** on every FR article (frontmatter title H1 + body
+  `# ` H1). Pre-existing, affects ~219 articles. Logged as B3 for next run
+  (careful shared-code fix, not rushed).
+- Fresh 24-72h video news is hard to verify from primary sources (June 2026
+  search results are SEO-spam heavy). Anchored news on verified releases +
+  one genuinely fresh primary item (ElevenLabs changelog).
+- Concurrent EN-translation loop shares the working tree (handled via worktrees).
 
 ## Problems fixed
-- None in content yet. Built the system to fix them safely and repeatably:
-  runnable SEO audit, ledger generator, full memory, playbooks, setup doc.
+- 25 em-dash style violations (live).
+- Corrected a wrong memory note (audio cluster is saturated, not thin).
+- Avoided publishing an unverified "Music v2" fact (source discipline held).
+- Avoided gutting thin articles with an over-aggressive strip script (caught in
+  worktree before commit).
 
 ## Problems left
-- Em-dash + boilerplate remediation (queued as first operational safe fix).
-- Loop system files are on disk but not committed (to avoid racing the active
-  loop on a shared HEAD).
-- Deploy / image-generation / Ahrefs-GSC decisions need human confirmation
-  (see ERRORS_AND_BLOCKERS.md).
+- B3 duplicate-H1 site-wide fix (next run, top priority).
+- Thin filler articles need careful rewrite (IDEAS_BACKLOG).
+- Confirm Ahrefs/GSC project IDs for data-driven keyword choice.
 
 ## Next recommended actions
-1. Merge `loop/seo-fixes-2026-06-17` into main when the translation loop is idle
-   (`git merge loop/seo-fixes-2026-06-17 && git push origin main`) to ship the
-   em-dash fix to production. (Held back to avoid breaking the translation
-   loop's fast-forward push.)
-2. Start the daily content cycle: 2 news (actualite) + 1 evergreen, written by
-   Claude, FR first, with cannibalization checks. Generate hero images via the
-   Gemini scripts. Run in the worktree to keep commits clean.
-3. Begin the careful rewrite of the thin filler articles (IDEAS_BACKLOG).
-4. Optional: confirm Ahrefs/GSC project IDs to drive keyword choice with real
-   data instead of judgment.
+1. Fix B3 (duplicate H1) carefully: strip leading body `# ` in mdx-pipeline or
+   demote body h1->h2, full build + visual check. Update seo_audit to detect it.
+2. Next daily batch: 2 news + 1 evergreen (use a worktree, merge to main).
+3. Begin rewriting the thin filler articles.
 
-## How to run tomorrow
-Open this repo in a Claude Code session and say "Run the daily content loop"
-(follows `.loop_scripts/daily_content_loop.md`), or schedule it (SETUP_LOOP
-section 4).
+## How the loop runs
+Open the repo in Claude Code, say "Run the daily content loop"
+(`.loop_scripts/daily_content_loop.md`). Content work happens in an isolated
+worktree, then merges to main (which auto-deploys via Vercel).

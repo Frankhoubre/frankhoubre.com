@@ -50,11 +50,26 @@ distinct intent, or they cannibalize. Check CONTENT_INDEX before writing.
 - Generic Adobe Firefly review (covered: `adobe-firefly-avis`).
 Use these as link targets, not as new articles.
 
+## CORRECTION 2026-06-17 (run 1)
+
+The earlier "audio cluster is thin" note was WRONG (it came from partial slug
+scanning). Audio/voice/music is actually WELL covered: elevenlabs-tutoriel-
+definitif-voix-ultra-realistes, doublage-voix-off-cloner-diriger-voix-film,
+generer-bande-originale-film-clip-ia-musicale, gerer-profondeur-sons-ambiances-
+court-metrage-ia, comment-mixer-audio-image-rendu-cinema-video-ia, comment-
+integrer-sound-design-video-ia, suno-udio-creer-chanson-structuree-a-z-ia,
+synchronisation-labiale-lip-sync, gerer-voix-off-narration-documentaire-ia,
+localisation-voix-off-multilingue-ia, video-ia-audio-synchronise-natif-2026.
+=> Treat audio as SATURATED. Always grep the repo before assuming a gap.
+
+Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
+(now FILLED: corriger-scintillement-flicker-video-ia). Still open: job-to-be-done
+comparators (product ads vs talking-head vs B-roll), quote/scope templates,
+version-control for AI projects.
+
 ## Gaps / opportunities (good evergreen candidates — confirm intent first)
 
-- **Audio cluster is thin.** Voice cloning ethics & workflow, music-to-video
-  sync, ElevenLabs SFX for shorts, dialogue ADR with AI, score that doesn't
-  fight the picture.
+- ~~Audio cluster~~ (CORRECTED above: saturated, not a gap).
 - **End-to-end pipeline.** "Script to screen with AI" full workflow tying
   prompt generator + storyboard + budget tools together (links all pillars +
   natural ScreenWeaver bridge).

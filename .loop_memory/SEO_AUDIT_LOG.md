@@ -3,6 +3,14 @@
 Run `node .loop_scripts/seo_audit.mjs` each day. Log the summary, what was
 fixed, and what was deferred. Newest entry on top.
 
+## 2026-06-17 — Content batch 1 (audit kept clean)
+
+Published 2 news + 1 evergreen. Audit after: **0 errors**, ~314 warnings (the
+3 new files added only minor warnings: 2 news ~1460 words = within news target;
+flicker title trimmed to <=60). Build PASS, all 3 pages prerendered. No new
+errors introduced. News-source discipline held: dropped an ElevenLabs "Music v2"
+claim that the SEO summaries asserted but the official changelog did NOT contain.
+
 ## 2026-06-17 — First operational SEO fix (em dashes)
 
 Worked in an isolated git worktree (`../frankhoubre-loop`, branch

@@ -27,7 +27,7 @@ re-check KEYWORD_MAP.md for cannibalization before writing.
 - [ ] Sora practical guide for creators
 
 ### Troubleshooting long tail
-- [ ] Fixing flicker between frames in AI video
+- [x] Fixing flicker between frames in AI video — DONE 2026-06-17 (corriger-scintillement-flicker-video-ia)
 - [ ] Hands and eyes still breaking: current fixes
 - [ ] Color shifts across shots: matching grade
 - [ ] Getting a clean loop for social

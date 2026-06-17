@@ -52,9 +52,22 @@
   main, let the translation loop's next push carry it to origin (zero
   divergence). The translation loop is still active as of 15:57.
 
+### Also done this run (content batch 1)
+- Published 2 news + 1 evergreen, LIVE + verified on frankhoubre.com:
+  elevenlabs-fin-voix-v1-migration-2026, flux-2-open-weights-images-ia-local-2026,
+  corriger-scintillement-flicker-video-ia. 3 Imagen hero images. Merge ad2e2b0,
+  pushed origin/main. Audit 0 errors, build PASS.
+- Proven full content pipeline: worktree -> write -> Imagen images (Gemini key
+  copied into worktree, gitignored) -> audit -> build (hard-link node_modules,
+  NOT symlink: Turbopack rejects symlinked node_modules) -> commit -> merge ->
+  push -> verify live -> cleanup worktree.
+
 ### Next run should
-1. Set up a fresh worktree for content work
-   (`git worktree add -b loop/content-YYYY-MM-DD ../frankhoubre-loop main`).
+1. FIX B3 (site-wide duplicate H1 on FR articles) — top SEO priority. See
+   ERRORS_AND_BLOCKERS B3. Careful shared-code change + full build + visual check.
+2. Set up a fresh worktree for content work
+   (`git worktree add -b loop/content-YYYY-MM-DD ../frankhoubre-loop main`),
+   copy `.env.local` into it for Imagen, hard-link node_modules for build.
 2. Begin the daily content cycle: 2 news (actualite) + 1 evergreen, written by
    Claude, using WebSearch + NEWS_SOURCES.md, checked against KEYWORD_MAP.md for
    cannibalization. Write FR first (primary site). Date them today. Generate
