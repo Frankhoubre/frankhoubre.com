@@ -117,7 +117,7 @@ Pour `textures-3d-intelligence-artificielle`, retiens trois lignes dans ton carn
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Créer des textures 3D avec l’intelligence artificielle pour vos projets** — L’extrait « Tile seamless, UV, PBR plausible, et intégration Blender ou moteur jeu : un pipeline propre entre IA et 3D. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `textures-3d-intelligence-artificielle` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Créer des textures 3D avec l’intelligence artificielle pour vos projets** : L’extrait « Tile seamless, UV, PBR plausible, et intégration Blender ou moteur jeu : un pipeline propre entre IA et 3D. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `textures-3d-intelligence-artificielle` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

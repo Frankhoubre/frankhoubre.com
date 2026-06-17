@@ -112,7 +112,7 @@ Pour `croquis-en-chef-d-oeuvre-ia`, retiens trois lignes dans ton carnet : inten
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Transformer un simple croquis (dessin) en chef-d’œuvre avec l’IA** — L’extrait « ControlNet, img2img, conservation des masses, et reprise main : du trait utile au rendu final sans perdre l’âme du dessin. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `croquis-en-chef-d-oeuvre-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Transformer un simple croquis (dessin) en chef-d’œuvre avec l’IA** : L’extrait « ControlNet, img2img, conservation des masses, et reprise main : du trait utile au rendu final sans perdre l’âme du dessin. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `croquis-en-chef-d-oeuvre-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

@@ -169,7 +169,7 @@ Pour `topaz-video-ai-test-avis-restauration-video`, retiens trois lignes dans to
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Topaz Video AI : test et avis complet sur la restauration vidéo** — L’extrait « Test terrain complet de Topaz Video AI pour restaurer des vidéos anciennes, avec workflow pro, réglages utiles et limites réelles. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `topaz-video-ai-test-avis-restauration-video` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Topaz Video AI : test et avis complet sur la restauration vidéo** : L’extrait « Test terrain complet de Topaz Video AI pour restaurer des vidéos anciennes, avec workflow pro, réglages utiles et limites réelles. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `topaz-video-ai-test-avis-restauration-video` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

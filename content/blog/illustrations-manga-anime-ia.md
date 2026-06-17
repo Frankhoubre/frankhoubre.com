@@ -113,7 +113,7 @@ Pour `illustrations-manga-anime-ia`, retiens trois lignes dans ton carnet : inte
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Générer des illustrations style « manga / anime » avec l’IA** — L’extrait « Ligne claire, aplats, ombres portées codées, et respect des codes : éviter le pastiche illisible ou le vol de style. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `illustrations-manga-anime-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Générer des illustrations style « manga / anime » avec l’IA** : L’extrait « Ligne claire, aplats, ombres portées codées, et respect des codes : éviter le pastiche illisible ou le vol de style. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `illustrations-manga-anime-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

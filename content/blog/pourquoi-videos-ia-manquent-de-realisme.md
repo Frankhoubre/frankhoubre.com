@@ -117,7 +117,7 @@ Pour `pourquoi-videos-ia-manquent-de-realisme`, retiens trois lignes dans ton ca
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Pourquoi mes vidéos IA manquent de réalisme** — L’extrait « Lumière incohérente, texture qui glisse, mouvement de caméra invraisemblable, et son déconnecté : les causes les plus fréquentes. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-videos-ia-manquent-de-realisme` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Pourquoi mes vidéos IA manquent de réalisme** : L’extrait « Lumière incohérente, texture qui glisse, mouvement de caméra invraisemblable, et son déconnecté : les causes les plus fréquentes. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-videos-ia-manquent-de-realisme` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

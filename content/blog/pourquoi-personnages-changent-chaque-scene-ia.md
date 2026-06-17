@@ -117,7 +117,7 @@ Pour `pourquoi-personnages-changent-chaque-scene-ia`, retiens trois lignes dans 
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Pourquoi mes personnages changent à chaque scène** — L’extrait « Prompt instable, seed non maîtrisée, costume synonyme, et absence de fiche : la continuité est un protocole, pas une option du modèle. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-personnages-changent-chaque-scene-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Pourquoi mes personnages changent à chaque scène** : L’extrait « Prompt instable, seed non maîtrisée, costume synonyme, et absence de fiche : la continuité est un protocole, pas une option du modèle. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-personnages-changent-chaque-scene-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

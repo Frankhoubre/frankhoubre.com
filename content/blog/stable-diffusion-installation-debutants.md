@@ -141,7 +141,7 @@ Pour `stable-diffusion-installation-debutants`, retiens trois lignes dans ton ca
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Stable Diffusion : guide d’installation et premiers pas pour les débutants** — L’extrait « Windows ou macOS, GPU ou plan B, téléchargement des poids, première image, et erreurs classiques à éviter dès le jour 1. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `stable-diffusion-installation-debutants` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Stable Diffusion : guide d’installation et premiers pas pour les débutants** : L’extrait « Windows ou macOS, GPU ou plan B, téléchargement des poids, première image, et erreurs classiques à éviter dès le jour 1. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `stable-diffusion-installation-debutants` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 
