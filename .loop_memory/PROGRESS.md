@@ -45,16 +45,22 @@
 - Found quality debt: a subset of those 25 articles are mostly filler; queued
   for careful rewrite in IDEAS_BACKLOG (did NOT auto-strip, which gutted them).
 
+### DONE this run (operational)
+- Em-dash fix MERGED to main and VERIFIED LIVE on frankhoubre.com (the live
+  midjourney-vs-dalle article renders ":" not "—"). Branch + worktree cleaned up.
+- Confirmed the safe publish mechanism: work in a worktree, merge into local
+  main, let the translation loop's next push carry it to origin (zero
+  divergence). The translation loop is still active as of 15:57.
+
 ### Next run should
-1. Set up a dedicated git worktree (`git worktree add ../frankhoubre-loop main`)
-   so this loop stops sharing a working tree with the translation loop. This is
-   a prerequisite before publishing any article content with clean commits.
-2. First safe content fix: remediate the 25 em-dash errors. Prefer removing the
-   templated "gouvernance + risques + livrables" boilerplate block entirely
-   (it is banned filler) rather than just swapping the dash. Verify build, log.
-3. Begin the daily content cycle: 2 news (actualite) + 1 evergreen, using
-   WebSearch + NEWS_SOURCES.md, checked against KEYWORD_MAP.md for
-   cannibalization. Write FR first (primary site). Date them today.
+1. Set up a fresh worktree for content work
+   (`git worktree add -b loop/content-YYYY-MM-DD ../frankhoubre-loop main`).
+2. Begin the daily content cycle: 2 news (actualite) + 1 evergreen, written by
+   Claude, using WebSearch + NEWS_SOURCES.md, checked against KEYWORD_MAP.md for
+   cannibalization. Write FR first (primary site). Date them today. Generate
+   hero images via the Gemini scripts.
+3. Careful rewrite of the thin filler articles (IDEAS_BACKLOG) — do NOT
+   auto-strip; the strip script gutted them.
 4. Re-run audit, fix new safe issues, update all memory files, write
    DAILY_REPORT.md.
 
