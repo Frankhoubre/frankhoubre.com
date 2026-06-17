@@ -50,7 +50,7 @@ La jurisprudence et les positions des offices évoluent. Pour une campagne US, u
 | Client veut exclusivité ? | définir par écrit ce que tu garantis |
 | Archivage | prompts, seeds, versions |
 
-Pour le cadre outils « sans compte », [générateur d’image IA sans inscription : les 3 meilleures options du moment](/blog/generateur-image-ia-sans-inscription) rappelle aussi les limites légales de prudence.
+Pour le cadre outils « sans compte », [meilleur générateur d’image IA gratuit et sans inscription](/blog/meilleur-generateur-image-ia-gratuit) rappelle aussi les limites légales de prudence.
 
 ## Approfondissement terrain : Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir
 

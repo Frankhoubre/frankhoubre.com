@@ -21,6 +21,17 @@ const nextConfig: NextConfig = {
         destination: "/blog/dzine-ia",
         permanent: true,
       },
+      // Fusions editoriales (anti-cannibalisation) : 301 vers l'article canonique.
+      {
+        source: "/blog/generateur-image-ia-sans-inscription",
+        destination: "/blog/meilleur-generateur-image-ia-gratuit",
+        permanent: true,
+      },
+      {
+        source: "/en/blog/generateur-image-ia-sans-inscription",
+        destination: "/en/blog/meilleur-generateur-image-ia-gratuit",
+        permanent: true,
+      },
     ];
   },
   async headers() {

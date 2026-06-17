@@ -50,7 +50,7 @@ The case law and the positions of the offices evolve. For a US campaign, a local
 | Client wants exclusivity? | define in writing what you guarantee |
 | Archiving | prompts, seeds, versions |
 
-For the "no account" tools frame, [AI image generator with no sign-up: the 3 best options of the moment](/en/blog/generateur-image-ia-sans-inscription) also recalls the legal limits of caution.
+For the "no account" tools frame, [best free AI image generator with no sign-up](/en/blog/meilleur-generateur-image-ia-gratuit) also recalls the legal limits of caution.
 
 ## Field deep dive: Copyright and AI-generated images: what you absolutely must know
 
