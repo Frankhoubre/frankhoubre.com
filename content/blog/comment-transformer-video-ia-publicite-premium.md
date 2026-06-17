@@ -214,3 +214,25 @@ Pour naviguer sur le site selon ton besoin immédiat :
 Ton objectif durable n’est pas d’éblouir d’autres créateurs IA. C’est qu’un humain pressé arrête son scroll parce que la clarification de la promesse arrive immédiatement, puisque l’esthétique soutient cette conviction sans devenir décor vide.
 
 Quand ces couches se rejoignent, **transformer vidéo IA publicité premium** quitte le statut de slogan marketing vague pour devenir une compétence reproductible : brief tranché, montage discipliné, finition audio et image responsable, QA honnête, packaging respectueux des opérations média réelles.
+
+## Questions fréquentes
+
+**Pourquoi ma vidéo IA se dégrade après l’upload sur la plateforme ?**
+
+Parce que la plateforme ré-encode ta vidéo et la compresse à nouveau. Les micro détails parfaitement propres d’une génération IA sont justement ceux qui « bougent » et créent du bruit de compression. Un dégradé de ciel net, une texture fine, un fond uni : ce sont les pièges classiques. La parade est d’ajouter un grain léger et homogène qui donne à la compression quelque chose de régulier à mâcher, et de tester ton export dans les conditions réelles de la plateforme avant de valider, pas seulement sur ton écran local.
+
+**Faut-il ajouter du grain pour faire premium ?**
+
+Souvent oui, mais dosé. Le grain casse l’aspect plastique trop propre des rendus génératifs et unifie des plans qui viennent de modèles différents. L’erreur, c’est le grain trop visible qui devient un effet en soi. Vise un grain qu’on ne remarque pas consciemment mais dont l’absence se sentirait. Notre guide [ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia) détaille la méthode, transposable à la vidéo.
+
+**Quel master livrer pour une exploitation média ?**
+
+Un master propre sans texte légal incrusté si tu dois décliner par marché, puis des variantes nommées par ratio et usage (par exemple `META_9x16`, `META_1x1`), un fichier de sous-titres `SRT` synchronisé, et une fiche d’une page qui documente l’angle testé. Le but est qu’une autre personne puisse reprendre tes fichiers sans deviner. Une nomenclature claire vaut mieux qu’un dossier rempli de `final_final_v2`.
+
+**Comment gérer les mentions légales sur une publicité générée par IA ?**
+
+Traite-les aussi sérieusement que sur une prod classique. Vérifie la cohérence entre ce que la vidéo montre et ce que la page d’atterrissage promet, la visibilité des mentions obligatoires de ton secteur, et la conformité aux règles des plateformes sur les contenus synthétiques et les visages générés. Le premium n’est pas tromper plus élégamment, c’est clarifier plus vite. En cas de doute sur un plan risqué, remplace-le par une preuve simple et vérifiable.
+
+**Combien de temps pour transformer une vidéo IA en pub premium ?**
+
+Compte une feuille de route réaliste plutôt qu’un fantasme de premium instantané. Sur un cycle type de cinq jours : brief et moodboard, génération pilote et sélection, montage, étalonnage et mastering, puis QA multi écrans et exports. Les générateurs accélèrent la capture des images, pas le jugement éditorial. C’est ce jugement, et la finition, qui font la différence entre un beau plan et une annonce qui tient un budget média.

@@ -188,3 +188,25 @@ Regarde aussi ta vidéo en très petite fenêtre pour simuler une vignette rése
 Ton travail continue après ce tutoriel : écouter des courts métrages mixés avec soin, analyser deux minutes avec attention aux ambiances sous parlés, tester tes propres pivots avec une automation en moins ou une réverbération plus courte pour voir ce qui ment ou dit vrai.
 
 Garde cette grille comme socle. Réinvestis le temps gagné par tes outils génératifs dans l’écoute critique et les versions multiples adaptées aux diffuseurs réels. C’est là que ton projet cessera de « ressembler à de l’IA » pour commencer à **sonner comme un film**.
+
+## Questions fréquentes
+
+**Quel niveau de loudness viser pour mon mix ?**
+
+Tout dépend de la destination. Pour une diffusion broadcast classique, la recommandation [EBU R128](https://tech.ebu.ch/publications/r128) cale le niveau intégré à **-23 LUFS** avec un vrai pic à **-1 dBTP**. Pour le web, les plateformes de streaming normalisent plus fort, autour de **-14 LUFS** côté YouTube. Concrètement, ne te bats pas pour gagner trois décibels au master : la plateforme va de toute façon ramener ton clip à sa cible. Garde plutôt de la marge sous le zéro pleine échelle pour éviter les crêtes intersample, et soigne le contraste interne plutôt que le volume global.
+
+**Faut-il mixer le son avant ou après l’étalonnage de l’image ?**
+
+Les deux passes sont indépendantes techniquement, mais elles doivent partager la même intention. En pratique, je verrouille d’abord le montage et le rythme, je commence le mix en parallèle de l’étalonnage, puis je fais une dernière écoute image et son ensemble. Un plan qui devient plus froid au color grading appelle souvent une ambiance plus sèche au son. Travailler les deux en silos, c’est le meilleur moyen d’obtenir une image léchée posée sur un son qui sonne « démo ».
+
+**Comment éviter qu’une voix synthétique sonne posée sur l’image ?**
+
+Le problème vient presque toujours de l’absence d’espace. Une voix générée arrive propre, sans pièce autour d’elle. Ajoute une réverbération courte cohérente avec le décor visible, un fond d’ambiance discret sous la phrase, et coupe les sifflantes trop nettes. Si le personnage est filmé dans une grande salle, une voix sans réverbération trahit immédiatement le montage. Voir aussi notre guide sur le [mastering loudness pour les réseaux sociaux](/blog/mastering-loudness-pub-reseaux-sociaux-ia) pour la diffusion courte.
+
+**Combien de stems prévoir pour un projet simple ?**
+
+Trois suffisent dans la majorité des cas : dialogues, musique, effets et ambiances. Cette séparation te permet de faire du ducking propre sous la voix sans toucher au reste, et de relivrer une version sans musique ou sans voix si le client le demande. Dès que tu ajoutes une narration en plus des dialogues de scène, sépare-les. Le but n’est pas d’empiler les pistes, c’est de garder le contrôle sur ce qui gagne à chaque instant.
+
+**Casque ou enceintes pour juger un mix ?**
+
+Les deux, plus le téléphone. Le casque fermé révèle les détails et les défauts de montage, les petites enceintes donnent une image proche de l’écoute domestique, et le téléphone sans égalisation simule l’écoute réelle de la majorité des spectateurs sur les réseaux. Si une phrase devient agressive ou incompréhensible sur le téléphone alors qu’elle sonne parfaitement au casque, c’est le téléphone qui a raison.

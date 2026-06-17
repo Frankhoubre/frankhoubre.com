@@ -193,7 +193,7 @@ Tu ne vends plus seulement une journée. Tu vends un **résultat** et une **réd
 
 Oui si l'école enseigne critique, histoire des formats, droit, éthique, et pratique de plateau. Non si l'école enseigne seulement des boutons. Les programmes qui intègrent des ateliers « démo vs livrable » produisent des profils plus employables, parce qu'ils recréent la pression réelle d'une review. L'école peut aussi devenir le lieu où l'on apprend à lire des cadres réglementaires sans paniquer, ce qui est une compétence professionnelle directe pour toute création distribuée.
 
-### Quelle compétence « non sexy » devient incontournable ?
+### Quelle compétence « non sexy » devient essentielle ?
 
 La documentation. Celui qui sait expliquer un pipeline, tracer les sources, archiver les prompts, et rendre une décision reproductible devient central dans les équipes qui grandissent. *C'est le métier caché derrière le métier.* Dans les audits internes, c'est souvent la personne qui a des traces qui gagne la confiance, pas celle qui a le plus beau thread Twitter.
 
