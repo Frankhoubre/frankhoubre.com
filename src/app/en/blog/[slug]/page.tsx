@@ -43,6 +43,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     titleAbsolute: trunc(post.frontmatter.title, 60),
     description: trunc(post.frontmatter.excerpt, 160),
     path: `/en/blog/${slug}`,
+    alternateLanguages: {
+      en: `/en/blog/${slug}`,
+      fr: `/blog/${slug}`,
+      "x-default": `/blog/${slug}`,
+    },
     openGraph: {
       type: "article",
       publishedTime: post.frontmatter.date,

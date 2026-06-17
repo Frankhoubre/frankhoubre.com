@@ -18,6 +18,7 @@ import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import { getRecommendedYouTubeVideoId } from "@/lib/blog-video-map";
+import { getEnPostBySlug } from "@/lib/blog-en";
 import {
   extractYouTubeVideoIds,
   getAllPosts,
@@ -76,11 +77,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${baseUrl}${thumb}`
     : undefined;
 
+  // hreflang vers la version EN (quand la traduction existe).
+  const hasEn = getEnPostBySlug(slug) !== null;
+
   return buildPageMetadata({
     title,
     titleAbsolute,
     description,
     path: `/blog/${slug}`,
+    ...(hasEn
+      ? {
+          alternateLanguages: {
+            fr: `/blog/${slug}`,
+            en: `/en/blog/${slug}`,
+            "x-default": `/blog/${slug}`,
+          },
+        }
+      : {}),
     openGraph: {
       type: "article",
       title: `${title} | ${siteName}`,
