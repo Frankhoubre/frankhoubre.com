@@ -3,7 +3,7 @@ title: "Comment obtenir un rendu cinéma avec Seedance 2"
 date: "2026-04-10"
 dateModified: "2026-05-07"
 category: "tutoriels"
-excerpt: "Réglages et habitudes de travail pour pousser un moteur vidéo vers un rendu film, sans look démo."
+excerpt: "Les réglages Seedance 2 et les habitudes de travail qui poussent le moteur vers un rendu film crédible, sans look démo ni sliders poussés au hasard."
 thumbnail: "/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/hero.webp"
 ---
 

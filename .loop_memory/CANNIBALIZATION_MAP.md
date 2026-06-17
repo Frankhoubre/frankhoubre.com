@@ -49,6 +49,26 @@ fusion + redirection 301, ce qui touche des URLs. À trancher par Frank :
    risquer des URLs/titres déjà en place. À faire seulement si les pages se
    gênent réellement dans la GSC une fois indexées.
 
+## Résolutions (décisions Frank, 2026-06-17)
+
+1. **FAIT — Fusion + 301.** `generateur-image-ia-sans-inscription` (vrai
+   quasi-doublon, rempli du bloc générique interdit) absorbé dans
+   `meilleur-generateur-image-ia-gratuit` : nouvelle section « sans inscription »,
+   title/excerpt élargis, FR+EN supprimés, 301 dans next.config.ts, liens
+   entrants repointés. Build vérifié.
+2. **NON FAIT, par décision raisonnée.** `workflow-nano-banana-personnages-coherents`
+   devait être absorbé, mais lecture complète faite : c'est un article fort de
+   290 lignes, spécifique à l'outil, avec du contenu unique absent du pilier
+   (squelette de prompt, quota de session, journal/seeds, Nano Banana vs Flux,
+   tableau synonymes, 4 scénarios, troubleshooting). Mot-clé déjà centré sur
+   « workflow Nano Banana », pas « personnages cohérents ». Absorber détruirait
+   de la valeur pour un gain SEO quasi nul. Gardé tel quel, déjà lié au pilier.
+   À rediscuter si Frank confirme malgré ce constat.
+3. **FAIT (léger).** Paire Seedance : excerpt de `comment-obtenir-rendu-cinema-avec-seedance-2`
+   resserré pour nommer Seedance 2 + « réglages » (différenciation vs le
+   workflow complet). Titres/URLs non touchés. Couple pub laissé tel quel
+   (déjà différencié stratégie vs finition + cross-link).
+
 ## Note technique
 Le préfixe `nf:` devant une URL externe (ex : `](nf:https://...)`) est une
 convention VOULUE, gérée par `src/components/createBlogMdxComponents.tsx` (ajoute
