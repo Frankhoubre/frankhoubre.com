@@ -135,7 +135,7 @@ Pour `meilleur-generateur-image-ia-gratuit`, retiens trois lignes dans ton carne
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Quel est le meilleur générateur d’image IA gratuit ?** — L’extrait « Grille de décision honnête : gratuit « vrai », freemium, local GPU, et ce que tu paies en réalité en temps ou en données. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `meilleur-generateur-image-ia-gratuit` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Quel est le meilleur générateur d’image IA gratuit ?** : L’extrait « Grille de décision honnête : gratuit « vrai », freemium, local GPU, et ce que tu paies en réalité en temps ou en données. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `meilleur-generateur-image-ia-gratuit` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

@@ -166,7 +166,7 @@ Applique cette discipline sur **les alternatives gratuites à chatgpt pour l'éc
 
 ## Approfondissement terrain
 
-**Les alternatives gratuites à ChatGPT pour l'écriture de fiction** — Ce chapitre prolonge l’angle « Comparatif des alternatives gratuites à ChatGPT pour écrire fiction, scènes, dialogues, synopsis et romans sans perdre sa voix d'auteur. » pour le sujet réel derrière `alternatives-gratuites-chatgpt-fiction`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Les alternatives gratuites à ChatGPT pour l'écriture de fiction** : Ce chapitre prolonge l’angle « Comparatif des alternatives gratuites à ChatGPT pour écrire fiction, scènes, dialogues, synopsis et romans sans perdre sa voix d'auteur. » pour le sujet réel derrière `alternatives-gratuites-chatgpt-fiction`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 

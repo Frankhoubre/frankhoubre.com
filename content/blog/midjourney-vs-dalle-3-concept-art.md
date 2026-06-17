@@ -124,7 +124,7 @@ Pour `midjourney-vs-dalle-3-concept-art`, retiens trois lignes dans ton carnet :
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Midjourney vs DALL·E 3 : lequel choisir pour le concept art ?** — L’extrait « Itération, cohérence de direction artistique, contrôle des poses, et livrables : le bon outil dépend du type de concept, pas du logo sur la slide. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `midjourney-vs-dalle-3-concept-art` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Midjourney vs DALL·E 3 : lequel choisir pour le concept art ?** : L’extrait « Itération, cohérence de direction artistique, contrôle des poses, et livrables : le bon outil dépend du type de concept, pas du logo sur la slide. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `midjourney-vs-dalle-3-concept-art` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

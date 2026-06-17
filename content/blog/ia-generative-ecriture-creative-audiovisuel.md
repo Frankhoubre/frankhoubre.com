@@ -166,7 +166,7 @@ Applique cette discipline sur **comment l'ia générative transforme l'écriture
 
 ## Approfondissement terrain
 
-**Comment l'IA générative transforme l'écriture créative dans l'audiovisuel** — Ce chapitre prolonge l’angle « Comment l'IA générative change le développement d'idées, de scènes, de personnages, de pitchs et de workflows d'écriture audiovisuelle. » pour le sujet réel derrière `ia-generative-ecriture-creative-audiovisuel`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Comment l'IA générative transforme l'écriture créative dans l'audiovisuel** : Ce chapitre prolonge l’angle « Comment l'IA générative change le développement d'idées, de scènes, de personnages, de pitchs et de workflows d'écriture audiovisuelle. » pour le sujet réel derrière `ia-generative-ecriture-creative-audiovisuel`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 

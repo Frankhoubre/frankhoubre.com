@@ -117,7 +117,7 @@ Pour `canva-ia-creation-visuels-rapides`, retiens trois lignes dans ton carnet :
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Comment utiliser Canva IA pour la création de visuels rapides** — L’extrait « Magic Edit, fonds, mockups réseaux, et limites : gagner du temps sans sacrifier la charte ni les droits. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `canva-ia-creation-visuels-rapides` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Comment utiliser Canva IA pour la création de visuels rapides** : L’extrait « Magic Edit, fonds, mockups réseaux, et limites : gagner du temps sans sacrifier la charte ni les droits. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `canva-ia-creation-visuels-rapides` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

@@ -119,7 +119,7 @@ Pour `photos-hyper-realistes-ia`, retiens trois lignes dans ton carnet : intenti
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Comment utiliser l’IA pour générer des photos hyper-réalistes** — L’extrait « Lumière motivée, objectif plausible, texture de peau, et post-traitement : le réalisme se gagne en couches, pas en adjectifs. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `photos-hyper-realistes-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Comment utiliser l’IA pour générer des photos hyper-réalistes** : L’extrait « Lumière motivée, objectif plausible, texture de peau, et post-traitement : le réalisme se gagne en couches, pas en adjectifs. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `photos-hyper-realistes-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

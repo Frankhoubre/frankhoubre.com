@@ -123,7 +123,7 @@ Pour `droits-auteur-images-generees-ia`, retiens trois lignes dans ton carnet : 
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir** — L’extrait « EU, UK, USA : grands principes, incertitudes, et checklist pratique pour créateurs et clients, sans remplacer un avocat. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `droits-auteur-images-generees-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir** : L’extrait « EU, UK, USA : grands principes, incertitudes, et checklist pratique pour créateurs et clients, sans remplacer un avocat. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `droits-auteur-images-generees-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

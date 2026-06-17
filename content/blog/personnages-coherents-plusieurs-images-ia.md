@@ -133,7 +133,7 @@ Pour `personnages-coherents-plusieurs-images-ia`, retiens trois lignes dans ton 
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Tutoriel complet : comment créer des personnages cohérents sur plusieurs images** — L’extrait « Fiche personnage, prompts stables, seeds, LoRA, et QA visuelle : une méthode de studio appliquée à l’IA image. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `personnages-coherents-plusieurs-images-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Tutoriel complet : comment créer des personnages cohérents sur plusieurs images** : L’extrait « Fiche personnage, prompts stables, seeds, LoRA, et QA visuelle : une méthode de studio appliquée à l’IA image. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `personnages-coherents-plusieurs-images-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

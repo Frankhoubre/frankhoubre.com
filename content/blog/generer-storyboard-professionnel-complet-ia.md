@@ -125,7 +125,7 @@ Le plus grand piège est de confondre vitesse de génération et maturité de mi
 
 ## Approfondissement terrain
 
-**Générer un storyboard professionnel complet avec l'IA** — Ce chapitre prolonge l’angle « Masterclass pas à pas pour créer un storyboard IA complet, cohérent et prêt production, sans dérive visuelle ni plans inutilisables. » pour le sujet réel derrière `generer-storyboard-professionnel-complet-ia`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Générer un storyboard professionnel complet avec l'IA** : Ce chapitre prolonge l’angle « Masterclass pas à pas pour créer un storyboard IA complet, cohérent et prêt production, sans dérive visuelle ni plans inutilisables. » pour le sujet réel derrière `generer-storyboard-professionnel-complet-ia`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 

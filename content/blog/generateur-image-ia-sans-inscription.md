@@ -115,7 +115,7 @@ Pour `generateur-image-ia-sans-inscription`, retiens trois lignes dans ton carne
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Générateur d’image IA sans inscription : les 3 meilleures options du moment** — L’extrait « Transparence honnête : compte léger, session anonyme limitée, ou local zéro compte, avec les vrais compromis 2026. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `generateur-image-ia-sans-inscription` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Générateur d’image IA sans inscription : les 3 meilleures options du moment** : L’extrait « Transparence honnête : compte léger, session anonyme limitée, ou local zéro compte, avec les vrais compromis 2026. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `generateur-image-ia-sans-inscription` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

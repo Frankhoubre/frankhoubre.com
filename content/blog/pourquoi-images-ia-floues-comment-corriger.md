@@ -117,7 +117,7 @@ Pour `pourquoi-images-ia-floues-comment-corriger`, retiens trois lignes dans ton
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Pourquoi mes images IA sont floues et comment corriger** — L’extrait « Upscale trop tôt, débruitage agressif, motion blur implicite, et mauvaise résolution de base : diagnostic et correctifs concrets. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-images-ia-floues-comment-corriger` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Pourquoi mes images IA sont floues et comment corriger** : L’extrait « Upscale trop tôt, débruitage agressif, motion blur implicite, et mauvaise résolution de base : diagnostic et correctifs concrets. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `pourquoi-images-ia-floues-comment-corriger` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

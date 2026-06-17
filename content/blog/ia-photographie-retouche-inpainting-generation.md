@@ -113,7 +113,7 @@ Pour `ia-photographie-retouche-inpainting-generation`, retiens trois lignes dans
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**L’IA au service de la photographie : retouche, inpainting et génération** — L’extrait « Quand l’IA aide sans mentir : nettoyage local, extension de cadrage, et génération contrôlée avec garde-fous éthiques. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `ia-photographie-retouche-inpainting-generation` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**L’IA au service de la photographie : retouche, inpainting et génération** : L’extrait « Quand l’IA aide sans mentir : nettoyage local, extension de cadrage, et génération contrôlée avec garde-fous éthiques. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `ia-photographie-retouche-inpainting-generation` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

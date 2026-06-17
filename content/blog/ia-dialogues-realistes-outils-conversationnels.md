@@ -166,7 +166,7 @@ Applique cette discipline sur **créer des dialogues réalistes avec l'aide d'ou
 
 ## Approfondissement terrain
 
-**Créer des dialogues réalistes avec l'aide d'outils conversationnels** — Ce chapitre prolonge l’angle « Méthode terrain pour utiliser ChatGPT, Claude, Gemini ou Mistral comme partenaires d'improvisation et écrire des dialogues plus vrais. » pour le sujet réel derrière `ia-dialogues-realistes-outils-conversationnels`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Créer des dialogues réalistes avec l'aide d'outils conversationnels** : Ce chapitre prolonge l’angle « Méthode terrain pour utiliser ChatGPT, Claude, Gemini ou Mistral comme partenaires d'improvisation et écrire des dialogues plus vrais. » pour le sujet réel derrière `ia-dialogues-realistes-outils-conversationnels`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 

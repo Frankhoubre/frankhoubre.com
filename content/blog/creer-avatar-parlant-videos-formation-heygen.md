@@ -140,7 +140,7 @@ Le principal piège est d’industrialiser trop tôt sans standard qualité. Tu 
 
 ## Approfondissement terrain
 
-**Créer un avatar parlant pour ses vidéos de formation avec HeyGen** — Ce chapitre prolonge l’angle « Guide complet pour créer un avatar HeyGen crédible, pédagogique et cohérent pour des vidéos de formation professionnelles. » pour le sujet réel derrière `creer-avatar-parlant-videos-formation-heygen`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Créer un avatar parlant pour ses vidéos de formation avec HeyGen** : Ce chapitre prolonge l’angle « Guide complet pour créer un avatar HeyGen crédible, pédagogique et cohérent pour des vidéos de formation professionnelles. » pour le sujet réel derrière `creer-avatar-parlant-videos-formation-heygen`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 
@@ -209,7 +209,7 @@ Pour `creer-avatar-parlant-videos-formation-heygen`, retiens trois lignes dans t
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Créer un avatar parlant pour ses vidéos de formation avec HeyGen** — L’extrait « Guide complet pour créer un avatar HeyGen crédible, pédagogique et cohérent pour des vidéos de formation professionnelles. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `creer-avatar-parlant-videos-formation-heygen` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Créer un avatar parlant pour ses vidéos de formation avec HeyGen** : L’extrait « Guide complet pour créer un avatar HeyGen crédible, pédagogique et cohérent pour des vidéos de formation professionnelles. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `creer-avatar-parlant-videos-formation-heygen` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

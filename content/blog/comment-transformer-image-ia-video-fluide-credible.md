@@ -196,7 +196,7 @@ Pour étendre cette méthode à un projet complet, enchaîne avec [workflow comp
 
 ## Approfondissement terrain
 
-**Comment transformer une image IA en vidéo fluide et crédible** — Ce chapitre prolonge l’angle « Processus précis pour animer une image IA sans casser le réalisme, du keyframe au rendu final. » pour le sujet réel derrière `comment-transformer-image-ia-video-fluide-credible`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
+**Comment transformer une image IA en vidéo fluide et crédible** : Ce chapitre prolonge l’angle « Processus précis pour animer une image IA sans casser le réalisme, du keyframe au rendu final. » pour le sujet réel derrière `comment-transformer-image-ia-video-fluide-credible`. L’objectif n’est pas d’empiler des adjectifs, mais d’installer une **boucle QA** courte que tu peux réutiliser sur chaque livrable : capture, note, compare, tranche, archive. La plupart des créateurs perdent du temps parce qu’ils mélangent trois variables en une session, puis blâment le modèle. Quand tu sépares lumière, composition, texture, intention, tu retrouves un diagnostic honnête et une progression mesurable.
 
 ### Protocole « une variable » (30 minutes)
 
@@ -265,7 +265,7 @@ Pour `comment-transformer-image-ia-video-fluide-credible`, retiens trois lignes 
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Comment transformer une image IA en vidéo fluide et crédible** — L’extrait « Processus précis pour animer une image IA sans casser le réalisme, du keyframe au rendu final. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `comment-transformer-image-ia-video-fluide-credible` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Comment transformer une image IA en vidéo fluide et crédible** : L’extrait « Processus précis pour animer une image IA sans casser le réalisme, du keyframe au rendu final. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `comment-transformer-image-ia-video-fluide-credible` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

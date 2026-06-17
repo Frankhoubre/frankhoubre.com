@@ -119,7 +119,7 @@ Pour `secrets-prompts-rendu-photographique-ia`, retiens trois lignes dans ton ca
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Les secrets des prompts pour générer des images au rendu photographique** — L’extrait « Ce qui marche vraiment : hiérarchie d’information, vocabulaire optique, et pièges à éviter pour ne pas retomber sur un cliché IA. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `secrets-prompts-rendu-photographique-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Les secrets des prompts pour générer des images au rendu photographique** : L’extrait « Ce qui marche vraiment : hiérarchie d’information, vocabulaire optique, et pièges à éviter pour ne pas retomber sur un cliché IA. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `secrets-prompts-rendu-photographique-ia` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 

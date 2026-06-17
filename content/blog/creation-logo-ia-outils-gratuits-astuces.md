@@ -121,7 +121,7 @@ Pour `creation-logo-ia-outils-gratuits-astuces`, retiens trois lignes dans ton c
 
 ## Prolongement série B : livrables, risques et gouvernance
 
-**Création de logo avec l’IA : outils gratuits et astuces de pro** — L’extrait « Vectorisation, lisibilité en petit, dépôt marque, et limites des générateurs : un workflow pro sans promesse magique. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `creation-logo-ia-outils-gratuits-astuces` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
+**Création de logo avec l’IA : outils gratuits et astuces de pro** : L’extrait « Vectorisation, lisibilité en petit, dépôt marque, et limites des générateurs : un workflow pro sans promesse magique. » pose souvent une attente implicite : un livrable stable, défendable, reproductible. Le slug `creation-logo-ia-outils-gratuits-astuces` sert de fil conducteur : chaque export doit pouvoir être relié à une intention, une preuve, une limite. Cette section ajoute une couche **gouvernance + risques + livrables** que tu peux recopier dans ton Notion interne ou ton drive projet.
 
 ### Livrables : ce que tu promets vraiment
 
