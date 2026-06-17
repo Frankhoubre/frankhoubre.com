@@ -402,7 +402,9 @@ Tu n'as pas besoin d'être le meilleur orateur. Tu as besoin d'être le plus cla
 
 C'est simple. C'est rare. Donc ça marche.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on convincing clients with AI video proof and validation workflows].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ
 

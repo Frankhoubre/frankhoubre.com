@@ -105,7 +105,9 @@ Les principes de [planification AFI](https://www.afi.com/) s'appliquent : l'IA n
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/construire-liste-plans-shotlist-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on construire une shotlist IA minimaliste qui élimine les plans morts avant génération.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## FAQ
 

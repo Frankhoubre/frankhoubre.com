@@ -494,7 +494,9 @@ Le marché va continuer d'évoluer vite. Les marques resteront exigeantes. Ceux 
 Reste simple, reste clair, reste responsable. C'est ainsi que les collaborations deviennent récurrentes.
 Et c'est ainsi que ton studio gagne en valeur perçue, en stabilité commerciale, et en recommandation naturelle.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on selling AI visuals to brands with premium positioning].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Présentation client de pack visuels IA avec déclinaisons campagne et guidelines](https://images.unsplash.com/photo-1553877522-43269d4ea984)
 

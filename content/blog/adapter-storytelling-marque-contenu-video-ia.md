@@ -103,7 +103,9 @@ Pour les livrables finaux, les [recommandations d'encodage YouTube](https://supp
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/adapter-storytelling-marque-contenu-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on traduire une charte de marque en brief IA actionnable avant la première génération.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## FAQ
 

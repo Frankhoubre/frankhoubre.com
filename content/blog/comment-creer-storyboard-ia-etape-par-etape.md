@@ -159,7 +159,9 @@ Si tu dois verrouiller la grammaire plan et transitions sans déraper dans la th
 
 Garde ces lectures comme **cadre**, pas comme distraction : deux onglets au lieu de douze chaînes YouTube qui parlent en même temps.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on shot sequencing and camera language].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Livrables finaux qui respectent une équipe réelle
 

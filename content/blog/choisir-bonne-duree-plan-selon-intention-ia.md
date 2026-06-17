@@ -111,7 +111,9 @@ Les [recommandations YouTube sur la rétention](https://support.google.com/youtu
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/choisir-bonne-duree-plan-selon-intention-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on calibrer la durée de chaque plan IA selon son rôle narratif avant de générer.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## FAQ
 

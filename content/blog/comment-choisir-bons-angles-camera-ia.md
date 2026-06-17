@@ -33,7 +33,9 @@ Ajoute dans la scène: `eye level`, `slight low-angle`, `high-angle`.
 
 ## Vidéo de référence exploitable
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on camera angle, eyeline, and when to break eye-level]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 Pour éviter les incohérences optiques en changeant d’angle, complète avec [comment utiliser les objectifs caméra dans un prompt IA](/blog/comment-utiliser-objectifs-camera-dans-prompt-ia). Pour que la hauteur de caméra dialogue avec le cadre global, relie ce guide à [comment cadrer une image IA comme un pro du cinéma](/blog/comment-cadrer-image-ia-comme-pro-cinema) et à [comment utiliser la règle des tiers en génération IA](/blog/comment-utiliser-regle-des-tiers-generation-ia).
 

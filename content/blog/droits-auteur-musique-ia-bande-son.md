@@ -228,7 +228,9 @@ Quand son, image et cadre contractuel sont alignés, la livraison est solide.
 
 Les principes de [copyright](https://en.wikipedia.org/wiki/Copyright) varient selon juridictions. Ton job n'est pas de devenir juriste en une nuit, mais de mettre en place une discipline documentaire sérieuse.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on documenter licences musicales IA et formuler les limites d'usage dans un dossier client.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ![Post-production, scopes et référence couleur pour Droits d'auteur et musique IA pour bande son film](/images/blog/droits-auteur-musique-ia-bande-son/workflow-2.webp)
 

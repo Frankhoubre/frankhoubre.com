@@ -186,7 +186,9 @@ Quand tu compares deux sorties, aligne : même durée, même cadrage de test, m�
 
 Pour **Pourquoi mon rendu IA manque de profondeur** et le périmètre `pourquoi-rendu-ia-manque-de-profondeur`, retiens : livrable = paquet, risque = trace écrite, gouvernance = rôles et décisions datées. L’extrait « Plans trop plats, focale contradictoire, valeurs de gris collées, et absence de séparation avant / arrière : comment redonner du relief. » devient actionnable quand tu relies chaque phrase du brief à une preuve visuelle ou à une limite assumée. Ce n’est pas du pessimisme : c’est ce qui permet de livrer vite **sans** regret.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on spatial cues and depth cues in AI-generated frames].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Second repère : valeurs en niveaux de gris.](/images/blog/pourquoi-rendu-ia-manque-de-profondeur/workflow-2.webp)
 

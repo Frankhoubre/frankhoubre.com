@@ -270,7 +270,9 @@ Un contrat solide + un reporting clair = projet respirable.
 
 Les bases rejoignent les principes de [droit des contrats](https://en.wikipedia.org/wiki/Contract): consentement éclairé, objet défini, obligations compréhensibles.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on écrire des clauses IA claires pour éviter les litiges de retouches et d'usage.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ![Post-production, scopes et référence couleur pour Clause contrat client pour contenu généré par IA](/images/blog/clause-contrat-client-contenu-genere-ia/workflow-2.webp)
 

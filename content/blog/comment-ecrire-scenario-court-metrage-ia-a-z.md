@@ -112,7 +112,9 @@ Problème 7: **ton uniforme** entre tous les personnages. Correction: réécris 
 
 Problème 8: **dépendance à l’IA pour la structure** sans validation humaine. Correction: impose une pause de douze heures entre version IA et relecture. Ton cerveau repère le générique mieux quand tu reviens frais.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on storytelling structure for short-form films].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Plateau de tournage minimaliste avec caméra cinéma et lumière naturelle imparfaite](https://images.unsplash.com/photo-1505685296765-3a2736de412f)
 

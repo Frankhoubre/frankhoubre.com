@@ -83,7 +83,9 @@ Erreur 4: storyboard “instagrammable” mais inutilisable. Correction: annotat
 
 Erreur 5: trop de plans complexes en début de pipeline. Correction: priorité aux plans narrativement essentiels, simplification des transitions techniques.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on shot sequencing and camera language].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Équipe de production validant un storyboard annoté avant passage en prévisualisation](https://images.unsplash.com/photo-1533750516457-a7f992034fec)
 

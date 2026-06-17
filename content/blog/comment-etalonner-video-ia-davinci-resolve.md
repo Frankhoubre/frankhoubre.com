@@ -128,7 +128,9 @@ Paramètres à surveiller :
 - **Sharpen agressif après upscale** : tu sculptes les artefacts comme des détails.
 - **Ignorer le cut** : tu passes deux heures sur un plan magnifique que l’histoire montre 0,8 seconde entre deux plans plus faibles, ce qui suffit à casser la croyance.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Utile pour calibrer ton regard sur la performance des créatives et la discipline de tests (hook, lisibilité, itération) quand tu grades pour des formats courts qui doivent survivre à la compression sociale.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 > 💡 **Frank's Cut:** avant d’appeler un grade « final », réponds par écrit en une phrase : « cette couleur aide à comprendre qui a le pouvoir dans le champ et où regarde le spectateur ». Si tu ne peux pas répondre, tu n’as probablement qu’un preset joli, pas une décision.
 

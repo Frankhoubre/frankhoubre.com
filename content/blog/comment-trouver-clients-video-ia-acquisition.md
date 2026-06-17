@@ -239,7 +239,9 @@ Trouver des clients avec la vidéo IA, c’est connecter une preuve créative à
 
 Tu n’as pas besoin d’être partout. Tu as besoin d’être crédible là où tu choisis d’être.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building a client pipeline for creative AI services].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## FAQ
 

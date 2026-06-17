@@ -252,7 +252,9 @@ La miniature vend l'entrée, la vidéo vend la confiance.
 
 Les notions de [A/B testing](https://en.wikipedia.org/wiki/A/B_testing) rappellent une règle simple: sans variable isolée, pas d'apprentissage fiable.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on tester une seule variable de miniature et lire CTR + rétention ensemble.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ![Post-production, scopes et référence couleur pour A/B test de miniatures YouTube générées avec l'IA](/images/blog/ab-test-miniatures-youtube-ia/workflow-2.webp)
 

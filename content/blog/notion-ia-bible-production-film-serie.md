@@ -89,7 +89,9 @@ Crée une base **Jours de tournage** reliée aux scènes. Pour chaque scène, aj
 
 Utilise Notion IA pour générer une checklist par décor: "À partir de ces scènes tournées dans la cuisine, liste les accessoires, contraintes lumière, besoins son, continuité costume et risques de production." Tu peux ensuite transformer cette liste en tâches.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on production systems and creative workflow]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ### Exemple 3: bible de production pour publicité ou clip
 

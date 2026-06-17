@@ -216,7 +216,9 @@ Facturer une vidéo IA, c’est facturer une production avec des risques spécif
 
 Tu n’as pas besoin d’être le moins cher. Tu as besoin d’être le plus clair.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on pricing creative services and retainers].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Timeline post-production avec étapes de finition incluses dans un devis vidéo IA](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d)
 

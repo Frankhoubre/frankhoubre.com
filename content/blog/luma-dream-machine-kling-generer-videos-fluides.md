@@ -334,7 +334,9 @@ Luma et Kling peuvent produire d’excellents plans. Mais sans méthode, ils pro
 
 À ce niveau, tu ne “lances plus des générations”. Tu diriges des séquences. Et c’est précisément ce changement de posture qui fait la différence entre contenu IA standard et vidéo vraiment professionnelle.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on generating fluid AI videos with stable cinematic motion].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ![Étalonnage final d’une séquence IA pour harmoniser fluidité et texture entre plans](/images/blog/luma-dream-machine-kling-generer-videos-fluides/workflow-2.png)
 

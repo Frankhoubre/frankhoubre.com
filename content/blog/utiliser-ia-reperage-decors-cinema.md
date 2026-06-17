@@ -95,7 +95,9 @@ Partage enfin le dossier aux pôles clés: réal, chef op, régie, prod. Un rep�
 
 ![Dossier de repérage décor cinéma avec statut go no go et plan logistique de tournage](/images/art6-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI location scouting and production risk checks]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting: les erreurs qui ruinent un repérage assisté IA
 

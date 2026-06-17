@@ -101,7 +101,9 @@ Pour les hooks alignés, vois [concevoir des hooks vidéo IA efficaces en 3 seco
 
 ![Validation finale d un master video IA sur ecran mobile et moniteur etalonne](/images/blog/creer-miniatures-youtube-coherentes-avec-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on dériver une miniature YouTube cohérente à partir d'un frame vidéo IA validé.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Texte overlay : trois mots qui suffisent
 

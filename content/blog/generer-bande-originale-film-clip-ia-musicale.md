@@ -99,7 +99,9 @@ Avant export final, fais une passe "fatigue auditive". Écoute à faible volume,
 
 ![Mixage final de bande originale IA avec zones voix dégagées et contrôle multi-support](/images/art15-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on scoring emotional arcs with AI music tools]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting: ce que les débutants cassent dans une BO IA
 

@@ -172,7 +172,9 @@ Une crise de droit ou de désinformation te coûte plus cher qu’une session de
 
 ## Ce que Business Dynamite fait bien dans l’éducation créative
 
-Pour une leçon vidéo sur la posture “décider, documenter, livrer” quand on monte en charge, la chaîne YouTube **[Business Dynamite](https://www.youtube.com/@BusinessDynamite)** vaut le détour : on y voit souvent comment transformer une méthode dispersée en système répétable, ce qui rejoint exactement l’esprit de ce guide.
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Industrialiser sans tuer la spontanéité
 

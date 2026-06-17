@@ -205,7 +205,9 @@ Brief : portrait cadre entreprise, fond propre mais pas vide cartoon. Mouvement 
 
 **Client trouve ça « trop IA » après compression.** Cause : validation uniquement sur écran calibré large. Fix : preview téléphone et bitrate réaliste tôt.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structurer un pipeline complet image vers vidéo et éviter les erreurs classiques de mouvement caméra sur une pilote fixe.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## FAQ
 

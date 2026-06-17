@@ -58,7 +58,9 @@ Master avec burn-in pour social. Version sans sous-titres + fichier .srt pour Yo
 
 **Illisible en extérieur** : épaisseur contour + box. **Cache par UI** : remonter safe zone. **Surcharge** : couper mots parasites, garder sens. **Désync** : recaler sur waveform voix.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on calibrer taille et contraste des sous-titres pour qu'ils restent lisibles après compression mobile]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Test A/B sous-titres sur fond clair et sombre](/images/blog/sous-titres-burn-in-accessibles-video-ia/workflow-2.webp)
 

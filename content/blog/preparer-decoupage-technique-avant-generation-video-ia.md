@@ -122,7 +122,9 @@ Pour les standards de rythme et de lisibilité en diffusion, les guides [YouTube
 
 ![Validation découpage technique sur moniteur étalonné et tablette mobile avant génération batch](/images/blog/preparer-decoupage-technique-avant-generation-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on structurer un projet vidéo IA plan par plan avant de lancer les générations pour éviter les allers-retours inutiles.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Plan d'exécution sur cinq jours
 

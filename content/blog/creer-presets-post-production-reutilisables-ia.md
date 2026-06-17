@@ -99,7 +99,9 @@ Partage la bibliothèque en équipe via un dossier cloud versionné, pas par ema
 
 Quand tu livres un projet client, attache la version preset utilisée au dossier livrable. Le client qui revient six mois plus tard pour un pick-up doit pouvoir retrouver la même chaîne. C'est du professionnalisme, pas de la bureaucratie.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on color grading AI footage without destroying skin tones]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ![Avant après preset modulaire IA plan visage et extérieur](/images/blog/creer-presets-post-production-reutilisables-ia/workflow-2.webp)
 

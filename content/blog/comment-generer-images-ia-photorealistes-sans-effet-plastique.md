@@ -56,7 +56,9 @@ Pour corriger les prompts trop artificiels, relie directement ce guide à [les e
 ![Image contextuelle 1, contrôle texture peau et tissu.](/images/blog/comment-generer-images-ia-photorealistes-sans-effet-plastique/workflow-1.webp)
 
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on photorealistic AI imagery and lighting hierarchy]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## Trench warfare, erreurs débutants
 
@@ -253,7 +255,6 @@ Tu dois privilégier la lisibilité puis la cohérence, ensuite seulement le sty
 
 ### Une dernière ressource vidéo à regarder
 
-Analyse les décryptages de mise en scène de `@BusinessDynamite` ici, https://www.youtube.com/@BusinessDynamite. Regarde comment les décisions de cadre, de rythme et de lumière servent toujours une intention précise.
 
 
 ## Atelier avancé, neutraliser le rendu plastique

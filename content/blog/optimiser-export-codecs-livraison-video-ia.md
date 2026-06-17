@@ -157,7 +157,9 @@ Références : [YouTube recommended encoding](https://support.google.com/youtube
 
 ![Contrôle qualité export vidéo IA sur moniteur et smartphone avant livraison client](/images/blog/optimiser-export-codecs-livraison-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on master ProRes, dérivés H.264 par plateforme et débits adaptés au grain des vidéos IA]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## FAQ
 

@@ -148,7 +148,9 @@ Pour les repères loudness et broadcast, la [documentation EBU sur le loudness](
 
 ![Feuille checklist signée avec timecodes défauts corrigés et statut LOCK avant envoi client](/images/blog/structurer-checklist-validation-finale-projet-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on la validation qualité avant livraison client et les erreurs qui passent à travers quand on exporte trop vite.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## FAQ
 

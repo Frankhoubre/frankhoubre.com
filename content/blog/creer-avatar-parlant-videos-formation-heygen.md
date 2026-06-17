@@ -100,7 +100,9 @@ Erreur 4: rythme plat. Fix: changement de plan/support toutes les 20-40 secondes
 
 Erreur 5: pas de test utilisateur. Fix: review externe avant publication.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on creating engaging AI-led training videos].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ![Montage final d’un module de formation avec avatar, sous-titres et habillage visuel](/images/blog/creer-avatar-parlant-videos-formation-heygen/workflow-2.webp)
 

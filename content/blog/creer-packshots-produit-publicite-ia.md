@@ -100,7 +100,9 @@ Pour les campagnes multi-format, génère un master carré ou horizontal avec ma
 
 Le devis packshot IA doit inclure le temps de composite étiquette et de QA zoom. Si tu factures comme un still photo classique sans ces lignes, tu perds de l'argent sur chaque flacon verre. Sois transparent avec le client : l'hybride IA + retouche est le standard, pas l'exception.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on product photography lighting for clean reflections]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ![Post-production packshot détourage ombre contact et validation export](/images/blog/creer-packshots-produit-publicite-ia/workflow-2.webp)
 

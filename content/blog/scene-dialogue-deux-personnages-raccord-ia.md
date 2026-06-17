@@ -145,7 +145,9 @@ Le grain n’est pas un filtre Instagram posé à la fin. C’est une colle qui 
 
 [animation par ordinateur](https://en.wikipedia.org/wiki/Computer_animation) et [compression H.264](https://en.wikipedia.org/wiki/Advanced_Video_Coding) rappellent que la compression et la cohérence temporelle comptent autant que la résolution.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on verrouiller pilote, mouvement modeste et QA mobile avant d'enchaîner les plans]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Post-production, scopes et référence couleur pour Scène dialogue à deux : raccords regard et lumière en IA](/images/blog/scene-dialogue-deux-personnages-raccord-ia/workflow-2.webp)
 

@@ -115,7 +115,9 @@ Erreur 5: oublier que le montage fait 50 % de la crédibilité.
 
 Erreur 6: livrer une vidéo brute sans harmonisation finale.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on la construction d’un workflow vidéo IA pro de l’idée au plan final].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Core Concepts pour passer du gadget au filmable
 

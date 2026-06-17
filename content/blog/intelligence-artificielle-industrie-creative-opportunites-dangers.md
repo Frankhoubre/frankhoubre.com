@@ -142,7 +142,9 @@ Si tu présentes des images « quasi réelles » sans cadre, tu entraînes le ma
 
 ![Bibliothèque droit auteur volumes et laptop annotations contrat, lumière douce bureau avocat créatif](/images/blog/intelligence-artificielle-industrie-creative-opportunites-dangers/workflow-droit.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on éviter les campagnes « IA » qui détruisent la confiance en une slide]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Troubleshooting : ce que les directions créatives cassent en 2026
 

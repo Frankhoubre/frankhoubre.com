@@ -62,7 +62,9 @@ Export 16:9, 9:16, 1:1 depuis la même comp en adaptant safe zones. Vérifie lis
 
 **Lettres qui tremblent** : texte généré en vidéo, repasser en post. **Blur illisible** : contraste insuffisant, ombre portée douce. **Mauvaise langue** : pas de traduction auto sur calque, relecture native. **Casse incohérente** : style guide manquant.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on créer des titres lisibles en post plutôt que de demander du texte parfait à la génération vidéo]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ![Export multi formats titres, tests lisibilité mobile](/images/blog/generer-typographie-titres-sans-gibberish/workflow-2.webp)
 

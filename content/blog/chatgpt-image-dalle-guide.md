@@ -125,7 +125,9 @@ Erreur 5: dépendance aux templates de prompts publics. Ils sont utiles pour app
 
 Erreur 6: négliger la post-correction légère. Même une bonne génération peut gagner énormément avec une retouche subtile: équilibrage tonal, réduction d’un contraste agressif, ajustement de teinte locale. L’objectif n’est pas de “tricher”, c’est de finaliser un livrable propre.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on l’itération créative et le tri d’images orienté conversion].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![workflow chatgpt image étape par étape avec tri A B et correction variable par variable](/images/blog/chatgpt-image-dalle-guide/workflow-1.webp)
 

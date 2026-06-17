@@ -94,7 +94,9 @@ Erreur 5: absence de plans de coupe, donc effet mannequin parlant.
 
 Erreur 6: publication sans test mobile et sans sous-titres.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on comment rendre une voix IA et un avatar crédibles pour des vidéos business].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Core Concepts pour passer du “robot” au contenu crédible
 

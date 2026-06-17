@@ -210,7 +210,9 @@ Ajoute:
 
 Tu dois sentir du film, pas du rendu CGI.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on rule of thirds and negative space in framing]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 Pour connecter cette logique à la structure globale d’une séquence, enchaîne avec [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film). Si la grille te semble juste mais l’image reste molle, passe par [comment corriger une mauvaise composition visuelle](/blog/comment-corriger-mauvaise-composition-visuelle-ia) avant de changer de modèle.
 

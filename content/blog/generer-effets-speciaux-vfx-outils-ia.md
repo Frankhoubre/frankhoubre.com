@@ -103,7 +103,9 @@ Valide enfin la version "safe" et la version "ambitieuse". Garde les deux. En de
 
 ![Contrôle qualité VFX IA en timeline complète avec tests mobile et grand écran](/images/art11-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI VFX compositing and realism checks]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## Troubleshooting: ce que les débutants cassent le plus en VFX IA
 

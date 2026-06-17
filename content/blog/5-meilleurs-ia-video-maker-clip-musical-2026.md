@@ -115,7 +115,9 @@ Erreur 4: musique traitée en fin de process. Correction: monter sur morceau fin
 
 Erreur 5: valider sur écran unique. Correction: test mobile, laptop, écran large avant export final.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on AI music video pacing and transitions].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ![Étalonnage final d’un clip musical IA avec contrôle de texture et contraste sur station de postproduction](/images/blog/5-meilleurs-ia-video-maker-clip-musical-2026/external-1.png)
 

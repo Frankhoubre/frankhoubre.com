@@ -98,7 +98,9 @@ Pour la neige, la continuité des traces de pas est un détail de montage. Si le
 
 Les inserts mains (gouttes sur doigts, gants humides) sauvent des scènes météo où le plan large faiblit. Génère ou filme ces inserts séparément. Deux secondes d'insert bien placées valent dix secondes de pluie overlay sur un plan large menteur.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on layering weather effects over AI footage]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=z22_SY0SOi4)
 
 ![Comparaison pluie native IA vs workflow couches overlay sol humide](/images/blog/creer-scenes-pluie-neige-realistes-ia/workflow-2.webp)
 

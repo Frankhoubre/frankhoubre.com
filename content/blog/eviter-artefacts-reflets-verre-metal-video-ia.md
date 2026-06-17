@@ -96,7 +96,9 @@ Pour les séquences avec plusieurs objets brillants, priorise : lequel est héro
 
 Les tests A/B client sur verre tournant : montre une version IA native courte et une version hybride. Le choix devient évident sans jargon technique. Tu gagnes la confiance et le budget composite pour la suite de la campagne.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on controlling reflections on glass and metal in AI video]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ![Comparaison frame par frame reflets verre natifs vs composite contrôlé](/images/blog/eviter-artefacts-reflets-verre-metal-video-ia/workflow-2.webp)
 

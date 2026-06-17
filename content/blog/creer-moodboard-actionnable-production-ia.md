@@ -97,7 +97,9 @@ En équipe, assigne un gardien du board. Une personne valide que chaque nouveau 
 
 Quand tu passes en post, le board revient sur l'écran d'étalonnage. C'est normal. Le board n'est pas qu'un outil de génération. C'est la référence de finition. Si le plan généré et le board divergent après étalonnage, tu corriges le plan ou tu mets à jour le board en version mineure, jamais les deux sans trace écrite.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on building visual references before AI generation]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ![Validation côte à côte plan IA final et moodboard sur double écran étalonné](/images/blog/creer-moodboard-actionnable-production-ia/workflow-2.webp)
 

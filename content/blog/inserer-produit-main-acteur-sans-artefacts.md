@@ -84,7 +84,9 @@ Main masculine, geste unique « présente la canette vers caméra ». Étiquette
 
 **Couleur produit ≠ main** : session étalonnage avec échantillon packaging réel.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on aligner perspective et lumière quand on place un produit dans une main générée par IA]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Post-production packshot main, ombres de contact et étalonnage](/images/blog/inserer-produit-main-acteur-sans-artefacts/workflow-2.webp)
 

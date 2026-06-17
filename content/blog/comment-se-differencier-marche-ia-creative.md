@@ -487,7 +487,9 @@ Une dernière vérité simple: dans un marché bruyant, le silence contrôlé es
 
 Ce n'est pas une philosophie. C'est une tactique de survie pour un studio qui veut durer, apprendre, et grandir sans brûler sa réputation, une livraison à la fois.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on differentiating your AI creative studio in a crowded market].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## FAQ
 

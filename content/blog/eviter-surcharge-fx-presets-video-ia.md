@@ -99,7 +99,9 @@ Quatrième : montre à quelqu'un qui n'a pas passé huit heures sur le projet. U
 
 Cinquième : compare au plan sans effet. Si la version sans effet est à 80 % et la version avec à 85 %, garde peut-être sans effet. Le gain doit valoir le risque artefact.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on minimal grading for AI footage]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ![Avant après modération FX trois couches versus surcharge preset](/images/blog/eviter-surcharge-fx-presets-video-ia/workflow-2.webp)
 

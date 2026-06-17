@@ -123,7 +123,9 @@ Après livraison, fais un retour d’expérience documenté. Qu’est-ce qui a v
 
 ![Réunion de postproduction où le réalisateur arbitre les variantes vidéo IA](/images/art5-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on directing hybrid AI-video productions]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=MKefYergHoA)
 
 ## Troubleshooting: ce que les réalisateurs cassent avec les nouveaux outils
 

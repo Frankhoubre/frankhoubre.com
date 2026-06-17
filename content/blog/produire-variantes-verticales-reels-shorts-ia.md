@@ -103,7 +103,9 @@ Pour les specs techniques par plateforme, consulte [les recommandations YouTube 
 
 ![Écran smartphone avec safe zones Reels et comparaison recadrage vs génération native 9:16](/images/blog/produire-variantes-verticales-reels-shorts-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on adapter un master horizontal en formats verticaux pour les réseaux sociaux sans perdre l'impact visuel.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ## Plan d'exécution sur trois jours
 

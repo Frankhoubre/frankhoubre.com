@@ -125,7 +125,9 @@ Erreur 5: ignorer le coût temps de retouche. Le plus beau n’est pas toujours 
 
 Erreur 6: choisir l’outil “hype” au lieu de l’outil adapté au livrable.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on choisir le bon générateur IA selon objectif business, qualité et cadence].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Core Concepts pour un choix professionnel
 

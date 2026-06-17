@@ -110,7 +110,9 @@ Erreur 5: oublier la cohérence série. Tu valides des images isolées spectacul
 
 Erreur 6: absence de journal de décision. Sans notes, tu répètes les mêmes tests à chaque projet. Documente les choix gagnants et les erreurs coûteuses. C’est ton meilleur accélérateur.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on le choix des outils IA selon objectif business et pipeline créatif].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## Core Concepts pour un comparatif utile
 

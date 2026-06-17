@@ -123,7 +123,9 @@ Références techniques : [EBU loudness recommendations](https://tech.ebu.ch/lou
 
 ![Mix final voix off documentaire sur console et waveform équilibrée](/images/blog/gerer-voix-off-narration-documentaire-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on découper et mixer une narration documentaire IA bloc par bloc avec script oral et fiche voix verrouillée]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## FAQ
 

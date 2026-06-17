@@ -278,7 +278,9 @@ C’est cette boucle publier, analyser, corriger qui transforme un débutant Com
 
 Et c’est précisément ce niveau de fiabilité qui te permet de travailler en équipe, de tenir des délais, et de livrer des projets qui inspirent confiance.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on beginner-friendly ComfyUI workflows for creators].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ![Édition vidéo finale après génération ComfyUI sur timeline de postproduction](/images/blog/comfyui-guide-video-createurs-debutants/workflow-2.webp)
 

@@ -91,7 +91,9 @@ Finalise avec un contrôle de contexte. Teste la voix avec la musique, les ambia
 
 ![Mixage final d'une voix off IA intégrée dans une scène avec ambiance et musique filmique](/images/art10-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on directing AI voice performance for film dubbing]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
 ## Troubleshooting: ce que les débutants cassent en doublage IA et comment réparer
 

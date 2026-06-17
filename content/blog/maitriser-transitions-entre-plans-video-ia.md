@@ -129,7 +129,9 @@ Références : [Walter Murch In the Blink of an Eye](https://www.amazon.com/dp/1
 
 ![Comparaison raccord réussi vs fondu fake entre deux plans IA sur écran étalonné](/images/blog/maitriser-transitions-entre-plans-video-ia/workflow-2.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on raccords et coupes sèches entre plans IA sans fondus qui exposent le morphing]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ
 

@@ -131,7 +131,9 @@ Garde ce rituel à chaque projet, même court. C’est une habitude discrète qu
 
 ![Validation timeline d’un plan animé Runway avec contrôle raccord avant après](/images/art4-wf2.png)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on Runway Gen-3 still-image animation quality control]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
 ## Troubleshooting: erreurs fréquentes et corrections exactes
 

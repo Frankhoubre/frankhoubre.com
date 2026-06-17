@@ -332,7 +332,9 @@ Cette routine prend quelques minutes et protège ton niveau de rendu.
 
 En production réelle, la discipline de vérification vaut souvent plus que le choix d’un modèle à la mode.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on choosing free AI image tools without sacrificing production quality].
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ![Direction artistique validant une série d’images cohérentes générées avec Leonardo AI](/images/blog/leonardo-ai-meilleure-alternative-gratuite-generer-images/workflow-2.webp)
 

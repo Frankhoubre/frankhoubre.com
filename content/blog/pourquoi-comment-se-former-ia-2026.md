@@ -198,7 +198,9 @@ Pour la direction d'acteur implicite dans un prompt, notre article [comment pens
 
 ![Écran partagé : timeline montage et moodboard imprimé épinglé, lumière latérale bureau créatif](/images/blog/pourquoi-comment-se-former-ia-2026/workflow-portfolio.webp)
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Specifically look at the segment on passer du rendu « démo IA » à un rendu crédible sur un brief agence]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
 ## FAQ
 

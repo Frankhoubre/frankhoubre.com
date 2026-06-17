@@ -104,7 +104,9 @@ Refais une écoute **après** une compression approximative côté test : export
 
 Enfin, anticipe les **captions**. Même si ce guide parle surtout du mix, le **sound design vidéo IA** se lit aussi sur la timeline des sous-titres : si tu cadres des effets sur des mots précis, assure-toi que la transcription ne contredit pas le rythme perçu. Une micro décalage lecture / texte suffit à faire retomber la magie. Quand tu simplifies le mix pour la lisibilité, tu fiabilises aussi la synchro ressentie entre l’oreille et l’œil sur ce type de diffusion.
 
-[🎥 WATCH: Check out this breakdown on the Business Dynamite YouTube channel: https://www.youtube.com/@BusinessDynamite - Utile pour calibrer ton intuition sur ce qui retient l’attention dans une creative courte et sur la discipline de cuts audio qui soutiennent le hook sans surcharger la timeline.]
+Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+
+[Voir l'explication en vidéo](https://www.youtube.com/watch?v=x1avmtj3Gyc)
 
 ## Checklist avant d’appeler le mix « terminé »
 
