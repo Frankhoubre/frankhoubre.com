@@ -297,12 +297,27 @@ export function runMdxPipeline(segment: string): string {
   return s;
 }
 
+/**
+ * Retire un éventuel H1 en tête de corps. La page article rend déjà le titre
+ * (frontmatter) dans un <h1> de hero ; un `# Titre` au début du markdown crée
+ * donc un second <h1> (H1 dupliqué) et répète le titre à l'écran. On retire
+ * uniquement le premier titre de niveau 1 ATX situé en tout début de corps.
+ * Sans effet sur les corps qui commencent par du texte (cas des articles EN).
+ */
+export function stripLeadingH1(content: string): string {
+  const s = content.replace(/^﻿/, "").replace(/^[ \t\r\n]*/, "");
+  // `#` suivi d'au moins une espace = H1 ATX. `##` / `###` ne matchent pas.
+  const m = s.match(/^#[ \t]+[^\n]*(?:\n|$)/);
+  if (!m) return content;
+  return s.slice(m[0].length).replace(/^[ \t\r\n]*/, "");
+}
+
 export function prepareArticleMdxParts(rawContent: string): {
   beforeMdx: string;
   afterMdx: string;
   faqPairs: FaqPair[] | null;
 } {
-  const safeContent = sanitizeMdxUnsafeSyntax(rawContent);
+  const safeContent = sanitizeMdxUnsafeSyntax(stripLeadingH1(rawContent));
   const faq = splitFaqContent(safeContent);
   if (!faq) {
     const single = injectMiddleBanner(runMdxPipeline(safeContent));
