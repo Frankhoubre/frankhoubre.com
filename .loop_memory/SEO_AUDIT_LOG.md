@@ -3,6 +3,16 @@
 Run `node .loop_scripts/seo_audit.mjs` each day. Log the summary, what was
 fixed, and what was deferred. Newest entry on top.
 
+## 2026-06-17 — Fixed site-wide duplicate H1 (B3)
+
+Every FR article rendered 2 `<h1>` (hero title + body `# `). Fixed in
+`src/lib/mdx-pipeline.ts` via `stripLeadingH1` in `prepareArticleMdxParts`.
+Verified live: FR articles 2 -> 1 `<h1>`, EN unchanged (no-op), titles/intros
+intact, typecheck + build PASS. Shipped to prod (merge eb77f47).
+Note: the static audit's body-H1 count is unchanged (the `.md` files still
+contain the leading `# `; it is stripped at render), so a single leading body
+H1 is now correct/expected, not a duplicate.
+
 ## 2026-06-17 — Content batch 1 (audit kept clean)
 
 Published 2 news + 1 evergreen. Audit after: **0 errors**, ~314 warnings (the

@@ -62,10 +62,13 @@
   NOT symlink: Turbopack rejects symlinked node_modules) -> commit -> merge ->
   push -> verify live -> cleanup worktree.
 
+### Also done this run (B3 fix)
+- FIXED the site-wide duplicate H1 on FR articles (src/lib/mdx-pipeline.ts
+  stripLeadingH1). Verified live: 2 -> 1 H1 across FR, EN unchanged. Merge
+  eb77f47, pushed, Vercel deployed. B3 moved to RESOLVED.
+
 ### Next run should
-1. FIX B3 (site-wide duplicate H1 on FR articles) — top SEO priority. See
-   ERRORS_AND_BLOCKERS B3. Careful shared-code change + full build + visual check.
-2. Set up a fresh worktree for content work
+1. Set up a fresh worktree for content work
    (`git worktree add -b loop/content-YYYY-MM-DD ../frankhoubre-loop main`),
    copy `.env.local` into it for Imagen, hard-link node_modules for build.
 2. Begin the daily content cycle: 2 news (actualite) + 1 evergreen, written by

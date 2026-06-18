@@ -41,25 +41,6 @@ The audit flags 25 em-dash errors, all inside a templated
   `scripts/strip_campaign_boilerplate.py` that may already target this pattern;
   inspect it before writing a new fixer. Verify `npm run build` after.
 
-### B3 — Site-wide duplicate H1 on every FR article (HIGH SEO, next run)
-Found 2026-06-17. Every FR `/blog/<slug>` page renders TWO `<h1>`: the page
-hero renders `post.frontmatter.title` as `<h1>` (src/app/blog/[slug]/page.tsx
-~line 367), and the body markdown also starts with `# Title`, which
-createBlogMdxComponents maps to a real `<h1>` (tag === "h1"). Verified on live
-pages: adobe-firefly-avis and the new flicker article both return 2 `<h1>`.
-- Impact: duplicate H1 across all ~219 FR articles. Suboptimal for SEO/a11y.
-- Proposed fix (careful, affects all articles): strip the single leading
-  `# ...` line from the body in `src/lib/mdx-pipeline.ts` before render (the
-  page already provides the title H1), OR map body `h1` -> `h2` in
-  createBlogMdxComponents. Then full `npm run build` + visual check that no
-  article loses its title, and that the in-body TOC/anchors still work.
-- NOT done this run: it is a shared-code change across the whole site and
-  deserves its own focused pass + full build/visual verification, not a rushed
-  end-of-session edit. Also update seo_audit.mjs to flag this (it currently
-  counts body H1s and misses the page-rendered title H1).
-- Note: EN pages have the same shape (frontmatter h1 + body), but EN bodies do
-  NOT start with `# ` (they lead with prose), so EN is single-H1. The fix is FR-side.
-
 ## NEEDS HUMAN INPUT / CREDENTIALS
 
 - **Deploy model**: Vercel auto-deploys from `main`. The loop assumes pushing
@@ -76,4 +57,12 @@ pages: adobe-firefly-avis and the new flicker article both return 2 `<h1>`.
 
 ## RESOLVED
 
-(none yet)
+### B3 — Site-wide duplicate H1 on FR articles (RESOLVED 2026-06-17)
+Every FR `/blog/<slug>` rendered two `<h1>`: the hero title (frontmatter) plus
+the body markdown `# Title`. Fixed by stripping a single leading level-1 ATX
+heading from the body in `src/lib/mdx-pipeline.ts` (`stripLeadingH1`, called in
+`prepareArticleMdxParts`). No-op for EN bodies (they start with prose).
+Verified live: FR articles (existing + the 3 new ones) went 2 -> 1 `<h1>`, title
+preserved, intros intact, EN unchanged. typecheck + build PASS. Shipped via
+worktree -> branch 7e399b5 -> merge eb77f47 -> origin/main, Vercel deployed and
+confirmed live.
