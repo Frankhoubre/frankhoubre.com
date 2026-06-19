@@ -49,3 +49,7 @@ Up to 3 cycles, else skip + log.
 Ideal 1 hero + up to 2 contextual, local webp under
 `public/images/blog/<slug>/`, descriptive alt text. If not generated this run,
 omit thumbnail and queue the brief. Never reference a missing file.
+- If the article is about a specific tool/site (guide, comparison, review),
+  capture a real screenshot as a contextual image (STYLE_GUIDE "Real product
+  screenshots"): `.loop_scripts/screenshot_url.sh <url> public/images/blog/<slug>/screenshot.webp`.
+  Use it to verify the article matches the current product (version/pricing).

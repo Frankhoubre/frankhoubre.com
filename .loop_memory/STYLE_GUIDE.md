@@ -100,6 +100,26 @@ images. Everything runs locally on Frank's machine.
   published file. If an image is not generated yet, leave an image brief in the
   loop notes, not in the article body, and do not reference a missing file.
 
+### Real product screenshots (when the article is about a specific tool/site)
+
+When an article centers on a specific tool or site (Higgsfield, Kling, Luma,
+Runway, ElevenLabs, etc.), capture a real screenshot of its homepage / product
+page and use it as a contextual image. Show the actual product, not a generic
+render. Tool:
+```
+.loop_scripts/screenshot_url.sh <url> public/images/blog/<slug>/screenshot.webp 1440 900
+```
+Headless Chrome based, works in the unattended loop. Rules:
+- Pick a clean, representative URL (the product/landing page).
+- Descriptive, keyword-aware alt text, e.g. `![Page d'accueil de Kling 3.0 Turbo](...)`.
+- Editorial use only: it is the brand's UI, not yours. A short caption/credit is
+  good practice.
+- BONUS: the screenshot is also a fact-check. If the live site shows a newer
+  version than your draft (e.g. Luma Ray 3.2 vs your "Ray 2"), update the article
+  to match reality before publishing.
+- Some sites show a cookie overlay headless Chrome cannot dismiss; if the capture
+  is unusable, fall back to a generated hero and note it.
+
 ## YouTube / video
 
 - FR articles: the pipeline auto-embeds a Business Dynamite video. Never paste

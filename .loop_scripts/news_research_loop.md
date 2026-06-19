@@ -48,6 +48,11 @@ Clean slug: short, hyphenated, keyword-bearing, no stop-word soup.
 - Up to 3 revision cycles. If still failing, skip and log the blocker.
 
 ## Image
+- If the story is about a specific tool/site, ALSO capture a real screenshot of
+  its page and use it as a contextual image (see STYLE_GUIDE "Real product
+  screenshots"): `.loop_scripts/screenshot_url.sh <url> public/images/blog/<slug>/screenshot.webp`.
+  The screenshot is also a fact-check: match the article to what the live site
+  actually shows (version, pricing, features).
 - Ideal: generate a hero under `public/images/blog/<slug>/hero.webp` (see the
   python image scripts + GEMINI_API_KEY). If not available this run, omit
   `thumbnail` (the site falls back to the default OG image) and queue the image
