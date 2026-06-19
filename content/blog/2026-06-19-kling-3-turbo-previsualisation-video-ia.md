@@ -12,6 +12,12 @@ Le 17 juin 2026, Kling AI a publié Kling 3.0 Turbo, un mode de génération opt
 
 Voilà ce qui change dans le quotidien d'un créateur.
 
+![Prévisualisation vidéo IA rapide avec Kling 3.0 Turbo, rendu cinématographique](/images/blog/2026-06-19-kling-3-turbo-previsualisation-video-ia/hero.webp)
+
+![Page d'accueil de Kling AI annonçant la série KlingAI 3.0](/images/blog/2026-06-19-kling-3-turbo-previsualisation-video-ia/screenshot.webp)
+
+*Capture de la page officielle Kling AI (klingai.com), série Kling 3.0.*
+
 ## Kling 3.0 Turbo n'est pas Kling 3.0
 
 C'est le point qui crée le plus de confusion. Kling 3.0 (le modèle complet) génère du 4K, inclut l'audio natif, le lip-sync physiquement cohérent et tient jusqu'à 15 secondes avec une cohérence de personnage solide. C'est le mode production.
