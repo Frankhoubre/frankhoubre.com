@@ -120,6 +120,10 @@ Headless Chrome based, works in the unattended loop. Rules:
 - Some sites show a cookie overlay headless Chrome cannot dismiss; if the capture
   is unusable, fall back to a generated hero and note it. A slow hero animation
   can render dark; raise the render budget (the script uses ~9-22s) or pick a URL.
+- URL CHOICE: many tools have a dark animated marketing hero that captures as
+  near-black (Kling did). Prefer the APP/product URL (e.g. app.<domain>) or a
+  features page that actually shows the product UI. Always view the capture
+  before using it; if it shows "not much", try another URL.
 - PLACEMENT GOTCHA: when `thumbnail` is set, the page SKIPS the first body image
   (it assumes it duplicates the hero). So the screenshot must NOT be the first
   body image, or it vanishes. Put the hero as the 1st body image (skipped) and
