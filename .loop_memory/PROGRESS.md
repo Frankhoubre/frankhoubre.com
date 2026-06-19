@@ -1,6 +1,32 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-17 (Run 0 — SETUP, no content published)
+## Last run: 2026-06-19 (Run 2 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-17 (batch 1: 3 articles).
+- WebSearch for real news in last 72h: found Kling 3.0 Turbo (June 17, 2026)
+  and CNC rapport IA cinéma/audiovisuel (presented June 9, 2026 at Assemblée nationale).
+- Wrote 2 actualite + 1 evergreen in worktree agent-a11e082e.
+- Generated 3 hero images via render_blog_queue_gemini.py (Imagen API).
+- SEO audit: 2 em-dash errors in source anchors -> fixed -> 0 errors.
+- Build from main repo: PASS (409 pages, 3 new articles prerendered).
+- Merged worktree-agent-a11e082e into main, pushed origin/main (450bbf8).
+
+### Articles published this run
+1. `2026-06-19-kling-3-turbo-previsualisation-video-ia` (actualite)
+2. `2026-06-19-cnc-rapport-ia-cinema-audiovisuel-2026` (actualite)
+3. `2026-06-19-luma-ray-2-guide-pratique-settings-workflow` (evergreen, tutoriels)
+
+### Next run should
+1. Set up fresh worktree for content work.
+2. Evergreen candidates: business quote template / scope creep on AI projects;
+   comparator "best AI video tool for product ads"; version-control for AI projects.
+3. Consider thin-article rewrites from IDEAS_BACKLOG.
+4. Check if Kling 3.0 Turbo articles got EN translations (translation loop may handle).
+
+---
+
+## Previous run: 2026-06-17 (Run 0 — SETUP, no content published)
 
 ### What happened
 - Inspected the repo end to end. It is a Next.js 16.2.1 App Router site,

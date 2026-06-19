@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-19 — Luma Ray 2 : guide pratique des settings et du workflow vidéo
+- slug: 2026-06-19-luma-ray-2-guide-pratique-settings-workflow
+- locale: fr
+- url: https://frankhoubre.com/blog/2026-06-19-luma-ray-2-guide-pratique-settings-workflow
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / tool guide
+- primary_keyword: Luma Ray 2 settings workflow
+- secondary_keywords: Luma Ray 2 Flash, Luma Ray 2 vs Kling, Modify Video Luma, Dream Machine workflow, génération vidéo IA mouvement naturel
+- sources: n/a (craft/evergreen, based on documented model specs)
+- internal_links: -> /outils/generateur-storyboard-pdf, -> /outils/calculateur-budget-production-ia, distinct from luma-dream-machine-kling-generer-videos-fluides (comparatif)
+- cta: soft tools links
+- cannibalization_notes: luma-dream-machine-kling-generer-videos-fluides is a comparatif (which tool); this is a practical settings guide for Ray 2 specifically. Different intent.
+- checker: pass (audit 0 err, build 409 pages)
+- published_commit: 450bbf8
+
+### 2026-06-19 — CNC : ce que dit vraiment le rapport IA sur le cinéma et l'audiovisuel
+- slug: 2026-06-19-cnc-rapport-ia-cinema-audiovisuel-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/2026-06-19-cnc-rapport-ia-cinema-audiovisuel-2026
+- category: actualite
+- type: news
+- search_intent: news / analysis
+- primary_keyword: CNC rapport IA cinéma audiovisuel 2026
+- secondary_keywords: impact IA filières cinéma, Observatoire IA CNC, IA générative audiovisuel France
+- sources: cnc.fr/professionnels/etudes-et-rapports/..., bearingpoint.com/fr-fr/publications-evenements/...
+- internal_links: none explicit (institutional news, no direct internal link target obvious)
+- cta: none
+- cannibalization_notes: no existing article on CNC institutional reports. Distinct from metiers-audiovisuel-ia-menaces-transformation-avis (opinion) and other IA-film articles.
+- checker: pass (audit 0 err after fixing em-dash in source anchors)
+- published_commit: 450bbf8
+
+### 2026-06-19 — Kling 3.0 Turbo : générer des aperçus vidéo IA en quelques secondes
+- slug: 2026-06-19-kling-3-turbo-previsualisation-video-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/2026-06-19-kling-3-turbo-previsualisation-video-ia
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Kling 3.0 Turbo prévisualisation vidéo IA
+- secondary_keywords: Kling Turbo vs standard, Kling 3.0 Omni mise à jour, génération vidéo IA rapide, prévisualisation animatique IA
+- sources: openpr.com/news/4554630/kling-3-0-turbo-released, atlascloud.ai/blog/guides/kling-3.0-turbo-kling-omni
+- internal_links: -> workflow-kling-3-animation-fluide-realiste (anchor: "workflow kling 3"), -> wan-27-video-decevant-kling-seedance (context)
+- cta: none
+- cannibalization_notes: workflow-kling-3-animation-fluide-realiste is a how-to guide; this is a dated news/analysis on the Turbo launch. Different intent.
+- checker: pass (audit 0 err after fixing em-dash in source anchors)
+- published_commit: 450bbf8
+
 ### 2026-06-17 — Scintillement (flicker) en vidéo IA : causes et solutions
 - slug: corriger-scintillement-flicker-video-ia
 - locale: fr
