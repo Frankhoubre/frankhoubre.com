@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Badge } from "@/components/Badge";
 import { getAllEnPosts } from "@/lib/blog-en";
+import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const revalidate = 3600;
@@ -55,24 +57,64 @@ export default function EnBlogPage() {
         </div>
       ) : (
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {posts.map((p) => (
-            <article key={p.slug} className="ds-card p-6">
-              <div className="flex flex-wrap items-center gap-3 text-sm text-neutral-700">
-                <Badge category={p.frontmatter.category} />
-                <time dateTime={p.frontmatter.date}>
-                  {dateFmt.format(new Date(`${p.frontmatter.date}T12:00:00`))}
-                </time>
-              </div>
-              <h2 className="mt-3 text-lg font-semibold text-neutral-950">
-                <Link href={`/en/blog/${p.slug}`} className="hover:underline">
-                  {p.frontmatter.title}
-                </Link>
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-                {p.frontmatter.excerpt}
-              </p>
-            </article>
-          ))}
+          {posts.map((p) => {
+            const thumb = getPostThumbnail(p);
+            return (
+              <article
+                key={p.slug}
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md"
+              >
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100">
+                  <Link
+                    href={`/en/blog/${p.slug}`}
+                    className="relative block h-full w-full"
+                  >
+                    {thumb ? (
+                      thumb.startsWith("http") ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={thumb}
+                          alt={`Preview: ${p.frontmatter.title}`}
+                          className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                        />
+                      ) : (
+                        <Image
+                          src={thumb}
+                          alt={`Preview: ${p.frontmatter.title}`}
+                          fill
+                          className="object-cover transition duration-300 group-hover:scale-[1.02]"
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                        />
+                      )
+                    ) : (
+                      <div className="flex h-full items-center justify-center text-neutral-500">
+                        Preview
+                      </div>
+                    )}
+                  </Link>
+                  <span className="absolute left-3 top-3 z-10">
+                    <Badge category={p.frontmatter.category} />
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <time
+                    dateTime={p.frontmatter.date}
+                    className="text-xs text-neutral-700"
+                  >
+                    {dateFmt.format(new Date(`${p.frontmatter.date}T12:00:00`))}
+                  </time>
+                  <h2 className="mt-2 text-lg font-semibold text-neutral-950">
+                    <Link href={`/en/blog/${p.slug}`} className="hover:underline">
+                      {p.frontmatter.title}
+                    </Link>
+                  </h2>
+                  <p className="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-neutral-700">
+                    {p.frontmatter.excerpt}
+                  </p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       )}
     </div>
