@@ -29,6 +29,13 @@ export PATH="$HOME/.nvm/versions/node/v22.17.1/bin:/opt/homebrew/bin:/usr/bin:/b
 
 mkdir -p "$LOGDIR"
 
+# Auth for the headless CLI. `claude -p` does NOT inherit the desktop app login;
+# it needs a long-lived token (from `claude setup-token`) in CLAUDE_CODE_OAUTH_TOKEN,
+# or an ANTHROPIC_API_KEY. Keep it in a gitignored file, chmod 600, never in the
+# repo. The secret never passes through the assistant.
+AUTH_ENV="$HOME/.config/frankhoubre-loop/auth.env"
+[ -f "$AUTH_ENV" ] && . "$AUTH_ENV"
+
 notify() { # title, message
   /usr/bin/osascript -e "display notification \"$2\" with title \"$1\"" >/dev/null 2>&1 || true
 }
@@ -97,14 +104,14 @@ atteinte, logge dans ERRORS_AND_BLOCKERS.md et arrête proprement. Termine en \
 #   push that day, which is safe). Tune to taste.
 claude -p "$PROMPT" \
   --dangerously-skip-permissions \
-  --max-budget-usd 10 \
+  --max-budget-usd 30 \
   >> "$NOWLOG" 2>&1
 STATUS=$?
 
 # The launchd CLI does not inherit the desktop app login. If the CLI is not
 # authenticated, tell the user the one-time fix instead of silently failing.
 if grep -qiE "not logged in|please run /login|invalid api key|authentication" "$NOWLOG"; then
-  MSG="CLI non connecté. Une seule fois, ouvre Terminal et lance: claude setup-token (token longue durée lié à ton abonnement)."
+  MSG="CLI non connecté. Lance 'claude setup-token', copie le token sk-ant-oat..., et mets-le dans ~/.config/frankhoubre-loop/auth.env (voir SETUP_LOOP.md)."
   echo "AUTH MISSING — $MSG" | tee -a "$NOWLOG"
   notify "frankhoubre.com — action requise 🔑" "$MSG"
   exit 3

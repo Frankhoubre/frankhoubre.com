@@ -99,14 +99,25 @@ launchctl unload ~/Library/LaunchAgents/com.frankhoubre.growthloop.plist  # disa
 launchctl load -w ~/Library/LaunchAgents/com.frankhoubre.growthloop.plist # enable
 ```
 
-**ONE-TIME REQUIRED STEP — authenticate the CLI.** The launchd job runs the
-`claude` CLI outside the desktop app, which is NOT logged in by default. Until
-this is done, the daily run notifies "action requise" and does nothing:
+**ONE-TIME REQUIRED STEP — authenticate the headless CLI.** The launchd job runs
+`claude -p` outside the desktop app. Headless mode does NOT read the desktop
+login; it needs a long-lived token in `CLAUDE_CODE_OAUTH_TOKEN` (the keychain
+item the app stores only holds MCP-plugin tokens, not the Claude auth token).
+Until this is set, the daily run notifies "action requise" and does nothing.
+
+Two steps, in Terminal, once:
 ```
-claude setup-token      # in Terminal, once. Long-lived token tied to your subscription.
+claude setup-token
+# copy the token it prints (starts with sk-ant-oat...), then:
+mkdir -p ~/.config/frankhoubre-loop
+printf 'export CLAUDE_CODE_OAUTH_TOKEN=%q\n' 'PASTE_THE_TOKEN_HERE' > ~/.config/frankhoubre-loop/auth.env
+chmod 600 ~/.config/frankhoubre-loop/auth.env
 ```
-After that, the daily automation runs unattended. (Alternative: export
-`ANTHROPIC_API_KEY` for the launchd job, which bills via API instead.)
+The runner sources that gitignored file (never committed, secret never shared).
+Then test: `bash .loop_scripts/daily_run.sh --force`.
+
+Alternative (API billing instead of subscription): put
+`export ANTHROPIC_API_KEY=sk-ant-api03-...` in the same `auth.env` instead.
 
 ### Scheduling options (manual alternatives)
 
