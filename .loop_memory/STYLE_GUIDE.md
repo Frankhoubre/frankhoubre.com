@@ -77,6 +77,11 @@ images. Everything runs locally on Frank's machine.
 - Frontmatter: `title`, `date`, `category`, `excerpt`, `thumbnail`. Optional
   `dateModified`.
 - Meta title <= 60 chars, meta description (excerpt) 120-160 chars, clean slug.
+- **Slug convention: NO date prefix.** Use `kling-3-turbo-previsualisation-video-ia`,
+  NOT `2026-06-19-kling-3-turbo-...`. The whole site uses keyword-only slugs; the
+  date lives in frontmatter. (Auto-run on 2026-06-19 used date prefixes by
+  mistake; do not repeat. Renaming the 3 live ones later needs redirects, so
+  leave them; just stop doing it.)
 - Depth target: 2000+ words for evergreen, 900-1500 acceptable for fast news.
 
 ## Categories (must match src/lib/site.ts)
