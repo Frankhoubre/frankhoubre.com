@@ -76,7 +76,39 @@ repo and say: **"Run the daily content loop"** (follow
 2 news + 1 evergreen, validates the build, publishes safely, updates memory,
 writes the report.
 
-### Scheduling options (pick one)
+### Automated daily run (installed 2026-06-19)
+
+A macOS launchd LaunchAgent runs the loop automatically every day:
+
+- **Agent:** `~/Library/LaunchAgents/com.frankhoubre.growthloop.plist`
+  Fires at login (`RunAtLoad`) and daily at 10:00 (safety net).
+- **Runner:** `.loop_scripts/daily_run.sh`
+  Idempotent (one real run per calendar day via a date marker in
+  `~/Library/Logs/frankhoubre-growthloop/last_run_date`). It invokes Claude Code
+  headless (`claude -p --dangerously-skip-permissions --max-budget-usd 10`) to
+  execute `daily_content_loop.md`, then sends a macOS notification
+  ("X article(s) publié(s) le DATE") and the loop pushes to `main`.
+- **Logs:** `~/Library/Logs/frankhoubre-growthloop/run-<date>.log` and
+  `launchd.{out,err}.log`.
+
+Commands:
+```
+bash .loop_scripts/daily_run.sh --status   # is today done? how many articles?
+bash .loop_scripts/daily_run.sh --force    # run now regardless
+launchctl unload ~/Library/LaunchAgents/com.frankhoubre.growthloop.plist  # disable
+launchctl load -w ~/Library/LaunchAgents/com.frankhoubre.growthloop.plist # enable
+```
+
+**ONE-TIME REQUIRED STEP — authenticate the CLI.** The launchd job runs the
+`claude` CLI outside the desktop app, which is NOT logged in by default. Until
+this is done, the daily run notifies "action requise" and does nothing:
+```
+claude setup-token      # in Terminal, once. Long-lived token tied to your subscription.
+```
+After that, the daily automation runs unattended. (Alternative: export
+`ANTHROPIC_API_KEY` for the launchd job, which bills via API instead.)
+
+### Scheduling options (manual alternatives)
 
 1. **Claude Code scheduled agent / `/schedule`** (recommended). Create a daily
    cron routine that opens this repo and runs the daily content loop playbook.

@@ -67,6 +67,19 @@
   stripLeadingH1). Verified live: 2 -> 1 H1 across FR, EN unchanged. Merge
   eb77f47, pushed, Vercel deployed. B3 moved to RESOLVED.
 
+### Automation installed 2026-06-19
+- launchd LaunchAgent `com.frankhoubre.growthloop` (loaded) + runner
+  `.loop_scripts/daily_run.sh`: runs the daily loop at login + 10:00, idempotent,
+  notifies "X articles le DATE", loop pushes main. Logs in
+  ~/Library/Logs/frankhoubre-growthloop/.
+- BLOCKER for unattended runs: the launchd `claude` CLI is NOT logged in (the
+  desktop app login does not carry over). User must run ONCE: `claude setup-token`
+  (Terminal). Until then the runner notifies "action requise" and does nothing.
+  The runner detects this case (greps "not logged in") and notifies the fix.
+- Today (2026-06-19) is stamped done to avoid a duplicate same-day batch (a batch
+  was already published this session). First auto-run = next login after auth is
+  fixed; or `bash .loop_scripts/daily_run.sh --force` to run today.
+
 ### Next run should
 1. Set up a fresh worktree for content work
    (`git worktree add -b loop/content-YYYY-MM-DD ../frankhoubre-loop main`),
