@@ -1,6 +1,33 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-19 (Run 2 — 3 articles published)
+## Last run: 2026-06-20 (Run 3 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-19 (batch 2: 3 articles).
+- WebSearch for real news in last 72h: found Grok Imagine Video 1.5 (xAI, June 17, 2026, GA release)
+  and Higgsfield Creative OS (June 6, 2026, Claude MCP + Adobe/Figma integrations).
+- Wrote 2 actualite + 1 evergreen in worktree agent-ae6e44dd.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API).
+- SEO audit: 0 errors (news thin-content warnings are expected per STYLE_GUIDE).
+- Build from main repo: PASS (3 new articles prerendered).
+- Fast-forward merged worktree-agent-ae6e44dd into main, pushed origin/main (58f7c54).
+
+### Articles published this run
+1. `grok-imagine-video-1-5-xai-generation-video-ia` (actualite) - slug sans date prefix
+2. `higgsfield-creative-os-claude-adobe-juin-2026` (actualite)
+3. `gerer-versions-projets-video-ia` (evergreen, tutoriels)
+
+### Next run should
+1. Set up fresh worktree for content work.
+2. Evergreen candidates: script-to-screen pipeline (tie all pillar tools together),
+   "best AI video for music videos" comparatif extension (product-ads, talking-head),
+   quote template / scope creep on AI projects.
+3. Consider thin-article rewrites from IDEAS_BACKLOG.
+4. Verify new articles have EN translations (translation loop may handle).
+
+---
+
+## Previous run: 2026-06-19 (Run 2 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-17 (batch 1: 3 articles).

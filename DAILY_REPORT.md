@@ -1,19 +1,37 @@
-# DAILY REPORT — 2026-06-19
+# DAILY_REPORT.md — 2026-06-20
 
-**Mode:** Run 2 — full content batch, 3 articles published live.
+## Run 3 — 3 articles published
 
-## Articles publiés (3)
+### Sources verified
+1. Grok Imagine Video 1.5 — explainx.ai/blog/grok-imagine-video-1-5-xai-release-2026
+   Published June 17, 2026. GA release confirmed. Pricing ($4.20/min), benchmark (#1 Image-to-Video Arena), specs (720p, 24FPS, native audio) all from verified source.
+2. Higgsfield Creative OS — youmind.com/landing/x-viral-articles/higgsfield-ai-video-creative-os
+   June 6, 2026 announcement. Claude MCP integration, Adobe/Figma plugins, Seedance 2.0, Marketing Studio confirmed.
 
-1. **Kling 3.0 Turbo** (actualite) — lancement 17/06/2026, prévisualisation vidéo rapide, tarifs, workflow Turbo vs standard vs Omni.
-2. **CNC rapport IA cinéma audiovisuel** (actualite) — rapport BearingPoint/CNC présenté à l'Assemblée nationale le 9/06, Observatoire IA CNC, impact métiers.
-3. **Luma Ray 2 guide pratique** (evergreen / tutoriels) — settings Flash vs standard, Modify Video, comparatif Ray 2 vs Kling, pipeline hybride.
+### Articles produced
+1. `grok-imagine-video-1-5-xai-generation-video-ia` (actualite, 1495 words)
+   Primary KW: Grok Imagine Video 1.5 xAI generation video IA
+   Slug: keyword-only (no date prefix, per STYLE_GUIDE fix from Run 2)
 
-## Status
+2. `higgsfield-creative-os-claude-adobe-juin-2026` (actualite, 1482 words)
+   Primary KW: Higgsfield Creative OS Claude Adobe 2026
 
-- Audit SEO: 0 erreurs (2 em-dash corrigés)
-- Build: PASS (409 pages)
-- Push: origin/main commit 450bbf8
+3. `gerer-versions-projets-video-ia` (tutoriels, 1950+ words)
+   Primary KW: gérer versions projets vidéo IA
+   Evergreen gap confirmed: no existing article on AI video project versioning.
 
-## Previous: 2026-06-17
+### Pipeline
+- Images: 3 Imagen heroes generated OK (scripts/render_blog_queue_gemini.py)
+- SEO audit: 0 errors
+- Build: PASS (main repo, all 3 articles prerendered in .next/server/app/blog/)
+- Commit: 58f7c54 (worktree branch) -> fast-forward merged to main -> pushed origin/main
 
-**Mode:** setup + first operational day. System built, one SEO fix shipped, and the first daily content batch (2 news + 1 evergreen) published live.
+### Issues / notes
+- Worktree node_modules not set up (no hard-link), build done from main repo as before.
+- thin-content warnings for news articles (1400-1500 words) are expected for this format.
+- One INFO warning on grok article (only 1 internal link) — fixed before commit (added 2nd link).
+
+### Next run priorities
+- Evergreen: script-to-screen pipeline article (all pillar tools, ScreenWeaver bridge)
+- Comparatif: best AI video for product ads (distinct from music video article)
+- Business: quote template + scope creep for AI projects

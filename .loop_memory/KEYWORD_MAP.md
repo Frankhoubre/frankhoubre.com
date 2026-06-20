@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 3 — 2026-06-20)
+
+- `Grok Imagine Video 1.5 xAI génération vidéo IA` — FILLED: grok-imagine-video-1-5-xai-generation-video-ia
+- `Higgsfield Creative OS Claude Adobe 2026` — FILLED: higgsfield-creative-os-claude-adobe-juin-2026
+- `gérer versions projets vidéo IA` — FILLED: gerer-versions-projets-video-ia
+
 ## Gaps / opportunities (good evergreen candidates — confirm intent first)
 
 - ~~Audio cluster~~ (CORRECTED above: saturated, not a gap).

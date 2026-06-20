@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-20 — Gérer les versions de ses projets vidéo IA : méthode concrète
+- slug: gerer-versions-projets-video-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/gerer-versions-projets-video-ia
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / practical method
+- primary_keyword: gérer versions projets vidéo IA
+- secondary_keywords: versioning projet IA, organisation fichiers prompts, seed vidéo IA, gestion itérations client IA
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /outils/calculateur-budget-production-ia, -> /blog/clauses-contrat-client-ia-video-production
+- cta: soft (budget calculator)
+- cannibalization_notes: no existing article on versioning / project management for AI video. Distinct from business/pricing articles. Fills gap identified in KEYWORD_MAP.
+- checker: pass (audit 0 err, build prerendered)
+- published_commit: 58f7c54
+
+### 2026-06-20 — Higgsfield devient un Creative OS : Claude, Adobe et Figma dans le même pipeline
+- slug: higgsfield-creative-os-claude-adobe-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/higgsfield-creative-os-claude-adobe-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / platform analysis
+- primary_keyword: Higgsfield Creative OS Claude Adobe 2026
+- secondary_keywords: Higgsfield Claude MCP, Higgsfield Adobe Premiere plugin, Seedance 2.0 Higgsfield, pipeline vidéo IA unifié
+- sources: youmind.com/landing/x-viral-articles/higgsfield-ai-video-creative-os (June 6, 2026)
+- internal_links: -> /blog/2026-06-19-kling-3-turbo-previsualisation-video-ia, -> /outils/generateur-prompt-cinema
+- cta: none
+- cannibalization_notes: no existing Higgsfield-specific article. Distinct from runway/pika comparatifs and general tool comparators.
+- checker: pass (audit 0 err)
+- published_commit: 58f7c54
+
+### 2026-06-20 — Grok Imagine Video 1.5 : xAI passe en tête du classement vidéo IA
+- slug: grok-imagine-video-1-5-xai-generation-video-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/grok-imagine-video-1-5-xai-generation-video-ia
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Grok Imagine Video 1.5 xAI génération vidéo IA
+- secondary_keywords: Grok Imagine Video prix, Grok vs Sora vs Veo, audio natif vidéo IA, Image-to-Video Arena classement
+- sources: explainx.ai/blog/grok-imagine-video-1-5-xai-release-2026, x.ai/news/grok-imagine-video-1-5 (June 17, 2026)
+- internal_links: -> /outils/annuaire-generateurs-images-ia-gratuits, -> /outils/calculateur-budget-production-ia
+- cta: none
+- cannibalization_notes: no existing Grok Imagine Video article. mistral-grok-meta-ai-createurs covers a different angle (tool ecosystem for creators vs. this specific model launch). Distinct.
+- checker: pass (audit 0 err, build prerendered)
+- published_commit: 58f7c54
+
 ### 2026-06-19 — Luma Ray 2 : guide pratique des settings et du workflow vidéo
 - slug: 2026-06-19-luma-ray-2-guide-pratique-settings-workflow
 - locale: fr
