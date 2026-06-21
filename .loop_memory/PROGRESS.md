@@ -1,6 +1,44 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-20 (Run 3 — 3 articles published)
+## Last run: 2026-06-21 (Run 4 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-20 (batch 3: 3 articles).
+- WebSearch for real news in last 72h: found Midjourney Medical Scanner announcement
+  (Bloomberg June 18, 2026) and Google Gemini/Imagen API preview model deprecations
+  (deadline June 24-25, 2026, from ai.google.dev/gemini-api/docs/changelog).
+- Wrote 2 actualite + 1 evergreen in worktree loop/content-2026-06-21.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, queue-swap technique).
+- SEO audit: 1 error (multiple H1 in Google article from code block comments) -> fixed -> 0 errors.
+- Build from worktree: PASS (417 pages, 3 new articles prerendered). Hard-linked node_modules.
+- Fast-forward merged loop/content-2026-06-21 into main, pushed origin/main (0af03f0).
+- Live verification: 200 OK on all 3 new article URLs.
+
+### Articles published this run
+1. `midjourney-medical-scanner-pivot-hardware-juin-2026` (actualite)
+2. `google-imagen-gemini-image-preview-depreciation-juin-2026` (actualite)
+3. `pipeline-ia-script-storyboard-production-de-a-z` (evergreen, tutoriels)
+
+### Technical note this run
+- node_modules: must use `cp -rl` (hard-link), NOT `ln -s` (symlink). Turbopack rejects
+  symlinked node_modules that point outside its project root. Had to remove soft link and
+  redo with `cp -rl`. Confirmed the `cp -rl` approach works.
+- Image generation: temporarily swap tmp-blog-gen-queue.json with 3-item queue, run with
+  --force, then restore the original 249-item queue.
+
+### Next run should
+1. Set up fresh worktree for content work.
+2. Evergreen candidates: "best AI video tool for product ads" comparatif,
+   "hands and eyes still breaking: current fixes" troubleshooting,
+   "AI project quote template + scope" business article,
+   "getting a clean loop for social" format article.
+3. News to watch: ElevenLabs Music v2 API (launched June 8 changelog, underreported),
+   Runway Gen-4.5 practical workflow for creators (released Dec 2025, still evergreen material),
+   any Sora ChatGPT video integration update.
+4. Check if new articles got EN translations (translation loop may handle).
+5. Verify Google Imagen articles stay live as Imagen models actually shut down June 24-25.
+
+## Previous run: 2026-06-20 (Run 3 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-19 (batch 2: 3 articles).

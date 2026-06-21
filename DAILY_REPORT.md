@@ -1,37 +1,52 @@
-# DAILY_REPORT.md — 2026-06-20
+# DAILY_REPORT — 2026-06-21 (Run 4)
 
-## Run 3 — 3 articles published
+## Status : SUCCES
 
-### Sources verified
-1. Grok Imagine Video 1.5 — explainx.ai/blog/grok-imagine-video-1-5-xai-release-2026
-   Published June 17, 2026. GA release confirmed. Pricing ($4.20/min), benchmark (#1 Image-to-Video Arena), specs (720p, 24FPS, native audio) all from verified source.
-2. Higgsfield Creative OS — youmind.com/landing/x-viral-articles/higgsfield-ai-video-creative-os
-   June 6, 2026 announcement. Claude MCP integration, Adobe/Figma plugins, Seedance 2.0, Marketing Studio confirmed.
+## Articles publiés (3)
 
-### Articles produced
-1. `grok-imagine-video-1-5-xai-generation-video-ia` (actualite, 1495 words)
-   Primary KW: Grok Imagine Video 1.5 xAI generation video IA
-   Slug: keyword-only (no date prefix, per STYLE_GUIDE fix from Run 2)
+### 1. Midjourney lance un scanner médical ultrasonique : pivot hardware ou feu d'artifice ?
+- URL : https://frankhoubre.com/blog/midjourney-medical-scanner-pivot-hardware-juin-2026
+- Catégorie : actualite
+- Source principale : Bloomberg 18 juin 2026 + midjourney.com/medical/blogpost
+- Angle : ce que le pivot hardware de Midjourney signifie pour les créateurs IA
+- Hero image : Imagen (scanner pod lumineux, architecture sombre)
+- Live : 200 OK
 
-2. `higgsfield-creative-os-claude-adobe-juin-2026` (actualite, 1482 words)
-   Primary KW: Higgsfield Creative OS Claude Adobe 2026
+### 2. Google coupe Imagen et les modèles image Gemini preview : migration avant le 24 juin
+- URL : https://frankhoubre.com/blog/google-imagen-gemini-image-preview-depreciation-juin-2026
+- Catégorie : actualite
+- Source principale : ai.google.dev/gemini-api/docs/changelog + /deprecations
+- Angle : guide de migration urgent (deadline J-3) pour créateurs utilisant l'API
+- Hero image : Imagen (terminal code, lumières bleues/ambrées)
+- Live : 200 OK
 
-3. `gerer-versions-projets-video-ia` (tutoriels, 1950+ words)
-   Primary KW: gérer versions projets vidéo IA
-   Evergreen gap confirmed: no existing article on AI video project versioning.
+### 3. Pipeline IA de A à Z : de l'idée au plan de tournage en une journée
+- URL : https://frankhoubre.com/blog/pipeline-ia-script-storyboard-production-de-a-z
+- Catégorie : tutoriels (evergreen)
+- Angle : méthode complète structure narrative -> prompts -> storyboard -> budget -> génération
+- Internal links : prompt-cinema + storyboard-pdf + calculateur-budget (3 piliers)
+- CTA naturel : ScreenWeaver (pont script-vers-production)
+- Hero image : Imagen (bureau cinéaste, lumière dorée)
+- Live : 200 OK
 
-### Pipeline
-- Images: 3 Imagen heroes generated OK (scripts/render_blog_queue_gemini.py)
-- SEO audit: 0 errors
-- Build: PASS (main repo, all 3 articles prerendered in .next/server/app/blog/)
-- Commit: 58f7c54 (worktree branch) -> fast-forward merged to main -> pushed origin/main
+## SEO audit
+- Erreurs initiales : 1 (multiple H1 dans article Google, commentaires ## dans bloc code détectés comme H1)
+- Fix : remplacé `# Avant` / `# Après` par `## Avant` / `## Après` dans le code block
+- Erreurs finales : 0
+- Warnings : ~408 (thin-content news + banned phrases EN, expected, not our content)
 
-### Issues / notes
-- Worktree node_modules not set up (no hard-link), build done from main repo as before.
-- thin-content warnings for news articles (1400-1500 words) are expected for this format.
-- One INFO warning on grok article (only 1 internal link) — fixed before commit (added 2nd link).
+## Build
+- Pages : 417 (vs 409 run précédent, +8 dont les 3 FR + EN translations loop)
+- Résultat : PASS
+- Note technique : hard-link `cp -rl` pour node_modules dans le worktree (ne pas utiliser `ln -s`)
 
-### Next run priorities
-- Evergreen: script-to-screen pipeline article (all pillar tools, ScreenWeaver bridge)
-- Comparatif: best AI video for product ads (distinct from music video article)
-- Business: quote template + scope creep for AI projects
+## Commit
+- SHA : 0af03f0
+- Branch merge : loop/content-2026-06-21 -> main (fast-forward)
+- Push : origin/main OK
+
+## Prochaine run recommandée
+- News à surveiller : ElevenLabs Music v2 API (déjà sorti juin 8, sous-couvert),
+  mise à jour Runway Gen-4.5 créateurs, tout nouveau launch Sora ChatGPT vidéo.
+- Evergreen candidat prioritaire : "best AI video tool for product ads" comparatif,
+  "AI project quote template + scope creep" business.

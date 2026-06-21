@@ -3,11 +3,11 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-06-17T14:19:37.836Z
+> Generated: 2026-06-21T08:01:03.741Z
 
-## FR — 222 articles (/blog/<slug>)
+## FR — 229 articles (/blog/<slug>)
 
-Categories: tutoriels 178, business 14, comparatifs 12, actualite 8, analyses 6, guides 2, notes 1, postproduction 1
+Categories: tutoriels 179, business 14, actualite 13, comparatifs 13, analyses 6, guides 2, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
@@ -47,8 +47,16 @@ Categories: tutoriels 178, business 14, comparatifs 12, actualite 8, analyses 6,
 | 2026-06-23 | tutoriels | `structurer-checklist-validation-finale-projet-ia` | Structurer une checklist de validation finale projet IA |
 | 2026-06-22 | tutoriels | `eviter-surcharge-fx-presets-video-ia` | Éviter la surcharge de FX et presets en vidéo IA |
 | 2026-06-21 | tutoriels | `gerer-voix-off-narration-documentaire-ia` | Gerer la voix off pour narration documentaire IA |
+| 2026-06-20 | tutoriels | `gerer-versions-projets-video-ia` | Gérer les versions de ses projets vidéo IA : méthode concrète |
+| 2026-06-20 | actualite | `grok-imagine-video-1-5-xai-generation-video-ia` | Grok Imagine Video 1.5 : xAI passe en tête du classement vidéo IA |
+| 2026-06-20 | actualite | `higgsfield-creative-os-claude-adobe-juin-2026` | Higgsfield devient un Creative OS : Claude, Adobe et Figma dans le même pipeline |
 | 2026-06-20 | tutoriels | `verifier-qualite-mobile-desktop-video-ia` | Vérifier la qualité mobile desktop d'une vidéo IA |
+| 2026-06-19 | actualite | `2026-06-19-cnc-rapport-ia-cinema-audiovisuel-2026` | CNC : ce que dit vraiment le rapport IA sur le cinéma et l'audiovisuel |
+| 2026-06-19 | actualite | `2026-06-19-kling-3-turbo-previsualisation-video-ia` | Kling 3.0 Turbo : générer des aperçus vidéo IA en quelques secondes |
+| 2026-06-19 | tutoriels | `2026-06-19-luma-ray-2-guide-pratique-settings-workflow` | Luma Ray 3.2 : guide pratique des settings et du workflow vidéo |
 | 2026-06-19 | tutoriels | `creer-presets-post-production-reutilisables-ia` | Créer des presets de post production réutilisables IA |
+| 2026-06-19 | comparatifs | `screenweaver-vs-final-draft` | ScreenWeaver vs Final Draft : lequel choisir pour écrire (et montrer) ton film en 2026 ? |
+| 2026-06-18 | actualite | `adobe-creative-cloud-juin-2026-photo-to-video-ia` | Adobe Photo to Video : Google Veo débarque dans Lightroom (juin 2026) |
 | 2026-06-18 | tutoriels | `choisir-bonne-duree-plan-selon-intention-ia` | Choisir la bonne duree de plan selon l intention IA |
 | 2026-06-17 | tutoriels | `concevoir-intro-hooks-video-ia-premieres-3-secondes` | Concevoir des hooks video IA efficaces en 3 secondes |
 | 2026-06-17 | tutoriels | `corriger-scintillement-flicker-video-ia` | Scintillement (flicker) en vidéo IA : causes et solutions |
@@ -124,11 +132,10 @@ Categories: tutoriels 178, business 14, comparatifs 12, actualite 8, analyses 6,
 | 2026-04-27 | tutoriels | `textures-3d-intelligence-artificielle` | Créer des textures 3D avec l’intelligence artificielle pour vos projets |
 | 2026-04-26 | tutoriels | `canva-ia-creation-visuels-rapides` | Comment utiliser Canva IA pour la création de visuels rapides |
 | 2026-04-26 | tutoriels | `croquis-en-chef-d-oeuvre-ia` | Transformer un simple croquis (dessin) en chef-d’œuvre avec l’IA |
-| 2026-04-26 | tutoriels | `generateur-image-ia-sans-inscription` | Générateur d’image IA sans inscription : les 3 meilleures options du moment |
 | 2026-04-25 | tutoriels | `creation-logo-ia-outils-gratuits-astuces` | Création de logo avec l’IA : outils gratuits et astuces de pro |
 | 2026-04-25 | tutoriels | `photos-hyper-realistes-ia` | Comment utiliser l’IA pour générer des photos hyper-réalistes |
 | 2026-04-25 | tutoriels | `secrets-prompts-rendu-photographique-ia` | Les secrets des prompts pour générer des images au rendu photographique |
-| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | Quel est le meilleur générateur d’image IA gratuit ? |
+| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | Meilleur générateur d’image IA gratuit et sans inscription |
 | 2026-04-24 | tutoriels | `midjourney-vs-dalle-3-concept-art` | Midjourney vs DALL·E 3 : lequel choisir pour le concept art ? |
 | 2026-04-24 | tutoriels | `personnages-coherents-plusieurs-images-ia` | Tutoriel complet : comment créer des personnages cohérents sur plusieurs images |
 | 2026-04-23 | comparatifs | `adobe-firefly-avis` | Adobe Firefly : test complet, qualité, limites et cas d’usage |
@@ -234,21 +241,56 @@ Categories: tutoriels 178, business 14, comparatifs 12, actualite 8, analyses 6,
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine : l'IA crée des personnages cohérents et des films d'animation |
 
-## EN — 91 articles (/en/blog/<slug>)
+## EN — 222 articles (/en/blog/<slug>)
 
-Categories: tutoriels 80, business 5, actualite 3, comparatifs 3
+Categories: tutoriels 177, business 14, comparatifs 13, actualite 8, analyses 6, guides 2, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
 | 2026-07-26 | tutoriels | `audit-qualite-portfolio-ia-avant-demo-reel` | AI Portfolio Quality Audit Before the Demo Reel |
+| 2026-07-25 | tutoriels | `formation-interne-equipe-creative-ia` | Training an Internal Creative Team in AI Video |
 | 2026-07-24 | tutoriels | `clause-contrat-client-contenu-genere-ia` | Client Contract Clause for AI-Generated Content |
+| 2026-07-23 | tutoriels | `droits-auteur-musique-ia-bande-son` | Copyright and AI Music for a Film Soundtrack |
+| 2026-07-22 | tutoriels | `reporting-client-pdf-livrables-video-ia` | Client PDF Reporting: Professional AI Video Deliverables |
 | 2026-07-21 | tutoriels | `ab-test-miniatures-youtube-ia` | A/B Testing YouTube Thumbnails Generated with AI |
 | 2026-07-20 | tutoriels | `boucles-anim-sns-parfaites-video-ia` | Perfect Social Media Loops: AI Video Technique |
+| 2026-07-19 | tutoriels | `mastering-loudness-pub-reseaux-sociaux-ia` | Loudness Mastering for AI Ads on Social Media |
+| 2026-07-18 | tutoriels | `doublage-artistique-lip-sync-preparation` | Artistic Dubbing: Preparing the Image Before AI Lip-Sync |
+| 2026-07-17 | tutoriels | `localisation-voix-off-multilingue-ia` | Multilingual Voiceover Localization: AI Workflow and Lip-Sync |
+| 2026-07-16 | tutoriels | `sous-titres-burn-in-accessibles-video-ia` | Accessible Burn-In Subtitles on AI Video |
+| 2026-07-15 | tutoriels | `generer-typographie-titres-sans-gibberish` | Typography and Titles: Avoiding Gibberish in AI Production |
+| 2026-07-14 | tutoriels | `inserer-produit-main-acteur-sans-artefacts` | Inserting a Product in an Actor's Hand With No AI Artifacts |
+| 2026-07-13 | tutoriels | `plan-over-epaule-continuite-regard-ia` | Over-the-Shoulder Shot: Eye-Line Continuity and Depth |
+| 2026-07-12 | tutoriels | `scene-dialogue-deux-personnages-raccord-ia` | Two-Character Dialogue Scene: Gaze and Light Matches in AI |
+| 2026-07-11 | tutoriels | `sous-marine-caustiques-video-ia-limites` | Underwater Shots: Caustics, Limits and AI Workarounds |
+| 2026-07-10 | tutoriels | `exterieur-foret-brume-profondeur-video-ia` | Forest and Mist: Depth of Field in AI Exteriors |
+| 2026-07-09 | tutoriels | `interieur-bureau-lumiere-cyan-correction-ia` | Office Interior: Fixing the Cyan Light of AI Offices |
+| 2026-07-08 | tutoriels | `nuit-neon-peau-credible-sans-magenta` | Neon Night: Credible Skin With No Magenta Bath |
+| 2026-07-07 | tutoriels | `cuisine-fumee-vapeur-realiste-video-ia` | Cooking, Smoke and Steam: a Realistic Render in AI Video |
 | 2026-07-06 | tutoriels | `animaux-domestiques-plan-action-ia` | Pets in Action Shots: Fur, Gaze and Movement |
+| 2026-07-05 | tutoriels | `vehicules-mouvement-reflets-coherents-video-ia` | Vehicles in motion: consistent reflections in AI video |
+| 2026-07-04 | tutoriels | `generer-foule-realiste-sans-clones-ia` | Generating a Realistic Crowd With No Clones or Identical Faces |
+| 2026-07-03 | tutoriels | `inpainting-local-retoucher-yeux-mains-ia` | Local Inpainting: Retouching Eyes and Hands Without Regenerating Everything |
+| 2026-07-02 | tutoriels | `reference-ipadapter-visage-coherent-plans` | IP-Adapter and References: Locking a Face Across Several Shots |
 | 2026-07-01 | tutoriels | `comfyui-noeuds-debutant-pipeline-cinema` | ComfyUI for Beginners: A Cinema Pipeline with No Useless Node |
+| 2026-06-30 | tutoriels | `pika-labs-vs-runway-choisir-moteur-plan-action` | Pika Labs vs Runway: Choosing the Right Engine for an Action Shot |
+| 2026-06-29 | tutoriels | `openai-sora-production-limits-workflow-pro` | Sora in Production: Honest Limits and Pro Workflow |
+| 2026-06-28 | tutoriels | `google-veo-3-brief-realisateur-plan-sequence` | Google Veo 3: a Director's Brief for a Credible Long Take |
+| 2026-06-27 | tutoriels | `hailuo-minimax-workflow-court-metrage-realiste` | HaiLuo / MiniMax Workflow for a Realistic AI Short Film |
+| 2026-06-26 | tutoriels | `mesurer-performance-contenu-video-ia-apres-publication` | Measuring the Performance of AI Video Content After Publication |
 | 2026-06-25 | tutoriels | `adapter-storytelling-marque-contenu-video-ia` | Adapting Brand Storytelling to AI Video Content |
+| 2026-06-24 | tutoriels | `creer-miniatures-youtube-coherentes-avec-video-ia` | Creating YouTube Thumbnails Consistent With Your AI Video |
+| 2026-06-23 | tutoriels | `structurer-checklist-validation-finale-projet-ia` | Structuring a Final Validation Checklist for an AI Project |
+| 2026-06-22 | tutoriels | `eviter-surcharge-fx-presets-video-ia` | Avoiding FX and Preset Overload in AI Video |
+| 2026-06-21 | tutoriels | `gerer-voix-off-narration-documentaire-ia` | Managing the Voice-Over for AI Documentary Narration |
+| 2026-06-20 | tutoriels | `verifier-qualite-mobile-desktop-video-ia` | Checking the mobile-desktop quality of an AI video |
+| 2026-06-19 | tutoriels | `creer-presets-post-production-reutilisables-ia` | Creating Reusable AI Post-Production Presets |
+| 2026-06-19 | comparatifs | `screenweaver-vs-final-draft` | ScreenWeaver vs Final Draft: which to choose to write (and show) your film in 2026? |
 | 2026-06-18 | tutoriels | `choisir-bonne-duree-plan-selon-intention-ia` | Choosing the Right Shot Duration According to AI Intention |
 | 2026-06-17 | tutoriels | `concevoir-intro-hooks-video-ia-premieres-3-secondes` | Designing Effective AI Video Hooks in 3 Seconds |
+| 2026-06-17 | tutoriels | `corriger-scintillement-flicker-video-ia` | Flicker in AI Video: Causes and Solutions |
+| 2026-06-17 | actualite | `elevenlabs-fin-voix-v1-migration-2026` | ElevenLabs Retires Its v1 Voices on July 9: What to Do |
+| 2026-06-17 | actualite | `flux-2-open-weights-images-ia-local-2026` | FLUX.2 and the Open-Weights Shift: Local AI Image |
 | 2026-06-17 | actualite | `video-ia-audio-synchronise-natif-2026` | AI Video and Native Synced Audio: The 2026 Shift |
 | 2026-06-16 | tutoriels | `planifier-calendrier-production-30-jours-ia` | Planning a 30-Day AI Production Calendar |
 | 2026-06-15 | tutoriels | `preparer-versioning-feedback-client-projet-ia` | Building a Client Versioning and Feedback System for AI |
@@ -268,8 +310,10 @@ Categories: tutoriels 80, business 5, actualite 3, comparatifs 3
 | 2026-06-01 | tutoriels | `organiser-brief-client-production-video-ia` | Organizing a Client Brief for AI Video Production Without the Blur |
 | 2026-05-31 | tutoriels | `diriger-regards-micro-expressions-personnages-ia` | Directing the Gaze and Micro-Expressions of AI Characters |
 | 2026-05-30 | tutoriels | `creer-packshots-produit-publicite-ia` | Creating AI Advertising Product Packshots That Hold Up in Post |
+| 2026-05-29 | tutoriels | `preparer-decoupage-technique-avant-generation-video-ia` | Preparing a Shot Breakdown Before AI Video Generation |
 | 2026-05-28 | tutoriels | `comment-gerer-continuite-costume-scenes-ia` | How to Manage Costume Continuity Across Several AI Scenes |
 | 2026-05-25 | tutoriels | `comment-ameliorer-rendu-moyen-rendu-pro-video-ia` | How to Improve an Average Render into a Pro Render |
+| 2026-05-24 | tutoriels | `comment-transformer-video-ia-publicite-premium` | How to Turn an AI Video Into a Premium Ad |
 | 2026-05-23 | tutoriels | `comment-mixer-audio-image-rendu-cinema-video-ia` | How to Mix Audio and Image for a Cinema Render |
 | 2026-05-22 | tutoriels | `comment-integrer-sound-design-video-ia` | How to Integrate Sound Design into an AI Video |
 | 2026-05-21 | tutoriels | `comment-ajouter-motion-blur-realiste-video-ia` | How to Add Realistic Motion Blur |
@@ -283,25 +327,105 @@ Categories: tutoriels 80, business 5, actualite 3, comparatifs 3
 | 2026-05-15 | tutoriels | `comment-organiser-assets-ia-comme-un-pro` | How to Organize Your AI Assets Like a Pro |
 | 2026-05-15 | tutoriels | `comment-passer-storyboard-video-finale` | How to Go From Storyboard to Final Video |
 | 2026-05-15 | tutoriels | `comment-produire-video-ia-24h` | How to Produce an AI Video in 24 Hours |
+| 2026-05-15 | tutoriels | `pipeline-complet-image-vers-video-ia` | Complete Image-to-Video Pipeline With AI |
+| 2026-05-15 | tutoriels | `workflow-complet-seedance-2-rendu-cinema` | Complete Seedance 2 workflow for a cinema render |
+| 2026-05-15 | tutoriels | `workflow-flux-images-ultra-detaillees` | Flux workflow for ultra-detailed images |
+| 2026-05-15 | tutoriels | `workflow-kling-3-animation-fluide-realiste` | Kling 3 workflow for a fluid and realistic animation |
+| 2026-05-15 | tutoriels | `workflow-nano-banana-personnages-coherents` | Nano Banana workflow to create consistent characters |
 | 2026-05-13 | tutoriels | `comfyui-guide-video-createurs-debutants` | ComfyUI: The Video Guide for Beginner Creators |
+| 2026-05-13 | tutoriels | `creer-avatar-parlant-videos-formation-heygen` | Creating a Talking Avatar for Your Training Videos With HeyGen |
+| 2026-05-13 | tutoriels | `elevenlabs-tutoriel-definitif-voix-ultra-realistes` | ElevenLabs: the Definitive Tutorial for Ultra-Realistic Voices |
+| 2026-05-13 | actualite | `leonardo-ai-meilleure-alternative-gratuite-generer-images` | Leonardo AI: The Best Free Alternative to Generate Images? |
+| 2026-05-13 | tutoriels | `magnific-ai-ameliorer-details-images-3d-rendus` | Magnific AI: Improving the Details of Your 3D Images and Renders |
+| 2026-05-13 | tutoriels | `photoshop-firefly-etendre-plans-ia-generative` | How to Use Photoshop's Generative AI (Firefly) to Extend Your Shots |
+| 2026-05-13 | tutoriels | `pika-labs-tutoriel-generation-video-text-to-video-rapide` | Pika Labs: A Tutorial for Fast Text-to-Video Generation |
+| 2026-05-13 | tutoriels | `suno-udio-creer-chanson-structuree-a-z-ia` | Suno / Udio: Creating a Structured Song From A to Z With AI |
+| 2026-05-07 | business | `distribution-film-ia-strategies-visibilite-2026` | AI Film Distribution: Strategies to Explode Your Visibility |
+| 2026-05-07 | postproduction | `etalonnage-ia-maitriser-look-couleur-films` | AI Grading: Mastering the Look and Color of Your Films |
+| 2026-05-07 | tutoriels | `storyboarding-ia-vision-cinematographique` | AI Storyboarding: Turning Your Script Into a Cinematic Vision |
 | 2026-05-02 | tutoriels | `comment-passer-rendu-amateur-a-cinema-ia` | How to Go From an Amateur Render to a Cinema Render |
 | 2026-05-01 | tutoriels | `comment-corriger-mauvaise-composition-visuelle-ia` | How to Fix a Bad Visual Composition |
 | 2026-05-01 | tutoriels | `comment-eviter-effet-image-generee-ia` | How to Avoid the 'Generated Image' Effect |
 | 2026-05-01 | tutoriels | `comment-rendre-scene-ia-plus-credible` | How to Make an AI Scene More Credible |
 | 2026-04-30 | tutoriels | `comment-corriger-mauvais-lighting-ia` | How to Fix Bad Lighting in AI |
 | 2026-04-30 | tutoriels | `comment-eviter-rendu-cartoon-non-voulu-ia` | How to Avoid the Unwanted Cartoon Render |
+| 2026-04-30 | tutoriels | `pourquoi-rendu-ia-manque-de-profondeur` | Why Does My AI Render Lack Depth |
+| 2026-04-29 | tutoriels | `pourquoi-images-ia-floues-comment-corriger` | Why Are My AI Images Blurry and How to Fix It |
+| 2026-04-29 | tutoriels | `pourquoi-personnages-changent-chaque-scene-ia` | Why Do My Characters Change in Every Scene |
+| 2026-04-29 | tutoriels | `pourquoi-videos-ia-manquent-de-realisme` | Why Do My AI Videos Lack Realism |
+| 2026-04-28 | tutoriels | `illustrations-manga-anime-ia` | Generating 'Manga / Anime' Style Illustrations with AI |
+| 2026-04-28 | tutoriels | `stable-diffusion-installation-debutants` | Stable Diffusion: Installation Guide and First Steps for Beginners |
+| 2026-04-28 | business | `vendre-images-generees-ia-legalite` | How to sell your AI-generated images (and is it legal?) |
+| 2026-04-27 | notes | `droits-auteur-images-generees-ia` | Copyright and AI-Generated Images: What You Absolutely Must Know |
+| 2026-04-27 | tutoriels | `ia-photographie-retouche-inpainting-generation` | AI in the Service of Photography: Retouching, Inpainting and Generation |
+| 2026-04-27 | tutoriels | `textures-3d-intelligence-artificielle` | Creating 3D Textures With Artificial Intelligence for Your Projects |
 | 2026-04-26 | tutoriels | `canva-ia-creation-visuels-rapides` | How to Use Canva AI for Fast Visual Creation |
+| 2026-04-26 | tutoriels | `croquis-en-chef-d-oeuvre-ia` | Turning a Simple Sketch (Drawing) Into a Masterpiece With AI |
+| 2026-04-25 | tutoriels | `creation-logo-ia-outils-gratuits-astuces` | Logo Creation With AI: Free Tools and Pro Tips |
+| 2026-04-25 | tutoriels | `photos-hyper-realistes-ia` | How to Use AI to Generate Hyper-Realistic Photos |
+| 2026-04-25 | tutoriels | `secrets-prompts-rendu-photographique-ia` | The Secrets of Prompts to Generate Photographic-Render Images |
+| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | What Is the Best Free AI Image Generator? |
+| 2026-04-24 | tutoriels | `midjourney-vs-dalle-3-concept-art` | Midjourney vs DALL·E 3: Which to Choose for Concept Art? |
+| 2026-04-24 | tutoriels | `personnages-coherents-plusieurs-images-ia` | Complete Tutorial: How to Create Consistent Characters Across Several Images |
 | 2026-04-23 | comparatifs | `adobe-firefly-avis` | Adobe Firefly: Full Review, Quality, Limits and Use Cases |
 | 2026-04-23 | comparatifs | `alternatives-midjourney` | The Best Alternatives to Midjourney in 2026 |
 | 2026-04-23 | tutoriels | `chatgpt-image-dalle-guide` | DALL·E and ChatGPT Image: Full Guide, Differences, Prices and Uses |
 | 2026-04-23 | business | `comment-convaincre-client-video-ia` | How to Convince a Client with an AI Video (Proof, Not Promise) |
 | 2026-04-23 | business | `comment-creer-portfolio-ia-credible` | How to Build a Credible AI Portfolio (That Gets You Signed, Not Just Liked) |
 | 2026-04-23 | business | `comment-se-differencier-marche-ia-creative` | How to Stand Out in the Creative AI Market (With No Buzz Race) |
+| 2026-04-23 | comparatifs | `heygen-elevenlabs-comparatif` | HeyGen and ElevenLabs: the Best AI Tools for Voice and Avatars? |
+| 2026-04-23 | comparatifs | `ideogram-recraft-leonardo-comparatif` | Ideogram, Recraft or Leonardo AI: Which Tool to Choose? |
+| 2026-04-23 | comparatifs | `meilleur-generateur-image-ia` | Best AI Image Generator: Complete 2026 Comparison |
+| 2026-04-23 | comparatifs | `meilleurs-outils-ia-video` | The Best AI Video Tools in 2026: Sora, Runway, Higgsfield, Pika Labs |
+| 2026-04-23 | tutoriels | `midjourney-guide-complet` | Midjourney in 2026: A Complete Guide to Create Stunning Images |
+| 2026-04-23 | comparatifs | `mistral-grok-meta-ai-createurs` | Mistral AI, Grok AI, Meta AI: Which Ones Are Useful to Creators? |
+| 2026-04-23 | comparatifs | `outils-ia-design` | The Best AI Tools to Create, Cut Out and Design Faster |
+| 2026-04-23 | tutoriels | `stable-diffusion-guide-complet` | Stable Diffusion in 2026: A Complete Guide to Create Images Locally |
+| 2026-04-23 | guides | `workflow-ia-creatif` | The real creative AI workflow in 2026: image, video, voice and production |
 | 2026-04-22 | business | `comment-creer-agence-creation-video-ia` | How to Build an AI Video Creation Agency (Without Operational Chaos) |
+| 2026-04-22 | business | `comment-utiliser-ia-creer-pubs-rentables` | How to Use AI to Create Profitable Ads (Not Just Pretty Ones) |
+| 2026-04-22 | business | `comment-vendre-visuels-ia-marques` | How to Sell AI Visuals to Brands (Without Being Seen as Low-Cost) |
+| 2026-04-22 | business | `n-achetez-surtout-pas-de-prompt-ia-tout-fait` | Whatever You Do, Don't Buy a Ready-Made AI Prompt! |
+| 2026-04-22 | business | `pourquoi-faux-temoignages-ugc-ia-interdits` | Why Fake AI UGC Testimonials Are Forbidden and How to Sell Legally |
 | 2026-04-21 | business | `combien-facturer-video-ia-professionnelle-grille-prix` | How Much to Charge for a Professional AI Video (Price Grid and Traps) |
+| 2026-04-21 | business | `comment-trouver-clients-video-ia-acquisition` | How to Find Clients With AI Video (Acquisition With No Spam) |
+| 2026-04-21 | business | `comment-vendre-videos-ia-clients-professionnels` | How to Sell AI Videos to Clients (Without Looking Like a Tinkerer) |
+| 2026-04-21 | tutoriels | `etude-de-cas-coecrire-film-intelligence-artificielle` | Case Study: How I Co-Wrote My Film Using Artificial Intelligence |
+| 2026-04-21 | tutoriels | `generer-bande-originale-film-clip-ia-musicale` | Generating the Original Score of Your Film or Clip With AI Music |
+| 2026-04-21 | tutoriels | `upscaling-video-passer-vieux-court-metrage-4k-ia` | Video upscaling: bring your old short film to 4K with AI |
+| 2026-04-20 | tutoriels | `doublage-voix-off-cloner-diriger-voix-film` | Dubbing and Voice-Over: Cloning and Directing a Voice for Your Film |
+| 2026-04-20 | tutoriels | `film-ia-erreurs-raccord-incoherences-visuelles-eviter` | AI Film: Continuity Errors (Visual Inconsistencies) and How to Avoid Them |
+| 2026-04-20 | tutoriels | `generer-effets-speciaux-vfx-outils-ia` | How to Generate Special Effects (VFX) With AI Tools |
+| 2026-04-20 | tutoriels | `luma-dream-machine-kling-generer-videos-fluides` | Luma Dream Machine / Kling: How to Generate Fluid Videos |
+| 2026-04-19 | tutoriels | `creer-publicite-video-percutante-intelligence-artificielle` | Creating a Striking Video Ad With Artificial Intelligence |
+| 2026-04-19 | tutoriels | `guide-complet-montage-video-assiste-intelligence-artificielle` | The Complete Guide to AI-Assisted Video Editing |
+| 2026-04-19 | tutoriels | `synchronisation-labiale-lip-sync-quel-outil-ia-choisir` | Lip-Sync: Which AI Tool to Choose for Your Virtual Actors? |
+| 2026-04-19 | actualite | `topaz-video-ai-test-avis-restauration-video` | Topaz Video AI: full test and review on video restoration |
+| 2026-04-18 | tutoriels | `generation-video-nouveaux-outils-changements-realisateurs` | Video Generation: What the New Tools Change for Directors |
+| 2026-04-18 | tutoriels | `tutoriel-runway-gen-3-animer-image-fixe-plan-film` | Runway Gen-3 tutorial: animating a still image for a film shot |
+| 2026-04-18 | tutoriels | `utiliser-ia-reperage-decors-cinema` | How to use AI for cinema location scouting |
 | 2026-04-17 | actualite | `5-meilleurs-ia-video-maker-clip-musical-2026` | The 5 Best AI Video Makers for Creating a Music Video in 2026 |
 | 2026-04-17 | tutoriels | `comment-ecrire-scenario-court-metrage-ia-a-z` | How to Write a Short Film Script from A to Z with AI |
+| 2026-04-17 | guides | `devenir-prompt-engineer-audiovisuel` | Becoming an Audiovisual Prompt Engineer: Skills, Outlets and Method (2026) |
+| 2026-04-17 | tutoriels | `generer-storyboard-professionnel-complet-ia` | Generating a Complete Professional Storyboard With AI |
 | 2026-04-16 | comparatifs | `alternatives-gratuites-chatgpt-fiction` | The Free Alternatives to ChatGPT for Fiction Writing |
+| 2026-04-16 | analyses | `google-ia-recherche-creation-contenu` | How Google's AI Is Revolutionizing Search and Content Creation |
+| 2026-04-16 | tutoriels | `ia-dialogues-realistes-outils-conversationnels` | Creating Realistic Dialogues With the Help of Conversational Tools |
+| 2026-04-16 | analyses | `ia-generative-ecriture-creative-audiovisuel` | How Generative AI Transforms Creative Writing in Audiovisual |
+| 2026-04-16 | analyses | `limites-ia-direction-artistique` | The Limits of AI in Art Direction (and What the Human Must Keep) |
+| 2026-04-16 | comparatifs | `top-5-applications-ia-smartphone-creation-mobile` | Top 5 AI Smartphone Apps to Create on the Go (2026) |
+| 2026-04-15 | comparatifs | `dix-sites-ia-indispensables-createurs-2026` | The 10 Artificial Intelligence Sites Every Creator Must Know (2026) |
+| 2026-04-15 | tutoriels | `ia-descriptions-youtube-seo` | Using AI to Write SEO-Optimized YouTube Descriptions |
+| 2026-04-15 | analyses | `luc-julia-vision-francaise-intelligence-artificielle` | Luc Julia and the French Vision of Artificial Intelligence |
+| 2026-04-15 | business | `monetiser-competences-creation-ia-freelance-agence` | How to Monetize Your AI Creation Skills (Freelance, Agency) |
+| 2026-04-15 | tutoriels | `notion-ia-bible-production-film-serie` | Notion AI: Organizing the Production Bible of Your Film or Series |
+| 2026-04-15 | comparatifs | `traduction-scripts-ia-internationalisation-videos` | Script translation: the best AI tools to internationalize your videos |
+| 2026-04-14 | tutoriels | `ia-page-blanche-scenarisation` | How AI Can Help You Beat the Blank Page in Screenwriting |
+| 2026-04-14 | analyses | `intelligence-artificielle-industrie-creative-opportunites-dangers` | Artificial Intelligence and the Creative Industry: Opportunities or Dangers? |
+| 2026-04-14 | analyses | `metiers-audiovisuel-ia-menaces-transformation-avis` | Audiovisual Jobs Threatened or Transformed by AI: My Take |
+| 2026-04-14 | tutoriels | `pourquoi-comment-se-former-ia-2026` | Why and How to Train in Artificial Intelligence in 2026 |
+| 2026-04-14 | tutoriels | `prompts-idees-videos-youtube` | The 10 Best Prompts to Find YouTube Video Ideas |
+| 2026-04-14 | tutoriels | `tome-ia-note-intention-realisation-visuelle` | Creating a Visual Directing Intention Note With Tome AI |
 | 2026-04-13 | actualite | `chatgpt-image-2-generateur-openai` | ChatGPT Announces Image 2: The New OpenAI Image Generator, Decoded Like a Production Brief |
 | 2026-04-12 | tutoriels | `comment-choisir-bons-angles-camera-ia` | How to Choose the Right Camera Angles in AI |
 | 2026-04-12 | tutoriels | `comment-construire-scene-cinematique-plan-par-plan` | How to Build a Cinematic Scene Shot by Shot |
@@ -311,23 +435,37 @@ Categories: tutoriels 80, business 5, actualite 3, comparatifs 3
 | 2026-04-11 | tutoriels | `comment-cadrer-image-ia-comme-pro-cinema` | How to Frame an AI Image Like a Cinema Pro |
 | 2026-04-11 | tutoriels | `comment-generer-images-ia-photorealistes-sans-effet-plastique` | How to Generate Photorealistic AI Images Without the Plastic Look |
 | 2026-04-11 | tutoriels | `comment-penser-comme-realisateur-avec-ia` | How to Think Like a Director With AI |
+| 2026-04-11 | tutoriels | `comment-utiliser-regle-des-tiers-generation-ia` | How to Use the Rule of Thirds in AI Generation |
 | 2026-04-10 | tutoriels | `comment-obtenir-rendu-cinema-avec-seedance-2` | How to Get a Cinema Render with Seedance 2 |
+| 2026-04-10 | tutoriels | `comment-transformer-image-ia-video-fluide-credible` | How to Turn an AI Image Into a Fluid, Credible Video |
 | 2026-04-09 | tutoriels | `comment-creer-video-cinematique-ia-etape-par-etape` | How to Create a Cinematic Video with AI Step by Step |
+| 2026-04-09 | tutoriels | `pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes` | Why Do My AI Videos Look Fake, and How to Make Them Realistic |
+| 2026-04-09 | tutoriels | `workflow-complet-idee-film-ia-realiste` | Complete workflow to go from an idea to a realistic AI film |
 | 2026-04-07 | tutoriels | `comment-creer-ambiance-sombre-cinematique-avec-ia` | How to Create a Dark, Cinematic Mood with AI |
 | 2026-04-07 | tutoriels | `comment-simuler-objectif-anamorphique-generation-ia` | How to Simulate an Anamorphic Lens in AI Generation |
+| 2026-04-07 | tutoriels | `pourquoi-images-ia-manquent-contraste-comment-corriger` | Why Your AI Images Lack Contrast, and How to Fix It |
+| 2026-04-07 | actualite | `wan-27-video-decevant-kling-seedance` | WAN 2.7 is out, and it is disappointing: a real gap versus Kling 3 and Seedance 2 |
 | 2026-04-06 | tutoriels | `comment-creer-lumieres-naturelles-image-ia` | How to Create Natural Light in an AI Image |
 | 2026-04-06 | tutoriels | `comment-creer-portrait-ia-digne-film` | How to Create a Film-Worthy AI Portrait |
 | 2026-04-06 | tutoriels | `comment-generer-scene-realiste-profondeur-champ` | How to Generate a Realistic Scene with Depth of Field |
 | 2026-04-05 | tutoriels | `comment-ajouter-grain-cinema-image-ia` | How to Add Cinema Grain to an AI Image |
 | 2026-04-05 | tutoriels | `comment-ameliorer-texture-peau-image-ia` | How to Improve Skin Texture in an AI Image |
+| 2026-04-05 | tutoriels | `flux-vs-sdxl-quelle-ia-choisir-images-realistes` | Flux vs SDXL: Which AI to Choose for Realistic Images |
 | 2026-04-04 | tutoriels | `comment-controler-style-visuel-generation-ia` | How to Control Visual Style in an AI Generation |
 | 2026-04-04 | tutoriels | `comment-creer-univers-visuel-coherent-avec-ia` | How to Create a Consistent Visual World with AI |
 | 2026-04-03 | tutoriels | `comment-creer-scenes-coherentes-plusieurs-plans-ia` | How to Create Consistent Scenes with Several Shots in AI |
 | 2026-04-03 | tutoriels | `comment-ecrire-prompt-personnage-realiste-constant` | How to Write a Prompt for a Realistic, Consistent Character |
 | 2026-04-03 | tutoriels | `comment-eviter-visages-deformes-generation-ia` | How to Avoid Distorted Faces in AI Generation |
 | 2026-04-02 | tutoriels | `comment-decrire-lumiere-directeur-photo-prompt` | How to Describe Light Like a Director of Photography in a Prompt |
+| 2026-04-02 | tutoriels | `comment-utiliser-objectifs-camera-dans-prompt-ia` | How to Use Camera Lenses in an AI Prompt |
+| 2026-04-02 | tutoriels | `erreurs-prompt-qui-rendent-image-ia-artificielle` | The Prompt Mistakes That Make an AI Image Look Artificial |
 | 2026-04-01 | tutoriels | `comment-creer-pub-video-avec-ia-comme-agence-pro` | How to Create an AI Video Ad Like a Pro Agency |
 | 2026-04-01 | tutoriels | `comment-ecrire-prompt-cinematic-ultra-realiste-ia` | How to Write an Ultra-Realistic Cinematic Prompt for AI |
+| 2026-04-01 | tutoriels | `pourquoi-ton-prompt-ne-marche-pas-comment-corriger` | Why Your Prompt Does Not Work, and How to Fix It |
 | 2026-03-31 | tutoriels | `comment-ameliorer-realisme-mouvements-video-ia` | How to Improve Motion Realism in AI Video |
 | 2026-03-31 | tutoriels | `comment-ecrire-script-efficace-video-generee-par-ia` | How to Write an Effective Script for an AI-Generated Video |
 | 2026-03-31 | tutoriels | `comment-structurer-video-ia-comme-vrai-film` | How to Structure an AI Video Like a Real Film |
+| 2026-03-30 | tutoriels | `creer-court-metrage-100-ia-sans-camera-acteurs` | Creating a 100% AI Short Film With No Camera or Actors |
+| 2026-03-30 | tutoriels | `prompt-chatgpt` | ChatGPT Prompt: Essential, but What Is It? |
+| 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver: From Screenplay to Storyboard Without Losing the Film's Soul (Studio Guide) |
+| 2026-03-29 | tutoriels | `dzine-ia` | Dzine: the AI That Creates Consistent Characters and Animated Films |

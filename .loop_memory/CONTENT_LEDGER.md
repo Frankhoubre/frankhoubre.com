@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-21 — Pipeline IA de A à Z : de l'idée au plan de tournage en une journée
+- slug: pipeline-ia-script-storyboard-production-de-a-z
+- locale: fr
+- url: https://frankhoubre.com/blog/pipeline-ia-script-storyboard-production-de-a-z
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / end-to-end workflow
+- primary_keyword: pipeline IA script storyboard production
+- secondary_keywords: workflow IA production vidéo, prompt cinématique storyboard, pipeline IA créateur, de l'idée au tournage IA
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /outils/generateur-prompt-cinema, -> /outils/generateur-storyboard-pdf, -> /outils/calculateur-budget-production-ia
+- cta: ScreenWeaver natural bridge (workspace between writing and production)
+- cannibalization_notes: no existing end-to-end pipeline article tying all pillars together. Fills the "script to screen" gap identified in KEYWORD_MAP. Distinct from individual tool how-tos.
+- checker: pass (audit 0 err, build 417 pages)
+- published_commit: 0af03f0
+
+### 2026-06-21 — Google coupe Imagen et les modèles image Gemini preview : migration avant le 24 juin
+- slug: google-imagen-gemini-image-preview-depreciation-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/google-imagen-gemini-image-preview-depreciation-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / urgent migration guide
+- primary_keyword: Google Imagen Gemini image preview déprécié migration 2026
+- secondary_keywords: imagen-3.0 deprecated, gemini-3-pro-image-preview shutdown, Gemini API vidéo juin 2026, migrer Imagen Gemini
+- sources: ai.google.dev/gemini-api/docs/changelog, ai.google.dev/gemini-api/docs/deprecations, tokenmix.ai/blog/imagen-3-0-generate-002-deprecated-migration-guide-2026
+- internal_links: -> /outils/generateur-prompt-cinema, -> /outils/generateur-storyboard-pdf
+- cta: none
+- cannibalization_notes: no existing article on Gemini API deprecations. Distinct from Grok, Higgsfield, ElevenLabs deprecation articles.
+- checker: pass (1 err: multiple H1 from code comments -> fixed to ##, then 0 errors)
+- published_commit: 0af03f0
+
+### 2026-06-21 — Midjourney lance un scanner médical ultrasonique : pivot hardware ou feu d'artifice ?
+- slug: midjourney-medical-scanner-pivot-hardware-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/midjourney-medical-scanner-pivot-hardware-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / platform analysis
+- primary_keyword: Midjourney Medical scanner pivot hardware 2026
+- secondary_keywords: Midjourney scanner ultrasonique, Midjourney Medical V8.1, pivot hardware Midjourney créateurs, Midjourney Medical San Francisco
+- sources: bloomberg.com/news/articles/2026-06-18/ai-startup-midjourney-pivots-to-health-with-ultrasound-machine, midjourney.com/medical/blogpost, updates.midjourney.com/v8-1-is-now-the-default-model/, engadget.com Midjourney ultrasonic scanner
+- internal_links: -> /outils/generateur-storyboard-pdf, -> /outils/annuaire-generateurs-images-ia-gratuits
+- cta: none
+- cannibalization_notes: no existing Midjourney hardware/medical article. Distinct from midjourney-vs-dalle-3 (comparatif) and other tool news articles.
+- checker: pass (audit 0 err, build 417 pages)
+- published_commit: 0af03f0
+
 ### 2026-06-20 — Gérer les versions de ses projets vidéo IA : méthode concrète
 - slug: gerer-versions-projets-video-ia
 - locale: fr

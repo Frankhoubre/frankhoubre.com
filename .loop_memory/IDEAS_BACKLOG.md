@@ -14,10 +14,10 @@ re-check KEYWORD_MAP.md for cannibalization before writing.
 - [ ] Suno / Udio: writing a brief that gives usable song structure
 
 ### Pipeline / end-to-end
-- [ ] Script to screen with AI: full pipeline tying prompt generator +
-      storyboard PDF + budget calculator (natural ScreenWeaver bridge)
+- [x] Script to screen with AI: full pipeline tying prompt generator +
+      storyboard PDF + budget calculator — DONE 2026-06-21 (pipeline-ia-script-storyboard-production-de-a-z)
 - [ ] A repeatable 1-day AI ad workflow (brief -> board -> shots -> grade)
-- [ ] Version control for AI projects: naming, seeds, prompt logs
+- [x] Version control for AI projects — DONE 2026-06-20 (gerer-versions-projets-video-ia)
 
 ### Tool deep-dives (confirm none already exist first)
 - [ ] Practical Veo workflow for B-roll

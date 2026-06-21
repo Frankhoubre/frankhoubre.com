@@ -3,6 +3,14 @@
 Run `node .loop_scripts/seo_audit.mjs` each day. Log the summary, what was
 fixed, and what was deferred. Newest entry on top.
 
+## 2026-06-21 — Run 4 audit (3 new articles)
+
+Initial: **1 error** (multiple H1 in google-imagen article: `# Avant` / `# Après`
+inside python code block were detected as H1 tags by the static text-based audit).
+Fix: replaced `# Avant` / `# Après` with `## Avant` / `## Après` in the code block.
+Final: **0 errors**, ~408 warnings (thin-content news articles + banned phrases in EN
+translations = expected, not our content). Build PASS, 417 pages.
+
 ## 2026-06-17 — Fixed site-wide duplicate H1 (B3)
 
 Every FR article rendered 2 `<h1>` (hero title + body `# `). Fixed in

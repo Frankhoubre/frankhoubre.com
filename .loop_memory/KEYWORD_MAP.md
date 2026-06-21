@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 4 — 2026-06-21)
+
+- `Midjourney Medical scanner pivot hardware 2026` — FILLED: midjourney-medical-scanner-pivot-hardware-juin-2026
+- `Google Imagen Gemini image preview déprécié migration 2026` — FILLED: google-imagen-gemini-image-preview-depreciation-juin-2026
+- `pipeline IA script storyboard production de A à Z` — FILLED: pipeline-ia-script-storyboard-production-de-a-z
+
 ## USED (Run 3 — 2026-06-20)
 
 - `Grok Imagine Video 1.5 xAI génération vidéo IA` — FILLED: grok-imagine-video-1-5-xai-generation-video-ia
