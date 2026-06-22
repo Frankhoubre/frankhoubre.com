@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 5 — 2026-06-22)
+
+- `Seedance 2.0 Mini ByteDance vidéo rapide juin 2026` — FILLED: seedance-2-mini-bytedance-video-rapide-juin-2026
+- `Google Flow Veo 3.1 audio édition 2026` — FILLED: google-flow-veo-31-edition-audio-juin-2026
+- `erreurs anatomiques vidéo IA corps mains` — FILLED: corriger-erreurs-anatomiques-video-ia-corps-mains
+
 ## USED (Run 4 — 2026-06-21)
 
 - `Midjourney Medical scanner pivot hardware 2026` — FILLED: midjourney-medical-scanner-pivot-hardware-juin-2026

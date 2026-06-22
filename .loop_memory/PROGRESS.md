@@ -1,6 +1,45 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-21 (Run 4 — 3 articles published)
+## Last run: 2026-06-22 (Run 5 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-21 (batch 4: 3 articles).
+- WebSearch for real news in last 72h: found Dreamina Seedance 2.0 Mini launch
+  (ByteDance/CapCut, June 17, 2026, via Manila Times + digitalphablet.com + aijourn.com)
+  and Google Flow + Veo 3.1 update with audio on all features (blog.google).
+- Wrote 2 actualite + 1 evergreen in worktree loop/content-2026-06-22.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, queue-swap technique).
+  Note: script writes to main repo ROOT (not worktree), so images copied manually after generation.
+- SEO audit: 0 errors on new articles. Pre-existing warnings only (thin-content on news expected).
+- Build from worktree: PASS (419 pages, 3 new articles prerendered). Hard-linked node_modules.
+- Fast-forward merged loop/content-2026-06-22 into main, pushed origin/main (fa99c89).
+- CDN propagation: Vercel CDN cache held 404s from first check (08:12 UTC, before build finish).
+  New build confirmed via homepage cache date 08:31 UTC. Articles live once CDN revalidates.
+
+### Articles published this run
+1. `seedance-2-mini-bytedance-video-rapide-juin-2026` (actualite)
+2. `google-flow-veo-31-edition-audio-juin-2026` (actualite)
+3. `corriger-erreurs-anatomiques-video-ia-corps-mains` (evergreen, tutoriels)
+
+### Technical note this run
+- Image generation script (scripts/render_blog_queue_gemini.py) writes to main repo ROOT,
+  not the active worktree. Workaround: run script from worktree dir (it still writes to main),
+  then cp images from main to worktree before git add. This is the correct workflow.
+- CDN 404 caching: Vercel CDN caches 404 responses. If you check a new URL before the
+  new Vercel build finishes, you get a 404 that stays cached for ~30min. Avoid checking
+  new article URLs until 15-20min after push.
+
+### Next run should
+1. Set up fresh worktree for content work.
+2. Evergreen candidates: "best AI video for product ads" comparatif,
+   "delivering source files to clients for AI video" business article,
+   "vertical vs horizontal format for AI clips" format article.
+3. News to watch: ElevenLabs Music v2 developments, Runway Gen-5 announcements,
+   any Kling 3.1 update, Apple WWDC Siri/Gemini integration details.
+4. Check if new articles got EN translations (translation loop may handle).
+5. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-06-21 (Run 4 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-20 (batch 3: 3 articles).

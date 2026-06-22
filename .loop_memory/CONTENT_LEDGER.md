@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-22 — Erreurs anatomiques en vidéo IA : pourquoi les corps, mains et gestes se déforment
+- slug: corriger-erreurs-anatomiques-video-ia-corps-mains
+- locale: fr
+- url: https://frankhoubre.com/blog/corriger-erreurs-anatomiques-video-ia-corps-mains
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / troubleshooting
+- primary_keyword: erreurs anatomiques vidéo IA corps mains
+- secondary_keywords: mains cassées vidéo IA, déformation corps IA video, corriger artefacts anatomiques IA, mains déformées génération vidéo
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /blog/inpainting-local-retoucher-yeux-mains-ia, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: inpainting-local-retoucher-yeux-mains-ia covers static image inpainting; this covers motion/video temporal deformation. comment-eviter-visages-deformes covers faces in images. This is video-specific and body/hands focused. Distinct intent.
+- checker: pass (audit 0 err, build 419 pages)
+- published_commit: fa99c89
+
+### 2026-06-22 — Google Flow et Veo 3.1 : l'audio arrive sur toutes les fonctions
+- slug: google-flow-veo-31-edition-audio-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/google-flow-veo-31-edition-audio-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Google Flow Veo 3.1 audio édition 2026
+- secondary_keywords: Veo 3.1 audio Ingredients to Video, Google Flow nouvelles fonctions, Frames to Video audio natif, Gemini Omni Flash Flow
+- sources: blog.google/innovation-and-ai/products/veo-updates-flow/, venturebeat.com Veo 3.1 Flow update
+- internal_links: -> /outils/generateur-prompt-cinema, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: google-veo-3-brief-realisateur-plan-sequence covers Veo 3 workflow/brief. This is a news article on the specific Veo 3.1/Flow update with audio on all features. Different intent (news vs how-to).
+- checker: pass (audit 0 err, build 419 pages)
+- published_commit: fa99c89
+
+### 2026-06-22 — Seedance 2.0 Mini : ByteDance lance un modèle vidéo 2x plus rapide et moitié moins cher
+- slug: seedance-2-mini-bytedance-video-rapide-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/seedance-2-mini-bytedance-video-rapide-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Seedance 2.0 Mini ByteDance vidéo rapide juin 2026
+- secondary_keywords: Dreamina Seedance Mini, CapCut vidéo IA rapide, Seedance 2.0 Mini vs Fast, Seedance Mini prix
+- sources: manilatimes.net/2026/06/20/tmt-newswire/plentisoft/dreamina-seedance-20-mini..., aijourn.com dreamina-launches-seedance-2-0-4k-and-seedance-2-0-mini, atlascloud.ai seedance-2.0-mini-overview
+- internal_links: -> /outils/annuaire-generateurs-images-ia-gratuits, -> /blog/grok-imagine-video-1-5-xai-generation-video-ia
+- cta: none
+- cannibalization_notes: wan-27-video-decevant-kling-seedance covers Seedance 2.0 in comparison. workflow-complet-seedance-2-rendu-cinema covers workflow. comment-obtenir-rendu-cinema-avec-seedance-2 covers quality settings. This is a dated news/analysis on the specific Mini variant launch. Distinct.
+- checker: pass (audit 0 err, build 419 pages)
+- published_commit: fa99c89
+
 ### 2026-06-21 — Pipeline IA de A à Z : de l'idée au plan de tournage en une journée
 - slug: pipeline-ia-script-storyboard-production-de-a-z
 - locale: fr
