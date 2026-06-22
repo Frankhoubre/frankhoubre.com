@@ -103,7 +103,7 @@ const linkGroups: LinkGroup[] = [
   {
     title: "Site",
     links: [
-      { label: "Rejoindre AI Studios (7 jours d'essai gratuit)", href: "https://www.skool.com/ai-studios", external: true },
+      { label: "Rejoindre AI Studios", href: "https://www.skool.com/ai-studios", external: true },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
       { label: "Support", href: "mailto:hello@businessdynamite.xyz", external: true },

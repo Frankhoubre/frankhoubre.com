@@ -227,7 +227,7 @@ export default function HomePage() {
                     rel="noopener noreferrer"
                     className="ds-cta-primary ds-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                   >
-                    Formation gratuite 7 jours
+                    Rejoindre AI Studios
                   </a>
                   <Link
                     href="/liens"
