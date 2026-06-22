@@ -22,6 +22,10 @@
 3. `corriger-erreurs-anatomiques-video-ia-corps-mains` (evergreen, tutoriels)
 
 ### Technical note this run
+- CRITICAL FORMAT BUG FIXED: blog.ts getSlugs() reads ONLY flat files (.md / .mdx)
+  in content/blog/. It does NOT recurse into subdirectories. Articles created as
+  dir/index.mdx are INVISIBLE to the site. Always use content/blog/slug.md format.
+  Never content/blog/slug/index.mdx. (Fix commit 6e66a82 renamed all 3 articles.)
 - Image generation script (scripts/render_blog_queue_gemini.py) writes to main repo ROOT,
   not the active worktree. Workaround: run script from worktree dir (it still writes to main),
   then cp images from main to worktree before git add. This is the correct workflow.

@@ -33,8 +33,13 @@
 - Pas de tiret cadratin dans aucun article
 
 ## Note technique
-- CDN Vercel : 404 mis en cache depuis 08:12 UTC (requête trop tôt avant fin du build).
-  Les articles seront live une fois que le CDN revalide. Eviter de tester les nouvelles
-  URLs dans les 15 premières minutes après push.
-- Script Imagen écrit dans le repo principal (ROOT), pas dans le worktree.
-  Workflow : copier les images du repo principal vers le worktree avant git add.
+- FORMAT BUG FIXE : Articles initialement en dir/index.mdx. blog.ts getSlugs() ne lit
+  que les fichiers .md/.mdx plats. Fix appliqué : rename en slug.md (commit 6e66a82).
+  REGLE pour la suite : toujours créer les articles au format content/blog/slug.md
+- Script Imagen écrit dans ROOT (pas le worktree). Copier images avant git add.
+- CDN Vercel : éviter de vérifier nouvelles URLs dans les 15min après push.
+
+## Verification live (apres fix format)
+- seedance-2-mini-bytedance-video-rapide-juin-2026 : 200 OK
+- google-flow-veo-31-edition-audio-juin-2026 : 200 OK
+- corriger-erreurs-anatomiques-video-ia-corps-mains : 200 OK
