@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-23 — Quel outil IA vidéo choisir pour une publicité produit ? Comparatif par cas d'usage
+- slug: meilleur-outil-ia-video-publicite-produit-comparatif
+- locale: fr
+- url: https://frankhoubre.com/blog/meilleur-outil-ia-video-publicite-produit-comparatif
+- category: comparatifs
+- type: evergreen
+- search_intent: comparison / commercial
+- primary_keyword: meilleur outil IA vidéo publicité produit
+- secondary_keywords: Runway vs Kling publicité, IA vidéo pub produit, vidéo IA cohérence produit, comparatif outils vidéo IA 2026
+- sources: n/a (craft/evergreen, method + verified tool specs)
+- internal_links: -> /blog/clause-contrat-client-contenu-genere-ia, -> /outils/calculateur-budget-production-ia, -> /blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film
+- cta: calculateur budget production IA (soft)
+- cannibalization_notes: meilleurs-outils-ia-video is generic top-list; pika-labs-vs-runway-choisir-moteur-plan-action is Pika vs Runway only; comment-creer-pub-video-avec-ia-comme-agence-pro covers workflow, not tool selection. This is job-to-be-done comparison for product ads specifically. Distinct.
+- checker: pass (audit 0 err, build 427 pages)
+- published_commit: 63f3ce5
+
+### 2026-06-23 — MiniMax lance Hub : une plateforme vidéo IA tout-en-un présentée au Festival de Shanghai
+- slug: minimax-hub-plateforme-video-ia-shanghai-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/minimax-hub-plateforme-video-ia-shanghai-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / platform analysis
+- primary_keyword: MiniMax Hub plateforme vidéo IA Shanghai 2026
+- secondary_keywords: MiniMax Hub tout-en-un, Hailuo MiniMax nouvelles fonctions, agent IA production vidéo, plateforme unifiée vidéo IA
+- sources: variety.com/2026/film/festivals/minimax-hub-ai-video-generator-shanghai-film-festival-1236781901/
+- internal_links: -> /blog/hailuo-minimax-workflow-court-metrage-realiste, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: hailuo-minimax-workflow-court-metrage-realiste covers workflow tutorial; this is a news/analysis on the Hub platform launch at Shanghai festival. Different intent (news vs how-to).
+- checker: pass (audit 0 err, build 427 pages)
+- published_commit: 63f3ce5
+
+### 2026-06-23 — Lionsgate prend une part dans Runway AI pour créer des séries courtes à partir de ses franchises
+- slug: lionsgate-runway-ai-series-courtes-ip-hollywood-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/lionsgate-runway-ai-series-courtes-ip-hollywood-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Lionsgate Runway AI séries courtes franchises Hollywood 2026
+- secondary_keywords: Runway AI Lionsgate partenariat, John Wick IA séries, studio hollywoodien IA vidéo, Runway Gen-4.5 production
+- sources: variety.com/2026/film/news/lionsgate-equity-stake-runway-ai-franchises-for-ai-show-1236775590/, thewrap.com/creative-content/movies/lionsgate-runway-ai-short-films-franchises-ip/
+- internal_links: -> /blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: tutoriel-runway-gen-3-animer-image-fixe-plan-film covers Runway workflow how-to; pika-labs-vs-runway is tool comparison. This is a news/analysis on the Lionsgate equity stake and IP-to-series program. Different intent.
+- checker: pass (audit 0 err, build 427 pages)
+- published_commit: 63f3ce5
+
 ### 2026-06-22 — Erreurs anatomiques en vidéo IA : pourquoi les corps, mains et gestes se déforment
 - slug: corriger-erreurs-anatomiques-video-ia-corps-mains
 - locale: fr

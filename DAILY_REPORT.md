@@ -1,45 +1,38 @@
-# DAILY_REPORT — 2026-06-22 (Run 5)
+# DAILY_REPORT — 2026-06-23 (Run 6)
 
-## Status : SUCCES
+## Summary
 
-## Articles publiés (3)
+3 articles published. Build PASS (427 pages). Commit 63f3ce5. Pushed origin/main.
 
-1. **seedance-2-mini-bytedance-video-rapide-juin-2026** (actualite)
-   - Dreamina Seedance 2.0 Mini lancé le 17 juin 2026 par ByteDance
-   - 2x plus rapide que Fast, moitié prix, disponible via CapCut/Dreamina
-   - Sources: manilatimes.net (20 juin 2026), aijourn.com, atlascloud.ai
+## Articles
 
-2. **google-flow-veo-31-edition-audio-juin-2026** (actualite)
-   - Google Flow : audio natif sur Ingredients to Video, Frames to Video, Extend
-   - Nouveaux outils d'édition précise (insertion/suppression d'éléments)
-   - Sources: blog.google/innovation-and-ai/products/veo-updates-flow/, VentureBeat
+### 1. lionsgate-runway-ai-series-courtes-ip-hollywood-2026 (actualite)
+- **Title:** Lionsgate prend une part dans Runway AI pour créer des séries courtes à partir de ses franchises
+- **Sources:** Variety, The Wrap
+- **Angle:** Studio hollywoodien entre au capital de Runway, programme de séries épisodiques courtes à partir des franchises (John Wick, Hunger Games, Twilight, Saw). Implications pour les créateurs indépendants.
+- **Word count:** ~1262 words
+- **Internal links:** tutoriel-runway-gen-3-animer-image-fixe-plan-film, pipeline-ia-script-storyboard-production-de-a-z
 
-3. **corriger-erreurs-anatomiques-video-ia-corps-mains** (tutoriels, evergreen)
-   - Pourquoi corps, mains, doigts se déforment en vidéo IA en mouvement
-   - 6 techniques concrètes : cadrage, prompts, clips courts, pose neutre, regeneration
-   - Distinct de inpainting-local-retoucher-yeux-mains-ia (images fixes) et
-     comment-eviter-visages-deformes (visages en images)
+### 2. minimax-hub-plateforme-video-ia-shanghai-juin-2026 (actualite)
+- **Title:** MiniMax lance Hub : une plateforme vidéo IA tout-en-un présentée au Festival de Shanghai
+- **Sources:** Variety (June 15, 2026 - Shanghai Film Festival)
+- **Angle:** Hub = plateforme unifiée image + vidéo + voix + musique + montage avec agent IA coordinateur. Human-in-the-loop design. Collaboration avec AI Backlot.
+- **Word count:** ~1326 words
+- **Internal links:** hailuo-minimax-workflow-court-metrage-realiste, pipeline-ia-script-storyboard-production-de-a-z
 
-## Build
-- 419 pages statiques (PASS)
-- Commit: fa99c89
-- Push: origin/main OK
+### 3. meilleur-outil-ia-video-publicite-produit-comparatif (comparatifs/evergreen)
+- **Title:** Quel outil IA vidéo choisir pour une publicité produit ? Comparatif par cas d'usage
+- **Angle:** Comparatif job-to-be-done (pub produit) entre Runway Gen-4.5, Kling 3.0, Veo 3.1, Luma Ray 2 et Seedance 2.0 Fast. Axé cohérence produit, formats, budgets. Gap KEYWORD_MAP confirmé.
+- **Word count:** ~1800 words
+- **Internal links:** clause-contrat-client-contenu-genere-ia, calculateur-budget-production-ia, tutoriel-runway-gen-3-animer-image-fixe-plan-film
 
-## Images
-- 3 hero images générées via Gemini Imagen (~570-604KB chacune)
+## Pipeline
 
-## SEO audit
-- 0 erreurs sur les nouveaux articles
-- Pas de tiret cadratin dans aucun article
+- SEO audit: 0 errors. Style/thin-content warnings pre-existing, none on new articles.
+- Build: PASS 427 pages (up from 419, +3 articles +5 EN translations from parallel loop)
+- Images: 3 hero.webp generated via Imagen API (queue-swap technique), 550-605 KB each
+- Commit: 63f3ce5 on worktree-agent-adb79a3f, fast-forward merged to main, pushed
 
-## Note technique
-- FORMAT BUG FIXE : Articles initialement en dir/index.mdx. blog.ts getSlugs() ne lit
-  que les fichiers .md/.mdx plats. Fix appliqué : rename en slug.md (commit 6e66a82).
-  REGLE pour la suite : toujours créer les articles au format content/blog/slug.md
-- Script Imagen écrit dans ROOT (pas le worktree). Copier images avant git add.
-- CDN Vercel : éviter de vérifier nouvelles URLs dans les 15min après push.
+## Issues
 
-## Verification live (apres fix format)
-- seedance-2-mini-bytedance-video-rapide-juin-2026 : 200 OK
-- google-flow-veo-31-edition-audio-juin-2026 : 200 OK
-- corriger-erreurs-anatomiques-video-ia-corps-mains : 200 OK
+None. Clean run.

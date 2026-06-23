@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 6 — 2026-06-23)
+
+- `Lionsgate Runway AI séries courtes franchises Hollywood 2026` — FILLED: lionsgate-runway-ai-series-courtes-ip-hollywood-2026
+- `MiniMax Hub plateforme vidéo IA Shanghai 2026` — FILLED: minimax-hub-plateforme-video-ia-shanghai-juin-2026
+- `meilleur outil IA vidéo publicité produit` — FILLED: meilleur-outil-ia-video-publicite-produit-comparatif
+
 ## USED (Run 5 — 2026-06-22)
 
 - `Seedance 2.0 Mini ByteDance vidéo rapide juin 2026` — FILLED: seedance-2-mini-bytedance-video-rapide-juin-2026

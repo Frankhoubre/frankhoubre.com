@@ -1,6 +1,42 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-22 (Run 5 — 3 articles published)
+## Last run: 2026-06-23 (Run 6 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-22 (batch 5: 3 articles).
+- WebSearch for real news in last 72h: found Lionsgate equity stake in Runway AI
+  (Variety, June 2026) and MiniMax Hub platform launch at Shanghai Film Festival
+  (Variety, June 15, 2026).
+- Wrote 2 actualite + 1 comparatif/evergreen in worktree agent-adb79a3f.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, queue-swap technique).
+  Images copied from main repo to worktree before git add.
+- SEO audit: 0 errors on new articles. Pre-existing style/thin-content warnings only (news expected).
+- Build from worktree: PASS (427 pages, 3 new articles prerendered). Hard-linked node_modules.
+- Fast-forward merged worktree-agent-adb79a3f into main, pushed origin/main (63f3ce5).
+
+### Articles published this run
+1. `lionsgate-runway-ai-series-courtes-ip-hollywood-2026` (actualite)
+2. `minimax-hub-plateforme-video-ia-shanghai-juin-2026` (actualite)
+3. `meilleur-outil-ia-video-publicite-produit-comparatif` (comparatifs/evergreen)
+
+### Technical note this run
+- Worktree was agent-adb79a3f (pre-existing from the run setup). Works correctly.
+- Images generated in main repo, then cleared from main repo before merge to avoid
+  untracked file conflict (same pattern as previous runs).
+- Build went 419 -> 427 pages (+3 articles +5 EN translations from translation loop).
+
+### Next run should
+1. Set up fresh worktree for content work.
+2. Evergreen candidates: "delivering source files to client for AI video project" (business),
+   "vertical vs horizontal format for AI clips" (may be covered - check first),
+   "AI video for talking-head presentations" comparatif,
+   "quote template for AI video projects" (scope + devis).
+3. News to watch: Runway Gen-5 announcements, ElevenLabs new model releases,
+   Sora ChatGPT integration update, any Kling 3.1 update, Apple Intelligence updates.
+4. Check if new articles got EN translations (translation loop may handle).
+5. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-06-22 (Run 5 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-21 (batch 4: 3 articles).
