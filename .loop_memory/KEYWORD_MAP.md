@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 7 — 2026-06-25)
+
+- `Sora API arrêt septembre 2026 alternatives` — FILLED: sora-api-arret-septembre-2026-alternatives-createurs
+- `Anthropic IPO valorisation 965 milliards 2026` — FILLED: anthropic-ipo-confidential-965-milliards-valorisation-2026
+- `livrer fichiers sources projet vidéo IA client` — FILLED: livrer-fichiers-sources-projet-video-ia-client
+
 ## USED (Run 6 — 2026-06-23)
 
 - `Lionsgate Runway AI séries courtes franchises Hollywood 2026` — FILLED: lionsgate-runway-ai-series-courtes-ip-hollywood-2026

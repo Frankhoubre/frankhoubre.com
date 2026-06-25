@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-25 — Livrer les fichiers sources d'un projet vidéo IA : guide pratique
+- slug: livrer-fichiers-sources-projet-video-ia-client
+- locale: fr
+- url: https://frankhoubre.com/blog/livrer-fichiers-sources-projet-video-ia-client
+- category: business
+- type: evergreen
+- search_intent: how-to / practical business
+- primary_keyword: livrer fichiers sources projet vidéo IA client
+- secondary_keywords: sources vidéo IA client, prompts seeds livraison IA, fichiers montage IA client, propriété intellectuelle projet vidéo IA
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /blog/clause-contrat-client-contenu-genere-ia, -> /outils/calculateur-budget-production-ia
+- cta: calculateur budget production IA (soft)
+- cannibalization_notes: clause-contrat-client-contenu-genere-ia covers contract clauses; gerer-versions-projets-video-ia covers versioning. This is specifically about the delivery package content and what to include. Distinct intent (livraison vs versioning vs contrat).
+- checker: pass (audit 0 err, build 446 pages)
+- published_commit: cb0a08b
+
+### 2026-06-25 — Anthropic IPO confidentielle : 965 milliards de valorisation, ce que ça change
+- slug: anthropic-ipo-confidential-965-milliards-valorisation-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/anthropic-ipo-confidential-965-milliards-valorisation-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Anthropic IPO valorisation 965 milliards 2026
+- secondary_keywords: Anthropic S-1 confidentiel SEC, Anthropic Claude Code croissance, Anthropic vs OpenAI valorisation, Google chercheurs Anthropic départs
+- sources: anthropic.com/news/confidential-draft-s1-sec, cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus, techcrunch.com/2026/06/01/anthropic-files-to-go-public/, fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/, bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/higgsfield-creative-os-claude-adobe-juin-2026
+- cta: none
+- cannibalization_notes: no existing Anthropic IPO article. Distinct from all other actualite articles (different company, different event). Checked CONTENT_INDEX.
+- checker: pass (audit 0 err, build 446 pages)
+- published_commit: cb0a08b
+
+### 2026-06-25 — Sora ferme en septembre 2026 : alternatives et migration
+- slug: sora-api-arret-septembre-2026-alternatives-createurs
+- locale: fr
+- url: https://frankhoubre.com/blog/sora-api-arret-septembre-2026-alternatives-createurs
+- category: actualite
+- type: news
+- search_intent: news / urgent migration guide
+- primary_keyword: Sora API arrêt septembre 2026 alternatives
+- secondary_keywords: Sora discontinué créateurs, alternatives Sora vidéo IA, migrer de Sora Kling Runway, Sora API fermeture septembre 24 2026
+- sources: help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation, techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/, atlascloud.ai/blog/guides/sora-is-dead-best-sora-alternatives-after-the-openai-sora-shutdown-in-2026
+- internal_links: -> /blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: no existing Sora shutdown article. Distinct from all Runway/Kling how-to articles. meilleur-outil-ia-video-publicite-produit-comparatif covers tool selection not shutdown/migration. Distinct intent.
+- checker: pass (audit 0 err, build 446 pages)
+- published_commit: cb0a08b
+
 ### 2026-06-23 — Quel outil IA vidéo choisir pour une publicité produit ? Comparatif par cas d'usage
 - slug: meilleur-outil-ia-video-publicite-produit-comparatif
 - locale: fr

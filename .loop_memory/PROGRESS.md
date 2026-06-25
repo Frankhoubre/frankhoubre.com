@@ -1,6 +1,45 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-23 (Run 6 — 3 articles published)
+## Last run: 2026-06-25 (Run 7 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-23 (batch 6: 3 articles).
+- WebSearch for real news in last 72h: found Sora API shutdown (September 24, 2026 confirmed
+  via OpenAI Help Center + TechCrunch) and Anthropic confidential IPO S-1 filing (June 1, 2026
+  via Anthropic.com official + CNBC + TechCrunch + Fortune at $965B valuation).
+- Wrote 2 actualite + 1 business/evergreen directly in main working tree (agent-a1ee818d).
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, queue format
+  with dest/prompt fields). Images generated to main repo public/ correctly.
+- SEO audit: 0 errors. Title/excerpt warnings fixed on 2 articles. Word depth warnings on
+  news articles are expected (STYLE_GUIDE: 900-1500 acceptable for fast news).
+- Build: PASS (446 pages, 3 new articles prerendered, up from 427).
+- Staged explicit paths only (3 .md + 3 hero.webp), committed cb0a08b, pushed origin/main.
+
+### Articles published this run
+1. `sora-api-arret-septembre-2026-alternatives-createurs` (actualite)
+2. `anthropic-ipo-confidential-965-milliards-valorisation-2026` (actualite)
+3. `livrer-fichiers-sources-projet-video-ia-client` (business/evergreen)
+
+### Technical note this run
+- Working tree: agent-a1ee818d (current worktree). Articles committed directly.
+- Image generation: tmp-new-articles-queue.json with dest/prompt format (not hero/workflow_1/2
+  format). The render_blog_queue_gemini.py uses {dest, prompt, slug} format. Confirmed correct.
+- The tmp-blog-local-stills-prompts.json uses a different format (hero/workflow_1/workflow_2)
+  and goes through a different pipeline. Don't confuse the two.
+- Build went 427 -> 446 pages (+3 articles +16 EN translations from translation loop).
+
+### Next run should
+1. Set up fresh worktree for content work if translation loop is active.
+2. Evergreen candidates: "quote template for AI video projects" (business, scope + devis),
+   "vertical vs horizontal format for AI clips" (confirm no cannibalization first),
+   "AI video for talking-head presentations" comparatif.
+3. News to watch: Apple iOS 27 beta developer releases, Runway Gen-5 announcements,
+   ElevenLabs new model releases, any Kling 3.1 update, Anthropic IPO timeline updates.
+4. Check if new articles got EN translations (translation loop may handle).
+5. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (avoid checking < 15min
+   after push due to CDN 404 caching behavior).
+
+## Previous run: 2026-06-23 (Run 6 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-22 (batch 5: 3 articles).
