@@ -1,0 +1,17 @@
+[
+  {
+    "dest": "/images/blog/openai-broadcom-jalapeno-chip-inference-ia-2026/hero.webp",
+    "prompt": "Article theme: OpenAI et Broadcom dévoilent Jalapeño, leur premier chip IA dédié à l'inférence LLM. Context: Puce ASIC gravée en 3nm sur TSMC, huit stacks HBM, développée en 9 mois, promettant 50% d'économies sur l'inférence vs GPU Nvidia. Visual focus: Macro cinématique d'une puce électronique de dernière génération sur un circuit imprimé, lumière froide bleue-blanche, bokeh de fond avec salle blanche de semiconducteurs. Cinematic editorial photography, 35mm photochemical film look, subtle halation, natural lens imperfections, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "openai-broadcom-jalapeno-chip-inference-ia-2026"
+  },
+  {
+    "dest": "/images/blog/google-a24-partenariat-ia-outils-cinema-2026/hero.webp",
+    "prompt": "Article theme: Google investit 75M$ dans A24 pour développer des outils IA dédiés au cinéma indépendant. Context: Partenariat de recherche DeepMind et A24, développement de storyboards IA et outils de préviz pour cinéastes, sans cession de contenu. Visual focus: Réalisateur de cinéma en train d'examiner un storyboard dessiné à la main dans une salle de préproduction sombre, lumière chaude de bureau, photogrammes épinglés sur un tableau de liège derrière lui. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary handheld still frame, warm tungsten light, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "google-a24-partenariat-ia-outils-cinema-2026"
+  },
+  {
+    "dest": "/images/blog/video-ia-talking-head-presentations-quel-outil-choisir/hero.webp",
+    "prompt": "Article theme: Comparatif des outils vidéo IA pour les présentations talking-head en 2026 (HeyGen, Synthesia, D-ID). Context: Un présentateur professionnel face caméra dans un studio épuré, lumière trois points, fond neutre sombre, cadre serré sur le visage et les épaules. Visual focus: Portrait cinématique d'un présentateur en studio de podcasting, lumière latérale douce et naturelle, bokeh léger sur le fond, expression concentrée et naturelle. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "video-ia-talking-head-presentations-quel-outil-choisir"
+  }
+]
