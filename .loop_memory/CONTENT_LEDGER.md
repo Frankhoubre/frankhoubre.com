@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-26 — Vidéo IA pour les présentations talking-head : quel outil choisir ?
+- slug: video-ia-talking-head-presentations-quel-outil-choisir
+- locale: fr
+- url: https://frankhoubre.com/blog/video-ia-talking-head-presentations-quel-outil-choisir
+- category: comparatifs
+- type: evergreen
+- search_intent: comparison / commercial
+- primary_keyword: vidéo IA talking-head présentations outil choisir
+- secondary_keywords: HeyGen vs Synthesia, avatar IA formation, talking-head IA 2026, D-ID présentation vidéo IA, clone vidéo IA e-learning
+- sources: n/a (craft/evergreen, method-based, verified tool specs)
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /outils/calculateur-budget-production-ia
+- cta: calculateur budget production IA (soft)
+- cannibalization_notes: produire-variantes-verticales-reels-shorts-ia covers format adaptation (16:9->9:16); creer-avatar-parlant-videos-formation-heygen covers HeyGen tutorial only. This is a job-to-be-done comparatif across all talking-head tools by use case. Distinct intent.
+- checker: pass (audit 0 err, build 451 pages)
+- published_commit: 2398a4d
+
+### 2026-06-26 — Google investit 75M$ dans A24 pour des outils IA dédiés au cinéma
+- slug: google-a24-partenariat-ia-outils-cinema-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/google-a24-partenariat-ia-outils-cinema-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Google A24 partenariat IA outils cinéma 2026
+- secondary_keywords: Google DeepMind A24 storyboard IA, A24 outils IA cinéastes, partenariat Hollywood IA, storyboard IA réalisateurs
+- sources: variety.com/2026/film/news/google-a24-ai-filmmaking-tools-1236787297/, deadline.com/2026/06/google-a24-partnership-ai-filmmaking-tools-1236963944/, indiewire.com/news/analysis/a24-google-deepmind-workflow-ai-1235201651/, hollywoodreporter.com/business/digital/a24-google-deepmind-ai-venture-backrooms-1236627228/, siliconangle.com/2026/06/22/google-forms-research-partnership-a24-films-thats-focused-on-ai-filmmaking-tools/
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/meilleur-outil-ia-video-publicite-produit-comparatif
+- cta: none
+- cannibalization_notes: no existing Google-A24 or A24 AI article. google-flow-veo-31-edition-audio-juin-2026 covers Google video tools update (news); this is R&D partnership news. metiers-audiovisuel-ia-menaces-transformation-avis covers opinion. Distinct.
+- checker: pass (audit 0 err, build 451 pages)
+- published_commit: 2398a4d
+
+### 2026-06-26 — OpenAI et Broadcom dévoilent Jalapeño : leur premier chip IA dédié à l'inférence
+- slug: openai-broadcom-jalapeno-chip-inference-ia-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/openai-broadcom-jalapeno-chip-inference-ia-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: OpenAI Broadcom Jalapeño chip IA inférence 2026
+- secondary_keywords: Jalapeño ASIC LLM inference, OpenAI chip Broadcom 50% économies, chip IA inférence TSMC 3nm, alternative Nvidia IA
+- sources: techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/, venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models, cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html, bloomberg.com/news/articles/2026-06-24/openai-and-broadcom-unveil-ai-chip-to-run-models-faster-cheaper, tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor-openais-first-chip-is-a-massive-reticle-sized-asic-built-in-an-ultra-fast-nine-month-development-cycle
+- internal_links: (no direct link in article - news/analysis standalone)
+- cta: none
+- cannibalization_notes: no existing article on AI chips or hardware inference. anthropic-ipo-confidential covers industry finance angle; this is hardware/infrastructure. Distinct.
+- checker: pass (audit 0 err, build 451 pages)
+- published_commit: 2398a4d
+
 ### 2026-06-25 — Livrer les fichiers sources d'un projet vidéo IA : guide pratique
 - slug: livrer-fichiers-sources-projet-video-ia-client
 - locale: fr

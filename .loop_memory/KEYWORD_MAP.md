@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 8 — 2026-06-26)
+
+- `OpenAI Broadcom Jalapeño chip IA inférence 2026` — FILLED: openai-broadcom-jalapeno-chip-inference-ia-2026
+- `Google A24 partenariat IA outils cinéma 2026` — FILLED: google-a24-partenariat-ia-outils-cinema-2026
+- `vidéo IA talking-head présentations outil choisir` — FILLED: video-ia-talking-head-presentations-quel-outil-choisir
+
 ## USED (Run 7 — 2026-06-25)
 
 - `Sora API arrêt septembre 2026 alternatives` — FILLED: sora-api-arret-septembre-2026-alternatives-createurs

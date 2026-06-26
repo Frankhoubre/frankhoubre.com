@@ -1,6 +1,38 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-25 (Run 7 — 3 articles published)
+## Last run: 2026-06-26 (Run 8 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-25 (batch 7: 3 articles).
+- WebSearch for real news in last 72h: found OpenAI/Broadcom Jalapeño chip reveal (June 24, 2026
+  via TechCrunch, CNBC, VentureBeat, Bloomberg, Tom's Hardware) and Google $75M investment
+  in A24 for AI filmmaking tools (June 22, 2026 via Variety, Deadline, IndieWire, HollywoodReporter).
+- Wrote 2 actualite + 1 comparatifs/evergreen directly in main working tree (agent-a4a11153).
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, tmp-new-articles-queue.json).
+- SEO audit: 0 errors. Pre-existing warnings only (thin-content on news expected per STYLE_GUIDE).
+- Build: PASS (451 pages, 3 new articles prerendered, up from 446).
+- Staged explicit paths only (3 .md + 3 hero.webp + queue file), committed 2398a4d, pushed origin/main.
+
+### Articles published this run
+1. `openai-broadcom-jalapeno-chip-inference-ia-2026` (actualite)
+2. `google-a24-partenariat-ia-outils-cinema-2026` (actualite)
+3. `video-ia-talking-head-presentations-quel-outil-choisir` (comparatifs/evergreen)
+
+### Technical note this run
+- Working tree: agent-a4a11153 (current worktree). Articles committed directly.
+- Image generation: tmp-new-articles-queue.json with dest/prompt format. Confirmed correct.
+- Build went 446 -> 451 pages (+3 articles +2 EN translations from translation loop).
+
+### Next run should
+1. Evergreen candidates: "devis et template de quote pour projet vidéo IA client" (business),
+   "B-roll IA : créer des plans de coupe convaincants" (tutoriels),
+   "présenter un projet vidéo IA à un client non-tech" (business).
+2. News to watch: OpenAI Jalapeño deployment updates, Apple iOS 27 AI features,
+   Runway Gen-5 announcements, ElevenLabs new model releases, Anthropic IPO timeline.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-06-25 (Run 7 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-23 (batch 6: 3 articles).

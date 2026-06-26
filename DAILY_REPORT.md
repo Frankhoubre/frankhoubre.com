@@ -1,3 +1,35 @@
+# DAILY_REPORT — 2026-06-26 (Run 8)
+
+## Summary
+
+3 articles published. Build PASS (451 pages). Commit 2398a4d. Pushed origin/main.
+
+## News research
+
+WebSearch for AI news June 23-26, 2026. Two verified stories:
+
+1. **OpenAI/Broadcom Jalapeño chip** (June 24, 2026) - TechCrunch, CNBC, VentureBeat, Bloomberg, Tom's Hardware. First OpenAI ASIC, 9-month dev cycle, 3nm TSMC, 8 HBM stacks, 50% claimed cost vs Nvidia (self-reported). Inference-only. Deploy end 2026.
+
+2. **Google $75M investment in A24 for AI filmmaking tools** (June 22, 2026) - Variety, Deadline, IndieWire, Hollywood Reporter. R&D partnership, no IP/content deal, no access to A24 data library. Focus on storyboarding/previz tools for filmmakers.
+
+## Articles
+
+1. `openai-broadcom-jalapeno-chip-inference-ia-2026` (actualite, ~1273w)
+2. `google-a24-partenariat-ia-outils-cinema-2026` (actualite, ~1200w)
+3. `video-ia-talking-head-presentations-quel-outil-choisir` (comparatifs, ~2100w)
+
+## Technical
+
+- SEO audit: 0 errors
+- Build: PASS, 451 pages (was 446)
+- Commit: 2398a4d, pushed origin/main OK
+
+## Issues
+
+None. Clean run.
+
+---
+
 # DAILY_REPORT — 2026-06-25 (Run 7)
 
 ## Summary
