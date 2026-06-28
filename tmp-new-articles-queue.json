@@ -1,17 +1,17 @@
 [
   {
-    "dest": "/images/blog/openai-broadcom-jalapeno-chip-inference-ia-2026/hero.webp",
-    "prompt": "Article theme: OpenAI et Broadcom dévoilent Jalapeño, leur premier chip IA dédié à l'inférence LLM. Context: Puce ASIC gravée en 3nm sur TSMC, huit stacks HBM, développée en 9 mois, promettant 50% d'économies sur l'inférence vs GPU Nvidia. Visual focus: Macro cinématique d'une puce électronique de dernière génération sur un circuit imprimé, lumière froide bleue-blanche, bokeh de fond avec salle blanche de semiconducteurs. Cinematic editorial photography, 35mm photochemical film look, subtle halation, natural lens imperfections, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "openai-broadcom-jalapeno-chip-inference-ia-2026"
+    "dest": "/images/blog/anthropic-mythos-5-reautorisation-cybersecurite-juin-2026/hero.webp",
+    "prompt": "Article theme: Anthropic Mythos 5 reauthorized by US government after two-week national security block. Context: Powerful AI cybersecurity model found vulnerabilities in classified government systems, then blocked June 12, partially unblocked June 26 for 100+ trusted US organizations. Visual focus: Close-up of a glowing neural network circuit pattern inside a darkened secure server room, deep blue and electric teal accent lighting, subtle red warning light in background, cinematic tension. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "anthropic-mythos-5-reautorisation-cybersecurite-juin-2026"
   },
   {
-    "dest": "/images/blog/google-a24-partenariat-ia-outils-cinema-2026/hero.webp",
-    "prompt": "Article theme: Google investit 75M$ dans A24 pour développer des outils IA dédiés au cinéma indépendant. Context: Partenariat de recherche DeepMind et A24, développement de storyboards IA et outils de préviz pour cinéastes, sans cession de contenu. Visual focus: Réalisateur de cinéma en train d'examiner un storyboard dessiné à la main dans une salle de préproduction sombre, lumière chaude de bureau, photogrammes épinglés sur un tableau de liège derrière lui. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary handheld still frame, warm tungsten light, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "google-a24-partenariat-ia-outils-cinema-2026"
+    "dest": "/images/blog/openai-gpt-56-sol-terra-luna-modeles-juin-2026/hero.webp",
+    "prompt": "Article theme: OpenAI launches GPT-5.6 family Sol Terra Luna under US federal supervision framework June 2026. Context: Three distinct AI model variants for different tasks, first major model released under government evaluation directive, limited preview to 20 organizations. Visual focus: Three orbs of light representing Sol Terra Luna floating in a dark cosmic space, warm golden light on one, cool blue on another, silver-white on third, cinematic depth and bokeh. Cinematic editorial photography, 35mm photochemical film look, subtle halation, long exposure light painting style, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "openai-gpt-56-sol-terra-luna-modeles-juin-2026"
   },
   {
-    "dest": "/images/blog/video-ia-talking-head-presentations-quel-outil-choisir/hero.webp",
-    "prompt": "Article theme: Comparatif des outils vidéo IA pour les présentations talking-head en 2026 (HeyGen, Synthesia, D-ID). Context: Un présentateur professionnel face caméra dans un studio épuré, lumière trois points, fond neutre sombre, cadre serré sur le visage et les épaules. Visual focus: Portrait cinématique d'un présentateur en studio de podcasting, lumière latérale douce et naturelle, bokeh léger sur le fond, expression concentrée et naturelle. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "video-ia-talking-head-presentations-quel-outil-choisir"
+    "dest": "/images/blog/creer-broll-ia-plans-coupe-convaincants/hero.webp",
+    "prompt": "Article theme: How to create convincing AI-generated B-roll cutaway shots for cinematic video production. Context: Tutorial on generating coherent B-roll footage with AI tools like Runway and Kling, matching the visual signature of the main shot. Visual focus: Behind-the-scenes view of a video editing timeline on a dark monitor showing multiple B-roll clips, filmmaker's hands on keyboard, warm lamp light from side, cables and equipment subtly visible in background. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, warm low-key lighting, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "creer-broll-ia-plans-coupe-convaincants"
   }
 ]
