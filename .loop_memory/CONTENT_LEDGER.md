@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-06-28 — B-roll IA : comment créer des plans de coupe qui tiennent vraiment
+- slug: creer-broll-ia-plans-coupe-convaincants
+- locale: fr
+- url: https://frankhoubre.com/blog/creer-broll-ia-plans-coupe-convaincants
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / practical method
+- primary_keyword: créer B-roll IA plans de coupe vidéo
+- secondary_keywords: b-roll vidéo IA, plans de coupe IA Runway Kling, cohérence visuelle b-roll IA, insert vidéo IA
+- sources: n/a (craft/evergreen, method-based, tool specs verified)
+- internal_links: -> /outils/generateur-storyboard-pdf, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: storyboard PDF (soft)
+- cannibalization_notes: comment-monter-video-ia-capcut-comme-un-pro covers editing workflow; pipeline-ia-script-storyboard-production-de-a-z covers overall pipeline. This is specifically about B-roll generation and coherence technique. No existing B-roll dedicated article. Distinct intent.
+- checker: pass (audit 0 err, build 456 pages)
+- published_commit: c10e5b2
+
+### 2026-06-28 — GPT-5.6 : OpenAI lance Sol, Terra et Luna sous contrôle gouvernemental
+- slug: openai-gpt-56-sol-terra-luna-modeles-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/openai-gpt-56-sol-terra-luna-modeles-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: GPT-5.6 Sol Terra Luna OpenAI juin 2026
+- secondary_keywords: GPT-5.6 accès limité gouvernement, OpenAI Sol modèle frontier, Terra Terra modèle équilibré, GPT-4.5 retraité, cadre supervision fédérale IA
+- sources: techtimes.com/articles/318492/20260616/gpt-56-openai-chief-scientist-calls-it-meaningful-leap-june-launch-nears.htm, findskill.ai/blog/gpt-5-6-release-date-what-to-expect/, releasebot.io/updates/openai
+- internal_links: -> /blog/anthropic-mythos-5-reautorisation-cybersecurite-juin-2026, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: no existing GPT-5.6 article. anthropic-ipo-confidential covers Anthropic finance angle; this is OpenAI model launch under federal supervision framework. Distinct.
+- checker: pass (audit 0 err, build 456 pages)
+- published_commit: c10e5b2
+
+### 2026-06-28 — Anthropic Mythos 5 : réautorisé après deux semaines de blocage national
+- slug: anthropic-mythos-5-reautorisation-cybersecurite-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/anthropic-mythos-5-reautorisation-cybersecurite-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Anthropic Mythos 5 réautorisé sécurité nationale juin 2026
+- secondary_keywords: Claude Mythos 5 blocage gouvernement américain, Anthropic Fable 5 jailbreak, Project Glasswing Anthropic, Mythos 5 cybersécurité vulnérabilités
+- sources: cnn.com/2026/06/26/tech/anthropic-mythos-release, bloomberg.com/news/articles/2026-06-26/us-allows-trusted-partners-to-use-anthropic-s-mythos-5-ai-model, cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html, nbcnews.com/tech/tech-news/us-government-gives-anthropic-green-light-limited-re-release-mythos-5-rcna352018, fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/, federalnewsnetwork.com/artificial-intelligence/2026/06/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/
+- internal_links: -> /blog/anthropic-ipo-confidential-965-milliards-valorisation-2026, -> /blog/openai-gpt-56-sol-terra-luna-modeles-juin-2026
+- cta: none
+- cannibalization_notes: anthropic-ipo-confidential covers Anthropic IPO/finance angle. This is the Mythos 5 national security block/unblock story (different event, different angle). Distinct.
+- checker: pass (audit 0 err, build 456 pages)
+- published_commit: c10e5b2
+
 ### 2026-06-26 — Vidéo IA pour les présentations talking-head : quel outil choisir ?
 - slug: video-ia-talking-head-presentations-quel-outil-choisir
 - locale: fr

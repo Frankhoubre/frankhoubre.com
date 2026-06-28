@@ -1,71 +1,43 @@
-# DAILY_REPORT — 2026-06-26 (Run 8)
+# DAILY_REPORT — 2026-06-28 (Run 9)
 
 ## Summary
 
-3 articles published. Build PASS (451 pages). Commit 2398a4d. Pushed origin/main.
-
-## News research
-
-WebSearch for AI news June 23-26, 2026. Two verified stories:
-
-1. **OpenAI/Broadcom Jalapeño chip** (June 24, 2026) - TechCrunch, CNBC, VentureBeat, Bloomberg, Tom's Hardware. First OpenAI ASIC, 9-month dev cycle, 3nm TSMC, 8 HBM stacks, 50% claimed cost vs Nvidia (self-reported). Inference-only. Deploy end 2026.
-
-2. **Google $75M investment in A24 for AI filmmaking tools** (June 22, 2026) - Variety, Deadline, IndieWire, Hollywood Reporter. R&D partnership, no IP/content deal, no access to A24 data library. Focus on storyboarding/previz tools for filmmakers.
+3 articles published. Build PASS (456 pages). Commit c10e5b2. Pushed origin/main.
 
 ## Articles
 
-1. `openai-broadcom-jalapeno-chip-inference-ia-2026` (actualite, ~1273w)
-2. `google-a24-partenariat-ia-outils-cinema-2026` (actualite, ~1200w)
-3. `video-ia-talking-head-presentations-quel-outil-choisir` (comparatifs, ~2100w)
+### 1. Anthropic Mythos 5 : réautorisé après deux semaines de blocage national
+- **Slug:** `anthropic-mythos-5-reautorisation-cybersecurite-juin-2026`
+- **Category:** actualite (news)
+- **Sources:** CNN, Bloomberg, CNBC, NBC News, Fortune, Federal News Network (June 26-27, 2026)
+- **Angle:** L'affaire Mythos 5 en détail : blocage juin 12 sur directive gouvernementale, vulnérabilités dans systèmes classifiés, réouverture partielle juin 26 pour 100 organisations. Implications pour le cadre de régulation IA.
+- **Word count:** ~1400 (acceptable for news)
+- **Internal links:** 2
+
+### 2. GPT-5.6 : OpenAI lance Sol, Terra et Luna sous contrôle gouvernemental
+- **Slug:** `openai-gpt-56-sol-terra-luna-modeles-juin-2026`
+- **Category:** actualite (news)
+- **Sources:** TechTimes, FindSkill.ai, Releasebot (June 26, 2026)
+- **Angle:** Première famille de modèles sous cadre fédéral de supervision. Trois variantes Sol/Terra/Luna, accès limité à 20 organisations, GPT-4.5 retiré. Implications pour les créateurs.
+- **Word count:** ~1250 (acceptable for news)
+- **Internal links:** 2
+
+### 3. B-roll IA : comment créer des plans de coupe qui tiennent vraiment
+- **Slug:** `creer-broll-ia-plans-coupe-convaincants`
+- **Category:** tutoriels (evergreen)
+- **Angle:** Méthode complète pour générer du B-roll IA cohérent avec le plan principal. Extraction de signature visuelle, prompts contraints, outils (Runway/Kling/Luma), cohérence de personnage, bibliothèque réutilisable.
+- **Word count:** ~2200 (above 2000 target)
+- **Internal links:** 2
 
 ## Technical
 
-- SEO audit: 0 errors
-- Build: PASS, 451 pages (was 446)
-- Commit: 2398a4d, pushed origin/main OK
+- SEO audit: 0 errors (pre-existing warnings only)
+- Build: PASS — 456 pages (up from 451)
+- Images: 3 hero.webp via Imagen API (tmp-new-articles-queue.json)
+- Commit: c10e5b2
+- Push: origin/main OK
 
-## Issues
+## News sources quality
 
-None. Clean run.
-
----
-
-# DAILY_REPORT — 2026-06-25 (Run 7)
-
-## Summary
-
-3 articles published. Build PASS (446 pages). Commit cb0a08b. Pushed origin/main.
-
-## Articles
-
-### 1. sora-api-arret-septembre-2026-alternatives-createurs (actualite)
-- **Title:** Sora ferme en septembre 2026 : alternatives et migration
-- **Sources:** OpenAI Help Center (official), TechCrunch, Atlas Cloud, Kaopiz Sora shutdown guide
-- **Angle:** L'API Sora ferme le 24 septembre 2026. Guide d'action immédiate (export clips, documenter prompts, auditer intégrations API) et comparatif des meilleures alternatives : Kling 3.0, Runway Gen-4.5, Seedance 2.0, Veo 3.1.
-- **Word count:** ~1453 words (acceptable for news per STYLE_GUIDE)
-- **Internal links:** tutoriel-runway-gen-3-animer-image-fixe-plan-film, pipeline-ia-script-storyboard-production-de-a-z
-
-### 2. anthropic-ipo-confidential-965-milliards-valorisation-2026 (actualite)
-- **Title:** Anthropic IPO : 965 milliards de valorisation, ce que ça change
-- **Sources:** Anthropic.com (official S-1 announcement), CNBC, TechCrunch, Fortune, Bloomberg (Google researcher departures June 24)
-- **Angle:** Dépôt S-1 confidentiel le 1er juin 2026 à $965B post-money. Analyse des chiffres ($47B run rate, 80x growth), départs de chercheurs Google vers Anthropic, implications pour les créateurs IA (tarifs, intégrations Claude, concurrence avec OpenAI).
-- **Word count:** ~1481 words (acceptable for news per STYLE_GUIDE)
-- **Internal links:** pipeline-ia-script-storyboard-production-de-a-z, higgsfield-creative-os-claude-adobe-juin-2026
-
-### 3. livrer-fichiers-sources-projet-video-ia-client (business/evergreen)
-- **Title:** Livrer les fichiers sources d'un projet vidéo IA : guide pratique
-- **Angle:** Guide pratique complet sur ce que contient une livraison de projet vidéo IA : prompts, seeds, images de référence, workflows ComfyUI, fichiers de montage. Structure de dossier recommandée, 3 niveaux de livraison tarifables, gestion PI, FAQ 6 questions.
-- **Word count:** ~2000 words
-- **Internal links:** clause-contrat-client-contenu-genere-ia, calculateur-budget-production-ia
-
-## Pipeline
-
-- SEO audit: 0 errors. Titles/excerpts fixed on 2 articles. Word depth warnings on news articles are expected (STYLE_GUIDE: 900-1500 acceptable for fast news).
-- Build: PASS 446 pages (up from 427, +3 articles +16 EN translations from parallel loop)
-- Images: 3 hero.webp generated via Imagen API (scripts/render_blog_queue_gemini.py, {dest,prompt,slug} format), 540-661 KB each
-- Staged explicit paths only (no git add -A), commit cb0a08b, pushed origin/main directly
-
-## Issues
-
-None. Clean run. Script location confirmed: scripts/ (not .loop_scripts/).
-Queue format for render_blog_queue_gemini.py: {dest, prompt, slug} (not {hero, workflow_1, workflow_2}).
+Both news articles based on real, verified events from June 26-27, 2026.
+No invented facts, no hallucinated sources.

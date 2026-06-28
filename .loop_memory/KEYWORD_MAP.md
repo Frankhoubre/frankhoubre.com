@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 9 — 2026-06-28)
+
+- `Anthropic Mythos 5 réautorisé sécurité nationale juin 2026` — FILLED: anthropic-mythos-5-reautorisation-cybersecurite-juin-2026
+- `GPT-5.6 Sol Terra Luna OpenAI juin 2026` — FILLED: openai-gpt-56-sol-terra-luna-modeles-juin-2026
+- `créer B-roll IA plans de coupe vidéo` — FILLED: creer-broll-ia-plans-coupe-convaincants
+
 ## USED (Run 8 — 2026-06-26)
 
 - `OpenAI Broadcom Jalapeño chip IA inférence 2026` — FILLED: openai-broadcom-jalapeno-chip-inference-ia-2026

@@ -1,6 +1,39 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-26 (Run 8 — 3 articles published)
+## Last run: 2026-06-28 (Run 9 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-26 (batch 8: 3 articles).
+- WebSearch for real news in last 72h: found Anthropic Mythos 5 partial unblock (June 26-27, 2026
+  via CNN, Bloomberg, CNBC, NBC News, Fortune, Federal News Network, The Hill) and OpenAI GPT-5.6
+  Sol/Terra/Luna launch under federal supervision (June 26, 2026 via TechTimes, FindSkill.ai, Releasebot).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a457609e.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, tmp-new-articles-queue.json).
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (456 pages, 3 new articles prerendered, up from 451).
+- Staged explicit paths only (3 .md + 3 hero.webp + queue file), committed c10e5b2, pushed origin/main.
+
+### Articles published this run
+1. `anthropic-mythos-5-reautorisation-cybersecurite-juin-2026` (actualite)
+2. `openai-gpt-56-sol-terra-luna-modeles-juin-2026` (actualite)
+3. `creer-broll-ia-plans-coupe-convaincants` (tutoriels/evergreen)
+
+### Technical note this run
+- Working tree: agent-a457609e (current worktree). Articles committed directly.
+- Image generation: tmp-new-articles-queue.json with dest/prompt format. Confirmed correct.
+- Build went 451 -> 456 pages (+3 articles +2 EN translations from translation loop).
+- node_modules hard-linked again (cp -rl from main repo) as worktree had empty node_modules dir.
+
+### Next run should
+1. Evergreen candidates: "devis et template de quote pour projet vidéo IA client" (business),
+   "présenter un projet vidéo IA à un client non-tech" (business),
+   "vertical vs horizontal format for AI clips" (confirm no cannibalization first).
+2. News to watch: GPT-5.6 general availability date, Fable 5 reauthorization status,
+   Runway Gen-4.5 practical tips, ElevenLabs Music v2 launch, Apple iOS 27 beta updates.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-06-26 (Run 8 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-25 (batch 7: 3 articles).
