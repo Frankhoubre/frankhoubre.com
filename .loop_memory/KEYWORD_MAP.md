@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 10 — 2026-07-02)
+
+- `Claude Fable 5 retour juillet 2026 accès mondial` — FILLED: anthropic-fable-5-retour-global-juillet-2026
+- `Google Gemini 3.1 Flash Image Omni Flash image vidéo API 2026` — FILLED: google-gemini-31-flash-image-omni-flash-video-juin-2026
+- `ElevenLabs Music v2 créateurs vidéo guide` — FILLED: elevenlabs-music-v2-guide-createurs-video
+
 ## USED (Run 9 — 2026-06-28)
 
 - `Anthropic Mythos 5 réautorisé sécurité nationale juin 2026` — FILLED: anthropic-mythos-5-reautorisation-cybersecurite-juin-2026

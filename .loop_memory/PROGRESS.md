@@ -1,6 +1,45 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-06-28 (Run 9 — 3 articles published)
+## Last run: 2026-07-02 (Run 10 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-28 (batch 9: 3 articles).
+- WebSearch for real news in last 72h: found Anthropic Claude Fable 5 global restore July 1 2026
+  (CNBC, Forbes, VentureBeat, 9to5Mac, MarkTechPost, Al Jazeera) and Google launching Gemini 3.1
+  Flash Image + Gemini Omni Flash on June 30 2026 (Google AI changelog, Google DeepMind, DigitalApplied).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a0ae2ae7.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, --queue tmp-new-articles-queue.json --start N --end N one by one because batch was hanging when using default queue).
+- SEO audit: 0 errors. Title/word-count warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (467 pages, 3 new articles prerendered).
+- Staged explicit paths only (3 .md + 3 hero.webp), committed e188e5c, pushed origin/main.
+
+### Articles published this run
+1. `anthropic-fable-5-retour-global-juillet-2026` (actualite)
+2. `google-gemini-31-flash-image-omni-flash-video-juin-2026` (actualite)
+3. `elevenlabs-music-v2-guide-createurs-video` (tutoriels/evergreen)
+
+### Technical note this run
+- Working tree: agent-a0ae2ae7 (current worktree). Articles committed directly.
+- Image generation: CRITICAL - do NOT run render_blog_queue_gemini.py --force without --queue on the
+  small file, or it reads tmp-blog-gen-queue.json (249 items) and hangs. Use:
+  python3 scripts/render_blog_queue_gemini.py --queue tmp-new-articles-queue.json --force --start N --end N
+  one at a time (each call runs fast, ~30s). Generate then kill if it hangs silently.
+- Worktree has its own public/ directory separate from main repo. Copy images from main to worktree:
+  cp -r /path/to/main/public/images/blog/[slug] /path/to/worktree/public/images/blog/
+- node_modules: hard-link with cp -rl before running build.
+- Build went 462 -> 467 pages (+3 articles +2 EN translations from translation loop).
+
+### Next run should
+1. Evergreen candidates: "présenter un projet vidéo IA à un client non-tech" (business),
+   "prompt négatif : à quoi ça sert vraiment en vidéo IA" (technique),
+   "vertical vs horizontal pour vos clips IA" (format platform).
+2. News to watch: Runway Gen-5 or Gen-4.6 announcement, Apple Intelligence iOS 27 updates,
+   ElevenLabs Eleven v3 TTS launch details, Midjourney V1 video model broader rollout news,
+   ByteDance Seedance 2.5 details.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-06-28 (Run 9 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-26 (batch 8: 3 articles).

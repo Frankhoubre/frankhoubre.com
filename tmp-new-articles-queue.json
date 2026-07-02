@@ -1,17 +1,17 @@
 [
   {
-    "dest": "/images/blog/anthropic-mythos-5-reautorisation-cybersecurite-juin-2026/hero.webp",
-    "prompt": "Article theme: Anthropic Mythos 5 reauthorized by US government after two-week national security block. Context: Powerful AI cybersecurity model found vulnerabilities in classified government systems, then blocked June 12, partially unblocked June 26 for 100+ trusted US organizations. Visual focus: Close-up of a glowing neural network circuit pattern inside a darkened secure server room, deep blue and electric teal accent lighting, subtle red warning light in background, cinematic tension. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "anthropic-mythos-5-reautorisation-cybersecurite-juin-2026"
+    "dest": "/images/blog/anthropic-fable-5-retour-global-juillet-2026/hero.webp",
+    "prompt": "Article theme: Anthropic Claude Fable 5 AI model restored globally on July 1 2026 after US export controls lifted. Context: AI model suspended mid-June due to security bypass vulnerability, now restored with new cybersecurity classifier blocking 99% of attacks. Visual focus: Glowing geometric shield made of light surrounding a pulsing neural network core, deep indigo background, subtle electric blue protection layer, sense of security restored, cinematic atmosphere. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "anthropic-fable-5-retour-global-juillet-2026"
   },
   {
-    "dest": "/images/blog/openai-gpt-56-sol-terra-luna-modeles-juin-2026/hero.webp",
-    "prompt": "Article theme: OpenAI launches GPT-5.6 family Sol Terra Luna under US federal supervision framework June 2026. Context: Three distinct AI model variants for different tasks, first major model released under government evaluation directive, limited preview to 20 organizations. Visual focus: Three orbs of light representing Sol Terra Luna floating in a dark cosmic space, warm golden light on one, cool blue on another, silver-white on third, cinematic depth and bokeh. Cinematic editorial photography, 35mm photochemical film look, subtle halation, long exposure light painting style, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "openai-gpt-56-sol-terra-luna-modeles-juin-2026"
+    "dest": "/images/blog/google-gemini-31-flash-image-omni-flash-video-juin-2026/hero.webp",
+    "prompt": "Article theme: Google launches Gemini 3.1 Flash Image and Gemini Omni Flash on June 30 2026, unifying image and video generation in a single API. Context: Fast image model at 4 seconds per image and video-from-image model, both available via Gemini API and Google AI Studio. Visual focus: Stream of images transforming into flowing video frames in a dark studio space, colorful light trails moving from still photographs into animated motion, deep dark background with multicolored luminous streaks, sense of transformation. Cinematic editorial photography, 35mm photochemical film look, subtle halation, long exposure light trail style, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "google-gemini-31-flash-image-omni-flash-video-juin-2026"
   },
   {
-    "dest": "/images/blog/creer-broll-ia-plans-coupe-convaincants/hero.webp",
-    "prompt": "Article theme: How to create convincing AI-generated B-roll cutaway shots for cinematic video production. Context: Tutorial on generating coherent B-roll footage with AI tools like Runway and Kling, matching the visual signature of the main shot. Visual focus: Behind-the-scenes view of a video editing timeline on a dark monitor showing multiple B-roll clips, filmmaker's hands on keyboard, warm lamp light from side, cables and equipment subtly visible in background. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, warm low-key lighting, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "creer-broll-ia-plans-coupe-convaincants"
+    "dest": "/images/blog/elevenlabs-music-v2-guide-createurs-video/hero.webp",
+    "prompt": "Article theme: ElevenLabs Music v2 practical guide for video creators, featuring section-level inpainting and mid-track genre switching for commercial production. Context: AI music generation tool that allows precise section-by-section editing without regenerating full tracks, with commercial license included. Visual focus: Sound wave waveform displayed on a dark studio monitor, selective glowing segments of the waveform highlighted in warm amber light against dark indigo background, hands near mixing board subtly blurred in foreground, professional audio production atmosphere. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "elevenlabs-music-v2-guide-createurs-video"
   }
 ]

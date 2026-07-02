@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-02 — ElevenLabs Music v2 : guide pratique pour créateurs vidéo
+- slug: elevenlabs-music-v2-guide-createurs-video
+- locale: fr
+- url: https://frankhoubre.com/blog/elevenlabs-music-v2-guide-createurs-video
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / practical guide
+- primary_keyword: ElevenLabs Music v2 créateurs vidéo guide
+- secondary_keywords: inpainting musique IA, changement genre musique IA, licence commerciale musique IA, ElevenCreative workflow, musique IA vidéo
+- sources: n/a (craft/evergreen based on verified ElevenLabs Music v2 launch May 27 2026)
+- internal_links: -> /blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes, -> /blog/comment-monter-video-ia-capcut-comme-un-pro
+- cta: none
+- cannibalization_notes: elevenlabs-fin-voix-v1-migration-2026 covers TTS v1 deprecation; elevenlabs-tutoriel-definitif-voix-ultra-realistes covers voice TTS how-to; heygen-elevenlabs-comparatif covers tool comparison. This is specifically about Music v2 AI music generation for video production. Distinct intent (music generation vs voice TTS).
+- checker: pass (audit 0 err, build 467 pages)
+- published_commit: e188e5c
+
+### 2026-07-02 — Google Gemini 3.1 Flash Image et Omni Flash : image-to-video en API
+- slug: google-gemini-31-flash-image-omni-flash-video-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/google-gemini-31-flash-image-omni-flash-video-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Google Gemini 3.1 Flash Image Omni Flash image vidéo API 2026
+- secondary_keywords: Gemini 3.1 Flash Image prix, Gemini Omni Flash image-to-video, Nano Banana 2 Google, Google Gemini API image video pipeline
+- sources: ai.google.dev/gemini-api/docs/changelog, deepmind.google/models/model-cards/gemini-3-1-flash-lite-image, docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image, digitalapplied.com/blog/nano-banana-2-lite-gemini-omni-flash-2026
+- internal_links: -> /blog/google-imagen-gemini-image-preview-depreciation-juin-2026, -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/sora-api-arret-septembre-2026-alternatives-createurs
+- cta: none
+- cannibalization_notes: google-imagen-gemini-image-preview-depreciation-juin-2026 covers June 24 model deprecations; google-flow-veo-31-edition-audio-juin-2026 covers Veo 3.1 audio update. This is the June 30 LAUNCH of new Gemini image/video models. Distinct event and intent.
+- checker: pass (audit 0 err, build 467 pages)
+- published_commit: e188e5c
+
+### 2026-07-02 — Claude Fable 5 de retour le 1er juillet : contrôles levés
+- slug: anthropic-fable-5-retour-global-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/anthropic-fable-5-retour-global-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Claude Fable 5 retour juillet 2026 accès mondial
+- secondary_keywords: Fable 5 contrôles exportation levés, Claude Fable 5 classifieur cybersécurité, Anthropic Fable 5 API, Fable 5 Pro Max accès
+- sources: cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html, venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order, marktechpost.com/2026/07/01/anthropic-redeploys-claude-fable-5-on-july-1, forbes.com/sites/siladityaray/2026/07/01/trump-administration-lifts-export-controls-on-anthropics-mythos-5-and-fable-5-ai-models
+- internal_links: -> /blog/anthropic-mythos-5-reautorisation-cybersecurite-juin-2026, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: anthropic-mythos-5-reautorisation-cybersecurite-juin-2026 covers the June 26 partial Mythos 5 unblock for 100+ US orgs. This is the July 1 global restoration of Fable 5 (different model, different event, different date). Distinct.
+- checker: pass (audit 0 err, build 467 pages)
+- published_commit: e188e5c
+
 ### 2026-06-28 — B-roll IA : comment créer des plans de coupe qui tiennent vraiment
 - slug: creer-broll-ia-plans-coupe-convaincants
 - locale: fr

@@ -1,43 +1,35 @@
-# DAILY_REPORT — 2026-06-28 (Run 9)
+# DAILY_REPORT — 2026-07-02 (Run 10)
 
 ## Summary
 
-3 articles published. Build PASS (456 pages). Commit c10e5b2. Pushed origin/main.
+3 articles published. Build PASS (467 pages). Commit e188e5c. Pushed origin/main.
 
 ## Articles
 
-### 1. Anthropic Mythos 5 : réautorisé après deux semaines de blocage national
-- **Slug:** `anthropic-mythos-5-reautorisation-cybersecurite-juin-2026`
-- **Category:** actualite (news)
-- **Sources:** CNN, Bloomberg, CNBC, NBC News, Fortune, Federal News Network (June 26-27, 2026)
-- **Angle:** L'affaire Mythos 5 en détail : blocage juin 12 sur directive gouvernementale, vulnérabilités dans systèmes classifiés, réouverture partielle juin 26 pour 100 organisations. Implications pour le cadre de régulation IA.
-- **Word count:** ~1400 (acceptable for news)
-- **Internal links:** 2
+1. **anthropic-fable-5-retour-global-juillet-2026** (actualite)
+   - Anthropic Claude Fable 5 global restore July 1 2026 after US export controls lifted
+   - Sources: CNBC, Forbes, VentureBeat, MarkTechPost, 9to5Mac
+   - ~1473 words
 
-### 2. GPT-5.6 : OpenAI lance Sol, Terra et Luna sous contrôle gouvernemental
-- **Slug:** `openai-gpt-56-sol-terra-luna-modeles-juin-2026`
-- **Category:** actualite (news)
-- **Sources:** TechTimes, FindSkill.ai, Releasebot (June 26, 2026)
-- **Angle:** Première famille de modèles sous cadre fédéral de supervision. Trois variantes Sol/Terra/Luna, accès limité à 20 organisations, GPT-4.5 retiré. Implications pour les créateurs.
-- **Word count:** ~1250 (acceptable for news)
-- **Internal links:** 2
+2. **google-gemini-31-flash-image-omni-flash-video-juin-2026** (actualite)
+   - Google launches Gemini 3.1 Flash Image and Gemini Omni Flash on June 30 2026
+   - Sources: Google AI changelog, Google DeepMind model card, Google Cloud docs, DigitalApplied
+   - ~1382 words
 
-### 3. B-roll IA : comment créer des plans de coupe qui tiennent vraiment
-- **Slug:** `creer-broll-ia-plans-coupe-convaincants`
-- **Category:** tutoriels (evergreen)
-- **Angle:** Méthode complète pour générer du B-roll IA cohérent avec le plan principal. Extraction de signature visuelle, prompts contraints, outils (Runway/Kling/Luma), cohérence de personnage, bibliothèque réutilisable.
-- **Word count:** ~2200 (above 2000 target)
-- **Internal links:** 2
+3. **elevenlabs-music-v2-guide-createurs-video** (tutoriels)
+   - ElevenLabs Music v2 practical guide for video creators: inpainting, genre switching, commercial license
+   - Evergreen based on May 27 2026 launch, verified features
+   - ~2000+ words
+
+## SEO Audit
+
+- 0 errors
+- Title warnings on 2 news articles (69-73 chars vs 60 aim): acceptable for news
+- Word-count warnings on 2 news articles (1380-1473 words vs 2000 aim): acceptable per STYLE_GUIDE ("900-1500 acceptable for fast news")
 
 ## Technical
 
-- SEO audit: 0 errors (pre-existing warnings only)
-- Build: PASS — 456 pages (up from 451)
-- Images: 3 hero.webp via Imagen API (tmp-new-articles-queue.json)
-- Commit: c10e5b2
-- Push: origin/main OK
-
-## News sources quality
-
-Both news articles based on real, verified events from June 26-27, 2026.
-No invented facts, no hallucinated sources.
+- Worktree: agent-a0ae2ae7
+- Images: generated via scripts/render_blog_queue_gemini.py --queue tmp-new-articles-queue.json --start N --end N (one at a time)
+- node_modules: hard-linked cp -rl
+- Build: 467 pages (+3 from previous 462 after accounting for translation loop additions)
