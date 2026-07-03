@@ -12,7 +12,8 @@ import { baseUrl, person, socialLinks } from "@/lib/site";
 
 const aboutTitle = "À propos de Frank Houbre | Formateur IA, réalisateur IA et entrepreneur";
 const aboutDescription =
-  "Biographie de Frank Houbre, formateur IA, réalisateur IA et entrepreneur français. Parcours, projets, distinctions, formation IA vidéo et image, et vision de la création assistée par intelligence artificielle.";
+  // ≤155 caractères : au-delà, Google tronque la description en SERP.
+  "Biographie de Frank Houbre, formateur IA et réalisateur IA : parcours, projets, distinctions et vision de la création assistée par IA.";
 const awards = [
   "Chroma Awards - Première place (Silver)",
   "SIAFF Séoul - Médaille d'argent",

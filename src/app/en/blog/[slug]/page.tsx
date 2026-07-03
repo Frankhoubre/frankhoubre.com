@@ -12,7 +12,11 @@ import { readingTimeMinutes } from "@/lib/blog";
 import { getAllEnPosts, getEnPostBySlug } from "@/lib/blog-en";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
-import { buildPageMetadata } from "@/lib/metadata";
+import {
+  buildBreadcrumbList,
+  buildGraphJsonLd,
+  buildPageMetadata,
+} from "@/lib/metadata";
 import { baseUrl, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -26,6 +30,17 @@ export function generateStaticParams() {
 function trunc(s: string, max: number): string {
   const t = s.trim();
   return t.length <= max ? t : `${t.slice(0, max - 1).trimEnd()}…`;
+}
+
+/** Markdown → texte brut pour les réponses du FAQPage JSON-LD. */
+function stripMdSimple(s: string): string {
+  return s
+    .replace(/\*\*/g, "")
+    .replace(/`/g, "")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -83,24 +98,47 @@ export default async function EnBlogArticlePage({ params }: Props) {
       : `${baseUrl}${thumb}`
     : undefined;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.frontmatter.title,
-    description: post.frontmatter.excerpt,
-    inLanguage: "en",
-    datePublished: post.frontmatter.date,
-    dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
-    url,
-    mainEntityOfPage: url,
-    ...(img ? { image: [img] } : {}),
-    author: {
-      "@type": "Person",
-      name: person.name,
-      url: `${baseUrl}/en/about`,
+  // Graphe aligné sur le FR : BlogPosting + BreadcrumbList + FAQPage (quand
+  // l'article a une section FAQ). Le FAQPage nourrit les extraits enrichis
+  // et les réponses des moteurs IA.
+  const graphNodes: object[] = [
+    {
+      "@type": "BlogPosting",
+      headline: post.frontmatter.title,
+      description: post.frontmatter.excerpt,
+      inLanguage: "en",
+      datePublished: post.frontmatter.date,
+      dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
+      url,
+      mainEntityOfPage: url,
+      ...(img ? { image: [img] } : {}),
+      author: {
+        "@type": "Person",
+        name: person.name,
+        url: `${baseUrl}/en/about`,
+      },
+      publisher: { "@type": "Organization", name: siteName, url: baseUrl },
     },
-    publisher: { "@type": "Organization", name: siteName, url: baseUrl },
-  };
+    buildBreadcrumbList([
+      { name: "Home", path: "/en" },
+      { name: "Blog", path: "/en/blog" },
+      { name: post.frontmatter.title, path: `/en/blog/${slug}` },
+    ]),
+  ];
+  if (faqPairs?.length) {
+    graphNodes.push({
+      "@type": "FAQPage",
+      mainEntity: faqPairs.map((p) => ({
+        "@type": "Question",
+        name: p.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: stripMdSimple(p.answer),
+        },
+      })),
+    });
+  }
+  const jsonLd = buildGraphJsonLd(...graphNodes);
 
   const mdxOpts = { mdxOptions: { remarkPlugins: [remarkGfm] } };
 

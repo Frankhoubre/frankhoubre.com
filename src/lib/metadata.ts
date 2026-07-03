@@ -127,7 +127,12 @@ export function buildPageMetadata(opts: BuildPageMetadataOptions): Metadata {
       description: ogDescription,
       url: canonical,
       siteName,
-      locale: "fr_FR",
+      // Locale dérivée du chemin : les pages /en annoncent en_US (sinon les
+      // partages sociaux et certains crawlers voient un signal fr_FR erroné).
+      locale:
+        opts.path === "/en" || opts.path.startsWith("/en/")
+          ? "en_US"
+          : "fr_FR",
       images: ogImages,
       ...(opts.openGraph?.publishedTime
         ? { publishedTime: opts.openGraph.publishedTime }

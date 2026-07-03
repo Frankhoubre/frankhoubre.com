@@ -13,7 +13,8 @@ export const revalidate = 3600;
 
 const homeTitle = `${siteName} | Formateur IA, Réalisateur IA et Créateur vidéo`;
 const homeDescription =
-  "Frank Houbre est formateur IA, réalisateur IA et créateur vidéo. Tutoriels, films, workflows image et vidéo, direction artistique, prompts et méthodes pour produire des contenus IA crédibles.";
+  // ≤155 caractères : au-delà, Google tronque la description en SERP.
+  "Frank Houbre, formateur IA et réalisateur IA : tutoriels, workflows image et vidéo, prompts et méthodes pour produire des contenus IA crédibles.";
 const homeKeywords = [
   "Frank Houbre",
   "formateur IA",
