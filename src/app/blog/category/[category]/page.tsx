@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogList } from "@/components/BlogList";
 import { getPostsByCategory } from "@/lib/blog";
+import { toPostSummary } from "@/lib/blog-thumbnail";
 import { JsonLd } from "@/components/JsonLd";
 import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
 import {
@@ -92,7 +93,11 @@ export default async function BlogCategoryPage({ params }: Props) {
             `Tous les articles publiés dans cette catégorie.`}
         </p>
       </header>
-      <BlogList posts={posts} initialCategory={category} gridLayout />
+      <BlogList
+        posts={posts.map(toPostSummary)}
+        initialCategory={category}
+        gridLayout
+      />
     </div>
     </>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BlogList } from "@/components/BlogList";
 import { getAllPosts } from "@/lib/blog";
+import { toPostSummary } from "@/lib/blog-thumbnail";
 import { JsonLd } from "@/components/JsonLd";
 import { buildBreadcrumbList, buildGraphJsonLd, buildPageMetadata } from "@/lib/metadata";
 import { baseUrl, siteName } from "@/lib/site";
@@ -72,7 +73,12 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
           et les catégories pour parcourir les articles publiés.
         </p>
       </header>
-      <BlogList posts={posts} gridLayout initialSearch={initialSearch} />
+      {/* PostSummary : ne jamais sérialiser le markdown complet vers le client. */}
+      <BlogList
+        posts={posts.map(toPostSummary)}
+        gridLayout
+        initialSearch={initialSearch}
+      />
     </div>
     </>
   );

@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import type { Post } from "@/lib/blog";
-import { getPostThumbnail } from "@/lib/blog-thumbnail";
+import type { PostSummary } from "@/lib/blog-thumbnail";
 import { blogCategories } from "@/lib/site";
 import { Badge } from "@/components/Badge";
 import { SearchInput } from "@/components/SearchInput";
@@ -34,7 +33,7 @@ export function getPageNumbers(
 }
 
 type Props = {
-  posts?: Post[];
+  posts?: PostSummary[];
   initialCategory?: string;
   initialSearch?: string;
   gridLayout?: boolean;
@@ -146,7 +145,7 @@ export function BlogList({
       ) : gridLayout ? (
         <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {pageItems.map((post) => {
-            const thumb = getPostThumbnail(post);
+            const thumb = post.thumbnail;
             return (
               <li key={post.slug}>
                 <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-neutral-300 hover:shadow-md">
@@ -214,7 +213,7 @@ export function BlogList({
       ) : (
         <ul className="space-y-6">
           {pageItems.map((post) => {
-            const thumb = getPostThumbnail(post);
+            const thumb = post.thumbnail;
             return (
               <li key={post.slug}>
                 <article className="flex flex-col gap-4 border-b border-neutral-200 pb-6 sm:flex-row">
