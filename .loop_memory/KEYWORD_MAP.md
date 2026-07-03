@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 11 — 2026-07-03)
+
+- `Claude Sonnet 5 modèle agentique Anthropic juin 2026` — FILLED: claude-sonnet-5-anthropic-agent-ia-juin-2026
+- `Californie Anthropic Claude accord agences État 2026` — FILLED: californie-anthropic-claude-accord-agences-etat-2026
+- `prompt négatif vidéo IA à quoi ça sert` — FILLED: prompt-negatif-video-ia-a-quoi-ca-sert
+
 ## USED (Run 10 — 2026-07-02)
 
 - `Claude Fable 5 retour juillet 2026 accès mondial` — FILLED: anthropic-fable-5-retour-global-juillet-2026

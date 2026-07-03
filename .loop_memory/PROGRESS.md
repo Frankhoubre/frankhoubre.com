@@ -1,6 +1,40 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-02 (Run 10 — 3 articles published)
+## Last run: 2026-07-03 (Run 11 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-02 (batch 10: 3 articles).
+- WebSearch for real news in last 72h: found Anthropic Claude Sonnet 5 launch June 30 2026
+  (TechCrunch, Anthropic official, MacRumors, Nerova.ai) and California x Anthropic state deal
+  June 29 2026 (gov.ca.gov, TechCrunch, CBS Sacramento, The Next Web, Fox Business).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a18db463.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, --queue tmp-new-articles-queue.json --start N --end N one at a time).
+- SEO audit: 0 errors. Title/word-count warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (482 pages, 3 new articles prerendered, up from 467).
+- Staged explicit paths only (3 .md + 3 hero.webp + queue file), committed 4dada90, pushed origin/main.
+
+### Articles published this run
+1. `claude-sonnet-5-anthropic-agent-ia-juin-2026` (actualite)
+2. `californie-anthropic-claude-accord-agences-etat-2026` (actualite)
+3. `prompt-negatif-video-ia-a-quoi-ca-sert` (tutoriels/evergreen)
+
+### Technical note this run
+- Working tree: agent-a18db463 (current worktree). Articles committed directly.
+- Image generation: scripts ran fine with --start N --end N one at a time. Images went to worktree public/ directly (not main repo).
+- Build went 467 -> 482 pages (+3 articles +12 EN translations from translation loop).
+- node_modules: hard-linked with cp -rl from main repo (worktree had empty dir).
+
+### Next run should
+1. Evergreen candidates: "présenter un projet vidéo IA à un client non-tech" (business),
+   "vertical vs horizontal pour vos clips IA" (format platform, confirm no cannibalization),
+   "choisir son ratio d'aspect en vidéo IA" (format ratios for different platforms).
+2. News to watch: Gemini 3.5 Pro general availability launch (expected early July),
+   GPT-5.6 Sol/Terra/Luna broader rollout, Runway Gen-5 any announcement,
+   Apple Intelligence iOS 27 updates, ElevenLabs Eleven v3 TTS details.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-07-02 (Run 10 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-28 (batch 9: 3 articles).

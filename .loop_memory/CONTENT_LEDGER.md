@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-03 — Prompt négatif en vidéo IA : à quoi ça sert vraiment ?
+- slug: prompt-negatif-video-ia-a-quoi-ca-sert
+- locale: fr
+- url: https://frankhoubre.com/blog/prompt-negatif-video-ia-a-quoi-ca-sert
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / practical method
+- primary_keyword: prompt négatif vidéo IA à quoi ça sert
+- secondary_keywords: negative prompt vidéo IA, réduire artefacts vidéo IA, prompt négatif Kling, prompt négatif ComfyUI, flickering anatomical errors vidéo IA
+- sources: n/a (craft/evergreen, method-based, tool specs verified)
+- internal_links: -> /blog/corriger-erreurs-anatomiques-video-ia-corps-mains, -> /blog/corriger-scintillement-flicker-video-ia
+- cta: none
+- cannibalization_notes: pourquoi-ton-prompt-ne-marche-pas-comment-corriger covers positive prompt failures; erreurs-prompt-qui-rendent-image-ia-artificielle covers image prompt errors. This is specifically about the negative prompt mechanism in video generation. No existing negative prompt dedicated article. Distinct intent.
+- checker: pass (audit 0 err, build 482 pages)
+- published_commit: 4dada90
+
+### 2026-07-03 — Californie x Anthropic : Claude pour toutes les agences d'État
+- slug: californie-anthropic-claude-accord-agences-etat-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/californie-anthropic-claude-accord-agences-etat-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Californie Anthropic Claude accord agences État 2026
+- secondary_keywords: Newsom Claude Anthropic deal, Claude gouvernement californie, IA gouvernement état américain, Claude 50% discount agences
+- sources: gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership, techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price, cbsnews.com/sacramento/news/california-claude-deal-gavin-newsom, thenextweb.com/news/anthropic-california-newsom-claude-half-price-government
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/anthropic-fable-5-retour-global-juillet-2026
+- cta: none
+- cannibalization_notes: anthropic-ipo-confidential-965-milliards-valorisation-2026 covers IPO/finance. anthropic-fable-5-retour-global-juillet-2026 covers export controls. This is the June 29 California government deal specifically. Distinct event and angle.
+- checker: pass (audit 0 err, build 482 pages)
+- published_commit: 4dada90
+
+### 2026-07-03 — Claude Sonnet 5 : le modèle agentique par défaut d'Anthropic
+- slug: claude-sonnet-5-anthropic-agent-ia-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/claude-sonnet-5-anthropic-agent-ia-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Claude Sonnet 5 modèle agentique Anthropic juin 2026
+- secondary_keywords: Claude Sonnet 5 prix API, Sonnet 5 vs Opus 4.8, Claude Sonnet 5 workflow créatif, Claude Sonnet 5 contexte 1M tokens
+- sources: techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents, anthropic.com/news/claude-sonnet-5, nerova.ai/news/anthropic-claude-sonnet-5-launch-june-30-2026, macrumors.com/2026/06/30/anthropic-claude-sonnet-5
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/anthropic-fable-5-retour-global-juillet-2026
+- cta: none
+- cannibalization_notes: anthropic-fable-5-retour-global-juillet-2026 covers Fable 5 restoration July 1. anthropic-ipo-confidential covers finance. This is the June 30 Sonnet 5 launch specifically (different model, different date, different angle). Distinct.
+- checker: pass (audit 0 err, build 482 pages)
+- published_commit: 4dada90
+
 ### 2026-07-02 — ElevenLabs Music v2 : guide pratique pour créateurs vidéo
 - slug: elevenlabs-music-v2-guide-createurs-video
 - locale: fr
