@@ -1,17 +1,17 @@
 [
   {
-    "dest": "/images/blog/anthropic-fable-5-retour-global-juillet-2026/hero.webp",
-    "prompt": "Article theme: Anthropic Claude Fable 5 AI model restored globally on July 1 2026 after US export controls lifted. Context: AI model suspended mid-June due to security bypass vulnerability, now restored with new cybersecurity classifier blocking 99% of attacks. Visual focus: Glowing geometric shield made of light surrounding a pulsing neural network core, deep indigo background, subtle electric blue protection layer, sense of security restored, cinematic atmosphere. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "anthropic-fable-5-retour-global-juillet-2026"
+    "dest": "/images/blog/claude-sonnet-5-anthropic-agent-ia-juin-2026/hero.webp",
+    "prompt": "Article theme: Anthropic launches Claude Sonnet 5 on June 30 2026, the most agentic Sonnet model with performance close to Opus 4.8 at lower cost. Context: AI model designed to run autonomously in complex workflows, checking its own output, finishing tasks where previous models stopped. Visual focus: A flowing network of luminous neural pathways forming a figure-eight loop pattern in dark indigo space, soft amber glow at connection nodes, sense of autonomous self-correcting intelligence, elegant and controlled energy. Cinematic editorial photography, 35mm photochemical film look, subtle halation, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "claude-sonnet-5-anthropic-agent-ia-juin-2026"
   },
   {
-    "dest": "/images/blog/google-gemini-31-flash-image-omni-flash-video-juin-2026/hero.webp",
-    "prompt": "Article theme: Google launches Gemini 3.1 Flash Image and Gemini Omni Flash on June 30 2026, unifying image and video generation in a single API. Context: Fast image model at 4 seconds per image and video-from-image model, both available via Gemini API and Google AI Studio. Visual focus: Stream of images transforming into flowing video frames in a dark studio space, colorful light trails moving from still photographs into animated motion, deep dark background with multicolored luminous streaks, sense of transformation. Cinematic editorial photography, 35mm photochemical film look, subtle halation, long exposure light trail style, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "google-gemini-31-flash-image-omni-flash-video-juin-2026"
+    "dest": "/images/blog/californie-anthropic-claude-accord-agences-etat-2026/hero.webp",
+    "prompt": "Article theme: California Governor Newsom signs deal with Anthropic giving all state agencies access to Claude AI at 50% discount, announced June 29 2026. Context: Largest US state government AI deployment, covering 250000 public workers, modernizing government services. Visual focus: Golden Gate Bridge at dusk seen through floor-to-ceiling glass of a modern government building, warm sunset light mixing with cool blue monitor glow from workstations in the foreground, sense of technology meeting civic duty, no people visible. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
+    "slug": "californie-anthropic-claude-accord-agences-etat-2026"
   },
   {
-    "dest": "/images/blog/elevenlabs-music-v2-guide-createurs-video/hero.webp",
-    "prompt": "Article theme: ElevenLabs Music v2 practical guide for video creators, featuring section-level inpainting and mid-track genre switching for commercial production. Context: AI music generation tool that allows precise section-by-section editing without regenerating full tracks, with commercial license included. Visual focus: Sound wave waveform displayed on a dark studio monitor, selective glowing segments of the waveform highlighted in warm amber light against dark indigo background, hands near mixing board subtly blurred in foreground, professional audio production atmosphere. Cinematic editorial photography, 35mm photochemical film look, subtle halation, shallow depth of field, documentary still frame, not 3D render, no CGI look, no text, no watermark, no logo",
-    "slug": "elevenlabs-music-v2-guide-createurs-video"
+    "dest": "/images/blog/prompt-negatif-video-ia-a-quoi-ca-sert/hero.webp",
+    "prompt": "Article theme: Negative prompts in AI video generation, practical guide explaining what they actually do and how to use them to reduce artifacts like flickering, anatomical errors and temporal inconsistencies. Context: Technical tutorial for AI video creators showing how to target specific artifacts with precise negative keywords. Visual focus: Two side-by-side film frames on a dark editing timeline, left frame showing distorted glowing artifacts and visual noise in red tones, right frame showing clean crisp cinematic composition in cool blue tones, visual contrast between failure and success in AI generation, no text. Cinematic editorial photography, 35mm photochemical film look, subtle halation, close-up documentary still, not 3D render, no CGI look, no watermark, no logo",
+    "slug": "prompt-negatif-video-ia-a-quoi-ca-sert"
   }
 ]
