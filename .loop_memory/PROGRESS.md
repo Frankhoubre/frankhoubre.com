@@ -1,6 +1,43 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-03 (Run 11 — 3 articles published)
+## Last run: 2026-07-04 (Run 12 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-03 (batch 11: 3 articles).
+- WebSearch for real news in last 72h: found Anthropic-Samsung chip talks July 2, 2026
+  (TechCrunch, Bloomberg, The Information, Dataconomy, Korea Herald) and Microsoft Frontier
+  Company launch July 2, 2026 (TechCrunch, CNBC, TechAfrica News, TechTimes).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a59200fc.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, --queue
+  tmp-new-articles-queue-2026-07-04.json --start N --end N one at a time from main repo).
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Word-count warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (487 pages, 3 new articles prerendered, up from 482).
+- Staged explicit paths only (3 .md + 3 hero.webp), committed 11e3978, pushed origin/main.
+
+### Articles published this run
+1. `anthropic-samsung-chip-ia-2nm-juillet-2026` (actualite)
+2. `microsoft-frontier-company-25-milliards-deploiement-ia-2026` (actualite)
+3. `choisir-format-vertical-horizontal-video-ia-plateformes` (tutoriels/evergreen)
+
+### Technical note this run
+- Working tree: agent-a59200fc (current worktree). Articles committed directly.
+- Image generation: run from main repo (python3 scripts/render_blog_queue_gemini.py),
+  then cp -r from main repo public/ to worktree public/ before git add.
+- node_modules: hard-linked with cp -rl from main repo.
+- Build went 482 -> 487 pages (+3 articles +2 EN translations from translation loop).
+
+### Next run should
+1. Evergreen candidates: "présenter un projet vidéo IA à un client non-tech" (business),
+   "choisir son ratio d'aspect en vidéo IA" covered — skip. Try "comment créer un devis
+   pour un projet vidéo IA" (business, quote template).
+2. News to watch: GPT-5.6 broader public rollout (expected mid-July), Apple iOS 27
+   public beta (July 2026), Runway Gen-5 announcement, ElevenLabs platform updates,
+   Anthropic Samsung chip design finalization news.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
+
+## Previous run: 2026-07-03 (Run 11 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-02 (batch 10: 3 articles).

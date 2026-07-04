@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-04 — Vertical ou horizontal pour vos clips IA : comment choisir selon la plateforme
+- slug: choisir-format-vertical-horizontal-video-ia-plateformes
+- locale: fr
+- url: https://frankhoubre.com/blog/choisir-format-vertical-horizontal-video-ia-plateformes
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / decision guide
+- primary_keyword: choisir format vertical horizontal vidéo IA plateformes
+- secondary_keywords: 9:16 vs 16:9 vidéo IA, format natif social vidéo IA, ratio aspect vidéo IA TikTok YouTube, composition format vidéo IA mobile
+- sources: n/a (craft/evergreen, method-based, platform specs verified)
+- internal_links: -> /blog/produire-variantes-verticales-reels-shorts-ia, -> /blog/comment-structurer-video-ia-comme-vrai-film, -> /outils/calculateur-budget-production-ia
+- cta: calculateur budget production IA (soft)
+- cannibalization_notes: produire-variantes-verticales-reels-shorts-ia covers the technical pipeline for adapting 16:9 to 9:16 after the fact. This article covers the strategic decision of which format to choose before generation, for which platform, and why. Different intent (strategy vs. technique).
+- checker: pass (audit 0 err, build 487 pages)
+- published_commit: 11e3978
+
+### 2026-07-04 — Microsoft Frontier Company : 2,5 milliards pour déployer l'IA en entreprise
+- slug: microsoft-frontier-company-25-milliards-deploiement-ia-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/microsoft-frontier-company-25-milliards-deploiement-ia-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Microsoft Frontier Company 2,5 milliards déploiement IA enterprise 2026
+- secondary_keywords: Microsoft forward-deployed engineering AI, Frontier Company 6000 ingénieurs, adoption IA enterprise 2026, Microsoft Azure IA déploiement
+- sources: techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment, cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit, theaiinsider.tech/2026/07/02/microsoft-launches-2-5b-frontier-company, techafricanews.com/2026/07/03/microsoft-launches-frontier-company-with-2-5-billion-ai-transformation-investment
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/californie-anthropic-claude-accord-agences-etat-2026
+- cta: none
+- cannibalization_notes: openai-broadcom-jalapeno-chip-inference-ia-2026 covers chip hardware. anthropic-ipo-confidential covers Anthropic finance. This is specifically Microsoft's enterprise AI deployment unit launch July 2, 2026. Distinct event, company, angle.
+- checker: pass (audit 0 err, build 487 pages)
+- published_commit: 11e3978
+
+### 2026-07-04 — Anthropic en talks avec Samsung pour son premier chip IA maison
+- slug: anthropic-samsung-chip-ia-2nm-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/anthropic-samsung-chip-ia-2nm-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Anthropic Samsung chip IA 2nm juillet 2026
+- secondary_keywords: Anthropic chip propriétaire Samsung Foundry, Anthropic hardware infrastructure, Samsung 2nm Anthropic chip AI, Anthropic compute stratégie
+- sources: techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung, bloomberg.com/news/articles/2026-07-02/anthropic-in-talks-with-samsung-for-custom-ai-chip, dataconomy.com/2026/07/03/anthropic-explores-samsung-partnership-to-develop-custom-ai-chips, sammyguru.com/samsung-manufacture-anthropic-custom-ai-chip, thelec.net/news/articleView.html idxno=11933
+- internal_links: -> /blog/openai-broadcom-jalapeno-chip-inference-ia-2026, -> /blog/anthropic-ipo-confidential-965-milliards-valorisation-2026
+- cta: none
+- cannibalization_notes: openai-broadcom-jalapeno-chip-inference-ia-2026 covers OpenAI's Jalapeño chip. This is Anthropic's first custom chip talks with Samsung (different company, different event July 2, 2026). Distinct.
+- checker: pass (audit 0 err, build 487 pages)
+- published_commit: 11e3978
+
 ### 2026-07-03 — Prompt négatif en vidéo IA : à quoi ça sert vraiment ?
 - slug: prompt-negatif-video-ia-a-quoi-ca-sert
 - locale: fr

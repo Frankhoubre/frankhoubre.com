@@ -1,33 +1,26 @@
-# DAILY_REPORT — 2026-07-03 (Run 11)
+# DAILY_REPORT — 2026-07-04 (Run 12)
 
 ## Summary
 
-3 articles published. Build PASS (482 pages). Commit 4dada90. Pushed origin/main.
+3 articles published. Build PASS (487 pages). Commit 11e3978. Pushed origin/main.
 
-## Articles
+## Articles publiés
 
-1. **claude-sonnet-5-anthropic-agent-ia-juin-2026** (actualite)
-   Lancement de Claude Sonnet 5 le 30 juin 2026. Modèle agentique par défaut d'Anthropic, proche des perf Opus 4.8, $2/M tokens jusqu'au 31 août.
-   Sources: TechCrunch, Anthropic official, MacRumors, Nerova.ai
+1. `anthropic-samsung-chip-ia-2nm-juillet-2026` (actualite)
+   - Sources : TechCrunch, Bloomberg, The Information, Dataconomy, SammyGuru (2 juil. 2026)
+   - Sujet : Anthropic en talks avec Samsung Foundry pour un chip IA 2nm propriétaire
 
-2. **californie-anthropic-claude-accord-agences-etat-2026** (actualite)
-   Accord Newsom x Anthropic du 29 juin 2026. Toutes les agences d'État californien accèdent à Claude à -50%, formation incluse.
-   Sources: gov.ca.gov, TechCrunch, CBS Sacramento, The Next Web
+2. `microsoft-frontier-company-25-milliards-deploiement-ia-2026` (actualite)
+   - Sources : TechCrunch, CNBC, TechAfrica News, TheAIInsider (2-3 juil. 2026)
+   - Sujet : Microsoft Frontier Company — 2,5 milliards + 6 000 ingénieurs pour déployer l'IA en enterprise
 
-3. **prompt-negatif-video-ia-a-quoi-ca-sert** (tutoriels/evergreen)
-   Guide pratique sur les prompts négatifs en vidéo IA : mécanisme, limites, artefacts ciblables, méthode en 3 étapes et bibliothèque par type de plan.
+3. `choisir-format-vertical-horizontal-video-ia-plateformes` (tutoriels/evergreen)
+   - Sujet : Choisir entre format 9:16 et 16:9 selon la plateforme dès le brief
+   - Longueur : ~2200 mots. Distinct de produire-variantes-verticales-reels-shorts-ia (technique vs stratégie).
 
-## SEO Audit
+## Process
 
-0 errors. Warnings sur word count des articles actualite (attendu, 900-1500 acceptable per STYLE_GUIDE). Excerpts et titres ajustés pour respecter les limites Google.
-
-## Build
-
-482 pages (was 467). 3 nouveaux articles prerendus visible dans la sortie build.
-
-## Technical
-
-- Images générées via render_blog_queue_gemini.py --start N --end N (une à la fois, rapide).
-- Images générées directement dans worktree public/ (pas besoin de copie depuis main repo cette fois).
-- node_modules hard-linked depuis main repo (cp -rl).
-- Push via git push origin worktree-agent-a18db463:main (fast-forward).
+- SEO audit : 0 erreurs
+- Images : 3 hero.webp générées via Imagen API (render_blog_queue_gemini.py)
+- Build : 482 -> 487 pages (+3 articles +2 EN translations)
+- Commit : 11e3978 | Push : OK

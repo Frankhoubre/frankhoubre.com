@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 12 — 2026-07-04)
+
+- `Anthropic Samsung chip IA 2nm juillet 2026` — FILLED: anthropic-samsung-chip-ia-2nm-juillet-2026
+- `Microsoft Frontier Company 2,5 milliards déploiement IA enterprise 2026` — FILLED: microsoft-frontier-company-25-milliards-deploiement-ia-2026
+- `choisir format vertical horizontal vidéo IA plateformes` — FILLED: choisir-format-vertical-horizontal-video-ia-plateformes
+
 ## USED (Run 11 — 2026-07-03)
 
 - `Claude Sonnet 5 modèle agentique Anthropic juin 2026` — FILLED: claude-sonnet-5-anthropic-agent-ia-juin-2026
