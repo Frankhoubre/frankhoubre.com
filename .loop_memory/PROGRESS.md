@@ -1,6 +1,42 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-02 (Run 10 — 3 articles published)
+## Last run: 2026-07-05 (Run 13 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-04 (batch 12: 3 articles).
+- WebSearch for real news in last 24-72h: found Kling AI $2.8B funding round July 2-4 2026
+  (Bloomberg, CNBC, TechTimes, TechStartups) and Apple iOS 27 public beta announcement
+  July 2-3 2026 (Forbes, 9to5Mac, MacRumors, Apple newsroom).
+- Wrote 2 actualite + 1 business/evergreen directly in worktree agent-a68886ea.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, --queue
+  tmp-new-articles-queue-2026-07-05.json --start 0 --end 3 in two calls from main repo).
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 1 em-dash error in devis article -> fixed -> 0 errors.
+- Build: PASS (492 pages, 3 new articles prerendered, up from 487).
+- Staged explicit paths only (3 .md + 3 hero.webp), committed 82c4b16, pushed origin/main.
+
+### Articles published this run
+1. `kling-ai-levee-fonds-28-milliards-valorisation-juillet-2026` (actualite)
+2. `apple-ios-27-beta-publique-apple-intelligence-siri-ia` (actualite)
+3. `creer-devis-projet-video-ia-client-modele-structure` (business/evergreen)
+
+### Technical note this run
+- Working tree: agent-a68886ea (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- node_modules: hard-linked with cp -rl from main repo.
+- Build went 487 -> 492 pages (+3 articles +2 EN translations from translation loop).
+
+### Next run should
+1. Evergreen candidates: "présenter un projet vidéo IA à un client non-tech" (business),
+   "comment créer un brief client pour un projet vidéo IA" (business),
+   "checklist avant de livrer une vidéo IA au client" (business).
+2. News to watch: iOS 27 beta 3 developer release (around July 7-8), Apple Intelligence
+   new features testing; GPT-5.6 broader public rollout; Runway Gen-5 announcement;
+   ElevenLabs Eleven v3 TTS details; Anthropic Samsung chip design news.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-04 (Run 12 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-06-28 (batch 9: 3 articles).

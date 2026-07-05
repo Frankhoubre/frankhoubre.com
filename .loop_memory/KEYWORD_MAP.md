@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 13 — 2026-07-05)
+
+- `Kling AI levée fonds 2,8 milliards valorisation juillet 2026` — FILLED: kling-ai-levee-fonds-28-milliards-valorisation-juillet-2026
+- `iOS 27 beta publique Apple Intelligence Siri IA 2026` — FILLED: apple-ios-27-beta-publique-apple-intelligence-siri-ia
+- `créer devis projet vidéo IA client modèle structure` — FILLED: creer-devis-projet-video-ia-client-modele-structure
+
 ## USED (Run 10 — 2026-07-02)
 
 - `Claude Fable 5 retour juillet 2026 accès mondial` — FILLED: anthropic-fable-5-retour-global-juillet-2026

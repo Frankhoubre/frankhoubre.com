@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-05 — Créer un devis pour un projet vidéo IA : structure, pièges et modèle
+- slug: creer-devis-projet-video-ia-client-modele-structure
+- locale: fr
+- url: https://frankhoubre.com/blog/creer-devis-projet-video-ia-client-modele-structure
+- category: business
+- type: evergreen
+- search_intent: how-to / practical business
+- primary_keyword: créer devis projet vidéo IA client
+- secondary_keywords: devis prestation vidéo IA, scope prestation vidéo IA, clause révisions vidéo IA, modèle devis créateur vidéo IA, tarif vidéo IA client
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /outils/calculateur-budget-production-ia, -> /blog/clause-contrat-client-contenu-genere-ia
+- cta: calculateur budget production IA (soft)
+- cannibalization_notes: combien-facturer-video-ia-professionnelle-grille-prix covers pricing rates/amount; clause-contrat-client-contenu-genere-ia covers legal clauses; livrer-fichiers-sources-projet-video-ia-client covers delivery. This is specifically about writing the quote document itself (structure, scope, what to include/exclude). Distinct intent.
+- checker: pass (audit 0 err, build 492 pages)
+- published_commit: 82c4b16
+
+### 2026-07-05 — iOS 27 beta publique : Apple Intelligence et Siri IA arrivent sur iPhone
+- slug: apple-ios-27-beta-publique-apple-intelligence-siri-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/apple-ios-27-beta-publique-apple-intelligence-siri-ia
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: iOS 27 beta publique Apple Intelligence Siri IA 2026
+- secondary_keywords: iOS 27 créateurs vidéo, Apple Intelligence image generation, Siri IA iPhone 15 Pro, Image Playground iOS 27, Photos Extend iOS 27
+- sources: forbes.com/sites/davidphelan/2026/07/03/apple-ios-27-release-date-the-iphone-public-beta-is-just-days-away/, 9to5mac.com/2026/07/02/ios-27-public-beta-release-date-when-you-can-install-the-new-iphone-update/, macrumors.com/2026/07/02/ios-27-public-beta-release-date/, apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/, apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/
+- internal_links: none direct (news standalone, references iOS tools via context)
+- cta: none
+- cannibalization_notes: no existing iOS 27 or Apple Intelligence article. Distinct from all existing actualite articles (different company, different product). Checked CONTENT_LEDGER.
+- checker: pass (audit 0 err, build 492 pages)
+- published_commit: 82c4b16
+
+### 2026-07-05 — Kling AI lève 2,8 milliards de dollars : ce que ça change pour les créateurs
+- slug: kling-ai-levee-fonds-28-milliards-valorisation-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/kling-ai-levee-fonds-28-milliards-valorisation-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Kling AI levée fonds 2,8 milliards valorisation juillet 2026
+- secondary_keywords: Kuaishou Kling AI 18 milliards, Alibaba Tencent Kling AI, Kling AI IPO Hong Kong, Kling AI créateurs données Chine, Kling AI ARR 500 millions
+- sources: bloomberg.com/news/articles/2026-07-02/china-s-kling-ai-raises-2-billion-to-expand-ai-video-operations, cnbc.com/2026/07/03/kuaishou-shares-fall-after-securing-tencent-funding-for-kling-ai.html, techtimes.com/articles/319708/20260704/kling-ai-raises-record-28-billion-what-creators-owe-china-under-beijing-law.htm, techstartups.com/2026/07/03/kling-ai-raises-2-8b-at-15b-valuation-with-backing-from-alibaba-tencent-and-baidu/
+- internal_links: none direct (news/analysis standalone — Kling workflow articles referenced in body)
+- cta: none
+- cannibalization_notes: no existing Kling AI funding article. 2026-06-19-kling-3-turbo-previsualisation-video-ia covers Kling 3.0 Turbo launch (different event). This is the July 2026 $2.8B funding round. Distinct.
+- checker: pass (audit 0 err, build 492 pages)
+- published_commit: 82c4b16
+
 ### 2026-07-02 — ElevenLabs Music v2 : guide pratique pour créateurs vidéo
 - slug: elevenlabs-music-v2-guide-createurs-video
 - locale: fr
