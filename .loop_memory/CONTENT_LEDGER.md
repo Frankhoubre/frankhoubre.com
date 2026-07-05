@@ -89,6 +89,102 @@ article block goes below this line.
 - checker: pass (audit 0 err, build 492 pages)
 - published_commit: 82c4b16
 
+### 2026-07-04 — Vertical ou horizontal pour vos clips IA : comment choisir selon la plateforme
+- slug: choisir-format-vertical-horizontal-video-ia-plateformes
+- locale: fr
+- url: https://frankhoubre.com/blog/choisir-format-vertical-horizontal-video-ia-plateformes
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / decision guide
+- primary_keyword: choisir format vertical horizontal vidéo IA plateformes
+- secondary_keywords: 9:16 vs 16:9 vidéo IA, format natif social vidéo IA, ratio aspect vidéo IA TikTok YouTube, composition format vidéo IA mobile
+- sources: n/a (craft/evergreen, method-based, platform specs verified)
+- internal_links: -> /blog/produire-variantes-verticales-reels-shorts-ia, -> /blog/comment-structurer-video-ia-comme-vrai-film, -> /outils/calculateur-budget-production-ia
+- cta: calculateur budget production IA (soft)
+- cannibalization_notes: produire-variantes-verticales-reels-shorts-ia covers the technical pipeline for adapting 16:9 to 9:16. This covers the strategic decision of which format to choose before generation. Different intent.
+- checker: pass (audit 0 err, build 487 pages)
+- published_commit: 11e3978
+
+### 2026-07-04 — Microsoft Frontier Company : 2,5 milliards pour déployer l'IA en entreprise
+- slug: microsoft-frontier-company-25-milliards-deploiement-ia-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/microsoft-frontier-company-25-milliards-deploiement-ia-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Microsoft Frontier Company 2,5 milliards déploiement IA enterprise 2026
+- secondary_keywords: Microsoft forward-deployed engineering AI, Frontier Company 6000 ingénieurs, adoption IA enterprise 2026, Microsoft Azure IA déploiement
+- sources: techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment, cnbc.com/2026/07/02/microsoft-commits-2point5-billion-6000-employees-ai-implementation-unit, theaiinsider.tech/2026/07/02/microsoft-launches-2-5b-frontier-company, techafricanews.com/2026/07/03/microsoft-launches-frontier-company-with-2-5-billion-ai-transformation-investment
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/californie-anthropic-claude-accord-agences-etat-2026
+- cta: none
+- cannibalization_notes: openai-broadcom-jalapeno-chip-inference-ia-2026 covers chip hardware. This is Microsoft's enterprise AI deployment unit launch July 2, 2026. Distinct event.
+- checker: pass (audit 0 err, build 487 pages)
+- published_commit: 11e3978
+
+### 2026-07-04 — Anthropic en talks avec Samsung pour son premier chip IA maison
+- slug: anthropic-samsung-chip-ia-2nm-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/anthropic-samsung-chip-ia-2nm-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Anthropic Samsung chip IA 2nm juillet 2026
+- secondary_keywords: Anthropic chip propriétaire Samsung Foundry, Anthropic hardware infrastructure, Samsung 2nm Anthropic chip AI, Anthropic compute stratégie
+- sources: techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung, bloomberg.com/news/articles/2026-07-02/anthropic-in-talks-with-samsung-for-custom-ai-chip, dataconomy.com/2026/07/03/anthropic-explores-samsung-partnership-to-develop-custom-ai-chips
+- internal_links: -> /blog/openai-broadcom-jalapeno-chip-inference-ia-2026, -> /blog/anthropic-ipo-confidential-965-milliards-valorisation-2026
+- cta: none
+- cannibalization_notes: openai-broadcom-jalapeno-chip-inference-ia-2026 covers OpenAI's Jalapeño chip. This is Anthropic's custom chip talks with Samsung July 2, 2026. Distinct.
+- checker: pass (audit 0 err, build 487 pages)
+- published_commit: 11e3978
+
+### 2026-07-03 — Prompt négatif en vidéo IA : à quoi ça sert vraiment ?
+- slug: prompt-negatif-video-ia-a-quoi-ca-sert
+- locale: fr
+- url: https://frankhoubre.com/blog/prompt-negatif-video-ia-a-quoi-ca-sert
+- category: tutoriels
+- type: evergreen
+- search_intent: how-to / practical method
+- primary_keyword: prompt négatif vidéo IA à quoi ça sert
+- secondary_keywords: negative prompt vidéo IA, réduire artefacts vidéo IA, prompt négatif Kling, prompt négatif ComfyUI, flickering anatomical errors vidéo IA
+- sources: n/a (craft/evergreen, method-based, tool specs verified)
+- internal_links: -> /blog/corriger-erreurs-anatomiques-video-ia-corps-mains, -> /blog/corriger-scintillement-flicker-video-ia
+- cta: none
+- cannibalization_notes: no existing negative prompt dedicated article. Distinct from positive prompt failures and image prompt errors.
+- checker: pass (audit 0 err, build 482 pages)
+- published_commit: 4dada90
+
+### 2026-07-03 — Californie x Anthropic : Claude pour toutes les agences d'État
+- slug: californie-anthropic-claude-accord-agences-etat-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/californie-anthropic-claude-accord-agences-etat-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Californie Anthropic Claude accord agences État 2026
+- secondary_keywords: Newsom Claude Anthropic deal, Claude gouvernement californie, IA gouvernement état américain, Claude 50% discount agences
+- sources: gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership, techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/anthropic-fable-5-retour-global-juillet-2026
+- cta: none
+- cannibalization_notes: anthropic-ipo-confidential covers IPO/finance. This is the June 29 California government deal. Distinct.
+- checker: pass (audit 0 err, build 482 pages)
+- published_commit: 4dada90
+
+### 2026-07-03 — Claude Sonnet 5 : le modèle agentique par défaut d'Anthropic
+- slug: claude-sonnet-5-anthropic-agent-ia-juin-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/claude-sonnet-5-anthropic-agent-ia-juin-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Claude Sonnet 5 modèle agentique Anthropic juin 2026
+- secondary_keywords: Claude Sonnet 5 prix API, Sonnet 5 vs Opus 4.8, Claude Sonnet 5 workflow créatif, Claude Sonnet 5 contexte 1M tokens
+- sources: techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents, anthropic.com/news/claude-sonnet-5
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/anthropic-fable-5-retour-global-juillet-2026
+- cta: none
+- cannibalization_notes: different model and date from Fable 5 restoration. Distinct.
+- checker: pass (audit 0 err, build 482 pages)
+- published_commit: 4dada90
+
 ### 2026-07-02 — ElevenLabs Music v2 : guide pratique pour créateurs vidéo
 - slug: elevenlabs-music-v2-guide-createurs-video
 - locale: fr

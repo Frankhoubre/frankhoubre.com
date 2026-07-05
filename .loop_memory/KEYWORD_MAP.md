@@ -73,6 +73,18 @@ version-control for AI projects.
 - `iOS 27 beta publique Apple Intelligence Siri IA 2026` — FILLED: apple-ios-27-beta-publique-apple-intelligence-siri-ia
 - `créer devis projet vidéo IA client modèle structure` — FILLED: creer-devis-projet-video-ia-client-modele-structure
 
+## USED (Run 12 — 2026-07-04)
+
+- `Anthropic Samsung chip IA 2nm juillet 2026` — FILLED: anthropic-samsung-chip-ia-2nm-juillet-2026
+- `Microsoft Frontier Company 2,5 milliards déploiement IA enterprise 2026` — FILLED: microsoft-frontier-company-25-milliards-deploiement-ia-2026
+- `choisir format vertical horizontal vidéo IA plateformes` — FILLED: choisir-format-vertical-horizontal-video-ia-plateformes
+
+## USED (Run 11 — 2026-07-03)
+
+- `Claude Sonnet 5 modèle agentique Anthropic juin 2026` — FILLED: claude-sonnet-5-anthropic-agent-ia-juin-2026
+- `Californie Anthropic Claude accord agences État 2026` — FILLED: californie-anthropic-claude-accord-agences-etat-2026
+- `prompt négatif vidéo IA à quoi ça sert` — FILLED: prompt-negatif-video-ia-a-quoi-ca-sert
+
 ## USED (Run 10 — 2026-07-02)
 
 - `Claude Fable 5 retour juillet 2026 accès mondial` — FILLED: anthropic-fable-5-retour-global-juillet-2026

@@ -39,41 +39,65 @@
 ## Previous run: 2026-07-04 (Run 12 — 3 articles published)
 
 ### What happened
-- Read all .loop_memory/ files. Last publish was 2026-06-28 (batch 9: 3 articles).
-- WebSearch for real news in last 72h: found Anthropic Claude Fable 5 global restore July 1 2026
-  (CNBC, Forbes, VentureBeat, 9to5Mac, MarkTechPost, Al Jazeera) and Google launching Gemini 3.1
-  Flash Image + Gemini Omni Flash on June 30 2026 (Google AI changelog, Google DeepMind, DigitalApplied).
-- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a0ae2ae7.
-- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, --queue tmp-new-articles-queue.json --start N --end N one by one because batch was hanging when using default queue).
+- Read all .loop_memory/ files. Last publish was 2026-07-03 (batch 11: 3 articles).
+- WebSearch for real news in last 72h: found Anthropic-Samsung chip talks July 2, 2026
+  (TechCrunch, Bloomberg, The Information, Dataconomy, Korea Herald) and Microsoft Frontier
+  Company launch July 2, 2026 (TechCrunch, CNBC, TechAfrica News, TechTimes).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a59200fc.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API, --queue
+  tmp-new-articles-queue-2026-07-04.json --start N --end N one at a time from main repo).
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Word-count warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (487 pages, 3 new articles prerendered, up from 482).
+- Staged explicit paths only (3 .md + 3 hero.webp), committed 11e3978, pushed origin/main.
+
+### Articles published this run
+1. `anthropic-samsung-chip-ia-2nm-juillet-2026` (actualite)
+2. `microsoft-frontier-company-25-milliards-deploiement-ia-2026` (actualite)
+3. `choisir-format-vertical-horizontal-video-ia-plateformes` (tutoriels/evergreen)
+
+### Technical note this run
+- Working tree: agent-a59200fc. Image generation: run from main repo, then cp to worktree.
+- node_modules: hard-linked with cp -rl from main repo.
+- Build went 482 -> 487 pages (+3 articles +2 EN translations from translation loop).
+
+### Next run should
+1. Evergreen: "comment créer un devis pour un projet vidéo IA" (business, quote template).
+2. News to watch: GPT-5.6 broader public rollout, Apple iOS 27 public beta (July 14),
+   Runway Gen-5 announcement, ElevenLabs platform updates, Kling IPO news.
+
+## Previous run: 2026-07-03 (Run 11 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-02 (batch 10: 3 articles).
+- WebSearch for real news in last 72h: found Anthropic Claude Sonnet 5 launch June 30 2026
+  (TechCrunch, Anthropic official, MacRumors, Nerova.ai) and California x Anthropic state deal
+  June 29 2026 (gov.ca.gov, TechCrunch, CBS Sacramento, The Next Web, Fox Business).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a18db463.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API).
 - SEO audit: 0 errors. Title/word-count warnings on news articles expected per STYLE_GUIDE.
-- Build: PASS (467 pages, 3 new articles prerendered).
-- Staged explicit paths only (3 .md + 3 hero.webp), committed e188e5c, pushed origin/main.
+- Build: PASS (482 pages, 3 new articles prerendered, up from 467).
+- Staged explicit paths only (3 .md + 3 hero.webp + queue file), committed 4dada90, pushed origin/main.
+
+### Articles published this run
+1. `claude-sonnet-5-anthropic-agent-ia-juin-2026` (actualite)
+2. `californie-anthropic-claude-accord-agences-etat-2026` (actualite)
+3. `prompt-negatif-video-ia-a-quoi-ca-sert` (tutoriels/evergreen)
+
+### Technical note this run
+- Working tree: agent-a18db463. Build went 467 -> 482 pages.
+
+## Previous run: 2026-07-02 (Run 10 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-06-28 (batch 9: 3 articles).
+- Wrote 2 actualite + 1 tutoriels/evergreen directly in worktree agent-a0ae2ae7.
+- Build: PASS (467 pages). Committed e188e5c, pushed origin/main.
 
 ### Articles published this run
 1. `anthropic-fable-5-retour-global-juillet-2026` (actualite)
 2. `google-gemini-31-flash-image-omni-flash-video-juin-2026` (actualite)
 3. `elevenlabs-music-v2-guide-createurs-video` (tutoriels/evergreen)
-
-### Technical note this run
-- Working tree: agent-a0ae2ae7 (current worktree). Articles committed directly.
-- Image generation: CRITICAL - do NOT run render_blog_queue_gemini.py --force without --queue on the
-  small file, or it reads tmp-blog-gen-queue.json (249 items) and hangs. Use:
-  python3 scripts/render_blog_queue_gemini.py --queue tmp-new-articles-queue.json --force --start N --end N
-  one at a time (each call runs fast, ~30s). Generate then kill if it hangs silently.
-- Worktree has its own public/ directory separate from main repo. Copy images from main to worktree:
-  cp -r /path/to/main/public/images/blog/[slug] /path/to/worktree/public/images/blog/
-- node_modules: hard-link with cp -rl before running build.
-- Build went 462 -> 467 pages (+3 articles +2 EN translations from translation loop).
-
-### Next run should
-1. Evergreen candidates: "présenter un projet vidéo IA à un client non-tech" (business),
-   "prompt négatif : à quoi ça sert vraiment en vidéo IA" (technique),
-   "vertical vs horizontal pour vos clips IA" (format platform).
-2. News to watch: Runway Gen-5 or Gen-4.6 announcement, Apple Intelligence iOS 27 updates,
-   ElevenLabs Eleven v3 TTS launch details, Midjourney V1 video model broader rollout news,
-   ByteDance Seedance 2.5 details.
-3. Check if new articles got EN translations (translation loop may handle).
-4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK.
 
 ## Previous run: 2026-06-28 (Run 9 — 3 articles published)
 
