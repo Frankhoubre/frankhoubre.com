@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 14 — 2026-07-06)
+
+- `Runway Agent Skills campagnes pub vidéo IA juillet 2026` — FILLED: runway-agent-skills-campagnes-pub-video-ia-juillet-2026
+- `EU AI Act Article 50 marquage vidéo IA août 2026` — FILLED: eu-ai-act-article-50-marquage-video-ia-aout-2026
+- `présenter projet vidéo IA client non-tech` — FILLED: presenter-projet-video-ia-client-non-tech
+
 ## USED (Run 13 — 2026-07-05)
 
 - `Kling AI levée fonds 2,8 milliards valorisation juillet 2026` — FILLED: kling-ai-levee-fonds-28-milliards-valorisation-juillet-2026

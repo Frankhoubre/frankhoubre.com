@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-06 — Présenter un projet vidéo IA à un client non-tech : méthode
+- slug: presenter-projet-video-ia-client-non-tech
+- locale: fr
+- url: https://frankhoubre.com/blog/presenter-projet-video-ia-client-non-tech
+- category: business
+- type: evergreen
+- search_intent: how-to / practical business
+- primary_keyword: présenter projet vidéo IA client non-tech
+- secondary_keywords: pitch client vidéo IA, moodboard client IA, révisions projet vidéo IA, brief client production IA, validation styleframe vidéo IA
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /blog/livrer-fichiers-sources-projet-video-ia-client, -> /blog/creer-devis-projet-video-ia-client-modele-structure
+- cta: none direct (soft references to devis and livraison guides)
+- cannibalization_notes: organiser-brief-client-production-video-ia covers brief writing; creer-devis-projet-video-ia-client-modele-structure covers quote document; comment-convaincre-client-video-ia covers convincing existing clients. This is specifically about the presentation method to a non-tech client: moodboard, styleframe, animatique, revision rounds. Distinct intent.
+- checker: pass (audit 0 err, build 497 pages)
+- published_commit: 50bab6c (merge 4b09952)
+
+### 2026-07-06 — EU AI Act Article 50 : vos vidéos IA doivent être marquées dès le 2 août
+- slug: eu-ai-act-article-50-marquage-video-ia-aout-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/eu-ai-act-article-50-marquage-video-ia-aout-2026
+- category: actualite
+- type: news
+- search_intent: news / urgent compliance guide
+- primary_keyword: EU AI Act Article 50 marquage vidéo IA août 2026
+- secondary_keywords: EU AI Act compliance créateurs, C2PA watermark vidéo IA, marquage contenu IA Europe, watermark stéganographique vidéo IA, deployer EU AI Act obligations
+- sources: tellers.ai/blog/ai_video_eu_ai_act_compliance_august_2026_2026-04-27.mdx/, artificialintelligenceact.eu/transparency-rules-article-50/, kontainer.com/news/the-eus-new-rules-on-ai-generated-visual-content-what-every-marketer-must-know
+- internal_links: -> /blog/clause-contrat-client-contenu-genere-ia, -> /blog/livrer-fichiers-sources-projet-video-ia-client
+- cta: none
+- cannibalization_notes: clause-contrat-client-contenu-genere-ia covers contractual IA clauses; this covers the EU regulatory obligation to mark AI video content (Article 50). Different scope (regulation vs contract). No existing article on EU AI Act enforcement. Distinct.
+- checker: pass (audit 0 err, build 497 pages)
+- published_commit: 50bab6c (merge 4b09952)
+
+### 2026-07-06 — Runway lance Agent Skills : créer une pub vidéo IA en une commande
+- slug: runway-agent-skills-campagnes-pub-video-ia-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/runway-agent-skills-campagnes-pub-video-ia-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Runway Agent Skills campagnes pub vidéo IA juillet 2026
+- secondary_keywords: Runway Agent Skills campagne pub, Runway agent commercial vidéo, localisation vidéo IA Runway, Runway agentic workflow 2026
+- sources: runwayml.com/changelog (July 2, 2026 entry confirmed), releasebot.io/updates/runwayai
+- internal_links: -> /blog/organiser-brief-client-production-video-ia, -> /blog/meilleur-outil-ia-video-publicite-produit-comparatif
+- cta: none
+- cannibalization_notes: meilleur-outil-ia-video-publicite-produit-comparatif covers tool comparison for ads; this is a news article on the specific July 2 Runway Agent Skills launch. Different intent (news vs comparison). No existing Runway Agent Skills article. Distinct.
+- checker: pass (audit 0 err, build 497 pages)
+- published_commit: 50bab6c (merge 4b09952)
+
 ### 2026-07-05 — Créer un devis pour un projet vidéo IA : structure, pièges et modèle
 - slug: creer-devis-projet-video-ia-client-modele-structure
 - locale: fr

@@ -1,6 +1,44 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-05 (Run 13 — 3 articles published)
+## Last run: 2026-07-06 (Run 14 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-05 (batch 13: 3 articles).
+- WebSearch for real news in last 24-72h: found Runway Agent Skills launch July 2 2026
+  (runwayml.com/changelog confirmed) and EU AI Act Article 50 enforcement deadline August 2 2026
+  (tellers.ai, artificialintelligenceact.eu, kontainer.com verified).
+- Wrote 2 actualite + 1 business/evergreen directly in worktree agent-ab239127.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-06.json --start 0 --end 3 in two calls from main repo).
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (497 pages, 3 new articles prerendered, up from 492).
+- Staged explicit paths only (3 .mdx + 3 hero.webp), committed 50bab6c in worktree.
+- Merge conflict on untracked images in main repo: removed them first, then merged cleanly.
+- Merged worktree-agent-ab239127 into main (4b09952), pushed origin/main.
+
+### Articles published this run
+1. `runway-agent-skills-campagnes-pub-video-ia-juillet-2026` (actualite)
+2. `eu-ai-act-article-50-marquage-video-ia-aout-2026` (actualite)
+3. `presenter-projet-video-ia-client-non-tech` (business/evergreen)
+
+### Technical note this run
+- Working tree: agent-ab239127 (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- Build went 492 -> 497 pages (+3 articles +2 EN translations from translation loop).
+- Merge conflict: the 3 generated images existed as untracked in main working tree.
+  Fix: remove them from main before merge. Same pattern as previous runs.
+
+### Next run should
+1. Evergreen candidates: "checklist avant de livrer une vidéo IA au client" (business),
+   "créer un brief client pour un projet vidéo IA" (business, brief template),
+   "comment intégrer l'IA dans son workflow de production existant" (tutoriels).
+2. News to watch: iOS 27 public beta launch (around July 14), Runway Gen-5 announcement,
+   ElevenLabs v3 TTS details, GPT-5.6 broader public rollout, EU AI Act further enforcement dates.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-05 (Run 13 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-04 (batch 12: 3 articles).
