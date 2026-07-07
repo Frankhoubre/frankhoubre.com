@@ -1,0 +1,167 @@
+---
+title: "Checklist avant de livrer une vidéo IA à un client"
+date: "2026-07-07"
+category: "business"
+excerpt: "La checklist complète pour livrer une vidéo IA sans mauvaise surprise : artefacts, audio, droits, formats, documentation et lecture finale avant envoi."
+tags: ["livraison vidéo IA", "client", "checklist production", "workflow", "business"]
+seoTitle: "Checklist livraison vidéo IA client : contrôles avant envoi"
+seoDescription: "La checklist complète pour livrer une vidéo IA à un client sans mauvaise surprise : artefacts, audio, droits, formats, documentation et gestion des retours."
+slug: "checklist-avant-livrer-video-ia-client"
+published: true
+image: "/images/blog/checklist-avant-livrer-video-ia-client/hero.webp"
+thumbnail: "/images/blog/checklist-avant-livrer-video-ia-client/hero.webp"
+---
+
+# Checklist avant de livrer une vidéo IA à un client
+
+La première fois que vous envoyez une vidéo IA à un client, vous avez probablement regardé la vidéo une fois, trouvé qu'elle était bien, et cliqué sur Envoyer. Et ensuite le client vous a répondu que la main du personnage se déforme à 0:18, que l'audio s'efface en fondu à la fin au lieu de couper net, et que le fichier fait 3,8 Go pour 45 secondes.
+
+Ce retour-là coûte du temps, de l'énergie et de la crédibilité. La livraison n'est pas la partie glamour du travail, mais c'est celle que le client juge le plus concrètement.
+
+Cette checklist couvre tout ce qu'il faut vérifier avant d'appuyer sur Envoyer.
+
+## 1. Contrôle visuel image par image (artefacts IA)
+
+Les artefacts vidéo IA se cachent dans les transitions. Pas forcément au milieu d'un plan, mais aux coutures, aux premiers et derniers frames, aux moments où deux générations se rejoignent au montage.
+
+Regardez chaque plan en entier, au moins une fois à vitesse normale et une fois en pause sur les moments suspects. Ce que vous cherchez :
+
+- **Déformation anatomique** : mains avec trop de doigts, visage qui change de forme entre deux frames, dents qui disparaissent.
+- **Flickering de texture** : une zone de l'image qui scintille ou change de couleur brusquement.
+- **Glitch de background** : le fond qui "respire" ou se déplace légèrement entre frames.
+- **Transition de cohérence** : entre deux plans générés séparément, le personnage a changé de vêtement, d'éclairage ou de proportions.
+- **Dernier frame suspect** : beaucoup de modèles finissent le plan sur un frame dégradé. Le couper est souvent la solution.
+
+Si vous trouvez un artefact corrigeable avec de l'inpainting ou un recadrage, corrigez-le avant la livraison. Si ce n'est pas corrigeable sans tout regénérer, parlez-en au client avant qu'il le découvre seul.
+
+## 2. Contrôle audio
+
+L'audio est systématiquement sous-vérifié dans les projets vidéo IA. Les problèmes courants :
+
+- **Coupure nette vs fondu** : vérifiez que la fin et le début de l'audio correspondent à ce que le client a validé dans le brief.
+- **Désynchronisation voix/lèvres** : si le plan utilise du lip sync IA, jouez-le en boucle plusieurs fois. Le décalage qui passe inaperçu à la première lecture devient évident au troisième visionnage.
+- **Niveau audio incohérent** : si votre vidéo enchaîne plusieurs plans générés avec des musiques ou des ambiances différentes, normalisez les niveaux. Un saut de +6 dB entre deux plans sonne amateur.
+- **Artefact de compression audio** : si vous avez exporté avec un codec agressif, écoutez avec un casque. Les claquements ou saturations qui passent sur des enceintes médiocres deviennent criants sur de l'audio de qualité.
+- **Droits de la musique** : si vous avez utilisé une musique générée ou une musique libre, vérifiez que la licence couvre l'usage client (commercial, diffusion, plateforme). Documentez la source.
+
+> 💡 **Le cut de Frank :** Exportez toujours une version avec piste audio séparée (stems) pour vos propres archives. Si le client revient six mois plus tard en demandant une variation sans musique, vous ne serez pas coincé à tout refaire.
+
+## 3. Format et specs techniques
+
+C'est la partie que les créateurs oublient parce qu'elle semble évidente. Elle ne l'est pas.
+
+Avant de livrer, confirmez :
+
+- **Résolution** : 1080p, 4K ou la spécification demandée dans le brief. Pas de surprises ici, mais une upscale via Topaz à la dernière minute laisse parfois des traces.
+- **Codec** : H.264/MP4 pour les livraisons web standard, ProRes 422 ou 4444 si le client fait de la post-production de son côté. Ne livrez jamais en codec propriétaire sans avoir confirmé que le client peut l'ouvrir.
+- **FPS** : 24 pour cinématique, 25 pour broadcast européen, 30 pour web/social. Si vous avez généré en 24 et que le client diffuse en 25, il y aura un problème de lecture dans certains contextes.
+- **Ratio d'aspect** : 16:9, 9:16 ou 1:1 selon la plateforme. Si le brief demande plusieurs formats, chaque format est une livraison distincte avec son propre fichier.
+- **Poids du fichier** : un MP4 H.264 bien optimisé pour 45 secondes en 1080p devrait peser entre 50 et 150 Mo selon la complexité du mouvement. Au-delà de 500 Mo pour 45 secondes, votre codec ou vos paramètres d'export sont probablement mal configurés.
+
+## 4. Vérification des droits et de la conformité
+
+C'est le point que les créateurs ignorent le plus souvent et qui peut créer des problèmes réels.
+
+**Droits sur le contenu généré** : les conditions d'utilisation des outils varient. Runway, Kling, HeyGen, Luma, tous ont des clauses spécifiques sur la propriété commerciale des outputs. Vérifiez que votre abonnement ou usage actuel couvre la livraison commerciale au client.
+
+**Marquage EU AI Act** : si vous livrez à un client européen ou si la vidéo sera diffusée en Europe, l'Article 50 de l'EU AI Act impose depuis le 2 août 2026 que le contenu vidéo généré par IA soit marqué comme tel. Documentez les outils utilisés et préparez les métadonnées requises. Voir le [guide complet EU AI Act Article 50 pour les créateurs](/blog/eu-ai-act-article-50-marquage-video-ia-aout-2026).
+
+**Personnages générés** : si votre vidéo contient un personnage qui ressemble à une personne réelle (acteur, personnalité publique), vérifiez que vous n'êtes pas dans une zone grise de droits à l'image. Les générateurs IA peuvent créer des ressemblances non intentionnelles.
+
+**Assets tiers intégrés** : si vous avez intégré dans le montage des photos, des logos ou des éléments graphiques qui ne viennent pas de votre génération IA, vérifiez les droits de ces éléments séparément.
+
+## 5. Documentation de livraison
+
+Un client professionnel s'attend à plus qu'un fichier dans un lien WeTransfer. La documentation accompagne la valeur perçue de votre travail.
+
+Ce que vous devriez inclure dans la livraison :
+
+- **Fiche technique** : outils utilisés, résolution, codec, FPS, durée.
+- **Récapitulatif des prompts principaux** (ou seeds) si le client peut en avoir besoin pour des modifications futures.
+- **Instructions d'usage** : sur quelles plateformes la vidéo peut être diffusée selon les droits en place.
+- **Mention EU AI Act** si applicable : un simple document attestant que la vidéo a été générée avec assistance IA.
+- **Délai et conditions de retour** : rappelez les conditions de révision prévues dans votre devis. Si vous avez livré dans les délais contractuels, indiquez la date.
+
+Un bon template de documentation prend 10 minutes à remplir et évite 90% des malentendus post-livraison. Pour structurer vos livrables dès le départ, consultez le [guide pour livrer les fichiers sources d'un projet vidéo IA](/blog/livrer-fichiers-sources-projet-video-ia-client).
+
+## 6. Test de lecture multi-devices
+
+Avant d'envoyer, lisez la vidéo sur au moins deux supports différents de celui où vous avez monté.
+
+Ce que cette étape révèle régulièrement :
+
+- Des couleurs qui semblent juste sur votre écran calibré mais qui saturent sur un écran standard.
+- Un audio qui passe bien sur enceintes studio mais claque sur les enceintes laptop.
+- Une résolution qui semble nette sur votre 4K mais qui révèle des artefacts en 1080p réel.
+
+Si votre client va regarder sur mobile, regardez-la sur mobile avant d'envoyer. Si c'est pour une diffusion sur grand écran, testez sur le plus grand écran disponible.
+
+## 7. Dernière lecture complète
+
+Avant de cliquer sur Envoyer, une lecture complète de la version finale, du début à la fin, sans interruption.
+
+Pas en faisant autre chose. Pas en accéléré. Une vraie lecture comme si vous étiez le client qui découvre pour la première fois.
+
+Cette étape prend 45 secondes pour une pub ou plusieurs minutes pour un long format. Elle rattrape systématiquement ce que tous les contrôles précédents ont manqué.
+
+## La checklist condensée
+
+Pour aller vite lors de la prochaine livraison :
+
+**Visuel**
+- Artefacts anatomiques vérifiés (mains, visages, corps)
+- Flickering et glitches de texture corrigés
+- Cohérence de personnage entre les plans
+- Dernier frame de chaque plan propre
+
+**Audio**
+- Niveaux normalisés
+- Synchronisation lip sync validée
+- Droits de la musique documentés
+- Pas d'artefact de compression
+
+**Technique**
+- Résolution et codec conformes au brief
+- FPS correct pour la destination
+- Poids de fichier raisonnable
+- Format d'aspect validé
+
+**Droits**
+- Licence outil couvre l'usage commercial
+- Marquage EU AI Act si applicable
+- Pas de ressemblance non intentionnelle avec une personne réelle
+
+**Documentation**
+- Fiche technique incluse
+- Conditions de révision rappelées
+- Instructions d'usage précisées
+
+**Final**
+- Test de lecture sur un autre device
+- Lecture complète de la version finale
+
+## Questions fréquentes
+
+**Faut-il livrer plusieurs formats d'un même fichier si le client ne l'a pas demandé ?**
+Non. Livrez exactement ce qui est dans le devis ou le brief validé. Proposer des formats supplémentaires non demandés peut sembler généreux mais crée de la confusion et des attentes sur de futures livraisons. Si vous voulez offrir quelque chose, proposez-le explicitement en bonus, pas implicitement dans le dossier.
+
+**Combien de temps garder les fichiers sources après livraison ?**
+Un minimum de six mois pour les fichiers sources (prompts, seeds, exports intermédiaires). Certains contrats clients précisent une durée. En l'absence de clause contractuelle, douze mois est une bonne pratique pour couvrir les demandes de modifications tardives.
+
+**Le client peut-il exiger des modifications après avoir signé la livraison ?**
+Ça dépend de ce que prévoit votre devis. Si vous avez défini un nombre de cycles de révision et que le client a formellement validé la version finale, les modifications supplémentaires sont hors scope et facturables. Documentez toujours la validation par email ou par signature.
+
+**Comment gérer un artefact que je n'arrive pas à corriger ?**
+Signalez-le au client avant la livraison, pas après. Expliquez ce qui cause l'artefact et proposez soit de le recréer (si le temps le permet), soit un compromis. Un client informé est plus indulgent qu'un client surpris.
+
+**Dois-je mentionner quels outils IA j'ai utilisés ?**
+C'est recommandé dans votre documentation de livraison, surtout pour les projets qui seront diffusés en Europe (obligation EU AI Act). Certains clients préfèrent ne pas savoir, ce qui peut être leur choix, mais protégez-vous en ayant la documentation de votre côté.
+
+**Quelle est la différence entre révision et nouvelle prestation ?**
+Une révision corrige un écart par rapport au brief validé. Une nouvelle prestation change le brief lui-même : nouveau texte, nouveau personnage, nouvelle durée, nouveau format. La distinction doit être claire dans votre devis original. Si ce n'est pas le cas, c'est le moment de mettre à jour votre template pour la prochaine fois.
+
+**Est-ce qu'une vidéo IA nécessite des mentions légales spécifiques sur les réseaux sociaux ?**
+YouTube, TikTok, Instagram et Meta imposent de mentionner le contenu généré ou assisté par IA via leurs outils de déclaration intégrés. Cette obligation s'applique quel que soit l'auteur (vous ou votre client). Informez le client de cette obligation dans votre documentation de livraison.
+
+**Faut-il tester la vidéo sur mobile même pour un projet destiné au desktop ?**
+Oui, au moins une fois. Beaucoup de clients vont regarder votre livraison sur leur téléphone avant tout, même si la destination finale est un écran desktop. Si votre vidéo leur paraît mauvaise au premier visionnage mobile, c'est leur première impression.
