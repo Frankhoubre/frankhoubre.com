@@ -67,6 +67,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 15 — 2026-07-07)
+
+- `xAI Grok Voice 21 nouvelles voix Voice Agent Builder juillet 2026` — FILLED: xai-grok-voice-21-voix-voice-agent-builder-juillet-2026
+- `Meta Watermelon modèle IA GPT-5.5 parité juillet 2026` — FILLED: meta-watermelon-modele-ia-gpt-55-parite-juillet-2026
+- `checklist livraison vidéo IA client` — FILLED: checklist-avant-livrer-video-ia-client
+
 ## USED (Run 14 — 2026-07-06)
 
 - `Runway Agent Skills campagnes pub vidéo IA juillet 2026` — FILLED: runway-agent-skills-campagnes-pub-video-ia-juillet-2026

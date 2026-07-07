@@ -4,6 +4,10 @@ The canonical latest daily report lives at the repo root: `../DAILY_REPORT.md`.
 Each run overwrites the root file with that day's report and appends a one-line
 summary to `PROGRESS.md` (which is the durable history).
 
+## Run 15 — 2026-07-07
+
+3 articles published. Build PASS (502 pages). 0 SEO errors. Pushed to origin/main (94072c4).
+
 ## Run 14 — 2026-07-06
 
 3 articles published. Build PASS (497 pages). 0 SEO errors. Pushed to origin/main (4b09952).

@@ -1,6 +1,46 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-06 (Run 14 — 3 articles published)
+## Last run: 2026-07-07 (Run 15 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-06 (batch 14: 3 articles).
+- WebSearch for real news in last 24-72h: found xAI Grok Voice 21 new multilingual voices
+  (x.ai/news/new-flagship-voices July 6, 2026 confirmed) and Meta Watermelon model claiming
+  GPT-5.5 parity (Bloomberg, American Bazaar, Benzinga, TechTimes, July 3-4 confirmed).
+- Wrote 2 actualite + 1 business/evergreen directly in worktree agent-ae704954.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-07.json --start 0 --end 3 in two calls from main repo).
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Fixed thumbnail, excerpt length, and internal links on all 3 articles.
+  Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (502 pages, 3 new articles prerendered, up from 497).
+- Staged explicit paths only (3 .mdx + 3 hero.webp), committed 94072c4 in worktree.
+- Merge conflict on untracked images in main repo: removed them first, then merged cleanly (fast-forward).
+- Pushed origin/main.
+
+### Articles published this run
+1. `xai-grok-voice-21-voix-voice-agent-builder-juillet-2026` (actualite)
+2. `meta-watermelon-modele-ia-gpt-55-parite-juillet-2026` (actualite)
+3. `checklist-avant-livrer-video-ia-client` (business/evergreen)
+
+### Technical note this run
+- Working tree: agent-ae704954 (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- Build went 497 -> 502 pages (+3 articles +2 EN translations from translation loop).
+- Merge conflict: the 3 generated images existed as untracked in main working tree.
+  Fix: remove them from main before merge. Same pattern as previous runs.
+
+### Next run should
+1. Evergreen candidates: "créer un brief client pour un projet vidéo IA" (business, brief template),
+   "comment intégrer l'IA dans son workflow de production existant" (tutoriels),
+   "comment structurer une offre de service vidéo IA" (business).
+2. News to watch: iOS 27 public beta launch (around July 14), Runway Gen-5 announcement,
+   xAI Grok 4.5 broader public rollout, Meta Watermelon release date if announced,
+   EU AI Act Article 50 enforcement (August 2 deadline approaching — possible follow-up).
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-06 (Run 14 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-05 (batch 13: 3 articles).

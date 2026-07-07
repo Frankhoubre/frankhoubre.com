@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-07 — Checklist avant de livrer une vidéo IA à un client
+- slug: checklist-avant-livrer-video-ia-client
+- locale: fr
+- url: https://frankhoubre.com/blog/checklist-avant-livrer-video-ia-client
+- category: business
+- type: evergreen
+- search_intent: how-to / practical checklist
+- primary_keyword: checklist livraison vidéo IA client
+- secondary_keywords: livrer vidéo IA client, vérification avant livraison vidéo IA, artefacts vidéo IA livraison, droits vidéo IA commercial, documentation livraison production IA
+- sources: n/a (craft/evergreen, method-based)
+- internal_links: -> /blog/eu-ai-act-article-50-marquage-video-ia-aout-2026, -> /blog/livrer-fichiers-sources-projet-video-ia-client
+- cta: none
+- cannibalization_notes: livrer-fichiers-sources-projet-video-ia-client covers what to include in the delivery package; presenter-projet-video-ia-client-non-tech covers how to present to client. This is specifically the pre-send quality checklist (artefacts, audio, format, rights, final read). Distinct intent.
+- checker: pass (audit 0 err, build 502 pages)
+- published_commit: 94072c4
+
+### 2026-07-07 — Meta Watermelon : le modèle qui prétend rattraper GPT-5.5
+- slug: meta-watermelon-modele-ia-gpt-55-parite-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/meta-watermelon-modele-ia-gpt-55-parite-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Meta Watermelon modèle IA GPT-5.5 parité juillet 2026
+- secondary_keywords: Watermelon Meta AI LLM, Alexandr Wang Meta superintelligence, Meta Muse Spark Avocado, Watermelon benchmarks GPT-5.5, Meta frontier model 2026
+- sources: americanbazaaronline.com/2026/07/03/meta-ai-chief-says-watermelon-model-has-caught-up-to-gpt-5-5, benzinga.com/markets/tech/26/07/60264651/metas-upcoming-watermelon-ai-model-matches-openais-gpt-5-5, techtimes.com/articles/319723/20260704/meta-watermelon-ai-claims-gpt-55-parity-benchmarks-remain-unnamed-and-unverified.htm
+- internal_links: -> /blog/claude-sonnet-5-anthropic-agent-ia-juin-2026, -> /blog/openai-gpt-56-sol-terra-luna-modeles-juin-2026
+- cta: none
+- cannibalization_notes: no existing Meta Watermelon article. claude-sonnet-5 and openai-gpt-56 cover other frontier models but from different companies and distinct events. This is the July 2026 Meta internal Watermelon parity claim. Distinct.
+- checker: pass (audit 0 err, build 502 pages)
+- published_commit: 94072c4
+
+### 2026-07-07 — xAI lance 21 nouvelles voix Grok et un builder d'agents vocaux
+- slug: xai-grok-voice-21-voix-voice-agent-builder-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/xai-grok-voice-21-voix-voice-agent-builder-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: xAI Grok Voice 21 nouvelles voix Voice Agent Builder juillet 2026
+- secondary_keywords: Grok Voice multilingue 25 langues, Voice Agent Builder no-code xAI, TTS API xAI tarifs, Grok Voice vs ElevenLabs, voix IA créateurs vidéo
+- sources: x.ai/news/new-flagship-voices (July 6, 2026), x.ai/news/grok-voice-agent-builder (July 1, 2026), releasebot.io/updates/xai, basenor.com/blogs/news/xai-launches-grok-voice-agent-builder-beta-for-developers
+- internal_links: -> /blog/elevenlabs-music-v2-guide-createurs-video, -> /blog/elevenlabs-tutoriel-definitif-voix-ultra-realistes
+- cta: none
+- cannibalization_notes: grok-imagine-video-1-5-xai-generation-video-ia covers xAI's Grok Imagine Video 1.5 (different product: video generation vs TTS/voice). No existing article on Grok Voice. Distinct.
+- checker: pass (audit 0 err, build 502 pages)
+- published_commit: 94072c4
+
 ### 2026-07-06 — Présenter un projet vidéo IA à un client non-tech : méthode
 - slug: presenter-projet-video-ia-client-non-tech
 - locale: fr
