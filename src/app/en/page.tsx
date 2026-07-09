@@ -6,7 +6,7 @@ import { baseUrl, person, siteName } from "@/lib/site";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "AI filmmaking, image & video, done with a cinematic standard",
-  titleAbsolute: `${siteName} — AI Filmmaker & Creative Director`,
+  titleAbsolute: `${siteName} | AI Filmmaker & Creative Director`,
   description:
     "Frank Houbre teaches creators how to make AI images, videos and films that actually look cinematic. Tutorials, workflows and analysis, minus the plastic AI look.",
   path: "/en",

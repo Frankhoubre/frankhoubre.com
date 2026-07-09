@@ -41,7 +41,7 @@ const faqEntries = [
   {
     question: "Qui est Frank Houbre ?",
     answer:
-      "Frank Houbre est un formateur IA, réalisateur IA et entrepreneur français spécialisé dans la création d’images, de vidéos et de films assistés par intelligence artificielle.",
+      "Frank Houbre est un formateur IA, réalisateur IA et entrepreneur français. Il a fondé la formation AI Studios, l’outil d’écriture ScreenWeaver et la plateforme Business Dynamite. Ses films IA Ronces et VOIDBORN ont été primés dans des festivals internationaux comme le SIAFF de Séoul et les Chroma Awards.",
   },
   {
     question: "Que trouve-t-on sur frankhoubre.com ?",
@@ -265,6 +265,18 @@ export default function HomePage() {
                 structure, de pipeline, de production et de mise en scène que d’outils, vous êtes au
                 bon endroit. Vous trouverez ici des ressources pour apprendre, des projets
                 pour juger le niveau créatif, et un blog pour suivre l’évolution rapide de l’IA.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-neutral-800">
+                Les entreprises et boîtes de production peuvent solliciter une{" "}
+                <Link href="/prestation" className="ds-link font-medium text-neutral-950">
+                  mission de conseil IA en production vidéo et image
+                </Link>
+                . Journalistes et organisateurs d’événements trouveront bio, visuels et
+                références dans le{" "}
+                <Link href="/presse" className="ds-link font-medium text-neutral-950">
+                  kit presse
+                </Link>
+                .
               </p>
             </div>
 

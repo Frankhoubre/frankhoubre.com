@@ -10,7 +10,7 @@ import {
 } from "@/lib/metadata";
 import { siteName } from "@/lib/site";
 
-const pageTitle = "Liens — podcast, réseaux et outils IA";
+const pageTitle = "Liens : podcast, réseaux et outils IA";
 const pageDescription =
   "Liens utiles de Frank Houbre : outils IA, podcast Génération IA, réseaux sociaux et ressources AI Studios. Suivez et accédez aux ressources en un clic.";
 

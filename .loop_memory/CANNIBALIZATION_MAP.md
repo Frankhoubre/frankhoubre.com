@@ -1,5 +1,11 @@
 # Carte anti-cannibalisation FR (analyse 2026-06-17)
 
+> 2026-07-09 : la carte pilier/satellite à jour et les mots-clés réservés par
+> site (AI Studios, ScreenWeaver, businessdynamite.xyz) vivent désormais dans
+> `seo-content-map.md` et `seo-cross-domain-strategy.md` à la racine du repo.
+> Les lire avant tout article ; ce fichier documente l'analyse historique du
+> corpus et les liens hiérarchiques déjà posés.
+
 Analyse de tout le corpus FR (222 articles) : clustering TF-IDF des titres/excerpts
 puis vérification de l'intention réelle par lecture des articles (6 agents sur les
 clusters à risque). Méthode non destructive retenue : différenciation + maillage

@@ -4,7 +4,21 @@ Goal: one evergreen article that builds topical authority WITHOUT
 cannibalizing. Useful even without any product.
 
 ## Pick the topic
-1. Read KEYWORD_MAP (gaps + "topics to AVOID") and IDEAS_BACKLOG.
+0. PRIMARY SOURCE: `seo-90-day-plan.md` (repo root, GSC-backed plan
+   2026-07-10 → 2026-10-07). Read its "État d'avancement" section, take the
+   next unpublished day and use its title/slug/keyword/intent/links/
+   anti-cannibalization parade as the brief. Rules:
+   - Days marked UPDATE refresh the named existing article (new sections,
+     internal links, `dateModified`), no new file.
+   - Days marked [données Frank] need real numbers from Frank: SKIP to the
+     next day and log the skip in the plan tracker.
+   - After publishing, update the plan's "État d'avancement" (day, slug,
+     date) and add the required INBOUND link from the cluster page listed
+     in the plan row.
+   Also read `seo-content-map.md` + `seo-cross-domain-strategy.md` (root):
+   they override KEYWORD_MAP on reserved/forbidden keywords.
+1. FALLBACK ONLY (plan exhausted or day impossible): read KEYWORD_MAP
+   (gaps + "topics to AVOID") and IDEAS_BACKLOG.
 2. Prefer the thin clusters (audio, end-to-end pipeline, troubleshooting long
    tail, job-to-be-done comparators).
 3. If Ahrefs/GSC is connected, validate with real volume + existing GSC queries

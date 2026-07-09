@@ -4,6 +4,11 @@ Full slug/title coverage lives in `CONTENT_INDEX.md` (auto-generated). This file
 is the human judgment layer: clusters, what is saturated, what to avoid, and
 where the real gaps are. Read it before choosing any evergreen topic.
 
+> 2026-07-09: the evergreen slot is now driven by `seo-90-day-plan.md` (repo
+> root, GSC-backed, J1 = 2026-07-10). This map is the FALLBACK. Reserved and
+> forbidden keywords now live in `seo-content-map.md` §3-4 and
+> `seo-cross-domain-strategy.md` (root) — they take precedence over this file.
+
 Site theme: making cinematic images, video, audio and music with AI, plus the
 production workflow and the business around it. FR is primary (219 articles),
 EN mirrors FR slugs (47 and growing via a separate translation loop).

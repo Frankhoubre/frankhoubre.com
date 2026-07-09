@@ -31,9 +31,12 @@
   Fix: remove them from main before merge. Same pattern as previous runs.
 
 ### Next run should
-1. Evergreen candidates: "créer un brief client pour un projet vidéo IA" (business, brief template),
-   "comment intégrer l'IA dans son workflow de production existant" (tutoriels),
-   "comment structurer une offre de service vidéo IA" (business).
+1. Evergreen slot: NOW DRIVEN BY `seo-90-day-plan.md` (repo root, added 2026-07-09,
+   GSC-backed). Take the next unpublished day from its "État d'avancement" section
+   (starts at J1 `wan-alibaba-guide-complet`, planned 2026-07-10) and follow the row's
+   brief + anti-cannibalization parade. Update the tracker after publishing. The old
+   candidates (brief client, workflow integration, offre de service) are already
+   covered by plan days J59/J16/J66 — do not write them separately.
 2. News to watch: iOS 27 public beta launch (around July 14), Runway Gen-5 announcement,
    xAI Grok 4.5 broader public rollout, Meta Watermelon release date if announced,
    EU AI Act Article 50 enforcement (August 2 deadline approaching — possible follow-up).

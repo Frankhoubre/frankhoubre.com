@@ -456,6 +456,17 @@ export default function AboutPage() {
             </Link>
             .
           </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Pour une collaboration professionnelle, la page{" "}
+            <Link href="/prestation" className="ds-link font-medium text-neutral-950">
+              conseil IA production vidéo et image
+            </Link>{" "}
+            détaille les conditions d’intervention en entreprise. Les médias disposent d’un{" "}
+            <Link href="/presse" className="ds-link font-medium text-neutral-950">
+              kit presse complet
+            </Link>{" "}
+            avec biographie, visuels et références festival.
+          </p>
         </section>
       </article>
     </>

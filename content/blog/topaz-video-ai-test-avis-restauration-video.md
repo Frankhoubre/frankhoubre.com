@@ -1,9 +1,9 @@
 ---
-title: "Topaz Video AI : test et avis complet sur la restauration vidéo"
+title: "Topaz Video AI : avis, prix et test réel de restauration"
 date: "2026-04-19"
-dateModified: "2026-06-10"
+dateModified: "2026-07-09"
 category: "actualite"
-excerpt: "Test terrain complet de Topaz Video AI pour restaurer des vidéos anciennes, avec workflow pro, réglages utiles et limites réelles."
+excerpt: "Avis complet sur Topaz Video AI après un usage réel : prix des abonnements, réglages qui tiennent en restauration vidéo, et les limites à connaître."
 thumbnail: "/images/blog/topaz-video-ai-test-avis-restauration-video/hero.webp"
 ---
 
@@ -64,6 +64,20 @@ Deux versions comparatives seulement : modérée et légèrement poussée. Éval
 Topaz n’est pas la dernière étape seule. Chaîne type : restauration, montage, étalonnage, mix. Après Topaz, recale contraste, saturation et grain dans ton NLE ou ton étalo pour éviter l’effet « plan traité à part ».
 
 Valide sur **plusieurs écrans** : moniteur, laptop, smartphone. Documente les réglages gagnants par famille de source.
+
+## Prix de Topaz Video AI : ce que ça coûte vraiment
+
+Topaz Labs est passé d'une licence perpétuelle à un modèle d'abonnement. Tarifs affichés sur le site officiel au 9 juillet 2026, en dollars US :
+
+| Formule | Prix | Contenu |
+| --- | --- | --- |
+| Personnel mensuel | 59 $/mois | rendu local illimité, 25 crédits cloud par mois |
+| Personnel annuel | 299 $/an (ou 39 $/mois sur 12 mois) | rendu local illimité, 25 crédits cloud par mois |
+| Pro annuel | 699 $/an (ou 74 $/mois sur 12 mois) | rendu local illimité, 100 crédits cloud par mois |
+
+Les crédits cloud ne se cumulent pas d'un mois sur l'autre : si tu ne fais pas de rendu cloud, ils sont perdus. Pour un indépendant qui restaure en local sur sa propre machine, la formule Personnel annuelle suffit largement. Le rendu cloud n'a d'intérêt que si ta config ne suit pas sur des sources longues ou du 4K.
+
+Mon avis sur le rapport qualité prix : rentable si tu factures de la restauration ou de l'upscaling à des clients, ou si tu exploites des archives régulièrement. Pour un besoin ponctuel, prends le mensuel le temps du projet, puis coupe. Vérifie toujours le tarif en vigueur sur le site officiel avant d'acheter, Topaz ajuste sa grille régulièrement.
 
 ## Tableau comparatif : agressif vs pro
 
@@ -234,6 +248,9 @@ Utile pour la méthode : décisions de pipeline, pas accumulation d’effets.
 
 ### Topaz vaut-il le coup pour un indépendant ?
 Oui si tu as un vrai besoin de restauration ou d’upscaling et une méthode de test. Non si tu veux un miracle sans contrôle.
+
+### Combien coûte Topaz Video AI ?
+Au 9 juillet 2026, l’abonnement Personnel est à 59 $ par mois ou 299 $ par an, avec rendu local illimité et 25 crédits cloud mensuels. La formule Pro monte à 699 $ par an avec 100 crédits cloud. Le détail est dans la section prix de cet article ; le tarif de référence reste celui affiché sur le site de Topaz Labs au moment de l’achat.
 
 ### Vieille vidéo en 4K « cinéma » ?
 Tu peux gagner en lisibilité. Tu ne recrées pas des détails absents. Vise « mieux et cohérent ».
