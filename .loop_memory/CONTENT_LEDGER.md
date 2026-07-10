@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-10 — WAN d'Alibaba : guide complet du modèle vidéo open source
+- slug: wan-alibaba-guide-complet
+- locale: fr
+- url: https://frankhoubre.com/blog/wan-alibaba-guide-complet
+- category: guides
+- type: evergreen
+- search_intent: how-to / comprehensive guide
+- primary_keyword: WAN Alibaba modèle vidéo open source guide complet
+- secondary_keywords: wan 2.7, wan 2.1, wan alibaba comfyui, image-to-video open source, first last frame vidéo IA
+- sources: n/a (craft/evergreen, verified tool specs: blog.comfy.org, aibizbuilderpro.com, computertech.co, alici.ai)
+- internal_links: -> /blog/wan-27-video-decevant-kling-seedance, -> /blog/upscaling-video-passer-vieux-court-metrage-4k-ia
+- cta: none
+- cannibalization_notes: wan-27-video-decevant-kling-seedance is a comparison/critique article. This is the comprehensive how-to guide covering all WAN versions, installation, settings, use cases. Distinct intent (guide vs opinion/comparison).
+- checker: pass (audit 0 err, build 513 pages)
+- published_commit: 6c37d39
+
+### 2026-07-10 — Google Photos lance Video Remix : retouche vidéo IA pour abonnés
+- slug: google-photos-video-remix-gemini-omni-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/google-photos-video-remix-gemini-omni-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Google Photos Video Remix Gemini Omni juillet 2026
+- secondary_keywords: Video Remix Google Photos, Gemini Omni video editing, relighting video IA Google, video remix abonnés AI Plus
+- sources: techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/, 9to5google.com/2026/07/08/google-photos-video-remix/, engadget.com/2210417/google-announces-new-video-remix-feature-for-ai-subscribers/, dataconomy.com/2026/07/09/google-video-remix-ai-tool-photos/
+- internal_links: -> /blog/google-flow-veo-31-edition-audio-juin-2026, -> /blog/video-ia-talking-head-presentations-quel-outil-choisir
+- cta: none
+- cannibalization_notes: google-flow-veo-31-edition-audio-juin-2026 covers Veo 3.1/Flow update; google-gemini-31-flash-image-omni-flash-video-juin-2026 covers new Gemini API models. This is the July 8 Google Photos Video Remix consumer tool launch. Distinct product and intent.
+- checker: pass (audit 0 err, build 513 pages)
+- published_commit: 6c37d39
+
+### 2026-07-10 — Grok 4.5 d'xAI : un modèle agentique à prix cassé pour les créateurs
+- slug: xai-grok-45-coding-agentique-createurs-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/xai-grok-45-coding-agentique-createurs-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Grok 4.5 xAI modèle agentique prix juillet 2026
+- secondary_keywords: Grok 4.5 tarif API, Grok 4.5 vs Claude Opus, Grok 4.5 Cursor coding, xAI agentique workflows créatifs
+- sources: x.ai/news/grok-4-5 (July 8, 2026), axios.com/2026/07/08/spacexai-grok-new-model, tech.yahoo.com/ai/articles/spacexai-launches-grok-4-5-204749219.html, explainx.ai/blog/grok-4-5-public-launch-spacexai-july-2026
+- internal_links: -> /blog/xai-grok-voice-21-voix-voice-agent-builder-juillet-2026, -> /blog/claude-sonnet-5-anthropic-agent-ia-juin-2026
+- cta: none
+- cannibalization_notes: xai-grok-voice-21-voix-voice-agent-builder-juillet-2026 covers Grok Voice TTS/July 6. grok-imagine-video-1-5-xai-generation-video-ia covers Grok Imagine Video. This is the July 8 Grok 4.5 agentic reasoning model launch. Distinct product.
+- checker: pass (audit 0 err, build 513 pages)
+- published_commit: 6c37d39
+
 ### 2026-07-07 — Checklist avant de livrer une vidéo IA à un client
 - slug: checklist-avant-livrer-video-ia-client
 - locale: fr

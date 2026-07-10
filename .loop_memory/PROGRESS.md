@@ -1,6 +1,50 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-07 (Run 15 — 3 articles published)
+## Last run: 2026-07-10 (Run 16 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-07 (batch 15: 3 articles).
+- WebSearch for real news in last 24-72h: found xAI Grok 4.5 launch July 8, 2026
+  (x.ai/news/grok-4-5, Axios, Yahoo Tech, explainx.ai confirmed) and Google Photos
+  Video Remix powered by Gemini Omni launch July 8, 2026 (TechCrunch, 9to5Google,
+  Engadget, Dataconomy confirmed).
+- Plan 90 jours J1 (2026-07-10): WAN Alibaba guide complet (slug wan-alibaba-guide-complet).
+- Wrote 2 actualite + 1 evergreen/guide directly in worktree agent-a99862aa.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-10.json --start 0 --end 3 in two calls from main repo).
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (513 pages, 3 new articles prerendered, up from 502).
+  Note: build from worktree failed on EN article timeout (comment-vendre-videos-ia-clients-professionnels),
+  build from main repo passed cleanly. Same pré-existing issue pattern, not caused by new articles.
+- Staged explicit paths only (3 .md + 3 hero.webp), committed 6c37d39 in worktree.
+- Merged fast-forward into main, pushed origin/main.
+
+### Articles published this run
+1. `xai-grok-45-coding-agentique-createurs-juillet-2026` (actualite)
+2. `google-photos-video-remix-gemini-omni-juillet-2026` (actualite)
+3. `wan-alibaba-guide-complet` (guides/evergreen — plan 90j J1)
+
+### Technical note this run
+- Working tree: agent-a99862aa (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- Build went 502 -> 513 pages (+3 articles + EN translations).
+- Merge conflict on untracked articles/images in main repo (had been copied there for build test).
+  Fix: remove them from main before merge. Same pattern as previous runs.
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J1 (wan-alibaba-guide-complet) publié. Marquer comme done dans seo-90-day-plan.md si nécessaire.
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J2 = `methode-realisateur-ia-diriger-avant-generer`
+   (cluster MARQUE, mot-clé "méthode réalisateur IA", liens vers /a-propos et
+   comment-penser-comme-realisateur). Vérifier anti-cannibalisation.
+2. News to watch: Anthropic-Microsoft talks (Maia 200 chip), iOS 27 public beta
+   (around July 14), Runway Gen-5 announcement, White House AI voluntary standards,
+   xAI Grok 4.5 EU launch (mid-July), Google Video Remix EMEA rollout.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-07 (Run 15 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-06 (batch 14: 3 articles).

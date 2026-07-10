@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 16 — 2026-07-10)
+
+- `Grok 4.5 xAI modèle agentique prix juillet 2026` — FILLED: xai-grok-45-coding-agentique-createurs-juillet-2026
+- `Google Photos Video Remix Gemini Omni juillet 2026` — FILLED: google-photos-video-remix-gemini-omni-juillet-2026
+- `WAN Alibaba modèle vidéo open source guide complet` — FILLED: wan-alibaba-guide-complet (plan 90j J1)
+
 ## USED (Run 15 — 2026-07-07)
 
 - `xAI Grok Voice 21 nouvelles voix Voice Agent Builder juillet 2026` — FILLED: xai-grok-voice-21-voix-voice-agent-builder-juillet-2026
