@@ -4,6 +4,26 @@ The canonical latest daily report lives at the repo root: `../DAILY_REPORT.md`.
 Each run overwrites the root file with that day's report and appends a one-line
 summary to `PROGRESS.md` (which is the durable history).
 
+## Run 17 — 2026-07-11
+
+3 articles published. Build PASS (517 pages). 0 SEO errors. Pushed to origin/main (e514bfb).
+
+### Articles
+1. openai-gpt-live-voix-duplex-chatgpt-juillet-2026 (actualite) — OpenAI GPT-Live full-duplex voice, 8 juillet 2026
+2. meta-muse-image-generateur-instagram-juillet-2026 (actualite) — Meta Muse Image lancement + controverse opt-out, 7-10 juillet 2026
+3. methode-realisateur-ia-diriger-avant-generer (guides/evergreen) — méthode personnelle Frank, plan 90j J2
+
+### Sources vérifiées
+- openai.com/index/introducing-gpt-live/ (TechCrunch, MacRumors, VentureBeat, SiliconANGLE)
+- about.fb.com/news/2026/07/introducing-muse-image-meta-ai/ (TechCrunch, CNBC, Bloomberg, Axios, Variety, Hollywood Reporter)
+- Méthode evergreen: craft/méthode Frank, anti-cannib vs comment-penser-comme-realisateur confirmé
+
+### Notes techniques
+- Build worktree: 517 pages. Pre-existing EN timeout non bloquant.
+- Images générées via Imagen API (scripts/render_blog_queue_gemini.py).
+- Queue format: dest sans prefix "public/" (le script l'ajoute automatiquement).
+- Plan 90 jours J2 (methode-realisateur-ia-diriger-avant-generer) publié.
+
 ## Run 16 — 2026-07-10
 
 3 articles published. Build PASS (513 pages). 0 SEO errors. Pushed to origin/main (6c37d39).

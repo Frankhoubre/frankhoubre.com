@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 17 — 2026-07-11)
+
+- `GPT-Live OpenAI voix full-duplex ChatGPT juillet 2026` — FILLED: openai-gpt-live-voix-duplex-chatgpt-juillet-2026
+- `Meta Muse Image générateur IA Instagram juillet 2026` — FILLED: meta-muse-image-generateur-instagram-juillet-2026
+- `méthode réalisateur IA diriger avant générer` — FILLED: methode-realisateur-ia-diriger-avant-generer (plan 90j J2)
+
 ## USED (Run 16 — 2026-07-10)
 
 - `Grok 4.5 xAI modèle agentique prix juillet 2026` — FILLED: xai-grok-45-coding-agentique-createurs-juillet-2026

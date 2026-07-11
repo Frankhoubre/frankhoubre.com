@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-11 — Réalisateur IA : ma méthode pour diriger avant de générer
+- slug: methode-realisateur-ia-diriger-avant-generer
+- locale: fr
+- url: https://frankhoubre.com/blog/methode-realisateur-ia-diriger-avant-generer
+- category: guides
+- type: evergreen
+- search_intent: informational / autorité personnelle
+- primary_keyword: méthode réalisateur IA diriger avant générer
+- secondary_keywords: réalisateur ia, diriger ia, prompt cinéma ia, état interne personnage ia, position caméra ia, logique montage ia
+- sources: n/a (craft/evergreen, méthode personnelle Frank Houbre)
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/comment-diriger-personnage-ia-comme-acteur
+- cta: ScreenWeaver soft bridge (workspace entre écriture et storyboard)
+- cannibalization_notes: comment-penser-comme-realisateur-avec-ia est un article générique "mindset de réalisateur". Cet article est la MÉTHODE PERSONNELLE de Frank (3 décisions concrètes, cas réels, exemples de prompts). Angle signature vs angle générique. Distinct.
+- checker: pass (audit 0 err, build 517 pages)
+- published_commit: e514bfb
+
+### 2026-07-11 — Meta Muse Image : le générateur IA qui a mis Instagram en colère
+- slug: meta-muse-image-generateur-instagram-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/meta-muse-image-generateur-instagram-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Meta Muse Image générateur IA Instagram juillet 2026
+- secondary_keywords: Muse Image Meta AI, Meta Superintelligence Labs image generator, Muse Image opt-out controverse, CAA SAG-AFTRA Meta likeness, Instagram générateur image IA
+- sources: about.fb.com/news/2026/07/introducing-muse-image-meta-ai/, techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/, cnbc.com/2026/07/07/meta-ai-muse-image.html, bloomberg.com/news/articles/2026-07-07/meta-debuts-new-ai-image-generation-model-inside-chatbot-instagram, axios.com/2026/07/07/ai-meta-image-generator, techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash, variety.com/2026/biz/news/meta-suspends-ai-image-instagram-feature-backlash-1236806989
+- internal_links: -> /blog/eu-ai-act-article-50-marquage-video-ia-aout-2026, -> /blog/wan-alibaba-guide-complet
+- cta: none
+- cannibalization_notes: no existing Meta Muse Image article. midjourney-medical-scanner covers a different company/product (Midjourney hardware). This is the July 7 Meta image generation model launch + July 10 consent controversy. Distinct event and company.
+- checker: pass (audit 0 err, build 517 pages)
+- published_commit: e514bfb
+
+### 2026-07-11 — GPT-Live : OpenAI passe la voix ChatGPT en full-duplex
+- slug: openai-gpt-live-voix-duplex-chatgpt-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/openai-gpt-live-voix-duplex-chatgpt-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: GPT-Live OpenAI voix full-duplex ChatGPT juillet 2026
+- secondary_keywords: GPT-Live-1 ChatGPT voix, voix bidirectionnelle IA ChatGPT, GPT-Live vs Advanced Voice Mode, OpenAI full-duplex voice model juillet 2026, ChatGPT voice créateurs
+- sources: openai.com/index/introducing-gpt-live/ (July 8, 2026), techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/, macrumors.com/2026/07/08/openai-gpt-live-voice/, venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person, siliconangle.com/2026/07/08/openai-launches-gpt-live-voice-model-series-ahead-broad-gpt-5-6-release/
+- internal_links: -> /blog/elevenlabs-music-v2-guide-createurs-video, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: xai-grok-voice-21-voix-voice-agent-builder-juillet-2026 covers xAI Grok Voice TTS/July 6. elevenlabs-music-v2-guide-createurs-video covers ElevenLabs Music. This is the July 8 OpenAI GPT-Live full-duplex voice model launch (different company, different product). Distinct.
+- checker: pass (audit 0 err, build 517 pages)
+- published_commit: e514bfb
+
 ### 2026-07-10 — WAN d'Alibaba : guide complet du modèle vidéo open source
 - slug: wan-alibaba-guide-complet
 - locale: fr

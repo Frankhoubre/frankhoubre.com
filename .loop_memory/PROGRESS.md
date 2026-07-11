@@ -1,6 +1,53 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-10 (Run 16 — 3 articles published)
+## Last run: 2026-07-11 (Run 17 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-10 (batch 16: 3 articles).
+- WebSearch for real news in last 24-72h: found OpenAI GPT-Live full-duplex voice model
+  launch July 8, 2026 (openai.com/index/introducing-gpt-live/, TechCrunch, MacRumors,
+  VentureBeat, SiliconANGLE confirmed) and Meta Muse Image launch July 7, 2026 followed
+  by consent controversy + rollback July 10, 2026 (about.fb.com, TechCrunch, CNBC,
+  Bloomberg, Axios, Variety, Hollywood Reporter confirmed).
+- Plan 90 jours J2 (2026-07-11): methode-realisateur-ia-diriger-avant-generer
+  (cluster MARQUE, mot-clé "méthode réalisateur IA").
+- Wrote 2 actualite + 1 evergreen/guide directly in worktree agent-a17aabb9.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-11.json --start 0 --end 3 from main repo).
+  Note: script prepends public/ to dest; queue must NOT include public/ prefix.
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (517 pages, 3 new articles prerendered, up from 513).
+  Pre-existing EN translation timeout on worktree build: not caused by new articles.
+- Staged explicit paths only (3 .md + 3 hero.webp), committed e514bfb in worktree.
+- Removed untracked images from main repo, then merged fast-forward into main, pushed origin/main.
+
+### Articles published this run
+1. `openai-gpt-live-voix-duplex-chatgpt-juillet-2026` (actualite)
+2. `meta-muse-image-generateur-instagram-juillet-2026` (actualite)
+3. `methode-realisateur-ia-diriger-avant-generer` (guides/evergreen — plan 90j J2)
+
+### Technical note this run
+- Working tree: agent-a17aabb9 (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- Build went 513 -> 517 pages (+3 articles + EN translations from translation loop).
+- Merge conflict pattern (untracked images in main after generation): cleaned with rm -rf before merge.
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J2 (methode-realisateur-ia-diriger-avant-generer) publié.
+- Image queue format: dest must NOT include public/ prefix (script adds it automatically).
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J3 = `frank-houbre-formation-ai-studios`
+   (cluster FORMATION, mot-clé "frank houbre formation", intention navigationnelle/commerciale).
+   Lien vers /a-propos et accueil. Décrire AI Studios, renvoyer vers Skool.
+   Anti-cannibalisation: rester sur la requête marque, ne pas cibler "formation IA vidéo" générique.
+2. News to watch: GPT-5.6 Sol/Terra/Luna general availability (rolled out July 9),
+   Meta Muse Video development updates, iOS 27 public beta release (around July 14),
+   Runway Gen-5 announcement, xAI Grok 4.5 EU launch, Google Video Remix EMEA rollout.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-10 (Run 16 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-07 (batch 15: 3 articles).
