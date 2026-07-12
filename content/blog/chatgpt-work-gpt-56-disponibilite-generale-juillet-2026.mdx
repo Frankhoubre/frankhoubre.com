@@ -1,0 +1,109 @@
+---
+title: "ChatGPT Work et GPT-5.6 GA : OpenAI passe à l'agent de travail"
+description: "Le 9 juillet 2026, OpenAI a rendu GPT-5.6 disponible pour tous et lancé ChatGPT Work, un agent autonome capable de produire des livrables complets. Ce que ça change pour les créateurs."
+date: "2026-07-12"
+category: "actualite"
+tags: ["ChatGPT Work", "GPT-5.6", "OpenAI", "agent IA", "productivité"]
+author: "Frank Houbre"
+heroImage: "/images/blog/chatgpt-work-gpt-56-disponibilite-generale-juillet-2026/hero.webp"
+excerpt: "Le 9 juillet 2026, OpenAI a rendu GPT-5.6 disponible pour tous et lancé ChatGPT Work, un agent autonome capable de produire des livrables complets. Ce que ça change pour les créateurs."
+thumbnail: "/images/blog/chatgpt-work-gpt-56-disponibilite-generale-juillet-2026/hero.webp"
+---
+
+# ChatGPT Work et GPT-5.6 GA : OpenAI passe à l'agent de travail
+
+Le 9 juillet 2026, deux choses se sont passées en même temps chez OpenAI, et je pense que beaucoup ont sous-estimé la combinaison. D'un côté, GPT-5.6 Sol, Terra et Luna sont enfin disponibles pour tout le monde, sans restriction gouvernementale, API ouverte. De l'autre, OpenAI a lancé ChatGPT Work, un agent intégré dans l'application ChatGPT desktop qui ne répond plus à vos questions : il vous remet un livrable fini.
+
+Ce n'est plus du tout la même chose.
+
+## GPT-5.6 GA : la fin du régime d'accès contrôlé
+
+Depuis son lancement en accès restreint le 26 juin 2026, GPT-5.6 était bridé. Une vingtaine d'organisations seulement, cadre de supervision fédérale, pas d'API publique. Le 9 juillet, tout ça s'est levé d'un coup.
+
+**Sol** est maintenant accessible via l'API publique sous l'identifiant `gpt-5.6-sol`. C'est le modèle de pointe, celui qui vise les tâches de raisonnement de long horizon et les workflows agentiques complexes. Sol affiche une efficacité de 54 % supérieure à GPT-5.5 sur les tâches de code selon les chiffres d'OpenAI.
+
+**Terra** est le modèle d'équilibre. Performance comparable à GPT-5.5 pour un coût divisé par deux. Pour la plupart des workflows créatifs, rédaction, analyse, script, brief, c'est le candidat logique.
+
+**Luna** est le modèle économique. Réponses rapides, coût minimum, idéal pour les tâches répétitives ou les tests.
+
+Pour les développeurs, l'identifiant `gpt-5.6` route automatiquement vers Sol. Si vous voulez un routing prévisible, utilisez les IDs explicites `gpt-5.6-terra` ou `gpt-5.6-luna`.
+
+Ce qui change concrètement pour vous : les pipelines qui tournaient sur GPT-5.5 ou GPT-4.5 ont maintenant un successeur direct, moins cher par token, avec une fenêtre de contexte plus large. C'est un upgrade silencieux qui peut faire gagner du temps et de l'argent sans changer une ligne de code.
+
+## ChatGPT Work : d'un outil de chat à un agent de livraison
+
+C'est là que la vraie rupture se passe. ChatGPT Work n'est pas un chatbot amélioré. C'est un agent qui prend un objectif, se connecte à vos applications, décompose la tâche en étapes, travaille pendant des heures si nécessaire, et vous remet un fichier fini.
+
+Vous lui donnez un objectif du type "analyse les métriques de mes 10 dernières vidéos et génère un rapport PowerPoint avec les tendances", il va chercher les données, les traite, structure la présentation, l'exporte. Le résultat n'est pas une réponse textuelle mais un fichier PPTX, un Google Sheet, un document Word, ou une application web interactive.
+
+Codex est intégré dans la même interface. Plus besoin de jongler entre ChatGPT et l'outil Codex séparé, les deux vivent maintenant dans la même application desktop (Windows et Mac). La revue de code inline, les diffs, les pull requests, tout ça est accessible depuis un seul endroit.
+
+Quelques points concrets sur ChatGPT Work :
+
+- **Plan Mode** permet de visualiser les étapes avant que l'agent ne les exécute. Vous pouvez valider ou modifier le plan.
+- **Check-ins configurables** : vous choisissez à quels moments l'agent vous demande une confirmation humaine.
+- **Action approvals** : pour les actions sensibles (envoyer un email, modifier un fichier), une validation est requise par défaut.
+- Le rollout commence par les plans Pro, Enterprise et Edu. Les plans Plus et Business reçoivent l'accès dans les jours suivants.
+
+## Ce que ça change pour les créateurs vidéo IA
+
+Je vais être direct : si vous n'utilisiez ChatGPT que comme un assistant de rédaction, ces annonces ne changent pas grand chose pour vous dans l'immédiat. Mais si vous gérez des projets, des clients, des pipelines de production, ça commence à devenir intéressant.
+
+Les cas d'usage qui m'ont frappé en lisant les détails du lancement :
+
+**Brief client automatisé.** Donnez à ChatGPT Work votre template de brief, les notes de la réunion client, quelques références visuelles, et demandez-lui de produire le document final. Avec Sol, la qualité de sortie sur ce type de tâche éditoriale est nettement supérieure à ce que GPT-4.5 produisait.
+
+**Rapport de projet.** Après livraison, vous alimentez l'agent avec vos fichiers de production (storyboard, notes de montage, exports de métriques), il génère le rapport client formaté. Le genre de document que vous remettez en annexe avec la facture.
+
+**Analyse de script.** Soumettez votre scénario, demandez une analyse dramaturgique structurée, avec tableau des actes, liste des personnages, identification des faiblesses narratives. L'agent sort un document, pas une liste de bullets dans le chat.
+
+Ce que ça ne fait pas encore bien : générer des images ou des vidéos directement. Sora a fermé en avril 2026. ChatGPT Work est un agent de documents et de code, pas un agent de création visuelle. Pour ça, vous restez sur vos outils habituels comme [Runway, Kling, ou les workflows ComfyUI](/blog/pipeline-ia-script-storyboard-production-de-a-z).
+
+## L'Atlas browser disparaît
+
+Detail pratique à noter : OpenAI a annoncé la fin progressive de l'Atlas browser, son navigateur intégré expérimental. La navigation web autonome passe maintenant par Computer Use dans ChatGPT Work, qui supporte les sites authentifiés, plusieurs onglets, le téléchargement de fichiers et un mode annotation.
+
+C'est une consolidation cohérente. Moins d'outils séparés, plus d'intégration dans une interface unifiée.
+
+## GPT-5.6 vs ce qui existe
+
+OpenAI affirme que Sol est l'équivalent d'Opus-class sur les benchmarks de raisonnement. Elon Musk a fait la même affirmation pour Grok 4.5 lancé le même jour. Claude Sonnet 5 tient une position forte sur les tâches agentiques. Sur les usages créatifs courants, [Sonnet 5 reste très compétitif](/blog/claude-sonnet-5-anthropic-agent-ia-juin-2026) et sa tarification est connue pour être stable.
+
+Ce qui est certain : avec GPT-5.6 GA, les développeurs ont maintenant trois nouveaux modèles compétitifs à tester dans leurs pipelines. La période d'incertitude sur l'accès est terminée.
+
+## Comment tester ChatGPT Work maintenant
+
+Si vous êtes sur un plan Pro, la fonctionnalité devrait être disponible dans votre application desktop. Voici comment commencer sans perdre de temps :
+
+1. Téléchargez ou mettez à jour l'application ChatGPT desktop (Windows ou Mac).
+2. Dans la barre latérale, cherchez l'entrée "Work" ou l'icône Codex fusionné.
+3. Commencez par une tâche simple et bornée : "génère un tableau de suivi de projet pour une production vidéo de 3 semaines".
+4. Testez le Plan Mode : regardez ce que l'agent propose avant de lancer.
+5. Sur une deuxième session, essayez une tâche plus longue et laissez les check-ins activés.
+
+Pour l'API, `gpt-5.6-sol` est disponible dès maintenant. Les tarifs sont publics sur [platform.openai.com/docs/pricing](https://platform.openai.com/docs/pricing).
+
+> 💡 **Le cut de Frank :** ChatGPT Work s'inscrit dans la même logique que ce que je décris dans [ma méthode de réalisateur IA](/blog/methode-realisateur-ia-diriger-avant-generer) : vous ne remplacez pas votre jugement créatif, vous déléguez les tâches d'exécution documentaire. Le prompt de brief reste le vôtre. La mise en forme, c'est l'agent.
+
+## FAQ
+
+**GPT-5.6 Sol est-il disponible sur le plan gratuit ChatGPT ?**
+L'accès API à Sol est réservé aux plans payants. Sur l'interface ChatGPT, le plan gratuit reçoit Luna en priorité. Sol est disponible pour les plans Pro et Plus, avec des limites d'utilisation par palier.
+
+**ChatGPT Work remplace-t-il Codex ?**
+Non, Codex est intégré dans ChatGPT Work. L'application desktop fusionne les deux interfaces. Les capacités de génération de code de Codex sont accessibles depuis ChatGPT Work, mais Codex reste une API indépendante pour les développeurs qui veulent l'intégrer dans leurs propres outils.
+
+**Quelle est la différence entre Sol, Terra et Luna ?**
+Sol est le modèle le plus puissant (raisonnement avancé, long horizon). Terra est l'équilibre performance/coût pour les usages professionnels courants. Luna est le modèle économique pour les tâches rapides et répétitives. En API, `gpt-5.6` route vers Sol par défaut.
+
+**ChatGPT Work peut-il générer des vidéos ?**
+Non. ChatGPT Work produit des documents, des feuilles de calcul, des présentations et des applications web. Sora a été arrêté en avril 2026. Pour la génération vidéo IA, il faut utiliser des outils dédiés comme Runway, Kling, ou Hailuo.
+
+**Est-ce que GPT-5.6 est meilleur que Claude Sonnet 5 pour les créateurs ?**
+Difficile de trancher de façon absolue. Sol est fort sur le raisonnement de longue durée et le code. Sonnet 5 est reconnu pour la qualité narrative et les tâches agentiques multi-étapes. Les deux méritent d'être testés sur votre workflow précis avant de migrer.
+
+**ChatGPT Work est-il disponible en France ?**
+Oui, le déploiement est global. Les plans Pro, Enterprise et Edu ont accès immédiatement. Plus et Business dans les jours suivants. Aucune restriction régionale annoncée pour la France ou l'Union européenne.
+
+**Le passage de GPT-5.5 à GPT-5.6 Terra nécessite-t-il une migration ?**
+Techniquement non : les API sont rétrocompatibles sur le format des appels. Il faut juste changer l'identifiant du modèle dans vos appels. Le comportement peut varier, donc un test sur vos prompts habituels avant migration en production est recommandé.

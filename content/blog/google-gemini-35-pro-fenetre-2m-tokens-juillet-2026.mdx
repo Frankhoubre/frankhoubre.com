@@ -1,0 +1,99 @@
+---
+title: "Google Gemini 3.5 Pro : 2 millions de tokens en contexte, Deep Think en juillet"
+description: "Google annonce Gemini 3.5 Pro pour mi-juillet 2026 : fenêtre de contexte de 2 millions de tokens, raisonnement Deep Think, rebuild architectural complet. Ce que les créateurs doivent retenir."
+date: "2026-07-12"
+category: "actualite"
+tags: ["Gemini 3.5 Pro", "Google", "modèle IA", "fenêtre contexte", "Deep Think"]
+author: "Frank Houbre"
+heroImage: "/images/blog/google-gemini-35-pro-fenetre-2m-tokens-juillet-2026/hero.webp"
+excerpt: "Google annonce Gemini 3.5 Pro pour mi-juillet 2026 : fenêtre de contexte de 2 millions de tokens, raisonnement Deep Think, rebuild architectural complet. Ce que les créateurs doivent retenir."
+thumbnail: "/images/blog/google-gemini-35-pro-fenetre-2m-tokens-juillet-2026/hero.webp"
+---
+
+# Google Gemini 3.5 Pro : 2 millions de tokens en contexte, Deep Think en juillet
+
+Il y a des annonces qu'on lit distraitement et d'autres qui font marquer une pause. Gemini 3.5 Pro, attendu pour le 17 juillet 2026, fait partie de la deuxième catégorie. Non pas pour ses benchmarks, dont les détails officiels ne sont pas encore publics, mais pour un chiffre : 2 millions de tokens de contexte. Et pour ce que Google affirme avoir fait architecturalement : pas une adaptation de Gemini 2.5 Pro, mais un modèle reconstruit de zéro sur un nouveau run de préentraînement.
+
+## 2 millions de tokens : ce que ça représente vraiment
+
+Pour mettre les choses en perspective : GPT-4o travaille avec 128 000 tokens de contexte. Claude Sonnet 5 monte à 1 million de tokens. La plupart des modèles courants restent entre 32 000 et 200 000 tokens.
+
+2 millions de tokens, c'est environ 1 500 000 mots. Soit environ 20 romans de 300 pages. Soit l'intégralité d'un long métrage en format scénario, les notes de développement, les retours des producteurs, les différentes versions du script, les références visuelles décrites en texte, et encore de la place pour la conversation.
+
+Concrètement pour les créateurs vidéo, ça ouvre des cas d'usage qui n'étaient pas viables jusqu'ici :
+
+**Cohérence de série.** Vous pouvez injecter l'intégralité de la bible de votre univers, tous les scripts de vos épisodes existants, les descriptions de personnages, les règles de l'univers, et travailler sur un nouvel épisode avec tout ce contexte chargé en même temps. Les problèmes de continuité que les modèles à contexte court ont du mal à éviter deviennent beaucoup plus gérables.
+
+**Analyse de rushes.** Si vous pouvez transcrire vos rushes (ou les sous-titres d'une série entière), charger tout ça dans une seule session et demander une analyse de cohérence dramaturgique, de rythme ou de thèmes récurrents, ça change le niveau d'analyse disponible.
+
+**Itération sur un long projet.** Plutôt que de recharger le contexte à chaque session ou de maintenir un résumé manuel de l'état du projet, tout le fil de développement reste dans la fenêtre.
+
+## Deep Think : le mode raisonnement étendu
+
+Gemini 3.5 Pro intègre un mode Deep Think, le même nom que Google a utilisé pour Gemini 2.0 Flash Thinking. Mais ici il s'agit d'une capacité centrale du modèle, pas d'un dérivé flash.
+
+Deep Think active un raisonnement étendu sur les problèmes complexes. L'idée est similaire au Extended Thinking d'Anthropic ou au mode o1/o3 d'OpenAI : le modèle "pense" avant de répondre, en chaîne de pensée interne, et arrive à une réponse plus fiable sur les tâches nécessitant plusieurs étapes logiques.
+
+Point important à noter : selon les informations disponibles, Deep Think sera accessible uniquement derrière l'abonnement Google One AI Ultra à 250 dollars par mois. Ce n'est pas un détail anodin. Pour un créateur indépendant, c'est un budget à part entière. Pour une agence ou une boîte de production qui travaille sur des projets longs, le calcul peut être différent.
+
+## Un rebuild architectural, pas une mise à jour
+
+Ce qui distingue Gemini 3.5 Pro des mises à jour habituelles, c'est l'affirmation de Google : ce modèle n'est pas adapté de Gemini 2.5 Pro. Il a été refait de zéro sur un nouveau run de préentraînement.
+
+Ça signifie des comportements potentiellement différents sur les mêmes prompts. Des forces et des faiblesses redistribuées. Dans l'usage créatif, ça peut se traduire par des surprises positives sur des tâches où les modèles précédents plafonnaient, mais aussi des régressions sur des tâches où ils étaient fiables.
+
+Ma recommandation habituelle dans ces cas : ne migrez pas un pipeline en production le jour du lancement. Testez d'abord sur vos prompts habituels, comparez les sorties, identifiez les différences. La fenêtre de contexte étendue est intéressante mais si le comportement du modèle sur vos tâches créatives a régressé, le 2M de tokens ne compensera pas.
+
+## Gemini 3.5 Flash est déjà là
+
+Pendant que 3.5 Pro est attendu, Gemini 3.5 Flash est déjà disponible dans l'API Google AI. Ce point mérite d'être mentionné parce que beaucoup de développeurs travaillent avec Flash pour les tâches intermédiaires et le testing rapide.
+
+Flash n'a pas les 2 millions de tokens de Pro, mais il reste un modèle rapide et économique pour les itérations fréquentes, les tests de prompts, ou les tâches qui n'ont pas besoin de la puissance maximale. C'est déjà dans la continuité des modèles Google que vous utilisez si vous avez intégré [les outils Google Flow ou Veo 3.1](/blog/google-flow-veo-31-edition-audio-juin-2026).
+
+## Ce qu'on ne sait pas encore
+
+Soyons précis sur ce qui n'est pas confirmé officiellement à la date de cet article :
+
+- Les tarifs API de Gemini 3.5 Pro ne sont pas publiés.
+- La date de disponibilité API exacte n'est pas confirmée (le 17 juillet est la cible rapportée, pas une annonce officielle de Google).
+- Les benchmarks détaillés n'ont pas été publiés. Les affirmations de performance par rapport à GPT-5.6 Sol ou Claude Sonnet 5 viennent de fuites et de sources indirectes.
+- La disponibilité en dehors de Google AI Ultra n'est pas précisée pour les usages créatifs hors API.
+
+Ce que Google a confirmé : le modèle arrive, la fenêtre est de 2M tokens, Deep Think est inclus, le préentraînement a été refait de zéro.
+
+> 💡 **Le cut de Frank :** La fenêtre de 2M tokens est réellement intéressante pour les projets longs. Mais le prix de Deep Think à 250 euros par mois restreint les cas d'usage à des contextes où le retour sur investissement est clair. Pour la plupart des créateurs, Gemini 3.5 Flash ou Terra de GPT-5.6 seront plus utilisables au quotidien.
+
+## Gemini 3.5 Pro dans l'écosystème créatif
+
+Google a déjà des intégrations intéressantes pour les créateurs, notamment via [Google Flow et Veo 3.1](/blog/google-flow-veo-31-edition-audio-juin-2026) pour la génération vidéo, et [Google Photos Video Remix](/blog/google-photos-video-remix-gemini-omni-juillet-2026) pour la retouche vidéo.
+
+Gemini 3.5 Pro n'est pas directement un outil de génération vidéo. C'est un modèle de langage et d'analyse. Mais son intégration dans les workflows créatifs peut passer par :
+
+- **La génération de prompts longs et structurés** pour des outils vidéo comme Veo. Avec 2M de tokens de contexte, on peut inclure des références détaillées, des descriptions de plans multiples, des contraintes de cohérence visuelle dans un seul prompt de session.
+- **L'analyse de scripts** pour des productions longues, où la cohérence sur 10 épisodes est plus difficile à maintenir.
+- **La création d'assets textuels** (notes de production, synopsis, briefs clients) avec un niveau de détail que les modèles à fenêtre courte ne pouvaient pas traiter en une session.
+
+Pour l'instant, c'est encore une promesse. Le test grandeur nature commencera après le 17 juillet.
+
+## FAQ
+
+**Gemini 3.5 Pro est-il disponible maintenant en juillet 2026 ?**
+Gemini 3.5 Flash est disponible dans l'API Google AI. Gemini 3.5 Pro devrait arriver autour du 17 juillet 2026 selon les informations disponibles, mais Google n'a pas encore publié de date officielle confirmée au moment de cet article.
+
+**Qu'est-ce que Deep Think dans Gemini 3.5 Pro ?**
+Deep Think est un mode de raisonnement étendu qui permet au modèle de traiter des problèmes complexes en plusieurs étapes de réflexion interne avant de répondre. C'est similaire au Extended Thinking d'Anthropic ou aux modèles "o" d'OpenAI. Il est annoncé pour être réservé à l'abonnement Google One AI Ultra (250 dollars par mois).
+
+**2 millions de tokens c'est vraiment utile ou c'est du marketing ?**
+C'est à la fois réel et très contextuel. La majorité des tâches courantes n'utilisent pas 10 % de cette fenêtre. Mais sur les projets longs (séries, documentaires, gros pipelines de production), avoir tout le contexte chargé en même temps évite les problèmes de "mémoire morcelée" qui forcent à résumer ou recharger.
+
+**Gemini 3.5 Pro est-il meilleur que GPT-5.6 Sol ?**
+Les benchmarks officiels comparatifs ne sont pas encore publiés. Il faudra tester sur vos cas d'usage précis. La fenêtre de contexte de 3.5 Pro (2M tokens) est supérieure à celle de Sol, mais sur les tâches créatives courtes, la différence peut ne pas se voir.
+
+**Google Veo 3.1 et Gemini 3.5 Pro sont-ils liés ?**
+Indirectement. Gemini 3.5 Pro est un modèle de langage. Veo est le moteur de génération vidéo. Ils peuvent être utilisés dans le même pipeline créatif (Gemini pour le script et les prompts, Veo pour la génération), mais ce sont des produits distincts.
+
+**Faut-il payer 250 dollars par mois pour utiliser Gemini 3.5 Pro ?**
+Deep Think nécessite le plan Ultra à 250 dollars par mois. L'accès API à Gemini 3.5 Pro aura sa propre tarification par token, indépendante de l'abonnement Ultra. Les créateurs qui veulent l'API sans Deep Think n'auront pas besoin de l'abonnement Ultra.
+
+**L'architecture reconstruite de zéro est-elle un avantage ou un risque ?**
+Les deux. Un nouveau run de préentraînement peut améliorer des capacités que les itérations incrémentales ne touchaient pas. Mais il peut aussi changer des comportements sur lesquels vous comptiez. Ne migrez pas un pipeline en production le jour du lancement.
