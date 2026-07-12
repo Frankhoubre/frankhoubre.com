@@ -4,6 +4,26 @@ The canonical latest daily report lives at the repo root: `../DAILY_REPORT.md`.
 Each run overwrites the root file with that day's report and appends a one-line
 summary to `PROGRESS.md` (which is the durable history).
 
+## Run 18 — 2026-07-12
+
+3 articles published. Build PASS (521 pages). 0 SEO errors. Pushed to origin/main (1e7a2e7).
+
+### Articles
+1. chatgpt-work-gpt-56-disponibilite-generale-juillet-2026 (actualite) — ChatGPT Work + GPT-5.6 GA July 9-10
+2. google-gemini-35-pro-fenetre-2m-tokens-juillet-2026 (actualite) — Gemini 3.5 Pro 2M tokens announcement
+3. frank-houbre-formation-ai-studios (guides/evergreen) — Plan 90j J3, requête marque
+
+### SEO
+Audit: 0 errors. Thin-content warnings on news articles expected (per STYLE_GUIDE). Pre-existing H1 warnings unchanged.
+
+### Build
+521 pages (up from 517 = +3 articles +1 EN translation from translation loop).
+
+### Technical
+- Worktree: agent-ac993f1c
+- Images: generated from main repo via Imagen API (2 calls), copied to worktree before staging
+- Commit: 1e7a2e7 in worktree, fast-forward merged to main, pushed origin/main
+
 ## Run 17 — 2026-07-11
 
 3 articles published. Build PASS (517 pages). 0 SEO errors. Pushed to origin/main (e514bfb).

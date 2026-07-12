@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 18 — 2026-07-12)
+
+- `ChatGPT Work GPT-5.6 disponibilité générale juillet 2026` — FILLED: chatgpt-work-gpt-56-disponibilite-generale-juillet-2026
+- `Google Gemini 3.5 Pro fenêtre 2M tokens juillet 2026` — FILLED: google-gemini-35-pro-fenetre-2m-tokens-juillet-2026
+- `frank houbre formation (ai studios avis)` — FILLED: frank-houbre-formation-ai-studios (plan 90j J3)
+
 ## USED (Run 17 — 2026-07-11)
 
 - `GPT-Live OpenAI voix full-duplex ChatGPT juillet 2026` — FILLED: openai-gpt-live-voix-duplex-chatgpt-juillet-2026

@@ -1,6 +1,50 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-11 (Run 17 — 3 articles published)
+## Last run: 2026-07-12 (Run 18 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-11 (batch 17: 3 articles).
+- WebSearch for real news in last 24-72h: found OpenAI ChatGPT Work + GPT-5.6 GA launch
+  July 9-10, 2026 (TechCrunch, 9to5Mac, digitalapplied.com, techbriefly.com, ithinkdiff.com
+  confirmed) and Google Gemini 3.5 Pro announcement for mid-July 2026, 2M token context,
+  Deep Think mode (developersdigest.tech, zoombangla.com, aitoolsreview.co.uk confirmed).
+- Plan 90 jours J3 (2026-07-12): frank-houbre-formation-ai-studios
+  (cluster FORMATION, mot-clé "frank houbre formation", navigationnelle/commerciale).
+- Wrote 2 actualite + 1 evergreen/guide directly in worktree agent-ac993f1c.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-12.json --start 0 --end 1 then --start 2 --end 3
+  from main repo). Note: script prepends public/ to dest; queue must NOT include public/ prefix.
+- Copied images from main repo to worktree public/images/blog/ before git add.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (521 pages, 3 new articles prerendered, up from 517).
+- Staged explicit paths only (3 .mdx + 3 hero.webp), committed 1e7a2e7 in worktree.
+- Removed untracked images from main repo, then merged fast-forward into main, pushed origin/main.
+
+### Articles published this run
+1. `chatgpt-work-gpt-56-disponibilite-generale-juillet-2026` (actualite)
+2. `google-gemini-35-pro-fenetre-2m-tokens-juillet-2026` (actualite)
+3. `frank-houbre-formation-ai-studios` (guides/evergreen — plan 90j J3)
+
+### Technical note this run
+- Working tree: agent-ac993f1c (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- Build went 517 -> 521 pages (+3 articles + 1 EN translation from translation loop).
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J3 (frank-houbre-formation-ai-studios) publié.
+- Image queue format: dest must NOT include public/ prefix (script adds it automatically).
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J4 = `ronces-coulisses-court-film-ia`
+   (cluster CAS, mot-clé "ronces film ia / court métrage ia coulisses").
+   Lien vers creer-court-metrage-100-ia, /presse. Anti-cannibalisation: faible.
+   Article coulisses sur le court métrage Ronces de Frank. Données réelles uniquement.
+2. News to watch: Google Gemini 3.5 Pro GA (target July 17), Apple iOS 27 public beta
+   release (around July 14), xAI Grok 4.5 EU launch, OpenAI ChatGPT Work Plus/Business rollout,
+   Runway Gen-5 announcements.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-11 (Run 17 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-10 (batch 16: 3 articles).

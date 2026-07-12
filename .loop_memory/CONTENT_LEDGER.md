@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-12 — Frank Houbre formation : AI Studios, contenu et avis
+- slug: frank-houbre-formation-ai-studios
+- locale: fr
+- url: https://frankhoubre.com/blog/frank-houbre-formation-ai-studios
+- category: guides
+- type: evergreen
+- search_intent: navigationnelle / commerciale
+- primary_keyword: frank houbre formation (ai studios avis)
+- secondary_keywords: AI Studios Frank Houbre, formation cinéma IA, apprendre IA vidéo, Frank Houbre Skool, formation vidéo IA créateurs
+- sources: n/a (craft/evergreen, méthode personnelle Frank Houbre, programme AI Studios)
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/methode-realisateur-ia-diriger-avant-generer, -> /a-propos
+- cta: AI Studios (lien vers /a-propos pour accès Skool)
+- cannibalization_notes: formation-interne-equipe-creative-ia couvre la formation des équipes en entreprise (B2B). Cet article est spécifiquement sur la requête marque "frank houbre formation" et présente AI Studios (le programme Skool). Angle marque personnel vs angle B2B. Distinct. Rester sur requête marque, ne pas cibler "formation IA vidéo" générique.
+- checker: pass (audit 0 err, build 521 pages)
+- published_commit: 1e7a2e7
+
+### 2026-07-12 — Google Gemini 3.5 Pro : 2 millions de tokens en contexte, Deep Think en juillet
+- slug: google-gemini-35-pro-fenetre-2m-tokens-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/google-gemini-35-pro-fenetre-2m-tokens-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Google Gemini 3.5 Pro fenêtre 2M tokens juillet 2026
+- secondary_keywords: Gemini 3.5 Pro Deep Think, Gemini 3.5 Pro date sortie, Gemini 3.5 Pro 2 millions tokens, Google One AI Ultra Deep Think, Gemini 3.5 Pro vs GPT-5.6
+- sources: developersdigest.tech/blog/gemini-3-5-pro-developer-guide-2026, zoombangla.com/google-gemini-35-pro-launch-july-2026-context-window/, aitoolsreview.co.uk/insights/gemini-3-5-pro, coursiv.io/blog/gemini-3-5-pro, findskill.ai/blog/gemini-3-5-pro-release-date/
+- internal_links: -> /blog/google-flow-veo-31-edition-audio-juin-2026, -> /blog/google-photos-video-remix-gemini-omni-juillet-2026
+- cta: none
+- cannibalization_notes: google-gemini-31-flash-image-omni-flash-video-juin-2026 couvre les modèles API Gemini 3.1 Flash/Omni. google-flow-veo-31-edition-audio-juin-2026 couvre Veo 3.1/Flow. Cet article couvre l'annonce Gemini 3.5 Pro (2M tokens, Deep Think, rebuild zéro) pour juillet 2026. Distinct.
+- checker: pass (audit 0 err, build 521 pages)
+- published_commit: 1e7a2e7
+
+### 2026-07-12 — ChatGPT Work et GPT-5.6 GA : OpenAI passe à l'agent de travail
+- slug: chatgpt-work-gpt-56-disponibilite-generale-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/chatgpt-work-gpt-56-disponibilite-generale-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: ChatGPT Work GPT-5.6 disponibilité générale juillet 2026
+- secondary_keywords: ChatGPT Work agent productivité, GPT-5.6 Sol Terra Luna API, ChatGPT Work Codex fusion, ChatGPT Work Pro Enterprise, agent IA livrables juillet 2026
+- sources: techbriefly.com/2026/07/10/chatgpt-work-gpt-5-6-productivity-app/, 9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/, digitalapplied.com/blog/chatgpt-work-openai-agent-launch-2026, ithinkdiff.com/chatgpt-work-gpt-5-6-rollout-july-2026/, engadget.com/2210308/openai-rolls-out-gpt5-6-july-9/
+- internal_links: -> /blog/pipeline-ia-script-storyboard-production-de-a-z, -> /blog/claude-sonnet-5-anthropic-agent-ia-juin-2026, -> /blog/methode-realisateur-ia-diriger-avant-generer
+- cta: none
+- cannibalization_notes: openai-gpt-56-sol-terra-luna-modeles-juin-2026 couvre le lancement limité du 26 juin sous supervision gouvernementale (20 orgs). Cet article couvre le 9 juillet : GA publique + lancement ChatGPT Work (nouvel agent). Événements et dates distincts. openai-gpt-live-voix-duplex-chatgpt-juillet-2026 couvre GPT-Live voix (8 juillet). Distinct.
+- checker: pass (audit 0 err, build 521 pages)
+- published_commit: 1e7a2e7
+
 ### 2026-07-11 — Réalisateur IA : ma méthode pour diriger avant de générer
 - slug: methode-realisateur-ia-diriger-avant-generer
 - locale: fr

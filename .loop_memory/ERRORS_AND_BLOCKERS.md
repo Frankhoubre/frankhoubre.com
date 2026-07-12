@@ -3,6 +3,9 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## Run 18 — 2026-07-12 : RAS
+Aucun blocage. 0 erreurs SEO. Build 521 pages PASS. Merge fast-forward. Push OK.
+
 ## OPEN
 
 ### B1 — Concurrent translation loop sharing the repo (HIGH, structural)
