@@ -1,6 +1,48 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-12 (Run 18 — 3 articles published)
+## Last run: 2026-07-13 (Run 19 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-12 (batch 18: 3 articles).
+- WebSearch for real news in last 24-72h: found Apple poursuit OpenAI pour vol de secrets
+  commerciaux (July 10, 2026 — CNBC, CNN, Bloomberg, TechCrunch, Axios, Fortune confirmed)
+  et Meta Muse Spark 1.1 lancement modèle agentique multimodal (July 9, 2026 — ai.meta.com,
+  TechCrunch, MarkTechPost, Dataconomy, Fortune confirmed).
+- Plan 90 jours J4 (2026-07-13): ronces-coulisses-court-film-ia
+  (cluster CAS, mot-clé "ronces film ia / court métrage ia coulisses").
+- Wrote 2 actualite + 1 evergreen directly in worktree agent-aee95621.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-13.json --start 0 --end 1 then --start 2 --end 3
+  from main repo). Copied images to worktree before git add.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (527 pages, 3 new articles prerendered, up from 521).
+- Staged explicit paths (3 .md + 3 hero.webp), committed d19541d in worktree.
+- Removed untracked images from main repo, then merged fast-forward into main, pushed origin/main.
+
+### Articles published this run
+1. `apple-openai-proces-secrets-commerciaux-juillet-2026` (actualite)
+2. `meta-muse-spark-11-agent-multimodal-juillet-2026` (actualite)
+3. `ronces-coulisses-court-film-ia` (guides/evergreen — plan 90j J4)
+
+### Technical note this run
+- Working tree: agent-aee95621 (current worktree). Articles committed directly.
+- Image generation: ran from main repo, then copied to worktree public/ before staging.
+- Build went 521 -> 527 pages (+3 articles + EN translations from translation loop).
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J4 (ronces-coulisses-court-film-ia) publié.
+- Image queue format: dest must NOT include public/ prefix (script adds it automatically).
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J5 = `claude-code-createurs-video-guide`
+   (cluster OUTILS, mot-clé "claude code tarif / claude code prix", pos 9.5 sans page dédiée).
+   Liens vers comment-optimiser-workflow-ia, gerer-versions-projets-video-ia. Anti-cannibalisation: faible.
+2. News to watch: Google Gemini 3.5 Pro GA (target July 17), iOS 27 public beta release
+   (around July 14), Runway Gen-5 announcements, xAI Grok 4.5 EU launch,
+   Apple/OpenAI lawsuit developments, Meta Muse Spark 1.1 GA (currently preview).
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-12 (Run 18 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-11 (batch 17: 3 articles).

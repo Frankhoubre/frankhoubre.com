@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 19 — 2026-07-13)
+
+- `Apple OpenAI procès secrets commerciaux hardware IA juillet 2026` — FILLED: apple-openai-proces-secrets-commerciaux-juillet-2026
+- `Meta Muse Spark 1.1 agent multimodal API juillet 2026` — FILLED: meta-muse-spark-11-agent-multimodal-juillet-2026
+- `ronces film ia (court métrage ia coulisses)` — FILLED: ronces-coulisses-court-film-ia (plan 90j J4)
+
 ## USED (Run 18 — 2026-07-12)
 
 - `ChatGPT Work GPT-5.6 disponibilité générale juillet 2026` — FILLED: chatgpt-work-gpt-56-disponibilite-generale-juillet-2026

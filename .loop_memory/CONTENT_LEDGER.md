@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-13 — Ronces : les coulisses de mon court-métrage IA
+- slug: ronces-coulisses-court-film-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/ronces-coulisses-court-film-ia
+- category: guides
+- type: evergreen
+- search_intent: info/preuve/coulisses
+- primary_keyword: ronces film ia (court métrage ia coulisses)
+- secondary_keywords: ronces court métrage IA Frank Houbre, coulisses production IA, diriger avant générer, pipeline court métrage IA, Kling WAN Midjourney court film
+- sources: n/a (craft/evergreen, projet personnel Frank Houbre — Ronces court-métrage IA)
+- internal_links: -> /blog/creer-court-metrage-100-ia-sans-camera-acteurs, -> /presse, -> /a-propos
+- cta: AI Studios (lien vers /a-propos), Kit presse (/presse)
+- cannibalization_notes: creer-court-metrage-100-ia-sans-camera-acteurs est un guide technique général. Cet article est spécifiquement les coulisses du projet Ronces de Frank (cas réel, angle personnel). Distinct.
+- checker: pass (audit 0 err, build 527 pages)
+- published_commit: d19541d
+
+### 2026-07-13 — Meta Muse Spark 1.1 : l'agent multimodal qui veut tout faire
+- slug: meta-muse-spark-11-agent-multimodal-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/meta-muse-spark-11-agent-multimodal-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical analysis
+- primary_keyword: Meta Muse Spark 1.1 agent multimodal API juillet 2026
+- secondary_keywords: Muse Spark 1.1 API tarif, Meta Superintelligence Labs agent, Muse Spark 1.1 vs Claude, Muse Spark 1M tokens, Meta Model API coding agentique
+- sources: ai.meta.com/blog/introducing-muse-spark-meta-model-api/, techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/, marktechpost.com/2026/07/09/meta-superintelligence-labs-releases-muse-spark-1-1/, dataconomy.com/2026/07/10/meta-muse-spark-1-1-launch-agentic-ai/, fortune.com/2026/07/09/meta-muse-spark-1-1-release-alexandr-wang-superintelligence-labs-mark-zuckerberg/
+- internal_links: -> /blog/claude-sonnet-5-anthropic-agent-ia-juin-2026, -> /blog/chatgpt-work-gpt-56-disponibilite-generale-juillet-2026, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: meta-muse-image-generateur-instagram-juillet-2026 couvre Muse Image (générateur images Instagram). meta-watermelon-modele-ia-gpt-55-parite-juillet-2026 couvre Watermelon (LLM frontier). Cet article couvre Muse Spark 1.1 (modèle agentique multimodal API publique, juillet 9 2026). Produits distincts.
+- checker: pass (audit 0 err, build 527 pages)
+- published_commit: d19541d
+
+### 2026-07-13 — Apple attaque OpenAI : vol de secrets commerciaux et bataille pour le hardware IA
+- slug: apple-openai-proces-secrets-commerciaux-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/apple-openai-proces-secrets-commerciaux-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: Apple OpenAI procès secrets commerciaux hardware IA juillet 2026
+- secondary_keywords: Apple OpenAI lawsuit hardware, Tang Tan Apple OpenAI, io Products Jony Ive OpenAI, Apple Intelligence ChatGPT rupture, secrets industriels IA 2026
+- sources: cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html, techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/, bloomberg.com/news/articles/2026-07-10/apple-sues-openai-for-trade-secret-theft-in-blockbuster-case, axios.com/2026/07/10/apple-sues-openai-trade-secret-theft, cnn.com/2026/07/10/tech/apple-openai-devices-lawsuit, fortune.com/2026/07/10/apple-openai-lawsuit-trade-secrets-theft-allegations/
+- internal_links: -> /blog/clause-contrat-client-contenu-genere-ia, -> /a-propos
+- cta: none
+- cannibalization_notes: anthropic-samsung-chip-ia-2nm-juillet-2026 couvre les discussions chip Anthropic/Samsung. microsoft-frontier-company-25-milliards couvre Microsoft. Cet article couvre le procès Apple vs OpenAI du 10 juillet 2026 pour vol de secrets commerciaux hardware. Distinct.
+- checker: pass (audit 0 err, build 527 pages)
+- published_commit: d19541d
+
 ### 2026-07-12 — Frank Houbre formation : AI Studios, contenu et avis
 - slug: frank-houbre-formation-ai-studios
 - locale: fr
