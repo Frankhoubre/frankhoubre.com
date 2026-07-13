@@ -29,6 +29,14 @@ type LinkGroup = {
 
 const featuredTools: FeaturedTool[] = [
   {
+    name: "ScreenWeaver",
+    description:
+      "Mon outil d'écriture préféré : scénario, storyboard et workflows d'images ancrés sur le texte, pour ne jamais perdre le fil du film.",
+    badge: "Mon outil préféré",
+    href: "https://screenweaver.ai",
+    cta: "Découvrir ScreenWeaver",
+  },
+  {
     name: "Higgsfield",
     description:
       "Mon outil principal pour générer des vidéos et images IA au quotidien.",
@@ -95,10 +103,6 @@ const linkGroups: LinkGroup[] = [
       { label: "Telegram", href: "https://t.me/businessdynamite", external: true },
       { label: "X (Twitter)", href: "https://x.com/BDFrankHoubre", external: true },
     ],
-  },
-  {
-    title: "Autres outils",
-    links: [{ label: "ScreenWeaver", href: "https://screenweaver.ai/", external: true }],
   },
   {
     title: "Site",
