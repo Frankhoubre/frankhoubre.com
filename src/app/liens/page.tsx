@@ -193,14 +193,6 @@ export default function LiensPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="https://www.ai-studios.fr/formation-ia-gratuite-video"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="ds-cta-primary ds-glow !rounded-xl !px-5 !py-3 !text-sm !font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
-                >
-                  Recevoir la formation gratuite
-                </a>
-                <a
                   href="https://www.skool.com/ai-studios"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -221,6 +213,47 @@ export default function LiensPage() {
               </figure>
             </div>
           </div>
+        </section>
+
+        <section className="mx-auto max-w-5xl px-4 pb-10 sm:px-6">
+          <a
+            href="https://www.ai-studios.fr/formation-ia-gratuite-video"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ds-reveal group relative block overflow-hidden rounded-3xl border border-blue-400/40 bg-[linear-gradient(135deg,#1d4ed8,#2563eb_45%,#0f172a)] p-6 text-white shadow-2xl shadow-blue-900/40 transition-transform duration-300 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-200 sm:p-10"
+          >
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.22),transparent_45%),radial-gradient(circle_at_bottom_right,rgba(15,23,42,0.55),transparent_55%)]"
+            />
+            <div className="relative flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between">
+              <div className="max-w-xl">
+                <span className="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] backdrop-blur">
+                  100&nbsp;% gratuite, accès immédiat
+                </span>
+                <h2 className="mt-4 text-2xl font-bold leading-tight tracking-tight sm:text-4xl">
+                  Ma formation IA gratuite pour créer des vidéos et images crédibles
+                </h2>
+                <ul className="mt-5 space-y-2 text-sm text-white/90 sm:text-base">
+                  <li className="flex gap-2">
+                    <span className="text-blue-200">✓</span>
+                    Le workflow complet : idée, storyboard, génération, jusqu&apos;au montage
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-blue-200">✓</span>
+                    Ma méthode de direction artistique pour des rendus crédibles, pas plastiques
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-blue-200">✓</span>
+                    Accessible même si tu débutes en création IA
+                  </li>
+                </ul>
+              </div>
+              <span className="ds-glow inline-flex w-full shrink-0 items-center justify-center rounded-2xl bg-white px-8 py-4 text-center text-base font-bold text-blue-700 shadow-xl transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:bg-blue-50 sm:w-auto sm:text-lg">
+                Recevoir la formation gratuite
+              </span>
+            </div>
+          </a>
         </section>
 
         <section className="ds-section bg-white/70">
