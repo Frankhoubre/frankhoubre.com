@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 20 — 2026-07-14)
+
+- `iOS 27 beta publique live Siri IA test juillet 2026` — FILLED: ios-27-beta-publique-live-siri-ia-test-juillet-2026
+- `Mistral Robostral Navigate robot IA juillet 2026` — FILLED: mistral-robostral-navigate-robot-ia-juillet-2026
+- `claude code (claude code tarif, claude code prix)` — FILLED: claude-code-createurs-video-guide (plan 90j J5)
+
 ## USED (Run 19 — 2026-07-13)
 
 - `Apple OpenAI procès secrets commerciaux hardware IA juillet 2026` — FILLED: apple-openai-proces-secrets-commerciaux-juillet-2026

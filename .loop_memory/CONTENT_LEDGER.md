@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-14 — Claude Code pour créateurs vidéo : usages concrets et tarifs
+- slug: claude-code-createurs-video-guide
+- locale: fr
+- url: https://frankhoubre.com/blog/claude-code-createurs-video-guide
+- category: guides
+- type: evergreen
+- search_intent: info/commerciale
+- primary_keyword: claude code (claude code tarif, claude code prix)
+- secondary_keywords: claude code créateurs vidéo, claude code usages concrets, agent ia terminal créateur, automatiser production vidéo ia, claude code vs chatgpt
+- sources: n/a (craft/evergreen, verified tool specs from anthropic.com)
+- internal_links: -> /blog/comment-optimiser-workflow-ia, -> /blog/gerer-versions-projets-video-ia
+- cta: none direct (soft Claude mention)
+- cannibalization_notes: no existing claude-code dedicated article. Distinct from claude-sonnet-5-anthropic-agent-ia-juin-2026 (news article about model release) and from californie-anthropic-claude-accord-agences-etat-2026 (government deal news). This is the practical how-to guide for creators wanting to use Claude Code tool. Plan 90j J5.
+- checker: pass (audit 0 err, build 532 pages)
+- published_commit: 8346a49
+
+### 2026-07-14 — Mistral lance Robostral Navigate : l'IA qui pilote un robot avec une seule caméra
+- slug: mistral-robostral-navigate-robot-ia-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/mistral-robostral-navigate-robot-ia-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / technology analysis
+- primary_keyword: Mistral Robostral Navigate robot IA juillet 2026
+- secondary_keywords: Robostral Navigate 8B open-weight, navigation robot caméra RGB, Mistral IA physique, Robostral R2R-CE benchmark, Mistral robotique modèle
+- sources: bloomberg.com/news/articles/2026-07-08/mistral-ai-releases-robotics-model-to-support-physical-ai-push, mistral.ai/news/robostral-navigate/, cryptobriefing.com/mistral-robostral-navigate-robotics-model/, theaiinsider.tech/2026/07/08/mistral-ai-introduces-robot-navigation-model/, aiweekly.co/alerts/mistral-debuts-robostral-navigate-an-8b-single-camera-robot-nav-model
+- internal_links: -> /blog/mistral-grok-meta-ai-createurs, -> /blog/wan-alibaba-guide-complet
+- cta: none
+- cannibalization_notes: mistral-grok-meta-ai-createurs covers Mistral in ecosystem comparatif context. No existing article on Robostral or robotics AI models. This is the July 8, 2026 Robostral Navigate launch news. Distinct.
+- checker: pass (audit 0 err, build 532 pages)
+- published_commit: 8346a49
+
+### 2026-07-14 — iOS 27 beta publique est là : ce que j'ai testé en premier
+- slug: ios-27-beta-publique-live-siri-ia-test-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/ios-27-beta-publique-live-siri-ia-test-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / practical review
+- primary_keyword: iOS 27 beta publique live Siri IA test juillet 2026
+- secondary_keywords: iOS 27 beta publique juillet 13, Siri IA iOS 27 test, Visual Intelligence caméra iOS, iOS 27 créateurs, Apple Intelligence beta publique
+- sources: 9to5mac.com/2026/07/13/ios-27-public-beta/, macrumors.com/2026/07/13/apple-seeds-ios-27-public-beta-1/, engadget.com/2214198/public-betas-for-ios-27-macos-27-and-more-apple-platforms-are-now-available/, macworld.com/article/3190070/the-os-27-public-betas-are-out-now-with-siri-ai-platform-improvements-and-more.html, cultofmac.com/news/ios-27-public-beta-launch
+- internal_links: -> /blog/apple-openai-proces-secrets-commerciaux-juillet-2026, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: apple-ios-27-beta-publique-apple-intelligence-siri-ia (July 5) covers the announcement that the beta was coming "around July 14". This article covers the July 13 actual launch, what's in the live build, what to test. Distinct event (announcement vs actual beta going live). Different practical angle (coming soon vs test now).
+- checker: pass (audit 0 err, build 532 pages)
+- published_commit: 8346a49
+
 ### 2026-07-13 — Ronces : les coulisses de mon court-métrage IA
 - slug: ronces-coulisses-court-film-ia
 - locale: fr
