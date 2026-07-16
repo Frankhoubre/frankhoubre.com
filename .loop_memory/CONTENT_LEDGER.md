@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-16 — Doublage IA : les vraies alternatives à HeyGen comparées
+- slug: doublage-ia-alternatives-heygen-comparatif
+- locale: fr
+- url: https://frankhoubre.com/blog/doublage-ia-alternatives-heygen-comparatif
+- category: comparatifs
+- type: evergreen
+- search_intent: comparaison
+- primary_keyword: alternatives heygen doublage (doublage ia comparatif)
+- secondary_keywords: descript doublage ia, murf alternatives, captions ia, synthesia heygen comparatif, elevenlabs doublage, lip sync ia outils
+- sources: n/a (craft/evergreen, verified tool specs from official sites)
+- internal_links: -> /blog/heygen-elevenlabs-comparatif, -> /blog/synchronisation-labiale-lip-sync-quel-outil-ia-choisir, -> /blog/doublage-voix-off-cloner-diriger-voix-film
+- cta: none
+- cannibalization_notes: heygen-elevenlabs-comparatif compare HeyGen vs ElevenLabs entre eux. Ce guide compare HeyGen à ses concurrentes doublage (Descript, Murf, Captions, Synthesia). Distinct. Plan 90j J6.
+- checker: pass (audit 0 err, build 539 pages)
+- published_commit: bb4942d
+
+### 2026-07-16 — Claude Fable 5 gratuit jusqu'au 19 juillet : ce que ça veut dire pour toi
+- slug: claude-fable-5-gratuit-prolonge-19-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/claude-fable-5-gratuit-prolonge-19-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / informational
+- primary_keyword: Claude Fable 5 gratuit juillet 2026
+- secondary_keywords: Claude Fable 5 prolongé 19 juillet, Anthropic accès gratuit Fable 5, Fable 5 payant prix tokens, Claude Pro Fable 5 extension
+- sources: bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/, forbes.com/sites/sandycarter/2026/07/13/claude-fable-5-extends-to-july-19-7-days-7-power-moves/, dataconomy.com/2026/07/13/claude-fable-5-free-access-extended-july-19/, techtimes.com/articles/320265/20260712/fable-5-free-through-july-19-anthropic-blinks-again-opus-5-leak-surfaces-cursor.htm
+- internal_links: -> /blog/claude-code-createurs-video-guide, -> /blog/anthropic-fable-5-retour-global-juillet-2026
+- cta: none
+- cannibalization_notes: anthropic-fable-5-retour-global-juillet-2026 couvre le retour mondial du 1er juillet (contrôles levés). Ce nouvel article couvre la troisième extension gratuite jusqu'au 19 juillet (pricing/accessibilité). Angle distinct.
+- checker: pass (audit 0 err, build 539 pages)
+- published_commit: bb4942d
+
+### 2026-07-16 — PixVerse lève 439 millions : le géant de la vidéo IA qui monte en silence
+- slug: pixverse-439-millions-levee-fonds-video-ia-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/pixverse-439-millions-levee-fonds-video-ia-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / industry analysis
+- primary_keyword: PixVerse 439 millions levée fonds vidéo IA juillet 2026
+- secondary_keywords: PixVerse Series C 2 milliards, PixVerse V-Series C-Series R-Series, PixVerse 150 millions utilisateurs, PixVerse API vidéo génération, PixVerse Alibaba investissement
+- sources: techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/, pixverse.ai/en/blog/pixverse-closes-series-c-extension-and-announces-expansion-into-interactive-entertainment, ventureburn.com/pixverse-raises-439m-real-time-interactive-worlds/, technode.global/2026/07/14/ai-video-generation-platform-pixverse-raises-439m-series-c-to-build-real-time-interactive-worlds-game-engine/
+- internal_links: -> /blog/wan-alibaba-guide-complet, -> /blog/5-meilleurs-ia-video-maker-clip-musical-2026
+- cta: none
+- cannibalization_notes: aucun article existant sur PixVerse. Distinct des comparatifs outils vidéo généraux. Angle : levée de fonds + positionnement marché juillet 2026.
+- checker: pass (audit 0 err, build 539 pages)
+- published_commit: bb4942d
+
 ### 2026-07-14 — Claude Code pour créateurs vidéo : usages concrets et tarifs
 - slug: claude-code-createurs-video-guide
 - locale: fr

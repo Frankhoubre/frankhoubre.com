@@ -1,6 +1,51 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-14 (Run 20 — 3 articles published)
+## Last run: 2026-07-16 (Run 21 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-14 (batch 20: 3 articles).
+- WebSearch for real news in last 72h: found PixVerse levée de fonds 439M$ Series C
+  (TechCrunch, Yahoo Finance, VentureBurn, TNGlobal, pixverse.ai confirmed, 13 juillet 2026)
+  et Claude Fable 5 accès gratuit prolongé jusqu'au 19 juillet 2026
+  (BleepingComputer, Forbes, Dataconomy, TechTimes confirmed, 12-13 juillet 2026).
+- Plan 90 jours J6 (2026-07-16): doublage-ia-alternatives-heygen-comparatif
+  (cluster OUTILS, mot-clé "alternatives heygen doublage", PAA HeyGen pos 5.8-9.6).
+  Liens vers heygen-elevenlabs-comparatif (pilier), synchronisation-labiale,
+  doublage-voix-off-cloner-diriger-voix-film.
+- Wrote 2 actualite + 1 evergreen directly in worktree agent-a3536ac9.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-16.json --start 0 --end 1 then --start 2 --end 3
+  from worktree). Images written to worktree public/ directly.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (539 pages, 3 new articles prerendered, up from 532).
+- Staged explicit paths (3 .md + 3 hero.webp), committed bb4942d in worktree.
+- Merged fast-forward into main, pushed origin/main (2a09e36).
+
+### Articles published this run
+1. `pixverse-439-millions-levee-fonds-video-ia-juillet-2026` (actualite)
+2. `claude-fable-5-gratuit-prolonge-19-juillet-2026` (actualite)
+3. `doublage-ia-alternatives-heygen-comparatif` (comparatifs/evergreen — plan 90j J6)
+
+### Technical note this run
+- Working tree: agent-a3536ac9 (current worktree). Articles committed directly.
+- Image generation: ran from worktree scripts/ dir (wrote to worktree public/ directly).
+- Build went 532 -> 539 pages (+3 articles + EN translations from translation loop).
+- Merge: no conflict (empty image dirs in main removed before merge). Fast-forward OK.
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J6 (doublage-ia-alternatives-heygen-comparatif) publié.
+- Image queue format: dest must NOT include public/ prefix (script adds it automatically).
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J7 = `voidborn-anime-ia-festival-coulisses`
+   (cluster CAS, mot-clé "animé ia festival", liens vers ronces-coulisses-court-film-ia,
+   presse, illustrations-manga-anime-ia). Données réelles uniquement (festival, date, titre).
+2. News to watch: Google Gemini 3.5 Pro GA (targeting July 17, July 24 fallback),
+   World AI Conference Shanghai (July 17-18), Meta infrastructure announcements,
+   Claude Fable 5 paywall bascule (July 19 deadline), Anthropic IPO timeline.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-14 (Run 20 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-13 (batch 19: 3 articles).

@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 21 — 2026-07-16)
+
+- `PixVerse 439 millions levée fonds vidéo IA juillet 2026` — FILLED: pixverse-439-millions-levee-fonds-video-ia-juillet-2026
+- `Claude Fable 5 gratuit juillet 2026 prolongé 19 juillet` — FILLED: claude-fable-5-gratuit-prolonge-19-juillet-2026
+- `alternatives heygen doublage (doublage ia comparatif)` — FILLED: doublage-ia-alternatives-heygen-comparatif (plan 90j J6)
+
 ## USED (Run 20 — 2026-07-14)
 
 - `iOS 27 beta publique live Siri IA test juillet 2026` — FILLED: ios-27-beta-publique-live-siri-ia-test-juillet-2026

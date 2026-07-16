@@ -3,6 +3,10 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## Run 21 — 2026-07-16 : RAS
+Aucun blocage. 0 erreurs SEO. Build 539 pages PASS. Merge sans conflit. Push OK.
+Images générées dans worktree (script écrit dans worktree public/ directement quand lancé depuis worktree).
+
 ## Run 20 — 2026-07-14 : RAS
 Aucun blocage. 0 erreurs SEO. Build 532 pages PASS. Merge fast-forward.
 Push rejeté (translation loop commit ahead) : git stash + pull --rebase + stash pop + push OK.
