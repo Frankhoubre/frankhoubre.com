@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-17 — VOIDBORN : comment un animé IA a été primé dans des festivals internationaux
+- slug: voidborn-anime-ia-festival-coulisses
+- locale: fr
+- url: https://frankhoubre.com/blog/voidborn-anime-ia-festival-coulisses
+- category: guides
+- type: evergreen
+- search_intent: info/preuve
+- primary_keyword: animé ia festival (voidborn)
+- secondary_keywords: court métrage ia festival, voidborn frank houbre, film ia primé, seoul ai film festival, hollywood indie festival, animation ia festival
+- sources: n/a (coulisses réelles Frank Houbre, données press.ts vérifiées)
+- internal_links: -> /blog/ronces-coulisses-court-film-ia, -> /blog/illustrations-manga-anime-ia, -> /blog/pipeline-ia-script-storyboard-production-de-a-z
+- cta: none
+- cannibalization_notes: ronces-coulisses-court-film-ia = coulisses technique d'un court-métrage réaliste. voidborn = coulisses décision stylistique anime + circuit festival international. Distinct.
+- checker: pass (audit 0 err, build 544 pages)
+- published_commit: e2122ac
+
+### 2026-07-17 — Bonsai 27B : PrismML compresse un modèle 27 milliards de paramètres sur iPhone
+- slug: prismml-bonsai-27b-modele-ia-iphone-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/prismml-bonsai-27b-modele-ia-iphone-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / informational
+- primary_keyword: PrismML Bonsai 27B iPhone IA juillet 2026
+- secondary_keywords: Bonsai 27B on-device, modèle 27B smartphone, prismml quantification, qwen3.6 27b mobile, ia locale iphone, modèle IA mobile
+- sources: 9to5mac.com/2026/07/14/prismml-releases-bonsai-27b-claiming-first-major-ai-model-of-its-size-fit-for-iphone/, prismml.com/news/prismml-releases-bonsai-27b, marktechpost.com/2026/07/14/prismml-releases-bonsai-27b
+- internal_links: -> /blog/comfyui-guide-debutant-creer-pipeline-image-video-ia, -> /blog/wan-alibaba-guide-complet
+- cta: none
+- cannibalization_notes: aucun article existant sur les modèles IA on-device/mobile. Sujet distinct des tutoriels ComfyUI.
+- checker: pass (audit 0 err, build 544 pages)
+- published_commit: e2122ac
+
+### 2026-07-17 — Apple Intelligence approuvé en Chine avec Alibaba Qwen : ce que ça change
+- slug: apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / informational
+- primary_keyword: Apple Intelligence Chine Alibaba Qwen approbation juillet 2026
+- secondary_keywords: CAC approbation IA, Apple Intelligence Qwen, apple intelligence chine lancement, Baidu apple ia, apple intelligence modèle chine
+- sources: techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/, finance.yahoo.com/technology/ai/articles/apple-intelligence-approved-china-alibaba-131501096.html, thenextweb.com/news/alibaba-qwen-apple-intelligence-china-approved
+- internal_links: -> /blog/wan-alibaba-guide-complet, -> /blog/eu-ai-act-article-50-marquage-video-ia-aout-2026
+- cta: none
+- cannibalization_notes: aucune couverture précédente d'Apple Intelligence Chine. Angle réglementaire + implications créateurs distinct des articles Apple iOS 27 (iOS bêta publique, pas Intelligence spécifiquement).
+- checker: pass (audit 0 err, build 544 pages)
+- published_commit: e2122ac
+
 ### 2026-07-16 — Doublage IA : les vraies alternatives à HeyGen comparées
 - slug: doublage-ia-alternatives-heygen-comparatif
 - locale: fr

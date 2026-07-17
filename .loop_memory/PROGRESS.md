@@ -1,6 +1,53 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-16 (Run 21 — 3 articles published)
+## Last run: 2026-07-17 (Run 22 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-16 (batch 21: 3 articles).
+- WebSearch for real news in last 72h: found Apple Intelligence approuvé en Chine avec
+  Alibaba Qwen (TechCrunch, Yahoo Finance, The Next Web, 15 juillet 2026)
+  et PrismML Bonsai 27B premier modèle 27B sur iPhone (9to5Mac, prismml.com, MarkTechPost,
+  14 juillet 2026).
+- Plan 90 jours J7 (2026-07-17): voidborn-anime-ia-festival-coulisses
+  (cluster CAS, mot-clé "animé ia festival", PAA voidborn). Données réelles uniquement
+  (festivals, prix tirés de press.ts : Seoul, Hollywood, Australia, Bangkok, etc.).
+  Liens vers ronces-coulisses-court-film-ia, illustrations-manga-anime-ia,
+  pipeline-ia-script-storyboard-production-de-a-z.
+- Wrote 2 actualite + 1 evergreen directly in worktree agent-a2e5d366.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-17.json --start 0 --end 1 then --start 2 --end 3
+  from worktree). Images written to main repo public/. Copied to worktree before staging.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (544 pages, 3 new articles prerendered, up from 539).
+- Cleaned main repo image dirs, merged fast-forward into main, pushed origin/main (e2122ac).
+
+### Articles published this run
+1. `apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026` (actualite)
+2. `prismml-bonsai-27b-modele-ia-iphone-juillet-2026` (actualite)
+3. `voidborn-anime-ia-festival-coulisses` (guides/evergreen — plan 90j J7)
+
+### Technical note this run
+- Working tree: agent-a2e5d366 (current worktree). Articles committed directly.
+- Image generation: ran from worktree dir, but script wrote to main repo public/ (standard behavior).
+  Copied to worktree before git add.
+- Build went 539 -> 544 pages (+3 articles + EN translations from translation loop).
+- Merge: no conflict (image dirs cleaned from main before merge). Fast-forward OK.
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J7 (voidborn-anime-ia-festival-coulisses) publié.
+- Image queue format: dest must NOT include public/ prefix (script adds it automatically).
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J8 = `dzine-image-animator-tutoriel`
+   (cluster OUTILS, mot-clé "dzine ai image animator", pos 7.1, 59 imp).
+   Liens vers dzine-ia (pilier, entrant depuis lui), comment-transformer-image-ia-video.
+   Anti-cannibalisation : satellite mono-fonction du pilier dzine-ia.
+2. News to watch: Google Gemini 3.5 Pro GA (target July 17 or July 24 fallback — check if launched),
+   Claude Fable 5 paywall bascule (July 19 deadline), World AI Conference Shanghai (July 17-18),
+   Meta infrastructure announcements, Anthropic IPO timeline.
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-16 (Run 21 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-14 (batch 20: 3 articles).

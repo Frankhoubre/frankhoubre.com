@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 22 — 2026-07-17)
+
+- `Apple Intelligence Chine Alibaba Qwen CAC approbation juillet 2026` — FILLED: apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026
+- `PrismML Bonsai 27B on-device iPhone modèle IA mobile juillet 2026` — FILLED: prismml-bonsai-27b-modele-ia-iphone-juillet-2026
+- `animé ia festival (voidborn)` — FILLED: voidborn-anime-ia-festival-coulisses (plan 90j J7)
+
 ## USED (Run 21 — 2026-07-16)
 
 - `PixVerse 439 millions levée fonds vidéo IA juillet 2026` — FILLED: pixverse-439-millions-levee-fonds-video-ia-juillet-2026
