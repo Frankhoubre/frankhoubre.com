@@ -152,7 +152,7 @@ You can attach this grid in your final reporting:
 | --- | --- | --- |
 | Integrated LUFS vertical | -14 to -13 LUFS | OK / To fix |
 | Integrated LUFS YouTube | around -14 LUFS | OK / To fix |
-| True peak | <= -1 dBTP | OK / To fix |
+| True peak | max -1 dBTP | OK / To fix |
 | Voice intelligible at low volume | Immediate comprehension | OK / To fix |
 | Music-voice balance | Voice priority | OK / To fix |
 | Smartphone listen | No harshness or pumping | OK / To fix |

@@ -282,7 +282,7 @@ Tu peux joindre cette grille dans ton reporting final:
 | --- | --- | --- |
 | LUFS intégré vertical | -14 à -13 LUFS | OK / À corriger |
 | LUFS intégré YouTube | autour de -14 LUFS | OK / À corriger |
-| True peak | <= -1 dBTP | OK / À corriger |
+| True peak | max -1 dBTP | OK / À corriger |
 | Voix intelligible à bas volume | Compréhension immédiate | OK / À corriger |
 | Équilibre musique voix | Voix prioritaire | OK / À corriger |
 | Écoute smartphone | Pas de dureté ni pompage | OK / À corriger |
