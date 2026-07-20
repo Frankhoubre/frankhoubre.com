@@ -72,6 +72,12 @@ Genuine gaps found run 1: dedicated frame-to-frame FLICKER troubleshooting
 comparators (product ads vs talking-head vs B-roll), quote/scope templates,
 version-control for AI projects.
 
+## USED (Run 23 — 2026-07-20)
+
+- `Kimi K3 Moonshot AI modèle IA chinois juillet 2026` — FILLED: kimi-k3-moonshot-modele-ia-chinois-juillet-2026
+- `WAICO chine alliance IA mondiale WAIC Shanghai juillet 2026` — FILLED: waico-chine-alliance-ia-mondiale-waic-shanghai-2026
+- `dzine ai image animator (animer portrait ia)` — FILLED: dzine-image-animator-tutoriel (plan 90j J8)
+
 ## USED (Run 22 — 2026-07-17)
 
 - `Apple Intelligence Chine Alibaba Qwen CAC approbation juillet 2026` — FILLED: apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026

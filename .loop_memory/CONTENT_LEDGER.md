@@ -41,6 +41,54 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-07-20 — Dzine Image Animator : animer un portrait photo en vidéo pas à pas
+- slug: dzine-image-animator-tutoriel
+- locale: fr
+- url: https://frankhoubre.com/blog/dzine-image-animator-tutoriel
+- category: tutoriels
+- type: evergreen
+- search_intent: tutoriel / how-to
+- primary_keyword: dzine ai image animator
+- secondary_keywords: dzine image animator, animer portrait ia, photo to video ia, wan 2.2 animate, animation portrait ia, dzine tutoriel
+- sources: n/a (evergreen outil)
+- internal_links: -> /blog/dzine-ia, -> /blog/comment-transformer-image-ia-video-fluide-credible
+- cta: none
+- cannibalization_notes: dzine-ia = avis/test/pipeline complet. dzine-image-animator = satellite mono-fonction. Distinct.
+- checker: pass (audit 0 err, build 553 pages)
+- published_commit: 44c0911
+
+### 2026-07-20 — WAICO : la Chine lance une alliance mondiale de 29 pays pour réguler l'IA
+- slug: waico-chine-alliance-ia-mondiale-waic-shanghai-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/waico-chine-alliance-ia-mondiale-waic-shanghai-2026
+- category: actualite
+- type: news
+- search_intent: news / informational
+- primary_keyword: WAICO chine alliance IA mondiale juillet 2026
+- secondary_keywords: WAIC Shanghai 2026, gouvernance IA internationale, régulation IA chine, World AI Cooperation Organisation
+- sources: aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it, cgtn.com/news/2026-07-07/Shanghai-to-host-record-breaking-World-AI-Conference-July-17-to-20, english.news.cn/20260717/fdc7646bcf8c491c92123f095aaaa670/c.html
+- internal_links: -> /blog/eu-ai-act-article-50-marquage-video-ia-aout-2026
+- cta: none
+- cannibalization_notes: aucun article existant sur la gouvernance IA internationale / WAICO. Distinct de l'AI Act UE (angle différent).
+- checker: pass (audit 0 err, build 553 pages)
+- published_commit: 44c0911
+
+### 2026-07-20 — Kimi K3 : Moonshot AI lance un modèle à 2,8 trillions de paramètres qui rivalise avec GPT-5.6
+- slug: kimi-k3-moonshot-modele-ia-chinois-juillet-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/kimi-k3-moonshot-modele-ia-chinois-juillet-2026
+- category: actualite
+- type: news
+- search_intent: news / informational
+- primary_keyword: Kimi K3 Moonshot AI modèle IA chinois juillet 2026
+- secondary_keywords: kimi k3, moonshot ai kimi, modèle IA chinois, mixture of experts 2.8T, open weight kimi, kimi k3 max
+- sources: bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals, cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html, fortune.com/2026/07/16/moonshots-kimi-k3-pushes-chinese-ai-into-fable-level-territory/
+- internal_links: -> /blog/wan-alibaba-guide-complet, -> /blog/gerer-versions-projets-video-ia
+- cta: none
+- cannibalization_notes: aucun article existant sur Moonshot AI / Kimi K3. Distinct des articles WAN Alibaba (outils vidéo, pas LLM).
+- checker: pass (audit 0 err, build 553 pages)
+- published_commit: 44c0911
+
 ### 2026-07-17 — VOIDBORN : comment un animé IA a été primé dans des festivals internationaux
 - slug: voidborn-anime-ia-festival-coulisses
 - locale: fr

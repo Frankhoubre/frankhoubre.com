@@ -3,6 +3,11 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## Run 23 — 2026-07-20 : MDX bug fix (mastering-loudness)
+Pre-existing article mastering-loudness-pub-reseaux-sociaux-ia (FR+EN) had `<=` inside a
+Markdown table cell. MDX parser interpreted it as a JSX tag opening, causing prerender error.
+Fixed to "max -1 dBTP". Build passed after fix. No new blockers from this run.
+
 ## Run 21 — 2026-07-16 : RAS
 Aucun blocage. 0 erreurs SEO. Build 539 pages PASS. Merge sans conflit. Push OK.
 Images générées dans worktree (script écrit dans worktree public/ directement quand lancé depuis worktree).

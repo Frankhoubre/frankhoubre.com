@@ -1,6 +1,58 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-17 (Run 22 — 3 articles published)
+## Last run: 2026-07-20 (Run 23 — 3 articles published)
+
+### What happened
+- Read all .loop_memory/ files. Last publish was 2026-07-17 (batch 22: 3 articles).
+- WebSearch for real news in last 72h: found Kimi K3 Moonshot AI launch July 16-17, 2026
+  (Bloomberg, CNBC, Fortune confirmed: 2.8T parameter MoE model, 1M token context, open weights
+  promised July 27) and WAICO formation at WAIC Shanghai July 16-17, 2026 (Al Jazeera, Xinhua,
+  CGTN confirmed: 29-nation AI governance org founded by China at World AI Conference).
+- Plan 90 jours J8 (2026-07-20): dzine-image-animator-tutoriel
+  (cluster OUTILS, mot-clé "dzine ai image animator", pos 7.1, 59 imp).
+  Liens vers /blog/dzine-ia (pilier), /blog/comment-transformer-image-ia-video-fluide-credible.
+  Anti-cannibalisation : satellite mono-fonction du pilier dzine-ia (qui couvre l'ensemble pipeline).
+- Wrote 2 actualite + 1 evergreen directly in worktree agent-a889b945.
+- Generated 3 hero images via scripts/render_blog_queue_gemini.py (Imagen API,
+  --queue tmp-new-articles-queue-2026-07-20.json --start 0 --end 1 then --start 2 --end 3
+  from worktree). Images written to main repo public/. Copied to worktree before staging.
+- Bug fix: mastering-loudness-pub-reseaux-sociaux-ia (FR+EN) had <= in Markdown table
+  causing MDX parse error. Fixed to "max -1 dBTP". Build passed after fix.
+- SEO audit: 0 errors. Thin-content warnings on news articles expected per STYLE_GUIDE.
+- Build: PASS (553 pages, 3 new articles prerendered + 2 MDX fixes).
+- Cleaned main repo image dirs, merged fast-forward into main (44c0911), pushed origin/main.
+
+### Articles published this run
+1. `kimi-k3-moonshot-modele-ia-chinois-juillet-2026` (actualite)
+2. `waico-chine-alliance-ia-mondiale-waic-shanghai-2026` (actualite)
+3. `dzine-image-animator-tutoriel` (tutoriels/evergreen — plan 90j J8)
+
+### Technical note this run
+- Working tree: agent-a889b945 (current worktree). Articles committed directly.
+- Image generation: ran from worktree dir, but script wrote to main repo public/ (standard behavior).
+  Copied to worktree before git add.
+- Build went 544 -> 553 pages (+3 articles + EN translations from translation loop).
+- Bug fixed: mastering-loudness-pub-reseaux-sociaux-ia used <= in table cell which MDX
+  parsed as JSX tag start. Fixed to "max". This was a pre-existing article from the translation loop.
+- Merge: no conflict (image dirs cleaned from main before merge). Fast-forward OK.
+- SEO audit 0 errors confirmed.
+- Plan 90 jours J8 (dzine-image-animator-tutoriel) publié.
+- Image queue format: dest must NOT include public/ prefix (script adds it automatically).
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J9 = `parcours-frank-houbre-guitare-cinema-ia`
+   (cluster MARQUE, mot-clé "frank houbre parcours / frank houbre biographie", pos navigationnelle).
+   Liens vers /a-propos (pilier), /presse. Anti-cannibalisation: l'article raconte (narratif long),
+   /a-propos synthétise. Décrire le parcours guitare -> cinéma -> IA.
+   [données Frank] requis : n'inventer aucun fait biographique. Décaler si données absentes.
+2. News to watch: Kimi K3 open weights drop (announced July 27 — confirm if happened),
+   Meta Muse Video official launch (previewed July 7 — watch for GA),
+   WAICO first regulatory moves, Google Gemini 3.5 Pro GA updates,
+   Anthropic new pricing after Fable 5 paywall switch (July 20 = day 1 paid).
+3. Check if new articles got EN translations (translation loop may handle).
+4. Verify Vercel CDN has cleared and all 3 new articles are 200 OK (wait 15-20min).
+
+## Previous run: 2026-07-17 (Run 22 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-16 (batch 21: 3 articles).

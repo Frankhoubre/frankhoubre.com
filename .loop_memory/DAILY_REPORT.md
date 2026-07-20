@@ -1,43 +1,59 @@
-# DAILY_REPORT.md — Run 22 — 2026-07-17
+# DAILY_REPORT.md — Run 23 — 2026-07-20
 
 ## Résumé
 
-3 articles publiés. 0 erreurs SEO. Build 544 pages PASS. Push origin/main OK.
+3 articles publiés. 0 erreurs SEO. Build 553 pages PASS. Push origin/main OK (44c0911).
+Bonus: fix MDX `<=` dans mastering-loudness-pub-reseaux-sociaux-ia (FR+EN).
 
 ## Articles publiés
 
-### 1. Apple Intelligence approuvé en Chine avec Alibaba Qwen : ce que ça change
-- **Slug :** `apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026`
+### 1. Kimi K3 : Moonshot AI lance un modèle à 2,8 trillions de paramètres qui rivalise avec GPT-5.6
+- **Slug :** `kimi-k3-moonshot-modele-ia-chinois-juillet-2026`
 - **Catégorie :** actualite
-- **Sources :** TechCrunch (15/07), Yahoo Finance, The Next Web, MLQ.ai, Seeking Alpha, thenews.com.pk
-- **Angle :** approbation CAC du 15 juillet 2026, Qwen + Baidu pour alimenter iOS/iPadOS/macOS/visionOS en Chine, sans date de lancement public. Alibaba +3,7%. Implications pour créateurs IA avec audiences internationales.
-- **Mots environ :** 1300
+- **Date :** 2026-07-20
+- **Sources :** Bloomberg, CNBC, Fortune (17 juillet 2026)
+- **Résumé :** Lancement de Kimi K3 par Moonshot AI le 16-17 juillet 2026. Architecture MoE 2,8T paramètres, fenêtre contexte 1M tokens, raisonnement permanent, $3/M tokens input. Open weights annoncés pour le 27 juillet.
 
-### 2. Bonsai 27B : PrismML compresse un modèle 27 milliards de paramètres sur iPhone
-- **Slug :** `prismml-bonsai-27b-modele-ia-iphone-juillet-2026`
+### 2. WAICO : la Chine lance une alliance mondiale de 29 pays pour réguler l'IA
+- **Slug :** `waico-chine-alliance-ia-mondiale-waic-shanghai-2026`
 - **Catégorie :** actualite
-- **Sources :** 9to5Mac (14/07), prismml.com officiel, MarkTechPost, DevelopersDigest, CryptoBriefing, AlphaSignal
-- **Angle :** Bonsai 27B basé sur Qwen3.6-27B, 3,9 Go en 1-bit, 11 tokens/s sur iPhone 17 Pro, 90% des perfs full-precision sur 15 benchmarks, Apache 2.0. Usages concrets pour créateurs vidéo IA en local.
-- **Mots environ :** 1243
+- **Date :** 2026-07-20
+- **Sources :** Al Jazeera, Xinhua, CGTN (17 juillet 2026)
+- **Résumé :** Fondation du WAICO (World Artificial Intelligence Cooperation Organisation) le 16 juillet 2026 à Shanghai. 29 pays fondateurs, annoncé au WAIC 2026. Xi Jinping appelle à la coopération IA sans domination d'un pays. Contexte : stratégie de contournement des restrictions export américaines via l'open source.
 
-### 3. VOIDBORN : comment un animé IA a été primé dans des festivals internationaux
-- **Slug :** `voidborn-anime-ia-festival-coulisses`
-- **Catégorie :** guides (evergreen — Plan 90j J7)
-- **Sources :** n/a (coulisses Frank Houbre, données réelles press.ts : Seoul AI Film Festival, Hollywood Indie Festival, Australian AI Festival, Bangkok Movie Awards, Top Shorts, LA Film Awards, Pulse Of Animation Festival, Mondial Chroma Awards)
-- **Angle :** coulisses réalisateur, décision stylistique (anime vs réalisme), pipeline, ce que les jurys cherchent, soumission pratique
-- **Mots environ :** 2000+
+### 3. Dzine Image Animator : animer un portrait photo en vidéo pas à pas
+- **Slug :** `dzine-image-animator-tutoriel`
+- **Catégorie :** tutoriels (evergreen — plan 90j J8)
+- **Date :** 2026-07-20
+- **Résumé :** Tutoriel complet de l'outil Image Animator de Dzine (moteur Wan 2.2 Animate). Flux étape par étape, deux modes (prompt texte et vidéo de référence), réglages recommandés, cas d'usage réels. Satellite mono-fonction du pilier dzine-ia.md.
 
-## Métriques techniques
+## SEO audit
 
-- Pages build : 544 (était 539)
-- SEO audit : 0 erreurs, 529 warnings (tous attendus : word-count news articles, pre-existing EN translations)
-- Build : PASS (Turbopack, 9 workers)
-- Merge : fast-forward worktree-agent-a2e5d366 -> main
-- Push : origin/main OK (e2122ac)
-- node_modules : cp -rl depuis main repo vers worktree
+- Erreurs : 0
+- Warnings : 537 (tous pre-existants, principaux : thin content sur articles news, H1 manquants sur articles anciens)
+- Infos : 5
 
-## Notes techniques
+## Build
 
-- Images générées dans main repo (comportement attendu du script). Copiées vers worktree avant staging.
-- Main repo image dirs nettoyés avant merge pour éviter conflit fast-forward.
-- Queue JSON : dest sans préfixe public/ (script ajoute automatiquement).
+- Statut : PASS
+- Pages avant : 544
+- Pages après : 553 (+3 articles + EN translations)
+- Bug corrigé : `<=` dans mastering-loudness-pub-reseaux-sociaux-ia (FR+EN) causait MDX parse error
+
+## Git
+
+- Commit worktree : 44c0911
+- Branche worktree : worktree-agent-a889b945
+- Merge : fast-forward sans conflit
+- Push : origin/main OK
+
+## Problèmes rencontrés
+
+- Bug MDX pre-existant dans mastering-loudness-pub-reseaux-sociaux-ia : `<=` en cellule de table
+  interprété comme début de tag JSX. Fix mineur (remplacé par "max"). Inclus dans le commit.
+- node_modules absent du worktree : hard-link depuis main avec `cp -rl` (comportement standard).
+
+## Prochaine session
+
+- Evergreen J9 : `parcours-frank-houbre-guitare-cinema-ia` (cluster MARQUE)
+- News à surveiller : Kimi K3 open weights (27 juillet), Meta Muse Video GA, Anthropic pricing post-Fable 5 paywall
