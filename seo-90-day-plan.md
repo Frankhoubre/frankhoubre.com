@@ -158,10 +158,19 @@ marqués UPDATE renforcent un article existant au lieu d'en créer un.
 
 ## État d'avancement (mis à jour par le loop à chaque publication)
 
-Prochain jour à publier : **J1** (`wan-alibaba-guide-complet`).
+Prochain jour à publier : **J10** (`upscaling-video-gratuit-alternatives-topaz`).
 
 | Jour | Slug | Publié le | Note |
 | --- | --- | --- | --- |
+| 1 | wan-alibaba-guide-complet | 2026-07-10 | Publié (rétroactif, table jamais mise à jour avant ce run) |
+| 2 | methode-realisateur-ia-diriger-avant-generer | 2026-07-11 | Publié (rétroactif) |
+| 3 | frank-houbre-formation-ai-studios | 2026-07-12 | Publié (rétroactif, fichier .mdx) |
+| 4 | ronces-coulisses-court-film-ia | 2026-07-13 | Publié (rétroactif) |
+| 5 | claude-code-createurs-video-guide | 2026-07-14 | Publié (rétroactif) |
+| 6 | doublage-ia-alternatives-heygen-comparatif | 2026-07-16 | Publié (rétroactif) |
+| 7 | voidborn-anime-ia-festival-coulisses | 2026-07-17 | Publié (rétroactif) |
+| 8 | dzine-image-animator-tutoriel | 2026-07-20 | Publié (rétroactif) |
+| 9 | parcours-frank-houbre-guitare-cinema-ia | 2026-08-03 | Publié. Faits biographiques (guitare 8 ans, concurrent qui a dominé le marché) confirmés directement par Frank en session. Lien entrant ajouté depuis /a-propos. Lien vers /presse omis : la route n'existe pas encore sur le site (voir ERRORS_AND_BLOCKERS.md) |
 
 Rappels pour le loop : après J1, repointer la 301 `/wan-2-1-alibaba` de
 `next.config.ts` vers `/blog/wan-alibaba-guide-complet`. Les jours

@@ -41,6 +41,23 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-08-03 — Parcours de Frank Houbre : de la guitare au cinéma IA
+- slug: parcours-frank-houbre-guitare-cinema-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/parcours-frank-houbre-guitare-cinema-ia
+- category: guides
+- type: evergreen
+- search_intent: navigationnelle / récit
+- primary_keyword: frank houbre parcours
+- secondary_keywords: frank houbre biographie, mymusicteacher, business dynamite, frank houbre ia
+- sources: n/a (récit personnel ; faits biographiques vérifiés contre /a-propos + confirmés directement par Frank pour la partie guitare/concurrent)
+- internal_links: -> /a-propos (pilier, entrant ajouté le même jour dans la section Parcours), -> /blog/ronces-coulisses-court-film-ia, -> /blog/voidborn-anime-ia-festival-coulisses, -> /blog/methode-realisateur-ia-diriger-avant-generer
+- cta: Business Dynamite (mention naturelle dans le récit) + AI Studios (soft, via /a-propos)
+- cannibalization_notes: seo-90-day-plan.md J9 (MARQUE). Distinct de /a-propos : la page bio synthétise, cet article raconte en long format. Distinct de frank-houbre-formation-ai-studios (J3, angle produit/formation) : celui-ci est la trajectoire personnelle.
+- checker: pass (audit 0 err/warn pour ce slug, typecheck PASS, lint 0 erreur, build PASS avec /blog/parcours-frank-houbre-guitare-cinema-ia prérendu)
+- published_commit: 2edcf4c
+- note: plan J9 listait aussi un lien vers /presse ; la route /presse n'existe pas dans le codebase (confirmé, ni dans src/app ni de redirect) alors que /a-propos y renvoie déjà. Lien omis ici pour éviter un lien mort ; voir ERRORS_AND_BLOCKERS.md.
+
 ### 2026-07-20 — Dzine Image Animator : animer un portrait photo en vidéo pas à pas
 - slug: dzine-image-animator-tutoriel
 - locale: fr

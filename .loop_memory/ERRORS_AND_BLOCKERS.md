@@ -3,6 +3,26 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## Run 24 — 2026-08-03 : /presse page missing, GEMINI image pipeline unavailable
+
+- **`/presse` route does not exist** anywhere in `src/app` (confirmed: no
+  directory, no redirect in `next.config.ts`), even though `/a-propos`
+  (`src/app/a-propos/page.tsx`, "Réseaux, profils et sites" section) already
+  links to it, and `seo-90-day-plan.md` references it as a link target for
+  many future days (J4, J7, J27, J32, J42, J58, J67, J75, J82, J85, J87, J89,
+  J90...). This is a pre-existing gap, not introduced by this run. Action
+  needed: either build a real `/presse` page (kit presse: bio, visuels,
+  références festival, as `/a-propos` already promises) or remove/redirect the
+  dangling links until it exists. Until resolved, future days that call for a
+  `/presse` link should omit it rather than ship a broken link (done for J9).
+- **`.env.local` / `GEMINI_API_KEY` do not exist** in this environment, so the
+  documented Python/Imagen image pipeline (`scripts/render_blog_queue_gemini.py`)
+  is unavailable. Used the Higgsfield MCP (`generate_image`, model `soul_2`,
+  16:9) instead for J9's hero image, then `ffmpeg` to convert to
+  1600x900 webp (quality 90) to match the site's existing convention. Works
+  fine as a substitute; flagging so future runs know why the hero image for
+  this article wasn't produced via the usual script.
+
 ## Run 23 — 2026-07-20 : MDX bug fix (mastering-loudness)
 Pre-existing article mastering-loudness-pub-reseaux-sociaux-ia (FR+EN) had `<=` inside a
 Markdown table cell. MDX parser interpreted it as a JSX tag opening, causing prerender error.
