@@ -258,6 +258,17 @@ export default function AboutPage() {
             outils en système de fabrication d’<strong>images cohérentes</strong>, au service d’un
             récit, d’une identité visuelle et d’un objectif de production.
           </p>
+          <p className="text-lg leading-relaxed text-neutral-800">
+            Le récit complet de ce parcours, la guitare, MyMusicTeacher, Business Dynamite puis le
+            virage vers le cinéma IA, est raconté en détail dans l’article{" "}
+            <Link
+              href="/blog/parcours-frank-houbre-guitare-cinema-ia"
+              className="ds-link font-medium text-neutral-950"
+            >
+              Parcours de Frank Houbre : de la guitare au cinéma IA
+            </Link>
+            .
+          </p>
         </section>
 
         <section aria-labelledby="projets-phares" className="mt-14 space-y-4">
