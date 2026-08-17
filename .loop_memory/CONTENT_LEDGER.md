@@ -41,6 +41,23 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-08-03 — Upscaling vidéo gratuit : les alternatives à Topaz testées
+- slug: upscaling-video-gratuit-alternatives-topaz
+- locale: fr
+- url: https://frankhoubre.com/blog/upscaling-video-gratuit-alternatives-topaz
+- category: comparatifs
+- type: evergreen
+- search_intent: commerciale / comparatif
+- primary_keyword: topaz video ai gratuit
+- secondary_keywords: upscaler vidéo gratuit, alternative topaz video ai, video2x, upscayl, real-esrgan
+- sources: github.com/k4yt3x/video2x, github.com/upscayl, github.com/bloc97/Anime4K, blackmagicdesign.com/products/davinciresolve (Super Scale = Studio only, $295 one-time, verified via web search), prix Topaz repris de l'article pilier existant (vérifiés 2026-07-09)
+- internal_links: -> /blog/topaz-video-ai-test-avis-restauration-video (pilier, lien réciproque ajouté le même jour), -> /blog/upscaling-video-passer-vieux-court-metrage-4k-ia, -> /blog/comfyui-guide-video-createurs-debutants, -> /blog/voidborn-anime-ia-festival-coulisses
+- cta: none (comparatif outils)
+- cannibalization_notes: seo-90-day-plan.md J10. Distinct du pilier topaz-video-ai-test-avis-restauration-video : celui-ci = avis/prix/test de Topaz, celui-là = intention gratuit/alternatives. Pas de chevauchement de mot-clé principal.
+- checker: pass (audit 0 err/warn pour ce slug, typecheck PASS, lint 0 erreur, build PASS)
+- published_commit: b48ec8a
+- note: première image générée avec le nouveau pipeline Nano Banana 2 (Vercel AI Gateway), plus de Higgsfield MCP à partir de ce run (voir ERRORS_AND_BLOCKERS.md)
+
 ### 2026-08-03 — Parcours de Frank Houbre : de la guitare au cinéma IA
 - slug: parcours-frank-houbre-guitare-cinema-ia
 - locale: fr

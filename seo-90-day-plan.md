@@ -158,7 +158,7 @@ marqués UPDATE renforcent un article existant au lieu d'en créer un.
 
 ## État d'avancement (mis à jour par le loop à chaque publication)
 
-Prochain jour à publier : **J10** (`upscaling-video-gratuit-alternatives-topaz`).
+Prochain jour à publier : **J11** (`lost-garden-journal-production-serie-ia`).
 
 | Jour | Slug | Publié le | Note |
 | --- | --- | --- | --- |
@@ -171,6 +171,7 @@ Prochain jour à publier : **J10** (`upscaling-video-gratuit-alternatives-topaz`
 | 7 | voidborn-anime-ia-festival-coulisses | 2026-07-17 | Publié (rétroactif) |
 | 8 | dzine-image-animator-tutoriel | 2026-07-20 | Publié (rétroactif) |
 | 9 | parcours-frank-houbre-guitare-cinema-ia | 2026-08-03 | Publié. Faits biographiques (guitare 8 ans, concurrent qui a dominé le marché) confirmés directement par Frank en session. Lien entrant ajouté depuis /a-propos. Lien vers /presse omis : la route n'existe pas encore sur le site (voir ERRORS_AND_BLOCKERS.md) |
+| 10 | upscaling-video-gratuit-alternatives-topaz | 2026-08-03 | Publié. Lien réciproque ajouté depuis le pilier topaz-video-ai-test-avis-restauration-video. Première image générée via Nano Banana 2 (Vercel AI Gateway), Higgsfield MCP retiré à partir de ce run |
 
 Rappels pour le loop : après J1, repointer la 301 `/wan-2-1-alibaba` de
 `next.config.ts` vers `/blog/wan-alibaba-guide-complet`. Les jours

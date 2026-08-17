@@ -9,6 +9,8 @@ Format:
 
 ---
 
+2026-08-03 12:30 | main | b48ec8a | Run 25: 1 evergreen article (upscaling-video-gratuit-alternatives-topaz, plan 90j J10), reciprocal link added from the Topaz pillar article. First hero image generated via the new Nano Banana 2 / Vercel AI Gateway pipeline (scripts/render_blog_queue_nanobanana.py), Higgsfield MCP retired per Frank's instruction. Audit 0 err for this slug, typecheck PASS, lint 0 err, build PASS. Committed locally on main, NOT yet pushed: awaiting explicit user confirmation before pushing to origin/main. | build:PASS | deploy:PENDING (awaiting user go-ahead to push)
+
 2026-08-03 11:40 | main | 2edcf4c | Run 24: 1 evergreen article (parcours-frank-houbre-guitare-cinema-ia, plan 90j J9), hero image via Higgsfield MCP (GEMINI_API_KEY unavailable locally), entrant link added from /a-propos. Audit 0 err for this slug, typecheck PASS, lint 0 err, build PASS (/blog/parcours-frank-houbre-guitare-cinema-ia prerendered). Link to /presse omitted (route doesn't exist, see ERRORS_AND_BLOCKERS.md). Committed locally on main, NOT yet pushed: waiting for explicit user confirmation before pushing to origin/main (production deploy). | build:PASS | deploy:PENDING (awaiting user go-ahead to push)
 
 2026-06-19 | main | 50056e2 | RETROFIT LIVE: added real site screenshots (klingai.com, lumalabs.ai via screenshot_url.sh) to the 2 tool articles, AND updated the Luma article from Ray 2 to Ray 3.2 (current model: 16 keyframes, Speed/Quality, HDR+EXR ACES, Ray3 Modify, verified facts). Screenshot placed as 2nd body image (1st=hero, skipped by thumbnail logic). Audit 0 err, build PASS, verified live (title shows Ray 3.2, screenshots HTTP 200). | build:PASS | deploy:OK
