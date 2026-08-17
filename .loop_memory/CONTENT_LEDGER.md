@@ -41,6 +41,23 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-08-17 — Pourquoi j'ai construit Imaginode, mon canvas IA à nodes
+- slug: pourquoi-jai-construit-imaginode-canvas-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/pourquoi-jai-construit-imaginode-canvas-ia
+- category: analyses
+- type: evergreen (HORS PLAN 90j : article fondateur Imaginode demandé par Frank, ne touche pas la table d'avancement du plan)
+- search_intent: navigationnelle / récit fondateur + workflow
+- primary_keyword: imaginode canvas ia nodes
+- secondary_keywords: canvas IA à nodes, node caméra, workflow vidéo IA, imaginode avis
+- sources: repo local SimpleAI (README.md, src/lib/models.ts, CameraNode.tsx, vérifiés le 2026-08-17), capture live imaginode.ai du 2026-08-17. Coûts crédits recalculés depuis models.ts (marge 1.4 image / 1.2 vidéo, crédit = 0,01 €)
+- internal_links: -> /blog/ronces-coulisses-court-film-ia, -> /blog/voidborn-anime-ia-festival-coulisses, -> /blog/methode-realisateur-ia-diriger-avant-generer, -> /blog/pipeline-ia-script-storyboard-production-de-a-z ; liens réciproques ajoutés DEPUIS ronces-coulisses-court-film-ia et voidborn-anime-ia-festival-coulisses
+- cta: lien externe https://imaginode.ai (produit de Frank, transparence assumée dans l'article). AUCUN code promo mentionné (correctif Frank du 2026-08-17)
+- cannibalization_notes: grep "imaginode" + "canvas" dans content/ : aucun article existant sur Imaginode ; seuls comfyui-* couvrent la logique nodale, angle distinct (ComfyUI local vs SaaS, différencié explicitement dans l'article). /liens présente déjà Imaginode comme outil principal
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, lint 0 err, typecheck PASS, build PASS). NB : les ~2000 erreurs globales du seo_audit sur ce checkout Windows sont un artefact CRLF (core.autocrlf=true casse le parseur frontmatter du script), pas des vrais problèmes de contenu
+- published_commit: 93d7d46
+- note: images = vrais visuels produit : hero.webp (frame hero.mp4 à 4 s), workflow-1.webp (frame about.mp4 à 3 s, graphe de nodes), workflow-2.webp (capture live imaginode.ai recadrée pour retirer le bandeau promo). C'est le 1er des 3 articles Imaginode (les 2 autres sites publient les 19 et 21/08)
+
 ### 2026-08-03 — Upscaling vidéo gratuit : les alternatives à Topaz testées
 - slug: upscaling-video-gratuit-alternatives-topaz
 - locale: fr
