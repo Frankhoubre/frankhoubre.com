@@ -29,9 +29,13 @@ the site, built the system, and published NO content (by design).
 - **Deploy:** Vercel, `framework: nextjs` (`vercel.json`), auto-deploys on push
   to `main`. Remote: `github.com/Frankhoubre/frankhoubre.com`.
 - **Package manager:** npm. Node 20.20.2 (`.nvmrc`).
-- **Image pipeline:** python scripts in `scripts/` generate cinematic webp via
-  Gemini/Imagen/local A1111; `GEMINI_API_KEY` is in `.env.local`. Images live
-  under `public/images/blog/<slug>/{hero,workflow-1,workflow-2}.webp`.
+- **Image pipeline:** as of 2026-08-03, hero images are generated with
+  `scripts/render_blog_queue_nanobanana.py` (Nano Banana 2 / Google Gemini 3.1
+  Flash Image via the Vercel AI Gateway, key `AI_GATEWAY_API_KEY` in
+  `.env.local`). Do NOT use the Higgsfield MCP for blog images and do not use
+  the old direct-Gemini script (`render_blog_queue_gemini.py`,
+  `GEMINI_API_KEY`) going forward; both are kept only for reference. Images
+  live under `public/images/blog/<slug>/{hero,workflow-1,workflow-2}.webp`.
 
 ## 2. The loop's job
 

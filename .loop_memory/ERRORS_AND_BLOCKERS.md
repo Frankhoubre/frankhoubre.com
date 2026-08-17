@@ -3,6 +3,18 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## RESOLVED 2026-08-03 (same day, Frank's instruction) — image pipeline switched to Nano Banana 2
+
+Frank gave a Vercel AI Gateway key and instructed: never use the Higgsfield
+MCP for blog images again, use only this. New default:
+`scripts/render_blog_queue_nanobanana.py`, model
+`google/gemini-3.1-flash-image-preview` (Nano Banana 2), called via
+`/v1/chat/completions` on `https://ai-gateway.vercel.sh` with
+`AI_GATEWAY_API_KEY` (in `.env.local`, gitignored, never commit it). Tested
+end to end (generation + cinematic post-processing + webp save), works.
+Supersedes the note below for all runs from now on; the note is kept for
+history (why J9's image was made via Higgsfield).
+
 ## Run 24 — 2026-08-03 : /presse page missing, GEMINI image pipeline unavailable
 
 - **`/presse` route does not exist** anywhere in `src/app` (confirmed: no
