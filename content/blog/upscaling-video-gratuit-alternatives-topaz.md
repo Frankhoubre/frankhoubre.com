@@ -1,6 +1,6 @@
 ---
 title: "Upscaling vidéo gratuit : les alternatives à Topaz testées"
-date: "2026-08-03"
+date: "2026-08-17"
 category: "comparatifs"
 excerpt: "59 dollars par mois pour Topaz Video AI, c'est trop pour ton budget ? Voici les vraies alternatives gratuites pour upscaler tes vidéos, avec leurs limites réelles."
 thumbnail: "/images/blog/upscaling-video-gratuit-alternatives-topaz/hero.webp"
