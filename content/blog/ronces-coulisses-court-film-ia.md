@@ -97,7 +97,7 @@ Pas la peine de reproduire exactement ce que j'ai fait. Voici les éléments de 
 - Écrire une "fiche sensorielle" du film avant de générer quoi que ce soit : lumière, textures interdites, rythme cible, couleur dominante.
 - Choisir les outils par plan, pas par habitude. Kling sur les plans de mouvement végétal, WAN sur les plans statiques architecturaux : c'est un exemple. L'arbitrage dépend de votre projet.
 - Couper tôt et brutalement. La matière IA est facile à produire en volume. La rareté vient du montage.
-- Garder une fiche de référence par décor avec les paramètres de lumière et de texture. La relire avant chaque génération.
+- Garder une fiche de référence par décor avec les paramètres de lumière et de texture. La relire avant chaque génération. C'est d'ailleurs cette gymnastique manuelle qui m'a poussé plus tard à [construire Imaginode, mon canvas IA à nodes](/blog/pourquoi-jai-construit-imaginode-canvas-ia), où les références restent branchées sur les plans.
 - Si un plan résiste après plusieurs générations, envisager de l'éliminer du montage. La contrainte est une instruction de mise en scène.
 
 La prochaine étape pour moi, c'est VOIDBORN et Lost Garden. Deux projets avec des formats et des intentions différents. Je documenterai les coulisses avec le même niveau de détail.
