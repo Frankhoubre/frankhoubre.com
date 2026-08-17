@@ -1,6 +1,29 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-07-20 (Run 23 — 3 articles published)
+## Last run: 2026-08-17 (J10 publié, boucle quotidienne relancée)
+
+### What happened
+- Publication du J10 du plan 90 jours : `upscaling-video-gratuit-alternatives-topaz`
+  (evergreen, comparatifs), écrit le 2026-08-03 mais resté local ; date frontmatter
+  re-calée au 2026-08-17, lien réciproque depuis le pilier
+  topaz-video-ai-test-avis-restauration-video déjà en place.
+- Hero généré via le pipeline officiel `scripts/render_blog_queue_nanobanana.py`
+  (Nano Banana 2 / Vercel AI Gateway, clé `AI_GATEWAY_API_KEY` dans `.env.local`).
+  Higgsfield et `render_blog_queue_gemini.py` (GEMINI_API_KEY) sont interdits ;
+  les références restantes dans les docs de la boucle ont été purgées ce jour.
+- `seo-90-day-plan.md` re-calé : le calendrier reprend avec J11 = 2026-08-18,
+  J12 = 2026-08-19, etc., 1 article par jour, jours UPDATE inclus comme jours
+  normaux.
+- Le run quotidien est relancé via une tâche planifiée Windows.
+
+### Next run should
+1. Evergreen slot: Plan 90 jours J11 = `lost-garden-journal-production-serie-ia`
+   (cluster CAS, mot-clé "lost garden série ia"), à publier le 2026-08-18.
+2. Générer le hero UNIQUEMENT via scripts/render_blog_queue_nanobanana.py.
+3. Suivre la table "État d'avancement" de seo-90-day-plan.md (re-calée le
+   2026-08-17) pour les jours suivants.
+
+## Previous run: 2026-07-20 (Run 23 — 3 articles published)
 
 ### What happened
 - Read all .loop_memory/ files. Last publish was 2026-07-17 (batch 22: 3 articles).

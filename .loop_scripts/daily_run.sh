@@ -87,9 +87,10 @@ CONTENT_LEDGER.md, KEYWORD_MAP.md, STYLE_GUIDE.md), puis exécute le playbook \
 Objectif : 2 actualités (catégorie actualite, sources réelles vérifiées des \
 dernières 24-72h, jamais d'info inventée) + 1 evergreen sans cannibalisation, \
 TOUS rédigés par toi en français, voix de Frank Houbre, jamais de tiret \
-cadratin. Génère une image hero par article via le script Imagen \
-(.loop_scripts puis render_blog_queue_gemini.py, clé Gemini = images \
-uniquement). Lance l'audit SEO (node .loop_scripts/seo_audit.mjs), corrige les \
+cadratin. Génère une image hero par article via le pipeline officiel Nano \
+Banana 2 (scripts/render_blog_queue_nanobanana.py, clé AI_GATEWAY_API_KEY \
+dans .env.local, images uniquement). Lance l'audit SEO (node \
+.loop_scripts/seo_audit.mjs), corrige les \
 problèmes sûrs. Travaille dans un worktree git isolé, build, merge sur main, \
 push origin main, vérifie les URLs en live. Mets à jour TOUTE la mémoire \
 .loop_memory et DAILY_REPORT.md. Si une condition d'arrêt du playbook est \

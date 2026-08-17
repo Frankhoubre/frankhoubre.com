@@ -157,10 +157,12 @@ two loops share one git HEAD. Rules:
 
 - **Deploy confirmation:** confirm pushing `main` is the intended production
   deploy path (assumed yes via Vercel).
-- **Image generation:** confirm the loop may run the python image scripts
-  (`GEMINI_API_KEY` present), or accept news shipping with the default OG image
-  until images are generated. (Note: the translation session has Bash disabled;
-  a Bash-enabled session is needed to run image generation and `npm`.)
+- **Image generation:** confirm the loop may run the official pipeline
+  `scripts/render_blog_queue_nanobanana.py` (Nano Banana 2 via the Vercel AI
+  Gateway, `AI_GATEWAY_API_KEY` in `.env.local`), or accept news shipping with
+  the default OG image until images are generated. (Note: the translation
+  session has Bash disabled; a Bash-enabled session is needed to run image
+  generation and `npm`.)
 - **SEO data:** an Ahrefs MCP and Google Search Console tools are available in
   the agent environment. Provide / confirm the frankhoubre.com Ahrefs project id
   and GSC property to drive keyword choice and find low-CTR pages to update.

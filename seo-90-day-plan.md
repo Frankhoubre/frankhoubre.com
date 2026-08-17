@@ -158,7 +158,14 @@ marqués UPDATE renforcent un article existant au lieu d'en créer un.
 
 ## État d'avancement (mis à jour par le loop à chaque publication)
 
-Prochain jour à publier : **J11** (`lost-garden-journal-production-serie-ia`).
+**Re-calage du calendrier (2026-08-17)** : le loop a été interrompu entre le
+2026-08-03 et le 2026-08-17. J10 est publié le 2026-08-17 et le calendrier
+reprend à partir de là : J11 = 2026-08-18, J12 = 2026-08-19, et ainsi de
+suite, 1 article par jour, les jours UPDATE comptant comme des jours normaux.
+Les dates de la ligne d'origine du plan (J1 = 2026-07-10) ne servent plus de
+référence pour les jours restants.
+
+Prochain jour à publier : **J11** (`lost-garden-journal-production-serie-ia`), le 2026-08-18.
 
 | Jour | Slug | Publié le | Note |
 | --- | --- | --- | --- |
@@ -171,7 +178,7 @@ Prochain jour à publier : **J11** (`lost-garden-journal-production-serie-ia`).
 | 7 | voidborn-anime-ia-festival-coulisses | 2026-07-17 | Publié (rétroactif) |
 | 8 | dzine-image-animator-tutoriel | 2026-07-20 | Publié (rétroactif) |
 | 9 | parcours-frank-houbre-guitare-cinema-ia | 2026-08-03 | Publié. Faits biographiques (guitare 8 ans, concurrent qui a dominé le marché) confirmés directement par Frank en session. Lien entrant ajouté depuis /a-propos. Lien vers /presse omis : la route n'existe pas encore sur le site (voir ERRORS_AND_BLOCKERS.md) |
-| 10 | upscaling-video-gratuit-alternatives-topaz | 2026-08-03 | Publié. Lien réciproque ajouté depuis le pilier topaz-video-ai-test-avis-restauration-video. Première image générée via Nano Banana 2 (Vercel AI Gateway), Higgsfield MCP retiré à partir de ce run |
+| 10 | upscaling-video-gratuit-alternatives-topaz | 2026-08-17 | Publié. Lien réciproque ajouté depuis le pilier topaz-video-ai-test-avis-restauration-video. Première image générée via Nano Banana 2 (Vercel AI Gateway), Higgsfield MCP retiré à partir de ce run |
 
 Rappels pour le loop : après J1, repointer la 301 `/wan-2-1-alibaba` de
 `next.config.ts` vers `/blog/wan-alibaba-guide-complet`. Les jours

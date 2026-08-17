@@ -53,8 +53,10 @@ Clean slug: short, hyphenated, keyword-bearing, no stop-word soup.
   screenshots"): `.loop_scripts/screenshot_url.sh <url> public/images/blog/<slug>/screenshot.webp`.
   The screenshot is also a fact-check: match the article to what the live site
   actually shows (version, pricing, features).
-- Ideal: generate a hero under `public/images/blog/<slug>/hero.webp` (see the
-  python image scripts + GEMINI_API_KEY). If not available this run, omit
+- Ideal: generate a hero under `public/images/blog/<slug>/hero.webp` with the
+  official pipeline `scripts/render_blog_queue_nanobanana.py` (Nano Banana 2
+  via the Vercel AI Gateway, key `AI_GATEWAY_API_KEY` in `.env.local`). If not
+  available this run, omit
   `thumbnail` (the site falls back to the default OG image) and queue the image
   brief in PROGRESS. Never reference an image file that does not exist (the
   audit will error).

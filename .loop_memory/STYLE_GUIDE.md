@@ -22,7 +22,9 @@ farm, never fake-excited.
 ## Who writes what (locked by Frank, 2026-06-17)
 
 ALL writing is done by Claude directly, in-session. No prose is ever generated
-by Gemini or any other model. The `GEMINI_API_KEY` is used ONLY to generate
+by Gemini or any other model. The image pipeline
+(`scripts/render_blog_queue_nanobanana.py`, Nano Banana 2 via the Vercel AI
+Gateway, key `AI_GATEWAY_API_KEY` in `.env.local`) is used ONLY to generate
 images. Everything runs locally on Frank's machine.
 
 ## Language
