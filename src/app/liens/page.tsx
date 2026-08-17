@@ -37,12 +37,12 @@ const featuredTools: FeaturedTool[] = [
     cta: "Découvrir ScreenWeaver",
   },
   {
-    name: "Higgsfield",
+    name: "Imaginode",
     description:
-      "Mon outil principal pour générer des vidéos et images IA au quotidien.",
+      "Mon propre outil : un canvas en nodes pour créer images et vidéos IA avec les meilleurs modèles du moment.",
     badge: "Outil principal",
-    href: "https://higgsfield.ai/?fpr=frank70",
-    cta: "Essayer Higgsfield",
+    href: "https://imaginode.ai",
+    cta: "Découvrir Imaginode",
   },
   {
     name: "ElevenLabs",
