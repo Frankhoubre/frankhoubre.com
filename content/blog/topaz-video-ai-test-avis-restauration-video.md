@@ -110,7 +110,7 @@ Mon avis sur le rapport qualité prix : rentable si tu factures de la restaurati
 
 Documentation [Topaz Video AI](https://docs.topazlabs.com/video-ai), bases [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), culture livraison [Frame.io](https://blog.frame.io/).
 
-Pour le comparatif de moteurs image : [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes). Pour la continuité visuelle : [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia). Pour les livrables type agence : [comment créer une pub vidéo avec l’IA comme une agence pro](/blog/comment-creer-pub-video-avec-ia-comme-agence-pro).
+Pour le comparatif de moteurs image : [Flux vs SDXL : quelle IA choisir pour des images réalistes](/blog/flux-vs-sdxl-quelle-ia-choisir-images-realistes). Pour la continuité visuelle : [comment créer des scènes cohérentes avec plusieurs plans en IA](/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia). Pour les livrables type agence : [comment créer une pub vidéo avec l’IA comme une agence pro](/blog/comment-creer-pub-video-avec-ia-comme-agence-pro). Si l’abonnement ne rentre pas dans ton budget pour un usage ponctuel, j’ai testé les vraies alternatives gratuites dans [upscaling vidéo gratuit : les alternatives à Topaz testées](/blog/upscaling-video-gratuit-alternatives-topaz).
 
 ## Approfondissement terrain : Topaz Video AI : test et avis complet sur la restauration vidéo
 
