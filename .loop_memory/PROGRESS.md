@@ -1,27 +1,35 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-17 (J10 publié, boucle quotidienne relancée)
+## Last run: 2026-08-19 (J11 publié)
 
 ### What happened
-- Publication du J10 du plan 90 jours : `upscaling-video-gratuit-alternatives-topaz`
-  (evergreen, comparatifs), écrit le 2026-08-03 mais resté local ; date frontmatter
-  re-calée au 2026-08-17, lien réciproque depuis le pilier
-  topaz-video-ai-test-avis-restauration-video déjà en place.
-- Hero généré via le pipeline officiel `scripts/render_blog_queue_nanobanana.py`
-  (Nano Banana 2 / Vercel AI Gateway, clé `AI_GATEWAY_API_KEY` dans `.env.local`).
-  Higgsfield et `render_blog_queue_gemini.py` (GEMINI_API_KEY) sont interdits ;
-  les références restantes dans les docs de la boucle ont été purgées ce jour.
-- `seo-90-day-plan.md` re-calé : le calendrier reprend avec J11 = 2026-08-18,
-  J12 = 2026-08-19, etc., 1 article par jour, jours UPDATE inclus comme jours
-  normaux.
-- Le run quotidien est relancé via une tâche planifiée Windows.
+- Publication du J11 du plan 90 jours : `lost-garden-journal-production-serie-ia`
+  (evergreen, analyses, 2960 mots). Prévu le 2026-08-18, publié le 19 : aucun run
+  n'a eu lieu le 18, le calendrier glisse donc d'un jour (J12 = 2026-08-20).
+- Faits Lost Garden vérifiés avant écriture via l'oEmbed YouTube : chaîne
+  LostGarden Anime, épisode 1 « The Awakening of the Lantern Knight ». Aucun
+  chiffre de production inventé (ni durée, ni budget, ni nombre d'épisodes, ni
+  liste d'outils figée) : c'est la contrainte principale de ce sujet.
+- 3 images générées via `scripts/render_blog_queue_nanobanana.py`. Deux pièges
+  découverts : le script n'accepte PAS `--slug` (uniquement `--dest`/`--prompt`),
+  et il doit être lancé depuis PowerShell, car Git Bash convertit `/images/...`
+  en `C:\Program Files\Git\images` et le run échoue en PermissionError.
+- Passage humanizer appliqué : 6 parallélismes « X n'est pas A, c'est B »
+  supprimés, liste à en-têtes gras dé-graissée, chutes-punchline réécrites.
+- Liens entrants réciproques ajoutés depuis `ronces-coulisses-court-film-ia` et
+  `voidborn-anime-ia-festival-coulisses`.
+- `CONTENT_INDEX.md` toujours pas régénérable : `build_ledger.mjs` sort un index
+  corrompu sous CRLF (« Categories: undefined 287 »). Revert, comme au run
+  précédent. À corriger un jour dans le script (parseur frontmatter et fins de ligne CRLF).
 
 ### Next run should
-1. Evergreen slot: Plan 90 jours J11 = `lost-garden-journal-production-serie-ia`
-   (cluster CAS, mot-clé "lost garden série ia"), à publier le 2026-08-18.
-2. Générer le hero UNIQUEMENT via scripts/render_blog_queue_nanobanana.py.
-3. Suivre la table "État d'avancement" de seo-90-day-plan.md (re-calée le
-   2026-08-17) pour les jours suivants.
+1. Evergreen slot: Plan 90 jours J12 = `midjourney-sref-references-style`
+   (cluster OUTILS, mot-clé "midjourney sref"), à publier le 2026-08-20.
+   Prévoir le lien entrant réciproque depuis le pilier `midjourney-guide-complet`.
+2. Générer les images UNIQUEMENT via scripts/render_blog_queue_nanobanana.py,
+   lancé depuis PowerShell, avec --dest et --prompt (pas de --slug).
+3. Suivre la table "État d'avancement" de seo-90-day-plan.md (décalée d'un jour
+   le 2026-08-19) pour les jours suivants.
 
 ## Previous run: 2026-07-20 (Run 23 — 3 articles published)
 

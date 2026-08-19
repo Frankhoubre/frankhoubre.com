@@ -41,6 +41,24 @@ article block goes below this line.
 
 <!-- New article blocks below, newest first -->
 
+### 2026-08-19 — Lost Garden : journal de production d'une série IA
+- slug: lost-garden-journal-production-serie-ia
+- locale: fr
+- url: https://frankhoubre.com/blog/lost-garden-journal-production-serie-ia
+- category: analyses
+- type: evergreen (plan 90j J11, prévu le 2026-08-18, publié le 19 faute de run le 18)
+- search_intent: informationnelle / preuve, journal de production
+- primary_keyword: lost garden série ia
+- secondary_keywords: journal de production série ia, continuité personnage série ia, bible de production, cohérence visuelle épisodes
+- sources: oEmbed YouTube du 2026-08-19 (titre « Lost Garden - The Awakening of the Lantern Knight - Episode 1 », chaîne LostGarden Anime, youtube.com/@lostgardenanime) ; tech.ebu.ch/publications/r128 (EBU R 128, cible -23 LUFS, vérifié) ; support.google.com/youtube/answer/1722171 (réglages d'encodage recommandés, vérifié) ; contenu existant du site pour Ronces / VOIDBORN
+- internal_links: -> /blog/ronces-coulisses-court-film-ia, -> /blog/voidborn-anime-ia-festival-coulisses, -> /blog/notion-ia-bible-production-film-serie, -> /blog/creer-bible-lieux-decor-projet-ia, -> /blog/workflow-complet-idee-film-ia-realiste, -> /blog/pourquoi-jai-construit-imaginode-canvas-ia, -> /blog/pourquoi-personnages-changent-chaque-scene-ia, -> /blog/film-ia-erreurs-raccord-incoherences-visuelles-eviter ; liens réciproques ajoutés DEPUIS ronces-coulisses-court-film-ia et voidborn-anime-ia-festival-coulisses
+- cta: aucun (soft mention Imaginode via l'article fondateur existant)
+- cannibalization_notes: vérifié contre ronces (court métrage, coulisses) et voidborn (animé, festivals) ; distinct car l'angle est la continuité entre épisodes et le système de production, pas le récit d'un film. Requête de marque « lost garden » réservée à la chaîne YouTube conformément à seo-cross-domain-strategy.md. J33 et J78 (worldbuilding, économie) restent libres, 3 articles Lost Garden max au total
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / 0 flag, lint 0 err, typecheck PASS, build PASS 569 pages)
+- published_commit: b8c97a3
+- note: RIGUEUR FACTUELLE : aucun chiffre de production inventé. Pas de durée d'épisode, pas de budget, pas de nombre d'épisodes, pas de liste d'outils figée. Tout ce qui est affirmé vient soit de l'oEmbed YouTube, soit du contenu déjà publié sur le site, soit d'un énoncé de méthode. Passage humanizer appliqué après le premier jet : suppression de 6 parallélismes négatifs « X n'est pas A, c'est B », dé-gras de la liste à en-têtes, réécriture des chutes-punchline et de la section « trois choses »
+- note: images générées via render_blog_queue_nanobanana.py (Nano Banana 2). Le script n'accepte pas --slug et doit être lancé depuis PowerShell (Git Bash casse le chemin /images/...)
+
 ### 2026-08-17 — Pourquoi j'ai construit Imaginode, mon canvas IA à nodes
 - slug: pourquoi-jai-construit-imaginode-canvas-ia
 - locale: fr
