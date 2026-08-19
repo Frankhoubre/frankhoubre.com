@@ -96,7 +96,7 @@ Je n'avais pas d'expérience préalable des circuits de festivals quand j'ai sou
 
 ## Ce que VOIDBORN m'a appris pour la suite
 
-Le projet Lost Garden, ma série animée IA en cours, bénéficie directement des leçons de VOIDBORN. La plus structurante de ces leçons, garder les références et les réglages caméra attachés aux plans au lieu de les recopier à la main, a fini par déborder du film : elle est devenue un produit, et je raconte ça dans [pourquoi j'ai construit Imaginode, mon canvas IA à nodes](/blog/pourquoi-jai-construit-imaginode-canvas-ia).
+Le projet [Lost Garden, ma série animée IA dont je tiens le journal de production](/blog/lost-garden-journal-production-serie-ia), bénéficie directement des leçons de VOIDBORN. La plus structurante de ces leçons, garder les références et les réglages caméra attachés aux plans au lieu de les recopier à la main, a fini par déborder du film : elle est devenue un produit, et je raconte ça dans [pourquoi j'ai construit Imaginode, mon canvas IA à nodes](/blog/pourquoi-jai-construit-imaginode-canvas-ia).
 
 La cohérence de l'univers visuel, construite plan par plan avec une bible stricte. Le son comme narration, pas comme illustration. La durée calibrée sur ce que les outils peuvent maintenir sans rupture. Et la décision de ne pas chercher le réalisme photographique là où ce n'est pas la force du projet.
 
