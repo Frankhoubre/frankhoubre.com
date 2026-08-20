@@ -54,7 +54,7 @@ article block goes below this line.
 - cta: aucun (valeur d'abord, pas de mention produit)
 - cannibalization_notes: satellite mono-fonction du pilier midjourney-guide-complet, qui garde l'intention « comment utiliser midjourney » et ne consacre qu'un H2 à SREF. Cet article prend l'intention « midjourney sref » (réglages, workflow, dépannage). Distinct aussi de comment-controler-style-visuel-generation-ia, qui est une méthode outil-agnostique de séparation style/sujet. Liens croisés dans les deux sens
 - checker: pass (seo_audit 0 issue pour ce slug, lint 0 err / 4 warnings préexistants, typecheck PASS, build PASS, editorial_audit : absent des listes MOYENS et WEAK, donc bucket GOOD)
-- published_commit: (voir PUBLISH_LOG)
+- published_commit: 2654bf6
 - note: RIGUEUR FACTUELLE : aucune valeur de paramètre inventée. Les plages de --sw citées comme repères personnels (20-60, 100, 200-400, 600+) sont présentées explicitement comme mes réglages de production, pas comme une table officielle. Le comportement --sv 6 vs --sv 7 est attribué à des tests communautaires, pas présenté comme documentation. Aucune affirmation sur le modèle par défaut actuel, seulement la date de sortie de V8.2 (24 juillet 2026, source officielle)
 - note: passage humanizer appliqué : liste à en-têtes gras convertie en prose numérotée, parallélismes négatifs et chute-punchline en rule of three réécrits
 
