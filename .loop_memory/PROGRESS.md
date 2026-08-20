@@ -1,6 +1,26 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-19 (J11 publié)
+## Last run: 2026-08-20 (J12 publié)
+
+### What happened
+- Publication du J12 du plan 90 jours : `midjourney-sref-references-style`
+  (evergreen, tutoriels, ~3500 mots), satellite du pilier `midjourney-guide-complet`.
+- Faits Midjourney vérifiés en ligne avant écriture (doc officielle Style Reference
+  et Moodboards, update officielle du 25 juin 2026 sur `--sref random` en mode
+  brouillon, sortie de V8.2 le 24 juillet 2026). Le comportement `--sv 6` vs
+  `--sv 7` vient de tests communautaires et est attribué comme tel dans l'article.
+  Mes plages de `--sw` sont présentées comme des repères de production, pas comme
+  une table officielle.
+- 3 images Nano Banana 2 (studio photo au matin, nuancier sur décor en
+  construction, tirages sur hayon d'utilitaire au crépuscule). Rappel toujours
+  valable : lancer le script depuis PowerShell, il n'accepte pas `--slug`.
+- Liens entrants réciproques ajoutés depuis `midjourney-guide-complet` et
+  `comment-controler-style-visuel-generation-ia`.
+- `build_ledger.mjs` régénère toujours un CONTENT_INDEX corrompu sous CRLF
+  (285 catégories `undefined`) : régénération revert, comme aux runs précédents.
+- Prochain jour : J13 (`screenweaver-pourquoi-outil-ecriture`) le 2026-08-21.
+
+## Run précédent : 2026-08-19 (J11 publié)
 
 ### What happened
 - Publication du J11 du plan 90 jours : `lost-garden-journal-production-serie-ia`

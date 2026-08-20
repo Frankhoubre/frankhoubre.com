@@ -132,6 +132,7 @@ Pour calibrer l’œil sur la couleur et le contraste comme langage de style, ce
 - [Comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia)
 - [Comment ajouter du grain cinéma sur une image IA](/blog/comment-ajouter-grain-cinema-image-ia)
 - [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
+- [Midjourney SREF : maîtriser les références de style](/blog/midjourney-sref-references-style)
 
 ## FAQ
 

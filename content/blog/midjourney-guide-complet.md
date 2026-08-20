@@ -117,6 +117,8 @@ Workflow simple pour débuter correctement:
 
 ![workflow sref midjourney pour garder un style cohérent sur plusieurs scènes publicitaires](/images/blog/midjourney-guide-complet/workflow-1.webp)
 
+Pour aller plus loin sur ce point précis, le réglage du poids avec `--sw`, le choix de la version avec `--sv` et le protocole complet sur une série sont détaillés dans [notre tutoriel dédié aux références de style SREF](/blog/midjourney-sref-references-style).
+
 Quand c’est bien réglé, SREF te fait gagner un temps énorme en série. Quand c’est mal réglé, il enferme ton projet dans un style rigide. Le bon repère: si chaque image raconte la même histoire visuelle mais garde sa propre énergie, tu es sur la bonne trajectoire.
 
 ## Mes conseils pour obtenir un rendu plus pro

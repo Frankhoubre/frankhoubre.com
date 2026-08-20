@@ -165,9 +165,10 @@ suite, 1 article par jour, les jours UPDATE comptant comme des jours normaux.
 Les dates de la ligne d'origine du plan (J1 = 2026-07-10) ne servent plus de
 référence pour les jours restants.
 
-Prochain jour à publier : **J12** (`midjourney-sref-references-style`), le 2026-08-20.
+Prochain jour à publier : **J13** (`screenweaver-pourquoi-outil-ecriture`), le 2026-08-21.
 J11 a été publié le 2026-08-19 au lieu du 2026-08-18 (aucun run le 18) ; le
-calendrier glisse d'un jour, J12 = 2026-08-20, J13 = 2026-08-21, etc.
+calendrier a glissé d'un jour. J12 est publié le 2026-08-20 comme prévu après
+ce décalage, J13 = 2026-08-21, J14 = 2026-08-22, etc.
 
 | Jour | Slug | Publié le | Note |
 | --- | --- | --- | --- |
@@ -182,6 +183,7 @@ calendrier glisse d'un jour, J12 = 2026-08-20, J13 = 2026-08-21, etc.
 | 9 | parcours-frank-houbre-guitare-cinema-ia | 2026-08-03 | Publié. Faits biographiques (guitare 8 ans, concurrent qui a dominé le marché) confirmés directement par Frank en session. Lien entrant ajouté depuis /a-propos. Lien vers /presse omis : la route n'existe pas encore sur le site (voir ERRORS_AND_BLOCKERS.md) |
 | 10 | upscaling-video-gratuit-alternatives-topaz | 2026-08-17 | Publié. Lien réciproque ajouté depuis le pilier topaz-video-ai-test-avis-restauration-video. Première image générée via Nano Banana 2 (Vercel AI Gateway), Higgsfield MCP retiré à partir de ce run |
 | 11 | lost-garden-journal-production-serie-ia | 2026-08-19 | Publié (prévu le 2026-08-18, pas de run ce jour là). Faits vérifiés : chaîne YouTube LostGarden Anime, épisode 1 « The Awakening of the Lantern Knight » (oEmbed du 2026-08-19). Aucun chiffre de production inventé (durée, budget, nombre d'épisodes volontairement absents). Liens réciproques ajoutés depuis ronces-coulisses-court-film-ia et voidborn-anime-ia-festival-coulisses |
+| 12 | midjourney-sref-references-style | 2026-08-20 | Publié. Tutoriel satellite du pilier midjourney-guide-complet. Faits vérifiés en ligne le 2026-08-20 : doc officielle Style Reference (--sref image/code/random, --sw 0 à 1000 défaut 100, --sv), doc Moodboards (--p incompatible avec --sv et --sw), update officielle du 25 juin 2026 (--sref random en mode brouillon, 24 images), V8.2 sortie le 24 juillet 2026. Aucun chiffre inventé. Liens entrants ajoutés depuis midjourney-guide-complet (section SREF) et comment-controler-style-visuel-generation-ia |
 
 Rappels pour le loop : après J1, repointer la 301 `/wan-2-1-alibaba` de
 `next.config.ts` vers `/blog/wan-alibaba-guide-complet`. Les jours

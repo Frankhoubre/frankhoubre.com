@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-08-20 — Midjourney SREF : maîtriser les références de style
+- slug: midjourney-sref-references-style
+- locale: fr
+- url: https://frankhoubre.com/blog/midjourney-sref-references-style
+- category: tutoriels
+- type: evergreen (plan 90j J12), ~3500 mots
+- search_intent: tutoriel / how-to
+- primary_keyword: midjourney sref
+- secondary_keywords: référence de style midjourney, --sw style weight, --sv version sref, cohérence visuelle série, moodboard midjourney
+- sources: docs.midjourney.com/hc/en-us/articles/32180011136653-Style-Reference (paramètre --sref, image ou code ou random, --sw de 0 à 1000 défaut 100, --sv) ; docs.midjourney.com/hc/en-us/articles/39193335040013-Moodboards (--p incompatible avec --sv et --sw) ; updates.midjourney.com/random-styles-in-draft-mode (officiel, 25 juin 2026 : --sref random en mode brouillon sort 24 images) ; updates.midjourney.com V8.2 (24 juillet 2026) ; geekycuriosity.substack.com/p/midjourney-v8-alpha-the-new-style (tests communautaires --sv 6 vs --sv 7, attribué comme tel dans l'article)
+- internal_links: -> /blog/midjourney-guide-complet, -> /blog/comment-controler-style-visuel-generation-ia, -> /blog/secrets-prompts-rendu-photographique-ia, -> /blog/comment-eviter-effet-image-generee-ia, -> /blog/alternatives-midjourney ; liens réciproques ajoutés DEPUIS midjourney-guide-complet (section « Le paramètre SREF sur Midjourney ») et comment-controler-style-visuel-generation-ia (liste de fin)
+- cta: aucun (valeur d'abord, pas de mention produit)
+- cannibalization_notes: satellite mono-fonction du pilier midjourney-guide-complet, qui garde l'intention « comment utiliser midjourney » et ne consacre qu'un H2 à SREF. Cet article prend l'intention « midjourney sref » (réglages, workflow, dépannage). Distinct aussi de comment-controler-style-visuel-generation-ia, qui est une méthode outil-agnostique de séparation style/sujet. Liens croisés dans les deux sens
+- checker: pass (seo_audit 0 issue pour ce slug, lint 0 err / 4 warnings préexistants, typecheck PASS, build PASS, editorial_audit : absent des listes MOYENS et WEAK, donc bucket GOOD)
+- published_commit: (voir PUBLISH_LOG)
+- note: RIGUEUR FACTUELLE : aucune valeur de paramètre inventée. Les plages de --sw citées comme repères personnels (20-60, 100, 200-400, 600+) sont présentées explicitement comme mes réglages de production, pas comme une table officielle. Le comportement --sv 6 vs --sv 7 est attribué à des tests communautaires, pas présenté comme documentation. Aucune affirmation sur le modèle par défaut actuel, seulement la date de sortie de V8.2 (24 juillet 2026, source officielle)
+- note: passage humanizer appliqué : liste à en-têtes gras convertie en prose numérotée, parallélismes négatifs et chute-punchline en rule of three réécrits
+
 
 ### 2026-08-19 — Lost Garden : journal de production d'une série IA
 - slug: lost-garden-journal-production-serie-ia
