@@ -1,6 +1,39 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-20 (J12 publié)
+## Last run: 2026-08-21 (J13 publié)
+
+### What happened
+- Publication du J13 du plan 90 jours : `screenweaver-pourquoi-outil-ecriture`
+  (evergreen, analyses, 3241 mots). Coulisses fondateur en FR, angle tenu à
+  distance des mots-clés produit EN de screenweaver.ai comme le prévoit le plan.
+- Faits produit vérifiés avant écriture dans le repo ScreenWeaver local
+  (dossier Desktop/Screenweaver/claudecodegit, fichier `messages/en.json`) :
+  offre Screenwriter gratuite (projets et pages illimités, éditeur, plan et beats,
+  export PDF et Final Draft), Storyboard Beta pour les testeurs, offre Filmmaker
+  annoncée pour fin août 2026 sans tarif public, moteurs Seedance/Veo/Sora/Kling,
+  films reconnus en festivals. Aucun prix chiffré publié : le montant de
+  Storyboard Beta n'était pas vérifiable, donc il n'apparaît pas dans l'article.
+- 3 images Nano Banana 2 (marques de placement à la craie sur un plateau au petit
+  matin, fiches de continuité sur un portant de costumes, viseur de champ en
+  repérage sous la pluie). `workflow-2` a dû être régénéré : la première version
+  affichait une ardoise avec du texte lisible et un générique inventé, interdit
+  par le protocole image. Toujours lancer le script depuis PowerShell, sans `--slug`.
+- Passage humanizer appliqué : anaphores en rafale, parallélismes « ce n'est pas A,
+  c'est B » (4 supprimés), triple impératif de conclusion et aphorisme dupliqué
+  réécrits.
+- Liens entrants réciproques ajoutés depuis `screenweaver-ai-ecriture-scenario-storyboard`
+  et `screenweaver-vs-final-draft`.
+- CORRECTION ÉDITORIALE : l'ancien guide `screenweaver-ai-ecriture-scenario-storyboard`
+  se présentait comme un article tiers (« Je ne suis pas leur équipe », « leur
+  posture publique »), ce qui contredit frontalement l'article fondateur. Deux
+  phrases corrigées pour dire la relation réelle. À surveiller : d'autres articles
+  du cluster ScreenWeaver peuvent porter le même cadrage tiers erroné.
+- `build_ledger.mjs` sort encore un CONTENT_INDEX corrompu sous CRLF
+  (« Categories: undefined 285 ») : régénération revert. 4e run consécutif bloqué
+  par ce bug, il faut le corriger dans le script (parseur frontmatter + CRLF).
+- Prochain jour : J14 (`minimax-hailuo-prix-credits-formules`) le 2026-08-22.
+
+## Run précédent : 2026-08-20 (J12 publié)
 
 ### What happened
 - Publication du J12 du plan 90 jours : `midjourney-sref-references-style`

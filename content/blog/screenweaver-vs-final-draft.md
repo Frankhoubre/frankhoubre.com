@@ -86,6 +86,8 @@ Attention quand même : un pipeline qui génère vite peut aussi te pousser vers
 
 La vraie question n'est pas « lequel est meilleur ». C'est « quel est mon livrable final, et qui doit le rouvrir après moi ». Pour structurer le film avant même de toucher au logiciel, [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film) reste une base utile.
 
+Si tu veux comprendre d'où vient le parti pris de ScreenWeaver avant de trancher, j'ai raconté [pourquoi j'ai construit cet outil d'écriture](/blog/screenweaver-pourquoi-outil-ecriture) et ce que j'ai refusé d'y mettre.
+
 ## FAQ
 
 ### ScreenWeaver peut-il vraiment remplacer Final Draft ?

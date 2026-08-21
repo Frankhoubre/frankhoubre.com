@@ -9,7 +9,7 @@ thumbnail: "/images/blog/screenweaver-ai-ecriture-scenario-storyboard/hero.png"
 
 Il est deux heures du matin. Ta scène tient sur le papier. Puis tu ouvres le quatrième onglet, le troisième chat, le drive où traînent les refs, et le générateur d’images qui promet la lune. Le lendemain, ton PDF existe, mais **personne ne voit le même film** : le storyboard ne colle plus aux répliques, le personnage a trois visages selon le fichier, et l’IA a amplifié chaque maladresse de brief parce qu’elle n’a jamais eu le **contexte de la scène 12** : seulement un prompt orphelin copié depuis Slack.
 
-Ici, on parle de [ScreenWeaver](https://screenweaver.ai) comme d’un **poste de travail** où le texte reste la colonne vertébrale : écriture pro, storyboard accroché aux sluglines, workflows visuels générés à partir du scénario plutôt que décousus dans cinq applis. L’outil se présente autour de **Write, See, Build** : écrire, voir le film en panneaux, construire des pipelines d’images ou de vidéo **indexés** sur ce que tu as réellement écrit. **Point d’honneur :** ScreenWeaver est annoncé en **bêta** ; les fonctionnalités et tarifs évoluent. Recoupe avec leur site, leur blog et le support pour tout ce qui est contractuel ou sensible. Je ne suis pas leur équipe ; je te donne une **grille de métier** qui reste vraie même quand un menu change de nom.
+Ici, on parle de [ScreenWeaver](https://screenweaver.ai) comme d’un **poste de travail** où le texte reste la colonne vertébrale : écriture pro, storyboard accroché aux sluglines, workflows visuels générés à partir du scénario plutôt que décousus dans cinq applis. L’outil se présente autour de **Write, See, Build** : écrire, voir le film en panneaux, construire des pipelines d’images ou de vidéo **indexés** sur ce que tu as réellement écrit. **Point d’honneur :** ScreenWeaver est en **bêta** ; les fonctionnalités et tarifs évoluent. Recoupe avec le site et le support pour tout ce qui est contractuel ou sensible. Je suis à l’origine de l’outil, donc je te préviens d’avance : ce guide reste une **grille de métier**, valable même quand un menu change de nom.
 
 Ce guide mélange pourquoi l’éclatement des fichiers tue les projets IA, comment un outil type ScreenWeaver peut **recoller** intention et média, trois histoires de débutants, un workflow pas à pas, une tranchée d’erreurs, puis une **FAQ**. J’assume : **je déteste le plastique**. Si un flux te pousse vers le lisse, tu peux contrer par brief, par choix de modèle, et par post-traitement : comme ailleurs sur ce site.
 
@@ -119,10 +119,11 @@ ScreenWeaver ou pas, les muscles restent les mêmes : **script utile à la gén�
 - Dérive visuelle entre plans : [comment créer un univers visuel cohérent avec l’IA](/blog/comment-creer-univers-visuel-coherent-avec-ia)  
 - Montage mental : [comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)  
 - Prompts image : [comment écrire un prompt cinematic ultra réaliste pour l'IA](/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia)
+- Origine de l'outil : [pourquoi j'ai construit ScreenWeaver](/blog/screenweaver-pourquoi-outil-ecriture), les choix produit et ce que j'ai refusé d'y mettre
 
 ## Transparence sur l’outil
 
-ScreenWeaver est en **bêta** : fonctionnalités qui arrivent par vagues, bugs possibles, marketing à recouper avec ton usage. Ce qui est intéressant dans leur posture publique : **gratuit pour l’écriture sérieuse**, paiement quand tu veux l’image **outillée** : ça aligne un peu les incitations. Pour le juridique ou la confidentialité, lis leurs conditions et contacte leur support (ex. **hello@screenweaver.ai** selon leur site au moment où j’écris : vérifie).
+ScreenWeaver est en **bêta** : fonctionnalités qui arrivent par vagues, bugs possibles, marketing à recouper avec ton usage. Le parti pris assumé : **gratuit pour l’écriture sérieuse**, paiement quand tu veux l’image **outillée**. J’explique le raisonnement dans [pourquoi j’ai construit cet outil](/blog/screenweaver-pourquoi-outil-ecriture). Pour le juridique ou la confidentialité, lis les conditions et écris au support (ex. **hello@screenweaver.ai** au moment où j’écris : vérifie).
 
 ## FAQ
 

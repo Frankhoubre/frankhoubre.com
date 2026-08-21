@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-08-21 — ScreenWeaver : pourquoi j'ai construit mon outil d'écriture
+- slug: screenweaver-pourquoi-outil-ecriture
+- locale: fr
+- url: https://frankhoubre.com/blog/screenweaver-pourquoi-outil-ecriture
+- category: analyses
+- type: evergreen (plan 90j J13), coulisses fondateur, 3241 mots
+- search_intent: info / preuve (navigationnelle de marque en second)
+- primary_keyword: screenweaver histoire
+- secondary_keywords: outil écriture scénario ia, pourquoi screenweaver, storyboard depuis scénario, continuité production ia, alternative final draft ia
+- sources: repo produit ScreenWeaver en local (messages/en.json, sections Hero, Pricing, ProblemSection, ScriptInCharge, PipelineWorkflow, WorldContinuity, FestivalProof) consulté le 2026-08-21 ; screenweaver.ai ; finaldraft.com ; fountain.io. Aucun tarif chiffré publié : le montant de l'offre Storyboard Beta n'était pas vérifiable, l'offre Filmmaker est annoncée pour fin août 2026 sans prix public
+- internal_links: -> /blog/ronces-coulisses-court-film-ia, -> /blog/voidborn-anime-ia-festival-coulisses, -> /blog/lost-garden-journal-production-serie-ia, -> /blog/pourquoi-jai-construit-imaginode-canvas-ia, -> /blog/creer-bible-lieux-decor-projet-ia, -> /blog/methode-realisateur-ia-diriger-avant-generer, -> /blog/screenweaver-vs-final-draft, -> /blog/screenweaver-ai-ecriture-scenario-storyboard ; liens réciproques ajoutés DEPUIS screenweaver-ai-ecriture-scenario-storyboard (liste de fin + section Transparence) et screenweaver-vs-final-draft (fin de « Qui devrait choisir quoi »)
+- cta: mention ScreenWeaver assumée (article fondateur), aucun tarif, aucune promesse contractuelle, renvoi au site pour les conditions à jour
+- cannibalization_notes: le cluster ScreenWeaver compte désormais 3 articles FR aux intentions séparées. screenweaver-ai-ecriture-scenario-storyboard garde le how-to (workflow phase par phase), screenweaver-vs-final-draft garde la comparaison, et celui-ci prend l'intention « pourquoi / histoire de l'outil » sans jamais viser les mots-clés produit EN (« AI storyboard generator », « ai screenplay writer ») qui sont réservés à screenweaver.ai. Risque résiduel faible : angle narratif à la première personne, zéro page fonctionnalité
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, bucket good, 0 flag)
+- published_commit: <à compléter au push>
+
 ### 2026-08-20 — Midjourney SREF : maîtriser les références de style
 - slug: midjourney-sref-references-style
 - locale: fr
