@@ -42,7 +42,7 @@ Quand j'ai commencé à esquisser l'outil, la tentation était évidente : branc
 
 Un scénario généré ne résout aucun problème de production. Il en crée un : plus personne ne sait ce que le film veut dire, donc plus personne ne peut arbitrer quoi que ce soit en aval. Un chef opérateur, un monteur, un compositeur, tous prennent des décisions en s'appuyant sur une intention. Si l'intention n'appartient à personne, chaque décision devient arbitraire, et ça se voit à l'écran.
 
-La règle que je me suis fixée dès le départ tient en une phrase : **le scénario reste la source de vérité**. Le texte est autoritaire. Le storyboard, la continuité, les workflows de génération sont des extensions du texte, jamais des remplacements. L'IA aide à décider, elle ne signe pas.
+Je me suis fixé une règle dès le départ : **le scénario reste la source de vérité**. Le texte est autoritaire. Le storyboard, la continuité, les workflows de génération sont des extensions du texte, jamais des remplacements. L'IA aide à décider, elle ne signe pas.
 
 Ça a des conséquences concrètes sur le produit. Ça veut dire qu'un plan de storyboard n'existe pas tout seul : il est rattaché à une slugline et à un beat. Ça veut dire qu'un workflow d'image ne part pas d'un prompt orphelin : il hérite du contexte de la scène, des personnages présents, du décor. Ça veut dire que si tu réécris la scène 12, les panneaux et les workflows qui en dépendent sont marqués comme périmés au lieu de rester silencieux.
 
@@ -66,7 +66,7 @@ C'est là que l'histoire de ScreenWeaver commence vraiment, parce que c'est exac
 
 Les planches de storyboard sont générées depuis le scénario et restent liées aux scènes et aux beats. Tu lis le film comme une séquence, pas comme un tas d'images. Les références, les intentions d'objectif, les notes de placement vivent à côté des panneaux concernés. Quand la structure bouge, la carte visuelle bouge avec elle.
 
-La différence est bête et énorme : un storyboard qui sait de quelle scène il vient peut te dire qu'il n'est plus à jour. Un dossier d'images, non.
+Un storyboard rattaché à sa scène peut signaler qu'il n'est plus à jour. Un dossier d'images, non.
 
 ![Portant de costumes dans un couloir, fiches de continuité numérotées attachées aux cintres, lumière de fin d'après-midi](/images/blog/screenweaver-pourquoi-outil-ecriture/workflow-1.webp)
 
@@ -122,7 +122,7 @@ Sur l'usage réel, je préfère citer ce que je peux nommer. [VOIDBORN](/blog/vo
 
 ## Ce que ScreenWeaver ne fait pas
 
-Autant le dire clairement, parce que la déception vient toujours d'une promesse mal posée.
+La déception vient toujours d'une promesse mal posée, alors voilà la mienne.
 
 Ce n'est pas un bouton qui fabrique un film. Tu écris toujours, tu décides toujours, et tu passes toujours des soirées à regarder des rushes ratés en te demandant pourquoi la lumière ne prend pas.
 
