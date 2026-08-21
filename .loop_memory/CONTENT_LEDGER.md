@@ -54,7 +54,7 @@ article block goes below this line.
 - cta: mention ScreenWeaver assumée (article fondateur), aucun tarif, aucune promesse contractuelle, renvoi au site pour les conditions à jour
 - cannibalization_notes: le cluster ScreenWeaver compte désormais 3 articles FR aux intentions séparées. screenweaver-ai-ecriture-scenario-storyboard garde le how-to (workflow phase par phase), screenweaver-vs-final-draft garde la comparaison, et celui-ci prend l'intention « pourquoi / histoire de l'outil » sans jamais viser les mots-clés produit EN (« AI storyboard generator », « ai screenplay writer ») qui sont réservés à screenweaver.ai. Risque résiduel faible : angle narratif à la première personne, zéro page fonctionnalité
 - checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, bucket good, 0 flag)
-- published_commit: <à compléter au push>
+- published_commit: 048d845
 
 ### 2026-08-20 — Midjourney SREF : maîtriser les références de style
 - slug: midjourney-sref-references-style
