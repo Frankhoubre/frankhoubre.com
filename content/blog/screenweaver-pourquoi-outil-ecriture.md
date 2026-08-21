@@ -44,9 +44,9 @@ Un scénario généré ne résout aucun problème de production. Il en crée un 
 
 La règle que je me suis fixée dès le départ tient en une phrase : **le scénario reste la source de vérité**. Le texte est autoritaire. Le storyboard, la continuité, les workflows de génération sont des extensions du texte, jamais des remplacements. L'IA aide à décider, elle ne signe pas.
 
-Ça a des conséquences concrètes sur le produit. Ça veut dire qu'un plan de storyboard n'existe pas tout seul : il est rattaché à une slugline et à un beat. Ça veut dire qu'un workflow d'image ne part pas d'un prompt orphelin : il hérite du contexte de la scène, des personnages présents, du décor. Ça veut dire que si tu réécris, le reste sait qu'il a bougé.
+Ça a des conséquences concrètes sur le produit. Ça veut dire qu'un plan de storyboard n'existe pas tout seul : il est rattaché à une slugline et à un beat. Ça veut dire qu'un workflow d'image ne part pas d'un prompt orphelin : il hérite du contexte de la scène, des personnages présents, du décor. Ça veut dire que si tu réécris la scène 12, les panneaux et les workflows qui en dépendent sont marqués comme périmés au lieu de rester silencieux.
 
-C'est aussi ce qui différencie ScreenWeaver des piles d'outils qu'on assemble soi-même. J'ai fait cette pile pendant deux ans. Elle fonctionne tant que tu la surveilles. Elle casse dès que tu regardes ailleurs.
+C'est aussi ce qui différencie ScreenWeaver des piles d'outils qu'on assemble soi-même. J'ai fait cette pile pendant deux ans, et elle tient tant que tu la surveilles de près. Le jour où tu regardes ailleurs, elle casse en silence.
 
 ## Write, See, Build : trois portes ouvertes dans cet ordre
 
@@ -58,7 +58,7 @@ La base, c'est un environnement d'écriture qui respecte le métier. Formatage s
 
 Ce socle est gratuit, sans limite de projets ni de pages, avec export PDF et export [Final Draft](https://www.finaldraft.com) au format `.fdx`. Ce choix n'est pas commercial, il est structurel : je ne voulais pas d'un outil qui prend tes mots en otage. Si tu veux écrire chez moi et produire ailleurs, l'export existe et il marche. Le format [Fountain](https://fountain.io) reste par ailleurs la meilleure assurance vie d'un scénario, quel que soit le logiciel que tu utilises.
 
-Beaucoup d'utilisateurs restent à cette étape. Ça me va très bien. Un scénariste qui n'a besoin que de la page ne doit pas se retrouver avec un tableau de bord de production sur les bras.
+Tu peux rester là et ne jamais aller plus loin. C'est prévu pour : un scénariste qui n'a besoin que de la page ne doit pas se retrouver avec un tableau de bord de production sur les bras.
 
 ### See : le storyboard accroché au texte
 
@@ -116,7 +116,7 @@ Je préfère être précis plutôt que vendeur, parce que l'outil est encore en 
 
 Les tarifs et le périmètre exact des offres évoluent pendant la bêta. Vérifie sur le site avant de t'engager sur quoi que ce soit, je ne veux pas qu'un article daté serve de contrat.
 
-Sur l'usage réel : des films reconnus en festivals internationaux ont été écrits et produits avec l'outil, du court cinématographique au pilote de série animée. C'est la seule preuve qui m'intéresse. Un logiciel de production se juge sur des films finis, pas sur des captures d'écran.
+Sur l'usage réel, je préfère citer ce que je peux nommer. [VOIDBORN](/blog/voidborn-anime-ia-festival-coulisses), mon court animé, a été primé au Seoul International AI Film Festival, au Hollywood Indie Festival et à l'Australian AI Festival. Ronces et Lost Garden ont servi de terrain d'essai sur le reste de la chaîne. Un logiciel de production se juge sur des films finis, pas sur des captures d'écran.
 
 ![Réalisateur en repérage cadrant une porte en pierre au viseur de champ, ruelle pavée mouillée sous un ciel couvert](/images/blog/screenweaver-pourquoi-outil-ecriture/workflow-2.webp)
 
@@ -172,7 +172,7 @@ Oui, c'est même un principe de conception. Les workflows sont pensés pour rest
 
 **Des vrais films ont-ils été produits avec ?**
 
-Oui. Des films reconnus par des festivals internationaux ont été écrits et produits dans ScreenWeaver, du court cinématographique au pilote de série animée, sélectionnés, nommés ou primés. Mes propres projets ont servi de terrain d'essai permanent : Ronces pour la fabrication d'un court, VOIDBORN pour l'exigence festival, Lost Garden pour la continuité sur une série. C'est le seul critère qui compte à mes yeux. Un outil de production se juge sur des films terminés, pas sur des démonstrations. Si une fonctionnalité ne survit pas à un vrai projet, elle ne mérite pas d'exister.
+Oui, et je préfère nommer plutôt que d'annoncer un chiffre invérifiable. VOIDBORN, mon court animé, a été primé au Seoul International AI Film Festival, au Hollywood Indie Festival et à l'Australian AI Festival. Mes autres projets ont servi de terrain d'essai permanent : Ronces pour la fabrication d'un court, Lost Garden pour la continuité sur une série. C'est le seul critère qui compte à mes yeux. Un outil de production se juge sur des films terminés, pas sur des démonstrations. Si une fonctionnalité ne survit pas à un vrai projet, elle ne mérite pas d'exister.
 
 **Par où commencer si je veux tester ?**
 
