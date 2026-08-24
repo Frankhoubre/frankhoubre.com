@@ -55,7 +55,7 @@ article block goes below this line.
 - cannibalization_notes: le cluster MiniMax compte désormais 3 articles FR aux intentions séparées. minimax-hub-plateforme-video-ia-shanghai-juin-2026 garde la requête d'actualité « minimax hub », hailuo-minimax-workflow-court-metrage-realiste garde le how-to de production, et celui-ci prend l'intention commerciale « hailuo prix / minimax crédits ». Risque résiduel faible : aucun recouvrement de mot-clé principal, liens croisés explicites dans les trois sens
 - editorial_notes: AUCUN coût en crédits par génération n'est publié. Les sources tierces donnaient quatre valeurs contradictoires pour un même format (11, 15, 25 et 80 crédits selon les pages), toutes non officielles et datées de versions différentes du modèle. L'article assume ce trou et livre à la place un protocole de mesure en 5 étapes (relever le solde avant et après une génération, réglage par réglage), qui est aussi son principal apport de valeur. Toute l'arithmétique de l'article est dérivée des chiffres officiels ci-dessus et a été revérifiée à la main (54,99/14,99 = 3,7 ; 4 500/1 000 = 4,5 ; 124,99 - 119,99 = 5 ; 12 000 - 10 000 = 2 000 ; 0,27 x 6 = 1,62 ; 0,27 x 3 = 0,81 ; 30/6 = 5). Les taux de sélection (1 sur 3, 1 sur 8) sont donnés explicitement comme les chiffres de Frank sur ses projets, pas comme une donnée de marché
 - checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, bucket good, 0 flag, 0 tiret cadratin ; unslop-text 0 high / 0 medium / 5 low tous faux positifs FR)
-- published_commit: (voir PUBLISH_LOG)
+- published_commit: 2c0a007
 
 ### 2026-08-21 — ScreenWeaver : pourquoi j'ai construit mon outil d'écriture
 - slug: screenweaver-pourquoi-outil-ecriture
