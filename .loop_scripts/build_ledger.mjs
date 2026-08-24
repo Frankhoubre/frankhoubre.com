@@ -25,7 +25,9 @@ function fm(raw) {
   if (!raw.startsWith("---")) return data;
   const end = raw.indexOf("\n---", 3);
   if (end === -1) return data;
-  for (const line of raw.slice(3, end).split("\n")) {
+  // Split on CRLF as well as LF: a trailing \r would survive into the line and
+  // break the match below, since `.` does not match \r in JS regex.
+  for (const line of raw.slice(3, end).split(/\r?\n/)) {
     const m = line.match(/^([A-Za-z0-9_]+):\s*(.*)$/);
     if (!m) continue;
     let v = m[2].trim().replace(/^["']|["']$/g, "");
@@ -63,7 +65,7 @@ for (const { key, dir, base } of SETS) {
   rows.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   stats[key] = { count: files.length, catCount };
 
-  lines.push(`## ${key} — ${files.length} articles (${base}/<slug>)`);
+  lines.push(`## ${key} : ${files.length} articles (${base}/<slug>)`);
   lines.push("");
   lines.push(
     "Categories: " +

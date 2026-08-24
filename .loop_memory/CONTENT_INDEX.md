@@ -3,14 +3,21 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-06-21T08:01:03.741Z
+> Generated: 2026-08-24T12:18:31.057Z
 
-## FR — 229 articles (/blog/<slug>)
+## FR : 296 articles (/blog/<slug>)
 
-Categories: tutoriels 179, business 14, actualite 13, comparatifs 13, analyses 6, guides 2, notes 1, postproduction 1
+Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 10, analyses 9, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-08-24 | guides | `minimax-hailuo-prix-credits-formules` | MiniMax Hailuo : crédits, prix et formules expliqués |
+| 2026-08-21 | analyses | `screenweaver-pourquoi-outil-ecriture` | ScreenWeaver : pourquoi j'ai construit mon outil d'écriture |
+| 2026-08-20 | tutoriels | `midjourney-sref-references-style` | Midjourney SREF : maîtriser les références de style |
+| 2026-08-19 | analyses | `lost-garden-journal-production-serie-ia` | Lost Garden : journal de production d'une série IA |
+| 2026-08-17 | analyses | `pourquoi-jai-construit-imaginode-canvas-ia` | Pourquoi j'ai construit Imaginode, mon canvas IA à nodes |
+| 2026-08-17 | comparatifs | `upscaling-video-gratuit-alternatives-topaz` | Upscaling vidéo gratuit : les alternatives à Topaz testées |
+| 2026-08-03 | guides | `parcours-frank-houbre-guitare-cinema-ia` | Parcours de Frank Houbre : de la guitare au cinéma IA |
 | 2026-07-26 | tutoriels | `audit-qualite-portfolio-ia-avant-demo-reel` | Audit qualité portfolio IA avant démo reel |
 | 2026-07-25 | tutoriels | `formation-interne-equipe-creative-ia` | Former une équipe créative interne à la vidéo IA |
 | 2026-07-24 | tutoriels | `clause-contrat-client-contenu-genere-ia` | Clause contrat client pour contenu généré par IA |
@@ -18,35 +25,95 @@ Categories: tutoriels 179, business 14, actualite 13, comparatifs 13, analyses 6
 | 2026-07-22 | tutoriels | `reporting-client-pdf-livrables-video-ia` | Reporting client PDF : livrables vidéo IA professionnels |
 | 2026-07-21 | tutoriels | `ab-test-miniatures-youtube-ia` | A/B test de miniatures YouTube générées avec l'IA |
 | 2026-07-20 | tutoriels | `boucles-anim-sns-parfaites-video-ia` | Boucles parfaites pour réseaux sociaux : technique vidéo IA |
+| 2026-07-20 | tutoriels | `dzine-image-animator-tutoriel` | Dzine Image Animator : animer un portrait photo en vidéo pas à pas |
+| 2026-07-20 | actualite | `kimi-k3-moonshot-modele-ia-chinois-juillet-2026` | Kimi K3 : Moonshot AI lance un modèle à 2,8 trillions de paramètres qui rivalise avec GPT-5.6 |
+| 2026-07-20 | actualite | `waico-chine-alliance-ia-mondiale-waic-shanghai-2026` | WAICO : la Chine lance une alliance mondiale de 29 pays pour réguler l'IA |
 | 2026-07-19 | tutoriels | `mastering-loudness-pub-reseaux-sociaux-ia` | Mastering loudness pour pubs IA sur réseaux sociaux |
 | 2026-07-18 | tutoriels | `doublage-artistique-lip-sync-preparation` | Doublage artistique : préparer l'image avant le lip-sync IA |
+| 2026-07-17 | actualite | `apple-intelligence-chine-alibaba-qwen-approbation-juillet-2026` | Apple Intelligence approuvé en Chine avec Alibaba Qwen : ce que ça change |
 | 2026-07-17 | tutoriels | `localisation-voix-off-multilingue-ia` | Localisation voix off multilingue : workflow IA et lip-sync |
+| 2026-07-17 | actualite | `prismml-bonsai-27b-modele-ia-iphone-juillet-2026` | Bonsai 27B : PrismML compresse un modèle 27 milliards de paramètres sur iPhone |
+| 2026-07-17 | guides | `voidborn-anime-ia-festival-coulisses` | VOIDBORN : comment un animé IA a été primé dans des festivals internationaux |
+| 2026-07-16 | actualite | `claude-fable-5-gratuit-prolonge-19-juillet-2026` | Claude Fable 5 gratuit jusqu'au 19 juillet : ce que ça veut dire pour toi |
+| 2026-07-16 | comparatifs | `doublage-ia-alternatives-heygen-comparatif` | Doublage IA : les vraies alternatives à HeyGen comparées |
+| 2026-07-16 | actualite | `pixverse-439-millions-levee-fonds-video-ia-juillet-2026` | PixVerse lève 439 millions : le géant de la vidéo IA qui monte en silence |
 | 2026-07-16 | tutoriels | `sous-titres-burn-in-accessibles-video-ia` | Sous-titres burn-in accessibles sur vidéo IA |
 | 2026-07-15 | tutoriels | `generer-typographie-titres-sans-gibberish` | Typographie et titres : éviter le gibberish en production IA |
+| 2026-07-14 | guides | `claude-code-createurs-video-guide` | Claude Code pour créateurs vidéo : usages concrets et tarifs |
 | 2026-07-14 | tutoriels | `inserer-produit-main-acteur-sans-artefacts` | Insérer un produit en main d'acteur sans artefacts IA |
+| 2026-07-14 | actualite | `ios-27-beta-publique-live-siri-ia-test-juillet-2026` | iOS 27 beta publique est là : ce que j'ai testé en premier |
+| 2026-07-14 | actualite | `mistral-robostral-navigate-robot-ia-juillet-2026` | Mistral lance Robostral Navigate : l'IA qui pilote un robot avec une seule caméra |
+| 2026-07-13 | actualite | `apple-openai-proces-secrets-commerciaux-juillet-2026` | Apple attaque OpenAI : vol de secrets commerciaux et bataille pour le hardware IA |
+| 2026-07-13 | actualite | `meta-muse-spark-11-agent-multimodal-juillet-2026` | Meta Muse Spark 1.1 : l'agent multimodal qui veut tout faire |
 | 2026-07-13 | tutoriels | `plan-over-epaule-continuite-regard-ia` | Plan over épaule : continuité de regard et profondeur |
+| 2026-07-13 | guides | `ronces-coulisses-court-film-ia` | Ronces : les coulisses de mon court-métrage IA |
+| 2026-07-12 | actualite | `chatgpt-work-gpt-56-disponibilite-generale-juillet-2026` | ChatGPT Work et GPT-5.6 GA : OpenAI passe à l'agent de travail |
+| 2026-07-12 | guides | `frank-houbre-formation-ai-studios` | Frank Houbre formation : AI Studios, contenu et avis |
+| 2026-07-12 | actualite | `google-gemini-35-pro-fenetre-2m-tokens-juillet-2026` | Google Gemini 3.5 Pro : 2 millions de tokens en contexte, Deep Think en juillet |
 | 2026-07-12 | tutoriels | `scene-dialogue-deux-personnages-raccord-ia` | Scène dialogue à deux : raccords regard et lumière en IA |
+| 2026-07-11 | actualite | `meta-muse-image-generateur-instagram-juillet-2026` | Meta Muse Image : le générateur IA qui a mis Instagram en colère |
+| 2026-07-11 | guides | `methode-realisateur-ia-diriger-avant-generer` | Réalisateur IA : ma méthode pour diriger avant de générer |
+| 2026-07-11 | actualite | `openai-gpt-live-voix-duplex-chatgpt-juillet-2026` | GPT-Live : OpenAI passe la voix ChatGPT en full-duplex |
 | 2026-07-11 | tutoriels | `sous-marine-caustiques-video-ia-limites` | Plans sous-marins : caustiques, limites et contournements IA |
 | 2026-07-10 | tutoriels | `exterieur-foret-brume-profondeur-video-ia` | Forêt et brume : profondeur de champ en extérieur IA |
+| 2026-07-10 | actualite | `google-photos-video-remix-gemini-omni-juillet-2026` | Google Photos lance Video Remix : retouche vidéo IA pour abonnés |
+| 2026-07-10 | guides | `wan-alibaba-guide-complet` | WAN d'Alibaba : guide complet du modèle vidéo open source |
+| 2026-07-10 | actualite | `xai-grok-45-coding-agentique-createurs-juillet-2026` | Grok 4.5 d'xAI : un modèle agentique à prix cassé pour les créateurs |
 | 2026-07-09 | tutoriels | `interieur-bureau-lumiere-cyan-correction-ia` | Intérieur bureau : corriger la lumière cyan des bureaux IA |
 | 2026-07-08 | tutoriels | `nuit-neon-peau-credible-sans-magenta` | Nuit néon : peau crédible sans bain magenta |
+| 2026-07-07 | business | `checklist-avant-livrer-video-ia-client` | Checklist avant de livrer une vidéo IA à un client |
 | 2026-07-07 | tutoriels | `cuisine-fumee-vapeur-realiste-video-ia` | Cuisine, fumée et vapeur : rendu réaliste en vidéo IA |
+| 2026-07-07 | actualite | `meta-watermelon-modele-ia-gpt-55-parite-juillet-2026` | Meta Watermelon : le modèle qui prétend rattraper GPT-5.5 |
+| 2026-07-07 | actualite | `xai-grok-voice-21-voix-voice-agent-builder-juillet-2026` | xAI lance 21 nouvelles voix Grok et un builder d'agents vocaux |
 | 2026-07-06 | tutoriels | `animaux-domestiques-plan-action-ia` | Animaux domestiques en plan d'action : poils, regard et mouvement |
+| 2026-07-06 | actualite | `eu-ai-act-article-50-marquage-video-ia-aout-2026` | EU AI Act Article 50 : vos vidéos IA doivent être marquées dès le 2 août |
+| 2026-07-06 | business | `presenter-projet-video-ia-client-non-tech` | Présenter un projet vidéo IA à un client non-tech : méthode |
+| 2026-07-06 | actualite | `runway-agent-skills-campagnes-pub-video-ia-juillet-2026` | Runway lance Agent Skills : créer une pub vidéo IA en une commande |
+| 2026-07-05 | actualite | `apple-ios-27-beta-publique-apple-intelligence-siri-ia` | iOS 27 beta publique : Apple Intelligence et Siri IA arrivent sur iPhone |
+| 2026-07-05 | business | `creer-devis-projet-video-ia-client-modele-structure` | Créer un devis pour un projet vidéo IA : structure, pièges et modèle |
+| 2026-07-05 | actualite | `kling-ai-levee-fonds-28-milliards-valorisation-juillet-2026` | Kling AI lève 2,8 milliards de dollars : ce que ça change pour les créateurs |
 | 2026-07-05 | tutoriels | `vehicules-mouvement-reflets-coherents-video-ia` | Véhicules en mouvement : reflets cohérents en vidéo IA |
+| 2026-07-04 | actualite | `anthropic-samsung-chip-ia-2nm-juillet-2026` | Anthropic en talks avec Samsung pour son premier chip IA maison |
+| 2026-07-04 | tutoriels | `choisir-format-vertical-horizontal-video-ia-plateformes` | Vertical ou horizontal pour vos clips IA : comment choisir selon la plateforme |
 | 2026-07-04 | tutoriels | `generer-foule-realiste-sans-clones-ia` | Générer une foule réaliste sans clones ni visages identiques |
+| 2026-07-04 | actualite | `microsoft-frontier-company-25-milliards-deploiement-ia-2026` | Microsoft Frontier Company : 2,5 milliards pour déployer l'IA en entreprise |
+| 2026-07-03 | actualite | `californie-anthropic-claude-accord-agences-etat-2026` | Californie x Anthropic : Claude pour toutes les agences d'État |
+| 2026-07-03 | actualite | `claude-sonnet-5-anthropic-agent-ia-juin-2026` | Claude Sonnet 5 : le modèle agentique par défaut d'Anthropic |
 | 2026-07-03 | tutoriels | `inpainting-local-retoucher-yeux-mains-ia` | Inpainting local : retoucher yeux et mains sans tout régénérer |
+| 2026-07-03 | tutoriels | `prompt-negatif-video-ia-a-quoi-ca-sert` | Prompt négatif en vidéo IA : à quoi ça sert vraiment ? |
+| 2026-07-02 | actualite | `anthropic-fable-5-retour-global-juillet-2026` | Claude Fable 5 de retour le 1er juillet : contrôles levés |
+| 2026-07-02 | tutoriels | `elevenlabs-music-v2-guide-createurs-video` | ElevenLabs Music v2 : guide pratique pour créateurs vidéo |
+| 2026-07-02 | actualite | `google-gemini-31-flash-image-omni-flash-video-juin-2026` | Google Gemini 3.1 Flash Image et Omni Flash : image-to-video en API |
 | 2026-07-02 | tutoriels | `reference-ipadapter-visage-coherent-plans` | IP-Adapter et références : verrouiller un visage sur plusieurs plans |
 | 2026-07-01 | tutoriels | `comfyui-noeuds-debutant-pipeline-cinema` | ComfyUI pour débutants : pipeline cinéma sans noeud inutile |
 | 2026-06-30 | tutoriels | `pika-labs-vs-runway-choisir-moteur-plan-action` | Pika Labs vs Runway : choisir le bon moteur pour un plan d action |
 | 2026-06-29 | tutoriels | `openai-sora-production-limits-workflow-pro` | Sora en production : limites honnêtes et workflow pro |
+| 2026-06-28 | actualite | `anthropic-mythos-5-reautorisation-cybersecurite-juin-2026` | Anthropic Mythos 5 : réautorisé après deux semaines de blocage national |
+| 2026-06-28 | tutoriels | `creer-broll-ia-plans-coupe-convaincants` | B-roll IA : comment créer des plans de coupe qui tiennent vraiment |
 | 2026-06-28 | tutoriels | `google-veo-3-brief-realisateur-plan-sequence` | Google Veo 3 : brief réalisateur pour un plan séquence crédible |
+| 2026-06-28 | actualite | `openai-gpt-56-sol-terra-luna-modeles-juin-2026` | GPT-5.6 : OpenAI lance Sol, Terra et Luna sous contrôle gouvernemental |
 | 2026-06-27 | tutoriels | `hailuo-minimax-workflow-court-metrage-realiste` | Workflow HaiLuo / MiniMax pour un court métrage IA réaliste |
+| 2026-06-26 | actualite | `google-a24-partenariat-ia-outils-cinema-2026` | Google investit 75M$ dans A24 pour des outils IA dédiés au cinéma |
 | 2026-06-26 | tutoriels | `mesurer-performance-contenu-video-ia-apres-publication` | Mesurer la performance d un contenu video IA apres publication |
+| 2026-06-26 | actualite | `openai-broadcom-jalapeno-chip-inference-ia-2026` | OpenAI et Broadcom dévoilent Jalapeño : leur premier chip IA dédie à l'inférence |
+| 2026-06-26 | comparatifs | `video-ia-talking-head-presentations-quel-outil-choisir` | Vidéo IA pour les présentations talking-head : quel outil choisir ? |
 | 2026-06-25 | tutoriels | `adapter-storytelling-marque-contenu-video-ia` | Adapter le storytelling de marque au contenu video IA |
+| 2026-06-25 | actualite | `anthropic-ipo-confidential-965-milliards-valorisation-2026` | Anthropic IPO : 965 milliards de valorisation, ce que ça change |
+| 2026-06-25 | business | `livrer-fichiers-sources-projet-video-ia-client` | Livrer les fichiers sources d'un projet vidéo IA : guide pratique |
+| 2026-06-25 | actualite | `sora-api-arret-septembre-2026-alternatives-createurs` | Sora ferme en septembre 2026 : alternatives et migration |
 | 2026-06-24 | tutoriels | `creer-miniatures-youtube-coherentes-avec-video-ia` | Creer des miniatures YouTube coherentes avec ta video IA |
+| 2026-06-23 | actualite | `lionsgate-runway-ai-series-courtes-ip-hollywood-2026` | Lionsgate prend une part dans Runway AI pour créer des séries courtes à partir de ses franchises |
+| 2026-06-23 | comparatifs | `meilleur-outil-ia-video-publicite-produit-comparatif` | Quel outil IA vidéo choisir pour une publicité produit ? Comparatif par cas d'usage |
+| 2026-06-23 | actualite | `minimax-hub-plateforme-video-ia-shanghai-juin-2026` | MiniMax lance Hub : une plateforme vidéo IA tout-en-un présentée au Festival de Shanghai |
 | 2026-06-23 | tutoriels | `structurer-checklist-validation-finale-projet-ia` | Structurer une checklist de validation finale projet IA |
+| 2026-06-22 | tutoriels | `corriger-erreurs-anatomiques-video-ia-corps-mains` | Erreurs anatomiques en vidéo IA : pourquoi les corps, mains et gestes se déforment en mouvement |
 | 2026-06-22 | tutoriels | `eviter-surcharge-fx-presets-video-ia` | Éviter la surcharge de FX et presets en vidéo IA |
+| 2026-06-22 | actualite | `google-flow-veo-31-edition-audio-juin-2026` | Google Flow et Veo 3.1 : l'audio arrive sur toutes les fonctions, l'édition s'affine |
+| 2026-06-22 | actualite | `seedance-2-mini-bytedance-video-rapide-juin-2026` | Seedance 2.0 Mini : ByteDance lance un modèle vidéo deux fois plus rapide et moitié moins cher |
 | 2026-06-21 | tutoriels | `gerer-voix-off-narration-documentaire-ia` | Gerer la voix off pour narration documentaire IA |
+| 2026-06-21 | actualite | `google-imagen-gemini-image-preview-depreciation-juin-2026` | Google coupe Imagen et les modèles image Gemini preview : migration avant le 24 juin |
+| 2026-06-21 | actualite | `midjourney-medical-scanner-pivot-hardware-juin-2026` | Midjourney lance un scanner médical ultrasonique : pivot hardware ou feu d'artifice ? |
+| 2026-06-21 | tutoriels | `pipeline-ia-script-storyboard-production-de-a-z` | Pipeline IA de A à Z : de l'idée au plan de tournage en une journée |
 | 2026-06-20 | tutoriels | `gerer-versions-projets-video-ia` | Gérer les versions de ses projets vidéo IA : méthode concrète |
 | 2026-06-20 | actualite | `grok-imagine-video-1-5-xai-generation-video-ia` | Grok Imagine Video 1.5 : xAI passe en tête du classement vidéo IA |
 | 2026-06-20 | actualite | `higgsfield-creative-os-claude-adobe-juin-2026` | Higgsfield devient un Creative OS : Claude, Adobe et Figma dans le même pipeline |
@@ -171,7 +238,7 @@ Categories: tutoriels 179, business 14, actualite 13, comparatifs 13, analyses 6
 | 2026-04-19 | tutoriels | `creer-publicite-video-percutante-intelligence-artificielle` | Créer une publicité vidéo percutante avec l’intelligence artificielle |
 | 2026-04-19 | tutoriels | `guide-complet-montage-video-assiste-intelligence-artificielle` | Le guide complet du montage vidéo assisté par l’intelligence artificielle |
 | 2026-04-19 | tutoriels | `synchronisation-labiale-lip-sync-quel-outil-ia-choisir` | Synchronisation labiale (Lip-sync) : quel outil IA choisir pour ses acteurs virtuels ? |
-| 2026-04-19 | actualite | `topaz-video-ai-test-avis-restauration-video` | Topaz Video AI : test et avis complet sur la restauration vidéo |
+| 2026-04-19 | actualite | `topaz-video-ai-test-avis-restauration-video` | Topaz Video AI : avis, prix et test réel de restauration |
 | 2026-04-18 | tutoriels | `generation-video-nouveaux-outils-changements-realisateurs` | Génération vidéo : ce que les nouveaux outils changent pour les réalisateurs |
 | 2026-04-18 | tutoriels | `tutoriel-runway-gen-3-animer-image-fixe-plan-film` | Tutoriel Runway Gen-3 : animer une image fixe pour un plan de film |
 | 2026-04-18 | tutoriels | `utiliser-ia-reperage-decors-cinema` | Comment utiliser l’IA pour le repérage de décors de cinéma |
@@ -239,11 +306,11 @@ Categories: tutoriels 179, business 14, actualite 13, comparatifs 13, analyses 6
 | 2026-03-30 | tutoriels | `creer-court-metrage-100-ia-sans-camera-acteurs` | Créer un court métrage 100 % IA sans caméra ni acteurs |
 | 2026-03-30 | tutoriels | `prompt-chatgpt` | Prompt ChatGPT : essentiel, mais c'est quoi ? |
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
-| 2026-03-29 | tutoriels | `dzine-ia` | Dzine : l'IA crée des personnages cohérents et des films d'animation |
+| 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN — 222 articles (/en/blog/<slug>)
+## EN : 232 articles (/en/blog/<slug>)
 
-Categories: tutoriels 177, business 14, comparatifs 13, actualite 8, analyses 6, guides 2, notes 1, postproduction 1
+Categories: tutoriels 180, actualite 14, comparatifs 14, business 14, analyses 6, guides 2, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
@@ -280,9 +347,19 @@ Categories: tutoriels 177, business 14, comparatifs 13, actualite 8, analyses 6,
 | 2026-06-26 | tutoriels | `mesurer-performance-contenu-video-ia-apres-publication` | Measuring the Performance of AI Video Content After Publication |
 | 2026-06-25 | tutoriels | `adapter-storytelling-marque-contenu-video-ia` | Adapting Brand Storytelling to AI Video Content |
 | 2026-06-24 | tutoriels | `creer-miniatures-youtube-coherentes-avec-video-ia` | Creating YouTube Thumbnails Consistent With Your AI Video |
+| 2026-06-23 | actualite | `lionsgate-runway-ai-series-courtes-ip-hollywood-2026` | Lionsgate takes a stake in Runway AI to create short series from its franchises |
+| 2026-06-23 | comparatifs | `meilleur-outil-ia-video-publicite-produit-comparatif` | Which AI video tool to choose for a product ad? Comparison by use case |
+| 2026-06-23 | actualite | `minimax-hub-plateforme-video-ia-shanghai-juin-2026` | MiniMax launches Hub: an all-in-one AI video platform unveiled at the Shanghai Festival |
 | 2026-06-23 | tutoriels | `structurer-checklist-validation-finale-projet-ia` | Structuring a Final Validation Checklist for an AI Project |
+| 2026-06-22 | tutoriels | `corriger-erreurs-anatomiques-video-ia-corps-mains` | Anatomical errors in AI video: why bodies, hands and gestures distort in motion |
 | 2026-06-22 | tutoriels | `eviter-surcharge-fx-presets-video-ia` | Avoiding FX and Preset Overload in AI Video |
+| 2026-06-22 | actualite | `google-flow-veo-31-edition-audio-juin-2026` | Google Flow and Veo 3.1: audio arrives on all functions, editing gets sharper |
+| 2026-06-22 | actualite | `seedance-2-mini-bytedance-video-rapide-juin-2026` | Seedance 2.0 Mini: ByteDance launches a video model twice as fast and half the price |
 | 2026-06-21 | tutoriels | `gerer-voix-off-narration-documentaire-ia` | Managing the Voice-Over for AI Documentary Narration |
+| 2026-06-21 | actualite | `google-imagen-gemini-image-preview-depreciation-juin-2026` | Google cuts Imagen and the Gemini image preview models: migrate before June 24 |
+| 2026-06-21 | actualite | `midjourney-medical-scanner-pivot-hardware-juin-2026` | Midjourney launches an ultrasonic medical scanner: hardware pivot or fireworks? |
+| 2026-06-21 | tutoriels | `pipeline-ia-script-storyboard-production-de-a-z` | AI pipeline from A to Z: from idea to shot list in one day |
+| 2026-06-20 | tutoriels | `gerer-versions-projets-video-ia` | Managing the versions of your AI video projects: a concrete method |
 | 2026-06-20 | tutoriels | `verifier-qualite-mobile-desktop-video-ia` | Checking the mobile-desktop quality of an AI video |
 | 2026-06-19 | tutoriels | `creer-presets-post-production-reutilisables-ia` | Creating Reusable AI Post-Production Presets |
 | 2026-06-19 | comparatifs | `screenweaver-vs-final-draft` | ScreenWeaver vs Final Draft: which to choose to write (and show) your film in 2026? |

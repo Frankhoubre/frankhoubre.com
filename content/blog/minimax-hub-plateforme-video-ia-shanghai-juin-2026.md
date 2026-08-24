@@ -58,7 +58,7 @@ Quelques points manquent dans l'annonce :
 
 **Disponibilité.** Hub a été présenté au festival, mais aucune date de sortie publique n'a été annoncée. Est-ce déjà accessible en bêta ? Ouvert à l'international ou d'abord en Chine ?
 
-**Tarification.** Rien sur les prix. Les plateformes tout-en-un de ce type peuvent soit coûter plus cher (valeur ajoutée), soit moins cher (économies d'échelle sur plusieurs outils). À voir.
+**Tarification.** Rien sur les prix. Les plateformes tout-en-un de ce type peuvent soit coûter plus cher (valeur ajoutée), soit moins cher (économies d'échelle sur plusieurs outils). À voir. En attendant, la grille de Hailuo reste la seule référence chiffrée publique côté MiniMax : je l'ai décortiquée dans le guide sur [les crédits, les prix et les formules MiniMax Hailuo](/blog/minimax-hailuo-prix-credits-formules).
 
 **Performances réelles.** Les démos festival sont toujours les meilleures conditions. Ce qui compte, c'est ce que les créateurs ordinaires obtiennent en usage quotidien.
 

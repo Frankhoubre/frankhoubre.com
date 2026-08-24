@@ -165,10 +165,12 @@ suite, 1 article par jour, les jours UPDATE comptant comme des jours normaux.
 Les dates de la ligne d'origine du plan (J1 = 2026-07-10) ne servent plus de
 référence pour les jours restants.
 
-Prochain jour à publier : **J14** (`minimax-hailuo-prix-credits-formules`), le 2026-08-22.
+Prochain jour à publier : **J15** (`combien-coute-court-metrage-ia-2026`), le 2026-08-25.
 J11 a été publié le 2026-08-19 au lieu du 2026-08-18 (aucun run le 18) ; le
 calendrier a glissé d'un jour. J12 est publié le 2026-08-20 et J13 le
-2026-08-21 comme prévu après ce décalage, J14 = 2026-08-22, etc.
+2026-08-21 comme prévu après ce décalage. J14, prévu le 2026-08-22, est publié
+le 2026-08-24 (aucun run les 22 et 23) : le calendrier a donc glissé de deux
+jours de plus, J15 = 2026-08-25, et ainsi de suite.
 
 | Jour | Slug | Publié le | Note |
 | --- | --- | --- | --- |
@@ -185,6 +187,7 @@ calendrier a glissé d'un jour. J12 est publié le 2026-08-20 et J13 le
 | 11 | lost-garden-journal-production-serie-ia | 2026-08-19 | Publié (prévu le 2026-08-18, pas de run ce jour là). Faits vérifiés : chaîne YouTube LostGarden Anime, épisode 1 « The Awakening of the Lantern Knight » (oEmbed du 2026-08-19). Aucun chiffre de production inventé (durée, budget, nombre d'épisodes volontairement absents). Liens réciproques ajoutés depuis ronces-coulisses-court-film-ia et voidborn-anime-ia-festival-coulisses |
 | 12 | midjourney-sref-references-style | 2026-08-20 | Publié. Tutoriel satellite du pilier midjourney-guide-complet. Faits vérifiés en ligne le 2026-08-20 : doc officielle Style Reference (--sref image/code/random, --sw 0 à 1000 défaut 100, --sv), doc Moodboards (--p incompatible avec --sv et --sw), update officielle du 25 juin 2026 (--sref random en mode brouillon, 24 images), V8.2 sortie le 24 juillet 2026. Aucun chiffre inventé. Liens entrants ajoutés depuis midjourney-guide-complet (section SREF) et comment-controler-style-visuel-generation-ia |
 | 13 | screenweaver-pourquoi-outil-ecriture | 2026-08-21 | Publié. Coulisses fondateur, angle FR pur (aucun ciblage des mots-clés produit EN). Faits produit vérifiés dans le repo ScreenWeaver le 2026-08-21 (offre Screenwriter gratuite avec export PDF et Final Draft, Storyboard Beta, offre Filmmaker annoncée pour fin août 2026 sans tarif public, moteurs Seedance/Veo/Sora/Kling). Aucun prix inventé. Liens entrants ajoutés depuis screenweaver-ai-ecriture-scenario-storyboard et screenweaver-vs-final-draft ; au passage, correction du cadrage tiers erroné de l'ancien guide (« je ne suis pas leur équipe ») |
+| 14 | minimax-hailuo-prix-credits-formules | 2026-08-24 | Publié (prévu le 2026-08-22, aucun run les 22 et 23). Guide prix/crédits. Faits vérifiés le 2026-08-24 : formules et montants relevés sur la page officielle de politique de paiement hailuoai.video (Standard 14,99 $ / 1 000 crédits, Pro 54,99 $ / 4 500, Master 119,99 $ / 10 000, Ultra 124,99 $ / 12 000, Max 199,99 $ / 20 000 + Relax Mode, ancienne offre Unlimited 94,99 $ fermée à la vente le 18 juin 2025 et bloquée sur Hailuo01), crédits non reportables, remboursement automatique en cas d'échec ou de refus de modération ; tarifs API relevés sur fal.ai (Hailuo 02 standard 0,045 $/s, Pro 1080p 0,08 $/s, 25 fps) ; fiche H3 sur Hugging Face (MiniMaxAI/MiniMax-H3 : 4 à 15 s, base 768p, module 2K, audio stéréo natif 32 kHz, 11 langues, 24 fps, MiniMax H3 Community License Agreement). AUCUN coût en crédits par génération publié : les sources tierces se contredisent, l'article donne un protocole de mesure à la place. Liens entrants ajoutés depuis minimax-hub-plateforme-video-ia-shanghai-juin-2026 et hailuo-minimax-workflow-court-metrage-realiste |
 
 Rappels pour le loop : après J1, repointer la 301 `/wan-2-1-alibaba` de
 `next.config.ts` vers `/blog/wan-alibaba-guide-complet`. Les jours

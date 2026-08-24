@@ -1,6 +1,52 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-21 (J13 publié)
+## Last run: 2026-08-24 (J14 publié)
+
+### What happened
+- Publication du J14 du plan 90 jours : `minimax-hailuo-prix-credits-formules`
+  (evergreen, guides, 3360 mots). Prévu le 2026-08-22, publié le 24 : aucun run
+  les 22 et 23, le calendrier glisse de deux jours de plus. J15 = 2026-08-25.
+- Intention commerciale « hailuo prix / minimax crédits ». Faits relevés le
+  2026-08-24 et aucun inventé : formules officielles sur
+  `hailuoai.video/doc/payment-policy.html` (Standard 14,99 $ / 1 000 crédits,
+  Pro 54,99 $ / 4 500, Master 119,99 $ / 10 000, Ultra 124,99 $ / 12 000, Max
+  199,99 $ / 20 000 + Relax Mode, Unlimited 94,99 $ fermée à la vente le
+  18 juin 2025 et bloquée sur Hailuo01), crédits non reportables, remboursement
+  automatique si échec ou refus de modération ; tarifs API sur fal.ai
+  (0,045 $/s en 768p, 0,08 $/s en 1080p, 25 fps) ; fiche H3 sur Hugging Face
+  (`MiniMaxAI/MiniMax-H3`, 4 à 15 s, base 768p, module 2K, stéréo natif 32 kHz,
+  11 langues, 24 fps).
+- DÉCISION ÉDITORIALE à retenir : aucun coût en crédits par génération n'est
+  publié. Les sources tierces donnaient quatre valeurs contradictoires pour un
+  même format. L'article assume le trou et livre un protocole de mesure en
+  5 étapes à la place, ce qui est devenu son principal apport.
+- Passe anti-slop complète (humanizer, unslop-text, antislop-copywriting) :
+  8 parallélismes « ce n'est pas X, c'est Y » ramenés à 0, 5 signposting
+  supprimés, roadmap d'intro réécrite, une section à en-têtes gras convertie en
+  prose pour casser la symétrie structurelle. Scanner : 0 high, 0 medium,
+  5 low tous faux positifs FR (« utilises » lu comme « utilize »).
+- 3 images Nano Banana 2 (comptoir de maison de location au petit matin, hayon
+  de camion de production à l'heure dorée, salle machine de post la nuit).
+  Hero et workflow-2 régénérés une fois : la première version de workflow-2
+  affichait de vrais logos de marque lisibles (AJA) sur les racks. Ajouter
+  « completely unbranded, blank unmarked, no emblems » au prompt règle le cas.
+- Liens entrants réciproques ajoutés depuis
+  `minimax-hub-plateforme-video-ia-shanghai-juin-2026` et
+  `hailuo-minimax-workflow-court-metrage-realiste`.
+- `build_ledger.mjs` EST RÉPARÉ. Cause du bug qui bloquait les 4 runs
+  précédents : en JS, `.` ne matche pas ``, donc sur les 283 articles en CRLF
+  le `` de fin de ligne faisait échouer le regex de frontmatter et toutes les
+  catégories tombaient à `undefined`. Correctif : `split("
+")` remplacé par
+  `split(/?
+/)` dans `fm()`. CONTENT_INDEX.md est donc régénéré proprement
+  pour la première fois depuis le 2026-08-17, 0 `undefined`.
+- Reste ouvert : `seo_audit.mjs` souffre du même artefact CRLF (1998 erreurs
+  globales, 0 pour les slugs en LF). Le même correctif d'une ligne s'y applique
+  probablement, non fait ici pour garder le run cadré.
+- Prochain jour : J15 (`combien-coute-court-metrage-ia-2026`) le 2026-08-25.
+
+## Run précédent : 2026-08-21 (J13 publié)
 
 ### What happened
 - Publication du J13 du plan 90 jours : `screenweaver-pourquoi-outil-ecriture`

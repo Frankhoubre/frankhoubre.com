@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-08-24 : MiniMax Hailuo, crédits, prix et formules expliqués
+- slug: minimax-hailuo-prix-credits-formules
+- locale: fr
+- url: https://frankhoubre.com/blog/minimax-hailuo-prix-credits-formules
+- category: guides
+- type: evergreen (plan 90j J14), guide prix, 3360 mots
+- search_intent: commerciale (prix / formules / crédits)
+- primary_keyword: hailuo prix
+- secondary_keywords: minimax crédits, hailuo abonnement, hailuo tarif api, minimax hailuo formules, coût vidéo ia
+- sources: hailuoai.video/doc/payment-policy.html (politique de paiement officielle : Standard 14,99 $ / 1 000 crédits, Pro 54,99 $ / 4 500, Master 119,99 $ / 10 000, Ultra 124,99 $ / 12 000 fléchés Hailuo02, Max 199,99 $ / 20 000 + Relax Mode illimité, Unlimited 94,99 $ fermée à la vente le 18 juin 2025 et bloquée sur Hailuo01 ; crédits expirant au mois sans report ; remboursement automatique en cas d'échec ou de refus de modération) ; fal.ai/models/fal-ai/minimax/hailuo-02/standard/text-to-video et .../pro/text-to-video (0,045 $/s en 768p soit 0,27 $ les 6 s, 0,08 $/s en 1080p soit 0,48 $ les 6 s à 25 fps) ; huggingface.co/MiniMaxAI/MiniMax-H3 (fiche officielle : 4 à 15 s, base 768p, module de remontée 2K, audio stéréo natif 32 kHz, 11 langues, 24 fps, MiniMax H3 Community License Agreement). Tout relevé le 2026-08-24
+- internal_links: -> /blog/hailuo-minimax-workflow-court-metrage-realiste, -> /blog/combien-facturer-video-ia-professionnelle-grille-prix, -> /blog/upscaling-video-gratuit-alternatives-topaz, -> /blog/minimax-hub-plateforme-video-ia-shanghai-juin-2026 ; liens réciproques ajoutés DEPUIS minimax-hub-plateforme-video-ia-shanghai-juin-2026 (section « Ce qu'on ne sait pas encore », paragraphe Tarification) et hailuo-minimax-workflow-court-metrage-realiste (section « Références externes et liens internes »)
+- cta: aucun CTA produit, soft mention nulle ; l'article renvoie vers la grille de facturation client du site
+- cannibalization_notes: le cluster MiniMax compte désormais 3 articles FR aux intentions séparées. minimax-hub-plateforme-video-ia-shanghai-juin-2026 garde la requête d'actualité « minimax hub », hailuo-minimax-workflow-court-metrage-realiste garde le how-to de production, et celui-ci prend l'intention commerciale « hailuo prix / minimax crédits ». Risque résiduel faible : aucun recouvrement de mot-clé principal, liens croisés explicites dans les trois sens
+- editorial_notes: AUCUN coût en crédits par génération n'est publié. Les sources tierces donnaient quatre valeurs contradictoires pour un même format (11, 15, 25 et 80 crédits selon les pages), toutes non officielles et datées de versions différentes du modèle. L'article assume ce trou et livre à la place un protocole de mesure en 5 étapes (relever le solde avant et après une génération, réglage par réglage), qui est aussi son principal apport de valeur. Toute l'arithmétique de l'article est dérivée des chiffres officiels ci-dessus et a été revérifiée à la main (54,99/14,99 = 3,7 ; 4 500/1 000 = 4,5 ; 124,99 - 119,99 = 5 ; 12 000 - 10 000 = 2 000 ; 0,27 x 6 = 1,62 ; 0,27 x 3 = 0,81 ; 30/6 = 5). Les taux de sélection (1 sur 3, 1 sur 8) sont donnés explicitement comme les chiffres de Frank sur ses projets, pas comme une donnée de marché
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, bucket good, 0 flag, 0 tiret cadratin ; unslop-text 0 high / 0 medium / 5 low tous faux positifs FR)
+- published_commit: (voir PUBLISH_LOG)
+
 ### 2026-08-21 — ScreenWeaver : pourquoi j'ai construit mon outil d'écriture
 - slug: screenweaver-pourquoi-outil-ecriture
 - locale: fr

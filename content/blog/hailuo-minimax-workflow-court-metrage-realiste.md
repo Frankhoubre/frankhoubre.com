@@ -182,6 +182,10 @@ En interne, garde à portée /blog/comment-ecrire-prompt-cinematic-ultra-realist
 comme-vrai-film, /blog/comment-ajouter-realisme-post-production-video-ia et /blog/comment-transformer-image-ia-video-
 fluide-credible. Quatre liens pertinents suffisent pour continuer à progresser sans te noyer dans des lectures infinies.
 
+Avant de chiffrer un projet avec ce workflow, passe aussi par le guide sur [les crédits, les prix et les formules
+MiniMax Hailuo](/blog/minimax-hailuo-prix-credits-formules) : il donne la méthode pour calculer ce que te coûte
+réellement un plan que tu gardes au montage.
+
 
 ## Cadence d équipe, feedback client, et exécution durable
 
