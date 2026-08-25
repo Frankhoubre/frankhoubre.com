@@ -21,6 +21,8 @@ Dans cette masterclass pricing, tu vas apprendre une grille simple, des options 
 
 Les créateurs oublient souvent la moitié des coûts parce qu’ils comptent uniquement l’abonnement Runway ou la facture GPU. C’est une erreur stratégique.
 
+Avant de poser un prix, il faut donc connaître ton coût réel de production, poste par poste. Le découpage complet, avec les tarifs publics de génération, de voix, de musique et de finition, est dans mon analyse sur [combien coûte un court-métrage IA en 2026](/blog/combien-coute-court-metrage-ia-2026).
+
 Tu dois couvrir le temps de brief et de reformulation. Un mauvais brief coûte plus cher qu’une génération ratée, parce qu’il te fait itérer dans le vide.
 
 Tu dois couvrir le temps de sélection et de direction. La valeur n’est pas dans le clic. Elle est dans le choix entre dix versions possibles.

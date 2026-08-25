@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-08-24T12:18:31.057Z
+> Generated: 2026-08-25T08:05:29.666Z
 
-## FR : 296 articles (/blog/<slug>)
+## FR : 297 articles (/blog/<slug>)
 
-Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 10, analyses 9, notes 1, postproduction 1
+Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 10, analyses 10, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-08-25 | analyses | `combien-coute-court-metrage-ia-2026` | Combien coûte un court-métrage IA en 2026 |
 | 2026-08-24 | guides | `minimax-hailuo-prix-credits-formules` | MiniMax Hailuo : crédits, prix et formules expliqués |
 | 2026-08-21 | analyses | `screenweaver-pourquoi-outil-ecriture` | ScreenWeaver : pourquoi j'ai construit mon outil d'écriture |
 | 2026-08-20 | tutoriels | `midjourney-sref-references-style` | Midjourney SREF : maîtriser les références de style |

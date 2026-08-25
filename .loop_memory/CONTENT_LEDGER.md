@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-08-25 : Combien coûte un court-métrage IA en 2026
+- slug: combien-coute-court-metrage-ia-2026
+- locale: fr
+- url: https://frankhoubre.com/blog/combien-coute-court-metrage-ia-2026
+- category: analyses
+- type: evergreen (plan 90j J15), analyse chiffrée, 3617 mots
+- search_intent: commerciale / info (coût de production)
+- primary_keyword: coût court métrage ia
+- secondary_keywords: budget film ia, prix génération vidéo ia, coût production ia, tarif upscaling, frais festival court métrage
+- sources: fal.ai/pricing (Wan 2.5 0,05 $/s, Kling 2.5 Turbo Pro 0,07 $/s, Veo 3 0,40 $/s) ; runway.com/pricing (Standard 15 $/mois ou 12 $ en annuel pour 625 crédits, Pro 35/28 $ pour 2 250, Max 95/76 $ pour 9 500, plan gratuit 125 crédits une seule fois) ; gemini.google/subscriptions (AI Pro 21,99 EUR/mois avec essai limité de Veo 3.1 Lite, AI Ultra à partir de 99,99 EUR/mois) ; elevenlabs.io/pricing (gratuit 10 000 crédits, Starter 6 $ / 30 000, Creator 22 $ / 121 000, Pro 99 $ / 600 000, Scale 299 $ / 1,8 M, facturation annuelle = 10 mois payés sur 12) ; suno.com/pricing (gratuit 50 crédits/jour sans usage commercial, Pro 8 $ / 2 500, Premier 24 $ / 10 000, droits commerciaux limités aux morceaux créés pendant l'abonnement actif) ; blackmagicdesign.com/products/davinciresolve (Resolve gratuit, Studio 295 $ en licence perpétuelle) ; topazlabs.com/pricing (Topaz est passé à l'abonnement : Video Personal 39 $/mois avec engagement annuel ou 59 $/mois sans, bundle Studio 69 $/mois ou 399 $/an) ; sundance.org/festivals/sundance-film-festival/submit (courts US et internationaux, édition 2027 : 55 $ anticipé, 75 $ officiel, 95 $ tardif, 50 min générique compris). Tout relevé le 2026-08-25
+- internal_links: -> /blog/minimax-hailuo-prix-credits-formules, -> /blog/droits-auteur-musique-ia-bande-son, -> /blog/ronces-coulisses-court-film-ia, -> /blog/upscaling-video-gratuit-alternatives-topaz, -> /blog/voidborn-anime-ia-festival-coulisses, -> /blog/combien-facturer-video-ia-professionnelle-grille-prix, -> /outils/calculateur-budget-production-ia ; liens réciproques ajoutés DEPUIS combien-facturer-video-ia-professionnelle-grille-prix (section « Ce que ton prix doit couvrir ») et ronces-coulisses-court-film-ia (liste « Ce que vous pouvez réutiliser »)
+- cta: aucun CTA produit ; renvoi vers l'outil maison /outils/calculateur-budget-production-ia et vers la grille de facturation client
+- cannibalization_notes: seul autre article du site sur l'argent d'un projet vidéo IA, combien-facturer-video-ia-professionnelle-grille-prix, qui traite le PRIX DE VENTE au client. Celui-ci traite le COÛT DE PRODUCTION. La distinction est écrite noir sur blanc dans les deux articles, avec lien croisé explicite dans chaque sens. minimax-hailuo-prix-credits-formules (J14) reste sur les formules d'un seul outil, cité ici en satellite. Risque résiduel faible
+- editorial_notes: TROIS ERREURS DE CALCUL du premier jet corrigées à la passe antislop-copywriting, à retenir pour les prochains articles chiffrés. (1) « soixante plans gardés sur quatre cents générés » était faux, 60 x 4 = 240, corrigé partout y compris dans la FAQ. (2) « sur quatre mois, la formule Topaz sans engagement dépasse le prix d'une licence Resolve Studio » était faux, 59 x 4 = 236 < 295 ; corrigé en cinq mois, 59 x 5 = 295 exactement. (3) Deux chiffres inventés supprimés : « leur taux de sélection dérive à un sur douze » et « ce qui supprime la moitié des rejets », remplacés par des formulations sans statistique fabriquée. Aucun tarif Midjourney ni Kling abonnement n'est publié : leurs pages renvoient 403 et 446 à la récupération, donc rien de vérifiable. La seule affirmation non sourcée restante, « le son représente rarement moins d'un quart du budget total », est explicitement présentée comme l'observation de Frank sur ses propres films, pas comme une donnée de marché. Le tableau central (60 plans x 5 s, taux de sélection 1/4 et 1/8, trois modèles) est entièrement dérivé des tarifs fal.ai et revérifié à la main
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, bucket good, 0 flag, 0 tiret cadratin ; unslop-text 0 high / 0 medium / 2 low tous faux positifs FR « utilise » lu comme « utilize »)
+- published_commit: PENDING
+
 ### 2026-08-24 : MiniMax Hailuo, crédits, prix et formules expliqués
 - slug: minimax-hailuo-prix-credits-formules
 - locale: fr

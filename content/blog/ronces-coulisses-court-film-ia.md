@@ -99,6 +99,7 @@ Pas la peine de reproduire exactement ce que j'ai fait. Voici les éléments de 
 - Couper tôt et brutalement. La matière IA est facile à produire en volume. La rareté vient du montage.
 - Garder une fiche de référence par décor avec les paramètres de lumière et de texture. La relire avant chaque génération. C'est d'ailleurs cette gymnastique manuelle qui m'a poussé plus tard à [construire Imaginode, mon canvas IA à nodes](/blog/pourquoi-jai-construit-imaginode-canvas-ia), où les références restent branchées sur les plans.
 - Si un plan résiste après plusieurs générations, envisager de l'éliminer du montage. La contrainte est une instruction de mise en scène.
+- Compter les générations, pas seulement les plans retenus. C'est ce ratio qui fixe la facture, et j'en ai fait le cœur de mon analyse sur [combien coûte un court-métrage IA en 2026](/blog/combien-coute-court-metrage-ia-2026).
 
 La prochaine étape pour moi, c'est VOIDBORN et Lost Garden. Deux projets avec des formats et des intentions différents. Je documenterai les coulisses avec le même niveau de détail, comme je le fais déjà dans [le journal de production de la série Lost Garden](/blog/lost-garden-journal-production-serie-ia).
 

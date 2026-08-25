@@ -1,6 +1,54 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-24 (J14 publié)
+## Last run: 2026-08-25 (J15 publié)
+
+### What happened
+- Publication du J15 du plan 90 jours : `combien-coute-court-metrage-ia-2026`
+  (evergreen, analyses, 3617 mots). Publié à la date prévue, le calendrier ne
+  glisse pas ce jour. J16 = 2026-08-26.
+- Intention « coût court métrage ia ». Angle tenu à distance de
+  `combien-facturer-video-ia-professionnelle-grille-prix` : ici le coût de
+  PRODUCTION, là-bas le PRIX DE VENTE, avec lien croisé explicite dans les deux
+  sens et la distinction écrite dans les deux articles.
+- Tarifs relevés le 2026-08-25 sur les pages officielles, aucun inventé :
+  fal.ai (Wan 2.5 0,05 $/s, Kling 2.5 Turbo Pro 0,07 $/s, Veo 3 0,40 $/s),
+  Runway (Standard 15 $/mois ou 12 $ en annuel pour 625 crédits, Pro 35/28 $,
+  Max 95/76 $, gratuit 125 crédits une seule fois), Gemini (AI Pro 21,99 EUR/mois
+  avec essai limité de Veo 3.1 Lite, AI Ultra à partir de 99,99 EUR/mois),
+  ElevenLabs (6 $ / 22 $ / 99 $ / 299 $, annuel = 10 mois payés sur 12),
+  Suno (gratuit sans usage commercial, Pro 8 $, Premier 24 $, droits commerciaux
+  limités aux morceaux créés pendant l'abonnement actif), DaVinci Resolve
+  (gratuit, Studio 295 $ en licence perpétuelle), Sundance édition 2027
+  (courts : 55 $ / 75 $ / 95 $, 50 min générique compris).
+- FAIT NEUF À RETENIR : **Topaz est passé à l'abonnement** (Video Personal
+  39 $/mois avec engagement annuel ou 59 $/mois sans, bundle Studio 69 $/mois ou
+  399 $/an). Ça périme les budgets écrits l'an dernier et ça renforce l'article
+  `upscaling-video-gratuit-alternatives-topaz`, qui mériterait un UPDATE.
+- Pages Midjourney et Kling inaccessibles (403 et 446). Aucun tarif Midjourney
+  ni Kling abonnement n'est publié plutôt que d'écrire un chiffre de mémoire.
+- LEÇON DU RUN, à appliquer aux prochains articles chiffrés : la passe
+  antislop-copywriting a rattrapé TROIS erreurs de calcul du premier jet.
+  60 plans gardés sur 4 font 240 générations, pas 400. Quatre mois de Topaz sans
+  engagement font 236 $, donc moins que les 295 $ de Resolve Studio, il fallait
+  écrire cinq mois. Et deux statistiques fabriquées (« un sur douze », « la
+  moitié des rejets ») s'étaient glissées dans le texte. Refaire tous les calculs
+  à la main avant publication, la relecture de style ne suffit pas.
+- 3 images Nano Banana 2 (hall d'un petit cinéma indépendant l'après-midi,
+  cabine d'enregistrement voix la nuit, cour d'immeuble parisien par temps
+  couvert). Les 3 prompts portaient « completely unbranded, blank unmarked, no
+  readable text, no logos, no emblems » dès le premier jet : aucune régénération
+  nécessaire, contrairement aux deux runs précédents. Garder cette formule.
+- Liens entrants réciproques ajoutés depuis
+  `combien-facturer-video-ia-professionnelle-grille-prix` et
+  `ronces-coulisses-court-film-ia`.
+- `build_ledger.mjs` refonctionne : CONTENT_INDEX régénéré (297 FR, 232 EN,
+  « analyses 10 », 0 `undefined`). Le correctif d'hier tient.
+- Reste ouvert : `seo_audit.mjs` souffre toujours de l'artefact CRLF (1998
+  erreurs globales, identique à hier, 0 pour ce slug). Le correctif d'une ligne
+  de `build_ledger.mjs` s'y applique probablement, non fait ici.
+- Prochain jour : J16 (`integrer-ia-boite-production-depart`) le 2026-08-26.
+
+## Run précédent : 2026-08-24 (J14 publié)
 
 ### What happened
 - Publication du J14 du plan 90 jours : `minimax-hailuo-prix-credits-formules`
@@ -34,11 +82,14 @@
   `minimax-hub-plateforme-video-ia-shanghai-juin-2026` et
   `hailuo-minimax-workflow-court-metrage-realiste`.
 - `build_ledger.mjs` EST RÉPARÉ. Cause du bug qui bloquait les 4 runs
-  précédents : en JS, `.` ne matche pas ``, donc sur les 283 articles en CRLF
-  le `` de fin de ligne faisait échouer le regex de frontmatter et toutes les
+  précédents : en JS, `.` ne matche pas `
+`, donc sur les 283 articles en CRLF
+  le `
+` de fin de ligne faisait échouer le regex de frontmatter et toutes les
   catégories tombaient à `undefined`. Correctif : `split("
 ")` remplacé par
-  `split(/?
+  `split(/
+?
 /)` dans `fm()`. CONTENT_INDEX.md est donc régénéré proprement
   pour la première fois depuis le 2026-08-17, 0 `undefined`.
 - Reste ouvert : `seo_audit.mjs` souffre du même artefact CRLF (1998 erreurs
