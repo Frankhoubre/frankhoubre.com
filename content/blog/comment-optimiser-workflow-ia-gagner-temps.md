@@ -166,6 +166,8 @@ La solution n’est presque jamais “encore deux cents mots”. La solution est
 
 Documente des formats courts : un README projet, trois captures “bon /acceptable /non”, une phrase de style par voix off. L’alignement humain est souvent plus lent que le rendu IA. Ton **workflow** doit inclure une couche humaine lisible, sinon tu passes ta vie en messages vocaux de rattrapage.
 
+À l’échelle d’une structure entière, le problème change de nature et se règle par un pilote cadré plutôt que par des optimisations individuelles : [intégrer l’IA dans une boîte de production](/blog/integrer-ia-boite-production-depart) détaille le premier livrable à choisir, les trois rôles à répartir et les indicateurs à relever.
+
 ## Sécurité et conformité : le temps que tu ne vois pas
 
 Une crise de droit ou de désinformation te coûte plus cher qu’une session de génération ratée. Note ce qui est autorisé comme preuve, ce qui est interdit comme imitation, ce qui doit être signalé clairement quand tu publies. Il vaut mieux ralentir cinq minutes sur le cadre légal que perdre trois jours sur une livraison contestée.

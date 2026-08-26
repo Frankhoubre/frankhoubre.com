@@ -26,6 +26,8 @@ Cet article t'aide à construire une montée en compétence en 4 semaines qui re
 
 **La charte marque** avant le premier prompt : palette, interdits, formats de livraison. L'IA amplifie le chaos si la charte n'existe pas. La formation sert à faire respecter la charte, pas à collectionner des presets.
 
+Un dernier prérequis, souvent oublié : ne lance ce programme qu'une fois un usage prouvé sur un vrai livrable client. La marche d'avant est décrite dans le guide sur [comment intégrer l'IA dans une boîte de production en six semaines](/blog/integrer-ia-boite-production-depart), qui cadre le pilote, les rôles et les obligations de transparence avant la montée en compétence collective.
+
 ## Notes de plateau
 
 Je programme une **revue hebdo de 45 minutes** : trois plans A de la semaine, un plan C analysé pour apprendre, une règle nouvelle ajoutée au wiki interne. Répéter ce rituel vaut plus qu'un séminaire annuel.
