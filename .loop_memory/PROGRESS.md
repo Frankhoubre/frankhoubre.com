@@ -1,6 +1,46 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-25 (J15 publié)
+## Last run: 2026-08-26 (J16 publié)
+
+### What happened
+- Publication du J16 du plan 90 jours : `integrer-ia-boite-production-depart`
+  (evergreen, guides, 3549 mots). Publié à la date prévue, le calendrier ne
+  glisse pas ce jour. J17 = 2026-08-27 (UPDATE `adobe-firefly-avis`, Firefly 5).
+- Intention « ia boîte de production », guide décideur B2B qui pousse vers
+  /prestation. Angle tenu à distance des deux voisins du cluster : ici le
+  DÉMARRAGE cadré au niveau de la structure (premier livrable, pilote de six
+  semaines, rôles, conformité, coût réel), tandis que
+  `formation-interne-equipe-creative-ia` traite le programme de montée en
+  compétence qui vient APRÈS, et `comment-optimiser-workflow-ia-gagner-temps`
+  l'optimisation individuelle. La distinction est écrite dans les trois.
+- Faits juridiques vérifiés le 2026-08-26, aucun inventé : obligations de
+  transparence de l'article 50 du règlement (UE) 2024/1689 applicables depuis
+  le 2026-08-02 (le Digital Omnibus sur l'IA, en vigueur depuis le 2026-07-27,
+  n'a pas reporté le gros de l'article 50), transition de quatre mois jusqu'au
+  2026-12-02 pour le marquage lisible par machine, exception œuvres limitée à
+  révéler l'existence du contenu généré, code de bonnes pratiques de la
+  Commission publié le 2026-06-10 avec environ 190 signataires fin juillet 2026
+  et adhésion volontaire. Toute interprétation au-delà du texte est signalée
+  comme telle dans l'article.
+- Tarif conseil 4 200 € HT/jour relevé dans `src/app/prestation/page.tsx`.
+- Passe anti-slop complète (humanizer, unslop-text, antislop-copywriting) :
+  8 parallélismes négatifs ramenés à 1, 4 signposting supprimés, 2 aphorismes
+  réécrits, 2 faits fabriqués supprimés (une statistique « la moitié des cas »
+  et un prix « 40 000 € » inventés), et un correctif structurel : 4 sections
+  d'affilée étaient bâties à l'identique en listes à en-têtes gras, deux ont été
+  converties (prose et liste numérotée à 4e item dissymétrique).
+- 3 images Nano Banana 2 propres du premier coup, aucune régénération.
+
+### Notes outillage
+- Le scanner unslop-text est anglophone : sur du français un score vert ne
+  prouve rien, toutes les corrections réelles viennent de la lecture manuelle.
+- `render_blog_queue_nanobanana.py` n'accepte PAS `--slug`, seulement `--dest`
+  et `--prompt`, et doit être lancé via PowerShell (MSYS casse les chemins).
+- `editorial_audit.mjs --json` sort avec un BOM UTF-8 : lire en `utf-8-sig`.
+- Warning `fr/formation-interne-equipe-creative-ia: No H1` : préexistant, ce
+  fichier n'a jamais eu de ligne `# `.
+
+## Previous run: 2026-08-25 (J15 publié)
 
 ### What happened
 - Publication du J15 du plan 90 jours : `combien-coute-court-metrage-ia-2026`

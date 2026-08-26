@@ -22,6 +22,9 @@ EN mirrors FR slugs (47 and growing via a separate translation loop).
 - `/outils/annuaire-generateurs-images-ia-gratuits` — free image-gen directory
 - `/outils/annuaire-ia-audio-sfx-musicales` — audio/SFX/music directory
 - `/prestation` — services (commercial intent)
+  - satellite blog: `integrer-ia-boite-production-depart` (intention « ia boîte de
+    production », guide décideur, pousse vers /prestation ; ne pas recréer d'article
+    « démarrer l'IA en entreprise », cette intention est prise)
 
 ## Existing clusters (saturated — go narrow or skip)
 

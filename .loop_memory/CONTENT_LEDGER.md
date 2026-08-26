@@ -1281,3 +1281,19 @@ article block goes below this line.
 - cannibalization_notes: distinct from elevenlabs tutorial (how-to) and heygen-elevenlabs comparatif. This is a dated news/alert with migration steps.
 - checker: pass (audit 0 err, build prerendered 137KB)
 - published_commit: 5169676 (merge ad2e2b0)
+
+### 2026-08-26 — Intégrer l'IA dans une boîte de production en 6 semaines
+- slug: integrer-ia-boite-production-depart
+- locale: fr
+- url: https://frankhoubre.com/blog/integrer-ia-boite-production-depart
+- category: guides
+- type: evergreen / guide décideur B2B (plan 90j J16)
+- search_intent: commerciale (dirigeant de structure qui veut démarrer l'IA)
+- primary_keyword: ia boîte de production
+- secondary_keywords: intégrer ia entreprise production, pilote ia audiovisuel, ia agence vidéo, transparence ia contenu généré
+- sources: article 50 du règlement (UE) 2024/1689 via artificialintelligenceact.eu/article/50 (obligations applicables depuis le 2026-08-02, transition de 4 mois jusqu'au 2026-12-02 pour le marquage lisible par machine des systèmes mis sur le marché EEE avant le 2026-08-02, divulgation côté déployeurs, exception œuvres limitée à révéler l'existence du contenu généré) ; code de bonnes pratiques de la Commission sur la transparence des contenus générés par IA via digital-strategy.ec.europa.eu (publié le 2026-06-10, environ 190 signataires fin juillet 2026, adhésion volontaire) ; texte de référence sur eur-lex.europa.eu/eli/reg/2024/1689/oj. Recoupé par recherche web le 2026-08-26 : le Digital Omnibus sur l'IA (en vigueur le 2026-07-27) n'a PAS reporté le gros de l'article 50. Tarif conseil 4 200 EUR HT/jour relevé dans src/app/prestation/page.tsx. Aucun chiffre inventé ; deux fabrications du premier jet supprimées à la passe antislop-copywriting (une statistique « la moitié des cas » et un prix « 40 000 € »).
+- internal_links: -> /prestation (pilier), /outils/calculateur-budget-production-ia, clause-contrat-client-contenu-genere-ia, checklist-avant-livrer-video-ia-client, combien-coute-court-metrage-ia-2026, formation-interne-equipe-creative-ia, comment-optimiser-workflow-ia-gagner-temps ; entrants réciproques ajoutés depuis formation-interne-equipe-creative-ia et comment-optimiser-workflow-ia-gagner-temps
+- cta: /prestation (mission de conseil, cadrage en une journée)
+- cannibalization_notes: distinct de formation-interne-equipe-creative-ia (programme de montée en compétence, qui vient APRÈS le pilote) et de comment-optimiser-workflow-ia-gagner-temps (optimisation individuelle, pas structurelle). Ici : le démarrage cadré au niveau de la structure. La distinction est écrite explicitement dans les trois articles.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag, build PASS 574 pages, article prérendu)
+- published_commit: f16bdae
