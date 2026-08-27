@@ -24,6 +24,8 @@ Le troisième principe est la texture. Une extension “trop propre” se voit i
 
 Le quatrième principe est la retenue. L’extension est un outil de cadrage, pas un redesign total. Plus tu demandes à Firefly de reconstruire un monde complet, plus le risque d’artefacts grimpe.
 
+Depuis le passage de Firefly Image 5 en version stable, la matière générée sur les bords tient mieux au zoom, ce qui change surtout les extensions larges. Si tu veux savoir ce que cette version apporte ailleurs que sur l’extension de plan, j’ai remis à jour [mon test complet d’Adobe Firefly](/blog/adobe-firefly-avis) avec les nouveautés 2026.
+
 ## Workflow de tranchée: étendre un plan sans le détruire
 
 ### Étape 1: préparer le plan source comme un élément VFX

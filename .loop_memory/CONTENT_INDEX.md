@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-08-26T08:02:47.750Z
+> Generated: 2026-08-27T08:10:49.538Z
 
 ## FR : 298 articles (/blog/<slug>)
 
@@ -207,7 +207,7 @@ Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 11,
 | 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | Meilleur générateur d’image IA gratuit et sans inscription |
 | 2026-04-24 | tutoriels | `midjourney-vs-dalle-3-concept-art` | Midjourney vs DALL·E 3 : lequel choisir pour le concept art ? |
 | 2026-04-24 | tutoriels | `personnages-coherents-plusieurs-images-ia` | Tutoriel complet : comment créer des personnages cohérents sur plusieurs images |
-| 2026-04-23 | comparatifs | `adobe-firefly-avis` | Adobe Firefly : test complet, qualité, limites et cas d’usage |
+| 2026-04-23 | comparatifs | `adobe-firefly-avis` | Adobe Firefly 5 testé : ce qui change vraiment en 2026 |
 | 2026-04-23 | comparatifs | `alternatives-midjourney` | Les meilleures alternatives à Midjourney en 2026 |
 | 2026-04-23 | tutoriels | `chatgpt-image-dalle-guide` | DALL·E et ChatGPT Image : guide complet, différences, prix et usages |
 | 2026-04-23 | business | `comment-convaincre-client-video-ia` | Comment convaincre un client avec une vidéo IA (preuve, pas promesse) |
