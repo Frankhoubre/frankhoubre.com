@@ -1,6 +1,70 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-26 (J16 publié)
+## Last run: 2026-08-27 (J17 publié, jour UPDATE)
+
+### What happened
+- J17 du plan 90 jours est un jour UPDATE : aucun nouveau slug créé, l'article
+  existant `adobe-firefly-avis` a été enrichi pour couvrir Firefly Image 5.
+  URL et `date` d'origine (2026-04-23) préservées, `dateModified` = 2026-08-27.
+  Publié à la date prévue, le calendrier ne glisse pas. J18 = 2026-08-28.
+- Recentrage sur l'intention « adobe firefly 5 » : titre
+  « Adobe Firefly 5 testé : ce qui change vraiment en 2026 » (54 car.),
+  excerpt refait (142 car.), 2798 -> 3623 mots, 2 H2 entièrement neufs
+  (« Ce que Firefly Image 5 change concrètement » et « Adobe fait maintenant
+  tourner les modèles des autres chez lui »).
+- Faits vérifiés le 2026-08-27 sur les sources officielles Adobe uniquement,
+  aucun inventé : Image Model 5 en bêta publique le 2025-10-28 à MAX
+  (génération native 4 MP sans upscale, portraits anatomiquement plus justes,
+  Prompt to Edit, édition par calques annoncée comme « in development » et
+  formulée comme telle dans l'article) ; disponibilité générale le 2026-03-19,
+  en même temps que les modèles personnalisés en bêta publique et l'accès à
+  plus de 30 modèles dont Nano Banana 2, Veo 3.1, Gen-4.5, Kling 2.5 Turbo ;
+  AI Markup disponible et Precision Flow en bêta au 2026-04-09 ; assistant
+  Firefly en bêta publique et Creative AI Studio en bêta privée au 2026-06-18 ;
+  Generate Music / Speech / Sound Effects en disponibilité générale au
+  2026-08-20.
+- AUCUN tarif Firefly publié : la page de plans adobe.com et le helpx sur les
+  crédits génératifs ont expiré en timeout, et les seules valeurs disponibles
+  venaient de comparateurs tiers qui se contredisaient. Deux affirmations sont
+  marquées explicitement comme observations personnelles (fragilité du texte
+  dans l'image, zones anatomiques encore à vérifier).
+- Nettoyage éditorial de l'ancien article au passage : 3 titres H2 encore en
+  anglais issus du vieux template traduits, « Frank's Cut » corrigé en
+  « Le cut de Frank », backticks de mot-clé retirés de l'intro, FAQ passée de
+  4 à 7 questions, conclusion ajoutée.
+- Lien entrant réciproque ajouté depuis
+  `photoshop-firefly-etendre-plans-ia-generative`, comme le plan le demandait.
+- Passe anti-slop complète (humanizer, unslop-text, antislop-copywriting) :
+  3 parallélismes négatifs ramenés à 0 sous cette forme, 4 signposting
+  supprimés, 1 hit HIGH du scanner corrigé (label gras suivi de deux-points),
+  4 chiffres fabriqués supprimés du premier jet plus 1 seuil inventé dans le
+  tableau, et deux correctifs structurels : une section convertie en prose pour
+  casser trois listes numérotées d'affilée, et l'énumération mécanique
+  « premier / deuxième / troisième / quatrième point » cassée.
+- Les 3 images de juillet ont été REMPLACÉES : elles portaient du texte lisible
+  partout et le hero était le cliché interdit du bureau avec café et écrans ;
+  workflow-2 n'était même pas référencée dans l'article. Nouvelles scènes :
+  abribus sous la pluie à l'heure bleue, train de banlieue le matin, boutique
+  de mode après la fermeture. Propres du premier coup, aucune régénération.
+- Le fichier a été réécrit en LF : le total d'erreurs seo_audit passe de 1990 à
+  1986, les 4 erreurs de l'artefact CRLF sur ce slug disparaissent.
+
+### Notes outillage
+- Le scanner unslop-text est anglophone : sur du français un score vert ne
+  prouve rien, toutes les corrections réelles viennent de la lecture manuelle.
+- `render_blog_queue_nanobanana.py` n'accepte PAS `--slug`, seulement `--dest`
+  et `--prompt`, doit être lancé via PowerShell (MSYS casse les chemins), et
+  IGNORE une image déjà présente au-dessus de `--min-bytes` : sur un jour
+  UPDATE qui remplace des images existantes, `--force` est obligatoire.
+- Les pages adobe.com/products/firefly/plans.html et le helpx generative-credits
+  expirent systématiquement en timeout via WebFetch. Ne pas publier de tarif
+  Adobe tant qu'une source officielle n'est pas lisible.
+- Flag `meta 0c` sur `photoshop-firefly-etendre-plans-ia-generative` (score 94) :
+  préexistant, même artefact CRLF, pas causé par le lien entrant ajouté.
+- Écrire les longues entrées de log via un fichier scratch + PowerShell : le
+  heredoc bash casse sur ces textes (guillemets français et apostrophes).
+
+## Previous run: 2026-08-26 (J16 publié)
 
 ### What happened
 - Publication du J16 du plan 90 jours : `integrer-ia-boite-production-depart`

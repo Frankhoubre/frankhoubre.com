@@ -1282,6 +1282,22 @@ article block goes below this line.
 - checker: pass (audit 0 err, build prerendered 137KB)
 - published_commit: 5169676 (merge ad2e2b0)
 
+### 2026-08-27 — Adobe Firefly 5 testé : ce qui change vraiment en 2026 (UPDATE)
+- slug: adobe-firefly-avis
+- locale: fr
+- url: https://frankhoubre.com/blog/adobe-firefly-avis
+- category: comparatifs
+- type: UPDATE d'un article existant (plan 90j J17), pas une création. URL et date d'origine 2026-04-23 préservées, dateModified 2026-08-27, 2798 -> 3623 mots
+- search_intent: commerciale (choisir ou garder Firefly après la sortie d'Image 5)
+- primary_keyword: adobe firefly 5
+- secondary_keywords: firefly image model 5, adobe firefly avis, firefly modèles personnalisés, firefly 4 mégapixels, prompt to edit
+- sources: news.adobe.com/news/2025/10/adobe-max-2025-firefly (Image Model 5 en bêta publique le 2025-10-28, génération native 4 MP sans upscale, portraits anatomiquement plus justes, Prompt to Edit, Layered Image Editing annoncée « in development ») ; blog.adobe.com 2026-03-19 (Image Model 5 « now generally available », modèles personnalisés en bêta publique orientés personnage/illustration/photo, plus de 30 modèles dont Nano Banana 2, Veo 3.1, Runway Gen-4.5, Kling 2.5 Turbo, Quick Cut, Project Moonlight en bêta privée) ; blog.adobe.com 2026-04-09 (AI Markup disponible, Precision Flow en bêta, Generative Fill/Remove/Expand/Upscale) ; blog.adobe.com 2026-06-18 (assistant Firefly en bêta publique, Creative AI Studio en bêta privée avec Elements et Projects) ; blog.adobe.com 2026-08-20 (Generate Music, Speech et Sound Effects en disponibilité générale). AUCUN tarif publié : pages de plans Adobe et helpx crédits génératifs en timeout, sources tierces contradictoires. Deux affirmations marquées comme observations personnelles (fragilité du texte dans l'image, zones anatomiques à vérifier).
+- internal_links: -> alternatives-midjourney, ideogram-recraft-leonardo-comparatif, comment-generer-images-ia-photorealistes-sans-effet-plastique, comment-ecrire-prompt-cinematic-ultra-realiste-ia, photoshop-firefly-etendre-plans-ia-generative, meilleur-generateur-image-ia, midjourney-guide-complet ; entrant réciproque ajouté depuis photoshop-firefly-etendre-plans-ia-generative comme prévu au plan
+- cta: aucun CTA produit, article de test pur
+- cannibalization_notes: nul par construction, l'UPDATE renforce l'existant au lieu de créer un doublon. Distinction maintenue avec photoshop-firefly-etendre-plans-ia-generative : là-bas l'extension de plan dans Photoshop, ici le test du modèle et le choix d'outil. Lien croisé dans les deux sens.
+- checker: pass (seo_audit 0 issue pour ce slug et total en baisse 1990 -> 1986 grâce à la réécriture en LF, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / 10 liens internes / 7 externes, build PASS, article prérendu)
+- published_commit: 4c565e4
+
 ### 2026-08-26 — Intégrer l'IA dans une boîte de production en 6 semaines
 - slug: integrer-ia-boite-production-depart
 - locale: fr
