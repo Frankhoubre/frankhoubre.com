@@ -1282,6 +1282,22 @@ article block goes below this line.
 - checker: pass (audit 0 err, build prerendered 137KB)
 - published_commit: 5169676 (merge ad2e2b0)
 
+### 2026-08-28 — Prompts cinéma : 40 plans types qui marchent vraiment
+- slug: bibliotheque-prompts-cinema-plans-types
+- locale: fr
+- url: https://frankhoubre.com/blog/bibliotheque-prompts-cinema-plans-types
+- category: guides
+- type: evergreen / ressource (plan 90j J18), 4950 mots, 40 blocs de prompts numérotés
+- search_intent: info (trouver des formulations de prompt prêtes à l'emploi par valeur de plan)
+- primary_keyword: prompt cinéma ia
+- secondary_keywords: prompt plan cinéma, bibliothèque de prompts, valeur de plan ia, prompt plan d'ensemble, prompt gros plan, prompt travelling
+- sources: guide officiel de prompt pour la génération vidéo de Google Cloud (cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide) : découpage en sujet / action / décor et contexte / angle de caméra / mouvement de caméra / optique et effets / style visuel, avertissement explicite de la doc selon lequel certains angles et certaines optiques avancées ne sont pas officiellement supportés et que leur fiabilité varie, plus le vocabulaire cité mot pour mot (eye-level, low-angle, high-angle, bird's-eye, worm's-eye, dutch angle, close-up, extreme close-up, medium, full, wide/establishing, over-the-shoulder, POV, static, pan, tilt, dolly, truck, pedestal, zoom, crane, aerial, handheld, whip pan, arc, rack focus, effet vertigo alias dolly zoom) ; doc vidéo de l'API Gemini (ai.google.dev/gemini-api/docs/video) ; theasc.com. Les 40 blocs de prompt sont une construction maison, présentée comme telle, pas une citation. Aucun chiffre de fiabilité inventé : les trois affirmations de ce type sont formulées en observation personnelle.
+- internal_links: -> comment-ecrire-prompt-cinematic-ultra-realiste-ia, comment-utiliser-objectifs-camera-dans-prompt-ia, comment-construire-scene-cinematique-plan-par-plan, prompt-negatif-video-ia-a-quoi-ca-sert, /outils/generateur-prompt-cinema ; entrants réciproques ajoutés depuis comment-ecrire-prompt-cinematic-ultra-realiste-ia et comment-construire-scene-cinematique-plan-par-plan
+- cta: doux, vers l'outil gratuit /outils/generateur-prompt-cinema, décrit avec ses vrais champs relevés dans page.tsx. Aucune mention ScreenWeaver, le sujet ne s'y prêtait pas.
+- cannibalization_notes: moyen avec comment-ecrire-prompt-cinematic-ultra-realiste-ia, parade appliquée comme prévu au plan. L'existant garde la MÉTHODE d'écriture, le nouveau est la BIBLIOTHÈQUE d'exemples classés par valeur de plan. La distinction est écrite dans les deux articles et les deux se lient. Même séparation tenue avec comment-utiliser-objectifs-camera-dans-prompt-ia (focales), comment-decrire-lumiere-directeur-photo-prompt (lumière) et comment-construire-scene-cinematique-plan-par-plan (découpage) : le nouvel article renvoie vers eux plutôt que de refaire leur travail.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / 8 liens internes / 3 externes / FAQ 8 questions, build PASS 575 pages, article prérendu). Fichier écrit en LF pour éviter l'artefact CRLF du checker.
+- published_commit: PENDING
+
 ### 2026-08-27 — Adobe Firefly 5 testé : ce qui change vraiment en 2026 (UPDATE)
 - slug: adobe-firefly-avis
 - locale: fr

@@ -42,6 +42,8 @@ Le secret, c’est la continuité. Même personnage, même logique lumière, mê
 | Close-up | émotion | visage instable |
 | Reaction | conséquence | coupe trop rapide |
 
+Si tu veux les formulations exactes à coller pour chacune de ces valeurs de plan, elles sont rassemblées dans la [bibliothèque de 40 prompts cinéma par plan type](/blog/bibliotheque-prompts-cinema-plans-types).
+
 ![Image contextuelle 1, shotlist narrative.](/images/blog/comment-construire-scene-cinematique-plan-par-plan/workflow-1.webp)
 
 

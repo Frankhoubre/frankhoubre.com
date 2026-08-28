@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-08-27T08:10:49.538Z
+> Generated: 2026-08-28T08:08:02.828Z
 
-## FR : 298 articles (/blog/<slug>)
+## FR : 299 articles (/blog/<slug>)
 
-Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 11, analyses 10, notes 1, postproduction 1
+Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 12, analyses 10, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-08-28 | guides | `bibliotheque-prompts-cinema-plans-types` | Prompts cinéma : 40 plans types qui marchent vraiment |
 | 2026-08-26 | guides | `integrer-ia-boite-production-depart` | Intégrer l'IA dans une boîte de production en 6 semaines |
 | 2026-08-25 | analyses | `combien-coute-court-metrage-ia-2026` | Combien coûte un court-métrage IA en 2026 |
 | 2026-08-24 | guides | `minimax-hailuo-prix-credits-formules` | MiniMax Hailuo : crédits, prix et formules expliqués |

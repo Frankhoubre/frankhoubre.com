@@ -1,6 +1,52 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-27 (J17 publié, jour UPDATE)
+## Last run: 2026-08-28 (J18 publié)
+
+### What happened
+- J18 du plan 90 jours publié à la date prévue : `bibliotheque-prompts-cinema-plans-types`
+  (catégorie `guides`, 4950 mots, 11 H2, FAQ 8 questions). Le calendrier ne
+  glisse pas ce jour, donc J19 = 2026-08-29 (`kling-vs-veo-3-choisir-par-plan`).
+- Angle : ressource, pas méthode. 40 blocs de prompts numérotés, classés par
+  famille (12 plans d'installation, 12 plans de visage et de dialogue, 8
+  mouvements, 8 plans de détail et de transition), copiables tels quels.
+  C'est la parade anti-cannibalisation prévue au plan face à
+  `comment-ecrire-prompt-cinematic-ultra-realiste-ia`, qui garde la méthode
+  d'écriture. La distinction est écrite dans les deux articles.
+- Faits vérifiés le 2026-08-28 sur la source officielle uniquement : le guide
+  de prompt vidéo de Google Cloud (découpage sujet / action / décor / angle /
+  mouvement / optique / style, et son avertissement explicite sur les angles et
+  optiques avancés qui ne sont pas officiellement supportés). Les 40 blocs sont
+  une construction maison présentée comme telle. Les trois affirmations de
+  fiabilité sont formulées en observation personnelle, pas en fait.
+- Liens entrants réciproques ajoutés depuis
+  `comment-ecrire-prompt-cinematic-ultra-realiste-ia` et
+  `comment-construire-scene-cinematique-plan-par-plan`.
+- 3 images Nano Banana 2, scènes dérivées du contenu réel de l'article : ruelle
+  pavée à l'heure bleue sous la pluie (hero), salle de répétition avec plaque
+  blanche en plein jour (workflow-1), intérieur de voiture la nuit sous la pluie
+  (workflow-2). Propres du premier coup, aucun texte ni logo, aucun décor
+  recyclé des 5 derniers heros.
+
+### Notes outillage
+- L'artefact CRLF des checkers est maintenant diagnostiqué et chiffré. Le repo
+  a `core.autocrlf=true`, donc tout le worktree est en CRLF. `seo_audit.mjs` et
+  `editorial_audit.mjs` perdent alors la totalité du frontmatter, parce que leur
+  regex `^([A-Za-z0-9_]+):\s*(.*)$` ne matche pas quand la ligne finit par `\r`
+  (`$` ne tolère pas le `\r` en JS hors mode multiligne). Seule la dernière
+  ligne du bloc passe. Résultat : 1990 erreurs fantômes sur 531 fichiers.
+  `build_ledger.mjs` a déjà le correctif (`split(/\r?\n/)`) avec un commentaire
+  qui décrit exactement ce piège, il n'a jamais été reporté sur les deux autres.
+  Vérifié en rejouant les deux audits sur des copies patchées : 0 erreur au lieu
+  de 1990. Les scripts n'ont pas été modifiés (hors périmètre du run). Voir
+  ERRORS_AND_BLOCKERS.md.
+- Contournement appliqué en attendant : écrire les nouveaux articles en LF
+  (déjà fait au J17 et au J18), ce qui les rend lisibles par le checker.
+- `render_blog_queue_nanobanana.py` n'a pas d'option `--slug`, seulement `--dest`
+  et `--prompt`. Et depuis Git Bash il faut préfixer `MSYS_NO_PATHCONV=1`, sinon
+  le `/images/blog/...` du `--dest` est converti en chemin Windows et le script
+  essaie d'écrire dans `C:\Program Files\Git\images`.
+
+## Previous run: 2026-08-27 (J17 publié, jour UPDATE)
 
 ### What happened
 - J17 du plan 90 jours est un jour UPDATE : aucun nouveau slug créé, l'article

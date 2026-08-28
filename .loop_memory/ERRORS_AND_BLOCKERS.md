@@ -3,6 +3,40 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## OUVERT 2026-08-28 — les deux checkers perdent tout le frontmatter sur un worktree CRLF
+
+**Symptôme.** `node .loop_scripts/seo_audit.mjs` rapporte 1990 erreurs sur 531
+fichiers, dont « Missing title / Invalid date / Missing category / Missing
+excerpt » sur quasiment TOUS les articles, y compris ceux publiés depuis des
+mois et jamais touchés. `editorial_audit.mjs` a le même défaut.
+
+**Cause identifiée.** Le repo a `core.autocrlf=true`, donc tout le worktree est
+en CRLF (le contenu commité, lui, reste en LF). Les deux scripts découpent le
+frontmatter avec `split("\n")` puis testent `line.match(/^([A-Za-z0-9_]+):\s*(.*)$/)`.
+Chaque ligne garde alors un `\r` final, et en JS hors mode multiligne `$` ne
+tolère pas ce `\r` : le match échoue. Seule la dernière ligne du bloc (celle que
+`.trim()` a nettoyée, en pratique `thumbnail`) est lue. D'où 4 erreurs de méta
+par article, sur tout le site.
+
+**Preuve.** Les deux audits rejoués sur des copies patchées (une seule ligne
+changée, normaliser les CRLF à la lecture) donnent **0 erreur** au lieu de 1990,
+pour 537 warnings.
+
+**Le correctif existe déjà ailleurs dans le repo.** `.loop_scripts/build_ledger.mjs`
+utilise `split(/\r?\n/)` et porte même un commentaire qui décrit exactement ce
+piège. Il n'a simplement jamais été reporté sur `seo_audit.mjs` et
+`editorial_audit.mjs`.
+
+**Pourquoi ce n'est pas corrigé aujourd'hui.** Modifier les scripts de gate est
+hors périmètre d'un run de publication quotidien : ça change le comportement de
+la porte pour tous les runs suivants. À décider par Frank. Deux options :
+aligner les deux scripts sur `build_ledger.mjs` (une ligne chacun), ou ajouter
+un `.gitattributes` avec `*.md text eol=lf` pour normaliser le worktree.
+
+**Contournement en place.** Les articles neufs sont écrits en LF (J17 et J18),
+ce qui les rend lisibles par le checker et permet de vérifier réellement le
+travail du jour. Tant que le reste du site est en CRLF, le total global d'erreurs
+reste du bruit : ne juger un run que sur les lignes qui concernent son slug.
 ## RESOLVED 2026-08-03 (same day, Frank's instruction) — image pipeline switched to Nano Banana 2
 
 Frank gave a Vercel AI Gateway key and instructed: never use the Higgsfield

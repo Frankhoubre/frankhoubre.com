@@ -157,6 +157,7 @@ Si tu sors d’un shooting photo et que tu veux parler comme sur un plateau, gar
 
 ## Liens utiles dans la série AI Studio
 
+- [Prompts cinéma : 40 plans types prêts à copier](/blog/bibliotheque-prompts-cinema-plans-types), la bibliothèque qui applique cette méthode plan par plan
 - [Comment décrire la lumière comme un directeur photo dans un prompt](/blog/comment-decrire-lumiere-directeur-photo-prompt)
 - [Comment contrôler le style visuel en génération IA](/blog/comment-controler-style-visuel-generation-ia)
 - [Comment simuler un objectif anamorphique en génération IA](/blog/comment-simuler-objectif-anamorphique-generation-ia)
