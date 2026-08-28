@@ -1296,7 +1296,7 @@ article block goes below this line.
 - cta: doux, vers l'outil gratuit /outils/generateur-prompt-cinema, décrit avec ses vrais champs relevés dans page.tsx. Aucune mention ScreenWeaver, le sujet ne s'y prêtait pas.
 - cannibalization_notes: moyen avec comment-ecrire-prompt-cinematic-ultra-realiste-ia, parade appliquée comme prévu au plan. L'existant garde la MÉTHODE d'écriture, le nouveau est la BIBLIOTHÈQUE d'exemples classés par valeur de plan. La distinction est écrite dans les deux articles et les deux se lient. Même séparation tenue avec comment-utiliser-objectifs-camera-dans-prompt-ia (focales), comment-decrire-lumiere-directeur-photo-prompt (lumière) et comment-construire-scene-cinematique-plan-par-plan (découpage) : le nouvel article renvoie vers eux plutôt que de refaire leur travail.
 - checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / 8 liens internes / 3 externes / FAQ 8 questions, build PASS 575 pages, article prérendu). Fichier écrit en LF pour éviter l'artefact CRLF du checker.
-- published_commit: PENDING
+- published_commit: 502530a
 
 ### 2026-08-27 — Adobe Firefly 5 testé : ce qui change vraiment en 2026 (UPDATE)
 - slug: adobe-firefly-avis
