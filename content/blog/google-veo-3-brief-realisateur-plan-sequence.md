@@ -181,6 +181,11 @@ En interne, garde à portée /blog/comment-ecrire-prompt-cinematic-ultra-realist
 comme-vrai-film, /blog/comment-ajouter-realisme-post-production-video-ia et /blog/comment-transformer-image-ia-video-
 fluide-credible. Quatre liens pertinents suffisent pour continuer à progresser sans te noyer dans des lectures infinies.
 
+Un point que ce brief ne tranche pas: savoir si le plan doit partir chez Veo au départ. La fenêtre de 8 secondes, l audio
+natif et les images de référence dessinent un périmètre précis, et sur un découpage complet une partie des plans gagne à
+partir ailleurs. J ai posé la règle de tri dans mon comparatif [Kling ou Veo 3 selon le type de
+plan](/blog/kling-vs-veo-3-choisir-par-plan), avec les durées et le coût à la seconde relevés sur les pages officielles.
+
 
 ## Cadence d équipe, feedback client, et exécution durable
 

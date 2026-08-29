@@ -175,6 +175,8 @@ Quand l'interface propose **Motion Control** ou référence vidéo de mouvement,
 | Main + objet petit | Élevée | Découper en 2 plans | 3 s |
 | Orbite 360 | Très élevée | Éviter en prod | 2 s test seulement |
 
+Ce pipeline suppose que le plan a déjà été attribué à Kling. Si tu hésites encore entre les moteurs sur un découpage complet, mon comparatif [Kling ou Veo 3 selon le type de plan](/blog/kling-vs-veo-3-choisir-par-plan) donne la règle de tri, durées et coût à la seconde à l'appui.
+
 ## Troubleshooting : animations qui cassent
 
 **Effet gelée puis saccade.** Cause : force mouvement trop haute sur pilote statique. Fix : baisse force, ou pilote avec léger flou de mouvement directionnel simulé en image (avec prudence).

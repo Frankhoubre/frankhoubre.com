@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-08-28T08:08:02.828Z
+> Generated: 2026-08-29T08:07:05.199Z
 
-## FR : 299 articles (/blog/<slug>)
+## FR : 300 articles (/blog/<slug>)
 
-Categories: tutoriels 187, actualite 53, business 18, comparatifs 17, guides 12, analyses 10, notes 1, postproduction 1
+Categories: tutoriels 187, actualite 53, comparatifs 18, business 18, guides 12, analyses 10, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-08-29 | comparatifs | `kling-vs-veo-3-choisir-par-plan` | Kling ou Veo 3 : quel moteur selon le type de plan |
 | 2026-08-28 | guides | `bibliotheque-prompts-cinema-plans-types` | Prompts cinéma : 40 plans types qui marchent vraiment |
 | 2026-08-26 | guides | `integrer-ia-boite-production-depart` | Intégrer l'IA dans une boîte de production en 6 semaines |
 | 2026-08-25 | analyses | `combien-coute-court-metrage-ia-2026` | Combien coûte un court-métrage IA en 2026 |

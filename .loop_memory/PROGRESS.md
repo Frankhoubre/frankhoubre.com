@@ -1,6 +1,52 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-28 (J18 publié)
+## Last run: 2026-08-29 (J19 publié)
+
+### What happened
+- J19 du plan 90 jours publié à la date prévue : `kling-vs-veo-3-choisir-par-plan`
+  (catégorie `comparatifs`, ~3900 mots, 9 H2, 15 H3, FAQ 8 questions, 0 remarque
+  aux deux audits). Le calendrier ne glisse pas ce jour, donc J20 = 2026-08-30,
+  et c'est un jour UPDATE (`metiers-audiovisuel-ia-menaces-transformation-avis`).
+- Angle : arbitrage entre moteurs, plan par plan. L'article ne refait ni le
+  pipeline Kling ni le brief Veo, c'est la parade anti-cannibalisation prévue au
+  plan. `workflow-kling-3-animation-fluide-realiste` et
+  `google-veo-3-brief-realisateur-plan-sequence` restent piliers de leur outil
+  et reçoivent chacun un lien entrant réciproque.
+- Le critère de tri numéro un pour un lecteur francophone est une limite
+  documentée que je n'ai vue nulle part ailleurs : la sortie voix de Kling v3
+  couvre le chinois et l'anglais, les autres langues sont traduites
+  automatiquement vers l'anglais. Donc pas de lip-sync français natif chez Kling.
+- Faits vérifiés le 2026-08-29 sur sources officielles uniquement, aucun inventé :
+  doc Veo de l'API Gemini (durées 4/6/8 s, 1080p et 4K réservés aux générations
+  de 8 s, 16:9 et 9:16, audio natif toujours actif, 3 images de référence max,
+  prolongation en 720p seulement, Lite sans 4K ni prolongation) ; tarifs API
+  Gemini ; fiches et schémas fal.ai pour Veo 3.1 et Kling v3 Standard/Pro
+  (durée 3 à 15 s, formats 16:9/9:16/1:1, `shot_type` customize ou intelligent,
+  prix à la seconde avec et sans audio) ; date de sortie stable de Kling 3.0 au
+  2026-02-07 attribuée à Wikipédia dans le texte.
+- Assumé explicitement dans une section « ce que ce comparatif ne dit pas » :
+  aucune note de qualité d'image, aucune résolution Kling. Les sources tierces se
+  contredisent, je préfère ne rien affirmer.
+- 3 images Nano Banana 2, scènes dérivées du contenu réel : falaise côtière à
+  l'aube avec viseur de réalisatrice (hero, plan large d'établissement), table de
+  cuisine avec perche son en plein jour (workflow-1, plan de dialogue), salle de
+  bloc la nuit avec gimbal (workflow-2, plan de mouvement complexe). Propres du
+  premier coup, aucun texte lisible ni logo, aucun décor recyclé des 5 derniers
+  heros.
+
+### Notes outillage
+- Les deux pièges de `render_blog_queue_nanobanana.py` déjà notés au J18 (pas
+  d'option `--slug`, et `MSYS_NO_PATHCONV=1` obligatoire depuis Git Bash) ont été
+  retouchés en direct ce run faute d'avoir relu ce fichier avant de lancer les
+  images. Le plus simple reste de générer depuis PowerShell, où le `--dest` en
+  `/images/blog/...` passe sans conversion de chemin.
+- L'artefact CRLF des checkers est toujours là et non corrigé (hors périmètre).
+  Article écrit en LF comme aux J17 et J18, d'où 0 erreur sur le nouveau slug
+  alors que les deux articles édités pour les liens entrants continuent
+  d'afficher leurs 4 erreurs fantômes de frontmatter.
+
+
+## Previous run: 2026-08-28 (J18 publié)
 
 ### What happened
 - J18 du plan 90 jours publié à la date prévue : `bibliotheque-prompts-cinema-plans-types`
