@@ -1282,6 +1282,21 @@ article block goes below this line.
 - checker: pass (audit 0 err, build prerendered 137KB)
 - published_commit: 5169676 (merge ad2e2b0)
 
+### 2026-08-29 — Kling ou Veo 3 : quel moteur selon le type de plan
+- slug: kling-vs-veo-3-choisir-par-plan
+- locale: fr
+- url: https://frankhoubre.com/blog/kling-vs-veo-3-choisir-par-plan
+- category: comparatifs
+- type: evergreen / comparatif tête à tête (plan 90j J19), ~3900 mots, arbitrage organisé par type de plan
+- search_intent: comparaison (choisir entre deux moteurs vidéo avant de générer)
+- primary_keyword: kling vs veo
+- secondary_keywords: kling ou veo 3, veo 3.1 prix, kling 3 durée, comparatif moteur vidéo ia, audio natif veo kling, coût seconde vidéo ia
+- sources: documentation Veo de l'API Gemini (ai.google.dev/gemini-api/docs/veo) : Veo 3.1 / Fast / Lite, durées 4, 6 ou 8 s, 1080p et 4K réservés aux générations de 8 s, formats 16:9 et 9:16, audio natif toujours actif, jusqu'à 3 images de référence, prolongation de scène en 720p seulement, Lite sans 4K ni prolongation, Veo 3 stable 8 s fixes en 16:9 sans image de référence ; page de tarifs de l'API Gemini (ai.google.dev/gemini-api/docs/pricing) : Veo 3.1 0,40 $/s en 720p et 1080p et 0,60 $/s en 4K, Fast 0,10 / 0,12 / 0,30, Lite 0,05 / 0,08 ; fiches et schémas fal.ai (Veo 3.1 0,20 $/s sans audio et 0,40 avec, 4K 0,40 / 0,60, Fast 0,10 / 0,15, 24 fps, 8 s par génération, prolongation jusqu'à 7 s par étape et 20 étapes soit environ 148 s ; Kling v3 Standard 0,084 / 0,126 / 0,154, Kling v3 Pro 0,112 / 0,168 / 0,196, exemple officiel 5 s avec audio et voix = 0,98 $ ; schéma Kling v3 Pro : durée 3 à 15 s seconde par seconde, formats 16:9 / 9:16 / 1:1, shot_type customize ou intelligent, sortie voix en chinois et anglais avec traduction automatique des autres langues vers l'anglais) ; sortie stable de Kling 3.0 au 2026-02-07 (Wikipédia, attribuée comme telle dans le texte)
+- internal_links: -> 2026-06-19-kling-3-turbo-previsualisation-video-ia, combien-coute-court-metrage-ia-2026, bibliotheque-prompts-cinema-plans-types, workflow-kling-3-animation-fluide-realiste, google-veo-3-brief-realisateur-plan-sequence, google-flow-veo-31-edition-audio-juin-2026. Liens entrants réciproques ajoutés depuis workflow-kling-3-animation-fluide-realiste et google-veo-3-brief-realisateur-plan-sequence
+- cta: aucun CTA produit. Le sujet ne s'y prêtait pas, l'article renvoie vers les guides outil du blog et vers les 3 sources officielles
+- cannibalization_notes: moyen selon le plan, parade appliquée telle quelle. Le nouvel article ne fait QUE l'arbitrage entre moteurs, plan par plan ; workflow-kling-3-animation-fluide-realiste garde le pipeline Kling et google-veo-3-brief-realisateur-plan-sequence garde le brief plan séquence, et les deux le disent explicitement. Distinct aussi de pika-labs-vs-runway-choisir-moteur-plan-action (autre paire de moteurs) et de meilleurs-outils-ia-video (panorama Sora / Runway / Higgsfield / Pika). Angle différenciant : la limite de langue de l'audio Kling (pas de voix française native) comme critère de tri numéro un
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit 0 flag / bucket good / 9 H2 / 15 H3 / 6 liens internes / 3 externes / FAQ 8 questions / 2 tableaux comparatifs, unslop-text 1 finding faux positif français, 0 tiret cadratin, build PASS, article prérendu)
+- published_commit: 59a5407
 ### 2026-08-28 — Prompts cinéma : 40 plans types qui marchent vraiment
 - slug: bibliotheque-prompts-cinema-plans-types
 - locale: fr
