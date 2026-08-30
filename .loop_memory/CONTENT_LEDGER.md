@@ -1359,4 +1359,4 @@ article block goes below this line.
 - cta: aucun CTA produit, article d'analyse pur
 - cannibalization_notes: nul par construction, l'UPDATE renforce l'existant au lieu de créer un doublon. Ce fichier reste le pilier CINEMA du cluster métiers ; les satellites prévus au plan (J21 monteur-video-ia-evolution-metier, J43, J71, J74) devront pointer vers lui et recevoir un lien retour à leur sortie. Aucun taux d'adoption des studios d'animation, de postproduction et de VFX publié : les pourcentages trouvés en ligne n'étaient rattachés à aucune édition précise du baromètre CNC, refus assumé et écrit dans l'article
 - checker: pass (seo_audit 0 issue pour les 3 slugs FR touchés, editorial_audit score 94 -> 100 / bucket good / 0 flag / 12 H2 / 8 liens internes / 6 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS 576 pages article prérendu, build_ledger régénéré 0 undefined). Fichier réécrit en LF comme aux J17, J18 et J19. Correction factuelle au passage : lien vidéo « Business Dynamite » qui pointait vers une vidéo Seedance 2 sans rapport, vérifié par oEmbed puis supprimé
-- published_commit: PENDING
+- published_commit: e429cb5
