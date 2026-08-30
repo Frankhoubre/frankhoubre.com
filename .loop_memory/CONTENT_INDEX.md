@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-08-29T08:07:05.199Z
+> Generated: 2026-08-30T08:01:42.665Z
 
 ## FR : 300 articles (/blog/<slug>)
 
@@ -264,7 +264,7 @@ Categories: tutoriels 187, actualite 53, comparatifs 18, business 18, guides 12,
 | 2026-04-15 | comparatifs | `traduction-scripts-ia-internationalisation-videos` | Traduction de scripts : les meilleures IA pour l'internationalisation de vos vidéos |
 | 2026-04-14 | tutoriels | `ia-page-blanche-scenarisation` | Comment l'IA peut vous aider à vaincre la page blanche en scénarisation |
 | 2026-04-14 | analyses | `intelligence-artificielle-industrie-creative-opportunites-dangers` | Intelligence artificielle et industrie créative : opportunités ou dangers ? |
-| 2026-04-14 | analyses | `metiers-audiovisuel-ia-menaces-transformation-avis` | Les métiers de l'audiovisuel menacés ou transformés par l'IA : mon avis |
+| 2026-04-14 | analyses | `metiers-audiovisuel-ia-menaces-transformation-avis` | Métiers de l'audiovisuel face à l'IA : les chiffres 2026 |
 | 2026-04-14 | tutoriels | `pourquoi-comment-se-former-ia-2026` | Pourquoi et comment se former à l'intelligence artificielle en 2026 |
 | 2026-04-14 | tutoriels | `prompts-idees-videos-youtube` | Les 10 meilleurs prompts pour trouver des idées de vidéos YouTube |
 | 2026-04-14 | tutoriels | `tome-ia-note-intention-realisation-visuelle` | Créer une note d'intention de réalisation visuelle avec Tome IA |

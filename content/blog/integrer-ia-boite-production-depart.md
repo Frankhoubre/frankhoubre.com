@@ -118,6 +118,8 @@ Le garant qualité arbitre contre la grille écrite en semaine 1. Dans une petit
 
 Reste le sponsor, celui qui débloque. Il valide le temps dégagé, il tranche quand deux projets clients se disputent la même personne, il signe la note de décision en semaine 6. Sans lui, le pilote s'éteint en semaine 3 dans un conflit d'agenda que personne n'assume.
 
+Sur ce que ces trois rôles changent poste par poste dans un métier existant, et sur les premières données d'emploi publiées par l'Observatoire Audiens, Afdas et CNC, j'ai fait le point dans mon analyse des [métiers de l'audiovisuel face à l'IA](/blog/metiers-audiovisuel-ia-menaces-transformation-avis).
+
 Après le pilote seulement vient la question de la montée en compétence collective, et là le sujet devient un vrai programme, avec des exercices et une QA commune. J'ai détaillé cette étape dans le guide sur la [formation d'une équipe créative interne à la vidéo IA](/blog/formation-interne-equipe-creative-ia). Ne la lance pas avant d'avoir un usage prouvé : former dix personnes à un workflow que personne n'a encore validé revient à payer dix fois la même erreur.
 
 ![Deux producteurs comparant deux images sur une table lumineuse dans le couloir d'une boîte de production](/images/blog/integrer-ia-boite-production-depart/workflow-2.webp)

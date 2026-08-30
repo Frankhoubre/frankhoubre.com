@@ -1,6 +1,78 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-29 (J19 publié)
+## Last run: 2026-08-30 (J20 publié, jour UPDATE)
+
+### What happened
+- J20 du plan 90 jours publié à la date prévue. Jour UPDATE : aucun nouveau
+  slug, l'article existant `metiers-audiovisuel-ia-menaces-transformation-avis`
+  est enrichi. URL et date d'origine 2026-04-14 préservées, `dateModified` passé
+  au 2026-08-30. 2804 -> 4388 mots, 10 -> 12 H2, FAQ 9 -> 11 questions, score
+  éditorial 94 -> 100 / bucket good / 0 flag. Le calendrier ne glisse pas ce
+  jour, donc J21 = 2026-08-31 (`monteur-video-ia-evolution-metier`).
+- Titre raccourci et recentré sur le mot-clé du plan : « Les métiers de
+  l'audiovisuel menacés ou transformés par l'IA : mon avis » (71 caractères,
+  au-dessus du seuil du checker) devient « Métiers de l'audiovisuel face à
+  l'IA : les chiffres 2026 » (56 caractères). La page ressort à la position 6.3
+  avec 10.9 % de CTR sur « métiers audiovisuel ia », d'où le mot-clé en tête.
+- Deux apports neufs, tous deux vérifiés le 2026-08-30, aucun inventé.
+  1. Cadre légal : article 50 du règlement (UE) 2024/1689 applicable depuis le
+     2026-08-02. Obligation de révéler qu'un deepfake est généré ou manipulé ;
+     exception pour l'œuvre manifestement artistique, créative, satirique ou
+     fictionnelle, limitée à révéler l'existence du contenu généré d'une manière
+     qui n'entrave pas l'affichage ou la jouissance de l'œuvre ; exception de
+     contrôle éditorial humain substantiel pour le texte d'intérêt public ;
+     marquage lisible par machine côté fournisseurs, avec transition jusqu'au
+     2026-12-02 pour les systèmes déjà sur le marché. C'est le même socle
+     juridique que celui vérifié au J16, réutilisé sous l'angle métier.
+  2. Données d'emploi françaises de l'Observatoire des métiers de la culture et
+     des médias à l'heure de l'IA (Audiens + Afdas + CNC), trois notes de
+     conjoncture : storyboarders (mai 2025, effectifs en légère hausse 2024
+     compris, aucun impact net observable à date) ; comédiens de doublage
+     (2025-10-07, léger recul sur deux ans attribué à la baisse de commandes et
+     non à l'IA) ; monteurs son et mixeurs (2026-07-30, +31 % d'effectifs entre
+     2018 et 2022 puis stables, aucun impact négatif documenté).
+- Angle qui fait la valeur de cette mise à jour : les données mesurées sont
+  placées juste après mon tableau d'opinion, suivies d'une section où je dis
+  explicitement où je me suis trompé (son artisanal, storyboard), plus deux
+  limites assumées (l'emploi déclaré en France ne dit rien des marchés freelance
+  étrangers ; un effectif stable peut cacher une baisse du tarif journalier).
+- Aucun taux d'adoption des studios d'animation, de postproduction et de VFX
+  publié : les pourcentages trouvés en ligne n'étaient rattachés à aucune
+  édition précise du baromètre CNC. Le refus est écrit dans l'article, comme au
+  J14 et au J19.
+- Correction factuelle trouvée en passant : le lien « Je décortique ce point
+  directement en vidéo » pointait vers une vidéo Business Dynamite intitulée
+  « SEEDANCE 2 est sorti », sans rapport avec le sujet. Vérifié par oEmbed
+  YouTube, puis supprimé avec sa phrase d'accroche.
+- Nettoyage éditorial hérité : « Frank's Cut » -> « Le cut de Frank » (même
+  correctif qu'au J17), franglais « accountable » -> « responsable », et quatre
+  fautes réelles corrigées (« ce qui doit douleur au spectateur », « si tu
+  pilotages pipelines », « L'école a-t-il encore un rôle », « plates
+  génératifs »).
+- Aucun article ne pointait vers ce pilier avant aujourd'hui. Liens entrants
+  réciproques ajoutés depuis `integrer-ia-boite-production-depart` et
+  `doublage-voix-off-cloner-diriger-voix-film`. Les liens vers les satellites
+  J21, J43, J71 et J74 prévus au plan restent à poser au fil de leurs sorties.
+- Images : aucune génération, jour UPDATE. Les 3 webp existantes sont sur le
+  disque et référencées, donc pas de contrôle anti-répétition ce run.
+
+### Notes outillage
+- Le scanner `unslop_text_scan.py` a été utile pour la première fois sur un
+  vrai tell : 9 hits HIGH, tous réels, tous dans l'ancien texte, le device
+  « **concept** : liste » répété 9 fois dans le même article. Six sur neuf
+  dégraissés, rescan à 0. La leçon tient toujours dans l'autre sens : ce hit-là
+  est une forme, pas du vocabulaire anglais, c'est pour ça que le scanner l'a vu
+  sur du français. Les 4 parallélismes négatifs et la symétrie des trois
+  paragraphes en gras, eux, n'ont été trouvés qu'à la main.
+- Piège shell confirmé : un heredoc Bash `<<'EOF'` contenant du texte français
+  long a cassé le parseur (« unexpected EOF while looking for matching »).
+  Passer par le tool Write pour déposer le script Python, puis l'exécuter via
+  PowerShell avec `py`, marche à tous les coups. C'est la méthode à reprendre
+  pour toute édition d'article un peu volumineuse.
+- `build_ledger.mjs` reste sain depuis le correctif CRLF du J14 : régénéré ce
+  run sans aucun `undefined` (300 FR, 232 EN).
+
+## Previous run: 2026-08-29 (J19 publié)
 
 ### What happened
 - J19 du plan 90 jours publié à la date prévue : `kling-vs-veo-3-choisir-par-plan`

@@ -111,6 +111,8 @@ Pour approfondir la partie légale et commerciale autour de la production IA, tu
 
 > 💡 **Frank's Cut:** en cas de doute artistique, choisis toujours la prise qui sert le personnage plutôt que la prise techniquement la plus "propre". Un film se gagne sur l’émotion, pas sur la perfection clinique.
 
+Côté métier, la note de conjoncture d'octobre 2025 de l'Observatoire Audiens, Afdas et CNC conclut que les comédiens de doublage ne sont pas directement affectés à date, et que les voix de synthèse restent trop mécaniques pour les productions exigeantes. J'ai repris ces chiffres dans mon analyse des [métiers de l'audiovisuel face à l'IA](/blog/metiers-audiovisuel-ia-menaces-transformation-avis).
+
 ### Références externes solides pour progresser sans bruit
 
 Évite de bâtir ton workflow sur des extraits viraux sans méthode. Pour comprendre les bases techniques du niveau et du loudness, la recommandation [EBU R128](https://tech.ebu.ch/publications/r128) reste une référence sérieuse. Pour les standards de diffusion plus larges, les recommandations [ITU-R BS.1770](https://www.itu.int/rec/R-REC-BS.1770/en) donnent un cadre utile. Côté édition et postproduction, la documentation [DaVinci Resolve Fairlight](https://www.blackmagicdesign.com/products/davinciresolve/fairlight) aide à structurer une chaîne audio propre.
