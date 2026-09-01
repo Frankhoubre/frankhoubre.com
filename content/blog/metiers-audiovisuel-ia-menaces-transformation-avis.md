@@ -69,6 +69,8 @@ Le montage s'hybride. Prémontage assisté, rough cuts plus tôt, variations pou
 
 Si tu montes, apprends à parler le langage des générateurs sans devenir esclave des presets. Tu dois savoir quand une interpolation vidéo va **casser** une expression faciale, et proposer une solution (reshoot léger, plan de secours, reframing).
 
+J'ai détaillé ce poste à part, fonction par fonction et avec les limites écrites dans la documentation d'Adobe et de Blackmagic, dans mon analyse de [ce qui change vraiment au banc de montage](/blog/monteur-video-ia-evolution-metier). Un point y ressort et vaut d'être connu avant de lire une prédiction : aucune note de conjoncture ne couvre encore les monteurs image.
+
 Pour la direction des voix et du doublage dans un monde d'outils vocaux, lis aussi notre guide sur le [doublage, voix off, clonage et direction](/blog/doublage-voix-off-cloner-diriger-voix-film).
 
 ### Écriture et conception

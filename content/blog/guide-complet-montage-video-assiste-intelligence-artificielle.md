@@ -22,6 +22,8 @@ Le montage a toujours été un art de soustraction. Tu retires jusqu’à ce que
 
 Deuxième réalité, l’IA fragmente souvent la continuité. Tu as des plans beaux, mais hétérogènes en texture, lumière, mouvement, ou jeu. Sans garde-fous de montage, ton film ressemble à une démo d’outils, pas à une oeuvre cohérente. Le rôle du monteur devient encore plus stratégique: aligner des morceaux disparates dans une intention unique.
 
+Si la question qui t'occupe est plutôt celle du métier lui-même, tarif compris, je l'ai traitée séparément dans [monteur vidéo et IA, ce qui change vraiment au banc](/blog/monteur-video-ia-evolution-metier).
+
 Troisième point, la narration passe avant la finition. Beaucoup de débutants veulent corriger le grain, booster le contraste, lisser la voix, avant d’avoir validé la compréhension de la scène. Mauvais ordre. Si le rough cut ne tient pas à nu, aucune couche esthétique ne sauvera ton montage.
 
 Un autre basculement important concerne la préparation des sources. Avant, tu composais avec des rushes limités. Maintenant, tu jongles entre rushes réels, plans générés, voix synthétiques, variantes de scripts, et parfois plusieurs versions d’une même séquence produites par différents modèles. Sans protocole de tri, tu empiles des couches incompatibles et la timeline devient illisible. En production sérieuse, je consacre toujours un temps dédié à cette "hygiène de projet" avant toute coupe fine. Cette discipline semble administrative. En pratique, c’est ce qui libère de l’espace mental pour les vraies décisions créatives.
