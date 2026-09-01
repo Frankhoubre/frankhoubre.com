@@ -1,6 +1,76 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-08-30 (J20 publié, jour UPDATE)
+## Last run: 2026-09-01 (J21 publié)
+
+### What happened
+- J21 du plan 90 jours publié : `monteur-video-ia-evolution-metier`, catégorie
+  `analyses`, 3718 mots, 10 H2, FAQ 8 questions, score éditorial 100 / bucket
+  good / 0 flag, 0 issue au seo_audit. Le plan le prévoyait le 2026-08-31 mais
+  aucun run n'a eu lieu ce jour là : le calendrier glisse d'un jour de plus,
+  donc J22 = 2026-09-02 (`audit-workflow-ia-methode-mission`).
+- Satellite du pilier `metiers-audiovisuel-ia-menaces-transformation-avis` mis à
+  jour au J20. Le lien entrant réciproque a été posé dans la section « Montage
+  et postproduction » du pilier, ce qui règle le premier des quatre liens vers
+  satellites annoncés au J20 (restent J43, J71, J74). Second lien entrant ajouté
+  depuis `guide-complet-montage-video-assiste-intelligence-artificielle`.
+- Anti-cannibalisation : parade du plan appliquée telle quelle. Le pilier garde
+  la vue d'ensemble des postes, le guide complet garde la MÉTHODE de montage,
+  `parametrer-rythme-montage-ads-ia-15s-30s` garde le rythme des formats courts,
+  `comment-monter-video-ia-capcut-comme-un-pro` garde la variante outil. Le
+  nouvel article ne traite QUE le métier et le repositionnement tarifaire.
+- Faits vérifiés le 2026-09-01 sur les sources officielles, aucun inventé.
+  1. Adobe Premiere : Media Intelligence (objets, lieux, angles de prise de vue,
+     recherche en langage naturel, analyse LOCALE sur la machine sans connexion
+     internet) ; Generative Extend (2 s de vidéo et 10 s d'audio maximum, clip
+     source d'au moins 2 s en vidéo et 3 s en audio, dialogue NON prolongé et mis
+     en sourdine, cloud Firefly, crédits génératifs, Content Credentials) ;
+     traduction automatique des sous-titres annoncée sur 27 langues.
+  2. Blackmagic : Resolve 21 en version courante sur la page What's New,
+     IntelliScript (Final Draft et texte brut), AI IntelliSearch, Magic Mask ;
+     annonce Resolve 20 d'avril 2025 (IntelliScript confronte scénario et audio
+     transcrit, prises alternatives sur pistes supplémentaires ; AI Multicam
+     SmartSwitch selon la détection du locuteur) ; DaVinci Neural Engine réservé
+     à Resolve Studio, 295 dollars en licence perpétuelle.
+  3. Observatoire des métiers à l'heure de l'IA (Audiens + Afdas + CNC) : trois
+     notes seulement, et AUCUNE sur les monteurs image.
+- Trois angles qui font la valeur de l'article. D'abord l'absence de note sur les
+  monteurs image, écrite noir sur blanc : aucun pourcentage français de
+  remplacement n'est adossé à cette source, donc l'article assume un « je ne sais
+  pas » plutôt que de recopier un chiffre invérifiable. Ensuite, IntelliScript
+  suppose un script et SmartSwitch des locuteurs identifiables, donc le
+  documentaire d'observation et le reportage sont structurellement hors de portée
+  de l'assemblage automatique. Enfin, le transfert de charge tombe sur la fiche
+  de poste de l'ASSISTANT monteur, pas du chef monteur, donné comme observation
+  de terrain et pas comme statistique.
+- Passe d'humanisation : le scanner unslop-text ne sort que 2 findings LOW, deux
+  faux positifs français (« utilise » lu comme « utilize »). Comme les jours
+  précédents, son vert n'a rien prouvé et le vrai travail a été manuel : 8
+  parallélismes négatifs sur 12 supprimés (les 2 restants sont des concessifs
+  légitimes), 2 titres de section eux-mêmes bâtis sur un parallélisme réécrits,
+  3 premières lignes de section qui répétaient leur propre titre, 4 signposting
+  remplacés par la chose annoncée, le scaffolding « Deux conséquences pratiques /
+  La première / La seconde » cassé en prose, et la dernière section sortie du
+  format liste à en-têtes gras pour ne pas enchaîner une troisième section
+  symétrique. Une preuve sociale vague corrigée (« les deux logiciels que la
+  majorité des monteurs utilisent en France », sans source, devient « que je
+  croise le plus souvent sur les projets français »).
+- Images : 3 générées via Nano Banana 2, motifs consignés dans PUBLISH_LOG pour
+  l'anti-répétition, aucun cliché interdit, aucun texte lisible, aucun motif
+  recyclé des héros des J15 à J20.
+- À RETENIR POUR LES PROCHAINS RUNS : lancer
+  `scripts/render_blog_queue_nanobanana.py` depuis PowerShell, jamais depuis Git
+  Bash. MSYS convertit l'argument `--dest /images/blog/...` en chemin Windows et
+  le script tente d'écrire hors du repo (PermissionError). Les 3 générations du
+  jour ont été perdues au premier essai pour cette raison, puis refaites.
+- Gates : lint 0 erreur (4 warnings préexistants), typecheck PASS, build PASS,
+  seo_audit 0 issue sur le nouveau slug, editorial_audit 100 / good / 0 flag,
+  build_ledger régénéré (301 FR, 232 EN).
+
+### Next
+- J22 le 2026-09-02 : `audit-workflow-ia-methode-mission` (B2B, méthode d'audit
+  de workflow IA en mission, pousser /prestation).
+
+## Previous run: 2026-08-30 (J20 publié, jour UPDATE)
 
 ### What happened
 - J20 du plan 90 jours publié à la date prévue. Jour UPDATE : aucun nouveau
