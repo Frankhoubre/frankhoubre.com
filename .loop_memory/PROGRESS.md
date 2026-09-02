@@ -88,6 +88,16 @@
   touchés, editorial_audit 100 / good / 0 flag pour les 3, build_ledger
   régénéré (302 FR, 232 EN, business 18 -> 19, 0 undefined).
 
+- Déploiement vérifié en live le 2026-09-02 : HTTP 200, les 3 webp servies aux
+  tailles du disque, les 2 liens entrants réciproques rendus. Commits `9441a25`
+  (article + images) puis `bb5559d` (mémoire + correctif de citation).
+- LEÇON DU JOUR sur les citations : la phrase de la FAQ de la Commission avait
+  été donnée traduite ENTRE GUILLEMETS alors que la page source est en anglais,
+  ce qui la rendait invérifiable telle quelle par un lecteur. Corrigé après
+  publication : la phrase originale à chercher est maintenant donnée en anglais
+  et la version française est hors guillemets. Ne jamais mettre une traduction
+  maison entre guillemets sous le nom d'une source.
+
 ### Next
 - J23 le 2026-09-03 : `reverse-prompting-methode-complete` (PROD, tutoriel
   reverse prompting, pousser `/outils/reverse-prompting-image-ia` qui fait
