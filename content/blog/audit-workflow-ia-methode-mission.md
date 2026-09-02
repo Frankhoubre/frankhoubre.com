@@ -99,7 +99,7 @@ C'est la partie de l'audit qu'on ne me demande jamais et que je fais quand même
 
 L'article 4 du règlement européen sur l'IA impose aux fournisseurs et aux déployeurs de systèmes d'IA de prendre des mesures pour développer la littératie IA de leur personnel et des personnes qui font fonctionner ces systèmes pour leur compte. Une boîte de production qui utilise des outils génératifs est un déployeur. L'obligation la concerne.
 
-La Commission européenne publie une foire aux questions dédiée qui répond précisément aux inquiétudes des dirigeants. Elle écrit que l'article 4 est entré en application le 2 février 2025 et que « les règles de supervision et d'application s'appliquent à partir du 3 août 2026 », la supervision relevant des autorités nationales de surveillance du marché et pas du bureau de l'IA. La page donne d'ailleurs deux dates à deux endroits différents, le 2 et le 3 août 2026, ce qui n'a aucune conséquence pratique aujourd'hui.
+La Commission européenne publie une foire aux questions dédiée qui répond précisément aux inquiétudes des dirigeants. Elle y écrit que l'article 4 est entré en application le 2 février 2025, et que les règles de supervision et d'application valent à partir du 3 août 2026 : la page est en anglais et la phrase exacte à chercher est « The supervision and enforcement rules apply from 3 August 2026 onwards ». La supervision revient aux autorités nationales de surveillance du marché, pas au bureau de l'IA. La même page donne d'ailleurs deux dates à deux endroits différents, le 2 et le 3 août 2026, ce qui n'a aucune conséquence pratique aujourd'hui.
 
 ![Capture de la foire aux questions de la Commission européenne sur l'obligation de littératie IA](/images/blog/audit-workflow-ia-methode-mission/workflow-2.webp)
 
