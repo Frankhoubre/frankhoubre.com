@@ -1,6 +1,99 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-01 (J21 publié)
+## Last run: 2026-09-02 (J22 publié)
+
+### What happened
+- J22 du plan 90 jours publié à la date prévue après le décalage du J21 :
+  `audit-workflow-ia-methode-mission`, catégorie `business`, 13 H2, FAQ 7
+  questions, score éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit
+  côté FR. Le calendrier ne glisse pas ce jour, donc J23 = 2026-09-03
+  (`reverse-prompting-methode-complete`).
+- Satellite commercial de `/prestation`, dont la page liste littéralement
+  « Audit de vos workflows IA image/vidéo actuels » en première intervention.
+  Intention « audit ia entreprise production ».
+- Anti-cannibalisation : les quatre voisins ont été ouverts un par un et chacun
+  garde son rôle. `integrer-ia-boite-production-depart` garde le DÉMARRAGE
+  (boîte qui part de zéro, pilote de six semaines),
+  `comment-optimiser-workflow-ia-gagner-temps` garde l'optimisation
+  individuelle du temps, `formation-interne-equipe-creative-ia` garde la montée
+  en compétence, `workflow-ia-creatif` garde le pipeline technique. Le nouvel
+  article ne traite QUE le diagnostic d'un existant qui tourne déjà.
+- Faits vérifiés le 2026-09-02 sur les sources officielles, aucun inventé.
+  1. AI Act article 4 (littératie IA) : obligation pesant sur les fournisseurs
+     ET les déployeurs, entrée en application le 2025-02-02. La FAQ officielle
+     de la Commission écrit « The supervision and enforcement rules apply from
+     3 August 2026 onwards » et, dans une AUTRE réponse de la même page, « as of
+     2 August 2026 ». Supervision confiée aux autorités nationales de
+     surveillance du marché, pas au bureau de l'IA. Amendement Digital Omnibus
+     entré en vigueur mi juillet 2026 : l'obligation reste, le niveau déterminé
+     disparaît. Aucun certificat exigé, registre interne des formations suffisant.
+  2. AI Act article 50 : applicable depuis le 2026-08-02, révélation du deepfake
+     par le déployeur, exception des œuvres manifestement artistiques limitée à
+     révéler l'existence du contenu généré sans entraver la jouissance de
+     l'œuvre, exception du contrôle éditorial humain pour le texte.
+  3. CNIL : les fiches pratiques IA « concernent uniquement la phase de
+     développement de systèmes d'IA, et non celle de déploiement ». Cité mot
+     pour mot.
+- Trois angles qui font la valeur de l'article. Le volet littératie IA traité
+  comme une ligne d'audit concrète (un registre de formation daté, montrable sur
+  papier) plutôt que comme une abstraction juridique. Le périmètre des fiches
+  CNIL, qui ne couvrent PAS le déploiement, ce qui corrige une erreur fréquente
+  chez les dirigeants. Et l'écart temps de travail / temps de cycle posé comme
+  l'indicateur numéro un, avec sa conséquence assumée : un cycle inchangé après
+  compression du temps de travail désigne le circuit de décision et pas l'outil.
+- Honnêteté : la FAQ officielle donne deux dates à deux endroits différents
+  (2 et 3 août 2026), l'article le signale au lieu de trancher en silence. Aucun
+  chiffre de résultat de mission inventé, aucun ROI, aucun pourcentage
+  d'économie. Un seuil « plus de 15 % » du premier jet a été retiré du tableau
+  faute de source et reformulé en qualitatif. Le seul montant cité est le tarif
+  public de 4 200 € HT/jour, vérifié dans `src/app/prestation/page.tsx`.
+- Passe d'humanisation, trouvaille principale du jour : QUATRE sections
+  d'affilée étaient bâties en listes à en-têtes gras, exactement le tell
+  structurel de la consigne. Trois sections ont été réécrites en prose et la
+  symétrie des quatre paragraphes à ouverture en gras de « Ce que je rends » a
+  été cassée ; trois listes ont été gardées parce qu'elles la méritent
+  (catalogue des six fuites, formule de chiffrage, découpage jour par jour).
+  Le scanner unslop-text sortait 4 HIGH réels sur les labels gras de la liste de
+  chiffrage, corrigés à la racine : score 17 -> 4, densité 3,5 -> 0,8/1k. Les 4
+  low restants sont le faux positif français connu. Corrigés à la main aussi :
+  1 parallélisme négatif, 3 signposting, 2 premières lignes de section qui
+  répétaient leur titre, 1 preuve sociale vague. Rythme après corrections : 235
+  phrases, moyenne 19,0 mots, écart-type 9,6, 8 fenêtres de 3 phrases proches.
+- Images : 2 stills Nano Banana 2 propres du premier coup, plus une VRAIE
+  capture d'écran de la FAQ « AI Literacy » de la Commission européenne placée
+  juste sous l'affirmation qu'elle prouve, légendée avec source et date. Les
+  stores vénitiens ont été explicitement exclus du prompt du héros parce qu'ils
+  revenaient deux fois dans les 6 derniers héros.
+- À RETENIR POUR LES PROCHAINS RUNS, trois points nouveaux.
+  1. `.loop_scripts/screenshot_url.sh` est écrit pour macOS (chemin en dur vers
+     `/Applications/Google Chrome.app`) et échoue sur cette machine Windows.
+     Contournement sans toucher au script : Chrome headless Windows en direct
+     (`--headless=new --virtual-time-budget=18000 --window-size=1440,900
+     --screenshot`), puis recadrage et conversion webp avec Pillow (12.3.0
+     installé, `cwebp` absent de la machine).
+  2. `scripts/render_blog_queue_nanobanana.py` n'accepte PAS `--slug`, malgré ce
+     que dit la consigne de la tâche. Seulement `--dest` et `--prompt`. Toujours
+     le lancer depuis PowerShell (rappel du J21).
+  3. Le heredoc bash ne tient pas sur un article français : le wrapper shell
+     mange les apostrophes droites, même piège que celui déjà documenté pour
+     grep. Écrire l'article avec l'outil Write, puis normaliser en LF.
+- PIÈGE LF confirmé : un `git stash push` / `pop` fait pour mesurer la baseline
+  du seo_audit reconvertit les fichiers touchés en CRLF (`core.autocrlf=true`)
+  et fait remonter les erreurs de 1983 à 1991. Renormaliser en LF APRÈS le pop.
+  Baseline mesurée : 1991 erreurs avant les modifications du jour, 1983 après,
+  soit 8 de moins que le dépôt, les 2 articles existants passant de CRLF à LF.
+  Le reste est l'artefact CRLF préexistant documenté au J18, hors périmètre.
+- Gates : lint 0 erreur (4 warnings préexistants), typecheck PASS, build PASS
+  (578 pages, article prérendu), seo_audit 0 issue sur les 3 fichiers FR
+  touchés, editorial_audit 100 / good / 0 flag pour les 3, build_ledger
+  régénéré (302 FR, 232 EN, business 18 -> 19, 0 undefined).
+
+### Next
+- J23 le 2026-09-03 : `reverse-prompting-methode-complete` (PROD, tutoriel
+  reverse prompting, pousser `/outils/reverse-prompting-image-ia` qui fait
+  12.5 % de CTR).
+
+## Previous run: 2026-09-01 (J21 publié)
 
 ### What happened
 - J21 du plan 90 jours publié : `monteur-video-ia-evolution-metier`, catégorie

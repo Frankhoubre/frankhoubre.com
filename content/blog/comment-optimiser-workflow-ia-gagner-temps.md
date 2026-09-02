@@ -154,6 +154,8 @@ Pour savoir si tu **gagnes du temps**, observe des métriques banales :
 
 Tu n’as pas besoin d’un tableau de bord NASA. Un carnet suffit si tu es régulier. Ce qui compte est la tendance sur deux semaines, pas la précision absolue.
 
+Dès qu’une équipe entière travaille sur la même chaîne, ces mesures se formalisent un peu : temps de travail, temps de cycle et taux de reprise, relevés sur un livrable témoin. J’ai détaillé le protocole complet, inventaire compris, dans ma méthode d’[audit de workflow IA appliquée en mission](/blog/audit-workflow-ia-methode-mission).
+
 ## Cas fréquent : tu es rapide au début et lent à la fin
 
 C’est le symptôme du **dette de décision**. Tu explores vite parce que tout est permis, puis la fin exige de la cohérence et ton pipeline n’a pas de vérité unique. D’où l’importance de statuts d’assets et de vérités par plan. Quand chaque plan a un fichier `APPROVED`, le montage devient de l’assemblage, pas de la archaeology.

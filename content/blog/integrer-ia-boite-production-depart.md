@@ -152,6 +152,8 @@ Il y en a un quatrième, impossible à mettre en tableau : est-ce que quelqu'un 
 
 Si les trois s'améliorent, tu généralises sur un deuxième livrable et tu recommences le cycle. Si un seul s'améliore, tu gardes l'usage sans l'étendre. Si aucun ne bouge, tu arrêtes et tu écris pourquoi. Cette note de deux pages t'évitera de refaire le même pilote dans dix-huit mois quand un nouvel outil sortira.
 
+Un an plus tard, quand plusieurs chaînes tournent et que plus personne ne sait vraiment ce qui est payé ni où le temps part, l'exercice change de nature : on ne démarre plus, on mesure l'existant. C'est le sujet de ma méthode d'[audit de workflow IA en entreprise](/blog/audit-workflow-ia-methode-mission), avec l'inventaire, les mesures et le livrable que je rends en fin de mission.
+
 Ce qu'un pilote cadré rapporte vraiment, au-delà des images, c'est qu'à la fin la boîte sait de quoi elle parle. Quand un client demande « vous faites de l'IA ? », quelqu'un peut répondre avec un exemple, un délai et un coût, au lieu d'un oui gêné.
 
 ## FAQ

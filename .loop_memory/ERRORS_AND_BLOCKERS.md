@@ -3,6 +3,38 @@
 Open issues that stop or constrain the loop. Resolve, then move to a "Resolved"
 note with the date. Newest on top.
 
+## OUVERT 2026-09-02 — outillage macOS-only et argument fantôme, contournés sans toucher au code
+
+Trois frictions rencontrées au J22, toutes contournées, aucune ne bloque la
+publication. Aucun script n'a été modifié, c'était hors périmètre du run.
+
+1. **`.loop_scripts/screenshot_url.sh` ne marche pas sur cette machine.** Le
+   chemin de Chrome y est codé en dur pour macOS
+   (`/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`) et le script
+   sort en erreur immédiatement sous Windows. Il dépend aussi de `cwebp`, absent
+   de la machine. Contournement utilisé et validé : Chrome headless Windows en
+   direct depuis `C:\Program Files\Google\Chrome\Application\chrome.exe` avec
+   `--headless=new --disable-gpu --hide-scrollbars --virtual-time-budget=18000
+   --window-size=1440,900 --screenshot=<png>`, puis recadrage de la bannière
+   cookies et conversion webp avec Pillow (12.3.0, déjà installé). Correctif
+   propre à faire un jour : détecter l'OS dans le script et basculer sur Pillow
+   quand `cwebp` manque.
+
+2. **`scripts/render_blog_queue_nanobanana.py` n'accepte pas `--slug`.** La
+   consigne de la tâche planifiée documente un appel
+   `--slug <slug> --dest ... --prompt ...`, mais le script ne connaît que
+   `--dest` et `--prompt` et sort en erreur 2 sur `--slug`. Retirer l'argument
+   suffit, le slug est déjà porté par le chemin de `--dest`.
+
+3. **Le heredoc bash est inutilisable pour écrire un article français.** Le
+   wrapper shell mange les apostrophes droites et casse le heredoc sur une
+   erreur de quote non fermée, même piège que celui déjà documenté pour les
+   motifs `grep`. Écrire l'article avec l'outil Write, puis normaliser en LF.
+
+Rappel LF associé : un `git stash push` / `pop` (utilisé pour mesurer la
+baseline du `seo_audit`) reconvertit les fichiers touchés en CRLF à cause de
+`core.autocrlf=true` et fait remonter le total d'erreurs de 1983 à 1991.
+Renormaliser en LF APRÈS le pop, sinon on republie l'artefact du J18.
 ## OUVERT 2026-08-28 — les deux checkers perdent tout le frontmatter sur un worktree CRLF
 
 **Symptôme.** `node .loop_scripts/seo_audit.mjs` rapporte 1990 erreurs sur 531
