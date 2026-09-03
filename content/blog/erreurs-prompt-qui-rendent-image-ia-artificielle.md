@@ -122,6 +122,8 @@ La partie critique reste `[SCENE DESCRIPTION]`. Elle doit décrire un plan tourn
 7. Génère deux variantes avec une seule différence.  
 8. Compare au zoom et en plein écran.
 
+Si le prompt à corriger vient d'une image de référence que tu essaies de reproduire, commence plutôt par la [méthode complète de reverse prompting](/blog/reverse-prompting-methode-complete) : elle t'apprend à lire les métadonnées du fichier avant de deviner, et à décomposer le rendu couche par couche.
+
 ### Exemple brut -> corrigé
 
 Brut:
