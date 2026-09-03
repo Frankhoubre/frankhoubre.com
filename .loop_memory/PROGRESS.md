@@ -1,6 +1,100 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-02 (J22 publié)
+## Last run: 2026-09-03 (J23 publié)
+
+### What happened
+- J23 du plan 90 jours publié à la date prévue : `reverse-prompting-methode-complete`,
+  catégorie `tutoriels`, 4453 mots, 12 H2, FAQ 7 questions, score éditorial
+  100 / bucket good / 0 flag, 0 issue au seo_audit côté FR. Le calendrier ne
+  glisse pas ce jour, donc J24 = 2026-09-04 (`erreurs-premiers-films-ia-lecons`).
+- Satellite de l'outil `/outils/reverse-prompting-image-ia` (CTR 12,5 % en GSC),
+  intention info « reverse prompting ».
+- Anti-cannibalisation : le cluster prompt est le plus dense du site, cinq
+  voisins ont été ouverts un par un et chacun garde son rôle.
+  `comment-ecrire-prompt-cinematic-ultra-realiste-ia` garde la MÉTHODE
+  d'écriture depuis une page blanche, `bibliotheque-prompts-cinema-plans-types`
+  garde la banque d'exemples, `erreurs-prompt-qui-rendent-image-ia-artificielle`
+  garde le catalogue des tics de langage,
+  `pourquoi-ton-prompt-ne-marche-pas-comment-corriger` garde le diagnostic d'un
+  prompt déjà écrit, `comment-utiliser-objectifs-camera-dans-prompt-ia` garde les
+  focales. Le nouvel article ne traite QUE la rétro-ingénierie d'une image
+  EXISTANTE, et la distinction est écrite dans le corps du texte.
+- Angle différenciant : les contenus français sur le reverse prompting ne
+  couvrent que le dernier niveau, celui du modèle de vision qui devine.
+  L'article impose une hiérarchie de sources à lire dans l'ordre (métadonnées de
+  génération, provenance signée, description en 7 couches, boucle de test) et
+  explique pourquoi 9 images sur 10 trouvées en ligne n'ont plus rien à lire.
+- Faits vérifiés le 2026-09-03 sur les sources officielles, aucun inventé.
+  1. ComfyUI, doc « Workflow Metadata » : champs `workflow` (graphe complet) et
+     `prompt` (version d'exécution), entrées texte en PNG, chaînes EXIF
+     `workflow:{JSON}` / `prompt:{JSON}` en WebP animé, tags de conteneur en
+     MP4/WebM. Restauration par glisser-déposer sur le canvas ou File > Open.
+     Échecs documentés : `--disable-metadata`, ré-encodage par une application
+     tierce, nettoyage à l'upload par les plateformes sociales. Le workflow
+     récupéré ne transporte ni modèles ni nœuds personnalisés. La page demande
+     explicitement de traiter la métadonnée embarquée comme une entrée
+     facultative et non fiable, consigne reprise telle quelle dans l'article.
+  2. AUTOMATIC1111, wiki Features : paramètres de génération ajoutés au PNG en
+     text chunk, relisibles par tout inspecteur de chunks PNG.
+  3. C2PA : action `c2pa.created` avec `digitalSourceType` sur
+     `trainedAlgorithmicMedia`, et `compositeWithTrainedAlgorithmicMedia` pour un
+     composite partiellement génératif.
+  4. contentcredentials.org/verify : formats acceptés et avertissement officiel
+     « le service est toujours en cours de déploiement » relevés sur la capture
+     elle-même, donc sourcés par l'image publiée dans l'article.
+  5. SynthID dans Gemini (support Google) : 100 Mo max, vidéo < 90 s, audio
+     < 1 h, environ 10 vérifications par type de contenu sur 24 h glissantes.
+     L'absence de tatouage signifie « pas une IA Google », pas « pas une IA ».
+     Cas indécis documentés (pas assez de détails, retouche trop légère).
+  6. Midjourney, doc « Describe » : 4 suggestions de prompt, à partir d'un
+     upload ou d'une URL, sur Discord comme sur le web, prompts plus longs sur
+     les versions récentes du moteur.
+- Honnêteté assumée : aucun taux de fiabilité inventé pour les outils. Les seuls
+  chiffres personnels (trois tours de correction, coupe de moitié au-delà de
+  80 mots, quatre seeds par tour) sont donnés comme ma pratique, jamais comme une
+  statistique.
+- Humanisation : passe en trois temps appliquée (humanizer, unslop-text,
+  antislop-copywriting). Le scanner unslop sort 1 finding, un faux positif
+  français (« utilise le » lu comme « utilize »), donc la vraie passe a été
+  manuelle contre references/tells.md. Six parallélismes négatifs
+  (« ce n'est pas X, c'est Y ») ont été trouvés dans mon propre premier jet et
+  cinq ont été réécrits, le sixième (recette / plat) étant la thèse de l'article.
+  Trois signposting supprimés (« Voici la méthode que j'applique »,
+  « Un tableau vaut mieux qu'un paragraphe », « Deux remarques sur ce tableau »).
+  La section « boucle de vérification » et la section « ce qui casse » ont été
+  converties de listes à en-têtes gras vers de la prose, pour casser la série de
+  trois sections symétriques d'affilée.
+- Maillage : 4 liens internes blog + 1 vers l'outil, 4 liens externes d'autorité.
+  Liens entrants réciproques posés depuis
+  `erreurs-prompt-qui-rendent-image-ia-artificielle` (fin du « Workflow de
+  correction en 8 minutes ») et `comment-ecrire-prompt-cinematic-ultra-realiste-ia`
+  (liste « Liens utiles dans la série AI Studio »).
+
+### Notes outillage
+- `.loop_scripts/screenshot_url.sh` est codé en dur pour le Chrome macOS
+  (`/Applications/Google Chrome.app/...`) et pour `cwebp`. Sur cette machine
+  Windows il sort « Google Chrome not found » et ne capture rien. Contourné par
+  un équivalent écrit dans le scratchpad de session (Chrome headless Windows via
+  `C:\Program Files\Google\Chrome\Application\chrome.exe`, puis Pillow pour
+  écrire le webp). Aucun fichier du repo modifié. À porter dans le script si un
+  futur run en a de nouveau besoin.
+- `scripts/render_blog_queue_nanobanana.py` doit être lancé depuis PowerShell et
+  pas depuis le Bash tool : Git Bash convertit le `--dest /images/...` en chemin
+  Windows et le script tente d'écrire dans `C:\Program Files\Git\images`.
+- Les articles anciens sont checkoutés en CRLF sur cette machine, ce qui casse le
+  parsing du frontmatter dans `seo_audit.mjs` (title, date, category et excerpt
+  vus comme manquants). Les deux fichiers touchés aujourd'hui ont été normalisés
+  en LF, le total FR passe de 1983 à 1975 erreurs. Les entrées `en/`
+  correspondantes gardent le problème, hors périmètre du jour.
+
+### Next
+- J24 = 2026-09-04 : `erreurs-premiers-films-ia-lecons` (cluster CAS, intention
+  « erreurs film ia », retour d'expérience). Cannibalisation moyenne signalée au
+  plan avec `film-ia-erreurs-raccord-incoherences-visuelles-eviter` : parade
+  prévue = REX personnel côté nouvel article, check-list technique côté existant.
+  Liens prévus vers `ronces` (J4) et `film-ia-erreurs-raccord`.
+
+## Previous run: 2026-09-02 (J22 publié)
 
 ### What happened
 - J22 du plan 90 jours publié à la date prévue après le décalage du J21 :
