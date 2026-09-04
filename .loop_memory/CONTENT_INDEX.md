@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-03T08:03:47.147Z
+> Generated: 2026-09-04T08:04:50.465Z
 
-## FR : 303 articles (/blog/<slug>)
+## FR : 304 articles (/blog/<slug>)
 
-Categories: tutoriels 188, actualite 53, business 19, comparatifs 18, guides 12, analyses 11, notes 1, postproduction 1
+Categories: tutoriels 188, actualite 53, business 19, comparatifs 18, guides 12, analyses 12, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-04 | analyses | `erreurs-premiers-films-ia-lecons` | Erreurs de film IA : les leçons de mes 3 premiers films |
 | 2026-09-03 | tutoriels | `reverse-prompting-methode-complete` | Reverse prompting : retrouver le prompt d'une image IA |
 | 2026-09-02 | business | `audit-workflow-ia-methode-mission` | Audit IA en entreprise : la méthode que j'applique |
 | 2026-09-01 | analyses | `monteur-video-ia-evolution-metier` | Monteur vidéo et IA : ce qui change vraiment au banc |

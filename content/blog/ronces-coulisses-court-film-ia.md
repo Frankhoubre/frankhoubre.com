@@ -68,6 +68,8 @@ La solution : j'ai tout arrêté et j'ai écrit un document d'une page appelé "
 
 **Un plan que j'ai abandonné.** Il y avait un plan prévu avec de l'eau qui courait le long d'une pierre. L'eau en vidéo IA reste un sujet compliqué sur des textures de pierre. Après une dizaine de générations ratées, j'ai choisi de couper le plan du montage. Ce n'est pas une défaite. C'est de la réalisation : on écrit parfois pour la contrainte, pas malgré elle.
 
+Avec le recul, plusieurs de ces impasses se répètent d'un projet à l'autre. J'ai fait le tri dans [les erreurs de mes trois premiers films IA](/blog/erreurs-premiers-films-ia-lecons), en remontant à la décision de production qui les rendait possibles.
+
 ## Ce que le film m'a appris sur la mise en scène IA
 
 Ronces m'a confirmé une chose que j'enseigne depuis le début : la mise en scène IA, c'est d'abord une décision humaine sur ce qu'on veut voir.

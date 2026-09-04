@@ -106,6 +106,8 @@ Si tu travailles sur un court métrage IA et que la question du festival t'inté
 
 Pour les coulisses techniques de Ronces, mon autre court métrage IA, l'article [Ronces : les coulisses de mon court-métrage IA](/blog/ronces-coulisses-court-film-ia) couvre le pipeline en détail. Les décisions sont différentes, mais la logique de réalisateur est la même.
 
+La version comptable de tout ça, ce que la première version réaliste de VOIDBORN a réellement coûté et ce que les deux projets suivants ont répété, est dans [les erreurs de mes trois premiers films IA](/blog/erreurs-premiers-films-ia-lecons).
+
 Pour l'animation IA dans un registre manga et anime, l'article sur les [illustrations manga et anime avec l'IA](/blog/illustrations-manga-anime-ia) donne les bases stylistiques utiles si tu veux travailler dans ce registre visuel.
 
 Et si tu veux comprendre comment penser la structure d'un film IA avant de générer la première image, le [pipeline IA de A à Z (script, storyboard, production)](/blog/pipeline-ia-script-storyboard-production-de-a-z) pose le cadre.
