@@ -1,6 +1,110 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-03 (J23 publié)
+## Last run: 2026-09-04 (J24 publié)
+
+### What happened
+- J24 du plan 90 jours publié à la date prévue : `erreurs-premiers-films-ia-lecons`,
+  catégorie `analyses`, 3117 mots, 10 H2, FAQ 7 questions, score éditorial
+  100 / bucket good / 0 flag, 0 issue au seo_audit côté FR. Le calendrier ne
+  glisse pas ce jour, donc J25 = 2026-09-05
+  (`studios-traditionnels-vs-studios-ia-2026`).
+- Cluster CAS, intention info « erreurs film ia ». Retour d'expérience sur les
+  trois projets déjà documentés du site : Ronces, VOIDBORN, Lost Garden.
+- Anti-cannibalisation : parade du plan appliquée telle quelle et écrite dans le
+  corps du texte. `film-ia-erreurs-raccord-incoherences-visuelles-eviter` garde
+  la CHECK-LIST TECHNIQUE de continuité (veste qui change de texture, lumière
+  qui pivote, raccord regard). Le nouvel article ne traite QUE les décisions de
+  production en amont qui rendent ces erreurs possibles. Distinct aussi de
+  `erreurs-prompt-qui-rendent-image-ia-artificielle` (tics de langage dans un
+  prompt) et de `pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes`
+  (rendu final).
+- Point sensible de ce run : un REX écrit sans Frank en session. Règle appliquée,
+  aucune anecdote personnelle inventée. Tout ce qui est raconté des trois films
+  vient de ce que le site publie déjà (moins de 2 min et aucun personnage visible
+  sur Ronces, Midjourney pour la bible, Kling sur la végétation, WAN sur les
+  intérieurs, ElevenLabs Music, fiche de référence par décor construite en cours
+  de route, plans coupés au montage ; première version réaliste de VOIDBORN
+  entièrement jetée ; bible écrite avant la première image sur Lost Garden,
+  épisode 1 *The Awakening of the Lantern Knight*). Aucune date, aucun budget,
+  aucun nombre de plans ajouté. Les illustrations de méthode sont formulées
+  comme méthode et pas comme souvenir daté.
+- Angle différenciant : les contenus français sur les erreurs de film IA restent
+  au niveau du rendu et du raccord. Ici chaque erreur est adossée à une
+  contrainte publiée et vérifiable (durée de génération, prix à la seconde,
+  règle de déclaration YouTube, formulaire de festival), ce qui déplace le sujet
+  vers l'écriture et le budget.
+- Faits externes vérifiés le 2026-09-04 sur les sources officielles, aucun inventé.
+  1. Doc Veo de l'API Gemini : durées 4, 6 ou 8 s, 8 s obligatoire dès qu'on
+     utilise l'extension, des images de référence ou une résolution supérieure ;
+     formats 16:9 et 9:16 uniquement ; 3 images de référence max sur Veo 3.1 et
+     3.1 Fast ; prolongation jusqu'à 148 s.
+  2. Fiche fal du modèle `fal-ai/kling-video/v3/pro/text-to-video` : durées de
+     3 à 15 s, 0,112 $/s sans audio, 0,168 $/s avec audio, 0,196 $/s avec
+     contrôle de voix, exemple officiel 5 s avec audio et voix = 0,98 $. Capture
+     réelle publiée dans l'article.
+  3. Page d'aide YouTube « Signaler l'utilisation de contenus d'IA générative » :
+     les trois cas où la mention est obligatoire, plus les exceptions (contenu
+     manifestement irréaliste ou fantastique, filtres de beauté, réglages de
+     couleur et de lumière, netteté, upscaling, réparation, sous-titres) et le
+     paramètre « Utilisation de l'IA » dans YouTube Studio. Capture réelle
+     publiée dans l'article.
+  4. Règles de soumission du Korea International AI Film Festival relevées sur
+     festhome : technologie IA employée, sa proportion et son domaine à décrire
+     dans le formulaire, durée sous 30 minutes, sous-titres anglais dès qu'il y
+     a narration ou dialogue.
+- Refus assumé : la page FilmFreeway du Seoul International AI Film Festival
+  renvoie 403 en fetch. Aucune règle ne lui est attribuée dans l'article, seul le
+  fait déjà publié sur le site (VOIDBORN y a été primé) est repris.
+- Honnêteté : section « Ce que ce retour d'expérience ne prouve pas » qui assume
+  l'échantillon de trois projets solo et la péremption des chiffres cités.
+  Aucune preuve sociale vague, les festivals nommés sont ceux déjà documentés.
+- Images : hero Nano Banana 2 (salon d'appartement la nuit transformé en salle de
+  projection improvisée, vidéoprojecteur sur une pile de livres, image projetée
+  volontairement floue et abstraite, deux amis assis sur un tapis, le réalisateur
+  debout contre le chambranle qui regarde LEURS visages et pas le mur) plus deux
+  captures d'écran réelles (fal.ai et support.google.com), chacune légendée avec
+  sa source et la date, placée juste à côté de l'affirmation qu'elle prouve.
+  Aucun décor recyclé des 5 derniers heros.
+- Humanisation : passe en trois temps appliquée (humanizer, unslop-text,
+  antislop-copywriting). Scanner unslop à 0 high, 0 medium, 2 low, les deux étant
+  des faux positifs français (« utilise », « utilisation » lus comme « utilize »).
+  La vraie passe est manuelle : 4 parallélismes négatifs supprimés dont celui qui
+  ouvrait l'article, 2 annonces de signposting retirées en gardant la chose
+  annoncée, une aphorisme-formule remplacée par un fait, et la répétition
+  littérale entre la dernière phrase de l'intro et le titre du H2 suivant cassée.
+  Les contrastes restants portent une vraie information et ont été gardés
+  volontairement, la sur-correction étant elle-même un tell.
+- Liens entrants réciproques ajoutés depuis `ronces-coulisses-court-film-ia`
+  (fin de « Ce qui a mal tourné ») et `voidborn-anime-ia-festival-coulisses`
+  (section « Ce que VOIDBORN m'a appris pour la suite »).
+- Gates : lint 0 erreur (4 warnings préexistants), typecheck PASS, build PASS,
+  seo_audit 0 issue sur le nouveau slug, editorial_audit 100 / good / 0 flag,
+  `build_ledger.mjs` régénéré (304 FR, 232 EN).
+
+### Notes outillage
+- `.loop_scripts/screenshot_url.sh` reste codé en dur pour le Chrome macOS et
+  pour `cwebp`, donc inutilisable ici. Contourné comme au J23 par un équivalent
+  écrit dans le scratchpad de session : Chrome headless Windows
+  (`C:\Program Files\Google\Chrome\Application\chrome.exe`) avec
+  `--window-size` large, puis recadrage et écriture du webp avec Pillow. Le
+  recadrage est ce qui permet d'éliminer la bannière de cookies et de garder
+  seulement le bloc qui prouve l'affirmation. Aucun fichier du repo modifié.
+- `scripts/render_blog_queue_nanobanana.py` peut être lancé depuis le Bash tool à
+  condition de préfixer `MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL='*'`, sinon Git
+  Bash convertit `--dest /images/...` et le script écrit dans
+  `C:\Program Files\Git\images`. Le script n'accepte pas `--slug`, seulement
+  `--dest` et `--prompt`.
+- Le total d'erreurs du seo_audit reste à 1975, l'artefact CRLF de checkout
+  n'ayant pas été touché ce jour (les 3 fichiers modifiés étaient déjà en LF ou
+  sont écrits en LF).
+
+### Next
+- J25 = 2026-09-05 : `studios-traditionnels-vs-studios-ia-2026` (cluster CINEMA,
+  intention info « studio ia cinéma », analyse). Cannibalisation faible au plan.
+  Liens prévus vers `lionsgate-runway` et `google-a24` : vérifier que les slugs
+  existent réellement dans `content/blog/` avant de les poser.
+
+## Previous run: 2026-09-03 (J23 publié)
 
 ### What happened
 - J23 du plan 90 jours publié à la date prévue : `reverse-prompting-methode-complete`,

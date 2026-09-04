@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-04 : Erreurs de film IA, les leçons de mes 3 premiers films
+- slug: erreurs-premiers-films-ia-lecons
+- locale: fr
+- url: https://frankhoubre.com/blog/erreurs-premiers-films-ia-lecons
+- category: analyses
+- type: evergreen (plan 90j J24), retour d'expérience, 3117 mots, 10 H2, FAQ 7 questions
+- search_intent: informationnelle (erreurs de production sur un film IA)
+- primary_keyword: erreurs film ia
+- secondary_keywords: premier court métrage ia, budget génération vidéo ia, bible de production ia, déclarer contenu ia youtube, soumettre film ia festival
+- sources: ai.google.dev/gemini-api/docs/veo (durées 4, 6 ou 8 s ; 8 s obligatoire avec extension, images de référence ou résolution supérieure ; formats 16:9 et 9:16 ; 3 images de référence max sur Veo 3.1 et 3.1 Fast ; prolongation jusqu'à 148 s) ; fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video (durées 3 à 15 s ; 0,112 $/s sans audio, 0,168 $/s avec audio, 0,196 $/s avec contrôle de voix ; exemple officiel 5 s avec audio et voix = 0,98 $) ; support.google.com/youtube/answer/14328491 (les trois cas où signaler un contenu d'IA générative est obligatoire, et les exceptions : contenu manifestement irréaliste, filtres de beauté, réglages de couleur et de lumière, netteté, upscaling, réparation, sous-titres ; paramètre « Utilisation de l'IA » dans YouTube Studio) ; filmmakers.festhome.com, Korea International AI Film Festival (technologie IA employée, sa proportion et son domaine à décrire dans le formulaire, durée sous 30 minutes, sous-titres anglais dès qu'il y a narration ou dialogue). Tout relevé le 2026-09-04
+- internal_links: -> /blog/ronces-coulisses-court-film-ia, -> /blog/voidborn-anime-ia-festival-coulisses, -> /blog/lost-garden-journal-production-serie-ia, -> /blog/film-ia-erreurs-raccord-incoherences-visuelles-eviter, -> /blog/combien-coute-court-metrage-ia-2026 ; liens réciproques ajoutés DEPUIS ronces-coulisses-court-film-ia (fin de « Ce qui a mal tourné ») et voidborn-anime-ia-festival-coulisses (section « Ce que VOIDBORN m'a appris pour la suite »)
+- cta: aucun CTA produit, renvoi interne vers les trois articles projets et vers l'analyse de coût
+- cannibalization_notes: parade du plan appliquée telle quelle. film-ia-erreurs-raccord-incoherences-visuelles-eviter garde la check-list technique de continuité (veste, lumière, raccord regard) ; ce nouvel article ne traite que les décisions de production en amont qui rendent ces erreurs possibles, et la distinction est écrite dans le corps du texte avec lien vers l'existant. Distinct aussi de erreurs-prompt-qui-rendent-image-ia-artificielle (tics de langage dans un prompt) et de pourquoi-mes-videos-ia-ont-l-air-fake-comment-rendre-realistes (rendu final). Risque résiduel faible
+- editorial_notes: REX écrit sans Frank en session, donc règle stricte appliquée sur les faits personnels : rien n'est raconté des trois films qui ne soit déjà publié sur le site (Ronces moins de 2 min et sans personnage visible, Midjourney pour la bible, Kling sur la végétation, WAN sur les intérieurs, ElevenLabs Music, fiche de référence par décor construite en cours de route, plans coupés au montage ; première version réaliste de VOIDBORN entièrement jetée ; bible écrite avant la première image sur Lost Garden, épisode 1 The Awakening of the Lantern Knight). Aucune date, aucun budget, aucun nombre de plans ajouté, et les illustrations de méthode sont formulées comme méthode et pas comme souvenir daté. La page FilmFreeway du Seoul International AI Film Festival renvoie 403 en fetch : aucune règle ne lui est attribuée, seul le fait déjà publié (VOIDBORN y a été primé) est repris. Deux captures d'écran réelles publiées au lieu d'illustrations générées, chacune légendée avec sa source et la date, placée juste à côté de l'affirmation qu'elle prouve. Section « Ce que ce retour d'expérience ne prouve pas » qui assume l'échantillon de trois projets solo et la péremption des chiffres cités
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100, bucket good, 0 flag, 0 tiret cadratin ; unslop-text 0 high / 0 medium / 2 low tous faux positifs FR « utilise » et « utilisation » lus comme « utilize »)
+- published_commit: 6051809
+
 ### 2026-08-25 : Combien coûte un court-métrage IA en 2026
 - slug: combien-coute-court-metrage-ia-2026
 - locale: fr
