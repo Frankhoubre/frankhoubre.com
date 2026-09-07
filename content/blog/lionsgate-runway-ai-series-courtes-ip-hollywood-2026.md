@@ -68,6 +68,8 @@ Netflix, Amazon et Disney regardent. Lionsgate avance. Les studios mid-size qui 
 
 Et pour les créateurs indépendants, la fenêtre d'opportunité est maintenant : être déjà productif sur ces outils pendant que les gros acteurs apprennent encore leur propre pipeline. Pour comprendre comment structurer ce type de production de A à Z, le [pipeline IA de l'idée au plan de tournage](/blog/pipeline-ia-script-storyboard-production-de-a-z) reste une référence utile.
 
+Mise à jour : Runway a élargi ce partenariat le 11 juin 2026, Lionsgate prenant cette fois une participation au capital. J'ai replacé ce mouvement dans l'ensemble du secteur, avec ce que chaque type de studio a réellement produit cette année, dans mon comparatif [studio IA contre studio classique en 2026](/blog/studios-traditionnels-vs-studios-ia-2026).
+
 ---
 
 ## FAQ

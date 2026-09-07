@@ -56,6 +56,8 @@ Les guildes américaines (WGA, DGA, SAG-AFTRA) vont surveiller ce partenariat de
 
 Et il reste une question ouverte : est-ce que les outils produits seront utilisables uniquement par A24, ou DeepMind les intégrera-t-il dans ses produits commerciaux ? La réponse définira si ce deal profite uniquement à A24 ou à l'écosystème créatif au sens large.
 
+Ce partenariat s'inscrit dans une série de rapprochements entre studios et laboratoires d'IA, dont tous n'ont pas survécu à 2026. J'ai fait le tri entre les accords signés et les films réellement livrés dans mon analyse [studio IA contre studio classique : qui produit quoi en 2026](/blog/studios-traditionnels-vs-studios-ia-2026).
+
 ## Les sources
 
 - [Variety : Google Invests $75 Million in A24](https://variety.com/2026/film/news/google-a24-ai-filmmaking-tools-1236787297/)
