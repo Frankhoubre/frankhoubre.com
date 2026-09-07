@@ -1,6 +1,57 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-04 (J24 publié)
+## Last run: 2026-09-07 (J25 publié)
+
+### What happened
+- J25 du plan 90 jours publié avec deux jours de retard, aucun run les 5 et 6
+  septembre, donc le calendrier glisse de deux jours et J26 = 2026-09-08
+  (`video-ia-locale-comfyui-wan`). Slug du jour :
+  `studios-traditionnels-vs-studios-ia-2026`, catégorie `analyses`, 3486 mots,
+  10 H2, FAQ 7 questions, 10 liens internes, 5 liens externes, score éditorial
+  100 / bucket good / 0 flag, 0 issue au seo_audit sur ce slug.
+- RÉORIENTATION MAJEURE PAR RAPPORT AU PLAN, à retenir. Le plan écrit en juillet
+  visait un comparatif de puissance entre studios classiques et studios IA,
+  adossé aux deals Lionsgate/Runway et Google/A24. Vérification faite ce jour, le
+  fait central de 2026 a changé : OpenAI a arrêté Sora (page d'aide officielle,
+  web et application arrêtés le 2026-04-26, API arrêtée le 2026-09-24) et Disney
+  a renoncé à son investissement d'un milliard de dollars et à l'accord de
+  licence signé en décembre 2025 (rapporté par Variety). L'angle est devenu
+  « annonces contre livrables » : ce que chaque famille de studio a réellement
+  produit cette année, et pourquoi la propriété du moteur est le vrai critère.
+- Anti-cannibalisation : quatre voisins vérifiés et liés depuis l'article.
+  `lionsgate-runway-ai-series-courtes-ip-hollywood-2026` et
+  `google-a24-partenariat-ia-outils-cinema-2026` gardent chacun leur deal en
+  actualité, `sora-api-arret-septembre-2026-alternatives-createurs` garde la
+  migration technique, `2026-06-19-cnc-rapport-ia-cinema-audiovisuel-2026` garde
+  le rapport du CNC. Le nouvel article ne traite QUE la structure de production.
+- Chiffres écartés faute de source solide : le « aucun argent n'avait changé de
+  main » entre Disney et OpenAI (vu seulement chez des agrégateurs), les gains de
+  coût revendiqués par Toonstar (chiffres de vendeur non audités), et la première
+  d'un film Asteria à Tribeca en juin 2026 (source unique non fiable). L'article
+  écrit noir sur blanc que les 30 M$ et les 9 mois de Critterz sont des cibles de
+  lancement et pas un coût de revient audité.
+- Images : hero Nano Banana 2 (grand plateau de tournage vide en journée, camions
+  lumière et praticables au fond, une productrice seule à une table pliante au
+  milieu du sol béton, contraste d'échelle entre l'infrastructure studio et le
+  poste IA) plus deux captures d'écran réelles, page d'aide OpenAI sur l'arrêt de
+  Sora et annonce Runway du 11 juin 2026, chacune légendée avec sa source et la
+  date. Aucun décor recyclé des 5 derniers heros.
+- PIÈGE OUTIL À RETENIR POUR LES PROCHAINS RUNS : `.loop_scripts/screenshot_url.sh`
+  est codé en dur pour macOS (chemin `/Applications/Google Chrome.app` et `cwebp`
+  Homebrew) et ne tourne pas sur la machine Windows de Frank. Contournement
+  utilisé : Chrome headless de
+  `C:/Program Files/Google/Chrome/Application/chrome.exe` plus Pillow pour la
+  conversion webp, dans un script jetable du scratchpad, rien ajouté au repo.
+  Deux pièges en plus : `help.openai.com` renvoie un challenge Cloudflare en
+  headless sans user-agent (corrigé en passant un user-agent Chrome complet) et
+  `runway.com` affiche un bandeau Cookiebot fixe en bas qui mange la moitié de la
+  capture (corrigé en capturant en 1440x1800 puis en recadrant le haut).
+- Humanisation : passe appliquée. Scanner unslop à 0 finding après correction,
+  mais l'article est en français donc passe manuelle sur les tells structurels :
+  trois parallélismes négatifs supprimés (dont un titre de H2), trois signposts
+  supprimés, deux blocs bâtis en listes à en-têtes gras convertis en prose.
+
+## Run précédent : 2026-09-04 (J24 publié)
 
 ### What happened
 - J24 du plan 90 jours publié à la date prévue : `erreurs-premiers-films-ia-lecons`,
