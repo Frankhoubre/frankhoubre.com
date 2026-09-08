@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-08 : Vidéo IA en local, ComfyUI et WAN sur ta machine
+- slug: video-ia-locale-comfyui-wan
+- locale: fr
+- url: https://frankhoubre.com/blog/video-ia-locale-comfyui-wan
+- category: tutoriels
+- type: evergreen / tutoriel OUTILS, satellite du pilier WAN (plan 90j J26). Publié le 2026-09-08 comme prévu après le décalage du J25, le calendrier ne glisse pas ce jour, donc J27 = 2026-09-09.
+- search_intent: tutoriel (créateur qui veut faire tourner de la vidéo IA sur sa propre machine et cherche à savoir si son matériel suffit)
+- primary_keyword: vidéo ia locale (wan comfyui)
+- secondary_keywords: wan 2.2 comfyui, vram vidéo ia, ti2v-5b, poids ouverts wan, comfyui local vidéo, coût gpu loué vs api
+- sources: huggingface.co/Wan-AI relevé le 2026-09-08 (27 modèles, tri par mise à jour récente, rien au-dessus de la branche 2.2, Wan2.2-Animate-2-14B en tête) ; github.com/orgs/Wan-Video/repositories (6 dépôts, aucun 2.5/2.6/2.7/3.0, Wan-Animate-2 le plus récent) ; github.com/Wan-Video/Wan2.2 README (Apache 2.0, MoE expert haut bruit + expert bas bruit, T2V-A14B et I2V-A14B 27B total 14B actifs, TI2V-5B 720p, S2V-14B, au moins 24 Go de VRAM en mono-GPU, 5 s de 720p en moins de 9 min sur GPU grand public, +65,6 % d'images et +83,2 % de vidéos à l'entraînement vs 2.1) ; huggingface.co/Wan-AI/Wan2.2-TI2V-5B (720p 1280x704 ou 704x1280, 24 fps, 5 s, VAE 4x16x16, 64x avec patchification) ; github.com/Wan-Video/Wan-Animate-2 (sorti le 2026-08-07, Apache 2.0, réglages par défaut calibrés pour 8x A800, 480p testé sur 2x A800, version distillée 10 pas sans CFG) ; docs.comfy.org/tutorials/video/wan/wan2_2 (4 templates officiels, noms de fichiers et dossiers cibles, « 5B version should fit well on 8GB vram with the ComfyUI native offloading ») ; docs.comfy.org/installation/system_requirements (Windows/Linux/macOS Apple Silicon, NVIDIA/AMD/Intel/Ascend/Cambricon/CPU, Python 3.13 recommandé, PyTorch 2.7+) ; huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged (tailles de fichiers) ; runpod.io/pricing relevé le 2026-09-08 (RTX 4090 0,34 $/h community cloud) ; fal.ai/models/fal-ai/wan/v2.2-a14b/text-to-video relevé le 2026-09-08 (0,08 $/s en 720p, 0,06 $/s en 580p, 0,04 $/s en 480p, secondes comptées à 16 fps).
+- internal_links: -> wan-alibaba-guide-complet, comfyui-guide-video-createurs-debutants, comfyui-noeuds-debutant-pipeline-cinema, kling-vs-veo-3-choisir-par-plan, combien-coute-court-metrage-ia-2026, flux-2-open-weights-images-ia-local-2026. Liens entrants réciproques ajoutés depuis wan-alibaba-guide-complet (section « Téléchargement du modèle ») et comfyui-guide-video-createurs-debutants (section « Ressources externes utiles »).
+- cta: aucun CTA produit, sujet purement technique. Pas de mention ScreenWeaver.
+- cannibalization_notes: wan-alibaba-guide-complet garde LE MODÈLE (versions, capacités, licence, comparatif Kling/Runway) ; comfyui-guide-video-createurs-debutants garde l'APPRENTISSAGE de l'interface ; comfyui-noeuds-debutant-pipeline-cinema garde le GRAPHE MINIMAL image ; wan-27-video-decevant-kling-seedance garde le VERDICT QUALITÉ en actualité ; flux-2-open-weights-images-ia-local-2026 garde l'IMAGE en local. Ce nouvel article ne traite QUE la chaîne matérielle : ce qui est téléchargeable, la VRAM, le poids disque, les fichiers, le coût comparé local / GPU loué / API.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 9 H2 / FAQ 7 questions / 6 liens internes / 5 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS, build_ledger régénéré 306 FR 232 EN). Fichier écrit en LF. wan-alibaba-guide-complet et comfyui-guide-video-createurs-debutants normalisés en LF au passage, ce qui supprime 4 erreurs de frontmatter au seo_audit (1967 -> 1963).
+- published_commit: (voir PUBLISH_LOG)
+
 ### 2026-09-07 : Studio IA vs studio classique, qui produit quoi en 2026
 - slug: studios-traditionnels-vs-studios-ia-2026
 - locale: fr

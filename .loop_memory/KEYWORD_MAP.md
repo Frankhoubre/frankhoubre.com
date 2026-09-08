@@ -42,6 +42,12 @@ distinct intent, or they cannibalize. Check CONTENT_INDEX before writing.
 5. **Tool tests & comparatives** — Adobe Firefly, Topaz Video AI, Leonardo,
    ChatGPT Image, Midjourney vs DALL-E, Canva AI, alternatives lists. Growing.
 6. **ComfyUI / Stable Diffusion** — beginner nodes, pipeline, install. Some.
+   Intentions déjà prises, ne pas recréer : `comfyui-guide-video-createurs-debutants`
+   (apprendre l'interface), `comfyui-noeuds-debutant-pipeline-cinema` (graphe
+   minimal image), `video-ia-locale-comfyui-wan` (plan 90j J26 : chaîne
+   matérielle de la vidéo en local, VRAM, fichiers, poids disque, coût local vs
+   GPU loué vs API), `flux-2-open-weights-images-ia-local-2026` (image en local),
+   `wan-alibaba-guide-complet` (le modèle WAN lui-même).
 7. **Business / legal / pricing** — pricing a video, client contract clauses,
    AI copyright, music rights, client PDF reporting, internal team training.
 8. **Audio / sound** — sound depth & ambience for short films, native synced

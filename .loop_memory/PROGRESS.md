@@ -1,6 +1,80 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-07 (J25 publié)
+## Last run: 2026-09-08 (J26 publié)
+
+### What happened
+- J26 du plan 90 jours publié à la date prévue : `video-ia-locale-comfyui-wan`,
+  catégorie `tutoriels`, 9 H2, FAQ 7 questions, 6 liens internes, 5 liens
+  externes, score éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit sur
+  ce slug. Le calendrier ne glisse pas ce jour, donc J27 = 2026-09-09
+  (`outerframe-studio-pourquoi-studio-ia`, penser à ajouter Outerframe au
+  `sameAs` Person dans `src/lib/site.ts` le même jour, c'est écrit au plan).
+- FAIT MAJEUR VÉRIFIÉ CE JOUR, à retenir pour tous les articles WAN à venir :
+  les poids ouverts de WAN s'arrêtent à la branche 2.2. L'organisation Wan-AI
+  sur Hugging Face publie 27 modèles, tous en 2.1 ou 2.2, plus Wan2.2-Animate-2
+  mis à jour il y a 26 jours. Le compte GitHub Wan-Video n'héberge que 6 dépôts
+  (Wan-Animate-2 du 2026-08-07, Wan-Dancer du 17 juillet, Wan-skills, Wan2.2,
+  Wan2.1, diffusers) et aucun 2.5, 2.6, 2.7 ni 3.0. Les versions plus récentes
+  tournent derrière une API, sans poids publiés. C'est l'angle différenciant
+  numéro un de l'article : beaucoup de gens comparent leur rendu local à une
+  démo produite par un moteur qu'ils ne peuvent pas installer, et en concluent
+  à tort que leur machine est trop faible.
+- DETTE OUVERTE, à traiter dans un prochain run : `wan-alibaba-guide-complet`
+  affirmait que « les poids 2.7 sont disponibles via ComfyUI Partner Nodes avec
+  des droits d'usage commerciaux confirmés » et donnait `ComfyUI/models/wan/`
+  comme dossier d'installation. Section « Téléchargement du modèle » réécrite,
+  encadré de mise à jour daté posé après l'intro, section licence corrigée,
+  excerpt et seoDescription recentrés, `dateModified` 2026-09-08. Mais
+  l'article décrit ENCORE WAN 2.7 comme installable en local dans les sections
+  versions, capacités et pipeline, et lui attribue l'architecture MoE 27B/14B
+  (documentée pour la 2.2) plus un score VBench de 86,22 % sans source vérifiée.
+  L'encadré est un pansement. Une réécriture complète reste à faire.
+- Deuxième angle différenciant : deux sources officielles donnent deux chiffres
+  de VRAM pour le même modèle, et les deux sont exactes. Le README Wan2.2
+  demande au moins 24 Go en mono-GPU, docs.comfy.org annonce que la 5B tient sur
+  8 Go avec l'offloading natif de ComfyUI. Deux chemins de code différents.
+  Aucun contenu français ne fait cette distinction.
+- Anti-cannibalisation : cinq voisins vérifiés. `wan-alibaba-guide-complet`
+  garde LE MODÈLE, `comfyui-guide-video-createurs-debutants` garde
+  l'APPRENTISSAGE de l'interface, `comfyui-noeuds-debutant-pipeline-cinema`
+  garde le GRAPHE MINIMAL image, `wan-27-video-decevant-kling-seedance` garde le
+  VERDICT QUALITÉ en actualité, `flux-2-open-weights-images-ia-local-2026` garde
+  l'IMAGE en local. Le nouvel article ne traite QUE la chaîne matérielle.
+- Chiffres écartés faute de source stable : aucun prix de carte graphique et
+  aucun coût d'électricité cité. Refus assumé plutôt qu'un chiffre inventé. Les
+  seuls tarifs de l'article sont publics et datés (RunPod RTX 4090 à 0,34 $/h en
+  community cloud, fal Wan 2.2 A14B à 0,08 $/s en 720p), et le calcul des 5
+  centimes par plan est écrit comme mon arithmétique, avec trois réserves.
+- Images : hero Nano Banana 2 (tour PC ouverte posée au sol d'un appartement
+  parisien en fin d'après-midi, carte graphique à moitié insérée, ventilateur de
+  bureau braqué sur le boîtier, une femme agenouillée qui s'essuie le front)
+  plus deux captures d'écran réelles, page Wan-AI de Hugging Face triée par mise
+  à jour et page Wan2.2 de docs.comfy.org, chacune légendée avec sa source et la
+  date. Aucun décor recyclé des 5 derniers heros.
+- PIÈGES OUTIL confirmés et complétés. `.loop_scripts/screenshot_url.sh` reste
+  codé en dur pour macOS et ne tourne pas sur la machine Windows : Chrome
+  headless de `C:/Program Files/Google/Chrome/Application/chrome.exe` plus
+  Pillow pour la conversion webp, dans le scratchpad, rien ajouté au repo.
+  NOUVEAU cette fois : sous Git Bash, MSYS convertit tout argument commençant
+  par `/images/...` en chemin Windows, ce qui fait planter
+  `render_blog_queue_nanobanana.py --dest` avec un `PermissionError` sur
+  `C:\Program Files\Git\images`. Préfixer `MSYS_NO_PATHCONV=1`. Et ce script
+  n'accepte PAS de `--slug`, seulement `--dest` et `--prompt`.
+- Humanisation : scanner unslop à 2 hits, tous deux des faux positifs français
+  (« utilise » pris pour « utilize »), donc passe manuelle avec
+  `references/tells.md`. Deux parallélismes négatifs supprimés, un troisième
+  réintroduit par sur-correction dans le lien entrant du guide ComfyUI puis
+  supprimé à la relecture, trois signposts coupés, une règle de trois cassée,
+  une énumération D'abord/Ensuite/Enfin fondue dans le paragraphe, H2 final
+  renommé pour ne pas dupliquer « Ce que je ferais cette semaine » déjà présent
+  sur `flux-2-open-weights-images-ia-local-2026`.
+- VOIX, à vérifier systématiquement : la FAQ du premier jet était rédigée en
+  « vous » alors que tout le site tutoie. Entièrement reprise en « tu ».
+  `reverse-prompting-methode-complete` ne contient aucun « vous », c'est la
+  référence. Attention, `wan-alibaba-guide-complet` vouvoie de bout en bout,
+  c'est un des points à corriger lors de sa réécriture.
+
+## Run précédent : 2026-09-07 (J25 publié)
 
 ### What happened
 - J25 du plan 90 jours publié avec deux jours de retard, aucun run les 5 et 6
