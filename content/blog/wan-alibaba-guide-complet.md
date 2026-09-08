@@ -1,11 +1,12 @@
 ---
 title: "WAN d'Alibaba : guide complet du modèle vidéo open source"
 date: "2026-07-10"
+dateModified: "2026-09-08"
 category: "guides"
-excerpt: "WAN 2.7 d'Alibaba est le modèle vidéo open source le plus complet du marché : text-to-video, image-to-video, first+last frame, audio, ComfyUI. Guide pratique complet."
+excerpt: "WAN d'Alibaba en pratique : ce qui est réellement téléchargeable, installation ComfyUI, first+last frame, audio et licence commerciale."
 tags: ["WAN", "Alibaba", "vidéo IA open source", "ComfyUI", "image-to-video", "text-to-video"]
 seoTitle: "WAN Alibaba : guide complet du modèle vidéo open source 2026"
-seoDescription: "WAN 2.7 d'Alibaba expliqué de A à Z : installation ComfyUI, text-to-video, first+last frame, audio, benchmarks. Le guide pour créateurs IA."
+seoDescription: "WAN d'Alibaba expliqué de A à Z : poids ouverts, installation ComfyUI, text-to-video, first+last frame, audio. Le guide pour créateurs IA."
 slug: "wan-alibaba-guide-complet"
 published: true
 image: "/images/blog/wan-alibaba-guide-complet/hero.webp"
@@ -17,6 +18,8 @@ thumbnail: "/images/blog/wan-alibaba-guide-complet/hero.webp"
 WAN, c'est la famille de modèles vidéo open source développée par le Tongyi Laboratory d'Alibaba. Version après version depuis 2024, elle s'est imposée comme la référence en dehors des solutions cloud fermées. WAN 2.7, sorti en avril 2026, va plus loin que ses prédécesseurs : une architecture Mixture-of-Experts à 27 milliards de paramètres (14B actifs par inférence), intégrée dans ComfyUI, disponible gratuitement sous licence Apache 2.0.
 
 Ce guide couvre ce que WAN fait vraiment, comment le configurer, quand l'utiliser à la place de Kling ou Runway, et où il reste en deçà.
+
+> **Mise à jour du 8 septembre 2026.** Vérification faite ce jour sur les sources officielles : les poids ouverts de WAN s'arrêtent à la branche 2.2, sous licence Apache 2.0. L'organisation Wan-AI sur Hugging Face publie 27 modèles, tous en 2.1 ou 2.2, plus Wan-Animate-2 sorti le 7 août 2026, et le compte GitHub Wan-Video n'héberge aucun dépôt 2.5, 2.6, 2.7 ou 3.0. Les versions plus récentes tournent derrière une API, sans poids publiés. Les passages ci-dessous qui décrivent WAN 2.7 comme téléchargeable et installable en local datent d'avant cette vérification : lis-les comme la description d'un modèle accessible par API. L'architecture Mixture-of-Experts à 27 milliards de paramètres dont il est question ici est documentée dans le dépôt officiel Wan2.2. Pour ce qui tourne réellement sur ta machine, va voir [le guide de la vidéo IA en local avec ComfyUI et WAN](/blog/video-ia-locale-comfyui-wan).
 
 ## Les versions de WAN : de 2.1 à 2.7
 
@@ -98,11 +101,9 @@ pip install -r requirements.txt
 
 ### Téléchargement du modèle
 
-Les poids WAN 2.7 sont disponibles via Hugging Face. Les versions antérieures (2.1, 2.2) restent disponibles sous Apache 2.0 sur GitHub (Wan-Video/Wan2.1, Wan-Video/Wan2.2).
+Mise à jour du 8 septembre 2026, vérifiée le jour même sur les sources officielles : les poids ouverts s'arrêtent à la branche 2.2. L'organisation Wan-AI sur Hugging Face publie 27 modèles, tous en 2.1 ou 2.2, plus Wan-Animate-2 sorti le 7 août 2026, et le compte GitHub Wan-Video ne contient aucun dépôt 2.5, 2.6, 2.7 ou 3.0. Les versions plus récentes tournent derrière une API, sans poids publiés. Ce qui est téléchargeable est sous licence Apache 2.0.
 
-Pour WAN 2.7, vérifiez la page Hugging Face officielle (Tongyi Lab) pour le statut exact des poids open-source. Au moment de ce guide, les poids 2.7 sont disponibles via ComfyUI Partner Nodes avec des droits d'usage commerciaux confirmés.
-
-Placez les fichiers du modèle dans `ComfyUI/models/wan/`.
+Les fichiers ne vont pas tous au même endroit : le modèle de diffusion dans `ComfyUI/models/diffusion_models/`, le VAE dans `ComfyUI/models/vae/`, l'encodeur de texte dans `ComfyUI/models/text_encoders/`. Le détail fichier par fichier, avec les poids sur le disque et la VRAM nécessaire, est dans [le guide de la vidéo IA en local avec ComfyUI et WAN](/blog/video-ia-locale-comfyui-wan).
 
 ### Premier workflow text-to-video
 
@@ -163,7 +164,7 @@ WAN 2.7 supporte plusieurs résolutions nativement. La 720p (1280x720) est la r�
 
 WAN 2.1 et 2.2 sont sous Apache 2.0. Usage commercial explicitement autorisé, pas d'obligation de déclarer l'utilisation d'IA dans les livrables (contrairement aux outils soumis à la conformité EU AI Act).
 
-Pour WAN 2.7, vérifiez les conditions spécifiques sur la page GitHub officielle (Wan-Video/Wan2.7 ou Tongyi Lab sur Hugging Face). Les versions antérieures Apache 2.0 sont sûres pour l'usage commercial.
+Wan-Animate-2, sorti le 7 août 2026, est également sous Apache 2.0. Pour les versions servies uniquement par API, ce sont les conditions du fournisseur qui s'appliquent, pas la licence du dépôt : vérifiez-les avant de livrer à un client.
 
 C'est l'un des rares modèles vidéo IA où vous savez exactement ce que vous pouvez faire avec les outputs. Pas de clause "nous pouvons utiliser vos outputs pour réentraîner", pas de restriction géographique, pas de limite d'usage commercial.
 

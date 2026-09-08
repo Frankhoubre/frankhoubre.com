@@ -288,6 +288,8 @@ Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 
 Pour progresser vite, travaille avec la [documentation ComfyUI](https://github.com/comfyanonymous/ComfyUI), les bonnes pratiques de [Stability AI](https://platform.stability.ai/docs), et les guides de [RunComfy](https://www.runcomfy.com/).
 
+Quand tu passes de l'image à la vidéo, la logique du graphe reste la même et c'est le matériel qui devient le mur : VRAM, poids des fichiers, temps de rendu. Les chiffres à jour, modèle par modèle et carte par carte, sont dans [le guide de la vidéo IA en local avec ComfyUI et WAN](/blog/video-ia-locale-comfyui-wan).
+
 ## FAQ
 
 ## ComfyUI est-il trop technique pour un débutant complet ?
