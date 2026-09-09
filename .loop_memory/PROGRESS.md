@@ -1,8 +1,59 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-08 (J26 publié)
+## Last run: 2026-09-09 (J27 publié)
 
 ### What happened
+- J27 du plan 90 jours publié à la date prévue : `outerframe-studio-pourquoi-studio-ia`,
+  catégorie `business`, 9 H2, FAQ 8 questions, 3138 mots, 11 liens internes,
+  5 liens externes, score éditorial 100 / bucket good / 0 flag, 0 issue au
+  seo_audit sur ce slug. Le calendrier ne glisse pas ce jour, donc J28 =
+  2026-09-10 (jour UPDATE `midjourney-guide-complet`, refresh 2026 + SREF).
+- DIFFICULTÉ PRINCIPALE DU RUN : le sujet du jour portait sur une entité dont le
+  repo ne contenait aucune trace. Un `grep -ri outerframe` sur `content/` et
+  `src/` ne renvoyait rien. Tous les faits ont dû être établis depuis les pages
+  publiques du studio avant d'écrire quoi que ce soit. Sources retenues :
+  screenweaver.ai/legal, /about et /press.
+- FAIT LE PLUS IMPORTANT À RETENIR : le press kit liste Frank Houbre ET Thibaut
+  Dumont comme « Co-founder, ScreenWeaver / Outerframe Studio », alors que la
+  page /about ne nomme que Frank. Le titre du plan étant à la première personne,
+  l'article dit explicitement que Thibaut Dumont est cofondateur, dans le corps
+  et dans la FAQ. Ne jamais laisser passer un « j'ai monté » qui efface un
+  cofondateur documenté.
+- Autres faits vérifiés ce jour : SAS immatriculée au RCS de Strasbourg, capital
+  5 000 €, siège 91 route des Romains, SIREN 101 716 447 ; ScreenWeaver en open
+  beta ; studio soutenu par ElevenLabs Grants (33 M de caractères, 12 mois,
+  sociétés de moins de 25 salariés). Côté administratif, sur
+  entreprendre.service-public.gouv.fr : seuils micro-entreprise 2026-2028 à
+  83 600 € en prestations de services (ancien 77 700), franchise en base de TVA
+  services inchangée à 37 500 € / 41 250 €, SAS à capital libre dès 1 €,
+  responsabilité limitée aux apports, président assimilé salarié au régime
+  général sans assurance chômage.
+- ÉCART ASSUMÉ SUR LA CONSIGNE `sameAs` du plan : `sameAs` n'accepte que des
+  profils de la PERSONNE, et Outerframe n'a pas d'URL propre (le studio se
+  présente sur le site de son produit, screenweaver.ai, déjà dans socialLinks).
+  Outerframe a donc été ajouté en `worksFor` Organization dans le JSON-LD Person
+  de `src/app/a-propos/page.tsx`, seul fichier source touché. Rendu vérifié dans
+  `.next/server/app/a-propos.html` après build.
+- PASSE ANTI-SLOP la plus lourde depuis longtemps : 8 parallélismes négatifs
+  « ce n'est pas X, c'est Y » dans le premier jet, ramenés à 2. Deux ouvertures
+  de section en signposting supprimées, une section à en-têtes gras convertie en
+  prose, 4 annonces de triade retirées.
+- LEÇON À REPORTER SUR TOUT ARTICLE À LA PREMIÈRE PERSONNE : le premier jet avait
+  fabriqué de la texture chiffrée (« sept plateformes », « quatre pages »,
+  « deux journées », « trois semaines », « quarante minutes »). Aucun scanner ne
+  voit ça, et sur un manifeste fondateur ces chiffres deviennent des affirmations
+  de Frank sur sa propre vie. Tous retirés et remplacés par du qualitatif.
+- GOTCHAS OUTILS confirmés : `.loop_scripts/screenshot_url.sh` est codé en dur
+  pour le Chrome macOS et échoue sur Windows (contourné en scratchpad de
+  session) ; `scripts/render_blog_queue_nanobanana.py` n'a pas d'option `--slug`
+  et Git Bash mange le chemin de `--dest`, il faut `MSYS_NO_PATHCONV=1`. Les deux
+  échecs sortent en code 0.
+- À FAIRE UN AUTRE JOUR : `voidborn-anime-ia-festival-coulisses` contient encore
+  deux liens morts vers `/presse` dans sa FAQ (route inexistante). Hors périmètre
+  du jour, non touché.
+
+### Previous run: 2026-09-08 (J26 publié)
+
 - J26 du plan 90 jours publié à la date prévue : `video-ia-locale-comfyui-wan`,
   catégorie `tutoriels`, 9 H2, FAQ 7 questions, 6 liens internes, 5 liens
   externes, score éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit sur
