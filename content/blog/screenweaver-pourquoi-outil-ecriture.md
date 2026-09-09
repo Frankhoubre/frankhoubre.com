@@ -144,6 +144,8 @@ La troisième : j'aurais dû construire cet outil un projet plus tôt. J'ai pass
 
 Si tu veux le mode d'emploi plutôt que l'histoire, le [guide studio de ScreenWeaver](/blog/screenweaver-ai-ecriture-scenario-storyboard) détaille le workflow phase par phase, avec les réglages et les erreurs classiques.
 
+Éditer un logiciel supposait aussi une entité pour le porter, avec des conditions d'utilisation et un directeur de publication identifiable. J'ai raconté cette bascule dans l'article sur les raisons de monter [Outerframe Studio](/blog/outerframe-studio-pourquoi-studio-ia).
+
 ## FAQ : ScreenWeaver, l'histoire et l'outil
 
 **Qu'est-ce que ScreenWeaver exactement ?**

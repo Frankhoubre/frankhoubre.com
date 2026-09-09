@@ -148,6 +148,8 @@ Si je devais résumer ce que Lost Garden m'a appris : sur une série, ce qui vou
 
 La série continue. Je documenterai la suite avec le même niveau de détail, y compris quand ça casse.
 
+C'est aussi ce projet qui a rendu la question de la structure inévitable, et qui m'a poussé à monter [Outerframe Studio](/blog/outerframe-studio-pourquoi-studio-ia) pour produire dans un cadre tenable.
+
 ## FAQ
 
 **Lost Garden est un court métrage ou une série ?**

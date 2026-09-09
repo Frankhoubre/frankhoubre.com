@@ -89,6 +89,22 @@ export default function AboutPage() {
       "Entrepreneuriat digital",
     ],
     award: [...awards, ...selections],
+    /**
+     * Outerframe Studio n'a pas d'URL propre : le studio se présente sur le
+     * site de son produit. On le rattache donc en `worksFor` plutôt qu'en
+     * `sameAs`, qui ne prend que des profils de la personne elle-même.
+     */
+    worksFor: {
+      "@type": "Organization",
+      name: "Outerframe Studio",
+      url: "https://www.screenweaver.ai/about",
+      legalName: "Outerframe Studio",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Strasbourg",
+        addressCountry: "FR",
+      },
+    },
     sameAs: [...person.sameAs],
   };
 
