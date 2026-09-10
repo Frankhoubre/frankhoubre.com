@@ -11,7 +11,7 @@ const outilPages = {
   annuaireAudio: {
     title: "Annuaire IA audio, SFX et musicales",
     description:
-      "Comparez musique, voix, bruitages et sound design IA avec filtres et score intelligent. Trouvez l’outil audio adapté à votre projet — gratuit, en ligne.",
+      "Comparez musique, voix, bruitages et sound design IA avec filtres et score intelligent. Trouvez l’outil audio adapté à votre projet. Gratuit, en ligne.",
     path: "/outils/annuaire-ia-audio-sfx-musicales",
   },
   annuaireImages: {
@@ -23,7 +23,7 @@ const outilPages = {
   storyboard: {
     title: "Générateur de storyboard PDF IA",
     description:
-      "Collez vos images IA, ajoutez vos notes de plan et exportez un storyboard PDF paginé pour présenter votre projet — outil gratuit en ligne.",
+      "Collez vos images IA, ajoutez vos notes de plan et exportez un storyboard PDF paginé pour présenter votre projet. Outil gratuit en ligne.",
     path: "/outils/generateur-storyboard-pdf",
   },
   budget: {
@@ -41,7 +41,7 @@ const outilPages = {
   promptCinema: {
     title: "Générateur de prompt cinéma IA",
     description:
-      "Créez un prompt cinéma IA en anglais : caméra, objectif, réalisateur, éclairage. Prompt prêt pour image et vidéo IA — gratuit, en 30 secondes.",
+      "Créez un prompt cinéma IA en anglais : caméra, objectif, réalisateur, éclairage. Prompt prêt pour image et vidéo IA. Gratuit, en 30 secondes.",
     path: "/outils/generateur-prompt-cinema",
   },
 } as const satisfies Record<string, OutilPageConfig>;

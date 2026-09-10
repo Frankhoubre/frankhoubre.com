@@ -3,7 +3,7 @@ import { getAllEnPosts } from "@/lib/blog-en";
 import { baseUrl, person, siteName } from "@/lib/site";
 
 /**
- * llms-full.txt — inventaire complet des articles (FR puis EN) pour les
+ * llms-full.txt : inventaire complet des articles (FR puis EN) pour les
  * assistants IA qui veulent la liste exhaustive. Complément de /llms.txt.
  */
 export const dynamic = "force-static";
@@ -14,7 +14,7 @@ export function GET() {
   const enPosts = getAllEnPosts();
 
   const lines: string[] = [
-    `# ${siteName} — inventaire complet`,
+    `# ${siteName} : inventaire complet`,
     "",
     `> Tous les articles publiés par ${person.name} (formateur IA, réalisateur IA). FR d'abord, EN ensuite.`,
     "",

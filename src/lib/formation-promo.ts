@@ -1,5 +1,7 @@
-export const FORMATION_PROMO_URL =
-  "https://www.ai-studios.fr/formation-ia-gratuite-video";
+import { FUNNEL_PATHS } from "@/lib/funnel/config";
+
+/** Page d'inscription à la formation gratuite (tunnel interne, ex-systeme.io). */
+export const FORMATION_PROMO_URL = FUNNEL_PATHS.optin;
 
 /** localStorage : date du dernier affichage (YYYY-MM-DD, fuseau local). */
 export const FORMATION_PROMO_STORAGE_KEY = "fh-formation-promo-last-shown";

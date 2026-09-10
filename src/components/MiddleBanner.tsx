@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
 
 export function MiddleBanner() {
@@ -29,14 +30,12 @@ export function MiddleBanner() {
         vous débutez.
       </p>
       <p className="mt-6">
-        <a
+        <Link
           href={FORMATION_PROMO_URL}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex w-full items-center justify-center rounded-xl bg-neutral-950 px-5 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-neutral-800 sm:w-auto"
         >
           Recevoir la méthode gratuite
-        </a>
+        </Link>
       </p>
     </aside>
   );

@@ -8,6 +8,7 @@
 
 **Project:** frankhoubre.com
 **Generated:** 2026-04-20 13:17:16
+**Restyled:** 2026-09-07 (direction « Cyber Ronin »)
 **Category:** Portfolio/Personal
 
 ---
@@ -16,27 +17,32 @@
 
 ### Color Palette
 
-| Role | Hex | CSS Variable |
-|------|-----|--------------|
-| Primary | `#18181B` | `--color-primary` |
-| Secondary | `#3F3F46` | `--color-secondary` |
-| CTA/Accent | `#2563EB` | `--color-cta` |
-| Background | `#FAFAFA` | `--color-background` |
-| Text | `#09090B` | `--color-text` |
+| Role | Value | CSS Variable |
+|------|-------|--------------|
+| Cream (text on dark) | `#FBDBAF` | `--cream` |
+| Muted cream | `rgba(251, 219, 175, 0.72)` | `--muted` |
+| Label cream | `rgba(251, 219, 175, 0.48)` | `--label` |
+| Accent | `#E07020` | `--orange` |
+| Accent deep / hero ground | `#C45A18` | `--orange-deep` |
+| Ink (dark surfaces) | `#0A0807` | `--ink` |
+| Glass card | `rgba(10, 8, 7, 0.58)` + `backdrop-filter: blur(18px)` | `--card` |
+| Reading background | `#FBF7F1` | `--background` |
+| Reading text | `#14100C` | `--foreground` |
+| CTA | `#E07020` | `--color-cta` |
 
-**Color Notes:** Monochrome + blue accent
+**Color Notes:** Two registers. Dark register (home, footer, 404, hero frames): ink ground,
+cream text, orange accent, glass cards. Light register (blog, articles, tools, legal):
+warm off-white ground, dark ink text, orange accent and focus rings. Never blue.
 
 ### Typography
 
-- **Heading Font:** Archivo
-- **Body Font:** Space Grotesk
-- **Mood:** minimal, portfolio, designer, creative, clean, artistic
-- **Google Fonts:** [Archivo + Space Grotesk](https://fonts.google.com/share?selection.family=Archivo:wght@300;400;500;600;700|Space+Grotesk:wght@300;400;500;600;700)
-
-**CSS Import:**
-```css
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-```
+- **Heading Font:** Orbitron (weights 500, 700), uppercase in the dark register,
+  `letter-spacing: 0.02em`, `font-weight: 500`.
+- **Body Font:** Inter (300, 400, 500, 600).
+- Both are self-hosted via `next/font/google` (`src/lib/fonts.ts`). No `<link>` to
+  Google Fonts, no third-party font CSS.
+- Small labels: 11px, uppercase, `letter-spacing 0.08–0.12em`, color `--label`
+  (`.cyber-label`, `.cyber-spec-label`).
 
 ### Spacing Variables
 
@@ -49,6 +55,7 @@
 | `--space-xl` | `32px` / `2rem` | Large gaps |
 | `--space-2xl` | `48px` / `3rem` | Section margins |
 | `--space-3xl` | `64px` / `4rem` | Hero padding |
+| `--hero-top` | `92px` | Top offset of hero UI under the fixed header |
 
 ### Shadow Depths
 
@@ -58,146 +65,88 @@
 | `--shadow-md` | `0 4px 6px rgba(0,0,0,0.1)` | Cards, buttons |
 | `--shadow-lg` | `0 10px 15px rgba(0,0,0,0.1)` | Modals, dropdowns |
 | `--shadow-xl` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |
+| Glass card | `0 18px 50px rgba(0,0,0,0.28)` | `.cyber-card` |
 
 ---
 
-## Component Specs
+## Component Specs (see `src/app/globals.css`)
 
-### Buttons
+### Dark register (`.cyber-*`)
 
-```css
-/* Primary Button */
-.btn-primary {
-  background: #2563EB;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 200ms ease;
-  cursor: pointer;
-}
+- `.cyber-page`: ink ground, cream text.
+- `.cyber-card`: glass card, radius 18px, 1px border `rgba(251,219,175,0.08)`.
+- `.cyber-btn`: pill, 1px cream border, transparent, 12px/500, hover lifts 1px.
+  `.cyber-btn-solid` for the orange filled variant.
+- `.cyber-icon-btn`: 38px circle, 1px cream border at 55%, 16px stroke icon inside.
+- `.cyber-spec-row` / `.cyber-spec-label` / `.cyber-spec-value`: key/value rows with
+  12% cream hairlines between rows.
+- `.cyber-link`: cream underline at 35%, full cream on hover.
 
-.btn-primary:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
+### Light register (`.ds-*`)
 
-/* Secondary Button */
-.btn-secondary {
-  background: transparent;
-  color: #18181B;
-  border: 2px solid #18181B;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 200ms ease;
-  cursor: pointer;
-}
-```
+- `.ds-card`, `.ds-hero`, `.ds-surface`, `.ds-chip`, `.ds-badge`, `.ds-input`: unchanged
+  shapes, warm neutrals, orange hover borders and focus rings.
+- `.ds-cinematic-frame`: ink gradient frame with orange glow, used for page headers.
+- `.ds-cta-primary`: orange gradient pill. `.ds-cta-ghost-light`: cream ghost pill.
 
-### Cards
+### Hero « Cyber Ronin » (`src/components/cyber/CyberHero.tsx`)
 
-```css
-.card {
-  background: #FAFAFA;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: var(--shadow-md);
-  transition: all 200ms ease;
-  cursor: pointer;
-}
+- Full viewport (`100dvh`), base image + alternate image revealed under the cursor
+  by a radial `mask-image` (radius 260 / 160 / 120 px by viewport width).
+- Grid `1fr 1fr` × `auto 1fr auto`; left column holds H1 (3 lines), intro, icon row,
+  glass product card; right column holds a counter (top) and a specs list (bottom).
+- Breakpoints: 1024, 900, 768 (single column), 720 (flex column, counter in flow),
+  480, 360. All defined in `globals.css` under the `.hero*` rules.
 
-.card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-}
-```
+### Motion
 
-### Inputs
-
-```css
-.input {
-  padding: 12px 16px;
-  border: 1px solid #E2E8F0;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: border-color 200ms ease;
-}
-
-.input:focus {
-  border-color: #18181B;
-  outline: none;
-  box-shadow: 0 0 0 3px #18181B20;
-}
-```
-
-### Modals
-
-```css
-.modal-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-}
-
-.modal {
-  background: white;
-  border-radius: 16px;
-  padding: 32px;
-  box-shadow: var(--shadow-xl);
-  max-width: 500px;
-  width: 90%;
-}
-```
+- `heroImageIn` 1.2s (scale 1.18 → 1), `wordPullUp` 0.55s per word staggered 0.1s,
+  `fadeUp` 0.7s with 8px blur, delays via `data-delay`.
+- Word splitting and IntersectionObserver reveals live in
+  `src/components/cyber/RevealObserver.tsx`; hidden initial states apply only under
+  `html.js` (set by an inline script in `SiteShell`), so no-JS and crawlers see everything.
+- `prefers-reduced-motion: reduce` disables every animation and transition.
 
 ---
 
 ## Style Guidelines
 
-**Style:** Motion-Driven
+**Style:** Motion-Driven, cyberpunk warm palette
 
-**Keywords:** Animation-heavy, microinteractions, smooth transitions, scroll effects, parallax, entrance anim, page transitions
+**Keywords:** Full-bleed imagery, cursor spotlight, glass cards, uppercase Orbitron
+labels, cream on ink, orange accent
 
-**Best For:** Portfolio sites, storytelling platforms, interactive experiences, entertainment apps, creative, SaaS
-
-**Key Effects:** Scroll anim (Intersection Observer), hover (300-400ms), entrance, parallax (3-5 layers), page transitions
-
-### Page Pattern
-
-**Pattern Name:** Portfolio Grid
-
-- **Conversion Strategy:**  hover overlay info,  lightbox view, Visuals first. Filter by category. Fast loading essential.
-- **CTA Placement:** Project Card Hover + Footer Contact
-- **Section Order:** 1. Hero (Name/Role), 2. Project Grid (Masonry), 3. About/Philosophy, 4. Contact
+**Section Order (home):** 1. Cyber hero, 2. Film strip marquee, 3. Positioning +
+public signals, 4. Four pillars, 5. Explore by theme (categories + tools), 6. Films
+(click-to-play facades), 7. Learn / create / position, 8. FAQ, 9. Latest articles.
 
 ---
 
 ## Anti-Patterns (Do NOT Use)
 
-- ❌ Corporate templates
-- ❌ Generic layouts
-
-### Additional Forbidden Patterns
-
-- ❌ **Emojis as icons** — Use SVG icons (Heroicons, Lucide, Simple Icons)
-- ❌ **Missing cursor:pointer** — All clickable elements must have cursor:pointer
-- ❌ **Layout-shifting hovers** — Avoid scale transforms that shift layout
-- ❌ **Low contrast text** — Maintain 4.5:1 minimum contrast ratio
-- ❌ **Instant state changes** — Always use transitions (150-300ms)
-- ❌ **Invisible focus states** — Focus states must be visible for a11y
+- ❌ Corporate templates, generic layouts
+- ❌ Blue accents (the old `#2563EB` is retired)
+- ❌ **Emojis as icons** — Use inline SVG (stroke 1.2, 16px) like the hero icon row
+- ❌ **Missing cursor:pointer** on clickable elements
+- ❌ **Layout-shifting hovers**
+- ❌ **Low contrast text** — muted cream on ink stays ≥ 4.5:1; never use `--label`
+  for body copy
+- ❌ **Instant state changes** — transitions 150–300ms
+- ❌ **Invisible focus states** — orange 2px outline is the default (`:focus-visible`)
+- ❌ Third-party iframes at load — use `VideoFacade` (click to play)
+- ❌ `<img>` for local assets — use `next/image`
 
 ---
 
 ## Pre-Delivery Checklist
 
-Before delivering any UI code, verify:
-
-- [ ] No emojis used as icons (use SVG instead)
-- [ ] All icons from consistent icon set (Heroicons/Lucide)
+- [ ] No emojis used as icons (inline SVG instead)
 - [ ] `cursor-pointer` on all clickable elements
-- [ ] Hover states with smooth transitions (150-300ms)
-- [ ] Light mode: text contrast 4.5:1 minimum
+- [ ] Hover states with smooth transitions (150–300ms)
+- [ ] Contrast 4.5:1 minimum in both registers
 - [ ] Focus states visible for keyboard navigation
 - [ ] `prefers-reduced-motion` respected
+- [ ] Content visible without JavaScript (no `.js`-gated text left hidden)
 - [ ] Responsive: 375px, 768px, 1024px, 1440px
-- [ ] No content hidden behind fixed navbars
+- [ ] No content hidden behind the fixed header on the home (`--hero-top`)
 - [ ] No horizontal scroll on mobile

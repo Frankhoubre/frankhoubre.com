@@ -1,9 +1,11 @@
 import { getAllPosts } from "@/lib/blog";
 import { getAllEnPosts } from "@/lib/blog-en";
+import { FUNNEL_PATHS } from "@/lib/funnel/config";
+import { outilPages } from "@/lib/outils-metadata";
 import { baseUrl, blogCategories, person, siteName } from "@/lib/site";
 
 /**
- * llms.txt — index du site à destination des crawlers et assistants IA
+ * llms.txt : index du site à destination des crawlers et assistants IA
  * (GPTBot, ClaudeBot, PerplexityBot, …). Format : llmstxt.org.
  * Index curé ici ; inventaire complet dans /llms-full.txt.
  */
@@ -21,7 +23,7 @@ export function GET() {
     `> ${person.name} est formateur IA et réalisateur IA français. Ce site publie des tutoriels, workflows et analyses pour créer des images, vidéos et films par IA avec un rendu cinéma crédible (sans effet plastique). Contenu en français, avec versions anglaises sous /en/.`,
     "",
     `Site: ${baseUrl}`,
-    `Auteur: ${person.name} — ${baseUrl}/a-propos`,
+    `Auteur: ${person.name} : ${baseUrl}/a-propos`,
     `Flux RSS: ${baseUrl}/feed.xml`,
     `Inventaire complet des articles: ${baseUrl}/llms-full.txt`,
     "",
@@ -33,6 +35,13 @@ export function GET() {
       (c) => `- [Catégorie ${c.label}](${baseUrl}/blog/category/${c.slug})`,
     ),
     `- [Outils IA gratuits](${baseUrl}/outils)`,
+    `- [Formation vidéo IA gratuite en 3 jours](${baseUrl}${FUNNEL_PATHS.optin}): la méthode de Frank Houbre pour passer d'une idée à un film IA (vision, storyboard, montage).`,
+    "",
+    "## Outils IA gratuits",
+    "",
+    ...Object.values(outilPages).map(
+      (tool) => `- [${tool.title}](${baseUrl}${tool.path}): ${tool.description}`,
+    ),
     "",
     "## Articles récents (FR)",
     "",
@@ -45,6 +54,7 @@ export function GET() {
     "",
     `- [À propos / bio](${baseUrl}/a-propos)`,
     `- [About (English)](${baseUrl}/en/about)`,
+    `- [Kit presse (bio, visuels, distinctions)](${baseUrl}/presse)`,
     `- [Prestations](${baseUrl}/prestation)`,
     `- [Contact](${baseUrl}/contact)`,
     "",

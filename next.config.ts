@@ -72,8 +72,10 @@ const nextConfig: NextConfig = {
       { source: "/chatgpt-entrepreneur", destination: "/blog", permanent: true },
       { source: "/idee-business-ia", destination: "/blog", permanent: true },
       { source: "/descriptions-de-produits-avec-lia", destination: "/blog", permanent: true },
-      // Ancienne pagination WordPress /blog/page/N.
-      { source: "/blog/page/:num", destination: "/blog", permanent: true },
+      // La page 1 de la pagination FR vit sur /blog. Les pages suivantes
+      // (/blog/page/2, …) sont désormais rendues côté serveur, voir
+      // src/app/(fr)/blog/page/[num]/page.tsx.
+      { source: "/blog/page/1", destination: "/blog", permanent: true },
     ];
   },
   async headers() {
@@ -104,12 +106,18 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  experimental: {
+    // Deux root layouts (FR et EN) : la 404 globale ne peut plus dériver
+    // d'un layout unique, elle vit dans src/app/global-not-found.tsx.
+    globalNotFound: true,
+  },
   turbopack: {
     /** Répertoire de l’app Next (évite une détection erronée si plusieurs lockfiles). */
     root: process.cwd(),
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    qualities: [70, 75, 80],
     remotePatterns: [
       {
         protocol: "https",
@@ -119,6 +127,18 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "img.youtube.com",
+        pathname: "/**",
+      },
+      // Visuels du hero d'accueil : passés par next/image, donc redimensionnés
+      // et servis en AVIF/WebP depuis notre domaine.
+      {
+        protocol: "https",
+        hostname: "images.higgs.ai",
+        pathname: "/",
+      },
+      {
+        protocol: "https",
+        hostname: "d8j0ntlcm91z4.cloudfront.net",
         pathname: "/**",
       },
     ],

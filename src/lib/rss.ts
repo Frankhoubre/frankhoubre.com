@@ -37,7 +37,7 @@ export function buildRssFeed(): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${escapeXml(`${siteName} — Blog IA vidéo et image`)}</title>
+    <title>${escapeXml(`${siteName} : Blog IA vidéo et image`)}</title>
     <link>${blogUrl}</link>
     <description>${escapeXml(person.description)}</description>
     <language>fr-FR</language>

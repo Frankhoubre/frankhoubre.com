@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { isBlogCategorySlug } from "@/lib/site";
 import {
   isPostPublished,
+  pickRelatedPosts,
   type Post,
   type PostFrontmatter,
 } from "@/lib/blog";
@@ -61,4 +62,9 @@ export function getAllEnPosts(): Post[] {
         new Date(`${b.frontmatter.date}T00:00:00`).getTime() -
         new Date(`${a.frontmatter.date}T00:00:00`).getTime(),
     );
+}
+
+/** Articles EN liés (même score de proximité que le FR). */
+export function getRelatedEnPosts(currentSlug: string, limit = 3): Post[] {
+  return pickRelatedPosts(getAllEnPosts(), currentSlug, limit);
 }

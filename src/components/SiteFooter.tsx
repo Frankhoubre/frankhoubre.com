@@ -17,59 +17,59 @@ export function SiteFooter() {
     { label: dict.footer.privacy, href: "/politique-confidentialite" },
   ];
 
+  const linkClass =
+    "transition-colors duration-200 text-[rgba(251,219,175,0.72)] hover:text-[var(--cream)]";
+  const headingClass = "cyber-label";
+
   return (
-    <footer className="relative z-10 mt-auto border-t border-zinc-200/90 bg-white/75 py-10 text-sm text-zinc-800 backdrop-blur-xl">
+    <footer className="cyber-page relative z-10 mt-auto border-t border-[rgba(251,219,175,0.12)] py-12 text-sm">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
-            <p className="font-semibold text-zinc-950">{siteName}</p>
-            <p className="mt-2 max-w-xs text-sm leading-relaxed text-zinc-600">
+            <p className="heading-font text-sm uppercase tracking-[0.08em] text-[var(--cream)]">
+              {siteName}
+            </p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-[var(--muted)]">
               {dict.footer.tagline}
             </p>
-            <p className="mt-4 font-medium text-zinc-900">
+            <p className="mt-4 text-xs text-[var(--label)]">
               © {year} · {dict.footer.rights}
             </p>
           </div>
 
           <nav aria-label={dict.footer.nav}>
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500">
-              {dict.footer.nav}
-            </p>
+            <p className={headingClass}>{dict.footer.nav}</p>
             <ul className="mt-3 space-y-2">
               {dict.nav.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="transition-colors duration-200 hover:text-zinc-950"
-                  >
+                  <Link href={item.href} className={linkClass}>
                     {item.label}
                   </Link>
                 </li>
               ))}
               {locale === "fr" ? (
-                <li>
-                  <Link
-                    href="/feed.xml"
-                    className="transition-colors duration-200 hover:text-zinc-950"
-                  >
-                    Flux RSS
-                  </Link>
-                </li>
+                <>
+                  <li>
+                    <Link href="/presse" className={linkClass}>
+                      Kit presse
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/feed.xml" className={linkClass}>
+                      Flux RSS
+                    </Link>
+                  </li>
+                </>
               ) : null}
             </ul>
           </nav>
 
           <nav aria-label="Legal">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500">
-              {locale === "fr" ? "Légal" : "Legal"}
-            </p>
+            <p className={headingClass}>{locale === "fr" ? "Légal" : "Legal"}</p>
             <ul className="mt-3 space-y-2">
               {legal.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="transition-colors duration-200 hover:text-zinc-950"
-                  >
+                  <Link href={item.href} className={linkClass}>
                     {item.label}
                   </Link>
                 </li>
@@ -78,9 +78,7 @@ export function SiteFooter() {
           </nav>
 
           <nav aria-label={dict.footer.social}>
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500">
-              {dict.footer.social}
-            </p>
+            <p className={headingClass}>{dict.footer.social}</p>
             <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 sm:flex-col sm:gap-y-2">
               {socialLinks.map((social) => (
                 <li key={social.href}>
@@ -88,7 +86,7 @@ export function SiteFooter() {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="transition-colors duration-200 hover:text-zinc-950"
+                    className={linkClass}
                   >
                     {social.label}
                   </a>

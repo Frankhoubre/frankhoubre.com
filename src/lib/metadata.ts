@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 import { baseUrl, siteName } from "@/lib/site";
 
+/**
+ * Identifiants stables des entités du graphe JSON-LD. Toutes les pages
+ * référencent le même Person / Organization / WebSite via `@id` : c'est ce qui
+ * permet aux moteurs (et aux LLM) de relier articles, bio et accueil à une
+ * seule entité « Frank Houbre ».
+ */
+export const PERSON_ID = `${baseUrl}/#person`;
+export const ORGANIZATION_ID = `${baseUrl}/#organization`;
+export const WEBSITE_ID = `${baseUrl}/#website`;
+
 /** Default social share image (real 1200×630 JPEG). */
 export const DEFAULT_OG_IMAGE = {
   path: "/images/og-default.jpg",
   width: 1200,
   height: 630,
-  alt: "Frank Houbre — formateur IA et réalisateur IA",
+  alt: "Frank Houbre, formateur IA et réalisateur IA",
 } as const;
 
 export const ABOUT_OG_IMAGE = {

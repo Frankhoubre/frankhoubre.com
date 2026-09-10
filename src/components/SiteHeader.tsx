@@ -40,40 +40,67 @@ export function SiteHeader() {
     return () => window.removeEventListener("keydown", onKey);
   }, [menuOpen]);
 
-  const homeAtTop = isHome && !isScrolled && !menuOpen;
+  // L'accueil est entièrement sombre : le header y reste crème sur brun,
+  // transparent tant qu'on est en haut du hero. Les autres pages gardent un
+  // header clair.
+  const dark = isHome;
+  const transparent = isHome && !isScrolled && !menuOpen;
+
+  const headerClass = transparent
+    ? "fixed inset-x-0 border-b border-transparent bg-transparent"
+    : dark
+      ? "sticky border-b border-[rgba(251,219,175,0.12)] bg-[rgba(10,8,7,0.82)] backdrop-blur-xl"
+      : "sticky border-b border-[rgba(228,220,210,0.9)] bg-white/85 backdrop-blur-xl";
+
+  const brandClass = dark ? "text-[var(--cream)]" : "text-neutral-950";
+
+  const navClass = dark
+    ? "bg-[rgba(251,219,175,0.08)] text-[rgba(251,219,175,0.9)] ring-1 ring-[rgba(251,219,175,0.14)] backdrop-blur-md"
+    : "bg-[rgba(247,241,233,0.9)] text-zinc-800";
 
   const desktopLinkClass = `rounded-full px-3 py-1.5 transition-colors duration-200 ${
-    homeAtTop
-      ? "hover:bg-white/15 hover:text-white"
+    dark
+      ? "hover:bg-[rgba(251,219,175,0.14)] hover:text-[var(--cream)]"
       : "hover:bg-white hover:text-zinc-950"
   }`;
 
+  const ctaClass = dark
+    ? "bg-[var(--cream)] text-[#0a0807] hover:bg-white"
+    : "bg-[#14100c] text-[var(--cream)] hover:bg-[#2a1d14]";
+
+  const burgerClass = dark
+    ? "bg-[rgba(251,219,175,0.1)] text-[var(--cream)] backdrop-blur-md hover:bg-[rgba(251,219,175,0.2)]"
+    : "bg-[rgba(247,241,233,0.9)] text-zinc-900 hover:bg-[#efe6da]";
+
+  const panelClass = dark
+    ? "border-[rgba(251,219,175,0.12)] bg-[rgba(10,8,7,0.96)]"
+    : "border-[rgba(228,220,210,0.9)] bg-white/95";
+
+  const panelLink = (active: boolean) =>
+    dark
+      ? active
+        ? "bg-[rgba(251,219,175,0.12)] text-[var(--cream)]"
+        : "text-[rgba(251,219,175,0.82)] hover:bg-[rgba(251,219,175,0.1)] hover:text-[var(--cream)]"
+      : active
+        ? "bg-[#f3ece2] text-zinc-950"
+        : "text-zinc-800 hover:bg-[#f3ece2] hover:text-zinc-950";
+
   return (
     <header
-      className={`top-0 z-50 transition-all duration-300 ${
-        homeAtTop
-          ? "fixed inset-x-0 border-b border-transparent bg-transparent"
-          : "sticky border-b border-zinc-200/90 bg-white/85 backdrop-blur-xl"
-      }`}
+      className={`top-0 z-50 transition-all duration-300 ${headerClass}`}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link
           href={homeHref}
-          className={`shrink-0 text-base font-semibold tracking-tight transition ${
-            homeAtTop ? "text-white" : "text-neutral-950"
-          }`}
+          className={`heading-font shrink-0 text-sm uppercase tracking-[0.08em] transition ${brandClass}`}
         >
           {siteName}
         </Link>
 
         {/* Navigation desktop */}
         <nav
-          className={`hidden items-center gap-1 rounded-full px-2 py-1 text-sm font-medium transition lg:flex ${
-            homeAtTop
-              ? "bg-white/10 text-white/90 backdrop-blur-md"
-              : "bg-zinc-100/80 text-zinc-800"
-          }`}
-          aria-label="Navigation principale"
+          className={`hidden items-center gap-1 rounded-full px-2 py-1 text-sm font-medium transition lg:flex ${navClass}`}
+          aria-label={locale === "en" ? "Main navigation" : "Navigation principale"}
         >
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className={desktopLinkClass}>
@@ -81,20 +108,14 @@ export function SiteHeader() {
             </Link>
           ))}
           <span className="mx-1">
-            <LanguageSwitcher onDark={homeAtTop} />
+            <LanguageSwitcher onDark={dark} />
           </span>
-          <a
+          <Link
             href={FORMATION_PROMO_URL}
-            target="_blank"
-            rel="noreferrer"
-            className={`ml-1 rounded-full px-3.5 py-1.5 font-semibold transition-colors duration-200 ${
-              homeAtTop
-                ? "bg-white text-zinc-950 hover:bg-white/90"
-                : "bg-zinc-950 text-white hover:bg-zinc-800"
-            }`}
+            className={`ml-1 rounded-full px-3.5 py-1.5 font-semibold transition-colors duration-200 ${ctaClass}`}
           >
             {ctaLabel}
-          </a>
+          </Link>
         </nav>
 
         {/* Bouton menu mobile */}
@@ -103,12 +124,16 @@ export function SiteHeader() {
           onClick={() => setMenuOpen((v) => !v)}
           aria-expanded={menuOpen}
           aria-controls="mobile-nav"
-          aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-          className={`flex h-10 w-10 items-center justify-center rounded-full transition lg:hidden ${
-            homeAtTop
-              ? "bg-white/10 text-white backdrop-blur-md hover:bg-white/20"
-              : "bg-zinc-100/80 text-zinc-900 hover:bg-zinc-200"
-          }`}
+          aria-label={
+            menuOpen
+              ? locale === "en"
+                ? "Close menu"
+                : "Fermer le menu"
+              : locale === "en"
+                ? "Open menu"
+                : "Ouvrir le menu"
+          }
+          className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition lg:hidden ${burgerClass}`}
         >
           <svg
             width="20"
@@ -139,43 +164,38 @@ export function SiteHeader() {
       {/* Panneau mobile */}
       <nav
         id="mobile-nav"
-        aria-label="Navigation mobile"
-        className={`overflow-hidden border-zinc-200/90 bg-white/95 backdrop-blur-xl transition-[max-height,opacity] duration-300 ease-out lg:hidden ${
-          menuOpen
-            ? "max-h-[28rem] border-b opacity-100"
-            : "max-h-0 opacity-0"
+        aria-label={locale === "en" ? "Mobile navigation" : "Navigation mobile"}
+        className={`overflow-hidden backdrop-blur-xl transition-[max-height,opacity] duration-300 ease-out lg:hidden ${panelClass} ${
+          menuOpen ? "max-h-[28rem] border-b opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="mx-auto max-w-5xl space-y-1 px-4 py-4 sm:px-6">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                onClick={() => setMenuOpen(false)}
-                className={`block rounded-xl px-4 py-3 text-base font-medium transition-colors ${
-                  pathname === item.href ||
-                  pathname.startsWith(`${item.href}/`)
-                    ? "bg-zinc-100 text-zinc-950"
-                    : "text-zinc-800 hover:bg-zinc-100 hover:text-zinc-950"
-                }`}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {navItems.map((item) => {
+            const active =
+              pathname === item.href || pathname.startsWith(`${item.href}/`);
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block rounded-xl px-4 py-3 text-base font-medium transition-colors ${panelLink(active)}`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
           <li className="px-4 py-3">
-            <LanguageSwitcher onNavigate={() => setMenuOpen(false)} />
+            <LanguageSwitcher onDark={dark} onNavigate={() => setMenuOpen(false)} />
           </li>
           <li className="pt-2">
-            <a
+            <Link
               href={FORMATION_PROMO_URL}
-              target="_blank"
-              rel="noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="block rounded-xl bg-zinc-950 px-4 py-3 text-center text-base font-semibold text-white transition-colors hover:bg-zinc-800"
+              className={`block rounded-xl px-4 py-3 text-center text-base font-semibold transition-colors ${ctaClass}`}
             >
               {ctaLabel}
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

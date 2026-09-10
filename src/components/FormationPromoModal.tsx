@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
+import { SUBSCRIBED_COOKIE } from "@/lib/funnel/config";
 import {
   FORMATION_PROMO_STORAGE_KEY,
   FORMATION_PROMO_URL,
@@ -17,6 +19,17 @@ function markShownToday() {
     );
   } catch {
     /* private mode / quota */
+  }
+}
+
+/** Déjà inscrit à la formation (cookie posé par l'API du funnel). */
+function alreadySubscribed(): boolean {
+  try {
+    return document.cookie
+      .split(";")
+      .some((c) => c.trim().startsWith(`${SUBSCRIBED_COOKIE}=`));
+  } catch {
+    return false;
   }
 }
 
@@ -40,7 +53,7 @@ export function FormationPromoModal() {
   }, []);
 
   useEffect(() => {
-    if (wasShownToday()) return;
+    if (wasShownToday() || alreadySubscribed()) return;
 
     const t = window.setTimeout(() => {
       setOpen(true);
@@ -121,15 +134,13 @@ export function FormationPromoModal() {
           vous débutez.
         </p>
         <p className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a
+          <Link
             href={FORMATION_PROMO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             onClick={dismiss}
             className="ds-cta-dark flex-1 !py-3.5 text-center"
           >
             Recevoir la méthode gratuite
-          </a>
+          </Link>
           <button
             type="button"
             onClick={dismiss}
@@ -139,7 +150,7 @@ export function FormationPromoModal() {
           </button>
         </p>
         <p className="mt-4 text-center text-xs text-neutral-500">
-          Pas de spam — accès et méthode envoyés par e-mail.
+          Pas de spam : accès et méthode envoyés par e-mail.
         </p>
       </div>
     </div>

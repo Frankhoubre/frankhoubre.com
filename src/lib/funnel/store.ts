@@ -1,0 +1,367 @@
+import { Redis } from "@upstash/redis";
+import {
+  FUNNEL_EVENTS,
+  UNIQUE_EVENTS,
+  type FunnelEvent,
+} from "@/lib/funnel/config";
+
+/**
+ * Persistance du funnel. En production : Upstash Redis (variables
+ * UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN, ou KV_REST_API_URL /
+ * KV_REST_API_TOKEN si la base vient de la marketplace Vercel). Sans ces
+ * variables, un stockage mémoire prend le relais : pratique en local, mais
+ * tout disparaît au redémarrage.
+ */
+
+export type SubscriberStatus = "active" | "unsubscribed";
+
+export type Subscriber = {
+  email: string;
+  firstName: string;
+  createdAt: string;
+  status: SubscriberStatus;
+  unsubscribedAt?: string;
+  source: string;
+  referrer?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  /** Emails programmés chez Resend (annulés en cas de désinscription). */
+  scheduledEmailIds: string[];
+  lastEmailEvent?: string;
+  lastEmailEventAt?: string;
+};
+
+export type DayStats = {
+  date: string;
+  counts: Partial<Record<FunnelEvent, number>>;
+  uniques: Partial<Record<FunnelEvent, number>>;
+};
+
+export type RecentEvent = {
+  at: string;
+  event: FunnelEvent;
+  source?: string;
+  detail?: string;
+};
+
+export type FunnelStore = {
+  recordEvent(input: {
+    event: FunnelEvent;
+    date: string;
+    visitorHash?: string;
+    source?: string;
+    detail?: string;
+  }): Promise<void>;
+  getSubscriber(email: string): Promise<Subscriber | null>;
+  saveSubscriber(sub: Subscriber): Promise<void>;
+  listSubscribers(limit: number): Promise<Subscriber[]>;
+  countSubscribers(): Promise<number>;
+  getTotals(): Promise<Partial<Record<FunnelEvent, number>>>;
+  getDays(dates: string[]): Promise<DayStats[]>;
+  getSources(event: FunnelEvent): Promise<Record<string, number>>;
+  getRecent(limit: number): Promise<RecentEvent[]>;
+  /** Compteur avec expiration (limitation de débit). Retourne la valeur. */
+  bump(key: string, ttlSeconds: number): Promise<number>;
+};
+
+const KEY = {
+  day: (d: string) => `funnel:d:${d}`,
+  uniq: (d: string, e: string) => `funnel:u:${d}:${e}`,
+  totals: "funnel:t",
+  src: (e: string) => `funnel:src:${e}`,
+  sub: (email: string) => `funnel:sub:${email}`,
+  subs: "funnel:subs",
+  recent: "funnel:recent",
+  rate: (k: string) => `funnel:rate:${k}`,
+};
+
+const RECENT_MAX = 200;
+
+function normalizeEmail(email: string): string {
+  return email.trim().toLowerCase();
+}
+
+function toNumberMap(raw: Record<string, unknown> | null) {
+  const out: Record<string, number> = {};
+  if (!raw) return out;
+  for (const [k, v] of Object.entries(raw)) {
+    const n = Number(v);
+    if (!Number.isNaN(n)) out[k] = n;
+  }
+  return out;
+}
+
+function pickEventCounts(
+  map: Record<string, number>,
+): Partial<Record<FunnelEvent, number>> {
+  const out: Partial<Record<FunnelEvent, number>> = {};
+  for (const e of FUNNEL_EVENTS) {
+    if (map[e]) out[e] = map[e];
+  }
+  return out;
+}
+
+/* ----------------------------- Upstash Redis ----------------------------- */
+
+function redisFromEnv(): Redis | null {
+  const url =
+    process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL;
+  const token =
+    process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN;
+  if (!url || !token) return null;
+  return new Redis({ url, token });
+}
+
+function createRedisStore(redis: Redis): FunnelStore {
+  return {
+    async recordEvent({ event, date, visitorHash, source, detail }) {
+      const p = redis.pipeline();
+      p.hincrby(KEY.day(date), event, 1);
+      p.hincrby(KEY.totals, event, 1);
+      if (visitorHash && UNIQUE_EVENTS.includes(event)) {
+        p.pfadd(KEY.uniq(date, event), visitorHash);
+        p.expire(KEY.uniq(date, event), 60 * 60 * 24 * 400);
+      }
+      if (source) p.hincrby(KEY.src(event), source, 1);
+      const entry: RecentEvent = {
+        at: new Date().toISOString(),
+        event,
+        ...(source ? { source } : {}),
+        ...(detail ? { detail } : {}),
+      };
+      p.lpush(KEY.recent, JSON.stringify(entry));
+      p.ltrim(KEY.recent, 0, RECENT_MAX - 1);
+      await p.exec();
+    },
+
+    async getSubscriber(email) {
+      const raw = await redis.get<Subscriber>(KEY.sub(normalizeEmail(email)));
+      return raw ?? null;
+    },
+
+    async saveSubscriber(sub) {
+      const email = normalizeEmail(sub.email);
+      const p = redis.pipeline();
+      p.set(KEY.sub(email), { ...sub, email });
+      p.zadd(KEY.subs, {
+        score: new Date(sub.createdAt).getTime(),
+        member: email,
+      });
+      await p.exec();
+    },
+
+    async listSubscribers(limit) {
+      const emails = await redis.zrange<string[]>(KEY.subs, 0, limit - 1, {
+        rev: true,
+      });
+      if (!emails.length) return [];
+      const rows = await redis.mget<(Subscriber | null)[]>(
+        ...emails.map((e) => KEY.sub(e)),
+      );
+      return rows.filter((r): r is Subscriber => Boolean(r));
+    },
+
+    async countSubscribers() {
+      return redis.zcard(KEY.subs);
+    },
+
+    async getTotals() {
+      const raw = await redis.hgetall<Record<string, string>>(KEY.totals);
+      return pickEventCounts(toNumberMap(raw));
+    },
+
+    async getDays(dates) {
+      if (!dates.length) return [];
+      const p = redis.pipeline();
+      for (const d of dates) {
+        p.hgetall(KEY.day(d));
+        for (const e of UNIQUE_EVENTS) p.pfcount(KEY.uniq(d, e));
+      }
+      const res = await p.exec<unknown[]>();
+      const stride = 1 + UNIQUE_EVENTS.length;
+      return dates.map((date, i) => {
+        const base = i * stride;
+        const counts = pickEventCounts(
+          toNumberMap(res[base] as Record<string, unknown> | null),
+        );
+        const uniques: Partial<Record<FunnelEvent, number>> = {};
+        UNIQUE_EVENTS.forEach((e, j) => {
+          const n = Number(res[base + 1 + j] ?? 0);
+          if (n) uniques[e] = n;
+        });
+        return { date, counts, uniques };
+      });
+    },
+
+    async getSources(event) {
+      const raw = await redis.hgetall<Record<string, string>>(KEY.src(event));
+      return toNumberMap(raw);
+    },
+
+    async getRecent(limit) {
+      const rows = await redis.lrange<RecentEvent | string>(
+        KEY.recent,
+        0,
+        limit - 1,
+      );
+      return rows
+        .map((r) => {
+          if (typeof r === "string") {
+            try {
+              return JSON.parse(r) as RecentEvent;
+            } catch {
+              return null;
+            }
+          }
+          return r;
+        })
+        .filter((r): r is RecentEvent => Boolean(r));
+    },
+
+    async bump(key, ttlSeconds) {
+      const p = redis.pipeline();
+      p.incr(KEY.rate(key));
+      p.expire(KEY.rate(key), ttlSeconds, "NX");
+      const [n] = await p.exec<[number, unknown]>();
+      return Number(n);
+    },
+  };
+}
+
+/* ------------------------------ Mémoire (dev) ----------------------------- */
+
+type MemoryState = {
+  days: Map<string, Record<string, number>>;
+  uniques: Map<string, Set<string>>;
+  totals: Record<string, number>;
+  sources: Map<string, Record<string, number>>;
+  subs: Map<string, Subscriber>;
+  recent: RecentEvent[];
+  rate: Map<string, { n: number; exp: number }>;
+};
+
+function createMemoryStore(): FunnelStore {
+  const g = globalThis as typeof globalThis & { __funnelMemory?: MemoryState };
+  const state: MemoryState = (g.__funnelMemory ??= {
+    days: new Map(),
+    uniques: new Map(),
+    totals: {},
+    sources: new Map(),
+    subs: new Map(),
+    recent: [],
+    rate: new Map(),
+  });
+
+  return {
+    async recordEvent({ event, date, visitorHash, source, detail }) {
+      const day = state.days.get(date) ?? {};
+      day[event] = (day[event] ?? 0) + 1;
+      state.days.set(date, day);
+      state.totals[event] = (state.totals[event] ?? 0) + 1;
+      if (visitorHash && UNIQUE_EVENTS.includes(event)) {
+        const k = KEY.uniq(date, event);
+        const set = state.uniques.get(k) ?? new Set<string>();
+        set.add(visitorHash);
+        state.uniques.set(k, set);
+      }
+      if (source) {
+        const s = state.sources.get(event) ?? {};
+        s[source] = (s[source] ?? 0) + 1;
+        state.sources.set(event, s);
+      }
+      state.recent.unshift({
+        at: new Date().toISOString(),
+        event,
+        ...(source ? { source } : {}),
+        ...(detail ? { detail } : {}),
+      });
+      state.recent.length = Math.min(state.recent.length, RECENT_MAX);
+    },
+    async getSubscriber(email) {
+      return state.subs.get(normalizeEmail(email)) ?? null;
+    },
+    async saveSubscriber(sub) {
+      const email = normalizeEmail(sub.email);
+      state.subs.set(email, { ...sub, email });
+    },
+    async listSubscribers(limit) {
+      return [...state.subs.values()]
+        .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+        .slice(0, limit);
+    },
+    async countSubscribers() {
+      return state.subs.size;
+    },
+    async getTotals() {
+      return pickEventCounts(state.totals);
+    },
+    async getDays(dates) {
+      return dates.map((date) => {
+        const uniques: Partial<Record<FunnelEvent, number>> = {};
+        for (const e of UNIQUE_EVENTS) {
+          const n = state.uniques.get(KEY.uniq(date, e))?.size ?? 0;
+          if (n) uniques[e] = n;
+        }
+        return {
+          date,
+          counts: pickEventCounts(state.days.get(date) ?? {}),
+          uniques,
+        };
+      });
+    },
+    async getSources(event) {
+      return { ...(state.sources.get(event) ?? {}) };
+    },
+    async getRecent(limit) {
+      return state.recent.slice(0, limit);
+    },
+    async bump(key, ttlSeconds) {
+      const now = Date.now();
+      const cur = state.rate.get(key);
+      if (!cur || cur.exp < now) {
+        state.rate.set(key, { n: 1, exp: now + ttlSeconds * 1000 });
+        return 1;
+      }
+      cur.n += 1;
+      return cur.n;
+    },
+  };
+}
+
+/* --------------------------------- Accès --------------------------------- */
+
+let cached: FunnelStore | null = null;
+
+export function getFunnelStore(): FunnelStore {
+  if (cached) return cached;
+  const redis = redisFromEnv();
+  cached = redis ? createRedisStore(redis) : createMemoryStore();
+  return cached;
+}
+
+export function isPersistentStoreConfigured(): boolean {
+  return redisFromEnv() !== null;
+}
+
+/** Date locale Europe/Paris au format YYYY-MM-DD (jour de reporting). */
+export function funnelDateKey(d: Date = new Date()): string {
+  const parts = new Intl.DateTimeFormat("fr-CA", {
+    timeZone: "Europe/Paris",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(d);
+  const get = (t: string) => parts.find((p) => p.type === t)?.value ?? "";
+  return `${get("year")}-${get("month")}-${get("day")}`;
+}
+
+/** Les N derniers jours (du plus ancien au plus récent), clés YYYY-MM-DD. */
+export function lastDays(n: number): string[] {
+  const out: string[] = [];
+  const now = Date.now();
+  for (let i = n - 1; i >= 0; i--) {
+    out.push(funnelDateKey(new Date(now - i * 86_400_000)));
+  }
+  return out;
+}

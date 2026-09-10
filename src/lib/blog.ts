@@ -124,20 +124,67 @@ export function getHomeLatestPosts(limit: number): Post[] {
   return getAllPosts().slice(0, limit);
 }
 
+const RELATED_STOPWORDS = new Set([
+  "les", "des", "une", "pour", "avec", "dans", "sur", "par", "est", "vos", "votre",
+  "the", "and", "for", "with", "from", "your", "you", "how", "what", "this", "that",
+  "comment", "guide", "tuto", "tutoriel", "complet", "meilleur", "meilleurs",
+  "gratuit", "gratuits", "2025", "2026", "vidéo", "video", "image", "images",
+]);
+
+function relatedTokens(post: Post): Set<string> {
+  const text = `${post.slug.replace(/-/g, " ")} ${post.frontmatter.title}`
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
+  return new Set(
+    text
+      .split(/[^a-z0-9]+/)
+      .filter((t) => t.length > 2 && !RELATED_STOPWORDS.has(t)),
+  );
+}
+
+/**
+ * Articles liés par proximité de sujet (mots partagés dans le slug et le
+ * titre), puis par catégorie, puis par voisinage chronologique. Un simple
+ * « 3 plus récents de la catégorie » envoyait tous les liens internes vers les
+ * mêmes articles ; ce score répartit le maillage sur toute l'archive.
+ */
+export function pickRelatedPosts(
+  all: Post[],
+  currentSlug: string,
+  limit = 3,
+): Post[] {
+  const currentIndex = all.findIndex((p) => p.slug === currentSlug);
+  if (currentIndex === -1) return [];
+  const current = all[currentIndex];
+  const currentTokens = relatedTokens(current);
+  const cat = current.frontmatter.category as BlogCategorySlug;
+
+  const scored = all
+    .map((p, i) => {
+      if (i === currentIndex) return null;
+      let score = 0;
+      for (const t of relatedTokens(p)) {
+        if (currentTokens.has(t)) score += 3;
+      }
+      if (p.frontmatter.category === cat) score += 2;
+      // Voisinage chronologique : un article publié à la même période obtient
+      // un léger bonus, ce qui relie aussi les anciens articles entre eux.
+      const distance = Math.abs(i - currentIndex);
+      score += Math.max(0, 1.5 - distance / 20);
+      return { post: p, score, distance };
+    })
+    .filter((x): x is { post: Post; score: number; distance: number } => x !== null)
+    .sort((a, b) => b.score - a.score || a.distance - b.distance);
+
+  return scored.slice(0, limit).map((x) => x.post);
+}
+
 export function getRelatedPosts(
   currentSlug: string,
   limit = 3,
 ): Post[] {
-  const all = getAllPosts();
-  const current = all.find((p) => p.slug === currentSlug);
-  if (!current) return [];
-
-  const others = all.filter((p) => p.slug !== currentSlug);
-  const cat = current.frontmatter.category as BlogCategorySlug;
-  const same = others.filter((p) => p.frontmatter.category === cat);
-  const rest = others.filter((p) => p.frontmatter.category !== cat);
-  const merged = [...same, ...rest];
-  return merged.slice(0, limit);
+  return pickRelatedPosts(getAllPosts(), currentSlug, limit);
 }
 
 export function readingTimeMinutes(content: string): number {

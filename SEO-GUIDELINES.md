@@ -15,11 +15,30 @@ complet du 2026-07-03 (données GSC 16 mois + crawl live).
   nouvelle page EN DOIT déclarer sa jumelle FR et réciproquement.
 - **Canonical** : self-canonical partout via `buildPageMetadata({ path })`.
   Jamais de page indexable sans canonical.
-- **`lang`** : le root layout sert `lang="fr"` ; `HtmlLangSync` corrige en
-  `en` côté client sur `/en`. `og:locale` est dérivée du path dans
-  `buildPageMetadata`. Backlog connu : servir `lang="en"` dans le HTML initial
-  via deux root layouts (bloqué tant que `press/`/`presse/` non trackés vivent
-  à la racine de `src/app`).
+- **`lang`** : deux root layouts, `src/app/(fr)/layout.tsx` (`lang="fr"`) et
+  `src/app/(en)/layout.tsx` (`lang="en"`), partagent `SiteShell`. Le HTML
+  initial porte donc la bonne langue, sans correction client. Toute nouvelle
+  route FR va dans `(fr)/`, toute route EN dans `(en)/en/`. Les fichiers
+  spéciaux (sitemap, robots, manifest, feed, llms, icônes, handlers 410) restent
+  à la racine de `src/app`. La 404 est `src/app/global-not-found.tsx`
+  (flag `experimental.globalNotFound`), autonome, avec liens vers les hubs.
+  `og:locale` est dérivée du path dans `buildPageMetadata`.
+- **Entités JSON-LD** : `PERSON_ID`, `ORGANIZATION_ID`, `WEBSITE_ID`
+  (`src/lib/metadata.ts`) sont les `@id` uniques de Frank, du site et de
+  l'organisation. Tout nouveau nœud Person/Organization doit les réutiliser
+  (author d'article, ProfilePage de l'à-propos et du kit presse, accueil FR/EN).
+- **Kit presse** : `/presse` existe (bio courte et longue, visuels, prix,
+  contact) et est lié depuis l'accueil, l'à-propos, le footer et `llms.txt`.
+  Ne pas le supprimer sans 301.
+- **Hreflang dans le sitemap** : `sitemap.ts` déclare `alternates.languages`
+  (fr, en, x-default) pour l'accueil, le blog, l'à-propos et chaque article
+  ayant sa jumelle. Toute nouvelle paire FR/EN doit y passer.
+- **Maillage « articles liés »** : `pickRelatedPosts` (`src/lib/blog.ts`)
+  choisit par mots partagés (slug + titre), puis catégorie, puis voisinage
+  chronologique, FR et EN. Ne pas revenir à « 3 plus récents de la
+  catégorie » : cela concentrait tous les liens internes sur 3 articles.
+- **Markdown** : `sanitizeMdxUnsafeSyntax` échappe les `<` nus (`<= -1 dBTP`,
+  `< 2 %`) hors code. Sans cela, six articles cassaient le build.
 - **robots.txt** : tout autorisé sauf `/api/`. Les crawlers IA (GPTBot,
   ClaudeBot, PerplexityBot…) sont volontairement autorisés. Ne pas les bloquer.
 - **llms.txt / llms-full.txt** : générés dynamiquement
@@ -47,9 +66,15 @@ complet du 2026-07-03 (données GSC 16 mois + crawl live).
 - **Interdit de passer `Post.content` (markdown complet) à un composant
   client.** Utiliser `PostSummary` / `toPostSummary()` de
   `src/lib/blog-thumbnail.ts`. C'est ce qui avait gonflé `/blog` à 4,2 Mo.
-- **Listes paginées** : `/en/blog` pagine côté serveur
-  (`/en/blog/page/N`, 24 posts/page, composant `EnBlogGrid`). Toute nouvelle
-  liste longue (>30 cartes) doit paginer en vraies URLs, pas en scroll infini.
+- **Listes paginées** : `/en/blog` et les archives FR `/blog/page/N` paginent
+  côté serveur (24 posts/page, composant `PaginatedBlogGrid`). `/blog` garde
+  sa liste client avec recherche mais lie chaque page d'archive en bas de page.
+  L'ancienne redirection WP `/blog/page/:num → /blog` ne couvre plus que la
+  page 1. Toute nouvelle liste longue (>30 cartes) doit paginer en vraies URLs.
+- **Vidéos tierces** : jamais d'iframe YouTube/Vimeo au chargement sur une
+  page de hub. Utiliser `VideoFacade` (vignette + lecture au clic).
+- **Polices** : Orbitron et Inter via `next/font/google` (`src/lib/fonts.ts`),
+  auto-hébergées. Aucun `<link>` vers Google Fonts ou un CDN de polices.
 - **Images** : toujours `next/image` (jamais `<img>` pour un asset local).
   Poids cible d'un hero **≤ 300 KB** à la génération ; les fichiers bruts
   servent d'og:image et sont chargés tels quels par les réseaux sociaux et
@@ -115,10 +140,20 @@ curl -s https://frankhoubre.com/blog/<slug> | grep -io '<link[^>]*alternate[^>]*
 curl -s https://frankhoubre.com/en/blog/<slug> | grep -oE '"@type":\s*"[^"]*"' | sort | uniq -c
 ```
 
-## 9. Backlog SEO connu (état 2026-07-03)
+## 9. Backlog SEO connu (état 2026-09-07)
 
-- [ ] `lang="en"` dans le HTML initial (route groups — bloqué par press/ non tracké).
-- [ ] Pagination serveur du blog FR (`/blog/page/N`, comme l'EN).
+- [x] `lang="en"` dans le HTML initial (route groups `(fr)` / `(en)`, 2026-09-07).
+- [x] Pagination serveur du blog FR (`/blog/page/N`, 2026-09-07).
+- [x] Page `/presse` (liens 404 depuis l'accueil et l'à-propos, 2026-09-07).
+- [x] Hreflang dans le sitemap, robots `max-image-preview:large`, manifest
+  (2026-09-07).
+- [ ] Contenu (audit du 2026-09-07 sur 271 articles FR) : 132 titres > 60
+  caractères, 168 excerpts hors 120–160, 53 articles sans FAQ, 67 avec moins
+  de 3 liens internes, 123 sans `dateModified`. À traiter par la boucle
+  éditoriale, article par article.
+- [ ] Localiser les visuels du hero (`src/lib/home-hero.ts` pointe vers
+  `images.higgs.ai`) dans `public/images/home/` pour ne plus dépendre d'un
+  hôte tiers.
 - [ ] Catégories EN (`/en/blog/category/*`) quand le trafic EN le justifie.
 - [ ] Compression batch des images blog > 400 KB (og:image bruts lourds).
 - [ ] GSC : demander la suppression des patterns spam `/shopdetail/`, `/detail/`

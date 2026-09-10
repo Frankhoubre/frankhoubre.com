@@ -11,7 +11,7 @@ export type OutilContent = {
   intro: string[];
   /** Mini-guide d'utilisation. */
   how: OutilStep[];
-  /** FAQ — rendue visuellement et exposée en FAQPage JSON-LD. */
+  /** FAQ : rendue visuellement et exposée en FAQPage JSON-LD. */
   faq: OutilFaqItem[];
 };
 
@@ -25,7 +25,7 @@ const outilContent = {
   storyboard: {
     intro: [
       "Le storyboard reste l'étape qui transforme une suite d'images IA en véritable intention de mise en scène. Cet outil gratuit vous permet d'assembler vos plans générés (Midjourney, Flux, Seedream…), de les annoter et d'exporter un PDF paginé prêt à présenter à un client, une équipe ou un jury.",
-      "Pensé pour un workflow de réalisation, il conserve l'ordre de vos plans, associe à chaque case une note de cadrage, de mouvement ou de lumière, et produit un document propre — sans inscription ni logiciel à installer.",
+      "Pensé pour un workflow de réalisation, il conserve l'ordre de vos plans, associe à chaque case une note de cadrage, de mouvement ou de lumière, et produit un document propre, sans inscription ni logiciel à installer.",
     ],
     how: [
       {
@@ -165,7 +165,7 @@ const outilContent = {
   },
   annuaireImages: {
     intro: [
-      "Le paysage des générateurs d'images IA change chaque mois. Cet annuaire interactif compare les plateformes gratuites — Midjourney et ses alternatives, modèles open source, outils en ligne — avec filtres, notes et limites gratuites pour trouver vite l'outil adapté à votre style.",
+      "Le paysage des générateurs d'images IA change chaque mois. Cet annuaire interactif compare les plateformes gratuites (Midjourney et ses alternatives, modèles open source, outils en ligne) avec filtres, notes et limites gratuites pour trouver vite l'outil adapté à votre style.",
       "Chaque fiche résume les modèles supportés, les quotas gratuits et les cas d'usage, pour choisir sans tester dix outils à l'aveugle.",
     ],
     how: [
@@ -211,7 +211,7 @@ const outilContent = {
   },
   annuaireAudio: {
     intro: [
-      "Le son fait la moitié de l'émotion d'un film. Cet annuaire compare les IA audio — musique, voix, bruitages et sound design — avec filtres et score intelligent pour trouver l'outil adapté à votre projet vidéo IA.",
+      "Le son fait la moitié de l'émotion d'un film. Cet annuaire compare les IA audio (musique, voix, bruitages et sound design) avec filtres et score intelligent pour trouver l'outil adapté à votre projet vidéo IA.",
       "Voix off, nappe musicale, ambiance ou effet ponctuel : chaque fiche précise le type de rendu, la qualité et les conditions d'usage gratuit.",
     ],
     how: [

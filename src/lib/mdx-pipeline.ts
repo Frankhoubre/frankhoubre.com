@@ -287,7 +287,23 @@ export function sanitizeMdxUnsafeSyntax(content: string): string {
 
   s = s.replace(/<!\[CDATA\[[\s\S]*?\]\]>/g, "");
 
+  s = escapeBareLessThan(s);
+
   return s;
+}
+
+/**
+ * Un `<` suivi d'une espace, d'un chiffre, de `=` ou de `-` (ex. « <= -1 dBTP »
+ * dans un tableau) n'ouvre aucune balise valide : MDX plante à la compilation.
+ * On l'échappe en `&lt;` hors des blocs et spans de code, où il reste littéral.
+ */
+export function escapeBareLessThan(content: string): string {
+  const parts = content.split(/(```[\s\S]*?```|~~~[\s\S]*?~~~|`[^`\n]*`)/g);
+  return parts
+    .map((part, i) =>
+      i % 2 === 1 ? part : part.replace(/<(?=[\s=\d-])/g, "&lt;"),
+    )
+    .join("");
 }
 
 export function runMdxPipeline(segment: string): string {
