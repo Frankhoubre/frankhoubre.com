@@ -12,7 +12,7 @@ import {
   SKOOL_OFFER,
   SKOOL_URL,
 } from "@/lib/funnel/config";
-import { getVimeoThumbnail } from "@/lib/funnel/vimeo";
+import { formatMinutes, getVimeoThumbnail } from "@/lib/funnel/vimeo";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -69,7 +69,7 @@ export default async function FormationCoursePage() {
 
           <nav aria-label="Les trois jours" className="mt-8">
             <ol className="mx-auto grid max-w-3xl gap-2 sm:grid-cols-3">
-              {FUNNEL_DAYS.map((d) => (
+              {FUNNEL_DAYS.map((d, i) => (
                 <li key={d.slug}>
                   <a
                     href={`#${d.slug}`}
@@ -80,6 +80,11 @@ export default async function FormationCoursePage() {
                     </span>
                     <span className="text-[var(--muted)]">·</span>
                     <span>{d.shortTitle}</span>
+                    {formatMinutes(thumbnails[i]?.duration) ? (
+                      <span className="whitespace-nowrap text-xs text-[var(--label)]">
+                        {formatMinutes(thumbnails[i]?.duration)}
+                      </span>
+                    ) : null}
                   </a>
                 </li>
               ))}

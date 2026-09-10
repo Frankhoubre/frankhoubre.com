@@ -153,6 +153,30 @@ export const FUNNEL_AWARDS = [
   { label: "2nd Place Dreamina", festival: "Mondial Chroma Awards" },
 ] as const;
 
+/** Questions posées sur la formation gratuite elle-même (page d'inscription). */
+export const FUNNEL_FAQ = [
+  {
+    q: "C'est vraiment gratuit ?",
+    a: "Oui. Les trois vidéos et leurs missions sont offertes, sans carte bancaire. Vous recevez les accès par email tout de suite, puis un email par jour pendant trois jours pour vous accompagner.",
+  },
+  {
+    q: "Combien de temps ça prend ?",
+    a: "Environ 24 minutes de vidéo en tout (12, 6 et 6 minutes), plus le temps de faire vos missions. Un jour par étape si vous suivez les emails, ou tout d'un coup si vous préférez.",
+  },
+  {
+    q: "Je débute, c'est pour moi ?",
+    a: "Oui. La méthode part de l'idée et du plan, pas de l'outil. Vous n'avez rien à installer pour regarder les vidéos. Les missions s'appuient sur ScreenWeaver, mon outil d'écriture et de storyboard, mais vous pouvez aussi les faire avec vos outils habituels.",
+  },
+  {
+    q: "Quelle différence avec AI Studios ?",
+    a: "Le challenge, c'est la méthode en trois jours, gratuite. AI Studios est la communauté et la formation complète sur Skool, à 7 euros par mois sans engagement. Vous n'avez aucune obligation de la rejoindre pour suivre le challenge.",
+  },
+  {
+    q: "Que faites-vous de mon adresse email ?",
+    a: "Elle sert à vous envoyer les accès et la série d'emails du challenge, puis mes conseils pour réussir en IA. Chaque email contient un lien de désinscription en un clic. Le détail est dans la politique de confidentialité du site.",
+  },
+] as const;
+
 /** Offre AI Studios telle qu'affichée sur l'ancien tunnel (à tenir à jour). */
 export const SKOOL_OFFER = {
   priceLabel: "7 €",
