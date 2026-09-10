@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { bodyFont, headingFont } from "@/lib/fonts";
 import { rootMetadata, rootViewport } from "@/lib/root-metadata";
 import "../globals.css";
@@ -18,8 +19,13 @@ export default function FunnelRootLayout({
     <html
       lang="fr"
       className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="relative isolate flex min-h-full flex-col bg-background text-foreground">
+        {/* Les états initiaux des animations ne s'appliquent qu'avec JS. */}
+        <Script id="funnel-js-flag" strategy="beforeInteractive">
+          {"document.documentElement.classList.add('js')"}
+        </Script>
         <a href="#main-content" className="ds-skip-link">
           Aller au contenu principal
         </a>

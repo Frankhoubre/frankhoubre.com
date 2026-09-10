@@ -46,6 +46,14 @@ export function formatMinutes(seconds: number | null | undefined): string | null
   return `${Math.max(1, Math.round(seconds / 60))} min`;
 }
 
+/** "12:28" à partir d'une durée en secondes (timecode), ou null. */
+export function formatTimecode(seconds: number | null | undefined): string | null {
+  if (!seconds) return null;
+  const m = Math.floor(seconds / 60);
+  const s = Math.round(seconds % 60);
+  return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
 /** Durée ISO 8601 (PT24M) pour le JSON-LD, ou null si inconnue. */
 export function isoMinutes(seconds: number | null | undefined): string | null {
   if (!seconds) return null;

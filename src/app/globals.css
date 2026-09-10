@@ -1169,6 +1169,285 @@ h4,
   animation: marquee-right 90s linear infinite;
 }
 
+/* ------------------------------------------------------------------ */
+/* Couche « cinéma » des landings : bandes sombres plein cadre, grain,   */
+/* letterbox, lueurs et timecodes. Le reste du site reste clair.          */
+/* ------------------------------------------------------------------ */
+
+.cine-band {
+  position: relative;
+  overflow: hidden;
+  background: #0b0c10;
+  color: #f3f4f6;
+}
+
+/* Grain de pellicule, discret, au-dessus des images et sous le texte. */
+.cine-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Les titres Orbitron passent en blanc sur les bandes sombres (la règle
+   .cyber-title, non layerée, gagne sinon sur l'utilitaire text-white). */
+.cine-band .cyber-title,
+.cine-band h1,
+.cine-band h2,
+.cine-band h3 {
+  color: #ffffff;
+}
+
+/* Voile sombre sous le texte : lisible même sur un ciel clair. */
+.cine-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgb(11 12 16 / 0.9) 0%,
+    rgb(11 12 16 / 0.72) 36%,
+    rgb(11 12 16 / 0.3) 62%,
+    rgb(11 12 16 / 0.08) 100%
+  );
+}
+
+@media (max-width: 1023px) {
+  .cine-scrim {
+    background: linear-gradient(
+      180deg,
+      rgb(11 12 16 / 0.9) 0%,
+      rgb(11 12 16 / 0.78) 50%,
+      rgb(11 12 16 / 0.86) 100%
+    );
+  }
+}
+
+/* Vignette : les bords s'assombrissent comme sur une projection. */
+.cine-vignette::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(120% 90% at 50% 45%, transparent 38%, rgb(5 6 10 / 0.82) 100%);
+}
+
+/* Bandes noires haut et bas, format IMAX. */
+.cine-letterbox {
+  border-top: 14px solid #000;
+  border-bottom: 14px solid #000;
+}
+
+@media (min-width: 768px) {
+  .cine-letterbox {
+    border-top-width: 22px;
+    border-bottom-width: 22px;
+  }
+}
+
+.cine-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cine-layer img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Lueurs : une source chaude (lumière pratique orange) et une froide. */
+.cine-glow {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(70px);
+  will-change: transform;
+}
+
+.cine-glow-orange {
+  background: radial-gradient(circle, rgb(224 112 32 / 0.65) 0%, rgb(224 112 32 / 0.18) 45%, transparent 70%);
+}
+
+.cine-glow-blue {
+  background: radial-gradient(circle, rgb(96 150 210 / 0.5) 0%, rgb(96 150 210 / 0.14) 45%, transparent 70%);
+}
+
+/* Sur fond clair : lueurs plus douces, comme des fuites de lumière. */
+.cine-leak {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.55;
+}
+
+.cine-leak-orange {
+  background: radial-gradient(circle, rgb(224 112 32 / 0.35) 0%, transparent 65%);
+}
+
+.cine-leak-blue {
+  background: radial-gradient(circle, rgb(96 150 210 / 0.3) 0%, transparent 65%);
+}
+
+@keyframes cineDrift {
+  from {
+    transform: translate3d(-4%, -3%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(5%, 4%, 0) scale(1.18);
+  }
+}
+
+@keyframes cineZoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.js .cine-drift {
+  animation: cineDrift 16s ease-in-out infinite alternate;
+}
+
+.js .cine-drift-slow {
+  animation: cineDrift 26s ease-in-out infinite alternate-reverse;
+}
+
+.js .cine-kenburns img {
+  animation: cineZoom 18s ease-out forwards;
+}
+
+.cine-timecode {
+  font-family: var(--font-heading), "Orbitron", monospace;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgb(243 244 246 / 0.72);
+}
+
+.cine-text-muted {
+  color: rgb(243 244 246 / 0.74);
+}
+
+.cine-text-label {
+  color: rgb(243 244 246 / 0.62);
+}
+
+/* Carte verre sombre posée sur une image. */
+.cine-card {
+  position: relative;
+  border-radius: 18px;
+  border: 1px solid rgb(255 255 255 / 0.14);
+  background: rgb(11 12 16 / 0.62);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px rgb(0 0 0 / 0.5);
+}
+
+/* Bouton « lumière pratique » : orange, avec une lueur (une seule par écran). */
+.cine-cta {
+  display: inline-flex;
+  min-height: 3rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, #f08a3a, #e07020 55%, #c45a18);
+  padding: 0.85rem 1.4rem;
+  font-family: var(--font-heading), "Orbitron", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #111111;
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.12), 0 14px 44px rgb(224 112 32 / 0.42);
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.cine-cta:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.18), 0 18px 56px rgb(224 112 32 / 0.55);
+}
+
+.cine-cta:disabled {
+  cursor: wait;
+  opacity: 0.8;
+}
+
+/* Fine ligne d'accroche vers le bas du hero. */
+.cine-scroll-cue {
+  position: relative;
+  width: 1px;
+  height: 56px;
+  background: linear-gradient(to bottom, rgb(243 244 246 / 0.6), transparent);
+}
+
+.js .cine-scroll-cue::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+  animation: cineCue 2.4s ease-in-out infinite;
+}
+
+@keyframes cineCue {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+
+/* Le hero d'accueil reçoit le même grain et une lueur chaude. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.14;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+.hero-ui::before {
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: 8%;
+  width: 46vw;
+  height: 46vw;
+  max-width: 720px;
+  max-height: 720px;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  background: radial-gradient(circle, rgb(224 112 32 / 0.32) 0%, transparent 65%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .ds-reveal,
   .ds-float,
@@ -1194,6 +1473,14 @@ h4,
   .cyber-btn,
   .cyber-icon-btn {
     transition: none !important;
+  }
+
+  .cine-drift,
+  .cine-drift-slow,
+  .cine-kenburns img,
+  .cine-scroll-cue::after {
+    animation: none !important;
+    transform: none !important;
   }
 }
 

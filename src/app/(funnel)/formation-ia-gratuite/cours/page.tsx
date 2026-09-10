@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { RevealObserver } from "@/components/cyber/RevealObserver";
+import { CineHero } from "@/components/funnel/CineHero";
 import { CourseWelcome } from "@/components/funnel/CourseWelcome";
 import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
 import { FilmStrip } from "@/components/funnel/FilmStrip";
@@ -39,51 +41,49 @@ export default async function FormationCoursePage() {
     <FunnelFrame>
       <FunnelBeacon event="course_view" />
 
-      <section className="relative overflow-hidden">
-        <div
-          className="pointer-events-none absolute inset-0"
-          aria-hidden
-          style={{
-            background:
-              "radial-gradient(55% 45% at 50% 0%, rgba(224,112,32,0.12), transparent 70%)",
-          }}
-        />
-        <div className="relative mx-auto max-w-5xl px-4 pb-10 pt-10 text-center sm:px-6 sm:pt-16">
+      <RevealObserver />
+      <CineHero
+        size="compact"
+        base={{
+          src: "/images/formation/hero.webp",
+          alt: "Photogramme : une silhouette en manteau au bord d’une terrasse de béton monumentale au-dessus de la ville, à l’aube",
+        }}
+      >
+        <div className="mx-auto w-full max-w-5xl px-4 pb-12 pt-10 text-center sm:px-6 sm:pt-16">
           <Suspense fallback={null}>
             <CourseWelcome />
           </Suspense>
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
+          <p className="cine-timecode fade-up-reveal">
             Challenge gratuit · 3 jours · accessible aux débutants
           </p>
-          <h1 className="cyber-title mx-auto mt-4 max-w-3xl text-[clamp(1.6rem,4.8vw,2.75rem)]">
+          <h1 className="cyber-title fade-up-reveal mx-auto mt-4 max-w-3xl text-[clamp(1.6rem,4.8vw,2.75rem)] text-white" data-delay="0.1">
             Arrêtez de générer au hasard.
             <br />
             <span className="text-[var(--orange)]">
               Commencez à réaliser de vrais films IA.
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">
+          <p className="cine-text-muted fade-up-reveal mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg" data-delay="0.2">
             En trois jours, vous allez apprendre à construire votre film avant
             de générer : une méthode pensée pour obtenir des personnages plus
             cohérents, des plans plus forts et réduire drastiquement les essais
             qui brûlent votre temps et vos crédits.
           </p>
 
-          <nav aria-label="Les trois jours" className="mt-8">
+          <nav aria-label="Les trois jours" className="fade-up-reveal mt-8" data-delay="0.3">
             <ol className="mx-auto grid max-w-3xl gap-2 sm:grid-cols-3">
               {FUNNEL_DAYS.map((d, i) => (
                 <li key={d.slug}>
                   <a
                     href={`#${d.slug}`}
-                    className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[rgba(17,17,17,0.18)] px-4 py-2.5 text-sm text-[var(--cream)] transition-colors duration-200 hover:border-[var(--cream)] hover:bg-[rgba(17,17,17,0.06)]"
+                    className="cine-card flex min-h-12 items-center justify-center gap-2 !rounded-xl px-4 py-2.5 text-sm text-white transition-colors duration-200 hover:border-white/40"
                   >
-                    <span className="heading-font whitespace-nowrap text-xs text-[var(--orange)]">
+                    <span className="cine-timecode whitespace-nowrap !text-[var(--orange)]">
                       Jour {d.n}
                     </span>
-                    <span className="text-[var(--muted)]">·</span>
                     <span>{d.shortTitle}</span>
                     {formatMinutes(thumbnails[i]?.duration) ? (
-                      <span className="whitespace-nowrap text-xs text-[var(--label)]">
+                      <span className="cine-timecode whitespace-nowrap">
                         {formatMinutes(thumbnails[i]?.duration)}
                       </span>
                     ) : null}
@@ -92,12 +92,12 @@ export default async function FormationCoursePage() {
               ))}
             </ol>
           </nav>
-          <p className="mt-6 text-xs text-[rgba(17,17,17,0.62)]">
+          <p className="cine-text-label fade-up-reveal mt-6 text-xs" data-delay="0.4">
             La méthode derrière des œuvres primées à Séoul, Hollywood et aux
             Mondial Chroma Awards.
           </p>
         </div>
-      </section>
+      </CineHero>
 
       {/* Les trois jours : vidéo et texte alternent d'un jour à l'autre. */}
       {FUNNEL_DAYS.map((d, i) => {
@@ -106,10 +106,15 @@ export default async function FormationCoursePage() {
           <section
             key={d.slug}
             id={d.slug}
-            className="cyber-divider scroll-mt-6"
+            className="cyber-divider relative scroll-mt-6 overflow-hidden"
             aria-labelledby={`${d.slug}-title`}
           >
-            <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:py-16">
+            <div
+              className={`cine-leak ${i % 2 === 1 ? "cine-leak-blue" : "cine-leak-orange"}`}
+              style={{ width: 460, height: 460, [i % 2 === 1 ? "left" : "right"]: "-12%", top: "-10%" }}
+              aria-hidden
+            />
+            <div className="fade-up-reveal relative mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:py-16">
               <div
                 className={`grid gap-8 lg:grid-cols-2 lg:gap-12 ${
                   reversed ? "lg:[&>*:first-child]:order-2" : ""
@@ -295,24 +300,29 @@ export default async function FormationCoursePage() {
             </div>
           </div>
 
-          <div className="mx-auto mt-14 max-w-2xl text-center">
-            <p className="cyber-title text-xl sm:text-2xl">
-              Le challenge vous a donné la direction.
-            </p>
-            <p className="mt-3 leading-relaxed text-[var(--muted)]">
-              La communauté vous donne l’exécution, l’entraide et la régularité,
-              pour le prix d’un café.
-            </p>
-            <div className="mt-6">
-              <TrackedLink
-                href={SKOOL_URL}
-                event="click_skool"
-                detail="final"
-                className={ctaSolid}
-              >
-                Rejoindre AI Studios à {SKOOL_OFFER.priceLabel} par mois
-              </TrackedLink>
-            </div>
+        </div>
+      </section>
+
+      <section className="cine-band cine-grain cine-vignette cine-letterbox" aria-labelledby="final-title">
+        <div className="cine-glow cine-glow-orange cine-drift" style={{ width: 620, height: 620, right: "-10%", top: "-30%" }} aria-hidden />
+        <div className="relative z-[5] mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 lg:py-24">
+          <p className="cine-timecode fade-up-reveal">Dernière séquence</p>
+          <p id="final-title" className="cyber-title fade-up-reveal mt-3 text-xl text-white sm:text-2xl" data-delay="0.1">
+            Le challenge vous a donné la direction.
+          </p>
+          <p className="cine-text-muted fade-up-reveal mt-3 leading-relaxed" data-delay="0.2">
+            La communauté vous donne l’exécution, l’entraide et la régularité,
+            pour le prix d’un café.
+          </p>
+          <div className="fade-up-reveal mt-6" data-delay="0.3">
+            <TrackedLink
+              href={SKOOL_URL}
+              event="click_skool"
+              detail="final"
+              className="cine-cta"
+            >
+              Rejoindre AI Studios à {SKOOL_OFFER.priceLabel} par mois
+            </TrackedLink>
           </div>
         </div>
       </section>

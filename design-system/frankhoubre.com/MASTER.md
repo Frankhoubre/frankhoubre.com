@@ -87,6 +87,21 @@ Jamais de bleu, jamais de registre sombre pleine page.
   12% cream hairlines between rows.
 - `.cyber-link`: cream underline at 35%, full cream on hover.
 
+### Cinema layer (`.cine-*`, landings du funnel)
+
+- `.cine-band` : bande sombre `#0b0c10`, texte blanc ; `.cine-grain::before` (grain SVG,
+  overlay 16 %), `.cine-vignette::after`, `.cine-letterbox` (bandes noires 14/22 px),
+  `.cine-scrim` (voile sombre sous le texte), `.cine-glow-orange` / `.cine-glow-blue`
+  (lueurs floutées, dérive lente `cineDrift`), `.cine-kenburns` (zoom lent 18 s),
+  `.cine-timecode`, `.cine-card` (verre sombre), `.cine-cta` (bouton orange lumineux,
+  une lueur par écran). Sur fond clair : `.cine-leak-*` (fuites de lumière douces).
+- Composant `CineHero` (src/components/funnel/CineHero.tsx) : photogramme plein cadre
+  + variante révélée au curseur (HeroSpotlight) + tout ce qui précède.
+- Apparitions au scroll : `RevealObserver` + classes `fade-up-reveal` / `data-delay`,
+  activées seulement sous `html.js` ; tout est désactivé en `prefers-reduced-motion`.
+- Dials : ENERGY 3 / RHYTHM 3 / MOTION 2 sur les landings ; le reste du site reste
+  ENERGY 2 / RHYTHM 2 / MOTION 1.
+
 ### Light register (`.ds-*`)
 
 - `.ds-card`, `.ds-hero`, `.ds-surface`, `.ds-chip`, `.ds-badge`, `.ds-input`: unchanged

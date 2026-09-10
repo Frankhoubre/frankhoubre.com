@@ -18,7 +18,15 @@ const ERRORS: Record<string, string> = {
  * Formulaire d'inscription à la formation. Envoie en JSON à l'API du funnel,
  * puis redirige vers la page de formation (les accès partent aussi par email).
  */
-export function OptInForm({ compact = false }: { compact?: boolean }) {
+export function OptInForm({
+  compact = false,
+  tone = "light",
+}: {
+  compact?: boolean;
+  /** « dark » : posé sur une bande cinéma sombre (textes clairs, bouton lumineux). */
+  tone?: "light" | "dark";
+}) {
+  const dark = tone === "dark";
   const id = useId();
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
@@ -65,8 +73,21 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
     }
   }
 
-  const inputClass =
-    "w-full rounded-xl border border-[rgba(17,17,17,0.32)] bg-[rgba(17,17,17,0.06)] px-4 py-3 text-base text-[var(--cream)] placeholder:text-[rgba(17,17,17,0.5)] transition-colors duration-200 focus:border-[var(--orange)] focus:bg-[rgba(17,17,17,0.1)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]";
+  const inputClass = dark
+    ? "w-full rounded-xl border border-white/25 bg-white/[0.06] px-4 py-3 text-base text-white placeholder:text-white/50 transition-colors duration-200 focus:border-[var(--orange)] focus:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]"
+    : "w-full rounded-xl border border-[rgba(17,17,17,0.32)] bg-[rgba(17,17,17,0.06)] px-4 py-3 text-base text-[var(--cream)] placeholder:text-[rgba(17,17,17,0.5)] transition-colors duration-200 focus:border-[var(--orange)] focus:bg-[rgba(17,17,17,0.1)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]";
+  const labelClass = dark
+    ? "mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-white/70"
+    : "mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(17,17,17,0.72)]";
+  const consentClass = dark
+    ? "flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-white/75"
+    : "flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-[var(--muted)]";
+  const noteClass = dark
+    ? "text-center text-xs leading-relaxed text-white/60"
+    : "text-center text-xs leading-relaxed text-[rgba(17,17,17,0.62)]";
+  const buttonClass = dark
+    ? "cine-cta w-full"
+    : "heading-font flex w-full cursor-pointer items-center justify-center rounded-xl bg-[#111111] px-5 py-4 text-sm uppercase tracking-[0.08em] text-white transition-[background-color,transform] duration-200 hover:bg-[#2a2a2a] disabled:cursor-wait disabled:opacity-80";
 
   return (
     <form
@@ -76,10 +97,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
       aria-describedby={`${id}-note`}
     >
       <div>
-        <label
-          htmlFor={`${id}-firstName`}
-          className="mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(17,17,17,0.72)]"
-        >
+        <label htmlFor={`${id}-firstName`} className={labelClass}>
           Votre prénom
         </label>
         <input
@@ -94,10 +112,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
         />
       </div>
       <div>
-        <label
-          htmlFor={`${id}-email`}
-          className="mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(17,17,17,0.72)]"
-        >
+        <label htmlFor={`${id}-email`} className={labelClass}>
           Votre e-mail
         </label>
         <input
@@ -125,10 +140,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
         />
       </div>
 
-      <label
-        htmlFor={`${id}-consent`}
-        className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-[var(--muted)]"
-      >
+      <label htmlFor={`${id}-consent`} className={consentClass}>
         <input
           id={`${id}-consent`}
           name="consent"
@@ -145,24 +157,20 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
       {error ? (
         <p
           role="alert"
-          className="rounded-lg border border-[rgba(224,112,32,0.6)] bg-[rgba(224,112,32,0.12)] px-3 py-2 text-sm text-[var(--cream)]"
+          className={`rounded-lg border border-[rgba(224,112,32,0.6)] bg-[rgba(224,112,32,0.12)] px-3 py-2 text-sm ${dark ? "text-white" : "text-[var(--cream)]"}`}
         >
           {error}
         </p>
       ) : null}
 
-      <button
-        type="submit"
-        disabled={status !== "idle"}
-        className="heading-font flex w-full cursor-pointer items-center justify-center rounded-xl bg-[#111111] px-5 py-4 text-sm uppercase tracking-[0.08em] text-white transition-[background-color,transform] duration-200 hover:bg-[#2a2a2a] disabled:cursor-wait disabled:opacity-80"
-      >
+      <button type="submit" disabled={status !== "idle"} className={buttonClass}>
         {status === "idle"
           ? "Je veux la méthode gratuite"
           : status === "sending"
             ? "Inscription en cours…"
             : "C'est bon, on y va"}
       </button>
-      <p id={`${id}-note`} className="text-center text-xs leading-relaxed text-[rgba(17,17,17,0.62)]">
+      <p id={`${id}-note`} className={noteClass}>
         Pas de spam : nous vous envoyons les accès et le processus pour réussir
         dans l’IA par email.
       </p>

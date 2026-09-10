@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
+import { RevealObserver } from "@/components/cyber/RevealObserver";
+import { CineHero } from "@/components/funnel/CineHero";
 import { FilmStrip } from "@/components/funnel/FilmStrip";
+import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
 import { FunnelFrame } from "@/components/funnel/FunnelFrame";
 import { MethodPipeline } from "@/components/funnel/MethodPipeline";
 import { OptInForm } from "@/components/funnel/OptInForm";
@@ -16,7 +18,13 @@ import {
   SKOOL_OFFER,
 } from "@/lib/funnel/config";
 import { LANDING_STILLS } from "@/lib/funnel/stills";
-import { formatMinutes, getVimeoThumbnail, isoMinutes } from "@/lib/funnel/vimeo";
+import {
+  formatMinutes,
+  formatTimecode,
+  getVimeoThumbnail,
+  isoMinutes,
+} from "@/lib/funnel/vimeo";
+import { homeHeroImages } from "@/lib/home-hero";
 import {
   ORGANIZATION_ID,
   PERSON_ID,
@@ -70,9 +78,6 @@ export default async function FormationOptInPage() {
   const metas = await Promise.all(FUNNEL_DAYS.map((d) => getVimeoThumbnail(d.vimeoId)));
   const totalSeconds = metas.reduce((acc, m) => acc + (m?.duration ?? 0), 0);
   const totalLabel = formatMinutes(totalSeconds);
-  const eyebrow = ["Formation offerte", "3 vidéos", totalLabel, "accessible aux débutants"]
-    .filter(Boolean)
-    .join(" · ");
 
   const jsonLd = buildGraphJsonLd(
     {
@@ -123,77 +128,76 @@ export default async function FormationOptInPage() {
     <FunnelFrame>
       <JsonLd data={jsonLd} />
       <FunnelBeacon event="optin_view" />
+      <RevealObserver />
 
-      {/* Hero : promesse et preuves à gauche, formulaire (point focal) à droite. */}
-      <section className="relative overflow-hidden" aria-labelledby="hero-title">
-        <div
-          className="pointer-events-none absolute inset-0"
-          aria-hidden
-          style={{
-            background:
-              "radial-gradient(60% 50% at 78% 20%, rgba(224,112,32,0.14), transparent 70%)",
-          }}
-        />
-        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 lg:pb-16 lg:pt-20">
+      {/* Ouverture : bande cinéma plein cadre, promesse et formulaire. */}
+      <CineHero base={homeHeroImages.base} reveal={homeHeroImages.reveal}>
+        <div className="mx-auto grid w-full max-w-6xl flex-1 gap-10 px-4 pb-10 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-14 lg:pb-16 lg:pt-20">
           <div className="min-w-0">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-              {eyebrow}
+            <p className="cine-timecode fade-up-reveal">
+              Formation offerte · 3 vidéos{totalLabel ? ` · ${totalLabel}` : ""} · accessible aux débutants
             </p>
-            <h1 id="hero-title" className="cyber-title mt-4 text-[clamp(1.85rem,5.4vw,3.35rem)]">
+            <h1
+              id="hero-title"
+              className="cyber-title fade-up-reveal mt-5 text-[clamp(1.9rem,5.6vw,3.6rem)] text-white"
+              data-delay="0.1"
+            >
               Je fais des films IA pro,
               <br />
               <span className="text-[var(--orange)]">voici comment.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--muted)] sm:text-xl">
+            <p
+              className="cine-text-muted fade-up-reveal mt-6 max-w-xl text-lg leading-relaxed sm:text-xl"
+              data-delay="0.2"
+            >
               Ce processus utilisé par les professionnels, et que peu partagent,
               permet d’économiser jusqu’à 80 % de vos crédits IA.
             </p>
-
-            <ul className="mt-8 space-y-3">
+            <ul className="fade-up-reveal mt-8 space-y-3" data-delay="0.3">
               {outcomes.map((o, i) => (
-                <li key={o} className="flex gap-3 text-[15px] leading-relaxed text-[var(--cream)] sm:text-base">
-                  <span className="heading-font mt-0.5 w-14 shrink-0 text-xs uppercase tracking-[0.08em] text-[var(--orange)]">
+                <li key={o} className="flex gap-3 text-[15px] leading-relaxed text-white sm:text-base">
+                  <span className="cine-timecode mt-1 w-14 shrink-0 !text-[var(--orange)]">
                     Jour {i + 1}
                   </span>
                   <span>{o}</span>
                 </li>
               ))}
             </ul>
-
-            <p className="mt-8 max-w-xl border-l-2 border-[var(--orange)] pl-4 text-sm leading-relaxed text-[var(--muted)]">
+            <p
+              className="cine-text-muted fade-up-reveal mt-8 max-w-xl border-l-2 border-[var(--orange)] pl-4 text-sm leading-relaxed"
+              data-delay="0.4"
+            >
               La méthode derrière Ronces, VOIDBORN et Lost Garden, primés ou
               sélectionnés dans {FUNNEL_AWARDS.length} festivals internationaux.
             </p>
+            <div className="mt-10 hidden items-center gap-4 lg:flex" aria-hidden>
+              <span className="cine-scroll-cue" />
+              <span className="cine-timecode">Défiler</span>
+            </div>
           </div>
 
-          <div id={FORM_ID} className="cyber-card scroll-mt-6 self-start p-5 sm:p-7 lg:sticky lg:top-6">
-            <p className="heading-font text-xs uppercase tracking-[0.1em] text-[var(--cream)]">
-              Recevoir les 3 vidéos
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+          <div
+            id={FORM_ID}
+            className="cine-card fade-up-reveal scroll-mt-6 self-center p-5 sm:p-7"
+            data-delay="0.25"
+          >
+            <p className="cine-timecode">Recevoir les 3 vidéos</p>
+            <p className="cine-text-muted mt-2 text-sm leading-relaxed">
               Gratuit. Accès immédiat à la formation, puis un email par jour
               pendant trois jours.
             </p>
             <div className="mt-5">
-              <OptInForm />
+              <OptInForm tone="dark" />
             </div>
           </div>
         </div>
-
-        {/* Extraits des films et séries de Frank, sous le hero. */}
-        <div className="relative mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-          <FilmStrip
-            stills={LANDING_STILLS}
-            caption="Extraits de mes films et séries IA, tous produits avec cette méthode"
-            priority
-          />
-        </div>
-      </section>
+      </CineHero>
 
       {/* Le renversement : pourquoi la plupart des gens brûlent leurs crédits. */}
-      <section className="cyber-divider" aria-labelledby="insight-title">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:py-20">
-          <div>
+      <section className="relative overflow-hidden" aria-labelledby="insight-title">
+        <div className="cine-leak cine-leak-blue" style={{ width: 520, height: 520, left: "-12%", top: "-20%" }} aria-hidden />
+        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:py-24">
+          <div className="fade-up-reveal">
             <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
               Le problème
             </p>
@@ -208,7 +212,7 @@ export default async function FormationOptInPage() {
               chaîne que j’utilise sur mes propres films.
             </p>
           </div>
-          <div>
+          <div className="fade-up-reveal" data-delay="0.15">
             <p className="mb-4 text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
               La méthode en quatre temps
             </p>
@@ -217,10 +221,11 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Programme : trois jours, durées réelles, missions. */}
-      <section className="cyber-divider" aria-labelledby="programme-title">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-          <div className="max-w-2xl">
+      {/* Programme : trois chapitres, timecodes réels. */}
+      <section className="cine-divider relative overflow-hidden" aria-labelledby="programme-title">
+        <div className="cine-leak cine-leak-orange" style={{ width: 620, height: 620, right: "-14%", top: "10%" }} aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
+          <div className="max-w-2xl fade-up-reveal">
             <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
               Le programme
             </p>
@@ -235,19 +240,20 @@ export default async function FormationOptInPage() {
           </div>
           <ol className="mt-10 grid gap-6 lg:grid-cols-3">
             {FUNNEL_DAYS.map((d, i) => {
-              const minutes = formatMinutes(metas[i]?.duration);
+              const tc = formatTimecode(metas[i]?.duration);
               return (
                 <li
                   key={d.slug}
-                  className={`cyber-card flex flex-col p-6 ${i === 2 ? "lg:col-span-1" : ""}`}
+                  className="cyber-card fade-up-reveal flex flex-col p-6"
+                  data-delay={String(0.1 * i)}
                 >
                   <div className="flex items-baseline justify-between gap-4">
                     <span className="heading-font text-3xl leading-none text-[var(--orange)]">
                       0{d.n}
                     </span>
-                    {minutes ? (
-                      <span className="rounded-full border border-[rgba(17,17,17,0.14)] px-2.5 py-1 text-[11px] uppercase tracking-[0.1em] text-[var(--label)]">
-                        Vidéo · {minutes}
+                    {tc ? (
+                      <span className="heading-font rounded-full border border-[rgba(17,17,17,0.14)] px-2.5 py-1 text-[11px] tracking-[0.14em] text-[var(--label)]">
+                        {tc}
                       </span>
                     ) : null}
                   </div>
@@ -265,7 +271,7 @@ export default async function FormationOptInPage() {
               );
             })}
           </ol>
-          <p className="mt-8">
+          <p className="mt-8 fade-up-reveal">
             <a href={`#${FORM_ID}`} className="ds-cta-dark !px-6 !py-3.5">
               Recevoir les 3 vidéos gratuites
             </a>
@@ -273,34 +279,80 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Preuves : palmarès et avis des membres. */}
-      <section className="cyber-divider" aria-labelledby="proof-title">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16">
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                Palmarès
-              </p>
-              <h2 id="proof-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
+      {/* Bande sombre : extraits et palmarès. */}
+      <section className="cine-band cine-grain cine-letterbox" aria-labelledby="proof-title">
+        <div className="cine-glow cine-glow-orange cine-drift-slow" style={{ width: 560, height: 560, left: "-10%", top: "-20%" }} aria-hidden />
+        <div className="relative z-[5] mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+            <div className="fade-up-reveal">
+              <p className="cine-timecode">Palmarès</p>
+              <h2 id="proof-title" className="cyber-title mt-3 text-2xl text-white sm:text-3xl">
                 Des films IA récompensés en festivals
               </h2>
-              <p className="mt-4 leading-relaxed text-[var(--muted)]">
+              <p className="cine-text-muted mt-4 leading-relaxed">
                 Ronces, VOIDBORN et Lost Garden sont sortis de cette méthode,
                 pas d’une théorie.
               </p>
-              <ul className="mt-6 grid gap-x-8 gap-y-2 sm:grid-cols-2">
+              <ul className="mt-6 space-y-2">
                 {FUNNEL_AWARDS.map((a) => (
                   <li key={`${a.label}-${a.festival}`} className="flex gap-3 text-sm leading-snug">
                     <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--orange)]" aria-hidden />
                     <span>
-                      <span className="text-[var(--cream)]">{a.label}</span>
-                      <span className="text-[var(--label)]"> · {a.festival}</span>
+                      <span className="text-white">{a.label}</span>
+                      <span className="cine-text-label"> · {a.festival}</span>
                     </span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="fade-up-reveal" data-delay="0.15">
+              <FilmStrip
+                stills={LANDING_STILLS}
+                caption="Extraits de mes films et séries IA, tous produits avec cette méthode"
+                tone="dark"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Avis des membres et qui parle. */}
+      <section className="relative overflow-hidden" aria-labelledby="frank-title">
+        <div className="cine-leak cine-leak-orange" style={{ width: 480, height: 480, right: "-10%", bottom: "-10%" }} aria-hidden />
+        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
+            <div className="grid gap-8 sm:grid-cols-[minmax(0,10rem)_1fr] sm:items-start fade-up-reveal">
+              <div className="relative aspect-square w-40 overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.12)] sm:w-full">
+                <Image
+                  src={person.image}
+                  alt={`Portrait de ${person.name}`}
+                  fill
+                  sizes="(max-width: 640px) 160px, 160px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="min-w-0">
+                <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
+                  Qui vous parle
+                </p>
+                <h2 id="frank-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
+                  Frank Houbre, réalisateur et formateur IA
+                </h2>
+                <p className="mt-4 leading-relaxed text-[var(--muted)]">
+                  Je réalise des films IA et je forme des créateurs, des
+                  indépendants et des équipes en entreprise. La méthode que je
+                  vous envoie est celle que j’utilise sur mes projets, avec ses
+                  contraintes réelles de budget et de cohérence. Pas de promesse
+                  de film en un clic : une façon de travailler qui tient.
+                </p>
+                <p className="mt-4 text-sm">
+                  <Link href="/a-propos" className="cyber-link">
+                    Parcours complet et projets
+                  </Link>
+                </p>
+              </div>
+            </div>
+            <div className="fade-up-reveal" data-delay="0.15">
               <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
                 Ce qu’en disent les membres d’AI Studios · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
               </p>
@@ -321,53 +373,18 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Qui parle. */}
-      <section className="cyber-divider" aria-labelledby="frank-title">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:py-20">
-          <div className="grid gap-8 md:grid-cols-[minmax(0,13rem)_1fr] md:items-center md:gap-12">
-            <div className="relative aspect-square w-40 overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.12)] md:w-full">
-              <Image
-                src={person.image}
-                alt={`Portrait de ${person.name}`}
-                fill
-                sizes="(max-width: 768px) 160px, 208px"
-                className="object-cover"
-              />
-            </div>
-            <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                Qui vous parle
-              </p>
-              <h2 id="frank-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-                Frank Houbre, réalisateur et formateur IA
-              </h2>
-              <p className="mt-4 max-w-xl leading-relaxed text-[var(--muted)]">
-                Je réalise des films IA et je forme des créateurs, des
-                indépendants et des équipes en entreprise. La méthode que je
-                vous envoie est celle que j’utilise sur mes projets, avec ses
-                contraintes réelles de budget et de cohérence. Pas de promesse
-                de film en un clic : une façon de travailler qui tient.
-              </p>
-              <p className="mt-4 text-sm">
-                <Link href="/a-propos" className="cyber-link">
-                  Parcours complet et projets
-                </Link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Questions fréquentes sur la formation gratuite. */}
-      <section className="cyber-divider" aria-labelledby="faq-title">
-        <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:py-20">
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-            Avant de vous inscrire
-          </p>
-          <h2 id="faq-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-            Questions fréquentes
-          </h2>
-          <div className="mt-6 divide-y divide-[rgba(17,17,17,0.12)] border-y border-[rgba(17,17,17,0.12)]">
+      <section className="cine-divider" aria-labelledby="faq-title">
+        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
+          <div className="fade-up-reveal">
+            <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
+              Avant de vous inscrire
+            </p>
+            <h2 id="faq-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
+              Questions fréquentes
+            </h2>
+          </div>
+          <div className="mt-6 divide-y divide-[rgba(17,17,17,0.12)] border-y border-[rgba(17,17,17,0.12)] fade-up-reveal" data-delay="0.1">
             {FUNNEL_FAQ.map((f) => (
               <details key={f.q} className="group">
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[15px] font-medium text-[var(--cream)] [&::-webkit-details-marker]:hidden">
@@ -394,19 +411,22 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Dernier appel. */}
-      <section className="cyber-divider" aria-labelledby="final-title">
-        <div className="mx-auto max-w-xl px-4 py-14 sm:px-6 lg:py-20">
-          <div className="cyber-card p-5 sm:p-7">
-            <h2 id="final-title" className="cyber-title text-xl sm:text-2xl">
+      {/* Dernier appel : bande sombre avec la lumière pratique. */}
+      <section className="cine-band cine-grain cine-vignette cine-letterbox" aria-labelledby="final-title">
+        <div className="cine-glow cine-glow-orange cine-drift" style={{ width: 640, height: 640, right: "-8%", top: "-30%" }} aria-hidden />
+        <div className="cine-glow cine-glow-blue cine-drift-slow" style={{ width: 520, height: 520, left: "-12%", bottom: "-40%" }} aria-hidden />
+        <div className="relative z-[5] mx-auto max-w-xl px-4 py-16 sm:px-6 lg:py-24">
+          <div className="cine-card p-5 sm:p-7 fade-up-reveal">
+            <p className="cine-timecode">Dernière séquence</p>
+            <h2 id="final-title" className="cyber-title mt-3 text-xl text-white sm:text-2xl">
               Recevoir les trois jours
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+            <p className="cine-text-muted mt-2 text-sm leading-relaxed">
               Le film que vous imaginez peut exister. On commence par l’idée,
               pas par le bouton générer.
             </p>
             <div className="mt-5">
-              <OptInForm compact />
+              <OptInForm compact tone="dark" />
             </div>
           </div>
         </div>

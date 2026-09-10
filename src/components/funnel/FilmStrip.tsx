@@ -6,20 +6,23 @@ type Props = {
   caption: string;
   /** Première image chargée en priorité (au-dessus de la ligne de flottaison). */
   priority?: boolean;
+  /** « dark » : posée sur une bande cinéma sombre. */
+  tone?: "light" | "dark";
 };
 
 /**
  * Planche de six extraits : deux colonnes sur mobile, trois sur grand écran.
  * Les images viennent de la galerie de l'accueil, déjà optimisées en WebP.
  */
-export function FilmStrip({ stills, caption, priority = false }: Props) {
+export function FilmStrip({ stills, caption, priority = false, tone = "light" }: Props) {
+  const dark = tone === "dark";
   return (
     <figure>
       <ul className="grid grid-cols-2 gap-2 sm:gap-3 lg:grid-cols-3">
         {stills.map((s, i) => (
           <li
             key={s.src}
-            className="relative aspect-video overflow-hidden rounded-xl border border-[rgba(17,17,17,0.12)] bg-[#e6e6ea]"
+            className={`relative aspect-video overflow-hidden rounded-xl border ${dark ? "border-white/15 bg-[#15171c]" : "border-[rgba(17,17,17,0.12)] bg-[#e6e6ea]"}`}
           >
             <Image
               src={s.src}
@@ -32,7 +35,7 @@ export function FilmStrip({ stills, caption, priority = false }: Props) {
           </li>
         ))}
       </ul>
-      <figcaption className="mt-3 text-[11px] uppercase tracking-[0.1em] text-[var(--label)]">
+      <figcaption className={dark ? "cine-timecode mt-3" : "mt-3 text-[11px] uppercase tracking-[0.1em] text-[var(--label)]"}>
         {caption}
       </figcaption>
     </figure>
