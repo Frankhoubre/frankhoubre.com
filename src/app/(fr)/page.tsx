@@ -276,7 +276,7 @@ export default function HomePage() {
       <div className="cyber-page relative overflow-x-hidden">
         {galleryImages.length > 0 ? (
           <section
-            className="border-b border-[rgba(251,219,175,0.1)] py-8 sm:py-10"
+            className="border-b border-[rgba(17,17,17,0.1)] py-8 sm:py-10"
             aria-label="Extraits visuels de projets IA"
           >
             <HomeFilmGallery images={galleryImages} />
@@ -331,7 +331,7 @@ export default function HomePage() {
                 {awardHighlights.map((award) => (
                   <span
                     key={award}
-                    className="rounded-full border border-[rgba(251,219,175,0.2)] px-3 py-1 text-[11px] uppercase tracking-[0.06em] text-[var(--cream)]"
+                    className="rounded-full border border-[rgba(17,17,17,0.2)] px-3 py-1 text-[11px] uppercase tracking-[0.06em] text-[var(--cream)]"
                   >
                     {award}
                   </span>

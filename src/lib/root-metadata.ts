@@ -5,7 +5,7 @@ import { baseUrl, person, siteName } from "@/lib/site";
 export const rootViewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0a0807",
+  themeColor: "#f6f6f7",
 };
 
 /**

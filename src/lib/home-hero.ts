@@ -1,24 +1,22 @@
 /**
- * Visuels du hero d'accueil. Trois images : la scène de base, la scène
- * alternative révélée par le curseur, et la vignette de la carte produit.
- * Pour remplacer un visuel, changer l'URL ici (et l'autoriser dans
- * next.config.ts si l'hôte change).
+ * Visuels du hero d'accueil, servis depuis public/images/home/ :
+ * - hero-base.webp : la scène affichée par défaut ;
+ * - hero-reveal.webp : la scène alternative révélée sous le curseur ;
+ * - hero-thumb.webp : la vignette carrée de la carte AI Studios.
+ * Pour changer d'illustration, remplacer ces trois fichiers (1920 px de large
+ * pour les deux scènes, 400 x 400 pour la vignette) et mettre à jour les alt.
  */
-const HIGGS = "https://images.higgs.ai/?default=1&output=webp&url=";
-const CDN =
-  "https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2F";
-
 export const homeHeroImages = {
   base: {
-    src: `${HIGGS}${CDN}hf_20260831_115955_2a9adb39-5e9b-4ced-96e2-6900eabe3de9.png&w=1920&q=85`,
-    alt: "Portrait cyberpunk généré par IA : un ronin aux lunettes teintées dans une lumière orangée",
+    src: "/images/home/hero-base.webp",
+    alt: "Photogramme IA : une silhouette en manteau sur une rampe de béton monumentale, ciel gris, une source de lumière orange",
   },
   reveal: {
-    src: `${HIGGS}${CDN}hf_20260831_123709_183f0065-efb2-4bb2-a849-13aaa5af2f3f.png&w=1920&q=85`,
-    alt: "Même scène IA en variante nocturne, révélée sous le curseur",
+    src: "/images/home/hero-reveal.webp",
+    alt: "Variante de la scène révélée sous le curseur : la silhouette face à la ville dans la brume, sous une architecture brutaliste",
   },
   thumb: {
-    src: `${HIGGS}${CDN}hf_20260831_121937_3f02b5a0-5b86-43d9-b30e-03c5e46632e7.png&w=1920&q=85`,
-    alt: "Vignette du programme AI Studios : image cyberpunk générée par IA",
+    src: "/images/home/hero-thumb.webp",
+    alt: "Vignette du programme AI Studios : détail du photogramme IA",
   },
 } as const;

@@ -62,7 +62,7 @@ export function VideoFacade({
     <button
       type="button"
       onClick={() => setPlaying(true)}
-      className="group relative block aspect-video w-full cursor-pointer overflow-hidden rounded-xl border border-[rgba(251,219,175,0.12)] bg-[#1a120c] text-left"
+      className="group relative block aspect-video w-full cursor-pointer overflow-hidden rounded-xl border border-[rgba(17,17,17,0.12)] bg-[#1a1a1a] text-left"
       aria-label={`${playLabel} : ${title}`}
     >
       {posterSrc ? (
@@ -79,18 +79,18 @@ export function VideoFacade({
         aria-hidden
       />
       <span className="absolute inset-0 grid place-items-center" aria-hidden>
-        <span className="grid h-14 w-14 place-items-center rounded-full border border-[var(--cream)] bg-[rgba(10,8,7,0.55)] text-[var(--cream)] backdrop-blur-md transition-colors duration-200 group-hover:bg-[var(--orange)] group-hover:text-white">
+        <span className="grid h-14 w-14 place-items-center rounded-full border border-[var(--cream)] bg-[rgba(255,255,255,0.55)] text-white backdrop-blur-md transition-colors duration-200 group-hover:bg-[var(--orange)] group-hover:text-white">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M8 5.5v13l11-6.5-11-6.5Z" />
           </svg>
         </span>
       </span>
       {caption ? (
-        <span className="heading-font absolute left-4 top-3 text-[11px] uppercase tracking-[0.12em] text-[var(--cream)]">
+        <span className="heading-font absolute left-4 top-3 text-[11px] uppercase tracking-[0.12em] text-white">
           {caption}
         </span>
       ) : null}
-      <span className="absolute bottom-3 left-4 text-[11px] uppercase tracking-[0.12em] text-[var(--cream)]">
+      <span className="absolute bottom-3 left-4 text-[11px] uppercase tracking-[0.12em] text-white">
         {playLabel}
       </span>
     </button>

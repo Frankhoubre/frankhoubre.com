@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  /* Palette « Cyber Ronin » : crème sur brun profond, accent orange. */
-  --cream: #fbdbaf;
-  --muted: rgba(251, 219, 175, 0.72);
-  --label: rgba(251, 219, 175, 0.48);
+  /* Palette claire : blanc-gris quadrille, texte noir, Orbitron + accent orange.
+     Les noms « cream / ink » sont conserves pour ne pas renommer tout le code :
+     --cream est desormais la couleur du texte, --ink celle du fond. */
+  --cream: #111111;
+  --muted: rgba(17, 17, 17, 0.72);
+  --label: rgba(17, 17, 17, 0.62);
   --orange: #e07020;
   --orange-deep: #c45a18;
-  --ink: #0a0807;
-  --card: rgba(10, 8, 7, 0.58);
+  --ink: #f6f6f7;
+  --card: rgba(255, 255, 255, 0.78);
   --hero-top: 92px;
 
-  /* Pages de lecture : fond chaud clair, encre sombre, accent orange. */
-  --background: #fbf7f1;
-  --foreground: #14100c;
-  --color-primary: #14100c;
-  --color-secondary: #4a3f36;
+  /* Pages de lecture : meme fond blanc-gris, encre noire, accent orange. */
+  --background: #f6f6f7;
+  --foreground: #111111;
+  --color-primary: #111111;
+  --color-secondary: #444444;
   --color-cta: #e07020;
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -79,26 +81,21 @@ body {
   font-family: var(--font-body), "Inter", system-ui, -apple-system, sans-serif;
 }
 
-/* Motif micro-points, discret et sans effet "grand bloc" répété. */
+/* Quadrillage discret : fines lignes toutes les 32 px, plus marquees tous les
+   160 px, pour le fond « papier millimetre » du site. */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.45;
-  background-image: radial-gradient(circle, rgb(20 16 12 / 0.09) 0.7px, transparent 0.8px);
-  background-size: 18px 18px;
+  background-image:
+    linear-gradient(to right, rgb(17 17 17 / 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(17 17 17 / 0.055) 1px, transparent 1px),
+    linear-gradient(to right, rgb(17 17 17 / 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(17 17 17 / 0.09) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 160px 160px, 160px 160px;
   background-repeat: repeat;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background: radial-gradient(ellipse at center, transparent 52%, rgb(20 16 12 / 0.08) 100%);
 }
 
 h1,
@@ -117,14 +114,14 @@ h4,
 }
 
 .ds-section {
-  border-top: 1px solid rgb(228 220 210 / 0.9);
+  border-top: 1px solid rgb(226 226 230 / 0.9);
   background: var(--background);
 }
 
 .ds-card {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgb(228 220 210 / 0.95);
+  border: 1px solid rgb(226 226 230 / 0.95);
   border-radius: 1rem;
   background: #fff;
   box-shadow: var(--shadow-sm);
@@ -154,13 +151,13 @@ h4,
 .ds-cinematic-frame {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgb(251 219 175 / 0.14);
+  border: 1px solid rgb(17 17 17 / 0.14);
   border-radius: 1.75rem;
   background:
-    linear-gradient(140deg, rgb(26 18 12 / 0.98), rgb(10 8 7 / 0.98)),
+    linear-gradient(140deg, rgb(255 255 255 / 0.98), rgb(240 240 243 / 0.98)),
     var(--ink);
   color: var(--cream);
-  box-shadow: 0 20px 45px rgb(10 8 7 / 0.45);
+  box-shadow: 0 16px 36px rgb(17 17 17 / 0.08);
 }
 
 .ds-cinematic-frame::before {
@@ -169,8 +166,8 @@ h4,
   inset: -1px;
   pointer-events: none;
   background:
-    radial-gradient(circle at 12% 8%, rgb(224 112 32 / 0.28), transparent 34%),
-    radial-gradient(circle at 90% 82%, rgb(251 219 175 / 0.08), transparent 30%);
+    radial-gradient(circle at 12% 8%, rgb(224 112 32 / 0.16), transparent 34%),
+    radial-gradient(circle at 90% 82%, rgb(17 17 17 / 0.04), transparent 30%);
 }
 
 .ds-page {
@@ -188,11 +185,11 @@ h4,
 }
 
 .ds-hero {
-  border: 1px solid rgb(228 220 210 / 0.9);
+  border: 1px solid rgb(226 226 230 / 0.9);
   border-radius: 1.5rem;
   background: rgb(255 255 255 / 0.82);
   backdrop-filter: blur(12px);
-  box-shadow: 0 18px 42px rgb(20 16 12 / 0.08);
+  box-shadow: 0 18px 42px rgb(17 17 17 / 0.08);
 }
 
 .ds-eyebrow {
@@ -201,7 +198,7 @@ h4,
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #6b5b4e;
+  color: #555555;
 }
 
 .ds-link {
@@ -216,7 +213,7 @@ h4,
 }
 
 .ds-surface {
-  border: 1px solid rgb(228 220 210 / 0.9);
+  border: 1px solid rgb(226 226 230 / 0.9);
   border-radius: 1.5rem;
   background: rgb(255 255 255 / 0.78);
   backdrop-filter: blur(10px);
@@ -246,10 +243,10 @@ h4,
   align-items: center;
   justify-content: center;
   border-radius: 0.75rem;
-  border: 1px solid rgb(161 148 136 / 0.7);
+  border: 1px solid rgb(150 150 156 / 0.7);
   background: rgb(255 255 255 / 0.75);
   padding: 0.7rem 1.1rem;
-  color: #14100c;
+  color: #111111;
   font-weight: 600;
   transition: border-color 200ms ease, background-color 200ms ease, transform 200ms ease;
 }
@@ -269,7 +266,7 @@ h4,
   padding: 0.75rem 1.35rem;
   font-size: 0.92rem;
   font-weight: 600;
-  color: #fff;
+  color: #111111;
   box-shadow: 0 12px 28px rgb(196 90 24 / 0.3);
   transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
@@ -286,19 +283,19 @@ h4,
   align-items: center;
   justify-content: center;
   border-radius: 0.75rem;
-  background: linear-gradient(140deg, #1a120c, #0a0807);
+  background: linear-gradient(140deg, #222222, #111111);
   padding: 0.72rem 1.1rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--cream);
-  box-shadow: 0 10px 24px rgb(10 8 7 / 0.22);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgb(17 17 17 / 0.22);
   transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
 
 .ds-cta-dark:hover {
   transform: translateY(-1px);
   filter: brightness(1.06);
-  box-shadow: 0 14px 30px rgb(10 8 7 / 0.3);
+  box-shadow: 0 14px 30px rgb(17 17 17 / 0.3);
 }
 
 .ds-cta-ghost-light {
@@ -307,8 +304,8 @@ h4,
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  border: 1px solid rgb(251 219 175 / 0.4);
-  background: rgb(251 219 175 / 0.08);
+  border: 1px solid rgb(17 17 17 / 0.4);
+  background: rgb(17 17 17 / 0.08);
   padding: 0.75rem 1.35rem;
   font-size: 0.92rem;
   font-weight: 600;
@@ -319,8 +316,8 @@ h4,
 
 .ds-cta-ghost-light:hover {
   transform: translateY(-1px);
-  border-color: rgb(251 219 175 / 0.7);
-  background: rgb(251 219 175 / 0.14);
+  border-color: rgb(17 17 17 / 0.7);
+  background: rgb(17 17 17 / 0.14);
 }
 
 .ds-chip {
@@ -329,12 +326,12 @@ h4,
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  border: 1px solid rgb(228 220 210 / 0.9);
-  background: rgb(247 241 233 / 0.85);
+  border: 1px solid rgb(226 226 230 / 0.9);
+  background: rgb(240 240 243 / 0.85);
   padding: 0.36rem 0.78rem;
   font-size: 0.8rem;
   font-weight: 500;
-  color: #4a3f36;
+  color: #444444;
   transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease, color 200ms ease;
 }
 
@@ -342,20 +339,20 @@ h4,
   transform: translateY(-1px);
   border-color: rgb(224 112 32 / 0.6);
   background: #fff;
-  color: #14100c;
+  color: #111111;
 }
 
 .ds-chip-active {
   border-color: rgb(196 90 24 / 0.6);
   background: linear-gradient(135deg, #e07020, #c45a18);
-  color: #fff;
+  color: #111111;
   box-shadow: 0 8px 18px rgb(196 90 24 / 0.25);
 }
 
 .ds-chip-active:hover {
   border-color: rgb(196 90 24 / 0.8);
   background: linear-gradient(135deg, #e07020, #c45a18);
-  color: #fff;
+  color: #111111;
 }
 
 .ds-badge {
@@ -363,15 +360,15 @@ h4,
   cursor: pointer;
   align-items: center;
   border-radius: 9999px;
-  border: 1px solid rgb(10 8 7 / 0.65);
-  background: linear-gradient(140deg, #1a120c, #0a0807);
+  border: 1px solid rgb(17 17 17 / 0.65);
+  background: linear-gradient(140deg, #222222, #111111);
   padding: 0.2rem 0.62rem;
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--cream);
+  color: #ffffff;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  box-shadow: 0 8px 16px rgb(10 8 7 / 0.2);
+  box-shadow: 0 8px 16px rgb(17 17 17 / 0.2);
   transition: transform 200ms ease, filter 200ms ease;
 }
 
@@ -383,17 +380,17 @@ h4,
 .ds-input {
   width: 100%;
   border-radius: 0.75rem;
-  border: 1px solid rgb(212 204 194 / 0.95);
+  border: 1px solid rgb(210 210 216 / 0.95);
   background: rgb(255 255 255 / 0.92);
   padding: 0.62rem 0.82rem;
   font-size: 0.9rem;
-  color: #14100c;
+  color: #111111;
   outline: none;
   transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
 }
 
 .ds-input::placeholder {
-  color: #7a6b5e;
+  color: #666666;
 }
 
 .ds-input:focus {
@@ -433,13 +430,13 @@ h4,
   background: var(--card);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(251, 219, 175, 0.08);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0 14px 36px rgba(17, 17, 17, 0.08);
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
 .cyber-card:hover {
-  border-color: rgba(251, 219, 175, 0.22);
+  border-color: rgba(17, 17, 17, 0.22);
 }
 
 .cyber-btn {
@@ -460,13 +457,13 @@ h4,
 
 .cyber-btn:hover {
   transform: translateY(-1px);
-  background: rgba(251, 219, 175, 0.1);
+  background: rgba(17, 17, 17, 0.1);
 }
 
 .cyber-btn-solid {
   border-color: var(--orange);
   background: var(--orange);
-  color: #fff;
+  color: #111111;
 }
 
 .cyber-btn-solid:hover {
@@ -478,7 +475,7 @@ h4,
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(251, 219, 175, 0.55);
+  border: 1px solid rgba(17, 17, 17, 0.55);
   background: transparent;
   color: var(--cream);
   display: grid;
@@ -488,7 +485,7 @@ h4,
 }
 
 .cyber-icon-btn:hover {
-  background: rgba(251, 219, 175, 0.1);
+  background: rgba(17, 17, 17, 0.1);
   border-color: var(--cream);
 }
 
@@ -501,7 +498,7 @@ h4,
 }
 
 .cyber-spec-row + .cyber-spec-row {
-  border-top: 1px solid rgba(251, 219, 175, 0.12);
+  border-top: 1px solid rgba(17, 17, 17, 0.12);
 }
 
 .cyber-spec-label {
@@ -522,7 +519,7 @@ h4,
   color: var(--cream);
   text-decoration: underline;
   text-underline-offset: 0.24rem;
-  text-decoration-color: rgba(251, 219, 175, 0.35);
+  text-decoration-color: rgba(17, 17, 17, 0.35);
   transition: text-decoration-color 0.2s ease;
 }
 
@@ -531,7 +528,7 @@ h4,
 }
 
 .cyber-divider {
-  border-top: 1px solid rgba(251, 219, 175, 0.12);
+  border-top: 1px solid rgba(17, 17, 17, 0.12);
 }
 
 /* ------------------------------------------------------------------ */
@@ -544,8 +541,36 @@ h4,
   height: 100vh;
   height: 100dvh;
   overflow: hidden;
-  background: var(--orange-deep);
+  background: var(--ink);
   color: var(--cream);
+}
+
+/* Voile clair entre l'image et le texte : le noir reste lisible sur la photo. */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgb(246 246 247 / 0.9) 0%,
+    rgb(246 246 247 / 0.72) 28%,
+    rgb(246 246 247 / 0.2) 48%,
+    rgb(246 246 247 / 0) 62%
+  );
+}
+
+@media (max-width: 768px) {
+  .hero::after {
+    background: linear-gradient(
+      180deg,
+      rgb(246 246 247 / 0.92) 0%,
+      rgb(246 246 247 / 0.78) 38%,
+      rgb(246 246 247 / 0.25) 60%,
+      rgb(246 246 247 / 0) 75%
+    );
+  }
 }
 
 .hero-base-img,
@@ -606,7 +631,6 @@ h4,
   line-height: 1.05;
   text-transform: uppercase;
   color: var(--cream);
-  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.22);
 }
 
 .hero-copy p {
@@ -642,7 +666,7 @@ h4,
   min-height: 86px;
   border-radius: 12px;
   overflow: hidden;
-  background: rgba(251, 219, 175, 0.06);
+  background: rgba(17, 17, 17, 0.06);
 }
 
 .product-thumb img {
@@ -681,9 +705,15 @@ h4,
   position: absolute;
   top: var(--hero-top);
   right: 44px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   font-size: 13px;
   letter-spacing: 0.08em;
-  color: rgba(251, 219, 175, 0.78);
+  color: rgba(17, 17, 17, 0.85);
   pointer-events: auto;
 }
 
@@ -693,6 +723,13 @@ h4,
   justify-self: end;
   pointer-events: auto;
   width: min(340px, 100%);
+  /* Carte verre claire : le texte noir reste lisible sur la partie sombre de la photo. */
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .specs h3 {
@@ -1104,7 +1141,7 @@ h4,
   background: linear-gradient(
     105deg,
     transparent 26%,
-    rgb(251 219 175 / 0.08) 45%,
+    rgb(17 17 17 / 0.08) 45%,
     rgb(224 112 32 / 0.2) 52%,
     transparent 72%
   );

@@ -49,41 +49,41 @@ export function SiteHeader() {
   const headerClass = transparent
     ? "fixed inset-x-0 border-b border-transparent bg-transparent"
     : dark
-      ? "sticky border-b border-[rgba(251,219,175,0.12)] bg-[rgba(10,8,7,0.82)] backdrop-blur-xl"
+      ? "sticky border-b border-[rgba(17,17,17,0.12)] bg-[rgba(255,255,255,0.82)] backdrop-blur-xl"
       : "sticky border-b border-[rgba(228,220,210,0.9)] bg-white/85 backdrop-blur-xl";
 
   const brandClass = dark ? "text-[var(--cream)]" : "text-neutral-950";
 
   const navClass = dark
-    ? "bg-[rgba(251,219,175,0.08)] text-[rgba(251,219,175,0.9)] ring-1 ring-[rgba(251,219,175,0.14)] backdrop-blur-md"
+    ? "bg-[rgba(255,255,255,0.8)] text-[#111111] ring-1 ring-[rgba(17,17,17,0.12)] backdrop-blur-md"
     : "bg-[rgba(247,241,233,0.9)] text-zinc-800";
 
   const desktopLinkClass = `rounded-full px-3 py-1.5 transition-colors duration-200 ${
     dark
-      ? "hover:bg-[rgba(251,219,175,0.14)] hover:text-[var(--cream)]"
+      ? "hover:bg-white hover:text-[#111111]"
       : "hover:bg-white hover:text-zinc-950"
   }`;
 
   const ctaClass = dark
-    ? "bg-[var(--cream)] text-[#0a0807] hover:bg-white"
-    : "bg-[#14100c] text-[var(--cream)] hover:bg-[#2a1d14]";
+    ? "bg-[#111111] text-white hover:bg-[#2a2a2a]"
+    : "bg-[#111111] text-white hover:bg-[#2a2a2a]";
 
   const burgerClass = dark
-    ? "bg-[rgba(251,219,175,0.1)] text-[var(--cream)] backdrop-blur-md hover:bg-[rgba(251,219,175,0.2)]"
-    : "bg-[rgba(247,241,233,0.9)] text-zinc-900 hover:bg-[#efe6da]";
+    ? "bg-[rgba(255,255,255,0.8)] text-[#111111] backdrop-blur-md hover:bg-white"
+    : "bg-[rgba(247,241,233,0.9)] text-zinc-900 hover:bg-[#e4e4e8]";
 
   const panelClass = dark
-    ? "border-[rgba(251,219,175,0.12)] bg-[rgba(10,8,7,0.96)]"
+    ? "border-[rgba(17,17,17,0.12)] bg-[rgba(255,255,255,0.96)]"
     : "border-[rgba(228,220,210,0.9)] bg-white/95";
 
   const panelLink = (active: boolean) =>
     dark
       ? active
-        ? "bg-[rgba(251,219,175,0.12)] text-[var(--cream)]"
-        : "text-[rgba(251,219,175,0.82)] hover:bg-[rgba(251,219,175,0.1)] hover:text-[var(--cream)]"
+        ? "bg-[rgba(17,17,17,0.12)] text-[var(--cream)]"
+        : "text-[rgba(17,17,17,0.82)] hover:bg-[rgba(17,17,17,0.1)] hover:text-[var(--cream)]"
       : active
-        ? "bg-[#f3ece2] text-zinc-950"
-        : "text-zinc-800 hover:bg-[#f3ece2] hover:text-zinc-950";
+        ? "bg-[#ececef] text-zinc-950"
+        : "text-zinc-800 hover:bg-[#ececef] hover:text-zinc-950";
 
   return (
     <header

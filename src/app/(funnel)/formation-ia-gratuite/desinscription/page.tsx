@@ -23,7 +23,7 @@ export default async function UnsubscribedPage({
     <FunnelFrame>
       <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="cyber-card p-6 sm:p-8">
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+          <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
             Emails de la formation
           </p>
           <h1 className="cyber-title mt-3 text-2xl">
@@ -37,7 +37,7 @@ export default async function UnsubscribedPage({
           <p className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
               href={FUNNEL_PATHS.course}
-              className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[rgba(251,219,175,0.4)] px-5 py-3 text-sm font-medium text-[var(--cream)] transition-colors duration-200 hover:border-[var(--cream)]"
+              className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[rgba(17,17,17,0.4)] px-5 py-3 text-sm font-medium text-[var(--cream)] transition-colors duration-200 hover:border-[var(--cream)]"
             >
               Revoir la formation
             </Link>

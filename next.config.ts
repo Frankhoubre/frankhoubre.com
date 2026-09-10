@@ -129,16 +129,10 @@ const nextConfig: NextConfig = {
         hostname: "img.youtube.com",
         pathname: "/**",
       },
-      // Visuels du hero d'accueil : passés par next/image, donc redimensionnés
-      // et servis en AVIF/WebP depuis notre domaine.
+      // Vignettes Vimeo des vidéos de la formation (récupérées via oEmbed).
       {
         protocol: "https",
-        hostname: "images.higgs.ai",
-        pathname: "/",
-      },
-      {
-        protocol: "https",
-        hostname: "d8j0ntlcm91z4.cloudfront.net",
+        hostname: "i.vimeocdn.com",
         pathname: "/**",
       },
     ],

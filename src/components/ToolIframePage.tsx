@@ -20,11 +20,11 @@ export function ToolIframePage({
     <div className="ds-page">
       <section className="ds-cinematic-frame p-6 sm:p-8">
         <div className="relative z-10">
-          <p className="ds-eyebrow text-white/70">Outil interactif</p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <p className="ds-eyebrow text-neutral-600">Outil interactif</p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
             {title}
           </h1>
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/85 sm:text-base">
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-800 sm:text-base">
             {subtitle}
           </p>
         </div>
@@ -60,7 +60,7 @@ export function ToolIframePage({
               {content.how.map((step, i) => (
                 <li key={i} className="ds-card flex gap-4 p-5">
                   <span
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-sm font-semibold text-white"
+                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-sm font-semibold text-neutral-950"
                     aria-hidden
                   >
                     {i + 1}

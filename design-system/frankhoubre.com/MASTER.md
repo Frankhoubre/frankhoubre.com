@@ -19,20 +19,25 @@
 
 | Role | Value | CSS Variable |
 |------|-------|--------------|
-| Cream (text on dark) | `#FBDBAF` | `--cream` |
-| Muted cream | `rgba(251, 219, 175, 0.72)` | `--muted` |
-| Label cream | `rgba(251, 219, 175, 0.48)` | `--label` |
+| Text (was « cream ») | `#111111` | `--cream` |
+| Muted text | `rgba(17, 17, 17, 0.72)` | `--muted` |
+| Label text | `rgba(17, 17, 17, 0.62)` | `--label` |
 | Accent | `#E07020` | `--orange` |
-| Accent deep / hero ground | `#C45A18` | `--orange-deep` |
-| Ink (dark surfaces) | `#0A0807` | `--ink` |
-| Glass card | `rgba(10, 8, 7, 0.58)` + `backdrop-filter: blur(18px)` | `--card` |
-| Reading background | `#FBF7F1` | `--background` |
-| Reading text | `#14100C` | `--foreground` |
-| CTA | `#E07020` | `--color-cta` |
+| Accent deep | `#C45A18` | `--orange-deep` |
+| Page ground (was « ink ») | `#F6F6F7` | `--ink`, `--background` |
+| Glass card | `rgba(255, 255, 255, 0.78)` + `backdrop-filter: blur(18px)` | `--card` |
+| Body text | `#111111` | `--foreground` |
+| CTA | `#E07020` (black text) | `--color-cta` |
 
-**Color Notes:** Two registers. Dark register (home, footer, 404, hero frames): ink ground,
-cream text, orange accent, glass cards. Light register (blog, articles, tools, legal):
-warm off-white ground, dark ink text, orange accent and focus rings. Never blue.
+**Color Notes (since 2026-09-10, direction de Frank) :** un seul registre, clair :
+fond blanc-gris `#F6F6F7` quadrillé (lignes toutes les 32 px, plus marquées tous
+les 160 px, posées par `body::before`), texte noir, accent orange, titres
+Orbitron. Les variables `--cream` / `--ink` gardent leur nom historique mais
+valent désormais noir / blanc-gris : ne pas les lire au premier degré. Les
+boutons pleins sont noirs avec texte blanc (`.ds-cta-dark`, `.ds-badge`) ou
+orange avec texte noir (`.ds-cta-primary`, `.cyber-btn-solid`). Le hero
+d'accueil garde ses images plein écran sous un voile clair (`.hero::after`).
+Jamais de bleu, jamais de registre sombre pleine page.
 
 ### Typography
 
@@ -73,7 +78,7 @@ warm off-white ground, dark ink text, orange accent and focus rings. Never blue.
 
 ### Dark register (`.cyber-*`)
 
-- `.cyber-page`: ink ground, cream text.
+- `.cyber-page`: white-grey ground, black text (nom historique).
 - `.cyber-card`: glass card, radius 18px, 1px border `rgba(251,219,175,0.08)`.
 - `.cyber-btn`: pill, 1px cream border, transparent, 12px/500, hover lifts 1px.
   `.cyber-btn-solid` for the orange filled variant.
@@ -111,10 +116,10 @@ warm off-white ground, dark ink text, orange accent and focus rings. Never blue.
 
 ## Style Guidelines
 
-**Style:** Motion-Driven, cyberpunk warm palette
+**Style:** Motion-Driven, light engineering grid, black on white-grey, orange accent
 
-**Keywords:** Full-bleed imagery, cursor spotlight, glass cards, uppercase Orbitron
-labels, cream on ink, orange accent
+**Keywords:** Full-bleed imagery under a light scrim, cursor spotlight, white glass
+cards, uppercase Orbitron labels, black on white-grey grid, orange accent
 
 **Section Order (home):** 1. Cyber hero, 2. Film strip marquee, 3. Positioning +
 public signals, 4. Four pillars, 5. Explore by theme (categories + tools), 6. Films

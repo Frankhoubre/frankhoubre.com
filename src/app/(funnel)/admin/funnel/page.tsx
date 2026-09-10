@@ -147,7 +147,7 @@ function StepRow({
   hint?: string;
 }) {
   return (
-    <div className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-t border-[rgb(228_220_210/0.9)] py-3 first:border-t-0">
+    <div className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-t border-[rgb(226_226_230/0.9)] py-3 first:border-t-0">
       <div className="min-w-0">
         <p className="text-sm font-medium text-neutral-900">{label}</p>
         {hint ? <p className="text-xs text-neutral-600">{hint}</p> : null}
@@ -191,11 +191,11 @@ function DailyChart({ days }: { days: DayStats[] }) {
           className="h-auto w-full min-w-[480px]"
         >
           <line x1={padL} x2={w - 8} y1={y(0)} y2={y(0)} stroke="#d4ccc2" />
-          <line x1={padL} x2={w - 8} y1={y(max)} y2={y(max)} stroke="#e4dcd2" strokeDasharray="3 4" />
-          <text x={padL - 6} y={y(max) + 4} fontSize="11" textAnchor="end" fill="#4a3f36">
+          <line x1={padL} x2={w - 8} y1={y(max)} y2={y(max)} stroke="#e2e2e6" strokeDasharray="3 4" />
+          <text x={padL - 6} y={y(max) + 4} fontSize="11" textAnchor="end" fill="#444444">
             {max}
           </text>
-          <text x={padL - 6} y={y(0) + 4} fontSize="11" textAnchor="end" fill="#4a3f36">
+          <text x={padL - 6} y={y(0) + 4} fontSize="11" textAnchor="end" fill="#444444">
             0
           </text>
           {days.map((d, i) => {
@@ -208,7 +208,7 @@ function DailyChart({ days }: { days: DayStats[] }) {
                 <rect x={x} y={y(views)} width={bar} height={y(0) - y(views)} fill="#e4d2bc" />
                 <rect x={x} y={y(subs)} width={bar} height={y(0) - y(subs)} fill="#c45a18" />
                 {i % labelEvery === 0 || i === days.length - 1 ? (
-                  <text x={x + bar / 2} y={h - 6} fontSize="10" textAnchor="middle" fill="#4a3f36">
+                  <text x={x + bar / 2} y={h - 6} fontSize="10" textAnchor="middle" fill="#444444">
                     {shortDay(d.date)}
                   </text>
                 ) : null}
@@ -261,7 +261,7 @@ function SourcesTable({
           </thead>
           <tbody>
             {rows.map(([src, n]) => (
-              <tr key={src} className="border-t border-[rgb(228_220_210/0.9)]">
+              <tr key={src} className="border-t border-[rgb(226_226_230/0.9)]">
                 <td className="py-1.5 pr-3 text-neutral-900">{src}</td>
                 <td className="py-1.5 pr-3 text-right tabular-nums text-neutral-950">{n}</td>
                 <td className="py-1.5 text-right tabular-nums text-neutral-600">{pct(n, total)}</td>
@@ -307,7 +307,7 @@ function Dashboard({ period, data }: { period: Period; data: Data }) {
             </h1>
           </div>
           <div className="flex flex-wrap items-center gap-2">
-            <nav aria-label="Période" className="flex gap-1 rounded-full border border-[rgb(228_220_210/0.9)] bg-white p-1">
+            <nav aria-label="Période" className="flex gap-1 rounded-full border border-[rgb(226_226_230/0.9)] bg-white p-1">
               {PERIODS.map((p) => (
                 <Link
                   key={p}
@@ -315,8 +315,8 @@ function Dashboard({ period, data }: { period: Period; data: Data }) {
                   aria-current={p === period ? "page" : undefined}
                   className={`inline-flex min-h-9 items-center rounded-full px-3 text-sm transition-colors duration-200 ${
                     p === period
-                      ? "bg-[#14100c] text-[var(--cream)]"
-                      : "text-neutral-800 hover:bg-[#f3ece2]"
+                      ? "bg-[#111111] text-white"
+                      : "text-neutral-800 hover:bg-[#ececef]"
                   }`}
                 >
                   {p} jours
@@ -497,7 +497,7 @@ function Dashboard({ period, data }: { period: Period; data: Data }) {
                 </thead>
                 <tbody>
                   {data.subscribers.map((s) => (
-                    <tr key={s.email} className="border-t border-[rgb(228_220_210/0.9)]">
+                    <tr key={s.email} className="border-t border-[rgb(226_226_230/0.9)]">
                       <td className="py-2 pr-3 text-neutral-900">{s.firstName}</td>
                       <td className="py-2 pr-3 text-neutral-950">{s.email}</td>
                       <td className="py-2 pr-3 tabular-nums text-neutral-700">{fmtDate(s.createdAt)}</td>
@@ -532,7 +532,7 @@ function Dashboard({ period, data }: { period: Period; data: Data }) {
           {data.recent.length === 0 ? (
             <p className="mt-2 text-sm text-neutral-700">Aucun événement enregistré.</p>
           ) : (
-            <ul className="mt-3 divide-y divide-[rgb(228_220_210/0.9)] text-sm">
+            <ul className="mt-3 divide-y divide-[rgb(226_226_230/0.9)] text-sm">
               {data.recent.map((e, i) => (
                 <li key={`${e.at}-${i}`} className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 py-1.5">
                   <span className="w-28 shrink-0 tabular-nums text-neutral-600">{fmtDate(e.at)}</span>
@@ -562,7 +562,7 @@ function ErrorView({ message }: { message: string }) {
             La base de données n’a pas répondu. Vérifiez les variables Upstash
             (URL et jeton) dans Vercel, puis rechargez la page.
           </p>
-          <pre className="mt-4 overflow-x-auto rounded-lg bg-[#f3ece2] p-3 text-xs text-neutral-800">{message}</pre>
+          <pre className="mt-4 overflow-x-auto rounded-lg bg-[#ececef] p-3 text-xs text-neutral-800">{message}</pre>
         </div>
       </div>
     </FunnelFrame>

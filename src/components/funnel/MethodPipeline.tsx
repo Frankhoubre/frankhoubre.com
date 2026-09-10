@@ -55,10 +55,10 @@ const STEPS = [
 
 export function MethodPipeline() {
   return (
-    <ol className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[rgba(251,219,175,0.14)] bg-[rgba(251,219,175,0.14)]">
+    <ol className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.14)] bg-[rgba(17,17,17,0.14)]">
       {STEPS.map((s) => (
-        <li key={s.n} className="bg-[#100c09] p-4 sm:p-5">
-          <div className="flex items-center justify-between text-[rgba(251,219,175,0.62)]">
+        <li key={s.n} className="bg-white p-4 sm:p-5">
+          <div className="flex items-center justify-between text-[rgba(17,17,17,0.62)]">
             <span className="heading-font text-[11px] tracking-[0.12em]">{s.n}</span>
             {s.icon}
           </div>

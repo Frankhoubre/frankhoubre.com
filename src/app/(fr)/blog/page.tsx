@@ -63,10 +63,10 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
       <div className="ds-page max-w-5xl">
       <header className="ds-cinematic-frame mb-12 max-w-4xl p-6 sm:p-8">
         <div className="ds-cinematic-beam" aria-hidden />
-        <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">
+        <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-neutral-600">
           Journal IA
         </p>
-        <h1 className="relative z-10 mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        <h1 className="relative z-10 mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
           <span className="ds-title-line">
             <span>Blog</span>
           </span>
@@ -74,7 +74,7 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
             <span>cinéma, IA et production</span>
           </span>
         </h1>
-        <p className="relative z-10 mt-4 text-lg leading-relaxed text-white/85">
+        <p className="relative z-10 mt-4 text-lg leading-relaxed text-neutral-800">
           Idées, tutoriels et actualités signés {siteName}. Utilisez la recherche
           et les catégories pour parcourir les articles publiés.
         </p>

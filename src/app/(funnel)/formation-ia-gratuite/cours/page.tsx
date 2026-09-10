@@ -12,6 +12,7 @@ import {
   SKOOL_OFFER,
   SKOOL_URL,
 } from "@/lib/funnel/config";
+import { getVimeoThumbnail } from "@/lib/funnel/vimeo";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
@@ -24,11 +25,14 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 const ctaSolid =
-  "heading-font inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl bg-[var(--cream)] px-5 py-3 text-xs uppercase tracking-[0.08em] text-[#0a0807] transition-[background-color,transform] duration-200 hover:bg-white";
+  "heading-font inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl bg-[#111111] px-5 py-3 text-xs uppercase tracking-[0.08em] text-white transition-[background-color,transform] duration-200 hover:bg-[#2a2a2a]";
 const ctaGhost =
-  "inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border border-[rgba(251,219,175,0.4)] px-5 py-3 text-sm font-medium text-[var(--cream)] transition-[border-color,background-color] duration-200 hover:border-[var(--cream)] hover:bg-[rgba(251,219,175,0.08)]";
+  "inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border border-[rgba(17,17,17,0.4)] px-5 py-3 text-sm font-medium text-[var(--cream)] transition-[border-color,background-color] duration-200 hover:border-[var(--cream)] hover:bg-[rgba(17,17,17,0.08)]";
 
-export default function FormationCoursePage() {
+export default async function FormationCoursePage() {
+  const thumbnails = await Promise.all(
+    FUNNEL_DAYS.map((d) => getVimeoThumbnail(d.vimeoId)),
+  );
   return (
     <FunnelFrame>
       <FunnelBeacon event="course_view" />
@@ -39,14 +43,14 @@ export default function FormationCoursePage() {
           aria-hidden
           style={{
             background:
-              "radial-gradient(55% 45% at 50% 0%, rgba(224,112,32,0.2), transparent 70%)",
+              "radial-gradient(55% 45% at 50% 0%, rgba(224,112,32,0.12), transparent 70%)",
           }}
         />
         <div className="relative mx-auto max-w-5xl px-4 pb-10 pt-10 text-center sm:px-6 sm:pt-16">
           <Suspense fallback={null}>
             <CourseWelcome />
           </Suspense>
-          <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+          <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
             Challenge gratuit · 3 jours · accessible aux débutants
           </p>
           <h1 className="cyber-title mx-auto mt-4 max-w-3xl text-[clamp(1.6rem,4.8vw,2.75rem)]">
@@ -69,7 +73,7 @@ export default function FormationCoursePage() {
                 <li key={d.slug}>
                   <a
                     href={`#${d.slug}`}
-                    className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[rgba(251,219,175,0.18)] px-4 py-2.5 text-sm text-[var(--cream)] transition-colors duration-200 hover:border-[var(--cream)] hover:bg-[rgba(251,219,175,0.06)]"
+                    className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[rgba(17,17,17,0.18)] px-4 py-2.5 text-sm text-[var(--cream)] transition-colors duration-200 hover:border-[var(--cream)] hover:bg-[rgba(17,17,17,0.06)]"
                   >
                     <span className="heading-font whitespace-nowrap text-xs text-[var(--orange)]">
                       Jour {d.n}
@@ -81,7 +85,7 @@ export default function FormationCoursePage() {
               ))}
             </ol>
           </nav>
-          <p className="mt-6 text-xs text-[rgba(251,219,175,0.62)]">
+          <p className="mt-6 text-xs text-[rgba(17,17,17,0.62)]">
             La méthode derrière des œuvres primées à Séoul, Hollywood et aux
             Mondial Chroma Awards.
           </p>
@@ -110,6 +114,8 @@ export default function FormationCoursePage() {
                     videoId={d.vimeoId}
                     title={`${d.kicker} : ${d.title}`}
                     caption={d.kicker}
+                    poster={thumbnails[i]?.url}
+                    posterAlt={`Vignette de la vidéo ${d.kicker}`}
                   />
                 </div>
                 <div className="min-w-0">
@@ -133,8 +139,8 @@ export default function FormationCoursePage() {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-5 rounded-xl border border-[rgba(251,219,175,0.14)] bg-[rgba(251,219,175,0.05)] px-4 py-3 text-sm leading-relaxed text-[var(--cream)]">
-                    <span className="text-[rgba(251,219,175,0.62)]">Mission du jour : </span>
+                  <p className="mt-5 rounded-xl border border-[rgba(17,17,17,0.14)] bg-[rgba(17,17,17,0.05)] px-4 py-3 text-sm leading-relaxed text-[var(--cream)]">
+                    <span className="text-[rgba(17,17,17,0.62)]">Mission du jour : </span>
                     {d.mission}
                   </p>
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -170,7 +176,7 @@ export default function FormationCoursePage() {
       >
         <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:py-20">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+            <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
               Vous avez maintenant la carte
             </p>
             <h2 id="ai-studios-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
@@ -188,7 +194,7 @@ export default function FormationCoursePage() {
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
             <div className="cyber-card p-6 sm:p-8">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
                 La communauté AI Studios
               </p>
               <h3 className="cyber-title mt-3 text-xl sm:text-2xl">
@@ -206,7 +212,7 @@ export default function FormationCoursePage() {
                 </span>
                 <span className="text-sm text-[var(--muted)]">{SKOOL_OFFER.period}</span>
               </p>
-              <p className="mt-1 text-xs uppercase tracking-[0.1em] text-[rgba(251,219,175,0.62)]">
+              <p className="mt-1 text-xs uppercase tracking-[0.1em] text-[rgba(17,17,17,0.62)]">
                 Moins qu’un café par semaine
               </p>
               <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
@@ -226,7 +232,7 @@ export default function FormationCoursePage() {
             </div>
 
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
                 Ce que vous obtenez
               </p>
               <ul className="mt-4 space-y-3">
@@ -237,21 +243,21 @@ export default function FormationCoursePage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm leading-relaxed text-[rgba(251,219,175,0.62)]">
+              <p className="mt-4 text-sm leading-relaxed text-[rgba(17,17,17,0.62)]">
                 Les modules suivants (Étapes 2 à 5, masterclass et bonus) font
                 partie de l’accès annuel complet.
               </p>
 
-              <p className="mt-8 text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+              <p className="mt-8 text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
                 Ce qu’ils en disent · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
               </p>
               <ul className="mt-4 space-y-4">
                 {SKOOL_OFFER.reviews.map((r) => (
-                  <li key={r.author} className="border-l-2 border-[rgba(251,219,175,0.25)] pl-4">
+                  <li key={r.author} className="border-l-2 border-[rgba(17,17,17,0.25)] pl-4">
                     <p className="text-[15px] leading-relaxed text-[var(--cream)]">
                       « {r.text} »
                     </p>
-                    <p className="mt-1.5 text-xs text-[rgba(251,219,175,0.62)]">{r.author}</p>
+                    <p className="mt-1.5 text-xs text-[rgba(17,17,17,0.62)]">{r.author}</p>
                   </li>
                 ))}
               </ul>
@@ -260,7 +266,7 @@ export default function FormationCoursePage() {
 
           <div className="mx-auto mt-14 max-w-2xl">
             <h3 className="cyber-title text-lg sm:text-xl">Questions fréquentes</h3>
-            <div className="mt-4 divide-y divide-[rgba(251,219,175,0.14)] border-y border-[rgba(251,219,175,0.14)]">
+            <div className="mt-4 divide-y divide-[rgba(17,17,17,0.14)] border-y border-[rgba(17,17,17,0.14)]">
               {SKOOL_OFFER.faq.map((f) => (
                 <details key={f.q} className="group">
                   <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[15px] font-medium text-[var(--cream)] [&::-webkit-details-marker]:hidden">

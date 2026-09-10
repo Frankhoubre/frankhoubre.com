@@ -137,7 +137,7 @@ function ExternalLinkButton({ label, href }: { label: string; href: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group inline-flex w-full cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+      className="group inline-flex w-full cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-neutral-950 transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
     >
       {label}
     </a>
@@ -176,7 +176,7 @@ export default function LiensPage() {
         />
 
         <section className="mx-auto max-w-5xl px-4 pb-10 pt-14 sm:px-6 sm:pt-20">
-          <div className="ds-cinematic-frame ds-reveal relative overflow-hidden rounded-3xl p-6 text-white shadow-xl shadow-zinc-900/30 sm:p-8">
+          <div className="ds-cinematic-frame ds-reveal relative overflow-hidden rounded-3xl p-6 text-neutral-950 shadow-xl shadow-zinc-900/30 sm:p-8">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.24),transparent_45%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.08),transparent_40%)]"
@@ -188,7 +188,7 @@ export default function LiensPage() {
               <h1 className="ds-reveal ds-reveal-delay-1 mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
                 Tous mes liens IA, podcast, plateformes et ressources en un seul endroit
               </h1>
-              <p className="ds-reveal ds-reveal-delay-2 mt-4 max-w-2xl text-sm leading-relaxed text-white/85 sm:text-base">
+              <p className="ds-reveal ds-reveal-delay-2 mt-4 max-w-2xl text-sm leading-relaxed text-neutral-800 sm:text-base">
                 Cette page regroupe mes outils utilises au quotidien, mes canaux de diffusion et
                 les ressources pour apprendre a creer des images et videos IA de facon credible.
               </p>
@@ -222,7 +222,7 @@ export default function LiensPage() {
           </div>
         </section>
 
-        <section className="ds-section bg-white/70">
+        <section className="ds-section bg-neutral-900/5">
           <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 sm:py-16">
             <div className="mb-7">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-500">
@@ -288,7 +288,7 @@ export default function LiensPage() {
                         <Link
                           key={`${group.title}-${link.label}`}
                           href={link.href}
-                          className="group inline-flex w-full cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                          className="group inline-flex w-full cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-zinc-950 px-5 py-3 text-center text-sm font-semibold text-neutral-950 transition-all duration-200 hover:-translate-y-0.5 hover:border-zinc-400 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                         >
                           {link.label}
                         </Link>

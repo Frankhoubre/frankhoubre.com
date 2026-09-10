@@ -31,7 +31,7 @@ export function HomeLatestPostGrid({
         return (
           <li key={post.slug}>
             <article className="cyber-card group flex h-full flex-col overflow-hidden">
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#1a120c]">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#e6e6ea]">
                 <Link href={href} className="relative block h-full w-full">
                   {thumb ? (
                     thumb.startsWith("http") ? (

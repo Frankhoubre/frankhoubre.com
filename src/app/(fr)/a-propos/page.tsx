@@ -126,8 +126,8 @@ export default function AboutPage() {
           </figure>
 
           <div className="relative z-10 space-y-5">
-            <p className="text-xs uppercase tracking-wide text-white/70">À propos</p>
-            <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+            <p className="text-xs uppercase tracking-wide text-neutral-600">À propos</p>
+            <h1 className="text-3xl font-semibold tracking-tight text-neutral-950 sm:text-5xl">
               <span className="ds-title-line">
                 <span>Frank Houbre</span>
               </span>
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 <span>entrepreneur et créateur</span>
               </span>
             </h1>
-            <div className="space-y-4 text-lg leading-relaxed text-white/85">
+            <div className="space-y-4 text-lg leading-relaxed text-neutral-800">
               <p>
                 Frank Houbre est un <strong>entrepreneur français</strong>, <strong>formateur IA</strong> et{" "}
                 <strong>réalisateur IA</strong> spécialisé dans la création d’<strong>images</strong>,

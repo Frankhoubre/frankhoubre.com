@@ -34,6 +34,14 @@ export const metadata: Metadata = buildPageMetadata({
   openGraph: {
     title: `${title} | ${siteName}`,
     description,
+    images: [
+      {
+        path: "/images/formation/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Formation vidéo IA gratuite de Frank Houbre",
+      },
+    ],
   },
 });
 
@@ -82,12 +90,12 @@ export default function FormationOptInPage() {
           aria-hidden
           style={{
             background:
-              "radial-gradient(60% 50% at 75% 30%, rgba(224,112,32,0.22), transparent 70%)",
+              "radial-gradient(60% 50% at 75% 30%, rgba(224,112,32,0.14), transparent 70%)",
           }}
         />
         <div className="relative mx-auto grid max-w-5xl gap-10 px-4 pb-14 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14 lg:pb-20 lg:pt-20">
           <div className="min-w-0">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+            <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
               Formation offerte · 3 vidéos · accessible aux débutants
             </p>
             <h1 className="cyber-title mt-4 text-[clamp(1.75rem,5.2vw,3rem)]">
@@ -105,9 +113,16 @@ export default function FormationOptInPage() {
               une mission concrète par jour.
             </p>
 
-            <div className="mt-10">
-              <MethodPipeline />
-            </div>
+            <figure className="relative mt-10 aspect-[16/9] overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.12)] shadow-[0_18px_40px_rgba(17,17,17,0.12)]">
+              <Image
+                src="/images/formation/hero.webp"
+                alt="Photogramme : une silhouette en manteau au bord d’une terrasse de béton monumentale au-dessus de la ville, à l’aube"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="object-cover"
+              />
+            </figure>
           </div>
 
           <div className="cyber-card self-start p-5 sm:p-7 lg:sticky lg:top-6">
@@ -130,7 +145,7 @@ export default function FormationOptInPage() {
         <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:py-20">
           <div className="lg:grid lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
                 Le programme
               </p>
               <h2 className="cyber-title mt-3 text-2xl sm:text-3xl">
@@ -141,12 +156,15 @@ export default function FormationOptInPage() {
                 des personnages plus cohérents, des plans plus forts, et bien
                 moins d’essais qui brûlent votre temps et vos crédits.
               </p>
+              <div className="mt-8">
+                <MethodPipeline />
+              </div>
             </div>
             <ol className="mt-8 space-y-6 lg:mt-0">
               {FUNNEL_DAYS.map((d) => (
                 <li
                   key={d.slug}
-                  className="grid grid-cols-[3rem_1fr] gap-4 border-t border-[rgba(251,219,175,0.14)] pt-5"
+                  className="grid grid-cols-[3rem_1fr] gap-4 border-t border-[rgba(17,17,17,0.14)] pt-5"
                 >
                   <span className="heading-font text-2xl leading-none text-[var(--orange)]">
                     0{d.n}
@@ -159,7 +177,7 @@ export default function FormationOptInPage() {
                       {d.intro}
                     </p>
                     <p className="mt-3 text-sm text-[var(--cream)]">
-                      <span className="text-[rgba(251,219,175,0.62)]">Mission : </span>
+                      <span className="text-[rgba(17,17,17,0.62)]">Mission : </span>
                       {d.mission}
                     </p>
                   </div>
@@ -174,7 +192,7 @@ export default function FormationOptInPage() {
       <section className="cyber-divider">
         <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:py-20">
           <div className="grid gap-8 md:grid-cols-[minmax(0,14rem)_1fr] md:items-start md:gap-12">
-            <div className="relative aspect-square w-40 overflow-hidden rounded-2xl border border-[rgba(251,219,175,0.14)] md:w-full">
+            <div className="relative aspect-square w-40 overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.14)] md:w-full">
               <Image
                 src={person.image}
                 alt={`Portrait de ${person.name}`}
@@ -184,7 +202,7 @@ export default function FormationOptInPage() {
               />
             </div>
             <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(251,219,175,0.62)]">
+              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
                 Méthode utilisée par Frank Houbre
               </p>
               <h2 className="cyber-title mt-3 text-2xl sm:text-3xl">
@@ -205,7 +223,7 @@ export default function FormationOptInPage() {
                     <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--orange)]" aria-hidden />
                     <span>
                       <span className="text-[var(--cream)]">{a.label}</span>
-                      <span className="text-[rgba(251,219,175,0.62)]"> · {a.festival}</span>
+                      <span className="text-[rgba(17,17,17,0.62)]"> · {a.festival}</span>
                     </span>
                   </li>
                 ))}

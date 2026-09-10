@@ -129,7 +129,7 @@ export default function PressePage() {
       <article className="ds-page max-w-5xl">
         <header className="ds-cinematic-frame grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.5fr_1.5fr] lg:items-start">
           <div className="ds-cinematic-beam" aria-hidden />
-          <figure className="relative z-10 mx-auto w-full max-w-[200px] overflow-hidden rounded-3xl border border-[rgba(251,219,175,0.2)] lg:mx-0">
+          <figure className="relative z-10 mx-auto w-full max-w-[200px] overflow-hidden rounded-3xl border border-[rgba(17,17,17,0.2)] lg:mx-0">
             <Image
               src="/images/frank-houbre-about.png"
               alt="Portrait de Frank Houbre"

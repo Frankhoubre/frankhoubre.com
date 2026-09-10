@@ -15,10 +15,10 @@ export function FunnelFrame({ tone = "dark", children }: Props) {
   const dark = tone === "dark";
   const wrap = dark ? "cyber-page" : "bg-background text-foreground";
   const bar = dark
-    ? "border-[rgba(251,219,175,0.12)] text-[var(--cream)]"
+    ? "border-[rgba(17,17,17,0.12)] text-[var(--cream)]"
     : "border-[rgba(228,220,210,0.9)] text-neutral-950";
   const link = dark
-    ? "text-[rgba(251,219,175,0.72)] hover:text-[var(--cream)]"
+    ? "text-[rgba(17,17,17,0.72)] hover:text-[var(--cream)]"
     : "text-neutral-600 hover:text-neutral-950";
 
   return (
@@ -42,7 +42,7 @@ export function FunnelFrame({ tone = "dark", children }: Props) {
       <div className="flex-1">{children}</div>
       <footer className={`border-t ${bar}`}>
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-5 text-xs sm:px-6">
-          <p className={dark ? "text-[rgba(251,219,175,0.62)]" : "text-neutral-600"}>
+          <p className={dark ? "text-[rgba(17,17,17,0.62)]" : "text-neutral-600"}>
             © {new Date().getFullYear()} {siteName}
           </p>
           <nav aria-label="Légal" className="flex flex-wrap gap-x-5 gap-y-2">

@@ -66,7 +66,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
   }
 
   const inputClass =
-    "w-full rounded-xl border border-[rgba(251,219,175,0.32)] bg-[rgba(251,219,175,0.06)] px-4 py-3 text-base text-[var(--cream)] placeholder:text-[rgba(251,219,175,0.5)] transition-colors duration-200 focus:border-[var(--orange)] focus:bg-[rgba(251,219,175,0.1)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]";
+    "w-full rounded-xl border border-[rgba(17,17,17,0.32)] bg-[rgba(17,17,17,0.06)] px-4 py-3 text-base text-[var(--cream)] placeholder:text-[rgba(17,17,17,0.5)] transition-colors duration-200 focus:border-[var(--orange)] focus:bg-[rgba(17,17,17,0.1)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]";
 
   return (
     <form
@@ -78,7 +78,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
       <div>
         <label
           htmlFor={`${id}-firstName`}
-          className="mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(251,219,175,0.72)]"
+          className="mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(17,17,17,0.72)]"
         >
           Votre prénom
         </label>
@@ -96,7 +96,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
       <div>
         <label
           htmlFor={`${id}-email`}
-          className="mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(251,219,175,0.72)]"
+          className="mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(17,17,17,0.72)]"
         >
           Votre e-mail
         </label>
@@ -154,7 +154,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
       <button
         type="submit"
         disabled={status !== "idle"}
-        className="heading-font flex w-full cursor-pointer items-center justify-center rounded-xl bg-[var(--cream)] px-5 py-4 text-sm uppercase tracking-[0.08em] text-[#0a0807] transition-[background-color,transform] duration-200 hover:bg-white disabled:cursor-wait disabled:opacity-80"
+        className="heading-font flex w-full cursor-pointer items-center justify-center rounded-xl bg-[#111111] px-5 py-4 text-sm uppercase tracking-[0.08em] text-white transition-[background-color,transform] duration-200 hover:bg-[#2a2a2a] disabled:cursor-wait disabled:opacity-80"
       >
         {status === "idle"
           ? "Je veux la méthode gratuite"
@@ -162,7 +162,7 @@ export function OptInForm({ compact = false }: { compact?: boolean }) {
             ? "Inscription en cours…"
             : "C'est bon, on y va"}
       </button>
-      <p id={`${id}-note`} className="text-center text-xs leading-relaxed text-[rgba(251,219,175,0.62)]">
+      <p id={`${id}-note`} className="text-center text-xs leading-relaxed text-[rgba(17,17,17,0.62)]">
         Pas de spam : nous vous envoyons les accès et le processus pour réussir
         dans l’IA par email.
       </p>

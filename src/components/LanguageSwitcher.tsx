@@ -24,13 +24,13 @@ export function LanguageSwitcher({
   const current = localeFromPathname(pathname);
 
   const container = onDark
-    ? "bg-white/10 ring-1 ring-white/15 backdrop-blur-md"
+    ? "bg-white/80 ring-1 ring-zinc-900/10 backdrop-blur-md"
     : "bg-zinc-100/80 ring-1 ring-zinc-200";
   const activeSeg = onDark
-    ? "bg-white text-zinc-950 shadow-sm"
+    ? "bg-zinc-950 text-white shadow-sm"
     : "bg-zinc-950 text-white shadow-sm";
   const idleSeg = onDark
-    ? "text-white/70 hover:text-white"
+    ? "text-zinc-700 hover:text-zinc-950"
     : "text-zinc-600 hover:text-zinc-950";
   const globe = onDark ? "text-white/70" : "text-zinc-500";
 

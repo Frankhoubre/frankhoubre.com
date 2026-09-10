@@ -55,8 +55,8 @@ export default async function EnBlogPaginatedPage({ params }: PageProps) {
     <div className="ds-page">
       <section className="ds-cinematic-frame p-6 sm:p-8">
         <div className="relative z-10">
-          <p className="ds-eyebrow text-white/70">Blog</p>
-          <h1 className="relative z-10 mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <p className="ds-eyebrow text-neutral-600">Blog</p>
+          <h1 className="relative z-10 mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
             AI filmmaking, in the trenches, page {page}
           </h1>
         </div>

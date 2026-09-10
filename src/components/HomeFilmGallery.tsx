@@ -29,7 +29,7 @@ export function HomeFilmGallery({
     [...row, ...row].map((image, index) => (
       <figure
         key={`${key}-${image.src}-${index}`}
-        className="relative h-32 w-56 shrink-0 overflow-hidden rounded-xl border border-[rgba(251,219,175,0.14)] bg-[#1a120c] shadow-lg shadow-black/30 sm:h-44 sm:w-80"
+        className="relative h-32 w-56 shrink-0 overflow-hidden rounded-xl border border-[rgba(17,17,17,0.14)] bg-[#e6e6ea] shadow-lg shadow-black/30 sm:h-44 sm:w-80"
       >
         {/* Dimensions fixes plutôt que `fill` : le srcset se limite à 1x/2x
             (deux candidats au lieu de seize), soit ~80 Ko de HTML en moins

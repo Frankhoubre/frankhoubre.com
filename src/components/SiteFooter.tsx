@@ -18,11 +18,11 @@ export function SiteFooter() {
   ];
 
   const linkClass =
-    "transition-colors duration-200 text-[rgba(251,219,175,0.72)] hover:text-[var(--cream)]";
+    "transition-colors duration-200 text-[rgba(17,17,17,0.72)] hover:text-[var(--cream)]";
   const headingClass = "cyber-label";
 
   return (
-    <footer className="cyber-page relative z-10 mt-auto border-t border-[rgba(251,219,175,0.12)] py-12 text-sm">
+    <footer className="cyber-page relative z-10 mt-auto border-t border-[rgba(17,17,17,0.12)] py-12 text-sm">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">

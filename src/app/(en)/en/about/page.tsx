@@ -32,11 +32,11 @@ export default function EnAboutPage() {
       <div className="ds-page max-w-3xl">
         <section className="ds-cinematic-frame p-6 sm:p-8">
           <div className="relative z-10">
-            <p className="ds-eyebrow text-white/70">About</p>
-            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+            <p className="ds-eyebrow text-neutral-600">About</p>
+            <h1 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-5xl">
               {person.name}
             </h1>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/85">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-800">
               AI trainer, AI filmmaker and image &amp; video creator.
             </p>
           </div>
