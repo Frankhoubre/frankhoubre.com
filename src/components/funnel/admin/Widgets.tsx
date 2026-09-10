@@ -49,7 +49,7 @@ const STATUS_STYLES: Record<SequenceEmailStatus, string> = {
   programme: "border-neutral-300 text-neutral-700",
   envoye: "border-neutral-400 text-neutral-800",
   delivre: "border-neutral-900 text-neutral-900",
-  ouvert: "border-[#c45a18] text-[#c45a18]",
+  ouvert: "border-[#b04e10] text-[#b04e10]",
   clique: "border-[#c45a18] bg-[#c45a18] text-white",
   bounce: "border-red-700 text-red-800",
   spam: "border-red-700 text-red-800",

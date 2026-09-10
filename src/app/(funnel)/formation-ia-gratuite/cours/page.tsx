@@ -131,7 +131,7 @@ export default async function FormationCoursePage() {
                   />
                 </div>
                 <div className="min-w-0">
-                  <p className="heading-font text-xs uppercase tracking-[0.1em] text-[var(--orange)]">
+                  <p className="heading-font text-xs uppercase tracking-[0.1em] text-[var(--orange-text)]">
                     {d.kicker}
                   </p>
                   <h2
@@ -144,7 +144,7 @@ export default async function FormationCoursePage() {
                   <ul className="mt-5 space-y-2.5">
                     {d.points.map((p) => (
                       <li key={p} className="flex gap-3 text-[15px] leading-relaxed text-[var(--cream)]">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-[var(--orange)]" aria-hidden>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-[var(--orange-text)]" aria-hidden>
                           <path d="M5 12.5l4.5 4.5L19 7.5" />
                         </svg>
                         <span>{p}</span>
@@ -290,7 +290,7 @@ export default async function FormationCoursePage() {
                 <details key={f.q} className="group">
                   <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[15px] font-medium text-[var(--cream)] [&::-webkit-details-marker]:hidden">
                     <span>{f.q}</span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="shrink-0 text-[var(--orange)] transition-transform duration-200 group-open:rotate-45" aria-hidden>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="shrink-0 text-[var(--orange-text)] transition-transform duration-200 group-open:rotate-45" aria-hidden>
                       <path d="M8 2v12M2 8h12" />
                     </svg>
                   </summary>

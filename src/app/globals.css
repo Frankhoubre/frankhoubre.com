@@ -7,8 +7,12 @@
   --cream: #111111;
   --muted: rgba(17, 17, 17, 0.72);
   --label: rgba(17, 17, 17, 0.62);
+  --grid-fine: 0.035;
+  --grid-bold: 0.055;
   --orange: #e07020;
   --orange-deep: #c45a18;
+  /* Orange pour du texte sur le fond clair : 4,9:1 sur #f6f6f7. */
+  --orange-text: #b04e10;
   --ink: #f6f6f7;
   --card: rgba(255, 255, 255, 0.78);
   --hero-top: 92px;
@@ -90,12 +94,19 @@ body::before {
   pointer-events: none;
   z-index: 0;
   background-image:
-    linear-gradient(to right, rgb(17 17 17 / 0.055) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(17 17 17 / 0.055) 1px, transparent 1px),
-    linear-gradient(to right, rgb(17 17 17 / 0.09) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(17 17 17 / 0.09) 1px, transparent 1px);
+    linear-gradient(to right, rgb(17 17 17 / var(--grid-fine)) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(17 17 17 / var(--grid-fine)) 1px, transparent 1px),
+    linear-gradient(to right, rgb(17 17 17 / var(--grid-bold)) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(17 17 17 / var(--grid-bold)) 1px, transparent 1px);
   background-size: 32px 32px, 32px 32px, 160px 160px, 160px 160px;
   background-repeat: repeat;
+}
+
+/* Pages de lecture longue (articles, pages legales, a propos) : quadrillage
+   presque efface pour ne pas gener la lecture du texte. */
+body:has(.prose-cinema) {
+  --grid-fine: 0.018;
+  --grid-bold: 0.03;
 }
 
 h1,

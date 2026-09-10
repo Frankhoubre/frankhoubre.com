@@ -248,7 +248,7 @@ export default async function FormationOptInPage() {
                   data-delay={String(0.1 * i)}
                 >
                   <div className="flex items-baseline justify-between gap-4">
-                    <span className="heading-font text-3xl leading-none text-[var(--orange)]">
+                    <span className="heading-font text-3xl leading-none text-[var(--orange-text)]">
                       0{d.n}
                     </span>
                     {tc ? (
@@ -389,7 +389,7 @@ export default async function FormationOptInPage() {
               <details key={f.q} className="group">
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[15px] font-medium text-[var(--cream)] [&::-webkit-details-marker]:hidden">
                   <span>{f.q}</span>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="shrink-0 text-[var(--orange)] transition-transform duration-200 group-open:rotate-45" aria-hidden>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="shrink-0 text-[var(--orange-text)] transition-transform duration-200 group-open:rotate-45" aria-hidden>
                     <path d="M8 2v12M2 8h12" />
                   </svg>
                 </summary>
