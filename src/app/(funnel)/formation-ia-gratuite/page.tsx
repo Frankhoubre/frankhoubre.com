@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
+import { FilmStrip } from "@/components/funnel/FilmStrip";
 import { FunnelFrame } from "@/components/funnel/FunnelFrame";
 import { MethodPipeline } from "@/components/funnel/MethodPipeline";
 import { OptInForm } from "@/components/funnel/OptInForm";
@@ -14,6 +15,7 @@ import {
   FUNNEL_PATHS,
   SKOOL_OFFER,
 } from "@/lib/funnel/config";
+import { LANDING_STILLS } from "@/lib/funnel/stills";
 import { formatMinutes, getVimeoThumbnail, isoMinutes } from "@/lib/funnel/vimeo";
 import {
   ORGANIZATION_ID,
@@ -50,7 +52,7 @@ export const metadata: Metadata = buildPageMetadata({
         path: "/images/formation/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Formation vidéo IA gratuite de Frank Houbre",
+        alt: "Formation vidéo IA gratuite de Frank Houbre : extraits de films IA",
       },
     ],
   },
@@ -178,21 +180,13 @@ export default async function FormationOptInPage() {
           </div>
         </div>
 
-        {/* Photogramme plein cadre sous le hero. */}
+        {/* Extraits des films et séries de Frank, sous le hero. */}
         <div className="relative mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-          <figure className="relative aspect-[21/9] overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.12)] shadow-[0_18px_40px_rgba(17,17,17,0.12)]">
-            <Image
-              src="/images/formation/hero.webp"
-              alt="Photogramme : une silhouette en manteau au bord d’une terrasse de béton monumentale au-dessus de la ville, à l’aube"
-              fill
-              priority
-              sizes="(max-width: 1152px) 100vw, 1152px"
-              className="object-cover"
-            />
-            <figcaption className="absolute bottom-3 left-4 rounded-full bg-[rgba(246,246,247,0.85)] px-3 py-1 text-[11px] uppercase tracking-[0.1em] text-[var(--cream)] backdrop-blur-sm">
-              Image générée par IA avec la méthode du challenge
-            </figcaption>
-          </figure>
+          <FilmStrip
+            stills={LANDING_STILLS}
+            caption="Extraits de mes films et séries IA, tous produits avec cette méthode"
+            priority
+          />
         </div>
       </section>
 

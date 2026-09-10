@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import { CourseWelcome } from "@/components/funnel/CourseWelcome";
 import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
+import { FilmStrip } from "@/components/funnel/FilmStrip";
 import { FunnelFrame } from "@/components/funnel/FunnelFrame";
 import { TrackedLink } from "@/components/funnel/TrackedLink";
 import { VideoFacade } from "@/components/VideoFacade";
@@ -12,6 +13,7 @@ import {
   SKOOL_OFFER,
   SKOOL_URL,
 } from "@/lib/funnel/config";
+import { COURSE_STILLS } from "@/lib/funnel/stills";
 import { formatMinutes, getVimeoThumbnail } from "@/lib/funnel/vimeo";
 import { buildPageMetadata } from "@/lib/metadata";
 
@@ -195,6 +197,13 @@ export default async function FormationCoursePage() {
               la création d’un portfolio qui ne ressemble pas à une simple
               démonstration d’outil.
             </p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-4xl">
+            <FilmStrip
+              stills={COURSE_STILLS}
+              caption="Ce que donne la méthode complète : extraits de mes films et séries IA"
+            />
           </div>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
