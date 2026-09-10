@@ -8,7 +8,7 @@ tableau de bord privé.
 | `/formation-ia-gratuite` | Page d'inscription (prénom, email, consentement). Indexée. |
 | `/formation-ia-gratuite/cours` | Les trois vidéos du challenge + offre AI Studios. Non indexée, accessible par lien. |
 | `/formation-ia-gratuite/desinscription` | Confirmation après clic sur « ne plus recevoir ». |
-| `/admin/funnel` | Tableau de bord (jeton). Bloqué dans robots.txt. |
+| `/admin/funnel` | Back-office (jeton) : vue d'ensemble, `/admin/funnel/inscrits` (liste, recherche, filtres, pagination), `/admin/funnel/inscrits/<email>` (fiche, séquence par étape, journal, actions : renvoyer l'accès, désinscrire, supprimer RGPD), `/admin/funnel/emails` (résultats par étape et aperçu des 4 emails). Bloqué dans robots.txt. |
 
 ## Ce qui se passe à l'inscription
 

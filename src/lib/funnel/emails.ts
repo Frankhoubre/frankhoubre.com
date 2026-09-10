@@ -264,9 +264,18 @@ export function parisMorning(days: number, hour = 9, now = new Date()): Date {
   return new Date(guess.getTime() - offsetHours * 3_600_000);
 }
 
+export type SequenceStepResult = {
+  key: SequenceEmail["key"];
+  subject: string;
+  id: string | null;
+  scheduledAt: string | null;
+  error: string | null;
+};
+
 export type SequenceResult = {
   sent: number;
   scheduledIds: string[];
+  steps: SequenceStepResult[];
   errors: string[];
 };
 
@@ -279,7 +288,7 @@ export async function sendFunnelSequence(
   firstName: string,
 ): Promise<SequenceResult> {
   const resend = resendClient();
-  const result: SequenceResult = { sent: 0, scheduledIds: [], errors: [] };
+  const result: SequenceResult = { sent: 0, scheduledIds: [], steps: [], errors: [] };
   if (!resend || !process.env.RESEND_FROM) {
     result.errors.push("Resend non configuré (RESEND_API_KEY / RESEND_FROM)");
     return result;
@@ -308,6 +317,13 @@ export async function sendFunnelSequence(
       ],
       ...(scheduledAt ? { scheduledAt } : {}),
     });
+    result.steps.push({
+      key: mail.key,
+      subject: mail.subject,
+      id: data?.id ?? null,
+      scheduledAt: scheduledAt ?? null,
+      error: error ? error.message : null,
+    });
     if (error) {
       result.errors.push(`${mail.key}: ${error.message}`);
       continue;
@@ -316,6 +332,56 @@ export async function sendFunnelSequence(
     if (scheduledAt && data?.id) result.scheduledIds.push(data.id);
   }
   return result;
+}
+
+/** Renvoie tout de suite une seule étape de la séquence (action du back-office). */
+export async function sendSequenceStep(
+  email: string,
+  firstName: string,
+  key: SequenceEmail["key"],
+): Promise<SequenceStepResult> {
+  const resend = resendClient();
+  const mail = buildSequence(email, firstName).find((m) => m.key === key);
+  if (!resend || !process.env.RESEND_FROM || !mail) {
+    return {
+      key,
+      subject: mail?.subject ?? key,
+      id: null,
+      scheduledAt: null,
+      error: "Resend non configuré",
+    };
+  }
+  const { data, error } = await resend.emails.send({
+    from: fromAddress(),
+    to: email,
+    replyTo: process.env.RESEND_REPLY_TO ?? SUPPORT_EMAIL,
+    subject: mail.subject,
+    html: mail.html,
+    text: mail.text,
+    headers: {
+      "List-Unsubscribe": `<${unsubscribeUrl(email)}>`,
+      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+    },
+    tags: [
+      { name: "funnel", value: "formation-ia-gratuite" },
+      { name: "step", value: mail.key },
+    ],
+  });
+  return {
+    key,
+    subject: mail.subject,
+    id: data?.id ?? null,
+    scheduledAt: null,
+    error: error ? error.message : null,
+  };
+}
+
+/** Supprime le contact de l'audience Resend (suppression RGPD), sans erreur bloquante. */
+export async function removeResendContact(email: string): Promise<void> {
+  const resend = resendClient();
+  if (!resend) return;
+  const audienceId = process.env.RESEND_AUDIENCE_ID;
+  await resend.contacts.remove(audienceId ? { audienceId, email } : { email });
 }
 
 /** Annule les emails encore programmés (désinscription). */

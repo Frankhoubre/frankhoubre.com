@@ -19,11 +19,20 @@ async function unsubscribe(req: NextRequest) {
   const store = getFunnelStore();
   const sub = await store.getSubscriber(email);
   if (sub && sub.status !== "unsubscribed") {
+    const now = new Date().toISOString();
+    const emails = Object.fromEntries(
+      Object.entries(sub.emails ?? {}).map(([k, v]) => [
+        k,
+        v.status === "programme" ? { ...v, status: "annule" as const, updatedAt: now } : v,
+      ]),
+    );
     await store.saveSubscriber({
       ...sub,
+      emails,
       status: "unsubscribed",
-      unsubscribedAt: new Date().toISOString(),
+      unsubscribedAt: now,
     });
+    await store.appendSubscriberLog(email, "Désinscription (lien dans un email)");
     await store.recordEvent({
       event: "unsubscribe",
       date: funnelDateKey(),

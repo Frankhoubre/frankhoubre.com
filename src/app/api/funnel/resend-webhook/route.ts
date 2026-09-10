@@ -1,7 +1,11 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse, type NextRequest } from "next/server";
 import type { FunnelEvent } from "@/lib/funnel/config";
-import { funnelDateKey, getFunnelStore } from "@/lib/funnel/store";
+import {
+  funnelDateKey,
+  getFunnelStore,
+  type SequenceEmailStatus,
+} from "@/lib/funnel/store";
 
 export const runtime = "nodejs";
 
@@ -11,6 +15,35 @@ const EVENT_MAP: Record<string, FunnelEvent> = {
   "email.clicked": "email_clicked",
   "email.bounced": "email_bounced",
   "email.complained": "email_complained",
+};
+
+const STATUS_MAP: Record<string, SequenceEmailStatus> = {
+  "email.delivered": "delivre",
+  "email.opened": "ouvert",
+  "email.clicked": "clique",
+  "email.bounced": "bounce",
+  "email.complained": "spam",
+};
+
+/** Un statut ne recule jamais : « cliqué » reste devant « délivré ». */
+const STATUS_RANK: Record<SequenceEmailStatus, number> = {
+  erreur: 0,
+  annule: 0,
+  programme: 1,
+  envoye: 2,
+  delivre: 3,
+  ouvert: 4,
+  clique: 5,
+  bounce: 6,
+  spam: 6,
+};
+
+const LABELS: Record<string, string> = {
+  "email.delivered": "délivré",
+  "email.opened": "ouvert",
+  "email.clicked": "cliqué",
+  "email.bounced": "en erreur (bounce)",
+  "email.complained": "signalé comme spam",
 };
 
 /**
@@ -52,7 +85,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "bad_signature" }, { status: 401 });
   }
 
-  let payload: { type?: string; data?: { to?: string[]; tags?: Record<string, string> } };
+  let payload: {
+    type?: string;
+    data?: { email_id?: string; to?: string[]; tags?: Record<string, string> };
+  };
   try {
     payload = JSON.parse(body);
   } catch {
@@ -79,11 +115,32 @@ export async function POST(req: NextRequest) {
   if (to) {
     const sub = await store.getSubscriber(to);
     if (sub) {
+      const now = new Date().toISOString();
+      const emails = { ...(sub.emails ?? {}) };
+      const step = tags.step;
+      const nextStatus = STATUS_MAP[payload.type ?? ""];
+      if (step && nextStatus) {
+        const current = emails[step];
+        if (!current || STATUS_RANK[nextStatus] >= STATUS_RANK[current.status]) {
+          emails[step] = {
+            ...(current ?? { subject: step }),
+            id: current?.id ?? payload.data?.email_id,
+            status: nextStatus,
+            updatedAt: now,
+          };
+        }
+      }
       await store.saveSubscriber({
         ...sub,
-        lastEmailEvent: `${event}${tags.step ? ` (${tags.step})` : ""}`,
-        lastEmailEventAt: new Date().toISOString(),
+        emails,
+        lastEmailEvent: `${event}${step ? ` (${step})` : ""}`,
+        lastEmailEventAt: now,
       });
+      const subject = step && emails[step]?.subject ? emails[step].subject : step ?? "email";
+      await store.appendSubscriberLog(
+        to,
+        `Email « ${subject} » ${LABELS[payload.type ?? ""] ?? event}`,
+      );
     }
   }
   return NextResponse.json({ ok: true });

@@ -28,8 +28,37 @@ export type Subscriber = {
   utmCampaign?: string;
   /** Emails programmés chez Resend (annulés en cas de désinscription). */
   scheduledEmailIds: string[];
+  /** Suivi de chaque email de la séquence, par étape (acces, jour-2, …). */
+  emails?: Record<string, SequenceEmailState>;
   lastEmailEvent?: string;
   lastEmailEventAt?: string;
+};
+
+export type SequenceEmailStatus =
+  | "programme"
+  | "envoye"
+  | "delivre"
+  | "ouvert"
+  | "clique"
+  | "bounce"
+  | "spam"
+  | "annule"
+  | "erreur";
+
+export type SequenceEmailState = {
+  /** Identifiant Resend de l'email (sert au webhook et aux annulations). */
+  id?: string;
+  subject: string;
+  /** Date d'envoi prévue (ISO) ; absente pour l'email d'accès envoyé tout de suite. */
+  scheduledAt?: string;
+  status: SequenceEmailStatus;
+  updatedAt: string;
+};
+
+/** Ligne du journal d'un inscrit (affiché sur sa fiche). */
+export type SubscriberLogEntry = {
+  at: string;
+  label: string;
 };
 
 export type DayStats = {
@@ -55,8 +84,12 @@ export type FunnelStore = {
   }): Promise<void>;
   getSubscriber(email: string): Promise<Subscriber | null>;
   saveSubscriber(sub: Subscriber): Promise<void>;
-  listSubscribers(limit: number): Promise<Subscriber[]>;
+  /** Inscrits du plus récent au plus ancien, avec décalage pour la pagination. */
+  listSubscribers(limit: number, offset?: number): Promise<Subscriber[]>;
   countSubscribers(): Promise<number>;
+  deleteSubscriber(email: string): Promise<void>;
+  appendSubscriberLog(email: string, label: string): Promise<void>;
+  getSubscriberLog(email: string): Promise<SubscriberLogEntry[]>;
   getTotals(): Promise<Partial<Record<FunnelEvent, number>>>;
   getDays(dates: string[]): Promise<DayStats[]>;
   getSources(event: FunnelEvent): Promise<Record<string, number>>;
@@ -71,6 +104,7 @@ const KEY = {
   totals: "funnel:t",
   src: (e: string) => `funnel:src:${e}`,
   sub: (email: string) => `funnel:sub:${email}`,
+  sublog: (email: string) => `funnel:sublog:${email}`,
   subs: "funnel:subs",
   recent: "funnel:recent",
   rate: (k: string) => `funnel:rate:${k}`,
@@ -151,10 +185,13 @@ function createRedisStore(redis: Redis): FunnelStore {
       await p.exec();
     },
 
-    async listSubscribers(limit) {
-      const emails = await redis.zrange<string[]>(KEY.subs, 0, limit - 1, {
-        rev: true,
-      });
+    async listSubscribers(limit, offset = 0) {
+      const emails = await redis.zrange<string[]>(
+        KEY.subs,
+        offset,
+        offset + limit - 1,
+        { rev: true },
+      );
       if (!emails.length) return [];
       const rows = await redis.mget<(Subscriber | null)[]>(
         ...emails.map((e) => KEY.sub(e)),
@@ -164,6 +201,44 @@ function createRedisStore(redis: Redis): FunnelStore {
 
     async countSubscribers() {
       return redis.zcard(KEY.subs);
+    },
+
+    async deleteSubscriber(email) {
+      const e = normalizeEmail(email);
+      const p = redis.pipeline();
+      p.del(KEY.sub(e));
+      p.del(KEY.sublog(e));
+      p.zrem(KEY.subs, e);
+      await p.exec();
+    },
+
+    async appendSubscriberLog(email, label) {
+      const e = normalizeEmail(email);
+      const entry: SubscriberLogEntry = { at: new Date().toISOString(), label };
+      const p = redis.pipeline();
+      p.lpush(KEY.sublog(e), JSON.stringify(entry));
+      p.ltrim(KEY.sublog(e), 0, 99);
+      await p.exec();
+    },
+
+    async getSubscriberLog(email) {
+      const rows = await redis.lrange<SubscriberLogEntry | string>(
+        KEY.sublog(normalizeEmail(email)),
+        0,
+        99,
+      );
+      return rows
+        .map((r) => {
+          if (typeof r === "string") {
+            try {
+              return JSON.parse(r) as SubscriberLogEntry;
+            } catch {
+              return null;
+            }
+          }
+          return r;
+        })
+        .filter((r): r is SubscriberLogEntry => Boolean(r));
     },
 
     async getTotals() {
@@ -237,6 +312,7 @@ type MemoryState = {
   totals: Record<string, number>;
   sources: Map<string, Record<string, number>>;
   subs: Map<string, Subscriber>;
+  sublogs: Map<string, SubscriberLogEntry[]>;
   recent: RecentEvent[];
   rate: Map<string, { n: number; exp: number }>;
 };
@@ -249,6 +325,7 @@ function createMemoryStore(): FunnelStore {
     totals: {},
     sources: new Map(),
     subs: new Map(),
+    sublogs: new Map(),
     recent: [],
     rate: new Map(),
   });
@@ -285,13 +362,26 @@ function createMemoryStore(): FunnelStore {
       const email = normalizeEmail(sub.email);
       state.subs.set(email, { ...sub, email });
     },
-    async listSubscribers(limit) {
+    async listSubscribers(limit, offset = 0) {
       return [...state.subs.values()]
         .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-        .slice(0, limit);
+        .slice(offset, offset + limit);
     },
     async countSubscribers() {
       return state.subs.size;
+    },
+    async deleteSubscriber(email) {
+      state.subs.delete(normalizeEmail(email));
+      state.sublogs.delete(normalizeEmail(email));
+    },
+    async appendSubscriberLog(email, label) {
+      const e = normalizeEmail(email);
+      const list = state.sublogs.get(e) ?? [];
+      list.unshift({ at: new Date().toISOString(), label });
+      state.sublogs.set(e, list.slice(0, 100));
+    },
+    async getSubscriberLog(email) {
+      return state.sublogs.get(normalizeEmail(email)) ?? [];
     },
     async getTotals() {
       return pickEventCounts(state.totals);

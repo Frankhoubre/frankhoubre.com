@@ -10,6 +10,7 @@ import { cleanShort, clientIp, resolveSource } from "@/lib/funnel/request";
 import {
   funnelDateKey,
   getFunnelStore,
+  type SequenceEmailState,
   type Subscriber,
 } from "@/lib/funnel/store";
 
@@ -67,7 +68,12 @@ export async function POST(req: NextRequest) {
   const existing = await store.getSubscriber(input.email);
   const isRepeat = Boolean(existing);
 
-  let sequence = { sent: 0, scheduledIds: [] as string[], errors: [] as string[] };
+  let sequence = {
+    sent: 0,
+    scheduledIds: [] as string[],
+    steps: [] as Awaited<ReturnType<typeof sendFunnelSequence>>["steps"],
+    errors: [] as string[],
+  };
   if (isResendConfigured()) {
     // Une personne déjà active ne reçoit pas une deuxième séquence complète ;
     // une personne désinscrite qui revient la reçoit à nouveau.
@@ -91,17 +97,52 @@ export async function POST(req: NextRequest) {
     scheduledEmailIds: sequence.scheduledIds.length
       ? sequence.scheduledIds
       : (existing?.scheduledEmailIds ?? []),
+    emails: sequence.steps.length
+      ? Object.fromEntries(
+          sequence.steps.map((st): [string, SequenceEmailState] => [
+            st.key,
+            {
+              id: st.id ?? undefined,
+              subject: st.subject,
+              scheduledAt: st.scheduledAt ?? undefined,
+              status: st.error ? "erreur" : st.scheduledAt ? "programme" : "envoye",
+              updatedAt: new Date().toISOString(),
+            },
+          ]),
+        )
+      : existing?.emails,
   };
   await store.saveSubscriber(subscriber);
+  await store.appendSubscriberLog(
+    input.email,
+    isRepeat
+      ? `Réinscription (source : ${source})`
+      : `Inscription (source : ${source})`,
+  );
+  for (const st of sequence.steps) {
+    await store.appendSubscriberLog(
+      input.email,
+      st.error
+        ? `Email « ${st.subject} » : erreur d'envoi (${st.error})`
+        : st.scheduledAt
+          ? `Email « ${st.subject} » programmé`
+          : `Email « ${st.subject} » envoyé`,
+    );
+  }
   await store.recordEvent({
     event: isRepeat ? "subscribe_repeat" : "subscribe",
     date,
     source,
     detail: input.email,
   });
-  if (sequence.sent) {
-    for (let i = 0; i < sequence.sent; i++) {
-      await store.recordEvent({ event: "email_sent", date, detail: input.email });
+  for (const st of sequence.steps) {
+    if (!st.error) {
+      await store.recordEvent({
+        event: "email_sent",
+        date,
+        source: st.key,
+        detail: input.email,
+      });
     }
   }
 
@@ -117,7 +158,7 @@ export async function POST(req: NextRequest) {
 
   const res = NextResponse.json({
     ok: true,
-    redirect: `${FUNNEL_PATHS.course}?bienvenue=${sequence.sent > 0 ? "1" : "retour"}`,
+    redirect: `${FUNNEL_PATHS.course}?bienvenue=${isRepeat && existing?.status === "active" ? "retour" : "1"}`,
     emailSent: sequence.sent > 0,
   });
   res.cookies.set(SUBSCRIBED_COOKIE, "1", {
