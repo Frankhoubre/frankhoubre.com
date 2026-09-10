@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-10 : Midjourney 2026 : guide complet, V8.2, prix et SREF (UPDATE)
+- slug: midjourney-guide-complet
+- locale: fr
+- url: https://frankhoubre.com/blog/midjourney-guide-complet
+- category: tutoriels
+- type: evergreen / pilier OUTILS Midjourney (plan 90j J28, jour UPDATE). Article d'avril 2026 réécrit et enrichi le 2026-09-10 (3321 -> 5584 mots), URL conservée, dateModified 2026-09-10. Le calendrier ne glisse pas ce jour, donc J29 = 2026-09-11.
+- search_intent: informationnelle (débutant ou créatif qui cherche comment utiliser Midjourney en 2026, ce que vaut V8.2, ce que ça coûte, si c'est gratuit, comment tenir un style)
+- primary_keyword: midjourney 2026 (GSC pos 7,1 avant refresh)
+- secondary_keywords: midjourney v8.2, midjourney prix, midjourney gratuit, midjourney edit model, midjourney sref, mode brouillon midjourney, midjourney discord
+- sources: docs.midjourney.com (Version, Comparing Midjourney Plans, Free Trials, Earning Free Fast Time, Prompt Basics), updates.midjourney.com (Version 8.2 du 24 juillet, Edit Model for V8 du 27 août, Edit Image Quality Update du 29 août, Changelog 8/20/26, Alpha Changelog 9/2/26, Draft mode for V8.1 du 16 juin, Random styles in draft mode du 25 juin, Midjourney's First Acquisition du 23 juillet), toutes relevées le 2026-09-10
+- internal_links: -> midjourney-medical-scanner-pivot-hardware-juin-2026, secrets-prompts-rendu-photographique-ia, droits-auteur-images-generees-ia, meilleur-generateur-image-ia-gratuit, alternatives-midjourney, midjourney-sref-references-style, comment-eviter-effet-image-generee-ia. Liens entrants ajoutés le même jour depuis alternatives-midjourney et midjourney-vs-dalle-3-concept-art ; midjourney-sref-references-style liait déjà.
+- cta: aucun CTA produit, pas de mention ScreenWeaver (sujet outil tiers).
+- cannibalization_notes: midjourney-sref-references-style garde l'intention « sref midjourney » en profondeur (--sw, --sv, protocole série) ; le guide ne consacre qu'un H2 à SREF et renvoie vers lui. alternatives-midjourney garde « alternative midjourney », le guide renvoie vers lui depuis la section gratuit. midjourney-vs-dalle-3-concept-art garde la comparaison. Le guide seul porte « midjourney prix », « midjourney gratuit », « midjourney v8.2 » et « midjourney edit model ».
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 13 H2 / FAQ 8 questions / 10 liens internes / 6 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS, build_ledger régénéré)
+- published_commit: (voir PUBLISH_LOG)
+
 ### 2026-09-08 : Vidéo IA en local, ComfyUI et WAN sur ta machine
 - slug: video-ia-locale-comfyui-wan
 - locale: fr

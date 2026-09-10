@@ -1,6 +1,64 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-09 (J27 publié)
+## Last run: 2026-09-10 (J28 publié, jour UPDATE)
+
+### What happened
+- J28 du plan 90 jours, jour UPDATE : `midjourney-guide-complet` réécrit et
+  enrichi à la date prévue (3321 -> 5584 mots, 13 H2, FAQ 8 questions, 10 liens
+  internes, 6 liens externes, score éditorial 100 / bucket good / 0 flag, 0 issue
+  au seo_audit sur ce slug). URL conservée, `dateModified` 2026-09-10, title
+  ramené de 66 à 52 caractères avec « midjourney 2026 » en tête. Le calendrier
+  ne glisse pas ce jour, donc J29 = 2026-09-11 (festivals-films-ia-criteres-jurys).
+- L'ancien article datait d'avril et parlait de V8.1 sans prix ni plan. Tout ce
+  qui suit a été vérifié le 2026-09-10 sur docs.midjourney.com (pages Version,
+  Comparing Plans, Free Trials, Earning Free Fast Time, Prompt Basics) et
+  updates.midjourney.com : V8.0 alpha 17 mars, V8.1 14 avril (défaut 10 juin au
+  23 juillet, jobs 4 à 5 fois plus rapides, HD 2K à 1,3 min GPU contre 0,8 en
+  SD), V8.2 par défaut depuis le 24 juillet ; modèle Edit V8.2 ouvert le 27 août
+  (remplace Omni Reference, Character Reference et Retexture, 4 références max,
+  inpainting/outpainting, `--edit url` sur Discord, réserve officielle : SREF et
+  moodboards demandent plus de direction textuelle), mise à jour qualité le
+  29 août ; alpha.midjourney.com avec changelogs du 20 août et du 2 septembre ;
+  Draft mode 24 images à moitié prix (16 juin) et `--preview` ; `--sref random`
+  en brouillon (25 juin) ; plans Basic 10 $ / Standard 30 $ / Pro 60 $ / Mega
+  120 $ (annuel -20 %, 4 $/h Fast supplémentaire, Stealth à partir de Pro,
+  vidéo HD à partir de Standard, clause 1 M$ de CA pour Pro/Mega) ; aucun essai
+  gratuit sur web ni Discord, seul l'app niji ; top 2 000 noteurs par jour = 1 h
+  Fast gratuite valable 30 jours ; édition sur image HD ramène en SD.
+- Rien d'inventé sur l'expérience de Frank : les seules affirmations à la
+  première personne sont qualitatives (séries pub, élèves), aucun chiffre.
+- Liens entrants réciproques ajoutés depuis `alternatives-midjourney` (paragraphe
+  budget) et `midjourney-vs-dalle-3-concept-art` (paragraphe exploration), avec
+  `dateModified` 2026-09-10 sur les deux. `midjourney-sref-references-style`
+  liait déjà le guide.
+- IMAGES : hero Nano Banana 2 régénéré (directrice artistique épinglant des
+  planches contact de portraits IA sur un mur de liège, loft textile lyonnais en
+  lumière dorée, collègue avec une grille de variations sur tablette ; motif
+  planches contact et liège, aucun recyclage des heros récents : bureau à
+  colombages J27, tour PC ouverte J26, plateau vide J25). L'ancien hero pesait
+  1,5 Mo, le nouveau 645 Ko. workflow-1 et workflow-2 sont des captures réelles :
+  tableau officiel des plans (docs.midjourney.com, recadré 16:9 sur la zone
+  prix) et annonce « Edit Model for V8 » du 27 août (updates.midjourney.com),
+  chacune légendée source + date. Les anciennes workflow-1/2 générées (1,7 Mo
+  chacune) sont remplacées.
+- PASSE ANTI-SLOP : 6 parallélismes négatifs corrigés (dont 3 hérités de
+  l'ancien texte), 3 ouvertures en signposting supprimées (« voici la vérité que
+  peu de tutos disent », « la règle est la clé », deux sections d'affilée qui
+  ouvraient sur « la question revient »), un passif sans acteur remplacé.
+  Scanner unslop à 3 faux positifs français (« utilise »), 0 vrai hit.
+- PIÈGE FICHIER NOUVEAU : l'outil Write a produit un fichier en CRLF, et
+  `editorial_audit.mjs` lit alors title/date/excerpt vides (meta 0c, score 94
+  au lieu de 100). Convertir en LF avant les gates (les autres articles du repo
+  sont en LF, `core.autocrlf=true` ne touche que l'index).
+- Gotchas outils confirmés : `screenshot_url.sh` toujours macOS-only, capture
+  faite avec Chrome headless Windows + Pillow en scratchpad ; docs.midjourney.com
+  renvoie 403 à WebFetch mais 200 à curl avec un user-agent Chrome complet ;
+  `render_blog_queue_nanobanana.py` nécessite `MSYS_NO_PATHCONV=1` et `--force`
+  pour écraser un hero existant.
+- À FAIRE UN AUTRE JOUR (inchangé) : `voidborn-anime-ia-festival-coulisses`
+  contient encore deux liens morts vers `/presse` dans sa FAQ.
+
+### Previous run: 2026-09-09 (J27 publié)
 
 ### What happened
 - J27 du plan 90 jours publié à la date prévue : `outerframe-studio-pourquoi-studio-ia`,
