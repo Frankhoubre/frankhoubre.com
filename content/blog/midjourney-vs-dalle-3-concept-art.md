@@ -1,7 +1,7 @@
 ---
 title: "Midjourney vs DALL·E 3 : lequel choisir pour le concept art ?"
 date: "2026-04-24"
-dateModified: "2026-06-10"
+dateModified: "2026-09-10"
 category: "tutoriels"
 excerpt: "Itération, cohérence de direction artistique, contrôle des poses, et livrables : le bon outil dépend du type de concept, pas du logo sur la slide."
 thumbnail: "/images/blog/midjourney-vs-dalle-3-concept-art/hero.webp"
@@ -15,7 +15,7 @@ Pour la cohérence personnage sur plusieurs vues, enchaîne avec [tutoriel compl
 
 ## Mission 1 : moodboard exploration, dix variantes en vingt minutes
 
-Quand tu cherches **direction visuelle** sans verrouiller la géométrie, tu veux du volume et du « happy accident ». Midjourney brille souvent sur la densité d’idées et les palettes marquées.
+Quand tu cherches **direction visuelle** sans verrouiller la géométrie, tu veux du volume et du « happy accident ». Midjourney brille souvent sur la densité d’idées et les palettes marquées. Depuis V8.2 et le mode brouillon à 24 images, cette phase d’exploration coûte encore moins cher, je détaille les réglages dans [le guide complet Midjourney 2026](/blog/midjourney-guide-complet).
 
 DALL·E 3, via une interface conversationnelle, peut itérer vite si tu sais décrire en une phrase ce qui doit changer. La différence n’est pas « qualité », c’est **rythme de décision** : tu préfères slider visuel ou reformulation textuelle ?
 

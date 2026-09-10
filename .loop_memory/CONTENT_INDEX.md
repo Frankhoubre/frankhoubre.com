@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-09T08:07:29.583Z
+> Generated: 2026-09-10T08:00:59.183Z
 
 ## FR : 307 articles (/blog/<slug>)
 
@@ -226,7 +226,7 @@ Categories: tutoriels 189, actualite 53, business 20, comparatifs 18, analyses 1
 | 2026-04-23 | comparatifs | `ideogram-recraft-leonardo-comparatif` | Ideogram, Recraft ou Leonardo IA : quel outil choisir ? |
 | 2026-04-23 | comparatifs | `meilleur-generateur-image-ia` | Meilleur générateur d’images IA : comparatif complet 2026 |
 | 2026-04-23 | comparatifs | `meilleurs-outils-ia-video` | Les meilleurs outils IA vidéo en 2026 : Sora, Runway, Higgsfield, Pika Labs |
-| 2026-04-23 | tutoriels | `midjourney-guide-complet` | Midjourney en 2026 : guide complet pour créer des images bluffantes |
+| 2026-04-23 | tutoriels | `midjourney-guide-complet` | Midjourney 2026 : guide complet, V8.2, prix et SREF |
 | 2026-04-23 | comparatifs | `mistral-grok-meta-ai-createurs` | Mistral AI, Grok AI, Meta AI : lesquelles sont utiles aux créateurs ? |
 | 2026-04-23 | comparatifs | `outils-ia-design` | Les meilleurs outils IA pour créer, détourer et designer plus vite |
 | 2026-04-23 | tutoriels | `stable-diffusion-guide-complet` | Stable Diffusion en 2026 : guide complet pour créer des images en local |
