@@ -1,6 +1,9 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { SEQUENCE_STEPS } from "@/lib/funnel/sequence";
 import type { DayStats, SequenceEmailStatus, Subscriber } from "@/lib/funnel/store";
+
+export { SEQUENCE_STEPS };
 
 export function pct(num: number, den: number): string {
   if (!den) return "";
@@ -25,14 +28,6 @@ export function shortDay(key: string): string {
   const [, m, d] = key.split("-");
   return `${d}/${m}`;
 }
-
-/** Étapes de la séquence dans l'ordre d'envoi. */
-export const SEQUENCE_STEPS = [
-  { key: "acces", label: "Accès (Jour 1)", when: "tout de suite" },
-  { key: "jour-2", label: "Jour 2", when: "J+1, 9 h" },
-  { key: "jour-3", label: "Jour 3", when: "J+2, 9 h" },
-  { key: "ai-studios", label: "AI Studios", when: "J+3, 9 h" },
-] as const;
 
 export const STATUS_LABELS: Record<SequenceEmailStatus, string> = {
   programme: "Programmé",

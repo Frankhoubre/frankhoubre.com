@@ -9,7 +9,7 @@ export function CourseWelcome() {
   if (!state) return null;
   const message =
     state === "1"
-      ? "C’est bon, vous êtes inscrit. Lancez la vidéo 1 ci-dessous (12 minutes). Votre email d’accès arrive dans quelques minutes, puis un email chaque matin pour les jours 2 et 3."
+      ? "C’est bon, vous êtes inscrit. Lancez la vidéo 1 ci-dessous (12 minutes). Votre email d’accès arrive dans quelques minutes, puis un email chaque matin : les jours 2 et 3, et la suite de la méthode."
       : "Vous êtes déjà inscrit, les trois vidéos sont ici. Vos emails du challenge sont en route ou déjà dans votre boîte.";
   return (
     <div

@@ -1,23 +1,40 @@
 import { Resend } from "resend";
 import {
+  AI_STUDIOS_ANNUAL_URL,
+  ANNUAL_OFFER,
   FUNNEL_DAYS,
   FUNNEL_PATHS,
+  IMAGINODE_FACTS,
+  IMAGINODE_URL,
+  LOST_GARDEN_URL,
+  REELS,
+  SCREENWEAVER_FACTS,
   SCREENWEAVER_URL,
+  SKOOL_OFFER,
   SKOOL_URL,
   SUPPORT_EMAIL,
 } from "@/lib/funnel/config";
 import { makeUnsubscribeToken } from "@/lib/funnel/security";
+import {
+  SEQUENCE_META,
+  SEQUENCE_SEND_HOUR,
+  type SequenceKey,
+} from "@/lib/funnel/sequence";
 import { baseUrl } from "@/lib/site";
 
 /**
- * Séquence email du challenge, envoyée par Resend. Tout est programmé au
- * moment de l'inscription (Resend accepte une date d'envoi jusqu'à 30 jours) :
- * pas de cron à maintenir. Les identifiants renvoyés permettent d'annuler
- * les envois restants si la personne se désinscrit.
+ * Séquence email du challenge, envoyée par Resend. L'email d'accès part tout
+ * de suite ; les suivants sont programmés (Resend accepte une date d'envoi
+ * jusqu'à 30 jours) : pas de cron à maintenir. Les identifiants renvoyés
+ * permettent d'annuler les envois restants si la personne se désinscrit.
+ *
+ * Objectif de la séquence : donner la méthode (jours 1 à 3), prouver qu'elle
+ * produit des films, puis ouvrir trois portes : AI Studios sur Skool,
+ * ScreenWeaver (écriture, storyboard, continuité) et imaginode (génération).
  */
 
 export type SequenceEmail = {
-  key: "acces" | "jour-2" | "jour-3" | "ai-studios";
+  key: SequenceKey;
   subject: string;
   /** Décalage en jours (0 = tout de suite, N = à 9 h heure de Paris J+N). */
   dayOffset: number;
@@ -55,6 +72,15 @@ function courseUrl(campaign: string, anchor?: string): string {
   return u.toString();
 }
 
+/** Lien sortant marqué pour retrouver l'email d'origine dans les outils. */
+function outUrl(base: string, campaign: string): string {
+  const u = new URL(base);
+  u.searchParams.set("utm_source", "frankhoubre");
+  u.searchParams.set("utm_medium", "email");
+  u.searchParams.set("utm_campaign", campaign);
+  return u.toString();
+}
+
 function unsubscribeUrl(email: string): string {
   const u = new URL("/api/funnel/unsubscribe", baseUrl);
   u.searchParams.set("t", makeUnsubscribeToken(email));
@@ -77,12 +103,12 @@ const C = {
   fog: "#9ca3a8",
 } as const;
 
-const STEP_INDEX: Record<SequenceEmail["key"], string> = {
-  acces: "01",
-  "jour-2": "02",
-  "jour-3": "03",
-  "ai-studios": "04",
-};
+const TOTAL = SEQUENCE_META.length;
+
+function stepIndex(key: SequenceKey): string {
+  const i = SEQUENCE_META.findIndex((m) => m.key === key) + 1;
+  return `${String(i).padStart(2, "0")} / ${String(TOTAL).padStart(2, "0")}`;
+}
 
 /**
  * Gabarit HTML : même direction que le site (charbon, blanc chaud, lignes
@@ -94,7 +120,7 @@ function renderHtml(opts: {
   firstName: string;
   blocks: Block[];
   unsubscribe: string;
-  step: SequenceEmail["key"];
+  step: SequenceKey;
   kicker: string;
 }): string {
   const p = (text: string) =>
@@ -129,7 +155,7 @@ function renderHtml(opts: {
 <tr><td style="padding:0 0 18px;border-bottom:1px solid ${C.line};">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
 <td style="font-family:${FONT};font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:${C.cream};">Frank Houbre</td>
-<td align="right" style="font-family:${FONT};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:${C.fog};">${STEP_INDEX[opts.step]} / 04</td>
+<td align="right" style="font-family:${FONT};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:${C.fog};">${stepIndex(opts.step)}</td>
 </tr></table>
 </td></tr>
 <tr><td style="padding:30px 0 6px;font-family:${FONT};font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:${C.fog};">${escapeHtml(opts.kicker)}</td></tr>
@@ -182,113 +208,425 @@ function renderText(opts: {
   return lines.join("\n");
 }
 
-export function buildSequence(email: string, firstName: string): SequenceEmail[] {
-  const unsubscribe = unsubscribeUrl(email);
+type Spec = { key: SequenceKey; subject: string; blocks: Block[] };
+
+/**
+ * Les quinze emails. Chaque email donne quelque chose avant de demander, et
+ * ne porte qu'un seul appel à l'action principal. Les chiffres viennent de
+ * config.ts (offres relevées sur les pages publiques), jamais d'ici.
+ */
+function specs(): Spec[] {
   const [d1, d2, d3] = FUNNEL_DAYS;
-  const name = firstName.trim();
+  const skool = (c: string) => outUrl(SKOOL_URL, c);
+  const sw = (c: string) => outUrl(SCREENWEAVER_URL, c);
+  const im = (c: string) => outUrl(IMAGINODE_URL, c);
+  const annual = (c: string) => outUrl(AI_STUDIOS_ANNUAL_URL, c);
 
-  const kickers: Record<SequenceEmail["key"], string> = {
-    acces: `Challenge film IA · Jour ${d1.n} · ${d1.shortTitle}`,
-    "jour-2": `Challenge film IA · Jour ${d2.n} · ${d2.shortTitle}`,
-    "jour-3": `Challenge film IA · Jour ${d3.n} · ${d3.shortTitle}`,
-    "ai-studios": "Challenge film IA · La suite",
-  };
-
-  const specs: Array<Omit<SequenceEmail, "html" | "text"> & { blocks: Block[] }> = [
+  return [
     {
       key: "acces",
-      subject: "Vos accès : Jour 1 du challenge film IA",
-      dayOffset: 0,
+      subject: "Vos 3 vidéos sont ouvertes (commencez par celle-ci)",
       blocks: [
         {
           type: "p",
-          text: "Bienvenue dans le challenge. Les trois jours sont déjà en ligne, vous avancez à votre rythme. Je vous conseille quand même un jour à la fois : chaque étape prépare la suivante.",
+          text: "Bienvenue dans le challenge. Les trois vidéos sont déjà en ligne, sans attendre. Je vous conseille quand même un jour à la fois : chaque étape prépare la suivante, et la mission du jour tient en une demi-heure.",
         },
-        { type: "cta", label: "Ouvrir la formation", href: courseUrl("acces", d1.slug) },
+        { type: "cta", label: "Ouvrir la vidéo 1 (12 min)", href: courseUrl("acces", d1.slug) },
         {
           type: "p",
-          text: `Aujourd'hui, Jour ${d1.n} : ${d1.shortTitle.toLowerCase()}. La plupart des gens commencent par générer, puis cherchent leur idée dans les résultats. C'est le meilleur moyen de jeter vos crédits par les fenêtres. On fait l'inverse : l'émotion, le concept, l'image finale, puis les quelques plans qui méritent d'exister.`,
+          text: `Jour 1, la vision. La plupart des gens ouvrent un générateur, tapent une idée vague et cherchent leur film dans les résultats. C'est le meilleur moyen de jeter vos crédits par les fenêtres. On fait l'inverse : l'émotion, le concept, l'image finale, puis les quelques plans qui méritent d'exister.`,
         },
         { type: "p", text: `Votre mission du jour : ${d1.mission}` },
         {
           type: "p",
-          text: "Demain matin, vous recevez le Jour 2 : le storyboard.",
+          text: "Où l'écrire ? Dans ScreenWeaver, mon outil d'écriture et de storyboard. La partie écriture est gratuite, projets illimités, format scénario professionnel. Créez votre projet, posez votre phrase dedans, et gardez-le ouvert : on y revient demain.",
         },
-        {
-          type: "link",
-          label: "Créer votre projet dans ScreenWeaver",
-          href: SCREENWEAVER_URL,
-        },
+        { type: "link", label: "Créer mon projet gratuit dans ScreenWeaver", href: sw("acces") },
+        { type: "p", text: "Demain matin, 9 h : le storyboard." },
       ],
     },
     {
       key: "jour-2",
-      subject: "Jour 2 : voyez votre film avant de générer",
-      dayOffset: 1,
+      subject: "Jour 2 : votre film en six images, avant le moindre crédit vidéo",
       blocks: [
         {
           type: "p",
-          text: "Hier, vous avez posé votre idée en une phrase. Aujourd'hui, on la rend visible. Le storyboard, c'est l'étape que presque tout le monde saute, et c'est précisément là que se joue le coût de votre film : générer une image coûte bien moins cher qu'une vidéo, alors on valide chaque plan en image avant d'animer quoi que ce soit.",
+          text: "Hier, vous avez posé votre idée en une phrase. Aujourd'hui, on la rend visible. Le storyboard est l'étape que presque tout le monde saute, et c'est précisément là que se joue le coût de votre film : une image coûte une fraction d'une vidéo, alors on valide chaque plan en image avant d'animer quoi que ce soit.",
         },
-        { type: "cta", label: "Voir la vidéo du Jour 2", href: courseUrl("jour-2", d2.slug) },
+        { type: "cta", label: "Voir la vidéo du Jour 2 (6 min)", href: courseUrl("jour-2", d2.slug) },
         { type: "list", items: [...d2.points] },
         { type: "p", text: `Votre mission du jour : ${d2.mission}` },
         {
           type: "p",
-          text: "Demain, je vous ouvre le projet de montage de Lost Garden, avec les vrais fichiers.",
+          text: "Dans ScreenWeaver, le storyboard se construit à partir de vos scènes : chaque image reste reliée au plan qu'elle illustre, et quand vous changez le texte, vous savez exactement quelle image refaire. Le module storyboard est en bêta ; l'écriture et le découpage en plans restent gratuits.",
         },
+        { type: "link", label: "Construire mon storyboard dans ScreenWeaver", href: sw("jour-2") },
+        { type: "p", text: "Demain, je vous ouvre le projet de montage de Lost Garden, avec les vrais fichiers." },
       ],
     },
     {
       key: "jour-3",
-      subject: "Jour 3 : dans le montage de Lost Garden",
-      dayOffset: 2,
+      subject: "Jour 3 : je vous ouvre le montage de Lost Garden",
       blocks: [
         {
           type: "p",
-          text: "Dernier jour. Vous avez une vision et un storyboard, il reste à assembler. Dans cette vidéo, je vous montre le montage réel de Lost Garden : comment je classe des dizaines de rushs IA, comment je construis la timeline et comment je choisis les prises pour que l'épisode tienne debout.",
+          text: "Dernier jour du challenge. Vous avez une vision et un storyboard, il reste à assembler. Dans cette vidéo, vous êtes dans mon vrai projet : comment je classe des dizaines de rushs IA, comment je construis la timeline, et comment je choisis les prises pour que l'épisode tienne debout.",
         },
-        { type: "cta", label: "Voir le montage de Lost Garden", href: courseUrl("jour-3", d3.slug) },
+        { type: "cta", label: "Voir le montage de Lost Garden (6 min)", href: courseUrl("jour-3", d3.slug) },
         { type: "list", items: [...d3.points] },
         { type: "p", text: `Votre mission du jour : ${d3.mission}` },
         {
           type: "p",
-          text: "Si vous faites ces trois missions, vous avez déjà une méthode de production. Je vous écris demain pour vous dire comment aller plus loin, sans pression.",
+          text: "Si vous avez fait les trois missions, vous avez déjà une méthode de production. Pas une théorie : une phrase, six images validées, un projet de montage organisé. Demain, je vous montre ce que cette méthode donne à l'échelle d'un épisode entier.",
         },
       ],
     },
     {
-      key: "ai-studios",
-      subject: "Vous avez la carte. Et la suite ?",
-      dayOffset: 3,
+      key: "preuve",
+      subject: "17 minutes d'animé, seul, avec l'IA (la preuve)",
       blocks: [
         {
           type: "p",
-          text: "En trois jours, vous avez vu où commencer, comment structurer un projet et pourquoi vos anciens workflows brûlaient votre budget. La suite, c'est la cohérence des personnages, la mise en scène, le mouvement, le son et un portfolio qui ne ressemble pas à une démo d'outil.",
+          text: "Vous voulez créer un film, un animé, une pub ou un univers visuel avec l'IA ? Alors regardez d'abord ça.",
+        },
+        { type: "cta", label: "Regarder Lost Garden (17 min)", href: outUrl(LOST_GARDEN_URL, "preuve") },
+        {
+          type: "p",
+          text: "J'ai réalisé cet épisode d'animé de 17 minutes avec un workflow IA. Seul. Sans studio, sans équipe d'animation, sans attendre qu'un producteur me donne la permission.",
         },
         {
           type: "p",
-          text: "C'est ce qu'on travaille dans AI Studios, la communauté sur Skool. Pour 7 € par mois, vous débloquez le module Étape 1 de la formation, vous recevez la Méthode Film Mental, et vous rejoignez des créateurs qui partagent leurs créations et leurs prompts tous les jours.",
+          text: "Et dites-vous bien une chose : je n'ai rien fait d'autre que ce que vous avez vu en trois jours, répété plan après plan. Une idée tenue en une phrase. Un storyboard validé en image. La génération seulement ensuite. Puis le montage, avec des rushs classés par scène.",
         },
-        { type: "cta", label: "Rejoindre AI Studios à 7 € par mois", href: SKOOL_URL },
         {
           type: "p",
-          text: "C'est sans engagement. Vous restez le temps que vous voulez, vous partez quand vous voulez, en un clic. Et si vous préférez continuer seul avec la méthode des trois jours, c'est très bien aussi : elle reste accessible.",
+          text: "Depuis, des entreprises m'appellent pour former leurs équipes de production. Ronces, VOIDBORN et Lost Garden sont passés dans neuf festivals internationaux. Alors certes, ça demande du travail. Mais il y a trois ans, cet épisode aurait demandé une équipe et un budget que je n'avais pas.",
         },
-        { type: "link", label: "Revoir les trois jours", href: courseUrl("ai-studios") },
+        {
+          type: "p",
+          text: "Ceux qui vont tirer leur épingle du jeu ne tapent pas trois prompts au hasard. Ils apprennent à diriger : choisir, recommencer quand le résultat est mauvais, tenir un personnage sur quarante plans. C'est exactement ce que je vous apprends, et demain je vous explique comment, et pour combien.",
+        },
+        { type: "link", label: "Revoir les trois vidéos du challenge", href: courseUrl("preuve") },
+      ],
+    },
+    {
+      key: "offre",
+      subject: "AI Studios à 7 € par mois : ce que vous débloquez exactement",
+      blocks: [
+        {
+          type: "p",
+          text: "Vous avez la méthode. Ce qui vous manque maintenant, ce sont deux choses : la suite du programme, et un regard extérieur sur vos plans. C'est à ça que sert AI Studios, ma communauté sur Skool. Voici ce que vous débloquez, poste par poste.",
+        },
+        {
+          type: "list",
+          items: [
+            "Le module Étape 1 de la formation complète, « De l'idée à l'image et vidéo IA », débloqué dès votre arrivée.",
+            "La Méthode Film Mental IA, offerte. Vendue 67 € à part : comment tirer d'une seule idée une source de prompts adaptés à votre univers.",
+            `Une communauté privée de ${SKOOL_OFFER.members} créateurs IA qui postent leurs plans, leurs prompts et leurs ratés, tous les jours.`,
+            "Mes coulisses chaque semaine : ce que j'ai produit, ce qui a marché, ce que j'ai jeté.",
+            "Des retours personnalisés sur vos créations, par écrit ou en vidéo.",
+          ],
+        },
+        {
+          type: "p",
+          text: `Le prix : ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}. Sans engagement, vous partez en un clic. Pourquoi si peu ? Parce que je veux que le maximum de créateurs rejoignent, et qu'une communauté ne vit que si elle est nombreuse et active.`,
+        },
+        { type: "cta", label: `Rejoindre AI Studios à ${SKOOL_OFFER.priceLabel} par mois`, href: skool("offre") },
+        {
+          type: "p",
+          text: "Une seule chose que je vous demande en arrivant : postez le storyboard de votre challenge. Vous aurez un retour dessus, et c'est souvent là que le projet décolle.",
+        },
+      ],
+    },
+    {
+      key: "personnages",
+      subject: "Votre personnage change de visage à chaque plan ? Voici le vrai coupable",
+      blocks: [
+        {
+          type: "p",
+          text: "C'est le problème numéro un en vidéo IA. Le personnage est parfait sur un plan. Au plan suivant, le nez a changé, le manteau aussi, et toute la crédibilité de votre film s'effondre. Beaucoup accusent l'outil. Le vrai coupable, dans la majorité des cas : le personnage n'a jamais été verrouillé.",
+        },
+        {
+          type: "p",
+          text: "Quand vous décrivez votre héros avec des mots, l'IA sort la moyenne de tous les héros qu'elle connaît, et cette moyenne change à chaque génération. Ce qu'il lui faut, c'est ce qu'on appelle une character sheet : la même personne vue de face, de profil et de dos, en lumière neutre.",
+        },
+        {
+          type: "list",
+          items: [
+            "Générez la fiche une fois : trois vues, même tenue, fond simple.",
+            "Donnez-la en référence à chaque génération, image comme vidéo. Sans référence, l'IA imagine l'arrière de votre personnage, et il change à chaque fois.",
+            "Ne retouchez jamais la description de base en cours de projet. Une tenue qui change, c'est une nouvelle fiche.",
+          ],
+        },
+        {
+          type: "p",
+          text: `Pour faire ça sans jongler entre dix outils, j'ai construit imaginode, mon studio image et vidéo en ligne : ${IMAGINODE_FACTS.models} modèles dans un seul abonnement, et un système de références pensé pour garder le même personnage d'une image à l'autre. Vous avez ${IMAGINODE_FACTS.freeImages} images offertes à l'inscription, sans carte bancaire : de quoi générer votre première fiche.`,
+        },
+        { type: "cta", label: `Créer ma fiche personnage (${IMAGINODE_FACTS.freeImages} images offertes)`, href: im("personnages") },
+        { type: "link", label: "Voir le reel sur les personnages cohérents", href: REELS.personnages },
+      ],
+    },
+    {
+      key: "credits",
+      subject: "1 crédit pour une image, 26 pour cinq secondes de vidéo",
+      blocks: [
+        {
+          type: "p",
+          text: `Un chiffre qui change la manière de travailler. Sur imaginode, une image coûte à partir de ${IMAGINODE_FACTS.imageMinCredits} crédit. Cinq secondes de vidéo, à partir de ${IMAGINODE_FACTS.videoMinCredits}. Autrement dit, vous pouvez valider les six plans de votre storyboard en image pour moins qu'une seule vidéo ratée.`,
+        },
+        {
+          type: "p",
+          text: "C'est toute la logique du challenge : on ne lance une génération vidéo que sur une image déjà validée. Le cadrage est bon, le personnage est le bon, la lumière est la bonne. La vidéo n'a plus qu'à animer. Faites l'inverse, et chaque essai vidéo devient un pari à 26 crédits.",
+        },
+        {
+          type: "p",
+          text: `Deux détails qui comptent quand on teste beaucoup : sur imaginode, une génération qui échoue est remboursée automatiquement, et vous pouvez commencer sans abonnement, ${IMAGINODE_FACTS.payAsYouGo}. L'abonnement Starter est à ${IMAGINODE_FACTS.starterPrice} par mois pour ${IMAGINODE_FACTS.starterCredits} crédits, si vous produisez régulièrement.`,
+        },
+        { type: "cta", label: `Tester imaginode avec ${IMAGINODE_FACTS.freeImages} images offertes`, href: im("credits") },
+        {
+          type: "p",
+          text: "Ma règle, celle que j'applique sur mes propres films : je n'anime jamais un plan que je ne serais pas prêt à encadrer en image.",
+        },
+      ],
+    },
+    {
+      key: "decors",
+      subject: "Vos décors changent d'un plan à l'autre ? La bible de projet règle ça",
+      blocks: [
+        {
+          type: "p",
+          text: "On pense d'abord aux personnages. Puis on se rend compte que les décors dérivent tout autant : la pièce change de forme, la rue ne ressemble plus à celle du plan d'avant, la lumière et les matières bougent sans raison. Le spectateur ne sait pas le formuler, mais il le sent : le film paraît moins maîtrisé.",
+        },
+        {
+          type: "p",
+          text: "La cause est la même que pour les personnages. Le décor n'a jamais été posé comme une base de continuité. Sur mes projets, chaque lieu a sa fiche dans ce qu'on appelle la bible de projet.",
+        },
+        {
+          type: "list",
+          items: [
+            "Une image de référence par lieu, validée avant le premier plan.",
+            "Une description fixe : matières, époque, lumière dominante, deux ou trois éléments reconnaissables.",
+            "La liste des objets qui reviennent (une voiture, une lampe, une arme), avec leur image.",
+          ],
+        },
+        {
+          type: "p",
+          text: "C'est exactement pour ça que ScreenWeaver suit la continuité des personnages, des lieux et des objets à l'échelle du projet, et relie chaque image de storyboard à sa scène. Vous ouvrez la scène, vous voyez ce qui doit rester identique. La partie écriture et bible est gratuite.",
+        },
+        { type: "cta", label: "Ouvrir ma bible de projet dans ScreenWeaver", href: sw("decors") },
+      ],
+    },
+    {
+      key: "prompts",
+      subject: "N'achetez jamais de prompts (faites ça à la place)",
+      blocks: [
+        {
+          type: "p",
+          text: "Beaucoup de gens achètent encore des packs de prompts. Le problème, c'est qu'ils ont été écrits pour le projet, le style et les références de quelqu'un d'autre. Au début, ça va plus vite. Très vite, on est bloqué, parce qu'un vrai projet demande des prompts adaptés à votre univers, à votre ton, à vos personnages.",
+        },
+        {
+          type: "p",
+          text: "La bonne nouvelle : si vous avez fait le challenge, vous avez déjà la matière. Une phrase, une émotion, une image finale, une fiche personnage, une bible de lieux. À partir de là, les prompts se déduisent, presque sans limite, et ils restent cohérents entre eux.",
+        },
+        {
+          type: "p",
+          text: "C'est ce que j'ai formalisé dans la Méthode Film Mental IA : comment partir d'une idée simple et en tirer une source de prompts professionnels, à la demande, sans jamais repartir de zéro. Je la vends 67 € à part. Elle est offerte quand vous rejoignez AI Studios.",
+        },
+        { type: "cta", label: `Récupérer la Méthode Film Mental avec AI Studios (${SKOOL_OFFER.priceLabel} par mois)`, href: skool("prompts") },
+        {
+          type: "p",
+          text: "Et si vous préférez continuer avec vos outils, gardez au moins ceci : un prompt n'est jamais bon en soi. Il est bon pour un projet.",
+        },
+      ],
+    },
+    {
+      key: "montage",
+      subject: "Ce que je coupe en premier au montage",
+      blocks: [
+        {
+          type: "p",
+          text: "Vous pouvez avoir de très bons plans. Si le montage ne suit pas, le film reste plat. Voici les décisions que je prends sur chaque projet, dans l'ordre, telles que vous les avez vues sur Lost Garden.",
+        },
+        {
+          type: "list",
+          items: [
+            "Je classe avant de monter. Un dossier par scène, les rushs nommés par plan. Sinon, je passe plus de temps à chercher qu'à choisir.",
+            "Je coupe un plan pour ce qu'il apporte à l'émotion, jamais parce qu'il a coûté des crédits. Un plan cher et inutile reste inutile.",
+            "Un mouvement de caméra qui tournoie sans raison, je le coupe entièrement. Le spectateur retient l'image forte, pas l'effet.",
+            "Je garde une seule prise par plan dans la timeline. Les autres restent dans le dossier, pas sous les yeux.",
+          ],
+        },
+        { type: "cta", label: "Revoir le montage de Lost Garden", href: courseUrl("montage", d3.slug) },
+        {
+          type: "p",
+          text: "Dans AI Studios, vous voyez ce travail chaque semaine dans mes coulisses : ce que je monte, ce que je jette, et pourquoi. C'est là que le regard se forme.",
+        },
+        { type: "link", label: `Rejoindre AI Studios (${SKOOL_OFFER.priceLabel} par mois)`, href: skool("montage") },
+      ],
+    },
+    {
+      key: "30-jours",
+      subject: "Ce que vous pouvez avoir en main dans 30 jours",
+      blocks: [
+        {
+          type: "p",
+          text: "Quand on débute, on imagine qu'il faut des mois avant d'obtenir quelque chose de montrable. Avec un cadre, 30 jours suffisent pour un premier résultat réel. Pas un long-métrage. Mais quelque chose que vous pouvez envoyer à un client ou poster sans rougir.",
+        },
+        {
+          type: "list",
+          items: [
+            "Un teaser cinématique de trente secondes, avec un personnage qui reste le même du début à la fin.",
+            "Une publicité pour un produit, un restaurant, un service, peu importe.",
+            "Une scène d'animé, dans un style que vous tenez d'un plan à l'autre.",
+            "Un mini-univers cohérent : trois lieux, deux personnages, une bible, prêt à grandir.",
+          ],
+        },
+        {
+          type: "p",
+          text: "Ce premier mois change tout, parce que vous cessez de regarder vos idées comme des envies floues. Vous les voyez comme des projets possibles, avec un pipeline, des réflexes, et une méthode qui vous évite de tourner en rond.",
+        },
+        {
+          type: "p",
+          text: `C'est ce qu'on fait ensemble dans AI Studios : vous postez votre avancée, vous avez un retour, vous corrigez, vous avancez. ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, sans engagement.`,
+        },
+        { type: "cta", label: "Commencer mes 30 jours dans AI Studios", href: skool("30-jours") },
+      ],
+    },
+    {
+      key: "objections",
+      subject: "« Je débute », « pas le temps », « pas de gros PC » : mes réponses",
+      blocks: [
+        {
+          type: "p",
+          text: "Voici les trois freins qu'on m'écrit le plus souvent, et ce que je réponds, sans langue de bois.",
+        },
+        {
+          type: "p",
+          text: "« Je débute totalement. » Tant mieux. Vous n'avez pas de mauvaises habitudes à désapprendre. Le module Étape 1 part de l'idée, pas de l'outil, et la Méthode Film Mental vous donne les bases pas à pas. Les membres qui progressent le plus vite sont rarement ceux qui connaissaient déjà dix logiciels.",
+        },
+        {
+          type: "p",
+          text: "« Je n'ai pas le temps. » Le challenge, c'est 24 minutes de vidéo et trois missions courtes. Dans AI Studios, vous avancez à votre rythme, une vidéo à la fois, et la communauté répond quand vous êtes bloqué, pas à heure fixe.",
+        },
+        {
+          type: "p",
+          text: "« Je n'ai pas un ordinateur puissant. » Peu importe la puissance de votre ordinateur : les outils que j'utilise tournent dans le navigateur, imaginode fonctionne même sur téléphone. Votre machine ne génère rien, elle affiche.",
+        },
+        {
+          type: "p",
+          text: `Et le prix : ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, sans engagement, résiliable en un clic. Vous restez le temps que vous voulez, vous partez quand vous voulez.`,
+        },
+        { type: "cta", label: "Rejoindre AI Studios", href: skool("objections") },
+        {
+          type: "p",
+          text: `Une autre question ? Répondez à cet email, il arrive directement chez moi.`,
+        },
+      ],
+    },
+    {
+      key: "annuel",
+      subject: `L'accès annuel AI Studios : ${ANNUAL_OFFER.videos} vidéos et ${ANNUAL_OFFER.guaranteeDays} jours pour changer d'avis`,
+      blocks: [
+        {
+          type: "p",
+          text: `L'abonnement à ${SKOOL_OFFER.priceLabel} ouvre l'Étape 1 et la communauté. Certains d'entre vous veulent tout le chemin, tout de suite. C'est l'accès annuel.`,
+        },
+        {
+          type: "list",
+          items: [
+            "Les cinq étapes de la formation : de l'idée à l'image et la vidéo, la mise en scène, le montage, le son, jusqu'au portfolio et aux clients.",
+            `Plus de ${ANNUAL_OFFER.videos} vidéos, et de nouvelles vidéos ajoutées chaque semaine pendant vos douze mois.`,
+            "Les masterclass, les bonus, les workflows prêts à l'emploi, et mes coulisses.",
+            "La communauté Skool, avec mes retours sur vos créations.",
+          ],
+        },
+        {
+          type: "p",
+          text: `Le tarif affiché aujourd'hui sur la page est de ${ANNUAL_OFFER.price} au lieu de ${ANNUAL_OFFER.regularPrice}, en un seul paiement pour douze mois. Et vous avez ${ANNUAL_OFFER.guaranteeDays} jours pour changer d'avis : si la formation ne vous convient pas, vous êtes remboursé.`,
+        },
+        { type: "cta", label: "Voir l'accès annuel", href: annual("annuel") },
+        {
+          type: "p",
+          text: `Si ${SKOOL_OFFER.priceLabel} par mois vous suffit pour l'instant, restez-y, c'est très bien aussi. L'annuel est pour celles et ceux qui savent déjà qu'ils veulent en vivre.`,
+        },
+      ],
+    },
+    {
+      key: "outils",
+      subject: "Mon pipeline complet, outil par outil (et ce que ça coûte)",
+      blocks: [
+        {
+          type: "p",
+          text: "On me demande souvent quels outils j'utilise. Voici la chaîne exacte, dans l'ordre du challenge, avec ce que chaque étape coûte réellement.",
+        },
+        {
+          type: "list",
+          items: [
+            "Écriture, découpage en plans, bible de projet : ScreenWeaver. Gratuit pour l'écriture, projets illimités, export PDF et Final Draft.",
+            `Storyboard : ScreenWeaver aussi, module en bêta à ${SCREENWEAVER_FACTS.storyboardBeta}, chaque image reliée à sa scène.`,
+            `Génération image et vidéo : imaginode. ${IMAGINODE_FACTS.models} modèles dans un seul abonnement, références pour tenir les personnages, échec remboursé. ${IMAGINODE_FACTS.freeImages} images offertes pour tester.`,
+            "Montage : un logiciel de montage classique, avec les rushs classés par scène, comme dans la vidéo du Jour 3.",
+          ],
+        },
+        {
+          type: "p",
+          text: "Vous ne payez que l'IA et l'outil. Pas de pack de prompts, pas de plugin miracle, pas de machine à 3 000 €. La différence se fait sur la méthode, et vous l'avez.",
+        },
+        { type: "cta", label: "Ouvrir imaginode", href: im("outils") },
+        { type: "link", label: "Ouvrir ScreenWeaver", href: sw("outils") },
+      ],
+    },
+    {
+      key: "derniere",
+      subject: "Trois portes, une seule à ouvrir aujourd'hui",
+      blocks: [
+        {
+          type: "p",
+          text: "C'est mon dernier email de cette série. En deux semaines, vous avez reçu la méthode complète : l'idée, le storyboard, la génération sur image validée, le montage. Il reste trois portes, et je vous conseille de n'en ouvrir qu'une aujourd'hui.",
+        },
+        {
+          type: "list",
+          items: [
+            `AI Studios, ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period} : le programme, la Méthode Film Mental offerte, et des retours sur vos plans.`,
+            "ScreenWeaver, gratuit : votre projet, vos personnages, vos lieux, votre découpage au même endroit.",
+            `imaginode, ${IMAGINODE_FACTS.freeImages} images offertes : générer sur des références, valider en image, animer ensuite.`,
+          ],
+        },
+        {
+          type: "p",
+          text: "À choisir, je prendrais AI Studios. Les outils, vous les apprendrez de toute façon. Ce qui vous fera gagner des mois, c'est un regard extérieur sur vos premiers plans, avant d'avoir brûlé vos crédits dessus.",
+        },
+        { type: "cta", label: `Rejoindre AI Studios à ${SKOOL_OFFER.priceLabel} par mois`, href: skool("derniere") },
+        {
+          type: "p",
+          text: "Quoi qu'il se passe, gardez les trois vidéos, elles restent accessibles. Prenez soin de vous et de vos projets.",
+        },
+        { type: "link", label: "Revoir le challenge", href: courseUrl("derniere") },
       ],
     },
   ];
+}
 
-  return specs.map(({ blocks, ...rest }) => ({
-    ...rest,
-    html: renderHtml({ firstName: name, blocks, unsubscribe, step: rest.key, kicker: kickers[rest.key] }),
-    text: renderText({ firstName: name, blocks, unsubscribe }),
-  }));
+export function buildSequence(email: string, firstName: string): SequenceEmail[] {
+  const unsubscribe = unsubscribeUrl(email);
+  const name = firstName.trim();
+  const byKey = new Map(specs().map((s) => [s.key, s]));
+
+  return SEQUENCE_META.map((meta) => {
+    const spec = byKey.get(meta.key);
+    if (!spec) throw new Error(`Email de séquence manquant : ${meta.key}`);
+    return {
+      key: meta.key,
+      subject: spec.subject,
+      dayOffset: meta.dayOffset,
+      html: renderHtml({ firstName: name, blocks: spec.blocks, unsubscribe, step: meta.key, kicker: meta.kicker }),
+      text: renderText({ firstName: name, blocks: spec.blocks, unsubscribe }),
+    };
+  });
 }
 
 /** Instant UTC correspondant à `hour` h (heure de Paris) dans `days` jours. */
-export function parisMorning(days: number, hour = 9, now = new Date()): Date {
+export function parisMorning(days: number, hour = SEQUENCE_SEND_HOUR, now = new Date()): Date {
   const target = new Date(now.getTime() + days * 86_400_000);
   const parts = new Intl.DateTimeFormat("fr-CA", {
     timeZone: "Europe/Paris",
@@ -313,7 +651,7 @@ export function parisMorning(days: number, hour = 9, now = new Date()): Date {
 }
 
 export type SequenceStepResult = {
-  key: SequenceEmail["key"];
+  key: SequenceKey;
   subject: string;
   id: string | null;
   scheduledAt: string | null;
@@ -327,13 +665,31 @@ export type SequenceResult = {
   errors: string[];
 };
 
+/** Étapes prévues, sans envoi : sert à afficher « programmé » avant que Resend ait répondu. */
+export function plannedSteps(email: string, firstName: string, part: "immediate" | "scheduled"): SequenceStepResult[] {
+  return buildSequence(email, firstName)
+    .filter((m) => (part === "immediate" ? m.dayOffset === 0 : m.dayOffset > 0))
+    .map((m) => ({
+      key: m.key,
+      subject: m.subject,
+      id: null,
+      scheduledAt: m.dayOffset > 0 ? parisMorning(m.dayOffset).toISOString() : null,
+      error: null,
+    }));
+}
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
 /**
- * Envoie l'email d'accès tout de suite et programme les trois suivants.
- * Retourne les identifiants Resend des envois programmés.
+ * Envoie la séquence. `part: "immediate"` n'envoie que l'email d'accès (à
+ * faire avant de répondre au formulaire) ; `part: "scheduled"` programme les
+ * suivants, espacés pour respecter la limite de débit de Resend (à faire
+ * après la réponse). Sans `part`, tout est envoyé d'un bloc.
  */
 export async function sendFunnelSequence(
   email: string,
   firstName: string,
+  opts: { part?: "immediate" | "scheduled" } = {},
 ): Promise<SequenceResult> {
   const resend = resendClient();
   const result: SequenceResult = { sent: 0, scheduledIds: [], steps: [], errors: [] };
@@ -343,12 +699,17 @@ export async function sendFunnelSequence(
   }
 
   const unsubscribe = unsubscribeUrl(email);
-  const sequence = buildSequence(email, firstName);
+  const sequence = buildSequence(email, firstName).filter((m) =>
+    opts.part === "immediate" ? m.dayOffset === 0 : opts.part === "scheduled" ? m.dayOffset > 0 : true,
+  );
 
+  let first = true;
   for (const mail of sequence) {
+    if (!first) await sleep(550);
+    first = false;
     const scheduledAt =
       mail.dayOffset > 0 ? parisMorning(mail.dayOffset).toISOString() : undefined;
-    const { data, error } = await resend.emails.send({
+    const payload = {
       from: fromAddress(),
       to: email,
       replyTo: process.env.RESEND_REPLY_TO ?? SUPPORT_EMAIL,
@@ -364,7 +725,13 @@ export async function sendFunnelSequence(
         { name: "step", value: mail.key },
       ],
       ...(scheduledAt ? { scheduledAt } : {}),
-    });
+    };
+    let { data, error } = await resend.emails.send(payload);
+    if (error && /rate/i.test(error.message)) {
+      // Limite de débit atteinte : une seconde tentative après une pause.
+      await sleep(1200);
+      ({ data, error } = await resend.emails.send(payload));
+    }
     result.steps.push({
       key: mail.key,
       subject: mail.subject,
@@ -386,7 +753,7 @@ export async function sendFunnelSequence(
 export async function sendSequenceStep(
   email: string,
   firstName: string,
-  key: SequenceEmail["key"],
+  key: SequenceKey,
 ): Promise<SequenceStepResult> {
   const resend = resendClient();
   const mail = buildSequence(email, firstName).find((m) => m.key === key);

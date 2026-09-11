@@ -38,7 +38,7 @@ export default async function EmailsPage({
   return (
     <AdminShell active="emails" title="Séquence d’emails">
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-fog">
-        Quatre emails sont programmés chez Resend au moment de l’inscription. Les compteurs
+        {SEQUENCE_STEPS.length} emails : l’accès part tout de suite, les suivants sont programmés chez Resend juste après l’inscription. Les compteurs
         ci-dessous viennent du webhook Resend
         {webhook ? "" : " (non configuré : seuls les envois programmés sont comptés)"}. Les
         textes vivent dans le code, fichier src/lib/funnel/emails.ts.

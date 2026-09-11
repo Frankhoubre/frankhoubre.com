@@ -13,6 +13,41 @@ export const FUNNEL_PATHS = {
 
 export const SKOOL_URL = "https://www.skool.com/ai-studios";
 export const SCREENWEAVER_URL = "https://screenweaver.ai/";
+export const IMAGINODE_URL = "https://imaginode.ai/";
+/** Page de vente de l'accès annuel AI Studios (systeme.io). */
+export const AI_STUDIOS_ANNUAL_URL = "https://www.ai-studios.fr/details-formation-ia-cinema";
+/** Épisode d'animé de 17 minutes réalisé seul avec un workflow IA. */
+export const LOST_GARDEN_URL = "https://www.youtube.com/watch?v=eZ_JlaLDJ-8";
+export const REELS = {
+  storyboard: "https://www.instagram.com/p/DXFJUgij_QB/",
+  personnages: "https://www.instagram.com/p/DXw7HlGiiAS/",
+} as const;
+
+/**
+ * Faits cités dans les emails. Relevés le 2026-09-11 sur les pages publiques
+ * (imaginode.ai, screenweaver.ai, ai-studios.fr) : à mettre à jour quand les
+ * offres bougent, les emails se reconstruisent à partir d'ici.
+ */
+export const IMAGINODE_FACTS = {
+  models: "91",
+  freeImages: "5",
+  imageMinCredits: "1",
+  videoMinCredits: "26",
+  starterPrice: "13 € HT",
+  starterCredits: "900",
+  payAsYouGo: "300 crédits pour 5 € HT, sans expiration",
+} as const;
+
+export const SCREENWEAVER_FACTS = {
+  storyboardBeta: "9,99 $ par mois",
+} as const;
+
+export const ANNUAL_OFFER = {
+  price: "509 €",
+  regularPrice: "989 €",
+  guaranteeDays: "14",
+  videos: "300",
+} as const;
 export const SUPPORT_EMAIL = "hello@businessdynamite.xyz";
 
 /** Cookie posé après inscription : évite de re-proposer la formation. */

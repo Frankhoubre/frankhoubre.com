@@ -17,7 +17,8 @@ tableau de bord privé.
 2. L'inscrit est enregistré (Upstash Redis), un cookie `fh_funnel_sub` évite
    de lui reproposer la fenêtre promo du site.
 3. Resend envoie l'email d'accès tout de suite et programme trois emails :
-   Jour 2 (J+1, 9 h Paris), Jour 3 (J+2), AI Studios (J+3). Les textes sont
+   puis 14 emails programmés à 9 h Paris (J+1 à J+14, plan dans
+   `src/lib/funnel/sequence.ts`, programmés après la réponse HTTP via `after()`). Les textes sont
    dans `src/lib/funnel/emails.ts`.
 4. La personne est redirigée vers `/formation-ia-gratuite/cours?bienvenue=1`.
 5. Le lien de désinscription (signé) annule les emails restants.
