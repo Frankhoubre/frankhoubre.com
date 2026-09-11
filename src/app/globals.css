@@ -1253,6 +1253,11 @@
     animation-play-state: paused;
   }
 
+  /* Bandeau texte (récompenses) : plus court, donc plus rapide qu'une planche d'images. */
+  .marquee-text {
+    animation-duration: 48s;
+  }
+
   @keyframes marquee-left {
     from {
       transform: translateX(0);
