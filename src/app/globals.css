@@ -1383,6 +1383,35 @@
     }
   }
 
+  /* Fenêtre modale : voile en fondu, cadre qui monte légèrement. */
+  .modal-veil {
+    animation: modal-veil var(--dur) var(--ease) both;
+  }
+
+  .modal-in {
+    animation: modal-in 0.7s var(--ease) both;
+  }
+
+  @keyframes modal-veil {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes modal-in {
+    from {
+      opacity: 0;
+      transform: translateY(18px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
   /* ------------------------------------------------------------------ */
   /* Prose (articles, pages légales, à propos)                            */
   /* ------------------------------------------------------------------ */
@@ -1709,5 +1738,16 @@
   .prose-cinema .badge,
   .prose-cinema .arrow-link {
     text-decoration: none;
+  }
+
+  /* Le bouton plein garde son texte sombre dans la prose (sinon la couleur
+     des liens d'article, blanc chaud, le rendrait illisible). */
+  .prose-cinema .btn-primary,
+  .prose-cinema .btn-primary:hover {
+    color: var(--bg);
+  }
+
+  .prose-cinema .btn:hover {
+    color: var(--bg);
   }
 }

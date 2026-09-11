@@ -9,6 +9,7 @@ import { FunnelFrame } from "@/components/funnel/FunnelFrame";
 import { TrackedLink } from "@/components/funnel/TrackedLink";
 import { VideoFacade } from "@/components/VideoFacade";
 import { Plus } from "@/components/FaqSection";
+import { Stars } from "@/components/ui/Stars";
 import { Arrow } from "@/components/ui/Cta";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
@@ -230,7 +231,8 @@ export default async function FormationCoursePage() {
               <ul className="mt-4">
                 {SKOOL_OFFER.reviews.map((r) => (
                   <li key={r.author} className="border-t border-line py-4 last:border-b">
-                    <p className="serif text-[1.2rem] leading-snug text-cream">« {r.text} »</p>
+                    <Stars label={`${r.author} : 5 étoiles sur 5`} />
+                    <p className="serif mt-2 text-[1.2rem] leading-snug text-cream">« {r.text} »</p>
                     <p className="meta mt-2">{r.author}</p>
                   </li>
                 ))}

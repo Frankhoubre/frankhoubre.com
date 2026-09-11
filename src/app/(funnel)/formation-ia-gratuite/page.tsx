@@ -9,6 +9,7 @@ import { FunnelFrame } from "@/components/funnel/FunnelFrame";
 import { OptInForm } from "@/components/funnel/OptInForm";
 import { StickyCta } from "@/components/funnel/StickyCta";
 import { JsonLd } from "@/components/JsonLd";
+import { Stars } from "@/components/ui/Stars";
 import {
   FUNNEL_AWARDS,
   FUNNEL_DAYS,
@@ -172,7 +173,8 @@ export default async function FormationOptInPage() {
               <ul className="mt-8">
                 {SKOOL_OFFER.reviews.map((r) => (
                   <li key={r.author} className="border-t border-line py-4 last:border-b">
-                    <p className="serif text-[1.15rem] leading-snug text-cream">« {r.text} »</p>
+                    <Stars label={`${r.author} : 5 étoiles sur 5`} />
+                    <p className="serif mt-2 text-[1.15rem] leading-snug text-cream">« {r.text} »</p>
                     <p className="meta mt-2">
                       {r.author} · membre AI Studios · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
                     </p>
