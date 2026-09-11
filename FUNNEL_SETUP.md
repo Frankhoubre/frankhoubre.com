@@ -5,14 +5,14 @@ tableau de bord privé.
 
 | Page | Rôle |
 |------|------|
-| `/formation-ia-gratuite` | Page d'inscription (prénom, email, consentement). Indexée. |
+| `/formation-ia-gratuite` | Page d'inscription (un seul champ : email, plus consentement). Indexée. |
 | `/formation-ia-gratuite/cours` | Les trois vidéos du challenge + offre AI Studios. Non indexée, accessible par lien. |
 | `/formation-ia-gratuite/desinscription` | Confirmation après clic sur « ne plus recevoir ». |
 | `/admin/funnel` | Back-office (jeton) : vue d'ensemble, `/admin/funnel/inscrits` (liste, recherche, filtres, pagination), `/admin/funnel/inscrits/<email>` (fiche, séquence par étape, journal, actions : renvoyer l'accès, désinscrire, supprimer RGPD), `/admin/funnel/emails` (résultats par étape et aperçu des 4 emails). Bloqué dans robots.txt. |
 
 ## Ce qui se passe à l'inscription
 
-1. Le formulaire envoie prénom + email à `POST /api/funnel/subscribe`
+1. Le formulaire envoie l'email (prénom optionnel, plus demandé) à `POST /api/funnel/subscribe`
    (champ piège anti-robot, limite de 8 envois par IP et quart d'heure).
 2. L'inscrit est enregistré (Upstash Redis), un cookie `fh_funnel_sub` évite
    de lui reproposer la fenêtre promo du site.
