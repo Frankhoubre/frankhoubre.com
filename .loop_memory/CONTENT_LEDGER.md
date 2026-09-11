@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-11 : Festivals de films IA : ce que les jurys regardent vraiment
+- slug: festivals-films-ia-criteres-jurys
+- locale: fr
+- url: https://frankhoubre.com/blog/festivals-films-ia-criteres-jurys
+- category: analyses
+- type: evergreen / analyse CINEMA (plan 90j J29), publié à la date prévue, le calendrier ne glisse pas, donc J30 = 2026-09-12.
+- search_intent: informationnelle (créateur qui a fini un court métrage IA et veut savoir sur quoi un jury de festival le note, pourquoi il a été refusé sans retour, quel festival viser)
+- primary_keyword: festival film ia
+- secondary_keywords: festival films ia critères, jury festival ia, runway ai film festival critères, reply ai film festival, soumettre film ia festival, aaiff astana règles, sparknify human vs ai
+- sources: aif.runwayml.com/terms-film (règlement piste film 2026, critères et barème), challenges.reply.com/challenges/creative/aifilmfestival/how-it-works (critères, durée, formulaire), aimovieawards.org (critères, dates, présélection), sparknify.com/human-vs-ai-film-festival (3 étapes, critères du grand jury IA, éligibilité), aaiff.ai (règles d'éligibilité, prix, dates). Tout relevé le 2026-09-11.
+- internal_links: -> distribution-film-ia-strategies-visibilite-2026 (x2), voidborn-anime-ia-festival-coulisses, comment-mixer-audio-image-rendu-cinema-video-ia, erreurs-premiers-films-ia-lecons, /presse. Entrants ajoutés le même jour depuis voidborn-anime-ia-festival-coulisses et distribution-film-ia-strategies-visibilite-2026.
+- cta: aucun CTA produit ; lien /presse (kit presse, route désormais existante) en conclusion.
+- cannibalization_notes: voidborn-anime-ia-festival-coulisses garde l'étude de cas (le film, le pipeline, les prix) ; distribution-film-ia-strategies-visibilite-2026 garde la stratégie de diffusion (canaux, EPK, KPI) ; le futur J58 soumettre-film-ia-festival-retour-experience gardera le REX du process de soumission (plateformes, frais, calendrier). Cet article ne porte que les grilles de notation et la lecture par les jurés, avec le tableau comparatif des cinq festivals.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 9 H2 / FAQ 8 questions / 5 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS après npm install, build PASS, build_ledger régénéré)
+- published_commit: bd1b7d4
+
 ### 2026-09-10 : Midjourney 2026 : guide complet, V8.2, prix et SREF (UPDATE)
 - slug: midjourney-guide-complet
 - locale: fr

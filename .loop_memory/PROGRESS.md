@@ -1,6 +1,63 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-10 (J28 publié, jour UPDATE)
+## Last run: 2026-09-11 (J29 publié)
+
+### What happened
+- J29 du plan 90 jours publié à la date prévue :
+  `festivals-films-ia-criteres-jurys` (analyses, 9 H2, FAQ 8 questions,
+  4299 mots, 6 liens internes, 5 liens externes, score éditorial 100 / bucket
+  good / 0 flag, 0 issue au seo_audit sur ce slug). Le calendrier ne glisse pas,
+  donc J30 = 2026-09-12 (`ia-agence-creative-postes-gains`, B2B, CTA
+  /prestation). Commit bd1b7d4 poussé sur origin/main.
+- Angle : les grilles de notation publiées par cinq festivals (Runway AI
+  Festival 2026, Reply AI Film Festival, AI Movie Awards Londres, Sparknify
+  Human vs. AI, AAIFF Astana), lues ligne par ligne et croisées avec les faits
+  VOIDBORN déjà publiés. Tout vérifié le 2026-09-11 sur les pages officielles,
+  détail dans PUBLISH_LOG. Aucun fait VOIDBORN ajouté ; le synopsis d'exemple
+  (gardien de phare) est fictif et présenté comme tel.
+- ROUTE /presse : elle EXISTE maintenant (`src/app/(fr)/presse/page.tsx`, kit
+  presse ajouté par Frank avec le funnel, commit 267927b). Utilisée en
+  conclusion. Les deux liens /presse de la FAQ de
+  `voidborn-anime-ia-festival-coulisses` ne sont donc plus morts : le point « À
+  FAIRE UN AUTRE JOUR » des runs précédents est clos. Les prochains jours du
+  plan qui pointent vers /presse peuvent le faire directement.
+- Liens entrants réciproques depuis `voidborn-anime-ia-festival-coulisses`
+  (fin de « L'originalité stylistique ») et
+  `distribution-film-ia-strategies-visibilite-2026` (étape 3 festivals),
+  `dateModified` 2026-09-11 sur les deux, fichiers normalisés en LF.
+- IMAGES : hero Nano Banana 2 (jurée seule dans une petite salle de cinéma art
+  et essai entre deux projections, velours rouge usé, lumières de salle à
+  moitié levées, écran blanc vide, bloc-notes vierge, gobelet en carton ; motif
+  salle de cinéma et jury, aucun recyclage des heros récents : mur de liège
+  J28, bureau à colombages J27, tour PC J26, plateau vide J25, projection en
+  appartement J24). workflow-1 = capture réelle du règlement Runway (section
+  « Winner Selection and Notification », les 4 critères et le barème),
+  workflow-2 = capture réelle de l'infographie « The Judging Process » de
+  Sparknify, légendées source + date. aaiff.ai (hero plein écran, /rules en
+  404) et la page how-it-works de Reply (accordéon fermé) ne donnent pas de
+  capture exploitable.
+- PASSE ANTI-SLOP : 5 parallélismes négatifs ramenés à 1 volontaire (premier
+  cut de Frank), 4 signpostings supprimés, 3 affirmations sur le comportement
+  des jurés passées en opinion explicite, 2 « de plus en plus » remplacés par
+  des faits nommés, 1 anecdote de refus non documentée retirée. Scanner unslop
+  0 finding (anglophone, ne prouve rien), grille FR manuelle appliquée.
+
+### Notes outillage
+- Après un `git pull` qui amène de nouvelles dépendances (ici `resend` et
+  `@upstash/redis` du funnel), `npm run typecheck` est rouge tant que
+  `npm install` n'a pas tourné : le faire AVANT de conclure à une régression.
+- `git stash` / `git stash pop` reconvertit en CRLF les fichiers modifiés
+  (`core.autocrlf=true`) et casse le parse du frontmatter dans seo_audit :
+  éviter, ou renormaliser en LF juste après.
+- Captures : Chrome headless Windows en fenêtre haute (4000 à 9000 px) puis
+  recadrage 1440x810 avec PIL, à partir d'une vignette /3 lue avec Read pour
+  repérer la zone ; `screenshot_url.sh` reste macOS-only.
+
+### Next
+- J30 le 2026-09-12 : `ia-agence-creative-postes-gains` (B2B, commerciale,
+  liens vers /prestation et comment-creer-pub-video-agence-pro).
+
+### Previous run: 2026-09-10 (J28 publié, jour UPDATE)
 
 ### What happened
 - J28 du plan 90 jours, jour UPDATE : `midjourney-guide-complet` réécrit et
