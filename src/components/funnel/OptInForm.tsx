@@ -6,8 +6,8 @@ import { readUtm } from "@/components/funnel/track";
 type Status = "idle" | "sending" | "done";
 
 const ERRORS: Record<string, string> = {
-  consent: "Cochez la case de consentement pour recevoir vos accès par email.",
-  invalid: "Vérifiez votre prénom et votre adresse email.",
+  consent: "Cochez la case pour recevoir vos accès par email.",
+  invalid: "Vérifiez votre adresse email.",
   rate_limited:
     "Trop de tentatives depuis votre connexion. Réessayez dans quelques minutes.",
   network:
@@ -15,16 +15,20 @@ const ERRORS: Record<string, string> = {
 };
 
 /**
- * Formulaire d'inscription à la formation. Envoie en JSON à l'API du funnel,
- * puis redirige vers la page de formation (les accès partent aussi par email).
+ * Formulaire d'inscription à la formation : un seul champ (l'email) pour
+ * réduire la friction, la case de consentement, et l'accès immédiat à la page
+ * de formation après envoi (les accès partent aussi par email).
  */
 export function OptInForm({
   compact = false,
   tone = "light",
+  cta = "Recevoir mes 3 vidéos maintenant",
 }: {
   compact?: boolean;
   /** « dark » : posé sur une bande cinéma sombre (textes clairs, bouton lumineux). */
   tone?: "light" | "dark";
+  /** Texte du bouton, orienté sur ce que la personne obtient. */
+  cta?: string;
 }) {
   const dark = tone === "dark";
   const id = useId();
@@ -49,7 +53,6 @@ export function OptInForm({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          firstName: String(data.get("firstName") ?? ""),
           email: String(data.get("email") ?? ""),
           consent,
           website: String(data.get("website") ?? ""),
@@ -74,20 +77,19 @@ export function OptInForm({
   }
 
   const inputClass = dark
-    ? "w-full rounded-xl border border-white/25 bg-white/[0.06] px-4 py-3 text-base text-white placeholder:text-white/50 transition-colors duration-200 focus:border-[var(--orange)] focus:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]"
-    : "w-full rounded-xl border border-[rgba(17,17,17,0.32)] bg-[rgba(17,17,17,0.06)] px-4 py-3 text-base text-[var(--cream)] placeholder:text-[rgba(17,17,17,0.5)] transition-colors duration-200 focus:border-[var(--orange)] focus:bg-[rgba(17,17,17,0.1)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]";
-  const labelClass = dark
-    ? "mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-white/70"
-    : "mb-1.5 block text-xs font-medium uppercase tracking-[0.1em] text-[rgba(17,17,17,0.72)]";
+    ? "w-full min-w-0 rounded-xl border border-white/25 bg-white/[0.06] px-4 py-3.5 text-base text-white placeholder:text-white/50 transition-colors duration-200 focus:border-[var(--orange)] focus:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]"
+    : "w-full min-w-0 rounded-xl border border-[rgba(17,17,17,0.32)] bg-white px-4 py-3.5 text-base text-[var(--cream)] placeholder:text-[rgba(17,17,17,0.5)] transition-colors duration-200 focus:border-[var(--orange)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--orange)]";
   const consentClass = dark
-    ? "flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-white/75"
-    : "flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-[var(--muted)]";
+    ? "flex cursor-pointer items-start gap-3 text-[13px] leading-relaxed text-white/75"
+    : "flex cursor-pointer items-start gap-3 text-[13px] leading-relaxed text-[var(--muted)]";
   const noteClass = dark
-    ? "text-center text-xs leading-relaxed text-white/60"
-    : "text-center text-xs leading-relaxed text-[rgba(17,17,17,0.62)]";
+    ? "text-xs leading-relaxed text-white/60"
+    : "text-xs leading-relaxed text-[rgba(17,17,17,0.62)]";
   const buttonClass = dark
     ? "cine-cta w-full"
     : "heading-font flex w-full cursor-pointer items-center justify-center rounded-xl bg-[#111111] px-5 py-4 text-sm uppercase tracking-[0.08em] text-white transition-[background-color,transform] duration-200 hover:bg-[#2a2a2a] disabled:cursor-wait disabled:opacity-80";
+
+  const label = status === "idle" ? cta : status === "sending" ? "Un instant…" : "Ouverture de vos vidéos…";
 
   return (
     <form
@@ -97,23 +99,8 @@ export function OptInForm({
       aria-describedby={`${id}-note`}
     >
       <div>
-        <label htmlFor={`${id}-firstName`} className={labelClass}>
-          Votre prénom
-        </label>
-        <input
-          id={`${id}-firstName`}
-          name="firstName"
-          type="text"
-          autoComplete="given-name"
-          required
-          maxLength={60}
-          placeholder="Prénom"
-          className={inputClass}
-        />
-      </div>
-      <div>
-        <label htmlFor={`${id}-email`} className={labelClass}>
-          Votre e-mail
+        <label htmlFor={`${id}-email`} className="sr-only">
+          Votre adresse email
         </label>
         <input
           id={`${id}-email`}
@@ -123,7 +110,7 @@ export function OptInForm({
           inputMode="email"
           required
           maxLength={120}
-          placeholder="vous@exemple.fr"
+          placeholder="Votre adresse email"
           className={inputClass}
         />
       </div>
@@ -140,17 +127,20 @@ export function OptInForm({
         />
       </div>
 
+      <button type="submit" disabled={status !== "idle"} className={buttonClass}>
+        {label}
+      </button>
+
       <label htmlFor={`${id}-consent`} className={consentClass}>
         <input
           id={`${id}-consent`}
           name="consent"
           type="checkbox"
-          className="mt-1 h-5 w-5 shrink-0 cursor-pointer accent-[var(--orange)]"
+          className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-[var(--orange)]"
         />
         <span>
-          Oui, je consens à recevoir mes accès par email, ainsi que les méthodes
-          et conseils de Frank Houbre pour réussir en IA. Désinscription en un
-          clic dans chaque email.
+          J’accepte de recevoir mes accès et les conseils de Frank Houbre par
+          email. Désinscription en un clic.
         </span>
       </label>
 
@@ -163,16 +153,9 @@ export function OptInForm({
         </p>
       ) : null}
 
-      <button type="submit" disabled={status !== "idle"} className={buttonClass}>
-        {status === "idle"
-          ? "Je veux la méthode gratuite"
-          : status === "sending"
-            ? "Inscription en cours…"
-            : "C'est bon, on y va"}
-      </button>
       <p id={`${id}-note`} className={noteClass}>
-        Pas de spam : nous vous envoyons les accès et le processus pour réussir
-        dans l’IA par email.
+        Accès immédiat aux vidéos. Aucune carte bancaire, aucun logiciel à
+        installer.
       </p>
     </form>
   );

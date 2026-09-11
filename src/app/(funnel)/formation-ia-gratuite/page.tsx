@@ -36,9 +36,9 @@ import {
 } from "@/lib/metadata";
 import { person, siteName } from "@/lib/site";
 
-const title = "Formation vidéo IA gratuite en 3 jours";
+const title = "Formation vidéo IA gratuite : votre premier film IA cohérent en 3 jours";
 const description =
-  "Recevez gratuitement la méthode de Frank Houbre pour passer d'une idée à un film IA : vision, storyboard, montage. Trois vidéos, accessibles aux débutants.";
+  "Comment réaliser un film IA cohérent en 3 jours sans jeter vos crédits par les fenêtres. La méthode de Frank Houbre en 3 vidéos (24 min), accès immédiat, sans carte bancaire.";
 
 export const metadata: Metadata = buildPageMetadata({
   title,
@@ -68,16 +68,42 @@ export const metadata: Metadata = buildPageMetadata({
 
 const FORM_ID = "inscription";
 
-const outcomes = [
-  "Une idée de film claire, tenue en une phrase et six plans maximum.",
-  "Un storyboard validé en image avant de dépenser un seul crédit vidéo.",
-  "Le montage réel de Lost Garden, du classement des rushs à la timeline.",
+/* L'enfer actuel, en trois situations que les personnes reconnaissent. */
+const PAINS = [
+  {
+    title: "Des dizaines de clips, aucun film",
+    text: "Vous générez, vous regénérez, et vous finissez avec des dizaines de vidéos qui ne racontent rien ensemble.",
+  },
+  {
+    title: "Un personnage qui change de visage",
+    text: "D’un plan à l’autre, votre héros n’a plus le même nez ni le même manteau, et chaque nouvel essai vous coûte des crédits.",
+  },
+  {
+    title: "De belles images, pas d’histoire",
+    text: "Vous avez des plans magnifiques et rien à monter, parce que l’histoire n’existait pas avant de cliquer sur générer.",
+  },
+] as const;
+
+/* Ce qui s'ajoute aux trois vidéos dans ce que la personne reçoit. */
+const EXTRAS = [
+  {
+    title: "Les coulisses réelles de Lost Garden",
+    text: "Pas une démonstration sur un exemple inventé : le vrai projet, ses rushs, sa timeline, mes choix de prises.",
+  },
+  {
+    title: "Un email par jour pour tenir le rythme",
+    text: "Chaque matin, l’accès du jour et sa mission. Vous avancez sans avoir à y penser, et vous pouvez tout regarder d’un coup si vous préférez.",
+  },
+  {
+    title: "Une mission courte par vidéo",
+    text: "Une phrase pour votre idée, un storyboard de quatre à six plans, un projet de montage. À la fin, vous avez un film sur les rails, pas des notes.",
+  },
 ] as const;
 
 export default async function FormationOptInPage() {
   const metas = await Promise.all(FUNNEL_DAYS.map((d) => getVimeoThumbnail(d.vimeoId)));
   const totalSeconds = metas.reduce((acc, m) => acc + (m?.duration ?? 0), 0);
-  const totalLabel = formatMinutes(totalSeconds);
+  const totalLabel = formatMinutes(totalSeconds) ?? "24 min";
 
   const jsonLd = buildGraphJsonLd(
     {
@@ -106,7 +132,7 @@ export default async function FormationOptInPage() {
       hasCourseInstance: {
         "@type": "CourseInstance",
         courseMode: "online",
-        courseWorkload: isoMinutes(totalSeconds) ?? "PT1H",
+        courseWorkload: isoMinutes(totalSeconds) ?? "PT24M",
       },
       ...(isoMinutes(totalSeconds) ? { timeRequired: isoMinutes(totalSeconds) } : {}),
     },
@@ -125,46 +151,54 @@ export default async function FormationOptInPage() {
   );
 
   return (
-    <FunnelFrame>
+    <FunnelFrame minimal>
       <JsonLd data={jsonLd} />
       <FunnelBeacon event="optin_view" />
       <RevealObserver />
 
-      {/* Ouverture : bande cinéma plein cadre, promesse et formulaire. */}
+      {/* Ouverture : le hook, ce qu'on obtient, en combien de temps, à quel prix, et le formulaire. */}
       <CineHero base={homeHeroImages.base} reveal={homeHeroImages.reveal}>
         <div className="mx-auto grid w-full max-w-6xl flex-1 gap-10 px-4 pb-10 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-14 lg:pb-16 lg:pt-20">
           <div className="min-w-0">
             <p className="cine-timecode fade-up-reveal">
-              Formation offerte · 3 vidéos{totalLabel ? ` · ${totalLabel}` : ""} · accessible aux débutants
+              Formation offerte · 3 vidéos · {totalLabel} · débutants bienvenus
             </p>
             <h1
               id="hero-title"
-              className="cyber-title fade-up-reveal mt-5 text-[clamp(1.9rem,5.6vw,3.6rem)] text-white"
+              className="cyber-title fade-up-reveal mt-5 text-[clamp(1.45rem,3.4vw,2.5rem)] text-white"
               data-delay="0.1"
             >
-              Je fais des films IA pro,
-              <br />
-              <span className="text-[var(--orange)]">voici comment.</span>
+              Comment réaliser un film IA cohérent en 3 jours,
+              <br className="hidden sm:block" />{" "}
+              <span className="text-[var(--orange)]">
+                sans jeter vos crédits par les fenêtres.
+              </span>
             </h1>
             <p
               className="cine-text-muted fade-up-reveal mt-6 max-w-xl text-lg leading-relaxed sm:text-xl"
               data-delay="0.2"
             >
-              Ce processus utilisé par les professionnels, et que peu partagent,
-              permet d’économiser jusqu’à 80 % de vos crédits IA.
+              La méthode que j’utilise sur mes propres films : l’idée en une
+              phrase, le storyboard validé en image, et seulement ensuite la
+              génération. Des personnages qui restent les mêmes d’un plan à
+              l’autre, et jusqu’à 80 % de crédits IA économisés.
             </p>
-            <ul className="fade-up-reveal mt-8 space-y-3" data-delay="0.3">
-              {outcomes.map((o, i) => (
-                <li key={o} className="flex gap-3 text-[15px] leading-relaxed text-white sm:text-base">
-                  <span className="cine-timecode mt-1 w-14 shrink-0 !text-[var(--orange)]">
-                    Jour {i + 1}
-                  </span>
-                  <span>{o}</span>
-                </li>
+
+            <dl className="fade-up-reveal mt-8 grid max-w-xl grid-cols-3 gap-3" data-delay="0.3">
+              {[
+                ["Accès immédiat", "La vidéo 1 s’ouvre dès l’inscription"],
+                [totalLabel, "de vidéo, une mission courte par jour"],
+                ["0 €", "Sans carte bancaire, rien à installer"],
+              ].map(([k, v]) => (
+                <div key={k} className="min-w-0 border-l-2 border-[var(--orange)] pl-3">
+                  <dt className="heading-font text-base text-white sm:text-lg">{k}</dt>
+                  <dd className="cine-text-label mt-1 text-[11px] leading-snug sm:text-xs">{v}</dd>
+                </div>
               ))}
-            </ul>
+            </dl>
+
             <p
-              className="cine-text-muted fade-up-reveal mt-8 max-w-xl border-l-2 border-[var(--orange)] pl-4 text-sm leading-relaxed"
+              className="cine-text-muted fade-up-reveal mt-8 max-w-xl text-sm leading-relaxed"
               data-delay="0.4"
             >
               La méthode derrière Ronces, VOIDBORN et Lost Garden, primés ou
@@ -181,10 +215,9 @@ export default async function FormationOptInPage() {
             className="cine-card fade-up-reveal scroll-mt-6 self-center p-5 sm:p-7"
             data-delay="0.25"
           >
-            <p className="cine-timecode">Recevoir les 3 vidéos</p>
-            <p className="cine-text-muted mt-2 text-sm leading-relaxed">
-              Gratuit. Accès immédiat à la formation, puis un email par jour
-              pendant trois jours.
+            <p className="cine-timecode">Où envoyer vos accès ?</p>
+            <p className="mt-2 text-lg leading-snug text-white">
+              Recevez les 3 vidéos et commencez la première tout de suite.
             </p>
             <div className="mt-5">
               <OptInForm tone="dark" />
@@ -193,49 +226,79 @@ export default async function FormationOptInPage() {
         </div>
       </CineHero>
 
-      {/* Le renversement : pourquoi la plupart des gens brûlent leurs crédits. */}
-      <section className="relative overflow-hidden" aria-labelledby="insight-title">
+      {/* L'enfer actuel, puis ce qu'on fait à la place. */}
+      <section className="relative overflow-hidden" aria-labelledby="pain-title">
         <div className="cine-leak cine-leak-blue" style={{ width: 520, height: 520, left: "-12%", top: "-20%" }} aria-hidden />
-        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:py-24">
-          <div className="fade-up-reveal">
+        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
+          <div className="max-w-2xl fade-up-reveal">
             <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
               Le problème
             </p>
-            <h2 id="insight-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Vous créez vos vidéos IA à l’envers.
+            <h2 id="pain-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
+              Pourquoi vos vidéos IA ne ressemblent pas à un film
             </h2>
-            <p className="mt-5 leading-relaxed text-[var(--muted)]">
-              Si vous commencez par générer, vous payez l’IA pour chercher votre
-              idée. Générer une image coûte bien moins cher qu’une vidéo : on
-              valide donc chaque plan en image avant d’animer quoi que ce soit.
-              C’est tout l’objet de ces trois jours, et c’est exactement la
-              chaîne que j’utilise sur mes propres films.
-            </p>
           </div>
-          <div className="fade-up-reveal" data-delay="0.15">
-            <p className="mb-4 text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-              La méthode en quatre temps
-            </p>
-            <MethodPipeline />
+          <ol className="mt-8 grid gap-4 md:grid-cols-3">
+            {PAINS.map((p, i) => (
+              <li
+                key={p.title}
+                className="cyber-card fade-up-reveal p-5 sm:p-6"
+                data-delay={String(0.1 * i)}
+              >
+                <p className="heading-font text-[11px] tracking-[0.12em] text-[var(--label)]">
+                  0{i + 1}
+                </p>
+                <p className="heading-font mt-3 text-sm uppercase tracking-[0.04em] text-[var(--cream)]">
+                  {p.title}
+                </p>
+                <p className="mt-2 text-[15px] leading-relaxed text-[var(--muted)]">{p.text}</p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-14 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+            <div className="fade-up-reveal">
+              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
+                Ce qu’on fait à la place
+              </p>
+              <h3 className="cyber-title mt-3 text-xl sm:text-2xl">
+                On construit le film avant de générer.
+              </h3>
+              <p className="mt-5 leading-relaxed text-[var(--muted)]">
+                L’IA n’est pas trop chère. Vous lui demandez de réfléchir à
+                votre place, et chaque tentative se paie en crédits. Générer une
+                image coûte bien moins cher qu’une vidéo : on valide donc chaque
+                plan en image avant d’animer quoi que ce soit. C’est la chaîne
+                que j’utilise sur mes propres films, et c’est ce que vous mettez
+                en place en trois jours.
+              </p>
+            </div>
+            <div className="fade-up-reveal" data-delay="0.15">
+              <p className="mb-4 text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
+                La méthode en quatre temps
+              </p>
+              <MethodPipeline />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Programme : trois chapitres, timecodes réels. */}
-      <section className="cine-divider relative overflow-hidden" aria-labelledby="programme-title">
+      {/* Ce que la personne reçoit, poste par poste, et à quel prix. */}
+      <section className="cyber-divider relative overflow-hidden" aria-labelledby="stack-title">
         <div className="cine-leak cine-leak-orange" style={{ width: 620, height: 620, right: "-14%", top: "10%" }} aria-hidden />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="max-w-2xl fade-up-reveal">
             <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-              Le programme
+              Ce que vous recevez
             </p>
-            <h2 id="programme-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Arrêtez de générer au hasard
+            <h2 id="stack-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
+              Trois vidéos, trois missions, un film sur les rails
             </h2>
             <p className="mt-4 leading-relaxed text-[var(--muted)]">
-              En trois jours, vous construisez votre film avant de générer :
-              des personnages plus cohérents, des plans plus forts, et bien
-              moins d’essais qui brûlent votre temps et vos crédits.
+              Chaque vidéo vous fait faire une chose précise. À la fin des trois
+              jours, vous avez une idée tenue en une phrase, un storyboard
+              validé et un projet de montage organisé comme sur une vraie
+              production.
             </p>
           </div>
           <ol className="mt-10 grid gap-6 lg:grid-cols-3">
@@ -258,40 +321,68 @@ export default async function FormationOptInPage() {
                     ) : null}
                   </div>
                   <h3 className="heading-font mt-4 text-sm uppercase tracking-[0.06em] text-[var(--cream)]">
-                    {d.shortTitle}
+                    Vidéo {d.n} · {d.shortTitle}
                   </h3>
                   <p className="mt-3 flex-1 text-[15px] leading-relaxed text-[var(--muted)]">
                     {d.intro}
                   </p>
                   <p className="mt-4 rounded-xl bg-[rgba(17,17,17,0.04)] px-4 py-3 text-sm leading-relaxed text-[var(--cream)]">
-                    <span className="text-[var(--label)]">Mission : </span>
+                    <span className="text-[var(--label)]">Votre mission : </span>
                     {d.mission}
                   </p>
                 </li>
               );
             })}
           </ol>
-          <p className="mt-8 fade-up-reveal">
+
+          <ul className="mt-6 grid gap-4 md:grid-cols-3">
+            {EXTRAS.map((x, i) => (
+              <li
+                key={x.title}
+                className="fade-up-reveal border-t border-[rgba(17,17,17,0.14)] pt-4"
+                data-delay={String(0.1 * i)}
+              >
+                <p className="heading-font text-xs uppercase tracking-[0.06em] text-[var(--cream)]">
+                  {x.title}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{x.text}</p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="fade-up-reveal mt-10 flex flex-col gap-5 rounded-2xl border border-[rgba(17,17,17,0.14)] bg-white p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
+                Prix
+              </p>
+              <p className="mt-1 flex items-baseline gap-2">
+                <span className="heading-font text-3xl text-[var(--cream)]">0 €</span>
+                <span className="text-sm text-[var(--muted)]">
+                  Sans carte bancaire. Accès immédiat.
+                </span>
+              </p>
+            </div>
             <a href={`#${FORM_ID}`} className="ds-cta-dark !px-6 !py-3.5">
-              Recevoir les 3 vidéos gratuites
+              Recevoir mes 3 vidéos
             </a>
-          </p>
+          </div>
         </div>
       </section>
 
-      {/* Bande sombre : extraits et palmarès. */}
+      {/* Bande sombre : la preuve que la méthode produit des films qui sortent. */}
       <section className="cine-band cine-grain cine-letterbox" aria-labelledby="proof-title">
         <div className="cine-glow cine-glow-orange cine-drift-slow" style={{ width: 560, height: 560, left: "-10%", top: "-20%" }} aria-hidden />
         <div className="relative z-[5] mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div className="fade-up-reveal">
-              <p className="cine-timecode">Palmarès</p>
+              <p className="cine-timecode">La preuve</p>
               <h2 id="proof-title" className="cyber-title mt-3 text-2xl text-white sm:text-3xl">
-                Des films IA récompensés en festivals
+                Des films IA qui sortent en festival, pas des tests
               </h2>
               <p className="cine-text-muted mt-4 leading-relaxed">
-                Ronces, VOIDBORN et Lost Garden sont sortis de cette méthode,
-                pas d’une théorie.
+                Ronces, VOIDBORN et Lost Garden ont été construits exactement
+                comme ça : l’idée, le storyboard, puis la génération. Voici où
+                ils sont passés.
               </p>
               <ul className="mt-6 space-y-2">
                 {FUNNEL_AWARDS.map((a) => (
@@ -316,7 +407,7 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Avis des membres et qui parle. */}
+      {/* Qui parle, et ce qu'en disent les membres. */}
       <section className="relative overflow-hidden" aria-labelledby="frank-title">
         <div className="cine-leak cine-leak-orange" style={{ width: 480, height: 480, right: "-10%", bottom: "-10%" }} aria-hidden />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
@@ -340,10 +431,10 @@ export default async function FormationOptInPage() {
                 </h2>
                 <p className="mt-4 leading-relaxed text-[var(--muted)]">
                   Je réalise des films IA et je forme des créateurs, des
-                  indépendants et des équipes en entreprise. La méthode que je
-                  vous envoie est celle que j’utilise sur mes projets, avec ses
-                  contraintes réelles de budget et de cohérence. Pas de promesse
-                  de film en un clic : une façon de travailler qui tient.
+                  indépendants et des équipes en entreprise. Ce que je vous
+                  envoie est ma façon de travailler, avec ses contraintes
+                  réelles de budget et de cohérence. Aucune promesse de film en
+                  un clic : une méthode qui tient quand le projet grossit.
                 </p>
                 <p className="mt-4 text-sm">
                   <Link href="/a-propos" className="cyber-link">
@@ -373,15 +464,15 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Questions fréquentes sur la formation gratuite. */}
-      <section className="cine-divider" aria-labelledby="faq-title">
+      {/* Les objections, une par une. */}
+      <section className="cyber-divider" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
           <div className="fade-up-reveal">
             <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
               Avant de vous inscrire
             </p>
             <h2 id="faq-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Questions fréquentes
+              Les questions qu’on me pose
             </h2>
           </div>
           <div className="mt-6 divide-y divide-[rgba(17,17,17,0.12)] border-y border-[rgba(17,17,17,0.12)] fade-up-reveal" data-delay="0.1">
@@ -411,7 +502,7 @@ export default async function FormationOptInPage() {
         </div>
       </section>
 
-      {/* Dernier appel : bande sombre avec la lumière pratique. */}
+      {/* Dernier appel : le hook, et le formulaire. */}
       <section className="cine-band cine-grain cine-vignette cine-letterbox" aria-labelledby="final-title">
         <div className="cine-glow cine-glow-orange cine-drift" style={{ width: 640, height: 640, right: "-8%", top: "-30%" }} aria-hidden />
         <div className="cine-glow cine-glow-blue cine-drift-slow" style={{ width: 520, height: 520, left: "-12%", bottom: "-40%" }} aria-hidden />
@@ -419,20 +510,20 @@ export default async function FormationOptInPage() {
           <div className="cine-card p-5 sm:p-7 fade-up-reveal">
             <p className="cine-timecode">Dernière séquence</p>
             <h2 id="final-title" className="cyber-title mt-3 text-xl text-white sm:text-2xl">
-              Recevoir les trois jours
+              Votre premier film IA cohérent commence par une phrase.
             </h2>
             <p className="cine-text-muted mt-2 text-sm leading-relaxed">
-              Le film que vous imaginez peut exister. On commence par l’idée,
-              pas par le bouton générer.
+              Inscrivez-vous, la vidéo 1 s’ouvre tout de suite. Les deux
+              suivantes arrivent chaque matin.
             </p>
             <div className="mt-5">
-              <OptInForm compact tone="dark" />
+              <OptInForm compact tone="dark" cta="Recevoir mes 3 vidéos" />
             </div>
           </div>
         </div>
       </section>
 
-      <StickyCta targetId={FORM_ID} label="Recevoir les 3 vidéos gratuites" />
+      <StickyCta targetId={FORM_ID} label="Recevoir mes 3 vidéos" />
     </FunnelFrame>
   );
 }

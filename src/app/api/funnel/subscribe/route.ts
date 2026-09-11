@@ -17,7 +17,7 @@ import {
 export const runtime = "nodejs";
 
 const bodySchema = z.object({
-  firstName: z.string().trim().min(1).max(60),
+  firstName: z.string().trim().max(60).optional().default(""),
   email: z.string().trim().toLowerCase().email().max(120),
   consent: z.literal(true),
   /** Champ piège : un humain le laisse vide. */
@@ -86,7 +86,7 @@ export async function POST(req: NextRequest) {
 
   const subscriber: Subscriber = {
     email: input.email,
-    firstName: input.firstName,
+    firstName: input.firstName || existing?.firstName || "",
     createdAt: existing?.createdAt ?? new Date().toISOString(),
     status: "active",
     source: existing?.source ?? source,

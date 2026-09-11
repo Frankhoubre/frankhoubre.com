@@ -57,17 +57,17 @@ export default async function FormationCoursePage() {
             Challenge gratuit · 3 jours · accessible aux débutants
           </p>
           <h1 className="cyber-title fade-up-reveal mx-auto mt-4 max-w-3xl text-[clamp(1.6rem,4.8vw,2.75rem)] text-white" data-delay="0.1">
-            Arrêtez de générer au hasard.
+            Vous avez la méthode. Voici vos trois vidéos.
             <br />
             <span className="text-[var(--orange)]">
-              Commencez à réaliser de vrais films IA.
+              La première commence maintenant.
             </span>
           </h1>
           <p className="cine-text-muted fade-up-reveal mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg" data-delay="0.2">
-            En trois jours, vous allez apprendre à construire votre film avant
-            de générer : une méthode pensée pour obtenir des personnages plus
-            cohérents, des plans plus forts et réduire drastiquement les essais
-            qui brûlent votre temps et vos crédits.
+            Regardez la vidéo du jour, faites sa mission, passez à la suivante.
+            En trois jours, vous construisez votre film avant de générer : des
+            personnages qui restent les mêmes, des plans plus forts, et bien
+            moins d’essais qui brûlent votre temps et vos crédits.
           </p>
 
           <nav aria-label="Les trois jours" className="fade-up-reveal mt-8" data-delay="0.3">
@@ -189,18 +189,17 @@ export default async function FormationCoursePage() {
         <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:py-20">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
-              Vous avez maintenant la carte
+              La suite
             </p>
             <h2 id="ai-studios-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Mais imaginez maîtriser tout le voyage.
+              Comment passer de six plans à des films complets, sans repartir de zéro
             </h2>
             <p className="mt-4 leading-relaxed text-[var(--muted)]">
-              Vous savez désormais où commencer, comment structurer votre projet
-              et pourquoi vos anciens workflows brûlaient votre budget. AI
-              Studios vous aide maintenant à maîtriser la cohérence des
-              personnages, la mise en scène, le mouvement, le montage, le son et
-              la création d’un portfolio qui ne ressemble pas à une simple
-              démonstration d’outil.
+              Vous savez maintenant par où commencer et pourquoi vos anciens
+              essais brûlaient votre budget. Ce qui reste à apprendre, c’est la
+              cohérence des personnages sur un film entier, la mise en scène, le
+              mouvement, le montage, le son. C’est ce qu’on travaille dans AI
+              Studios, avec des retours sur vos propres plans.
             </p>
           </div>
 
@@ -217,13 +216,14 @@ export default async function FormationCoursePage() {
                 La communauté AI Studios
               </p>
               <h3 className="cyber-title mt-3 text-xl sm:text-2xl">
-                Rejoignez AI Studios sur Skool
+                Ce que vous débloquez aujourd’hui
               </h3>
               <p className="mt-4 leading-relaxed text-[var(--muted)]">
-                Vous débloquez le module Étape 1 de la formation, vous recevez
-                en cadeau la Méthode Film Mental, et vous rejoignez une
-                communauté privée de {SKOOL_OFFER.members} créateurs IA où l’on
-                partage ses créations et ses prompts chaque jour.
+                Le module Étape 1 de la formation, la Méthode Film Mental en
+                cadeau, et une communauté privée de {SKOOL_OFFER.members}{" "}
+                créateurs IA qui partagent leurs plans et leurs prompts chaque
+                jour. Vous postez votre storyboard du challenge, vous avez des
+                retours.
               </p>
               <p className="mt-6 flex items-baseline gap-2">
                 <span className="heading-font text-4xl text-[var(--cream)]">
@@ -235,8 +235,8 @@ export default async function FormationCoursePage() {
                 Moins qu’un café par semaine
               </p>
               <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-                Sans engagement, annulable en un clic. Vous gardez l’accès tant
-                que vous êtes membre.
+                Sans engagement, annulable en un clic à tout moment. Vous gardez
+                l’accès tant que vous êtes membre, vous partez quand vous voulez.
               </p>
               <div className="mt-6">
                 <TrackedLink
@@ -245,7 +245,7 @@ export default async function FormationCoursePage() {
                   detail="offre"
                   className={`${ctaSolid} w-full sm:w-auto`}
                 >
-                  Rejoindre AI Studios à {SKOOL_OFFER.priceLabel} par mois
+                  Débloquer l’Étape 1 pour {SKOOL_OFFER.priceLabel} par mois
                 </TrackedLink>
               </div>
             </div>
@@ -311,8 +311,8 @@ export default async function FormationCoursePage() {
             Le challenge vous a donné la direction.
           </p>
           <p className="cine-text-muted fade-up-reveal mt-3 leading-relaxed" data-delay="0.2">
-            La communauté vous donne l’exécution, l’entraide et la régularité,
-            pour le prix d’un café.
+            AI Studios vous donne l’exécution, les retours sur vos plans et la
+            régularité, pour {SKOOL_OFFER.priceLabel} par mois, sans engagement.
           </p>
           <div className="fade-up-reveal mt-6" data-delay="0.3">
             <TrackedLink
@@ -321,7 +321,7 @@ export default async function FormationCoursePage() {
               detail="final"
               className="cine-cta"
             >
-              Rejoindre AI Studios à {SKOOL_OFFER.priceLabel} par mois
+              Rejoindre AI Studios pour {SKOOL_OFFER.priceLabel} par mois
             </TrackedLink>
           </div>
         </div>

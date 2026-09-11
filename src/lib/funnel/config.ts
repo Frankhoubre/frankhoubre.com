@@ -156,16 +156,20 @@ export const FUNNEL_AWARDS = [
 /** Questions posées sur la formation gratuite elle-même (page d'inscription). */
 export const FUNNEL_FAQ = [
   {
-    q: "C'est vraiment gratuit ?",
-    a: "Oui. Les trois vidéos et leurs missions sont offertes, sans carte bancaire. Vous recevez les accès par email tout de suite, puis un email par jour pendant trois jours pour vous accompagner.",
+    q: "C'est vraiment gratuit ? Pourquoi ?",
+    a: "Oui, sans carte bancaire. Ces trois vidéos sont la première étape de ma formation complète AI Studios. Si la méthode vous parle, vous saurez exactement ce que vous rejoignez ensuite. Sinon, vous gardez les vidéos et la méthode, et on en reste là.",
   },
   {
     q: "Combien de temps ça prend ?",
-    a: "Environ 24 minutes de vidéo en tout (12, 6 et 6 minutes), plus le temps de faire vos missions. Un jour par étape si vous suivez les emails, ou tout d'un coup si vous préférez.",
+    a: "Environ 24 minutes de vidéo en tout (12, 6 et 6 minutes), plus vos missions : une phrase pour votre idée, un storyboard de quatre à six plans, un projet de montage. Un jour par étape si vous suivez les emails, ou tout d'un coup si vous préférez.",
   },
   {
-    q: "Je débute, c'est pour moi ?",
-    a: "Oui. La méthode part de l'idée et du plan, pas de l'outil. Vous n'avez rien à installer pour regarder les vidéos. Les missions s'appuient sur ScreenWeaver, mon outil d'écriture et de storyboard, mais vous pouvez aussi les faire avec vos outils habituels.",
+    q: "Je débute, je n'ai jamais fait de vidéo IA. C'est pour moi ?",
+    a: "Oui. La méthode part de l'idée et du plan, pas de l'outil. Vous n'avez besoin d'aucune compétence en montage ni en prompt pour suivre les trois jours. C'est même mieux de commencer par là avant d'avoir pris de mauvaises habitudes.",
+  },
+  {
+    q: "Il faut un ordinateur puissant ou des outils payants ?",
+    a: "Non. Les vidéos se regardent en ligne et les missions sont de l'écriture et du storyboard. Elles s'appuient sur ScreenWeaver, mon outil d'écriture et de storyboard, mais vous pouvez aussi les faire avec vos outils habituels. Rien à installer.",
   },
   {
     q: "Quelle différence avec AI Studios ?",
@@ -173,7 +177,7 @@ export const FUNNEL_FAQ = [
   },
   {
     q: "Que faites-vous de mon adresse email ?",
-    a: "Elle sert à vous envoyer les accès et la série d'emails du challenge, puis mes conseils pour réussir en IA. Chaque email contient un lien de désinscription en un clic. Le détail est dans la politique de confidentialité du site.",
+    a: "Elle sert à vous envoyer les accès et les emails du challenge, puis mes conseils pour réussir en IA. Chaque email contient un lien de désinscription en un clic. Le détail est dans la politique de confidentialité du site.",
   },
 ] as const;
 

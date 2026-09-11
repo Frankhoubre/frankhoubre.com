@@ -4,6 +4,8 @@ import { siteName } from "@/lib/site";
 
 type Props = {
   tone?: "dark" | "light";
+  /** Page de capture : aucun lien de sortie dans l'en-tête. */
+  minimal?: boolean;
   children: React.ReactNode;
 };
 
@@ -11,7 +13,7 @@ type Props = {
  * Cadre minimal des pages du tunnel : une seule sortie (le site) en haut,
  * le légal en bas. Pas de menu, pour garder l'attention sur l'inscription.
  */
-export function FunnelFrame({ tone = "dark", children }: Props) {
+export function FunnelFrame({ tone = "dark", minimal = false, children }: Props) {
   const dark = tone === "dark";
   const wrap = dark ? "cyber-page" : "bg-background text-foreground";
   const bar = dark
@@ -31,12 +33,18 @@ export function FunnelFrame({ tone = "dark", children }: Props) {
           >
             {siteName}
           </Link>
-          <Link
-            href="/blog"
-            className={`inline-flex min-h-11 items-center text-sm transition-colors duration-200 ${link}`}
-          >
-            Le blog
-          </Link>
+          {minimal ? (
+            <span className={`text-xs ${dark ? "text-[rgba(17,17,17,0.62)]" : "text-neutral-600"}`}>
+              Formation offerte
+            </span>
+          ) : (
+            <Link
+              href="/blog"
+              className={`inline-flex min-h-11 items-center text-sm transition-colors duration-200 ${link}`}
+            >
+              Le blog
+            </Link>
+          )}
         </div>
       </header>
       <div className="flex-1">{children}</div>
