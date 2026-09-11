@@ -1,6 +1,7 @@
 ---
 title: "VOIDBORN : comment un animé IA a été primé dans des festivals internationaux"
 date: "2026-07-17"
+dateModified: "2026-09-11"
 category: "guides"
 excerpt: "VOIDBORN est mon court métrage animé IA, primé au Seoul International AI Film Festival, Hollywood Indie Festival et Australian AI Festival. Voici les coulisses : les décisions, la méthode, et ce que j'ai appris sur ce que les jurys de festival cherchent vraiment."
 thumbnail: "/images/blog/voidborn-anime-ia-festival-coulisses/hero.webp"
@@ -83,6 +84,8 @@ VOIDBORN n'est pas long. Sur les films IA, j'ai observé que les courts métrage
 **L'originalité stylistique.**
 
 Les jurys voient des centaines de films IA. Un style reconnaissable, une direction artistique qui sort du "rendu Midjourney standard", ça se remarque immédiatement. VOIDBORN avait une palette visuelle très précise. Ce n'est pas un accident.
+
+Depuis, j'ai lu les barèmes publiés par Runway, Reply, Astana ou Sparknify et je les compare critère par critère dans [ce que les jurys des festivals de films IA regardent vraiment](/blog/festivals-films-ia-criteres-jurys).
 
 ## Soumission aux festivals : la partie pratique
 

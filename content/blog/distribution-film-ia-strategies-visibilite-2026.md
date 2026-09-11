@@ -1,7 +1,7 @@
 ---
 title: "Distribution de film IA : stratégies pour faire exploser sa visibilité"
 date: "2026-05-07"
-dateModified: "2026-05-13"
+dateModified: "2026-09-11"
 category: "business"
 excerpt: "Plan d'action concret pour distribuer un film IA, activer les bons canaux et transformer un projet terminé en audience réelle, avec un workflow de lancement, des KPI utiles et une FAQ orientée créateurs."
 ---
@@ -68,7 +68,7 @@ Entre les vagues, surveille les signaux. Si la rétention chute à trente second
 
 ### Étape 3 : festivals, curateurs, et relais qualifiés
 
-Choisis des festivals qui correspondent à ton ton et à tes contraintes légales. Les plateformes de soumission comme [FilmFreeway](https://filmfreeway.com/) concentrent les appels, mais la qualité du ciblage prime sur la quantité. Lis les règlements sur l'IA. Prépare un master propre, un fichier audio stable, et une fiche technique claire.
+Choisis des festivals qui correspondent à ton ton et à tes contraintes légales. Les plateformes de soumission comme [FilmFreeway](https://filmfreeway.com/) concentrent les appels, mais la qualité du ciblage prime sur la quantité. Lis les règlements sur l'IA, et surtout les grilles de notation : je les décortique festival par festival dans [ce que les jurys de films IA regardent vraiment](/blog/festivals-films-ia-criteres-jurys). Prépare un master propre, un fichier audio stable, et une fiche technique claire.
 
 Quand tu relances un programmateur, reste bref. Une phrase contextuelle, un lien, une capture. Si tu n'as pas de réponse, un rappel à dix jours suffit. Harceler tue ton image. Pour les newsletters et médias indépendants, propose un **exclusif léger** : une scène en avant première, une interview courte, ou un tutoriel lié à ton pipeline.
 

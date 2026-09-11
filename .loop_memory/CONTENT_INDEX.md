@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-10T08:00:59.183Z
+> Generated: 2026-09-11T08:04:54.923Z
 
-## FR : 307 articles (/blog/<slug>)
+## FR : 308 articles (/blog/<slug>)
 
-Categories: tutoriels 189, actualite 53, business 20, comparatifs 18, analyses 13, guides 12, notes 1, postproduction 1
+Categories: tutoriels 189, actualite 53, business 20, comparatifs 18, analyses 14, guides 12, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-11 | analyses | `festivals-films-ia-criteres-jurys` | Festivals de films IA : ce que les jurys regardent vraiment |
 | 2026-09-09 | business | `outerframe-studio-pourquoi-studio-ia` | Outerframe Studio : pourquoi j'ai monté un studio IA |
 | 2026-09-08 | tutoriels | `video-ia-locale-comfyui-wan` | Vidéo IA en local : ComfyUI et WAN sur ta machine |
 | 2026-09-07 | analyses | `studios-traditionnels-vs-studios-ia-2026` | Studio IA vs studio classique : qui produit quoi en 2026 |
