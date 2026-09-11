@@ -88,6 +88,7 @@ function unsubscribeUrl(email: string): string {
 }
 
 type Block =
+  | { type: "image"; src: string; alt: string }
   | { type: "p"; text: string }
   | { type: "cta"; label: string; href: string }
   | { type: "link"; label: string; href: string }
@@ -122,12 +123,19 @@ function renderHtml(opts: {
   unsubscribe: string;
   step: SequenceKey;
   kicker: string;
+  /** Photogramme d'ouverture, sous l'en-tête et avant le titre. */
+  image?: { src: string; alt: string };
 }): string {
+  const opening = opts.image
+    ? `<tr><td style="padding:22px 0 4px;border:0;line-height:0;"><img src="${opts.image.src}" alt="${escapeHtml(opts.image.alt)}" width="600" style="display:block;width:100%;max-width:600px;height:auto;border:1px solid ${C.line};" /></td></tr>`
+    : "";
   const p = (text: string) =>
     `<p style="margin:0 0 18px;font-family:${FONT};font-size:16px;line-height:1.65;color:${C.stone};">${text}</p>`;
   const body = opts.blocks
     .map((b) => {
       switch (b.type) {
+        case "image":
+          return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 26px;"><tr><td style="border:1px solid ${C.line};line-height:0;"><img src="${b.src}" alt="${escapeHtml(b.alt)}" width="598" style="display:block;width:100%;max-width:598px;height:auto;" /></td></tr></table>`;
         case "p":
           return p(escapeHtml(b.text));
         case "cta":
@@ -158,7 +166,8 @@ function renderHtml(opts: {
 <td align="right" style="font-family:${FONT};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:${C.fog};">${stepIndex(opts.step)}</td>
 </tr></table>
 </td></tr>
-<tr><td style="padding:30px 0 6px;font-family:${FONT};font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:${C.fog};">${escapeHtml(opts.kicker)}</td></tr>
+${opening}
+<tr><td style="padding:26px 0 6px;font-family:${FONT};font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:${C.fog};">${escapeHtml(opts.kicker)}</td></tr>
 <tr><td style="padding:0 0 26px;font-family:${FONT};font-size:16px;line-height:1.65;color:${C.stone};">Bonjour${opts.firstName ? ` ${escapeHtml(opts.firstName)}` : ""},</td></tr>
 <tr><td>
 ${body}
@@ -186,6 +195,8 @@ function renderText(opts: {
   const lines = [`Bonjour${opts.firstName ? ` ${opts.firstName}` : ""},`, ""];
   for (const b of opts.blocks) {
     switch (b.type) {
+      case "image":
+        break;
       case "p":
         lines.push(b.text, "");
         break;
@@ -215,6 +226,32 @@ type Spec = { key: SequenceKey; subject: string; blocks: Block[] };
  * ne porte qu'un seul appel à l'action principal. Les chiffres viennent de
  * config.ts (offres relevées sur les pages publiques), jamais d'ici.
  */
+/** Photogramme d'ouverture de chaque email, généré pour le tunnel (FLUX.2, 80 mm, bokeh). */
+const EMAIL_IMAGES: Record<SequenceKey, string> = {
+  acces: "Un réalisateur écrit une phrase dans un carnet, à l'aube, devant de grandes fenêtres",
+  "jour-2": "Une main épingle une case de storyboard sur un mur déjà couvert de croquis",
+  "jour-3": "Silhouette d'un monteur devant deux écrans de timeline dans une salle sombre",
+  preuve: "Salle de projection vide, faisceau du projecteur vers l'écran",
+  offre: "Trois créateurs autour d'un écran dans un petit studio de nuit",
+  personnages: "Un personnage en long manteau devant un fond gris de studio, son profil dans un miroir",
+  credits: "Une main tient un photogramme 35 mm devant la lumière d'une fenêtre",
+  decors: "Maquette d'une rue sous la pluie sur un établi de décorateur, petites lumières allumées",
+  prompts: "Machine à écrire et page à demi tapée sous une lampe, pluie sur la vitre",
+  montage: "Bandes de pellicule sur une table lumineuse, une main marque un photogramme",
+  "30-jours": "Une jeune femme regarde son propre court-métrage sur une tablette, lumières de la ville derrière",
+  objections: "Un ordinateur portable ouvert sur une table de cuisine la nuit, tasse de café, carnet",
+  annuel: "Un mur de studio couvert de centaines de cases de storyboard, un réalisateur en bas",
+  outils: "Établi de réalisateur vu de haut : ordinateur, tablette, carnet, clap",
+  derniere: "Couloir de béton sombre, trois portes fermées, la lumière filtre sous une seule",
+};
+
+function opening(key: SequenceKey): { src: string; alt: string } {
+  return {
+    src: new URL(`/images/formation/emails/${key}.jpg`, baseUrl).toString(),
+    alt: EMAIL_IMAGES[key],
+  };
+}
+
 function specs(): Spec[] {
   const [d1, d2, d3] = FUNNEL_DAYS;
   const skool = (c: string) => outUrl(SKOOL_URL, c);
@@ -619,7 +656,7 @@ export function buildSequence(email: string, firstName: string): SequenceEmail[]
       key: meta.key,
       subject: spec.subject,
       dayOffset: meta.dayOffset,
-      html: renderHtml({ firstName: name, blocks: spec.blocks, unsubscribe, step: meta.key, kicker: meta.kicker }),
+      html: renderHtml({ firstName: name, blocks: spec.blocks, unsubscribe, step: meta.key, kicker: meta.kicker, image: opening(meta.key) }),
       text: renderText({ firstName: name, blocks: spec.blocks, unsubscribe }),
     };
   });
