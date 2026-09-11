@@ -396,10 +396,7 @@
     background: var(--cream);
     color: var(--bg);
     border-color: var(--cream);
-    box-shadow:
-      0 0 0 1px rgb(238 236 229 / 0.18),
-      0 0 28px rgb(238 236 229 / 0.16),
-      0 12px 36px rgb(0 0 0 / 0.35);
+    box-shadow: 0 0 22px rgb(255 255 255 / 0.12);
     transition:
       background-color var(--dur-fast) var(--ease),
       color var(--dur-fast) var(--ease),
@@ -408,53 +405,65 @@
       transform var(--dur-fast) var(--ease);
   }
 
-  /* Lueur mobile : une source chaude qui parcourt le bouton, derrière lui. */
-  .btn-primary::before {
+  /* Lueur blanche qui parcourt le contour : un arc de dégradé conique tourne
+     derrière le bouton (anneau net de 2 px) et une copie floutée fait le halo. */
+  .btn-primary::before,
+  .btn-primary::after {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -40%;
-    bottom: -40%;
-    left: -10%;
-    width: 55%;
-    border-radius: 50%;
-    background: radial-gradient(
-      closest-side,
-      rgb(238 236 229 / 0.75) 0%,
-      rgb(176 123 71 / 0.45) 45%,
-      transparent 100%
+    border-radius: inherit;
+    background: conic-gradient(
+      from var(--halo-angle, 0deg),
+      transparent 0deg,
+      rgb(255 255 255 / 0.15) 40deg,
+      #ffffff 80deg,
+      rgb(255 255 255 / 0.15) 120deg,
+      transparent 160deg,
+      transparent 360deg
     );
-    filter: blur(14px);
-    opacity: 0.75;
-    animation: btn-halo 4.5s var(--ease-in-out) infinite alternate;
+    animation: btn-halo 3.2s linear infinite;
     pointer-events: none;
   }
 
+  .btn-primary::before {
+    inset: -2px;
+  }
+
+  .btn-primary::after {
+    inset: -7px;
+    filter: blur(9px);
+    opacity: 0.85;
+  }
+
+  @property --halo-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+
   @keyframes btn-halo {
-    from {
-      transform: translateX(0) scale(1);
-    }
     to {
-      transform: translateX(120%) scale(1.15);
+      --halo-angle: 360deg;
     }
   }
 
   .btn-primary:hover,
   .btn-primary:focus-visible {
-    background: #fbfaf6;
-    border-color: #fbfaf6;
+    background: #ffffff;
+    border-color: #ffffff;
     color: var(--bg);
     transform: translateY(-1px);
-    box-shadow:
-      0 0 0 1px rgb(238 236 229 / 0.35),
-      0 0 44px rgb(238 236 229 / 0.32),
-      0 0 80px rgb(176 123 71 / 0.22),
-      0 16px 40px rgb(0 0 0 / 0.4);
+    box-shadow: 0 0 34px rgb(255 255 255 / 0.28);
   }
 
-  .btn-primary:hover::before {
+  .btn-primary:hover::before,
+  .btn-primary:hover::after {
+    animation-duration: 1.6s;
+  }
+
+  .btn-primary:hover::after {
     opacity: 1;
-    animation-duration: 2.2s;
   }
 
   .btn-primary:active {
