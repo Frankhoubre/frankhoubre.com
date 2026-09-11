@@ -391,15 +391,79 @@
   }
 
   .btn-primary {
+    position: relative;
+    isolation: isolate;
     background: var(--cream);
     color: var(--bg);
     border-color: var(--cream);
+    box-shadow:
+      0 0 0 1px rgb(238 236 229 / 0.18),
+      0 0 28px rgb(238 236 229 / 0.16),
+      0 12px 36px rgb(0 0 0 / 0.35);
+    transition:
+      background-color var(--dur-fast) var(--ease),
+      color var(--dur-fast) var(--ease),
+      border-color var(--dur-fast) var(--ease),
+      box-shadow var(--dur) var(--ease),
+      transform var(--dur-fast) var(--ease);
   }
 
-  .btn-primary:hover {
-    background: var(--stone);
-    border-color: var(--stone);
+  /* Lueur mobile : une source chaude qui parcourt le bouton, derrière lui. */
+  .btn-primary::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -40%;
+    bottom: -40%;
+    left: -10%;
+    width: 55%;
+    border-radius: 50%;
+    background: radial-gradient(
+      closest-side,
+      rgb(238 236 229 / 0.75) 0%,
+      rgb(176 123 71 / 0.45) 45%,
+      transparent 100%
+    );
+    filter: blur(14px);
+    opacity: 0.75;
+    animation: btn-halo 4.5s var(--ease-in-out) infinite alternate;
+    pointer-events: none;
+  }
+
+  @keyframes btn-halo {
+    from {
+      transform: translateX(0) scale(1);
+    }
+    to {
+      transform: translateX(120%) scale(1.15);
+    }
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus-visible {
+    background: #fbfaf6;
+    border-color: #fbfaf6;
     color: var(--bg);
+    transform: translateY(-1px);
+    box-shadow:
+      0 0 0 1px rgb(238 236 229 / 0.35),
+      0 0 44px rgb(238 236 229 / 0.32),
+      0 0 80px rgb(176 123 71 / 0.22),
+      0 16px 40px rgb(0 0 0 / 0.4);
+  }
+
+  .btn-primary:hover::before {
+    opacity: 1;
+    animation-duration: 2.2s;
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+
+  /* Bouton secondaire : halo discret au survol seulement. */
+  .btn:not(.btn-primary):not(.btn-quiet):hover {
+    box-shadow: 0 0 0 1px rgb(238 236 229 / 0.2), 0 0 30px rgb(238 236 229 / 0.16);
   }
 
   .btn-quiet {
