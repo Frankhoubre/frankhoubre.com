@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+/** Ligne de progression de lecture, sous l'en-tête fixe. */
 export function ReadingProgressBar() {
   const [p, setP] = useState(0);
 
@@ -24,11 +25,11 @@ export function ReadingProgressBar() {
 
   return (
     <div
-      className="pointer-events-none fixed left-0 right-0 top-0 z-[60] h-0.5 bg-neutral-200/90"
+      className="pointer-events-none fixed left-0 right-0 top-[var(--header-h)] z-[var(--z-progress)] h-px bg-line"
       aria-hidden
     >
       <div
-        className="h-full bg-neutral-950 transition-[width] duration-150 ease-out"
+        className="h-full bg-cream transition-[width] duration-150 ease-out"
         style={{ width: `${p}%` }}
       />
     </div>

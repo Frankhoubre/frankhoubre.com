@@ -1,4 +1,6 @@
 import type { OutilContent } from "@/lib/outils-content";
+import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
+import { Plus } from "@/components/FaqSection";
 
 type ToolIframePageProps = {
   title: string;
@@ -9,6 +11,11 @@ type ToolIframePageProps = {
   content?: OutilContent;
 };
 
+/**
+ * Page d'outil : en-tête éditorial, l'outil lui-même dans un cadre
+ * « moniteur » (l'iframe garde son interface claire), puis le contenu
+ * indexable : intro, mode d'emploi numéroté, FAQ.
+ */
 export function ToolIframePage({
   title,
   subtitle,
@@ -17,86 +24,90 @@ export function ToolIframePage({
   content,
 }: ToolIframePageProps) {
   return (
-    <div className="ds-page">
-      <section className="ds-cinematic-frame p-6 sm:p-8">
-        <div className="relative z-10">
-          <p className="ds-eyebrow text-neutral-600">Outil interactif</p>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
-            {title}
-          </h1>
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-800 sm:text-base">
-            {subtitle}
-          </p>
-        </div>
-      </section>
+    <>
+      <PageHeader
+        kicker="Outil interactif"
+        size="lg"
+        title={title}
+        lede={subtitle}
+        breadcrumb={
+          <Breadcrumb
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Outils", href: "/outils" },
+              { label: title },
+            ]}
+          />
+        }
+        aside={<p className="meta">Gratuit · sans inscription</p>}
+      />
 
-      <section className="mt-8">
-        <iframe
-          title={iframeTitle}
-          src={iframeSrc}
-          loading="lazy"
-          className="h-[75svh] min-h-[480px] w-full rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/5 sm:h-[80vh]"
-        />
+      <section className="container-x section-sm" aria-label={iframeTitle}>
+        <div className="frame frame-marks bg-charcoal-2 p-1.5 sm:p-2">
+          <iframe
+            title={iframeTitle}
+            src={iframeSrc}
+            loading="lazy"
+            className="h-[75svh] min-h-[480px] w-full bg-white sm:h-[80vh]"
+          />
+        </div>
+        <p className="meta mt-3 flex items-center justify-between">
+          <span>Moniteur · {iframeTitle}</span>
+          <a href={iframeSrc} target="_blank" rel="noopener noreferrer" className="link-muted">
+            Ouvrir en plein écran
+          </a>
+        </p>
       </section>
 
       {content ? (
-        <div className="mx-auto mt-14 max-w-3xl space-y-12">
-          <section className="prose-cinema max-w-none text-neutral-800">
-            <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-              {`À propos de ${title}`}
-            </h2>
-            {content.intro.map((paragraph, i) => (
-              <p key={i} className="mt-4 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </section>
+        <div className="container-x pb-20 sm:pb-28">
+          <div className="grid-12 gap-y-14 border-t border-line pt-14">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="meta"><span className="meta-strong">01</span> &nbsp;/&nbsp; À propos de l’outil</p>
+            </div>
+            <section className="prose-cinema col-span-12 lg:col-span-7 lg:col-start-5">
+              <h2 className="!mt-0 !border-0 !pt-0">{`À propos de ${title}`}</h2>
+              {content.intro.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </section>
+          </div>
 
-          <section>
-            <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-              Comment ça marche
-            </h2>
-            <ol className="mt-6 space-y-4">
+          <div className="grid-12 mt-14 gap-y-10 border-t border-line pt-14">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="meta"><span className="meta-strong">02</span> &nbsp;/&nbsp; Comment ça marche</p>
+            </div>
+            <ol className="col-span-12 lg:col-span-7 lg:col-start-5">
               {content.how.map((step, i) => (
-                <li key={i} className="ds-card flex gap-4 p-5">
-                  <span
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-sm font-semibold text-neutral-950"
-                    aria-hidden
-                  >
-                    {i + 1}
-                  </span>
+                <li key={i} className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-line py-5 last:border-b">
+                  <span className="meta meta-strong tabular pt-1">0{i + 1}</span>
                   <div className="min-w-0">
-                    <p className="font-semibold text-neutral-950">
-                      {step.title}
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed text-neutral-700">
-                      {step.desc}
-                    </p>
+                    <p className="h-item text-cream">{step.title}</p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-fog">{step.desc}</p>
                   </div>
                 </li>
               ))}
             </ol>
-          </section>
+          </div>
 
-          <section>
-            <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-              Questions fréquentes
-            </h2>
-            <div className="mt-6 space-y-3">
+          <div className="grid-12 mt-14 gap-y-10 border-t border-line pt-14">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="meta"><span className="meta-strong">03</span> &nbsp;/&nbsp; Questions fréquentes</p>
+            </div>
+            <div className="col-span-12 lg:col-span-7 lg:col-start-5">
               {content.faq.map((item, i) => (
-                <details key={i} className="ds-card p-5">
-                  <summary className="cursor-pointer font-semibold text-neutral-950">
-                    {item.question}
+                <details key={i} className="faq-item">
+                  <summary>
+                    <span>{item.question}</span>
+                    <Plus />
                   </summary>
-                  <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-                    {item.answer}
-                  </p>
+                  <p className="text-[15px] leading-relaxed text-fog">{item.answer}</p>
                 </details>
               ))}
             </div>
-          </section>
+          </div>
         </div>
       ) : null}
-    </div>
+    </>
   );
 }

@@ -39,9 +39,9 @@ export default async function SubscriberPage({
   if (!sub) {
     return (
       <AdminShell active="subscribers" title="Inscrit introuvable" eyebrow="Inscrits">
-        <p className="mt-6 text-sm text-neutral-700">
+        <p className="mt-6 text-sm text-fog">
           Aucune fiche pour {email}.{" "}
-          <Link href={`${FUNNEL_PATHS.admin}/inscrits`} className="ds-link font-medium text-neutral-950">
+          <Link href={`${FUNNEL_PATHS.admin}/inscrits`} className="link">
             Retour à la liste
           </Link>
         </p>
@@ -57,60 +57,60 @@ export default async function SubscriberPage({
       eyebrow="Inscrits"
       title={sub.firstName}
       actions={
-        <Link href={`${FUNNEL_PATHS.admin}/inscrits`} className="ds-button-secondary !py-2 text-sm">
+        <Link href={`${FUNNEL_PATHS.admin}/inscrits`} className="btn btn-sm">
           Retour à la liste
         </Link>
       }
     >
       {message && MESSAGES[message] ? (
-        <p role="status" className="mt-6 rounded-xl border border-[rgb(226_226_230/0.9)] bg-white px-4 py-3 text-sm text-neutral-900">
+        <p role="status" className="mt-6 border border-line bg-graphite px-4 py-3 text-sm text-cream">
           {MESSAGES[message]}
         </p>
       ) : null}
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-        <section className="ds-surface p-5 sm:p-6" aria-labelledby="identite">
-          <h2 id="identite" className="text-lg font-semibold">
+        <section className="card card-surface p-5 sm:p-6" aria-labelledby="identite">
+          <h2 id="identite" className="h-item text-cream">
             Identité et origine
           </h2>
           <dl className="mt-3 grid grid-cols-[9rem_1fr] gap-y-2 text-sm">
-            <dt className="text-neutral-600">Email</dt>
-            <dd className="break-all text-neutral-950">{sub.email}</dd>
-            <dt className="text-neutral-600">Statut</dt>
-            <dd className="text-neutral-950">
+            <dt className="text-fog">Email</dt>
+            <dd className="break-all text-cream">{sub.email}</dd>
+            <dt className="text-fog">Statut</dt>
+            <dd className="text-cream">
               {active ? "Actif" : `Désinscrit le ${fmtDate(sub.unsubscribedAt)}`}
             </dd>
-            <dt className="text-neutral-600">Inscrit le</dt>
-            <dd className="text-neutral-950">{fmtDate(sub.createdAt)}</dd>
-            <dt className="text-neutral-600">Source</dt>
-            <dd className="text-neutral-950">{sub.source}</dd>
-            <dt className="text-neutral-600">UTM</dt>
-            <dd className="text-neutral-950">
+            <dt className="text-fog">Inscrit le</dt>
+            <dd className="text-cream">{fmtDate(sub.createdAt)}</dd>
+            <dt className="text-fog">Source</dt>
+            <dd className="text-cream">{sub.source}</dd>
+            <dt className="text-fog">UTM</dt>
+            <dd className="text-cream">
               {[sub.utmSource, sub.utmMedium, sub.utmCampaign].filter(Boolean).join(" · ") || "aucun"}
             </dd>
-            <dt className="text-neutral-600">Referrer</dt>
-            <dd className="break-all text-neutral-950">{sub.referrer || "aucun"}</dd>
+            <dt className="text-fog">Referrer</dt>
+            <dd className="break-all text-cream">{sub.referrer || "aucun"}</dd>
           </dl>
         </section>
 
-        <section className="ds-surface p-5 sm:p-6" aria-labelledby="sequence">
-          <h2 id="sequence" className="text-lg font-semibold">
+        <section className="card card-surface p-5 sm:p-6" aria-labelledby="sequence">
+          <h2 id="sequence" className="h-item text-cream">
             Séquence d’emails
           </h2>
           {!sub.emails ? (
-            <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+            <p className="mt-2 text-sm leading-relaxed text-fog">
               Pas de suivi détaillé pour cet inscrit (inscription antérieure au suivi par étape).
               Le journal ci-dessous et les événements Resend restent disponibles.
             </p>
           ) : null}
-          <ol className="mt-3 divide-y divide-[rgb(226_226_230/0.9)]">
+          <ol className="mt-3 divide-y divide-line">
             {SEQUENCE_STEPS.map((step) => {
               const state = sub.emails?.[step.key];
               return (
                 <li key={step.key} className="flex flex-wrap items-center justify-between gap-2 py-3">
                   <div className="min-w-0">
-                    <p className="text-sm font-medium text-neutral-950">{step.label}</p>
-                    <p className="text-xs text-neutral-600">
+                    <p className="text-sm text-cream">{step.label}</p>
+                    <p className="text-xs text-fog">
                       {state?.subject ?? "Envoi"} · {step.when}
                       {state?.scheduledAt ? ` (prévu le ${fmtDate(state.scheduledAt)})` : ""}
                       {state?.updatedAt ? ` · mis à jour le ${fmtDate(state.updatedAt)}` : ""}
@@ -122,22 +122,22 @@ export default async function SubscriberPage({
             })}
           </ol>
           {sub.lastEmailEvent ? (
-            <p className="mt-3 text-xs text-neutral-600">
+            <p className="mt-3 text-xs text-fog">
               Dernier événement Resend : {sub.lastEmailEvent} le {fmtDate(sub.lastEmailEventAt)}
             </p>
           ) : null}
         </section>
       </div>
 
-      <section className="ds-surface mt-6 p-5 sm:p-6" aria-labelledby="actions">
-        <h2 id="actions" className="text-lg font-semibold">
+      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="actions">
+        <h2 id="actions" className="h-item text-cream">
           Actions
         </h2>
         <div className="mt-3 flex flex-wrap gap-3">
           <form method="post" action="/api/funnel/admin/subscriber">
             <input type="hidden" name="email" value={sub.email} />
             <input type="hidden" name="action" value="resend-access" />
-            <button type="submit" className="ds-cta-dark !py-2.5 text-sm">
+            <button type="submit" className="btn btn-primary">
               Renvoyer l’email d’accès
             </button>
           </form>
@@ -145,7 +145,7 @@ export default async function SubscriberPage({
             <form method="post" action="/api/funnel/admin/subscriber">
               <input type="hidden" name="email" value={sub.email} />
               <input type="hidden" name="action" value="unsubscribe" />
-              <button type="submit" className="ds-button-secondary !py-2.5 text-sm">
+              <button type="submit" className="btn">
                 Désinscrire (annule les emails restants)
               </button>
             </form>
@@ -155,30 +155,30 @@ export default async function SubscriberPage({
             <input type="hidden" name="action" value="delete" />
             <button
               type="submit"
-              className="inline-flex min-h-10 items-center rounded-xl border border-red-700 px-4 py-2.5 text-sm font-medium text-red-800 hover:bg-red-50"
+              className="btn !border-[#b5533b] !text-[#e08a75] hover:!bg-[#b5533b] hover:!text-cream"
             >
               Supprimer définitivement (RGPD)
             </button>
           </form>
         </div>
-        <p className="mt-3 text-xs leading-relaxed text-neutral-600">
+        <p className="mt-3 text-xs leading-relaxed text-fog">
           La suppression efface la fiche, son journal et le contact Resend. Elle est immédiate et
           sans confirmation : à utiliser pour une demande d’effacement.
         </p>
       </section>
 
-      <section className="ds-surface mt-6 p-5 sm:p-6" aria-labelledby="journal">
-        <h2 id="journal" className="text-lg font-semibold">
+      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="journal">
+        <h2 id="journal" className="h-item text-cream">
           Journal
         </h2>
         {log.length === 0 ? (
-          <p className="mt-2 text-sm text-neutral-700">Aucune entrée pour cet inscrit.</p>
+          <p className="mt-2 text-sm text-fog">Aucune entrée pour cet inscrit.</p>
         ) : (
-          <ul className="mt-3 divide-y divide-[rgb(226_226_230/0.9)] text-sm">
+          <ul className="mt-3 divide-y divide-line text-sm">
             {log.map((entry, i) => (
               <li key={`${entry.at}-${i}`} className="flex flex-wrap gap-x-3 gap-y-0.5 py-1.5">
-                <span className="w-28 shrink-0 tabular-nums text-neutral-600">{fmtDate(entry.at)}</span>
-                <span className="text-neutral-950">{entry.label}</span>
+                <span className="w-28 shrink-0 tabular-nums text-fog">{fmtDate(entry.at)}</span>
+                <span className="text-cream">{entry.label}</span>
               </li>
             ))}
           </ul>

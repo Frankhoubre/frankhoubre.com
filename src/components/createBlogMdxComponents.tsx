@@ -23,25 +23,18 @@ function makeHeading(
     seen.set(base, n);
     const autoId = n === 1 ? base : `${base}-${n}`;
     return (
-      <Tag
-        {...rest}
-        id={id ?? autoId}
-        className={`scroll-mt-28 font-semibold tracking-tight text-neutral-950 ${
-          tag === "h1"
-            ? "mb-6 text-3xl"
-            : tag === "h2"
-              ? "mb-4 mt-10 text-2xl"
-              : tag === "h3"
-                ? "mb-3 mt-8 text-xl"
-                : "mb-2 mt-6 text-lg"
-        } ${className ?? ""}`}
-      >
+      <Tag {...rest} id={id ?? autoId} className={className}>
         {children}
       </Tag>
     );
   };
 }
 
+/**
+ * Composants MDX des articles. La mise en forme vit dans `.prose-cinema`
+ * (globals.css) : ici, seuls les comportements (ids de titres, résolution
+ * des images, liens externes, tableaux défilables) sont gérés.
+ */
 export function createBlogMdxComponents(
   slug: string,
   options: { skipFirstBodyImage: boolean; articleTitle?: string },
@@ -77,57 +70,36 @@ export function createBlogMdxComponents(
 
     if (remote) {
       return (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          {...rest}
-          src={resolved}
-          alt={resolvedAlt}
-          loading="lazy"
-          decoding="async"
-          className="my-6 w-full rounded-lg border border-neutral-200"
-        />
+        <span className="figure">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            {...rest}
+            src={resolved}
+            alt={resolvedAlt}
+            loading="lazy"
+            decoding="async"
+          />
+        </span>
       );
     }
     return (
-      <span className="my-6 block overflow-hidden rounded-lg border border-neutral-200">
+      <span className="figure">
         <Image
           src={resolved}
           alt={resolvedAlt}
           width={1200}
           height={630}
-          sizes="(max-width: 768px) 100vw, 672px"
-          className="h-auto w-full"
+          sizes="(max-width: 768px) 100vw, 720px"
         />
       </span>
     );
   };
-
-  const baseLink = "ds-link font-medium text-neutral-950";
 
   return {
     h1: makeHeading("h1", headingSeen),
     h2: makeHeading("h2", headingSeen),
     h3: makeHeading("h3", headingSeen),
     h4: makeHeading("h4", headingSeen),
-    p: (props) => (
-      <p
-        className="mb-4 text-[1.05rem] leading-relaxed text-neutral-900"
-        {...props}
-      />
-    ),
-    ul: (props) => (
-      <ul
-        className="mb-4 list-disc space-y-1 pl-6 text-neutral-900"
-        {...props}
-      />
-    ),
-    ol: (props) => (
-      <ol
-        className="mb-4 list-decimal space-y-1 pl-6 text-neutral-900"
-        {...props}
-      />
-    ),
-    li: (props) => <li className="leading-relaxed" {...props} />,
     a: ({ href, children, className, ...rest }) => {
       const nofollowPrefix = "nf:";
       const rawHref = href ?? "#";
@@ -147,7 +119,7 @@ export function createBlogMdxComponents(
                 ? "nofollow noopener noreferrer"
                 : "noopener noreferrer"
             }
-            className={`${baseLink} ${className ?? ""}`}
+            className={className}
             {...rest}
           >
             {children}
@@ -155,54 +127,15 @@ export function createBlogMdxComponents(
         );
       }
       return (
-        <Link
-          href={resolvedHref}
-          className={`${baseLink} ${className ?? ""}`}
-          {...rest}
-        >
+        <Link href={resolvedHref} className={className} {...rest}>
           {children}
         </Link>
       );
     },
-    blockquote: (props) => (
-      <blockquote
-        className="my-6 border-l-4 border-neutral-300 pl-4 italic text-neutral-800"
-        {...props}
-      />
-    ),
-    code: (props) => (
-      <code
-        className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-[0.9em] text-neutral-900"
-        {...props}
-      />
-    ),
-    pre: (props) => (
-      <pre
-        className="my-6 overflow-x-auto rounded-xl border border-neutral-200 bg-neutral-100 p-4 text-sm text-neutral-950"
-        {...props}
-      />
-    ),
     table: (props) => (
-      <div className="my-6 overflow-x-auto rounded-lg border border-neutral-200">
-        <table className="w-full border-collapse text-sm" {...props} />
+      <div className="table-wrap">
+        <table {...props} />
       </div>
-    ),
-    thead: (props) => <thead className="bg-neutral-50" {...props} />,
-    tbody: (props) => <tbody {...props} />,
-    tr: (props) => (
-      <tr
-        className="border-b border-neutral-200 last:border-0"
-        {...props}
-      />
-    ),
-    th: (props) => (
-      <th
-        className="px-3 py-2 text-left font-semibold text-neutral-950"
-        {...props}
-      />
-    ),
-    td: (props) => (
-      <td className="px-3 py-2 text-neutral-900" {...props} />
     ),
     img: Img,
     YouTubeEmbed,

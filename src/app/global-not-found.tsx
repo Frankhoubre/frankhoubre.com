@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { bodyFont, headingFont } from "@/lib/fonts";
+import { fontVariables } from "@/lib/fonts";
+import { Arrow } from "@/components/ui/Cta";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,33 +25,38 @@ const links = [
  */
 export default function GlobalNotFound() {
   return (
-    <html
-      lang="fr"
-      className={`${headingFont.variable} ${bodyFont.variable} h-full antialiased`}
-    >
-      <body className="cyber-page flex min-h-full flex-col items-center justify-center px-6 py-24 text-center">
-        <main className="max-w-xl">
-          <p className="cyber-label">Erreur 404</p>
-          <h1 className="cyber-title mt-4 text-3xl sm:text-5xl">
-            Page introuvable
-          </h1>
-          <p className="mt-6 text-base leading-relaxed text-[var(--muted)]">
-            L&apos;adresse demandée n&apos;existe pas ou a été déplacée. Les
-            anciennes URL WordPress sont redirigées automatiquement ; si vous
-            arrivez ici, le contenu a probablement été fusionné dans un article
-            plus complet.
+    <html lang="fr" className={`${fontVariables} h-full antialiased`}>
+      <body className="flex min-h-full flex-col bg-background text-foreground">
+        <main className="container-x flex flex-1 flex-col justify-between py-10">
+          <p className="meta flex items-center justify-between">
+            <span>Frank Houbre</span>
+            <span>Erreur 404</span>
           </p>
-          <nav aria-label="Pages utiles" className="mt-10">
-            <ul className="flex flex-wrap items-center justify-center gap-3">
-              {links.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="cyber-btn">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <div className="grid-12 items-end gap-y-10 py-16">
+            <div className="col-span-12 lg:col-span-8">
+              <p className="display text-[clamp(6rem,24vw,20rem)] leading-[0.85] text-cream/10">404</p>
+              <h1 className="h-section -mt-4 text-cream">Page introuvable.</h1>
+              <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-fog">
+                L’adresse demandée n’existe pas ou a été déplacée. Les anciennes URL WordPress sont
+                redirigées automatiquement ; si vous arrivez ici, le contenu a probablement été fusionné
+                dans un article plus complet.
+              </p>
+            </div>
+            <nav aria-label="Pages utiles" className="col-span-12 lg:col-span-4">
+              <p className="meta">Reprendre</p>
+              <ul className="mt-4">
+                {links.map((item, i) => (
+                  <li key={item.href} className="border-t border-line last:border-b">
+                    <Link href={item.href} className="group flex items-center justify-between gap-4 py-3.5 text-[15px] text-stone no-underline transition-colors hover:text-cream">
+                      <span><span className="meta tabular mr-4">0{i + 1}</span>{item.label}</span>
+                      <Arrow className="text-fog transition-colors group-hover:text-cream" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+          <p className="meta meta-dim">frankhoubre.com · Séquence interrompue</p>
         </main>
       </body>
     </html>

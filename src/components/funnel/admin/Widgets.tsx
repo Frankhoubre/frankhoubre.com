@@ -46,28 +46,28 @@ export const STATUS_LABELS: Record<SequenceEmailStatus, string> = {
 };
 
 const STATUS_STYLES: Record<SequenceEmailStatus, string> = {
-  programme: "border-neutral-300 text-neutral-700",
-  envoye: "border-neutral-400 text-neutral-800",
-  delivre: "border-neutral-900 text-neutral-900",
-  ouvert: "border-[#b04e10] text-[#b04e10]",
-  clique: "border-[#c45a18] bg-[#c45a18] text-white",
-  bounce: "border-red-700 text-red-800",
-  spam: "border-red-700 text-red-800",
-  annule: "border-neutral-300 text-neutral-500 line-through",
-  erreur: "border-red-700 text-red-800",
+  programme: "border-line text-fog",
+  envoye: "border-line-strong text-stone",
+  delivre: "border-stone text-cream",
+  ouvert: "border-amber text-amber",
+  clique: "border-amber bg-amber text-charcoal",
+  bounce: "border-[#b5533b] text-[#e08a75]",
+  spam: "border-[#b5533b] text-[#e08a75]",
+  annule: "border-line text-fog/70 line-through",
+  erreur: "border-[#b5533b] text-[#e08a75]",
 };
 
 export function StatusBadge({ status }: { status: SequenceEmailStatus | undefined }) {
   if (!status) {
     return (
-      <span className="inline-flex rounded-full border border-dashed border-neutral-300 px-2 py-0.5 text-[11px] uppercase tracking-[0.08em] text-neutral-500">
+      <span className="meta inline-flex border border-dashed border-line-strong px-2 py-0.5 text-[10px]">
         Aucun
       </span>
     );
   }
   return (
     <span
-      className={`inline-flex rounded-full border px-2 py-0.5 text-[11px] uppercase tracking-[0.08em] ${STATUS_STYLES[status]}`}
+      className={`meta inline-flex border px-2 py-0.5 text-[10px] ${STATUS_STYLES[status]}`}
     >
       {STATUS_LABELS[status]}
     </span>
@@ -99,17 +99,17 @@ export function StepRow({
   hint?: string;
 }) {
   return (
-    <div className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-t border-[rgb(226_226_230/0.9)] py-3 first:border-t-0">
+    <div className="grid grid-cols-[1fr_auto] items-baseline gap-4 border-t border-line py-3 first:border-t-0">
       <div className="min-w-0">
-        <p className="text-sm font-medium text-neutral-900">{label}</p>
-        {hint ? <p className="text-xs text-neutral-600">{hint}</p> : null}
+        <p className="text-sm text-cream">{label}</p>
+        {hint ? <p className="text-xs text-fog">{hint}</p> : null}
       </div>
       <div className="text-right">
-        <p className="text-2xl font-semibold tabular-nums text-neutral-950">
+        <p className="display text-2xl tabular-nums text-cream">
           {value.toLocaleString("fr-FR")}
         </p>
         {rate ? (
-          <p className="text-xs tabular-nums text-neutral-600">{rate} de l’étape précédente</p>
+          <p className="text-xs tabular-nums text-fog">{rate} de l’étape précédente</p>
         ) : null}
       </div>
     </div>
@@ -142,12 +142,12 @@ export function DailyChart({ days }: { days: DayStats[] }) {
           aria-label={`Visiteurs uniques de la page d'inscription et nouveaux inscrits par jour, maximum ${max}`}
           className="h-auto w-full min-w-[480px]"
         >
-          <line x1={padL} x2={w - 8} y1={y(0)} y2={y(0)} stroke="#d4d4d8" />
-          <line x1={padL} x2={w - 8} y1={y(max)} y2={y(max)} stroke="#e4e4e8" strokeDasharray="3 4" />
-          <text x={padL - 6} y={y(max) + 4} fontSize="11" textAnchor="end" fill="#444444">
+          <line x1={padL} x2={w - 8} y1={y(0)} y2={y(0)} stroke="rgba(238,236,229,0.26)" />
+          <line x1={padL} x2={w - 8} y1={y(max)} y2={y(max)} stroke="rgba(238,236,229,0.12)" strokeDasharray="3 4" />
+          <text x={padL - 6} y={y(max) + 4} fontSize="11" textAnchor="end" fill="#9ca3a8">
             {max}
           </text>
-          <text x={padL - 6} y={y(0) + 4} fontSize="11" textAnchor="end" fill="#444444">
+          <text x={padL - 6} y={y(0) + 4} fontSize="11" textAnchor="end" fill="#9ca3a8">
             0
           </text>
           {days.map((d, i) => {
@@ -157,10 +157,10 @@ export function DailyChart({ days }: { days: DayStats[] }) {
             return (
               <g key={d.date}>
                 <title>{`${d.date} : ${views} visiteurs, ${subs} inscrits`}</title>
-                <rect x={x} y={y(views)} width={bar} height={y(0) - y(views)} fill="#e4d2bc" />
-                <rect x={x} y={y(subs)} width={bar} height={y(0) - y(subs)} fill="#c45a18" />
+                <rect x={x} y={y(views)} width={bar} height={y(0) - y(views)} fill="#3f5b6c" />
+                <rect x={x} y={y(subs)} width={bar} height={y(0) - y(subs)} fill="#d8d6ce" />
                 {i % labelEvery === 0 || i === days.length - 1 ? (
-                  <text x={x + bar / 2} y={h - 6} fontSize="10" textAnchor="middle" fill="#444444">
+                  <text x={x + bar / 2} y={h - 6} fontSize="10" textAnchor="middle" fill="#9ca3a8">
                     {shortDay(d.date)}
                   </text>
                 ) : null}
@@ -169,13 +169,13 @@ export function DailyChart({ days }: { days: DayStats[] }) {
           })}
         </svg>
       </div>
-      <figcaption className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs text-neutral-700">
+      <figcaption className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs text-fog">
         <span className="inline-flex items-center gap-2">
-          <span className="inline-block h-3 w-3 rounded-sm bg-[#e4d2bc]" aria-hidden />
+          <span className="inline-block h-3 w-3 rounded-xs bg-steel" aria-hidden />
           Visiteurs uniques de la page d’inscription
         </span>
         <span className="inline-flex items-center gap-2">
-          <span className="inline-block h-3 w-3 rounded-sm bg-[#c45a18]" aria-hidden />
+          <span className="inline-block h-3 w-3 rounded-xs bg-stone" aria-hidden />
           Nouveaux inscrits
         </span>
       </figcaption>
@@ -190,9 +190,9 @@ export function SourcesTable({ title, data }: { title: string; data: Record<stri
   const total = rows.reduce((a, [, n]) => a + n, 0);
   return (
     <div>
-      <h3 className="text-sm font-semibold text-neutral-900">{title}</h3>
+      <h3 className="meta meta-strong">{title}</h3>
       {rows.length === 0 ? (
-        <p className="mt-2 text-sm text-neutral-600">
+        <p className="mt-2 text-sm text-fog">
           Rien à attribuer pour l’instant. Ajoutez utm_source à vos liens (TikTok,
           YouTube, newsletter) pour voir d’où viennent les inscrits.
         </p>
@@ -207,10 +207,10 @@ export function SourcesTable({ title, data }: { title: string; data: Record<stri
           </thead>
           <tbody>
             {rows.map(([src, n]) => (
-              <tr key={src} className="border-t border-[rgb(226_226_230/0.9)]">
-                <td className="py-1.5 pr-3 text-neutral-900">{src}</td>
-                <td className="py-1.5 pr-3 text-right tabular-nums text-neutral-950">{n}</td>
-                <td className="py-1.5 text-right tabular-nums text-neutral-600">{pct(n, total)}</td>
+              <tr key={src} className="border-t border-line">
+                <td className="py-1.5 pr-3 text-stone">{src}</td>
+                <td className="py-1.5 pr-3 text-right tabular-nums text-cream">{n}</td>
+                <td className="py-1.5 text-right tabular-nums text-fog">{pct(n, total)}</td>
               </tr>
             ))}
           </tbody>
@@ -222,22 +222,22 @@ export function SourcesTable({ title, data }: { title: string; data: Record<stri
 
 export function SubscriberRow({ sub }: { sub: Subscriber }) {
   return (
-    <tr className="border-t border-[rgb(226_226_230/0.9)]">
+    <tr className="border-t border-line">
       <td className="py-2 pr-3">
-        <Link href={subscriberHref(sub.email)} className="ds-link font-medium text-neutral-950">
+        <Link href={subscriberHref(sub.email)} className="link">
           {sub.firstName}
         </Link>
       </td>
-      <td className="py-2 pr-3 text-neutral-900">{sub.email}</td>
-      <td className="py-2 pr-3 tabular-nums text-neutral-700">{fmtDate(sub.createdAt)}</td>
-      <td className="py-2 pr-3 text-neutral-700">
+      <td className="py-2 pr-3 text-stone">{sub.email}</td>
+      <td className="py-2 pr-3 tabular-nums text-fog">{fmtDate(sub.createdAt)}</td>
+      <td className="py-2 pr-3 text-fog">
         {sub.source}
         {sub.utmCampaign ? ` · ${sub.utmCampaign}` : ""}
       </td>
-      <td className="py-2 pr-3 text-neutral-700">
+      <td className="py-2 pr-3 text-fog">
         {sub.status === "active" ? "Actif" : "Désinscrit"}
       </td>
-      <td className="py-2 text-neutral-700">{sequenceSummary(sub)}</td>
+      <td className="py-2 text-fog">{sequenceSummary(sub)}</td>
     </tr>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHeader } from "@/components/ui/PageHeader";
 import { buildBreadcrumbList, buildPageMetadata } from "@/lib/metadata";
 import { siteName } from "@/lib/site";
 
@@ -12,6 +13,69 @@ export const metadata: Metadata = buildPageMetadata({
   },
 });
 
+const sections = [
+  {
+    n: "01",
+    title: "Éditeur du site",
+    body: (
+      <p>
+        <strong>BUSINESSDYNAMITE</strong>
+        <br />
+        Société par actions simplifiée
+        <br />
+        ZAC LES TERRASSES DE LA SARRE PEPINIERE SYNERGIE 4, 57400 SARREBOURG
+        <br />
+        Dirigeant : Frank HOUBRE
+      </p>
+    ),
+  },
+  {
+    n: "02",
+    title: "Informations légales",
+    body: (
+      <p>
+        SIREN : 840 854 129
+        <br />
+        SIRET du siège social : 840 854 129 00011
+        <br />
+        Numéro de TVA : FR90840854129
+        <br />
+        Date de création : 06 juillet 2018
+        <br />
+        Activité (NAF / APE) : Autres enseignements - 8559B
+      </p>
+    ),
+  },
+  {
+    n: "03",
+    title: "Hébergement",
+    body: (
+      <p>
+        <strong>Vercel Inc.</strong>
+        <br />
+        440 N Barranca Ave #4133
+        <br />
+        Covina, CA 91723
+        <br />
+        États-Unis
+        <br />
+        <a href="https://vercel.com">vercel.com</a>
+      </p>
+    ),
+  },
+  {
+    n: "04",
+    title: "Propriété intellectuelle",
+    body: (
+      <p>
+        Les contenus publiés sur ce site (textes, visuels, code mis en ligne dans les articles)
+        sont la propriété de leur auteur sauf mention contraire. Toute reproduction non autorisée
+        est interdite.
+      </p>
+    ),
+  },
+] as const;
+
 export default function LegalPage() {
   return (
     <>
@@ -21,82 +85,27 @@ export default function LegalPage() {
           { name: "Mentions légales", path: "/mentions-legales" },
         ])}
       />
-      <div className="ds-page max-w-3xl">
-      <section className="ds-hero p-6 sm:p-8">
-        <p className="ds-eyebrow">Conformité</p>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-          Mentions légales
-        </h1>
-      </section>
-      <div className="prose-cinema mt-8 max-w-none space-y-6 text-neutral-800">
-        <section>
-          <h2 className="text-xl font-semibold text-neutral-950">
-            Éditeur du site
-          </h2>
-          <p className="mt-2">
-            <strong className="text-neutral-950">BUSINESSDYNAMITE</strong>
-            <br />
-            Société par actions simplifiée
-            <br />
-            ZAC LES TERRASSES DE LA SARRE PEPINIERE SYNERGIE 4, 57400 SARREBOURG
-            <br />
-            Dirigeant : Frank HOUBRE
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-neutral-950">
-            Informations légales
-          </h2>
-          <p className="mt-2">
-            SIREN : 840 854 129
-            <br />
-            SIRET du siege social : 840 854 129 00011
-            <br />
-            Numero de TVA : FR90840854129
-            <br />
-            Date de creation : 06 juillet 2018
-            <br />
-            Activite (NAF / APE) : Autres enseignements - 8559B
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-neutral-950">
-            Hébergement
-          </h2>
-          <p className="mt-2">
-            <strong className="text-neutral-950">Vercel Inc.</strong>
-            <br />
-            440 N Barranca Ave #4133
-            <br />
-            Covina, CA 91723
-            <br />
-            États-Unis
-            <br />
-            <a
-              href="https://vercel.com"
-              className="ds-link text-neutral-950 hover:text-neutral-600"
-            >
-              vercel.com
-            </a>
-          </p>
-        </section>
-        <section>
-          <h2 className="text-xl font-semibold text-neutral-950">
-            Propriété intellectuelle
-          </h2>
-          <p className="mt-2">
-            Les contenus publiés sur ce site (textes, visuels, code mis en ligne
-            dans les articles) sont la propriété de leur auteur sauf mention
-            contraire. Toute reproduction non autorisée est interdite.
-          </p>
-        </section>
-        <section>
-          <p className="mt-2 text-sm text-neutral-600">
-            Sources et mises a jour le 18/04/2026.
-          </p>
-        </section>
+      <PageHeader
+        kicker="Conformité"
+        size="lg"
+        title="Mentions légales"
+        aside={<p className="meta">Mise à jour · 18/04/2026</p>}
+      />
+      <div className="container-x section-sm">
+        <dl className="max-w-4xl">
+          {sections.map((s) => (
+            <div key={s.n} className="grid-12 gap-y-3 border-t border-line py-8 last:border-b">
+              <dt className="col-span-12 lg:col-span-4">
+                <p className="meta">
+                  <span className="meta-strong tabular">{s.n}</span>
+                </p>
+                <h2 className="h-item mt-2 text-cream">{s.title}</h2>
+              </dt>
+              <dd className="prose-cinema col-span-12 text-[15px] lg:col-span-7 lg:col-start-6">{s.body}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
-    </div>
     </>
   );
 }

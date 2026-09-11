@@ -10,11 +10,15 @@ type Props = {
   layout?: "sidebar" | "inline";
 };
 
+/**
+ * Sommaire : liste numérotée sur une règle verticale, la règle se remplit
+ * au fil de la lecture et l'entrée active passe en blanc chaud.
+ */
 export function ArticleToc({ items, layout = "sidebar" }: Props) {
   const [active, setActive] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
   const [trackH, setTrackH] = useState(0);
-  const listRef = useRef<HTMLUListElement>(null);
+  const listRef = useRef<HTMLOListElement>(null);
 
   const ids = useMemo(() => items.map((i) => i.id), [items]);
 
@@ -50,10 +54,7 @@ export function ArticleToc({ items, layout = "sidebar" }: Props) {
       const first = els[0].offsetTop;
       const last = els[els.length - 1].offsetTop;
       const span = Math.max(1, last - first);
-      const p = Math.min(
-        1,
-        Math.max(0, (window.scrollY + OFFSET - first) / span),
-      );
+      const p = Math.min(1, Math.max(0, (window.scrollY + OFFSET - first) / span));
       setProgress(p);
     };
 
@@ -73,50 +74,42 @@ export function ArticleToc({ items, layout = "sidebar" }: Props) {
   return (
     <nav
       aria-label="Sommaire"
-      className={`relative text-sm text-neutral-800 ${
-        layout === "inline" ? "w-full" : "w-56 shrink-0"
-      }`}
+      className={`relative text-sm ${layout === "inline" ? "w-full" : "w-56 shrink-0"}`}
     >
-      <p className="mb-3 font-semibold text-neutral-950">
-        Sommaire
-      </p>
+      {layout === "sidebar" ? <p className="meta mb-4">Sommaire</p> : null}
       <div className="relative">
+        <div className="absolute bottom-0 left-0 top-0 w-px bg-line" aria-hidden />
         <div
-          className="absolute bottom-0 left-0 top-0 w-px bg-neutral-200"
-          aria-hidden
-        />
-        <div
-          className="absolute left-0 top-0 w-px origin-top bg-neutral-950 transition-[height] duration-150"
+          className="absolute left-0 top-0 w-px origin-top bg-cream transition-[height] duration-150"
           style={{ height: fillH }}
           aria-hidden
         />
-        <ul ref={listRef} className="space-y-2 pl-3">
-        {items.map((item) => {
-          const isActive = active === item.id;
-          return (
-            <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                className={`block border-l-2 pl-3 transition-colors ${
-                  isActive
-                    ? "border-neutral-950 font-medium text-neutral-950"
-                    : "border-transparent hover:text-neutral-950"
-                }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  const el = document.getElementById(item.id);
-                  if (!el) return;
-                  const top =
-                    el.getBoundingClientRect().top + window.scrollY - OFFSET + 8;
-                  window.scrollTo({ top, behavior: "smooth" });
-                }}
-              >
-                {item.text}
-              </a>
-            </li>
-          );
-        })}
-        </ul>
+        <ol ref={listRef} className="space-y-1">
+          {items.map((item, i) => {
+            const isActive = active === item.id;
+            return (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className={`grid grid-cols-[1.75rem_1fr] gap-2 py-1 pl-4 leading-snug transition-colors duration-200 ${
+                    isActive ? "text-cream" : "text-fog hover:text-stone"
+                  }`}
+                  aria-current={isActive ? "location" : undefined}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById(item.id);
+                    if (!el) return;
+                    const top = el.getBoundingClientRect().top + window.scrollY - OFFSET + 8;
+                    window.scrollTo({ top, behavior: "smooth" });
+                  }}
+                >
+                  <span className="meta tabular pt-0.5 text-[10px]">{String(i + 1).padStart(2, "0")}</span>
+                  <span>{item.text}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </nav>
   );

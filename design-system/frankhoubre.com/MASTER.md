@@ -8,165 +8,162 @@
 
 **Project:** frankhoubre.com
 **Generated:** 2026-04-20 13:17:16
-**Restyled:** 2026-09-07 (direction « Cyber Ronin »)
+**Restyled:** 2026-09-11 (direction « Cinéma » : réalisateur / studio, éditorial suisse, brutalisme)
 **Category:** Portfolio/Personal
 
 ---
 
+## Direction artistique
+
+Un site de réalisateur, pas un SaaS. Sensation recherchée : monumental,
+cinématographique, mystérieux, intelligent, minimal, humain. Références :
+cinéma grand format, photographie argentique, architecture brutaliste, design
+éditorial suisse, dossiers de production, cartes topographiques.
+
+Un seul registre, sombre, sur tout le site (marketing, blog, outils, tunnel de
+formation, back-office). La sophistication vient de la composition (grille,
+vide, asymétrie, lignes fines), jamais des effets.
+
 ## Global Rules
 
-### Color Palette
+### Color Palette (tokens dans `src/app/globals.css`, `:root` + `@theme`)
 
-| Role | Value | CSS Variable |
-|------|-------|--------------|
-| Text (was « cream ») | `#111111` | `--cream` |
-| Muted text | `rgba(17, 17, 17, 0.72)` | `--muted` |
-| Label text | `rgba(17, 17, 17, 0.62)` | `--label` |
-| Accent | `#E07020` | `--orange` |
-| Accent deep | `#C45A18` | `--orange-deep` |
-| Page ground (was « ink ») | `#F6F6F7` | `--ink`, `--background` |
-| Glass card | `rgba(255, 255, 255, 0.78)` + `backdrop-filter: blur(18px)` | `--card` |
-| Body text | `#111111` | `--foreground` |
-| CTA | `#E07020` (black text) | `--color-cta` |
+| Role | Value | CSS variable | Tailwind |
+|------|-------|--------------|----------|
+| Page ground (charcoal) | `#0B0B0C` | `--bg` | `bg-charcoal` |
+| Near black | `#111214` | `--bg-2` | `bg-charcoal-2` |
+| Surface (graphite) | `#17191C` | `--surface` | `bg-graphite` |
+| Surface 2 | `#1D2024` | `--surface-2` | `bg-graphite-2` |
+| Deep navy (bandes) | `#0E2436` | `--navy` | `bg-navy` |
+| Steel blue | `#3F5B6C` | `--steel` | `text-steel` |
+| Fog (texte secondaire) | `#9CA3A8` | `--fog` / `--text-muted` | `text-fog` |
+| Stone (texte 2) | `#D8D6CE` | `--stone` / `--text-2` | `text-stone` |
+| Warm white (texte) | `#EEECE5` | `--cream` / `--text` | `text-cream` |
+| Muted amber (accent rare) | `#B07B47` | `--amber` | `text-amber` |
+| Hairline | `rgba(238,236,229,0.12)` | `--line` | `border-line` |
+| Hairline forte | `rgba(238,236,229,0.26)` | `--line-strong` | `border-line-strong` |
 
-**Color Notes (since 2026-09-10, direction de Frank) :** un seul registre, clair :
-fond blanc-gris `#F6F6F7` quadrillé (lignes toutes les 32 px, plus marquées tous
-les 160 px, posées par `body::before`), texte noir, accent orange, titres
-Orbitron. Les variables `--cream` / `--ink` gardent leur nom historique mais
-valent désormais noir / blanc-gris : ne pas les lire au premier degré. Les
-boutons pleins sont noirs avec texte blanc (`.ds-cta-dark`, `.ds-badge`) ou
-orange avec texte noir (`.ds-cta-primary`, `.cyber-btn-solid`). Le hero
-d'accueil garde ses images plein écran sous un voile clair (`.hero::after`).
-Jamais de bleu, jamais de registre sombre pleine page.
+**Règles :** 80 à 90 % de l'interface reste noir / charbon / gris / bleu acier /
+blanc chaud. L'ambre ne sert qu'aux signaux (état actif, erreur de formulaire,
+point de repère). Jamais de gradient SaaS, de glow néon, de glassmorphism
+omniprésent, de blob. Les anciens noms (`--orange`, `--ink`, `--muted`,
+`--label`) existent encore comme alias vers ces tokens : ne pas les réutiliser.
 
 ### Typography
 
-- **Heading Font:** Orbitron (weights 500, 700), uppercase in the dark register,
-  `letter-spacing: 0.02em`, `font-weight: 500`.
-- **Body Font:** Inter (300, 400, 500, 600).
-- Both are self-hosted via `next/font/google` (`src/lib/fonts.ts`). No `<link>` to
-  Google Fonts, no third-party font CSS.
-- Small labels: 11px, uppercase, `letter-spacing 0.08–0.12em`, color `--label`
-  (`.cyber-label`, `.cyber-spec-label`).
+- **Display / titres / navigation / métadonnées :** Inter Tight (500, 600, 700),
+  `--font-display`. Titres en `font-weight: 600`, `letter-spacing: -0.02em`,
+  `line-height` ≈ 1. Classes : `.display` (capitales, 0.92), `.display-xl/lg/md`,
+  `.h-section` (clamp 1.85–3.4rem), `.h-block` (1.35–1.9rem), `.h-item` (1.125rem).
+- **Texte courant :** Inter (400, 500, 600), `--font-body`. 16 px, `line-height 1.6`.
+- **Citations et chapôs :** Instrument Serif italique, `--font-serif`. Classes
+  `.serif`, `.lede` (1.3–1.75rem), `QuoteBlock`.
+- **Métadonnées :** `.meta` = 11 px, capitales, `letter-spacing 0.18em`, brume.
+  Variantes `.meta-strong` (stone), `.meta-dim`, `.meta-amber`. Esprit dossier de
+  production : `01 / SÉQUENCE`, `FIG. 01`, `PLANCHE 02`, compteurs tabulaires.
+- Toutes les polices sont auto-hébergées via `next/font/google` (`src/lib/fonts.ts`,
+  export `fontVariables`). Aucun `<link>` vers Google Fonts.
 
-### Spacing Variables
+### Spacing, grid, container
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `--space-xs` | `4px` / `0.25rem` | Tight gaps |
-| `--space-sm` | `8px` / `0.5rem` | Icon gaps, inline spacing |
-| `--space-md` | `16px` / `1rem` | Standard padding |
-| `--space-lg` | `24px` / `1.5rem` | Section padding |
-| `--space-xl` | `32px` / `2rem` | Large gaps |
-| `--space-2xl` | `48px` / `3rem` | Section margins |
-| `--space-3xl` | `64px` / `4rem` | Hero padding |
-| `--hero-top` | `92px` | Top offset of hero UI under the fixed header |
+- Conteneur `.container-x` : `max-width 88rem`, gouttière `clamp(1rem, 4vw, 3.5rem)`.
+- Grille `.grid-12` : 12 colonnes. Compositions éditoriales asymétriques :
+  3 / 7 / 2 (`SectionHeader`), 5 / 7, 4 / 8, 7 / 5. Jamais de 50/50 systématique ni
+  de trois cartes identiques centrées.
+- Sections `.section` (`clamp(4rem, 9vw, 8.5rem)` vertical), `.section-sm`. Pages
+  intérieures : `.page-top` ou `PageHeader` (contenu sous l'en-tête fixe, `--header-h` = 64 px).
+- Le vide est structurel : grandes marges, une idée par bloc, annotations en marge.
 
-### Shadow Depths
+### Radius, lines, shadows
 
-| Level | Value | Usage |
-|-------|-------|-------|
-| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | Subtle lift |
-| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.1)` | Cards, buttons |
-| `--shadow-lg` | `0 10px 15px rgba(0,0,0,0.1)` | Modals, dropdowns |
-| `--shadow-xl` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |
-| Glass card | `0 18px 50px rgba(0,0,0,0.28)` | `.cyber-card` |
+- Radius : 0 à 2 px (`--r-1`). Les utilitaires Tailwind `rounded-*` sont plafonnés à 8 px.
+- Séparateurs : lignes 1 px à faible contraste (`.hairline`, `border-line`).
+  Elles structurent navigation, listes (`.spec-row`), sections, tableaux, footer.
+- Aucune ombre portée. Les surfaces se distinguent par la couleur (`.card`,
+  `.card-surface`) et la hairline.
 
----
+### Motion (`src/components/motion/RevealObserver.tsx`, `HeroSpotlight.tsx`)
 
-## Component Specs (see `src/app/globals.css`)
+- Apparitions au scroll : `.reveal` (fondu + 22 px, 900 ms), `.reveal-mask`
+  (clip-path depuis le bas), `.reveal-line` (scaleX), `data-delay` en secondes.
+  Titres du hero : `.words-pull-up` (mots qui montent sous un masque de ligne).
+- Images : `.kenburns` (zoom lent 20 s), `.hero-media-animate` (fondu 1,6 s),
+  `.frame-hover` (scale 1 → 1.025 en 900 ms). Lueur : `.glow` + `.drift`, une par écran.
+- Ease : `cubic-bezier(0.22, 1, 0.36, 1)`. Durées 200 / 450 / 900 ms. Hover :
+  flèche +4 px, souligné qui grandit (`.line-link`, `.nav-link`), fond inversé (`.btn`).
+- Les états initiaux masqués n'existent que sous `html.js` (script inline
+  `beforeInteractive` dans `SiteShell` et le layout du tunnel) : sans JS, tout est visible.
+- `prefers-reduced-motion: reduce` neutralise toutes les animations et transitions.
+- Projecteur du curseur (`HeroSpotlight`) : desktop à pointeur fin uniquement, `requestAnimationFrame`.
 
-### Dark register (`.cyber-*`)
+### Textures
 
-- `.cyber-page`: white-grey ground, black text (nom historique).
-- `.cyber-card`: glass card, radius 18px, 1px border `rgba(251,219,175,0.08)`.
-- `.cyber-btn`: pill, 1px cream border, transparent, 12px/500, hover lifts 1px.
-  `.cyber-btn-solid` for the orange filled variant.
-- `.cyber-icon-btn`: 38px circle, 1px cream border at 55%, 16px stroke icon inside.
-- `.cyber-spec-row` / `.cyber-spec-label` / `.cyber-spec-value`: key/value rows with
-  12% cream hairlines between rows.
-- `.cyber-link`: cream underline at 35%, full cream on hover.
-
-### Cinema layer (`.cine-*`, landings du funnel)
-
-- `.cine-band` : bande sombre `#0b0c10`, texte blanc ; `.cine-grain::before` (grain SVG,
-  overlay 16 %), `.cine-vignette::after`, `.cine-letterbox` (bandes noires 14/22 px),
-  `.cine-scrim` (voile sombre sous le texte), `.cine-glow-orange` / `.cine-glow-blue`
-  (lueurs floutées, dérive lente `cineDrift`), `.cine-kenburns` (zoom lent 18 s),
-  `.cine-timecode`, `.cine-card` (verre sombre), `.cine-cta` (bouton orange lumineux,
-  une lueur par écran). Sur fond clair : `.cine-leak-*` (fuites de lumière douces).
-- Composant `CineHero` (src/components/funnel/CineHero.tsx) : photogramme plein cadre
-  + variante révélée au curseur (HeroSpotlight) + tout ce qui précède.
-- Apparitions au scroll : `RevealObserver` + classes `fade-up-reveal` / `data-delay`,
-  activées seulement sous `html.js` ; tout est désactivé en `prefers-reduced-motion`.
-- Dials : ENERGY 3 / RHYTHM 3 / MOTION 2 sur les landings ; le reste du site reste
-  ENERGY 2 / RHYTHM 2 / MOTION 1.
-
-### Light register (`.ds-*`)
-
-- `.ds-card`, `.ds-hero`, `.ds-surface`, `.ds-chip`, `.ds-badge`, `.ds-input`: unchanged
-  shapes, warm neutrals, orange hover borders and focus rings.
-- `.ds-cinematic-frame`: ink gradient frame with orange glow, used for page headers.
-- `.ds-cta-primary`: orange gradient pill. `.ds-cta-ghost-light`: cream ghost pill.
-
-### Hero « Cyber Ronin » (`src/components/cyber/CyberHero.tsx`)
-
-- Full viewport (`100dvh`), base image + alternate image revealed under the cursor
-  by a radial `mask-image` (radius 260 / 160 / 120 px by viewport width).
-- Grid `1fr 1fr` × `auto 1fr auto`; left column holds H1 (3 lines), intro, icon row,
-  glass product card; right column holds a counter (top) and a specs list (bottom).
-- Breakpoints: 1024, 900, 768 (single column), 720 (flex column, counter in flow),
-  480, 360. All defined in `globals.css` under the `.hero*` rules.
-
-### Motion
-
-- `heroImageIn` 1.2s (scale 1.18 → 1), `wordPullUp` 0.55s per word staggered 0.1s,
-  `fadeUp` 0.7s with 8px blur, delays via `data-delay`.
-- Word splitting and IntersectionObserver reveals live in
-  `src/components/cyber/RevealObserver.tsx`; hidden initial states apply only under
-  `html.js` (set by an inline script in `SiteShell`), so no-JS and crawlers see everything.
-- `prefers-reduced-motion: reduce` disables every animation and transition.
+- Grain argentique global (`body::after`, opacité 0,05), grain de cadre
+  (`.frame-grain`, `.grain`, opacité 0,09 / 0,10 en overlay), vignette (`.vignette`),
+  voile (`.scrim`, `.hero-scrim`). Toujours quasi imperceptible.
 
 ---
 
-## Style Guidelines
+## Component Specs (voir `src/app/globals.css` et `src/components/ui/`)
 
-**Style:** Motion-Driven, light engineering grid, black on white-grey, orange accent
+- `Cta` / `CtaButton` (`.btn`, `.btn-primary`, `.btn-quiet`, `.btn-sm`, `.btn-lg`) :
+  rectangle 1 px, capitales, flèche qui glisse. Un seul bouton plein (blanc chaud)
+  par écran. `ArrowLink` (`.arrow-link`) pour finir une fiche.
+- `SectionHeader` : numéro + kicker en marge (3 col.), titre (7 col.), annotation (2 col.).
+- `PageHeader` + `Breadcrumb` : ouverture de page intérieure (kicker, titre
+  monumental, chapô serif, colonne d'annotations, hairline).
+- `PostCard` (`grid`, `feature`, `row`) : la seule fiche d'article du site.
+- `FilmFrame` / `.frame` (+ `.frame-grain`, `.frame-marks` = repères de cadre
+  aux quatre coins) : tout photogramme, toute image.
+- `VideoFacade` : façade vidéo cadrée, lecteur chargé au clic.
+- `QuoteBlock`, `TechnicalDiagram` (orbites SVG, rotation lente sous JS).
+- `HomeHero` (`.hero*`) : image plein cadre, scène révélée sous le curseur, nom
+  monumental en bas à gauche, notes en marge droite, ligne de pied (intro,
+  actions, repères, cue de scroll).
+- Listes : `.spec-row` (clé / valeur sur hairline), listes numérotées
+  `grid-cols-[2.5rem_1fr]`, accordéon `.faq-item` (+ `Plus`).
+- Formulaires : `.input` (fond near black, hairline forte, focus stone),
+  `.chip` (filtres, pagination ; `.is-active` / `aria-pressed`).
+- `.badge` : étiquette de catégorie sur image (verre sombre, capitales 10 px).
+- Header : `SiteHeader` (`.site-header`, `.is-solid` après 24 px de scroll ou hors
+  accueil), `.nav-link`, menu mobile plein écran. Footer : marque monumentale,
+  trois colonnes, ligne de métadonnées.
+- Prose (articles, pages longues) : `.prose-cinema` pilote toute la mise en forme
+  MDX (titres avec hairline, listes à tiret, blockquote serif, tableaux dans
+  `.table-wrap`, images dans `.figure`). Les blocs insérés portent `.not-prose`.
 
-**Keywords:** Full-bleed imagery under a light scrim, cursor spotlight, white glass
-cards, uppercase Orbitron labels, black on white-grey grid, orange accent
+### Registre produit (back-office `/admin/funnel`)
 
-**Section Order (home):** 1. Cyber hero, 2. Film strip marquee, 3. Positioning +
-public signals, 4. Four pillars, 5. Explore by theme (categories + tools), 6. Films
-(click-to-play facades), 7. Learn / create / position, 8. FAQ, 9. Latest articles.
+Même langage (tokens, hairlines, `.meta`, `.btn`, `.chip`, `.input`,
+`.card-surface`) mais plus dense : `AdminShell` avec navigation en capitales sur
+une ligne, tableaux sur hairlines, graphique SVG steel / stone.
 
 ---
 
 ## Anti-Patterns (Do NOT Use)
 
-- ❌ Corporate templates, generic layouts
-- ❌ Blue accents (the old `#2563EB` is retired)
-- ❌ **Emojis as icons** — Use inline SVG (stroke 1.2, 16px) like the hero icon row
-- ❌ **Missing cursor:pointer** on clickable elements
-- ❌ **Layout-shifting hovers**
-- ❌ **Low contrast text** — muted cream on ink stays ≥ 4.5:1; never use `--label`
-  for body copy
-- ❌ **Instant state changes** — transitions 150–300ms
-- ❌ **Invisible focus states** — orange 2px outline is the default (`:focus-visible`)
-- ❌ Third-party iframes at load — use `VideoFacade` (click to play)
-- ❌ `<img>` for local assets — use `next/image`
+- ❌ Gradients violet/rose, glow néon, glassmorphism, blobs, ombres flottantes
+- ❌ Boutons pill, gros radius (> 8 px), cartes toutes identiques en grille 3 × N
+- ❌ Emojis, icônes colorées, illustrations corporate
+- ❌ Orbitron, orange vif, fond clair quadrillé (direction précédente, retirée)
+- ❌ Utilitaires Tailwind qui ne pourraient pas surcharger un composant :
+  tout `globals.css` est dans `@layer base` / `@layer components`, ne pas sortir
+  une règle de ces couches
+- ❌ Contraste faible : brume (`--fog`) sur charbon reste ≥ 7:1 ; ambre sur charbon
+  ≈ 5.4:1, réservé aux petits signaux
+- ❌ Contenu masqué hors `html.js`, animations sans `prefers-reduced-motion`
+- ❌ Iframes tierces au chargement (utiliser `VideoFacade`), `<img>` pour un asset local
 
 ---
 
 ## Pre-Delivery Checklist
 
-- [ ] No emojis used as icons (inline SVG instead)
-- [ ] `cursor-pointer` on all clickable elements
-- [ ] Hover states with smooth transitions (150–300ms)
-- [ ] Contrast 4.5:1 minimum in both registers
-- [ ] Focus states visible for keyboard navigation
-- [ ] `prefers-reduced-motion` respected
-- [ ] Content visible without JavaScript (no `.js`-gated text left hidden)
-- [ ] Responsive: 375px, 768px, 1024px, 1440px
-- [ ] No content hidden behind the fixed header on the home (`--hero-top`)
-- [ ] No horizontal scroll on mobile
+- [ ] Aucune couleur hors tokens ; ambre limité aux signaux
+- [ ] Composition asymétrique (grille 12, marges, vide) ; pas de trois cartes identiques
+- [ ] Hairlines 1 px, radius ≤ 2 px, pas d'ombre
+- [ ] Métadonnées `.meta` numérotées, titres Inter Tight, citations serif
+- [ ] Hover discrets (flèche, souligné, fond inversé), transitions 200–900 ms
+- [ ] `prefers-reduced-motion` respecté, contenu visible sans JavaScript
+- [ ] Focus visible (outline stone), boutons utilisables au clavier, alt sur les images
+- [ ] Responsive 375 / 768 / 1024 / 1440, pas de défilement horizontal
+- [ ] Contenu sous l'en-tête fixe (`PageHeader` ou `.page-top`)

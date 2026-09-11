@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { getAllEnPosts } from "@/lib/blog-en";
 import { EnBlogGrid, EN_POSTS_PER_PAGE } from "@/components/EnBlogGrid";
+import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const revalidate = 3600;
@@ -52,16 +53,27 @@ export default async function EnBlogPaginatedPage({ params }: PageProps) {
   const pagePosts = posts.slice(start, start + EN_POSTS_PER_PAGE);
 
   return (
-    <div className="ds-page">
-      <section className="ds-cinematic-frame p-6 sm:p-8">
-        <div className="relative z-10">
-          <p className="ds-eyebrow text-neutral-600">Blog</p>
-          <h1 className="relative z-10 mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
-            AI filmmaking, in the trenches, page {page}
-          </h1>
-        </div>
-      </section>
-      <EnBlogGrid posts={pagePosts} currentPage={page} totalPages={totalPages} />
-    </div>
+    <>
+      <PageHeader
+        index={String(page).padStart(2, "0")}
+        kicker="Blog archive"
+        size="lg"
+        title={`AI filmmaking, in the trenches, page ${page}`}
+        lede={`Every English article, newest first. Page ${page} of ${totalPages}.`}
+        breadcrumb={
+          <Breadcrumb
+            label="Breadcrumb"
+            items={[
+              { label: "Home", href: "/en" },
+              { label: "Blog", href: "/en/blog" },
+              { label: `Page ${page}` },
+            ]}
+          />
+        }
+      />
+      <div className="container-x section-sm">
+        <EnBlogGrid posts={pagePosts} currentPage={page} totalPages={totalPages} />
+      </div>
+    </>
   );
 }

@@ -73,8 +73,8 @@ complet du 2026-07-03 (données GSC 16 mois + crawl live).
   page 1. Toute nouvelle liste longue (>30 cartes) doit paginer en vraies URLs.
 - **Vidéos tierces** : jamais d'iframe YouTube/Vimeo au chargement sur une
   page de hub. Utiliser `VideoFacade` (vignette + lecture au clic).
-- **Polices** : Orbitron et Inter via `next/font/google` (`src/lib/fonts.ts`),
-  auto-hébergées. Aucun `<link>` vers Google Fonts ou un CDN de polices.
+- **Polices** : Inter Tight, Inter et Instrument Serif via `next/font/google`
+  (`src/lib/fonts.ts`), auto-hébergées. Aucun `<link>` vers Google Fonts ou un CDN de polices.
 - **Images** : toujours `next/image` (jamais `<img>` pour un asset local).
   Poids cible d'un hero **≤ 300 KB** à la génération ; les fichiers bruts
   servent d'og:image et sont chargés tels quels par les réseaux sociaux et

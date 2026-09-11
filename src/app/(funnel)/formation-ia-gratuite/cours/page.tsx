@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { RevealObserver } from "@/components/cyber/RevealObserver";
+import { RevealObserver } from "@/components/motion/RevealObserver";
 import { CineHero } from "@/components/funnel/CineHero";
 import { CourseWelcome } from "@/components/funnel/CourseWelcome";
 import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
@@ -8,6 +8,9 @@ import { FilmStrip } from "@/components/funnel/FilmStrip";
 import { FunnelFrame } from "@/components/funnel/FunnelFrame";
 import { TrackedLink } from "@/components/funnel/TrackedLink";
 import { VideoFacade } from "@/components/VideoFacade";
+import { Plus } from "@/components/FaqSection";
+import { Arrow } from "@/components/ui/Cta";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   FUNNEL_DAYS,
   FUNNEL_PATHS,
@@ -28,11 +31,6 @@ export const metadata: Metadata = buildPageMetadata({
   noIndex: true,
 });
 
-const ctaSolid =
-  "heading-font inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl bg-[#111111] px-5 py-3 text-xs uppercase tracking-[0.08em] text-white transition-[background-color,transform] duration-200 hover:bg-[#2a2a2a]";
-const ctaGhost =
-  "inline-flex min-h-12 cursor-pointer items-center justify-center rounded-xl border border-[rgba(17,17,17,0.4)] px-5 py-3 text-sm font-medium text-[var(--cream)] transition-[border-color,background-color] duration-200 hover:border-[var(--cream)] hover:bg-[rgba(17,17,17,0.08)]";
-
 export default async function FormationCoursePage() {
   const thumbnails = await Promise.all(
     FUNNEL_DAYS.map((d) => getVimeoThumbnail(d.vimeoId)),
@@ -49,52 +47,44 @@ export default async function FormationCoursePage() {
           alt: "Photogramme : une silhouette en manteau au bord d’une terrasse de béton monumentale au-dessus de la ville, à l’aube",
         }}
       >
-        <div className="mx-auto w-full max-w-5xl px-4 pb-12 pt-10 text-center sm:px-6 sm:pt-16">
+        <div className="container-x flex flex-1 flex-col justify-end pb-12 pt-12 sm:pt-16">
           <Suspense fallback={null}>
             <CourseWelcome />
           </Suspense>
-          <p className="cine-timecode fade-up-reveal">
-            Challenge gratuit · 3 jours · accessible aux débutants
-          </p>
-          <h1 className="cyber-title fade-up-reveal mx-auto mt-4 max-w-3xl text-[clamp(1.6rem,4.8vw,2.75rem)] text-white" data-delay="0.1">
-            Vous avez la méthode. Voici vos trois vidéos.
-            <br />
-            <span className="text-[var(--orange)]">
-              La première commence maintenant.
-            </span>
+          <p className="meta meta-strong reveal">00 / Challenge gratuit · 3 jours · accessible aux débutants</p>
+          <h1 className="reveal mt-6 max-w-4xl text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] tracking-[-0.03em] text-cream" data-delay="0.1">
+            Vous avez la méthode. Voici vos trois vidéos.{" "}
+            <span className="text-fog">La première commence maintenant.</span>
           </h1>
-          <p className="cine-text-muted fade-up-reveal mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg" data-delay="0.2">
+          <p className="lede reveal mt-8 max-w-2xl" data-delay="0.2">
             Regardez la vidéo du jour, faites sa mission, passez à la suivante.
             En trois jours, vous construisez votre film avant de générer : des
             personnages qui restent les mêmes, des plans plus forts, et bien
             moins d’essais qui brûlent votre temps et vos crédits.
           </p>
 
-          <nav aria-label="Les trois jours" className="fade-up-reveal mt-8" data-delay="0.3">
-            <ol className="mx-auto grid max-w-3xl gap-2 sm:grid-cols-3">
+          <nav aria-label="Les trois jours" className="reveal mt-10 border-t border-line" data-delay="0.3">
+            <ol className="grid sm:grid-cols-3">
               {FUNNEL_DAYS.map((d, i) => (
-                <li key={d.slug}>
+                <li key={d.slug} className="border-b border-line sm:border-b-0 sm:border-r sm:last:border-r-0">
                   <a
                     href={`#${d.slug}`}
-                    className="cine-card flex min-h-12 items-center justify-center gap-2 !rounded-xl px-4 py-2.5 text-sm text-white transition-colors duration-200 hover:border-white/40"
+                    className="group flex items-baseline justify-between gap-4 py-4 no-underline sm:pr-6"
                   >
-                    <span className="cine-timecode whitespace-nowrap !text-[var(--orange)]">
-                      Jour {d.n}
+                    <span>
+                      <span className="meta meta-strong">Jour {d.n}</span>
+                      <span className="mt-1 block text-[15px] text-cream">{d.shortTitle}</span>
                     </span>
-                    <span>{d.shortTitle}</span>
-                    {formatMinutes(thumbnails[i]?.duration) ? (
-                      <span className="cine-timecode whitespace-nowrap">
-                        {formatMinutes(thumbnails[i]?.duration)}
-                      </span>
-                    ) : null}
+                    <span className="meta tabular whitespace-nowrap">
+                      {formatMinutes(thumbnails[i]?.duration) ?? ""}
+                    </span>
                   </a>
                 </li>
               ))}
             </ol>
           </nav>
-          <p className="cine-text-label fade-up-reveal mt-6 text-xs" data-delay="0.4">
-            La méthode derrière des œuvres primées à Séoul, Hollywood et aux
-            Mondial Chroma Awards.
+          <p className="meta reveal mt-6 text-[10px]" data-delay="0.4">
+            La méthode derrière des œuvres primées à Séoul, Hollywood et aux Mondial Chroma Awards.
           </p>
         </div>
       </CineHero>
@@ -106,53 +96,39 @@ export default async function FormationCoursePage() {
           <section
             key={d.slug}
             id={d.slug}
-            className="cyber-divider relative scroll-mt-6 overflow-hidden"
+            className="section scroll-mt-6 border-t border-line"
             aria-labelledby={`${d.slug}-title`}
           >
-            <div
-              className={`cine-leak ${i % 2 === 1 ? "cine-leak-blue" : "cine-leak-orange"}`}
-              style={{ width: 460, height: 460, [i % 2 === 1 ? "left" : "right"]: "-12%", top: "-10%" }}
-              aria-hidden
-            />
-            <div className="fade-up-reveal relative mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:py-16">
-              <div
-                className={`grid gap-8 lg:grid-cols-2 lg:gap-12 ${
-                  reversed ? "lg:[&>*:first-child]:order-2" : ""
-                }`}
-              >
-                <div className="min-w-0">
+            <div className="container-x">
+              <div className={`grid-12 reveal gap-y-10 ${reversed ? "lg:[&>*:first-child]:order-2" : ""}`}>
+                <div className="col-span-12 min-w-0 lg:col-span-7">
                   <VideoFacade
                     provider="vimeo"
                     videoId={d.vimeoId}
                     title={`${d.kicker} : ${d.title}`}
                     caption={d.kicker}
+                    meta={formatMinutes(thumbnails[i]?.duration) ?? undefined}
                     poster={thumbnails[i]?.url}
                     posterAlt={`Vignette de la vidéo ${d.kicker}`}
+                    sizes="(max-width: 1024px) 100vw, 58vw"
                   />
                 </div>
-                <div className="min-w-0">
-                  <p className="heading-font text-xs uppercase tracking-[0.1em] text-[var(--orange-text)]">
-                    {d.kicker}
-                  </p>
-                  <h2
-                    id={`${d.slug}-title`}
-                    className="cyber-title mt-3 text-xl sm:text-2xl"
-                  >
+                <div className="col-span-12 min-w-0 lg:col-span-5">
+                  <p className="meta"><span className="meta-strong tabular">0{d.n}</span> &nbsp;/&nbsp; {d.kicker}</p>
+                  <h2 id={`${d.slug}-title`} className="h-block mt-4 text-cream">
                     {d.title}
                   </h2>
-                  <p className="mt-4 leading-relaxed text-[var(--muted)]">{d.intro}</p>
-                  <ul className="mt-5 space-y-2.5">
+                  <p className="mt-4 text-[15px] leading-relaxed text-fog">{d.intro}</p>
+                  <ul className="mt-6 border-t border-line">
                     {d.points.map((p) => (
-                      <li key={p} className="flex gap-3 text-[15px] leading-relaxed text-[var(--cream)]">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="mt-1 shrink-0 text-[var(--orange-text)]" aria-hidden>
-                          <path d="M5 12.5l4.5 4.5L19 7.5" />
-                        </svg>
+                      <li key={p} className="flex gap-3 border-b border-line py-3 text-[15px] leading-relaxed text-stone">
+                        <span className="mt-[0.7em] h-px w-4 shrink-0 bg-fog" aria-hidden />
                         <span>{p}</span>
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-5 rounded-xl border border-[rgba(17,17,17,0.14)] bg-[rgba(17,17,17,0.05)] px-4 py-3 text-sm leading-relaxed text-[var(--cream)]">
-                    <span className="text-[rgba(17,17,17,0.62)]">Mission du jour : </span>
+                  <p className="mt-5 text-sm leading-relaxed text-stone">
+                    <span className="meta mr-2">Mission du jour</span>
                     {d.mission}
                   </p>
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -160,17 +136,19 @@ export default async function FormationCoursePage() {
                       href={SCREENWEAVER_URL}
                       event="click_screenweaver"
                       detail={d.slug}
-                      className={ctaSolid}
+                      className="btn btn-primary"
                     >
-                      {d.screenweaverCta}
+                      <span>{d.screenweaverCta}</span>
+                      <Arrow />
                     </TrackedLink>
                     <TrackedLink
                       href={SKOOL_URL}
                       event="click_skool"
                       detail={d.slug}
-                      className={ctaGhost}
+                      className="btn"
                     >
-                      {d.skoolCta}
+                      <span>{d.skoolCta}</span>
+                      <Arrow />
                     </TrackedLink>
                   </div>
                 </div>
@@ -181,60 +159,40 @@ export default async function FormationCoursePage() {
       })}
 
       {/* La suite : AI Studios sur Skool. */}
-      <section
-        id="ai-studios"
-        className="cyber-divider scroll-mt-6"
-        aria-labelledby="ai-studios-title"
-      >
-        <div className="mx-auto max-w-5xl px-4 py-14 sm:px-6 lg:py-20">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
-              La suite
-            </p>
-            <h2 id="ai-studios-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Comment passer de six plans à des films complets, sans repartir de zéro
-            </h2>
-            <p className="mt-4 leading-relaxed text-[var(--muted)]">
-              Vous savez maintenant par où commencer et pourquoi vos anciens
-              essais brûlaient votre budget. Ce qui reste à apprendre, c’est la
-              cohérence des personnages sur un film entier, la mise en scène, le
-              mouvement, le montage, le son. C’est ce qu’on travaille dans AI
-              Studios, avec des retours sur vos propres plans.
-            </p>
-          </div>
+      <section id="ai-studios" className="section scroll-mt-6 border-t border-line" aria-labelledby="ai-studios-title">
+        <div className="container-x">
+          <SectionHeader
+            index="04"
+            kicker="La suite"
+            id="ai-studios-title"
+            title="Comment passer de six plans à des films complets, sans repartir de zéro"
+            lede="Vous savez maintenant par où commencer et pourquoi vos anciens essais brûlaient votre budget. Ce qui reste à apprendre, c’est la cohérence des personnages sur un film entier, la mise en scène, le mouvement, le montage, le son. C’est ce qu’on travaille dans AI Studios, avec des retours sur vos propres plans."
+          />
 
-          <div className="mx-auto mt-10 max-w-4xl">
+          <div className="mt-14">
             <FilmStrip
               stills={COURSE_STILLS}
-              caption="Ce que donne la méthode complète : extraits de mes films et séries IA"
+              caption="Planche 02 · Ce que donne la méthode complète : extraits de mes films et séries IA"
             />
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10">
-            <div className="cyber-card p-6 sm:p-8">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
-                La communauté AI Studios
-              </p>
-              <h3 className="cyber-title mt-3 text-xl sm:text-2xl">
-                Ce que vous débloquez aujourd’hui
-              </h3>
-              <p className="mt-4 leading-relaxed text-[var(--muted)]">
+          <div className="grid-12 mt-16 gap-y-12">
+            <div className="col-span-12 border border-line-strong p-6 sm:p-8 lg:col-span-6">
+              <p className="meta">La communauté AI Studios</p>
+              <h3 className="h-block mt-4 text-cream">Ce que vous débloquez aujourd’hui</h3>
+              <p className="mt-4 text-[15px] leading-relaxed text-fog">
                 Le module Étape 1 de la formation, la Méthode Film Mental en
                 cadeau, et une communauté privée de {SKOOL_OFFER.members}{" "}
                 créateurs IA qui partagent leurs plans et leurs prompts chaque
                 jour. Vous postez votre storyboard du challenge, vous avez des
                 retours.
               </p>
-              <p className="mt-6 flex items-baseline gap-2">
-                <span className="heading-font text-4xl text-[var(--cream)]">
-                  {SKOOL_OFFER.priceLabel}
-                </span>
-                <span className="text-sm text-[var(--muted)]">{SKOOL_OFFER.period}</span>
+              <p className="mt-8 flex items-baseline gap-3">
+                <span className="display text-5xl leading-none text-cream">{SKOOL_OFFER.priceLabel}</span>
+                <span className="text-sm text-fog">{SKOOL_OFFER.period}</span>
               </p>
-              <p className="mt-1 text-xs uppercase tracking-[0.1em] text-[rgba(17,17,17,0.62)]">
-                Moins qu’un café par semaine
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
+              <p className="meta mt-2">Moins qu’un café par semaine</p>
+              <p className="mt-4 text-sm leading-relaxed text-fog">
                 Sans engagement, annulable en un clic à tout moment. Vous gardez
                 l’accès tant que vous êtes membre, vous partez quand vous voulez.
               </p>
@@ -243,86 +201,82 @@ export default async function FormationCoursePage() {
                   href={SKOOL_URL}
                   event="click_skool"
                   detail="offre"
-                  className={`${ctaSolid} w-full sm:w-auto`}
+                  className="btn btn-primary btn-lg w-full sm:w-auto"
                 >
-                  Débloquer l’Étape 1 pour {SKOOL_OFFER.priceLabel} par mois
+                  <span>Débloquer l’Étape 1 pour {SKOOL_OFFER.priceLabel} par mois</span>
+                  <Arrow />
                 </TrackedLink>
               </div>
             </div>
 
-            <div className="min-w-0">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
-                Ce que vous obtenez
-              </p>
-              <ul className="mt-4 space-y-3">
-                {SKOOL_OFFER.includes.map((item) => (
-                  <li key={item} className="flex gap-3 text-[15px] leading-relaxed text-[var(--cream)]">
-                    <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--orange)]" aria-hidden />
+            <div className="col-span-12 min-w-0 lg:col-span-5 lg:col-start-8">
+              <p className="meta">Ce que vous obtenez</p>
+              <ul className="mt-4 border-t border-line">
+                {SKOOL_OFFER.includes.map((item, i) => (
+                  <li key={item} className="grid grid-cols-[2.5rem_1fr] gap-3 border-b border-line py-3 text-[15px] leading-relaxed text-stone">
+                    <span className="meta tabular pt-1">0{i + 1}</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm leading-relaxed text-[rgba(17,17,17,0.62)]">
+              <p className="mt-4 text-sm leading-relaxed text-fog">
                 Les modules suivants (Étapes 2 à 5, masterclass et bonus) font
                 partie de l’accès annuel complet.
               </p>
 
-              <p className="mt-8 text-[11px] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.62)]">
+              <p className="meta mt-10">
                 Ce qu’ils en disent · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
               </p>
-              <ul className="mt-4 space-y-4">
+              <ul className="mt-4">
                 {SKOOL_OFFER.reviews.map((r) => (
-                  <li key={r.author} className="border-l-2 border-[rgba(17,17,17,0.25)] pl-4">
-                    <p className="text-[15px] leading-relaxed text-[var(--cream)]">
-                      « {r.text} »
-                    </p>
-                    <p className="mt-1.5 text-xs text-[rgba(17,17,17,0.62)]">{r.author}</p>
+                  <li key={r.author} className="border-t border-line py-4 last:border-b">
+                    <p className="serif text-[1.2rem] leading-snug text-cream">« {r.text} »</p>
+                    <p className="meta mt-2">{r.author}</p>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
 
-          <div className="mx-auto mt-14 max-w-2xl">
-            <h3 className="cyber-title text-lg sm:text-xl">Questions fréquentes</h3>
-            <div className="mt-4 divide-y divide-[rgba(17,17,17,0.14)] border-y border-[rgba(17,17,17,0.14)]">
+          <div className="grid-12 mt-16 gap-y-8 border-t border-line pt-12">
+            <div className="col-span-12 lg:col-span-4">
+              <p className="meta"><span className="meta-strong">05</span> &nbsp;/&nbsp; Questions fréquentes</p>
+            </div>
+            <div className="col-span-12 lg:col-span-7 lg:col-start-6">
               {SKOOL_OFFER.faq.map((f) => (
-                <details key={f.q} className="group">
-                  <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[15px] font-medium text-[var(--cream)] [&::-webkit-details-marker]:hidden">
+                <details key={f.q} className="faq-item">
+                  <summary>
                     <span>{f.q}</span>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="shrink-0 text-[var(--orange-text)] transition-transform duration-200 group-open:rotate-45" aria-hidden>
-                      <path d="M8 2v12M2 8h12" />
-                    </svg>
+                    <Plus />
                   </summary>
-                  <p className="pb-4 text-[15px] leading-relaxed text-[var(--muted)]">{f.a}</p>
+                  <p className="text-[15px] leading-relaxed text-fog">{f.a}</p>
                 </details>
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
-      <section className="cine-band cine-grain cine-vignette cine-letterbox" aria-labelledby="final-title">
-        <div className="cine-glow cine-glow-orange cine-drift" style={{ width: 620, height: 620, right: "-10%", top: "-30%" }} aria-hidden />
-        <div className="relative z-[5] mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 lg:py-24">
-          <p className="cine-timecode fade-up-reveal">Dernière séquence</p>
-          <p id="final-title" className="cyber-title fade-up-reveal mt-3 text-xl text-white sm:text-2xl" data-delay="0.1">
-            Le challenge vous a donné la direction.
-          </p>
-          <p className="cine-text-muted fade-up-reveal mt-3 leading-relaxed" data-delay="0.2">
-            AI Studios vous donne l’exécution, les retours sur vos plans et la
-            régularité, pour {SKOOL_OFFER.priceLabel} par mois, sans engagement.
-          </p>
-          <div className="fade-up-reveal mt-6" data-delay="0.3">
-            <TrackedLink
-              href={SKOOL_URL}
-              event="click_skool"
-              detail="final"
-              className="cine-cta"
-            >
-              Rejoindre AI Studios pour {SKOOL_OFFER.priceLabel} par mois
-            </TrackedLink>
+      <section className="band band-navy grain border-t border-line" aria-labelledby="final-title">
+        <div className="glow drift" style={{ width: 560, height: 560, right: "-10%", top: "-30%" }} aria-hidden />
+        <div className="container-x relative z-[5] section">
+          <div className="grid-12 items-end gap-y-10">
+            <div className="col-span-12 lg:col-span-7">
+              <p className="meta meta-strong reveal">06 / Dernière séquence</p>
+              <p id="final-title" className="h-section reveal mt-5 text-cream" data-delay="0.1">
+                Le challenge vous a donné la direction.
+              </p>
+              <p className="reveal mt-5 max-w-lg text-[15px] leading-relaxed text-fog" data-delay="0.2">
+                AI Studios vous donne l’exécution, les retours sur vos plans et la
+                régularité, pour {SKOOL_OFFER.priceLabel} par mois, sans engagement.
+              </p>
+            </div>
+            <div className="reveal col-span-12 lg:col-span-5 lg:text-right" data-delay="0.3">
+              <TrackedLink href={SKOOL_URL} event="click_skool" detail="final" className="btn btn-primary btn-lg">
+                <span>Rejoindre AI Studios pour {SKOOL_OFFER.priceLabel} par mois</span>
+                <Arrow />
+              </TrackedLink>
+            </div>
           </div>
         </div>
       </section>
