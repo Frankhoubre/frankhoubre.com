@@ -96,7 +96,59 @@ export type FunnelStore = {
   getRecent(limit: number): Promise<RecentEvent[]>;
   /** Compteur avec expiration (limitation de débit). Retourne la valeur. */
   bump(key: string, ttlSeconds: number): Promise<number>;
+  /**
+   * Efface tous les compteurs d'événements email (totaux, jours, sources,
+   * fil récent) puis les reconstruit à partir de l'état de séquence de chaque
+   * inscrit. Sert quand le webhook a compté des emails d'un autre projet.
+   */
+  rebuildEmailStats(): Promise<{ subscribers: number; events: number }>;
 };
+
+const EMAIL_EVENTS: FunnelEvent[] = [
+  "email_sent",
+  "email_delivered",
+  "email_opened",
+  "email_clicked",
+  "email_bounced",
+  "email_complained",
+];
+
+/** Événements à recréer pour un email de la séquence, d'après son statut. */
+function eventsForStatus(status: SequenceEmailStatus): FunnelEvent[] {
+  switch (status) {
+    case "programme":
+    case "annule":
+    case "envoye":
+      return ["email_sent"];
+    case "delivre":
+      return ["email_sent", "email_delivered"];
+    case "ouvert":
+      return ["email_sent", "email_delivered", "email_opened"];
+    case "clique":
+      return ["email_sent", "email_delivered", "email_opened", "email_clicked"];
+    case "bounce":
+      return ["email_sent", "email_bounced"];
+    case "spam":
+      return ["email_sent", "email_delivered", "email_complained"];
+    default:
+      return [];
+  }
+}
+
+type RebuiltEvent = { event: FunnelEvent; date: string; source: string };
+
+/** Liste des événements email à recréer pour un inscrit. */
+function rebuildFromSubscriber(sub: Subscriber): RebuiltEvent[] {
+  const out: RebuiltEvent[] = [];
+  const sentDate = funnelDateKey(new Date(sub.createdAt));
+  for (const [step, state] of Object.entries(sub.emails ?? {})) {
+    const when = state.updatedAt ? funnelDateKey(new Date(state.updatedAt)) : sentDate;
+    for (const event of eventsForStatus(state.status)) {
+      out.push({ event, date: event === "email_sent" ? sentDate : when, source: step });
+    }
+  }
+  return out;
+}
 
 const KEY = {
   day: (d: string) => `funnel:d:${d}`,
@@ -301,6 +353,46 @@ function createRedisStore(redis: Redis): FunnelStore {
       const [n] = await p.exec<[number, unknown]>();
       return Number(n);
     },
+
+    async rebuildEmailStats() {
+      // 1. Purge : champs email des totaux et de chaque jour, sources, fil récent.
+      const dayKeys = await redis.keys("funnel:d:*");
+      const purge = redis.pipeline();
+      purge.hdel(KEY.totals, ...EMAIL_EVENTS);
+      for (const k of dayKeys) purge.hdel(k, ...EMAIL_EVENTS);
+      for (const e of EMAIL_EVENTS) purge.del(KEY.src(e));
+      await purge.exec();
+      const recent = await this.getRecent(RECENT_MAX);
+      const kept = recent.filter((r) => !EMAIL_EVENTS.includes(r.event));
+      const rp = redis.pipeline();
+      rp.del(KEY.recent);
+      if (kept.length) rp.rpush(KEY.recent, ...kept.map((r) => JSON.stringify(r)));
+      await rp.exec();
+
+      // 2. Reconstruction depuis l'état de séquence de chaque inscrit.
+      let subscribers = 0;
+      let events = 0;
+      const page = 200;
+      for (let offset = 0; ; offset += page) {
+        const batch = await this.listSubscribers(page, offset);
+        if (!batch.length) break;
+        const p = redis.pipeline();
+        let n = 0;
+        for (const sub of batch) {
+          subscribers += 1;
+          for (const ev of rebuildFromSubscriber(sub)) {
+            n += 1;
+            p.hincrby(KEY.day(ev.date), ev.event, 1);
+            p.hincrby(KEY.totals, ev.event, 1);
+            p.hincrby(KEY.src(ev.event), ev.source, 1);
+          }
+        }
+        if (n) await p.exec();
+        events += n;
+        if (batch.length < page) break;
+      }
+      return { subscribers, events };
+    },
   };
 }
 
@@ -415,6 +507,28 @@ function createMemoryStore(): FunnelStore {
       }
       cur.n += 1;
       return cur.n;
+    },
+    async rebuildEmailStats() {
+      for (const e of EMAIL_EVENTS) {
+        delete state.totals[e];
+        for (const day of state.days.values()) delete day[e];
+        state.sources.delete(e);
+      }
+      state.recent = state.recent.filter((r) => !EMAIL_EVENTS.includes(r.event));
+      let events = 0;
+      for (const sub of state.subs.values()) {
+        for (const ev of rebuildFromSubscriber(sub)) {
+          events += 1;
+          const day = state.days.get(ev.date) ?? {};
+          day[ev.event] = (day[ev.event] ?? 0) + 1;
+          state.days.set(ev.date, day);
+          state.totals[ev.event] = (state.totals[ev.event] ?? 0) + 1;
+          const src = state.sources.get(ev.event) ?? {};
+          src[ev.source] = (src[ev.source] ?? 0) + 1;
+          state.sources.set(ev.event, src);
+        }
+      }
+      return { subscribers: state.subs.size, events };
     },
   };
 }

@@ -38,6 +38,19 @@ const STATUS_RANK: Record<SequenceEmailStatus, number> = {
   spam: 6,
 };
 
+const FUNNEL_TAG = "formation-ia-gratuite";
+
+/** Resend renvoie les tags en objet ou en tableau {name, value} selon les versions. */
+function normalizeTags(
+  raw: Record<string, string> | { name: string; value: string }[] | undefined,
+): Record<string, string> {
+  if (!raw) return {};
+  if (Array.isArray(raw)) {
+    return Object.fromEntries(raw.map((t) => [t.name, t.value]));
+  }
+  return raw;
+}
+
 const LABELS: Record<string, string> = {
   "email.delivered": "délivré",
   "email.opened": "ouvert",
@@ -87,7 +100,11 @@ export async function POST(req: NextRequest) {
 
   let payload: {
     type?: string;
-    data?: { email_id?: string; to?: string[]; tags?: Record<string, string> };
+    data?: {
+      email_id?: string;
+      to?: string[];
+      tags?: Record<string, string> | { name: string; value: string }[];
+    };
   };
   try {
     payload = JSON.parse(body);
@@ -98,10 +115,11 @@ export async function POST(req: NextRequest) {
   const event = payload.type ? EVENT_MAP[payload.type] : undefined;
   if (!event) return NextResponse.json({ ok: true, ignored: payload.type });
 
-  // Seuls les emails du funnel comptent (le tag est posé à l'envoi).
-  const tags = payload.data?.tags ?? {};
-  if (tags.funnel && tags.funnel !== "formation-ia-gratuite") {
-    return NextResponse.json({ ok: true, ignored: "other-funnel" });
+  // Le compte Resend est partagé avec d'autres projets : seuls les emails
+  // tagués par ce tunnel à l'envoi comptent, tout le reste est ignoré.
+  const tags = normalizeTags(payload.data?.tags);
+  if (tags.funnel !== FUNNEL_TAG) {
+    return NextResponse.json({ ok: true, ignored: "not-this-funnel" });
   }
 
   const to = payload.data?.to?.[0]?.toLowerCase();
