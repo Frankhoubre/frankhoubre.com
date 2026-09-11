@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { RevealObserver } from "@/components/cyber/RevealObserver";
+import { RevealObserver } from "@/components/motion/RevealObserver";
 import { CineHero } from "@/components/funnel/CineHero";
 import { FilmStrip } from "@/components/funnel/FilmStrip";
 import { FunnelBeacon } from "@/components/funnel/FunnelBeacon";
@@ -10,6 +10,9 @@ import { MethodPipeline } from "@/components/funnel/MethodPipeline";
 import { OptInForm } from "@/components/funnel/OptInForm";
 import { StickyCta } from "@/components/funnel/StickyCta";
 import { JsonLd } from "@/components/JsonLd";
+import { Plus } from "@/components/FaqSection";
+import { Arrow } from "@/components/ui/Cta";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   FUNNEL_AWARDS,
   FUNNEL_DAYS,
@@ -158,113 +161,85 @@ export default async function FormationOptInPage() {
 
       {/* Ouverture : le hook, ce qu'on obtient, en combien de temps, à quel prix, et le formulaire. */}
       <CineHero base={homeHeroImages.base} reveal={homeHeroImages.reveal}>
-        <div className="mx-auto grid w-full max-w-6xl flex-1 gap-10 px-4 pb-10 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-14 lg:pb-16 lg:pt-20">
+        <div className="container-x grid flex-1 gap-12 pb-12 pt-12 sm:pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16 lg:pb-16 lg:pt-20">
           <div className="min-w-0">
-            <p className="cine-timecode fade-up-reveal">
-              Formation offerte · 3 vidéos · {totalLabel} · débutants bienvenus
+            <p className="meta meta-strong reveal">
+              00 / Formation offerte · 3 vidéos · {totalLabel} · débutants bienvenus
             </p>
             <h1
               id="hero-title"
-              className="cyber-title fade-up-reveal mt-5 text-[clamp(1.45rem,3.4vw,2.5rem)] text-white"
+              className="reveal mt-6 text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] tracking-[-0.03em] text-cream"
               data-delay="0.1"
             >
-              Comment réaliser un film IA cohérent en 3 jours,
-              <br className="hidden sm:block" />{" "}
-              <span className="text-[var(--orange)]">
-                sans jeter vos crédits par les fenêtres.
-              </span>
+              Comment réaliser un film IA cohérent en 3 jours,{" "}
+              <span className="text-fog">sans jeter vos crédits par les fenêtres.</span>
             </h1>
-            <p
-              className="cine-text-muted fade-up-reveal mt-6 max-w-xl text-lg leading-relaxed sm:text-xl"
-              data-delay="0.2"
-            >
+            <p className="lede reveal mt-8 max-w-xl" data-delay="0.2">
               La méthode que j’utilise sur mes propres films : l’idée en une
               phrase, le storyboard validé en image, et seulement ensuite la
               génération. Des personnages qui restent les mêmes d’un plan à
               l’autre, et jusqu’à 80 % de crédits IA économisés.
             </p>
 
-            <dl className="fade-up-reveal mt-8 grid max-w-xl grid-cols-3 gap-3" data-delay="0.3">
+            <dl className="reveal mt-10 grid max-w-xl grid-cols-3 gap-4 border-t border-line pt-6" data-delay="0.3">
               {[
                 ["Accès immédiat", "La vidéo 1 s’ouvre dès l’inscription"],
                 [totalLabel, "de vidéo, une mission courte par jour"],
                 ["0 €", "Sans carte bancaire, rien à installer"],
               ].map(([k, v]) => (
-                <div key={k} className="min-w-0 border-l-2 border-[var(--orange)] pl-3">
-                  <dt className="heading-font text-base text-white sm:text-lg">{k}</dt>
-                  <dd className="cine-text-label mt-1 text-[11px] leading-snug sm:text-xs">{v}</dd>
+                <div key={k} className="min-w-0">
+                  <dt className="display text-[clamp(1.1rem,2vw,1.6rem)] normal-case leading-none text-cream">{k}</dt>
+                  <dd className="meta mt-2 text-[10px] leading-snug normal-case tracking-[0.06em]">{v}</dd>
                 </div>
               ))}
             </dl>
 
-            <p
-              className="cine-text-muted fade-up-reveal mt-8 max-w-xl text-sm leading-relaxed"
-              data-delay="0.4"
-            >
+            <p className="meta reveal mt-8 max-w-xl text-[10px] leading-relaxed" data-delay="0.4">
               La méthode derrière Ronces, VOIDBORN et Lost Garden, primés ou
               sélectionnés dans {FUNNEL_AWARDS.length} festivals internationaux.
             </p>
-            <div className="mt-10 hidden items-center gap-4 lg:flex" aria-hidden>
-              <span className="cine-scroll-cue" />
-              <span className="cine-timecode">Défiler</span>
-            </div>
           </div>
 
           <div
             id={FORM_ID}
-            className="cine-card fade-up-reveal scroll-mt-6 self-center p-5 sm:p-7"
+            className="reveal scroll-mt-6 border border-line-strong bg-charcoal/85 p-5 backdrop-blur-md sm:p-7"
             data-delay="0.25"
           >
-            <p className="cine-timecode">Où envoyer vos accès ?</p>
-            <p className="mt-2 text-lg leading-snug text-white">
+            <p className="meta">Où envoyer vos accès ?</p>
+            <p className="h-block mt-3 text-cream">
               Recevez les 3 vidéos et commencez la première tout de suite.
             </p>
-            <div className="mt-5">
-              <OptInForm tone="dark" />
+            <div className="mt-6">
+              <OptInForm />
             </div>
           </div>
         </div>
       </CineHero>
 
       {/* L'enfer actuel, puis ce qu'on fait à la place. */}
-      <section className="relative overflow-hidden" aria-labelledby="pain-title">
-        <div className="cine-leak cine-leak-blue" style={{ width: 520, height: 520, left: "-12%", top: "-20%" }} aria-hidden />
-        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="max-w-2xl fade-up-reveal">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-              Le problème
-            </p>
-            <h2 id="pain-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Pourquoi vos vidéos IA ne ressemblent pas à un film
-            </h2>
-          </div>
-          <ol className="mt-8 grid gap-4 md:grid-cols-3">
+      <section className="section" aria-labelledby="pain-title">
+        <div className="container-x">
+          <SectionHeader
+            index="01"
+            kicker="Le problème"
+            id="pain-title"
+            title="Pourquoi vos vidéos IA ne ressemblent pas à un film"
+          />
+          <ol className="mt-14 grid gap-10 border-t border-line pt-10 md:grid-cols-3 md:gap-8">
             {PAINS.map((p, i) => (
-              <li
-                key={p.title}
-                className="cyber-card fade-up-reveal p-5 sm:p-6"
-                data-delay={String(0.1 * i)}
-              >
-                <p className="heading-font text-[11px] tracking-[0.12em] text-[var(--label)]">
-                  0{i + 1}
-                </p>
-                <p className="heading-font mt-3 text-sm uppercase tracking-[0.04em] text-[var(--cream)]">
-                  {p.title}
-                </p>
-                <p className="mt-2 text-[15px] leading-relaxed text-[var(--muted)]">{p.text}</p>
+              <li key={p.title} className="reveal" data-delay={String(0.1 * i)}>
+                <p className="meta meta-strong tabular">0{i + 1}</p>
+                <p className="h-item mt-5 text-cream">{p.title}</p>
+                <p className="mt-3 text-[15px] leading-relaxed text-fog">{p.text}</p>
               </li>
             ))}
           </ol>
 
-          <div className="mt-14 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-            <div className="fade-up-reveal">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                Ce qu’on fait à la place
-              </p>
-              <h3 className="cyber-title mt-3 text-xl sm:text-2xl">
-                On construit le film avant de générer.
-              </h3>
-              <p className="mt-5 leading-relaxed text-[var(--muted)]">
+          <div className="grid-12 mt-20 gap-y-12 border-t border-line pt-14">
+            <div className="col-span-12 reveal lg:col-span-5">
+              <p className="meta">Ce qu’on fait à la place</p>
+              <h3 className="h-section mt-5">On construit le film avant de générer.</h3>
+              <p className="mt-6 text-[1.05rem] leading-relaxed text-fog">
                 L’IA n’est pas trop chère. Vous lui demandez de réfléchir à
                 votre place, et chaque tentative se paie en crédits. Générer une
                 image coûte bien moins cher qu’une vidéo : on valide donc chaque
@@ -273,10 +248,8 @@ export default async function FormationOptInPage() {
                 en place en trois jours.
               </p>
             </div>
-            <div className="fade-up-reveal" data-delay="0.15">
-              <p className="mb-4 text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                La méthode en quatre temps
-              </p>
+            <div className="col-span-12 reveal lg:col-span-6 lg:col-start-7" data-delay="0.15">
+              <p className="meta mb-4">La méthode en quatre temps</p>
               <MethodPipeline />
             </div>
           </div>
@@ -284,50 +257,31 @@ export default async function FormationOptInPage() {
       </section>
 
       {/* Ce que la personne reçoit, poste par poste, et à quel prix. */}
-      <section className="cyber-divider relative overflow-hidden" aria-labelledby="stack-title">
-        <div className="cine-leak cine-leak-orange" style={{ width: 620, height: 620, right: "-14%", top: "10%" }} aria-hidden />
-        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="max-w-2xl fade-up-reveal">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-              Ce que vous recevez
-            </p>
-            <h2 id="stack-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Trois vidéos, trois missions, un film sur les rails
-            </h2>
-            <p className="mt-4 leading-relaxed text-[var(--muted)]">
-              Chaque vidéo vous fait faire une chose précise. À la fin des trois
-              jours, vous avez une idée tenue en une phrase, un storyboard
-              validé et un projet de montage organisé comme sur une vraie
-              production.
-            </p>
-          </div>
-          <ol className="mt-10 grid gap-6 lg:grid-cols-3">
+      <section className="section border-t border-line" aria-labelledby="stack-title">
+        <div className="container-x">
+          <SectionHeader
+            index="02"
+            kicker="Ce que vous recevez"
+            id="stack-title"
+            title="Trois vidéos, trois missions, un film sur les rails"
+            lede="Chaque vidéo vous fait faire une chose précise. À la fin des trois jours, vous avez une idée tenue en une phrase, un storyboard validé et un projet de montage organisé comme sur une vraie production."
+            aside={<p className="meta">{totalLabel} au total</p>}
+          />
+          <ol className="mt-14 grid gap-px border border-line bg-line lg:grid-cols-3">
             {FUNNEL_DAYS.map((d, i) => {
               const tc = formatTimecode(metas[i]?.duration);
               return (
-                <li
-                  key={d.slug}
-                  className="cyber-card fade-up-reveal flex flex-col p-6"
-                  data-delay={String(0.1 * i)}
-                >
+                <li key={d.slug} className="reveal flex flex-col bg-charcoal p-6 sm:p-7" data-delay={String(0.1 * i)}>
                   <div className="flex items-baseline justify-between gap-4">
-                    <span className="heading-font text-3xl leading-none text-[var(--orange-text)]">
-                      0{d.n}
-                    </span>
-                    {tc ? (
-                      <span className="heading-font rounded-full border border-[rgba(17,17,17,0.14)] px-2.5 py-1 text-[11px] tracking-[0.14em] text-[var(--label)]">
-                        {tc}
-                      </span>
-                    ) : null}
+                    <span className="display text-4xl leading-none text-cream">0{d.n}</span>
+                    {tc ? <span className="meta tabular">{tc}</span> : null}
                   </div>
-                  <h3 className="heading-font mt-4 text-sm uppercase tracking-[0.06em] text-[var(--cream)]">
+                  <h3 className="h-item mt-6 text-cream">
                     Vidéo {d.n} · {d.shortTitle}
                   </h3>
-                  <p className="mt-3 flex-1 text-[15px] leading-relaxed text-[var(--muted)]">
-                    {d.intro}
-                  </p>
-                  <p className="mt-4 rounded-xl bg-[rgba(17,17,17,0.04)] px-4 py-3 text-sm leading-relaxed text-[var(--cream)]">
-                    <span className="text-[var(--label)]">Votre mission : </span>
+                  <p className="mt-3 flex-1 text-[15px] leading-relaxed text-fog">{d.intro}</p>
+                  <p className="mt-5 border-t border-line pt-4 text-sm leading-relaxed text-stone">
+                    <span className="meta mr-2">Mission</span>
                     {d.mission}
                   </p>
                 </li>
@@ -335,72 +289,62 @@ export default async function FormationOptInPage() {
             })}
           </ol>
 
-          <ul className="mt-6 grid gap-4 md:grid-cols-3">
+          <ul className="mt-10 grid gap-8 md:grid-cols-3">
             {EXTRAS.map((x, i) => (
-              <li
-                key={x.title}
-                className="fade-up-reveal border-t border-[rgba(17,17,17,0.14)] pt-4"
-                data-delay={String(0.1 * i)}
-              >
-                <p className="heading-font text-xs uppercase tracking-[0.06em] text-[var(--cream)]">
-                  {x.title}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">{x.text}</p>
+              <li key={x.title} className="reveal border-t border-line pt-5" data-delay={String(0.1 * i)}>
+                <p className="meta"><span className="meta-strong tabular">0{i + 4}</span> &nbsp;/&nbsp; Inclus</p>
+                <p className="h-item mt-3 text-cream">{x.title}</p>
+                <p className="mt-2 text-sm leading-relaxed text-fog">{x.text}</p>
               </li>
             ))}
           </ul>
 
-          <div className="fade-up-reveal mt-10 flex flex-col gap-5 rounded-2xl border border-[rgba(17,17,17,0.14)] bg-white p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
+          <div className="reveal mt-14 flex flex-col gap-6 border-y border-line py-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                Prix
-              </p>
-              <p className="mt-1 flex items-baseline gap-2">
-                <span className="heading-font text-3xl text-[var(--cream)]">0 €</span>
-                <span className="text-sm text-[var(--muted)]">
-                  Sans carte bancaire. Accès immédiat.
-                </span>
+              <p className="meta">Prix</p>
+              <p className="mt-2 flex items-baseline gap-3">
+                <span className="display text-4xl leading-none text-cream">0 €</span>
+                <span className="text-sm text-fog">Sans carte bancaire. Accès immédiat.</span>
               </p>
             </div>
-            <a href={`#${FORM_ID}`} className="ds-cta-dark !px-6 !py-3.5">
-              Recevoir mes 3 vidéos
+            <a href={`#${FORM_ID}`} className="btn btn-primary btn-lg">
+              <span>Recevoir mes 3 vidéos</span>
+              <Arrow />
             </a>
           </div>
         </div>
       </section>
 
       {/* Bande sombre : la preuve que la méthode produit des films qui sortent. */}
-      <section className="cine-band cine-grain cine-letterbox" aria-labelledby="proof-title">
-        <div className="cine-glow cine-glow-orange cine-drift-slow" style={{ width: 560, height: 560, left: "-10%", top: "-20%" }} aria-hidden />
-        <div className="relative z-[5] mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
-            <div className="fade-up-reveal">
-              <p className="cine-timecode">La preuve</p>
-              <h2 id="proof-title" className="cyber-title mt-3 text-2xl text-white sm:text-3xl">
+      <section className="band band-navy grain border-t border-line" aria-labelledby="proof-title">
+        <div className="container-x relative z-[4] section">
+          <div className="grid-12 gap-y-12">
+            <div className="col-span-12 reveal lg:col-span-4">
+              <p className="meta"><span className="meta-strong">03</span> &nbsp;/&nbsp; La preuve</p>
+              <h2 id="proof-title" className="h-section mt-5">
                 Des films IA qui sortent en festival, pas des tests
               </h2>
-              <p className="cine-text-muted mt-4 leading-relaxed">
+              <p className="mt-6 text-[15px] leading-relaxed text-fog">
                 Ronces, VOIDBORN et Lost Garden ont été construits exactement
                 comme ça : l’idée, le storyboard, puis la génération. Voici où
                 ils sont passés.
               </p>
-              <ul className="mt-6 space-y-2">
-                {FUNNEL_AWARDS.map((a) => (
-                  <li key={`${a.label}-${a.festival}`} className="flex gap-3 text-sm leading-snug">
-                    <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--orange)]" aria-hidden />
+              <ul className="mt-8">
+                {FUNNEL_AWARDS.map((a, i) => (
+                  <li key={`${a.label}-${a.festival}`} className="grid grid-cols-[2.5rem_1fr] gap-3 border-t border-line py-3 text-sm leading-snug last:border-b">
+                    <span className="meta tabular pt-0.5">0{i + 1}</span>
                     <span>
-                      <span className="text-white">{a.label}</span>
-                      <span className="cine-text-label"> · {a.festival}</span>
+                      <span className="text-cream">{a.label}</span>
+                      <span className="block text-xs text-fog">{a.festival}</span>
                     </span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="fade-up-reveal" data-delay="0.15">
+            <div className="col-span-12 reveal lg:col-span-7 lg:col-start-6" data-delay="0.15">
               <FilmStrip
                 stills={LANDING_STILLS}
-                caption="Extraits de mes films et séries IA, tous produits avec cette méthode"
-                tone="dark"
+                caption="Planche 01 · Extraits de mes films et séries IA, tous produits avec cette méthode"
               />
             </div>
           </div>
@@ -408,54 +352,53 @@ export default async function FormationOptInPage() {
       </section>
 
       {/* Qui parle, et ce qu'en disent les membres. */}
-      <section className="relative overflow-hidden" aria-labelledby="frank-title">
-        <div className="cine-leak cine-leak-orange" style={{ width: 480, height: 480, right: "-10%", bottom: "-10%" }} aria-hidden />
-        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
-            <div className="grid gap-8 sm:grid-cols-[minmax(0,10rem)_1fr] sm:items-start fade-up-reveal">
-              <div className="relative aspect-square w-40 overflow-hidden rounded-2xl border border-[rgba(17,17,17,0.12)] sm:w-full">
-                <Image
-                  src={person.image}
-                  alt={`Portrait de ${person.name}`}
-                  fill
-                  sizes="(max-width: 640px) 160px, 160px"
-                  className="object-cover"
-                />
-              </div>
-              <div className="min-w-0">
-                <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                  Qui vous parle
-                </p>
-                <h2 id="frank-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-                  Frank Houbre, réalisateur et formateur IA
-                </h2>
-                <p className="mt-4 leading-relaxed text-[var(--muted)]">
-                  Je réalise des films IA et je forme des créateurs, des
-                  indépendants et des équipes en entreprise. Ce que je vous
-                  envoie est ma façon de travailler, avec ses contraintes
-                  réelles de budget et de cohérence. Aucune promesse de film en
-                  un clic : une méthode qui tient quand le projet grossit.
-                </p>
-                <p className="mt-4 text-sm">
-                  <Link href="/a-propos" className="cyber-link">
-                    Parcours complet et projets
-                  </Link>
-                </p>
+      <section className="section border-t border-line" aria-labelledby="frank-title">
+        <div className="container-x">
+          <div className="grid-12 gap-y-14">
+            <div className="col-span-12 reveal lg:col-span-6">
+              <div className="grid gap-8 sm:grid-cols-[10rem_1fr] sm:items-start">
+                <div className="frame frame-grain frame-marks relative aspect-square w-40 sm:w-full">
+                  <Image
+                    src={person.image}
+                    alt={`Portrait de ${person.name}`}
+                    fill
+                    sizes="160px"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <p className="meta"><span className="meta-strong">04</span> &nbsp;/&nbsp; Qui vous parle</p>
+                  <h2 id="frank-title" className="h-block mt-4 text-cream">
+                    Frank Houbre, réalisateur et formateur IA
+                  </h2>
+                  <p className="mt-4 text-[15px] leading-relaxed text-fog">
+                    Je réalise des films IA et je forme des créateurs, des
+                    indépendants et des équipes en entreprise. Ce que je vous
+                    envoie est ma façon de travailler, avec ses contraintes
+                    réelles de budget et de cohérence. Aucune promesse de film en
+                    un clic : une méthode qui tient quand le projet grossit.
+                  </p>
+                  <p className="mt-5">
+                    <Link href="/a-propos" className="arrow-link text-fog hover:text-cream">
+                      <span>Parcours complet et projets</span>
+                      <Arrow />
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="fade-up-reveal" data-delay="0.15">
-              <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-                Ce qu’en disent les membres d’AI Studios · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
+            <div className="col-span-12 reveal lg:col-span-5 lg:col-start-8" data-delay="0.15">
+              <p className="meta">
+                Membres d’AI Studios · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
               </p>
-              <ul className="mt-6 space-y-5">
+              <ul className="mt-6">
                 {SKOOL_OFFER.reviews.map((r) => (
-                  <li key={r.author} className="cyber-card p-5">
-                    <p className="text-[15px] leading-relaxed text-[var(--cream)]">« {r.text} »</p>
-                    <p className="mt-2 text-xs text-[var(--label)]">{r.author}, membre AI Studios</p>
+                  <li key={r.author} className="border-t border-line py-5 last:border-b">
+                    <p className="serif text-[1.25rem] leading-snug text-cream">« {r.text} »</p>
+                    <p className="meta mt-3">{r.author} · membre AI Studios</p>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs leading-relaxed text-[var(--label)]">
+              <p className="mt-4 text-xs leading-relaxed text-fog">
                 Avis publiés par des membres de la formation complète AI Studios.
                 Le challenge gratuit en reprend la première étape.
               </p>
@@ -465,59 +408,60 @@ export default async function FormationOptInPage() {
       </section>
 
       {/* Les objections, une par une. */}
-      <section className="cyber-divider" aria-labelledby="faq-title">
-        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="fade-up-reveal">
-            <p className="text-[11px] uppercase tracking-[0.12em] text-[var(--label)]">
-              Avant de vous inscrire
-            </p>
-            <h2 id="faq-title" className="cyber-title mt-3 text-2xl sm:text-3xl">
-              Les questions qu’on me pose
-            </h2>
-          </div>
-          <div className="mt-6 divide-y divide-[rgba(17,17,17,0.12)] border-y border-[rgba(17,17,17,0.12)] fade-up-reveal" data-delay="0.1">
-            {FUNNEL_FAQ.map((f) => (
-              <details key={f.q} className="group">
-                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-[15px] font-medium text-[var(--cream)] [&::-webkit-details-marker]:hidden">
-                  <span>{f.q}</span>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="shrink-0 text-[var(--orange-text)] transition-transform duration-200 group-open:rotate-45" aria-hidden>
-                    <path d="M8 2v12M2 8h12" />
-                  </svg>
-                </summary>
-                <p className="pb-4 text-[15px] leading-relaxed text-[var(--muted)]">
-                  {f.a}
-                  {f.q.startsWith("Que faites-vous") ? (
-                    <>
-                      {" "}
-                      <Link href="/politique-confidentialite" className="cyber-link">
-                        Politique de confidentialité
-                      </Link>
-                      .
-                    </>
-                  ) : null}
-                </p>
-              </details>
-            ))}
+      <section className="section border-t border-line" aria-labelledby="faq-title">
+        <div className="container-x">
+          <div className="grid-12 gap-y-10">
+            <div className="col-span-12 reveal lg:col-span-4">
+              <p className="meta"><span className="meta-strong">05</span> &nbsp;/&nbsp; Avant de vous inscrire</p>
+              <h2 id="faq-title" className="h-section mt-5">Les questions qu’on me pose</h2>
+            </div>
+            <div className="col-span-12 reveal lg:col-span-7 lg:col-start-6" data-delay="0.1">
+              {FUNNEL_FAQ.map((f) => (
+                <details key={f.q} className="faq-item">
+                  <summary>
+                    <span>{f.q}</span>
+                    <Plus />
+                  </summary>
+                  <p className="text-[15px] leading-relaxed text-fog">
+                    {f.a}
+                    {f.q.startsWith("Que faites-vous") ? (
+                      <>
+                        {" "}
+                        <Link href="/politique-confidentialite" className="link">
+                          Politique de confidentialité
+                        </Link>
+                        .
+                      </>
+                    ) : null}
+                  </p>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Dernier appel : le hook, et le formulaire. */}
-      <section className="cine-band cine-grain cine-vignette cine-letterbox" aria-labelledby="final-title">
-        <div className="cine-glow cine-glow-orange cine-drift" style={{ width: 640, height: 640, right: "-8%", top: "-30%" }} aria-hidden />
-        <div className="cine-glow cine-glow-blue cine-drift-slow" style={{ width: 520, height: 520, left: "-12%", bottom: "-40%" }} aria-hidden />
-        <div className="relative z-[5] mx-auto max-w-xl px-4 py-16 sm:px-6 lg:py-24">
-          <div className="cine-card p-5 sm:p-7 fade-up-reveal">
-            <p className="cine-timecode">Dernière séquence</p>
-            <h2 id="final-title" className="cyber-title mt-3 text-xl text-white sm:text-2xl">
-              Votre premier film IA cohérent commence par une phrase.
-            </h2>
-            <p className="cine-text-muted mt-2 text-sm leading-relaxed">
-              Inscrivez-vous, la vidéo 1 s’ouvre tout de suite. Les deux
-              suivantes arrivent chaque matin.
-            </p>
-            <div className="mt-5">
-              <OptInForm compact tone="dark" cta="Recevoir mes 3 vidéos" />
+      <section className="band grain vignette relative border-t border-line" aria-labelledby="final-title">
+        <div className="layer" aria-hidden>
+          <Image src="/images/formation/hero.webp" alt="" fill sizes="100vw" className="opacity-60" />
+        </div>
+        <div className="scrim" aria-hidden />
+        <div className="glow drift" style={{ width: 560, height: 560, right: "-8%", top: "-30%" }} aria-hidden />
+        <div className="container-x relative z-[5] section">
+          <div className="grid-12 items-end gap-y-10">
+            <div className="col-span-12 lg:col-span-6">
+              <p className="meta meta-strong reveal">06 / Dernière séquence</p>
+              <h2 id="final-title" className="h-section reveal mt-5 text-cream" data-delay="0.1">
+                Votre premier film IA cohérent commence par une phrase.
+              </h2>
+              <p className="reveal mt-5 max-w-md text-[15px] leading-relaxed text-fog" data-delay="0.2">
+                Inscrivez-vous, la vidéo 1 s’ouvre tout de suite. Les deux
+                suivantes arrivent chaque matin.
+              </p>
+            </div>
+            <div className="reveal col-span-12 border border-line-strong bg-charcoal/85 p-5 backdrop-blur-md sm:p-7 lg:col-span-5 lg:col-start-8" data-delay="0.2">
+              <OptInForm compact cta="Recevoir mes 3 vidéos" />
             </div>
           </div>
         </div>

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { getAllEnPosts } from "@/lib/blog-en";
 import { EnBlogGrid, EN_POSTS_PER_PAGE } from "@/components/EnBlogGrid";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { Cta } from "@/components/ui/Cta";
 import {
   buildBreadcrumbList,
   buildGraphJsonLd,
@@ -49,40 +51,56 @@ export default function EnBlogPage() {
   );
 
   return (
-    <div className="ds-page">
+    <>
       <JsonLd data={blogJsonLd} />
-      <section className="ds-cinematic-frame p-6 sm:p-8">
-        <div className="relative z-10">
-          <p className="ds-eyebrow text-neutral-600">Blog</p>
-          <h1 className="relative z-10 mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
-            AI filmmaking, in the trenches
-          </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-800 sm:text-base">
-            Concrete workflows and honest analysis to make AI images and videos
-            that actually look cinematic.
-          </p>
-        </div>
-      </section>
-
-      {posts.length === 0 ? (
-        <div className="ds-card mt-10 p-8 text-center">
-          <h2 className="text-xl font-semibold text-neutral-950">
-            New articles, every day
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-neutral-700">
-            The English blog is just getting started. A fresh AI news article
-            lands here daily. In the meantime, the full library lives on the
-            French site.
-          </p>
-          <div className="mt-6">
-            <Link href="/blog" className="ds-cta-primary">
-              Browse the French articles
-            </Link>
+      <PageHeader
+        index="02"
+        kicker="Journal"
+        title={
+          <>
+            Blog
+            <span className="block text-fog">AI filmmaking, in the trenches</span>
+          </>
+        }
+        lede="Concrete workflows and honest analysis to make AI images and videos that actually look cinematic."
+        aside={
+          <dl className="meta space-y-1">
+            <div className="flex gap-3 lg:justify-end">
+              <dt>Articles</dt>
+              <dd className="meta-strong tabular">{posts.length}</dd>
+            </div>
+            <div className="flex gap-3 lg:justify-end">
+              <dt>Pages</dt>
+              <dd className="meta-strong tabular">{totalPages}</dd>
+            </div>
+          </dl>
+        }
+      />
+      <div className="container-x section-sm">
+        {posts.length === 0 ? (
+          <div className="border border-line p-8 sm:p-12">
+            <p className="meta">Coming soon</p>
+            <h2 className="h-block mt-4 text-cream">New articles, every day</h2>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-fog">
+              The English blog is just getting started. A fresh AI news article
+              lands here daily. In the meantime, the full library lives on the
+              French site.
+            </p>
+            <div className="mt-6">
+              <Cta href="/blog">Browse the French articles</Cta>
+            </div>
           </div>
-        </div>
-      ) : (
-        <EnBlogGrid posts={pagePosts} currentPage={1} totalPages={totalPages} />
-      )}
-    </div>
+        ) : (
+          <EnBlogGrid posts={pagePosts} currentPage={1} totalPages={totalPages} />
+        )}
+        <p className="mt-16 border-t border-line pt-6 text-sm text-fog">
+          Want the full library? The{" "}
+          <Link href="/blog" className="link" hrefLang="fr">
+            French blog
+          </Link>{" "}
+          has every article.
+        </p>
+      </div>
+    </>
   );
 }

@@ -36,27 +36,27 @@ export default async function EmailsPage({
 
   return (
     <AdminShell active="emails" title="Séquence d’emails">
-      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-700">
+      <p className="mt-4 max-w-2xl text-sm leading-relaxed text-fog">
         Quatre emails sont programmés chez Resend au moment de l’inscription. Les compteurs
         ci-dessous viennent du webhook Resend
         {webhook ? "" : " (non configuré : seuls les envois programmés sont comptés)"}. Les
         textes vivent dans le code, fichier src/lib/funnel/emails.ts.
       </p>
       {message?.startsWith("recalcule:") ? (
-        <p role="status" className="mt-4 rounded-xl border border-[#b04e10] bg-[rgba(224,112,32,0.1)] px-4 py-3 text-sm text-neutral-950">
+        <p role="status" className="mt-4 border border-amber/70 bg-amber/10 px-4 py-3 text-sm text-cream">
           Statistiques recalculées à partir de {message.split(":")[1]} fiche(s) d’inscrit,
           {" "}{message.split(":")[2]} événement(s) email reconstitués.
         </p>
       ) : null}
 
-      <section className="ds-surface mt-6 p-5 sm:p-6" aria-labelledby="steps-title">
-        <h2 id="steps-title" className="text-lg font-semibold">
+      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="steps-title">
+        <h2 id="steps-title" className="h-item text-cream">
           Résultats par étape (depuis le début)
         </h2>
         <div className="mt-3 overflow-x-auto">
           <table className="w-full min-w-[720px] text-sm">
             <thead>
-              <tr className="text-left text-xs uppercase tracking-[0.08em] text-neutral-600">
+              <tr className="text-left meta">
                 <th className="py-2 pr-3 font-medium">Étape</th>
                 <th className="py-2 pr-3 font-medium">Envoi</th>
                 <th className="py-2 pr-3 text-right font-medium">Programmés</th>
@@ -74,18 +74,18 @@ export default async function EmailsPage({
                 const c = clicked[step.key] ?? 0;
                 const b = (bounced[step.key] ?? 0) + (complained[step.key] ?? 0);
                 return (
-                  <tr key={step.key} className="border-t border-[rgb(226_226_230/0.9)]">
-                    <td className="py-2 pr-3 text-neutral-950">{step.label}</td>
-                    <td className="py-2 pr-3 text-neutral-700">{step.when}</td>
+                  <tr key={step.key} className="border-t border-line">
+                    <td className="py-2 pr-3 text-cream">{step.label}</td>
+                    <td className="py-2 pr-3 text-fog">{step.when}</td>
                     <td className="py-2 pr-3 text-right tabular-nums">{s}</td>
                     <td className="py-2 pr-3 text-right tabular-nums">
-                      {d} <span className="text-xs text-neutral-600">{pct(d, s)}</span>
+                      {d} <span className="text-xs text-fog">{pct(d, s)}</span>
                     </td>
                     <td className="py-2 pr-3 text-right tabular-nums">
-                      {o} <span className="text-xs text-neutral-600">{pct(o, d)}</span>
+                      {o} <span className="text-xs text-fog">{pct(o, d)}</span>
                     </td>
                     <td className="py-2 pr-3 text-right tabular-nums">
-                      {c} <span className="text-xs text-neutral-600">{pct(c, d)}</span>
+                      {c} <span className="text-xs text-fog">{pct(c, d)}</span>
                     </td>
                     <td className="py-2 text-right tabular-nums">{b}</td>
                   </tr>
@@ -94,7 +94,7 @@ export default async function EmailsPage({
             </tbody>
           </table>
         </div>
-        <p className="mt-3 text-xs text-neutral-600">
+        <p className="mt-3 text-xs text-fog">
           Taux : délivrés sur programmés, ouverts et cliqués sur délivrés. Les ouvertures
           dépendent du chargement des images par le lecteur mail (Apple Mail les gonfle, Gmail
           les masque parfois).
@@ -102,24 +102,24 @@ export default async function EmailsPage({
         <form
           method="post"
           action="/api/funnel/admin/email-stats"
-          className="mt-4 flex flex-wrap items-center gap-3 border-t border-[rgb(226_226_230/0.9)] pt-4"
+          className="mt-4 flex flex-wrap items-center gap-3 border-t border-line pt-4"
         >
           <input type="hidden" name="action" value="rebuild" />
           <button
             type="submit"
-            className="inline-flex min-h-10 items-center rounded-full border border-[rgb(226_226_230/0.9)] bg-white px-4 text-sm text-neutral-900 hover:bg-[#ececef]"
+            className="btn btn-sm"
           >
             Recalculer les statistiques email
           </button>
-          <span className="text-xs text-neutral-600">
+          <span className="text-xs text-fog">
             Efface les compteurs email (y compris ceux comptés par erreur pour un autre projet du
             compte Resend) et les reconstruit depuis les fiches des inscrits.
           </span>
         </form>
       </section>
 
-      <section className="ds-surface mt-6 p-5 sm:p-6" aria-labelledby="preview-title">
-        <h2 id="preview-title" className="text-lg font-semibold">
+      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="preview-title">
+        <h2 id="preview-title" className="h-item text-cream">
           Aperçu des emails
         </h2>
         <nav aria-label="Étape à prévisualiser" className="mt-3 flex flex-wrap gap-2">
@@ -128,35 +128,31 @@ export default async function EmailsPage({
               key={step.key}
               href={`?apercu=${step.key}`}
               aria-current={previewStep === step.key ? "page" : undefined}
-              className={`inline-flex min-h-9 items-center rounded-full border px-3 text-sm ${
-                previewStep === step.key
-                  ? "border-[#111111] bg-[#111111] text-white"
-                  : "border-[rgb(226_226_230/0.9)] bg-white text-neutral-800 hover:bg-[#ececef]"
-              }`}
+              className={`chip ${previewStep === step.key ? "is-active" : ""}`}
             >
               {step.label}
             </a>
           ))}
         </nav>
-        <ul className="mt-4 space-y-1 text-sm text-neutral-700">
+        <ul className="mt-4 space-y-1 text-sm text-fog">
           {sequence.map((m) => (
             <li key={m.key}>
-              <span className="font-medium text-neutral-950">{m.subject}</span>
-              <span className="text-neutral-600">
+              <span className="text-cream">{m.subject}</span>
+              <span className="text-fog">
                 {" "}
                 · {m.dayOffset === 0 ? "envoyé tout de suite" : `J+${m.dayOffset} à 9 h (heure de Paris)`}
               </span>
             </li>
           ))}
         </ul>
-        <div className="mt-4 overflow-hidden rounded-xl border border-[rgb(226_226_230/0.9)] bg-white">
+        <div className="mt-4 frame bg-white">
           <iframe
             title={`Aperçu de l’email ${previewStep}`}
             src={`/api/funnel/admin/email-preview?step=${previewStep}`}
             className="h-[720px] w-full"
           />
         </div>
-        <p className="mt-3 text-xs text-neutral-600">
+        <p className="mt-3 text-xs text-fog">
           Aperçu rendu avec le prénom « Camille » et un lien de désinscription factice.
         </p>
       </section>

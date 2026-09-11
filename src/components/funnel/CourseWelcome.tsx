@@ -14,8 +14,9 @@ export function CourseWelcome() {
   return (
     <div
       role="status"
-      className="mx-auto mb-8 max-w-3xl rounded-xl border border-[rgba(224,112,32,0.7)] bg-[rgba(224,112,32,0.18)] px-4 py-3 text-sm leading-relaxed text-white backdrop-blur-sm"
+      className="mx-auto mb-8 max-w-3xl border border-amber/60 bg-charcoal/70 px-4 py-3 text-left text-sm leading-relaxed text-cream backdrop-blur-sm"
     >
+      <span className="meta meta-amber mr-3">Inscription</span>
       {message}
     </div>
   );

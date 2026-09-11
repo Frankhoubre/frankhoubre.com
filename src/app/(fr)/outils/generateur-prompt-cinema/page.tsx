@@ -1,5 +1,7 @@
 import { CinemaPromptGenerator } from "@/components/CinemaPromptGenerator";
 import { JsonLd } from "@/components/JsonLd";
+import { Plus } from "@/components/FaqSection";
+import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
 import {
   buildGraphJsonLd,
   buildWebApplicationJsonLd,
@@ -35,6 +37,14 @@ const faqEntries = [
   },
 ] as const;
 
+const steps = [
+  "Choisissez votre caméra pour définir la texture globale de l’image.",
+  "Sélectionnez un objectif pour contrôler la profondeur de champ et la perspective.",
+  "Réglez l’ouverture et l’ISO pour piloter profondeur de champ et grain.",
+  "Choisissez un style visuel puis l’éclairage pour obtenir l’ambiance voulue.",
+  "Générez puis copiez le prompt en anglais dans votre IA préférée.",
+] as const;
+
 const toolData = getOutilStructuredData("promptCinema");
 const toolJsonLd = buildWebApplicationJsonLd(toolData);
 const jsonLd = buildGraphJsonLd(
@@ -55,70 +65,92 @@ const jsonLd = buildGraphJsonLd(
 
 export default function CinemaPromptGeneratorPage() {
   return (
-    <div className="ds-page max-w-6xl !pt-8">
+    <>
       <JsonLd data={jsonLd} />
+      <PageHeader
+        kicker="Outil interactif · gratuit"
+        size="lg"
+        title="Générateur de prompt cinéma IA"
+        lede="Choisissez une caméra, un objectif, une ouverture, un ISO, un style visuel et un setup lumière. L’outil compose un prompt professionnel en anglais, prêt pour Midjourney, Runway, Kling, Sora ou Flux."
+        breadcrumb={
+          <Breadcrumb
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Outils", href: "/outils" },
+              { label: "Générateur de prompt cinéma" },
+            ]}
+          />
+        }
+        aside={<p className="meta">Sauvegarde locale · sans compte</p>}
+      />
 
       <CinemaPromptGenerator />
 
-      <article className="max-w-none space-y-8">
-        <section className="ds-card p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            Comment utiliser cet outil ?
-          </h2>
-          <ol className="mt-4 list-decimal space-y-2 pl-6 text-neutral-700">
-            <li>Choisissez votre caméra pour définir la texture globale de l&apos;image.</li>
-            <li>Sélectionnez un objectif pour contrôler la profondeur de champ et la perspective.</li>
-            <li>Réglez l&apos;ouverture et l&apos;ISO pour piloter profondeur de champ et grain.</li>
-            <li>Choisissez un style visuel puis l&apos;éclairage pour obtenir l&apos;ambiance voulue.</li>
-            <li>Générez puis copiez le prompt en anglais dans votre IA préférée.</li>
-          </ol>
-          <p className="mt-4 leading-relaxed text-neutral-700">
-            Le prompt est pensé pour rester propre, exploitable et facilement itérable. Vous pouvez
-            remplacer uniquement le sujet de scène pour produire des variantes cohérentes en série
-            sans casser votre direction artistique.
-          </p>
-        </section>
+      <article className="container-x pb-20 sm:pb-28">
+        <div className="grid-12 gap-y-10 border-t border-line pt-14">
+          <div className="col-span-12 lg:col-span-3">
+            <p className="meta"><span className="meta-strong">01</span> &nbsp;/&nbsp; Comment utiliser cet outil</p>
+          </div>
+          <div className="col-span-12 lg:col-span-7 lg:col-start-5">
+            <ol>
+              {steps.map((step, i) => (
+                <li key={step} className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-line py-4 text-[15px] text-stone last:border-b">
+                  <span className="meta meta-strong tabular pt-1">0{i + 1}</span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-6 text-sm leading-relaxed text-fog">
+              Le prompt est pensé pour rester propre, exploitable et facilement itérable. Vous pouvez
+              remplacer uniquement le sujet de scène pour produire des variantes cohérentes en série
+              sans casser votre direction artistique.
+            </p>
+          </div>
+        </div>
 
-        <section className="ds-card p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">
-            Pourquoi utiliser l&apos;IA pour structurer un prompt cinéma ?
-          </h2>
-          <p className="mt-4 leading-relaxed text-neutral-700">
-            Beaucoup de créations paraissent artificielles car les prompts restent trop vagues :
-            sujet sans mise en scène, lumière sans intention, style sans cohérence optique. En
-            combinant des paramètres professionnels (caméra, objectif, ouverture, ISO, style et
-            éclairage),
-            vous donnez au modèle IA des signaux plus riches et mieux interprétés.
-          </p>
-          <h3 className="mt-5 text-xl font-semibold text-neutral-950">Un gain de temps opérationnel</h3>
-          <p className="mt-2 leading-relaxed text-neutral-700">
-            Au lieu de réécrire vos prompts de zéro à chaque itération, vous partez d&apos;une base
-            fiable. Vous accédez plus vite à une qualité exploitable pour vos maquettes client,
-            vos tests de direction artistique ou vos productions vidéo.
-          </p>
-          <h3 className="mt-5 text-xl font-semibold text-neutral-950">Un rendu plus crédible</h3>
-          <p className="mt-2 leading-relaxed text-neutral-700">
-            Les modèles IA répondent très bien aux marqueurs cinématographiques précis. Une bonne
-            structure réduit l&apos;effet plastique, stabilise les textures, et améliore la cohérence
-            globale des plans ou des images.
-          </p>
-        </section>
+        <div className="grid-12 mt-14 gap-y-10 border-t border-line pt-14">
+          <div className="col-span-12 lg:col-span-3">
+            <p className="meta"><span className="meta-strong">02</span> &nbsp;/&nbsp; Pourquoi structurer un prompt cinéma</p>
+          </div>
+          <div className="prose-cinema col-span-12 lg:col-span-7 lg:col-start-5">
+            <p>
+              Beaucoup de créations paraissent artificielles car les prompts restent trop vagues :
+              sujet sans mise en scène, lumière sans intention, style sans cohérence optique. En
+              combinant des paramètres professionnels (caméra, objectif, ouverture, ISO, style et
+              éclairage), vous donnez au modèle IA des signaux plus riches et mieux interprétés.
+            </p>
+            <h3>Un gain de temps opérationnel</h3>
+            <p>
+              Au lieu de réécrire vos prompts de zéro à chaque itération, vous partez d’une base
+              fiable. Vous accédez plus vite à une qualité exploitable pour vos maquettes client,
+              vos tests de direction artistique ou vos productions vidéo.
+            </p>
+            <h3>Un rendu plus crédible</h3>
+            <p>
+              Les modèles IA répondent très bien aux marqueurs cinématographiques précis. Une bonne
+              structure réduit l’effet plastique, stabilise les textures, et améliore la cohérence
+              globale des plans ou des images.
+            </p>
+          </div>
+        </div>
 
-        <section className="ds-card p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold tracking-tight text-neutral-950">Foire Aux Questions (FAQ)</h2>
-          <div className="mt-4 space-y-3">
+        <div className="grid-12 mt-14 gap-y-10 border-t border-line pt-14">
+          <div className="col-span-12 lg:col-span-3">
+            <p className="meta"><span className="meta-strong">03</span> &nbsp;/&nbsp; Questions fréquentes</p>
+          </div>
+          <div className="col-span-12 lg:col-span-7 lg:col-start-5">
             {faqEntries.map((entry) => (
-              <details
-                key={entry.question}
-                className="rounded-xl border border-neutral-200 bg-neutral-50 p-4"
-              >
-                <summary className="cursor-pointer font-medium text-neutral-950">{entry.question}</summary>
-                <p className="mt-2 leading-relaxed text-neutral-700">{entry.answer}</p>
+              <details key={entry.question} className="faq-item">
+                <summary>
+                  <span>{entry.question}</span>
+                  <Plus />
+                </summary>
+                <p className="text-[15px] leading-relaxed text-fog">{entry.answer}</p>
               </details>
             ))}
           </div>
-        </section>
+        </div>
       </article>
-    </div>
+    </>
   );
 }

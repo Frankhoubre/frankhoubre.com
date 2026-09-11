@@ -8,58 +8,60 @@ type Props = {
   components: MDXComponents;
 };
 
+export function Plus() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.2"
+      strokeLinecap="round"
+      className="plus"
+      aria-hidden
+    >
+      <path d="M7 1v12M1 7h12" />
+    </svg>
+  );
+}
+
+/** FAQ d'article : accordéon sur lignes fines, balisage FAQPage conservé. */
 export function FaqSection({ pairs, components }: Props) {
   if (!pairs.length) return null;
 
   return (
     <section
       id="foire-aux-questions"
-      className="mt-12 scroll-mt-28 rounded-2xl border-2 border-neutral-300 bg-neutral-50 px-4 py-6 shadow-sm sm:px-6"
+      className="not-prose my-14 scroll-mt-28"
       aria-labelledby="faq-heading"
       itemScope
       itemType="https://schema.org/FAQPage"
     >
-      <h2
-        id="faq-heading"
-        className="font-mono text-xs uppercase tracking-wide text-neutral-600"
-      >
+      <p id="faq-heading" className="meta">
         FAQ
-      </h2>
-      <p className="mt-2 text-2xl font-semibold tracking-tight text-neutral-950">
-        Foire aux questions
       </p>
-      <p className="mt-2 text-sm text-neutral-700">
+      <h2 className="h-block mt-3 !mt-3 !border-0 !pt-0 text-cream">Foire aux questions</h2>
+      <p className="mt-2 text-sm text-fog">
         Réponses rapides aux questions les plus fréquentes sur cet article.
       </p>
-      <div className="mt-5 space-y-3">
+      <div className="mt-6">
         {pairs.map((pair, i) => (
           <details
             key={i}
-            className="group rounded-xl border border-neutral-200 bg-white open:bg-white"
+            className="faq-item"
             itemScope
             itemProp="mainEntity"
             itemType="https://schema.org/Question"
           >
-            <summary className="cursor-pointer list-none px-4 py-3 marker:content-none [&::-webkit-details-marker]:hidden">
-              <span className="flex items-center justify-between gap-2">
-                <h3 className="text-base font-semibold text-neutral-950" itemProp="name">
-                  {pair.question}
-                </h3>
-                <span
-                  className="text-neutral-500 transition group-open:rotate-45"
-                  aria-hidden
-                >
-                  +
-                </span>
-              </span>
+            <summary>
+              <h3 className="text-[inherit] font-[inherit] leading-[inherit] tracking-[inherit]" itemProp="name">
+                {pair.question}
+              </h3>
+              <Plus />
             </summary>
-            <div
-              className="border-t border-neutral-200 px-4 py-3"
-              itemScope
-              itemProp="acceptedAnswer"
-              itemType="https://schema.org/Answer"
-            >
-              <div className="prose-cinema" itemProp="text">
+            <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+              <div className="prose-cinema text-[0.97rem]" itemProp="text">
                 <MDXRemote
                   source={pair.answer}
                   components={components}

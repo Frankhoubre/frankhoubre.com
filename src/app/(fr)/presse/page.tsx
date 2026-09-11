@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { ArrowLink } from "@/components/ui/Cta";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
   ABOUT_OG_IMAGE,
   PERSON_ID,
@@ -81,15 +84,13 @@ const visuals = [
     src: "/images/frank-houbre-about.png",
     alt: "Portrait officiel de Frank Houbre, formateur IA et réalisateur IA",
     label: "Portrait officiel (carré, 1024 px)",
-    width: 1024,
-    height: 1024,
+    ratio: "1/1",
   },
   {
     src: "/images/og-default.jpg",
     alt: "Visuel de présentation de Frank Houbre pour les partages et articles",
     label: "Visuel de présentation (1200 × 630)",
-    width: 1200,
-    height: 630,
+    ratio: "1200/630",
   },
 ] as const;
 
@@ -126,203 +127,214 @@ export default function PressePage() {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <article className="ds-page max-w-5xl">
-        <header className="ds-cinematic-frame grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.5fr_1.5fr] lg:items-start">
-          <div className="ds-cinematic-beam" aria-hidden />
-          <figure className="relative z-10 mx-auto w-full max-w-[200px] overflow-hidden rounded-3xl border border-[rgba(17,17,17,0.2)] lg:mx-0">
-            <Image
-              src="/images/frank-houbre-about.png"
-              alt="Portrait de Frank Houbre"
-              width={520}
-              height={520}
-              priority
-              className="h-auto w-full object-cover"
-              sizes="(max-width: 1024px) 200px, 260px"
-            />
-          </figure>
-          <div className="relative z-10">
-            <p className="cyber-label">Kit presse</p>
-            <h1 className="mt-3 text-2xl text-[var(--cream)] sm:text-4xl">
-              Frank Houbre, formateur IA et réalisateur IA
-            </h1>
-            <p className="mt-5 text-base leading-relaxed text-[var(--muted)] sm:text-lg">
-              Cette page rassemble tout ce dont un journaliste, un organisateur d’événement ou un
-              partenaire a besoin : biographies prêtes à copier, visuels libres d’usage éditorial,
-              distinctions vérifiables et contact direct.
-            </p>
-            <dl className="mt-6 grid gap-x-8 gap-y-2 sm:grid-cols-2">
-              {facts.map((f) => (
-                <div key={f.label} className="cyber-spec-row">
-                  <dt className="cyber-spec-label">{f.label}</dt>
-                  <dd className="text-sm text-[var(--cream)] text-right">{f.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </header>
-
-        <section aria-labelledby="bio-courte" className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="ds-card p-6">
-            <p className="ds-eyebrow">Biographie courte</p>
-            <h2 id="bio-courte" className="mt-3 text-lg text-neutral-950">
-              Version 60 mots
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-800">{shortBio}</p>
-          </div>
-          <div className="ds-card p-6">
-            <p className="ds-eyebrow">Signature courte</p>
-            <h2 className="mt-3 text-lg text-neutral-950">Pour une légende ou un programme</h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-800">
-              Frank Houbre, formateur IA et réalisateur IA, fondateur d’AI Studios et de
-              ScreenWeaver.
-            </p>
-            <p className="mt-4 text-sm leading-relaxed text-neutral-700">
-              Orthographe du nom : Frank sans « c », Houbre avec un « h ». Merci de lier vers{" "}
-              <Link href="/" className="ds-link text-neutral-950">
-                frankhoubre.com
-              </Link>
-              .
-            </p>
-          </div>
-        </section>
-
-        <section aria-labelledby="bio-longue" className="mt-14 max-w-3xl">
-          <p className="ds-eyebrow">Biographie longue</p>
-          <h2 id="bio-longue" className="mt-3 text-xl text-neutral-950">
-            Parcours
-          </h2>
-          <div className="mt-4 space-y-4 text-base leading-relaxed text-neutral-800 sm:text-lg">
-            {longBio.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
-          <p className="mt-4 text-sm text-neutral-700">
-            La version détaillée du parcours est sur la page{" "}
-            <Link href="/a-propos" className="ds-link text-neutral-950">
-              À propos
-            </Link>
-            .
-          </p>
-        </section>
-
-        <section aria-labelledby="visuels" className="mt-14">
-          <p className="ds-eyebrow">Visuels</p>
-          <h2 id="visuels" className="mt-3 text-xl text-neutral-950">
-            Portrait et visuels
-          </h2>
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-neutral-800">
-            Usage éditorial autorisé (presse, programmes, réseaux) avec la mention « Frank Houbre ».
-            Pas de recadrage qui déforme, pas d’usage publicitaire sans accord.
-          </p>
-          <ul className="mt-6 grid gap-6 sm:grid-cols-2">
-            {visuals.map((v) => (
-              <li key={v.src} className="ds-card overflow-hidden">
-                <div className="relative aspect-[3/2] w-full bg-neutral-100">
-                  <Image
-                    src={v.src}
-                    alt={v.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, 50vw"
-                  />
-                </div>
-                <div className="flex items-center justify-between gap-4 p-4">
-                  <p className="text-sm text-neutral-800">{v.label}</p>
-                  <a
-                    href={v.src}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="ds-link shrink-0 text-sm font-medium text-neutral-950"
-                  >
-                    Ouvrir en HD
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section aria-labelledby="distinctions" className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="ds-card p-6">
-            <p className="ds-eyebrow">Prix et distinctions</p>
-            <h2 id="distinctions" className="mt-3 text-lg text-neutral-950">
-              Films primés
-            </h2>
-            <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
-              {awards.map((a) => (
-                <li key={a} className="rounded-xl bg-[#f7f1e9] px-4 py-2.5">
-                  {a}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="ds-card p-6">
-            <p className="ds-eyebrow">Sélections</p>
-            <h2 className="mt-3 text-lg text-neutral-950">Sélections officielles et finales</h2>
-            <ul className="mt-4 space-y-2 text-base leading-relaxed text-neutral-800">
-              {selections.map((s) => (
-                <li key={s} className="rounded-xl bg-[#f7f1e9] px-4 py-2.5">
-                  {s}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4 text-sm text-neutral-700">
-              Fiche IMDb et profils publics :{" "}
-              {socialLinks
-                .filter((s) => ["IMDb", "LinkedIn", "YouTube"].includes(s.label))
-                .map((s, i, arr) => (
-                  <span key={s.href}>
-                    <a
-                      href={s.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ds-link text-neutral-950"
-                    >
-                      {s.label}
-                    </a>
-                    {i < arr.length - 1 ? ", " : "."}
-                  </span>
-                ))}
-            </p>
-          </div>
-        </section>
-
-        <section aria-labelledby="sujets" className="mt-14 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <div>
-            <p className="ds-eyebrow">Interventions</p>
-            <h2 id="sujets" className="mt-3 text-xl text-neutral-950">
-              Sujets d’interview et de conférence
-            </h2>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-base leading-relaxed text-neutral-800">
-              {topics.map((t) => (
-                <li key={t}>{t}</li>
-              ))}
-            </ul>
-            <p className="mt-4 text-sm leading-relaxed text-neutral-700">
-              Pour une mission en entreprise, voir la page{" "}
-              <Link href="/prestation" className="ds-link text-neutral-950">
-                conseil IA production vidéo et image
-              </Link>
-              .
-            </p>
-          </div>
-          <div className="ds-card p-6">
-            <p className="ds-eyebrow">Contact média</p>
-            <h2 className="mt-3 text-lg text-neutral-950">Demandes presse et événements</h2>
-            <p className="mt-4 text-base leading-relaxed text-neutral-800">
-              Écrivez à{" "}
-              <a href={`mailto:${contactEmail}`} className="ds-link font-medium text-neutral-950">
+      <article>
+        <PageHeader
+          index="07"
+          kicker="Kit presse"
+          title={
+            <>
+              Frank Houbre
+              <span className="block text-fog">formateur IA et réalisateur IA</span>
+            </>
+          }
+          lede="Tout ce dont un journaliste, un organisateur d’événement ou un partenaire a besoin : biographies prêtes à copier, visuels libres d’usage éditorial, distinctions vérifiables et contact direct."
+          aside={
+            <p className="meta lg:text-right">
+              Contact média
+              <br />
+              <a href={`mailto:${contactEmail}`} className="link-muted lowercase tracking-normal">
                 {contactEmail}
-              </a>{" "}
-              en précisant le média, l’angle et la date. Réponse sous 48 h ouvrées.
+              </a>
             </p>
-            <p className="mt-4 text-sm text-neutral-700">
-              Pour toute autre demande, la page{" "}
-              <Link href="/contact" className="ds-link text-neutral-950">
-                Contact
-              </Link>{" "}
-              reste le point d’entrée.
-            </p>
+          }
+        />
+
+        {/* Fiche d'identité */}
+        <section className="container-x section-sm">
+          <div className="grid-12 gap-y-12">
+            <div className="col-span-12 sm:col-span-5 lg:col-span-4">
+              <div className="frame frame-grain frame-marks relative aspect-[4/5]">
+                <Image
+                  src="/images/frank-houbre-about.png"
+                  alt="Portrait de Frank Houbre"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                />
+              </div>
+              <p className="meta mt-3">Fig. 01 · Portrait officiel</p>
+            </div>
+            <div className="col-span-12 sm:col-span-7 lg:col-span-7 lg:col-start-6">
+              <p className="meta">Fiche</p>
+              <dl className="mt-4">
+                {facts.map((f) => (
+                  <div key={f.label} className="spec-row">
+                    <dt className="spec-label">{f.label}</dt>
+                    <dd className="spec-value !text-left sm:!text-right">{f.value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <div className="mt-10">
+                <p className="meta">Biographie courte · 60 mots</p>
+                <p className="mt-4 text-[1.05rem] leading-relaxed text-stone">{shortBio}</p>
+              </div>
+              <div className="mt-8 border-t border-line pt-6">
+                <p className="meta">Signature courte · légende ou programme</p>
+                <p className="mt-3 text-[15px] text-stone">
+                  Frank Houbre, formateur IA et réalisateur IA, fondateur d’AI Studios et de ScreenWeaver.
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-fog">
+                  Orthographe du nom : Frank sans « c », Houbre avec un « h ». Merci de lier vers{" "}
+                  <Link href="/" className="link">
+                    frankhoubre.com
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Biographie longue */}
+        <section aria-labelledby="bio-longue" className="section border-t border-line">
+          <div className="container-x">
+            <div className="grid-12 gap-y-10">
+              <div className="col-span-12 lg:col-span-3">
+                <p className="meta"><span className="meta-strong">01</span> &nbsp;/&nbsp; Biographie longue</p>
+              </div>
+              <div className="col-span-12 lg:col-span-8 lg:col-start-5">
+                <h2 id="bio-longue" className="h-section">Parcours</h2>
+                <div className="prose-cinema mt-8">
+                  {longBio.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+                <p className="mt-4 text-sm text-fog">
+                  La version détaillée du parcours est sur la page{" "}
+                  <Link href="/a-propos" className="link">
+                    À propos
+                  </Link>
+                  .
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Visuels */}
+        <section aria-labelledby="visuels" className="section border-t border-line">
+          <div className="container-x">
+            <SectionHeader
+              index="02"
+              kicker="Visuels"
+              id="visuels"
+              title="Portrait et visuels"
+              lede="Usage éditorial autorisé (presse, programmes, réseaux) avec la mention « Frank Houbre ». Pas de recadrage qui déforme, pas d’usage publicitaire sans accord."
+            />
+            <ul className="mt-14 grid gap-10 sm:grid-cols-2">
+              {visuals.map((v, i) => (
+                <li key={v.src}>
+                  <div className="frame frame-grain frame-marks relative" style={{ aspectRatio: v.ratio }}>
+                    <Image src={v.src} alt={v.alt} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+                  </div>
+                  <div className="mt-4 flex items-center justify-between gap-4">
+                    <p className="meta">Fig. 0{i + 2} · {v.label}</p>
+                    <ArrowLink href={v.src} external className="shrink-0">
+                      Ouvrir en HD
+                    </ArrowLink>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Distinctions */}
+        <section aria-labelledby="distinctions" className="section border-t border-line">
+          <div className="container-x">
+            <SectionHeader index="03" kicker="Distinctions" id="distinctions" title="Films primés et sélections officielles" />
+            <div className="mt-14 grid gap-12 lg:grid-cols-2 lg:gap-8">
+              <div>
+                <p className="meta">Prix et distinctions</p>
+                <ol className="mt-4">
+                  {awards.map((a, i) => (
+                    <li key={a} className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-line py-4 text-[15px] text-stone last:border-b">
+                      <span className="meta tabular pt-1">0{i + 1}</span>
+                      <span>{a}</span>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+              <div>
+                <p className="meta">Sélections officielles et finales</p>
+                <ol className="mt-4">
+                  {selections.map((s, i) => (
+                    <li key={s} className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-line py-4 text-[15px] text-stone last:border-b">
+                      <span className="meta tabular pt-1">0{i + 1}</span>
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ol>
+                <p className="mt-5 text-sm text-fog">
+                  Fiche IMDb et profils publics :{" "}
+                  {socialLinks
+                    .filter((s) => ["IMDb", "LinkedIn", "YouTube"].includes(s.label))
+                    .map((s, i, arr) => (
+                      <span key={s.href}>
+                        <a href={s.href} target="_blank" rel="noopener noreferrer" className="link">
+                          {s.label}
+                        </a>
+                        {i < arr.length - 1 ? ", " : "."}
+                      </span>
+                    ))}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sujets et contact */}
+        <section aria-labelledby="sujets" className="section border-t border-line">
+          <div className="container-x">
+            <div className="grid-12 gap-y-12">
+              <div className="col-span-12 lg:col-span-7">
+                <p className="meta"><span className="meta-strong">04</span> &nbsp;/&nbsp; Interventions</p>
+                <h2 id="sujets" className="h-section mt-5">Sujets d’interview et de conférence</h2>
+                <ol className="mt-10 border-t border-line">
+                  {topics.map((t, i) => (
+                    <li key={t} className="grid grid-cols-[2.5rem_1fr] gap-4 border-b border-line py-4 text-[15px] text-stone">
+                      <span className="meta tabular pt-1">0{i + 1}</span>
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ol>
+                <p className="mt-5 text-sm leading-relaxed text-fog">
+                  Pour une mission en entreprise, voir la page{" "}
+                  <Link href="/prestation" className="link">
+                    conseil IA production vidéo et image
+                  </Link>
+                  .
+                </p>
+              </div>
+              <div className="col-span-12 lg:col-span-4 lg:col-start-9">
+                <p className="meta">Contact média</p>
+                <h3 className="h-block mt-5 text-cream">Demandes presse et événements</h3>
+                <p className="mt-4 text-[15px] leading-relaxed text-stone">
+                  Écrivez à{" "}
+                  <a href={`mailto:${contactEmail}`} className="link">
+                    {contactEmail}
+                  </a>{" "}
+                  en précisant le média, l’angle et la date. Réponse sous 48 h ouvrées.
+                </p>
+                <p className="mt-4 text-sm text-fog">
+                  Pour toute autre demande, la page{" "}
+                  <Link href="/contact" className="link">
+                    Contact
+                  </Link>{" "}
+                  reste le point d’entrée.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </article>

@@ -10,7 +10,11 @@ const NAV = [
 
 export type AdminSection = (typeof NAV)[number]["key"];
 
-/** Cadre commun des pages du back-office : titre, navigation, déconnexion. */
+/**
+ * Cadre commun des pages du back-office : navigation en capitales sur une
+ * ligne fine, titre, actions. Registre « produit » : plus dense que le site,
+ * même langage visuel.
+ */
 export function AdminShell({
   active,
   title,
@@ -25,44 +29,34 @@ export function AdminShell({
   children: React.ReactNode;
 }) {
   return (
-    <FunnelFrame tone="light">
-      <div className="ds-page">
-        <nav aria-label="Back-office" className="flex flex-wrap items-center gap-2">
-          <ul className="flex gap-1 rounded-full border border-[rgb(226_226_230/0.9)] bg-white p-1">
+    <FunnelFrame>
+      <div className="container-x py-8 sm:py-10">
+        <nav aria-label="Back-office" className="flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-line pb-3">
+          <ul className="flex flex-wrap gap-x-6">
             {NAV.map((item) => (
               <li key={item.key}>
                 <Link
                   href={item.href}
                   aria-current={item.key === active ? "page" : undefined}
-                  className={`inline-flex min-h-9 items-center rounded-full px-3 text-sm transition-colors duration-200 ${
-                    item.key === active
-                      ? "bg-[#111111] text-white"
-                      : "text-neutral-800 hover:bg-[#ececef]"
-                  }`}
+                  className="nav-link"
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
           </ul>
-          <a
-            href="/api/funnel/export"
-            className="inline-flex min-h-9 items-center rounded-full border border-[rgb(226_226_230/0.9)] bg-white px-3 text-sm text-neutral-800 hover:bg-[#ececef]"
-          >
+          <a href="/api/funnel/export" className="nav-link">
             Export CSV
           </a>
-          <a
-            href="/api/funnel/admin-login?logout=1"
-            className="ml-auto inline-flex min-h-9 items-center px-2 text-sm text-neutral-700 underline underline-offset-4 hover:text-neutral-950"
-          >
+          <a href="/api/funnel/admin-login?logout=1" className="nav-link ml-auto">
             Se déconnecter
           </a>
         </nav>
 
         <div className="mt-8 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="ds-eyebrow">{eyebrow}</p>
-            <h1 className="mt-2 text-3xl font-semibold tracking-tight">{title}</h1>
+            <p className="meta">{eyebrow}</p>
+            <h1 className="h-section mt-3 text-cream">{title}</h1>
           </div>
           {actions ? <div className="flex flex-wrap items-center gap-2">{actions}</div> : null}
         </div>

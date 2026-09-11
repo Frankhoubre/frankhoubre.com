@@ -8,6 +8,7 @@ import {
   FORMATION_PROMO_URL,
   formationPromoTodayKey,
 } from "@/lib/formation-promo";
+import { Arrow } from "@/components/ui/Cta";
 
 const DELAY_MS = 30_000;
 
@@ -44,6 +45,10 @@ function wasShownToday(): boolean {
   }
 }
 
+/**
+ * Fenêtre promo (une fois par jour, après 30 s) : fiche sombre cadrée,
+ * un seul bouton plein, fermeture au clic hors cadre ou à Échap.
+ */
 export function FormationPromoModal() {
   const [open, setOpen] = useState(false);
 
@@ -84,10 +89,10 @@ export function FormationPromoModal() {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8">
+    <div className="fixed inset-0 z-[var(--z-modal)] flex items-end justify-center p-4 sm:items-center sm:p-8">
       <button
         type="button"
-        className="absolute inset-0 bg-zinc-950/50 backdrop-blur-md transition-opacity"
+        className="absolute inset-0 bg-charcoal/70 backdrop-blur-sm"
         aria-label="Fermer la promotion"
         onClick={dismiss}
       />
@@ -95,62 +100,38 @@ export function FormationPromoModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="formation-promo-title"
-        className="relative max-h-[min(90vh,640px)] w-full max-w-[26rem] overflow-y-auto rounded-2xl border border-neutral-200/90 bg-gradient-to-br from-neutral-50 via-white to-neutral-50/95 p-6 shadow-[0_25px_50px_-12px_rgb(0_0_0/0.25)] sm:max-w-lg sm:p-8"
+        className="relative w-full max-w-lg border border-line-strong bg-charcoal-2 p-6 sm:p-8"
       >
-        <button
-          type="button"
-          onClick={dismiss}
-          className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full text-neutral-500 transition hover:bg-neutral-100 hover:text-neutral-900"
-          aria-label="Fermer"
-        >
-          <span className="text-2xl leading-none" aria-hidden>
-            ×
-          </span>
-        </button>
-        <p className="font-mono text-[0.7rem] font-medium uppercase tracking-[0.12em] text-neutral-500">
-          Méthode offerte
-        </p>
-        <p
-          id="formation-promo-title"
-          className="mt-3 pr-8 text-xl font-semibold leading-snug tracking-tight text-neutral-950 sm:text-2xl"
-        >
-          Le film que vous imaginez
-          <br className="sm:hidden" /> peut enfin exister.
-        </p>
-        <ul className="mt-4 space-y-2 text-[1.05rem] leading-relaxed text-neutral-900">
-          <li className="flex gap-2.5">
-            <span className="mt-0.5 shrink-0 font-semibold text-emerald-700">
-              ✓
-            </span>
-            <span>
-              Créez des séries, des films ou des publicités dans tous les
-              styles
-            </span>
-          </li>
-        </ul>
-        <p className="mt-4 text-[1.05rem] leading-relaxed text-neutral-800">
-          Recevez gratuitement la méthode pour transformer une simple idée
-          écrite en storyboard clair, puis en vidéo IA spectaculaire. Même si
-          vous débutez.
-        </p>
-        <p className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <Link
-            href={FORMATION_PROMO_URL}
-            onClick={dismiss}
-            className="ds-cta-dark flex-1 !py-3.5 text-center"
-          >
-            Recevoir la méthode gratuite
-          </Link>
+        <div className="flex items-start justify-between gap-4">
+          <p className="meta">Méthode offerte · 3 vidéos · 24 min</p>
           <button
             type="button"
             onClick={dismiss}
-            className="ds-button-secondary flex-1 !py-3.5 text-sm font-medium text-neutral-800"
+            className="meta -mr-2 -mt-2 flex h-10 items-center px-2 text-fog transition-colors hover:text-cream"
+            aria-label="Fermer"
           >
-            Plus tard
+            Fermer
           </button>
+        </div>
+        <p id="formation-promo-title" className="h-block mt-6 text-cream">
+          Le film que vous imaginez peut enfin exister.
         </p>
-        <p className="mt-4 text-center text-xs text-neutral-500">
-          Pas de spam : accès et méthode envoyés par e-mail.
+        <p className="mt-4 text-[15px] leading-relaxed text-fog">
+          Recevez gratuitement la méthode pour transformer une simple idée
+          écrite en storyboard clair, puis en vidéo IA crédible. Même si vous
+          débutez. Séries, films ou publicités, dans tous les styles.
+        </p>
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <Link href={FORMATION_PROMO_URL} onClick={dismiss} className="btn btn-primary flex-1">
+            <span>Recevoir la méthode</span>
+            <Arrow />
+          </Link>
+          <button type="button" onClick={dismiss} className="btn btn-quiet flex-1 sm:flex-none">
+            <span>Plus tard</span>
+          </button>
+        </div>
+        <p className="meta mt-5 text-[10px] text-fog/70">
+          Pas de spam. Accès et méthode envoyés par email.
         </p>
       </div>
     </div>

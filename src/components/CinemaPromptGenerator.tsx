@@ -368,34 +368,23 @@ export function CinemaPromptGenerator() {
   }
 
   return (
-    <section className="mb-14">
-      <div className="rounded-3xl border border-neutral-200/90 bg-white p-5 shadow-sm sm:p-8">
-        <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-neutral-500">Mini outil gratuit</p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-neutral-950 sm:text-4xl">
-              Générateur de prompt cinéma IA
-            </h1>
-            <p className="mt-4 max-w-2xl text-neutral-700">
-              Choisissez une camera, un objectif, une ouverture, un ISO, un style visuel et un
-              setup lumière.
-              L&apos;outil génère automatiquement un prompt professionnel en anglais, prêt pour
-              Midjourney, Runway, Kling, Sora ou Flux.
-            </p>
-
-            <form
-              className="mt-7 grid gap-4 sm:grid-cols-2"
-              onSubmit={(e) => {
-                e.preventDefault();
-                generatePrompt();
-              }}
-            >
+    <section className="container-x section-sm" aria-label="Générateur">
+      <div className="grid-12 gap-y-12">
+        <div className="col-span-12 lg:col-span-7">
+          <p className="meta">Réglages · 6 paramètres</p>
+          <form
+            className="mt-6 grid gap-6 border-t border-line pt-6 sm:grid-cols-2"
+            onSubmit={(e) => {
+              e.preventDefault();
+              generatePrompt();
+            }}
+          >
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Caméra</span>
+                <span className="meta mb-2 block">Caméra</span>
                 <select
                   value={state.camera}
                   onChange={(e) => updateField("camera", e.target.value)}
-                  className="ds-input"
+                  className="input"
                 >
                   {toolData.cameras.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -406,11 +395,11 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Objectif</span>
+                <span className="meta mb-2 block">Objectif</span>
                 <select
                   value={state.lens}
                   onChange={(e) => updateField("lens", e.target.value)}
-                  className="ds-input"
+                  className="input"
                 >
                   {toolData.lenses.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -421,11 +410,11 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Ouverture</span>
+                <span className="meta mb-2 block">Ouverture</span>
                 <select
                   value={state.aperture}
                   onChange={(e) => updateField("aperture", e.target.value)}
-                  className="ds-input"
+                  className="input"
                 >
                   {toolData.apertures.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -436,11 +425,11 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">ISO</span>
+                <span className="meta mb-2 block">ISO</span>
                 <select
                   value={state.iso}
                   onChange={(e) => updateField("iso", e.target.value)}
-                  className="ds-input"
+                  className="input"
                 >
                   {toolData.isos.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -451,11 +440,11 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Style</span>
+                <span className="meta mb-2 block">Style</span>
                 <select
                   value={state.style}
                   onChange={(e) => updateField("style", e.target.value)}
-                  className="ds-input"
+                  className="input"
                 >
                   {toolData.styles.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -466,11 +455,11 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Éclairage</span>
+                <span className="meta mb-2 block">Éclairage</span>
                 <select
                   value={state.lighting}
                   onChange={(e) => updateField("lighting", e.target.value)}
-                  className="ds-input"
+                  className="input"
                 >
                   {toolData.lightings.map((item) => (
                     <option key={item.id} value={item.id}>
@@ -481,50 +470,48 @@ export function CinemaPromptGenerator() {
               </label>
 
               <label className="block sm:col-span-2">
-                <span className="mb-1.5 block text-sm font-medium text-neutral-900">Sujet / scène (optionnel)</span>
+                <span className="meta mb-2 block">Sujet / scène (optionnel)</span>
                 <input
                   type="text"
                   value={state.subject}
                   onChange={(e) => updateField("subject", e.target.value)}
                   placeholder="ex: a lone detective crossing a rain-soaked neon street at night"
-                  className="ds-input"
+                  className="input"
                 />
               </label>
 
-              <div className="flex flex-wrap items-center gap-3 pt-1 sm:col-span-2">
-                <button
-                  type="submit"
-                  className="ds-cta-dark"
-                >
-                  Générer le prompt
+              <div className="flex flex-wrap items-center gap-3 pt-2 sm:col-span-2">
+                <button type="submit" className="btn btn-primary">
+                  <span>Générer le prompt</span>
                 </button>
-                <button
-                  type="button"
-                  onClick={copyPrompt}
-                  className="ds-button-secondary text-sm font-medium text-neutral-900"
-                >
-                  Copier le prompt
+                <button type="button" onClick={copyPrompt} className="btn">
+                  <span>Copier le prompt</span>
                 </button>
-                <span className={`text-sm text-emerald-700 transition-opacity ${copied ? "opacity-100" : "opacity-0"}`}>
-                  Prompt copié.
+                <span className={`meta transition-opacity duration-200 ${copied ? "opacity-100" : "opacity-0"}`} aria-live="polite">
+                  Prompt copié
                 </span>
               </div>
-            </form>
-          </div>
+          </form>
+        </div>
 
-          <aside className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 sm:p-5">
-            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-neutral-500">Prompt final</p>
-            {loading ? (
-              <div className="mt-3 flex items-center gap-2 text-sm text-neutral-700">
-                <span className="inline-block h-2.5 w-2.5 animate-ping rounded-full bg-neutral-700"></span>
-                Génération en cours…
-              </div>
-            ) : null}
-            <pre className="mt-3 min-h-[240px] whitespace-pre-wrap rounded-xl border border-neutral-200 bg-white p-4 text-sm leading-relaxed text-neutral-800">
+        <aside className="col-span-12 lg:col-span-5">
+          <div className="card card-surface sticky top-28 p-5 sm:p-6">
+            <div className="flex items-center justify-between">
+              <p className="meta">Prompt final · EN</p>
+              {loading ? (
+                <span className="meta meta-strong flex items-center gap-2" role="status">
+                  <span className="inline-block h-1.5 w-1.5 animate-pulse bg-cream" aria-hidden />
+                  Génération
+                </span>
+              ) : (
+                <span className="meta meta-dim">{prompt.length} car.</span>
+              )}
+            </div>
+            <pre className="mt-4 min-h-[240px] whitespace-pre-wrap border-t border-line pt-4 font-sans text-[15px] leading-relaxed text-stone">
               {prompt}
             </pre>
-          </aside>
-        </div>
+          </div>
+        </aside>
       </div>
     </section>
   );

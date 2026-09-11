@@ -1,8 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
 import type { Post } from "@/lib/blog";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
-import { Badge } from "@/components/Badge";
+import { PostCard } from "@/components/ui/PostCard";
 
 type Props = {
   posts: Post[];
@@ -11,84 +9,45 @@ type Props = {
   locale?: "fr" | "en";
 };
 
+/**
+ * Derniers articles en double page : le plus récent en grand photogramme
+ * sur sept colonnes, les suivants en liste serrée sur cinq.
+ */
 export function HomeLatestPostGrid({
   posts,
   basePath = "/blog",
   locale = "fr",
 }: Props) {
-  const dateFmt = new Intl.DateTimeFormat(locale === "en" ? "en-US" : "fr-FR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-  const previewLabel = locale === "en" ? "Preview" : "Aperçu";
+  if (posts.length === 0) return null;
+  const [first, ...rest] = posts;
+  const categoryHref = (category: string) =>
+    locale === "fr" ? `/blog/category/${category}` : undefined;
 
   return (
-    <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {posts.map((post) => {
-        const thumb = getPostThumbnail(post);
-        const href = `${basePath}/${post.slug}`;
-        return (
-          <li key={post.slug}>
-            <article className="cyber-card group flex h-full flex-col overflow-hidden">
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#e6e6ea]">
-                <Link href={href} className="relative block h-full w-full">
-                  {thumb ? (
-                    thumb.startsWith("http") ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={thumb}
-                        alt={`${previewLabel} : ${post.frontmatter.title}`}
-                        loading="lazy"
-                        decoding="async"
-                        className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                      />
-                    ) : (
-                      <Image
-                        src={thumb}
-                        alt={`${previewLabel} : ${post.frontmatter.title}`}
-                        fill
-                        className="object-cover transition duration-300 group-hover:scale-[1.02]"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                    )
-                  ) : (
-                    <div className="flex h-full items-center justify-center text-sm text-[var(--label)]">
-                      {previewLabel}
-                    </div>
-                  )}
-                </Link>
-                <span className="absolute left-3 top-3 z-10">
-                  <Badge
-                    category={post.frontmatter.category}
-                    href={
-                      locale === "fr"
-                        ? `/blog/category/${post.frontmatter.category}`
-                        : undefined
-                    }
-                  />
-                </span>
-              </div>
-              <div className="flex flex-1 flex-col p-5">
-                <time
-                  dateTime={post.frontmatter.date}
-                  className="cyber-label"
-                >
-                  {dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
-                </time>
-                <h3 className="mt-3 text-[13px] leading-snug text-[var(--cream)] normal-case tracking-normal">
-                  <Link href={href} className="hover:underline">
-                    {post.frontmatter.title}
-                  </Link>
-                </h3>
-                <p className="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">
-                  {post.frontmatter.excerpt}
-                </p>
-              </div>
-            </article>
-          </li>
-        );
-      })}
-    </ul>
+    <div className="grid-12 gap-y-12">
+      <div className="col-span-12 lg:col-span-7">
+        <PostCard
+          post={{ slug: first.slug, frontmatter: first.frontmatter, thumbnail: getPostThumbnail(first) }}
+          href={`${basePath}/${first.slug}`}
+          locale={locale}
+          categoryHref={categoryHref(first.frontmatter.category)}
+          variant="feature"
+          index="01"
+          sizes="(max-width: 1024px) 100vw, 58vw"
+        />
+      </div>
+      <div className="col-span-12 lg:col-span-5">
+        {rest.map((post) => (
+          <PostCard
+            key={post.slug}
+            post={{ slug: post.slug, frontmatter: post.frontmatter, thumbnail: getPostThumbnail(post) }}
+            href={`${basePath}/${post.slug}`}
+            locale={locale}
+            categoryHref={categoryHref(post.frontmatter.category)}
+            variant="row"
+          />
+        ))}
+      </div>
+    </div>
   );
 }

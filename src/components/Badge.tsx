@@ -5,11 +5,13 @@ type Props = {
   category: string;
   href?: string;
   className?: string;
+  /** Sans cadre : simple libellé en capitales (dans une ligne de métadonnées). */
+  plain?: boolean;
 };
 
-export function Badge({ category, href, className = "" }: Props) {
+export function Badge({ category, href, className = "", plain = false }: Props) {
   const label = getCategoryLabel(category);
-  const base = "ds-badge";
+  const base = plain ? "meta meta-strong hover:text-cream" : "badge";
 
   if (href) {
     return (

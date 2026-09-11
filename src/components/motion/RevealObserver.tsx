@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const WORD_DELAY_S = 0.1;
+const WORD_DELAY_S = 0.06;
 
 /**
  * Un span par mot, séparés par de vraies espaces (texte accessible et
@@ -29,19 +29,16 @@ function splitWords(
 
 /**
  * Découpe chaque .words-pull-up en mots (un span par mot, délai croissant).
- * Cas particulier du H1 : chaque <span> enfant direct est une ligne, on garde
- * un index de mot continu d'une ligne à l'autre.
+ * Chaque <span> enfant direct est traité comme une ligne masquée ; l'index
+ * de mot continue d'une ligne à l'autre.
  */
 function splitElement(el: HTMLElement) {
   if (el.dataset.split === "1") return;
   el.dataset.split = "1";
 
-  const lineSpans =
-    el.tagName === "H1"
-      ? Array.from(el.children).filter(
-          (c): c is HTMLSpanElement => c.tagName === "SPAN",
-        )
-      : [];
+  const lineSpans = Array.from(el.children).filter(
+    (c): c is HTMLSpanElement => c.tagName === "SPAN",
+  );
 
   if (lineSpans.length > 0) {
     let index = 0;
@@ -54,14 +51,17 @@ function splitElement(el: HTMLElement) {
     return;
   }
 
+  el.classList.add("pull-line");
   const { nodes } = splitWords(el.textContent ?? "", 0);
   el.replaceChildren(...nodes);
 }
 
+const REVEAL_SELECTOR = ".reveal, .reveal-mask, .reveal-line, .fade-up-reveal";
+
 /**
- * Révélation au scroll : mots qui montent (.words-pull-up) et blocs qui se
- * dévoilent avec un flou (.fade-up-reveal, délai via data-delay). Sans
- * IntersectionObserver, tout est révélé immédiatement.
+ * Révélation au scroll : mots qui montent sous un masque (.words-pull-up)
+ * et blocs qui apparaissent (.reveal, .reveal-mask, .reveal-line ; délai via
+ * data-delay en secondes). Sans IntersectionObserver, tout est révélé.
  */
 export function RevealObserver() {
   useEffect(() => {
@@ -69,7 +69,7 @@ export function RevealObserver() {
       document.querySelectorAll<HTMLElement>(".words-pull-up"),
     );
     const fadeEls = Array.from(
-      document.querySelectorAll<HTMLElement>(".fade-up-reveal"),
+      document.querySelectorAll<HTMLElement>(REVEAL_SELECTOR),
     );
 
     wordEls.forEach(splitElement);
@@ -102,7 +102,7 @@ export function RevealObserver() {
           io.unobserve(el);
         }
       },
-      { threshold: 0.15 },
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
     );
 
     wordEls.forEach((el) => wordsIo.observe(el));

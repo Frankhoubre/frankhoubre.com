@@ -1,14 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import remarkGfm from "remark-gfm";
+import { ArticleHeader } from "@/components/ArticleHeader";
 import { ArticleShareButtons } from "@/components/ArticleShareButtons";
+import { AuthorBox } from "@/components/AuthorBox";
 import { ArticleSidebarSearch } from "@/components/ArticleSidebarSearch";
 import { ArticleMobileToc } from "@/components/ArticleMobileToc";
 import { ArticleToc } from "@/components/ArticleToc";
-import { Badge } from "@/components/Badge";
 import { createBlogMdxComponents } from "@/components/createBlogMdxComponents";
 import { JsonLd } from "@/components/JsonLd";
 import { FaqSection } from "@/components/FaqSection";
@@ -324,89 +323,36 @@ export default async function BlogArticlePage({ params }: Props) {
     <>
       <JsonLd data={jsonLd} />
       <ReadingProgressBar />
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-14">
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,42rem)_minmax(0,1fr)] lg:gap-10">
-          <div className="hidden lg:block" aria-hidden />
-          <article className="min-w-0 max-w-2xl justify-self-center lg:col-start-2">
-            <section className="ds-hero p-5 sm:p-6">
-              <nav
-                className="mb-4 text-sm text-neutral-700"
-                aria-label="Fil d'Ariane"
-              >
-              <ol className="flex flex-wrap items-center gap-2">
-                <li>
-                  <Link href="/" className="ds-link hover:text-neutral-950">
-                    Accueil
-                  </Link>
-                </li>
-                <li aria-hidden>›</li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="ds-link hover:text-neutral-950"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li aria-hidden>›</li>
-                <li className="line-clamp-2 text-neutral-950 sm:line-clamp-none">
-                  {post.frontmatter.title}
-                </li>
-              </ol>
-              </nav>
-              <Link
-                href="/blog"
-                className="text-sm font-medium text-neutral-800 hover:text-neutral-950"
-              >
-                ← Blog
-              </Link>
-              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-neutral-800">
-                <Badge
-                  category={post.frontmatter.category}
-                  href={`/blog/category/${post.frontmatter.category}`}
-                />
-                <time dateTime={post.frontmatter.date}>
-                  {dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
-                </time>
-                <span aria-hidden>·</span>
-                <span>{minutes} min de lecture</span>
-              </div>
-              <h1 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
-                {post.frontmatter.title}
-              </h1>
-              <p className="mt-4 text-lg leading-relaxed text-neutral-800">
-                {post.frontmatter.excerpt}
-              </p>
-              <div className="mt-6">
-                <ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />
-              </div>
-            </section>
-
-            {thumb ? (
-              <div className="relative mt-10 aspect-[2/1] w-full overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100">
-                {thumb.startsWith("http") ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={thumb}
-                    alt={`Illustration pour « ${post.frontmatter.title} »`}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
-                  <Image
-                    src={thumb}
-                    alt={`Illustration pour « ${post.frontmatter.title} »`}
-                    fill
-                    className="object-cover"
-                    priority
-                    sizes="(max-width: 768px) 100vw, 672px"
-                  />
-                )}
-              </div>
-            ) : null}
+      <div className="container-x page-top pb-20 sm:pb-28">
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,45rem)_minmax(0,1fr)] lg:gap-12">
+          <div className="hidden lg:block" aria-hidden>
+            <p className="meta vertical-meta sticky top-32 text-[10px] text-fog/70">
+              Journal · {getCategoryLabel(post.frontmatter.category)} · {post.frontmatter.date}
+            </p>
+          </div>
+          <article className="min-w-0 max-w-[45rem] lg:col-start-2">
+            <ArticleHeader
+              title={post.frontmatter.title}
+              excerpt={post.frontmatter.excerpt}
+              date={post.frontmatter.date}
+              dateLabel={dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
+              minutesLabel={`${minutes} min de lecture`}
+              category={post.frontmatter.category}
+              categoryHref={`/blog/category/${post.frontmatter.category}`}
+              thumb={thumb}
+              thumbAlt={`Illustration pour « ${post.frontmatter.title} »`}
+              breadcrumb={[
+                { label: "Accueil", href: "/" },
+                { label: "Blog", href: "/blog" },
+                { label: post.frontmatter.title },
+              ]}
+              actions={<ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />}
+              figureCaption={`Fig. 01 · ${getCategoryLabel(post.frontmatter.category)}`}
+            />
 
             <ArticleMobileToc items={toc} />
 
-            <div className="prose-cinema mt-10 max-w-none">
+            <div className="prose-cinema mt-12">
               {beforeMdx ? (
                 <MDXRemote
                   source={beforeMdx}
@@ -427,86 +373,38 @@ export default async function BlogArticlePage({ params }: Props) {
             </div>
 
             {recommendedVideoId ? (
-              <section className="mt-14">
-                <h2 className="text-xl font-semibold tracking-tight text-neutral-950">
+              <section className="mt-16 border-t border-line pt-8" aria-labelledby="video-title">
+                <p className="meta">Chaîne YouTube</p>
+                <h2 id="video-title" className="h-block mt-3 text-cream">
                   À voir sur ma chaîne
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+                <p className="mt-2 text-sm leading-relaxed text-fog">
                   Je décortique ce genre de workflow en vidéo sur ma chaîne
                   YouTube Business Dynamite.
                 </p>
-                <div className="mt-4">
-                  <YouTubeEmbed
-                    videoId={recommendedVideoId}
-                    title={`${articleTitle} : Business Dynamite`}
-                  />
-                </div>
+                <YouTubeEmbed
+                  videoId={recommendedVideoId}
+                  title={`${articleTitle} : Business Dynamite`}
+                />
               </section>
             ) : null}
 
-            <footer className="ds-hero mt-14 rounded-2xl px-5 py-8 sm:px-6">
-              <p className="text-xs uppercase tracking-wide text-neutral-500">
-                Auteur
-              </p>
-              <div className="mt-4 flex flex-col gap-5 sm:flex-row sm:items-start">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={authorImg}
-                  alt={person.authorDisplayName}
-                  width={72}
-                  height={72}
-                  className="h-[4.5rem] w-[4.5rem] shrink-0 rounded-full border border-neutral-200 bg-white object-cover"
-                />
-                <div className="min-w-0 flex-1">
-                  <p className="font-semibold text-neutral-950">
-                    {person.authorDisplayName}
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-neutral-600">
-                    {person.jobTitle}
-                  </p>
-                  <div className="mt-4 space-y-3 text-sm leading-relaxed text-neutral-800">
-                    {person.bio.map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
-                    ))}
-                  </div>
-                  <nav
-                    className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium"
-                    aria-label="Liens auteur"
-                  >
-                    <Link
-                      href="/a-propos"
-                      className="ds-link text-neutral-950"
-                    >
-                      À propos
-                    </Link>
-                    <span className="text-neutral-300" aria-hidden>
-                      ·
-                    </span>
-                    <Link
-                      href="/contact"
-                      className="ds-link text-neutral-950"
-                    >
-                      Contact
-                    </Link>
-                    <span className="text-neutral-300" aria-hidden>
-                      ·
-                    </span>
-                    <Link
-                      href="/blog"
-                      className="ds-link text-neutral-950"
-                    >
-                      Tous les articles
-                    </Link>
-                  </nav>
-                </div>
-              </div>
-            </footer>
+            <AuthorBox
+              imageSrc={authorImg}
+              jobTitle={person.jobTitle}
+              bio={person.bio}
+              links={[
+                { label: "À propos", href: "/a-propos" },
+                { label: "Contact", href: "/contact" },
+                { label: "Tous les articles", href: "/blog" },
+              ]}
+            />
 
             <RelatedPosts posts={related} />
           </article>
 
           <div className="mt-12 hidden lg:col-start-3 lg:mt-0 lg:block lg:justify-self-start">
-            <div className="sticky top-24">
+            <div className="sticky top-28">
               <ArticleToc items={toc} />
               <ArticleSidebarSearch posts={sidebarPosts} currentSlug={slug} />
             </div>

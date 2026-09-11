@@ -4,6 +4,7 @@ import { BlogList } from "@/components/BlogList";
 import { getPostsByCategory } from "@/lib/blog";
 import { toPostSummary } from "@/lib/blog-thumbnail";
 import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
 import {
   buildBreadcrumbList,
   buildGraphJsonLd,
@@ -73,6 +74,7 @@ export default async function BlogCategoryPage({ params }: Props) {
   const posts = getPostsByCategory(category);
   const label = getCategoryLabel(category);
   const categoryUrl = `${baseUrl}/blog/category/${category}`;
+  const index = String(blogCategories.findIndex((c) => c.slug === category) + 1).padStart(2, "0");
 
   // CollectionPage + ItemList : la liste client ne rend que 9 cartes dans le
   // HTML, le JSON-LD expose donc l'inventaire de la catégorie aux moteurs.
@@ -106,28 +108,29 @@ export default async function BlogCategoryPage({ params }: Props) {
   return (
     <>
       <JsonLd data={jsonLd} />
-      <div className="ds-page max-w-5xl">
-      <header className="ds-cinematic-frame mb-12 max-w-4xl p-6 sm:p-8">
-        <div className="ds-cinematic-beam" aria-hidden />
-        <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.18em] text-neutral-600">
-          Catégorie blog
-        </p>
-        <h1 className="relative z-10 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
-          <span className="ds-title-line">
-            <span>{getCategoryLabel(category)}</span>
-          </span>
-        </h1>
-        <p className="relative z-10 mt-4 text-lg leading-relaxed text-neutral-800">
-          {CATEGORY_DESCRIPTIONS[category] ??
-            `Tous les articles publiés dans cette catégorie.`}
-        </p>
-      </header>
-      <BlogList
-        posts={posts.map(toPostSummary)}
-        initialCategory={category}
-        gridLayout
+      <PageHeader
+        index={index}
+        kicker="Catégorie du blog"
+        title={label}
+        lede={CATEGORY_DESCRIPTIONS[category] ?? "Tous les articles publiés dans cette catégorie."}
+        breadcrumb={
+          <Breadcrumb
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label },
+            ]}
+          />
+        }
+        aside={
+          <p className="meta">
+            <span className="meta-strong tabular">{posts.length}</span> article{posts.length > 1 ? "s" : ""}
+          </p>
+        }
       />
-    </div>
+      <div className="container-x section-sm">
+        <BlogList posts={posts.map(toPostSummary)} initialCategory={category} gridLayout />
+      </div>
     </>
   );
 }

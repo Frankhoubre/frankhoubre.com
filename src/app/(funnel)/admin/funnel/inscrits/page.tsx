@@ -74,20 +74,20 @@ export default async function SubscribersPage({
   return (
     <AdminShell active="subscribers" title={`Inscrits (${total})`}>
       {params.message && MESSAGES[params.message] ? (
-        <p role="status" className="mt-6 rounded-xl border border-[rgb(226_226_230/0.9)] bg-white px-4 py-3 text-sm text-neutral-900">
+        <p role="status" className="mt-6 border border-line bg-graphite px-4 py-3 text-sm text-cream">
           {MESSAGES[params.message]}
         </p>
       ) : null}
 
       <form method="get" className="mt-6 flex flex-wrap items-end gap-3">
         <div className="min-w-[16rem] flex-1">
-          <label htmlFor="q" className="mb-1.5 block text-sm font-medium text-neutral-900">
+          <label htmlFor="q" className="mb-1.5 block text-sm text-cream">
             Rechercher (email, prénom, source, campagne)
           </label>
-          <input id="q" name="q" type="search" defaultValue={q} className="ds-input" placeholder="ex. gmail, tiktok, Camille" />
+          <input id="q" name="q" type="search" defaultValue={q} className="input" placeholder="ex. gmail, tiktok, Camille" />
         </div>
         {filter !== "tous" ? <input type="hidden" name="filtre" value={filter} /> : null}
-        <button type="submit" className="ds-cta-dark !py-3">
+        <button type="submit" className="btn btn-primary">
           Rechercher
         </button>
       </form>
@@ -104,20 +104,16 @@ export default async function SubscribersPage({
             key={key}
             href={link(1, key)}
             aria-current={filter === key ? "page" : undefined}
-            className={`inline-flex min-h-9 items-center rounded-full border px-3 text-sm ${
-              filter === key
-                ? "border-[#111111] bg-[#111111] text-white"
-                : "border-[rgb(226_226_230/0.9)] bg-white text-neutral-800 hover:bg-[#ececef]"
-            }`}
+            className={`chip ${filter === key ? "is-active" : ""}`}
           >
             {label}
           </Link>
         ))}
       </nav>
 
-      <section className="ds-surface mt-6 p-5 sm:p-6">
+      <section className="card card-surface mt-6 p-5 sm:p-6">
         {rows.length === 0 ? (
-          <p className="text-sm text-neutral-700">
+          <p className="text-sm text-fog">
             {filtering
               ? "Aucun inscrit ne correspond à cette recherche."
               : "Personne pour l’instant. Le premier inscrit apparaîtra ici."}
@@ -126,7 +122,7 @@ export default async function SubscribersPage({
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] text-sm">
               <thead>
-                <tr className="text-left text-xs uppercase tracking-[0.08em] text-neutral-600">
+                <tr className="text-left meta">
                   <th className="py-2 pr-3 font-medium">Prénom</th>
                   <th className="py-2 pr-3 font-medium">Email</th>
                   <th className="py-2 pr-3 font-medium">Inscrit le</th>
@@ -145,17 +141,17 @@ export default async function SubscribersPage({
         )}
         {pages > 1 ? (
           <nav aria-label="Pagination" className="mt-4 flex items-center justify-between text-sm">
-            <span className="text-neutral-600">
+            <span className="text-fog">
               Page {page} sur {pages} · {matched} inscrit{matched > 1 ? "s" : ""}
             </span>
             <div className="flex gap-2">
               {page > 1 ? (
-                <Link href={link(page - 1)} className="ds-button-secondary !py-2 text-sm">
+                <Link href={link(page - 1)} className="btn btn-sm">
                   Précédent
                 </Link>
               ) : null}
               {page < pages ? (
-                <Link href={link(page + 1)} className="ds-button-secondary !py-2 text-sm">
+                <Link href={link(page + 1)} className="btn btn-sm">
                   Suivant
                 </Link>
               ) : null}

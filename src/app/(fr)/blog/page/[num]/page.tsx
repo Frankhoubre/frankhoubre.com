@@ -5,6 +5,7 @@ import {
   POSTS_PER_ARCHIVE_PAGE,
   PaginatedBlogGrid,
 } from "@/components/PaginatedBlogGrid";
+import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
 import { getAllPosts } from "@/lib/blog";
 import {
   buildBreadcrumbList,
@@ -84,24 +85,38 @@ export default async function BlogArchivePage({ params }: PageProps) {
   );
 
   return (
-    <div className="ds-page max-w-5xl">
+    <>
       <JsonLd data={jsonLd} />
-      <header className="ds-cinematic-frame max-w-4xl p-6 sm:p-8">
-        <div className="ds-cinematic-beam" aria-hidden />
-        <p className="relative z-10 cyber-label">Archives du blog</p>
-        <h1 className="relative z-10 mt-3 text-2xl text-[var(--cream)] sm:text-3xl">
-          Blog IA vidéo et image, page {page}
-        </h1>
-        <p className="relative z-10 mt-4 text-base leading-relaxed text-[var(--muted)]">
-          Tous les articles publiés, du plus récent au plus ancien. Page {page} sur {totalPages}.
-        </p>
-      </header>
-      <PaginatedBlogGrid
-        posts={pagePosts}
-        currentPage={page}
-        totalPages={totalPages}
-        locale="fr"
+      <PageHeader
+        index={String(page).padStart(2, "0")}
+        kicker="Archives du blog"
+        size="lg"
+        title={`Blog IA vidéo et image, page ${page}`}
+        lede={`Tous les articles publiés, du plus récent au plus ancien. Page ${page} sur ${totalPages}.`}
+        breadcrumb={
+          <Breadcrumb
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: `Page ${page}` },
+            ]}
+          />
+        }
+        aside={
+          <p className="meta">
+            Articles <span className="meta-strong tabular">{start + 1}</span> à{" "}
+            <span className="meta-strong tabular">{start + pagePosts.length}</span>
+          </p>
+        }
       />
-    </div>
+      <div className="container-x section-sm">
+        <PaginatedBlogGrid
+          posts={pagePosts}
+          currentPage={page}
+          totalPages={totalPages}
+          locale="fr"
+        />
+      </div>
+    </>
   );
 }

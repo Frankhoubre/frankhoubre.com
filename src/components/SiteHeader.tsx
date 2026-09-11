@@ -7,7 +7,13 @@ import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
 import { siteName } from "@/lib/site";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { getDictionary, localeFromPathname, withLocale } from "@/lib/i18n";
+import { Arrow } from "@/components/ui/Cta";
 
+/**
+ * En-tête fixe : transparent en haut de page, verre sombre dès qu'on
+ * défile. Marque à gauche, navigation en capitales, bascule de langue et
+ * un appel à l'action cadré à droite. Menu plein écran sur mobile.
+ */
 export function SiteHeader() {
   const pathname = usePathname();
   const locale = localeFromPathname(pathname);
@@ -15,110 +21,73 @@ export function SiteHeader() {
   const navItems = dict.nav;
   const homeHref = withLocale("/", locale);
   const ctaLabel = locale === "en" ? "Free training" : "Formation gratuite";
+  const tagline = locale === "en" ? "AI filmmaker" : "Réalisateur IA";
   const isHome = pathname === homeHref;
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (!isHome) return;
-
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 24);
-    };
-
+    const onScroll = () => setIsScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome]);
+  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setMenuOpen(false);
     };
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
   }, [menuOpen]);
 
-  // L'accueil est entièrement sombre : le header y reste crème sur brun,
-  // transparent tant qu'on est en haut du hero. Les autres pages gardent un
-  // header clair.
-  const dark = isHome;
-  const transparent = isHome && !isScrolled && !menuOpen;
+  // Hors accueil, l'en-tête est toujours opaque : les pages intérieures
+  // commencent sous lui et n'ont pas d'image plein cadre à laisser voir.
+  const solid = !isHome || isScrolled || menuOpen;
 
-  const headerClass = transparent
-    ? "fixed inset-x-0 border-b border-transparent bg-transparent"
-    : dark
-      ? "sticky border-b border-[rgba(17,17,17,0.12)] bg-[rgba(255,255,255,0.82)] backdrop-blur-xl"
-      : "sticky border-b border-[rgba(228,220,210,0.9)] bg-white/85 backdrop-blur-xl";
-
-  const brandClass = dark ? "text-[var(--cream)]" : "text-neutral-950";
-
-  const navClass = dark
-    ? "bg-[rgba(255,255,255,0.8)] text-[#111111] ring-1 ring-[rgba(17,17,17,0.12)] backdrop-blur-md"
-    : "bg-[rgba(247,241,233,0.9)] text-zinc-800";
-
-  const desktopLinkClass = `rounded-full px-3 py-1.5 transition-colors duration-200 ${
-    dark
-      ? "hover:bg-white hover:text-[#111111]"
-      : "hover:bg-white hover:text-zinc-950"
-  }`;
-
-  const ctaClass = dark
-    ? "bg-[#111111] text-white hover:bg-[#2a2a2a]"
-    : "bg-[#111111] text-white hover:bg-[#2a2a2a]";
-
-  const burgerClass = dark
-    ? "bg-[rgba(255,255,255,0.8)] text-[#111111] backdrop-blur-md hover:bg-white"
-    : "bg-[rgba(247,241,233,0.9)] text-zinc-900 hover:bg-[#e4e4e8]";
-
-  const panelClass = dark
-    ? "border-[rgba(17,17,17,0.12)] bg-[rgba(255,255,255,0.96)]"
-    : "border-[rgba(228,220,210,0.9)] bg-white/95";
-
-  const panelLink = (active: boolean) =>
-    dark
-      ? active
-        ? "bg-[rgba(17,17,17,0.12)] text-[var(--cream)]"
-        : "text-[rgba(17,17,17,0.82)] hover:bg-[rgba(17,17,17,0.1)] hover:text-[var(--cream)]"
-      : active
-        ? "bg-[#ececef] text-zinc-950"
-        : "text-zinc-800 hover:bg-[#ececef] hover:text-zinc-950";
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   return (
-    <header
-      className={`top-0 z-50 transition-all duration-300 ${headerClass}`}
-    >
-      <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-        <Link
-          href={homeHref}
-          className={`heading-font shrink-0 text-sm uppercase tracking-[0.08em] transition ${brandClass}`}
-        >
-          {siteName}
+    <header className={`site-header ${solid ? "is-solid" : ""}`}>
+      <div className="container-x flex h-[var(--header-h)] items-center justify-between gap-6">
+        <Link href={homeHref} className="group flex shrink-0 items-baseline gap-3 whitespace-nowrap no-underline" aria-label={siteName}>
+          <span className="display text-[13px] font-semibold tracking-[0.2em] text-cream">
+            {siteName}
+          </span>
+          <span className="meta hidden text-[10px] text-fog transition-colors duration-200 group-hover:text-stone md:inline">
+            {tagline}
+          </span>
         </Link>
 
-        {/* Navigation desktop */}
         <nav
-          className={`hidden items-center gap-1 rounded-full px-2 py-1 text-sm font-medium transition lg:flex ${navClass}`}
+          className="hidden items-center gap-7 lg:flex"
           aria-label={locale === "en" ? "Main navigation" : "Navigation principale"}
         >
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className={desktopLinkClass}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className="nav-link"
+              aria-current={isActive(item.href) ? "page" : undefined}
+            >
               {item.label}
             </Link>
           ))}
-          <span className="mx-1">
-            <LanguageSwitcher onDark={dark} />
-          </span>
-          <Link
-            href={FORMATION_PROMO_URL}
-            className={`ml-1 rounded-full px-3.5 py-1.5 font-semibold transition-colors duration-200 ${ctaClass}`}
-          >
-            {ctaLabel}
+          <span className="ml-1 h-4 w-px bg-line-strong" aria-hidden />
+          <LanguageSwitcher />
+          <Link href={FORMATION_PROMO_URL} className="btn btn-sm">
+            <span>{ctaLabel}</span>
+            <Arrow />
           </Link>
         </nav>
 
-        {/* Bouton menu mobile */}
         <button
           type="button"
           onClick={() => setMenuOpen((v) => !v)}
@@ -133,71 +102,60 @@ export function SiteHeader() {
                 ? "Open menu"
                 : "Ouvrir le menu"
           }
-          className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full transition lg:hidden ${burgerClass}`}
+          className="meta flex h-11 items-center gap-3 text-cream lg:hidden"
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            aria-hidden
-          >
-            {menuOpen ? (
-              <>
-                <path d="M5 5l10 10" />
-                <path d="M15 5L5 15" />
-              </>
-            ) : (
-              <>
-                <path d="M3 6h14" />
-                <path d="M3 10h14" />
-                <path d="M3 14h14" />
-              </>
-            )}
-          </svg>
+          <span>{menuOpen ? (locale === "en" ? "Close" : "Fermer") : "Menu"}</span>
+          <span className="relative block h-3 w-5" aria-hidden>
+            <span
+              className={`absolute left-0 top-0 h-px w-full bg-current transition-transform duration-300 ${
+                menuOpen ? "translate-y-[5.5px] rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`absolute bottom-0 left-0 h-px w-full bg-current transition-transform duration-300 ${
+                menuOpen ? "-translate-y-[5.5px] -rotate-45" : ""
+              }`}
+            />
+          </span>
         </button>
       </div>
 
-      {/* Panneau mobile */}
+      {/* Menu mobile : plein écran, liste monumentale. */}
       <nav
         id="mobile-nav"
         aria-label={locale === "en" ? "Mobile navigation" : "Navigation mobile"}
-        className={`overflow-hidden backdrop-blur-xl transition-[max-height,opacity] duration-300 ease-out lg:hidden ${panelClass} ${
-          menuOpen ? "max-h-[28rem] border-b opacity-100" : "max-h-0 opacity-0"
+        className={`fixed inset-x-0 bottom-0 top-[var(--header-h)] z-40 flex flex-col overflow-y-auto bg-charcoal transition-[opacity,visibility] duration-300 lg:hidden ${
+          menuOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <ul className="mx-auto max-w-5xl space-y-1 px-4 py-4 sm:px-6">
-          {navItems.map((item) => {
-            const active =
-              pathname === item.href || pathname.startsWith(`${item.href}/`);
-            return (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className={`block rounded-xl px-4 py-3 text-base font-medium transition-colors ${panelLink(active)}`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            );
-          })}
-          <li className="px-4 py-3">
-            <LanguageSwitcher onDark={dark} onNavigate={() => setMenuOpen(false)} />
-          </li>
-          <li className="pt-2">
-            <Link
-              href={FORMATION_PROMO_URL}
-              onClick={() => setMenuOpen(false)}
-              className={`block rounded-xl px-4 py-3 text-center text-base font-semibold transition-colors ${ctaClass}`}
-            >
-              {ctaLabel}
-            </Link>
+        <ul className="container-x flex-1 pt-6">
+          {navItems.map((item, i) => (
+            <li key={item.href} className="border-t border-line">
+              <Link
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="flex items-baseline justify-between py-5 no-underline"
+                aria-current={isActive(item.href) ? "page" : undefined}
+              >
+                <span className="display text-[2rem] leading-none text-cream">{item.label}</span>
+                <span className="meta tabular">0{i + 1}</span>
+              </Link>
+            </li>
+          ))}
+          <li className="border-t border-line py-5">
+            <LanguageSwitcher onNavigate={() => setMenuOpen(false)} />
           </li>
         </ul>
+        <div className="container-x border-t border-line py-5">
+          <Link
+            href={FORMATION_PROMO_URL}
+            onClick={() => setMenuOpen(false)}
+            className="btn btn-primary w-full"
+          >
+            <span>{ctaLabel}</span>
+            <Arrow />
+          </Link>
+        </div>
       </nav>
     </header>
   );
