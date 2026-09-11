@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { AdminLogin } from "@/components/funnel/admin/AdminLogin";
 import { AdminShell } from "@/components/funnel/admin/AdminShell";
-import { SEQUENCE_STEPS, pct } from "@/components/funnel/admin/Widgets";
+import { Notice, Panel, SEQUENCE_STEPS, Th, pct } from "@/components/funnel/admin/Widgets";
 import { isAdminSession } from "@/lib/funnel/admin";
 import { buildSequence } from "@/lib/funnel/emails";
 import { getFunnelStore } from "@/lib/funnel/store";
@@ -33,6 +33,7 @@ export default async function EmailsPage({
   const webhook = Boolean(process.env.RESEND_WEBHOOK_SECRET);
   const sequence = buildSequence("apercu@exemple.fr", "Camille");
   const previewStep = SEQUENCE_STEPS.some((s) => s.key === apercu) ? apercu : "acces";
+  const previewMail = sequence.find((m) => m.key === previewStep);
 
   return (
     <AdminShell active="emails" title="Séquence d’emails">
@@ -43,58 +44,56 @@ export default async function EmailsPage({
         textes vivent dans le code, fichier src/lib/funnel/emails.ts.
       </p>
       {message?.startsWith("recalcule:") ? (
-        <p role="status" className="mt-4 border border-amber/70 bg-amber/10 px-4 py-3 text-sm text-cream">
-          Statistiques recalculées à partir de {message.split(":")[1]} fiche(s) d’inscrit,
-          {" "}{message.split(":")[2]} événement(s) email reconstitués.
-        </p>
+        <div className="mt-4">
+          <Notice>
+            Statistiques recalculées à partir de {message.split(":")[1]} fiche(s) d’inscrit,{" "}
+            {message.split(":")[2]} événement(s) email reconstitués.
+          </Notice>
+        </div>
       ) : null}
 
-      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="steps-title">
-        <h2 id="steps-title" className="h-item text-cream">
-          Résultats par étape (depuis le début)
-        </h2>
-        <div className="mt-3 overflow-x-auto">
+      <Panel index="01" title="Résultats par étape (depuis le début)" id="steps-title" className="mt-8">
+        <div className="overflow-x-auto">
           <table className="w-full min-w-[720px] text-sm">
             <thead>
-              <tr className="text-left meta">
-                <th className="py-2 pr-3 font-medium">Étape</th>
-                <th className="py-2 pr-3 font-medium">Envoi</th>
-                <th className="py-2 pr-3 text-right font-medium">Programmés</th>
-                <th className="py-2 pr-3 text-right font-medium">Délivrés</th>
-                <th className="py-2 pr-3 text-right font-medium">Ouverts</th>
-                <th className="py-2 pr-3 text-right font-medium">Cliqués</th>
-                <th className="py-2 text-right font-medium">Bounce / spam</th>
+              <tr>
+                <Th>Étape</Th>
+                <Th>Envoi</Th>
+                <Th right>Programmés</Th>
+                <Th right>Délivrés</Th>
+                <Th right>Ouverts</Th>
+                <Th right>Cliqués</Th>
+                <Th right className="pr-0">Bounce / spam</Th>
               </tr>
             </thead>
             <tbody>
-              {SEQUENCE_STEPS.map((step) => {
+              {SEQUENCE_STEPS.map((step, i) => {
                 const s = sent[step.key] ?? 0;
                 const d = delivered[step.key] ?? 0;
                 const o = opened[step.key] ?? 0;
                 const c = clicked[step.key] ?? 0;
                 const b = (bounced[step.key] ?? 0) + (complained[step.key] ?? 0);
+                const cell = "py-2.5 pr-4 text-right tabular-nums text-cream";
+                const rate = (v: string) => (v ? <span className="meta ml-2 text-[10px]">{v}</span> : null);
                 return (
                   <tr key={step.key} className="border-t border-line">
-                    <td className="py-2 pr-3 text-cream">{step.label}</td>
-                    <td className="py-2 pr-3 text-fog">{step.when}</td>
-                    <td className="py-2 pr-3 text-right tabular-nums">{s}</td>
-                    <td className="py-2 pr-3 text-right tabular-nums">
-                      {d} <span className="text-xs text-fog">{pct(d, s)}</span>
+                    <td className="py-2.5 pr-4 text-cream">
+                      <span className="meta mr-3 text-[10px] tabular-nums">0{i + 1}</span>
+                      {step.label}
                     </td>
-                    <td className="py-2 pr-3 text-right tabular-nums">
-                      {o} <span className="text-xs text-fog">{pct(o, d)}</span>
-                    </td>
-                    <td className="py-2 pr-3 text-right tabular-nums">
-                      {c} <span className="text-xs text-fog">{pct(c, d)}</span>
-                    </td>
-                    <td className="py-2 text-right tabular-nums">{b}</td>
+                    <td className="py-2.5 pr-4 text-fog">{step.when}</td>
+                    <td className={cell}>{s}</td>
+                    <td className={cell}>{d}{rate(pct(d, s))}</td>
+                    <td className={cell}>{o}{rate(pct(o, d))}</td>
+                    <td className={cell}>{c}{rate(pct(c, d))}</td>
+                    <td className="py-2.5 text-right tabular-nums text-cream">{b}</td>
                   </tr>
                 );
               })}
             </tbody>
           </table>
         </div>
-        <p className="mt-3 text-xs text-fog">
+        <p className="mt-4 text-xs leading-relaxed text-fog">
           Taux : délivrés sur programmés, ouverts et cliqués sur délivrés. Les ouvertures
           dépendent du chargement des images par le lecteur mail (Apple Mail les gonfle, Gmail
           les masque parfois).
@@ -102,60 +101,76 @@ export default async function EmailsPage({
         <form
           method="post"
           action="/api/funnel/admin/email-stats"
-          className="mt-4 flex flex-wrap items-center gap-3 border-t border-line pt-4"
+          className="mt-5 flex flex-wrap items-center gap-4 border-t border-line pt-5"
         >
           <input type="hidden" name="action" value="rebuild" />
-          <button
-            type="submit"
-            className="btn btn-sm"
-          >
-            Recalculer les statistiques email
+          <button type="submit" className="btn btn-sm">
+            <span>Recalculer les statistiques email</span>
           </button>
-          <span className="text-xs text-fog">
+          <span className="max-w-xl text-xs leading-relaxed text-fog">
             Efface les compteurs email (y compris ceux comptés par erreur pour un autre projet du
             compte Resend) et les reconstruit depuis les fiches des inscrits.
           </span>
         </form>
-      </section>
+      </Panel>
 
-      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="preview-title">
-        <h2 id="preview-title" className="h-item text-cream">
-          Aperçu des emails
-        </h2>
-        <nav aria-label="Étape à prévisualiser" className="mt-3 flex flex-wrap gap-2">
-          {SEQUENCE_STEPS.map((step) => (
-            <a
-              key={step.key}
-              href={`?apercu=${step.key}`}
-              aria-current={previewStep === step.key ? "page" : undefined}
-              className={`chip ${previewStep === step.key ? "is-active" : ""}`}
-            >
-              {step.label}
-            </a>
-          ))}
-        </nav>
-        <ul className="mt-4 space-y-1 text-sm text-fog">
-          {sequence.map((m) => (
-            <li key={m.key}>
-              <span className="text-cream">{m.subject}</span>
-              <span className="text-fog">
-                {" "}
-                · {m.dayOffset === 0 ? "envoyé tout de suite" : `J+${m.dayOffset} à 9 h (heure de Paris)`}
-              </span>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-4 frame bg-white">
-          <iframe
-            title={`Aperçu de l’email ${previewStep}`}
-            src={`/api/funnel/admin/email-preview?step=${previewStep}`}
-            className="h-[720px] w-full"
-          />
+      <Panel
+        index="02"
+        title="Aperçu des emails"
+        id="preview-title"
+        className="mt-6"
+        actions={
+          <nav aria-label="Étape à prévisualiser" className="flex flex-wrap gap-2">
+            {SEQUENCE_STEPS.map((step) => (
+              <a
+                key={step.key}
+                href={`?apercu=${step.key}`}
+                aria-current={previewStep === step.key ? "page" : undefined}
+                className="chip"
+              >
+                {step.label}
+              </a>
+            ))}
+          </nav>
+        }
+      >
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+          <div>
+            <p className="meta">Calendrier d’envoi</p>
+            <ol className="mt-3">
+              {sequence.map((m, i) => (
+                <li key={m.key} className={`grid grid-cols-[2rem_1fr] gap-3 border-t border-line py-3 ${m.key === previewStep ? "text-cream" : "text-stone"}`}>
+                  <span className="meta tabular">0{i + 1}</span>
+                  <span>
+                    <span className="block text-sm">{m.subject}</span>
+                    <span className="meta mt-1 block text-[10px]">
+                      {m.dayOffset === 0 ? "Envoyé tout de suite" : `J+${m.dayOffset} à 9 h, heure de Paris`}
+                    </span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-4 text-xs leading-relaxed text-fog">
+              Aperçu rendu avec le prénom « Camille » et un lien de désinscription factice.
+            </p>
+          </div>
+          <div>
+            <p className="meta flex items-center justify-between">
+              <span>Aperçu · {previewMail?.subject}</span>
+              <a href={`/api/funnel/admin/email-preview?step=${previewStep}`} target="_blank" rel="noopener noreferrer" className="link-muted">
+                Ouvrir seul
+              </a>
+            </p>
+            <div className="frame frame-marks mt-3 bg-charcoal p-1.5">
+              <iframe
+                title={`Aperçu de l’email ${previewStep}`}
+                src={`/api/funnel/admin/email-preview?step=${previewStep}`}
+                className="h-[760px] w-full bg-charcoal"
+              />
+            </div>
+          </div>
         </div>
-        <p className="mt-3 text-xs text-fog">
-          Aperçu rendu avec le prénom « Camille » et un lien de désinscription factice.
-        </p>
-      </section>
+      </Panel>
     </AdminShell>
   );
 }

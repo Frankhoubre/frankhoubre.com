@@ -67,42 +67,83 @@ type Block =
   | { type: "link"; label: string; href: string }
   | { type: "list"; items: string[] };
 
+const FONT = "'Inter Tight', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif";
+const C = {
+  bg: "#0b0b0c",
+  panel: "#111214",
+  line: "#2a2c30",
+  cream: "#eeece5",
+  stone: "#d8d6ce",
+  fog: "#9ca3a8",
+} as const;
+
+const STEP_INDEX: Record<SequenceEmail["key"], string> = {
+  acces: "01",
+  "jour-2": "02",
+  "jour-3": "03",
+  "ai-studios": "04",
+};
+
+/**
+ * Gabarit HTML : même direction que le site (charbon, blanc chaud, lignes
+ * fines, capitales espacées), en tableaux et styles inline pour les clients
+ * mail. Couleurs fixées sur fond sombre : les modes sombres des messageries
+ * n'ont rien à inverser.
+ */
 function renderHtml(opts: {
   firstName: string;
   blocks: Block[];
   unsubscribe: string;
+  step: SequenceEmail["key"];
+  kicker: string;
 }): string {
+  const p = (text: string) =>
+    `<p style="margin:0 0 18px;font-family:${FONT};font-size:16px;line-height:1.65;color:${C.stone};">${text}</p>`;
   const body = opts.blocks
     .map((b) => {
       switch (b.type) {
         case "p":
-          return `<p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#14100c;">${escapeHtml(b.text)}</p>`;
+          return p(escapeHtml(b.text));
         case "cta":
-          return `<p style="margin:24px 0;"><a href="${b.href}" style="display:inline-block;background:#14100c;color:#fbdbaf;text-decoration:none;font-weight:600;font-size:16px;padding:14px 22px;border-radius:10px;">${escapeHtml(b.label)}</a></p>`;
+          return `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:26px 0 28px;"><tr><td bgcolor="${C.cream}" style="background:${C.cream};border:1px solid ${C.cream};"><a href="${b.href}" style="display:inline-block;padding:15px 22px;font-family:${FONT};font-size:12px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:${C.bg};text-decoration:none;">${escapeHtml(b.label)} &nbsp;&rarr;</a></td></tr></table>`;
         case "link":
-          return `<p style="margin:0 0 16px;font-size:16px;line-height:1.6;"><a href="${b.href}" style="color:#c45a18;">${escapeHtml(b.label)}</a></p>`;
+          return `<p style="margin:0 0 18px;font-family:${FONT};font-size:12px;letter-spacing:0.14em;text-transform:uppercase;line-height:1.6;"><a href="${b.href}" style="color:${C.cream};text-decoration:underline;">${escapeHtml(b.label)} &rarr;</a></p>`;
         case "list":
-          return `<ul style="margin:0 0 16px;padding-left:20px;font-size:16px;line-height:1.6;color:#14100c;">${b.items.map((i) => `<li style="margin:0 0 6px;">${escapeHtml(i)}</li>`).join("")}</ul>`;
+          return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 18px;">${b.items
+            .map(
+              (i) =>
+                `<tr><td style="padding:10px 0;border-top:1px solid ${C.line};font-family:${FONT};font-size:15px;line-height:1.55;color:${C.stone};"><span style="color:${C.fog};">&mdash;&nbsp;&nbsp;</span>${escapeHtml(i)}</td></tr>`,
+            )
+            .join("")}</table>`;
       }
     })
     .join("");
 
   return `<!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head>
-<body style="margin:0;padding:0;background:#fbf7f1;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fbf7f1;">
-<tr><td align="center" style="padding:32px 16px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border:1px solid #e4dcd2;border-radius:16px;">
-<tr><td style="padding:32px 28px;font-family:Inter,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;">
-<p style="margin:0 0 20px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#6b5b4e;">Frank Houbre · Challenge film IA</p>
-<p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#14100c;">Bonjour${opts.firstName ? ` ${escapeHtml(opts.firstName)}` : ""},</p>
-${body}
-<p style="margin:24px 0 0;font-size:16px;line-height:1.6;color:#14100c;">Frank</p>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="color-scheme" content="dark"><meta name="supported-color-schemes" content="dark"><title>${escapeHtml(opts.kicker)}</title></head>
+<body style="margin:0;padding:0;background:${C.bg};" bgcolor="${C.bg}">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="${C.bg}" style="background:${C.bg};">
+<tr><td align="center" style="padding:36px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;">
+<tr><td style="padding:0 0 18px;border-bottom:1px solid ${C.line};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+<td style="font-family:${FONT};font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:${C.cream};">Frank Houbre</td>
+<td align="right" style="font-family:${FONT};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:${C.fog};">${STEP_INDEX[opts.step]} / 04</td>
+</tr></table>
 </td></tr>
-<tr><td style="padding:18px 28px 26px;border-top:1px solid #e4dcd2;font-family:Inter,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;font-size:12px;line-height:1.6;color:#6b5b4e;">
-Vous recevez cet email parce que vous avez demandé la formation gratuite sur frankhoubre.com. Une question : ${escapeHtml(SUPPORT_EMAIL)}.<br>
-<a href="${opts.unsubscribe}" style="color:#6b5b4e;">Ne plus recevoir ces emails</a>
+<tr><td style="padding:30px 0 6px;font-family:${FONT};font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:${C.fog};">${escapeHtml(opts.kicker)}</td></tr>
+<tr><td style="padding:0 0 26px;font-family:${FONT};font-size:16px;line-height:1.65;color:${C.stone};">Bonjour${opts.firstName ? ` ${escapeHtml(opts.firstName)}` : ""},</td></tr>
+<tr><td>
+${body}
+<p style="margin:26px 0 0;font-family:${FONT};font-size:16px;line-height:1.65;color:${C.cream};">Frank</p>
+<p style="margin:4px 0 0;font-family:${FONT};font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:${C.fog};">Réalisateur IA, formateur</p>
+</td></tr>
+<tr><td style="padding:30px 0 0;border-top:1px solid ${C.line};font-family:${FONT};font-size:12px;line-height:1.6;color:${C.fog};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:26px;"><tr>
+<td style="font-family:${FONT};font-size:12px;line-height:1.6;color:${C.fog};">Vous recevez cet email parce que vous avez demandé la formation gratuite sur frankhoubre.com. Une question : <a href="mailto:${escapeHtml(SUPPORT_EMAIL)}" style="color:${C.stone};">${escapeHtml(SUPPORT_EMAIL)}</a>.<br>
+<a href="${opts.unsubscribe}" style="color:${C.fog};text-decoration:underline;">Ne plus recevoir ces emails</a></td>
+</tr></table>
 </td></tr>
 </table>
 </td></tr>
@@ -145,6 +186,13 @@ export function buildSequence(email: string, firstName: string): SequenceEmail[]
   const unsubscribe = unsubscribeUrl(email);
   const [d1, d2, d3] = FUNNEL_DAYS;
   const name = firstName.trim();
+
+  const kickers: Record<SequenceEmail["key"], string> = {
+    acces: `Challenge film IA · Jour ${d1.n} · ${d1.shortTitle}`,
+    "jour-2": `Challenge film IA · Jour ${d2.n} · ${d2.shortTitle}`,
+    "jour-3": `Challenge film IA · Jour ${d3.n} · ${d3.shortTitle}`,
+    "ai-studios": "Challenge film IA · La suite",
+  };
 
   const specs: Array<Omit<SequenceEmail, "html" | "text"> & { blocks: Block[] }> = [
     {
@@ -234,7 +282,7 @@ export function buildSequence(email: string, firstName: string): SequenceEmail[]
 
   return specs.map(({ blocks, ...rest }) => ({
     ...rest,
-    html: renderHtml({ firstName: name, blocks, unsubscribe }),
+    html: renderHtml({ firstName: name, blocks, unsubscribe, step: rest.key, kicker: kickers[rest.key] }),
     text: renderText({ firstName: name, blocks, unsubscribe }),
   }));
 }

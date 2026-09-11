@@ -4,9 +4,13 @@ import { AdminLogin } from "@/components/funnel/admin/AdminLogin";
 import { AdminShell } from "@/components/funnel/admin/AdminShell";
 import {
   DailyChart,
+  KpiTile,
+  Notice,
+  Panel,
   SourcesTable,
   StepRow,
   SubscriberRow,
+  Th,
   fmtDate,
   pct,
 } from "@/components/funnel/admin/Widgets";
@@ -97,7 +101,7 @@ function Overview({ period, data }: { period: Period; data: Data }) {
               key={p}
               href={`${FUNNEL_PATHS.admin}?periode=${p}`}
               aria-current={p === period ? "page" : undefined}
-              className={`chip ${p === period ? "is-active" : ""}`}
+              className="chip"
             >
               {p} jours
             </Link>
@@ -106,26 +110,26 @@ function Overview({ period, data }: { period: Period; data: Data }) {
       }
     >
       {(!persistent || !resend) && (
-        <div role="status" className="mt-6 border border-amber/70 bg-amber/10 px-4 py-3 text-sm leading-relaxed text-cream">
+        <div className="mt-6 space-y-2">
           {!persistent ? (
-            <p>
-              <strong>Stockage mémoire</strong> : aucune base Upstash Redis configurée, les
+            <Notice tone="warn">
+              <strong className="text-cream">Stockage mémoire</strong> : aucune base Upstash Redis configurée, les
               compteurs et les inscrits disparaîtront au prochain redéploiement.
-            </p>
+            </Notice>
           ) : null}
           {!resend ? (
-            <p className={!persistent ? "mt-1" : ""}>
-              <strong>Resend non configuré</strong> : les inscrits sont enregistrés mais ne
+            <Notice tone="warn">
+              <strong className="text-cream">Resend non configuré</strong> : les inscrits sont enregistrés mais ne
               reçoivent aucun email.
-            </p>
+            </Notice>
           ) : null}
         </div>
       )}
 
       {!hasAnything ? (
-        <div className="card card-surface mt-8 p-6 sm:p-8">
-          <h2 className="h-item text-cream">Aucune donnée pour l’instant</h2>
-          <p className="mt-2 max-w-xl text-sm leading-relaxed text-fog">
+        <div className="mt-8 border border-line px-6 py-10">
+          <p className="meta">Aucune donnée pour l’instant</p>
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-fog">
             Les compteurs se remplissent dès la première visite sur{" "}
             <Link href={FUNNEL_PATHS.optin} className="link">
               la page d’inscription
@@ -135,141 +139,145 @@ function Overview({ period, data }: { period: Period; data: Data }) {
         </div>
       ) : null}
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
-        <section className="card card-surface p-5 sm:p-6" aria-labelledby="funnel-steps">
-          <h2 id="funnel-steps" className="h-item text-cream">
-            Parcours sur {period} jours
-          </h2>
-          <div className="mt-3">
-            <StepRow
-              label="Visiteurs uniques sur la page d’inscription"
-              value={views}
-              hint={`${viewsRaw.toLocaleString("fr-FR")} vues au total`}
-            />
-            <StepRow label="Formulaires envoyés" value={submits} rate={pct(submits, views)} />
-            <StepRow
-              label="Nouveaux inscrits"
-              value={subs}
-              rate={pct(subs, views)}
-              hint={repeats ? `${repeats} réinscription${repeats > 1 ? "s" : ""} d’adresses déjà connues` : undefined}
-            />
-            <StepRow
-              label="Visiteurs uniques sur la formation"
-              value={courseViews}
-              hint="Inscrits qui ouvrent (ou rouvrent) les vidéos"
-            />
-            <StepRow label="Clics vers AI Studios (Skool)" value={skool} rate={pct(skool, courseViews)} />
-            <StepRow label="Clics vers ScreenWeaver" value={sw} rate={pct(sw, courseViews)} />
-            <StepRow label="Désinscriptions" value={unsub} />
-          </div>
-        </section>
+      {/* Chiffres clés de la période */}
+      <div className="mt-8 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="bg-charcoal">
+          <KpiTile label={`Visiteurs uniques · ${period} j`} value={views} hint={`${viewsRaw.toLocaleString("fr-FR")} vues`} />
+        </div>
+        <div className="bg-charcoal">
+          <KpiTile label="Nouveaux inscrits" value={subs} rate={pct(subs, views)} hint="des visiteurs" />
+        </div>
+        <div className="bg-charcoal">
+          <KpiTile label="Clics AI Studios" value={skool} rate={pct(skool, courseViews)} hint="des vues formation" />
+        </div>
+        <div className="bg-charcoal">
+          <KpiTile label="Inscrits en base" value={data.subscriberCount} hint="depuis le début" />
+        </div>
+      </div>
+
+      <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+        <Panel index="01" title={`Parcours sur ${period} jours`} id="funnel-steps">
+          <StepRow
+            index="01"
+            label="Visiteurs uniques sur la page d’inscription"
+            value={views}
+            hint={`${viewsRaw.toLocaleString("fr-FR")} vues au total`}
+          />
+          <StepRow index="02" label="Formulaires envoyés" value={submits} rate={pct(submits, views)} />
+          <StepRow
+            index="03"
+            label="Nouveaux inscrits"
+            value={subs}
+            rate={pct(subs, views)}
+            hint={repeats ? `${repeats} réinscription${repeats > 1 ? "s" : ""} d’adresses déjà connues` : undefined}
+          />
+          <StepRow
+            index="04"
+            label="Visiteurs uniques sur la formation"
+            value={courseViews}
+            hint="Inscrits qui ouvrent (ou rouvrent) les vidéos"
+          />
+          <StepRow index="05" label="Clics vers AI Studios (Skool)" value={skool} rate={pct(skool, courseViews)} />
+          <StepRow index="06" label="Clics vers ScreenWeaver" value={sw} rate={pct(sw, courseViews)} />
+          <StepRow index="07" label="Désinscriptions" value={unsub} />
+        </Panel>
 
         <div className="space-y-6">
-          <section className="card card-surface p-5 sm:p-6" aria-labelledby="emails-title">
-            <h2 id="emails-title" className="h-item text-cream">
-              Emails sur {period} jours
-            </h2>
+          <Panel
+            index="02"
+            title={`Emails sur ${period} jours`}
+            id="emails-title"
+            actions={
+              <Link href={`${FUNNEL_PATHS.admin}/emails`} className="nav-link !min-h-0">
+                Détail par étape
+              </Link>
+            }
+          >
             {!webhook ? (
-              <p className="mt-2 text-sm leading-relaxed text-fog">
+              <p className="text-sm leading-relaxed text-fog">
                 Les ouvertures et clics n’arrivent qu’avec le webhook Resend (RESEND_WEBHOOK_SECRET).
                 Emails programmés sur la période : {sum(days, "email_sent").toLocaleString("fr-FR")}.
               </p>
             ) : (
-              <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
-                <div>
-                  <dt className="text-fog">Délivrés</dt>
-                  <dd className="h-item text-cream tabular-nums">{delivered}</dd>
-                </div>
-                <div>
-                  <dt className="text-fog">Ouverts</dt>
-                  <dd className="h-item text-cream tabular-nums">
-                    {opened} <span className="text-xs font-normal text-fog">{pct(opened, delivered)}</span>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-fog">Cliqués</dt>
-                  <dd className="h-item text-cream tabular-nums">
-                    {clicked} <span className="text-xs font-normal text-fog">{pct(clicked, delivered)}</span>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-fog">En erreur</dt>
-                  <dd className="h-item text-cream tabular-nums">{bounced}</dd>
-                </div>
+              <dl className="grid grid-cols-2 gap-x-6 gap-y-4">
+                {[
+                  ["Délivrés", delivered, ""],
+                  ["Ouverts", opened, pct(opened, delivered)],
+                  ["Cliqués", clicked, pct(clicked, delivered)],
+                  ["En erreur", bounced, ""],
+                ].map(([k, v, r]) => (
+                  <div key={String(k)}>
+                    <dt className="meta">{k}</dt>
+                    <dd className="mt-1 flex items-baseline gap-2">
+                      <span className="display text-2xl leading-none tabular-nums text-cream">{v}</span>
+                      {r ? <span className="meta text-[10px]">{r}</span> : null}
+                    </dd>
+                  </div>
+                ))}
               </dl>
             )}
-            <p className="mt-3 text-sm">
-              <Link href={`${FUNNEL_PATHS.admin}/emails`} className="link">
-                Détail par étape de la séquence
-              </Link>
-            </p>
-          </section>
+          </Panel>
 
-          <section className="card card-surface p-5 sm:p-6" aria-labelledby="totals-title">
-            <h2 id="totals-title" className="h-item text-cream">
-              Depuis le début
-            </h2>
-            <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 text-sm sm:grid-cols-3">
-              <div>
-                <dt className="text-fog">Inscrits (base)</dt>
-                <dd className="h-item text-cream tabular-nums">{data.subscriberCount}</dd>
-              </div>
-              <div>
-                <dt className="text-fog">{FUNNEL_EVENT_LABELS.subscribe}</dt>
-                <dd className="h-item text-cream tabular-nums">{totals.subscribe ?? 0}</dd>
-              </div>
-              <div>
-                <dt className="text-fog">{FUNNEL_EVENT_LABELS.click_skool}</dt>
-                <dd className="h-item text-cream tabular-nums">{totals.click_skool ?? 0}</dd>
-              </div>
+          <Panel index="03" title="Depuis le début" id="totals-title">
+            <dl className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
+              {[
+                ["Inscrits (base)", data.subscriberCount],
+                [FUNNEL_EVENT_LABELS.subscribe, totals.subscribe ?? 0],
+                [FUNNEL_EVENT_LABELS.click_skool, totals.click_skool ?? 0],
+              ].map(([k, v]) => (
+                <div key={String(k)}>
+                  <dt className="meta">{k}</dt>
+                  <dd className="display mt-1 text-2xl leading-none tabular-nums text-cream">{v}</dd>
+                </div>
+              ))}
             </dl>
-            <p className="mt-3 text-xs text-fog">
-              Configuration : base {persistent ? "Upstash Redis" : "mémoire (temporaire)"} ·
-              Resend {resend ? "actif" : "absent"} · segment {audience ? "relié" : "non relié"} ·
-              webhook {webhook ? "actif" : "absent"}.
-            </p>
-          </section>
+            <dl className="meta mt-5 grid grid-cols-2 gap-x-6 gap-y-1 border-t border-line pt-4 text-[10px] sm:grid-cols-4">
+              <div><dt className="inline text-fog/70">Base </dt><dd className="inline text-stone">{persistent ? "Upstash Redis" : "mémoire"}</dd></div>
+              <div><dt className="inline text-fog/70">Resend </dt><dd className="inline text-stone">{resend ? "actif" : "absent"}</dd></div>
+              <div><dt className="inline text-fog/70">Segment </dt><dd className="inline text-stone">{audience ? "relié" : "non relié"}</dd></div>
+              <div><dt className="inline text-fog/70">Webhook </dt><dd className="inline text-stone">{webhook ? "actif" : "absent"}</dd></div>
+            </dl>
+          </Panel>
         </div>
       </div>
 
-      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="chart-title">
-        <h2 id="chart-title" className="h-item text-cream">
-          Jour par jour : visiteurs et inscrits
-        </h2>
-        <div className="mt-4">
-          <DailyChart days={days} />
+      <Panel index="04" title="Jour par jour : visiteurs et inscrits" id="chart-title" className="mt-6">
+        <DailyChart days={days} />
+      </Panel>
+
+      <Panel index="05" title="Sources (depuis le début)" id="sources-title" className="mt-6">
+        <div className="grid gap-8 md:grid-cols-2">
+          <SourcesTable title="D’où viennent les inscrits" data={data.sources} />
+          <SourcesTable title="D’où viennent les visiteurs" data={data.viewSources} />
         </div>
-      </section>
+      </Panel>
 
-      <section className="card card-surface mt-6 grid gap-8 p-5 sm:p-6 md:grid-cols-2" aria-label="Sources">
-        <SourcesTable title="D’où viennent les inscrits (depuis le début)" data={data.sources} />
-        <SourcesTable title="D’où viennent les visiteurs (depuis le début)" data={data.viewSources} />
-      </section>
-
-      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="subs-title">
-        <div className="flex flex-wrap items-baseline justify-between gap-3">
-          <h2 id="subs-title" className="h-item text-cream">
-            Derniers inscrits
-          </h2>
-          <Link href={`${FUNNEL_PATHS.admin}/inscrits`} className="link text-sm">
+      <Panel
+        index="06"
+        title="Derniers inscrits"
+        id="subs-title"
+        className="mt-6"
+        actions={
+          <Link href={`${FUNNEL_PATHS.admin}/inscrits`} className="nav-link !min-h-0">
             Tous les inscrits ({data.subscriberCount})
           </Link>
-        </div>
+        }
+      >
         {data.subscribers.length === 0 ? (
-          <p className="mt-2 text-sm text-fog">
+          <p className="text-sm text-fog">
             Personne pour l’instant. Le premier inscrit apparaîtra ici avec sa source.
           </p>
         ) : (
-          <div className="mt-3 overflow-x-auto">
+          <div className="overflow-x-auto">
             <table className="w-full min-w-[720px] text-sm">
               <thead>
-                <tr className="text-left meta">
-                  <th className="py-2 pr-3 font-medium">Prénom</th>
-                  <th className="py-2 pr-3 font-medium">Email</th>
-                  <th className="py-2 pr-3 font-medium">Inscrit le</th>
-                  <th className="py-2 pr-3 font-medium">Source</th>
-                  <th className="py-2 pr-3 font-medium">Statut</th>
-                  <th className="py-2 font-medium">Séquence</th>
+                <tr>
+                  <Th>Prénom</Th>
+                  <Th>Email</Th>
+                  <Th>Inscrit le</Th>
+                  <Th>Source</Th>
+                  <Th>Statut</Th>
+                  <Th>Séquence</Th>
                 </tr>
               </thead>
               <tbody>
@@ -280,19 +288,16 @@ function Overview({ period, data }: { period: Period; data: Data }) {
             </table>
           </div>
         )}
-      </section>
+      </Panel>
 
-      <section className="card card-surface mt-6 p-5 sm:p-6" aria-labelledby="recent-title">
-        <h2 id="recent-title" className="h-item text-cream">
-          Derniers événements
-        </h2>
+      <Panel index="07" title="Derniers événements" id="recent-title" className="mt-6">
         {data.recent.length === 0 ? (
-          <p className="mt-2 text-sm text-fog">Aucun événement enregistré.</p>
+          <p className="text-sm text-fog">Aucun événement enregistré.</p>
         ) : (
-          <ul className="mt-3 divide-y divide-line text-sm">
+          <ul className="text-sm">
             {data.recent.map((e, i) => (
-              <li key={`${e.at}-${i}`} className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5 py-1.5">
-                <span className="w-28 shrink-0 tabular-nums text-fog">{fmtDate(e.at)}</span>
+              <li key={`${e.at}-${i}`} className="flex flex-wrap items-baseline gap-x-4 gap-y-0.5 border-t border-line py-2 first:border-t-0">
+                <span className="meta w-28 shrink-0 text-[10px] tabular-nums">{fmtDate(e.at)}</span>
                 <span className="text-cream">{FUNNEL_EVENT_LABELS[e.event] ?? e.event}</span>
                 {e.source ? <span className="text-fog">via {e.source}</span> : null}
                 {e.detail ? <span className="text-fog">· {e.detail}</span> : null}
@@ -300,7 +305,7 @@ function Overview({ period, data }: { period: Period; data: Data }) {
             ))}
           </ul>
         )}
-      </section>
+      </Panel>
     </AdminShell>
   );
 }
@@ -308,7 +313,7 @@ function Overview({ period, data }: { period: Period; data: Data }) {
 function ErrorView({ message }: { message: string }) {
   return (
     <AdminShell active="overview" title="Impossible de lire les données">
-      <div className="card card-surface mt-8 max-w-2xl p-6 sm:p-8">
+      <div className="mt-8 max-w-2xl border border-line p-6 sm:p-8">
         <p className="text-sm leading-relaxed text-fog">
           La base de données n’a pas répondu. Vérifiez les variables Upstash (URL et jeton) dans
           Vercel, puis rechargez la page.

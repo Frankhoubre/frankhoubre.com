@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AdminLogin } from "@/components/funnel/admin/AdminLogin";
 import { AdminShell } from "@/components/funnel/admin/AdminShell";
-import { SubscriberRow } from "@/components/funnel/admin/Widgets";
+import { Notice, Panel, SubscriberRow, Th } from "@/components/funnel/admin/Widgets";
 import { isAdminSession } from "@/lib/funnel/admin";
 import { FUNNEL_PATHS } from "@/lib/funnel/config";
 import { getFunnelStore, type Subscriber } from "@/lib/funnel/store";
@@ -74,25 +74,26 @@ export default async function SubscribersPage({
   return (
     <AdminShell active="subscribers" title={`Inscrits (${total})`}>
       {params.message && MESSAGES[params.message] ? (
-        <p role="status" className="mt-6 border border-line bg-graphite px-4 py-3 text-sm text-cream">
-          {MESSAGES[params.message]}
-        </p>
+        <div className="mt-6">
+          <Notice>{MESSAGES[params.message]}</Notice>
+        </div>
       ) : null}
 
-      <form method="get" className="mt-6 flex flex-wrap items-end gap-3">
-        <div className="min-w-[16rem] flex-1">
-          <label htmlFor="q" className="mb-1.5 block text-sm text-cream">
-            Rechercher (email, prénom, source, campagne)
+      <form method="get" className="mt-8 grid gap-4 border border-line p-5 sm:grid-cols-[1fr_auto] sm:items-end">
+        <div>
+          <label htmlFor="q" className="meta mb-2 block">
+            Rechercher · email, prénom, source, campagne
           </label>
           <input id="q" name="q" type="search" defaultValue={q} className="input" placeholder="ex. gmail, tiktok, Camille" />
         </div>
         {filter !== "tous" ? <input type="hidden" name="filtre" value={filter} /> : null}
         <button type="submit" className="btn btn-primary">
-          Rechercher
+          <span>Rechercher</span>
         </button>
       </form>
 
-      <nav aria-label="Filtre" className="mt-4 flex flex-wrap gap-2">
+      <nav aria-label="Filtre" className="mt-4 flex flex-wrap items-center gap-2">
+        <span className="meta mr-2 text-[10px]">Filtre</span>
         {(
           [
             ["tous", "Tous"],
@@ -100,18 +101,19 @@ export default async function SubscribersPage({
             ["desinscrits", "Désinscrits"],
           ] as const
         ).map(([key, label]) => (
-          <Link
-            key={key}
-            href={link(1, key)}
-            aria-current={filter === key ? "page" : undefined}
-            className={`chip ${filter === key ? "is-active" : ""}`}
-          >
+          <Link key={key} href={link(1, key)} aria-current={filter === key ? "page" : undefined} className="chip">
             {label}
           </Link>
         ))}
       </nav>
 
-      <section className="card card-surface mt-6 p-5 sm:p-6">
+      <Panel
+        index="01"
+        title={filtering ? `Résultats · ${matched}` : `Tous les inscrits · ${total}`}
+        id="list-title"
+        className="mt-6"
+        actions={<span className="meta text-[10px]">Page {page} / {pages}</span>}
+      >
         {rows.length === 0 ? (
           <p className="text-sm text-fog">
             {filtering
@@ -122,13 +124,13 @@ export default async function SubscribersPage({
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] text-sm">
               <thead>
-                <tr className="text-left meta">
-                  <th className="py-2 pr-3 font-medium">Prénom</th>
-                  <th className="py-2 pr-3 font-medium">Email</th>
-                  <th className="py-2 pr-3 font-medium">Inscrit le</th>
-                  <th className="py-2 pr-3 font-medium">Source</th>
-                  <th className="py-2 pr-3 font-medium">Statut</th>
-                  <th className="py-2 font-medium">Séquence</th>
+                <tr>
+                  <Th>Prénom</Th>
+                  <Th>Email</Th>
+                  <Th>Inscrit le</Th>
+                  <Th>Source</Th>
+                  <Th>Statut</Th>
+                  <Th>Séquence</Th>
                 </tr>
               </thead>
               <tbody>
@@ -140,25 +142,25 @@ export default async function SubscribersPage({
           </div>
         )}
         {pages > 1 ? (
-          <nav aria-label="Pagination" className="mt-4 flex items-center justify-between text-sm">
-            <span className="text-fog">
-              Page {page} sur {pages} · {matched} inscrit{matched > 1 ? "s" : ""}
+          <nav aria-label="Pagination" className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
+            <span className="meta text-[10px]">
+              Page {page} / {pages} · {matched} inscrit{matched > 1 ? "s" : ""}
             </span>
             <div className="flex gap-2">
               {page > 1 ? (
-                <Link href={link(page - 1)} className="btn btn-sm">
+                <Link href={link(page - 1)} className="chip">
                   Précédent
                 </Link>
               ) : null}
               {page < pages ? (
-                <Link href={link(page + 1)} className="btn btn-sm">
+                <Link href={link(page + 1)} className="chip">
                   Suivant
                 </Link>
               ) : null}
             </div>
           </nav>
         ) : null}
-      </section>
+      </Panel>
     </AdminShell>
   );
 }
