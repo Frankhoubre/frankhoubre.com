@@ -8,6 +8,13 @@ const NAV = [
   { href: `${FUNNEL_PATHS.admin}/emails`, label: "Emails", key: "emails" },
 ] as const;
 
+/** Pages publiques du tunnel, ouvertes dans un nouvel onglet. */
+const FUNNEL_PAGES = [
+  { href: FUNNEL_PATHS.optin, label: "Page d’inscription" },
+  { href: `${FUNNEL_PATHS.course}?bienvenue=1`, label: "Page formation" },
+  { href: FUNNEL_PATHS.unsubscribed, label: "Page désinscription" },
+] as const;
+
 export type AdminSection = (typeof NAV)[number]["key"];
 
 /**
@@ -51,6 +58,20 @@ export function AdminShell({
           <a href="/api/funnel/admin-login?logout=1" className="nav-link ml-auto">
             Se déconnecter
           </a>
+        </nav>
+        <nav aria-label="Pages du tunnel" className="flex flex-wrap items-center gap-x-6 gap-y-2 border-b border-line py-3">
+          <span className="meta">Pages du tunnel</span>
+          {FUNNEL_PAGES.map((p) => (
+            <a
+              key={p.href}
+              href={p.href}
+              target="_blank"
+              rel="noopener"
+              className="nav-link"
+            >
+              {p.label} ↗
+            </a>
+          ))}
         </nav>
 
         <div className="mt-8 flex flex-wrap items-end justify-between gap-4">

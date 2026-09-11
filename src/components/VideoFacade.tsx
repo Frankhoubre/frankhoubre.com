@@ -91,13 +91,16 @@ export function VideoFacade({
       {meta ? (
         <span className="meta absolute right-6 top-5 z-[3] text-[10px]">{meta}</span>
       ) : null}
-      <span className="absolute bottom-5 left-6 z-[3] inline-flex items-center gap-3" aria-hidden>
-        <span className="grid h-9 w-9 place-items-center border border-cream/70 bg-charcoal/40 backdrop-blur-sm transition-colors duration-200 group-hover:bg-cream group-hover:text-charcoal">
-          <svg width="10" height="12" viewBox="0 0 10 12" fill="currentColor">
-            <path d="M0 0v12l10-6z" />
-          </svg>
+      {/* Bouton « Lire » au centre du cadre, là où la main va d'elle-même. */}
+      <span className="absolute inset-0 z-[3] grid place-items-center" aria-hidden>
+        <span className="flex flex-col items-center gap-3">
+          <span className="grid h-16 w-16 place-items-center rounded-full border border-cream/80 bg-charcoal/55 text-cream backdrop-blur-sm transition-[background-color,color,transform] duration-200 group-hover:scale-105 group-hover:bg-cream group-hover:text-charcoal sm:h-20 sm:w-20">
+            <svg width="18" height="22" viewBox="0 0 10 12" fill="currentColor" className="ml-1">
+              <path d="M0 0v12l10-6z" />
+            </svg>
+          </span>
+          <span className="meta meta-strong text-[10px] text-cream">{playLabel}</span>
         </span>
-        <span className="meta meta-strong text-[10px]">{playLabel}</span>
       </span>
     </button>
   );
