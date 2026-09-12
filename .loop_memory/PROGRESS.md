@@ -1,6 +1,64 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-11 (J29 publié)
+## Last run: 2026-09-12 (J30 publié)
+
+### What happened
+- J30 du plan 90 jours publié à la date prévue :
+  `ia-agence-creative-postes-gains` (business, 7 H2 + 4 H3, FAQ 8 questions,
+  3964 mots, 13 liens internes dont /prestation, 3 liens externes, score
+  éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit sur ce slug). Le
+  calendrier ne glisse pas, donc J31 = 2026-09-13
+  (`budgeter-projet-video-ia-methode`, PROD, lien vers
+  /outils/calculateur-budget-production-ia et combien-coute J15). Commit 92378d8
+  poussé sur origin/main.
+- Angle : les postes d'une agence créative classique passés un par un
+  (concepteur-rédacteur, DA, motion/monteur, chef de projet, planneur,
+  producteur, CM) avec un tableau en appréciations qualitatives explicitement
+  tirées des missions, la méthode de mesure du gain temps de reprise déduit,
+  le piège direction (économie) contre créatifs (temps), et un CTA /prestation
+  au prix réel de la page (4 200 € HT/jour). Aucun pourcentage de gain
+  inventé.
+- Sources vérifiées le 2026-09-12 : HubSpot State of Marketing 2026, WFA /
+  LIONS Clients and Creativity 2026 (communiqué du 17 juin), Influencia du
+  15 juin 2026 (citation Assaël Adary, AACC, présentée comme estimation de
+  dirigeant). Détail des chiffres dans PUBLISH_LOG.
+- LIEN DU PLAN : `comment-creer-pub-video-agence-pro` n'existe pas, le slug
+  réel est `comment-creer-pub-video-avec-ia-comme-agence-pro`, utilisé.
+- Liens entrants réciproques depuis `comment-creer-agence-creation-video-ia`
+  (après le tableau des rôles) et `formation-interne-equipe-creative-ia`
+  (avant le dernier prérequis), `dateModified` 2026-09-12, fichiers en LF.
+- IMAGES : hero Nano Banana 2 (DA et jeune concepteur-rédacteur devant un
+  tableau roulant de déclinaisons d'affiches abstraites, marqueur rouge,
+  open space parisien à verrières en fin d'après-midi ; motif tableau roulant
+  et open space d'agence, aucun recyclage : salle de cinéma J29, mur de liège
+  J28, bureau à colombages J27, tour PC J26, plateau vide J25). workflow-1 =
+  capture réelle de hubspot.com/state-of-marketing (compteurs 61 % et 80 %),
+  workflow-2 = capture réelle du communiqué WFA du 17 juin (section « How can
+  AI improve creative output? »), légendées source + date.
+- PASSE ANTI-SLOP : 9 parallélismes négatifs corrigés, 2 signpostings
+  supprimés, 2 H3 renommés (première ligne qui répétait le titre), 2 entrées
+  troubleshooting passées en prose pour casser la symétrie, 2 chiffres non
+  vérifiables retirés des anecdotes. Scanner unslop 1 faux positif, grille FR
+  manuelle appliquée. Rythme 160 phrases, moyenne 22,3, écart-type 12,7.
+
+### Notes outillage
+- Un heredoc bash qui contient des apostrophes françaises est mangé par le
+  wrapper (« unexpected EOF ») ; `cat > "$TMP/x"` avec variable vide bloque le
+  shell sur stdin. Écrire les scripts de correction avec l'outil Write, puis
+  les lancer avec `py`.
+- Chrome headless refuse d'écrire la capture si `--screenshot=` reçoit un
+  chemin relatif (« Accès refusé ») : donner le chemin absolu, avec
+  `MSYS_NO_PATHCONV=1`.
+- Le fichier écrit par l'outil Write sort en CRLF : `sed -i 's/\r$//'` avant
+  les gates (rappel du run J28).
+
+### Next
+- J31 le 2026-09-13 : `budgeter-projet-video-ia-methode` (PROD, méthode
+  budget, lien outil /outils/calculateur-budget-production-ia et J15
+  combien-coute ; parade cannibalisation = méthode de calcul vs analyse des
+  coûts).
+
+### Previous run: 2026-09-11 (J29 publié)
 
 ### What happened
 - J29 du plan 90 jours publié à la date prévue :

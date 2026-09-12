@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-12 : IA en agence créative : quels postes gagnent du temps
+- slug: ia-agence-creative-postes-gains
+- locale: fr
+- url: https://frankhoubre.com/blog/ia-agence-creative-postes-gains
+- category: business
+- type: evergreen / analyse B2B commerciale (plan 90j J30), publié à la date prévue, le calendrier ne glisse pas, donc J31 = 2026-09-13.
+- search_intent: commerciale / informationnelle (dirigeant d'agence ou directeur de création qui doit dire à sa direction sur quels postes l'IA fait gagner du temps, et se méfie des pourcentages)
+- primary_keyword: ia agence créative
+- secondary_keywords: ia agence de communication postes, gain de temps ia agence, ia directeur artistique, ia concepteur-rédacteur, mesurer gain ia agence, ia juniors agence
+- sources: hubspot.com/state-of-marketing (80 % contenu, 75 % production média, 61 % disruption), wfanet.org communiqué du 17 juin 2026 Clients and Creativity 2026 (35 %, 13 %, 57 %, 11 %, 64 %, 61 %, 62 %, 58 %), influencia.net 15 juin 2026 (citation Assaël Adary, baromètre Occurrence / Ifop AACC + ANC). Tout relu le 2026-09-12, chiffres repris tels quels, estimation Adary qualifiée comme telle.
+- internal_links: -> audit-workflow-ia-methode-mission (x2), metiers-audiovisuel-ia-menaces-transformation-avis, formation-interne-equipe-creative-ia, creer-moodboard-actionnable-production-ia, guide-complet-montage-video-assiste-intelligence-artificielle, comment-creer-pub-video-avec-ia-comme-agence-pro, n-achetez-surtout-pas-de-prompt-ia-tout-fait, organiser-brief-client-production-video-ia, /prestation. Entrants ajoutés le même jour depuis comment-creer-agence-creation-video-ia et formation-interne-equipe-creative-ia.
+- cta: /prestation (conseil IA, 4 200 € HT/jour, prix repris de la page), pas de mention ScreenWeaver (sujet agence classique).
+- cannibalization_notes: comment-creer-agence-creation-video-ia garde « créer une agence » ; monetiser-competences-creation-ia-freelance-agence garde le pricing freelance ; formation-interne-equipe-creative-ia garde le programme de formation ; metiers-audiovisuel-ia-menaces-transformation-avis garde les métiers de l'audiovisuel ; audit-workflow-ia-methode-mission garde la méthode d'audit complète. Cet article seul porte la lecture poste par poste d'une agence créative classique et la mesure du gain temps de reprise déduit. Le lien du plan vers comment-creer-pub-video-agence-pro pointe en réalité sur comment-creer-pub-video-avec-ia-comme-agence-pro.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 7 H2 / FAQ 8 questions / 13 liens internes / 3 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS, build_ledger régénéré)
+- published_commit: 92378d8
+
 ### 2026-09-11 : Festivals de films IA : ce que les jurys regardent vraiment
 - slug: festivals-films-ia-criteres-jurys
 - locale: fr
