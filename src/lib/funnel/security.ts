@@ -26,21 +26,42 @@ function safeEqual(a: string, b: string): boolean {
   return ba.length === bb.length && timingSafeEqual(ba, bb);
 }
 
-/** Jeton de désinscription : email encodé + signature. Sans expiration. */
-export function makeUnsubscribeToken(email: string): string {
-  const e = Buffer.from(email.trim().toLowerCase()).toString("base64url");
-  return `${e}.${hmac(`unsub:${e}`)}`;
+/** Jeton signé générique : valeur encodée + HMAC lié à un usage (scope). */
+export function makeSignedToken(scope: string, value: string): string {
+  const e = Buffer.from(value).toString("base64url");
+  return `${e}.${hmac(`${scope}:${e}`)}`;
 }
 
-export function readUnsubscribeToken(token: string): string | null {
+export function readSignedToken(scope: string, token: string): string | null {
   const [e, sig] = token.split(".");
   if (!e || !sig) return null;
-  if (!safeEqual(sig, hmac(`unsub:${e}`))) return null;
+  if (!safeEqual(sig, hmac(`${scope}:${e}`))) return null;
   try {
     return Buffer.from(e, "base64url").toString("utf8");
   } catch {
     return null;
   }
+}
+
+/** Jeton de désinscription : email encodé + signature. Sans expiration. */
+export function makeUnsubscribeToken(email: string): string {
+  return makeSignedToken("unsub", email.trim().toLowerCase());
+}
+
+export function readUnsubscribeToken(token: string): string | null {
+  return readSignedToken("unsub", token);
+}
+
+/**
+ * Jeton d'accès au tunnel payant : délivré uniquement après un paiement
+ * vérifié chez Stripe. Lien personnel permanent (email) et cookie.
+ */
+export function makeBuzzAccessToken(email: string): string {
+  return makeSignedToken("buzz", email.trim().toLowerCase());
+}
+
+export function readBuzzAccessToken(token: string): string | null {
+  return readSignedToken("buzz", token);
 }
 
 /** Valeur du cookie admin : HMAC du jeton, jamais le jeton lui-même. */

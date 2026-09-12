@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { FunnelFrame } from "@/components/funnel/FunnelFrame";
+import { BUZZ_PATHS } from "@/lib/buzz/config";
 import { FUNNEL_PATHS } from "@/lib/funnel/config";
 
 const NAV = [
   { href: FUNNEL_PATHS.admin, label: "Vue d’ensemble", key: "overview" },
   { href: `${FUNNEL_PATHS.admin}/inscrits`, label: "Inscrits", key: "subscribers" },
   { href: `${FUNNEL_PATHS.admin}/emails`, label: "Emails", key: "emails" },
+  { href: BUZZ_PATHS.admin, label: "Ventes Viral AI videos", key: "buzz" },
 ] as const;
 
 /** Pages publiques du tunnel, ouvertes dans un nouvel onglet. */
@@ -13,6 +15,7 @@ const FUNNEL_PAGES = [
   { href: FUNNEL_PATHS.optin, label: "Page d’inscription" },
   { href: `${FUNNEL_PATHS.course}?bienvenue=1`, label: "Page formation" },
   { href: FUNNEL_PATHS.unsubscribed, label: "Page désinscription" },
+  { href: BUZZ_PATHS.sales, label: "Vente Viral AI videos (EN)" },
 ] as const;
 
 export type AdminSection = (typeof NAV)[number]["key"];

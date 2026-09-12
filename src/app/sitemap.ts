@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { POSTS_PER_ARCHIVE_PAGE } from "@/components/PaginatedBlogGrid";
 import { getAllPosts, getPostsByCategory } from "@/lib/blog";
 import { getAllEnPosts } from "@/lib/blog-en";
+import { BUZZ_PATHS } from "@/lib/buzz/config";
 import { FUNNEL_PATHS } from "@/lib/funnel/config";
 import { outilPages } from "@/lib/outils-metadata";
 import { baseUrl, blogCategories, type BlogCategorySlug } from "@/lib/site";
@@ -192,6 +193,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}${FUNNEL_PATHS.optin}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Tunnel payant « Viral AI videos », en anglais uniquement.
+    {
+      url: `${baseUrl}${BUZZ_PATHS.sales}`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,

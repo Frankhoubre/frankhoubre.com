@@ -1,5 +1,6 @@
 import { getAllPosts } from "@/lib/blog";
 import { getAllEnPosts } from "@/lib/blog-en";
+import { BUZZ_PATHS } from "@/lib/buzz/config";
 import { FUNNEL_PATHS } from "@/lib/funnel/config";
 import { outilPages } from "@/lib/outils-metadata";
 import { baseUrl, blogCategories, person, siteName } from "@/lib/site";
@@ -54,6 +55,7 @@ export function GET() {
     "",
     `- [À propos / bio](${baseUrl}/a-propos)`,
     `- [About (English)](${baseUrl}/en/about)`,
+    `- [Viral AI videos: the exact method and the prompt ($7, English)](${baseUrl}${BUZZ_PATHS.sales}): how Frank Houbre's AI reels reached 6 million views in one night, produced on Imaginode.`,
     `- [Kit presse (bio, visuels, distinctions)](${baseUrl}/presse)`,
     `- [Prestations](${baseUrl}/prestation)`,
     `- [Contact](${baseUrl}/contact)`,
