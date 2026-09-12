@@ -1,6 +1,7 @@
 ---
 title: "Former une équipe créative interne à la vidéo IA"
 date: "2026-07-25"
+dateModified: "2026-09-12"
 category: "tutoriels"
 excerpt: "Programme 4 semaines, exercices, QA commune et montée en compétence sans sacrifier la charte marque."
 thumbnail: "/images/blog/formation-interne-equipe-creative-ia/hero.webp"
@@ -25,6 +26,8 @@ Cet article t'aide à construire une montée en compétence en 4 semaines qui re
 **Des rôles clairs** : générateur, validateur QA, monteur/étalonneur. Une personne ne peut pas tout juger seule après douze heures de génération. La rotation des rôles évite la cécité.
 
 **La charte marque** avant le premier prompt : palette, interdits, formats de livraison. L'IA amplifie le chaos si la charte n'existe pas. La formation sert à faire respecter la charte, pas à collectionner des presets.
+
+Avant de former tout le monde, sache aussi qui tu formes en priorité : [les postes qui gagnent vraiment du temps avec l'IA en agence](/blog/ia-agence-creative-postes-gains) ne sont pas ceux qu'on croit, et le DA senior qui corrige les autres a plus besoin d'un standard de qualité que d'un module de prompt.
 
 Un dernier prérequis, souvent oublié : ne lance ce programme qu'une fois un usage prouvé sur un vrai livrable client. La marche d'avant est décrite dans le guide sur [comment intégrer l'IA dans une boîte de production en six semaines](/blog/integrer-ia-boite-production-depart), qui cadre le pilote, les rôles et les obligations de transparence avant la montée en compétence collective.
 

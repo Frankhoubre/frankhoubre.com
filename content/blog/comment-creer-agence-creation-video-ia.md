@@ -1,7 +1,7 @@
 ---
 title: "Comment créer une agence de création vidéo IA (sans chaos opérationnel)"
 date: "2026-04-22"
-dateModified: "2026-04-23"
+dateModified: "2026-09-12"
 category: "business"
 excerpt: "Positionnement, offres, process, staffing et rentabilité: le guide terrain pour bâtir une agence vidéo IA crédible et scalable."
 thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978"
@@ -111,6 +111,8 @@ Checklist fixe avant envoi client.
 | Account manager | Protéger relation client | Répondre "oui" à tout | Renégocier scope par écrit |
 
 Même à deux personnes, assigne ces rôles. Une personne peut porter deux casquettes, mais chaque casquette doit exister.
+
+Si tu viens d'une agence classique et que tu te demandes lesquels de ces rôles l'IA soulage vraiment, j'ai passé [les postes d'une agence créative un par un](/blog/ia-agence-creative-postes-gains), avec la méthode pour mesurer le gain réel, temps de reprise déduit.
 
 ## Outils et stack: minimalisme stratégique
 
