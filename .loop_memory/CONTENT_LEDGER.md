@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-13 : Budgéter un projet vidéo IA : la méthode complète
+- slug: budgeter-projet-video-ia-methode
+- locale: fr
+- url: https://frankhoubre.com/blog/budgeter-projet-video-ia-methode
+- category: guides
+- type: evergreen / guide méthode PROD (plan 90j J31), publié à la date prévue, le calendrier ne glisse pas, donc J32 = 2026-09-14.
+- search_intent: informationnelle (créateur ou petite structure qui doit chiffrer un projet vidéo IA, pub, série ou film de marque, et tenir le chiffre pendant la production)
+- primary_keyword: budget vidéo ia
+- secondary_keywords: budgéter projet vidéo ia, coût génération vidéo ia par seconde, coefficient de sélection, réserve budget production ia, calculateur budget production ia, suivi budget production
+- sources: fal.ai/pricing (Wan 2.5 0,05 $/s, Kling 2.5 Turbo Pro 0,07 $/s, Veo 3 0,40 $/s), runway.com/pricing (Standard 15 $ / 625, Pro 35 $ / 2 250, Max 95 $ / 9 500, FAQ report des crédits), code de public/outils/calculateur-budget-production-ia/index.html (coefficients internes), en.wikipedia.org/wiki/Film_budgeting (above / below the line). Relevés le 2026-09-13. Ratios 3 à 10 et réserve 10 à 20 % qualifiés comme observation personnelle.
+- internal_links: -> combien-coute-court-metrage-ia-2026 (x2), creer-devis-projet-video-ia-client-modele-structure, combien-facturer-video-ia-professionnelle-grille-prix (x2), minimax-hailuo-prix-credits-formules, audit-workflow-ia-methode-mission, gerer-versions-projets-video-ia, erreurs-premiers-films-ia-lecons, kling-vs-veo-3-choisir-par-plan, /outils/calculateur-budget-production-ia. Entrants ajoutés depuis combien-coute-court-metrage-ia-2026 et creer-devis-projet-video-ia-client-modele-structure.
+- cta: /outils/calculateur-budget-production-ia (outil budget, comme prévu au plan), mention douce de ScreenWeaver dans la clôture (script verrouillé avant génération).
+- cannibalization_notes: combien-coute-court-metrage-ia-2026 garde l'analyse des coûts marché poste par poste ; creer-devis-projet-video-ia-client-modele-structure garde le document client ; combien-facturer garde le prix de vente ; minimax-hailuo garde la conversion crédits d'un outil. Ce guide porte la méthode de calcul (unité, phases, coefficients, réserve, suivi, clôture). Parade écrite dans l'intro.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / FAQ 7 questions / 14 liens internes / 3 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS après npm install, build PASS, build_ledger régénéré)
+- published_commit: 612caab
+
 ### 2026-09-12 : IA en agence créative : quels postes gagnent du temps
 - slug: ia-agence-creative-postes-gains
 - locale: fr

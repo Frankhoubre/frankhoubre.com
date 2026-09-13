@@ -1,6 +1,67 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-12 (J30 publié)
+## Last run: 2026-09-13 (J31 publié)
+
+### What happened
+- J31 du plan 90 jours publié à la date prévue :
+  `budgeter-projet-video-ia-methode` (guides, 11 H2 + 3 H3, FAQ 7 questions,
+  4913 mots, 14 liens internes dont /outils/calculateur-budget-production-ia,
+  3 liens externes, score éditorial 100 / bucket good / 0 flag, 0 issue au
+  seo_audit sur ce slug). Le calendrier ne glisse pas, donc J32 = 2026-09-14
+  (`concours-lepine-lecons-innovation`, MARQUE, récit, BASSE). Commit 612caab
+  poussé sur origin/main.
+- Angle : la méthode de calcul elle-même (coût / budget / prix, seconde
+  générée comme unité, 6 phases, 3 coefficients, réserve, suivi hebdo à 3
+  seuils, clôture à 3 chiffres), avec une section honnête sur le calculateur
+  maison : ses coefficients internes sont exposés tels que lus dans le code,
+  et son référentiel de prix est présenté comme non relié en direct.
+  Anti-cannibalisation écrite dans l'intro : J15 combien-coute garde les
+  coûts marché, creer-devis garde le document client, combien-facturer garde
+  le prix de vente.
+- Sources vérifiées le 2026-09-13 : fal.ai/pricing, runway.com/pricing (plans
+  et FAQ report des crédits), code du calculateur, Wikipedia Film budgeting.
+  Ratios non sourçables (3 à 10, réserve 10 à 20 %) qualifiés comme
+  observation personnelle. Détail dans PUBLISH_LOG.
+- Liens entrants réciproques depuis `combien-coute-court-metrage-ia-2026`
+  (après le protocole) et `creer-devis-projet-video-ia-client-modele-structure`
+  (section calculateur), `dateModified` 2026-09-13, fichiers en LF.
+- IMAGES : hero Nano Banana 2 (réalisatrice et client de marque penchés sur
+  une frise de production en ruban adhésif de couleur sur une longue table,
+  entrepôt en brique réhabilité, matin gris ; motif frise adhésive / entrepôt,
+  aucun recyclage : open space agence J30, salle de cinéma J29, mur de liège
+  J28, bureau à colombages J27, tour PC J26). workflow-1 = capture réelle du
+  calculateur en prod avec l'estimation par défaut, workflow-2 = capture
+  réelle de la FAQ Runway sur le report des crédits, légendées source + date.
+- PASSE ANTI-SLOP : 7 parallélismes négatifs supprimés, 5 signpostings
+  coupés, section troubleshooting de 7 paragraphes symétriques réécrite en
+  prose, liste de seuils à en-têtes gras passée en prose, 1 H2 négatif
+  renommé, 2 chiffres non sourcés qualifiés. Scanner unslop 1 faux positif
+  restant, grille FR manuelle appliquée.
+
+### Notes outillage
+- Playwright Python est installé mais sans chromium bundle : lancer avec
+  `p.chromium.launch(channel="chrome")` pour utiliser le Chrome de la machine.
+  Capture pleine page puis recadrage PIL ; Cookiebot bloque les clics, laisser
+  Playwright réessayer ou recadrer au-dessus de la bannière.
+- `$TMPDIR` est vide sous Git Bash : un `cat > "$TMPDIR/x"` écrit à la racine
+  et échoue. Écrire les scripts avec l'outil Write dans le scratchpad et les
+  lancer avec `py`.
+- Après un pull qui ajoute des dépendances (stripe ce jour), `npm install`
+  avant le typecheck, sinon rouge sans rapport avec l'article.
+- Le fichier écrit par l'outil Write sort en CRLF : `sed -i 's/\r$//'` avant
+  les gates (rappel des runs J28 et J30).
+
+### Next
+- J32 le 2026-09-14 : `concours-lepine-lecons-innovation` (MARQUE, récit,
+  BASSE, liens a-propos et parcours J9). Sujet biographique : ne rien inventer
+  sur la participation de Frank au Concours Lépine ; chercher les faits dans
+  le repo (/a-propos, articles parcours) et en ligne, sinon réorienter ou
+  reporter en le notant.
+- Dette signalée : title de `creer-devis-projet-video-ia-client-modele-structure`
+  à 68 caractères (erreur seo_audit préexistante, révélée par la
+  normalisation LF du fichier).
+
+### Previous run: 2026-09-12 (J30 publié)
 
 ### What happened
 - J30 du plan 90 jours publié à la date prévue :
