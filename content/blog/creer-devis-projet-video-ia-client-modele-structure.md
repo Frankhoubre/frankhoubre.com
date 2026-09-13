@@ -1,6 +1,7 @@
 ---
 title: "Créer un devis pour un projet vidéo IA : structure, pièges et modèle"
 date: "2026-07-05"
+dateModified: "2026-09-13"
 category: "business"
 excerpt: "Comment structurer un devis solide pour une prestation vidéo IA : lignes de coût, formulation des livrables, gestion du scope et clauses qui protègent ton temps."
 thumbnail: "/images/blog/creer-devis-projet-video-ia-client-modele-structure/hero.webp"
@@ -127,6 +128,8 @@ Ajoute une ligne sur les frais de stockage si tu conserves les fichiers intermé
 Avant de construire ta ligne de post-production, estime le coût réel de génération avec notre [calculateur de budget de production IA](/outils/calculateur-budget-production-ia). Il t'aide à simuler le coût des crédits d'outil selon la durée, la résolution et le nombre d'itérations nécessaires.
 
 Le coût des crédits est souvent sous-estimé dans les premiers devis. Sur un projet de 60 secondes avec 4 personnages et 8 plans, tu peux facilement consumer 150 à 200 crédits Runway ou l'équivalent sur Kling. Intègre ce coût réel dans ta ligne "génération" avant de fixer ton prix.
+
+Le calculateur donne un premier chiffre. Pour construire le budget interne qui se cache derrière le devis, avec l'unité de calcul, les coefficients de sélection et de révision et la réserve, la méthode est dans [budgéter un projet vidéo IA](/blog/budgeter-projet-video-ia-methode).
 
 ## Ce que tu peux adapter selon le type de projet
 

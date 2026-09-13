@@ -1,6 +1,7 @@
 ---
 title: "Combien coûte un court-métrage IA en 2026"
 date: "2026-08-25"
+dateModified: "2026-09-13"
 category: "analyses"
 excerpt: "Le vrai coût d'un court-métrage IA en 2026, poste par poste : génération, son, finition, festivals, et la variable qui fait tout basculer."
 thumbnail: "/images/blog/combien-coute-court-metrage-ia-2026/hero.webp"
@@ -142,6 +143,8 @@ Cinq étapes, une heure de travail, et tu as un budget défendable au lieu d'une
 5. **Convertis ton temps.** Estime tes heures par poste, applique ton tarif, et écris le total sur la même feuille. Même si tu ne le factures à personne.
 
 La deuxième étape est celle que tout le monde saute, et c'est celle qui décide du reste. Une scène test coûte quelques dizaines de dollars. Une erreur de facteur trois sur un film entier en coûte plusieurs centaines.
+
+Ce protocole chiffre un court-métrage. Pour n'importe quel autre projet, une pub, une série, un film de marque, avec le suivi hebdomadaire et la clôture qui vont avec, j'ai détaillé [la méthode complète pour budgéter un projet vidéo IA](/blog/budgeter-projet-video-ia-methode).
 
 ## FAQ
 
