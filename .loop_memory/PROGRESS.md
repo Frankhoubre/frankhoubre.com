@@ -1,6 +1,57 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-13 (J31 publié)
+## Last run: 2026-09-14 (J32 publié)
+
+### What happened
+- J32 du plan 90 jours publié à la date prévue :
+  `concours-lepine-lecons-innovation` (business, 11 H2, FAQ 7 questions,
+  4141 mots, 10 liens internes dont /a-propos et /presse, 5 liens externes,
+  score éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit sur ce
+  slug). Le calendrier ne glisse pas, donc J33 = 2026-09-15
+  (`lost-garden-univers-coherent-episodes`, CAS, méthode/cas, MOYENNE).
+  Commit 3745173 poussé sur origin/main.
+- Sujet biographique traité sans rien inventer : socle factuel = Le Journal
+  des Entreprises du 25/11/2015 (levée 200 000 €, 13 investisseurs, 14
+  concours dont médaille d'or au dernier Concours Lépine, équipe de 5,
+  abonnement 9,90 à 19,90 €) et le PeeL (Concours Lépine 2016 à la Foire de
+  Paris). Médaille d'or datée de l'édition européenne 2015 par recoupement
+  (JDE novembre 2015 + seed4start « médaille d'or au concours européen
+  l'année précédente »). Les leçons sont écrites comme opinions
+  rétrospectives, aucune anecdote de stand fabriquée.
+- Le lien /presse prévu par le plan est valide : la route
+  `src/app/(fr)/presse/page.tsx` existe et est prérendue. La consigne
+  « remplacer /presse » de la tâche est obsolète.
+- Liens entrants réciproques (dateModified 2026-09-14) depuis
+  `parcours-frank-houbre-guitare-cinema-ia` et
+  `festivals-films-ia-criteres-jurys`.
+- Images : hero Nano Banana 2 (stand de foire d'inventions, guitare
+  branchée à un portable, hall d'exposition) + 2 captures réelles
+  (concours-lepine.com/inscriptions section informations importantes,
+  article JDE 2015).
+
+### Notes outillage
+- `render_blog_queue_nanobanana.py` n'a pas d'option `--slug` (la consigne
+  de la tâche est fausse) : utiliser `--dest` + `--prompt` seulement, et
+  préfixer la commande de `MSYS_NO_PATHCONV=1` sous Git Bash, sinon
+  `/images/...` est converti en `C:\Program Files\Git\images` (PermissionError).
+- Capture Playwright : le sélecteur générique `button:has-text('Accepter')`
+  a cliqué « Accepter » sur la bannière cookies du JDE ; mettre les
+  sélecteurs « Refuser » / « Continuer sans accepter » en premier et retirer
+  les sélecteurs d'acceptation.
+- `editorial_audit.mjs --json` donne la ligne d'un slug précis (le rendu
+  texte tronque la liste GOOD).
+
+### Next
+- J33 le 2026-09-15 : `lost-garden-univers-coherent-episodes` (CAS,
+  méthode/cas, MOYENNE, liens lost-garden J11 entrant et
+  creer-bible-lieux-decor). Cannibalisation moyenne avec J11 : J11 garde le
+  journal de production, J33 prend le worldbuilding épisode par épisode.
+  Faits Lost Garden : ne rien inventer, s'appuyer sur ce qui est vérifiable
+  (chaîne LostGarden Anime, épisodes publiés).
+- Dette signalée : title de `creer-devis-projet-video-ia-client-modele-structure`
+  à 68 caractères (erreur seo_audit préexistante).
+
+### Previous run: 2026-09-13 (J31 publié)
 
 ### What happened
 - J31 du plan 90 jours publié à la date prévue :

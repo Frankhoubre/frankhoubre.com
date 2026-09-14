@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-14 : Concours Lépine : ce que j'y ai appris sur l'innovation
+- slug: concours-lepine-lecons-innovation
+- locale: fr
+- url: https://frankhoubre.com/blog/concours-lepine-lecons-innovation
+- category: business
+- type: evergreen / récit MARQUE (plan 90j J32), publié à la date prévue, le calendrier ne glisse pas, donc J33 = 2026-09-15.
+- search_intent: informationnelle (fondateur ou créateur qui se demande si présenter sa startup au Concours Lépine vaut le coup, et ce qu'une médaille change vraiment)
+- primary_keyword: concours lépine startup
+- secondary_keywords: concours lépine avis, participer au concours lépine, médaille d'or concours lépine, concours d'inventeurs startup, MyMusicTeacher
+- sources: lejournaldesentreprises.com (25/11/2015, levée 200 000 €, 13 investisseurs, 14 concours, médaille d'or Lépine, équipe 5, 9,90 à 19,90 €), peel.univ-lorraine.fr (Concours Lépine 2016 Foire de Paris), fr.wikipedia.org/wiki/Concours_Lépine (1901, Louis Lépine, Foire de Paris 1929, édition européenne Strasbourg, inventions primées), concours-lepine.com et /inscriptions (PI obligatoire, adhésion AIFF, jury ~50 bénévoles, 126e édition 30 avril-10 mai 2027, inscriptions 30/09/2026, six univers, exclusions)
+- internal_links: -> parcours-frank-houbre-guitare-cinema-ia (x2), screenweaver-pourquoi-outil-ecriture, pourquoi-jai-construit-imaginode-canvas-ia, festivals-films-ia-criteres-jurys, /a-propos, /presse ; entrants ajoutés depuis parcours-frank-houbre-guitare-cinema-ia et festivals-films-ia-criteres-jurys
+- cta: none (mention douce de ScreenWeaver et Imaginode comme exemples, page à propos et page presse en clôture)
+- cannibalization_notes: parcours-frank-houbre-guitare-cinema-ia garde le récit de carrière complet ; cet article ne prend que l'épisode Concours Lépine et l'intention « concours lépine startup » ; festivals-films-ia-criteres-jurys garde les barèmes de festivals, ici seulement la transposition jury vs marché.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / FAQ 7 questions / 10 liens internes / 5 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 3745173
+
 ### 2026-09-13 : Budgéter un projet vidéo IA : la méthode complète
 - slug: budgeter-projet-video-ia-methode
 - locale: fr
