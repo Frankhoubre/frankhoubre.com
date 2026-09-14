@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-13T08:02:56.797Z
+> Generated: 2026-09-14T08:07:24.826Z
 
-## FR : 310 articles (/blog/<slug>)
+## FR : 311 articles (/blog/<slug>)
 
-Categories: tutoriels 189, actualite 53, business 21, comparatifs 18, analyses 14, guides 13, notes 1, postproduction 1
+Categories: tutoriels 189, actualite 53, business 22, comparatifs 18, analyses 14, guides 13, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-14 | business | `concours-lepine-lecons-innovation` | Concours Lépine : ce que j'y ai appris sur l'innovation |
 | 2026-09-13 | guides | `budgeter-projet-video-ia-methode` | Budgéter un projet vidéo IA : la méthode complète |
 | 2026-09-12 | business | `ia-agence-creative-postes-gains` | IA en agence créative : quels postes gagnent du temps |
 | 2026-09-11 | analyses | `festivals-films-ia-criteres-jurys` | Festivals de films IA : ce que les jurys regardent vraiment |

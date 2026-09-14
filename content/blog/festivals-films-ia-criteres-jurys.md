@@ -4,6 +4,7 @@ date: "2026-09-11"
 category: "analyses"
 excerpt: "Grilles de notation de Runway, Reply, AAIFF, AIMA et Sparknify, et ce que VOIDBORN m'a appris des jurés : les vrais critères d'un festival de films IA."
 thumbnail: "/images/blog/festivals-films-ia-criteres-jurys/hero.webp"
+dateModified: "2026-09-14"
 metaTitle: "Festivals de films IA : ce que les jurys regardent vraiment"
 metaDescription: "Les critères publiés par Runway, Reply, AAIFF, AIMA et Sparknify, lus ligne par ligne, plus ce que VOIDBORN m'a appris sur la façon dont un jury note un film IA."
 ---
@@ -128,7 +129,7 @@ Je relirais le règlement du festival visé, en entier, avant d'ouvrir le fichie
 
 Pour les fenêtres encore ouvertes au moment où j'écris : les AI Movie Awards de Londres acceptent les films jusqu'au 10 octobre 2026, la période à tarif régulier s'étant close le 5 septembre. Astana a fermé le 7 septembre, Sparknify projette ses finalistes le 26 septembre, et la piste film de Runway avait ouvert le 28 janvier cette année.
 
-Le reste, une fois le film sélectionné, relève d'un autre travail : la bande-annonce, les relances, la niche qui comprend pourquoi ton projet existe. Ce travail-là est dans [mon plan de distribution d'un film IA](/blog/distribution-film-ia-strategies-visibilite-2026). Et si tu veux voir ce que ces critères ont donné sur mes propres films, [le kit presse](/presse) liste les distinctions festival par festival.
+Le reste, une fois le film sélectionné, relève d'un autre travail : la bande-annonce, les relances, la niche qui comprend pourquoi ton projet existe. Ce travail-là est dans [mon plan de distribution d'un film IA](/blog/distribution-film-ia-strategies-visibilite-2026). Et si tu veux voir ce que ces critères ont donné sur mes propres films, [le kit presse](/presse) liste les distinctions festival par festival. Une sélection ou un prix reste un label pour la presse et les partenaires, pas un public : c'est la même mécanique qu'une médaille de concours d'inventeurs, que j'ai vécue bien avant les films et que je raconte dans [ce que le Concours Lépine m'a appris](/blog/concours-lepine-lecons-innovation).
 
 ## FAQ
 

@@ -4,6 +4,7 @@ date: "2026-08-03"
 category: "guides"
 excerpt: "Mon parcours, de huit ans de guitare à la création de MyMusicTeacher, puis Business Dynamite, jusqu'au cinéma IA avec AI Studios, Ronces et VOIDBORN."
 thumbnail: "/images/blog/parcours-frank-houbre-guitare-cinema-ia/hero.webp"
+dateModified: "2026-09-14"
 ---
 
 # Parcours de Frank Houbre : de la guitare au cinéma IA
@@ -26,7 +27,7 @@ C'est cette expérience de terrain, celle d'avoir vu des centaines d'élèves bu
 
 En 2014, j'ai lancé MyMusicTeacher, une plateforme d'apprentissage musical en ligne qui mélangeait pédagogie interactive et technologie. L'idée était simple : prendre ce que j'avais appris en enseignant en direct et le rendre accessible à beaucoup plus de monde, sans perdre ce qui rend un bon prof utile.
 
-Le projet a été repéré rapidement. On a remporté une médaille d'or au Concours Lépine, et on a levé 200 000 euros pour accélérer le développement. Pour une première entreprise, c'était une validation forte. Ce n'était pas un coup de chance isolé, c'était la preuve qu'on avait vu juste sur le besoin.
+Le projet a été repéré rapidement. On a remporté une médaille d'or au Concours Lépine, et on a levé 200 000 euros pour accélérer le développement. Pour une première entreprise, c'était une validation forte. Ce n'était pas un coup de chance isolé, c'était la preuve qu'on avait vu juste sur le besoin. Ce que cette médaille a vraiment changé, et ce qu'elle n'a pas changé, je le détaille dans [ce que le Concours Lépine m'a appris sur l'innovation](/blog/concours-lepine-lecons-innovation).
 
 > 💡 **Le cut de Frank :** Ce que MyMusicTeacher m'a appris, et que je réutilise encore aujourd'hui dans AI Studios, c'est qu'une bonne pédagogie ne consiste pas à empiler du contenu. Elle consiste à repérer précisément où les gens bloquent, et à construire l'outil ou le format qui débloque exactement ce point-là.
 
