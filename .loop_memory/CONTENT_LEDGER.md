@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-16 : Univers cohérent série IA : la méthode Lost Garden
+- slug: lost-garden-univers-coherent-episodes
+- locale: fr
+- url: https://frankhoubre.com/blog/lost-garden-univers-coherent-episodes
+- category: guides
+- type: evergreen / méthode-cas CAS (plan 90j J33), publié avec un jour de retard (prévu le 2026-09-15, aucun run ce jour là), le calendrier glisse d'un jour, donc J34 = 2026-09-17.
+- search_intent: informationnelle (créateur qui lance ou poursuit une série IA et veut faire grandir son univers d'un épisode à l'autre sans le contredire)
+- primary_keyword: univers cohérent série ia
+- secondary_keywords: worldbuilding série ia, bible d'univers, cohérence entre épisodes, Lost Garden épisode 2, construire un univers de série animée
+- sources: youtube.com/oembed + pages watch (ep. 1 eZ_JlaLDJ-8 du 2026-05-29, 1032 s ; ep. 2 z-YRrutXaFE du 2026-09-15, 1284 s ; vidéo 0cyYhSMIRF4 du 2026-06-23 : 63 h, ~6 semaines/épisode, 24 épisodes visés ; titres OST), lostgarden.world/en (personnages, 13 chevaliers, Aren), /en/process (pipeline ScreenWeaver, Seedance 2), /en/vision (pivot cathédrale vers souterrain, liste des éléments du monde, phrase de ton)
+- internal_links: -> lost-garden-journal-production-serie-ia, pourquoi-personnages-changent-chaque-scene-ia, comment-creer-univers-visuel-coherent-avec-ia, screenweaver-pourquoi-outil-ecriture, creer-bible-lieux-decor-projet-ia ; entrants ajoutés depuis lost-garden-journal-production-serie-ia et creer-bible-lieux-decor-projet-ia
+- cta: none (mention douce de ScreenWeaver comme source de vérité du scénario, lien vers lostgarden.world et l'épisode 2 en clôture)
+- cannibalization_notes: lost-garden-journal-production-serie-ia garde le pipeline (blocs, son, dérives) ; cet article prend uniquement le worldbuilding épisode par épisode et l'intention « univers cohérent série ia » ; comment-creer-univers-visuel-coherent-avec-ia et creer-bible-lieux-decor-projet-ia restent techniques (palette, fiches lieu).
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 9 H2 / FAQ 7 questions / 8 liens internes / 4 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS 620 pages)
+- published_commit: 4f8b687
+
 ### 2026-09-14 : Concours Lépine : ce que j'y ai appris sur l'innovation
 - slug: concours-lepine-lecons-innovation
 - locale: fr

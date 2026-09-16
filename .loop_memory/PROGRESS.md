@@ -1,6 +1,56 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-14 (J32 publié)
+## Last run: 2026-09-16 (J33 publié)
+
+### What happened
+- J33 du plan 90 jours publié avec un jour de retard (prévu le 2026-09-15,
+  aucun run ce jour là) : `lost-garden-univers-coherent-episodes` (guides,
+  9 H2 + 9 H3, FAQ 7 questions, 4391 mots, 8 liens internes, 4 liens
+  externes, score éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit
+  sur ce slug). Le calendrier glisse d'un jour, donc J34 = 2026-09-17
+  (`grok-imagine-avis-test-plans`, OUTILS, avis, BASSE). Commit 4f8b687
+  poussé sur origin/main.
+- Timing : l'épisode 2 de Lost Garden, *The King Beneath the Vault*, est
+  sorti la veille (2026-09-15). Socle factuel vérifié le jour même : oEmbed
+  et pages YouTube (ep. 1 du 2026-05-29, 1032 s ; ep. 2 1284 s ; vidéo du
+  2026-06-23 : 63 h pour l'ep. 1, ~6 semaines/épisode annoncées, objectif 24
+  épisodes ; outils de l'ep. 1) et lostgarden.world (/en, /en/process,
+  /en/vision : 13 chevaliers, XII Lanterne, IX Serrure, Aren, pivot
+  cathédrale vers souterrain, ScreenWeaver source de vérité). Aucun chiffre
+  inventé ; l'écart 6 semaines annoncées / ~4 mois réels est assumé.
+- Angle distinct de J11 (journal de production = pipeline) : worldbuilding
+  épisode par épisode (trois couches de bible, registre des promesses,
+  règle du sas, deux invariants une variation, budget de nouveautés).
+- Liens entrants réciproques (dateModified 2026-09-16) depuis
+  `lost-garden-journal-production-serie-ia` et
+  `creer-bible-lieux-decor-projet-ia`.
+- Images : hero Nano Banana 2 (caverne souterraine vue d'un pont de pierre,
+  brume cyan, pèlerins masqués au loin, machine rouillée ; bandes noires du
+  rendu recadrées en PIL) + 2 captures réelles (lostgarden.world section
+  The Thirteen Knights, chaîne YouTube LostGarden Anime onglet Vidéos).
+
+### Notes outillage
+- Le rendu Nano Banana 2 peut arriver avec des bandes noires haut/bas
+  (letterbox) malgré le 16:9 forcé : détecter les lignes sombres et
+  recadrer en PIL avant publication.
+- YouTube : le consentement se ferme avec `button:has-text('Tout refuser')`
+  en locale fr-FR ; lostgarden.world a un bouton `DECLINE`.
+- `editorial_audit.mjs` flagge « dans un monde où » même au sens littéral
+  (« dans un monde où les chevaliers sont... ») : reformuler avec « quand ».
+- Prochain hero : éviter caverne / grotte / brume bleue (utilisés ce jour) et
+  les motifs des 5 précédents.
+
+### Next
+- J34 le 2026-09-17 : `grok-imagine-avis-test-plans` (OUTILS, avis,
+  BASSE). Cannibalisation moyenne avec l'actu
+  `grok-imagine-video-1-5-xai-generation-video-ia` : l'actu garde la requête
+  news, l'avis prend « avis/test » ; ajouter le lien entrant depuis l'actu.
+  Vérifier l'état réel de Grok Imagine (version, prix, limites) avant
+  d'écrire, captures réelles de l'interface / tarifs prioritaires.
+- Dette signalée : title de `creer-devis-projet-video-ia-client-modele-structure`
+  à 68 caractères (erreur seo_audit préexistante).
+
+### Previous run: 2026-09-14 (J32 publié)
 
 ### What happened
 - J32 du plan 90 jours publié à la date prévue :
@@ -41,7 +91,7 @@
 - `editorial_audit.mjs --json` donne la ligne d'un slug précis (le rendu
   texte tronque la liste GOOD).
 
-### Next
+### Next (à l'époque)
 - J33 le 2026-09-15 : `lost-garden-univers-coherent-episodes` (CAS,
   méthode/cas, MOYENNE, liens lost-garden J11 entrant et
   creer-bible-lieux-decor). Cannibalisation moyenne avec J11 : J11 garde le
