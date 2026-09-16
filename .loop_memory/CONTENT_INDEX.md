@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-14T08:07:24.826Z
+> Generated: 2026-09-16T13:20:16.982Z
 
-## FR : 311 articles (/blog/<slug>)
+## FR : 312 articles (/blog/<slug>)
 
-Categories: tutoriels 189, actualite 53, business 22, comparatifs 18, analyses 14, guides 13, notes 1, postproduction 1
+Categories: tutoriels 189, actualite 53, business 22, comparatifs 18, guides 14, analyses 14, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-16 | guides | `lost-garden-univers-coherent-episodes` | Univers cohérent série IA : la méthode Lost Garden |
 | 2026-09-14 | business | `concours-lepine-lecons-innovation` | Concours Lépine : ce que j'y ai appris sur l'innovation |
 | 2026-09-13 | guides | `budgeter-projet-video-ia-methode` | Budgéter un projet vidéo IA : la méthode complète |
 | 2026-09-12 | business | `ia-agence-creative-postes-gains` | IA en agence créative : quels postes gagnent du temps |

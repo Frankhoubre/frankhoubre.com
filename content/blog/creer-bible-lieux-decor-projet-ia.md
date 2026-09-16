@@ -1,7 +1,7 @@
 ---
 title: "Creer une bible de lieux et decors pour projet IA"
 date: "2026-06-06"
-dateModified: "2026-06-10"
+dateModified: "2026-09-16"
 category: "tutoriels"
 excerpt: "Comment documenter chaque decor pour garder la meme ambiance visuelle du pilote a la livraison finale."
 thumbnail: "/images/blog/creer-bible-lieux-decor-projet-ia/hero.webp"
@@ -251,7 +251,7 @@ Un lieu en IA n'existe que si tu le documentes. Sans fiche, chaque prompt est un
 
 Investis une heure en inventaire et fiches avant le premier batch de génération. Six variations par lieu héros, carte trois angles, bloc prompt copiable, interdits explicites, code `LOC-XXX` dans chaque ligne shotlist. Test de dérive une semaine après : trois angles, un regard neuf. Si l'inconnu hésite, renforce les références.
 
-La bible vit avec le projet. Nouveau lieu = fiche complète avant génération. Modification validée client = version V2 archivée. Lieu et lumière restent indissociables : deux états pour le même café matin et soir, pas un seul prompt réutilisé.
+La bible vit avec le projet. Sur une série, elle doit aussi grandir sans se contredire : j'ai décrit sur Lost Garden [comment ajouter un nouveau lieu par épisode sans casser l'univers](/blog/lost-garden-univers-coherent-episodes), avec la règle du sas et le principe deux invariants, une variation. Nouveau lieu = fiche complète avant génération. Modification validée client = version V2 archivée. Lieu et lumière restent indissociables : deux états pour le même café matin et soir, pas un seul prompt réutilisé.
 
 Applique cette méthode sur **créer une bible de lieux et décors pour projet IA**. Tes décors tiendront du pilote à la livraison finale. Le décor crédible ne s'improvise pas : il se documente.
 

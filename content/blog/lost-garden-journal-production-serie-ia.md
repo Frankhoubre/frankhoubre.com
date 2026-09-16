@@ -1,6 +1,7 @@
 ---
 title: "Lost Garden : journal de production d'une série IA"
 date: "2026-08-19"
+dateModified: "2026-09-16"
 category: "analyses"
 excerpt: "Lost Garden est ma série animée IA. Le journal de production complet : la bible, le découpage, le son, les dérives de personnage et ce que je referais."
 thumbnail: "/images/blog/lost-garden-journal-production-serie-ia/hero.webp"
@@ -146,7 +147,7 @@ Enfin, je verrouillerais la chaîne de livraison dès l'épisode 1 : codec, cont
 
 Si je devais résumer ce que Lost Garden m'a appris : sur une série, ce qui vous distingue se joue moins dans le prompt du jour que dans votre capacité à le retrouver et à le rejouer dans six mois.
 
-La série continue. Je documenterai la suite avec le même niveau de détail, y compris quand ça casse.
+La série continue. L'épisode 2, *The King Beneath the Vault*, est sorti le 15 septembre 2026, et j'ai détaillé de son côté [comment le monde de Lost Garden grandit d'un épisode à l'autre sans se contredire](/blog/lost-garden-univers-coherent-episodes) : règles, réserve de révélations, budget de nouveautés. Je documenterai la suite avec le même niveau de détail, y compris quand ça casse.
 
 C'est aussi ce projet qui a rendu la question de la structure inévitable, et qui m'a poussé à monter [Outerframe Studio](/blog/outerframe-studio-pourquoi-studio-ia) pour produire dans un cadre tenable.
 
