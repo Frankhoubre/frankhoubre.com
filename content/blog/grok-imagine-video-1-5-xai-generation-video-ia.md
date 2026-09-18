@@ -1,6 +1,7 @@
 ---
 title: "Grok Imagine Video 1.5 : xAI passe en tête du classement vidéo IA"
 date: "2026-06-20"
+dateModified: "2026-09-18"
 category: "actualite"
 excerpt: "Grok Imagine Video 1.5 arrive en disponibilité générale le 17 juin 2026. Audio natif synchronisé, 86 % moins cher que Sora 2 Pro, numéro 1 sur l'Image-to-Video Arena. Ce que ça change vraiment."
 thumbnail: "/images/blog/grok-imagine-video-1-5-xai-generation-video-ia/hero.webp"
@@ -87,6 +88,8 @@ xAI n'est pas entré sur le marché de la vidéo IA pour occuper le terrain. Le 
 C'est une pression réelle sur OpenAI (Sora) et Google (Veo 3.1). Ces deux acteurs ont des avantages sur la résolution et l'intégration dans des écosystèmes plus larges, mais l'écart de prix est difficile à ignorer.
 
 Les prochains mois vont probablement voir des ajustements tarifaires ou des mises à jour de modèles en réponse. Pour les créateurs, c'est une bonne période pour tester, comparer et ne pas verrouiller leurs workflows sur un seul outil.
+
+Mise à jour du 18 septembre 2026 : trois mois après cette sortie, j'ai repris le modèle à froid, fiche technique relue, prix recalculés sur trois canaux et grille de six plans, dans mon [avis sur Grok Imagine après tests sur de vrais plans](/blog/grok-imagine-avis-test-plans). Le classement et le prix ont bougé depuis ce papier.
 
 Pour les workflows vidéo IA, l'[annuaire des générateurs d'images IA](/outils/annuaire-generateurs-images-ia-gratuits) reste utile pour garder une vue d'ensemble des outils disponibles, notamment pour la phase image avant génération vidéo. Et si tu veux comparer les performances sur un projet précis avant de choisir ton outil, le [calculateur de budget production IA](/outils/calculateur-budget-production-ia) peut t'aider à estimer ce que chaque modèle va vraiment coûter sur ton volume de clips.
 

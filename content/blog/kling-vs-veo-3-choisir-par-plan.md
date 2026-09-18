@@ -1,6 +1,7 @@
 ---
 title: "Kling ou Veo 3 : quel moteur selon le type de plan"
 date: "2026-08-29"
+dateModified: "2026-09-18"
 category: "comparatifs"
 excerpt: "Kling vs Veo, le comparatif plan par plan : durée, audio natif, format, coût réel à la seconde. Quel moteur porte quel type de plan, et pourquoi."
 thumbnail: "/images/blog/kling-vs-veo-3-choisir-par-plan/hero.webp"
@@ -157,6 +158,8 @@ Une fois le tri fait, tu ouvres tes moteurs et tu ne changes plus d'avis. Le pir
 Je n'ai publié aucune note de qualité d'image. Pas par prudence excessive : les deux moteurs bougent trop vite pour qu'une note tienne trois mois, et la qualité perçue dépend énormément du type de plan et du prompt. Restent les contraintes documentées et les prix, que tu peux vérifier toi-même en dix minutes. C'est ce que j'ai comparé.
 
 Je n'ai pas non plus traité les résolutions Kling. Le schéma fal.ai de Kling v3 Pro que j'ai consulté n'expose pas de paramètre de résolution, et je préfère ne rien affirmer plutôt que de recopier un chiffre trouvé sur un site tiers. Si tu travailles en 4K sur Kling, vérifie sur ton propre accès avant de vendre un livrable.
+
+Un troisième moteur mérite désormais sa place dans ce tri : j'ai passé la même grille de plans sur Grok Imagine dans mon [avis sur Grok Imagine après tests sur de vrais plans](/blog/grok-imagine-avis-test-plans), avec ses sept images de référence et son tarif à la seconde comparé à ceux de ce tableau.
 
 Pour aller plus loin sur chaque moteur pris séparément, mon [brief réalisateur pour Veo 3](/blog/google-veo-3-brief-realisateur-plan-sequence) traite le plan séquence, et l'article sur [Flow et l'édition audio de Veo 3.1](/blog/google-flow-veo-31-edition-audio-juin-2026) couvre le côté interface. Les sources officielles utilisées ici sont la [documentation Veo de l'API Gemini](https://ai.google.dev/gemini-api/docs/veo), la [page de tarifs de l'API Gemini](https://ai.google.dev/gemini-api/docs/pricing) et les [fiches modèles publiées par fal.ai](https://fal.ai/models/fal-ai/kling-video/v3/pro/text-to-video).
 
