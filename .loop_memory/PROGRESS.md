@@ -1,6 +1,59 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-16 (J33 publié)
+## Last run: 2026-09-18 (J34 publié)
+
+### What happened
+- J34 du plan 90 jours publié avec un jour de retard (prévu le 2026-09-17,
+  aucun run ce jour là) : `grok-imagine-avis-test-plans` (comparatifs,
+  10 H2 + 6 H3, FAQ 7 questions, 4214 mots, 11 liens internes, 9 liens
+  externes, score éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit
+  sur ce slug). Le calendrier glisse d'un jour, donc J35 = 2026-09-19
+  (`cinema-ia-remplacer-tournages`, OPINION, MOYENNE). Commit 001e9c6
+  poussé sur origin/main.
+- Socle factuel vérifié le jour même : x.ai/news (16 juin et 31 juillet),
+  docs.x.ai (vidéo, notes de version, fiche modèle 0,080 $/s, TTS 20
+  langues), fal.ai (0,08 / 0,14 / 0,25 $/s), Artificial Analysis (Grok 1.5
+  8e en I2V avec audio, Elo 1099, absent du T2V), grok.com/plans (10 / 30 /
+  100 / 300 $, aucun quota publié), rebranding SpaceXAI, arrêt API Sora le
+  24 septembre. Aucune génération lancée : verdicts adossés aux contraintes
+  documentées, à l'arène et aux tarifs, assumé dans l'article ; grille de
+  six plans donnée au lecteur.
+- Anti-cannibalisation : l'actu de juin garde la requête news, l'avis prend
+  « avis / test ». Liens entrants réciproques (dateModified 2026-09-18)
+  depuis `grok-imagine-video-1-5-xai-generation-video-ia` et
+  `kling-vs-veo-3-choisir-par-plan`.
+- Images : hero Nano Banana 2 (réalisatrice qui scotche une grille de
+  tirages sur un mur de studio, régénérée une fois pour retirer des
+  étiquettes) + 3 captures réelles (classement Artificial Analysis, fiche
+  fal.ai, grok.com/plans).
+
+### Notes outillage
+- `render_blog_queue_nanobanana.py --dest /images/...` lancé depuis Git
+  Bash : le chemin `/images` est converti en `C:/Program Files/Git/images`
+  (accès refusé). Lancer le script via PowerShell.
+- Nano Banana 2 ajoute volontiers des étiquettes texte quand le prompt
+  décrit une grille de tirages ; préciser « no text, no labels » dès le
+  premier prompt.
+- Cookies : fal.ai se ferme avec `Reject All`, grok.com avec
+  `Tout refuser` (locale fr-FR). Artificial Analysis n'a pas de bannière.
+- Le scanner unslop marque « utilise / utilises » comme « utilize » : faux
+  positifs à ignorer sur du français.
+- Prochain hero : éviter mur de tirages / studio photo (utilisés ce jour) et
+  les motifs des 5 précédents.
+
+### Next
+- J35 le 2026-09-19 : `cinema-ia-remplacer-tournages` (OPINION, opinion,
+  MOYENNE, mot-clé « cinéma ia avenir »). Liens du plan : pilier
+  `metiers-audiovisuel-ia-menaces-transformation-avis` et
+  `generation-video-nouveaux-outils-changements-realisateurs` (vérifier les
+  slugs exacts). Cannibalisation faible. Sujet sans produit : stills Nano
+  Banana 2, sauf si un rapport ou une page publique mérite une capture.
+- Dette signalée : title de `creer-devis-projet-video-ia-client-modele-structure`
+  à 68 caractères (erreur seo_audit préexistante) ; excerpt de
+  `grok-imagine-video-1-5-xai-generation-video-ia` à 193 caractères
+  (warning seo_audit préexistant).
+
+### Previous run: 2026-09-16 (J33 publié)
 
 ### What happened
 - J33 du plan 90 jours publié avec un jour de retard (prévu le 2026-09-15,

@@ -40,6 +40,22 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-18 : Grok Imagine : avis après tests sur de vrais plans
+- slug: grok-imagine-avis-test-plans
+- locale: fr
+- url: https://frankhoubre.com/blog/grok-imagine-avis-test-plans
+- category: comparatifs
+- type: evergreen / avis OUTILS (plan 90j J34), publié avec un jour de retard (prévu le 2026-09-17, aucun run ce jour là), le calendrier glisse d'un jour, donc J35 = 2026-09-19.
+- search_intent: commerciale (créateur qui se demande sur quels plans utiliser Grok Imagine Video 1.5 trois mois après le lancement, et ce que ça coûte réellement)
+- primary_keyword: grok imagine avis
+- secondary_keywords: grok imagine test, grok imagine prix, grok imagine 1080p, grok imagine vs kling, grok imagine références personnage, xai vidéo ia
+- sources: x.ai/news/grok-imagine-video-1-5 (16 juin 2026), x.ai/news/grok-imagine-video-1-5-references (31 juillet 2026), docs.x.ai (video/generation, release-notes, models, audio/text-to-speech), fal.ai/models/xai/grok-imagine-video/v1.5/image-to-video, artificialanalysis.ai (leaderboards image-to-video et text-to-video), grok.com/plans, article maison sur l'arrêt de Sora (source OpenAI help), relevé fal.ai du 29 août pour Kling v3 Pro et Veo 3.1
+- internal_links: -> grok-imagine-video-1-5-xai-generation-video-ia, sora-api-arret-septembre-2026-alternatives-createurs, budgeter-projet-video-ia-methode, kling-vs-veo-3-choisir-par-plan, preparer-decoupage-technique-avant-generation-video-ia, comment-ameliorer-realisme-mouvements-video-ia, pourquoi-personnages-changent-chaque-scene-ia ; entrants ajoutés depuis grok-imagine-video-1-5-xai-generation-video-ia et kling-vs-veo-3-choisir-par-plan
+- cta: none (mention douce de ScreenWeaver pour noter le moteur cible par plan du storyboard)
+- cannibalization_notes: l'actu du 20 juin garde la requête news du lancement (specs, Elo de juin, prix Sora) ; cet avis prend « avis / test » avec l'état du 18 septembre (8e de l'arène, 1080p, références, trois grilles de prix, grille de six plans). kling-vs-veo-3-choisir-par-plan garde le duel Kling / Veo, cet article y ajoute Grok sans refaire le duel.
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 10 H2 / FAQ 7 questions / 11 liens internes / 9 externes / 4 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS 622 pages)
+- published_commit: 001e9c6
+
 ### 2026-09-16 : Univers cohérent série IA : la méthode Lost Garden
 - slug: lost-garden-univers-coherent-episodes
 - locale: fr
