@@ -1,6 +1,43 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-18 (J34 publié)
+## Last run: 2026-09-19 (J35 publié)
+
+### What happened
+- J35 du plan 90 jours publié à la date prévue : `cinema-ia-remplacer-tournages`
+  (analyses, 10 H2 + 12 H3, FAQ 7 questions, 4039 mots, 13 liens internes,
+  4 liens externes, score éditorial 100 / bucket good / 0 flag, 0 issue au
+  seo_audit sur ce slug). Le calendrier ne glisse pas, donc J36 = 2026-09-20
+  (`marques-publicites-ia-risque-juridique`, B2B, HAUTE). Commit 0353a87
+  poussé sur origin/main.
+- Opinion « cinéma ia avenir » : grille des quatre achats d'un tournage
+  (performance dirigée, lieu, physique, accident), tableau plan par plan,
+  trois freins non liés à l'image (regard, contrat SAG-AFTRA 2026 jusqu'au
+  30 juin 2030, dépendance au moteur), trois scénarios 2030 avec pari
+  explicite, conseils par poste, quatre raisonnements démontés.
+- Socle factuel vérifié le jour même : Netflix *El Eternauta* (Sarandos,
+  Q2 2025, ~10x plus vite), *House of David* 73 -> 253 plans IA (VP Land,
+  16 oct. 2025, 600 personnes, 150+ décors LED), SAG-AFTRA ratifiée le
+  4 juin 2026 à 91,42 %, CNC Observatoire 2025 du 18 mars 2026 (290 films,
+  1,37 Md€, devis moyen 4,89 M€, 55 films sous 1 M€). Les faits Disney /
+  Netflix août 2025 / Lionsgate / Sora / Critterz sont repris tels quels
+  de `studios-traditionnels-vs-studios-ia-2026`.
+- Liens entrants réciproques (dateModified 2026-09-19) depuis
+  `studios-traditionnels-vs-studios-ia-2026` et
+  `metiers-audiovisuel-ia-menaces-transformation-avis`.
+- Images : hero Nano Banana 2 (plateau de nuit sous machine à pluie,
+  réalisatrice accroupie face à un enfant en ciré jaune) + 2 captures
+  réelles (VP Land House of David, CNC Observatoire 2025). sagaftra.org
+  sert un défi anti-robot (non contourné), SHOOTonline a fermé le
+  28 août 2026 : capture SAG-AFTRA remplacée par la page CNC.
+
+### Notes outillage
+- `render_blog_queue_nanobanana.py` n'accepte pas `--slug` (seulement
+  `--dest` + `--prompt`), à lancer via PowerShell.
+- Sur cnc.fr, la bannière cookies se refuse avec `#tarteaucitronAllDenied2`.
+
+---
+
+## Previous run: 2026-09-18 (J34 publié)
 
 ### What happened
 - J34 du plan 90 jours publié avec un jour de retard (prévu le 2026-09-17,

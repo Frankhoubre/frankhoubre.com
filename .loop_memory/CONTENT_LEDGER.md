@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-19 : Cinéma IA : va-t-il remplacer les tournages ? Mon avis
+- slug: cinema-ia-remplacer-tournages
+- locale: fr
+- url: https://frankhoubre.com/blog/cinema-ia-remplacer-tournages
+- category: analyses
+- type: evergreen / opinion CINEMA (plan 90j J35), publié à la date prévue, le calendrier ne glisse pas, donc J36 = 2026-09-20.
+- search_intent: info (producteur, réalisateur ou créateur qui se demande si les tournages vont disparaître au profit de la génération, et ce qu'il doit faire de son prochain projet)
+- primary_keyword: cinéma ia avenir
+- secondary_keywords: cinéma ia remplacer tournages, avenir du tournage ia, ia remplace acteurs, production hybride ia, film 100 % ia salle, sag-aftra 2026 ia
+- sources: techradar.com (Netflix Q2 2025, El Eternauta), vp-land.com (House of David S2, 16 oct. 2025), sagaftra.org (ratification 4 juin 2026, recoupée via SHOOTonline), cnc.fr (Observatoire de la production cinématographique 2025, 18 mars 2026) ; faits Disney/OpenAI, Netflix août 2025, Lionsgate 11 juin 2026, Sora, Critterz repris de studios-traditionnels-vs-studios-ia-2026
+- internal_links: -> studios-traditionnels-vs-studios-ia-2026, preparer-decoupage-technique-avant-generation-video-ia, comment-diriger-personnage-ia-comme-acteur, metiers-audiovisuel-ia-menaces-transformation-avis, creer-court-metrage-100-ia-sans-camera-acteurs, generation-video-nouveaux-outils-changements-realisateurs, festivals-films-ia-criteres-jurys, lost-garden-journal-production-serie-ia, budgeter-projet-video-ia-methode, /prestation ; entrants <- studios-traditionnels-vs-studios-ia-2026, metiers-audiovisuel-ia-menaces-transformation-avis
+- cta: /prestation en conclusion (frontière tournage / génération sur un projet)
+- cannibalization_notes: studios-traditionnels garde « qui produit quoi », metiers-audiovisuel garde les métiers et l'emploi, creer-court-metrage-100-ia garde le tutoriel ; cet article ne porte que « remplacer les tournages » plan par plan, avec la grille des quatre achats et le pari 2030. Les satellites J43 (acteurs-ia) et J56 (studio-cinema-2030-prospective) devront prendre respectivement l'angle comédiens et l'angle studio, sans refaire la grille plan par plan.
+- images: hero Nano Banana 2 (plateau de nuit rue pavée sous machine à pluie, réalisatrice accroupie face à un enfant en ciré jaune) ; workflow-1 capture VP Land ; workflow-2 capture CNC « À retenir »
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 10 H2 / FAQ 7 questions / 13 liens internes / 4 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS 623 pages)
+- published_commit: 0353a87
+
 ### 2026-09-18 : Grok Imagine : avis après tests sur de vrais plans
 - slug: grok-imagine-avis-test-plans
 - locale: fr
