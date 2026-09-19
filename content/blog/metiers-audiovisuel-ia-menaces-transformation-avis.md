@@ -1,7 +1,7 @@
 ---
 title: "Métiers de l'audiovisuel face à l'IA : les chiffres 2026"
 date: "2026-04-14"
-dateModified: "2026-08-30"
+dateModified: "2026-09-19"
 category: "analyses"
 excerpt: "Les premiers chiffres d'emploi métier par métier sont sortis, et la transparence IA est obligatoire depuis le 2 août 2026. Le point sans slogan."
 thumbnail: "/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/hero.webp"
@@ -206,6 +206,8 @@ Sur l'évolution des outils et des attentes des réalisateurs, relie notre analy
 Ils paient pour la réduction de risque. Quelqu'un qui évite un scandale, un retake inutile, une incohérence de marque, une ligne de voix illégale, une image « presque ressemblante » qui traîne sur les réseaux. Ils paient aussi pour la **vitesse maîtrisée**, pas la vitesse brouillon.
 
 Ils ne paient pas toujours pour « encore plus de variantes » si ces variantes ne changent pas la décision marketing.
+
+Et ils continuent de payer des journées de plateau pour les scènes de jeu dirigé, parce que la génération ne remplace que les plans sans visage. J'ai détaillé ce tri, plan par plan et avec les chiffres 2026, dans [le cinéma IA va-t-il remplacer les tournages ?](/blog/cinema-ia-remplacer-tournages).
 
 ![Salle de grading sombre, scopes vidéo, silhouette coloriste ajustant courbes, ambiance cinéma](/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/workflow-post.webp)
 

@@ -1,6 +1,7 @@
 ---
 title: "Studio IA vs studio classique : qui produit quoi en 2026"
 date: "2026-09-07"
+dateModified: "2026-09-19"
 category: "analyses"
 excerpt: "Disney, Netflix, Lionsgate, Critterz, Asteria : ce que les studios IA et les studios classiques ont vraiment produit en 2026, et ce qui a capoté."
 thumbnail: "/images/blog/studios-traditionnels-vs-studios-ia-2026/hero.webp"
@@ -141,6 +142,8 @@ Si tu produis seul ou à trois, tu n'es pas en concurrence avec Disney. Tu es su
 L'avantage se paie en fragilité. Ta chaîne repose sur des outils que tu ne possèdes pas et qui peuvent disparaître, comme Sora vient de le montrer. L'archivage des entrées et la répartition du risque par type de plan, c'est ton assurance.
 
 Et si tu veux savoir où en est vraiment le secteur, arrête de compter les communiqués. Compte les films sortis, les épisodes diffusés et les campagnes livrées. En 2026, cette liste est courte, et elle ne ressemble pas du tout à celle des annonces.
+
+Et si la question derrière tout ça est de savoir si on tournera encore dans cinq ans, j'y réponds plan par plan, avec les cas *El Eternauta* et *House of David*, dans [mon avis sur le cinéma IA et l'avenir des tournages](/blog/cinema-ia-remplacer-tournages).
 
 ## FAQ
 
