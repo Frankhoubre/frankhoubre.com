@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-19T08:01:59.848Z
+> Generated: 2026-09-20T08:09:17.745Z
 
-## FR : 314 articles (/blog/<slug>)
+## FR : 315 articles (/blog/<slug>)
 
-Categories: tutoriels 189, actualite 53, business 22, comparatifs 19, analyses 15, guides 14, notes 1, postproduction 1
+Categories: tutoriels 189, actualite 53, business 23, comparatifs 19, analyses 15, guides 14, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-20 | business | `marques-publicites-ia-risque-juridique` | Publicité IA sans risque juridique : guide pour les marques |
 | 2026-09-19 | analyses | `cinema-ia-remplacer-tournages` | Cinéma IA : va-t-il remplacer les tournages ? Mon avis |
 | 2026-09-18 | comparatifs | `grok-imagine-avis-test-plans` | Grok Imagine : avis après tests sur de vrais plans |
 | 2026-09-16 | guides | `lost-garden-univers-coherent-episodes` | Univers cohérent série IA : la méthode Lost Garden |

@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi les faux témoignages UGC IA sont interdits et comment vendre légalement"
 date: "2026-04-22"
-dateModified: "2026-05-13"
+dateModified: "2026-09-20"
 category: "business"
 excerpt: "Cadre pratique pour utiliser des contenus UGC synthétiques sans pratique commerciale trompeuse : preuves, mentions, alternatives performantes et checklists avant publication."
 ---
@@ -111,6 +111,8 @@ La sixième erreur est de **cacher l'IA** quand elle induit mécaniquement en er
 La septième erreur est de **mélanger UGC et endorsement médical** sans compétence ni cadre. Même si ton client *veut* un témoignage santé, tu restes dans des formulations prudentes ou tu refuses. C'est un multiplicateur de risque réglementaire.
 
 La huitième erreur est de sous estimer le **droit à l'image et à la voix** sur des contenus hybrides. Si tu t'inspires d'une personne réelle, si tu clones une voix, si tu imites une identité reconnaissable, tu quittes le terrain du simple marketing pour entrer dans des zones où la conformité devient technique. Documente les droits, les licences, et les limitations d'usage commercial.
+
+Côté annonceur, ces deux derniers points s'inscrivent dans une grille plus large, propriété des visuels, personnes représentées, contenu des prompts, promesse produit et marquage obligatoire depuis août 2026, que j'ai détaillée dans [le guide de la publicité IA sans risque juridique pour les marques](/blog/marques-publicites-ia-risque-juridique).
 
 > 💡 **Frank's Cut:** si ton argumentaire ne tient pas sans faux témoignage, ton produit n'est pas prêt pour la pub massive. Corrige l'offre ou la preuve, pas la morale.
 
