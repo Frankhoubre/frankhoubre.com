@@ -1,6 +1,56 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-19 (J35 publié)
+## Last run: 2026-09-20 (J36 publié)
+
+### What happened
+- J36 du plan 90 jours publié à la date prévue :
+  `marques-publicites-ia-risque-juridique` (business, 11 H2 + 7 H3, FAQ
+  7 questions, 5072 mots, 14 liens internes dont /prestation, 10 liens
+  externes, score éditorial 100 / bucket good / 0 flag, 0 issue au
+  seo_audit sur ce slug). Le calendrier ne glisse pas, donc J37 = 2026-09-21
+  (`dossier-production-storyboard-pdf`, PROD, BASSE). Commit f388237
+  poussé sur origin/main.
+- Guide décideur « publicité ia droit marque » : grille des cinq questions
+  (propriété du visuel, personnes dans l'image, contenu du prompt, promesse
+  produit, transparence), un H2 par risque avec le texte de référence,
+  workflow en 7 étapes + tableau du dossier de preuve, section risque
+  réputationnel hors droit (McDonald's NL, Guess/Vogue, VW/Elis Regina),
+  6 erreurs vues en mission, CTA /prestation.
+- Socle factuel vérifié le jour même : AI Act art. 50 applicable aux
+  déployeurs depuis le 2 août 2026, délai 50(2) au 2 décembre 2026
+  (omnibus), 15 M€ / 3 % ; fiche pratique ARPP du 3 août 2026 (3 critères,
+  arbre de décision, mentions type, autorités FR non désignées dans
+  l'attente de la DDADUE, lignes directrices Commission 20 juillet 2026) ;
+  loi 2023-451 art. 5 « Images virtuelles » ; art. 226-8 CP (loi SREN) ;
+  Copyright Office 29 janv. 2025 + certiorari Thaler refusé 2 mars 2026 ;
+  Midjourney Pro/Mega > 1 M$ ; Google Cloud indemnified services (Imagen,
+  Veo, page du 20 juillet 2026) ; Adobe Firefly natif seulement ; Getty c.
+  Stability 4 nov. 2025 ; Disney c. Midjourney ; CONAR VW 22 août 2023.
+- Anti-cannibalisation : droits-auteur-images garde le détail par pays,
+  faux-temoignages-ugc le cas UGC, eu-ai-act-article-50 la mécanique
+  C2PA/filigrane, clause-contrat le côté prestataire. Liens entrants
+  réciproques (dateModified 2026-09-20) depuis
+  `eu-ai-act-article-50-marquage-video-ia-aout-2026` et
+  `pourquoi-faux-temoignages-ugc-ia-interdits`. Lien /presse du plan non
+  utilisé (route existante, hors sujet ici), remplacé par /prestation.
+- Images : hero Nano Banana 2 (étage marketing d'un siège de marque,
+  juriste pointant au crayon rouge la bande de légende vide d'une affiche
+  rétroéclairée, DA avec tirages à onglets) + 3 captures réelles (ARPP,
+  Légifrance art. 5, Google Cloud indemnified services).
+
+### Notes outillage
+- Écrire un .md via Python en mode texte sous Windows produit du CRLF et
+  `seo_audit.mjs` ne lit plus le frontmatter (« Missing title/date ») :
+  normaliser en LF avant l'audit (ou écrire en binaire).
+- `MSYS_NO_PATHCONV=1` obligatoire sous Git Bash pour
+  `--dest /images/...`, sinon le chemin devient `C:\Program Files\Git\images`.
+- Bannières cookies : arpp.org se refuse via le bouton « Je refuse » ;
+  Légifrance (tarteaucitron) et cloud.google.com se suppriment par JS
+  (`querySelectorAll('[id*=cookie],[id*=tarteaucitron],devsite-snackbar')`).
+
+---
+
+## Previous run: 2026-09-19 (J35 publié)
 
 ### What happened
 - J35 du plan 90 jours publié à la date prévue : `cinema-ia-remplacer-tournages`

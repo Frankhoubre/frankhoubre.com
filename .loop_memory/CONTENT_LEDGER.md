@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-20 : Publicité IA sans risque juridique : guide pour les marques
+- slug: marques-publicites-ia-risque-juridique
+- locale: fr
+- url: https://frankhoubre.com/blog/marques-publicites-ia-risque-juridique
+- category: business
+- type: evergreen / guide décideur B2B (plan 90j J36), publié à la date prévue, le calendrier ne glisse pas, donc J37 = 2026-09-21.
+- search_intent: commerciale (direction marketing, juridique ou communication d'une marque qui veut produire ou faire produire une publicité générée par IA sans s'exposer)
+- primary_keyword: publicité ia droit marque
+- secondary_keywords: publicité ia risque juridique, publicité générée par ia légal, mention image générée par ia, article 50 ai act publicité, arpp ia publicité, droit à l'image ia publicité, indemnisation ia adobe google
+- sources: arpp.org (fiche pratique 3 août 2026), legifrance.gouv.fr (loi 2023-451 art. 5), hoganlovells.com (art. 226-8 CP, loi SREN), blogs.loc.gov (Copyright Office Part 2, 29 janv. 2025), docs.midjourney.com (usage commercial, seuil 1 M$), cloud.google.com (Generative AI Indemnified Services, 20 juillet 2026), business.adobe.com (Firefly, indemnisation), judiciary.uk (Getty c. Stability AI, 4 nov. 2025), kasznarleonardos.com (CONAR VW/Elis Regina, 22 août 2023), cnn.com (Guess/Vogue, 31 juillet 2025), nbcnews.com (McDonald's NL, déc. 2025)
+- internal_links: -> droits-auteur-images-generees-ia, doublage-voix-off-cloner-diriger-voix-film, creer-packshots-produit-publicite-ia, pourquoi-faux-temoignages-ugc-ia-interdits, eu-ai-act-article-50-marquage-video-ia-aout-2026, clause-contrat-client-contenu-genere-ia, cinema-ia-remplacer-tournages, droits-auteur-musique-ia-bande-son, integrer-ia-boite-production-depart, /prestation ; entrants <- eu-ai-act-article-50-marquage-video-ia-aout-2026, pourquoi-faux-temoignages-ugc-ia-interdits
+- cta: /prestation en conclusion (audit outils, fiche outils validée, workflow de journalisation et d'étiquetage, formation, 4 200 € HT / jour)
+- cannibalization_notes: droits-auteur-images garde le détail par pays, faux-temoignages-ugc garde le cas UGC, eu-ai-act-article-50 garde la mécanique C2PA/filigrane, clause-contrat garde le côté prestataire ; cet article ne porte que le côté annonceur et la grille des cinq questions. Le lien /presse prévu par le plan n'a pas été utilisé (hors sujet).
+- images: hero Nano Banana 2 (étage marketing d'un siège de marque, juriste en blazer marine pointant au crayon rouge la bande de légende vide d'une affiche de parfum rétroéclairée, DA avec tirages à onglets colorés) ; workflow-1 capture arpp.org ; workflow-2 capture Légifrance art. 5 ; workflow-3 capture Google Cloud indemnified services
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / FAQ 7 questions / 14 liens internes / 10 externes / 4 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS 624 pages)
+- published_commit: f388237
+
 ### 2026-09-19 : Cinéma IA : va-t-il remplacer les tournages ? Mon avis
 - slug: cinema-ia-remplacer-tournages
 - locale: fr
