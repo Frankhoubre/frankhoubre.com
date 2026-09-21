@@ -1,6 +1,62 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-20 (J36 publié)
+## Last run: 2026-09-21 (J37 publié)
+
+### What happened
+- J37 du plan 90 jours publié à la date prévue :
+  `dossier-production-storyboard-pdf` (tutoriels, 11 H2 + 8 H3, FAQ
+  8 questions, 4745 mots, 12 liens internes dont
+  /outils/generateur-storyboard-pdf, 3 liens externes, score éditorial
+  100 / bucket good / 0 flag, 0 issue au seo_audit sur ce slug). Le
+  calendrier ne glisse pas, donc J38 = 2026-09-22
+  (`pourquoi-courts-metrages-ia-oubliables`, OPINION, MOYENNE). Commit
+  6e962ed poussé sur origin/main.
+- Angle « livrable client » imposé par la parade anti-cannibalisation :
+  l'article n'explique pas comment fabriquer les cases (renvois
+  explicites vers comment-creer-storyboard-ia-etape-par-etape,
+  pipeline-ia-script-storyboard-production-de-a-z et
+  comment-passer-storyboard-video-finale). Six pièces du dossier avec
+  tableau, déroulé exact de l'outil maison (URLs publiques, A4 / Letter,
+  4 ou 6 cases, SHOT numéroté, jsPDF local, message « Image non chargée
+  (URL/CORS) »), shot list type sur 6 plans, note IA en 4 questions,
+  nommage `TITRE_dossier-production_vNN_date`, poids sous 25 Mo, mail
+  d'envoi en 3 paragraphes, erreurs, checklist. Content map §5 : aucun
+  autre article storyboard à créer après celui-ci.
+- Socle factuel vérifié le jour même : page CNC aide avant réalisation
+  courts métrages (dossier = formulaire Excel + dossier artistique PDF,
+  note IA obligatoire, modèle DOCX téléchargeable sur la page, vu à la
+  capture), Gmail 25 Mo compte personnel + lien Drive automatique
+  (support.google.com/mail/answer/6584), colonnes de shot list
+  StudioBinder. LA CRUE / Marie présentés comme exemple fictif de
+  formation.
+- Liens entrants réciproques (dateModified 2026-09-21) depuis
+  `comment-creer-storyboard-ia-etape-par-etape` (Livrables finaux) et
+  `pipeline-ia-script-storyboard-production-de-a-z` (Étape 6).
+- Images : hero Nano Banana 2 (comptoir d'une reprographie de quartier
+  au crépuscule, réalisatrice en parka récupérant trois dossiers reliés
+  en spirale, employé au massicot, rames de papier coloré) + 2 captures
+  réelles Playwright channel=chrome + PIL (workflow-1 = l'outil
+  generateur-storyboard-pdf avec un projet de 6 plans chargé dans
+  l'aperçu, rempli via #projectTitle / #imageUrls / #shotNotes /
+  #buildBtn ; workflow-2 = bloc Téléchargement de la page CNC, cookies
+  refusés par `#tarteaucitronAllDenied2`).
+- Humanisation : humanizer + unslop-text (3 faux positifs « utilise »)
+  + antislop-copywriting ; corrigés 3 parallélismes négatifs, 2
+  signposting, 1 aphorisme répété, 3 listes à en-têtes gras, 1 première
+  ligne qui répétait son H2.
+
+### Notes outillage
+- `render_blog_queue_nanobanana.py` n'a pas d'option `--slug` : passer
+  seulement `--dest` + `--prompt` (avec `MSYS_NO_PATHCONV=1`).
+- L'outil storyboard capturé : le bouton « Exporter en PDF » rend en
+  texte sombre sur fond sombre dans la capture (état désactivé avant
+  export), visible mais illisible ; pas bloquant.
+- Le `seo_audit.mjs` compte toujours 500 « Missing title » sur les
+  fichiers CRLF historiques (identique avant / après ce run).
+
+---
+
+## Previous run: 2026-09-20 (J36 publié)
 
 ### What happened
 - J36 du plan 90 jours publié à la date prévue :

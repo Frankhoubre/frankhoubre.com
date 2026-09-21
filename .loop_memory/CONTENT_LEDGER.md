@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-21 : Dossier de production : le storyboard PDF prêt à envoyer
+- slug: dossier-production-storyboard-pdf
+- locale: fr
+- url: https://frankhoubre.com/blog/dossier-production-storyboard-pdf
+- category: tutoriels
+- type: evergreen / tutoriel PROD (plan 90j J37), publié à la date prévue, le calendrier ne glisse pas, donc J38 = 2026-09-22.
+- search_intent: informationnelle (créateur ou réalisateur qui doit envoyer un storyboard fini à un producteur, un client ou une commission, sous forme de dossier PDF unique)
+- primary_keyword: dossier production storyboard
+- secondary_keywords: storyboard pdf, dossier de production film ia, shot list, note ia dossier cnc, générateur storyboard pdf gratuit, envoyer storyboard producteur
+- sources: cnc.fr (aide avant réalisation courts métrages : formulaire Excel + dossier artistique PDF + note IA, modèle DOCX), support.google.com/mail/answer/6584 (25 Mo, lien Drive automatique), studiobinder.com (colonnes de shot list), public/outils/generateur-storyboard-pdf/index.html (comportement réel de l'outil)
+- internal_links: -> /outils/generateur-storyboard-pdf, comment-creer-storyboard-ia-etape-par-etape, pipeline-ia-script-storyboard-production-de-a-z, comment-passer-storyboard-video-finale, comment-construire-scene-cinematique-plan-par-plan, marques-publicites-ia-risque-juridique, gerer-versions-projets-video-ia, combien-facturer-video-ia-professionnelle-grille-prix, screenweaver-ai-ecriture-scenario-storyboard ; entrants <- comment-creer-storyboard-ia-etape-par-etape, pipeline-ia-script-storyboard-production-de-a-z (dateModified 2026-09-21)
+- cta: outil /outils/generateur-storyboard-pdf (Étape 2), ScreenWeaver en mention douce dans la checklist
+- cannibalization_notes: angle livrable client uniquement, aucune méthode de fabrication des cases (les 3 guides storyboard existants gardent la méthode, l'animatique et le passage vidéo) ; content map §5 : aucun autre article storyboard à créer après celui-ci.
+- images: hero Nano Banana 2 (comptoir d'une reprographie de quartier au crépuscule, réalisatrice en parka et trois dossiers reliés en spirale, employé au massicot) ; workflow-1 capture de l'outil avec un projet LA CRUE de 6 plans chargé ; workflow-2 capture du bloc Téléchargement CNC avec le modèle de note IA
+- checker: pass (seo_audit 0 issue pour ce slug, editorial_audit score 100 / bucket good / 0 flag / 11 H2 / FAQ 8 questions / 12 liens internes / 3 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 6e962ed
+
 ### 2026-09-20 : Publicité IA sans risque juridique : guide pour les marques
 - slug: marques-publicites-ia-risque-juridique
 - locale: fr
