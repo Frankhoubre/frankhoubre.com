@@ -35,6 +35,22 @@ const bodySchema = z.object({
 const RATE_LIMIT = 8;
 const RATE_WINDOW_S = 15 * 60;
 
+/**
+ * Inscriptions envoyées par un partenaire serveur (ManyChat, qui pousse les
+ * emails collectés en DM Instagram). Le partenaire présente la clé
+ * FUNNEL_PARTNER_KEY dans cet en-tête : ses appels partent tous de la même
+ * IP, la limite par IP ne s'applique donc pas à lui. Sans variable
+ * d'environnement, l'en-tête est ignoré et tout le monde est traité pareil.
+ */
+const PARTNER_KEY_HEADER = "x-funnel-partner-key";
+
+function isPartnerRequest(req: NextRequest): boolean {
+  const expected = process.env.FUNNEL_PARTNER_KEY;
+  if (!expected) return false;
+  const given = req.headers.get(PARTNER_KEY_HEADER);
+  return Boolean(given) && given === expected;
+}
+
 function stepState(st: SequenceStepResult, now: string): SequenceEmailState {
   return {
     id: st.id ?? undefined,
@@ -71,9 +87,12 @@ export async function POST(req: NextRequest) {
   const date = funnelDateKey();
   const ip = clientIp(req);
 
-  const hits = await store.bump(`subscribe:${ip}`, RATE_WINDOW_S);
-  if (hits > RATE_LIMIT) {
-    return NextResponse.json({ ok: false, error: "rate_limited" }, { status: 429 });
+  const partner = isPartnerRequest(req);
+  if (!partner) {
+    const hits = await store.bump(`subscribe:${ip}`, RATE_WINDOW_S);
+    if (hits > RATE_LIMIT) {
+      return NextResponse.json({ ok: false, error: "rate_limited" }, { status: 429 });
+    }
   }
 
   const source = resolveSource({

@@ -38,11 +38,40 @@ Une adresse désinscrite qui revient la reçoit à nouveau.
 | `RESEND_SEGMENT_ID` | Déjà en place (Production) | Segment Resend « Formation IA gratuite (frankhoubre.com) », id `479a2cd1-d19e-485f-8a2a-41d9fee30212`, créé le 2026-09-10 dans le compte Resend hellobusinessdynamite. Chaque inscrit y est ajouté comme contact (liste séparée d'imaginode). `RESEND_AUDIENCE_ID` reste accepté pour l'ancien modèle d'audiences. |
 | `RESEND_WEBHOOK_SECRET` | En place (collé par Frank le 2026-09-10) | Signing secret du webhook Resend créé le 2026-09-10 (id `ba1ef214-fec1-417f-8d4d-0c4f54d3c064`, URL `https://frankhoubre.com/api/funnel/resend-webhook`, événements delivered, opened, clicked, bounced, complained). Se copie depuis resend.com → Webhooks. Sans lui, le handler répond 501 et le tableau de bord n'affiche que les emails programmés. |
 | `NEXT_PUBLIC_SITE_URL` | Déjà en place | Base des liens dans les emails. |
+| `FUNNEL_PARTNER_KEY` | Optionnel (à créer par Frank, long et aléatoire) | Clé que ManyChat présente dans l'en-tête `x-funnel-partner-key` quand il pousse un email collecté en DM Instagram vers `POST /api/funnel/subscribe`. Avec cette clé, la limite de 8 envois par IP et quart d'heure ne s'applique pas (tous les appels ManyChat partent de la même IP). Sans la variable, l'en-tête est ignoré. |
 
 Pour tester en local : `.env.local` avec `FUNNEL_ADMIN_TOKEN`, `FUNNEL_SECRET`, et si
 vous voulez de vrais envois `RESEND_API_KEY` + `RESEND_FROM`. Sans Upstash, le
 stockage mémoire suffit pour essayer. Les variables Production et Preview
 se récupèrent aussi avec `vercel env pull` une fois le CLI connecté.
+
+## Inscriptions venues de ManyChat (DM Instagram)
+
+L'automatisation ManyChat « Email + Communauté » demande l'email en DM après
+la livraison d'un lien. Une fois l'adresse validée, une External Request
+appelle la même API que le formulaire du site, donc la personne reçoit
+l'email d'accès et les 14 emails suivants, et entre dans le segment Resend.
+
+Réglage côté ManyChat (bloc Data Collection → Actions on successful input →
+External Request) :
+
+```
+POST https://frankhoubre.com/api/funnel/subscribe
+Headers : Content-Type: application/json
+          x-funnel-partner-key: <valeur de FUNNEL_PARTNER_KEY>
+Body :
+{
+  "email": "{{email}}",
+  "firstName": "{{first_name}}",
+  "consent": true,
+  "utmSource": "instagram",
+  "utmMedium": "manychat",
+  "utmCampaign": "dm-email"
+}
+```
+
+Le tableau de bord attribue ces inscrits à la source `instagram`. Une adresse
+déjà active ne reçoit pas une deuxième séquence.
 
 ## Webhook Resend (optionnel, pour les ouvertures et clics)
 
