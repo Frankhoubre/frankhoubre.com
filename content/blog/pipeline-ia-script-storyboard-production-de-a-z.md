@@ -1,6 +1,7 @@
 ---
 title: "Pipeline IA de A à Z : de l'idée au plan de tournage en une journée"
 date: "2026-06-21"
+dateModified: "2026-09-21"
 category: "tutoriels"
 excerpt: "Comment enchaîner les outils IA pour passer d'une idée brute à un plan de tournage complet en une journée de travail. Méthode concrète, avec les outils qui s'emboîtent vraiment."
 thumbnail: "/images/blog/pipeline-ia-script-storyboard-production-de-a-z/hero.webp"
@@ -124,6 +125,8 @@ Une fois que vous avez :
 vous pouvez constituer le **plan de tournage final** : la liste ordonnée de tous les plans à générer, avec pour chacun le modèle cible, le prompt final, la durée attendue, et les assets de référence (image de départ si Image-to-Video, style reference pour la cohérence).
 
 Ce document est votre feuille de route de production. Vous n'ouvrez les outils de génération qu'à ce stade. Tout ce qui précède est de la préparation.
+
+Si ce plan de tournage doit être envoyé à un producteur ou à un client avant de générer, [le dossier de production avec storyboard PDF](/blog/dossier-production-storyboard-pdf) explique comment l'emballer : page de garde, storyboard paginé, shot list, note IA et un seul fichier sous 25 Mo.
 
 ## Pourquoi la préparation change tout
 

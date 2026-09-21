@@ -1,6 +1,7 @@
 ---
 title: "Comment créer un storyboard avec l'IA étape par étape"
 date: "2026-05-15"
+dateModified: "2026-09-21"
 category: "tutoriels"
 excerpt: "Pour créer un storyboard IA étape par étape sans rendu plastique ni galerie décorative : découpage script, bible visuelle, prompts stables, QA séquentielle et livrable production."
 thumbnail: "/images/blog/comment-creer-storyboard-ia-etape-par-etape/hero.webp"
@@ -170,6 +171,8 @@ Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 1. PDF paginé avec codes plans lisibles même imprimés en noir et blanc.
 2. dossier sources avec PNG/WebP nommés par code plan (pas par « version finale vraiment finale »).
 3. fichier texte ou tableur avec changelog minimal : ce qui a été retiré et pourquoi.
+
+Pour transformer ces trois livrables en un seul fichier qui se lit sur un téléphone, avec page de garde, shot list et note IA, la méthode est dans [le dossier de production avec storyboard PDF prêt à envoyer](/blog/dossier-production-storyboard-pdf).
 
 Tu peux ensuite passer à une prévisualisation animée ou à une extraction vidéo selon ton pipeline. Le storyboard IA n'est pas la fin du film : c'est le moment où la fiction devient géométrie partageable.
 
