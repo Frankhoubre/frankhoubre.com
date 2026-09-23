@@ -206,6 +206,7 @@ version-control for AI projects.
 - `Grok Imagine Video 1.5 xAI génération vidéo IA` — FILLED: grok-imagine-video-1-5-xai-generation-video-ia
 - `Higgsfield Creative OS Claude Adobe 2026` — FILLED: higgsfield-creative-os-claude-adobe-juin-2026
 - `gérer versions projets vidéo IA` — FILLED: gerer-versions-projets-video-ia
+- `court métrage ia qualité (pourquoi les courts IA sont oubliables)` — FILLED: pourquoi-courts-metrages-ia-oubliables (plan 90j J38). Diagnostic côté spectateur uniquement. Le rendu reste à comment-passer-rendu-amateur-a-cinema-ia, le REX personnel à erreurs-premiers-films-ia-lecons, la notation des jurys à festivals-films-ia-criteres-jurys, le tutoriel à creer-court-metrage-100-ia-sans-camera-acteurs. Ne pas créer d'autre article sur « pourquoi mon film IA ne marche pas ».
 
 ## Gaps / opportunities (good evergreen candidates — confirm intent first)
 

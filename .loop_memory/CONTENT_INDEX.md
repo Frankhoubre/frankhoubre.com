@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-21T08:03:16.963Z
+> Generated: 2026-09-23T08:06:19.603Z
 
-## FR : 316 articles (/blog/<slug>)
+## FR : 317 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 23, comparatifs 19, analyses 15, guides 14, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 23, comparatifs 19, analyses 16, guides 14, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-23 | analyses | `pourquoi-courts-metrages-ia-oubliables` | Court métrage IA : pourquoi la plupart sont oubliables |
 | 2026-09-21 | tutoriels | `dossier-production-storyboard-pdf` | Dossier de production : le storyboard PDF prêt à envoyer |
 | 2026-09-20 | business | `marques-publicites-ia-risque-juridique` | Publicité IA sans risque juridique : guide pour les marques |
 | 2026-09-19 | analyses | `cinema-ia-remplacer-tournages` | Cinéma IA : va-t-il remplacer les tournages ? Mon avis |

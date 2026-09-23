@@ -1,7 +1,7 @@
 ---
 title: "Comment passer d’un rendu amateur à un rendu cinéma"
 date: "2026-05-02"
-dateModified: "2026-06-10"
+dateModified: "2026-09-23"
 category: "tutoriels"
 excerpt: "Décisions de grade, lumière motivée, grain, rythme de plans, et rejet : le cinéma est une discipline de choix, pas un preset."
 ---
@@ -43,6 +43,8 @@ Garde deux versions A/B par plan max. Au-delà, tu confonds exploration et livra
 Le rendu cinéma n’est pas une accumulation de modules impressionnants : c’est une décision de ce que tu refuses de montrer. Quand tu gardes quatorze variantes par plan, tu retardes le moment où tu écoutes la séquence comme spectateur. Le rejet calibré te force à assumer une hiérarchie : tel plan est là pour respirer, tel autre pour payer une tension. Sans discipline de rejet, tu livres un catalogue pour créatif fatigué, pas une narration.
 
 Documente ton look comme une recette de cuisine, pas comme une liste de plugins : note température dominante, contraste de la cheville aux épaules du histogramme, grain par passe, et ce que tu interdis sur les peaux. Quand tu rouvres le projet trois semaines plus tard, cette fiche te sauve des regressions silencieuses où tu « améliores » une zone et casses le pacte global.
+
+Une fois ces cinq passes tenues, ton film est au niveau technique attendu, et c'est exactement là que le tri se déplace ailleurs. J'ai fait la liste de ce qui reste et de ce qui s'oublie dans [pourquoi la plupart des courts métrages IA sont oubliables](/blog/pourquoi-courts-metrages-ia-oubliables) : aucune des six causes ne concerne le rendu.
 
 ## Tableau : habitude amateur, habitude ciné
 

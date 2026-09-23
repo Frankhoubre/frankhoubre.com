@@ -1,6 +1,81 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-21 (J37 publié)
+## Last run: 2026-09-23 (J38 publié)
+
+### What happened
+- J38 du plan 90 jours publié avec un jour de retard :
+  `pourquoi-courts-metrages-ia-oubliables` (analyses, 14 H2, FAQ
+  7 questions, 4524 mots, 9 liens internes éditoriaux dont
+  /formation-ia-gratuite, 3 liens externes, score éditorial 100 /
+  bucket good / 0 flag, 0 issue au seo_audit sur ce slug). Aucun run le
+  2026-09-22, donc le calendrier glisse d'un jour : J39 = 2026-09-24
+  (`screenweaver-lecons-saas-creatif`, CAS, MOYENNE).
+- Titre changé par rapport au plan. Le plan annonçait « Pourquoi 95 %
+  des courts-métrages IA sont oubliables » ; le pourcentage n'existe
+  dans aucune source, il est donc retiré du titre et de l'article, et un
+  paragraphe dit explicitement que je n'ai pas de pourcentage et que le
+  seul rapport dur est dix films sur six mille. Slug conservé pour ne
+  pas casser le plan.
+- Angle : diagnostic côté spectateur, pas côté technique. Six causes
+  (personnage sans désir, plans sans fonction, cadence de quatre
+  secondes héritée des modèles, son en nappe, look par défaut des
+  modèles, projet né de l'outil), test des 24 heures en quatre
+  questions, tableau oubliable / qui reste sur 8 lignes, protocole en
+  8 étapes avant génération, section de limites assumées.
+- Anti-cannibalisation serrée sur un cluster déjà dense :
+  `comment-passer-rendu-amateur-a-cinema-ia` garde le rendu (l'article
+  dit noir sur blanc qu'aucune de ses six causes ne concerne l'image),
+  `erreurs-premiers-films-ia-lecons` garde le REX des trois films,
+  `festivals-films-ia-criteres-jurys` garde la grille de notation des
+  jurys (renvoi explicite, aucun critère re-traité),
+  `creer-court-metrage-100-ia-sans-camera-acteurs` garde le tutoriel.
+- Socle factuel vérifié le jour même : AI Film Festival de Runway
+  (~300 films déposés en 2023, ~6 000 pour l'édition 2025, 10 projetés à
+  Alice Tully Hall le 5 juin 2025, Grand Prix *Total Pixel Space* de
+  Jacob Adler, 9 min 28, compositeur enseignant à l'Arizona State
+  University, dépêche AP via ny1.com) ; palmarès 2026 relevé sur
+  aif.runwayml.com avec les durées (7:50, 5:29, 5:04, 4:19, 8:21, 7:00,
+  7:39) et règlement 3 à 15 minutes ; notice YouTube du 15 juillet 2025
+  renommant « contenu répétitif » en « contenu non authentique » et
+  l'étendant aux contenus « répétitifs ou produits en masse ».
+- Aucune durée maximale de modèle nommée. Les specs par modèle n'ont pas
+  pu être confirmées sur une doc officielle ce jour (la page Vertex /
+  Gemini ne sert plus son tableau de specs à WebFetch), donc la
+  contrainte est formulée en hypothèse sans citer de produit.
+- Liens entrants réciproques (dateModified 2026-09-23, fichiers
+  normalisés en LF) depuis `comment-passer-rendu-amateur-a-cinema-ia`
+  (fin de « Passe 5 : rejet ») et `erreurs-premiers-films-ia-lecons`
+  (fin de la check-list, renvoi au point 5).
+- Images : hero Nano Banana 2 (comptoir en zinc d'un bar de quartier la
+  nuit après une projection, un spectateur qui hausse les épaules les
+  mains vides, programme froissé dans la condensation, vitre embuée sur
+  rue mouillée) + 2 captures réelles Playwright channel=chrome + PIL en
+  1600x900 (workflow-1 = palmarès 2026 aif.runwayml.com, durées lisibles
+  sous les titres ; workflow-2 = page d'aide YouTube en français, encadré
+  du 15 juillet 2025). Motif comptoir de bar de nuit, aucun recyclage
+  des 5 derniers heros (reprographie J37, étage marketing J36, plateau
+  de nuit sous pluie J35, mur de tirages J34, caverne J33).
+- CTA doux AI Studios posé sur /formation-ia-gratuite (URL unique,
+  route existante). Aucun article du blog n'y pointait encore.
+
+### Notes outillage
+- `render_blog_queue_nanobanana.py` n'accepte toujours pas `--slug`,
+  seulement `--dest` et `--prompt`, et il faut le lancer depuis
+  PowerShell (Git Bash convertit `/images/...` en chemin Windows).
+- Le heredoc bash a échoué pour écrire l'article (le wrapper de shell
+  casse sur un fichier markdown français long) ; passer par l'outil
+  Write directement est plus fiable.
+- `editorial_audit.mjs --json` écrit un BOM UTF-8 : le lire avec
+  `encoding='utf-8-sig'`, sinon `json.load` plante.
+- Le scanner unslop-text matche `showcases` à l'intérieur des URL
+  citées et `utilise` comme `utilize`. Deux faux positifs connus, 0 hit
+  réel sur cet article.
+- Drapeaux préexistants non corrigés sur
+  `comment-passer-rendu-amateur-a-cinema-ia` : H1=0 et thumbnail absent
+  (score 90). Hors scope de ce run, la correction de l'H1 risque un
+  doublon de titre à l'affichage.
+
+## Previous run: 2026-09-21 (J37 publié)
 
 ### What happened
 - J37 du plan 90 jours publié à la date prévue :

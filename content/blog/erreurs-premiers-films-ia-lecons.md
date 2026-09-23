@@ -1,6 +1,7 @@
 ---
 title: "Erreurs de film IA : les leçons de mes 3 premiers films"
 date: "2026-09-04"
+dateModified: "2026-09-23"
 category: "analyses"
 excerpt: "Ronces, VOIDBORN, Lost Garden : les six erreurs qui m'ont coûté le plus de temps sur mes trois premiers films IA, et ce que je fais autrement depuis."
 thumbnail: "/images/blog/erreurs-premiers-films-ia-lecons/hero.webp"
@@ -124,6 +125,8 @@ Rien d'exotique là-dedans. C'est la liste des choses qui, faites en amont, m'on
 7. Choisir le style en sachant dans quelle case de déclaration il fait tomber le film.
 8. Trois projections test minimum, dont une très tôt.
 9. Décider du format de livraison, sous-titres compris, avant le montage final.
+
+Le point 5 est celui que je vois le plus souvent ignoré, chez moi comme chez les autres, et c'est aussi celui qui décide si un film reste en mémoire. J'ai détaillé la grille complète dans [pourquoi la plupart des courts métrages IA sont oubliables](/blog/pourquoi-courts-metrages-ia-oubliables), avec le test des 24 heures que je fais passer maintenant avant tout export.
 
 ## Ce que ce retour d'expérience ne prouve pas
 
