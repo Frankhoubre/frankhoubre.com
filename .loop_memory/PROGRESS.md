@@ -1,6 +1,49 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-23 (J38 publié)
+## Last run: 2026-09-24 (J39 publié)
+
+### What happened
+- J39 du plan 90 jours publié à la date prévue :
+  `screenweaver-lecons-saas-creatif` (business, 9 H2, FAQ 8 questions,
+  3586 mots, 12 liens internes, 3 liens externes, score éditorial 100 /
+  bucket good / 0 flag, 0 issue au seo_audit sur les 3 slugs touchés).
+  Le calendrier ne glisse pas : J40 = 2026-09-25 (UPDATE
+  `heygen-elevenlabs-comparatif`, section doublage, OUTILS, HAUTE).
+- Titre corrigé contre le plan. Le plan annonçait « leçons d'un SaaS
+  créatif construit en solo ». ScreenWeaver est co-créé avec Thibaut et
+  édité par Outerframe Studio, donc « en solo » aurait été faux. Titre
+  publié : « Créer un SaaS créatif : les leçons de ScreenWeaver », et un
+  H2 entier (« En solo est un mot de marketing ») fait de la correction
+  une leçon, en opposant ScreenWeaver (à deux) à Imaginode (seul).
+  Slug conservé.
+- Angle : le versant business et technique, J13 gardant la vision
+  produit. Tout le socle factuel sort de deux dépôts Git locaux et de
+  deux sites en production relevés le jour même, aucun chiffre inventé :
+  ScreenWeaver-App (premier commit 2026-01-22 en Vite + React, migration
+  Next.js dès le 2026-01-23, PR Yjs fusionnée le 2026-05-19, migration
+  workspace vers shards en juin, support embarqué le 2026-09-14, 1034
+  commits, 676 fichiers de test, commits par mois
+  41/88/40/20/106/322/258/100/59) ; screenweaver.ai (0 $ / 9,99 $ /
+  Filmmaker « Coming soon » ciblé au 30 septembre 2026) ;
+  imaginode.ai/fr/pricing (13/42/145 € HT pour 900/3 100/10 500 crédits,
+  crédit à ~0,01 €, règles d'expiration, échec remboursé).
+- L'article assume publiquement une erreur de ce blog : la date « fin
+  août 2026 » écrite le 2026-08-21 pour l'offre Filmmaker. La phrase
+  d'août reste en ligne et sert de matière à la leçon sur les annonces.
+- Aucun chiffre d'utilisateurs, de chiffre d'affaires ni de conversion
+  publié, faute de source vérifiable. Trois fausses précisions du
+  premier jet ont été retirées avant publication (« onze heures sur un
+  bug », « 200 euros par abonné », « des milliers de pages »).
+- Piège du run, à retenir pour les prochaines captures d'imaginode.ai :
+  le site empile un modal promo à compte à rebours (« ACTIVER MA
+  REMISE », code NODE10) et une bannière cookies cachée derrière lui.
+  Cliquer « Plus tard » ne suffit pas et le modal revient après la
+  fermeture des cookies. Séquence qui marche : cliquer « Refuser » sur
+  les cookies, puis masquer en JS l'ancêtre position:fixed de l'élément
+  contenant « ACTIVER MA REMISE » juste avant la capture.
+- Commit 482e909 poussé sur origin/main (f2a3d8f..482e909).
+
+## Run précédent : 2026-09-23 (J38 publié)
 
 ### What happened
 - J38 du plan 90 jours publié avec un jour de retard :
