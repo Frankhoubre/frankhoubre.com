@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi j'ai construit Imaginode, mon canvas IA à nodes"
 date: "2026-08-17"
+dateModified: "2026-09-24"
 category: "analyses"
 excerpt: "Je fais des films IA en jonglant entre dix outils dispersés. J'ai fini par construire mon propre canvas à nodes. Voici pourquoi, et comment je m'en sers."
 thumbnail: "/images/blog/pourquoi-jai-construit-imaginode-canvas-ia/hero.webp"
@@ -174,5 +175,7 @@ C'est le public pour lequel je l'ai conçu, avec mes élèves en tête. L'interf
 ### Peut-on faire un film complet uniquement avec Imaginode ?
 
 Non, et je préfère le dire moi-même. Imaginode couvre la fabrication des plans : écriture des prompts, génération d'images, mise en mouvement en vidéo, gestion des références et de la caméra. Un film complet demande en plus un scénario structuré, un montage, un étalonnage et une bande-son, qui se font dans des outils dédiés. Ma chaîne complète relie l'écriture, le storyboard, la génération des plans sur Imaginode, puis le montage classique. Le canvas est l'atelier central de production d'images et de plans, pas une usine à films en un clic, qui de toute façon n'existe pas.
+
+Sur la mécanique des crédits, les marges et ce que coûte vraiment un abonnement branché sur des modèles payants, j'ai ouvert les comptes dans mes [leçons de SaaS créatif](/blog/screenweaver-lecons-saas-creatif).
 
 <!-- PUBLICATION DATE: 2026-08-17 -->

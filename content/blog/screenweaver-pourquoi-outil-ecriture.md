@@ -1,6 +1,7 @@
 ---
 title: "ScreenWeaver : pourquoi j'ai construit mon outil d'écriture"
 date: "2026-08-21"
+dateModified: "2026-09-24"
 category: "analyses"
 excerpt: "Mes scénarios tenaient. C'est tout le reste qui partait en morceaux. Voici pourquoi j'ai construit ScreenWeaver et ce que l'outil fait vraiment aujourd'hui."
 thumbnail: "/images/blog/screenweaver-pourquoi-outil-ecriture/hero.webp"
@@ -187,3 +188,5 @@ Je n'ai pas construit ScreenWeaver pour écrire plus vite. Je l'ai construit pou
 Un film se fabrique par corrections successives. Si ton système de travail rend chaque correction coûteuse, tu vas arrêter de corriger, et ton film sera exactement aussi bon que ta première intuition. C'est rarement suffisant.
 
 Les modèles, les interfaces et les tarifs bougeront encore, plusieurs fois. La seule chose que je ne bougerai pas, c'est l'ordre. Le texte d'abord. Les images accrochées au texte, et le droit de revenir en arrière jusqu'au dernier moment.
+
+Cet article raconte le produit. Si tu veux le versant argent et calendrier, avec les chiffres du dépôt et les dates que j'ai ratées, j'ai détaillé tout ça dans mes [leçons de SaaS créatif](/blog/screenweaver-lecons-saas-creatif).
