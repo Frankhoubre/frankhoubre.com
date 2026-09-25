@@ -1,7 +1,7 @@
 ---
 title: "Dubbing and Voice-Over: Cloning and Directing a Voice for Your Film"
 date: "2026-04-20"
-dateModified: "2026-05-07"
+dateModified: "2026-09-25"
 category: "tutoriels"
 excerpt: "A complete method of dubbing and voice-over with AI to clone, direct and mix a credible voice, with no robotic render or audio artifacts."
 ---
@@ -103,7 +103,7 @@ Fourth problem, rigid lip sync. The words stick but the performance seems mechan
 
 Fifth trap, wanting to clone a celebrity or an identifiable voice with no legal frame. It is a legal bomb for a pro project. Use authorized voices, document your rights, and maintain a clear traceability of the audio sources. If you monetize your content, this discipline is non-negotiable.
 
-To go deeper into the legal and commercial part around AI production, you can read [our guide on selling AI videos to professional clients](/en/blog/comment-vendre-videos-ia-clients-professionnels). And if you want to structure your complete project from the scene to the final render, pick up [our complete workflow from an idea to a realistic AI film](/en/blog/workflow-complet-idee-film-ia-realiste).
+To go deeper into the legal and commercial part around AI production, you can read [our guide on selling AI videos to professional clients](/en/blog/comment-vendre-videos-ia-clients-professionnels). And if you want to structure your complete project from the scene to the final render, pick up [our complete workflow from an idea to a realistic AI film](/en/blog/workflow-complet-idee-film-ia-realiste). And if the job is to carry that voice into other languages, the [HeyGen vs ElevenLabs comparison](/en/blog/heygen-elevenlabs-comparatif) now covers dubbing credit by credit, including which of the two moves the lips.
 
 > 💡 **Frank's Cut:** in case of artistic doubt, always choose the take that serves the character rather than the technically "cleanest" take. A film is won on the emotion, not on the clinical perfection.
 

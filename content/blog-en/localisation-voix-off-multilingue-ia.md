@@ -1,6 +1,7 @@
 ---
 title: "Multilingual Voiceover Localization: AI Workflow and Lip-Sync"
 date: "2026-07-17"
+dateModified: "2026-09-25"
 category: "tutoriels"
 excerpt: "Adapted scripts, voices, rhythm and QA for FR / EN / ES versions without losing the intention of the edit."
 thumbnail: "/images/blog/localisation-voix-off-multilingue-ia/hero.webp"
@@ -60,7 +61,7 @@ Checklist: product name pronunciation, tone, speed 150 to 165 words/min, no "rob
 
 ## Lip-sync: only if necessary
 
-If the shot clearly shows the mouth speaking, prepare the image for the lip-sync **after** the final VO. Otherwise, favor OTS, wide shots, voiceover. Cross-reference [artistic dubbing and lip-sync preparation](/en/blog/doublage-artistique-lip-sync-preparation).
+If the shot clearly shows the mouth speaking, prepare the image for the lip-sync **after** the final VO. Otherwise, favor OTS, wide shots, voiceover. Cross-reference [artistic dubbing and lip-sync preparation](/en/blog/doublage-artistique-lip-sync-preparation). To decide between a dubbed track with no lip sync and a video translation that carries one, the [HeyGen vs ElevenLabs comparison](/en/blog/heygen-elevenlabs-comparatif) breaks down what each platform bills per minute.
 
 ## Scenarios
 
