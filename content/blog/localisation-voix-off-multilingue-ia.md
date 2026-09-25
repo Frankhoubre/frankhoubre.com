@@ -1,6 +1,7 @@
 ---
 title: "Localisation voix off multilingue : workflow IA et lip-sync"
 date: "2026-07-17"
+dateModified: "2026-09-25"
 category: "tutoriels"
 excerpt: "Scripts adaptés, voix, rythme et QA pour versions FR / EN / ES sans perdre l'intention du montage."
 thumbnail: "/images/blog/localisation-voix-off-multilingue-ia/hero.webp"
@@ -60,7 +61,7 @@ Checklist : prononciation noms produit, ton, vitesse 150 à 165 mots/min, pas de
 
 ## Lip-sync : seulement si nécessaire
 
-Si le plan montre la bouche qui parle clairement, prépare l'image pour le lip-sync **après** VO finale. Sinon, privilégie OTS, plans larges, voix off. Croise [doublage artistique et préparation lip-sync](/blog/doublage-artistique-lip-sync-preparation).
+Si le plan montre la bouche qui parle clairement, prépare l'image pour le lip-sync **après** VO finale. Sinon, privilégie OTS, plans larges, voix off. Croise [doublage artistique et préparation lip-sync](/blog/doublage-artistique-lip-sync-preparation). Pour trancher entre une piste doublée sans lip-sync et une traduction vidéo avec lip-sync, le [comparatif HeyGen vs ElevenLabs](/blog/heygen-elevenlabs-comparatif) détaille ce que chaque plateforme facture à la minute.
 
 ## Scénarios
 

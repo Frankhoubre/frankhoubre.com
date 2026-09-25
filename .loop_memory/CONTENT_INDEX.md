@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-24T08:01:10.771Z
+> Generated: 2026-09-25T08:00:48.762Z
 
 ## FR : 318 articles (/blog/<slug>)
 
@@ -233,7 +233,7 @@ Categories: tutoriels 190, actualite 53, business 24, comparatifs 19, analyses 1
 | 2026-04-23 | business | `comment-convaincre-client-video-ia` | Comment convaincre un client avec une vidéo IA (preuve, pas promesse) |
 | 2026-04-23 | business | `comment-creer-portfolio-ia-credible` | Comment créer un portfolio IA crédible (qui fait signer, pas juste liker) |
 | 2026-04-23 | business | `comment-se-differencier-marche-ia-creative` | Comment se différencier sur le marché de l'IA créative (sans course au buzz) |
-| 2026-04-23 | comparatifs | `heygen-elevenlabs-comparatif` | HeyGen et ElevenLabs : les meilleurs outils IA pour la voix et les avatars ? |
+| 2026-04-23 | comparatifs | `heygen-elevenlabs-comparatif` | HeyGen vs ElevenLabs : voix, avatar et doublage IA |
 | 2026-04-23 | comparatifs | `ideogram-recraft-leonardo-comparatif` | Ideogram, Recraft ou Leonardo IA : quel outil choisir ? |
 | 2026-04-23 | comparatifs | `meilleur-generateur-image-ia` | Meilleur générateur d’images IA : comparatif complet 2026 |
 | 2026-04-23 | comparatifs | `meilleurs-outils-ia-video` | Les meilleurs outils IA vidéo en 2026 : Sora, Runway, Higgsfield, Pika Labs |

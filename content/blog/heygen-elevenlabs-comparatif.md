@@ -1,17 +1,17 @@
 ---
-title: "HeyGen et ElevenLabs : les meilleurs outils IA pour la voix et les avatars ?"
+title: "HeyGen vs ElevenLabs : voix, avatar et doublage IA"
 date: "2026-04-23"
-dateModified: "2026-06-10"
+dateModified: "2026-09-25"
 category: "comparatifs"
-excerpt: "Comparatif terrain HeyGen vs ElevenLabs pour créer des voix IA et avatars crédibles en 2026, avec workflow pro, limites réelles et cas d’usage business."
+excerpt: "Comparatif terrain HeyGen vs ElevenLabs : voix, avatars et doublage multilingue, avec les coûts au crédit et les limites que les pages produit cachent."
 thumbnail: "/images/blog/heygen-elevenlabs-comparatif/hero.webp"
 ---
 
-# HeyGen et ElevenLabs : les meilleurs outils IA pour la voix et les avatars ?
+# HeyGen vs ElevenLabs : voix, avatar et doublage IA
 
 Tu veux créer une vidéo qui parle, tu testes un avatar, tu ajoutes une voix, et tout semble techniquement propre. Puis tu regardes le résultat complet et tu sens le faux immédiatement. Le regard est vide. Le rythme vocal est plat. Le lip-sync décroche sur des consonnes. C’est exactement là que la majorité des débutants abandonnent. Pourtant, avec `heygen` et `elevenlabs`, tu peux obtenir des résultats très solides si tu comprends comment les piloter.
 
-Ce guide n’est pas un comparatif de fonctionnalités copié-collé. C’est un retour de terrain. Je vais te montrer comment choisir entre `heygen` et `elevenlabs` selon ton objectif réel: vidéo de formation, social ads, contenu marque, narration courte, contenus multilingues. Le mot-clé central ici, c’est `elevenlabs`, parce que la qualité de voix décide souvent si ton avatar passe pour crédible ou “robot premium”.
+Ce guide sort du terrain, pas d’une grille de fonctionnalités recopiée. Il couvre le choix entre `heygen` et `elevenlabs` selon ton objectif réel, vidéo de formation, social ads, contenu marque, narration courte, et le point que la plupart des comparatifs sautent : le doublage. Combien il coûte vraiment chez l’un et chez l’autre, et pourquoi l’un des deux ne bouge pas les lèvres de ton avatar. La qualité de voix décide souvent si ton avatar passe pour crédible ou “robot premium”, et le doublage décide s’il tient la route hors de ta langue.
 
 Si tu es débutant, retiens déjà ça: un bon avatar ne sauvera jamais une mauvaise voix, et une bonne voix ne sauvera jamais une mise en scène faible. Tu dois traiter voix, acting, script et rythme comme un seul système.
 
@@ -59,7 +59,62 @@ HeyGen devient puissant quand tu ajoutes une couche créative humaine au-dessus 
 
 Le duo est souvent plus efficace que l’opposition. Tu peux générer une voix propre dans ElevenLabs, puis l’intégrer dans HeyGen en conservant une direction rythmique cohérente.
 
-## Le Trench Workflow avatar + voix que j’utilise
+## Doublage : les deux outils ne traduisent pas la même chose
+
+Quand tu tapes « doubler ma vidéo avec l’IA », tu penses à un seul geste. En pratique, il y en a deux, et HeyGen et ElevenLabs n’en couvrent pas le même.
+
+ElevenLabs traduit la bande son. Sa doc annonce plus de 90 langues, la conservation du timbre de chaque locuteur, et le maintien du fond sonore d’origine, donc tu récupères la musique et l’ambiance sans avoir à remixer. La bouche, elle, ne bouge pas d’un millimètre. La documentation le dit noir sur blanc : le lip-sync ne fait pas partie du produit Dubbing. Ton comédien parle espagnol, ses lèvres continuent de parler français.
+
+HeyGen attaque le problème par l’image. Sa fonction Video Translate passe par un moteur de lip-sync avec deux modes, Speed et Precision, et annonce plus de 175 langues et dialectes. La bouche suit la nouvelle piste. Ce confort se paie, en crédits et en contraintes de tournage.
+
+Pour une narration en voix off, un podcast, un documentaire commenté, ElevenLabs suffit et coûte moins cher. Dès qu’un visage à l’écran prononce les mots, l’absence de lip-sync se voit en deux secondes.
+
+![tarification officielle des crédits HeyGen avec le coût du Video Translation en mode Speed, Precision et sans lip-sync](/images/blog/heygen-elevenlabs-comparatif/workflow-3.webp)
+
+*Grille officielle des crédits HeyGen, relevée sur help.heygen.com le 25 septembre 2026. Le doublage sans lip-sync coûte 4 crédits par minute, le mode Speed 6, le mode Precision 10.*
+
+## Le coût réel d’un doublage, calculé sur une vidéo de dix minutes
+
+Les deux outils facturent à la minute, mais ils ne comptent pas la même minute, et c’est là que les budgets dérapent.
+
+Chez HeyGen, la facture tombe en crédits, et le compteur tourne par minute de vidéo traduite : 4 crédits sans lip-sync, 6 en mode Speed, 10 en mode Precision. Le forfait Creator à 29 $ par mois donne 600 crédits. Dix minutes de vidéo en mode Speed, c’est 60 crédits par langue. Trois langues, 180 crédits. Il te reste 420 crédits pour tout le reste, et « tout le reste » inclut la génération d’avatar, qui mange entre 4 et 48 crédits la minute selon le modèle. Le doublage ne vit pas dans une enveloppe séparée.
+
+Chez ElevenLabs, la page tarifaire annonce 2 000 crédits par minute en doublage automatique avec filigrane, 3 000 sans filigrane, et jusqu’à 10 000 en passant par Dubbing Studio sans filigrane. La facturation se fait sur la minute de média source, pour chaque langue cible. Le forfait Creator, affiché à 22 $ par mois, embarque 121 000 crédits. Dix minutes sans filigrane, c’est 30 000 crédits par langue. Trois langues, 90 000 crédits. Ton mois y passe presque entièrement, et tu n’as encore généré aucune voix off pour tes autres projets.
+
+| Doublage de 10 min vers 3 langues | HeyGen | ElevenLabs |
+| --- | --- | --- |
+| Unité facturée | minute de vidéo traduite | minute de média source, par langue |
+| Tarif annoncé | 4 crédits sans lip-sync, 6 Speed, 10 Precision | 3 000 crédits la minute en auto sans filigrane |
+| Coût de l’exemple | 180 crédits en Speed | 90 000 crédits |
+| Ce que le forfait d’entrée couvre | 600 crédits sur Creator à 29 $ | 121 000 crédits sur Creator à 22 $ |
+| Lip-sync | oui, en Speed et Precision | non, absent du produit |
+| Langues annoncées | plus de 175 | plus de 90 |
+
+Lis la ligne du bas avant la ligne des prix. Si ta vidéo montre un visage qui parle, la colonne ElevenLabs ne répond pas à ta question, quel que soit son tarif.
+
+![documentation officielle ElevenLabs Dubbing indiquant la traduction sur plus de 90 langues avec conservation du fond sonore](/images/blog/heygen-elevenlabs-comparatif/workflow-4.webp)
+
+*Documentation ElevenLabs Dubbing, relevée le 25 septembre 2026. Le fond sonore d’origine est conservé, et aucune entrée lip-sync n’apparaît dans les capacités du produit.*
+
+> 💡 **Le cut de Frank :** avant d’acheter des crédits, double trente secondes de ta vidéo la plus difficile, pas ton plan le plus propre. Celui où deux personnes se coupent la parole, où il y a de la musique derrière. Trente secondes te coûtent presque rien et te disent la vérité que la page produit ne dira jamais.
+
+## Les contraintes de doublage qu’aucune page produit n’affiche
+
+Un doublage rate rarement à cause du moteur. Il rate à cause de ce qu’on a mis dedans, et les deux plateformes posent leurs conditions dans des docs techniques que personne ne lit avant d’acheter.
+
+La langue source doit être unique. HeyGen le précise dans son guide de démarrage : une vidéo qui mélange deux langues produit une traduction fausse ou un job en échec. Ton interview où l’invité lâche trois mots d’anglais au milieu d’une phrase en français, c’est exactement le cas qui casse.
+
+Une seule personne parle à la fois. La recommandation officielle de HeyGen est claire là-dessus, et le mode Speed est conseillé pour un locuteur unique ou des conversations simples, le mode Precision pour les échanges à plusieurs. Deux voix qui se chevauchent, et la séparation des locuteurs part en morceaux.
+
+Là-dessus, ton micro pèse plus lourd que ton abonnement. HeyGen conseille de rester à trois mètres maximum de la caméra et de réduire le bruit de fond au maximum. Une captation faite au micro de la caméra dans une salle qui résonne donnera un doublage médiocre dans les deux outils, parce que les deux commencent par transcrire, et qu’une transcription approximative se traduit approximativement.
+
+Les limites de format suivent ton forfait. Côté HeyGen, le fichier monte jusqu’à 5 Go, la durée va de 2 secondes à 5 heures, mais le plafond par vidéo dépend du plan : 30 minutes sur Creator et Pro, 60 minutes sur Business, 5 heures en Enterprise. Tu peux viser jusqu’à dix langues cibles sur un même job. Côté ElevenLabs, le fichier doit rester sous 2 Go et sous 180 minutes, les deux à la fois.
+
+Et la relecture n’est pas donnée à tout le monde. Sur HeyGen, la fonction de relecture du script traduit mot à mot avant génération finale est réservée aux plans Pro, Business, Team et Enterprise. Sur ElevenLabs, l’édition du transcript en Dubbing v2 passe par l’API et les plans Enterprise, Dubbing Studio étant en mode maintenance d’après la doc. Si tu travailles pour un client qui va relire la traduction, vérifie cette ligne avant de vendre la prestation.
+
+J’ai comparé l’ensemble des concurrents sur ce terrain précis dans [les vraies alternatives à HeyGen pour le doublage](/blog/doublage-ia-alternatives-heygen-comparatif), avec Descript, Murf, Captions et Synthesia mesurés sur les mêmes critères. Pour la partie direction de voix, la méthode que j’applique en production est détaillée dans [cloner et diriger une voix pour un film](/blog/doublage-voix-off-cloner-diriger-voix-film), et la logistique d’une sortie multilingue dans [localiser une voix off en plusieurs langues](/blog/localisation-voix-off-multilingue-ia).
+
+## Le workflow avatar plus voix que j’utilise
 
 Étape 1: écrire un script parlé, pas un script écrit.  
 Étape 2: générer une voix brouillon dans ElevenLabs.  
@@ -78,9 +133,9 @@ La méthode qui gagne: moins d’options, plus de direction.
 
 ![workflow heygen elevenlabs avec script oralisé voix finalisée et avatar synchronisé](/images/blog/heygen-elevenlabs-comparatif/workflow-1.webp)
 
-> 💡 **Frank's Cut:** écris toujours ton script en le lisant à voix haute. Si tu trébuches, l’IA trébuchera aussi. Le naturel commence dans le texte.
+> 💡 **Le cut de Frank :** écris toujours ton script en le lisant à voix haute. Si tu trébuches, l’IA trébuchera aussi. Le naturel commence dans le texte.
 
-## Troubleshooting - What Beginners Break
+## Ce que les débutants cassent en premier
 
 Erreur 1: texte trop long sans respiration.
 
@@ -96,9 +151,9 @@ Erreur 6: publication sans test mobile et sans sous-titres.
 
 Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 
-[Voir l'explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
+[Voir l’explication en vidéo](https://www.youtube.com/watch?v=KJbLaSGOPPk)
 
-## Core Concepts pour passer du “robot” au contenu crédible
+## Cinq principes pour passer du “robot” au contenu crédible
 
 Premier concept: la voix guide la crédibilité émotionnelle.
 
@@ -195,11 +250,11 @@ Fais-le systématiquement pendant un mois, et tu verras ta qualité moyenne prog
 
 ## Sources externes utiles
 
-- [HeyGen](https://www.heygen.com)
-- [ElevenLabs](https://elevenlabs.io)
-- [OpenAI](https://openai.com)
+- [Grille des crédits HeyGen](https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen)
+- [Documentation ElevenLabs Dubbing](https://elevenlabs.io/docs/capabilities/dubbing)
+- [Guide HeyGen Video Translation](https://help.heygen.com/en/articles/10029081-how-to-get-started-with-video-translation)
 
-## FAQ (PAA Optimization)
+## Questions fréquentes
 
 1. **ElevenLabs est-il vraiment le meilleur outil pour une voix IA naturelle ?**  
 ElevenLabs est aujourd’hui l’un des outils les plus convaincants sur la qualité vocale perçue, surtout quand le script est bien préparé et pensé pour l’oral. Sa force ne vient pas seulement du timbre, mais de la capacité à rendre des inflexions plus crédibles que la moyenne. Cela dit, aucun outil ne compense un texte mal écrit. Si tu veux un rendu naturel, tu dois travailler la structure des phrases, les respirations et les appuis. Avec cette méthode, ElevenLabs peut produire une voix qui tient très bien en contexte business et contenu créatif.
@@ -221,6 +276,12 @@ Le budget dépend du volume, des langues et du niveau d’exigence de finition. 
 
 7. **Comment monter en niveau rapidement sur HeyGen et ElevenLabs ?**  
 Travaille en cycles courts. Semaine 1: qualité du script oral. Semaine 2: qualité de la voix et de l’intonation. Semaine 3: qualité de l’avatar et du lip-sync. Semaine 4: montage et intégration visuelle. À chaque cycle, garde une grille d’évaluation fixe: crédibilité voix, clarté message, cohérence rythme, perception mobile. En un mois de pratique disciplinée, tu peux déjà passer d’un rendu débutant à un rendu nettement plus professionnel. La progression vient de la répétition structurée, pas d’une nouvelle option activée au hasard.
+
+8. **Faut-il choisir HeyGen ou ElevenLabs pour doubler une vidéo ?**
+Tout dépend de ce que le spectateur voit à l’écran. Si un visage prononce les mots, il te faut HeyGen, parce que sa fonction Video Translate embarque un moteur de lip-sync en mode Speed ou Precision, alors que la documentation d’ElevenLabs indique que le lip-sync ne fait pas partie de son produit Dubbing. Si ta vidéo est une voix off sur des images, un tutoriel en capture d’écran ou un podcast, ElevenLabs redevient le meilleur choix : la qualité vocale est supérieure et le fond sonore d’origine est conservé, donc tu n’as pas à remixer ta musique. Beaucoup de projets combinent les deux selon le type de plan.
+
+9. **Combien coûte réellement un doublage en crédits ?**
+Les deux plateformes facturent à la minute, mais pas la même minute. HeyGen compte 4 crédits par minute sans lip-sync, 6 en mode Speed et 10 en mode Precision, sur un forfait Creator à 29 $ qui donne 600 crédits mensuels, partagés avec la génération d’avatar. ElevenLabs annonce 2 000 crédits la minute en doublage automatique avec filigrane, 3 000 sans filigrane, et facture par langue cible sur la durée du média source, sur un forfait Creator à 22 $ qui donne 121 000 crédits. Fais toujours le calcul sur ta durée réelle multipliée par ton nombre de langues avant de t’abonner.
 
 ![comparatif final heygen elevenlabs pour choix voix avatar selon cas usage et niveau de crédibilité](/images/blog/heygen-elevenlabs-comparatif/workflow-2.webp)
 

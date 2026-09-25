@@ -93,6 +93,15 @@ version-control for AI projects.
 - `PrismML Bonsai 27B on-device iPhone modèle IA mobile juillet 2026` — FILLED: prismml-bonsai-27b-modele-ia-iphone-juillet-2026
 - `animé ia festival (voidborn)` — FILLED: voidborn-anime-ia-festival-coulisses (plan 90j J7)
 
+## USED (J40 — 2026-09-25, jour UPDATE)
+
+- `comparer ia doublage heygen` — FILLED: heygen-elevenlabs-comparatif (plan 90j J40,
+  section doublage ajoutée au pilier existant, titre reécrit pour porter l'intention).
+  Anti-cannibalisation avec J6 `doublage-ia-alternatives-heygen-comparatif` : le pilier
+  compare HeyGen et ElevenLabs entre eux sur voix, avatar et coût du doublage, J6 garde
+  la comparaison de HeyGen face à ses concurrents (Descript, Murf, Captions, Synthesia).
+  Croisement bidirectionnel en place depuis le 2026-09-25.
+
 ## USED (Run 21 — 2026-07-16)
 
 - `PixVerse 439 millions levée fonds vidéo IA juillet 2026` — FILLED: pixverse-439-millions-levee-fonds-video-ia-juillet-2026

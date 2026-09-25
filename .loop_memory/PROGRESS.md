@@ -1,8 +1,36 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-24 (J39 publié)
+## Last run: 2026-09-25 (J40 publié, jour UPDATE)
 
 ### What happened
+- J40 est un jour UPDATE du plan 90 jours, pas un nouvel article.
+  `heygen-elevenlabs-comparatif` reçoit la section doublage demandée par le
+  plan : 3 H2 neufs, 2 questions de FAQ en plus (7 vers 9), et l'article passe
+  de 2770 à 4195 mots. Slug, URL et date de publication d'origine
+  (2026-04-23) conservés, dateModified 2026-09-25. Le calendrier ne glisse
+  pas : J41 = 2026-09-26 (`vivre-video-ia-2026-modeles-revenus`, CREATEUR,
+  HAUTE).
+- Titre changé. L'ancien faisait 76 caractères, donc tronqué en SERP, et ne
+  portait pas l'intention visée par le plan (« comparer ia doublage heygen »,
+  position 5.8). Titre publié : « HeyGen vs ElevenLabs : voix, avatar et
+  doublage IA » (50 caractères), H1 aligné, excerpt refait à 151 caractères.
+- Angle de la section : les deux outils ne couvrent pas le même geste.
+  ElevenLabs traduit la bande son sans toucher aux lèvres, sa doc dit
+  explicitement que le lip-sync ne fait pas partie du produit Dubbing. HeyGen
+  passe par un moteur de lip-sync et facture en conséquence. Tout le socle
+  factuel vient des documentations et help centers officiels des deux
+  plateformes, relevés le 2026-09-25 ; les chiffres de crédits trouvés sur des
+  blogs tiers (5 crédits la minute) ont été écartés au profit du help center
+  HeyGen (6 crédits la minute en mode Speed).
+- Un fait périmé corrigé dans J6 `doublage-ia-alternatives-heygen-comparatif`,
+  qui annonçait Dubbing Studio ouvert à tous les plans Creator alors que la
+  doc officielle indique désormais un mode maintenance.
+- 2 captures réelles ajoutées au lieu de stills générés, les affirmations
+  neuves étant des faits de tarif et de fonctionnalité. L'article compte
+  désormais 5 images.
+
+### Previous run: 2026-09-24 (J39 publié)
+
 - J39 du plan 90 jours publié à la date prévue :
   `screenweaver-lecons-saas-creatif` (business, 9 H2, FAQ 8 questions,
   3586 mots, 12 liens internes, 3 liens externes, score éditorial 100 /
