@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { AiReferralBeacon } from "@/components/AiReferralBeacon";
 import { FormationPromoModal } from "@/components/FormationPromoModal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -42,6 +43,7 @@ export function SiteShell({ lang, children }: SiteShellProps) {
         </main>
         <SiteFooter />
         <FormationPromoModal />
+        <AiReferralBeacon />
       </body>
     </html>
   );

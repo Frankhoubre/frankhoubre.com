@@ -81,6 +81,8 @@ export type FunnelStore = {
     visitorHash?: string;
     source?: string;
     detail?: string;
+    /** Compte sans alimenter le fil des événements récents (crawlers). */
+    quiet?: boolean;
   }): Promise<void>;
   getSubscriber(email: string): Promise<Subscriber | null>;
   saveSubscriber(sub: Subscriber): Promise<void>;
@@ -201,7 +203,7 @@ function redisFromEnv(): Redis | null {
 
 function createRedisStore(redis: Redis): FunnelStore {
   return {
-    async recordEvent({ event, date, visitorHash, source, detail }) {
+    async recordEvent({ event, date, visitorHash, source, detail, quiet }) {
       const p = redis.pipeline();
       p.hincrby(KEY.day(date), event, 1);
       p.hincrby(KEY.totals, event, 1);
@@ -210,6 +212,10 @@ function createRedisStore(redis: Redis): FunnelStore {
         p.expire(KEY.uniq(date, event), 60 * 60 * 24 * 400);
       }
       if (source) p.hincrby(KEY.src(event), source, 1);
+      if (quiet) {
+        await p.exec();
+        return;
+      }
       const entry: RecentEvent = {
         at: new Date().toISOString(),
         event,
@@ -423,7 +429,7 @@ function createMemoryStore(): FunnelStore {
   });
 
   return {
-    async recordEvent({ event, date, visitorHash, source, detail }) {
+    async recordEvent({ event, date, visitorHash, source, detail, quiet }) {
       const day = state.days.get(date) ?? {};
       day[event] = (day[event] ?? 0) + 1;
       state.days.set(date, day);
@@ -439,6 +445,7 @@ function createMemoryStore(): FunnelStore {
         s[source] = (s[source] ?? 0) + 1;
         state.sources.set(event, s);
       }
+      if (quiet) return;
       state.recent.unshift({
         at: new Date().toISOString(),
         event,

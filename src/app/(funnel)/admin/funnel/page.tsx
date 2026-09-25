@@ -48,6 +48,8 @@ type Data = {
   totals: Partial<Record<FunnelEvent, number>>;
   sources: Record<string, number>;
   viewSources: Record<string, number>;
+  aiReferralSources: Record<string, number>;
+  aiCrawlerSources: Record<string, number>;
   subscribers: Subscriber[];
   subscriberCount: number;
   recent: RecentEvent[];
@@ -55,17 +57,38 @@ type Data = {
 
 async function loadData(period: Period): Promise<Data> {
   const store = getFunnelStore();
-  const [days, totals, sources, viewSources, subscribers, subscriberCount, recent] =
-    await Promise.all([
-      store.getDays(lastDays(period)),
-      store.getTotals(),
-      store.getSources("subscribe"),
-      store.getSources("optin_view"),
-      store.listSubscribers(8),
-      store.countSubscribers(),
-      store.getRecent(30),
-    ]);
-  return { days, totals, sources, viewSources, subscribers, subscriberCount, recent };
+  const [
+    days,
+    totals,
+    sources,
+    viewSources,
+    aiReferralSources,
+    aiCrawlerSources,
+    subscribers,
+    subscriberCount,
+    recent,
+  ] = await Promise.all([
+    store.getDays(lastDays(period)),
+    store.getTotals(),
+    store.getSources("subscribe"),
+    store.getSources("optin_view"),
+    store.getSources("ai_referral"),
+    store.getSources("ai_crawler"),
+    store.listSubscribers(8),
+    store.countSubscribers(),
+    store.getRecent(30),
+  ]);
+  return {
+    days,
+    totals,
+    sources,
+    viewSources,
+    aiReferralSources,
+    aiCrawlerSources,
+    subscribers,
+    subscriberCount,
+    recent,
+  };
 }
 
 function Overview({ period, data }: { period: Period; data: Data }) {
@@ -249,6 +272,8 @@ function Overview({ period, data }: { period: Period; data: Data }) {
         <div className="grid gap-8 md:grid-cols-2">
           <SourcesTable title="D’où viennent les inscrits" data={data.sources} />
           <SourcesTable title="D’où viennent les visiteurs" data={data.viewSources} />
+          <SourcesTable title="Visites venues d’une IA (par assistant)" data={data.aiReferralSources} />
+          <SourcesTable title="Crawlers IA (par robot)" data={data.aiCrawlerSources} />
         </div>
       </Panel>
 

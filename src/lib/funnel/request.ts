@@ -1,4 +1,5 @@
 import type { NextRequest } from "next/server";
+import { detectAiEngine } from "@/lib/ai-traffic";
 
 const BOT_UA =
   /bot|crawl|spider|slurp|headless|lighthouse|pagespeed|preview|facebookexternalhit|embedly|quora|pinterest|vkshare|whatsapp|telegram|curl|wget|python-requests|httpclient/i;
@@ -15,14 +16,19 @@ export function clientIp(req: NextRequest): string {
 }
 
 /**
- * Source d'acquisition lisible pour le tableau de bord : utm_source en
- * priorité, sinon le domaine du referrer, sinon « direct ».
+ * Source d'acquisition lisible pour le tableau de bord : assistant IA
+ * (ia:chatgpt, ia:perplexity...) en priorité, puis utm_source, puis le
+ * domaine du referrer, sinon « direct ».
  */
 export function resolveSource(input: {
   utmSource?: string | null;
   referrer?: string | null;
   ownHost?: string;
 }): string {
+  // Les assistants IA passent avant tout : ChatGPT ajoute utm_source=chatgpt.com,
+  // les autres se reconnaissent au referrer.
+  const ai = detectAiEngine({ referrer: input.referrer, utmSource: input.utmSource });
+  if (ai) return `ia:${ai}`;
   const utm = input.utmSource?.trim().toLowerCase();
   if (utm) return utm.slice(0, 40);
   const ref = input.referrer?.trim();

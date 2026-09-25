@@ -69,6 +69,8 @@ export const FUNNEL_EVENTS = [
   "email_bounced",
   "email_complained",
   "unsubscribe",
+  "ai_referral",
+  "ai_crawler",
 ] as const;
 
 export type FunnelEvent = (typeof FUNNEL_EVENTS)[number];
@@ -88,6 +90,8 @@ export const FUNNEL_EVENT_LABELS: Record<FunnelEvent, string> = {
   email_bounced: "Emails en erreur (bounce)",
   email_complained: "Signalés comme spam",
   unsubscribe: "Désinscriptions",
+  ai_referral: "Visites venues d'une IA",
+  ai_crawler: "Passages de crawlers IA",
 };
 
 /** Événements dont on compte aussi les visiteurs uniques (par jour). */
@@ -99,6 +103,7 @@ export const CLIENT_EVENTS: FunnelEvent[] = [
   "course_view",
   "click_screenweaver",
   "click_skool",
+  "ai_referral",
 ];
 
 export type FunnelDay = {
