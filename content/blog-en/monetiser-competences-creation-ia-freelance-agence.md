@@ -1,7 +1,7 @@
 ---
 title: "How to Monetize Your AI Creation Skills (Freelance, Agency)"
 date: "2026-04-15"
-dateModified: "2026-06-10"
+dateModified: "2026-09-26"
 category: "business"
 excerpt: "Offers, packaging, proof, pricing and risks: a frame to sell AI creation without getting crushed by the two-euro prompt market."
 thumbnail: "/images/blog/monetiser-competences-creation-ia-freelance-agence/hero.webp"
@@ -14,6 +14,8 @@ You know how to generate a "correct" image. *The market does not care.*
 Monetization starts when you sell a **risk reduction** and a **decision**: a defensible deliverable, a credible deadline, a minimal traceability, an aesthetic that does not scream "AI demo". If you sell "AI", you find yourself competing with subscriptions and influencers. If you sell a **production chain**, you can bill like a pro. This text is deliberately "blunt": the goal is not to motivate you, but to give you a frame to sign and cash in without hating yourself on Sunday night.
 
 ![Creative freelancer in a video call with a client, two screens brief and moodboard, photorealistic home office](/images/blog/monetiser-competences-creation-ia-freelance-agence/hero.webp)
+
+This guide covers client work, which is one income stream among several. If you are still weighing selling to clients against platform payouts or producing a vertical series, start with the overview: [living off AI video in 2026 and the models that hold up](/en/blog/vivre-video-ia-2026-modeles-revenus).
 
 ## The truth of pricing: you do not sell pixels
 

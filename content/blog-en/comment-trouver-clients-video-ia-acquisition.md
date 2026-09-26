@@ -1,7 +1,7 @@
 ---
 title: "How to Find Clients With AI Video (Acquisition With No Spam)"
 date: "2026-04-21"
-dateModified: "2026-04-23"
+dateModified: "2026-09-26"
 category: "business"
 excerpt: "Outbound, proof content, partnerships, and niches: a field method to fill your pipeline with clients who pay for serious production."
 thumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
@@ -107,6 +107,8 @@ The niche does not force you to reject everything. It orients your site, your ex
 
 You can pivot niche every six months if you test, but not every two weeks.
 
+Before you settle on the niche, check that client work is the right model for your situation in the first place. The six possible income streams and their respective timelines are compared here: [living off AI video in 2026, the models that hold up](/en/blog/vivre-video-ia-2026-modeles-revenus).
+
 ## Portfolio: what it must show to convert a cold lead
 
 A studio portfolio shows three things: intention, process, result. Not only result.
@@ -175,7 +177,7 @@ Stable, not glamorous, effective if your message is good.
 
 ### Strategy 2: 2 agencies contacted with a white label test offer
 
-Slow at the start, then a leverage effect.
+Slow at the start, then it compounds.
 
 ### Strategy 3: SEO service page + mini case study
 

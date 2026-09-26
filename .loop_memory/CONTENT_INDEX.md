@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-25T09:34:29.793Z
+> Generated: 2026-09-26T08:09:09.583Z
 
-## FR : 318 articles (/blog/<slug>)
+## FR : 319 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 24, comparatifs 19, analyses 16, guides 14, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 16, guides 14, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Vivre de la vidéo IA en 2026 : les modèles qui tiennent |
 | 2026-09-24 | business | `screenweaver-lecons-saas-creatif` | Créer un SaaS créatif : les leçons de ScreenWeaver |
 | 2026-09-23 | analyses | `pourquoi-courts-metrages-ia-oubliables` | Court métrage IA : pourquoi la plupart sont oubliables |
 | 2026-09-21 | tutoriels | `dossier-production-storyboard-pdf` | Dossier de production : le storyboard PDF prêt à envoyer |
@@ -330,12 +331,13 @@ Categories: tutoriels 190, actualite 53, business 24, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 232 articles (/en/blog/<slug>)
+## EN : 233 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, actualite 14, comparatifs 14, business 14, analyses 6, guides 2, notes 1, postproduction 1
+Categories: tutoriels 180, business 15, actualite 14, comparatifs 14, analyses 6, guides 2, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Living off AI video in 2026: the models that hold up |
 | 2026-07-26 | tutoriels | `audit-qualite-portfolio-ia-avant-demo-reel` | AI Portfolio Quality Audit Before the Demo Reel |
 | 2026-07-25 | tutoriels | `formation-interne-equipe-creative-ia` | Training an Internal Creative Team in AI Video |
 | 2026-07-24 | tutoriels | `clause-contrat-client-contenu-genere-ia` | Client Contract Clause for AI-Generated Content |

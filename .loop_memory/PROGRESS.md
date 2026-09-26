@@ -1,8 +1,45 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-25 (J40 publié, jour UPDATE)
+## Last run: 2026-09-26 (J41 publié)
 
 ### What happened
+- J41 du plan 90 jours publié à la date prévue :
+  `vivre-video-ia-2026-modeles-revenus` (business, 11 H2, FAQ 8 questions,
+  4063 mots, 6 liens internes, 4 liens externes, score éditorial 100 /
+  bucket good / 0 flag, 0 issue au seo_audit sur les 3 slugs FR touchés).
+  Le calendrier ne glisse pas : J42 = 2026-09-27
+  (`questions-frequentes-ia-creative-reponses`, OPINION, MOYENNE).
+- Panorama des six modèles économiques de la vidéo IA : prestation,
+  monétisation plateforme, série verticale, vente d'assets, formation et
+  outils, concours dotés. L'anti-cannibalisation demandée par le plan est
+  respectée : le pilier `monetiser-competences` garde le how-to
+  freelance/agence, J41 ne porte que le panorama et les délais, et les deux
+  liens croisés sont posés le jour même, côté FR comme côté EN. Le mot-clé
+  « gagner de l'argent avec l'IA » reste non ciblé, il est réservé à
+  Business Dynamite.
+- Tous les chiffres viennent de sources officielles relevées le 2026-09-26 :
+  seuils du Programme Partenaire YouTube, politique « contenu non
+  authentique » renommée le 15 juillet 2025, critères du TikTok Creator
+  Rewards Program (ouvert en France, vidéos de plus d'une minute), rapport
+  Sensor Tower sur le short drama au T1 2026, dotations du festival Runway,
+  tarifs publiés de ScreenWeaver et d'Imaginode.
+- Deux refus assumés plutôt que d'écrire du non vérifié : Adobe Stock, dont
+  la page contributeur renvoie un 403, n'est pas cité et la section assets
+  reste générale ; Project Odyssey est écarté parce que sa page officielle
+  affiche encore une date limite passée au 17 novembre 2025.
+- Les deux images de corps sont de vraies captures et non des stills, parce que
+  l'article s'appuie sur des règles de plateforme et des prix. Elles prouvent
+  mot pour mot les affirmations qu'elles accompagnent.
+- La version EN est publiée le même jour, même slug, sans aucun lien YouTube,
+  et les deux miroirs EN touchés sont passés de CRLF à LF, ce qui supprime
+  8 erreurs « Missing title » préexistantes au seo_audit.
+- Deux notes d'outillage : la route `/presse` existe désormais, donc
+  l'avertissement du fichier de tâche à son sujet est périmé ; et le wrapper
+  shell casse sur un heredoc bash contenant des apostrophes, il faut passer
+  par Write puis `py`.
+
+### Previous run: 2026-09-25 (J40 publié, jour UPDATE)
+
 - J40 est un jour UPDATE du plan 90 jours, pas un nouvel article.
   `heygen-elevenlabs-comparatif` reçoit la section doublage demandée par le
   plan : 3 H2 neufs, 2 questions de FAQ en plus (7 vers 9), et l'article passe

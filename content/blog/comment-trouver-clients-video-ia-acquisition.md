@@ -1,7 +1,7 @@
 ---
 title: "Comment trouver des clients avec la vidéo IA (acquisition sans spam)"
 date: "2026-04-21"
-dateModified: "2026-04-23"
+dateModified: "2026-09-26"
 category: "business"
 excerpt: "Outbound, contenus preuve, partenariats, et niches: une méthode terrain pour remplir ton pipeline avec des clients qui paient une production sérieuse."
 thumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
@@ -106,6 +106,8 @@ Une niche te permet d’écrire un message répétable et d’être recommandé.
 La niche n’oblige pas à tout rejeter. Elle oriente ton site, tes exemples, ton vocabulaire, et tes références.
 
 Tu peux pivoter de niche tous les six mois si tu testes, mais pas toutes les deux semaines.
+
+Avant de choisir la niche, vérifie que la prestation est bien le modèle qui correspond à ta situation. Les six sources de revenu possibles et leurs délais respectifs sont comparés ici : [vivre de la vidéo IA en 2026, les modèles qui tiennent](/blog/vivre-video-ia-2026-modeles-revenus).
 
 ## Portfolio: ce qu’il doit montrer pour convertir un lead froid
 

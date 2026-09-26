@@ -1,7 +1,7 @@
 ---
 title: "Comment monétiser ses compétences en création IA (freelance, agence)"
 date: "2026-04-15"
-dateModified: "2026-06-10"
+dateModified: "2026-09-26"
 category: "business"
 excerpt: "Offres, packaging, preuve, pricing et risques : un cadre pour vendre de la création IA sans te faire écraser par le marché du prompt à deux euros."
 thumbnail: "/images/blog/monetiser-competences-creation-ia-freelance-agence/hero.webp"
@@ -14,6 +14,8 @@ Tu sais générer une image « correcte ». *Le marché s'en fout.*
 La monétisation commence quand tu vends une **réduction de risque** et une **décision** : un livrable défendable, un délai crédible, une traçabilité minimale, une esthétique qui ne crie pas « démo IA ». Si tu vends « de l'IA », tu te retrouves en concurrence avec des abonnements et des influenceurs. Si tu vends une **chaîne de production**, tu peux facturer comme un pro. Ce texte est volontairement « cash » : le but n'est pas de te motiver, mais de te donner un cadre pour signer et encaisser sans te détester le dimanche soir.
 
 ![Freelance créatif en visioconférence avec client, deux écrans brief et moodboard, bureau domicile photoréaliste](/images/blog/monetiser-competences-creation-ia-freelance-agence/hero.webp)
+
+Ce guide traite de la prestation, qui est une source de revenu parmi plusieurs. Si tu hésites encore entre vendre à des clients, viser la monétisation plateforme ou produire de la série verticale, commence par le panorama : [vivre de la vidéo IA en 2026 et les modèles qui tiennent](/blog/vivre-video-ia-2026-modeles-revenus).
 
 ## La vérité du pricing : tu ne vends pas des pixels
 
