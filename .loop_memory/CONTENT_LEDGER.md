@@ -55,7 +55,7 @@ article block goes below this line.
 - cannibalization_notes: chaque réponse reste courte et renvoie vers l'article de fond du cluster, aucune ne duplique un pilier ; le mot-clé « questions ia créative » n'était ciblé par aucun article existant
 - images: hero Nano Banana 2 (fin d'atelier dans une salle de médiathèque municipale, quatre participants autour du formateur, feuille manuscrite brandie, chaises empilées, écran de projection vierge) ; workflow-1 capture réelle de copyright.gov NewsNet 1060 ; workflow-2 capture réelle de la FAQ article 50 de la Commission, réponse dépliée
 - checker: pass (seo_audit 0 issue sur les 3 slugs FR touchés et sur les slugs EN, editorial_audit score 100 / bucket good / 0 flag / 14 H2 / FAQ 8 questions / 19 liens internes / 4 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS)
-- published_commit: PENDING
+- published_commit: 2357390
 
 ### 2026-09-21 : Dossier de production : le storyboard PDF prêt à envoyer
 - slug: dossier-production-storyboard-pdf
