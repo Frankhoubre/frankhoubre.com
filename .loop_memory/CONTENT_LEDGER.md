@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-09-27 : Questions sur l'IA créative : mes 12 réponses de terrain
+- slug: questions-frequentes-ia-creative-reponses
+- locale: fr + en (même slug, route EN /en/blog/questions-frequentes-ia-creative-reponses)
+- url: https://frankhoubre.com/blog/questions-frequentes-ia-creative-reponses
+- category: guides
+- type: evergreen / FAQ longue OPINION (plan 90j J42), publié à la date prévue, le calendrier ne glisse pas, donc J43 = 2026-09-28.
+- search_intent: informationnelle (débutant ou professionnel qui hésite encore et cherche des réponses courtes et sourcées sur les droits, les coûts, les délais et les débouchés de la création IA) ; cible explicite du plan : People Also Ask
+- primary_keyword: questions ia créative
+- secondary_keywords: droits d'auteur image ia, obligation mention ia, article 50 ai act, coût vidéo ia, monétiser ia youtube, festival film ia, quel outil ia commencer, ordinateur pour ia générative
+- sources: copyright.gov/newsnet/2025/1060.html (partie 2 du rapport IA, 29 janvier 2025, exclusion de « the mere provision of prompts »), digital-strategy.ec.europa.eu FAQ article 50 (application 2 août 2026, marquage machine reporté au 2 décembre 2026 pour les systèmes déjà sur le marché, régime allégé des oeuvres de fiction, aucun étiquetage rétroactif), support.google.com/youtube/answer/72851 (seuils du programme partenaire), imaginode.ai/fr/pricing (13 EUR HT / 900 crédits ~ 173 s), observatoires.afdas.com (notes de conjoncture Audiens / Afdas / CNC), chiffres Lost Garden et barèmes de festivals déjà sourcés sur le site
+- internal_links: -> erreurs-prompt-qui-rendent-image-ia-artificielle, comment-passer-rendu-amateur-a-cinema-ia, pourquoi-courts-metrages-ia-oubliables, droits-auteur-images-generees-ia, vivre-video-ia-2026-modeles-revenus, lost-garden-univers-coherent-episodes, metiers-audiovisuel-ia-menaces-transformation-avis, cinema-ia-remplacer-tournages, festivals-films-ia-criteres-jurys, clause-contrat-client-contenu-genere-ia, vendre-images-generees-ia-legalite, workflow-complet-idee-film-ia-realiste, /a-propos, /presse ; entrants <- metiers-audiovisuel-ia-menaces-transformation-avis et cinema-ia-remplacer-tournages (dateModified 2026-09-27), côté EN <- metiers-audiovisuel et vivre-video-ia-2026-modeles-revenus
+- cta: /presse et /a-propos en fin d'article, aucune offre poussée ; imaginode.ai cité uniquement comme source de prix vérifiable
+- cannibalization_notes: chaque réponse reste courte et renvoie vers l'article de fond du cluster, aucune ne duplique un pilier ; le mot-clé « questions ia créative » n'était ciblé par aucun article existant
+- images: hero Nano Banana 2 (fin d'atelier dans une salle de médiathèque municipale, quatre participants autour du formateur, feuille manuscrite brandie, chaises empilées, écran de projection vierge) ; workflow-1 capture réelle de copyright.gov NewsNet 1060 ; workflow-2 capture réelle de la FAQ article 50 de la Commission, réponse dépliée
+- checker: pass (seo_audit 0 issue sur les 3 slugs FR touchés et sur les slugs EN, editorial_audit score 100 / bucket good / 0 flag / 14 H2 / FAQ 8 questions / 19 liens internes / 4 externes / 3 images / 0 tiret cadratin, lint 0 err, typecheck PASS, build PASS)
+- published_commit: PENDING
+
 ### 2026-09-21 : Dossier de production : le storyboard PDF prêt à envoyer
 - slug: dossier-production-storyboard-pdf
 - locale: fr

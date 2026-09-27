@@ -1,7 +1,7 @@
 ---
 title: "Living off AI video in 2026: the models that hold up"
 date: "2026-09-26"
-dateModified: "2026-09-26"
+dateModified: "2026-09-27"
 category: "business"
 excerpt: "Client work, platform payouts, vertical series, assets, tools, contests: what each business model actually pays when you make AI video."
 thumbnail: "/images/blog/vivre-video-ia-2026-modeles-revenus/hero.webp"
@@ -43,6 +43,8 @@ The trap is selling "AI video". Nobody buys that. What a marketing director buys
 This model has two weaknesses worth staring at. Your income is capped by your hours, and any client worth more than 40 % of your revenue puts you at risk the day their budget gets cut. The usual exit runs through building an agency, with all the staffing headaches that brings.
 
 The blind spot for beginners is acquisition. Producing is not enough. Buyers have to know you exist, and that gets built with a method rather than with luck. The topic deserves its own piece: [how to find clients with AI video](/en/blog/comment-trouver-clients-video-ia-acquisition).
+
+The shorter version of the monetization rules, next to the eleven other questions people ask me most, is in [my creative AI questions and answers](/en/blog/questions-frequentes-ia-creative-reponses).
 
 ## Platform payouts: read the terms before you count on them
 

@@ -1,7 +1,7 @@
 ---
 title: "Métiers de l'audiovisuel face à l'IA : les chiffres 2026"
 date: "2026-04-14"
-dateModified: "2026-09-19"
+dateModified: "2026-09-27"
 category: "analyses"
 excerpt: "Les premiers chiffres d'emploi métier par métier sont sortis, et la transparence IA est obligatoire depuis le 2 août 2026. Le point sans slogan."
 thumbnail: "/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/hero.webp"
@@ -56,6 +56,8 @@ Pour le texte publié sur des questions d'intérêt public, l'obligation de divu
 Côté fournisseurs d'outils, l'obligation est technique : les sorties doivent être marquées dans un format lisible par machine et détectables comme générées. Les systèmes déjà sur le marché avant août 2026 ont jusqu'au **2 décembre 2026** pour s'y conformer. Traduction pour toi : les fichiers que te rendent tes générateurs vont porter des marqueurs, et ta chaîne de post ne doit pas les écraser par accident.
 
 Ce que ça change dans une équipe est très concret. Quelqu'un doit savoir quels plans sont générés, avec quel outil, et le noter quelque part de retrouvable. Personne ne se lève le matin pour ça, et c'est devenu une ligne de poste. Si tu dois monter ce cadre pour une société de production, j'ai détaillé la mise en route complète dans mon guide sur [intégrer l'IA dans une boîte de production](/blog/integrer-ia-boite-production-depart).
+
+Cette obligation de transparence revient dans presque toutes les sessions que j'anime, avec onze autres interrogations que j'ai regroupées dans [mes réponses aux douze questions les plus fréquentes sur l'IA créative](/blog/questions-frequentes-ia-creative-reponses).
 
 Je ne suis pas juriste et rien ici ne remplace un avis juridique. Pour lire le texte plutôt que les résumés : les [lignes directrices de la Commission sur les obligations de transparence](https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations) et une [lecture détaillée de l'article 50](https://artificialintelligenceact.eu/transparency-rules-article-50/).
 

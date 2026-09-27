@@ -1,7 +1,7 @@
 ---
 title: "Audiovisual Jobs Threatened or Transformed by AI: My Take"
 date: "2026-04-14"
-dateModified: "2026-06-10"
+dateModified: "2026-09-27"
 category: "analyses"
 excerpt: "An honest reading of the jobs that resist, those that recompose, and the skills that become rare when everyone generates 'correct' images."
 thumbnail: "/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/hero.webp"
@@ -112,6 +112,8 @@ He can stay artistically brilliant, but he loses tenders where the budget assume
 | System / charter AD | Medium | Medium | Very strong | Rise if you steer pipelines |
 | Artisanal sound design | Medium | Medium | Strong | Stable to niche rise |
 | Executive production | Low | Medium | Very strong | Stable, rarely "replaceable" |
+
+Whether AI takes your job is one of the questions I get most often, alongside the ones about rights, costs and timelines. All twelve are answered in [my creative AI questions and answers](/en/blog/questions-frequentes-ia-creative-reponses).
 
 ## What becomes rare (therefore precious)
 

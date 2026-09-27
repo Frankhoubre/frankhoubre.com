@@ -1,6 +1,29 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-09-26 (J41 publié)
+## Last run: 2026-09-27 (J42 publié)
+
+### What happened
+- J42 du plan 90 jours publié à la date prévue :
+  `questions-frequentes-ia-creative-reponses` (guides, 14 H2, FAQ finale de
+  8 questions, 4013 mots, 19 liens internes, 4 liens externes, score
+  éditorial 100 / bucket good / 0 flag, 0 issue au seo_audit sur les 3 slugs
+  FR touchés). Le calendrier ne glisse pas : J43 = 2026-09-28
+  (`acteurs-ia-clones-droits-opportunites`, CINEMA, MOYENNE).
+- FAQ longue visant le People Also Ask : douze questions réellement posées en
+  fin de formation, traitées court puis renvoyées vers l'article de fond du
+  cluster concerné. /a-propos et /presse sont poussées comme le plan le
+  demandait ; la route /presse existe bien, l'avertissement du fichier de
+  tâche à son sujet est périmé.
+- Faits neufs vérifiés ce jour et introduits sur le site : le Copyright Office
+  américain écarte explicitement « the mere provision of prompts » (NewsNet
+  1060, 29 janvier 2025), et la Commission européenne confirme qu'aucun
+  étiquetage rétroactif n'est exigé pour le contenu généré avant le 2 août 2026.
+- Version EN publiée le même jour (même slug, mêmes images, aucun YouTube,
+  scanner unslop-text à 0 finding après correction).
+- Miroir EN de metiers-audiovisuel normalisé en LF : 4 erreurs seo_audit
+  héritées du CRLF disparaissent.
+
+## Previous run: 2026-09-26 (J41 publié)
 
 ### What happened
 - J41 du plan 90 jours publié à la date prévue :

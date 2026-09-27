@@ -4,6 +4,7 @@ date: "2026-09-19"
 category: "analyses"
 excerpt: "Ce que l'IA a déjà remplacé sur les plateaux, ce qu'elle ne remplace pas en 2026, et mon pari pour 2030, plan par plan et avec les chiffres."
 thumbnail: "/images/blog/cinema-ia-remplacer-tournages/hero.webp"
+dateModified: "2026-09-27"
 ---
 
 # Cinéma IA : va-t-il remplacer les tournages ? Mon avis
@@ -201,5 +202,7 @@ Scène par scène, en séparant ce que chaque plan achète : performance, lieu, 
 Si le producteur de l'introduction suit cette grille, son premier film aura moins de jours de plateau que prévu, parce que ses scènes de lieu passeront en génération et en incrustation. Il aura plus de prises sur les scènes dialoguées, parce que les jours libérés seront réinvestis là. Et il aura un tournage, un chef opérateur, des comédiens dirigés, et des dizaines de plans que personne n'aura filmés.
 
 C'est ça, l'avenir du cinéma IA tel que je le vois. Le plateau reste, plus petit, réservé à ce que lui seul sait faire.
+
+La peur de voir son métier disparaître arrive dans le lot des questions qu'on me pose le plus, avec celles sur les droits, les coûts et les délais : [mes douze réponses sont regroupées ici](/blog/questions-frequentes-ia-creative-reponses).
 
 Si tu veux une méthode concrète pour dessiner cette frontière sur ton prochain projet, c'est exactement ce que je fais en [prestation avec les équipes de production](/prestation).
