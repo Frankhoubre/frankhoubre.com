@@ -47,6 +47,16 @@ function resendClient(): Resend | null {
   return key ? new Resend(key) : null;
 }
 
+/**
+ * Client pour l'API contacts. La clé de l'intégration Vercel (RESEND_API_KEY)
+ * ne sait qu'envoyer : les contacts et segments demandent une clé « Full
+ * access », posée à part dans RESEND_CONTACTS_API_KEY.
+ */
+function contactsClient(): Resend | null {
+  const key = process.env.RESEND_CONTACTS_API_KEY || process.env.RESEND_API_KEY;
+  return key ? new Resend(key) : null;
+}
+
 export function isResendConfigured(): boolean {
   return Boolean(process.env.RESEND_API_KEY && process.env.RESEND_FROM);
 }
@@ -846,7 +856,7 @@ export async function sendSequenceStep(
 
 /** Supprime le contact de l'audience Resend (suppression RGPD), sans erreur bloquante. */
 export async function removeResendContact(email: string): Promise<void> {
-  const resend = resendClient();
+  const resend = contactsClient();
   if (!resend) return;
   const audienceId = process.env.RESEND_AUDIENCE_ID;
   await resend.contacts.remove(audienceId ? { audienceId, email } : { email });
@@ -869,7 +879,7 @@ export async function syncResendContact(
   firstName: string,
   unsubscribed: boolean,
 ): Promise<void> {
-  const resend = resendClient();
+  const resend = contactsClient();
   const segmentId = process.env.RESEND_SEGMENT_ID;
   const audienceId = process.env.RESEND_AUDIENCE_ID;
   if (!resend || (!segmentId && !audienceId)) return;
@@ -881,9 +891,13 @@ export async function syncResendContact(
       unsubscribed,
       segments: [{ id: segmentId }],
     });
-    if (created.error) {
-      await resend.contacts.update({ email, unsubscribed });
-    }
+    if (!created.error) return;
+    // Contact déjà connu du compte (autre produit) : on le met à jour et on
+    // l'ajoute quand même au segment de la formation.
+    const updated = await resend.contacts.update({ email, unsubscribed });
+    if (updated.error) throw new Error(`contact Resend : ${created.error.message} / ${updated.error.message}`);
+    const added = await resend.contacts.segments.add({ email, segmentId });
+    if (added.error) throw new Error(`segment Resend : ${added.error.message}`);
     return;
   }
 
