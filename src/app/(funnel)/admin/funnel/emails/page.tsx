@@ -51,6 +51,14 @@ export default async function EmailsPage({
           </Notice>
         </div>
       ) : null}
+      {message?.startsWith("annule:") ? (
+        <div className="mt-4">
+          <Notice>
+            {message.split(":")[1]} désinscrit(s) traité(s), {message.split(":")[2]} email(s)
+            programmé(s) annulé(s).
+          </Notice>
+        </div>
+      ) : null}
 
       <Panel index="01" title="Résultats par étape (depuis le début)" id="steps-title" className="mt-8">
         <div className="overflow-x-auto">
@@ -110,6 +118,20 @@ export default async function EmailsPage({
           <span className="max-w-xl text-xs leading-relaxed text-fog">
             Efface les compteurs email (y compris ceux comptés par erreur pour un autre projet du
             compte Resend) et les reconstruit depuis les fiches des inscrits.
+          </span>
+        </form>
+        <form
+          method="post"
+          action="/api/funnel/admin/email-stats"
+          className="mt-4 flex flex-wrap items-center gap-4"
+        >
+          <input type="hidden" name="action" value="cancel-unsubscribed" />
+          <button type="submit" className="btn btn-sm">
+            <span>Annuler les emails des désinscrits</span>
+          </button>
+          <span className="max-w-xl text-xs leading-relaxed text-fog">
+            Annule chez Resend les emails encore programmés pour les personnes désinscrites. Peut
+            prendre plusieurs minutes, une demi-seconde par email.
           </span>
         </form>
       </Panel>

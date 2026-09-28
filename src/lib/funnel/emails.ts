@@ -862,11 +862,25 @@ export async function removeResendContact(email: string): Promise<void> {
   await resend.contacts.remove(audienceId ? { audienceId, email } : { email });
 }
 
-/** Annule les emails encore programmés (désinscription). */
-export async function cancelScheduledEmails(ids: string[]): Promise<void> {
-  const resend = resendClient();
-  if (!resend) return;
-  await Promise.allSettled(ids.map((id) => resend.emails.cancel(id)));
+/**
+ * Annule les emails encore programmés (désinscription). Passe par la clé Full
+ * access : la clé d'envoi est refusée sur l'annulation. Un appel à la fois,
+ * sous la limite Resend de 2 requêtes par seconde. Un email déjà parti
+ * répond en erreur, ce qui est attendu.
+ */
+export async function cancelScheduledEmails(
+  ids: string[],
+): Promise<{ cancelled: number; failed: number }> {
+  const resend = contactsClient();
+  if (!resend) return { cancelled: 0, failed: ids.length };
+  let cancelled = 0;
+  for (const [i, id] of ids.entries()) {
+    if (i) await new Promise((r) => setTimeout(r, 550));
+    const { error } = await resend.emails.cancel(id);
+    if (!error) cancelled++;
+    else if (error.name === "restricted_api_key") console.error("[funnel] annulation Resend", error.message);
+  }
+  return { cancelled, failed: ids.length - cancelled };
 }
 
 /**
