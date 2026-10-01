@@ -54,7 +54,7 @@ article block goes below this line.
 - cta: ScreenWeaver bridge (casting décidé à l'écriture)
 - cannibalization_notes: checked against droits-auteur-images-generees-ia (PI des images générées), marques-publicites-ia-risque-juridique (point de vue annonceur), metiers-audiovisuel-ia-menaces-transformation-avis (chiffres d'emploi) ; distinct parce que J43 ne traite que la personne de l'interprète, son droit à la voix et à l'image, les répliques numériques et les circuits de licence
 - checker: pass (cycles: 2)
-- published_commit: <sha>
+- published_commit: fc47678
 
 ### 2026-10-01 — AI actor clones: your rights, contracts and the market
 - slug: acteurs-ia-clones-droits-opportunites
@@ -70,7 +70,7 @@ article block goes below this line.
 - cta: ScreenWeaver bridge
 - cannibalization_notes: mirror of the FR article, same slug, no YouTube link
 - checker: pass (cycles: 2)
-- published_commit: <sha>
+- published_commit: fc47678
 
 ### 2026-09-27 : Questions sur l'IA créative : mes 12 réponses de terrain
 - slug: questions-frequentes-ia-creative-reponses
