@@ -125,6 +125,40 @@ Aucun blocage. 0 erreurs SEO. Build 521 pages PASS. Merge fast-forward. Push OK.
 
 ## OPEN
 
+### B4 — Déploiement Vercel non déclenché pour le commit J43 (OUVERT 2026-10-01)
+
+Le run J43 a poussé `fc47678` sur `main` à 10h07 (puis `009befa`). Trente-cinq
+minutes plus tard, `https://frankhoubre.com/blog/acteurs-ia-clones-droits-opportunites`
+et sa version EN renvoient toujours 404, y compris avec une chaîne de requête
+anti-cache (`X-Vercel-Cache: HIT` sur la 404, donc la 404 est bien servie par
+l'origine, pas par un cache périmé). Le fichier hero en `/images/blog/...`
+renvoie 404 lui aussi, et le `sitemap.xml` de production ne contient pas le
+nouveau slug.
+
+Ce qui est vérifié de notre côté :
+
+- `npm run build` local PASS, 633 pages générées, dont
+  `.next/server/app/blog/acteurs-ia-clones-droits-opportunites.html` et
+  `.next/server/app/en/blog/acteurs-ia-clones-droits-opportunites.html`.
+- `lint`, `typecheck`, `seo_audit` (0 issue sur les slugs touchés) et
+  `editorial_audit` PASS.
+- `git log origin/main` confirme que les deux commits sont bien sur le remote.
+- La production répond 200 sur la home et sur les articles antérieurs (J41,
+  J42), donc le site est en ligne : c'est le build du nouveau commit qui
+  manque.
+
+Hypothèses à vérifier avec un accès Vercel (impossible depuis le loop, pas de
+CLI authentifiée dans cet environnement) : build en file d'attente ou en
+échec, hook GitHub désactivé, ou quota de build atteint. Les deux commits
+précédents du dépôt (`f412c06` et `77f185b`, correctifs funnel du 28 septembre)
+n'ont pas non plus d'empreinte publique vérifiable, donc le blocage peut dater
+d'avant ce run.
+
+Action pour le prochain run : vérifier d'abord si le slug J43 est passé en 200.
+S'il est toujours en 404, ne pas republier l'article, signaler le problème de
+déploiement à Frank et poursuivre sur J44 normalement, le contenu étant déjà
+dans le dépôt.
+
 ### B1 — Concurrent translation loop sharing the repo (HIGH, structural)
 Discovered 2026-06-17. Another Claude Code session is running an EN-translation
 loop in this same working directory, committing to `main` every ~90s, writing

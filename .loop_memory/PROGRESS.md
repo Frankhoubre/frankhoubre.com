@@ -20,6 +20,11 @@
   headless comme il bloque WebFetch (lecture possible seulement via le
   navigateur intégré), et `render_blog_queue_nanobanana.py` doit être lancé
   depuis PowerShell, pas Git Bash, à cause de la conversion du `--dest`.
+- DÉPLOIEMENT EN ATTENTE : 35 minutes après le push de `fc47678`, la
+  production renvoie encore 404 sur les deux slugs, sitemap compris, alors
+  que la home et J41/J42 répondent 200. Consigné en B4 dans
+  ERRORS_AND_BLOCKERS.md. Au prochain run, vérifier d'abord si le slug est
+  passé en 200 avant de toucher à quoi que ce soit.
 - Pré-existant, non corrigé : le seo_audit remonte 1895 erreurs
   « Missing title / date / category / excerpt » dues au CRLF committé sur la
   majorité des fichiers du repo. Hors scope d'un run d'article.
