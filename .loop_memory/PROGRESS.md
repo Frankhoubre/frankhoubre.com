@@ -1,5 +1,31 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
+## Last run: 2026-10-01 (J43 publié)
+
+### What happened
+- J43 du plan 90 jours publié avec 3 jours de retard (aucun run les 28, 29 et
+  30 septembre) : `acteurs-ia-clones-droits-opportunites` (analyses, 8 H2 +
+  FAQ de 8 questions + conclusion, ~4380 mots, 5 liens internes, 3 liens
+  externes d'autorité, 2 tableaux comparatifs, 0 issue au seo_audit sur les
+  5 slugs touchés FR et EN). Le calendrier glisse de 3 jours : J44 =
+  2026-10-02 (`signature-visuelle-style-auteur-ia`, PROD, MOYENNE).
+- Version EN publiée le même jour sur le même slug, route
+  `/en/blog/acteurs-ia-clones-droits-opportunites`, mêmes images, aucun lien
+  YouTube.
+- Fait neuf pour le site : l'arrêt Cass. 1re civ. 24 juin 2026 n° 25-20.483
+  reconnaît la voix comme attribut de la personnalité protégé par l'article 9
+  du code civil, avec mise en balance contre la liberté d'expression. Capture
+  Légifrance du paragraphe 13 dans l'article.
+- Pièges du run notés dans PUBLISH_LOG : sagaftra.org bloque Playwright
+  headless comme il bloque WebFetch (lecture possible seulement via le
+  navigateur intégré), et `render_blog_queue_nanobanana.py` doit être lancé
+  depuis PowerShell, pas Git Bash, à cause de la conversion du `--dest`.
+- Pré-existant, non corrigé : le seo_audit remonte 1895 erreurs
+  « Missing title / date / category / excerpt » dues au CRLF committé sur la
+  majorité des fichiers du repo. Hors scope d'un run d'article.
+
+### Ancien état (archive)
+
 ## Last run: 2026-09-27 (J42 publié)
 
 ### What happened

@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-09-27T08:05:40.600Z
+> Generated: 2026-10-01T08:13:06.664Z
 
-## FR : 320 articles (/blog/<slug>)
+## FR : 321 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 16, guides 15, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 17, guides 15, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-01 | analyses | `acteurs-ia-clones-droits-opportunites` | Acteur et clone IA : droits, contrats et opportunités |
 | 2026-09-27 | guides | `questions-frequentes-ia-creative-reponses` | Questions sur l'IA créative : mes 12 réponses de terrain |
 | 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Vivre de la vidéo IA en 2026 : les modèles qui tiennent |
 | 2026-09-24 | business | `screenweaver-lecons-saas-creatif` | Créer un SaaS créatif : les leçons de ScreenWeaver |
@@ -332,12 +333,13 @@ Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 234 articles (/en/blog/<slug>)
+## EN : 235 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, business 15, actualite 14, comparatifs 14, analyses 6, guides 3, notes 1, postproduction 1
+Categories: tutoriels 180, business 15, actualite 14, comparatifs 14, analyses 7, guides 3, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-01 | analyses | `acteurs-ia-clones-droits-opportunites` | AI actor clones: your rights, contracts and the market |
 | 2026-09-27 | guides | `questions-frequentes-ia-creative-reponses` | Creative AI questions: my 12 answers from the trenches |
 | 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Living off AI video in 2026: the models that hold up |
 | 2026-07-26 | tutoriels | `audit-qualite-portfolio-ia-avant-demo-reel` | AI Portfolio Quality Audit Before the Demo Reel |

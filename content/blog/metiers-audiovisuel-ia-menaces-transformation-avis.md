@@ -95,7 +95,7 @@ Ce métier gagne en valeur si la personne sait intégrer des workflows IA sans p
 
 ### Acteurs, talents, casting
 
-La menace la plus sensible est le **deepfake** et le clonage vocal sans cadre. Le métier d'acteur ne meurt pas, mais certaines utilisations commerciales deviennent des zones de négociation contractuelle intense. Les acteurs qui comprennent leur image comme un **actif** et savent négocier des droits clairs restent indispensables.
+La menace la plus sensible est le **deepfake** et le clonage vocal sans cadre. Le métier d'acteur ne meurt pas, mais certaines utilisations commerciales deviennent des zones de négociation contractuelle intense. Les acteurs qui comprennent leur image comme un **actif** et savent négocier des droits clairs restent indispensables. Le détail du cadre juridique, des clauses à vérifier et des circuits de licence existants est dans [l'article sur les acteurs face aux clones numériques](/blog/acteurs-ia-clones-droits-opportunites).
 
 ### Technicien plateau, image, son
 

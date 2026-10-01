@@ -101,7 +101,7 @@ Third frequent mistake, the voice detached from the set. It is clean, but floats
 
 Fourth problem, rigid lip sync. The words stick but the performance seems mechanical. Here, you must accept a slight natural offset, rework the intention, and sometimes simplify the sentence. The audience forgives a micro lip imperfection. It does not forgive a false emotion.
 
-Fifth trap, wanting to clone a celebrity or an identifiable voice with no legal frame. It is a legal bomb for a pro project. Use authorized voices, document your rights, and maintain a clear traceability of the audio sources. If you monetize your content, this discipline is non-negotiable.
+Fifth trap, wanting to clone a celebrity or an identifiable voice with no legal frame. It is a legal bomb for a pro project. Use authorized voices, document your rights, and maintain a clear traceability of the audio sources. If you monetize your content, this discipline is non-negotiable. For the case law and the contract clauses behind that rule, see [the article on actors and AI clones](/en/blog/acteurs-ia-clones-droits-opportunites).
 
 To go deeper into the legal and commercial part around AI production, you can read [our guide on selling AI videos to professional clients](/en/blog/comment-vendre-videos-ia-clients-professionnels). And if you want to structure your complete project from the scene to the final render, pick up [our complete workflow from an idea to a realistic AI film](/en/blog/workflow-complet-idee-film-ia-realiste). And if the job is to carry that voice into other languages, the [HeyGen vs ElevenLabs comparison](/en/blog/heygen-elevenlabs-comparatif) now covers dubbing credit by credit, including which of the two moves the lips.
 

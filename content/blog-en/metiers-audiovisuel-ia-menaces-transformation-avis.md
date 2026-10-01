@@ -71,7 +71,7 @@ This job gains value if the person knows how to integrate AI workflows without p
 
 ### Actors, talents, casting
 
-The most sensitive threat is the **deepfake** and the vocal cloning with no frame. The actor's job does not die, but certain commercial uses become zones of intense contractual negotiation. The actors who understand their image as an **asset** and know how to negotiate clear rights stay indispensable.
+The most sensitive threat is the **deepfake** and the vocal cloning with no frame. The actor's job does not die, but certain commercial uses become zones of intense contractual negotiation. The actors who understand their image as an **asset** and know how to negotiate clear rights stay indispensable. The legal frame, the clauses to check and the licensing routes that already exist are covered in [the article on actors and AI clones](/en/blog/acteurs-ia-clones-droits-opportunites).
 
 ### Set, image, sound technician
 

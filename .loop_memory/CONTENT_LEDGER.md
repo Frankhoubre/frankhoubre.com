@@ -40,6 +40,38 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-01 — Acteur et clone IA : droits, contrats et opportunités
+- slug: acteurs-ia-clones-droits-opportunites
+- locale: fr
+- url: https://frankhoubre.com/blog/acteurs-ia-clones-droits-opportunites
+- category: analyses
+- type: evergreen
+- search_intent: informational
+- primary_keyword: acteur ia clone
+- secondary_keywords: réplique numérique acteur, clonage voix ia droit, performer synthétique, droit à la voix ia
+- sources: https://www.legifrance.gouv.fr/juri/id/JURITEXT000054339869, https://www.sagaftra.org/california-law-now-requires-disclosure-ai-generated-performances-advertising, https://www.franceinfo.fr/culture/cinema/quelle-legislation-en-france-pour-proteger-les-comediens-de-doublage-contre-le-clonage-de-leur-voix-par-intelligence-artificielle_7833881.html
+- internal_links: acteurs-ia-clones-droits-opportunites -> marques-publicites-ia-risque-juridique, comment-diriger-personnage-ia-comme-acteur, personnages-coherents-plusieurs-images-ia, doublage-voix-off-cloner-diriger-voix-film, metiers-audiovisuel-ia-menaces-transformation-avis ; entrants : marques-publicites-ia-risque-juridique -> acteurs-ia-clones-droits-opportunites, metiers-audiovisuel-ia-menaces-transformation-avis -> acteurs-ia-clones-droits-opportunites
+- cta: ScreenWeaver bridge (casting décidé à l'écriture)
+- cannibalization_notes: checked against droits-auteur-images-generees-ia (PI des images générées), marques-publicites-ia-risque-juridique (point de vue annonceur), metiers-audiovisuel-ia-menaces-transformation-avis (chiffres d'emploi) ; distinct parce que J43 ne traite que la personne de l'interprète, son droit à la voix et à l'image, les répliques numériques et les circuits de licence
+- checker: pass (cycles: 2)
+- published_commit: <sha>
+
+### 2026-10-01 — AI actor clones: your rights, contracts and the market
+- slug: acteurs-ia-clones-droits-opportunites
+- locale: en
+- url: https://frankhoubre.com/en/blog/acteurs-ia-clones-droits-opportunites
+- category: analyses
+- type: evergreen
+- search_intent: informational
+- primary_keyword: ai actor clone
+- secondary_keywords: digital replica actor, synthetic performer, voice cloning rights, sag-aftra ai rules
+- sources: https://www.legifrance.gouv.fr/juri/id/JURITEXT000054339869, https://www.sagaftra.org/california-law-now-requires-disclosure-ai-generated-performances-advertising
+- internal_links: acteurs-ia-clones-droits-opportunites -> droits-auteur-images-generees-ia, comment-diriger-personnage-ia-comme-acteur, personnages-coherents-plusieurs-images-ia, doublage-voix-off-cloner-diriger-voix-film, metiers-audiovisuel-ia-menaces-transformation-avis ; entrants : metiers-audiovisuel-ia-menaces-transformation-avis -> acteurs-ia-clones-droits-opportunites, doublage-voix-off-cloner-diriger-voix-film -> acteurs-ia-clones-droits-opportunites
+- cta: ScreenWeaver bridge
+- cannibalization_notes: mirror of the FR article, same slug, no YouTube link
+- checker: pass (cycles: 2)
+- published_commit: <sha>
+
 ### 2026-09-27 : Questions sur l'IA créative : mes 12 réponses de terrain
 - slug: questions-frequentes-ia-creative-reponses
 - locale: fr + en (même slug, route EN /en/blog/questions-frequentes-ia-creative-reponses)
