@@ -181,6 +181,7 @@ Pour le vocabulaire de la direction artistique, voir [direction artistique](http
 - [Comment écrire un prompt pour un personnage réaliste et constant](/blog/comment-ecrire-prompt-personnage-realiste-constant)
 - [Comment contrôler le style visuel en génération IA](/blog/comment-controler-style-visuel-generation-ia)
 - [Comment structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)
+- [Style visuel du réalisateur IA : construire sa signature](/blog/signature-visuelle-style-auteur-ia), pour ce qui reste de ton regard quand le projet est fini
 
 ## Frequently Asked Questions (FAQ)
 

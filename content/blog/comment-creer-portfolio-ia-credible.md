@@ -374,6 +374,8 @@ Un portfolio plus court mais plus cohérent bat presque toujours un portfolio en
 
 Dernière règle simple: si tu hésites à montrer un projet, c'est qu'il doit sortir. L'hésitation est presque toujours un signal de faiblesse perçue.
 
+Si le tri est difficile parce que tes projets ne se ressemblent pas assez, le problème est en amont du portfolio. Va travailler ta [signature visuelle de réalisateur IA](/blog/signature-visuelle-style-auteur-ia) d'abord, la sélection devient évidente ensuite.
+
 ## Conclusion opérationnelle
 
 Un portfolio IA crédible est un argumentaire visuel. Il prouve usage, méthode, finition, et sérieux commercial.

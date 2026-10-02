@@ -374,6 +374,8 @@ A shorter but more consistent portfolio almost always beats an inconsistent ency
 
 A last simple rule: if you hesitate to show a project, it must go out. Hesitation is almost always a signal of perceived weakness.
 
+If the sort is hard because your projects do not look enough alike, the problem sits upstream of the portfolio. Go work on your [AI director visual style](/en/blog/signature-visuelle-style-auteur-ia) first, and the selection becomes obvious afterwards.
+
 ## Operational conclusion
 
 A credible AI portfolio is a visual pitch. It proves use, method, finishing, and commercial seriousness.

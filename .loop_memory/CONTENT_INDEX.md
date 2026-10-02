@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-01T08:13:06.664Z
+> Generated: 2026-10-02T08:13:50.088Z
 
-## FR : 321 articles (/blog/<slug>)
+## FR : 322 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 17, guides 15, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 17, guides 16, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-02 | guides | `signature-visuelle-style-auteur-ia` | Style visuel du réalisateur IA : construire sa signature |
 | 2026-10-01 | analyses | `acteurs-ia-clones-droits-opportunites` | Acteur et clone IA : droits, contrats et opportunités |
 | 2026-09-27 | guides | `questions-frequentes-ia-creative-reponses` | Questions sur l'IA créative : mes 12 réponses de terrain |
 | 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Vivre de la vidéo IA en 2026 : les modèles qui tiennent |
@@ -333,12 +334,13 @@ Categories: tutoriels 190, actualite 53, business 25, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 235 articles (/en/blog/<slug>)
+## EN : 236 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, business 15, actualite 14, comparatifs 14, analyses 7, guides 3, notes 1, postproduction 1
+Categories: tutoriels 180, business 15, actualite 14, comparatifs 14, analyses 7, guides 4, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-02 | guides | `signature-visuelle-style-auteur-ia` | AI director visual style: building your signature |
 | 2026-10-01 | analyses | `acteurs-ia-clones-droits-opportunites` | AI actor clones: your rights, contracts and the market |
 | 2026-09-27 | guides | `questions-frequentes-ia-creative-reponses` | Creative AI questions: my 12 answers from the trenches |
 | 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Living off AI video in 2026: the models that hold up |

@@ -181,6 +181,7 @@ For the art direction vocabulary, see [art director](https://en.wikipedia.org/wi
 - [How to write a prompt for a realistic, consistent character](/en/blog/comment-ecrire-prompt-personnage-realiste-constant)
 - [How to control visual style in AI generation](/en/blog/comment-controler-style-visuel-generation-ia)
 - [How to structure an AI video like a real film](/en/blog/comment-structurer-video-ia-comme-vrai-film)
+- [AI director visual style: building your signature](/en/blog/signature-visuelle-style-auteur-ia), for what is left of your eye once the project is over
 
 ## FAQ
 
