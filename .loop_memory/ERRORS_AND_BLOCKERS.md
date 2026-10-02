@@ -159,6 +159,47 @@ S'il est toujours en 404, ne pas republier l'article, signaler le problème de
 déploiement à Frank et poursuivre sur J44 normalement, le contenu étant déjà
 dans le dépôt.
 
+**Mise à jour du 2026-10-02 (run J44).** Toujours ouvert, et aggravé : plus de
+24 heures après le push, les deux slugs J43 répondent encore 404 en production
+(FR et EN), le `sitemap.xml` en ligne compte 605 URL et ne contient toujours pas
+le slug, alors que J41, J42 et la home répondent 200. Le contenu est bien sur
+`origin/main`, vérifié avec `git cat-file -e origin/main:content/blog/...`. Le
+run J44 a été poussé normalement (`d77535d`) comme prévu par l'action ci-dessus.
+Si J43 ET J44 sont encore en 404 au prochain run, le problème n'est plus un
+build isolé : il faut que Frank ouvre le dashboard Vercel du projet et regarde
+l'onglet Deployments (build en échec, intégration GitHub déconnectée, ou quota).
+Rien de tout cela ne se diagnostique depuis le loop, il n'y a pas de CLI Vercel
+authentifiée sur la machine.
+
+### B5 — Les 1879 erreurs « Missing title » du seo_audit sont un artefact LOCAL, pas un CRLF commité (CONSTATÉ 2026-10-02)
+
+Correction d'un diagnostic faux traîné depuis plusieurs runs. Les logs J41, J42
+et J43 affirment que le CRLF est « commité dans git, pas un effet de
+core.autocrlf ». C'est l'inverse. Vérifié ce jour :
+
+- `git config core.autocrlf` renvoie `true` sur cette machine.
+- Le dépôt ne contient aucun `.gitattributes`.
+- `git cat-file -p HEAD:content/blog/comment-creer-portfolio-ia-credible.md |
+  tr -cd '' | wc -c` renvoie **0**. Les blobs stockés sont en LF pur.
+
+Donc le CRLF est fabriqué au checkout par `core.autocrlf=true`, il n'existe que
+dans la copie de travail de Frank, et la production n'a jamais été concernée.
+Conséquence pratique : **normaliser des fichiers en LF à la main ne sert à rien**,
+git les reconvertira au prochain checkout et les erreurs reviendront. Les runs
+J41, J42 et J44 ont fait ce travail pour rien (il est inoffensif, le diff reste
+propre, mais c'est du temps perdu).
+
+Le vrai correctif, une seule fois, au choix de Frank :
+
+- `git config core.autocrlf input` dans ce dépôt, puis
+  `git rm --cached -r . && git reset --hard` pour re-sortir les fichiers en LF ;
+- ou committer un `.gitattributes` avec `*.md text eol=lf`, ce qui fige le
+  comportement pour toutes les machines.
+
+Non fait ici : changer la configuration git du dépôt sort du périmètre d'un run
+d'article, et la seconde option modifie le checkout de tous les fichiers du
+dépôt d'un coup. À trancher par Frank.
+
 ### B1 — Concurrent translation loop sharing the repo (HIGH, structural)
 Discovered 2026-06-17. Another Claude Code session is running an EN-translation
 loop in this same working directory, committing to `main` every ~90s, writing

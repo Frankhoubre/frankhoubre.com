@@ -40,6 +40,25 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-02 — Style visuel du réalisateur IA : construire sa signature
+- slug: signature-visuelle-style-auteur-ia
+- locale: fr + en (même slug, publiés le même jour)
+- url: https://frankhoubre.com/blog/signature-visuelle-style-auteur-ia
+- url_en: https://frankhoubre.com/en/blog/signature-visuelle-style-auteur-ia
+- category: guides
+- type: evergreen
+- search_intent: informational
+- primary_keyword: style visuel réalisateur ia
+- secondary_keywords: signature visuelle ia, style d'auteur ia, personnalisation midjourney, charte visuelle, droit d'auteur style
+- sources: https://docs.midjourney.com/hc/en-us/articles/32433330574221-Personalization, https://www.inpi.fr/ressources/propriete-intellectuelle/droit-dauteur, https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-1-Digital-Replicas-Report.pdf
+- internal_links: signature-visuelle-style-auteur-ia -> comment-creer-univers-visuel-coherent-avec-ia, comment-controler-style-visuel-generation-ia, midjourney-sref-references-style, limites-ia-direction-artistique, comment-penser-comme-realisateur-avec-ia, audit-qualite-portfolio-ia-avant-demo-reel, comment-creer-portfolio-ia-credible ; entrants réciproques : comment-creer-univers-visuel-coherent-avec-ia -> signature-visuelle-style-auteur-ia, comment-creer-portfolio-ia-credible -> signature-visuelle-style-auteur-ia (FR et EN)
+- cta: none (aucune mention ScreenWeaver forcée, pas d'angle naturel sur ce sujet)
+- cannibalization_notes: contrôlé contre comment-creer-univers-visuel-coherent-avec-ia et comment-controler-style-visuel-generation-ia, les deux cibles nommées par le plan. Distinct parce que les deux existants restent techniques et intra-projet (bible, références, LUT, pilotage du style dans une génération) alors que J44 ne traite que ce qui survit au changement de projet : identité d'auteur, audit rétrospectif, charte, portfolio, statut juridique. Le premier tableau de l'article délimite les deux périmètres ligne par ligne.
+- images: hero Nano Banana 2 (grille de 30 tirages au sol d'un appartement vide, soleil de fin d'après-midi) + 2 captures réelles Playwright HEADFUL 1600x900 (docs.midjourney.com Personalization, inpi.fr droit d'auteur)
+- checker: pass (lint, typecheck, build 635 pages, seo_audit 0 issue sur les slugs touchés, editorial_audit GOOD sans flag)
+- published_commit: d77535d
+- deploy: BLOQUÉ côté Vercel au moment du run, voir B4 dans ERRORS_AND_BLOCKERS.md
+
 ### 2026-10-01 — Acteur et clone IA : droits, contrats et opportunités
 - slug: acteurs-ia-clones-droits-opportunites
 - locale: fr

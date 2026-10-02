@@ -1,6 +1,52 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-01 (J43 publié)
+## Last run: 2026-10-02 (J44 publié)
+
+### What happened
+- J44 du plan 90 jours publié à la date prévue :
+  `signature-visuelle-style-auteur-ia` (guides, 11 H2 + FAQ de 7 questions +
+  conclusion, 4047 mots, 7 liens internes, 3 liens externes d'autorité,
+  2 tableaux comparatifs, 3 images, 0 issue au seo_audit sur les 6 slugs
+  touchés FR et EN, editorial_audit bucket GOOD sans flag). Le calendrier ne
+  glisse pas : J45 = 2026-10-03
+  (`former-equipe-creative-ia-protocole-30-jours`, B2B, HAUTE).
+- Version EN publiée le même jour sur le même slug, route
+  `/en/blog/signature-visuelle-style-auteur-ia`, mêmes images, aucun lien
+  YouTube, scanner unslop-text à 0 finding.
+- Angle imposé par le plan et respecté : identité d'auteur et portfolio, pas
+  technique. Les deux articles voisins gardent leur terrain (cohérence interne
+  d'un projet pour `comment-creer-univers-visuel-coherent`, pilotage technique
+  du style pour `comment-controler-style-visuel`), et le premier tableau de
+  l'article pose explicitement la frontière entre les trois.
+- Faits neufs pour le site : les paramètres de personnalisation Midjourney
+  (`--p`, moodboards en `--p mID` incompatibles avec `--sv` et `--sw`,
+  `--stylize` de 0 à 1000 avec 100 par défaut), et le fait qu'aucun droit
+  d'auteur ne protège un style (INPI côté français, rapport Digital Replicas
+  de juillet 2024 côté américain, p. 66 et p. 12).
+- Pièges du run notés dans PUBLISH_LOG : docs.midjourney.com est derrière
+  Cloudflare (403 à WebFetch, challenge à Playwright headless, la capture ne
+  passe qu'en HEADFUL) ; le PDF du Copyright Office n'est pas lisible par
+  WebFetch et demande pypdf ; `networkidle` time out sur les pages à lecteur
+  vidéo, prévoir un fallback `load`.
+- **DIAGNOSTIC CORRIGÉ, à lire avant de re-normaliser quoi que ce soit.** Les
+  ~1880 erreurs « Missing title / date / category / excerpt » du seo_audit ne
+  viennent pas d'un CRLF commité. `core.autocrlf` vaut `true` sur cette
+  machine, il n'y a pas de `.gitattributes`, et les blobs stockés sont en LF
+  pur. Le CRLF est fabriqué au checkout, il ne concerne que la copie de
+  travail, la production n'a jamais été affectée, et normaliser à la main ne
+  survit pas au checkout suivant. Détail et correctifs possibles en B5 dans
+  ERRORS_AND_BLOCKERS.md, à trancher par Frank.
+- **DÉPLOIEMENT TOUJOURS BLOQUÉ (B4).** Plus de 24 h après le push de J43,
+  J43 et J44 répondent encore 404 en production (FR et EN), le sitemap en
+  ligne ne les contient pas, alors que la home, J41 et J42 répondent 200 et
+  que le build local passe avec les quatre pages prérendues. Le contenu est
+  bien sur `origin/main`. Rien à corriger côté dépôt : il faut que Frank
+  ouvre l'onglet Deployments du projet sur Vercel. Au prochain run, revérifier
+  les deux slugs avant toute action et ne surtout pas republier.
+
+### Ancien état (archive)
+
+## Previous run: 2026-10-01 (J43 publié)
 
 ### What happened
 - J43 du plan 90 jours publié avec 3 jours de retard (aucun run les 28, 29 et
@@ -28,8 +74,6 @@
 - Pré-existant, non corrigé : le seo_audit remonte 1895 erreurs
   « Missing title / date / category / excerpt » dues au CRLF committé sur la
   majorité des fichiers du repo. Hors scope d'un run d'article.
-
-### Ancien état (archive)
 
 ## Last run: 2026-09-27 (J42 publié)
 
