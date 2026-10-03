@@ -1,7 +1,7 @@
 ---
 title: "Former une équipe créative interne à la vidéo IA"
 date: "2026-07-25"
-dateModified: "2026-09-12"
+dateModified: "2026-10-03"
 category: "tutoriels"
 excerpt: "Programme 4 semaines, exercices, QA commune et montée en compétence sans sacrifier la charte marque."
 thumbnail: "/images/blog/formation-interne-equipe-creative-ia/hero.webp"
@@ -121,6 +121,8 @@ La lumière dure n’est pas une erreur en soi. L’erreur, c’est une lumière
 Le format vertical impose une autre lecture. Un plan large horizontal raconte l’environnement. Un vertical demande un sujet clair, une ligne forte, peu d’éléments parasites sur les bords. Si tu recadres un horizontal en vertical sans repenser la compo, tu obtiens des têtes coupées et des mains qui entrent par surprise.
 
 ![Workflow de sélection et timeline pour Former une équipe créative interne à la vidéo IA](/images/blog/formation-interne-equipe-creative-ia/workflow-1.webp)
+
+Ce programme dit ce qu'on enseigne et comment on juge. Pour le volet opérationnel, c'est-à-dire le calendrier daté, les chiffres à relever avant de commencer, le coût en heures et la décision de fin, j'ai détaillé [mon protocole en 30 jours pour former une équipe à l'IA](/blog/former-equipe-creative-ia-protocole-30-jours), qui inclut aussi ce que l'article 4 du règlement européen attend des employeurs.
 
 ## Troubleshooting : ce que les débutants cassent
 

@@ -1,6 +1,30 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-02 (J44 publié)
+## Last run: 2026-10-03 (J45 publie)
+
+### What happened
+- J45 du plan 90 jours publie a la date prevue :
+  `former-equipe-creative-ia-protocole-30-jours` (business, 11 H2 + FAQ de
+  7 questions + conclusion, 4433 mots, 7 liens internes, 3 liens externes
+  d'autorite tous officiels europa.eu, 2 tableaux, 3 images, 0 issue au
+  seo_audit sur les 6 slugs touches FR et EN, editorial_audit sans aucun
+  flag). Le calendrier ne glisse pas : J46 = 2026-10-04
+  (`adapter-livre-film-ia-methode-droits`, CINEMA, BASSE).
+- Version EN publiee le meme jour sur le meme slug, route
+  `/en/blog/former-equipe-creative-ia-protocole-30-jours`, memes images,
+  aucun lien ni embed YouTube, 6 liens internes EN tous existants. Pas de CTA
+  /prestation cote EN : cette route n'existe qu'en FR.
+- Colonne vertebrale factuelle neuve pour le site : l'article 4 du reglement
+  (UE) 2024/1689 sur la maitrise de l'IA, applicable depuis le 2026-02-02,
+  dans sa version reecrite par le reglement (UE) 2026/1744 (Digital Omnibus),
+  avec la surveillance par les autorites nationales de surveillance du marche
+  depuis le 2026-08-02. Tout est source sur europa.eu et prouve par les
+  2 captures de l'article.
+- Pieges outillage notes au plan et au PUBLISH_LOG : Playwright HEADFUL se
+  ferme tout seul sur europa.eu (headless=True passe), et
+  scroll_into_view_if_needed ne sert a rien si l'element est deja dans le
+  viewport mais sous la ligne de crop 16:9 (utiliser window.scrollTo avec un
+  offset regle a la main).
 
 ### What happened
 - J44 du plan 90 jours publié à la date prévue :

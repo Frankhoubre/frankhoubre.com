@@ -1,7 +1,7 @@
 ---
 title: "Audiovisual Jobs Threatened or Transformed by AI: My Take"
 date: "2026-04-14"
-dateModified: "2026-09-27"
+dateModified: "2026-10-03"
 category: "analyses"
 excerpt: "An honest reading of the jobs that resist, those that recompose, and the skills that become rare when everyone generates 'correct' images."
 thumbnail: "/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/hero.webp"
@@ -114,6 +114,8 @@ He can stay artistically brilliant, but he loses tenders where the budget assume
 | Executive production | Low | Medium | Very strong | Stable, rarely "replaceable" |
 
 Whether AI takes your job is one of the questions I get most often, alongside the ones about rights, costs and timelines. All twelve are answered in [my creative AI questions and answers](/en/blog/questions-frequentes-ia-creative-reponses).
+
+Whatever your role, the employer side of this has a deadline now. Article 4 of the European AI Act has required measures supporting staff AI literacy since February 2025, and I turned that into a workable calendar in [my 30 day protocol for training a team on AI](/en/blog/former-equipe-creative-ia-protocole-30-jours).
 
 ## What becomes rare (therefore precious)
 

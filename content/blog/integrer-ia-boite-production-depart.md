@@ -1,6 +1,7 @@
 ---
 title: "Intégrer l'IA dans une boîte de production en 6 semaines"
 date: "2026-08-26"
+dateModified: "2026-10-03"
 category: "guides"
 excerpt: "Par où démarrer quand une boîte de prod passe à l'IA : le livrable à choisir, le pilote de six semaines, le coût réel et la loi depuis août 2026."
 thumbnail: "/images/blog/integrer-ia-boite-production-depart/hero.webp"
@@ -151,6 +152,8 @@ Trois chiffres suffisent, à condition de les avoir relevés en semaine 2 et pas
 Il y en a un quatrième, impossible à mettre en tableau : est-ce que quelqu'un d'autre que le référent a envie de reprendre le workflow ? Si personne ne se propose en semaine 6, l'usage ne survivra pas aux vacances du référent.
 
 Si les trois s'améliorent, tu généralises sur un deuxième livrable et tu recommences le cycle. Si un seul s'améliore, tu gardes l'usage sans l'étendre. Si aucun ne bouge, tu arrêtes et tu écris pourquoi. Cette note de deux pages t'évitera de refaire le même pilote dans dix-huit mois quand un nouvel outil sortira.
+
+Une fois le pilote validé, la question suivante est celle de la montée en compétence du reste de l'équipe. Je la traite jour par jour dans [mon protocole de 30 jours pour former une équipe créative à l'IA](/blog/former-equipe-creative-ia-protocole-30-jours), avec la ligne de base à relever, le test en aveugle et le go / no-go de fin.
 
 Un an plus tard, quand plusieurs chaînes tournent et que plus personne ne sait vraiment ce qui est payé ni où le temps part, l'exercice change de nature : on ne démarre plus, on mesure l'existant. C'est le sujet de ma méthode d'[audit de workflow IA en entreprise](/blog/audit-workflow-ia-methode-mission), avec l'inventaire, les mesures et le livrable que je rends en fin de mission.
 

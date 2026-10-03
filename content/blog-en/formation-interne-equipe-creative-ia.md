@@ -1,6 +1,7 @@
 ---
 title: "Training an Internal Creative Team in AI Video"
 date: "2026-07-25"
+dateModified: "2026-10-03"
 category: "tutoriels"
 excerpt: "A 4-week program, exercises, shared QA and skill-building without sacrificing the brand charter."
 thumbnail: "/images/blog/formation-interne-equipe-creative-ia/hero.webp"
@@ -116,6 +117,8 @@ The hard light is not an error in itself. The error is a hard light with no dire
 The vertical format imposes a different reading. A wide horizontal shot tells the environment. A vertical demands a clear subject, a strong line, few parasitic elements on the edges. If you reframe a horizontal into a vertical without rethinking the composition, you get cut-off heads and hands that enter by surprise.
 
 ![Selection workflow and timeline for Training an internal creative team in AI video](/images/blog/formation-interne-equipe-creative-ia/workflow-1.webp)
+
+This programme covers what you teach and how you judge. For the operational half, meaning the dated calendar, the numbers to record before you start, the cost in hours and the closing decision, I laid out [my 30 day protocol for training a team on AI](/en/blog/former-equipe-creative-ia-protocole-30-jours), which also covers what Article 4 of the European AI Act expects from employers.
 
 ## Troubleshooting: what beginners break
 
