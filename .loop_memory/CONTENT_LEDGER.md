@@ -56,7 +56,7 @@ article block goes below this line.
 - cannibalization_notes: le plan annonce un risque faible. Frontiere posee explicitement : comment-ecrire-scenario-court-metrage-ia-a-z garde l'ECRITURE ORIGINALE a partir d'une idee, droits-auteur-images-generees-ia garde la PI des IMAGES GENEREES, acteurs-ia-clones-droits-opportunites garde la personne de l'interprete. J46 ne traite que le TEXTE PREEXISTANT : duree de protection, traduction et editions, cession des droits d'adaptation audiovisuelle, et la condensation du livre vers le format court.
 - editorial_decisions: aucun montant en euros pour une option ou une cession, aucun bareme public n'existe et la FAQ le dit. Aucune date de deces d'auteur reel n'est citee (les notices BnF et Britannica n'ont pas pu etre verifiees dans ce run), l'arithmetique de l'article 123-1 est donc demontree sur un exemple neutre (auteur mort le 10 juin 1960, libre au 1er janvier 2031). L'anecdote d'ouverture du premier jet, datee et chiffree, a ete reecrite en scenario adresse au lecteur pour ne rien inventer. Les titres de 1930 cites viennent tous de la page Duke relevee le jour meme.
 - checker: pass (seo_audit 0 issue sur les 6 slugs touches FR et EN, editorial_audit score 100 / bucket good / 0 flag sur J46, lint 0 err avec 1 warning preexistant, typecheck PASS, build PASS, CONTENT_INDEX regenere 324 FR / 238 EN)
-- published_commit: PENDING
+- published_commit: c975ad8
 
 ### 2026-10-02 — Style visuel du réalisateur IA : construire sa signature
 - slug: signature-visuelle-style-auteur-ia
