@@ -52,6 +52,8 @@ The case law and the positions of the offices evolve. For a US campaign, a local
 
 For the "no account" tools frame, [best free AI image generator with no sign-up](/en/blog/meilleur-generateur-image-ia-gratuit) also recalls the legal limits of caution.
 
+When the project starts from a pre-existing text, another layer of rights sits on top of the image question: term of protection, translation, assignment of audiovisual adaptation rights. The detail is in the guide on [adapting a book into an AI film](/en/blog/adapter-livre-film-ia-methode-droits).
+
 ## Field deep dive: Copyright and AI-generated images: what you absolutely must know
 
 This chapter extends the angle "EU, UK, USA: broad principles, uncertainties, and a practical checklist for creators and clients, without replacing a lawyer." for the real subject behind `droits-auteur-images-generees-ia`. The goal is not to stack adjectives, but to install a short **QA loop** you can reuse on every deliverable: capture, note, compare, decide, archive. Most creators waste time because they mix three variables in one session, then blame the model. When you separate light, composition, texture, intention, you get back an honest diagnosis and measurable progress.

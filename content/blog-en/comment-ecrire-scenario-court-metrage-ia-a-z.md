@@ -114,6 +114,8 @@ Problem 8: **dependence on AI for the structure** with no human validation. Fix:
 
 ![Minimalist film set with a cinema camera and imperfect natural light](https://images.unsplash.com/photo-1505685296765-3a2736de412f)
 
+If you are starting from an existing book rather than an original idea, the work upstream changes: you check the rights before writing, then you compress. That is the subject of the guide on [adapting a book into an AI film](/en/blog/adapter-livre-film-ia-methode-droits).
+
 ## External references to use intelligently
 
 Read little, apply a lot. I recommend three solid sources: [Syd Field](https://sydfield.com/) for the dramatic structure, [BBC Academy](https://www.bbc.co.uk/academy) for the fundamentals of audiovisual writing, and the [OpenAI documentation](https://platform.openai.com/docs) for the prompt iteration loops.

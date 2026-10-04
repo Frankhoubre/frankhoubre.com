@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-04 — Adapter un livre en film IA : méthode et droits
+- slug: adapter-livre-film-ia-methode-droits
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/adapter-livre-film-ia-methode-droits
+- url_en: https://frankhoubre.com/en/blog/adapter-livre-film-ia-methode-droits
+- category: guides
+- type: evergreen
+- search_intent: informational
+- primary_keyword: adapter livre film ia
+- secondary_keywords: droits d'adaptation audiovisuelle, domaine public livre, adaptation litteraire IA, cession droits adaptation, option droits litteraires
+- sources: legifrance.gouv.fr (L123-1, L123-2, L121-1, L113-4, L122-4, L131-3), cspd.law.duke.edu/publicdomainday/2026, gutenberg.org/policy/permission.html
+- internal_links: -> comment-ecrire-scenario-court-metrage-ia-a-z (lien du plan), droits-auteur-images-generees-ia (lien du plan), etude-de-cas-coecrire-film-intelligence-artificielle, pipeline-ia-script-storyboard-production-de-a-z, acteurs-ia-clones-droits-opportunites, comment-creer-storyboard-ia-etape-par-etape, screenweaver-ai-ecriture-scenario-storyboard. Entrants reciproques poses le jour meme depuis comment-ecrire-scenario-court-metrage-ia-a-z et droits-auteur-images-generees-ia, cote FR comme cote EN.
+- cta: ScreenWeaver, via l'article screenweaver-ai-ecriture-scenario-storyboard, place dans la section bible visuelle sur l'argument fonctionnel (garder le lien entre la scene ecrite et ses plans). Pas de /prestation, le plan demande ScreenWeaver sur cette ligne.
+- cannibalization_notes: le plan annonce un risque faible. Frontiere posee explicitement : comment-ecrire-scenario-court-metrage-ia-a-z garde l'ECRITURE ORIGINALE a partir d'une idee, droits-auteur-images-generees-ia garde la PI des IMAGES GENEREES, acteurs-ia-clones-droits-opportunites garde la personne de l'interprete. J46 ne traite que le TEXTE PREEXISTANT : duree de protection, traduction et editions, cession des droits d'adaptation audiovisuelle, et la condensation du livre vers le format court.
+- editorial_decisions: aucun montant en euros pour une option ou une cession, aucun bareme public n'existe et la FAQ le dit. Aucune date de deces d'auteur reel n'est citee (les notices BnF et Britannica n'ont pas pu etre verifiees dans ce run), l'arithmetique de l'article 123-1 est donc demontree sur un exemple neutre (auteur mort le 10 juin 1960, libre au 1er janvier 2031). L'anecdote d'ouverture du premier jet, datee et chiffree, a ete reecrite en scenario adresse au lecteur pour ne rien inventer. Les titres de 1930 cites viennent tous de la page Duke relevee le jour meme.
+- checker: pass (seo_audit 0 issue sur les 6 slugs touches FR et EN, editorial_audit score 100 / bucket good / 0 flag sur J46, lint 0 err avec 1 warning preexistant, typecheck PASS, build PASS, CONTENT_INDEX regenere 324 FR / 238 EN)
+- published_commit: PENDING
+
 ### 2026-10-02 — Style visuel du réalisateur IA : construire sa signature
 - slug: signature-visuelle-style-auteur-ia
 - locale: fr + en (même slug, publiés le même jour)

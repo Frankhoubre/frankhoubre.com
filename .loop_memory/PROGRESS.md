@@ -1,74 +1,37 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-03 (J45 publie)
+## Last run: 2026-10-04 (J46 publie)
 
 ### What happened
-- J45 du plan 90 jours publie a la date prevue :
-  `former-equipe-creative-ia-protocole-30-jours` (business, 11 H2 + FAQ de
-  7 questions + conclusion, 4433 mots, 7 liens internes, 3 liens externes
-  d'autorite tous officiels europa.eu, 2 tableaux, 3 images, 0 issue au
-  seo_audit sur les 6 slugs touches FR et EN, editorial_audit sans aucun
-  flag). Le calendrier ne glisse pas : J46 = 2026-10-04
-  (`adapter-livre-film-ia-methode-droits`, CINEMA, BASSE).
+- J46 du plan 90 jours publie a la date prevue :
+  `adapter-livre-film-ia-methode-droits` (guides, 12 H2 + FAQ de 7 questions
+  + conclusion, 3959 mots, 10 liens internes, 3 liens externes d'autorite,
+  2 tableaux, 3 images, 0 issue au seo_audit sur les 6 slugs touches FR et EN,
+  editorial_audit score 100 sans aucun flag). Le calendrier ne glisse pas :
+  J47 = 2026-10-05 (`chaine-youtube-cinema-ia-retour-experience`, CREATEUR,
+  MOYENNE).
 - Version EN publiee le meme jour sur le meme slug, route
-  `/en/blog/former-equipe-creative-ia-protocole-30-jours`, memes images,
-  aucun lien ni embed YouTube, 6 liens internes EN tous existants. Pas de CTA
-  /prestation cote EN : cette route n'existe qu'en FR.
-- Colonne vertebrale factuelle neuve pour le site : l'article 4 du reglement
-  (UE) 2024/1689 sur la maitrise de l'IA, applicable depuis le 2026-02-02,
-  dans sa version reecrite par le reglement (UE) 2026/1744 (Digital Omnibus),
-  avec la surveillance par les autorites nationales de surveillance du marche
-  depuis le 2026-08-02. Tout est source sur europa.eu et prouve par les
-  2 captures de l'article.
-- Pieges outillage notes au plan et au PUBLISH_LOG : Playwright HEADFUL se
-  ferme tout seul sur europa.eu (headless=True passe), et
-  scroll_into_view_if_needed ne sert a rien si l'element est deja dans le
-  viewport mais sous la ligne de crop 16:9 (utiliser window.scrollTo avec un
-  offset regle a la main).
-
-### What happened
-- J44 du plan 90 jours publié à la date prévue :
-  `signature-visuelle-style-auteur-ia` (guides, 11 H2 + FAQ de 7 questions +
-  conclusion, 4047 mots, 7 liens internes, 3 liens externes d'autorité,
-  2 tableaux comparatifs, 3 images, 0 issue au seo_audit sur les 6 slugs
-  touchés FR et EN, editorial_audit bucket GOOD sans flag). Le calendrier ne
-  glisse pas : J45 = 2026-10-03
-  (`former-equipe-creative-ia-protocole-30-jours`, B2B, HAUTE).
-- Version EN publiée le même jour sur le même slug, route
-  `/en/blog/signature-visuelle-style-auteur-ia`, mêmes images, aucun lien
-  YouTube, scanner unslop-text à 0 finding.
-- Angle imposé par le plan et respecté : identité d'auteur et portfolio, pas
-  technique. Les deux articles voisins gardent leur terrain (cohérence interne
-  d'un projet pour `comment-creer-univers-visuel-coherent`, pilotage technique
-  du style pour `comment-controler-style-visuel`), et le premier tableau de
-  l'article pose explicitement la frontière entre les trois.
-- Faits neufs pour le site : les paramètres de personnalisation Midjourney
-  (`--p`, moodboards en `--p mID` incompatibles avec `--sv` et `--sw`,
-  `--stylize` de 0 à 1000 avec 100 par défaut), et le fait qu'aucun droit
-  d'auteur ne protège un style (INPI côté français, rapport Digital Replicas
-  de juillet 2024 côté américain, p. 66 et p. 12).
-- Pièges du run notés dans PUBLISH_LOG : docs.midjourney.com est derrière
-  Cloudflare (403 à WebFetch, challenge à Playwright headless, la capture ne
-  passe qu'en HEADFUL) ; le PDF du Copyright Office n'est pas lisible par
-  WebFetch et demande pypdf ; `networkidle` time out sur les pages à lecteur
-  vidéo, prévoir un fallback `load`.
-- **DIAGNOSTIC CORRIGÉ, à lire avant de re-normaliser quoi que ce soit.** Les
-  ~1880 erreurs « Missing title / date / category / excerpt » du seo_audit ne
-  viennent pas d'un CRLF commité. `core.autocrlf` vaut `true` sur cette
-  machine, il n'y a pas de `.gitattributes`, et les blobs stockés sont en LF
-  pur. Le CRLF est fabriqué au checkout, il ne concerne que la copie de
-  travail, la production n'a jamais été affectée, et normaliser à la main ne
-  survit pas au checkout suivant. Détail et correctifs possibles en B5 dans
-  ERRORS_AND_BLOCKERS.md, à trancher par Frank.
-- **DÉPLOIEMENT TOUJOURS BLOQUÉ (B4).** Plus de 24 h après le push de J43,
-  J43 et J44 répondent encore 404 en production (FR et EN), le sitemap en
-  ligne ne les contient pas, alors que la home, J41 et J42 répondent 200 et
-  que le build local passe avec les quatre pages prérendues. Le contenu est
-  bien sur `origin/main`. Rien à corriger côté dépôt : il faut que Frank
-  ouvre l'onglet Deployments du projet sur Vercel. Au prochain run, revérifier
-  les deux slugs avant toute action et ne surtout pas republier.
-
-### Ancien état (archive)
+  `/en/blog/adapter-livre-film-ia-methode-droits`, memes images, aucun lien ni
+  embed YouTube, 7 liens internes EN tous existants.
+- Colonne vertebrale factuelle neuve pour le site : les articles L123-1,
+  L123-2, L121-1, L113-4, L122-4 et L131-3 du code de la propriete
+  intellectuelle, lus sur Legifrance et cites au mot pres. Le fait le plus
+  utile est l'alinea 3 de L131-3 : une cession de droits d'adaptation
+  audiovisuelle exige un contrat ecrit sur un document DISTINCT du contrat
+  d'edition. Cote domaine public americain, Public Domain Day 2026 de Duke
+  (oeuvres de 1930 libres au 1er janvier 2026, regle des 95 ans pour les
+  publications anterieures a 1978, enregistrements sonores de 1925) et son
+  avertissement explicite que la page ne couvre que le droit americain.
+- Trouvaille anti-slop du jour, a reutiliser : la forme INVERSEE du
+  parallelisme negatif, « X, pas Y », que le grep habituel sur
+  « n'est pas X, c'est Y » ne voit pas. 14 occurrences au premier jet,
+  ramenees a 6. Grepper aussi « , pas » et « , jamais ».
+- Pieges outillage du jour : legifrance.gouv.fr bloque Playwright headless
+  (Cloudflare), passer en headful ; WebFetch sur une URL d'article Legifrance
+  peut renvoyer un AUTRE article que celui demande, relire l'intitule avant de
+  citer ; un selector text= matche le fil d'Ariane avant le corps de page,
+  preferer un window.scrollTo(0, N) brut ; data.bnf.fr redirige en 303 vers des
+  notices d'autres personnes et britannica.com renvoie 403.
 
 ## Previous run: 2026-10-01 (J43 publié)
 

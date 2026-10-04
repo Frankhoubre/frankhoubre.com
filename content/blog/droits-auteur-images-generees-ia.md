@@ -1,7 +1,7 @@
 ---
 title: "Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir"
 date: "2026-04-27"
-dateModified: "2026-06-10"
+dateModified: "2026-10-04"
 category: "notes"
 excerpt: "EU, UK, USA : grands principes, incertitudes, et checklist pratique pour créateurs et clients, sans remplacer un avocat."
 thumbnail: "/images/blog/droits-auteur-images-generees-ia/hero.webp"
@@ -51,6 +51,8 @@ La jurisprudence et les positions des offices évoluent. Pour une campagne US, u
 | Archivage | prompts, seeds, versions |
 
 Pour le cadre outils « sans compte », [meilleur générateur d’image IA gratuit et sans inscription](/blog/meilleur-generateur-image-ia-gratuit) rappelle aussi les limites légales de prudence.
+
+Quand le projet part d’un texte préexistant, une autre couche de droits s’ajoute à celle des images : durée de protection, traduction, cession d’adaptation audiovisuelle. Le détail est dans le guide sur [comment adapter un livre en film IA](/blog/adapter-livre-film-ia-methode-droits).
 
 ## Approfondissement terrain : Droits d’auteur et images générées par IA : ce qu’il faut absolument savoir
 

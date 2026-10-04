@@ -1,7 +1,7 @@
 ---
 title: "Comment écrire un scénario de court-métrage de A à Z avec l'IA"
 date: "2026-04-17"
-dateModified: "2026-05-13"
+dateModified: "2026-10-04"
 category: "tutoriels"
 excerpt: "Masterclass complète pour écrire un court-métrage avec l’IA, de l’idée brute au script tournable, sans dialogues artificiels ni structure bancale."
 ---
@@ -117,6 +117,8 @@ Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 [Voir l'explication en vidéo](https://www.youtube.com/watch?v=Jm_PEEWPTsY)
 
 ![Plateau de tournage minimaliste avec caméra cinéma et lumière naturelle imparfaite](https://images.unsplash.com/photo-1505685296765-3a2736de412f)
+
+Si ton point de départ est un livre existant plutôt qu'une idée originale, le travail en amont change : il faut vérifier les droits avant d'écrire, puis condenser. C'est le sujet du guide sur [comment adapter un livre en film IA](/blog/adapter-livre-film-ia-methode-droits).
 
 ## Références externes à utiliser intelligemment
 
