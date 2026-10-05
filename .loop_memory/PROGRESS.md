@@ -1,6 +1,49 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-04 (J46 publie)
+## Last run: 2026-10-05 (J47 publie)
+
+### What happened
+- J47 du plan 90 jours publie a la date prevue :
+  `chaine-youtube-cinema-ia-retour-experience` (business, 11 H2 + FAQ de
+  8 questions + conclusion, 4070 mots, 10 liens internes, 3 liens externes
+  d'autorite, 2 tableaux, 3 images, 0 issue au seo_audit sur les 6 slugs
+  touches FR et EN, editorial_audit score 100 sans aucun flag). Le calendrier
+  ne glisse pas : J48 = 2026-10-06 (UPDATE `tutoriel-runway-gen-3`, OUTILS,
+  HAUTE), premier jour UPDATE depuis le J40.
+- Version EN publiee le meme jour sur le meme slug, route
+  `/en/blog/chaine-youtube-cinema-ia-retour-experience`, memes images, aucun
+  lien ni embed YouTube (verifie au grep), 7 liens internes EN tous existants.
+- Consigne du plan respectee : l'intention « vivre de YouTube » n'est pas
+  ciblee, elle est renvoyee une seule fois vers
+  vivre-video-ia-2026-modeles-revenus. La monetisation n'apparait que comme
+  source de criteres d'examen de chaine, jamais comme objectif.
+- Colonne vertebrale factuelle neuve pour le site, tout vient de l'aide
+  officielle YouTube : les quatre cas qui declenchent l'obligation de signaler
+  un contenu IA et les quatre qui ne la declenchent pas, le parametre
+  « Utilisation de l'IA » dans la section « Attributs » de YouTube Studio,
+  l'emplacement de la mention (lecteur pour le photorealiste, description
+  deroulee pour l'anime), les deux attentes d'originalite des regles de
+  monetisation (page mise a jour au 15 juillet 2025) et la LISTE DES SIX
+  ELEMENTS que les examinateurs regardent sur une chaine. Le fait le plus
+  utile du run : quand un contenu n'est pas signale, YouTube peut appliquer
+  lui meme une mention que le createur ne peut pas retirer.
+- Non affirme faute de source officielle : la renomination de la regle
+  « contenu repetitif » en « contenu non authentique » circule sur des blogs
+  tiers mais aucune page support.google.com ne l'a confirmee pendant le run.
+  A re-verifier avant de la citer un jour.
+- Piege outillage numero un du jour, a retenir :
+  `scripts/render_blog_queue_nanobanana.py` n'a PAS de flag `--slug`, seulement
+  `--dest` et `--prompt`, et il faut l'appeler DEPUIS POWERSHELL. Depuis Bash,
+  Git convertit le `--dest /images/...` en chemin Windows et le script meurt
+  sur un PermissionError dans Program Files.
+- Autre piege : `editorial_audit.mjs` tronque sa liste GOOD a 50 entrees
+  triees par score CROISSANT. Un article note 100 n'y apparait donc jamais.
+  Pour lire le score d'un slug precis, passer par `--json`.
+- Trouvaille anti-slop du jour : compter les H2 qui commencent par la meme
+  formule. 4 des 11 H2 ouvraient sur « Ce qui / Ce que » au premier jet, et
+  cette symetrie de sommaire se voit avant meme de lire le corps. 2 reecrits.
+
+## Previous run: 2026-10-04 (J46 publie)
 
 ### What happened
 - J46 du plan 90 jours publie a la date prevue :

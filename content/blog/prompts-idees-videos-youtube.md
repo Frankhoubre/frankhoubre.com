@@ -1,7 +1,7 @@
 ---
 title: "Les 10 meilleurs prompts pour trouver des idées de vidéos YouTube"
 date: "2026-04-14"
-dateModified: "2026-06-10"
+dateModified: "2026-10-05"
 category: "tutoriels"
 excerpt: "10 prompts terrain pour trouver des idées de vidéos YouTube filmables, originales, optimisées SEO et adaptées à une vraie stratégie de chaîne."
 thumbnail: "/images/blog/prompts-idees-videos-youtube/hero.webp"
@@ -150,6 +150,8 @@ Oui, mais il faut changer la sortie demandée. Pour un Short, demande une idée 
 ### Comment savoir si une idée mérite une vidéo longue?
 
 Une idée mérite une vidéo longue si elle contient plusieurs étapes, des erreurs fréquentes, des exemples visuels et une transformation mesurable. Si tu peux tout expliquer en 45 secondes, fais un Short. Si le sujet demande comparaison, démonstration, avant/après, cas réel et nuance, fais une vidéo longue. L’IA peut t’aider à tester ça: demande-lui de développer un plan en 8 minutes. Si le plan semble creux, l’idée n’est pas assez profonde.
+
+Si ces idées doivent alimenter une chaîne entière et pas seulement une vidéo, j'ai raconté comment je m'y prends dans mon [retour d'expérience sur une chaîne YouTube cinéma IA](/blog/chaine-youtube-cinema-ia-retour-experience).
 
 ### Quel outil IA utiliser pour générer ces idées?
 

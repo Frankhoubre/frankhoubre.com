@@ -1,6 +1,7 @@
 ---
 title: "A/B Testing YouTube Thumbnails Generated with AI"
 date: "2026-07-21"
+dateModified: "2026-10-05"
 category: "tutoriels"
 excerpt: "Variants, metrics, testing ethics and alignment with the video to optimize CTR without toxic clickbait."
 thumbnail: "/images/blog/ab-test-miniatures-youtube-ia/hero.webp"
@@ -517,6 +518,8 @@ Keep the version most consistent with the brand, then launch a new test with str
 One main test per video is enough, plus a thorough monthly review.
 
 In the end, the real competitive advantage is not "generating fast". It is learning fast without losing your identity. A high-performing AI thumbnail is instrumented visual strategy, not a shiny filter.
+
+These tests only pay off once the channel already publishes on a steady rhythm. On building that rhythm, see my [AI film YouTube channel experience](/en/blog/chaine-youtube-cinema-ia-retour-experience).
 
 ## 30-day sprint to install a real system
 

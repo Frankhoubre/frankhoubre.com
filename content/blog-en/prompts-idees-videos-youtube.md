@@ -1,7 +1,7 @@
 ---
 title: "The 10 Best Prompts to Find YouTube Video Ideas"
 date: "2026-04-14"
-dateModified: "2026-06-10"
+dateModified: "2026-10-05"
 category: "tutoriels"
 excerpt: "10 field prompts to find shootable, original, SEO-optimized YouTube video ideas adapted to a real channel strategy."
 thumbnail: "/images/blog/prompts-idees-videos-youtube/hero.webp"
@@ -116,6 +116,8 @@ The fifth break is ignoring the thumbnail. A YouTube idea must be able to conden
 The sixth break is not checking the search intent. Use [Google Trends](https://trends.google.com/) and the YouTube search before recording. If no one searches the subject, it is not necessarily serious, but you must know it. A video can be made for search, recommendation, community or authority. Not always the four.
 
 ![Creator analyzing YouTube titles, retention curves and AI prompts on an editing screen](/images/blog/prompts-idees-videos-youtube/troubleshooting.webp)
+
+If these ideas have to feed a whole channel and not just one video, I wrote up how I handle that in my [AI film YouTube channel experience](/en/blog/chaine-youtube-cinema-ia-retour-experience).
 
 ## FAQ: prompts to find YouTube video ideas
 

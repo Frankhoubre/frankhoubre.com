@@ -1,6 +1,7 @@
 ---
 title: "A/B test de miniatures YouTube générées avec l'IA"
 date: "2026-07-21"
+dateModified: "2026-10-05"
 category: "tutoriels"
 excerpt: "Variantes, métriques, éthique de test et cohérence avec la vidéo pour optimiser le CTR sans clickbait toxique."
 thumbnail: "/images/blog/ab-test-miniatures-youtube-ia/hero.webp"
@@ -551,6 +552,8 @@ Si tu veux sortir du mode expérimental permanent, applique ce sprint:
 - prépare tests du mois suivant.
 
 Ce sprint ne te donne pas "la formule magique". Il te donne un moteur d'amélioration continue.
+
+Ces tests prennent tout leur sens quand la chaîne publie déjà à un rythme régulier. Sur la construction de ce rythme, voir mon [retour d'expérience sur une chaîne YouTube cinéma IA](/blog/chaine-youtube-cinema-ia-retour-experience).
 
 Dernier rappel terrain: le meilleur système miniature est celui que ton équipe applique vraiment. Si ta méthode est brillante mais trop lourde, elle sera abandonnée au bout de trois semaines. Garde des rituels simples, réguliers, mesurables. Une décision visuelle moyenne prise avec constance bat souvent une excellente idée appliquée une fois sur cinq.
 
