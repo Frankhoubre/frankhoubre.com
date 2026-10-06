@@ -78,6 +78,8 @@ paie plus tard au prix fort, avec des retouches sans fin.
 Archive prompt, seed, et version validée. Nomme correctement les fichiers. La rigueur de nommage est une compétence
 créative sous-estimée, parce qu elle te donne la liberté de revenir en arrière sans panique.
 
+Côté Runway, la préparation de cette image pilote et les réglages actuels de Gen-4.5 sont détaillés dans [mon tutoriel Runway image fixe vers plan de film](/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film).
+
 ![Vue workflow 1 pour le choix entre Pika Labs et Runway pour un plan d action précis avec repères de cadrage, lumière et contrôle de cohérence](/images/blog/pika-labs-vs-runway-choisir-moteur-plan-action/workflow-1.webp)
 
 ### Batch court, tri brutal, itération simple

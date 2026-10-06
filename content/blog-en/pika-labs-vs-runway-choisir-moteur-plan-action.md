@@ -56,6 +56,8 @@ No video with no clean pilot. Check texture, perspective, material, and light hi
 
 Archive the prompt, the seed, and the validated version. Name the files correctly. Naming rigor is an underestimated creative skill, because it gives you the freedom to go back with no panic.
 
+On the Runway side, prepping that pilot image and the current Gen-4.5 settings are covered in [my Runway tutorial for animating a still into a film shot](/en/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film).
+
 ![Workflow view 1 for the choice between Pika Labs and Runway for a precise action shot with framing, light and consistency-control markers](/images/blog/pika-labs-vs-runway-choisir-moteur-plan-action/workflow-1.webp)
 
 ### Short batch, brutal sorting, simple iteration

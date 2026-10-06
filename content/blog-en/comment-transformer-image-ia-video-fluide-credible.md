@@ -129,7 +129,7 @@ If after 4 to 5 tries nothing is stable, the source or the instruction must be r
 9. Not testing on mobile -> systematically validate smartphone + main screen.
 10. Trying to save a dead shot too long -> reject fast, regenerate clean.
 
-To keep a solid continuity between shots, complete with [how to create consistent scenes with several shots in AI](/en/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia).
+To keep a solid continuity between shots, complete with [how to create consistent scenes with several shots in AI](/en/blog/comment-creer-scenes-coherentes-plusieurs-plans-ia). If Runway is your engine, [my updated Runway tutorial](/en/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film) walks through Gen-4.5 image to video, credit costs included.
 
 ![Contextual image, animation quality control.](/images/blog/comment-transformer-image-ia-video-fluide-credible/workflow-2.webp)
 

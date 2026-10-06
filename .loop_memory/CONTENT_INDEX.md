@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-05T08:05:06.746Z
+> Generated: 2026-10-06T07:59:41.283Z
 
 ## FR : 325 articles (/blog/<slug>)
 
@@ -269,7 +269,7 @@ Categories: tutoriels 190, actualite 53, business 27, comparatifs 19, analyses 1
 | 2026-04-19 | tutoriels | `synchronisation-labiale-lip-sync-quel-outil-ia-choisir` | Synchronisation labiale (Lip-sync) : quel outil IA choisir pour ses acteurs virtuels ? |
 | 2026-04-19 | actualite | `topaz-video-ai-test-avis-restauration-video` | Topaz Video AI : avis, prix et test réel de restauration |
 | 2026-04-18 | tutoriels | `generation-video-nouveaux-outils-changements-realisateurs` | Génération vidéo : ce que les nouveaux outils changent pour les réalisateurs |
-| 2026-04-18 | tutoriels | `tutoriel-runway-gen-3-animer-image-fixe-plan-film` | Tutoriel Runway Gen-3 : animer une image fixe pour un plan de film |
+| 2026-04-18 | tutoriels | `tutoriel-runway-gen-3-animer-image-fixe-plan-film` | Tutoriel Runway 2026 : animer une image fixe pour un film |
 | 2026-04-18 | tutoriels | `utiliser-ia-reperage-decors-cinema` | Comment utiliser l’IA pour le repérage de décors de cinéma |
 | 2026-04-17 | actualite | `5-meilleurs-ia-video-maker-clip-musical-2026` | Les 5 meilleurs IA video maker pour créer un clip musical en 2026 |
 | 2026-04-17 | tutoriels | `comment-ecrire-scenario-court-metrage-ia-a-z` | Comment écrire un scénario de court-métrage de A à Z avec l'IA |
@@ -515,7 +515,7 @@ Categories: tutoriels 180, business 17, actualite 14, comparatifs 14, analyses 7
 | 2026-04-19 | tutoriels | `synchronisation-labiale-lip-sync-quel-outil-ia-choisir` | Lip-Sync: Which AI Tool to Choose for Your Virtual Actors? |
 | 2026-04-19 | actualite | `topaz-video-ai-test-avis-restauration-video` | Topaz Video AI: full test and review on video restoration |
 | 2026-04-18 | tutoriels | `generation-video-nouveaux-outils-changements-realisateurs` | Video Generation: What the New Tools Change for Directors |
-| 2026-04-18 | tutoriels | `tutoriel-runway-gen-3-animer-image-fixe-plan-film` | Runway Gen-3 tutorial: animating a still image for a film shot |
+| 2026-04-18 | tutoriels | `tutoriel-runway-gen-3-animer-image-fixe-plan-film` | Runway tutorial 2026: animate a still image for film |
 | 2026-04-18 | tutoriels | `utiliser-ia-reperage-decors-cinema` | How to use AI for cinema location scouting |
 | 2026-04-17 | actualite | `5-meilleurs-ia-video-maker-clip-musical-2026` | The 5 Best AI Video Makers for Creating a Music Video in 2026 |
 | 2026-04-17 | tutoriels | `comment-ecrire-scenario-court-metrage-ia-a-z` | How to Write a Short Film Script from A to Z with AI |

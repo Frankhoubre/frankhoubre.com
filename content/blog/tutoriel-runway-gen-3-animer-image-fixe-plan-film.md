@@ -1,182 +1,219 @@
 ---
-title: "Tutoriel Runway Gen-3 : animer une image fixe pour un plan de film"
+title: "Tutoriel Runway 2026 : animer une image fixe pour un film"
 date: "2026-04-18"
-dateModified: "2026-05-07"
+dateModified: "2026-10-06"
 category: "tutoriels"
-excerpt: "Méthode détaillée pour animer une image fixe avec Runway Gen-3 sans rendu artificiel ni déformations."
+excerpt: "Gen-3 a été retiré en juillet 2026. La méthode pour animer une image fixe avec Gen-4.5 : crédits, prompt de mouvement, passes et validation au montage."
+thumbnail: "/images/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film/hero.webp"
 ---
 
-# Tutoriel Runway Gen-3: animer une image fixe pour un plan de film crédible
+# Tutoriel Runway 2026 : animer une image fixe pour un film
 
-Tu génères une image fixe superbe. Lumière nickel, cadrage fort, texture ciné. Ensuite tu l’animes dans Runway Gen-3 et, en trois secondes, ça déraille. Les mains fondent, les contours respirent, l’arrière-plan glisse, et ton plan ressemble à une démo d’IA plutôt qu’à un plan de film. Si ça t’est arrivé, c’est normal. Le problème n’est pas ton talent. Le problème, c’est la méthode.
+Tu as une image fixe qui te plaît vraiment. La lumière est juste, le cadre tient, la texture a du grain. Tu l'envoies dans Runway pour lui donner trois secondes de vie, et le plan déraille : les mains fondent, les contours respirent, le fond glisse comme un décor de théâtre mal fixé. Et si tu suivais un tutoriel écrit pour Gen-3, il y a une deuxième mauvaise surprise : le modèle n'est plus dans le menu.
 
-Animer une image fixe en rendu crédible demande une discipline plus proche du VFX que du "prompting libre". Tu dois préparer la source, limiter les mouvements, générer en passes, puis valider en contexte montage. Sans ce cadre, même les meilleures images se transforment en plans fragiles.
+Runway a retiré Gen-3 Alpha le 8 juillet 2026, puis Gen-3 Alpha Turbo le 30 juillet 2026. Les tutoriels qui traînent encore en ligne, y compris la première version de celui-ci publiée en avril, décrivent donc un outil qui n'existe plus. Le modèle de remplacement pour l'image vers vidéo s'appelle Gen-4.5, les crédits ont changé, les formules aussi, et le domaine lui-même a bougé : runwayml.com redirige désormais vers runway.com.
 
-Dans ce tutoriel Runway Gen-3, je te donne une routine de terrain pour produire des plans exploitables, pas des tests instagrammables. On va voir comment sécuriser tes images, écrire des prompts utiles, corriger les dérives, puis intégrer le résultat dans une séquence qui tient.
+Ce qui n'a pas bougé, c'est la méthode. Une image animée tient à l'écran quand la source est propre, quand le mouvement est unique et sobre, et quand tu juges le plan dans la timeline plutôt qu'en preview. J'ai réécrit ce tutoriel Runway de haut en bas pour qu'il colle à l'outil tel qu'il est en octobre 2026, avec les vrais chiffres de la documentation officielle et la routine que j'applique pour sortir des plans montables.
 
-![Animation d’image fixe avec Runway Gen-3 dans une timeline de plan filmique réaliste](/images/art4-hero-new.png)
+![Réalisatrice sur un quai de port à l'aube comparant une photo imprimée du lieu au décor réel avant de l'animer dans Runway](/images/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film/hero.webp)
 
-## Core concepts: ce qui fait tenir un plan animé Runway Gen-3
+## Ce qui a changé chez Runway depuis Gen-3
 
-Premier concept, la stabilité prime sur l’ambition. Les débutants veulent un mouvement spectaculaire trop tôt. Résultat, la scène se déforme. En pratique, un mouvement discret, propre, bien intégré vaut dix fois plus qu’un travelling artificiel qui casse en fin de clip.
+Tu ouvres Runway avec un vieux tutoriel sous le coude, tu cherches « Gen-3 Alpha Turbo » dans le sélecteur et tu ne le trouves pas. Ton compte n'y est pour rien : le modèle a été retiré.
 
-Deuxième concept, l’image source est ton 80 pour cent. Si ta source contient des zones ambiguës, mains confuses, cheveux fusionnés, profondeur de champ incohérente, l’animation amplifie ces défauts. Runway n’invente pas une structure propre à partir d’une base fragile.
+La page d'aide [« Creating with Gen-3 Alpha and Gen-3 Alpha Turbo »](https://help.runwayml.com/hc/en-us/articles/30266515017875-Creating-with-Gen-3-Alpha-and-Gen-3-Alpha-Turbo) affiche désormais un simple avis de retrait avec les dates et quatre remplacements. Pour l'image vers vidéo et le texte vers vidéo, c'est Gen-4.5. Pour les images clés (une image de début, une image de fin), c'est l'app **Animate Frames**. Pour transformer une vidéo existante, c'est **Edit Studio Aleph 2.0**. Toutes les fonctions qui dépendaient de Gen-3, Camera Control, Expand Video, Act-One sur Gen-3, Keyframes sur Gen-3, ont suivi le même chemin.
 
-Troisième concept, une seule intention de mouvement par test. "Push-in léger" ou "drift latéral doux" ou "micro handheld". Pas tout à la fois. Les prompts contradictoires créent des résultats séduisants en preview, puis instables en lecture réelle.
+Ce nettoyage a commencé plus tôt dans l'année. La page [« Deprecated Standalone Tools »](https://help.runwayml.com/hc/en-us/articles/40213860628371-Deprecated-Standalone-Tools), mise à jour le 5 août 2026, liste tout ce qui a disparu et par quoi le remplacer. On y apprend par exemple que la page All Tools a été supprimée le 10 avril 2026, que l'interpolation d'images renvoie vers l'app Animate Keyframes, et que l'ancien Lip Sync a été remplacé par Act-Two le 27 mai 2026.
 
-Quatrième concept, la valeur d’un plan se juge en séquence. Un plan isolé peut paraître incroyable et pourtant détruire le raccord avec les plans avant/après. Le test final se fait toujours en timeline complète.
+![Tableau officiel des outils retirés par Runway, avec Gen-3 Alpha et Gen-3 Alpha Turbo remplacés par les modèles vidéo actuels](/images/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film/workflow-2.webp)
 
-Cinquième concept, le son influence la perception de réalisme. Un mouvement imparfait peut devenir acceptable avec une bonne intégration audio. À l’inverse, un plan visuellement correct peut sembler faux sans ambiance adaptée. Sur ce point, [notre guide voix-off et doublage IA](/blog/doublage-voix-off-cloner-diriger-voix-film) reste une base utile.
+*Capture de la page « Deprecated Standalone Tools » du centre d'aide Runway, faite le 6 octobre 2026. Les dates de retrait de Gen-3 Alpha (8 juillet 2026) et Gen-3 Alpha Turbo (30 juillet 2026) figurent sur la page dédiée au modèle.*
 
-| Type de plan Runway Gen-3 | Objectif | Mouvement recommandé | Risque fréquent | Fix prioritaire |
+Côté abonnement, deux changements comptent pour toi. Le plan Unlimited n'est plus proposé depuis le 1er juin 2026, remplacé par la formule Max. Les anciens abonnés Unlimited le gardent jusqu'au 30 novembre 2026, puis basculent sur Max au même prix mensuel, selon [l'article d'aide sur la transition](https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max). Et un mode de génération sans crédits, appelé Unlimited Mode, existe sur les plans Pro et Max, mais seulement sur certains modèles, avec une file plus lente et moins de rendus simultanés.
+
+Pour quelqu'un qui anime des images fixes, je trouve l'échange plutôt favorable. Gen-4.5 accepte plus de formats, plus de durées et un prompt de mouvement plus fin. Il faut juste réapprendre les réglages et refaire ses calculs de crédits.
+
+## Gen-4.5 en image vers vidéo : les réglages qui comptent
+
+La fiche technique publiée sur [la page d'aide officielle de Gen-4.5](https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5) tient en dix lignes, et presque chacune change quelque chose à ta façon de travailler.
+
+![Fiche technique officielle de Runway Gen-4.5 : 12 crédits par seconde, durées de 2 à 10 secondes, sortie 720p, 24 ou 25 images par seconde](/images/blog/tutoriel-runway-gen-3-animer-image-fixe-plan-film/workflow-1.webp)
+
+*Capture de la page « Creating with Gen-4.5 » du centre d'aide Runway, faite le 6 octobre 2026.*
+
+Le modèle est accessible à partir du plan **Standard**. Il coûte **12 crédits par seconde** de vidéo, en texte vers vidéo comme en image vers vidéo. La durée se règle **de 2 à 10 secondes**. La sortie est en **720p**, à **24 ou 25 images par seconde** (le choix se fait dans les réglages avancés). Il tourne sur la version web.
+
+En image vers vidéo, six formats sont proposés : 16:9 en 1280x720, 9:16 en 720x1280, 1:1 en 960x960, 4:3 en 1104x832, 3:4 en 832x1104 et 21:9 en 1584x672. Le texte vers vidéo, lui, ne sort qu'en 16:9. Par défaut, le format s'adapte à ton image d'entrée ; si tu en choisis un autre, Runway recadre ton image. Garde ce détail en tête, parce qu'un recadrage automatique peut couper le haut d'un visage que tu avais soigneusement placé.
+
+Deux options de sortie méritent d'être connues. La première, c'est l'upscale en 4K après génération, inclus dans les formules payantes. La seconde, c'est l'export en **ProRes** ou en **séquence PNG**, choisi au moment de la génération, réservé aux plans Max, Unlimited (Legacy) et Enterprise, et facturé **5 crédits par seconde** en plus du coût de base. Pour un plan qui part à l'étalonnage, c'est la seule façon d'éviter une compression de plus entre Runway et ton logiciel de montage.
+
+> 💡 **Le cut de Frank :** règle la cadence avant de générer. Si ton projet est en 25 images par seconde, pour une diffusion européenne par exemple, demande du 25 dès le départ. Convertir un plan IA de 24 à 25 après coup ajoute exactement le genre de micro-saccade que tu cherches à éviter.
+
+Et Gen-4, alors ? Il est toujours là, avec son petit frère Gen-4 Turbo, mais [la page d'aide de Gen-4](https://help.runwayml.com/hc/en-us/articles/37327109429011-Creating-with-Gen-4) porte un bandeau qui le classe dans les modèles de génération précédente. Gen-4 coûte aussi 12 crédits par seconde. Gen-4 Turbo descend à **5 crédits par seconde**, en clips de 5 ou 10 secondes, avec une image d'entrée obligatoire et un prompt limité à 1 000 caractères. C'est encore un excellent outil de brouillon, j'y reviens plus bas.
+
+## Combien de plans tu sors vraiment avec ton abonnement
+
+Les tarifs ci-dessous viennent de [la page des prix de Runway](https://runway.com/pricing), consultée le 6 octobre 2026, en dollars et hors taxes. Le calcul des plans est le mien : il divise simplement les crédits mensuels par le coût d'un clip de 5 secondes, soit 60 crédits en Gen-4.5 et 25 crédits en Gen-4 Turbo.
+
+| Formule | Prix mensuel (annuel) | Crédits | Clips Gen-4.5 de 5 s | Clips Gen-4 Turbo de 5 s | À savoir |
+| --- | --- | --- | --- | --- | --- |
+| Free | 0 $ | 125, une seule fois | aucun (Gen-4.5 demande Standard) | non précisé | pour découvrir l'interface |
+| Standard | 15 $ (12 $) | 625 par mois | 10 | 25 | sans filigrane, upscale 4K |
+| Pro | 35 $ (28 $) | 2 250 par mois | 37 | 90 | upscale 4K illimité, Unlimited Mode sur certains modèles |
+| Max | 95 $ (76 $) | 9 500 par mois | 158 | 380 | report d'un mois de crédits, ProRes et HDR |
+
+Regarde la ligne Standard avec un œil de monteur. Dix clips de 5 secondes, c'est 50 secondes de matière brute par mois. Si tu gardes un rendu sur trois, ce qui est déjà un bon ratio sur des plans exigeants, tu obtiens une quinzaine de secondes utilisables. Assez pour un teaser, très loin d'un court-métrage.
+
+Un point de la politique de remboursement change aussi la façon de travailler. D'après [l'article d'aide sur les crédits](https://help.runwayml.com/hc/en-us/articles/34266159290003-Can-I-have-credits-refunded), les crédits ne sont rendus automatiquement qu'en cas d'erreur de génération. Un rendu terminé mais raté, qui ne respecte pas ton prompt ou déforme ton personnage, est consommé. Chaque essai coûte. C'est la meilleure raison de préparer ta source avant de lancer quoi que ce soit.
+
+Si tu compares avec la concurrence avant de t'abonner, j'ai mis les deux moteurs face à face sur des plans d'action dans [mon comparatif Pika Labs contre Runway](/blog/pika-labs-vs-runway-choisir-moteur-plan-action). Et pour le choix entre les modèles de Google et de Kuaishou, l'approche plan par plan est détaillée dans [mon article Kling ou Veo 3](/blog/kling-vs-veo-3-choisir-par-plan).
+
+## Préparer l'image source comme un plan tourné
+
+Runway le dit lui-même dans son [guide de prompt image vers vidéo](https://help.runwayml.com/hc/en-us/articles/48324313115155-Image-to-Video-Prompting-Guide) : ton image sert de première image à la vidéo, et les défauts visuels qu'elle contient, mains floues ou visages approximatifs, risquent d'être amplifiés une fois animés. Le modèle n'invente pas une structure propre à partir d'une base fragile.
+
+Traite ton image comme un plateau. Avant de l'envoyer, je vérifie quatre choses :
+
+- **La séparation des plans.** Premier plan, sujet, fond. Si tout est au même niveau de détail, le modèle hésite sur ce qui doit bouger et la parallaxe devient incohérente.
+- **Les zones qui cassent.** Doigts collés, mèches de cheveux fondues dans le décor, dents floues, petit texte sur une enseigne, reflets contradictoires dans une vitre. Ce sont elles qui explosent en premier.
+- **La lumière.** Une source de lumière lisible et cohérente donne au modèle une logique d'ombres à suivre quand la caméra bouge.
+- **Le mouvement implicite**, le point le moins connu, que Runway documente dans la FAQ du guide. Une image qui contient du flou de bougé, de la poussière soulevée ou une pose en pleine action suggère déjà un mouvement. Si ton prompt demande l'inverse, une voiture garée et immobile alors que l'image montre un nuage de poussière derrière elle, le modèle se bat contre l'image. La solution proposée par Runway : retirer ces indices de mouvement dans l'image avant de générer.
+
+Pour une première série de tests, choisis une composition simple. Plus il y a d'éléments fins en mouvement, feuillage, foule, pluie, plus la probabilité d'artefact grimpe. Tu complexifieras quand tu sauras ce que ton image supporte.
+
+Si cette image fait partie d'une séquence, vérifie aussi qu'elle raccorde avec ses voisines avant de l'animer : même direction de lumière, même focale ressentie, mêmes costumes. Un plan animé parfait qui ne raccorde pas finit à la poubelle. J'ai rassemblé les pièges les plus fréquents dans [mon guide sur les erreurs de raccord en film IA](/blog/film-ia-erreurs-raccord-incoherences-visuelles-eviter).
+
+## Écrire un prompt de mouvement que Gen-4.5 comprend
+
+Le réflexe de débutant, c'est de redécrire l'image. « Une femme en ciré jaune sur un quai de port à l'aube, brume, caisses bleues. » Le modèle voit déjà tout ça. Ce qu'il ne voit pas, c'est ce qui doit se passer.
+
+Le guide officiel est net là-dessus : un bon prompt image vers vidéo parle presque exclusivement de mouvement. Runway le découpe en cinq composantes : l'action du sujet, le mouvement de l'environnement, le mouvement de caméra, le style et le rythme du mouvement, la direction et la vitesse. Tu n'as pas besoin des cinq à chaque fois. Le conseil de Runway, que je partage, est de commencer par la ou les deux composantes critiques et d'ajouter du détail seulement si le résultat le demande.
+
+Pour les débutants, Runway propose une structure simple :
+
+`The camera [mouvement de caméra] as the subject [action]. [Descriptions complémentaires]`
+
+Sur l'image du quai, ça donne par exemple : *The camera slowly pushes in as the woman lowers the photograph. Mist drifts across the harbour. Natural handheld feel, very subtle.* Une intention de caméra, une action, un mouvement d'ambiance, un style. Rien de contradictoire.
+
+Gen-4.5 sait aussi suivre des enchaînements. La page d'aide du modèle insiste sur sa capacité à exécuter des instructions séquencées, et le guide de prompt décrit deux façons de le faire : en langage naturel (« X se produit, puis Y, enfin Z ») ou avec des repères temporels du type `[00:01] X occurs. [00:03] Y occurs.` Attention à la durée : trois actions dans un clip de 3 secondes, c'est la garantie d'un plan bousculé. Pour une séquence d'actions, monte la durée.
+
+Il y a des cas où décrire le visuel reste utile, et le guide les liste : faire entrer un élément absent de l'image, provoquer un changement radical par rapport à l'image de départ, préciser une transformation, ou décrire une interaction entre deux éléments. En dehors de ces cas, reste sur le mouvement.
+
+| Type de plan | Intention | Prompt de départ | Risque fréquent | Correction prioritaire |
 | --- | --- | --- | --- | --- |
-| Portrait émotionnel | Intensifier présence | push-in très léger | déformation visage | réduire amplitude + durée |
-| Plan d’ambiance | Donner vie au cadre | drift latéral doux | parallaxe incohérente | simplifier profondeur visuelle |
-| Insert objet | Accent narratif | micro mouvement focal | contour instable | renforcer netteté locale source |
-| Plan tension | Créer instabilité contrôlée | handheld discret | artefacts bord cadre | limiter jitter et durée |
+| Portrait émotionnel | renforcer la présence | slow subtle push-in, subject stays still | visage qui se déforme | durée courte, amplitude réduite |
+| Plan d'ambiance | donner vie au décor | gentle lateral drift, mist moving slowly | parallaxe incohérente | simplifier les plans de profondeur dans la source |
+| Insert objet | accent narratif | slow rack focus toward the object | contours qui ondulent | renforcer la netteté locale de la source |
+| Plan de tension | instabilité contrôlée | subtle handheld shake, slow push-in | artefacts en bord de cadre | limiter le tremblé et la durée |
+| Transition | relier deux scènes | camera slowly tilts up to the sky | coupe parasite dans le clip | allonger la durée ou simplifier le prompt |
 
-## The trench workflow: méthode complète pour animer proprement
+Pour aller plus loin sur l'écriture, j'ai compilé des formulations de plans qui fonctionnent dans [ma bibliothèque de prompts cinéma](/blog/bibliotheque-prompts-cinema-plans-types). Les mouvements de caméra s'y transposent directement à Gen-4.5.
 
-Commence par une question simple. À quoi sert ce plan ? Installer un lieu, renforcer une émotion, faire une transition, créer une tension ? Si tu n’as pas cette réponse, tu risques d’animer pour l’effet, pas pour le récit.
+## La méthode en passes : brouillon, plan, finition
 
-Ensuite, prépare une image source dédiée à l’animation. Tu nettoies les zones fragiles, clarifies les plans de profondeur, et assures une lumière lisible. Une source pensée pour l’animation donne des résultats beaucoup plus robustes qu’une image "juste belle".
+Un rendu terminé est payé, même raté. Inutile donc de viser le plan final au premier essai : j'avance par passes, en changeant une seule variable à la fois.
 
-Troisième étape, génération en passes. Pass stabilité sujet, pass mouvement caméra, pass variation créative contrôlée. Cette progression te permet de comprendre ce qui casse et de corriger localement sans tout refaire.
+### Passe 1 : tester l'intention avec un modèle moins cher
 
-Quatrième étape, intégration montage immédiate. Tu places le plan entre ses voisins, ajustes durée et rythme, puis décides go/no-go. Ce contrôle rapide évite d’accumuler des plans techniquement beaux mais narrativement inutiles.
+Runway recommande lui-même, sur la page de Gen-4, de tester d'abord en Gen-4 Turbo puis de passer au modèle supérieur si besoin. Le raisonnement vaut encore avec Gen-4.5. Un clip Turbo de 5 secondes coûte 25 crédits contre 60 en Gen-4.5. Tu t'en sers pour vérifier une seule chose : est-ce que ton image supporte le mouvement prévu ? Si le visage fond déjà en Turbo sur un push-in léger, retourne retoucher l'image avant de dépenser 60 crédits.
 
-### Étape 1: préparer l’image source comme un plan tourné
+Si tu es sur un plan Pro ou Max et que le modèle que tu vises apparaît dans l'Unlimited Mode, c'est le moment de l'utiliser. Le bouton en haut à droite de la session affiche « Unlimited ∞ » quand le mode est actif. Plus lent, mais gratuit en crédits.
 
-Tu dois traiter ton image fixe comme un "plateau virtuel". Vérifie la lisibilité premier plan/sujet/fond. Si tout est sur le même niveau de détail, Runway peine à produire un mouvement cohérent.
+### Passe 2 : le plan en Gen-4.5, sobre et court
 
-Nettoie les zones connues pour casser. Doigts fusionnés, contours cheveux instables, dents ambiguës, petits textes, reflets contradictoires. Ces détails explosent souvent pendant l’animation.
+Une fois l'intention validée, passe en Gen-4.5. Choisis la durée la plus courte qui contient ton action. Le modèle accepte 2 secondes, et pour un insert ou un portrait, 3 ou 4 secondes suffisent largement. Un mouvement, une amplitude modérée. Si ça casse, n'ajoute rien : baisse l'amplitude, raccourcis, relance.
 
-Évite les compositions trop chargées pour les premiers tests. Plus il y a d’éléments fins en mouvement, plus la probabilité d’artefact monte. Commence simple, puis complexifie.
+Tiens un mini journal à côté. Nom de version, intention, réglages, défaut principal. Trois lignes par essai. Le jour où un client demande une retouche sur un plan validé trois semaines plus tôt, ce journal t'évite de repartir à l'aveugle.
 
-Si tu vises un rendu cohérent sur une scène complète, relie cette étape à une logique globale de continuité. [Notre guide sur les erreurs de raccord IA](/blog/film-ia-erreurs-raccord-incoherences-visuelles-eviter) t’aidera à garder le cap.
+### Passe 3 : allonger ou enrichir, seulement si les deux premières tiennent
 
-### Étape 2: écrire un prompt de mouvement utile
+Pour un plan plus long que 10 secondes, Runway documente une technique simple dans son guide : place la tête de lecture sur la dernière image du clip, clique sur **Use**, puis **Use current frame**. Cette image devient l'entrée d'une nouvelle génération. Tu raccordes ensuite les deux clips dans ton logiciel de montage en supprimant l'image en double.
 
-Un bon prompt Runway pour image fixe n’est pas un roman. C’est une instruction de mise en scène claire. Sujet principal, type de mouvement, intensité, rythme, contrainte de stabilité. C’est tout.
+C'est puissant, et c'est aussi là que la dérive s'accumule. Chaque prolongation hérite des petites erreurs de la précédente. Au-delà de deux prolongations, je repars généralement d'une image source retravaillée plutôt que d'empiler.
 
-Exemple mental: "slow subtle push-in, subject remains stable, background gentle parallax, cinematic natural motion". Ce type de demande donne souvent des résultats plus fiables qu’un prompt surchargé d’adjectifs.
+Pour un plan qui part d'une image précise et arrive sur une autre image précise, passe par l'app Animate Frames, le remplaçant officiel des Keyframes de Gen-3.
 
-Teste une variable à la fois. Si tu changes mouvement, style, et intensité dans la même passe, tu ne sais plus ce qui a cassé. La progression devient aléatoire.
+> 💡 **Le cut de Frank :** un plan de 3 secondes propre bat toujours un plan de 8 secondes qui se dégrade. Coupe avant la dérive. Au montage, personne ne te reprochera un plan court.
 
-Documente chaque test rapidement. Nom de version, intention, résultat, défaut principal. Ce mini journal te fait gagner un temps énorme quand tu dois retaker sous deadline.
+## Valider le plan dans la timeline, pas dans la preview
 
-### Étape 3: générer en passes et corriger sans paniquer
+La preview de Runway est flatteuse. Fond sombre, lecture en boucle, aucun plan avant ni après. Un plan s'y regarde comme un objet isolé, alors qu'au cinéma il ne vit qu'en séquence.
 
-Pass 1, stabilité sujet. Tu vérifies visage, posture, contours critiques. Aucun mouvement ambitieux ici. Juste s’assurer que le coeur du plan tient.
+Dès la passe 2, je place le rendu entre ses vrais voisins dans la timeline. Les défauts de mouvement se voient rarement au centre du plan : ils apparaissent aux coupes, quand le mouvement du plan précédent ne prolonge pas celui-ci, ou quand le dernier tiers du clip commence à flotter.
 
-Pass 2, mouvement caméra. Tu ajoutes le déplacement choisi avec amplitude modérée. Si ça casse, reviens en arrière, baisse l’intensité, raccourcis la durée, et reteste.
+Ensuite, je passe quatre contrôles :
 
-Pass 3, variation créative contrôlée. Tu peux introduire une micro-vie supplémentaire, un souffle visuel, une variation légère. Mais seulement si les deux premières passes sont solides.
+1. La durée réelle. Ajuste-la selon la tenue du plan, pas selon ton intention de départ. Beaucoup de plans IA sont excellents sur 3 secondes et fragiles au-delà.
+2. Le plein écran, puis le téléphone. La compression d'une plateforme de diffusion fait ressortir des contours qui tremblent et que ton écran de travail masquait.
+3. Le son : une ambiance, une respiration, un impact léger. Un mouvement imparfait passe souvent mieux avec un son juste, et un plan visuellement correct paraît faux dans le silence. Mon [guide voix off et doublage IA](/blog/doublage-voix-off-cloner-diriger-voix-film) couvre cette couche.
+4. La relecture à froid. Reviens quelques heures plus tard, regarde la séquence sans t'arrêter et note les trois moments où ton œil sort de l'histoire. Ils pointent presque toujours un mouvement trop poussé ou un plan trop long.
 
-Quand une version échoue, n’essaie pas de "sauver" à tout prix. Revenir à une base stable est souvent plus rapide et plus propre que corriger un plan déjà bancal.
+Pour l'intégration couleur et grain avec des plans tournés ou d'autres moteurs, la méthode complète est dans [mon guide de montage vidéo assisté par IA](/blog/guide-complet-montage-video-assiste-intelligence-artificielle).
 
-![Passes successives Runway Gen-3 avec stabilité sujet puis mouvement caméra contrôlé](/images/art4-wf1.png)
+## Trois cas concrets et ce qu'ils enseignent
 
-> 💡 **Frank's Cut:** un plan de 3 secondes propre bat toujours un plan de 8 secondes qui se dégrade. Coupe plus court, gagne en crédibilité.
+Premier cas, une transition entre deux scènes. Il faut un plan passerelle entre un intérieur calme et une rue de nuit tendue. Plutôt que de tourner un plan de plus, on anime une image fixe de seuil de porte avec un drift latéral lent et une lumière qui change à peine. La première version en 8 secondes s'effondre dans son dernier tiers. La version retenue fait 4 secondes, même prompt, et le passage se fait sans rupture de rythme. Le prompt n'a pas bougé d'un mot entre les deux versions, seule la durée a changé.
 
-### Étape 4: intégrer dans la timeline pour valider le vrai rendu
+Deuxième cas, un portrait pour un teaser. L'image source est forte, mais chaque mouvement ambitieux déforme les traits. Le prompt final tient en une ligne : un push-in très lent, sujet immobile, un léger mouvement de cheveux. Trois secondes. Le plan renforce la présence du personnage au lieu d'attirer l'œil sur des artefacts.
 
-Place ton plan entre les plans réels de la séquence. Regarde les entrées et sorties de coupe. Les artefacts de mouvement se voient souvent là, pas au centre du plan.
+Le troisième cas, un plan urbain avec beaucoup de profondeur, demande plus d'essais. Les premiers rendus font glisser les lignes d'architecture les unes sur les autres. On a d'abord simplifié l'image source en adoucissant les détails du fond, puis réduit la vitesse demandée. En post, une harmonisation du grain finit l'intégration.
 
-Ajuste la durée selon la tenue du plan, pas selon ton souhait initial. Beaucoup de plans IA sont excellents sur 2,5 à 4 secondes et fragiles au-delà. Accepte cette réalité, c’est un choix pro.
+Dans les trois cas, le plan gardé est le plus sobre de la série. Au montage, personne ne remarque qu'ils viennent d'une image fixe.
 
-Regarde ensuite en plein écran, puis sur mobile. Certains défauts de contour apparaissent différemment selon la compression et la taille d’affichage.
-
-Enfin, valide avec une couche son minimale. Ambiance + respiration + impact léger. Un plan s’évalue en langage audiovisuel complet, pas en visuel isolé.
-
-### Étape 5: construire une routine de production reproductible
-
-Le vrai gain vient de la répétition maîtrisée. Crée un preset de travail "safe", un preset "ambitieux", et une checklist go/no-go. Tu évites de repartir de zéro à chaque plan.
-
-Travaille par lots de plans similaires. Même type de cadrage, même intention de mouvement, même complexité visuelle. Cette logique augmente la stabilité de tes résultats.
-
-Mets en place une revue rapide fin de session: ce qui tient, ce qui casse, ce qui doit être simplifié. Cette boucle d’apprentissage transforme tes essais en progression réelle.
-
-Pour garder la cohérence de ces plans animés dans un film plus large, [notre guide de montage vidéo assisté IA](/blog/guide-complet-montage-video-assiste-intelligence-artificielle) complète parfaitement ce workflow.
-
-Un autre réflexe utile consiste à catégoriser tes plans animés en trois niveaux de risque. Niveau 1: plan stable, sujet lisible, mouvement minimal. Niveau 2: plan avec profondeur complexe ou zones fragiles. Niveau 3: plan avec interactions critiques, mains, cheveux, texte ou mouvement appuyé. Ce classement t’aide à décider où investir du temps et où rester sobre.
-
-Pense aussi en termes de bibliothèque interne. Garde des exemples validés de plans qui fonctionnent, avec leurs paramètres de génération et leur contexte de montage. Quand tu démarres un nouveau projet, cette base te fait gagner un temps énorme et limite les essais inutiles.
-
-Enfin, documente les échecs utiles. Oui, les échecs. Un "mauvais test" bien annoté évite de reproduire la même erreur la semaine suivante. C’est une des habitudes qui font vraiment progresser les créateurs.
-
-## Cas terrain: trois scénarios réels où Runway Gen-3 change la donne
-
-Scénario 1, transition émotionnelle entre deux scènes. Le projet avait besoin d’un plan passerelle entre un intérieur calme et une rue nocturne tendue. Au lieu de tourner un plan supplémentaire, on a animé une image fixe de seuil avec un léger drift et une variation de lumière contrôlée. Le résultat a permis de fluidifier la transition sans rupture de rythme. La clé n’était pas l’effet spectaculaire. C’était la précision du mouvement et la durée courte.
-
-Scénario 2, plan portrait pour teaser. L’image source était très forte, mais chaque tentative d’animation agressive déformait les traits. En revenant à une approche ultra sobre, push-in discret, stabilité visage prioritaire, on a obtenu un plan de 3 secondes parfaitement exploitable. Cette décision a renforcé la présence du personnage au lieu de distraire avec des artefacts.
-
-Scénario 3, plan d’ambiance urbain avec profondeur complexe. Les premiers rendus produisaient une parallaxe incohérente sur les lignes d’architecture. La correction a été de simplifier la lecture de profondeur avant animation, puis de réduire la vitesse de mouvement. En post, une harmonisation légère du grain et du contraste a fini l’intégration.
-
-Ces trois cas montrent la même leçon: avec Runway Gen-3, l’élégance vient souvent de la retenue. Tu n’as pas besoin de prouver que le plan est animé. Tu dois faire oublier qu’il l’est.
-
-## Checklist de livraison pour un plan animé Runway Gen-3
-
-Avant de valider un plan, applique une checklist stricte. Première question: le sujet principal reste-t-il stable sur toute la durée utile ? Deuxième question: le mouvement est-il lisible sans surjeu ? Troisième question: les zones fragiles, mains, contours, dents, cheveux, restent-elles crédibles ?
-
-Ensuite, vérifie la cohérence de séquence. Le plan entre-t-il naturellement après le précédent ? Sort-il proprement vers le suivant ? Si tu dois cacher les raccords par des transitions artificielles, c’est souvent un signal de faiblesse.
-
-Passe ensuite à la vérification multi-support. Ce qui tient en preview locale peut casser sur mobile après compression. Teste au moins un export intermédiaire dans les conditions de diffusion ciblées. C’est une étape simple qui évite les mauvaises surprises de publication.
-
-Contrôle enfin la hiérarchie narrative. Le plan soutient-il l’histoire ou attire-t-il l’attention sur sa technique ? Si la réponse est "on voit trop l’effet", raccourcis, simplifie, ou remplace. Le film gagne quand la technique se met au service du récit.
-
-Dernier conseil de plateau: fais toujours une passe "spectateur neuf". Reviens quelques heures plus tard, regarde la séquence sans t’arrêter, et note les trois moments où ton oeil sort de l’histoire. Très souvent, ces moments révèlent un mouvement trop poussé, un raccord temporel faible, ou une durée de plan légèrement excessive. Cette relecture à froid est l’un des moyens les plus simples de transformer un plan techniquement acceptable en plan vraiment cinématographique.
-
-Garde ce rituel à chaque projet, même court. C’est une habitude discrète qui élève rapidement ton niveau de réalisation.
-
-![Validation timeline d’un plan animé Runway avec contrôle raccord avant après](/images/art4-wf2.png)
-
-Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
+Je reviens sur ce point en vidéo sur ma chaîne Business Dynamite.
 
 [Voir l'explication en vidéo](https://www.youtube.com/watch?v=TBBkUSFAGSU)
 
-## Troubleshooting: erreurs fréquentes et corrections exactes
+## Dépannage : les erreurs les plus fréquentes et leur correction
 
-Erreur numéro un, mouvement trop agressif. Le plan se déforme en fin de course. Correction: réduire amplitude, raccourcir durée, revenir à un mouvement unique.
+**Le modèle n'apparaît pas dans le sélecteur.** Si tu cherches Gen-3, il a été retiré. Si tu cherches Gen-4.5, vérifie ta formule : il faut au minimum Standard. Sur la version web, tape « Gen-4.5 » dans la recherche de la vue Apps, ou passe par le sélecteur de modèle du mode Tool avec l'onglet Video actif.
 
-Erreur numéro deux, sujet instable. Visage ou mains "fondent". Correction: améliorer image source sur zones fragiles, prioriser pass stabilité, simplifier l’action.
+**Le mouvement est trop agressif et le plan se déforme en fin de clip.** Réduis l'amplitude dans le prompt (« very subtle », « slowly »), raccourcis la durée, garde une seule intention de caméra.
 
-Erreur numéro trois, arrière-plan qui glisse. Parallaxe non crédible. Correction: clarifier profondeur visuelle, limiter drift, éviter textures trop détaillées en fond.
+**Le visage ou les mains fondent.** Retravaille la source sur ces zones avant toute nouvelle génération. Puis refais une passe avec un mouvement minimal pour vérifier que le sujet tient.
 
-Erreur numéro quatre, plan superbe seul mais mauvais en séquence. Correction: valider en timeline dès les premières passes, ajuster rythme et raccord.
+**Le mouvement obtenu contredit celui demandé.** Cherche les indices de mouvement implicites dans ton image : flou de bougé, poussière, pose en pleine action, lignes de fuite fortes. Retire-les ou choisis un mouvement qui va dans leur sens.
 
-Erreur numéro cinq, sur-itération. Trop de versions, plus de décision claire. Correction: critères fixes go/no-go et journal court des tests.
+**Une coupe parasite apparaît au milieu du clip.** Le guide de prompt de Runway rattache ce défaut à la combinaison image et prompt. En pratique, je simplifie le prompt, je retire les enchaînements trop nombreux et j'allonge un peu la durée si j'ai demandé plusieurs actions.
 
-Erreur numéro six, export final trop compressé. Les artefacts deviennent visibles. Correction: vérifier pipeline d’export et tester un rendu intermédiaire avant diffusion.
+**L'image est recadrée de façon inattendue.** Le format de sortie s'aligne par défaut sur ton image. Si tu l'as changé, Runway recadre. Prépare ton image directement dans l'un des six formats acceptés.
 
-Pour renforcer les bases techniques autour de l’animation et de la postproduction, consulte [Runway Learn](https://learn.runwayml.com/), la documentation [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve), et les ressources de [No Film School](https://nofilmschool.com/). Ces références sont utiles pour garder un niveau pro au-delà du prompting.
+**Les crédits fondent sans résultat utilisable.** Arrête de générer, reviens à la source. Fixe-toi un maximum de trois à cinq essais par plan avec une variable modifiée à chaque fois, et teste en Gen-4 Turbo ou en Unlimited Mode quand c'est possible.
 
-> 💡 **Frank's Cut:** quand tu hésites, privilégie toujours le plan le plus stable. Le spectateur pardonne la sobriété, il ne pardonne pas la déformation.
+**L'export final laisse voir des artefacts.** Vérifie ta chaîne d'export. Sur Max, l'option ProRes au moment de la génération supprime une étape de compression.
 
-## FAQ: questions essentielles sur Runway Gen-3 pour animer une image fixe
+## FAQ : animer une image fixe avec Runway en 2026
 
-1. **Combien de temps doit durer un plan animé à partir d’une image fixe ?**  
-Dans la majorité des cas, 2,5 à 4 secondes donnent les meilleurs résultats de stabilité. Au-delà, le risque de dérive augmente, surtout sur les zones sensibles comme le visage, les mains et les arrière-plans fins. Ce n’est pas une limite artistique absolue, mais une réalité technique fréquente. Tu peux prolonger certains plans avec de bons résultats, mais il faut des sources très propres et des mouvements très contrôlés. En pratique, mieux vaut un plan court solide qu’un plan long instable.
+### Runway Gen-3 est-il encore disponible ?
 
-2. **Pourquoi mes mains se déforment quand j’anime une image avec Runway ?**  
-Les mains sont une zone structurellement fragile pour les modèles vidéo. Si la source est ambiguë, l’animation amplifie l’erreur. Vérifie d’abord ta base image: doigts distincts, contours lisibles, lumière claire. Ensuite, réduis l’amplitude du mouvement et évite de cumuler plusieurs intentions caméra. Enfin, fais une pass stabilité avant d’ajouter toute variation créative. Cette séquence de travail augmente nettement la fiabilité sur les zones anatomiques sensibles.
+Non. D'après le centre d'aide de Runway, Gen-3 Alpha a été retiré le 8 juillet 2026 et Gen-3 Alpha Turbo le 30 juillet 2026. Les fonctions qui en dépendaient, Camera Control, Expand Video, Act-One sur Gen-3 ou Keyframes sur Gen-3, ont disparu avec eux. Runway oriente vers Gen-4.5 pour l'image vers vidéo et le texte vers vidéo, vers l'app Animate Frames pour les images clés, et vers Edit Studio Aleph 2.0 pour la transformation de vidéo. Les tutoriels qui parlent encore de Gen-3 restent utiles pour la logique de travail, mais leurs réglages et leurs coûts ne correspondent plus à l'outil actuel.
 
-3. **Quel type de mouvement est le plus sûr pour débuter ?**  
-Le push-in léger et le drift latéral discret sont les plus stables pour commencer. Ils créent une sensation de vie sans forcer la structure du plan. Les mouvements complexes ou combinés, comme rotation + translation + handheld prononcé, augmentent vite le risque d’artefacts. Commence simple, maîtrise la qualité, puis ajoute de la complexité progressivement. Ce chemin te fait gagner du temps et te donne des plans utilisables plus rapidement.
+### Combien coûte un plan de 5 secondes avec Gen-4.5 ?
 
-4. **Comment savoir si un plan est vraiment prêt pour le montage final ?**  
-Un plan est prêt quand il tient sur trois tests: lecture isolée, lecture avec plans avant/après, et lecture sur au moins deux supports (écran principal + mobile). Tu dois vérifier la stabilité des zones critiques, la cohérence du mouvement, et l’absence de défauts visibles après compression. Ajoute un test audio léger pour juger l’intégration réelle dans la scène. Si le plan passe ces tests sans gêne perceptible, il est généralement prêt.
+Gen-4.5 consomme 12 crédits par seconde, donc 60 crédits pour un clip de 5 secondes, en image vers vidéo comme en texte vers vidéo. Avec la formule Standard à 15 dollars par mois (625 crédits), cela représente une dizaine de clips mensuels. Pro donne 2 250 crédits, Max 9 500. Ajoute 5 crédits par seconde si tu choisis l'export ProRes ou séquence PNG, réservé aux plans Max, Unlimited (Legacy) et Enterprise. Retiens surtout que les crédits ne sont rendus qu'en cas d'erreur technique : un rendu terminé mais raté est consommé, d'où l'intérêt de tester ton mouvement avant de viser le plan définitif.
 
-5. **Faut-il faire beaucoup de variantes pour trouver un bon résultat ?**  
-Pas forcément. Trop de variantes sans cadre te fait perdre du temps. Mieux vaut 3 à 5 tests ciblés avec une variable modifiée à la fois qu’une avalanche de rendus impossibles à comparer. Définis une intention claire, teste, note le résultat, décide, puis avance. Cette discipline de production est plus efficace que l’exploration infinie, surtout quand tu travailles sous contrainte de livraison.
+### Quelle durée choisir pour un plan animé à partir d'une image fixe ?
 
-6. **Comment intégrer un plan Runway avec des plans tournés réels ?**  
-La clé est la cohérence: rythme, texture, contraste, et dynamique de mouvement. Place rapidement le plan animé dans la timeline réelle et ajuste sa durée pour qu’il "respire" avec les plans voisins. En postproduction, harmonise couleur et grain pour réduire les écarts de signature visuelle. Le son aide aussi beaucoup à lisser la transition. L’objectif n’est pas de cacher l’origine du plan, mais d’éviter qu’il rompe la continuité de la scène.
+Gen-4.5 accepte de 2 à 10 secondes. Pour un portrait, un insert ou un plan d'ambiance, je vise 3 à 4 secondes : c'est la zone où la stabilité est la meilleure et où le plan s'insère facilement au montage. Au-delà, la dérive augmente, surtout sur les visages, les mains et les fonds détaillés. Une durée plus longue se justifie quand ton prompt enchaîne plusieurs actions, parce que le modèle a besoin de temps pour les dérouler. Dans tous les cas, c'est la tenue du plan qui fixe la durée finale, pas ton intention de départ. Coupe avant la dégradation.
 
-7. **Que faire quand un plan est presque bon mais casse en fin ?**  
-Coupe avant la dégradation. C’est souvent la meilleure solution. Tu peux aussi retenter une version plus courte avec mouvement plus modéré. Beaucoup de créateurs s’acharnent à "sauver" les dernières secondes et finissent par détériorer l’ensemble. En langage ciné, un plan net et bref est plus fort qu’un plan plus long techniquement douteux. Accepte la contrainte comme un choix de mise en scène.
+### Pourquoi mes mains et mes visages se déforment-ils dans Runway ?
 
-8. **Quelle routine hebdomadaire pour progresser rapidement sur Runway Gen-3 ?**  
-Fais deux sessions de 90 minutes par semaine. Session 1: préparation image + 3 tests de mouvement sur un même plan. Session 2: intégration timeline + corrections + export comparatif. Note ce qui marche et ce qui casse. En quatre semaines, tu construis des réflexes fiables et une base de presets pratiques. La progression vient de la répétition structurée, pas de la recherche permanente de nouvelles astuces isolées.
+Parce que ce sont les zones les plus fragiles pour un modèle vidéo et que Runway part de ton image comme première image. Le guide officiel le dit clairement : les défauts visuels de la source, mains ou visages flous, peuvent être amplifiés à l'animation. Vérifie d'abord ta base : doigts distincts, contours nets, lumière lisible. Ensuite, réduis l'amplitude du mouvement et évite de cumuler plusieurs intentions de caméra. Fais une passe avec un mouvement minimal pour confirmer que le sujet tient, puis seulement ajoute de la vie. Cette progression règle la grande majorité des déformations que je vois passer.
+
+### Faut-il encore utiliser Gen-4 ou Gen-4 Turbo ?
+
+Oui, comme outil de brouillon. Runway classe Gen-4 dans la génération précédente, mais les deux modèles restent disponibles. Gen-4 Turbo coûte 5 crédits par seconde, soit 25 crédits pour 5 secondes, contre 60 en Gen-4.5, et Runway recommande lui-même de tester en Turbo avant de monter en gamme. Je m'en sers pour vérifier qu'une image supporte un mouvement donné. Un visage qui fond déjà en Turbo t'envoie retravailler la source. Pour le plan final, Gen-4.5 donne un meilleur suivi du prompt et des formats plus variés. Note que Gen-4 exige une image d'entrée et limite le prompt à 1 000 caractères.
+
+### Comment obtenir un plan plus long que 10 secondes ?
+
+Runway documente la méthode dans son guide de prompt image vers vidéo. Place la tête de lecture sur la toute dernière image du clip terminé, clique sur Use puis sur Use current frame : cette image devient l'entrée d'une nouvelle génération. Tu assembles ensuite les deux clips dans ton logiciel de montage et tu supprimes l'image partagée. La limite, c'est l'accumulation : chaque prolongation hérite des petites dérives de la précédente. Au-delà de deux enchaînements, repars plutôt d'une image source retravaillée. Et si tu veux aller d'une image précise à une autre, utilise l'app Animate Frames, prévue pour ça.
+
+### Que deviennent les abonnés au plan Unlimited ?
+
+Le plan Unlimited n'est plus vendu depuis le 1er juin 2026. Les abonnés existants le conservent jusqu'au 30 novembre 2026. À cette date, les abonnements mensuels basculent automatiquement sur Max au même prix de 95 dollars par mois, sauf résiliation. Les abonnés annuels peuvent choisir en novembre entre un remboursement des mois restants et un bonus de crédits pour migrer vers Max. Max ne comprend pas l'ancien Explore Mode, mais donne 9 500 crédits mensuels avec un mois de report. À ne pas confondre avec l'Unlimited Mode, un mode de génération sans crédits proposé sur Pro et Max pour certains modèles.
+
+### Comment intégrer un plan Runway avec des plans tournés ?
+
+Par la cohérence de rythme, de texture et de mouvement. Place le plan animé dans la vraie timeline dès les premiers essais et ajuste sa durée pour qu'il respire avec ses voisins. Génère dans la cadence de ton projet, 24 ou 25 images par seconde, pour éviter une conversion après coup. En postproduction, harmonise couleur et grain pour rapprocher les signatures visuelles, et si ton plan Max le permet, demande un export ProRes pour garder de la latitude à l'étalonnage. Le son fait le reste : une ambiance commune entre le plan tourné et le plan généré lisse la transition mieux que n'importe quel effet.
 
 {/* PUBLICATION DATE: 2026-04-18 */}
