@@ -1,6 +1,22 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-05 (J47 publie)
+## Last run: 2026-10-06 (J48 UPDATE publie)
+
+### What happened
+- J48 (jour UPDATE) publie a la date prevue : `tutoriel-runway-gen-3-animer-image-fixe-plan-film`
+  reecrit en profondeur (4411 mots FR, 10 H2 + FAQ 8 questions, editorial 100,
+  0 issue seo_audit), URL et date d'origine conservees, dateModified 2026-10-06.
+  Calendrier sans glissement : J49 = 2026-10-07 (`pivot-business-en-ligne-cinema-ia`).
+- Fait majeur : Gen-3 Alpha retire le 8 juillet 2026 (Turbo le 30 juillet).
+  Article recentre sur Gen-4.5 avec les chiffres du centre d'aide Runway et de
+  runway.com/pricing au 2026-10-06. Version EN publiee le meme jour.
+- Astuce outillage : le centre d'aide Runway renvoie 403 a WebFetch mais son
+  API Zendesk publique repond en curl
+  (`help.runwayml.com/api/v2/help_center/articles/search.json?query=...` puis
+  `/api/v2/help_center/en-us/articles/<id>.json`). Playwright channel=chrome
+  passe aussi pour les captures.
+
+## Previous run: 2026-10-05 (J47 publie)
 
 ### What happened
 - J47 du plan 90 jours publie a la date prevue :
