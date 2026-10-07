@@ -1,6 +1,18 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-06 (J48 UPDATE publie)
+## Last run: 2026-10-07 (J49 publie)
+
+### What happened
+- J49 publie a la date prevue : `pivot-business-en-ligne-cinema-ia` (business,
+  ~3860 mots FR, 8 H2 + FAQ 7 questions, 2 tableaux, 9 liens internes,
+  3 externes), commit 9c25c00 pousse sur main. Calendrier sans glissement :
+  J50 = 2026-10-08 (`journee-production-studio-ia-solo`).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (salle de seminaire d'hotel vide la nuit,
+  travelling monte au sol) + captures reelles WEF et Transitions Pro.
+- Aucun fait personnel invente : uniquement ce que le site documente deja.
+
+## Previous run: 2026-10-06 (J48 UPDATE publie)
 
 ### What happened
 - J48 (jour UPDATE) publie a la date prevue : `tutoriel-runway-gen-3-animer-image-fixe-plan-film`

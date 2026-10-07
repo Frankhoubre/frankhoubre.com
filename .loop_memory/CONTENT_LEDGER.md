@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-07 — Reconversion IA créative : du business en ligne au cinéma
+- slug: pivot-business-en-ligne-cinema-ia
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/pivot-business-en-ligne-cinema-ia
+- url_en: https://frankhoubre.com/en/blog/pivot-business-en-ligne-cinema-ia
+- category: business
+- type: evergreen
+- search_intent: informational
+- primary_keyword: reconversion ia creative
+- secondary_keywords: pivot business en ligne cinema ia, changer de metier creation video ia, projet de transition professionnelle formation ia, competences transferables cinema ia
+- sources: weforum.org Future of Jobs Report 2025 digest, transitionspro.fr page PTP, businessdynamite.xyz
+- internal_links: -> parcours-frank-houbre-guitare-cinema-ia (plan), ronces-coulisses-court-film-ia, methode-realisateur-ia-diriger-avant-generer, voidborn-anime-ia-festival-coulisses, chaine-youtube-cinema-ia-retour-experience, metiers-audiovisuel-ia-menaces-transformation-avis, comment-creer-portfolio-ia-credible, vivre-video-ia-2026-modeles-revenus, monetiser-competences-creation-ia-freelance-agence, /a-propos ; entrants FR parcours + chaine-youtube, EN chaine-youtube + vivre-video-ia
+- cta: AI Studios et page A propos, sans pousser ; intention business renvoyee vers Business Dynamite
+- cannibalization_notes: le parcours J9 raconte toute la trajectoire, cet article ne traite que la derniere bascule et la methode lecteur ; vivre-video-ia garde l'intention revenus
+- editorial_decisions: aucun chiffre ni anecdote personnelle non documentes, duree de reconversion volontairement non chiffree (dit dans la FAQ), dispositifs presentes comme francais en EN
+- checker: pass (seo_audit 0 issue sur les slugs touches, editorial sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 9c25c00
+
 ### 2026-10-04 — Adapter un livre en film IA : méthode et droits
 - slug: adapter-livre-film-ia-methode-droits
 - locale: fr + en (meme slug, publies le meme jour)
