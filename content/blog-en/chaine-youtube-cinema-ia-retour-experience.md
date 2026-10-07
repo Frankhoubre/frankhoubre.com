@@ -37,7 +37,7 @@ The audience, no. Zero automatic transfer. People who followed me for entreprene
 
 The biggest relearning was the vocabulary of titles and thumbnails. In entrepreneurship, a number in the promise works beautifully. In AI cinema, the same number rings false and pulls in people who leave almost immediately. I had to relearn all of it for a subject where the value is visual and not accounting.
 
-If you are coming from another channel, take the work habits and leave the communication recipes behind.
+If you are coming from another channel, take the work habits and leave the communication recipes behind. Why I left business content for film in the first place is its own story, told in [my switch from online business to AI filmmaking](/en/blog/pivot-business-en-ligne-cinema-ia).
 
 ## The YouTube rules an AI channel should read first
 

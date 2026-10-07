@@ -43,7 +43,7 @@ Cette question m'a poussé à chercher un autre moyen de m'exprimer à travers l
 
 Cette recherche m'a mené vers le digital au sens large. J'ai fondé [Business Dynamite](https://businessdynamite.xyz/), une plateforme dédiée à l'entrepreneuriat et aux opportunités qu'offre Internet. À travers des contenus, des formations et une chaîne YouTube, j'ai accompagné des milliers de créateurs et d'entrepreneurs dans le développement de leurs propres projets, en insistant sur l'autonomie et la capacité à exécuter plutôt que sur la théorie.
 
-Cette phase a changé quelque chose dans ma façon de travailler. Je ne construisais plus seulement des outils, je devenais aussi quelqu'un capable de vulgariser des sujets techniques et d'en faire des leviers concrets pour d'autres personnes. C'est une compétence que je n'avais pas mesurée à sa juste valeur pendant les années guitare, et qui allait devenir centrale pour tout ce qui a suivi.
+Cette phase a changé quelque chose dans ma façon de travailler. Je ne construisais plus seulement des outils, je devenais aussi quelqu'un capable de vulgariser des sujets techniques et d'en faire des leviers concrets pour d'autres personnes. C'est une compétence que je n'avais pas mesurée à sa juste valeur pendant les années guitare, et qui allait devenir centrale pour tout ce qui a suivi. Pourquoi j'ai ensuite quitté ce terrain pour faire des films, je le raconte dans [mon passage du business en ligne au cinéma IA](/blog/pivot-business-en-ligne-cinema-ia).
 
 ## Le virage vers l'image et la vidéo IA
 

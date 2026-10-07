@@ -152,7 +152,7 @@ All three swap volume for judgment. Judgment happens to be the part AI does wors
 
 ## What I would do if I started over tomorrow
 
-Here is the order I would take, with rent to pay.
+Here is the order I would take, with rent to pay. If you are still deciding whether to leave your current job at all, start with [how I planned my own creative career change](/en/blog/pivot-business-en-ligne-cinema-ia).
 
 First three weeks, build proof rather than an audience. A two minute film with a character who holds from shot to shot, properly graded, properly mixed. One of them, finished. Not ten attempts.
 

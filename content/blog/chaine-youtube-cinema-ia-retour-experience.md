@@ -36,7 +36,7 @@ L'audience, non. Zéro transfert automatique. Les gens qui me suivaient pour l'e
 
 Le plus gros réapprentissage a porté sur le vocabulaire des titres et des miniatures. Sur l'entrepreneuriat, une promesse chiffrée fonctionne très bien. Sur le cinéma IA, la même promesse chiffrée sonne faux et attire des gens qui repartent presque aussitôt. Il a fallu tout réapprendre sur un sujet où la valeur est visuelle et pas comptable.
 
-Si tu viens d'une autre chaîne, prends les habitudes de travail et laisse les recettes de communication derrière toi.
+Si tu viens d'une autre chaîne, prends les habitudes de travail et laisse les recettes de communication derrière toi. Le reste de cette bascule, ce qui m'a fait quitter le sujet business pour le film, est raconté dans [ma reconversion du business en ligne au cinéma IA](/blog/pivot-business-en-ligne-cinema-ia).
 
 ## Les règles YouTube qu'une chaîne IA doit lire en premier
 
