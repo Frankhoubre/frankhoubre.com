@@ -1,6 +1,19 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-07 (J49 publie)
+## Last run: 2026-10-08 (J50 publie)
+
+### What happened
+- J50 publie a la date prevue : `journee-production-studio-ia-solo` (business,
+  3974 mots FR, 12 H2 + FAQ 7 questions, 1 tableau, 8 liens internes,
+  3 externes INRS / US-CERT / EBU), commit 8d18656 pousse sur main. Calendrier
+  sans glissement : J51 = 2026-10-09 (`anatomie-plan-ia-reussi-analyse`).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (garage converti en studio au matin) + still
+  parking souterrain la nuit + capture reelle INRS.
+- Piege : le script image ne prend pas --slug et Git Bash convertit /images/...,
+  lancer avec MSYS_NO_PATHCONV=1.
+
+## Previous run: 2026-10-07 (J49 publie)
 
 ### What happened
 - J49 publie a la date prevue : `pivot-business-en-ligne-cinema-ia` (business,

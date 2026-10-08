@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-08 : Studio IA solo, une journée de production type
+- slug: journee-production-studio-ia-solo
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/journee-production-studio-ia-solo
+- url_en: https://frankhoubre.com/en/blog/journee-production-studio-ia-solo
+- category: business
+- type: evergreen
+- search_intent: informational
+- primary_keyword: studio ia solo
+- secondary_keywords: journee type createur video ia, organisation production video ia seul, generation par blocs, archivage regle 3-2-1 video
+- sources: inrs.fr travail sur ecran prevention des risques, US-CERT Data Backup Options (cisa.gov), tech.ebu.ch R 128
+- internal_links: -> outerframe-studio-pourquoi-studio-ia (plan), comment-produire-video-ia-24h (plan), workflow-complet-idee-film-ia-realiste, lost-garden-journal-production-serie-ia, pourquoi-jai-construit-imaginode-canvas-ia, film-ia-erreurs-raccord-incoherences-visuelles-eviter, /prestation ; entrants FR 24h + outerframe, EN 24h + workflow-complet
+- cta: page prestation en fin d'article (FR), page about (EN)
+- cannibalization_notes: 24h garde le sprint, outerframe la structure juridique, lost-garden le journal de serie ; ici la routine quotidienne repetable
+- editorial_decisions: journee type recomposee annoncee comme telle, aucun horaire ni volume chiffre, habitudes non documentees reformulees en conseils
+- checker: pass (seo_audit 0 issue sur les slugs touches, editorial 100 sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 8d18656
+
 ### 2026-10-07 — Reconversion IA créative : du business en ligne au cinéma
 - slug: pivot-business-en-ligne-cinema-ia
 - locale: fr + en (meme slug, publies le meme jour)
