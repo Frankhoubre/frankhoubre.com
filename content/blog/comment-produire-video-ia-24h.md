@@ -174,7 +174,7 @@ Ce mini-tunnel post doit être **borné** : par exemple vingt minutes par plan m
 
 ## Solo ou binôme : répartition réaliste sur une journée
 
-**Mode solo.** Tu enchaînes brief, génération, montage, mix light. Ça marche si tu acceptes explicitement un univers visuel moins varié. La constance devient ton luxe.
+**Mode solo.** Tu enchaînes brief, génération, montage, mix light. Ça marche si tu acceptes explicitement un univers visuel moins varié. La constance devient ton luxe. Hors sprint, sur un projet de plusieurs semaines, l’organisation change complètement : je la détaille dans [une journée de production type en studio IA solo](/blog/journee-production-studio-ia-solo).
 
 **Mode binôme.** Une personne tient la **validation** et l’**arborescence** (statuts, versions, renommage en `APPROVED`), l’autre pousse les modèles et le montage. Tu gagnes le temps mental où l’on hésite sur les noms de fichiers à deux heures du matin.
 

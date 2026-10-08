@@ -170,7 +170,7 @@ This mini post tunnel must be **bounded**: for example twenty minutes per shot m
 
 ## Solo or duo: realistic distribution over a day
 
-**Solo mode.** You chain brief, generation, edit, light mix. It works if you explicitly accept a less varied visual universe. Consistency becomes your luxury.
+**Solo mode.** You chain brief, generation, edit, light mix. It works if you explicitly accept a less varied visual universe. Consistency becomes your luxury. Outside a sprint, on a project that runs for weeks, the day looks very different: I walk through it in [a typical production day in a solo AI studio](/en/blog/journee-production-studio-ia-solo).
 
 **Duo mode.** One person holds the **validation** and the **tree** (statuses, versions, renaming to `APPROVED`), the other pushes the models and the edit. You gain the mental time where you hesitate over file names at two in the morning.
 

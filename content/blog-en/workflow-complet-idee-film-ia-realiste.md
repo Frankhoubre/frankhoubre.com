@@ -66,7 +66,7 @@ You lay down an **ambiance track** before freezing the visual master, even raw: 
 
 Minute 0 to 10, you open a text document, you copy the five-line brief template, you read it aloud. If you stumble on the place or the hour, you complete before any generation.
 
-Minute 10 to 25, you draw three boxes on paper, you write under each box the shot type and the movement. You take a photo of the paper with your phone, you slip it into the project folder, **even if it is ugly**. This photo becomes your anchor when you have twenty tabs open.
+Minute 10 to 25, you draw three boxes on paper, you write under each box the shot type and the movement. You take a photo of the paper with your phone, you slip it into the project folder, **even if it is ugly**. This photo becomes your anchor when you have twenty tabs open. (If you want to see how sessions like this one fit into a full working day, here is [a typical production day in a solo AI studio](/en/blog/journee-production-studio-ia-solo).)
 
 Minute 25 to 55, pilot generation. You launch the first image with the prompt base, you note in `prompts.txt` the exact version and the settings visible on the screen. You duplicate the scene or the session depending on the tool, you change only the weather line or the light temperature, you regenerate, you repeat a third time. You choose the pilot by zooming on the sweater texture and the skin-to-shadow transition under the nose.
 

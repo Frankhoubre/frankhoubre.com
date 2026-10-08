@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-07T07:58:13.155Z
+> Generated: 2026-10-08T08:00:49.961Z
 
-## FR : 326 articles (/blog/<slug>)
+## FR : 327 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 28, comparatifs 19, analyses 17, guides 17, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 29, comparatifs 19, analyses 17, guides 17, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-08 | business | `journee-production-studio-ia-solo` | Studio IA solo : une journée de production type |
 | 2026-10-07 | business | `pivot-business-en-ligne-cinema-ia` | Reconversion IA créative : du business en ligne au cinéma |
 | 2026-10-05 | business | `chaine-youtube-cinema-ia-retour-experience` | Chaîne YouTube cinéma IA : mon retour d'expérience |
 | 2026-10-04 | guides | `adapter-livre-film-ia-methode-droits` | Adapter un livre en film IA : méthode et droits |
@@ -338,12 +339,13 @@ Categories: tutoriels 190, actualite 53, business 28, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 240 articles (/en/blog/<slug>)
+## EN : 241 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, business 18, actualite 14, comparatifs 14, analyses 7, guides 5, notes 1, postproduction 1
+Categories: tutoriels 180, business 19, actualite 14, comparatifs 14, analyses 7, guides 5, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-08 | business | `journee-production-studio-ia-solo` | Solo AI studio: a typical production day |
 | 2026-10-07 | business | `pivot-business-en-ligne-cinema-ia` | Creative career change with AI: from business to film |
 | 2026-10-05 | business | `chaine-youtube-cinema-ia-retour-experience` | AI film YouTube channel: what I learned the hard way |
 | 2026-10-04 | guides | `adapter-livre-film-ia-methode-droits` | Adapting a book into an AI film: rights and method |

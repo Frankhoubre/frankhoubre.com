@@ -108,7 +108,7 @@ Aucun client n'est arrivé grâce à la structure. Elle m'a seulement permis d'e
 
 Elle a ajouté des coûts fixes et de la paperasse. Comptabilité, cotisations, obligations déclaratives, assurance. Sur une année creuse, ces charges tombent que tu produises ou non. Le cadre se paye tous les mois, sans négociation possible.
 
-Et elle n'a rien fait contre la solitude du travail. Un studio de deux personnes reste un endroit où chacun passe l'essentiel de ses journées seul devant un écran. Le mot « studio » évoque des couloirs et une salle de montage. La réalité ressemble beaucoup plus à ce que décrit mon analyse des [studios classiques face aux studios IA](/blog/studios-traditionnels-vs-studios-ia-2026) : des structures très légères qui produisent des formats courts, loin des annonces de partenariats à un milliard.
+Et elle n'a rien fait contre la solitude du travail. Un studio de deux personnes reste un endroit où chacun passe l'essentiel de ses journées seul devant un écran (j'ai décrit à quoi ressemble une de ces journées dans [ma journée de production type en studio IA solo](/blog/journee-production-studio-ia-solo)). Le mot « studio » évoque des couloirs et une salle de montage. La réalité ressemble beaucoup plus à ce que décrit mon analyse des [studios classiques face aux studios IA](/blog/studios-traditionnels-vs-studios-ia-2026) : des structures très légères qui produisent des formats courts, loin des annonces de partenariats à un milliard.
 
 ## Ce que je referais autrement
 
