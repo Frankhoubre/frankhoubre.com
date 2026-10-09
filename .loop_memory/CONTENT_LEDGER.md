@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-09 : Analyse plan IA, un plan réussi image par image
+- slug: anatomie-plan-ia-reussi-analyse
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/anatomie-plan-ia-reussi-analyse
+- url_en: https://frankhoubre.com/en/blog/anatomie-plan-ia-reussi-analyse
+- category: analyses
+- type: evergreen
+- search_intent: informational
+- primary_keyword: analyse plan ia
+- secondary_keywords: analyser image generee ia, grille analyse plan cinema, extraire images video ffmpeg, defauts video ia image par image
+- sources: ffmpeg.org filtres (fps), trac.ffmpeg.org wiki thumbnails, red.com shutter angle tutorial
+- internal_links: -> comment-cadrer-image-ia-comme-pro-cinema (plan), comment-rendre-scene-ia-plus-credible (plan), corriger-scintillement-flicker-video-ia, comment-ajouter-motion-blur-realiste-video-ia, film-ia-erreurs-raccord-incoherences-visuelles-eviter, /formation-ia-gratuite ; entrants FR + EN depuis comment-cadrer et comment-rendre-scene
+- cta: formation IA gratuite (FR), aucun (EN)
+- cannibalization_notes: J104 garde le film entier, ici le plan unique ; credibilite et cadrage restent sur leurs articles
+- editorial_decisions: plans generes pour l'article et analyses avec leurs vrais defauts, prompt devoile, aucune statistique personnelle inventee
+- checker: pass (seo_audit 0 issue sur le slug, editorial 100 sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 307cc21
+
 ### 2026-10-08 : Studio IA solo, une journée de production type
 - slug: journee-production-studio-ia-solo
 - locale: fr + en (meme slug, publies le meme jour)

@@ -1,6 +1,21 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-08 (J50 publie)
+## Last run: 2026-10-09 (J51 publie)
+
+### What happened
+- J51 publie a la date prevue : `anatomie-plan-ia-reussi-analyse` (analyses,
+  ~4880 mots FR, 9 H2 + FAQ 7 questions, grille 7 couches en tableau,
+  6 liens internes, 3 externes ffmpeg / wiki ffmpeg / RED), commit 307cc21
+  pousse sur main. Calendrier sans glissement : J52 = 2026-10-10
+  (`pme-usages-video-ia-rentables`).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (halle aux poissons a l'aube) + still fournil
+  la nuit + capture reelle doc ffmpeg filtre fps. Les deux stills sont les
+  plans analyses dans l'article, defauts decrits d'apres l'image reelle.
+- Piege : le PNG temporaire de capture a ete commite puis retire, ecrire les
+  fichiers intermediaires dans le scratchpad.
+
+## Previous run: 2026-10-08 (J50 publie)
 
 ### What happened
 - J50 publie a la date prevue : `journee-production-studio-ia-solo` (business,
