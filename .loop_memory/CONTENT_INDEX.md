@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-08T08:00:49.961Z
+> Generated: 2026-10-09T08:03:39.709Z
 
-## FR : 327 articles (/blog/<slug>)
+## FR : 328 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 29, comparatifs 19, analyses 17, guides 17, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 29, comparatifs 19, analyses 18, guides 17, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-09 | analyses | `anatomie-plan-ia-reussi-analyse` | Analyse plan IA : un plan réussi, image par image |
 | 2026-10-08 | business | `journee-production-studio-ia-solo` | Studio IA solo : une journée de production type |
 | 2026-10-07 | business | `pivot-business-en-ligne-cinema-ia` | Reconversion IA créative : du business en ligne au cinéma |
 | 2026-10-05 | business | `chaine-youtube-cinema-ia-retour-experience` | Chaîne YouTube cinéma IA : mon retour d'expérience |
@@ -339,12 +340,13 @@ Categories: tutoriels 190, actualite 53, business 29, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 241 articles (/en/blog/<slug>)
+## EN : 242 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, business 19, actualite 14, comparatifs 14, analyses 7, guides 5, notes 1, postproduction 1
+Categories: tutoriels 180, business 19, actualite 14, comparatifs 14, analyses 8, guides 5, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-09 | analyses | `anatomie-plan-ia-reussi-analyse` | AI shot analysis: a good shot, frame by frame |
 | 2026-10-08 | business | `journee-production-studio-ia-solo` | Solo AI studio: a typical production day |
 | 2026-10-07 | business | `pivot-business-en-ligne-cinema-ia` | Creative career change with AI: from business to film |
 | 2026-10-05 | business | `chaine-youtube-cinema-ia-retour-experience` | AI film YouTube channel: what I learned the hard way |

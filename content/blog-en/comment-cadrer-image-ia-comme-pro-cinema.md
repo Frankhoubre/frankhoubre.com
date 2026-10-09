@@ -67,6 +67,8 @@ The framing of one shot prepares the next. It is the basis of a credible sequenc
 
 To build this continuity in a complete scene, continue with [how to build a cinematic scene shot by shot](/en/blog/comment-construire-scene-cinematique-plan-par-plan). To decide how the subject occupies the frame without falling into decorative centering, cross-reference with [how to use the rule of thirds in AI generation](/en/blog/comment-utiliser-regle-des-tiers-generation-ia).
 
+A centered frame can work fine when the architecture leads the eye. I break down a real example in [this AI shot analysis, frame by frame](/en/blog/anatomie-plan-ia-reussi-analyse).
+
 ## Mandatory prompt template
 
 ```text

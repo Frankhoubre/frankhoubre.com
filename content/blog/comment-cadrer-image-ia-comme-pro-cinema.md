@@ -67,6 +67,8 @@ Le cadrage d’un plan prépare le suivant. C’est la base d’une séquence cr
 
 Pour construire cette continuité dans une scène complète, enchaîne avec [comment construire une scène cinématique plan par plan](/blog/comment-construire-scene-cinematique-plan-par-plan). Pour décider comment le sujet occupe le cadre sans tomber dans le centrage décoratif, croise avec [comment utiliser la règle des tiers en génération IA](/blog/comment-utiliser-regle-des-tiers-generation-ia).
 
+Un cadre centré peut aussi très bien marcher quand l'architecture mène le regard : je le montre sur un exemple réel dans [l'analyse d'un plan IA réussi, image par image](/blog/anatomie-plan-ia-reussi-analyse).
+
 ## Prompt template obligatoire
 
 ```text

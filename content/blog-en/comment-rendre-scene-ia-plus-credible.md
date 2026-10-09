@@ -17,6 +17,8 @@ Even if you stylize, keep a **dominant source**. The viewer does not believe the
 
 See [how to fix bad lighting in AI](/en/blog/comment-corriger-mauvais-lighting-ia).
 
+For a concrete case where steam with no heat source ruins an otherwise beautiful shot, read [my layer-by-layer AI shot analysis](/en/blog/anatomie-plan-ia-reussi-analyse).
+
 ## Lever 2: props with a function
 
 A cup with a stain, a cable that goes somewhere, a closed magazine with a visible spine: details that **occupy the space** without stealing the subject.

@@ -17,6 +17,8 @@ Même si tu stylises, garde une **source dominante**. Le spectateur ne croit pas
 
 Voir [comment corriger un mauvais lighting en IA](/blog/comment-corriger-mauvais-lighting-ia).
 
+Pour un cas concret où une vapeur sans source casse un plan pourtant très beau, regarde [mon analyse d'un plan IA couche par couche](/blog/anatomie-plan-ia-reussi-analyse).
+
 ## Levier 2 : props avec fonction
 
 Une tasse avec une tache, un câble qui part quelque part, un magazine fermé avec tranche visible : des détails qui **occupent l’espace** sans voler le sujet.
