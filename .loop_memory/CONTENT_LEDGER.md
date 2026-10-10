@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-10 : Vidéo IA PME, 5 usages rentables sans studio interne
+- slug: pme-usages-video-ia-rentables
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/pme-usages-video-ia-rentables
+- url_en: https://frankhoubre.com/en/blog/pme-usages-video-ia-rentables
+- category: business
+- type: evergreen
+- search_intent: commercial
+- primary_keyword: video ia pme
+- secondary_keywords: usages video ia entreprise, video ia sans studio, doublage ia entreprise, video formation ia pme, video produit ia e-commerce
+- sources: artificialintelligenceact.eu article 50, doc ElevenLabs Dubbing, fiche DGCCRF pratiques commerciales trompeuses
+- internal_links: -> produire-variantes-verticales-reels-shorts-ia, creer-packshots-produit-publicite-ia (plan), creer-avatar-parlant-videos-formation-heygen, doublage-ia-alternatives-heygen-comparatif, eu-ai-act-article-50-marquage-video-ia-aout-2026, budgeter-projet-video-ia-methode, /prestation (plan) ; entrants FR + EN depuis creer-packshots et produire-variantes
+- cta: /prestation (FR), conseil sans lien (EN)
+- cannibalization_notes: strictement production video, zero business en ligne (turf Business Dynamite) ; integrer-ia-boite-production-depart garde la boite de prod ; J93 evenementiel et J109 RSE pointeront ici
+- editorial_decisions: exemples hypothetiques presentes comme tels, aucune mission client inventee, aucun montant de sanction cite (sources contradictoires)
+- checker: pass (seo_audit 0 issue sur le slug, editorial 100 sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 0b69f0d
+
 ### 2026-10-09 : Analyse plan IA, un plan réussi image par image
 - slug: anatomie-plan-ia-reussi-analyse
 - locale: fr + en (meme slug, publies le meme jour)

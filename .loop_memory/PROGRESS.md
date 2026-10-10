@@ -1,6 +1,19 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-09 (J51 publie)
+## Last run: 2026-10-10 (J52 publie)
+
+### What happened
+- J52 publie a la date prevue : `pme-usages-video-ia-rentables` (business,
+  ~4050 mots FR, 13 H2 + FAQ 7 questions, tableau des 5 usages, CTA
+  /prestation), commit 0b69f0d pousse sur main. Calendrier sans glissement :
+  J53 = 2026-10-11.
+- Version EN publiee le meme jour, memes images, aucun YouTube, pas de lien
+  prestation (route FR uniquement).
+- Images : hero Nano Banana 2 (atelier velo) + still ceramiste + capture
+  reelle doc ElevenLabs Dubbing. Le script d'images saute un fichier deja
+  present : --force pour regenerer.
+
+## Previous run: 2026-10-09 (J51 publie)
 
 ### What happened
 - J51 publie a la date prevue : `anatomie-plan-ia-reussi-analyse` (analyses,
@@ -15,7 +28,7 @@
 - Piege : le PNG temporaire de capture a ete commite puis retire, ecrire les
   fichiers intermediaires dans le scratchpad.
 
-## Previous run: 2026-10-08 (J50 publie)
+## Older run: 2026-10-08 (J50 publie)
 
 ### What happened
 - J50 publie a la date prevue : `journee-production-studio-ia-solo` (business,
