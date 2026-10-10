@@ -18,6 +18,8 @@ Un packshot publicitaire n'est pas une nature morte artistique. C'est un **actif
 
 La lisibilité de l'étiquette prime. Si le texte est gibberish, tu perds la campagne. Stratégies : photographier le vrai produit et l'injecter en image-to-image, générer un flacon sans texte puis composer l'étiquette en post, ou utiliser un angle où la face texte est partiellement hors champ mais le branding reste reconnaissable par la forme et la couleur.
 
+Si tu gères une PME qui vend ses propres produits, sans agence derrière, la vidéo produit animée fait partie des [cinq usages vidéo IA rentables pour une PME sans studio interne](/blog/pme-usages-video-ia-rentables), avec la même règle de départ : une vraie photo du produit, jamais une description texte.
+
 La fidélité matière distingue le verre du plastique, le métal brossé du chrome miroir. L'IA adore le chrome cheap. Pour la pub, tu veux des reflets **contrôlés** : une ou deux sources soft visibles, pas un environnement entier dans le flacon.
 
 L'intégration post exige des bords propres, une ombre au sol crédible, un fond séparable. Si tu sais dès le brief que le packshot ira sur un dégradé animé, génère sur fond uni ou vert/gris neutre. Ne corrige pas en détourage ce que tu aurais pu simplifier au prompt.

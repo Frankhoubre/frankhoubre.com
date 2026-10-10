@@ -25,6 +25,8 @@ Horizontal camera movements do not always translate to vertical. A wide lateral 
 
 Link this discipline to [preparing a technical breakdown before AI video generation](/en/blog/preparer-decoupage-technique-avant-generation-video-ia) and to [producing variants for social networks](/en/blog/parametrer-rythme-montage-ads-ia-15s-30s) through the short rhythm. Social vertical is a nervous edit format, not a slowed master.
 
+On the advertiser side, turning one ad into variants is the most direct use for a small team, which is why I rank it among the [AI video uses that pay off for a small business](/en/blog/pme-usages-video-ia-rentables), as long as someone reads the results of each variant.
+
 > 💡 **Frank's Cut:** draw a 9:16 rectangle on your 16:9 monitor during the master review. If the subject leaves the rectangle on more than two key shots, you do not have a derivable vertical: you need native 9:16 shots.
 
 ## The three vertical production strategies

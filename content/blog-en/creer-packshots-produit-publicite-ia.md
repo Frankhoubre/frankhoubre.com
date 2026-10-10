@@ -18,6 +18,8 @@ An advertising packshot is not an artistic still life. It is a **technical asset
 
 Label readability comes first. If the text is gibberish, you lose the campaign. Strategies: photograph the real product and inject it in image-to-image, generate a bottle with no text then composite the label in post, or use an angle where the text face is partially off-frame but the branding stays recognizable by shape and color.
 
+If you run a small business that sells its own products, with no agency behind you, animated product video is one of the [five AI video uses that pay off for a small business without an in-house studio](/en/blog/pme-usages-video-ia-rentables), with the same starting rule: a real photo of the product, never a text description.
+
 Material fidelity distinguishes glass from plastic, brushed metal from mirror chrome. AI loves cheap chrome. For advertising, you want **controlled** reflections: one or two visible soft sources, not a whole environment in the bottle.
 
 Post integration requires clean edges, a believable contact shadow, a separable background. If you know from the brief that the packshot will go on an animated gradient, generate on a solid or neutral green/gray background. Do not fix in masking what you could have simplified in the prompt.

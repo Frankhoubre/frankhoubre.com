@@ -25,6 +25,8 @@ Les mouvements de caméra horizontal ne se traduisent pas toujours en vertical. 
 
 Relie cette discipline à [préparer un découpage technique avant génération vidéo IA](/blog/preparer-decoupage-technique-avant-generation-video-ia) et à [produire des variantes pour les réseaux](/blog/parametrer-rythme-montage-ads-ia-15s-30s) via le rythme court. Le vertical social est un format de montage nerveux, pas un master ralenti.
 
+Côté annonceur, décliner une pub en variantes est d'ailleurs l'usage le plus direct pour une petite structure : je l'ai classé parmi les [usages vidéo IA rentables pour une PME](/blog/pme-usages-video-ia-rentables), à condition que quelqu'un lise les résultats de chaque variante.
+
 > 💡 **Frank's Cut:** trace un rectangle 9:16 sur ton monitor 16:9 pendant la review du master. Si le sujet sort du rectangle sur plus de deux plans clés, tu n'as pas un vertical dérivable : tu as besoin de plans natifs 9:16.
 
 ## Les trois stratégies de production vertical
