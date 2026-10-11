@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-11 : Stack outils IA créateur, ce que j'utilise en 2026
+- slug: stack-creatif-2026-outils-frank-houbre
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/stack-creatif-2026-outils-frank-houbre
+- url_en: https://frankhoubre.com/en/blog/stack-creatif-2026-outils-frank-houbre
+- category: guides
+- type: evergreen
+- search_intent: info
+- primary_keyword: stack outils ia createur
+- secondary_keywords: outils ia que j'utilise, stack creatif 2026, outils video ia createur, organiser ses outils ia
+- sources: page /liens (selection officielle de Frank), accueil higgsfield.ai capture le 2026-10-11, doc ElevenLabs, articles VOIDBORN / Imaginode / Claude Code du site
+- internal_links: -> dix-sites-ia-indispensables-createurs-2026, screenweaver-ai-ecriture-scenario-storyboard, claude-code-createurs-video-guide, higgsfield-creative-os-claude-adobe-juin-2026, pourquoi-jai-construit-imaginode-canvas-ia, dzine-ia, voidborn-anime-ia-festival-coulisses, elevenlabs-tutoriel-definitif-voix-ultra-realistes, journee-production-studio-ia-solo, combien-coute-court-metrage-ia-2026, /liens ; entrants FR + EN depuis dix-sites et journee-production
+- cta: /liens (avec divulgation des liens affilies)
+- cannibalization_notes: stack personnel argumente, dix-sites garde la carte generale par briques ; J54 UPDATE generateur image gratuit sans recouvrement
+- editorial_decisions: uniquement les outils publics de /liens + Claude Code et Imaginode documentes, aucun prix, aucune habitude d'usage inventee, outils par projet (Lost Garden) volontairement non nommes comme dans l'article source
+- checker: pass (seo_audit 0 issue sur le slug, editorial 100 sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: df3a2b7
+
 ### 2026-10-10 : Vidéo IA PME, 5 usages rentables sans studio interne
 - slug: pme-usages-video-ia-rentables
 - locale: fr + en (meme slug, publies le meme jour)

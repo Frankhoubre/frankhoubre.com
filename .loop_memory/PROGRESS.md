@@ -1,6 +1,19 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-10 (J52 publie)
+## Last run: 2026-10-11 (J53 publie)
+
+### What happened
+- J53 publie a la date prevue : `stack-creatif-2026-outils-frank-houbre`
+  (guides, ~3800 mots FR, 13 H2 + FAQ 7 questions, tableau du stack), commit
+  df3a2b7 pousse sur main. Calendrier sans glissement : J54 = 2026-10-12
+  (UPDATE `meilleur-generateur-image-ia-gratuit`).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (utilitaire de tournage a l'heure bleue) +
+  captures reelles /liens et accueil Higgsfield.
+- Piege : lancer render_blog_queue_nanobanana.py avec MSYS_NO_PATHCONV=1
+  sous Git Bash, sinon --dest /images/... part dans C:/Program Files/Git.
+
+## Previous run: 2026-10-10 (J52 publie)
 
 ### What happened
 - J52 publie a la date prevue : `pme-usages-video-ia-rentables` (business,
@@ -13,7 +26,7 @@
   reelle doc ElevenLabs Dubbing. Le script d'images saute un fichier deja
   present : --force pour regenerer.
 
-## Previous run: 2026-10-09 (J51 publie)
+## Older run: 2026-10-09 (J51 publie)
 
 ### What happened
 - J51 publie a la date prevue : `anatomie-plan-ia-reussi-analyse` (analyses,
