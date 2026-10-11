@@ -24,7 +24,7 @@ Ce cumul fait toute la difficulté. Changer de poste coûte de l'énergie, et pe
 
 Aujourd'hui, Outerframe est une société à deux, avec Thibaut Dumont. J'ai raconté pourquoi j'ai quitté le solo dans l'article sur [la création d'Outerframe Studio](/blog/outerframe-studio-pourquoi-studio-ia). Mais dans les faits, la production d'un épisode reste un travail où chacun passe l'essentiel de ses heures seul devant son poste. Ce qui suit vaut donc pour le créateur indépendant comme pour la personne qui, dans une petite structure, porte un projet de bout en bout.
 
-Si tu as une deadline dans vingt-quatre heures, la logique de sprint est différente et je l'ai détaillée dans [la méthode pour produire une vidéo IA en 24h](/blog/comment-produire-video-ia-24h). Ici, on parle d'une journée ordinaire au milieu d'un projet qui dure des semaines. Celle qu'il faut savoir répéter cinquante fois sans s'user.
+Si tu as une deadline dans vingt-quatre heures, la logique de sprint est différente et je l'ai détaillée dans [la méthode pour produire une vidéo IA en 24h](/blog/comment-produire-video-ia-24h). Ici, on parle d'une journée ordinaire au milieu d'un projet qui dure des semaines. Celle qu'il faut savoir répéter cinquante fois sans s'user. Les outils ouverts pendant cette journée, je les ai rangés étape par étape dans [mon stack créatif de 2026](/blog/stack-creatif-2026-outils-frank-houbre).
 
 ## Le matin : écrire la journée avant d'ouvrir un outil
 

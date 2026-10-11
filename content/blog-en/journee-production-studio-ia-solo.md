@@ -25,7 +25,7 @@ That pile-up is the hard part. Switching jobs costs energy, and nobody tells you
 
 These days I run a two-person company. Even so, producing an episode still means each of us spends most of the day alone at a desk. So this applies to independent creators and to anyone in a small outfit who carries a project from start to finish.
 
-If you have a deadline in twenty-four hours, sprint logic is different, and I've covered it in [the method for producing an AI video in 24 hours](/en/blog/comment-produire-video-ia-24h). This is about an ordinary day in the middle of a project that runs for weeks. The kind of day you need to repeat fifty times without wearing yourself out.
+If you have a deadline in twenty-four hours, sprint logic is different, and I've covered it in [the method for producing an AI video in 24 hours](/en/blog/comment-produire-video-ia-24h). This is about an ordinary day in the middle of a project that runs for weeks. The kind of day you need to repeat fifty times without wearing yourself out. I sorted the tools open during that day, stage by stage, in [my 2026 creator stack](/en/blog/stack-creatif-2026-outils-frank-houbre).
 
 ## Morning: write the day before you open a tool
 

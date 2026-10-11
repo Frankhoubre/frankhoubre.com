@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-10T08:00:55.807Z
+> Generated: 2026-10-11T08:01:26.645Z
 
-## FR : 329 articles (/blog/<slug>)
+## FR : 330 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 30, comparatifs 19, analyses 18, guides 17, notes 1, postproduction 1
+Categories: tutoriels 190, actualite 53, business 30, comparatifs 19, analyses 18, guides 18, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-11 | guides | `stack-creatif-2026-outils-frank-houbre` | Stack outils IA créateur : ce que j'utilise en 2026 |
 | 2026-10-10 | business | `pme-usages-video-ia-rentables` | Vidéo IA PME : 5 usages rentables sans studio interne |
 | 2026-10-09 | analyses | `anatomie-plan-ia-reussi-analyse` | Analyse plan IA : un plan réussi, image par image |
 | 2026-10-08 | business | `journee-production-studio-ia-solo` | Studio IA solo : une journée de production type |
@@ -341,12 +342,13 @@ Categories: tutoriels 190, actualite 53, business 30, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 243 articles (/en/blog/<slug>)
+## EN : 244 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, business 20, actualite 14, comparatifs 14, analyses 8, guides 5, notes 1, postproduction 1
+Categories: tutoriels 180, business 20, actualite 14, comparatifs 14, analyses 8, guides 6, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-11 | guides | `stack-creatif-2026-outils-frank-houbre` | AI creator tool stack: what I actually use in 2026 |
 | 2026-10-10 | business | `pme-usages-video-ia-rentables` | AI video for small business: 5 uses that pay off |
 | 2026-10-09 | analyses | `anatomie-plan-ia-reussi-analyse` | AI shot analysis: a good shot, frame by frame |
 | 2026-10-08 | business | `journee-production-studio-ia-solo` | Solo AI studio: a typical production day |

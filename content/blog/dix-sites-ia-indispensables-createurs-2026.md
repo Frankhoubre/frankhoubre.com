@@ -40,7 +40,7 @@ Pour une vision d'ensemble des outils vidéo, commence par notre comparatif des 
 | Open models / communauté | contrôle fin | Temps technique |
 | Veille honnête | éviter le bullshit | Sources primaires |
 
-Cette table est volontairement agnostique des marques : en 2026, les noms changent vite, mais les **briques** restent. Ton travail est de mapper chaque brique à un outil que tu maîtrises réellement, pas à collectionner des logos sur ton site vitrine.
+Cette table est volontairement agnostique des marques : en 2026, les noms changent vite, mais les **briques** restent. Ton travail est de mapper chaque brique à un outil que tu maîtrises réellement, pas à collectionner des logos sur ton site vitrine. Si tu veux un exemple de ce mapping fait par quelqu'un qui livre, j'ai détaillé [mon propre stack d'outils IA de créateur](/blog/stack-creatif-2026-outils-frank-houbre), avec ce que je confie à chaque outil et ce que je garde.
 
 ## Les pièges « stack créateur TikTok » (et comment les éviter)
 

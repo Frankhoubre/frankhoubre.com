@@ -40,7 +40,7 @@ For an overview of the video tools, start with our comparison of the [best AI vi
 | Open models / community | fine control | Technical time |
 | Honest watch | avoid the bullshit | Primary sources |
 
-This table is deliberately brand-agnostic: in 2026, the names change fast, but the **bricks** stay. Your job is to map each brick to a tool you really master, not to collect logos on your showcase site.
+This table is deliberately brand-agnostic: in 2026, the names change fast, but the **bricks** stay. Your job is to map each brick to a tool you really master, not to collect logos on your showcase site. For a worked example of that mapping by someone who has to deliver, here is [my own AI creator tool stack](/en/blog/stack-creatif-2026-outils-frank-houbre), with what I hand each tool and what I keep.
 
 ## The "TikTok creator stack" traps (and how to avoid them)
 
