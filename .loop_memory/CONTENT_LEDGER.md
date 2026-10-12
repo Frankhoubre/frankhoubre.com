@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-12 : UPDATE Generateur d'image IA gratuit, les vraies limites en 2026
+- slug: meilleur-generateur-image-ia-gratuit
+- locale: fr + en (meme slug, mis a jour le meme jour)
+- url: https://frankhoubre.com/blog/meilleur-generateur-image-ia-gratuit
+- url_en: https://frankhoubre.com/en/blog/meilleur-generateur-image-ia-gratuit
+- category: tutoriels
+- type: update (evergreen, date d'origine 2026-04-24, dateModified 2026-10-12)
+- search_intent: commerciale
+- primary_keyword: generateur image ia gratuit
+- secondary_keywords: generateur image ia sans inscription, generateur image ia gratuit illimite, flux schnell local, bing image creator gratuit, ideogram gratuit
+- sources: support.google.com/gemini/answer/16275805, adobe.com/products/firefly/plans.html, bing.com/images/create/help + CGU, docs.ideogram.ai personal-plans, huggingface.co/black-forest-labs/FLUX.1-schnell (tous consultes le 2026-10-12)
+- internal_links: -> /outils/annuaire-generateurs-images-ia-gratuits, workflow-nano-banana-personnages-coherents, adobe-firefly-avis, ideogram-recraft-leonardo-comparatif, stable-diffusion-installation-debutants, flux-vs-sdxl-quelle-ia-choisir-images-realistes, comment-generer-images-ia-photorealistes-sans-effet-plastique, droits-auteur-images-generees-ia, creation-logo-ia-outils-gratuits-astuces, pourquoi-ton-prompt-ne-marche-pas-comment-corriger, meilleur-generateur-image-ia ; entrants depuis l'annuaire /outils, leonardo-ai-meilleure-alternative-gratuite et adobe-firefly-avis (FR + EN)
+- cta: aucun (article outil)
+- cannibalization_notes: gratuit uniquement, le payant reste sur meilleur-generateur-image-ia ; intention « sans inscription » (301) conservee en section
+- editorial_decisions: aucun quota cite quand l'editeur ne le publie pas (Gemini, Firefly), Leonardo sans chiffre faute de source officielle accessible, nuance usage commercial Firefly limitee aux modeles maison
+- checker: pass (seo_audit 0 issue sur le slug, editorial 100 sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: 3fc0ef5
+
 ### 2026-10-11 : Stack outils IA créateur, ce que j'utilise en 2026
 - slug: stack-creatif-2026-outils-frank-houbre
 - locale: fr + en (meme slug, publies le meme jour)

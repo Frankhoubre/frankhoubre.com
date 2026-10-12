@@ -1,6 +1,20 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-11 (J53 publie)
+## Last run: 2026-10-12 (J54 UPDATE publie)
+
+### What happened
+- J54 UPDATE publie a la date prevue : `meilleur-generateur-image-ia-gratuit`
+  refondu (boilerplate gouvernance supprime, quotas officiels verifies le
+  2026-10-12 pour Gemini, Firefly, Bing, Ideogram, FLUX.1 schnell), commit
+  3fc0ef5 pousse sur main. Calendrier sans glissement : J55 = 2026-10-13
+  (`freelance-video-ia-appel-offres`).
+- Version EN mise a jour le meme jour, memes images, aucun YouTube.
+- Lien entrant depuis l'annuaire /outils : nouveau champ optionnel `related`
+  dans OutilContent (src/lib/outils-content.ts), rendu par ToolIframePage.
+- Images : hero Nano Banana 2 regenere (imprimerie de quartier) + captures
+  reelles doc Ideogram et fiche Hugging Face FLUX.1 schnell.
+
+## Previous run: 2026-10-11 (J53 publie)
 
 ### What happened
 - J53 publie a la date prevue : `stack-creatif-2026-outils-frank-houbre`
@@ -13,7 +27,7 @@
 - Piege : lancer render_blog_queue_nanobanana.py avec MSYS_NO_PATHCONV=1
   sous Git Bash, sinon --dest /images/... part dans C:/Program Files/Git.
 
-## Previous run: 2026-10-10 (J52 publie)
+## Older run: 2026-10-10 (J52 publie)
 
 ### What happened
 - J52 publie a la date prevue : `pme-usages-video-ia-rentables` (business,
