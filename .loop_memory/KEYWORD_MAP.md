@@ -198,6 +198,10 @@ version-control for AI projects.
 - `MiniMax Hub plateforme vidéo IA Shanghai 2026` — FILLED: minimax-hub-plateforme-video-ia-shanghai-juin-2026
 - `meilleur outil IA vidéo publicité produit` — FILLED: meilleur-outil-ia-video-publicite-produit-comparatif
 
+## USED (hors loop — 2026-10-12)
+
+- `MCP ScreenWeaver / ScreenWeaver Claude ChatGPT connecteur / écrire scénario dans Claude / storyboard depuis ChatGPT` — FILLED: screenweaver-mcp-claude-chatgpt-scenario-storyboard (FR + EN, tutoriels). Angle créateur : installation par client, 11 outils, séance type en 4 messages, limites. Ne pas recréer d'article MCP ScreenWeaver ; les futures capacités du MCP (génération d'images, création de projet) = UPDATE de cet article. Pendant business sur businessdynamite.xyz/mcp-screenweaver-video-client-chatgpt-claude (angle freelance vidéo, rentabilité).
+
 ## USED (Run 5 — 2026-06-22)
 
 - `Seedance 2.0 Mini ByteDance vidéo rapide juin 2026` — FILLED: seedance-2-mini-bytedance-video-rapide-juin-2026
