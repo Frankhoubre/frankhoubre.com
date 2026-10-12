@@ -1,7 +1,7 @@
 ---
 title: "AI creator tool stack: what I actually use in 2026"
 date: "2026-10-11"
-dateModified: "2026-10-11"
+dateModified: "2026-10-12"
 category: "guides"
 excerpt: "My AI creator tool stack for 2026, stage by stage: what each tool does for me, what I never hand it, and how to build a stack that fits your own work."
 thumbnail: "/images/blog/stack-creatif-2026-outils-frank-houbre/hero.webp"
@@ -54,7 +54,7 @@ Everything starts with the text, and that's where my stack is most stable. A bad
 
 ScreenWeaver is the writing tool I co-created with Thibaut. I won't pretend to be neutral: it's my product, and I'm telling you so up front. What it does for me is specific. The script stays the master document, and the breakdown, the storyboard and the working images stay linked to the scene they belong to. When I change a scene, I know which shots it touches.
 
-What I don't ask of it: writing for me. A writing tool that produces scenes on your behalf hands you an average draft, and an average draft makes an average film. If you want the details of what it does, I wrote a guide on [going from screenplay to storyboard with ScreenWeaver](/en/blog/screenweaver-ai-ecriture-scenario-storyboard).
+What I don't ask of it: writing for me. A writing tool that produces scenes on your behalf hands you an average draft, and an average draft makes an average film. If you want the details of what it does, I wrote a guide on [going from screenplay to storyboard with ScreenWeaver](/en/blog/screenweaver-ai-ecriture-scenario-storyboard). Since October 12, 2026, Claude and ChatGPT can also write straight into my projects through the [ScreenWeaver MCP](/en/blog/screenweaver-mcp-claude-chatgpt-scenario-storyboard), which ended the copy and paste between chat and screenplay.
 
 ### Claude and Claude Code, the production assistant
 

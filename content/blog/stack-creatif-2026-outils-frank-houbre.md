@@ -1,7 +1,7 @@
 ---
 title: "Stack outils IA créateur : ce que j'utilise en 2026"
 date: "2026-10-11"
-dateModified: "2026-10-11"
+dateModified: "2026-10-12"
 category: "guides"
 excerpt: "Mon stack d'outils IA de créateur en 2026, étape par étape : ce que chaque outil fait pour moi, ce que je ne lui confie pas, et comment bâtir le tien."
 thumbnail: "/images/blog/stack-creatif-2026-outils-frank-houbre/hero.webp"
@@ -54,7 +54,7 @@ Tout commence par le texte, et c'est là que mon stack est le plus stable. Un pl
 
 ScreenWeaver est l'outil d'écriture que j'ai co-créé avec Thibaut. Je ne vais pas te jouer la neutralité : c'est mon produit, et j'en parle avec ce biais assumé. Ce qu'il fait chez moi est précis. Le scénario reste le document maître, et le découpage, le storyboard et les images de travail restent reliés à la scène qu'ils illustrent. Quand je modifie une scène, je sais quels plans sont touchés.
 
-Ce que je ne lui demande pas : écrire à ma place. Un outil d'écriture qui produit des scènes à ta place te rend un brouillon moyen, et un brouillon moyen donne un film moyen. Si tu veux le détail de ce qu'il fait, j'ai écrit un guide sur [ScreenWeaver pour l'écriture de scénario et le storyboard](/blog/screenweaver-ai-ecriture-scenario-storyboard).
+Ce que je ne lui demande pas : écrire à ma place. Un outil d'écriture qui produit des scènes à ta place te rend un brouillon moyen, et un brouillon moyen donne un film moyen. Si tu veux le détail de ce qu'il fait, j'ai écrit un guide sur [ScreenWeaver pour l'écriture de scénario et le storyboard](/blog/screenweaver-ai-ecriture-scenario-storyboard). Depuis le 12 octobre 2026, Claude et ChatGPT peuvent aussi écrire directement dans mes projets grâce au [MCP de ScreenWeaver](/blog/screenweaver-mcp-claude-chatgpt-scenario-storyboard), ce qui a supprimé le copier-coller entre le chat et le scénario.
 
 ### Claude et Claude Code, l'assistant de production
 
