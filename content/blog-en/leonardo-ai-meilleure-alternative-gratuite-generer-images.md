@@ -22,7 +22,7 @@ When a creator asks for a free alternative, they often look for three things: re
 
 A real free alternative must therefore meet production criteria: render stability, style control, iteration speed, and pipeline integration. If a tool is free but unpredictable, the hidden cost explodes in time.
 
-Leonardo AI positions itself precisely in this intermediate zone: accessible, versatile, creator-oriented. But you must distinguish the "fast ideation" and "client deliverable" use cases.
+Leonardo AI positions itself precisely in this intermediate zone: accessible, versatile, creator-oriented. But you must distinguish the "fast ideation" and "client deliverable" use cases. If you're still weighing it against Gemini, Firefly, Bing Image Creator or a local model, our [free AI image generator comparison](/en/blog/meilleur-generateur-image-ia-gratuit) puts their official quotas side by side.
 
 The good test is not "did I get a beautiful image?". The good test is "can I reproduce this level over 10 consistent images?".
 

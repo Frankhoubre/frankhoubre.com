@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-11T08:01:26.645Z
+> Generated: 2026-10-12T07:59:09.368Z
 
 ## FR : 330 articles (/blog/<slug>)
 
@@ -236,7 +236,7 @@ Categories: tutoriels 190, actualite 53, business 30, comparatifs 19, analyses 1
 | 2026-04-25 | tutoriels | `creation-logo-ia-outils-gratuits-astuces` | Création de logo avec l’IA : outils gratuits et astuces de pro |
 | 2026-04-25 | tutoriels | `photos-hyper-realistes-ia` | Comment utiliser l’IA pour générer des photos hyper-réalistes |
 | 2026-04-25 | tutoriels | `secrets-prompts-rendu-photographique-ia` | Les secrets des prompts pour générer des images au rendu photographique |
-| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | Meilleur générateur d’image IA gratuit et sans inscription |
+| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | Générateur d'image IA gratuit : les vraies limites en 2026 |
 | 2026-04-24 | tutoriels | `midjourney-vs-dalle-3-concept-art` | Midjourney vs DALL·E 3 : lequel choisir pour le concept art ? |
 | 2026-04-24 | tutoriels | `personnages-coherents-plusieurs-images-ia` | Tutoriel complet : comment créer des personnages cohérents sur plusieurs images |
 | 2026-04-23 | comparatifs | `adobe-firefly-avis` | Adobe Firefly 5 testé : ce qui change vraiment en 2026 |
@@ -487,7 +487,7 @@ Categories: tutoriels 180, business 20, actualite 14, comparatifs 14, analyses 8
 | 2026-04-25 | tutoriels | `creation-logo-ia-outils-gratuits-astuces` | Logo Creation With AI: Free Tools and Pro Tips |
 | 2026-04-25 | tutoriels | `photos-hyper-realistes-ia` | How to Use AI to Generate Hyper-Realistic Photos |
 | 2026-04-25 | tutoriels | `secrets-prompts-rendu-photographique-ia` | The Secrets of Prompts to Generate Photographic-Render Images |
-| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | What Is the Best Free AI Image Generator? |
+| 2026-04-24 | tutoriels | `meilleur-generateur-image-ia-gratuit` | Free AI Image Generator: The Real Limits in 2026 |
 | 2026-04-24 | tutoriels | `midjourney-vs-dalle-3-concept-art` | Midjourney vs DALL·E 3: Which to Choose for Concept Art? |
 | 2026-04-24 | tutoriels | `personnages-coherents-plusieurs-images-ia` | Complete Tutorial: How to Create Consistent Characters Across Several Images |
 | 2026-04-23 | comparatifs | `adobe-firefly-avis` | Adobe Firefly: Full Review, Quality, Limits and Use Cases |

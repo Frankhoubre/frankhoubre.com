@@ -13,6 +13,8 @@ export type OutilContent = {
   how: OutilStep[];
   /** FAQ : rendue visuellement et exposée en FAQPage JSON-LD. */
   faq: OutilFaqItem[];
+  /** Lien éditorial optionnel vers l'article de blog qui approfondit l'outil. */
+  related?: { href: string; label: string };
 };
 
 /**
@@ -208,6 +210,10 @@ const outilContent = {
         answer: "Non, la comparaison est libre, gratuite et sans inscription.",
       },
     ],
+    related: {
+      href: "/blog/meilleur-generateur-image-ia-gratuit",
+      label: "Lire le comparatif des générateurs d'image IA gratuits et de leurs vraies limites",
+    },
   },
   annuaireAudio: {
     intro: [

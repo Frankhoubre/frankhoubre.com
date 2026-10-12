@@ -1,6 +1,7 @@
 import type { OutilContent } from "@/lib/outils-content";
 import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
 import { Plus } from "@/components/FaqSection";
+import Link from "next/link";
 
 type ToolIframePageProps = {
   title: string;
@@ -70,6 +71,11 @@ export function ToolIframePage({
               {content.intro.map((paragraph, i) => (
                 <p key={i}>{paragraph}</p>
               ))}
+              {content.related ? (
+                <p>
+                  <Link href={content.related.href}>{content.related.label}</Link>
+                </p>
+              ) : null}
             </section>
           </div>
 

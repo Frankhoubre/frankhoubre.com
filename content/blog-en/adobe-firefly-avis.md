@@ -65,7 +65,7 @@ When I support a team, I never choose on instinct. I run a short benchmark with 
 
 Firefly's strength remains the operational chain. You can generate, correct, and deliver without fighting ten file transfers. For a marketing department under pressure, that is a concrete advantage. Pure style is only one of the criteria.
 
-If you want to go deeper on the alternatives by use, read [our comparison of the best alternatives to Midjourney](/en/blog/alternatives-midjourney). If you are hesitating with text-in-image tools, complete it with [our Ideogram, Recraft or Leonardo AI guide](/en/blog/ideogram-recraft-leonardo-comparatif).
+If you want to go deeper on the alternatives by use, read [our comparison of the best alternatives to Midjourney](/en/blog/alternatives-midjourney). If you are hesitating with text-in-image tools, complete it with [our Ideogram, Recraft or Leonardo AI guide](/en/blog/ideogram-recraft-leonardo-comparatif). To see what Firefly's free tier is worth next to Gemini, Bing Image Creator or Ideogram, check our [free AI image generator comparison](/en/blog/meilleur-generateur-image-ia-gratuit).
 
 | Tool | Main strength | Frequent weakness | Best context |
 | --- | --- | --- | --- |
