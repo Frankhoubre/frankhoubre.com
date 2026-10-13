@@ -141,6 +141,8 @@ Le calculateur donne un premier chiffre. Pour construire le budget interne qui s
 
 **Projet avec voix off** : si tu sous-traites la voix à ElevenLabs ou à une voix réelle, cette ligne doit être séparée avec son propre coût et ses propres conditions de révision. La voix off et la vidéo ont des cycles de révision distincts.
 
+**Projet issu d'un marché public** : là, tu ne choisis pas ta structure. Tu remplis le bordereau de prix de l'acheteur ligne par ligne, et ton découpage interne sert seulement à vérifier que chaque prix couvre ton temps réel. Le détail de la démarche est dans le guide pour [répondre à un appel d'offres vidéo IA en freelance](/blog/freelance-video-ia-appel-offres).
+
 > 💡 **Le cut de Frank :** Pour les projets récurrents avec un même client (séries de vidéos produit, campagnes en plusieurs épisodes), je propose un devis-cadre annuel avec des tarifs dégressifs. Le client a la sécurité d'un prix prévisible, moi j'ai la sécurité d'un engagement. Les détails de chaque livraison se font sur des bons de commande simplifiés qui font référence au devis-cadre. Ça évite de renegocier les mêmes termes à chaque projet.
 
 ## Le format pratique

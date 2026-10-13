@@ -195,6 +195,8 @@ They want an identifiable **person**, an exportable **method**, and a **proof** 
 
 They also want your discourse to be aligned with their ESG and security audits: accounts, access, deletion. Even if you are solo, adopt "enterprise" habits: MFA, encrypted storage, deletion policy.
 
+Public buyers push this logic further still: weighted criteria, admin paperwork, a technical proposal scored on a grid. If you want to go after those contracts, I laid out the method for [bidding on an AI video tender as a freelancer](/en/blog/freelance-video-ia-appel-offres).
+
 ## Mini commercial lexicon (to talk like someone who gets paid)
 
 - **Scope**: what is included, explicitly.

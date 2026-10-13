@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-13 : Appel d'offres vidéo IA, répondre en freelance
+- slug: freelance-video-ia-appel-offres
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/freelance-video-ia-appel-offres
+- url_en: https://frankhoubre.com/en/blog/freelance-video-ia-appel-offres
+- category: business
+- type: evergreen
+- search_intent: commerciale
+- primary_keyword: appel d'offres video ia
+- secondary_keywords: marche public video freelance, repondre appel d'offres video, memoire technique video, seuils marches publics 2026, BOAMP video
+- sources: code-commande-publique.com seuils (capture 2026-10-13, art. R2122-8 modifie par decret 2025-1386 du 29/12/2025), collectivites-locales.gouv.fr seuils 2026, boamp.fr recherche « video » services avis en cours (capture 2026-10-13, 111 resultats)
+- internal_links: -> monetiser-competences-creation-ia-freelance-agence, creer-devis-projet-video-ia-client-modele-structure, clause-contrat-client-contenu-genere-ia, eu-ai-act-article-50-marquage-video-ia-aout-2026, comment-creer-portfolio-ia-credible ; entrants FR depuis creer-devis et monetiser, EN depuis monetiser et clause-contrat
+- cta: aucun CTA commercial, plan d'action « cette semaine »
+- cannibalization_notes: seul article sur la commande publique / appels d'offres ; creer-devis garde la structure de devis, monetiser le pricing general, comment-trouver-clients l'acquisition
+- editorial_decisions: aucun pourcentage de ponderation invente (memoire « pondere, chiffre dans le RC »), aucune statistique de taux de succes, regles citees uniquement si etablies par le code (seuils, prime pour prestations significatives, CA min <= 2x valeur, motifs de rejet sur demande, 30 jours de paiement)
+- checker: pass (seo_audit 0 issue sur le slug FR et EN, editorial 100 sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: voir PUBLISH_LOG
+
 ### 2026-10-12 : UPDATE Generateur d'image IA gratuit, les vraies limites en 2026
 - slug: meilleur-generateur-image-ia-gratuit
 - locale: fr + en (meme slug, mis a jour le meme jour)

@@ -202,6 +202,8 @@ Reinforced clause:
 - contractual versioning,
 - coordination with local legal counsel.
 
+One exception worth knowing: in public procurement, the buyer's own administrative terms override your clauses, and you can only flag problems during the consultation. I cover that case in the guide to [bidding on an AI video tender as a freelancer](/en/blog/freelance-video-ia-appel-offres).
+
 ## Classic contractual mistakes
 
 **Mistake 1: promising "complete universal rights".**

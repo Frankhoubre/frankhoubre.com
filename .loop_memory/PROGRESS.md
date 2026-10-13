@@ -1,6 +1,18 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-12 (J54 UPDATE publie)
+## Last run: 2026-10-13 (J55 publie)
+
+### What happened
+- J55 publie a la date prevue : `freelance-video-ia-appel-offres` (business),
+  guide appel d'offres video IA en freelance, seuils 2026 verifies (60 000 €
+  depuis le 1er avril 2026, 90 000 €, 140 000 / 216 000 €). Calendrier sans
+  glissement : J56 = 2026-10-14 (`studio-cinema-2030-prospective`).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (salle du conseil, oral devant jury) + captures
+  reelles BOAMP et code-commande-publique.com.
+- Liens entrants : FR creer-devis + monetiser ; EN monetiser + clause-contrat.
+
+## Previous run: 2026-10-12 (J54 UPDATE publie)
 
 ### What happened
 - J54 UPDATE publie a la date prevue : `meilleur-generateur-image-ia-gratuit`

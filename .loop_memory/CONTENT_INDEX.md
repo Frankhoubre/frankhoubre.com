@@ -3,14 +3,16 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-12T07:59:09.368Z
+> Generated: 2026-10-13T08:00:20.770Z
 
-## FR : 330 articles (/blog/<slug>)
+## FR : 332 articles (/blog/<slug>)
 
-Categories: tutoriels 190, actualite 53, business 30, comparatifs 19, analyses 18, guides 18, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 53, business 31, comparatifs 19, analyses 18, guides 18, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-13 | business | `freelance-video-ia-appel-offres` | Appel d'offres vidéo IA : répondre en freelance |
+| 2026-10-12 | tutoriels | `screenweaver-mcp-claude-chatgpt-scenario-storyboard` | MCP ScreenWeaver : ton scénario dans Claude et ChatGPT |
 | 2026-10-11 | guides | `stack-creatif-2026-outils-frank-houbre` | Stack outils IA créateur : ce que j'utilise en 2026 |
 | 2026-10-10 | business | `pme-usages-video-ia-rentables` | Vidéo IA PME : 5 usages rentables sans studio interne |
 | 2026-10-09 | analyses | `anatomie-plan-ia-reussi-analyse` | Analyse plan IA : un plan réussi, image par image |
@@ -342,12 +344,14 @@ Categories: tutoriels 190, actualite 53, business 30, comparatifs 19, analyses 1
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 244 articles (/en/blog/<slug>)
+## EN : 246 articles (/en/blog/<slug>)
 
-Categories: tutoriels 180, business 20, actualite 14, comparatifs 14, analyses 8, guides 6, notes 1, postproduction 1
+Categories: tutoriels 181, business 21, actualite 14, comparatifs 14, analyses 8, guides 6, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-13 | business | `freelance-video-ia-appel-offres` | AI video tenders: how to bid as a freelancer |
+| 2026-10-12 | tutoriels | `screenweaver-mcp-claude-chatgpt-scenario-storyboard` | ScreenWeaver MCP: your screenplay in Claude and ChatGPT |
 | 2026-10-11 | guides | `stack-creatif-2026-outils-frank-houbre` | AI creator tool stack: what I actually use in 2026 |
 | 2026-10-10 | business | `pme-usages-video-ia-rentables` | AI video for small business: 5 uses that pay off |
 | 2026-10-09 | analyses | `anatomie-plan-ia-reussi-analyse` | AI shot analysis: a good shot, frame by frame |

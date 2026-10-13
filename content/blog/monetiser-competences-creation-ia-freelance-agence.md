@@ -199,6 +199,8 @@ Ils veulent une **personne** identifiable, une **méthode** exportable, et une *
 
 Ils veulent aussi que ton discours soit aligné avec leurs audits ESG et sécurité : comptes, accès, suppression. Même si tu es solo, adopte des habitudes « enterprise » : MFA, stockage chiffré, politique de suppression.
 
+Les acheteurs publics poussent cette logique encore plus loin : critères pondérés, pièces administratives, mémoire technique noté sur grille. Si tu veux t'y attaquer, j'ai détaillé la méthode pour [répondre à un appel d'offres vidéo IA quand on est freelance](/blog/freelance-video-ia-appel-offres).
+
 ## Mini lexique commercial (pour parler comme quelqu'un qui encaisse)
 
 - **Scope** : ce qui est inclus, explicitement.

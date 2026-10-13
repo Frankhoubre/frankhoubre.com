@@ -251,3 +251,4 @@ version-control for AI projects.
 This environment exposes Ahrefs tools (keywords explorer, GSC, rank tracker,
 site audit). When connected to the frankhoubre.com project, use real volume and
 GSC query data to pick keywords instead of guessing. See SETUP_LOOP.md.
+- `appel d'offres vidéo IA / marché public vidéo freelance / répondre appel d'offres vidéo / mémoire technique vidéo` : FILLED: freelance-video-ia-appel-offres (FR + EN, business, 2026-10-13). Seul article commande publique ; devis = creer-devis-projet-video-ia-client-modele-structure, pricing general = monetiser-competences-creation-ia-freelance-agence.
