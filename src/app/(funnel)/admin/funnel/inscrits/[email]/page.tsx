@@ -55,7 +55,7 @@ export default async function SubscriberPage({
     ["Statut", active ? "Actif" : `Désinscrit le ${fmtDate(sub.unsubscribedAt)}`],
     ["Inscrit le", fmtDate(sub.createdAt)],
     ["Source", sub.source],
-    ["UTM", [sub.utmSource, sub.utmMedium, sub.utmCampaign].filter(Boolean).join(" · ") || "aucun"],
+    ["UTM", [sub.utmSource, sub.utmMedium, sub.utmCampaign, sub.utmContent].filter(Boolean).join(" · ") || "aucun"],
     ["Referrer", sub.referrer || "aucun"],
   ];
 

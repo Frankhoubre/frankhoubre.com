@@ -7,6 +7,7 @@ export type StoredUtm = {
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;
+  utmContent?: string;
 };
 
 /** Mémorise l'origine de la première visite (attribution de l'inscription). */
@@ -17,6 +18,7 @@ export function rememberUtm(): StoredUtm {
     utmSource: params.get("utm_source") ?? undefined,
     utmMedium: params.get("utm_medium") ?? undefined,
     utmCampaign: params.get("utm_campaign") ?? undefined,
+    utmContent: params.get("utm_content") ?? undefined,
   };
   try {
     const prev = sessionStorage.getItem(UTM_STORAGE_KEY);

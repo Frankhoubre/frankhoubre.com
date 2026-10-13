@@ -30,6 +30,7 @@ const bodySchema = z.object({
   utmSource: z.string().max(80).optional(),
   utmMedium: z.string().max(80).optional(),
   utmCampaign: z.string().max(80).optional(),
+  utmContent: z.string().max(80).optional(),
 });
 
 const RATE_LIMIT = 8;
@@ -141,6 +142,7 @@ export async function POST(req: NextRequest) {
     utmSource: cleanShort(input.utmSource) ?? existing?.utmSource,
     utmMedium: cleanShort(input.utmMedium) ?? existing?.utmMedium,
     utmCampaign: cleanShort(input.utmCampaign) ?? existing?.utmCampaign,
+    utmContent: cleanShort(input.utmContent) ?? existing?.utmContent,
     scheduledEmailIds: startSequence ? [] : (existing?.scheduledEmailIds ?? []),
     emails,
   };

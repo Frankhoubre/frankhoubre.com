@@ -27,6 +27,7 @@ export async function GET() {
     "utm_campaign",
     "referrer",
     "dernier_evenement_email",
+    "utm_content",
   ];
   const rows = subs.map((s) =>
     [
@@ -41,6 +42,7 @@ export async function GET() {
       s.utmCampaign,
       s.referrer,
       s.lastEmailEvent,
+      s.utmContent,
     ]
       .map(csvCell)
       .join(";"),

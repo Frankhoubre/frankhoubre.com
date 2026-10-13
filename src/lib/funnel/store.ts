@@ -26,6 +26,7 @@ export type Subscriber = {
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;
+  utmContent?: string;
   /** Emails programmés chez Resend (annulés en cas de désinscription). */
   scheduledEmailIds: string[];
   /** Suivi de chaque email de la séquence, par étape (acces, jour-2, …). */
