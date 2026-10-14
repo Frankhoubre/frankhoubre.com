@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-14 : Studio de cinéma en 2030, ma projection pièce par pièce
+- slug: studio-cinema-2030-prospective
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/studio-cinema-2030-prospective
+- url_en: https://frankhoubre.com/en/blog/studio-cinema-2030-prospective
+- category: analyses
+- type: evergreen (prospective)
+- search_intent: info
+- primary_keyword: futur studio cinema ia
+- secondary_keywords: studio de cinema 2030, metiers studio ia, acteurs synthetiques SAG-AFTRA, AI Act article 50 film, production hybride IA
+- sources: wtop.com (AP) contrat SAG-AFTRA 2026-2030, vp-land.com House of David S2 253 plans, artificialintelligenceact.eu article 50, screendaily regles Netflix IA generative
+- internal_links: -> studios-traditionnels-vs-studios-ia-2026, cinema-ia-remplacer-tournages, lionsgate-runway-ai-series-courtes-ip-hollywood-2026, voidborn-anime-ia-festival-coulisses, metiers-audiovisuel-ia-menaces-transformation-avis, journee-production-studio-ia-solo, outerframe-studio-pourquoi-studio-ia, combien-coute-court-metrage-ia-2026, festivals-films-ia-criteres-jurys ; entrants FR depuis cinema-ia-remplacer et studios-traditionnels, EN depuis journee-production et metiers-audiovisuel
+- cta: mention transparente de ScreenWeaver (co-fondateur) dans la ligne ecriture et preparation du tableau, aucun CTA commercial
+- cannibalization_notes: cinema-ia-remplacer = remplacement du tournage, studios-traditionnels = comparatif 2026 ; ici organisation et postes du studio en 2030
+- editorial_decisions: chaque projection signalee comme pari, aucun chiffre de cout invente, intitules de postes presentes comme noms de travail
+- checker: pass (seo_audit 0 issue sur le slug FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: voir PUBLISH_LOG
+
 ### 2026-10-13 : Appel d'offres vidéo IA, répondre en freelance
 - slug: freelance-video-ia-appel-offres
 - locale: fr + en (meme slug, publies le meme jour)

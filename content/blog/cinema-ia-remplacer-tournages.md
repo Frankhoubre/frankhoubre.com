@@ -133,7 +133,7 @@ Deuxième scénario, déjà vrai sur une partie du marché : les séries courtes
 
 Troisième scénario, celui que la presse adore : un film de deux heures, photoréaliste, acteurs synthétiques, sorti en salle par un studio majeur avant 2030. Je parie contre. Pas à cause de l'image, qui sera peut-être prête. À cause du contrat SAG-AFTRA qui court jusqu'à mi-2030, de l'article 50 européen, des règles de livrables des plateformes, des assureurs, et surtout du fait qu'aucun réalisateur que je connais n'en a envie. Le premier qui le fera le fera comme un geste, pas comme un modèle économique.
 
-Mon pari : en 2030, on tournera autant de jours qu'aujourd'hui sur les films qui comptent, et beaucoup moins de jours sur les plans qui ne comptaient pas.
+Mon pari : en 2030, on tournera autant de jours qu'aujourd'hui sur les films qui comptent, et beaucoup moins de jours sur les plans qui ne comptaient pas. J'ai poussé l'exercice jusqu'au bâtiment lui-même, plateau, salle de calcul, archive et bureau des droits, dans [ma projection du studio de cinéma en 2030](/blog/studio-cinema-2030-prospective).
 
 ## Ce que je ferais à ta place, selon ton poste
 

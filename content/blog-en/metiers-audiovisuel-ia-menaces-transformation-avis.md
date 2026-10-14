@@ -165,6 +165,8 @@ They pay for the **risk reduction**: someone who avoids a scandal, a useless ret
 
 They do not always pay for "even more variants" if these variants do not change the marketing decision.
 
+I went further on the rooms and roles a studio will need, archive, rights office, generation supervisor, in [my room-by-room forecast of the 2030 film studio](/en/blog/studio-cinema-2030-prospective).
+
 ![Dark grading room, video scopes, colorist silhouette adjusting curves, cinema atmosphere](/images/blog/metiers-audiovisuel-ia-menaces-transformation-avis/workflow-post.webp)
 
 ## FAQ

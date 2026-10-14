@@ -172,7 +172,7 @@ With two people, the shape of the days stays the same: each of us keeps our own 
 
 Alone, your pipeline can live in your head. With two, it has to be written down: which engine does what, in what order, with which default settings, which file naming scheme. The day someone else opens your project, that document is the only thing keeping the film from drifting. My advice to solo creators: write it now, even if you're the only reader. It'll save you the day you come back to a project after three months, which is close to handing it to a stranger.
 
-The other change is the outside eye. With two people, someone can tell you a shot is useless. Alone, you have to build that eye yourself: the silent watch of the cut, the morning reread, the night between generating and polishing. Those three habits do a good share of a second person's job.
+The other change is the outside eye. With two people, someone can tell you a shot is useless. Alone, you have to build that eye yourself: the silent watch of the cut, the morning reread, the night between generating and polishing. Those three habits do a good share of a second person's job. If you're wondering where solo and small studios fit over the next few years, I mapped it out in [my forecast of the film studio in 2030](/en/blog/studio-cinema-2030-prospective).
 
 ## FAQ
 
