@@ -173,7 +173,7 @@ Expliquer pourquoi un plan IA n'est pas validable sans humilier le client qui «
 
 ### La responsabilité
 
-Signer un master, valider un visage, valider une voix, assumer une campagne. Les modèles ne signent pas.
+Signer un master, valider un visage, valider une voix, assumer une campagne. Les modèles ne signent pas. C'est d'ailleurs ce qui sépare un vrai poste de réalisateur d'un simple intitulé de profil, comme je l'explique dans [réalisateur IA : vrai métier ou titre LinkedIn ?](/blog/realisateur-ia-vrai-metier-ou-titre).
 
 > 💡 **Le cut de Frank :** dans les reviews, impose la règle des **deux questions** : « qu'est-ce qu'on promet au public ? » et « qu'est-ce qu'on peut prouver si un journaliste nous challenge ? ». Si tu n'as pas de réponse, tu n'es pas prêt à livrer.
 

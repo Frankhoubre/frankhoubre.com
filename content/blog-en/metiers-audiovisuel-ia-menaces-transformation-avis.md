@@ -185,7 +185,7 @@ It is going to complement it. For content where the real is central (documentary
 
 ### Which jobs are the most exposed over twelve to twenty-four months?
 
-The tasks where the "sufficient" quality is defined low and where the volume is king: generic thumbnails, simple asset packs, ultra-standard advertising variations, certain throwaway storyboards for internal pitch. Conversely, the roles where you have to sign, negotiate, and explain choices stay more stable, because the responsibility does not virtualize. The exposure is not only economic: it is psychological. The jobs where people feel "replaceable" lose talents to other verticals, which creates local shortages even if the global market is noisy.
+The tasks where the "sufficient" quality is defined low and where the volume is king: generic thumbnails, simple asset packs, ultra-standard advertising variations, certain throwaway storyboards for internal pitch. Conversely, the roles where you have to sign, negotiate, and explain choices stay more stable, because the responsibility does not virtualize. The exposure is not only economic: it is psychological. The jobs where people feel "replaceable" lose talents to other verticals, which creates local shortages even if the global market is noisy. Directing sits on the stable side for that exact reason, and I look at what separates the real job from the profile headline in [AI film director: a real job or a LinkedIn title?](/en/blog/realisateur-ia-vrai-metier-ou-titre).
 
 ### How to negotiate your salary or your fees in this context?
 

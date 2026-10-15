@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-15 : Réalisateur IA, vrai métier ou titre LinkedIn ?
+- slug: realisateur-ia-vrai-metier-ou-titre
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/realisateur-ia-vrai-metier-ou-titre
+- url_en: https://frankhoubre.com/en/blog/realisateur-ia-vrai-metier-ou-titre
+- category: analyses
+- type: evergreen (opinion)
+- search_intent: info
+- primary_keyword: realisateur ia metier
+- secondary_keywords: devenir realisateur ia, AI film director, DGA intelligence artificielle, offre emploi realisateur ia, prompteur vs realisateur
+- sources: dga.org communique 12/06/2026, resume DGA 2023, jobs.accel.com offre Higgsfield, jobs.techstars.com offre Reppls, offre Lionsgate (The Ladders / entertainmentcareers)
+- internal_links: -> studio-cinema-2030-prospective, methode-realisateur-ia-diriger-avant-generer, journee-production-studio-ia-solo, voidborn-anime-ia-festival-coulisses, freelance-video-ia-appel-offres, metiers-audiovisuel-ia-menaces-transformation-avis, comment-penser-comme-realisateur-avec-ia ; entrants FR depuis metiers-audiovisuel et methode-realisateur, EN depuis metiers-audiovisuel et comment-penser
+- cta: mention transparente de ScreenWeaver (co-fondateur, logiciel ecrit par Thibaut), aucun CTA commercial
+- cannibalization_notes: methode-realisateur (J2) = comment diriger ; ici est-ce un metier ; metiers-audiovisuel = emploi par fonction
+- editorial_decisions: aucun salaire FR invente (question FAQ repondue sans chiffre), ratification DGA 2026 non affirmee, poste Lionsgate presente comme pilotage et non realisation
+- checker: pass (seo_audit 0 issue sur le slug FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS)
+- published_commit: voir PUBLISH_LOG
+
 ### 2026-10-14 : Studio de cinéma en 2030, ma projection pièce par pièce
 - slug: studio-cinema-2030-prospective
 - locale: fr + en (meme slug, publies le meme jour)

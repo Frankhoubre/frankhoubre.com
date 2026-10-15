@@ -128,7 +128,7 @@ Kling 3.0, Runway Gen-4.5, Veo 3 : tous ces modèles répondent mieux à "homme 
 
 Ta méthode de réalisation te donne la précision nécessaire pour passer de l'émotion abstraite à la description physique concrète. C'est ça, diriger un modèle IA.
 
-Pour aller plus loin sur le [pipeline complet de A à Z](/blog/pipeline-ia-script-storyboard-production-de-a-z), j'ai détaillé comment enchaîner cette phase de direction avec la génération des assets et le montage. Et si tu veux approfondir la lecture du regard et des micro-expressions dans les clips IA, l'article sur la [direction des personnages IA](/blog/comment-diriger-personnage-ia-comme-acteur) va dans le détail.
+Pour aller plus loin sur le [pipeline complet de A à Z](/blog/pipeline-ia-script-storyboard-production-de-a-z), j'ai détaillé comment enchaîner cette phase de direction avec la génération des assets et le montage. Et si tu veux approfondir la lecture du regard et des micro-expressions dans les clips IA, l'article sur la [direction des personnages IA](/blog/comment-diriger-personnage-ia-comme-acteur) va dans le détail. Et si tu te demandes si le titre de réalisateur IA veut dire quelque chose sur le marché, j'ai épluché les contrats et les offres d'emploi dans [réalisateur IA : vrai métier ou titre LinkedIn ?](/blog/realisateur-ia-vrai-metier-ou-titre).
 
 ScreenWeaver, l'outil que j'ai construit, est conçu précisément pour cette phase : garder visible la logique dramatique pendant qu'on écrit le script et qu'on prépare le storyboard. Le problème n'est pas la génération, c'est de ne pas perdre le fil entre l'intention et l'image.
 

@@ -1,6 +1,19 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-14 (J56 publie)
+## Last run: 2026-10-15 (J57 publie)
+
+### What happened
+- J57 publie a la date prevue : `realisateur-ia-vrai-metier-ou-titre` (analyses),
+  opinion « realisateur IA : vrai metier ou titre LinkedIn ? » appuyee sur les
+  accords DGA 2023 et 2026 et trois offres d'emploi reelles. Calendrier sans
+  glissement : J58 = 2026-10-16 (`soumettre-film-ia-festival-retour-experience`).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (salle de repetition en sous-sol) + captures
+  reelles (offre Higgsfield sur Accel, communique DGA).
+- Liens entrants : FR metiers-audiovisuel + methode-realisateur ; EN
+  metiers-audiovisuel + comment-penser-comme-realisateur.
+
+## Previous run: 2026-10-14 (J56 publie)
 
 ### What happened
 - J56 publie a la date prevue : `studio-cinema-2030-prospective` (analyses),
