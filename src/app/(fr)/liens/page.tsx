@@ -34,10 +34,18 @@ type LinkGroup = {
 
 const featuredTools: FeaturedTool[] = [
   {
+    name: "Imaginode",
+    description:
+      "Mon outil principal pour générer des images et des vidéos IA : tous les modèles sur un seul canvas.",
+    badge: "Outil principal",
+    href: "https://imaginode.ai/go/bl-home-b/liens",
+    cta: "Essayer Imaginode",
+  },
+  {
     name: "Higgsfield",
     description:
-      "Mon outil principal pour générer des vidéos et images IA au quotidien.",
-    badge: "Outil principal",
+      "Plateforme vidéo IA qui réunit de nombreux modèles, pratique pour tester des plans rapidement.",
+    badge: "Vidéo IA",
     href: getAffiliateTool("higgsfield")!.url,
     cta: "Essayer Higgsfield",
   },
