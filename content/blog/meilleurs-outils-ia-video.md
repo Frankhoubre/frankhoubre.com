@@ -55,7 +55,7 @@ Le piège est classique: style fort ne veut pas dire narration solide. Tu peux o
 
 Pour utiliser Higgsfield intelligemment, je recommande de le positionner en phase de divergence: exploration de looks, d’ambiances, d’énergie de plan. Puis convergence vers l’outil qui tient mieux la série complète.
 
-C’est un excellent outil créatif quand tu gardes une discipline de continuité.
+C’est un excellent outil créatif quand tu gardes une discipline de continuité. J'ai détaillé les prix, Cinema Studio 4.0 et Popcorn dans [mon avis Higgsfield d'octobre 2026](/blog/higgsfield-avis-realisateur).
 
 ## Pika Labs: rapide pour prototyper, à cadrer pour livrables pro
 

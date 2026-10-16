@@ -70,7 +70,7 @@ This is the stage where creators pile up the most subscriptions, and the one whe
 
 On my links page, Higgsfield has a clear label: main tool for generating videos and images every day. The reason is how it works. Higgsfield brings several models together under one account, so I can pick the engine shot by shot without stacking subscriptions or learning new interfaces.
 
-That matters more than any model name, because models change fast. In June, when Higgsfield rebranded itself as a "creative OS" with Claude, Adobe and Figma integrations, it was pushing Seedance 2.0 and Cinema Studio 3.0. On October 11, its homepage shows Seedance 2.5, Nano Banana 2.1 and Cinema Studio 4.0. Four months, three versions on the move. If I'd built my stack around one specific model, I'd have rebuilt it three times.
+That matters more than any model name, because models change fast. In June, when Higgsfield rebranded itself as a "creative OS" with Claude, Adobe and Figma integrations, it was pushing Seedance 2.0 and Cinema Studio 3.0. On October 11, its homepage shows Seedance 2.5, Nano Banana 2.1 and Cinema Studio 4.0. Four months, three versions on the move. If I'd built my stack around one specific model, I'd have rebuilt it three times. I took a closer look at what the platform is today, prices and fine print included, in [my Higgsfield review for filmmakers](/en/blog/higgsfield-avis-realisateur).
 
 ![Higgsfield homepage on October 11, 2026: Seedance 2.5, Nano Banana 2.1, Cinema Studio 4.0, Higgsfield MCP for Claude, Katana and Genjutsu modules](/images/blog/stack-creatif-2026-outils-frank-houbre/workflow-2.webp)
 

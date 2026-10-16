@@ -55,7 +55,7 @@ The trap is classic: a strong style does not mean a solid narration. You can get
 
 To use Higgsfield intelligently, I recommend positioning it in the divergence phase: exploration of looks, atmospheres, shot energy. Then convergence toward the tool that better holds the complete series.
 
-It is an excellent creative tool when you keep a continuity discipline.
+It is an excellent creative tool when you keep a continuity discipline. I went through the October 2026 prices, Cinema Studio 4.0 and Popcorn in [my Higgsfield review](/en/blog/higgsfield-avis-realisateur).
 
 ## Pika Labs: fast to prototype, to frame for pro deliverables
 

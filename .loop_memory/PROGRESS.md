@@ -1,6 +1,23 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-15 (J57 publie)
+## Last run: 2026-10-16 (PLAN_80 F01 publie, J58 decale)
+
+### What happened
+- Premier jour de la priorite PLAN_80 (decision du 16/10) : ligne F01
+  `higgsfield-avis-realisateur` (analyses, avis) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne
+  du plan habituel, a produire une fois les 20 lignes F du PLAN_80 faites.
+  Prochaine ligne PLAN_80 frankhoubre : la plus haute en score_total restante
+  dans le CSV (F02, F07, F13 a 81).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (ruelle pavee a l'aube, scripte et huit tirages)
+  + 9 captures reelles Higgsfield.
+- Liens entrants : FR meilleurs-outils-ia-video + higgsfield-creative-os ; EN
+  meilleurs-outils-ia-video + stack-creatif.
+- A signaler a Frank : stack-creatif presente encore Higgsfield en « outil
+  principal » alors que la page liens est revenue a Imaginode (commit d1c3f9b).
+
+## Previous run: 2026-10-15 (J57 publie)
 
 ### What happened
 - J57 publie a la date prevue : `realisateur-ia-vrai-metier-ou-titre` (analyses),

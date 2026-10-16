@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-16 : Avis Higgsfield 2026, ce qu'un réalisateur garde et jette
+- slug: higgsfield-avis-realisateur
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/higgsfield-avis-realisateur
+- url_en: https://frankhoubre.com/en/blog/higgsfield-avis-realisateur
+- category: analyses
+- type: evergreen (avis PLAN_80 F01)
+- search_intent: commerciale (evaluation avant achat)
+- primary_keyword: higgsfield avis
+- secondary_keywords: avis higgsfield 2026, higgsfield cinema studio avis, higgsfield popcorn, higgsfield prix, higgsfield gratuit, higgsfield remboursement, higgsfield review
+- sources: higgsfield.ai/pricing, aide Cinema Studio, Popcorn, remboursement, credits, propriete ; interface video invite ; Trustpilot ; MindStudio
+- internal_links: -> workflow-nano-banana-personnages-coherents, anatomie-plan-ia-reussi-analyse, pourquoi-personnages-changent-chaque-scene-ia, meilleurs-outils-ia-video, higgsfield-creative-os-claude-adobe-juin-2026
+- cta: CtaScreenWeaver (destination script), lien affilie aff:higgsfield dans le Verdict
+- cannibalization_notes: higgsfield-creative-os = actualite de juin ; ici avis d'achat
+- editorial_decisions: aucun test revendique, conflit d'interets et affiliation en intro, aucune note chiffree, polemique de fevrier non reprise
+- checker: pass (seo_audit 0 issue FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS, QA PLAN_80 88/100)
+- published_commit: voir PUBLISH_LOG
+
 ### 2026-10-15 : Réalisateur IA, vrai métier ou titre LinkedIn ?
 - slug: realisateur-ia-vrai-metier-ou-titre
 - locale: fr + en (meme slug, publies le meme jour)

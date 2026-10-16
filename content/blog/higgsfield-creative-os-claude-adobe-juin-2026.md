@@ -70,7 +70,7 @@ Dans ce contexte, la valeur se déplace de la génération pure vers l'orchestra
 
 C'est aussi ce que fait Adobe avec Firefly, à sa manière : intégrer l'IA dans les outils que les créateurs utilisent déjà plutôt que les forcer à changer d'écosystème.
 
-Pour les créateurs indépendants, la question concrète est simple : est-ce que Higgsfield Central va remplacer les 4 onglets ouverts en permanence, ou ajouter un onglet de plus ? La réponse dépendra de la qualité de l'exécution des intégrations annoncées.
+Pour les créateurs indépendants, la question concrète est simple : est-ce que Higgsfield Central va remplacer les 4 onglets ouverts en permanence, ou ajouter un onglet de plus ? La réponse dépendra de la qualité de l'exécution des intégrations annoncées. Quatre mois plus tard, j'ai refait le point sur Cinema Studio 4.0, Popcorn et les vrais prix dans [mon avis Higgsfield de réalisateur](/blog/higgsfield-avis-realisateur).
 
 Pour les accès à des modèles comparatifs, le [générateur de prompt cinéma](/outils/generateur-prompt-cinema) reste un bon point d'entrée pour préparer des briefs adaptés à n'importe quel moteur vidéo.
 
