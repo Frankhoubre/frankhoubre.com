@@ -13,7 +13,7 @@ cannot see.
 - Frontmatter: missing/invalid title, date, category (must match site.ts),
   excerpt; excerpt length 120-160; title <=65; duplicate titles per locale;
   thumbnail file existence; missing thumbnail.
-- Headings: FR body H1 present and single; H2 count.
+- Headings: body H1 should be absent (info on articles up to 2026-10-16, warn after); H2 count.
 - Depth: word count (error <600, warn <1500).
 - Internal links: 0 = warn, 1 = info, aim 2+.
 - Style: em dash (ERROR, hard ban) and banned filler phrases.

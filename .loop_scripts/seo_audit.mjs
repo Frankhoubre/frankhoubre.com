@@ -187,15 +187,23 @@ for (const { key: locale, dir } of DIRS) {
     }
 
     // ---- Headings ----
-    const h1s = body.match(/^#\s+.+$/gm) || [];
-    if (locale === "fr") {
-      // FR articles historically lead with an H1 in the body
-      if (h1s.length === 0)
-        add("warn", "headings", locale, slug, "No H1 (# ) in body");
-      if (h1s.length > 1)
-        add("error", "headings", locale, slug, `Multiple H1 tags (${h1s.length})`);
+    // Depuis le 2026-10-16 le seul H1 de la page est le titre rendu par
+    // ArticleHeader : le corps ne doit plus contenir de `# `. Les anciens
+    // articles qui en ont sont corrigés au rendu (normalizeBodyHeadings),
+    // d'où un simple « info » pour eux et un « warn » pour les nouveaux.
+    const bodyNoCode = body.replace(/^(```|~~~)[\s\S]*?^\1/gm, "");
+    const h1s = bodyNoCode.match(/^#[ \t]+.+$/gm) || [];
+    if (h1s.length > 0) {
+      const legacy = (data.date || "") <= "2026-10-16";
+      add(
+        legacy ? "info" : "warn",
+        "headings",
+        locale,
+        slug,
+        `H1 in body (${h1s.length}): remove the "# " line, the page title is already the H1`,
+      );
     }
-    const h2s = body.match(/^##\s+.+$/gm) || [];
+    const h2s = bodyNoCode.match(/^##\s+.+$/gm) || [];
     if (h2s.length < 3)
       add("warn", "headings", locale, slug, `Few H2 sections (${h2s.length}; aim 5+)`);
 

@@ -3,8 +3,19 @@ import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
 import type { HTMLAttributes, ImgHTMLAttributes, ReactNode } from "react";
 import { getTextFromChildren, slugify } from "@/lib/slugify";
+import { isTitleLikeHeading } from "@/lib/article-headings";
 import { MiddleBanner } from "@/components/MiddleBanner";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
+import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
+import { ArticleLink } from "@/components/article/ArticleLink";
+import { Capture, type CaptureProps } from "@/components/article/Capture";
+import { ComparisonTable } from "@/components/article/ComparisonTable";
+import { Gallery } from "@/components/article/Gallery";
+import type { ArticleLocale } from "@/components/article/labels";
+import { Methodology } from "@/components/article/Methodology";
+import { ProductCta } from "@/components/article/ProductCta";
+import { SponsoredLink } from "@/components/article/SponsoredLink";
+import { Strengths, Verdict, Weaknesses } from "@/components/article/Verdict";
 
 function makeHeading(
   tag: "h1" | "h2" | "h3" | "h4",
@@ -37,10 +48,49 @@ function makeHeading(
  */
 export function createBlogMdxComponents(
   slug: string,
-  options: { skipFirstBodyImage: boolean; articleTitle?: string },
+  options: {
+    skipFirstBodyImage: boolean;
+    articleTitle?: string;
+    locale?: ArticleLocale;
+  },
 ): MDXComponents {
+  const locale: ArticleLocale = options.locale ?? "fr";
   const headingSeen = new Map<string, number>();
   const bodyImageIndex = { n: 0 };
+  const captureIndex = { n: 0 };
+  const h2 = makeHeading("h2", headingSeen);
+
+  // Filet de sécurité pour un <h1> écrit en HTML ou en JSX (les `# ` markdown
+  // sont déjà traités par normalizeBodyHeadings) : le titre de la page est le
+  // seul H1, un doublon du titre disparaît, tout autre H1 devient un H2.
+  const BodyH1 = (props: HTMLAttributes<HTMLHeadingElement>) => {
+    const text = getTextFromChildren(props.children as ReactNode);
+    if (isTitleLikeHeading(text, options.articleTitle)) return null;
+    return h2(props);
+  };
+
+  const BoundCapture = (props: CaptureProps & { compact?: boolean }) => {
+    // eslint-disable-next-line react-hooks/immutability -- compteur de rendu serveur, ordre du document
+    captureIndex.n += 1;
+    return <Capture {...props} locale={locale} slug={slug} eager={captureIndex.n === 1} />;
+  };
+  type Kids = { children?: ReactNode };
+  type VerdictAttrs = Omit<Parameters<typeof Verdict>[0], "locale">;
+  const BoundVerdict = (p: VerdictAttrs) => <Verdict {...p} locale={locale} />;
+  const BoundStrengths = (p: Kids) => <Strengths {...p} locale={locale} />;
+  const BoundWeaknesses = (p: Kids) => <Weaknesses {...p} locale={locale} />;
+  const BoundTable = (p: Omit<Parameters<typeof ComparisonTable>[0], "locale">) => (
+    <ComparisonTable {...p} locale={locale} />
+  );
+  const BoundMethodology = (p: Kids & { date?: string }) => <Methodology {...p} locale={locale} />;
+  const BoundDisclosure = () => <AffiliateDisclosure locale={locale} className="my-10" />;
+  type CtaAttrs = Omit<Parameters<typeof ProductCta>[0], "product" | "locale" | "slug">;
+  const CtaScreenWeaver = (p: CtaAttrs) => (
+    <ProductCta {...p} product="screenweaver" locale={locale} slug={slug} />
+  );
+  const CtaImaginode = (p: CtaAttrs) => (
+    <ProductCta {...p} product="imaginode" locale={locale} slug={slug} />
+  );
 
   const fallbackAlt =
     options.articleTitle?.trim() &&
@@ -96,40 +146,38 @@ export function createBlogMdxComponents(
   };
 
   return {
-    h1: makeHeading("h1", headingSeen),
-    h2: makeHeading("h2", headingSeen),
+    h1: BodyH1,
+    h2,
     h3: makeHeading("h3", headingSeen),
     h4: makeHeading("h4", headingSeen),
-    a: ({ href, children, className, ...rest }) => {
+    a: ({ href, children, className }) => {
       const nofollowPrefix = "nf:";
       const rawHref = href ?? "#";
       const isNofollowExternal =
         rawHref.startsWith("nf:http://") || rawHref.startsWith("nf:https://");
-      const resolvedHref = isNofollowExternal
-        ? rawHref.slice(nofollowPrefix.length)
-        : rawHref;
-      const external = resolvedHref.startsWith("http");
-      if (external) {
+      if (isNofollowExternal) {
         return (
           <a
-            href={resolvedHref}
+            href={rawHref.slice(nofollowPrefix.length)}
             target="_blank"
-            rel={
-              isNofollowExternal
-                ? "nofollow noopener noreferrer"
-                : "noopener noreferrer"
-            }
+            rel="nofollow noopener noreferrer"
             className={className}
-            {...rest}
           >
             {children}
           </a>
         );
       }
+      if (/^(mailto:|tel:|#)/i.test(rawHref)) {
+        return (
+          <Link href={rawHref} className={className}>
+            {children}
+          </Link>
+        );
+      }
       return (
-        <Link href={resolvedHref} className={className} {...rest}>
+        <ArticleLink href={rawHref} className={className}>
           {children}
-        </Link>
+        </ArticleLink>
       );
     },
     table: (props) => (
@@ -140,5 +188,25 @@ export function createBlogMdxComponents(
     img: Img,
     YouTubeEmbed,
     MiddleBanner,
+    // Composants premium : noms FR et alias EN, libellés selon la langue de l'article.
+    Verdict: BoundVerdict,
+    Forts: BoundStrengths,
+    Strengths: BoundStrengths,
+    Faibles: BoundWeaknesses,
+    Weaknesses: BoundWeaknesses,
+    TableauComparatif: BoundTable,
+    ComparisonTable: BoundTable,
+    Capture: BoundCapture,
+    Screenshot: BoundCapture,
+    Galerie: Gallery,
+    Gallery,
+    Methodologie: BoundMethodology,
+    Methodology: BoundMethodology,
+    MentionAffiliation: BoundDisclosure,
+    AffiliateDisclosure: BoundDisclosure,
+    LienSponsorise: SponsoredLink,
+    SponsoredLink,
+    CtaScreenWeaver,
+    CtaImaginode,
   };
 }

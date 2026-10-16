@@ -38,7 +38,7 @@ guide, advanced guide, use-case, problem/solution, opinion-with-examples,
 template, checklist, case-study style.
 
 ## Write (FR, 2000+ words)
-Follow STYLE_GUIDE anatomy: painful concrete hook, H1 + clean H2/H3, real
+Follow STYLE_GUIDE anatomy: painful concrete hook, NO `# ` H1 in the body (the page renders the title as H1), clean H2/H3, real
 examples and exact settings, 1+ comparison table when it fits, a FAQ (6-8 Q,
 80-120 word answers), 2+ internal links with varied anchors, 2-3 authoritative
 external links, soft CTA / ScreenWeaver bridge when natural. NO em dash.

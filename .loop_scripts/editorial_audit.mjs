@@ -102,7 +102,8 @@ for (const file of listMd(FR_DIR)) {
   const { data, body } = parseFrontmatter(raw);
   const text = body.replace(/!\[.*?\]\(.*?\)/g, "");
   const wc = wordCount(text);
-  const h1 = (body.match(/^#\s+.+$/gm) || []).length;
+  // Le H1 de la page vient du titre : 0 H1 attendu dans le corps (2026-10-16).
+  const h1 = (body.replace(/^(```|~~~)[\s\S]*?^\1/gm, "").match(/^#[ \t]+.+$/gm) || []).length;
   const h2 = (body.match(/^##\s+.+$/gm) || []).length;
   const { internal, external } = countLinks(body);
   const emDash = body.includes("—") || body.includes("–");
@@ -134,8 +135,8 @@ for (const file of listMd(FR_DIR)) {
     score -= 8;
     flags.push(`${wc}w`);
   }
-  if (h1 !== 1) {
-    score -= 10;
+  if (h1 > 1) {
+    score -= 5;
     flags.push(`H1=${h1}`);
   }
   if (h2 < 3) {

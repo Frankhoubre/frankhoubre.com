@@ -8,13 +8,14 @@ const OFFSET = 120;
 type Props = {
   items: TocItem[];
   layout?: "sidebar" | "inline";
+  label?: string;
 };
 
 /**
  * Sommaire : liste numérotée sur une règle verticale, la règle se remplit
  * au fil de la lecture et l'entrée active passe en blanc chaud.
  */
-export function ArticleToc({ items, layout = "sidebar" }: Props) {
+export function ArticleToc({ items, layout = "sidebar", label = "Sommaire" }: Props) {
   const [active, setActive] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
   const [trackH, setTrackH] = useState(0);
@@ -73,10 +74,10 @@ export function ArticleToc({ items, layout = "sidebar" }: Props) {
 
   return (
     <nav
-      aria-label="Sommaire"
+      aria-label={label}
       className={`relative text-sm ${layout === "inline" ? "w-full" : "w-56 shrink-0"}`}
     >
-      {layout === "sidebar" ? <p className="meta mb-4">Sommaire</p> : null}
+      {layout === "sidebar" ? <p className="meta mb-4">{label}</p> : null}
       <div className="relative">
         <div className="absolute bottom-0 left-0 top-0 w-px bg-line" aria-hidden />
         <div

@@ -85,14 +85,18 @@ complet du 2026-07-03 (données GSC 16 mois + crawl live).
 
 - Title ≤ 60 caractères, unique par locale, mot-clé en tête.
 - Meta description 120–155 caractères (Google tronque ~160).
-- H1 unique ; 5+ H2 ; FAQ en `## FAQ` avec questions en gras ou `###`
+- H1 unique = titre rendu par `ArticleHeader` ; **0 H1 dans le corps** (les
+  anciens `# Titre` sont retirés ou rétrogradés en H2 au rendu par
+  `normalizeBodyHeadings`) ; 5+ H2 ; FAQ en `## FAQ` avec questions en gras ou `###`
   (elle alimente le FAQPage JSON-LD automatiquement, FR **et** EN).
 - Excerpt du frontmatter = meta description : le soigner comme tel.
 
 ## 5. JSON-LD (parité FR/EN obligatoire)
 
-- Article FR : BlogPosting + BreadcrumbList + FAQPage (+ VideoObject si
-  vidéo). Article EN : **même graphe** (implémenté dans
+- Article FR : BlogPosting + BreadcrumbList + FAQPage (+ VideoObject
+  seulement pour une vidéo intégrée dans le corps ET décrite dans le
+  frontmatter `video` avec son vrai titre, sa description et sa date de mise
+  en ligne ; jamais pour la vidéo « recommandée » du bas de page). Article EN : **même graphe** (implémenté dans
   `src/app/en/blog/[slug]/page.tsx`). Toute évolution du graphe FR doit être
   portée côté EN dans le même commit.
 - Listings : `Blog` + `blogPost[]` sur `/blog` ET `/en/blog`.

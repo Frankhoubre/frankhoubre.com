@@ -52,7 +52,13 @@ professoral, pas froid, pas marketing forcé, pas rédaction SEO bas de gamme.
 - Un mot clé principal clair, des mots clés secondaires naturels.
 - Title SEO optimisé (<= 60 caractères idéalement).
 - Meta description engageante (120 à 160 caractères).
-- Un H1 unique, structure H2 et H3 claire (viser 5+ H2).
+- Aucun H1 dans le corps (pas de ligne `# Titre`) : le H1 de la page est le
+  titre du frontmatter, rendu par l'en-tête d'article. Le corps commence par
+  l'accroche, puis une structure H2 et H3 claire (viser 5+ H2).
+- Composants premium (verdict, tableau comparatif, captures, galerie,
+  méthodologie, mention d'affiliation, CTA ScreenWeaver et Imaginode) : syntaxe
+  exacte dans `seo-multisites/COMPOSANTS-frankhoubre.md`. Aucune note chiffrée
+  ni étoile.
 - Intro qui accroche vite, paragraphes courts.
 - Listes à puces quand c'est utile, gras sur les idées fortes, italique avec
   modération pour nuancer.

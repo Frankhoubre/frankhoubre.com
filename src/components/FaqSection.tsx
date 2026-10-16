@@ -6,7 +6,19 @@ import type { FaqPair } from "@/lib/mdx-pipeline";
 type Props = {
   pairs: FaqPair[];
   components: MDXComponents;
+  locale?: "fr" | "en";
 };
+
+const FAQ_COPY = {
+  fr: {
+    title: "Foire aux questions",
+    intro: "Réponses rapides aux questions les plus fréquentes sur cet article.",
+  },
+  en: {
+    title: "Frequently asked questions",
+    intro: "Quick answers to the questions readers ask most about this article.",
+  },
+} as const;
 
 export function Plus() {
   return (
@@ -27,8 +39,9 @@ export function Plus() {
 }
 
 /** FAQ d'article : accordéon sur lignes fines, balisage FAQPage conservé. */
-export function FaqSection({ pairs, components }: Props) {
+export function FaqSection({ pairs, components, locale = "fr" }: Props) {
   if (!pairs.length) return null;
+  const copy = FAQ_COPY[locale];
 
   return (
     <section
@@ -41,9 +54,9 @@ export function FaqSection({ pairs, components }: Props) {
       <p id="faq-heading" className="meta">
         FAQ
       </p>
-      <h2 className="h-block mt-3 !mt-3 !border-0 !pt-0 text-cream">Foire aux questions</h2>
+      <h2 className="h-block mt-3 !mt-3 !border-0 !pt-0 text-cream">{copy.title}</h2>
       <p className="mt-2 text-sm text-fog">
-        Réponses rapides aux questions les plus fréquentes sur cet article.
+        {copy.intro}
       </p>
       <div className="mt-6">
         {pairs.map((pair, i) => (

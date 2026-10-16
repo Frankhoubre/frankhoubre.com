@@ -1,3 +1,4 @@
+import { normalizeBodyHeadings } from "@/lib/article-headings";
 import { slugify, stripMarkdownInline } from "@/lib/slugify";
 
 export const SECTION_BOUNDARY_TOKEN = "<<<SECTION_BOUNDARY>>>";
@@ -255,14 +256,43 @@ export function embedYouTubeLinks(content: string): string {
   return out.join("\n");
 }
 
+/**
+ * Indices où un bloc peut être inséré sans casser la structure : hors bloc de
+ * code et hors composant JSX ouvert sur plusieurs paragraphes (<Verdict>,
+ * <TableauComparatif>, <Methodologie>...).
+ */
+function topLevelBoundaries(parts: string[]): Set<number> {
+  const ok = new Set<number>([0]);
+  let inFence = false;
+  let depth = 0;
+  parts.forEach((part, i) => {
+    for (const line of part.split("\n")) {
+      if (/^\s*(```|~~~)/.test(line)) inFence = !inFence;
+    }
+    if (!inFence) {
+      const opens = (part.match(/<[A-Z][A-Za-z]*(?:\s[^<>]*?)?(?<!\/)>/g) ?? []).length;
+      const closes = (part.match(/<\/[A-Z][A-Za-z]*\s*>/g) ?? []).length;
+      depth = Math.max(0, depth + opens - closes);
+    }
+    if (!inFence && depth === 0) ok.add(i + 1);
+  });
+  return ok;
+}
+
 export function injectMiddleBanner(content: string): string {
   const parts = content.split(/\n\n+/);
   if (parts.length < 2) {
     return `${content.trimEnd()}\n\n<MiddleBanner />\n`;
   }
   const mid = Math.floor(parts.length / 2);
+  const allowed = topLevelBoundaries(parts);
+  let at = mid;
+  for (let d = 0; d <= parts.length; d++) {
+    if (allowed.has(mid + d) && mid + d < parts.length) { at = mid + d; break; }
+    if (allowed.has(mid - d) && mid - d > 0) { at = mid - d; break; }
+  }
   const next = [...parts];
-  next.splice(mid, 0, "<MiddleBanner />");
+  next.splice(at, 0, "<MiddleBanner />");
   return next.join("\n\n");
 }
 
@@ -313,27 +343,17 @@ export function runMdxPipeline(segment: string): string {
   return s;
 }
 
-/**
- * Retire un éventuel H1 en tête de corps. La page article rend déjà le titre
- * (frontmatter) dans un <h1> de hero ; un `# Titre` au début du markdown crée
- * donc un second <h1> (H1 dupliqué) et répète le titre à l'écran. On retire
- * uniquement le premier titre de niveau 1 ATX situé en tout début de corps.
- * Sans effet sur les corps qui commencent par du texte (cas des articles EN).
- */
-export function stripLeadingH1(content: string): string {
-  const s = content.replace(/^﻿/, "").replace(/^[ \t\r\n]*/, "");
-  // `#` suivi d'au moins une espace = H1 ATX. `##` / `###` ne matchent pas.
-  const m = s.match(/^#[ \t]+[^\n]*(?:\n|$)/);
-  if (!m) return content;
-  return s.slice(m[0].length).replace(/^[ \t\r\n]*/, "");
-}
-
-export function prepareArticleMdxParts(rawContent: string): {
+export function prepareArticleMdxParts(
+  rawContent: string,
+  title?: string,
+): {
   beforeMdx: string;
   afterMdx: string;
   faqPairs: FaqPair[] | null;
 } {
-  const safeContent = sanitizeMdxUnsafeSyntax(stripLeadingH1(rawContent));
+  const safeContent = sanitizeMdxUnsafeSyntax(
+    normalizeBodyHeadings(rawContent, title),
+  );
   const faq = splitFaqContent(safeContent);
   if (!faq) {
     const single = injectMiddleBanner(runMdxPipeline(safeContent));

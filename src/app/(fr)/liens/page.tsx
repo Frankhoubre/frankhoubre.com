@@ -11,6 +11,7 @@ import {
   buildPageMetadata,
   pageUrl,
 } from "@/lib/metadata";
+import { getAffiliateTool, relForExternal } from "@/lib/affiliate";
 import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
 import { siteName } from "@/lib/site";
 
@@ -37,7 +38,7 @@ const featuredTools: FeaturedTool[] = [
     description:
       "Mon outil principal pour générer des vidéos et images IA au quotidien.",
     badge: "Outil principal",
-    href: "https://higgsfield.ai/?fpr=frank70",
+    href: getAffiliateTool("higgsfield")!.url,
     cta: "Essayer Higgsfield",
   },
   {
@@ -213,7 +214,7 @@ export default function LiensPage() {
                 <a
                   href={tool.href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel={relForExternal(tool.href)}
                   className="group grid-12 items-baseline gap-y-3 py-7 no-underline"
                 >
                   <span className="meta meta-strong tabular col-span-2 lg:col-span-1">0{i + 1}</span>
@@ -228,6 +229,10 @@ export default function LiensPage() {
               </li>
             ))}
           </ol>
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-fog">
+            Certains liens de cette page sont affiliés : si vous vous abonnez,
+            Frank touche une commission, sans surcoût pour vous.
+          </p>
         </div>
       </section>
 
@@ -242,7 +247,7 @@ export default function LiensPage() {
                   {group.links.map((link) => (
                     <li key={`${group.title}-${link.label}`}>
                       {link.external ? (
-                        <a href={link.href} target="_blank" rel="noopener noreferrer" className={rowClass}>
+                        <a href={link.href} target="_blank" rel={relForExternal(link.href)} className={rowClass}>
                           <span>{link.label}</span>
                           <span className="text-fog transition-colors group-hover:text-cream"><Arrow /></span>
                         </a>

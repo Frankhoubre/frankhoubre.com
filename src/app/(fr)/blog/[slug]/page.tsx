@@ -29,7 +29,16 @@ import {
 } from "@/lib/blog";
 import type { FaqPair } from "@/lib/mdx-pipeline";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
-import { ORGANIZATION_ID, PERSON_ID, buildPageMetadata } from "@/lib/metadata";
+import {
+  ORGANIZATION_ID,
+  PERSON_ID,
+  articleSerpTitle,
+  buildPageMetadata,
+} from "@/lib/metadata";
+import { buildArticleVideoObject } from "@/lib/article-video";
+import { realModifiedDate } from "@/lib/article-dates";
+import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
+import { ARTICLE_LABELS } from "@/components/article/labels";
 import { baseUrl, getCategoryLabel, person, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -62,12 +71,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post || !isPostPublished(post)) {
     return { title: "Blog" };
   }
-  // Titre SERP : on vise ≤ 60 caractères. Le layout ajoute « | Frank Houbre »
-  // (~15 car.) via son template ; quand le titre est déjà long, ce suffixe le
-  // ferait tronquer. On retire alors la marque (titleAbsolute) et on plafonne.
-  const title = trunc(post.frontmatter.title, 60);
-  const fitsWithBrand = `${title} | ${siteName}`.length <= 60;
-  const titleAbsolute = fitsWithBrand ? undefined : title;
+  const { title, titleAbsolute } = articleSerpTitle(post.frontmatter.title);
   const description = trunc(post.frontmatter.excerpt, 160);
   const thumb = getPostThumbnail(post);
   const ogImage = thumb
@@ -76,8 +80,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${baseUrl}${thumb}`
     : undefined;
 
-  // hreflang vers la version EN (quand la traduction existe).
-  const hasEn = getEnPostBySlug(slug) !== null;
+  // hreflang seulement si la version EN existe ET est publiée.
+  const enPost = getEnPostBySlug(slug);
+  const hasEn = enPost !== null && isPostPublished(enPost);
 
   return buildPageMetadata({
     title,
@@ -95,7 +100,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : {}),
     openGraph: {
       type: "article",
-      title: `${title} | ${siteName}`,
+      title: titleAbsolute ?? `${title} | ${siteName}`,
       description,
       publishedTime: post.frontmatter.date,
       modifiedTime: post.frontmatter.dateModified ?? post.frontmatter.date,
@@ -233,27 +238,8 @@ function buildJsonLd(opts: {
     });
   }
 
-  for (const id of videoIds) {
-    graph.push({
-      "@type": "VideoObject",
-      name: post.frontmatter.title,
-      description: post.frontmatter.excerpt,
-      inLanguage: "fr-FR",
-      thumbnailUrl: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
-      uploadDate: post.frontmatter.date,
-      contentUrl: `https://www.youtube.com/watch?v=${id}`,
-      embedUrl: `https://www.youtube-nocookie.com/embed/${id}`,
-      publisher: {
-        "@type": "Organization",
-        name: "BusinessDynamite",
-        url: "https://www.youtube.com/@BusinessDynamite",
-      },
-      potentialAction: {
-        "@type": "WatchAction",
-        target: `https://www.youtube.com/watch?v=${id}`,
-      },
-    });
-  }
+  const video = buildArticleVideoObject(post.frontmatter, videoIds, "fr-FR");
+  if (video) graph.push(video);
 
   return {
     "@context": "https://schema.org",
@@ -267,25 +253,27 @@ export default async function BlogArticlePage({ params }: Props) {
   if (!post || !isPostPublished(post)) notFound();
 
   const raw = post.content;
-  const toc = buildArticleToc(raw);
+  const articleTitle = post.frontmatter.title;
+  const toc = buildArticleToc(raw, articleTitle, "fr");
   const allPosts = getAllPosts();
-  // JSON-LD VideoObject : uniquement les vidéos réellement intégrées dans l'article.
+  // Vidéos réellement intégrées dans le corps de l'article.
   const videoIds = extractYouTubeVideoIds(raw);
   // Si l'article FR ne contient pas déjà de vidéo, on en suggère une de la
   // chaîne @BusinessDynamite (pertinente par sujet via la map, sinon défaut).
   const recommendedVideoId =
     videoIds.length === 0 ? getRecommendedYouTubeVideoId(post) : null;
-  const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
+  const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw, articleTitle);
   const thumb = getPostThumbnail(post);
   const skipFirstBodyImage = Boolean(post.frontmatter.thumbnail?.trim());
-  const articleTitle = post.frontmatter.title;
   const components = createBlogMdxComponents(slug, {
     skipFirstBodyImage,
     articleTitle,
+    locale: "fr",
   });
   const faqComponents = createBlogMdxComponents(slug, {
     skipFirstBodyImage: false,
     articleTitle,
+    locale: "fr",
   });
   const minutes = readingTimeMinutes(raw);
   const related = getRelatedPosts(slug, 3);
@@ -301,12 +289,9 @@ export default async function BlogArticlePage({ params }: Props) {
     },
   };
 
-  const jsonLd = buildJsonLd({
-    post,
-    slug,
-    videoIds: recommendedVideoId ? [recommendedVideoId] : videoIds,
-    faqPairs,
-  });
+  // La vidéo recommandée n'a pas de VideoObject : seule une vidéo intégrée
+  // et décrite dans le frontmatter en reçoit un.
+  const jsonLd = buildJsonLd({ post, slug, videoIds, faqPairs });
 
   const authorImg =
     typeof person.image === "string" && person.image.startsWith("http")
@@ -318,6 +303,7 @@ export default async function BlogArticlePage({ params }: Props) {
     month: "long",
     day: "numeric",
   });
+  const modified = realModifiedDate(post.frontmatter);
 
   return (
     <>
@@ -336,6 +322,13 @@ export default async function BlogArticlePage({ params }: Props) {
               excerpt={post.frontmatter.excerpt}
               date={post.frontmatter.date}
               dateLabel={dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
+              {...(modified
+                ? {
+                    modifiedDate: modified,
+                    modifiedLabel: `${ARTICLE_LABELS.fr.updatedOn} ${dateFmt.format(new Date(`${modified}T12:00:00`))}`,
+                  }
+                : {})}
+              author={{ prefix: ARTICLE_LABELS.fr.by, name: person.name, href: "/a-propos" }}
               minutesLabel={`${minutes} min de lecture`}
               category={post.frontmatter.category}
               categoryHref={`/blog/category/${post.frontmatter.category}`}
@@ -349,6 +342,10 @@ export default async function BlogArticlePage({ params }: Props) {
               actions={<ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />}
               figureCaption={`Fig. 01 · ${getCategoryLabel(post.frontmatter.category)}`}
             />
+
+            {post.frontmatter.affiliate === true ? (
+              <AffiliateDisclosure locale="fr" className="mt-10" />
+            ) : null}
 
             <ArticleMobileToc items={toc} />
 

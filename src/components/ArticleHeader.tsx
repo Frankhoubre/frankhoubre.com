@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { Badge } from "@/components/Badge";
 import { Breadcrumb } from "@/components/ui/PageHeader";
@@ -8,6 +9,10 @@ type Props = {
   excerpt: string;
   date: string;
   dateLabel: string;
+  /** Date de mise à jour réelle (frontmatter `dateModified`), jamais calculée. */
+  modifiedDate?: string;
+  modifiedLabel?: string;
+  author?: { prefix: string; name: string; href: string };
   minutesLabel: string;
   category: string;
   categoryHref?: string;
@@ -22,15 +27,18 @@ type Props = {
 };
 
 /**
- * Ouverture d'article : fil d'Ariane, ligne de métadonnées (catégorie, date,
- * durée), titre, chapô serif, puis le photogramme en 2:1 posé sur toute la
- * largeur de la colonne de lecture.
+ * Ouverture d'article : fil d'Ariane, ligne de métadonnées (catégorie, date
+ * de publication, date de mise à jour quand elle existe, durée), titre, chapô
+ * serif, auteur, puis le photogramme en 2:1 sur la largeur de la colonne.
  */
 export function ArticleHeader({
   title,
   excerpt,
   date,
   dateLabel,
+  modifiedDate,
+  modifiedLabel,
+  author,
   minutesLabel,
   category,
   categoryHref,
@@ -48,6 +56,14 @@ export function ArticleHeader({
         <Badge category={category} href={categoryHref} plain />
         <span className="text-fog/50" aria-hidden>/</span>
         <time dateTime={date}>{dateLabel}</time>
+        {modifiedDate && modifiedLabel ? (
+          <>
+            <span className="text-fog/50" aria-hidden>/</span>
+            <span className="meta-strong">
+              <time dateTime={modifiedDate}>{modifiedLabel}</time>
+            </span>
+          </>
+        ) : null}
         <span className="text-fog/50" aria-hidden>/</span>
         <span>{minutesLabel}</span>
       </div>
@@ -55,6 +71,14 @@ export function ArticleHeader({
         {title}
       </h1>
       <p className="lede mt-6">{excerpt}</p>
+      {author ? (
+        <p className="meta mt-6">
+          {author.prefix}{" "}
+          <Link href={author.href} rel="author" className="line-link meta-strong hover:text-cream">
+            {author.name}
+          </Link>
+        </p>
+      ) : null}
       {actions ? <div className="mt-8 border-t border-line pt-5">{actions}</div> : null}
 
       {thumb ? (

@@ -9,7 +9,19 @@ import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
 import { ReadingProgressBar } from "@/components/ReadingProgressBar";
 import { RelatedPosts } from "@/components/RelatedPosts";
-import { readingTimeMinutes } from "@/lib/blog";
+import { ArticleMobileToc } from "@/components/ArticleMobileToc";
+import { ArticleToc } from "@/components/ArticleToc";
+import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
+import { ARTICLE_LABELS } from "@/components/article/labels";
+import {
+  extractYouTubeVideoIds,
+  getPostBySlug,
+  isPostPublished,
+  readingTimeMinutes,
+} from "@/lib/blog";
+import { buildArticleToc } from "@/lib/blog-toc";
+import { buildArticleVideoObject } from "@/lib/article-video";
+import { realModifiedDate } from "@/lib/article-dates";
 import { getAllEnPosts, getEnPostBySlug, getRelatedEnPosts } from "@/lib/blog-en";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
@@ -18,6 +30,7 @@ import {
   PERSON_ID,
   buildBreadcrumbList,
   buildGraphJsonLd,
+  articleSerpTitle,
   buildPageMetadata,
 } from "@/lib/metadata";
 import { baseUrl, person, siteName } from "@/lib/site";
@@ -46,10 +59,17 @@ function stripMdSimple(s: string): string {
     .trim();
 }
 
+/** Version FR publiée de l'article, pour le hreflang. */
+function hasPublishedFr(slug: string): boolean {
+  const fr = getPostBySlug(slug);
+  return fr !== null && isPostPublished(fr);
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getEnPostBySlug(slug);
-  if (!post) return { title: "Blog" };
+  if (!post || !isPostPublished(post)) return { title: "Blog" };
+  const { title, titleAbsolute } = articleSerpTitle(post.frontmatter.title);
   const thumb = getPostThumbnail(post);
   const ogImage = thumb
     ? thumb.startsWith("http")
@@ -57,17 +77,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${baseUrl}${thumb}`
     : undefined;
   return buildPageMetadata({
-    title: trunc(post.frontmatter.title, 60),
-    titleAbsolute: trunc(post.frontmatter.title, 60),
+    title,
+    titleAbsolute,
     description: trunc(post.frontmatter.excerpt, 160),
     path: `/en/blog/${slug}`,
-    alternateLanguages: {
-      en: `/en/blog/${slug}`,
-      fr: `/blog/${slug}`,
-      "x-default": `/blog/${slug}`,
-    },
+    ...(hasPublishedFr(slug)
+      ? {
+          alternateLanguages: {
+            en: `/en/blog/${slug}`,
+            fr: `/blog/${slug}`,
+            "x-default": `/blog/${slug}`,
+          },
+        }
+      : {}),
     openGraph: {
       type: "article",
+      title: titleAbsolute ?? `${title} | ${siteName}`,
       publishedTime: post.frontmatter.date,
       modifiedTime: post.frontmatter.dateModified ?? post.frontmatter.date,
       ...(ogImage ? { images: [{ path: ogImage, width: 1200, height: 630 }] } : {}),
@@ -79,15 +104,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function EnBlogArticlePage({ params }: Props) {
   const { slug } = await params;
   const post = getEnPostBySlug(slug);
-  if (!post) notFound();
+  if (!post || !isPostPublished(post)) notFound();
 
   const raw = post.content;
-  const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw);
+  const articleTitle = post.frontmatter.title;
+  const { beforeMdx, afterMdx, faqPairs } = prepareArticleMdxParts(raw, articleTitle);
+  const toc = buildArticleToc(raw, articleTitle, "en");
   const thumb = getPostThumbnail(post);
   const components = createBlogMdxComponents(slug, {
     skipFirstBodyImage: Boolean(post.frontmatter.thumbnail?.trim()),
-    articleTitle: post.frontmatter.title,
+    articleTitle,
+    locale: "en",
   });
+  const faqComponents = createBlogMdxComponents(slug, {
+    skipFirstBodyImage: false,
+    articleTitle,
+    locale: "en",
+  });
+  const modified = realModifiedDate(post.frontmatter);
   const minutes = readingTimeMinutes(raw);
   const dateFmt = new Intl.DateTimeFormat("en-US", {
     year: "numeric",
@@ -149,6 +183,8 @@ export default async function EnBlogArticlePage({ params }: Props) {
       { name: post.frontmatter.title, path: `/en/blog/${slug}` },
     ]),
   ];
+  const video = buildArticleVideoObject(post.frontmatter, extractYouTubeVideoIds(raw), "en-US");
+  if (video) graphNodes.push(video);
   if (faqPairs?.length) {
     graphNodes.push({
       "@type": "FAQPage",
@@ -171,47 +207,75 @@ export default async function EnBlogArticlePage({ params }: Props) {
       <JsonLd data={jsonLd} />
       <ReadingProgressBar />
       <div className="container-x page-top pb-20 sm:pb-28">
-        <article className="mx-auto max-w-[45rem]">
-          <ArticleHeader
-            title={post.frontmatter.title}
-            excerpt={post.frontmatter.excerpt}
-            date={post.frontmatter.date}
-            dateLabel={dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
-            minutesLabel={`${minutes} min read`}
-            category={post.frontmatter.category}
-            thumb={thumb}
-            thumbAlt={`Illustration for “${post.frontmatter.title}”`}
-            breadcrumb={[
-              { label: "Home", href: "/en" },
-              { label: "Blog", href: "/en/blog" },
-              { label: post.frontmatter.title },
-            ]}
-            breadcrumbLabel="Breadcrumb"
-            figureCaption="Fig. 01"
-          />
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,45rem)_minmax(0,1fr)] lg:gap-12">
+          <div className="hidden lg:block" aria-hidden />
+          <article className="mx-auto min-w-0 max-w-[45rem] lg:col-start-2 lg:mx-0">
+            <ArticleHeader
+              title={post.frontmatter.title}
+              excerpt={post.frontmatter.excerpt}
+              date={post.frontmatter.date}
+              dateLabel={dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
+              {...(modified
+                ? {
+                    modifiedDate: modified,
+                    modifiedLabel: `${ARTICLE_LABELS.en.updatedOn} ${dateFmt.format(new Date(`${modified}T12:00:00`))}`,
+                  }
+                : {})}
+              author={{ prefix: ARTICLE_LABELS.en.by, name: person.name, href: "/en/about" }}
+              minutesLabel={`${minutes} min read`}
+              category={post.frontmatter.category}
+              thumb={thumb}
+              thumbAlt={`Illustration for “${post.frontmatter.title}”`}
+              breadcrumb={[
+                { label: "Home", href: "/en" },
+                { label: "Blog", href: "/en/blog" },
+                { label: post.frontmatter.title },
+              ]}
+              breadcrumbLabel="Breadcrumb"
+              figureCaption="Fig. 01"
+            />
 
-          <div className="prose-cinema mt-12">
-            {beforeMdx ? (
-              <MDXRemote source={beforeMdx} components={components} options={mdxOpts} />
+            {post.frontmatter.affiliate === true ? (
+              <AffiliateDisclosure locale="en" className="mt-10" />
             ) : null}
-            {faqPairs ? <FaqSection pairs={faqPairs} components={components} /> : null}
-            {afterMdx ? (
-              <MDXRemote source={afterMdx} components={components} options={mdxOpts} />
-            ) : null}
+
+            <ArticleMobileToc
+              items={toc}
+              label={ARTICLE_LABELS.en.toc}
+              sectionsLabel={ARTICLE_LABELS.en.tocSections}
+            />
+
+            <div className="prose-cinema mt-12">
+              {beforeMdx ? (
+                <MDXRemote source={beforeMdx} components={components} options={mdxOpts} />
+              ) : null}
+              {faqPairs ? (
+                <FaqSection pairs={faqPairs} components={faqComponents} locale="en" />
+              ) : null}
+              {afterMdx ? (
+                <MDXRemote source={afterMdx} components={components} options={mdxOpts} />
+              ) : null}
+            </div>
+
+            <AuthorBox
+              locale="en"
+              imageSrc={`${baseUrl}${person.image}`}
+              jobTitle="AI trainer, AI filmmaker and image & video creator."
+              links={[
+                { label: "About", href: "/en/about" },
+                { label: "All articles", href: "/en/blog" },
+              ]}
+            />
+
+            <RelatedPosts posts={related} locale="en" />
+          </article>
+
+          <div className="mt-12 hidden lg:col-start-3 lg:mt-0 lg:block lg:justify-self-start">
+            <div className="sticky top-28">
+              <ArticleToc items={toc} label={ARTICLE_LABELS.en.toc} />
+            </div>
           </div>
-
-          <AuthorBox
-            locale="en"
-            imageSrc={`${baseUrl}${person.image}`}
-            jobTitle="AI trainer, AI filmmaker and image & video creator."
-            links={[
-              { label: "About", href: "/en/about" },
-              { label: "All articles", href: "/en/blog" },
-            ]}
-          />
-
-          <RelatedPosts posts={related} locale="en" />
-        </article>
+        </div>
       </div>
     </>
   );

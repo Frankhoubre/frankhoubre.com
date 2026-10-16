@@ -16,6 +16,19 @@ export type PostFrontmatter = {
   excerpt: string;
   thumbnail?: string;
   dateModified?: string;
+  /** Article avec liens affiliés : bandeau de mention en tête. */
+  affiliate?: boolean;
+  /**
+   * Vidéo intégrée décrite avec ses vraies données (titre, description et date
+   * de mise en ligne YouTube) : seule source d'un VideoObject JSON-LD.
+   */
+  video?: {
+    id?: string;
+    name?: string;
+    description?: string;
+    uploadDate?: string;
+    duration?: string;
+  };
 };
 
 export type Post = {

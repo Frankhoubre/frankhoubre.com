@@ -1,19 +1,28 @@
 import { extractToc, type TocItem } from "@/lib/blog";
+import { normalizeBodyHeadings } from "@/lib/article-headings";
 import {
   extractSupplementaryFaqSections,
   parseFaqBody,
   splitFaqContent,
 } from "@/lib/mdx-pipeline";
 
-const FAQ_TOC_ITEM: TocItem = {
-  id: "foire-aux-questions",
-  text: "Foire aux questions",
-  level: 2,
-};
+const FAQ_TOC_LABEL = {
+  fr: "Foire aux questions",
+  en: "Frequently asked questions",
+} as const;
 
-export function buildArticleToc(raw: string): TocItem[] {
-  const faq = splitFaqContent(raw);
-  if (!faq) return extractToc(raw);
+/**
+ * Sommaire des H2. Le corps passe par la même normalisation des H1 que le
+ * rendu MDX : un H1 rétrogradé en H2 apparaît donc aussi ici, avec le même id.
+ */
+export function buildArticleToc(
+  raw: string,
+  title?: string,
+  locale: "fr" | "en" = "fr",
+): TocItem[] {
+  const body = normalizeBodyHeadings(raw, title);
+  const faq = splitFaqContent(body);
+  if (!faq) return extractToc(body);
 
   const { cleanedAfter, extraPairs } = extractSupplementaryFaqSections(faq.after);
   const mainPairs = parseFaqBody(faq.faqBody);
@@ -27,7 +36,7 @@ export function buildArticleToc(raw: string): TocItem[] {
 
   return [
     ...extractToc(faq.before),
-    FAQ_TOC_ITEM,
+    { id: "foire-aux-questions", text: FAQ_TOC_LABEL[locale], level: 2 },
     ...extractToc(cleanedAfter),
   ];
 }

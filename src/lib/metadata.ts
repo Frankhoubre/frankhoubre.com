@@ -236,3 +236,18 @@ export function buildWebApplicationJsonLd(opts: {
     "@graph": graph,
   };
 }
+
+/**
+ * Titre SERP d'un article : jamais tronqué. Si « Titre | Frank Houbre » tient
+ * dans 60 caractères, le template du layout ajoute la marque ; sinon le titre
+ * sort seul, entier (titleAbsolute contourne le template).
+ */
+export function articleSerpTitle(rawTitle: string): {
+  title: string;
+  titleAbsolute?: string;
+} {
+  const title = rawTitle.trim();
+  return `${title} | ${siteName}`.length <= 60
+    ? { title }
+    : { title, titleAbsolute: title };
+}

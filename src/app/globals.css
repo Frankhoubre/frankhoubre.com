@@ -1852,4 +1852,215 @@
   .prose-cinema .btn:hover {
     color: var(--bg);
   }
+
+  /* Composants d'article premium (src/components/article). */
+
+  .verdict-body > :not(.verdict-list) {
+    grid-column: 1 / -1;
+  }
+
+  .verdict-body > p,
+  .verdict-body > ul,
+  .verdict-body > ol {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-2);
+  }
+
+  .verdict-body > p + p {
+    margin-top: 0.9rem;
+  }
+
+  .verdict-mark {
+    display: inline-block;
+    width: 0.75rem;
+    height: 1px;
+    background: var(--cream);
+  }
+
+  .verdict-plus .verdict-mark {
+    position: relative;
+    background: var(--stone);
+  }
+
+  .verdict-plus .verdict-mark::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 0.5px);
+    top: -0.375rem;
+    width: 1px;
+    height: 0.75rem;
+    background: var(--stone);
+  }
+
+  .verdict-minus .verdict-mark {
+    background: var(--fog);
+  }
+
+  .verdict-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .prose-cinema .verdict-list ul > li,
+  .verdict-list ul > li {
+    position: relative;
+    padding: 0.55rem 0 0.55rem 1.1rem;
+    margin: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .prose-cinema .verdict-list ul > li::before,
+  .verdict-list ul > li::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.25em;
+    width: 0.5rem;
+    height: 1px;
+    background: var(--fog);
+  }
+
+  .verdict-list p {
+    margin: 0;
+  }
+
+  /* Tableau comparatif : première colonne figée pendant le défilement. */
+  .cmp-table .table-wrap {
+    margin-top: 0;
+  }
+
+  .cmp-table table {
+    min-width: 34rem;
+  }
+
+  .cmp-table th:first-child,
+  .cmp-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 7.5rem;
+    max-width: 11rem;
+    background: var(--bg-2);
+    color: var(--cream);
+    box-shadow: inset -1px 0 0 var(--line);
+  }
+
+  .cmp-table td:first-child {
+    font-weight: 500;
+  }
+
+  .cmp-table figcaption a {
+    color: var(--text-2);
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-underline-offset: 0.25em;
+  }
+
+  /* Capture et lightbox : ratio naturel, jamais recadrée. */
+  .capture-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--r-1);
+    background: var(--surface);
+  }
+
+  .capture-trigger:focus-visible {
+    outline: 1px solid var(--stone);
+    outline-offset: 4px;
+  }
+
+  .capture-zoom {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--line-strong);
+    background: rgb(11 11 12 / 0.78);
+    color: var(--cream);
+    opacity: 0.85;
+    transition: opacity var(--dur-fast) var(--ease);
+  }
+
+  .capture-trigger:hover .capture-zoom,
+  .capture-trigger:focus-visible .capture-zoom {
+    opacity: 1;
+  }
+
+  .capture-dialog {
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: var(--bg);
+    color: var(--cream);
+  }
+
+  .capture-dialog::backdrop {
+    background: rgb(11 11 12 / 0.9);
+  }
+
+  .capture-dialog-inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem 1.5rem;
+  }
+
+  .capture-full {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 1px solid var(--line);
+  }
+
+  .capture-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    min-height: 2.75rem;
+    background: var(--bg);
+  }
+
+  html.lightbox-open {
+    overflow: hidden;
+  }
+
+  /* Méthodologie : accordéon discret. */
+  .methodology summary {
+    align-items: center;
+  }
+
+  .methodology-body > p {
+    margin: 0 0 0.9em;
+  }
+
+  .methodology-body ul {
+    margin: 0 0 0.9em;
+  }
+
+  .prose-cinema .methodology-body ul > li {
+    margin-bottom: 0.3em;
+  }
+
+  .affiliate-note + .faq-item,
+  .affiliate-note + details {
+    margin-top: 2rem;
+  }
 }

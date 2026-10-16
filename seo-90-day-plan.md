@@ -9,7 +9,7 @@ marqués UPDATE renforcent un article existant au lieu d'en créer un.
 ## Règles communes (héritées de GUIDE_EDITORIAL.md et SEO-GUIDELINES.md)
 
 - Title ≤ 60 caractères, mot-clé en tête ; excerpt 120-155 caractères.
-- H1 = title ; ≥ 5 H2 ; FAQ 6-8 questions en fin d'article (alimente le
+- Pas de `# ` dans le corps (le H1 est le title, rendu par la page) ; ≥ 5 H2 ; FAQ 6-8 questions en fin d'article (alimente le
   FAQPage JSON-LD automatiquement).
 - 3-6 liens internes contextuels dont le pilier du cluster ; ajouter le même
   jour un lien entrant depuis une page existante du cluster.
