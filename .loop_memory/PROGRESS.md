@@ -1,6 +1,19 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-16 (PLAN_80 F01 publie, J58 decale)
+## Last run: 2026-10-17 (PLAN_80 F02 publie, J58 toujours decale)
+
+### What happened
+- Deuxieme jour PLAN_80 : ligne F02 `ltx-studio-avis` (analyses, avis) publiee
+  a la place de J58. J58 (`soumettre-film-ia-festival-retour-experience`) reste
+  la prochaine ligne du plan habituel. Prochaine ligne PLAN_80 frankhoubre :
+  F07 ou F13 (81), puis F17, F18, F19 (80).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (cabine de projection 35 mm a l'aube) + 9 captures
+  reelles LTX Studio.
+- Liens entrants FR et EN : higgsfield-avis-realisateur + pipeline-ia-script-
+  storyboard-production-de-a-z.
+
+## Previous run: 2026-10-16 (PLAN_80 F01 publie, J58 decale)
 
 ### What happened
 - Premier jour de la priorite PLAN_80 (decision du 16/10) : ligne F01

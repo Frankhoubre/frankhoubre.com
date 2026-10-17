@@ -77,6 +77,8 @@ Two options:
 
 The two options are not mutually exclusive. Option A for the internal visual validation phase, Option B for the handover.
 
+Some platforms promise to generate this storyboard straight from an uploaded script. LTX Studio is one of them, with a pricing catch I cover in [my LTX Studio review](/en/blog/ltx-studio-avis).
+
 ## Step 4: from image to video (variable)
 
 You have your visual references, your prompts, your storyboard. You move to video generation.

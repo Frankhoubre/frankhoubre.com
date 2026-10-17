@@ -78,6 +78,8 @@ Deux options :
 
 Les deux options ne sont pas mutuellement exclusives. Option A pour la phase de validation visuelle interne, Option B pour la remise.
 
+Certaines plateformes promettent de générer ce storyboard directement depuis le script importé. C'est le cas de LTX Studio, avec une condition de prix que je détaille dans [mon avis sur LTX Studio](/blog/ltx-studio-avis).
+
 ## Étape 4 : de l'image à la vidéo (variable)
 
 Vous avez vos références visuelles, vos prompts, votre storyboard. Vous passez en génération vidéo.

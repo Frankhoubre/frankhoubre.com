@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-17 : Avis LTX Studio 2026, la promesse du script au film
+- slug: ltx-studio-avis
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/ltx-studio-avis
+- url_en: https://frankhoubre.com/en/blog/ltx-studio-avis
+- category: analyses
+- type: evergreen (avis PLAN_80 F02)
+- search_intent: commerciale (evaluation avant achat)
+- primary_keyword: ltx studio avis
+- secondary_keywords: ltx studio prix, ltx studio gratuit, ltx studio review, ltx studio remboursement, ltx studio licence commerciale, c'est quoi ltx
+- sources: ltx.io/studio, ltx.io/studio/pricing (euros, France, 17/10), ltx.io/studio/faq, ltx.io/release-notes, help.ltx.io (Elements, offre gratuite, credits, licence, remboursement, moderation, collaborateurs), Trustpilot, G2 via Google, TechRadar, Wikipedia
+- internal_links: -> preparer-decoupage-technique-avant-generation-video-ia, pourquoi-personnages-changent-chaque-scene-ia, pipeline-ia-script-storyboard-production-de-a-z, higgsfield-avis-realisateur, meilleurs-outils-ia-video (memes slugs en EN)
+- cta: CtaScreenWeaver (destination script), aucun lien affilie (LTX hors registre)
+- cannibalization_notes: aucun article LTX sur le domaine ; F08 (alternatives-ltx-studio) et F13 (screenweaver-vs-ltx-studio) restent a ecrire et devront renvoyer ici
+- editorial_decisions: aucun test revendique, conflit d'interets en intro, aucun cout en credits avance (non publie), contradiction de la FAQ LTX sur la licence a 15 $ signalee, tableau LTX vs ScreenWeaver factuel avec les points ou LTX est meilleur
+- checker: pass (seo_audit 0 issue FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS, QA PLAN_80 90/100)
+- published_commit: voir PUBLISH_LOG
+
 ### 2026-10-16 : Avis Higgsfield 2026, ce qu'un réalisateur garde et jette
 - slug: higgsfield-avis-realisateur
 - locale: fr + en (meme slug, publies le meme jour)
