@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-18 : Alternatives à Higgsfield pour réaliser un film en 2026
+- slug: alternatives-higgsfield-film
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/alternatives-higgsfield-film
+- url_en: https://frankhoubre.com/en/blog/alternatives-higgsfield-film
+- category: comparatifs
+- type: evergreen (alternatives PLAN_80 F07)
+- search_intent: commerciale (choix d'un remplacant)
+- primary_keyword: alternative higgsfield
+- secondary_keywords: alternatives higgsfield, higgsfield alternative, alternative gratuite higgsfield, equivalent higgsfield, comme higgsfield
+- sources: higgsfield.ai/pricing + aide (remboursement, Popcorn), screenweaver.ai/fr#pricing, ltx.io/studio/pricing, createsagas.com (accueil, pricing, faq), support.google.com/flow (credits, Scenebuilder, pays), runway.com/pricing, Trustpilot Higgsfield (18/10), kling.ai (accueil)
+- internal_links: -> higgsfield-avis-realisateur, ltx-studio-avis, google-veo-3-brief-realisateur-plan-sequence, meilleurs-outils-ia-video, pourquoi-personnages-changent-chaque-scene-ia, preparer-decoupage-technique-avant-generation-video-ia (memes slugs en EN) ; entrants FR + EN depuis higgsfield-avis-realisateur et ltx-studio-avis
+- cta: CtaScreenWeaver (destination script), aucun lien affilie
+- cannibalization_notes: distinct de higgsfield-avis-realisateur (requete « higgsfield avis ») ; F12 (higgsfield-vs-runway) et F16 (google-flow-vs-higgsfield) restent a ecrire et devront renvoyer ici
+- editorial_decisions: classement par type de projet, conflit d'interets en intro, section « Quand garder Higgsfield », prix Kling non cites (page fermee sans compte), aucun test revendique
+- checker: pass (seo_audit 0 issue FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS, QA PLAN_80 90/100)
+- published_commit: 82815b5
+
 ### 2026-10-17 : Avis LTX Studio 2026, la promesse du script au film
 - slug: ltx-studio-avis
 - locale: fr + en (meme slug, publies le meme jour)

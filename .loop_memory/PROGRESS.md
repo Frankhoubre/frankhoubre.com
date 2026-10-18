@@ -1,6 +1,17 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-17 (PLAN_80 F02 publie, J58 toujours decale)
+## Last run: 2026-10-18 (PLAN_80 F07 publie, J58 toujours decale)
+
+### What happened
+- Troisieme jour PLAN_80 : ligne F07 `alternatives-higgsfield-film` (comparatifs,
+  alternatives) publiee a la place de J58. J58 (`soumettre-film-ia-festival-retour-experience`)
+  reste la prochaine ligne du plan habituel. Prochaine ligne PLAN_80 frankhoubre :
+  F13 (81, screenweaver-vs-ltx-studio), puis F17, F18, F19 (80).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (loueur de materiel camera au petit matin) + 10 captures
+  reelles (Higgsfield, ScreenWeaver, LTX, Saga, Google Flow, Runway).
+
+## Previous run: 2026-10-17 (PLAN_80 F02 publie, J58 toujours decale)
 
 ### What happened
 - Deuxieme jour PLAN_80 : ligne F02 `ltx-studio-avis` (analyses, avis) publiee
