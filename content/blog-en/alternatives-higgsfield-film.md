@@ -68,7 +68,7 @@ I'd point someone to it if they write before they shoot and they're prepping an 
 
 ## LTX Studio: for an ad or a team teaser
 
-LTX Studio is ScreenWeaver's closest competitor, and I went through it in detail in [my LTX Studio review](/en/blog/ltx-studio-avis). It starts from an uploaded script, a concept, an image or a video, and puts the storyboard, generation, a timeline and sound in one workspace.
+LTX Studio is ScreenWeaver's closest competitor, I went through it in detail in [my LTX Studio review](/en/blog/ltx-studio-avis), then head to head in [ScreenWeaver vs LTX Studio](/en/blog/screenweaver-vs-ltx-studio). It starts from an uploaded script, a concept, an image or a video, and puts the storyboard, generation, a timeline and sound in one workspace.
 
 <Screenshot src="ltx-studio-tarifs-2026-10-18.webp" alt="LTX Studio Pick your plan page in euros, annual billing: Free 0 euros with 800 one-time credits, Lite 12 euros, Standard 28 euros, Pro 100 euros a month" caption="LTX Studio's plans on annual billing. AI storyboards and the commercial license arrive with Standard." source="https://ltx.io/studio/pricing" capturedAt="2026-10-18" />
 

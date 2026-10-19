@@ -67,7 +67,7 @@ Je le conseille à quelqu'un qui écrit avant de tourner et prépare un épisode
 
 ## LTX Studio : pour une pub ou un teaser à plusieurs
 
-LTX Studio est le concurrent le plus proche de ScreenWeaver, et je l'ai détaillé dans [mon avis sur LTX Studio](/blog/ltx-studio-avis). Il part d'un script importé, d'un concept, d'une image ou d'une vidéo, et propose dans le même espace le storyboard, la génération, une timeline et le son.
+LTX Studio est le concurrent le plus proche de ScreenWeaver, je l'ai détaillé dans [mon avis sur LTX Studio](/blog/ltx-studio-avis), puis comparé point par point dans [ScreenWeaver vs LTX Studio](/blog/screenweaver-vs-ltx-studio). Il part d'un script importé, d'un concept, d'une image ou d'une vidéo, et propose dans le même espace le storyboard, la génération, une timeline et le son.
 
 <Capture src="ltx-studio-tarifs-2026-10-18.webp" alt="Page Pick your plan de LTX Studio en euros, facturation annuelle : Free 0 euro avec 800 crédits uniques, Lite 12 euros, Standard 28 euros, Pro 100 euros par mois" legende="La grille de LTX Studio en annuel. Les storyboards générés par IA et la licence commerciale arrivent avec Standard." source="https://ltx.io/studio/pricing" captureLe="2026-10-18" />
 

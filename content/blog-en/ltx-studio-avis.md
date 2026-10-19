@@ -150,7 +150,7 @@ This is where my conflict of interest weighs the most, so I'll stick to facts yo
 
 *ScreenWeaver prices checked on screenweaver.ai on October 17, 2026. Credits from the two tools don't compare one to one: neither publishes the cost of a generation.*
 
-LTX beats us on several points, and I'd rather say so: an in-house open model, local generation, fuller post-production tools, a cheaper way in with Lite, a structured Enterprise offer, more image models. We made another choice, putting screenwriting at the center, because a film changes while you write it. Lost Garden, our series, was made entirely in ScreenWeaver, from script to production, and the 17-minute first episode took me 63 hours. That's why I think the text has to stay the source of every shot.
+LTX beats us on several points, and I'd rather say so: an in-house open model, local generation, fuller post-production tools, a cheaper way in with Lite, a structured Enterprise offer, more image models. We made another choice, putting screenwriting at the center, because a film changes while you write it. Lost Garden, our series, was made entirely in ScreenWeaver, from script to production, and the 17-minute first episode took me 63 hours. That's why I think the text has to stay the source of every shot. For the full side-by-side, refunds and teamwork included, read [ScreenWeaver vs LTX Studio](/en/blog/screenweaver-vs-ltx-studio).
 
 If you're weighing several pipelines, my piece on [the script, storyboard, production workflow from A to Z](/en/blog/pipeline-ia-script-storyboard-production-de-a-z) lists the steps any tool has to cover.
 
