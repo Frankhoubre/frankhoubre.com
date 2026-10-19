@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-19 : ScreenWeaver vs LTX Studio, le comparatif honnête
+- slug: screenweaver-vs-ltx-studio
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/screenweaver-vs-ltx-studio
+- url_en: https://frankhoubre.com/en/blog/screenweaver-vs-ltx-studio
+- category: comparatifs
+- type: evergreen (vs PLAN_80 F13)
+- search_intent: commerciale, bas de tunnel (choix entre les deux pipelines)
+- primary_keyword: screenweaver vs ltx studio
+- secondary_keywords: ltx studio vs screenweaver, ltx studio vs, alternative ltx studio scenario, ltx studio gratuit, ltx studio prix
+- sources: ltx.io/studio (points de depart), ltx.io/studio/pricing (prix euros vue France, modeles par offre, FAQ remboursement, licences), help.ltx.io (Adding collaborators, Refund Policy, credits non reportes), screenweaver.ai/fr (accueil, pipeline, tarifs, FAQ storyboard lie au scenario), screenweaver.ai/fr/mcp, screenweaver.ai/fr/terms (CGV du 08/10, art. 6, 7, 8, 10), Trustpilot LTX (1,6 / 79) et ScreenWeaver (4,0 / 4), automations/faits/screenweaver.md (mise a jour 19/10)
+- internal_links: -> ltx-studio-avis, pourquoi-personnages-changent-chaque-scene-ia, meilleurs-outils-ia-video, alternatives-higgsfield-film, pipeline-ia-script-storyboard-production-de-a-z (memes slugs en EN) ; entrants FR + EN depuis ltx-studio-avis et alternatives-higgsfield-film
+- cta: CtaScreenWeaver (destination script), aucun lien affilie
+- cannibalization_notes: ltx-studio-avis garde « ltx studio avis » (LTX seul) ; F13 ne fait que le face a face critere par critere. screenweaver-vs-final-draft (ancien, vocabulaire beta) non touche.
+- editorial_decisions: conflit d'interets en 2e phrase ; LTX declare gagnant sur le remboursement pour un professionnel (nos CGV n'ouvrent la retractation qu'aux consommateurs), la finition (timeline, son, sous-titres), le modele maison et l'annuel ; aucun cout par generation ni equivalence de credits ; « hors ligne » et « Seedance seulement » de notre page alternative NON repris ; DaVinci Resolve pour Lost Garden retire (fiche : a verifier).
+- checker: pass (seo_audit 0 issue FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 91/100)
+- published_commit: c818533
+
 ### 2026-10-18 : Alternatives à Higgsfield pour réaliser un film en 2026
 - slug: alternatives-higgsfield-film
 - locale: fr + en (meme slug, publies le meme jour)
