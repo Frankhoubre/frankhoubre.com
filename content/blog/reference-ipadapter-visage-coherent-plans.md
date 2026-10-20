@@ -169,6 +169,8 @@ autre la post. Même en solo, endosser ces rôles à des moments distincts amél
 La constance vaut plus que l héroïsme. Un système simple exécuté chaque semaine bat largement une grosse performance
 ponctuelle suivie d épuisement. C est ce que j appelle l exécution adulte.
 
+Pour passer de l'image fixe à la vidéo, j'ai détaillé les fonctions de référence des modèles vidéo (Elements de Kling, référence vers vidéo de Seedance, Composants de Google Flow, références Runway) dans [garder le même personnage en vidéo IA](/blog/garder-meme-personnage-video-ia).
+
 ## Références externes et liens internes
 
 Pour renforcer tes bases métier, appuie-toi sur la cinématographie (https://en.wikipedia.org/wiki/Cinematography), la

@@ -37,6 +37,8 @@ Same brief, different engine: different distribution.
 
 **Fix:** lock the chain for a sequence, document the conversion if you have to change.
 
+If your sequence is video, the full method is in [keeping the same character across shots in AI video](/en/blog/garder-meme-personnage-video-ia): references, Kling Elements, Seedance, Google Flow and Runway, with the limits of each.
+
 ## Table: signal, cause, fix
 
 | Signal | Cause | Fix |

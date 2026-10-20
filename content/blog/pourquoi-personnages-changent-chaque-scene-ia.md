@@ -37,6 +37,8 @@ Même brief, moteur différent : distribution différente.
 
 **Correctif :** verrouille la chaîne pour une séquence, documente la conversion si tu dois changer.
 
+Si ta séquence est en vidéo, la méthode complète est dans [garder le même personnage en vidéo IA, plan après plan](/blog/garder-meme-personnage-video-ia) : références, Elements de Kling, Seedance, Google Flow et Runway, avec les limites de chacun.
+
 ## Tableau : signal, cause, fix
 
 | Signal | Cause | Fix |

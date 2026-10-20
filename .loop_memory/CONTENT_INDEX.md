@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-19T08:05:44.423Z
+> Generated: 2026-10-20T08:11:29.659Z
 
-## FR : 338 articles (/blog/<slug>)
+## FR : 339 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 53, business 31, analyses 22, comparatifs 21, guides 18, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 53, business 31, analyses 22, comparatifs 21, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-20 | guides | `garder-meme-personnage-video-ia` | Garder le même personnage en vidéo IA, plan après plan |
 | 2026-10-19 | comparatifs | `screenweaver-vs-ltx-studio` | ScreenWeaver vs LTX Studio : le comparatif honnête |
 | 2026-10-18 | comparatifs | `alternatives-higgsfield-film` | Alternatives à Higgsfield pour réaliser un film en 2026 |
 | 2026-10-17 | analyses | `ltx-studio-avis` | Avis LTX Studio 2026 : la promesse du script au film |
@@ -350,12 +351,13 @@ Categories: tutoriels 191, actualite 53, business 31, analyses 22, comparatifs 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 252 articles (/en/blog/<slug>)
+## EN : 253 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, business 21, comparatifs 16, actualite 14, analyses 12, guides 6, notes 1, postproduction 1
+Categories: tutoriels 181, business 21, comparatifs 16, actualite 14, analyses 12, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-20 | guides | `garder-meme-personnage-video-ia` | Keep the same character across shots in AI video |
 | 2026-10-19 | comparatifs | `screenweaver-vs-ltx-studio` | ScreenWeaver vs LTX Studio: an honest comparison |
 | 2026-10-18 | comparatifs | `alternatives-higgsfield-film` | Higgsfield Alternatives for Making a Film in 2026 |
 | 2026-10-17 | analyses | `ltx-studio-avis` | LTX Studio Review 2026: Does Script to Film Hold Up? |

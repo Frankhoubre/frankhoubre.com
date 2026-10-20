@@ -118,6 +118,8 @@ You can also turn this plan into a team routine. One person steers the visual di
 
 Consistency is worth more than heroism. A simple system executed each week largely beats one big one-off performance followed by exhaustion. It is what I call adult execution.
 
+To move from stills to video, I broke down the reference features of video models (Kling Elements, Seedance reference-to-video, Google Flow Ingredients, Runway References) in [keeping the same character across shots in AI video](/en/blog/garder-meme-personnage-video-ia).
+
 ## External references and internal links
 
 To strengthen your craft bases, lean on [cinematography](https://en.wikipedia.org/wiki/Cinematography), [color grading](https://en.wikipedia.org/wiki/Color_grading) and [video editing](https://en.wikipedia.org/wiki/Video_editing) practices. These references let you justify creative choices with a solid professional vocabulary.
