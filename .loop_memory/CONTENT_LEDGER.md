@@ -40,6 +40,24 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-20 : Garder le même personnage en vidéo IA, plan après plan
+- slug: garder-meme-personnage-video-ia
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/garder-meme-personnage-video-ia
+- url_en: https://frankhoubre.com/en/blog/garder-meme-personnage-video-ia
+- category: guides
+- type: evergreen (guide PLAN_80 F17)
+- search_intent: informationnelle a intention commerciale
+- primary_keyword: garder le même personnage vidéo ia
+- secondary_keywords: personnage cohérent vidéo ia, même visage vidéo ia, character consistency ai video (EN)
+- sources: kling.ai/quickstart/klingai-element-library-3-user-guide, kling.ai/quickstart/ai-video-character-consistency, kling.ai/feature/ai-motion-control, support.google.com/flow/answer/16352836, help.runwayml.com (articles 52963720640275 et 40042718905875), seed.bytedance.com/en/seedance2_5, dreamina.capcut.com/seedance/seedance-2-5, screenweaver.ai/fr, automations/faits/screenweaver.md et lost-garden.md
+- internal_links: -> pourquoi-personnages-changent-chaque-scene-ia, personnages-coherents-plusieurs-images-ia, workflow-nano-banana-personnages-coherents, reference-ipadapter-visage-coherent-plans, comment-obtenir-rendu-cinema-avec-seedance-2, comment-gerer-continuite-costume-scenes-ia, screenweaver-vs-ltx-studio (memes slugs en EN) ; entrants FR + EN depuis pourquoi-personnages-changent-chaque-scene-ia et reference-ipadapter-visage-coherent-plans
+- cta: CtaScreenWeaver (destination script), aucun lien affilie
+- cannibalization_notes: les pages image (personnages-coherents, nano-banana, ipadapter) et diagnostic (pourquoi-personnages-changent) gardent leurs requetes ; F17 = video + fonctions natives des modeles.
+- editorial_decisions: aucun test, aucun classement ; piege Flow (Veo 3.1 Qualite sans Composants) mis en avant ; chiffre Dreamina 50 entrees presente comme page marketing ; Kling 4.0 dit non couvert ; conflit d'interets ScreenWeaver declare.
+- checker: pass (seo_audit 0 issue FR et EN, editorial sans flag, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 89/100)
+- published_commit: 6a92cf7
+
 ### 2026-10-19 : ScreenWeaver vs LTX Studio, le comparatif honnête
 - slug: screenweaver-vs-ltx-studio
 - locale: fr + en (meme slug, publies le meme jour)

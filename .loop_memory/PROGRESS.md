@@ -1,6 +1,19 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-19 (PLAN_80 F13 publie, J58 toujours decale)
+## Last run: 2026-10-20 (PLAN_80 F17 publie, J58 toujours decale)
+
+### What happened
+- Cinquieme jour PLAN_80 : ligne F17 `garder-meme-personnage-video-ia` (guides)
+  publiee a la place de J58. J58 (`soumettre-film-ia-festival-retour-experience`)
+  reste la prochaine ligne du plan habituel. Prochaines lignes PLAN_80 frankhoubre :
+  F18, F19 (80), puis F06 (78).
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (atelier costumes, trois blousons identiques) + 8 captures
+  reelles (Kling x3, Seedance, Dreamina, Google Flow, Runway, ScreenWeaver).
+- Liens entrants FR et EN : pourquoi-personnages-changent-chaque-scene-ia +
+  reference-ipadapter-visage-coherent-plans.
+
+## Previous run: 2026-10-19 (PLAN_80 F13 publie, J58 toujours decale)
 
 ### What happened
 - Quatrieme jour PLAN_80 : ligne F13 `screenweaver-vs-ltx-studio` (comparatifs,
