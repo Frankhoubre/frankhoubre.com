@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-20 (PLAN_80 F17 publie, J58 toujours decale)
+## Last run: 2026-10-21 (PLAN_80 F18 publie en refonte, J58 toujours decale)
+
+### What happened
+- Sixieme jour PLAN_80 : ligne F18 livree en REFONTE de `combien-coute-court-metrage-ia-2026`
+  (meme requete que J15, un nouvel article cout-court-metrage-ia-2026 aurait cannibalise).
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F19 (80), puis F06 (78), F08 (77).
+- Version EN creee le meme jour (n'existait pas), memes images, aucun YouTube.
+- Images : hero et 2 stills de J15 conserves + 10 captures reelles des pages tarifs du 21/10.
+
+## Previous run: 2026-10-20 (PLAN_80 F17 publie, J58 toujours decale)
 
 ### What happened
 - Cinquieme jour PLAN_80 : ligne F17 `garder-meme-personnage-video-ia` (guides)
