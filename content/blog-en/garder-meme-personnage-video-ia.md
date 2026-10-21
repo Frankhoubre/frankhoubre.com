@@ -139,6 +139,8 @@ One cause people forget: the reference itself. A master image that's already a b
 
 On a thirty-second clip, a folder of references on your desktop is enough. On a series, that folder quickly becomes a graveyard of versions. Lost Garden, my dark fantasy animated series, follows a silent lantern-headed knight and a mysterious child; episode 1 runs 17 minutes and took me 63 hours of production, episode 2 runs 21 minutes. At that length the question becomes: where does the character reference live, and how does it reach every shot without me copying it by hand?
 
+What those two episodes cost me in hours and dollars is laid out line by line in [how much an AI short film costs in 2026](/en/blog/combien-coute-court-metrage-ia-2026).
+
 Lost Garden was made in ScreenWeaver, the tool I co-founded: script written in the tool, storyboard generated scene by scene, then each shot produced in the production view. I mention it because it answers that exact question, and yes, I'm judge and party here.
 
 <Screenshot src="screenweaver-continuite-personnages-2026-10-20.webp" alt="ScreenWeaver homepage in French, four cards including Continuité et cohérence: characters, sets and references flow from shot to shot and keep the visual identity of the work" caption="The continuity card on our homepage (French version). Character sheets live in the project and follow each shot from storyboard to production." source="https://www.screenweaver.ai/fr" capturedAt="2026-10-20" />

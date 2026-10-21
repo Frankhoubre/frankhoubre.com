@@ -3,7 +3,7 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-20T08:11:29.659Z
+> Generated: 2026-10-21T08:12:41.737Z
 
 ## FR : 339 articles (/blog/<slug>)
 
@@ -53,7 +53,7 @@ Categories: tutoriels 191, actualite 53, business 31, analyses 22, comparatifs 2
 | 2026-08-29 | comparatifs | `kling-vs-veo-3-choisir-par-plan` | Kling ou Veo 3 : quel moteur selon le type de plan |
 | 2026-08-28 | guides | `bibliotheque-prompts-cinema-plans-types` | Prompts cinéma : 40 plans types qui marchent vraiment |
 | 2026-08-26 | guides | `integrer-ia-boite-production-depart` | Intégrer l'IA dans une boîte de production en 6 semaines |
-| 2026-08-25 | analyses | `combien-coute-court-metrage-ia-2026` | Combien coûte un court-métrage IA en 2026 |
+| 2026-08-25 | analyses | `combien-coute-court-metrage-ia-2026` | Combien coûte un court-métrage IA en 2026 : le budget réel |
 | 2026-08-24 | guides | `minimax-hailuo-prix-credits-formules` | MiniMax Hailuo : crédits, prix et formules expliqués |
 | 2026-08-21 | analyses | `screenweaver-pourquoi-outil-ecriture` | ScreenWeaver : pourquoi j'ai construit mon outil d'écriture |
 | 2026-08-20 | tutoriels | `midjourney-sref-references-style` | Midjourney SREF : maîtriser les références de style |
@@ -351,9 +351,9 @@ Categories: tutoriels 191, actualite 53, business 31, analyses 22, comparatifs 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 253 articles (/en/blog/<slug>)
+## EN : 254 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, business 21, comparatifs 16, actualite 14, analyses 12, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, business 21, comparatifs 16, actualite 14, analyses 13, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
@@ -378,6 +378,7 @@ Categories: tutoriels 181, business 21, comparatifs 16, actualite 14, analyses 1
 | 2026-10-01 | analyses | `acteurs-ia-clones-droits-opportunites` | AI actor clones: your rights, contracts and the market |
 | 2026-09-27 | guides | `questions-frequentes-ia-creative-reponses` | Creative AI questions: my 12 answers from the trenches |
 | 2026-09-26 | business | `vivre-video-ia-2026-modeles-revenus` | Living off AI video in 2026: the models that hold up |
+| 2026-08-25 | analyses | `combien-coute-court-metrage-ia-2026` | How much does an AI short film cost in 2026? |
 | 2026-07-26 | tutoriels | `audit-qualite-portfolio-ia-avant-demo-reel` | AI Portfolio Quality Audit Before the Demo Reel |
 | 2026-07-25 | tutoriels | `formation-interne-equipe-creative-ia` | Training an Internal Creative Team in AI Video |
 | 2026-07-24 | tutoriels | `clause-contrat-client-contenu-genere-ia` | Client Contract Clause for AI-Generated Content |

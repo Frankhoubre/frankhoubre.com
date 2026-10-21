@@ -19,7 +19,7 @@ In this pricing masterclass, you will learn a simple grid, options that increase
 
 ## What your price must cover (beyond the tool credits)
 
-Creators often forget half the costs because they count only the Runway subscription or the GPU bill. It is a strategic mistake.
+Creators often forget half the costs because they count only the Runway subscription or the GPU bill. It is a strategic mistake. If you want the production side priced line by line, with today's tool prices and the real numbers from one of my episodes, see [how much an AI short film costs in 2026](/en/blog/combien-coute-court-metrage-ia-2026).
 
 You have to cover the time for the brief and the rephrasing. A bad brief costs more than a failed generation, because it makes you iterate in a vacuum.
 

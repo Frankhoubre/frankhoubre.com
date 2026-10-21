@@ -138,6 +138,8 @@ Reste une cause qu'on oublie : la référence elle-même. Une image maître déj
 
 Sur un clip de trente secondes, un dossier de références sur ton bureau suffit. Sur une série, le dossier devient vite un cimetière de versions. Lost Garden, ma série animée de dark fantasy, suit un chevalier silencieux à tête de lanterne et une enfant mystérieuse ; l'épisode 1 dure 17 minutes et m'a pris 63 heures de production, l'épisode 2 dure 21 minutes. Sur cette longueur, la question devient : où vit la référence du personnage, et comment arrive-t-elle dans chaque plan sans que je la recopie à la main ?
 
+Ce que ces deux épisodes m'ont coûté en heures et en dollars, je l'ai posé ligne par ligne dans [combien coûte un court-métrage IA en 2026](/blog/combien-coute-court-metrage-ia-2026).
+
 Lost Garden a été fait dans ScreenWeaver, l'outil que j'ai cofondé : le scénario écrit dans l'outil, le storyboard généré scène par scène, puis chaque plan produit dans l'interface de production. Je le cite parce qu'il répond à cette question précise, et je suis évidemment juge et partie.
 
 <Capture src="screenweaver-continuite-personnages-2026-10-20.webp" alt="Accueil ScreenWeaver en français, quatre cartes dont Continuité et cohérence : personnages, décors et références circulent d'un plan à l'autre et préservent l'identité visuelle de l'œuvre" legende="La carte « Continuité et cohérence » de notre accueil. Les fiches personnages vivent dans le projet et suivent chaque plan du storyboard à la production." source="https://www.screenweaver.ai/fr" captureLe="2026-10-20" />
