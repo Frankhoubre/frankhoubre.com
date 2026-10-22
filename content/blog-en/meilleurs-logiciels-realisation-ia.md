@@ -30,7 +30,7 @@ If you're after the best shot generator instead, I put together [a roundup of AI
 
 | Tool | Script | Breakdown and storyboard | Video generation | Edit and sound | First tier with commercial use |
 |---|---|---|---|---|---|
-| 1. ScreenWeaver | Written in the app, Final Draft and Fountain import | Generated from the script | 7 models (Seedance, Veo, Kling...) | No | Auteur, $39.99/month before tax |
+| 1. ScreenWeaver | Written in the app, Final Draft and Fountain import | Generated from the script | 7 models (Seedance, Veo, Kling...) | Trims a single shot, no edit | Auteur, $39.99/month before tax |
 | 2. LTX Studio | Uploaded script, no editor | AI storyboard from Standard | LTX-2.5, Kling, Seedance 2.0, Veo on Pro | Timeline and sound design | Standard, €35/month (€28 billed yearly) |
 | 3. Saga | Written in the app, beat sheets | Drag-and-drop storyboard | About 4 videos a month on Premium | Built-in video editor | Premium, $19.99/month |
 | 4. Autodesk Flow Studio | No | 3D staging, cameras | Node-based Canvas | Scene timeline, Maya, Blender, Unreal exports | Autodesk's guide doesn't spell out rights |
@@ -55,7 +55,7 @@ Lost Garden, our animated series, was made in ScreenWeaver from script to produc
 
 <Screenshot src="screenweaver-tarifs-2026-10-22.webp" alt="ScreenWeaver pricing in French with Screenwriter free, Auteur at 39.99 dollars a month with 6000 credits and Studio at 149.99 dollars a month with 25000 credits" caption="ScreenWeaver's three plans (French version of the site). Generated breakdowns and storyboards start with Auteur." source="https://www.screenweaver.ai/fr#pricing" capturedAt="2026-10-22" />
 
-There's no editing inside the app: you grab your shots and cut them elsewhere. The free Screenwriter plan is writing only, and the paid plans have no trial, just 20 credits when you sign up. Auteur costs $39.99 a month before tax, roughly twice the entry tier of Saga or Higgsfield, and the credit cost of each generation isn't published on the site. Real-time collaboration needs Studio, at $149.99. And video generation has only been open to every subscriber since October 8, 2026.
+There's no editing inside the app. Since October 21, a Trim tool cuts a single video with in and out handles, but you assemble your shots elsewhere. The free Screenwriter plan is writing only, and the paid plans have no trial, just 20 credits when you sign up. Auteur costs $39.99 a month before tax, roughly twice the entry tier of Saga or Higgsfield, and the credit cost of each generation isn't published on the site. Real-time collaboration needs Studio, at $149.99. And video generation has only been open to every subscriber since October 8, 2026.
 
 I rank it first because it's the only one of the six where the text, the breakdown and the generated shot live in the same project, with this many recent video models. If you never write a script, you'll pay for half a tool you don't use, and LTX will suit you better. The head-to-head is in [ScreenWeaver vs LTX Studio](/en/blog/screenweaver-vs-ltx-studio).
 
@@ -133,7 +133,7 @@ Only Google models are available, Veo 3.1 and Gemini Omni Flash. The help center
 
 ## What about editing?
 
-In this ranking, only LTX Studio and Saga have a built-in video editor, and Flow Studio a scene timeline. For everything else, you export your shots to a proper editing app.
+In this ranking, only LTX Studio and Saga have a built-in video editor, and Flow Studio a scene timeline. ScreenWeaver can trim a shot, and that's it. For everything else, you export your shots to a proper editing app.
 
 DaVinci Resolve is the easiest one to recommend: Blackmagic offers [a free version](https://www.blackmagicdesign.com/products/davinciresolve) with editing, color and sound in the same app. An AI film needs color work more than most, because two shots from two different models almost never match.
 

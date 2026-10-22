@@ -29,7 +29,7 @@ Si tu cherches plutôt le meilleur générateur de plans, j'ai fait [un tour des
 
 | Outil | Scénario | Découpage et storyboard | Génération vidéo | Montage et son | Premier palier avec usage commercial |
 |---|---|---|---|---|---|
-| 1. ScreenWeaver | Écrit dans l'outil, import Final Draft et Fountain | Générés depuis le scénario | 7 modèles (Seedance, Veo, Kling...) | Non | Auteur, 39,99 $ HT par mois |
+| 1. ScreenWeaver | Écrit dans l'outil, import Final Draft et Fountain | Générés depuis le scénario | 7 modèles (Seedance, Veo, Kling...) | Coupe d'un plan (Trim), pas de montage | Auteur, 39,99 $ HT par mois |
 | 2. LTX Studio | Script importé, pas d'éditeur | Storyboard IA dès Standard | LTX-2.5, Kling, Seedance 2.0, Veo en Pro | Timeline et sound design | Standard, 35 € par mois (28 € en annuel) |
 | 3. Saga | Écrit dans l'outil, beat sheets | Storyboard glisser-déposer | Environ 4 vidéos par mois en Premium | Éditeur vidéo inclus | Premium, 19,99 $ par mois |
 | 4. Autodesk Flow Studio | Non | Mise en scène 3D, caméras | Canvas à nodes | Timeline de scène, exports Maya, Blender, Unreal | Le guide Autodesk ne détaille pas les droits |
@@ -54,7 +54,7 @@ Lost Garden, notre série animée, a été faite dans ScreenWeaver, du scénario
 
 <Capture src="screenweaver-tarifs-2026-10-22.webp" alt="Grille tarifaire de ScreenWeaver en français avec Screenwriter gratuit, Auteur à 39,99 dollars par mois avec 6000 crédits et Studio à 149,99 dollars par mois avec 25000 crédits" legende="Les trois offres de ScreenWeaver. Le découpage et le storyboard générés commencent avec Auteur." source="https://www.screenweaver.ai/fr#pricing" captureLe="2026-10-22" />
 
-Il n'y a pas de montage dans l'outil : tu récupères tes plans et tu montes ailleurs. L'offre gratuite Screenwriter se limite à l'écriture, et les offres payantes n'ont pas d'essai, seulement 20 crédits à l'inscription. Auteur coûte 39,99 $ hors taxes par mois, environ deux fois le premier palier de Saga ou de Higgsfield, et le coût en crédits de chaque génération n'est pas publié sur le site. Le travail à plusieurs en temps réel demande Studio, à 149,99 $. Enfin, la génération vidéo n'est ouverte à tous les abonnés que depuis le 8 octobre 2026.
+Il n'y a pas de montage dans l'outil. Depuis le 21 octobre, un outil Trim coupe une vidéo avec des poignées d'entrée et de sortie, mais l'assemblage des plans se fait ailleurs. L'offre gratuite Screenwriter se limite à l'écriture, et les offres payantes n'ont pas d'essai, seulement 20 crédits à l'inscription. Auteur coûte 39,99 $ hors taxes par mois, environ deux fois le premier palier de Saga ou de Higgsfield, et le coût en crédits de chaque génération n'est pas publié sur le site. Le travail à plusieurs en temps réel demande Studio, à 149,99 $. Enfin, la génération vidéo n'est ouverte à tous les abonnés que depuis le 8 octobre 2026.
 
 Je le classe premier parce que c'est le seul des six où le texte, le découpage et le plan généré vivent dans le même projet avec autant de modèles vidéo récents. Si tu n'écris jamais de scénario, tu paieras pour une moitié d'outil qui ne te sert pas, et LTX te conviendra mieux. Le face-à-face détaillé est dans [ScreenWeaver vs LTX Studio](/blog/screenweaver-vs-ltx-studio).
 
@@ -132,7 +132,7 @@ Seuls les modèles Google sont proposés, Veo 3.1 et Gemini Omni Flash. L'aide n
 
 ## Et le montage ?
 
-Dans ce classement, seuls LTX Studio et Saga ont un éditeur vidéo intégré, et Flow Studio une timeline de scène. Pour tous les autres, tu exportes tes plans vers un vrai logiciel de montage.
+Dans ce classement, seuls LTX Studio et Saga ont un éditeur vidéo intégré, et Flow Studio une timeline de scène. ScreenWeaver sait couper un plan, sans plus. Pour tous les autres, tu exportes tes plans vers un vrai logiciel de montage.
 
 DaVinci Resolve reste le choix le plus simple à conseiller : Blackmagic propose [une version gratuite](https://www.blackmagicdesign.com/products/davinciresolve), avec le montage, l'étalonnage et le son dans le même logiciel. Un film IA a besoin d'étalonnage plus qu'un autre, parce que deux plans générés par deux modèles différents n'ont presque jamais la même couleur.
 
