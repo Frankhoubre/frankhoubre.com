@@ -117,7 +117,7 @@ Pour qui : un clip où tu mélanges des images tournées et des plans générés
 
 ## Et si tu n'utilises qu'un seul modèle ?
 
-Si tu as pris Higgsfield pour un seul moteur, Kling ou Seedance par exemple, un abonnement direct chez l'éditeur du modèle peut revenir moins cher. Le 18 octobre, l'accueil de kling.ai annonçait Kling 4.0, mais sa page d'abonnement renvoyait vers l'accueil sans compte connecté : je n'ai donc pas pu lire ses prix officiels, et je n'en cite aucun. Pour comparer les moteurs eux-mêmes, j'ai fait [un tour d'horizon des outils IA vidéo](/blog/meilleurs-outils-ia-video).
+Si tu as pris Higgsfield pour un seul moteur, Kling ou Seedance par exemple, un abonnement direct chez l'éditeur du modèle peut revenir moins cher. Le 18 octobre, l'accueil de kling.ai annonçait Kling 4.0, mais sa page d'abonnement renvoyait vers l'accueil sans compte connecté : je n'ai donc pas pu lire ses prix officiels, et je n'en cite aucun. Pour comparer les moteurs eux-mêmes, j'ai fait [un tour d'horizon des outils IA vidéo](/blog/meilleurs-outils-ia-video). Et pour les logiciels qui tiennent le film entier, du scénario au montage, j'ai fait [un classement à part](/blog/meilleurs-logiciels-realisation-ia).
 
 ## Quand garder Higgsfield
 

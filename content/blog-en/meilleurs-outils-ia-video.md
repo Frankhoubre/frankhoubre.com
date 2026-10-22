@@ -76,7 +76,7 @@ It is a great laboratory, less a complete autonomous pipeline on demanding premi
 | Higgsfield | strong creative style | fragile series consistency | visual exploration |
 | Pika Labs | ultra-fast prototyping | sometimes limited finishing | motion ideation |
 
-You can already settle a good part of your choices with this table, but the real decision comes from a benchmark on your use case.
+You can already settle a good part of your choices with this table, but the real decision comes from a benchmark on your use case. These four tools generate shots. If you want the workshop that links the script, the breakdown and those shots, see my [ranking of AI filmmaking software](/en/blog/meilleurs-logiciels-realisation-ia).
 
 ## The AI video Trench Workflow I use in production
 

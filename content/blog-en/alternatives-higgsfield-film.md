@@ -118,7 +118,7 @@ It's the right pick for a music video mixing shot footage and generated shots, o
 
 ## What if you only use one model?
 
-If you took Higgsfield for a single engine, say Kling or Seedance, a direct subscription with the model's maker can come out cheaper. On October 18, the kling.ai homepage was announcing Kling 4.0, but its subscription page redirected to the homepage without a logged-in account: I couldn't read its official prices, so I'm not quoting any. To compare the engines themselves, see [my roundup of AI video tools](/en/blog/meilleurs-outils-ia-video).
+If you took Higgsfield for a single engine, say Kling or Seedance, a direct subscription with the model's maker can come out cheaper. On October 18, the kling.ai homepage was announcing Kling 4.0, but its subscription page redirected to the homepage without a logged-in account: I couldn't read its official prices, so I'm not quoting any. To compare the engines themselves, see [my roundup of AI video tools](/en/blog/meilleurs-outils-ia-video). For the software that holds a whole film, from script to edit, I made [a separate ranking](/en/blog/meilleurs-logiciels-realisation-ia).
 
 ## When to keep Higgsfield
 

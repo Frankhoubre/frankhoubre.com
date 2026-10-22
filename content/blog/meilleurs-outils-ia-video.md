@@ -76,7 +76,7 @@ C’est un super laboratoire, moins un pipeline complet autonome sur des projets
 | Higgsfield | style créatif fort | cohérence de série fragile | exploration visuelle |
 | Pika Labs | prototypage ultra rapide | finition parfois limitée | idéation motion |
 
-Tu peux déjà trancher une bonne partie de tes choix avec ce tableau, mais la vraie décision vient d’un benchmark sur ton cas d’usage.
+Tu peux déjà trancher une bonne partie de tes choix avec ce tableau, mais la vraie décision vient d’un benchmark sur ton cas d’usage. Ces quatre outils génèrent des plans. Si tu cherches plutôt l'atelier qui relie le scénario, le découpage et ces plans, regarde mon [classement des logiciels de réalisation IA](/blog/meilleurs-logiciels-realisation-ia).
 
 ## Le Trench Workflow vidéo IA que j’utilise en prod
 
