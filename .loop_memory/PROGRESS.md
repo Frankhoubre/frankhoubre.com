@@ -1,6 +1,20 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-21 (PLAN_80 F18 publie en refonte, J58 toujours decale)
+## Last run: 2026-10-22 (PLAN_80 F19 publie, J58 toujours decale)
+
+### What happened
+- Septieme jour PLAN_80 : ligne F19 `meilleurs-logiciels-realisation-ia` (comparatifs,
+  classement de 6 pipelines) publiee a la place de J58. J58
+  (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F06 (78), F08 (77), puis F12 et F20 (75). 13 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (grange-bureau de production, tableau de bandes colorees) +
+  12 captures reelles du 22/10.
+- Liens entrants FR et EN : alternatives-higgsfield-film + meilleurs-outils-ia-video.
+- Fiche ScreenWeaver mise a jour le matin meme (Trim) : relire automations/faits/screenweaver.md
+  APRES la veille Git de 9 h, pas avant.
+
+## Previous run: 2026-10-21 (PLAN_80 F18 publie en refonte, J58 toujours decale)
 
 ### What happened
 - Sixieme jour PLAN_80 : ligne F18 livree en REFONTE de `combien-coute-court-metrage-ia-2026`

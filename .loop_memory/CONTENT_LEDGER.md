@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-22 : Meilleurs logiciels de réalisation IA en 2026 : classement
+- slug: meilleurs-logiciels-realisation-ia
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/meilleurs-logiciels-realisation-ia
+- url_en: https://frankhoubre.com/en/blog/meilleurs-logiciels-realisation-ia
+- category: comparatifs
+- type: evergreen (classement PLAN_80 F19)
+- search_intent: commerciale (choix d'un logiciel pour tenir un film entier)
+- primary_keyword: logiciel film ia
+- secondary_keywords: meilleur logiciel pour faire un film avec l'ia, logiciel de réalisation ia, best ai filmmaking software (EN)
+- sources: screenweaver.ai/fr, ltx.io/studio, ltx.io/studio/pricing, createsagas.com/pricing, /how-it-works, /faq, higgsfield.ai/pricing, aide Popcorn Higgsfield, support.google.com/flow (16526234, 16935718), guide tarifaire Autodesk du 28/09/2026, billet 3D Editor du 04/08/2026, help.wonderdynamics.com/platform-limitations, blackmagicdesign.com/products/davinciresolve (tous relus le 22/10)
+- internal_links: -> meilleurs-outils-ia-video, screenweaver-vs-ltx-studio, ltx-studio-avis, higgsfield-avis-realisateur, alternatives-higgsfield-film, google-veo-3-brief-realisateur-plan-sequence, preparer-decoupage-technique-avant-generation-video-ia, garder-meme-personnage-video-ia, combien-coute-court-metrage-ia-2026, pipeline-ia-script-storyboard-production-de-a-z (memes cibles en EN) ; entrants FR et EN depuis alternatives-higgsfield-film et meilleurs-outils-ia-video
+- cta: CtaScreenWeaver (destination script) ; un lien affilie aff:higgsfield, affiliate: true
+- cannibalization_notes: meilleurs-outils-ia-video garde les generateurs, alternatives-higgsfield-film le choix face a Higgsfield, pipeline-ia-script-storyboard la methode ; F19 classe les pipelines par etapes couvertes
+- editorial_decisions: ScreenWeaver premier par son cofondateur, critere et limites ecrits (pas de montage, Trim seulement depuis le 21/10, node Timeline coupe en prod non cite) ; aucun test ; retires faute de relecture du jour : modeles du Canvas Autodesk, prix Gemini en euros, montage de Lost Garden dans Resolve
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 92/100)
+- published_commit: 592d7f3 + dcc181d
 ### 2026-10-20 : Garder le même personnage en vidéo IA, plan après plan
 - slug: garder-meme-personnage-video-ia
 - locale: fr + en (meme slug, publies le meme jour)
