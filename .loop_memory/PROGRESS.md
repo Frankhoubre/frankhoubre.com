@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-22 (PLAN_80 F19 publie, J58 toujours decale)
+## Last run: 2026-10-23 (PLAN_80 F06 publie, J58 toujours decale)
+
+### What happened
+- Huitieme jour PLAN_80 : ligne F06 `seedance-2-5-avis` (analyses, avis) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F08 (77), puis F12 et F20 (75). 12 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (salle de repetition, marques au sol, figurine d'argile) + 13 captures reelles du 23/10.
+- Liens entrants FR et EN : garder-meme-personnage-video-ia + workflow-complet-seedance-2-rendu-cinema.
+
+## Previous run: 2026-10-22 (PLAN_80 F19 publie, J58 toujours decale)
 
 ### What happened
 - Septieme jour PLAN_80 : ligne F19 `meilleurs-logiciels-realisation-ia` (comparatifs,

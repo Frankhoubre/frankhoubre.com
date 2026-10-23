@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-23 : Avis Seedance 2.5 : ce que le modèle change pour une série
+- slug: seedance-2-5-avis
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/seedance-2-5-avis
+- url_en: https://frankhoubre.com/en/blog/seedance-2-5-avis
+- category: analyses
+- type: evergreen (avis PLAN_80 F06)
+- search_intent: commerciale et informationnelle (evaluer Seedance 2.5 avant de payer, ou l'utiliser)
+- primary_keyword: seedance 2.5 avis
+- secondary_keywords: seedance 2.5 prix, seedance 2.5 gratuit, ou utiliser seedance, seedance review (EN)
+- sources: seed.bytedance.com/en/seedance2_5, docs.byteplus.com ModelArk 2607688 (tutoriel 2.5) et 1544106 (model-pricing), dreamina.capcut.com/seedance/seedance-2-5, capcut.com/features/seedance-2-5-for-filmmaker-content, fr.trustpilot.com/review/dreamina.capcut.com, screenweaver.ai/seedance-2, Variety (garde-fous ByteDance), fiches faits lost-garden.md et screenweaver.md du 23/10
+- internal_links: -> lost-garden-journal-production-serie-ia, garder-meme-personnage-video-ia, anatomie-plan-ia-reussi-analyse, combien-coute-court-metrage-ia-2026, seedance-2-mini-bytedance-video-rapide-juin-2026, kling-vs-veo-3-choisir-par-plan, higgsfield-avis-realisateur, comment-obtenir-rendu-cinema-avec-seedance-2, workflow-complet-seedance-2-rendu-cinema (EN : meilleurs-outils-ia-video a la place de kling-vs-veo-3, pas de journal Lost Garden) ; <- garder-meme-personnage-video-ia, workflow-complet-seedance-2-rendu-cinema (FR et EN)
+- cta: CtaScreenWeaver (destination seedance) + lien contextuel /go/bl-seedance-a/seedance-2-5-avis ; aucun lien affilie
+- cannibalization_notes: aucune page sur seedance 2.5 avis ; comment-obtenir-rendu-cinema-avec-seedance-2 et workflow-complet-seedance-2-rendu-cinema gardent la methode de rendu Seedance 2, seedance-2-mini la news Mini
+- editorial_decisions: conflit d'interets declare en intro et methodologie ; aucun test (tests/seedance-2-5-avis.md) ; seuls faits Lost Garden autorises ; contradictions 4K / 180 s entre API et Dreamina/CapCut exposees ; temoignages Dreamina dates avant la sortie signales ; sites seedance.fr/.tv/seadance.io decrits par un fait (absents des pages officielles)
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 90/100)
+- published_commit: 6bd6716
 ### 2026-10-22 : Meilleurs logiciels de réalisation IA en 2026 : classement
 - slug: meilleurs-logiciels-realisation-ia
 - locale: fr + en (meme slug, publies le meme jour)
