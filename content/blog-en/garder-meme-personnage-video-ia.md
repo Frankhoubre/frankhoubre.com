@@ -1,7 +1,7 @@
 ---
 title: "Keep the same character across shots in AI video"
 date: "2026-10-20"
-dateModified: "2026-10-20"
+dateModified: "2026-10-23"
 category: "guides"
 excerpt: "A director's method to keep the same character from shot to shot in AI video: references, Kling Elements, Seedance, Google Flow, Runway, shot planning."
 thumbnail: "/images/blog/garder-meme-personnage-video-ia/hero.webp"
@@ -46,7 +46,7 @@ Most models offer three ways in: text only, a start image (sometimes an end imag
 | Tool | Feature name | What the official docs say | Catch |
 |---|---|---|---|
 | Kling | Elements (Element Library) | 2 to 4 images per element, up to 7 reference characters in video, voice bound to the character in 3.0 Omni | Guide written for Kling 3.0, 3.0 Omni and O1, nothing about 4.0 on that page |
-| Seedance 2.5 | Reference-to-video (R2V) | Reads reference videos (intent, framing, film language), up to 30 s | Dreamina says up to 50 multimodal inputs, ByteDance doesn't publish an exact figure |
+| Seedance 2.5 | Reference-to-video (R2V) | Reads reference videos (intent, framing, film language), up to 30 s | 50 references per request (30 images, 10 videos, 10 audio) per the BytePlus docs, Oct 23 |
 | Google Flow | Ingredients / References to video | Works with Veo 3.1 Lite, Veo 3.1 Fast and Gemini Omni Flash 1.1 | Not on Veo 3.1 Quality; 8 s only on Veo 3.1 |
 | Runway | References | Saved references, called with @ in the prompt, shareable with your workspace | Reference types depend on the model you pick |
 
@@ -74,7 +74,7 @@ On [its official page](https://seed.bytedance.com/en/seedance2_5), ByteDance pit
 
 <Screenshot src="seedance-2-5-reference-2026-10-20.webp" alt="ByteDance Seed's official Seedance 2.5 page, Smarter Reference and Editing Capabilities section, with two R2V examples: reference images of a paper dog turned into a video shot, and the same couple in two different settings" caption="ByteDance's R2V examples. On the right, the same couple moves from a park alley to a vineyard without changing face or build." source="https://seed.bytedance.com/en/seedance2_5" capturedAt="2026-10-20" />
 
-In Dreamina, the ByteDance app that gives access to the model, the Seedance 2.5 page claims up to 50 multimodal inputs in a single generation: photos, videos, music, scripts, style guides. Your whole character sheet can go into one generation.
+In Dreamina, the ByteDance app that gives access to the model, the Seedance 2.5 page claims up to 50 multimodal inputs in a single generation: photos, videos, music, scripts, style guides. Your whole character sheet can go into one generation. Since then, the BytePlus API docs (ByteDance) spell the number out: 30 images, 10 videos and 10 audio tracks per request, which I cover in [my Seedance 2.5 review](/en/blog/seedance-2-5-avis).
 
 <Screenshot src="dreamina-seedance-50-references-2026-10-20.webp" alt="Combine multiple references up to 50 inputs section of the Dreamina Seedance 2.5 page, listing prompts, scripts, photos, videos, music and style guides" caption="Dreamina's 50-input claim. ByteDance doesn't print that number on its own model page, so treat it with care." source="https://dreamina.capcut.com/seedance/seedance-2-5" capturedAt="2026-10-20" />
 

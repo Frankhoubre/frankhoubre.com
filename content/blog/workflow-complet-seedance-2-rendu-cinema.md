@@ -26,7 +26,7 @@ La différence entre un clip « wow » et un plan livrable tient souvent à **un
 
 > 💡 **Frank's Cut:** avant la première génération vidéo, impose une **règle de pivot** : 45 minutes ou 12 variations max par plan. Sous 25 % de plans exploitables, tu changes d'angle, de durée, ou tu repars de l'image pilote. Cette règle sauve plus de nuits que dix tutos.
 
-Pour la base image vers mouvement, garde [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible) ouverte à côté. Seedance 2 ne répare pas une pilote menteuse.
+Pour la base image vers mouvement, garde [comment transformer une image IA en vidéo fluide et crédible](/blog/comment-transformer-image-ia-video-fluide-credible) ouverte à côté. Seedance 2 ne répare pas une pilote menteuse. Si tu passes à la génération suivante, j'ai lu ce que la 2.5 change pour une série (prises de 30 secondes, 50 références, mode Draft) dans [mon avis sur Seedance 2.5](/blog/seedance-2-5-avis).
 
 Quand j'accompagne une équipe qui découvre la vidéo IA, la première session sert presque toujours à **désapprendre** le réflexe « prompt plus long = plus cinéma ». Le cinéma classique est une économie de moyens. Un plan large tenu dix secondes avec une lumière qui tombe correctement bat trois plans survoltés qui se contredisent. Seedance 2 récompense la même retenue : moins de mouvement, moins de contradictions dans le texte, plus de cohérence entre l'image de départ et ce que tu demandes au temps.
 

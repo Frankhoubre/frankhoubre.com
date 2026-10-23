@@ -26,7 +26,7 @@ The difference between a "wow" clip and a deliverable shot often holds on **an h
 
 > 💡 **Frank's Cut:** before the first video generation, impose a **pivot rule**: 45 minutes or 12 variations max per shot. Under 25% of usable shots, you change angle, duration, or you start again from the pilot image. This rule saves more nights than ten tutorials.
 
-For the image-to-movement base, keep [how to turn an AI image into a fluid and credible video](/en/blog/comment-transformer-image-ia-video-fluide-credible) open next to you. Seedance 2 does not repair a lying pilot.
+For the image-to-movement base, keep [how to turn an AI image into a fluid and credible video](/en/blog/comment-transformer-image-ia-video-fluide-credible) open next to you. Seedance 2 does not repair a lying pilot. If you're moving to the next version, I went through what 2.5 changes for a series (30-second takes, 50 references, Draft mode) in [my Seedance 2.5 review](/en/blog/seedance-2-5-avis).
 
 When I accompany a team discovering AI video, the first session almost always serves to **unlearn** the reflex "longer prompt = more cinema". Classic cinema is an economy of means. A wide shot held ten seconds with a light that falls correctly beats three overexcited shots that contradict each other. Seedance 2 rewards the same restraint: less movement, fewer contradictions in the text, more consistency between the starting image and what you ask of time.
 

@@ -1,6 +1,7 @@
 ---
 title: "Garder le même personnage en vidéo IA, plan après plan"
 date: "2026-10-20"
+dateModified: "2026-10-23"
 category: "guides"
 excerpt: "La méthode de réalisateur pour garder le même personnage d'un plan à l'autre en vidéo IA : référence, Elements Kling, Seedance, Flow, Runway, découpage."
 thumbnail: "/images/blog/garder-meme-personnage-video-ia/hero.webp"
@@ -45,7 +46,7 @@ La plupart des modèles proposent trois entrées : le texte seul, l'image de dé
 | Outil | Nom de la fonction | Ce que la doc officielle annonce | Limite à connaître |
 |---|---|---|---|
 | Kling | Elements (Element Library) | 2 à 4 images par élément, jusqu'à 7 personnages de référence en vidéo, voix liée au personnage en 3.0 Omni | Guide écrit pour Kling 3.0, 3.0 Omni et O1, rien sur la 4.0 dans cette page |
-| Seedance 2.5 | Référence vers vidéo (R2V) | Lecture des vidéos de référence (intention, cadrage, langage cinéma), jusqu'à 30 s | Dans Dreamina : jusqu'à 50 entrées multimodales, nombre exact côté ByteDance non publié |
+| Seedance 2.5 | Référence vers vidéo (R2V) | Lecture des vidéos de référence (intention, cadrage, langage cinéma), jusqu'à 30 s | 50 références par requête (30 images, 10 vidéos, 10 audios) selon la documentation BytePlus du 23/10 |
 | Google Flow | Composants / Références vers vidéo | Disponible avec Veo 3.1 Lite, Veo 3.1 Rapide et Gemini Omni Flash 1.1 | Absent de Veo 3.1 Qualité ; 8 s seulement sur Veo 3.1 |
 | Runway | References | Références sauvegardées, appelées avec @ dans le prompt, partageables avec l'équipe | Les types de références dépendent du modèle choisi |
 
@@ -73,7 +74,7 @@ Sur [sa page officielle](https://seed.bytedance.com/en/seedance2_5), ByteDance p
 
 <Capture src="seedance-2-5-reference-2026-10-20.webp" alt="Page officielle Seedance 2.5 de ByteDance Seed, section Smarter Reference and Editing Capabilities, avec deux exemples R2V : des images de référence d'un chien en papier transformées en plan vidéo, et un couple identique dans deux décors" legende="Les exemples R2V de ByteDance. À droite, le même couple passe d'une allée de parc à une vigne sans changer de visage ni de silhouette." source="https://seed.bytedance.com/en/seedance2_5" captureLe="2026-10-20" />
 
-Dans Dreamina, l'application de ByteDance qui donne accès au modèle, la page Seedance 2.5 annonce jusqu'à 50 entrées multimodales dans une seule génération : photos, vidéos, musique, scripts, guides de style. Ta planche personnage entière peut donc partir en une seule génération.
+Dans Dreamina, l'application de ByteDance qui donne accès au modèle, la page Seedance 2.5 annonce jusqu'à 50 entrées multimodales dans une seule génération : photos, vidéos, musique, scripts, guides de style. Ta planche personnage entière peut donc partir en une seule génération. Depuis, la documentation API de BytePlus (ByteDance) détaille ce chiffre : 30 images, 10 vidéos et 10 pistes audio par requête, relevés dans [mon avis sur Seedance 2.5](/blog/seedance-2-5-avis).
 
 <Capture src="dreamina-seedance-50-references-2026-10-20.webp" alt="Section Combine multiple references up to 50 inputs de la page Dreamina Seedance 2.5, avec le texte qui liste prompts, scripts, photos, vidéos, musique et guides de style" legende="La promesse des 50 entrées sur Dreamina. ByteDance ne publie pas ce chiffre sur sa propre page modèle, d'où la prudence." source="https://dreamina.capcut.com/seedance/seedance-2-5" captureLe="2026-10-20" />
 
