@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-23 (PLAN_80 F06 publie, J58 toujours decale)
+## Last run: 2026-10-24 (PLAN_80 F08 publie, J58 toujours decale)
+
+### What happened
+- Neuvieme jour PLAN_80 : ligne F08 `alternatives-ltx-studio` (comparatifs, alternatives) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F12 et F20 (75), puis F03 (74). 11 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (train de nuit, scenariste qui compare trois carnets de storyboard) + 12 captures reelles du 24/10.
+- Liens entrants FR et EN : ltx-studio-avis + alternatives-higgsfield-film.
+
+## Previous run: 2026-10-23 (PLAN_80 F06 publie, J58 toujours decale)
 
 ### What happened
 - Huitieme jour PLAN_80 : ligne F06 `seedance-2-5-avis` (analyses, avis) publiee a la place de J58.

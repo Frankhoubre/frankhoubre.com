@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-24 : Alternatives à LTX Studio : du scénario à l'image en 2026
+- slug: alternatives-ltx-studio
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/alternatives-ltx-studio
+- url_en: https://frankhoubre.com/en/blog/alternatives-ltx-studio
+- category: comparatifs
+- type: evergreen (alternatives PLAN_80 F08)
+- search_intent: commerciale (remplacer LTX Studio pour aller du scenario a l'image)
+- primary_keyword: alternative ltx studio
+- secondary_keywords: ltx studio alternative (EN), alternatives ltx studio, ltx studio remboursement
+- sources: ltx.io/studio/pricing (+ FAQ), ltx.io/studio, trustpilot.com/review/ltx.studio, screenweaver.ai/fr, createsagas.com/pricing et /faq, morphic.com/pricing, morphic.com/fr/resources/compare/morphic-vs-ltx-studio, guide tarifaire Autodesk Flow Studio du 28/09/2026 et billet 3D Editor + Canvas, aide Higgsfield (Popcorn, remboursement), support.google.com/flow/answer/16526234, katalist.ai, fiche faits screenweaver.md du 24/10
+- internal_links: -> ltx-studio-avis, higgsfield-avis-realisateur, screenweaver-vs-ltx-studio, alternatives-higgsfield-film, garder-meme-personnage-video-ia, preparer-decoupage-technique-avant-generation-video-ia, meilleurs-logiciels-realisation-ia (memes cibles en EN) ; <- ltx-studio-avis, alternatives-higgsfield-film (FR et EN)
+- cta: CtaScreenWeaver (destination script) ; aucun lien affilie
+- cannibalization_notes: alternatives-higgsfield-film vise alternative higgsfield, ltx-studio-avis vise ltx studio avis, screenweaver-vs-ltx-studio le comparatif direct ; ici seule page sur alternative ltx studio, avec Morphic et Autodesk Flow Studio en plus
+- editorial_decisions: conflit d'interets declare en intro, section et methodologie ; aucun test ; comparatif Morphic presente comme source vendeur ; allegation Trustpilot presentee comme recit non verifie ; prix Higgsfield non cites (grille non relevee le 24/10)
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 89/100)
+- published_commit: voir PUBLISH_LOG (commit content(F08))
 ### 2026-10-23 : Avis Seedance 2.5 : ce que le modèle change pour une série
 - slug: seedance-2-5-avis
 - locale: fr + en (meme slug, publies le meme jour)

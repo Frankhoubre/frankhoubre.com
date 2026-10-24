@@ -75,7 +75,7 @@ Dans le comparatif des offres, les « AI Storyboards », les Elements (personnag
 
 La politique de remboursement est plus souple que chez Higgsfield sur la durée : 14 jours, à condition de ne pas avoir consommé plus de 1 200 crédits. Sur Trustpilot, en revanche, LTX traînait une note de 1,6 sur 5 quand je l'ai relevée le 17 octobre, surtout à cause des remboursements refusés.
 
-Pour qui : une agence ou un réalisateur de pub qui maquette un spot à partir d'un script déjà écrit, et qui veut partager le projet. Pour écrire le film lui-même, LTX ne propose pas d'éditeur de scénario documenté.
+Pour qui : une agence ou un réalisateur de pub qui maquette un spot à partir d'un script déjà écrit, et qui veut partager le projet. Pour écrire le film lui-même, LTX ne propose pas d'éditeur de scénario documenté. Si c'est LTX que tu veux quitter, j'ai fait [une liste à part des alternatives à LTX Studio](/blog/alternatives-ltx-studio).
 
 ## Saga : pour un scénariste au budget serré
 

@@ -76,7 +76,7 @@ In the plan comparison, AI Storyboards, Elements (characters, places and props y
 
 Its refund window is longer than Higgsfield's: 14 days, as long as you haven't used more than 1,200 credits. On Trustpilot, though, LTX sat at 1.6 out of 5 when I checked on October 17, mostly over refused refunds.
 
-It suits an agency or a commercial director mocking up a spot from a script someone else already wrote, who wants to share the project. For writing the film itself, LTX doesn't document a screenplay editor.
+It suits an agency or a commercial director mocking up a spot from a script someone else already wrote, who wants to share the project. For writing the film itself, LTX doesn't document a screenplay editor. If LTX is the tool you want to leave, I wrote [a separate list of LTX Studio alternatives](/en/blog/alternatives-ltx-studio).
 
 ## Saga: for a screenwriter on a tight budget
 

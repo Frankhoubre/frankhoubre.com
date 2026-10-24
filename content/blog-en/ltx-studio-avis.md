@@ -160,7 +160,7 @@ Go with LTX Studio if you make ads, music videos or teasers, often start from a 
 
 Look elsewhere if you just want to generate shots across lots of different models. An aggregator does that job better, and I reviewed the best-known one in [my Higgsfield review](/en/blog/higgsfield-avis-realisateur). To pick an engine before picking a platform, my [roundup of AI video tools](/en/blog/meilleurs-outils-ia-video) is still a good place to start.
 
-And if your project is a written film, with dialogue and three planned rewrites, start with the tool where your screenplay lives, then bring in LTX for the shots that need its timeline or its HDR. To see LTX next to Saga, Flow, Runway and ScreenWeaver, with prices checked the same day, read [my comparison of Higgsfield alternatives](/en/blog/alternatives-higgsfield-film).
+And if your project is a written film, with dialogue and three planned rewrites, start with the tool where your screenplay lives, then bring in LTX for the shots that need its timeline or its HDR. To see LTX next to Saga, Flow, Runway and ScreenWeaver, with prices checked the same day, read [my comparison of Higgsfield alternatives](/en/blog/alternatives-higgsfield-film). And if you're looking for a straight replacement to get from script to image, I ranked [six LTX Studio alternatives](/en/blog/alternatives-ltx-studio), refund rules included.
 
 <Methodology date="2026-10-17">
 
