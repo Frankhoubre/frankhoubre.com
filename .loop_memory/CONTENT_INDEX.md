@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-24T08:07:27.772Z
+> Generated: 2026-10-25T09:11:13.237Z
 
-## FR : 342 articles (/blog/<slug>)
+## FR : 343 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 53, business 31, analyses 23, comparatifs 23, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 53, business 31, comparatifs 24, analyses 23, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-25 | comparatifs | `higgsfield-vs-runway` | Higgsfield vs Runway : réaliser ou retoucher ? |
 | 2026-10-24 | comparatifs | `alternatives-ltx-studio` | Alternatives à LTX Studio : du scénario à l'image en 2026 |
 | 2026-10-23 | analyses | `seedance-2-5-avis` | Avis Seedance 2.5 : ce que le modèle change pour une série |
 | 2026-10-22 | comparatifs | `meilleurs-logiciels-realisation-ia` | Meilleurs logiciels de réalisation IA en 2026 : classement |
@@ -354,12 +355,13 @@ Categories: tutoriels 191, actualite 53, business 31, analyses 23, comparatifs 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 257 articles (/en/blog/<slug>)
+## EN : 258 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, business 21, comparatifs 18, actualite 14, analyses 14, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, business 21, comparatifs 19, actualite 14, analyses 14, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-25 | comparatifs | `higgsfield-vs-runway` | Higgsfield vs Runway: generate shots or fix footage? |
 | 2026-10-24 | comparatifs | `alternatives-ltx-studio` | LTX Studio Alternatives: From Script to Image in 2026 |
 | 2026-10-23 | analyses | `seedance-2-5-avis` | Seedance 2.5 review: what it changes for a series |
 | 2026-10-22 | comparatifs | `meilleurs-logiciels-realisation-ia` | Best AI Filmmaking Software in 2026: My Ranking |

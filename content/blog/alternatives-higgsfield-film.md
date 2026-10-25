@@ -113,7 +113,7 @@ Runway joue sur un autre terrain que Higgsfield. Il génère aussi (Gen-4.5, et 
 
 Fais le calcul avant de t'abonner. Le Standard, à 15 $ par mois (12 $ en annuel), donne 625 crédits. Runway traduit lui-même : 52 secondes de Gen-4.5. Pour un clip musical de trois minutes, tu passeras vite au Pro (35 $ ou 28 $, 2 250 crédits) ou au Max (95 $ ou 76 $, 9 500 crédits, report des crédits sur un mois).
 
-Pour qui : un clip où tu mélanges des images tournées et des plans générés, ou une scène dont tu veux changer la lumière, le décor ou un objet sans tout regénérer. Pour écrire un film, Runway ne propose rien de plus que Higgsfield.
+Pour qui : un clip où tu mélanges des images tournées et des plans générés, ou une scène dont tu veux changer la lumière, le décor ou un objet sans tout regénérer. Pour écrire un film, Runway ne propose rien de plus que Higgsfield. J'ai mis les deux face à face, coût d'un plan de 5 secondes compris, dans [mon comparatif Higgsfield vs Runway](/blog/higgsfield-vs-runway).
 
 ## Et si tu n'utilises qu'un seul modèle ?
 

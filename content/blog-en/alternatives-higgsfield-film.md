@@ -114,7 +114,7 @@ Runway plays a different game from Higgsfield. It generates too (Gen-4.5, plus t
 
 Run the numbers before you subscribe. Standard, at $15 a month ($12 annual), gives you 625 credits. Runway does the math itself: 52 seconds of Gen-4.5. For a three-minute music video, you'll move up to Pro fast ($35 or $28, 2,250 credits) or to Max ($95 or $76, 9,500 credits, one month of credit rollover).
 
-It's the right pick for a music video mixing shot footage and generated shots, or a scene where you want to change the light, the set or an object without regenerating everything. For writing a film, Runway gives you nothing Higgsfield doesn't.
+It's the right pick for a music video mixing shot footage and generated shots, or a scene where you want to change the light, the set or an object without regenerating everything. For writing a film, Runway gives you nothing Higgsfield doesn't. I put the two head to head, including the cost of a 5-second shot, in [my Higgsfield vs Runway comparison](/en/blog/higgsfield-vs-runway).
 
 ## What if you only use one model?
 
