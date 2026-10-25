@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-25 : Higgsfield vs Runway : réaliser ou retoucher ?
+- slug: higgsfield-vs-runway
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/higgsfield-vs-runway
+- url_en: https://frankhoubre.com/en/blog/higgsfield-vs-runway
+- category: comparatifs
+- type: evergreen (vs PLAN_80 F12)
+- search_intent: commerciale (choisir entre Higgsfield et Runway)
+- primary_keyword: higgsfield vs runway
+- secondary_keywords: runway vs higgsfield (EN), higgsfield ou runway, cout plan video ia
+- sources: higgsfield.ai/pricing (+ comparatif detaille), higgsfield.ai/cinema-studio, higgsfield.ai/apps, aide Higgsfield remboursement et credits, runway.com/pricing, runway.com/product/aleph-2, runway.com/changelog, app.runwayml.com (invite), help.runwayml.com (remboursement, credits, droits), trustpilot.com (higgsfield.ai, runwayml.com), fiche faits screenweaver.md du 25/10
+- internal_links: -> higgsfield-avis-realisateur, seedance-2-5-avis, alternatives-higgsfield-film, meilleurs-logiciels-realisation-ia, garder-meme-personnage-video-ia (memes cibles en EN) ; <- alternatives-higgsfield-film, higgsfield-avis-realisateur (FR et EN)
+- cta: CtaScreenWeaver (destination script) ; lien affilie aff:higgsfield, affiliate: true ; aucun lien Runway affilie
+- cannibalization_notes: higgsfield-avis-realisateur vise higgsfield avis, alternatives-higgsfield-film vise alternative higgsfield, pika-labs-vs-runway un autre duel ; ici seule page sur higgsfield vs runway. F05 (avis Runway) devra renvoyer ici
+- editorial_decisions: conflit d'interets et affiliation declares en intro et methodologie ; aucun test ; couts par plan presentes comme calculs ; nuance Trustpilot (invitation contre profil non reclame) ; connexion Higgsfield dans ScreenWeaver citee comme annoncee et en cours d'ouverture
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 91/100)
+- published_commit: 1690b00
 ### 2026-10-24 : Alternatives à LTX Studio : du scénario à l'image en 2026
 - slug: alternatives-ltx-studio
 - locale: fr + en (meme slug, publies le meme jour)

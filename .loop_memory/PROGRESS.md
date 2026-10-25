@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-24 (PLAN_80 F08 publie, J58 toujours decale)
+## Last run: 2026-10-25 (PLAN_80 F12 publie, J58 toujours decale)
+
+### What happened
+- Dixieme jour PLAN_80 : ligne F12 `higgsfield-vs-runway` (comparatifs, vs) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F20 (75), puis F03 (74), F04 (73). 10 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (salle de montage pellicule, monteuse qui colle une bande 35 mm, travelling dans la cour) + 9 captures reelles du 25/10.
+- Liens entrants FR et EN : alternatives-higgsfield-film + higgsfield-avis-realisateur.
+
+## Previous run: 2026-10-24 (PLAN_80 F08 publie, J58 toujours decale)
 
 ### What happened
 - Neuvieme jour PLAN_80 : ligne F08 `alternatives-ltx-studio` (comparatifs, alternatives) publiee a la place de J58.
