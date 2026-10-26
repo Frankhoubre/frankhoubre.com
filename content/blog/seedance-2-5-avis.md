@@ -168,6 +168,8 @@ Si ton film part de vrais comédiens, le blocage des visages réels te ralentira
 
 Si tu veux un seul abonnement pour plusieurs modèles, Higgsfield propose Seedance 2.5 à côté d'une vingtaine d'autres moteurs, mais pas sur son offre d'entrée selon sa grille du 16 octobre. J'ai lu ses conditions en détail dans [mon avis sur Higgsfield](/blog/higgsfield-avis-realisateur).
 
+Si ton projet est un anime, Vidu Q4 coûte moins cher à la seconde et assume le style 2D. Je l'ai placé juste derrière Seedance 2.5 dans mon [classement des meilleures IA pour faire un anime](/blog/meilleure-ia-anime-2026).
+
 Et si tu veux juste un rendu plus cinéma avec la génération précédente, mes méthodes pour [obtenir un rendu cinéma avec Seedance 2](/blog/comment-obtenir-rendu-cinema-avec-seedance-2) et le [workflow complet Seedance 2](/blog/workflow-complet-seedance-2-rendu-cinema) restent valables sur la 2.5 : image pilote honnête, mouvement modeste, critères de rejet écrits avant de générer.
 
 <Methodologie date="2026-10-23">

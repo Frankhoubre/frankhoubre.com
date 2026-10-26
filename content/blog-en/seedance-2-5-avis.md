@@ -169,6 +169,8 @@ If your film starts from real actors, the real-face block will slow you down. Lo
 
 If you want one subscription for several models, Higgsfield offers Seedance 2.5 next to about twenty other engines, though not on its entry plan according to its October 16 pricing. I read its terms closely in [my Higgsfield review](/en/blog/higgsfield-avis-realisateur).
 
+If your project is an anime, Vidu Q4 costs less per second and leans into the 2D look. I ranked it right behind Seedance 2.5 in my [list of the best AI tools to make an anime](/en/blog/meilleure-ia-anime-2026).
+
 And if you just want a more cinematic look from the previous generation, my methods for [getting a cinema render with Seedance 2](/en/blog/comment-obtenir-rendu-cinema-avec-seedance-2) and the [complete Seedance 2 workflow](/en/blog/workflow-complet-seedance-2-rendu-cinema) still apply to 2.5: an honest pilot image, modest motion, rejection criteria written down before you generate.
 
 <Methodology date="2026-10-23">

@@ -33,6 +33,8 @@ Pour le contraste global, [pourquoi tes images IA manquent de contraste et comme
 
 Si tu génères une case unique, pense déjà au **ballon** (même vide) et au **rythme vertical**. Une case trop chargée tue la lecture mobile.
 
+Pour passer de l'image fixe au plan animé, j'ai classé les modèles vidéo dans [la meilleure IA pour faire un anime en 2026](/blog/meilleure-ia-anime-2026).
+
 ## Tableau : erreur, correctif
 
 | Erreur | Correctif |

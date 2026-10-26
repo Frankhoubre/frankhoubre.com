@@ -33,6 +33,8 @@ For the global contrast, see [why your AI images lack contrast and how to fix it
 
 If you generate a single panel, already think about the **balloon** (even empty) and the **vertical rhythm**. A too-loaded panel kills the mobile reading.
 
+To go from a still to an animated shot, I ranked the video models in [the best AI to make an anime in 2026](/en/blog/meilleure-ia-anime-2026).
+
 ## Table: mistake, fix
 
 | Mistake | Fix |
