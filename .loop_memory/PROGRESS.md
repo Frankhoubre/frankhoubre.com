@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-25 (PLAN_80 F12 publie, J58 toujours decale)
+## Last run: 2026-10-26 (PLAN_80 F20 publie, J58 toujours decale)
+
+### What happened
+- Onzieme jour PLAN_80 : ligne F20 `meilleure-ia-anime-2026` (comparatifs, classement) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F03 (74), puis F04 (73), F05 (71). 9 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (cabine de doublage anime) + 11 captures reelles du 26/10 + 2 frames Lost Garden ep1 (03m18s, 04m12s).
+- Liens entrants FR et EN : seedance-2-5-avis + illustrations-manga-anime-ia.
+
+## Previous run: 2026-10-25 (PLAN_80 F12 publie, J58 toujours decale)
 
 ### What happened
 - Dixieme jour PLAN_80 : ligne F12 `higgsfield-vs-runway` (comparatifs, vs) publiee a la place de J58.

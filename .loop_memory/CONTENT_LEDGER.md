@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-26 : Meilleure IA pour faire un anime en 2026 : mon classement
+- slug: meilleure-ia-anime-2026
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/meilleure-ia-anime-2026
+- url_en: https://frankhoubre.com/en/blog/meilleure-ia-anime-2026
+- category: comparatifs
+- type: evergreen (classement PLAN_80 F20)
+- search_intent: commerciale et informationnelle (choisir une IA pour faire un anime)
+- primary_keyword: meilleure ia pour faire un anime
+- secondary_keywords: ai anime generator (EN), creer un anime avec l'ia, ia anime gratuit, video to anime
+- sources: seed.bytedance.com seedance2_5, dreamina seedance-2-5 (tarifs), vidu.com vidu-q4 et pricing, go.vidu.com video-to-anime, kling.ai ai-motion-control, docs.midjourney.com parametres, nijijourney.com, trustpilot (klingai.com, vidu.com), pixverse blog classement, lostgarden.world/fr/process, fiches faits screenweaver.md et lost-garden.md, doc BytePlus Seedance 2.5 (25/10)
+- internal_links: -> garder-meme-personnage-video-ia, seedance-2-5-avis, workflow-kling-3-animation-fluide-realiste, illustrations-manga-anime-ia, combien-coute-court-metrage-ia-2026, lost-garden-journal-production-serie-ia (FR seulement), meilleurs-logiciels-realisation-ia ; <- seedance-2-5-avis, illustrations-manga-anime-ia (FR et EN)
+- cta: CtaScreenWeaver (destination seedance) ; lien affilie ElevenLabs, affiliate: true
+- cannibalization_notes: illustrations-manga-anime-ia vise l'image manga, voidborn-anime-ia-festival-coulisses le making-of festival ; F15 (kling vs seedance) devra renvoyer ici
+- editorial_decisions: conflit d'interets declare ; aucun test ; Lost Garden limite a la fiche faits ; prix Kling non publies faute de page lisible ; incoherence Ultimate Vidu signalee ; PixVerse non classe
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 91/100)
+- published_commit: 309609d
 ### 2026-10-25 : Higgsfield vs Runway : réaliser ou retoucher ?
 - slug: higgsfield-vs-runway
 - locale: fr + en (meme slug, publies le meme jour)
