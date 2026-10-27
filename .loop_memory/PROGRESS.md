@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-26 (PLAN_80 F20 publie, J58 toujours decale)
+## Last run: 2026-10-27 (PLAN_80 F03 publie, J58 toujours decale)
+
+### What happened
+- Douzieme jour PLAN_80 : ligne F03 `google-flow-avis` (analyses, avis) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F04 (73), puis F05 et F15 (71). 8 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (laverie automatique la nuit) + 11 captures reelles du 27/10.
+- Liens entrants FR et EN : meilleurs-logiciels-realisation-ia + google-veo-3-brief-realisateur-plan-sequence.
+
+## Previous run: 2026-10-26 (PLAN_80 F20 publie, J58 toujours decale)
 
 ### What happened
 - Onzieme jour PLAN_80 : ligne F20 `meilleure-ia-anime-2026` (comparatifs, classement) publiee a la place de J58.

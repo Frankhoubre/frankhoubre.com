@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-27 : Avis Google Flow 2026 : un court metrage avec Veo 3.1 ?
+- slug: google-flow-avis
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/google-flow-avis
+- url_en: https://frankhoubre.com/en/blog/google-flow-avis
+- category: analyses
+- type: evergreen (avis PLAN_80 F03)
+- search_intent: commerciale et informationnelle (evaluer Google Flow pour un film)
+- primary_keyword: google flow avis
+- secondary_keywords: google flow review (EN), google flow prix, google flow gratuit, google flow veo 3.1 avis, google flow france
+- sources: flow.google.com (accueil, outils, tarifs), gemini.google/subscriptions, support.google.com/flow (16526234 credits, 16352836 modeles, 16935718 edition et Scenebuilder, 16353544 pays, 16353333 premiers pas et FAQ), blog.google flow-updates (19/05/2026), discuss.ai.google.dev fil 147374, trustpilot labs.google, faits/screenweaver.md
+- internal_links: -> garder-meme-personnage-video-ia, combien-coute-court-metrage-ia-2026, meilleurs-logiciels-realisation-ia, google-veo-3-brief-realisateur-plan-sequence, kling-vs-veo-3-choisir-par-plan (FR seulement), higgsfield-vs-runway ; <- meilleurs-logiciels-realisation-ia, google-veo-3-brief-realisateur-plan-sequence (FR et EN)
+- cta: CtaScreenWeaver (destination script) ; aucun lien affilie
+- cannibalization_notes: google-flow-veo-31-edition-audio-juin-2026 = news ; F10 (alternatives-google-flow) et F16 (google-flow-vs-higgsfield) devront renvoyer ici
+- editorial_decisions: conflit d'interets declare ; aucun test ; contradiction de l'aide sur l'acces gratuit signalee ; Storyboard Studio cite sans le survendre ; VPN retire faute de verification du jour
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 92/100)
+- published_commit: ab8d3e0
 ### 2026-10-26 : Meilleure IA pour faire un anime en 2026 : mon classement
 - slug: meilleure-ia-anime-2026
 - locale: fr + en (meme slug, publies le meme jour)
