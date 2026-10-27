@@ -127,6 +127,8 @@ Flow is the only tool here you can really use for free with no time limit: 50 cr
 
 To assemble clips, Flow has Scenebuilder. You add clips to a scene, reorder them, trim the start and end, play back the sequence and download it.
 
+I worked out the credit cost of one minute of film, model by model, plus Flow's limits in Europe, in my [full Google Flow review](/en/blog/google-flow-avis).
+
 <Screenshot src="google-flow-scenebuilder-2026-10-22.webp" alt="Google Flow help page in French, section on building a scene: Scenebuilder arranges several clips in a sequence, reorders them, trims start and end, previews and downloads the scene" caption="Scenebuilder (French help page) assembles clips you've already generated. It doesn't break a script into shots." source="https://support.google.com/flow/answer/16935718?hl=fr" capturedAt="2026-10-22" />
 
 Only Google models are available, Veo 3.1 and Gemini Omni Flash. The help center describes no script editor and no breakdown. For a whole film, it comes last. To see your first shot tonight without reaching for your card, it's the right pick. If you go that way, learn to [brief Veo like a cinematographer](/en/blog/google-veo-3-brief-realisateur-plan-sequence) and your 50 credits will go further.

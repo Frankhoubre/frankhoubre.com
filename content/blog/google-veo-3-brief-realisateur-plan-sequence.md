@@ -60,6 +60,8 @@ Pour muscler la phase préparation, utilise comment écrire un prompt cinématiq
 prompt-cinematic-ultra-realiste-ia) puis comment transformer une image IA en vidéo fluide et crédible (/blog/comment-
 transformer-image-ia-video-fluide-credible). Ces lectures prolongent directement la mise en pratique du jour.
 
+Si tu tournes Veo 3.1 dans Google Flow, mon [avis sur Google Flow](/blog/google-flow-avis) donne le coût en crédits de chaque version de Veo et ce que chacune accepte comme références.
+
 ## Workflow exécutable en six phases
 
 ### Brief réalisateur utilisable par toute l équipe

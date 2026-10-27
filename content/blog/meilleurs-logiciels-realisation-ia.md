@@ -126,6 +126,8 @@ Flow est le seul outil de la liste qui se teste vraiment gratuitement, sans limi
 
 Pour assembler, Flow a Scenebuilder. Tu ajoutes tes extraits à une scène, tu les réordonnes, tu coupes le début et la fin, tu regardes la séquence et tu la télécharges.
 
+J'ai détaillé le coût d'une minute de film en crédits, modèle par modèle, et les limites de Flow en Europe dans mon [avis complet sur Google Flow](/blog/google-flow-avis).
+
 <Capture src="google-flow-scenebuilder-2026-10-22.webp" alt="Aide Google Flow en français, section Construire votre scène : Scenebuilder organise plusieurs extraits en séquence, les réordonne, coupe début et fin, affiche un aperçu et télécharge la scène" legende="Scenebuilder assemble des extraits déjà générés. Il ne découpe pas un scénario en plans." source="https://support.google.com/flow/answer/16935718?hl=fr" captureLe="2026-10-22" />
 
 Seuls les modèles Google sont proposés, Veo 3.1 et Gemini Omni Flash. L'aide ne décrit ni éditeur de scénario ni découpage. Pour un film entier, il arrive dernier. Pour voir ton premier plan ce soir sans sortir ta carte, c'est le bon choix. Si tu y vas, apprends à [briefer Veo comme un chef opérateur](/blog/google-veo-3-brief-realisateur-plan-sequence), tes 50 crédits dureront plus longtemps.

@@ -42,6 +42,8 @@ You are going to save hours by following this frame. The fast creators are not t
 
 To strengthen the preparation phase, use [how to write an ultra-realistic cinematic prompt](/en/blog/comment-ecrire-prompt-cinematic-ultra-realiste-ia) then [how to turn an AI image into a fluid, credible video](/en/blog/comment-transformer-image-ia-video-fluide-credible). These readings directly extend the day's practice.
 
+If you shoot Veo 3.1 inside Google Flow, my [Google Flow review](/en/blog/google-flow-avis) lists the credit cost of each Veo version and which ones accept references.
+
 ## Executable workflow in six phases
 
 ### A director's brief usable by the whole team

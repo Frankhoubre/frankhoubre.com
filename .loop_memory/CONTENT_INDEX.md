@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-26T09:14:36.959Z
+> Generated: 2026-10-27T09:08:56.704Z
 
-## FR : 344 articles (/blog/<slug>)
+## FR : 345 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 53, business 31, comparatifs 25, analyses 23, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 53, business 31, comparatifs 25, analyses 24, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-27 | analyses | `google-flow-avis` | Avis Google Flow 2026 : un court métrage avec Veo 3.1 ? |
 | 2026-10-26 | comparatifs | `meilleure-ia-anime-2026` | Meilleure IA pour faire un anime en 2026 : mon classement |
 | 2026-10-25 | comparatifs | `higgsfield-vs-runway` | Higgsfield vs Runway : réaliser ou retoucher ? |
 | 2026-10-24 | comparatifs | `alternatives-ltx-studio` | Alternatives à LTX Studio : du scénario à l'image en 2026 |
@@ -356,12 +357,13 @@ Categories: tutoriels 191, actualite 53, business 31, comparatifs 25, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 259 articles (/en/blog/<slug>)
+## EN : 260 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, business 21, comparatifs 20, actualite 14, analyses 14, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, business 21, comparatifs 20, analyses 15, actualite 14, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-27 | analyses | `google-flow-avis` | Google Flow Review 2026: A Short Film with Veo 3.1? |
 | 2026-10-26 | comparatifs | `meilleure-ia-anime-2026` | Best AI to Make an Anime in 2026: My Ranking |
 | 2026-10-25 | comparatifs | `higgsfield-vs-runway` | Higgsfield vs Runway: generate shots or fix footage? |
 | 2026-10-24 | comparatifs | `alternatives-ltx-studio` | LTX Studio Alternatives: From Script to Image in 2026 |
