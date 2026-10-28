@@ -112,7 +112,6 @@ export default function Experience() {
             </filter>
           </svg>
           <div className={styles.screen}>
-            <div className={styles.backdrop} />
             <div className={styles.picture}>
               <div className={`${styles.img} ${styles.cyan}`} />
               <div className={`${styles.img} ${styles.red}`} />

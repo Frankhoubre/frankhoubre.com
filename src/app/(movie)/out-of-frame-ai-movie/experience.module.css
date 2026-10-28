@@ -57,15 +57,10 @@
   100% { transform: scale(0, 0); filter: brightness(5); }
 }
 
-.backdrop,
 .img {
   position: absolute;
   inset: 0;
   background: url("/out-of-frame/poster.webp") center / cover no-repeat;
-}
-
-.backdrop {
-  display: none;
 }
 
 .picture {
@@ -205,17 +200,11 @@
   to { top: 105%; }
 }
 
-/* En portrait, l'affiche 16:9 serait rognée sur le titre : on la montre
-   plus grande que l'écran en largeur, sur un fond flouté de la même image. */
+/* En portrait, l'affiche 9:16 dédiée (le navigateur ne charge que celle
+   qui correspond à l'écran). */
 @media (max-aspect-ratio: 1 / 1) {
-  .backdrop {
-    display: block;
-    filter: blur(22px) brightness(0.3);
-    transform: scale(1.15);
-  }
-
   .img {
-    background-size: 175% auto;
+    background-image: url("/out-of-frame/poster-portrait.webp");
   }
 }
 
