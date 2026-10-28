@@ -12,6 +12,8 @@ Ce guide est le pipeline complet que j'utilise quand le brief exige **animation 
 
 ![Réalisateur comparant storyboard et références au-dessus d'un laptop, lumière mixte jour et tungstène](/images/blog/workflow-kling-3-animation-fluide-realiste/hero.webp)
 
+Ce workflow date de Kling 3. Pour l'état de l'outil en octobre 2026, Kling 4.0, le multi-plans de Video 3.0 et les prix relevés, lis mon [avis sur Kling AI pour la fiction](/blog/kling-ai-avis-fiction).
+
 ## Ce que « fluide et réaliste » veut dire en production
 
 **Fluide** ne veut pas dire « sans coupure visible au premier regard ». Ça veut dire : le sujet reste le même être, la lumière ne saute pas de température, la physique du tissu et des cheveux ne trahit pas le modèle entre la frame 12 et la frame 48.

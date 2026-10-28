@@ -12,6 +12,8 @@ This guide is the complete pipeline I use when the brief requires **fluid and re
 
 ![Director comparing storyboard and references above a laptop, mixed day and tungsten light](/images/blog/workflow-kling-3-animation-fluide-realiste/hero.webp)
 
+This workflow was written for Kling 3. For where the tool stands in October 2026, with Kling 4.0, Video 3.0 multi-shot and current prices, read my [Kling AI review for fiction](/en/blog/kling-ai-avis-fiction).
+
 ## What "fluid and realistic" means in production
 
 **Fluid** does not mean "with no visible cut at first glance". It means: the subject stays the same being, the light does not jump temperature, the physics of the fabric and the hair does not betray the model between frame 12 and frame 48.

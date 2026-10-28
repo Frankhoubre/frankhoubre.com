@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-28 : Avis Kling AI 2026 : Kling 4.0 vaut-il le coup en fiction ?
+- slug: kling-ai-avis-fiction
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/kling-ai-avis-fiction
+- url_en: https://frankhoubre.com/en/blog/kling-ai-avis-fiction
+- category: analyses
+- type: evergreen (avis PLAN_80 F04)
+- search_intent: commerciale (evaluer Kling pour un film de fiction)
+- primary_keyword: avis kling ai
+- secondary_keywords: kling 4 avis, kling ai prix, kling ai gratuit, kling ai credits, kling review (EN)
+- sources: kling.ai/app, kling.ai/app/membership (grille + FAQ), release-note/release-history, quickstart kling-4-model-user-guide, klingai-video-3-model-user-guide, klingai-element-library-3-user-guide, dev/pricing, trustpilot klingai.com, faits/screenweaver.md
+- internal_links: -> garder-meme-personnage-video-ia, combien-coute-court-metrage-ia-2026, google-flow-avis, seedance-2-5-avis, kling-vs-veo-3-choisir-par-plan (FR), luma-dream-machine-kling-generer-videos-fluides (EN), workflow-kling-3-animation-fluide-realiste ; <- workflow-kling-3-animation-fluide-realiste (FR et EN), kling-vs-veo-3-choisir-par-plan (FR)
+- cta: CtaScreenWeaver (destination script) ; aucun lien affilie
+- cannibalization_notes: kling-vs-veo-3 = comparatif, workflow-kling-3 = tuto, levee de fonds = news ; F11 (alternatives-kling-fiction) et F15 (kling-vs-seedance) devront renvoyer ici
+- editorial_decisions: conflit d'interets declare ; aucun test ; prix des mois suivants mis en avant ; cout Kling 4.0 dans l'app dit introuvable ; acces Standard a la 4.0 dit ambigu ; Kling 3 non cite cote ScreenWeaver
+- checker: pass (seo_audit 0 issue FR et EN, lint 0 err, typecheck PASS, build PASS, scan-anti-ia OK FR et EN, QA PLAN_80 91/100)
+- published_commit: PENDING
 ### 2026-10-27 : Avis Google Flow 2026 : un court metrage avec Veo 3.1 ?
 - slug: google-flow-avis
 - locale: fr + en (meme slug, publies le meme jour)

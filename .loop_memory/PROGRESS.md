@@ -1,6 +1,17 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-27 (PLAN_80 F03 publie, J58 toujours decale)
+## Last run: 2026-10-28 (PLAN_80 F04 publie, J58 toujours decale)
+
+### What happened
+- Treizieme jour PLAN_80 : ligne F04 `kling-ai-avis-fiction` (analyses, avis) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F05 (71) et F15 (71), puis F10 et F11 (70). 7 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (repetition de cascade sur un toit de parking) + 10 captures reelles du 28/10.
+- Liens entrants : FR workflow-kling-3 + kling-vs-veo-3 ; EN workflow-kling-3.
+- La grille Kling se lit sur kling.ai/app/membership sans compte (utile pour F11 alternatives-kling et F15 kling-vs-seedance).
+
+## Previous run: 2026-10-27 (PLAN_80 F03 publie, J58 toujours decale)
 
 ### What happened
 - Douzieme jour PLAN_80 : ligne F03 `google-flow-avis` (analyses, avis) publiee a la place de J58.

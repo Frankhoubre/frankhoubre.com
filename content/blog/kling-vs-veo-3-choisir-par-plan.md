@@ -17,6 +17,8 @@ Kling et Veo ne se battent pas sur le même terrain. Ils ont des contraintes de 
 
 J'ai organisé ce comparatif comme un découpage : un type de plan, le moteur qui le porte, la raison technique derrière. Tous les chiffres viennent des pages officielles, relevés le 29 août 2026, et je donne les sources au fur et à mesure.
 
+Depuis ce relevé, Kling est passé en 4.0 et ses prix ont changé : mon [avis sur Kling AI pour la fiction](/blog/kling-ai-avis-fiction) donne la grille et le barème au 28 octobre 2026.
+
 ![Réalisatrice cadrant un plan large au viseur sur une falaise à l'aube, choix du moteur vidéo IA avant génération](/images/blog/kling-vs-veo-3-choisir-par-plan/hero.webp)
 
 ## Ce que chaque moteur sait faire, en dur
