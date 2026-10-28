@@ -11,43 +11,233 @@
   font-family: var(--font-adam), "Comic Sans MS", cursive;
 }
 
-.poster {
+/* Lignes de balayage et vignette d'un vieil écran, sur toute la page. */
+.stage::after {
+  content: "";
   position: absolute;
   inset: 0;
-  background: #000 url("/out-of-frame/poster.webp") center / cover no-repeat;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.32) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+/* Allumage de télé cathodique : trait lumineux, image qui tremble et se
+   déchire, puis extinction en point. Jamais plus de trois éclats de
+   lumière par seconde (sécurité photosensible). */
+.tv {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: #000;
+}
+
+.defs {
+  position: absolute;
+}
+
+.screen {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+  transform-origin: center;
+  animation: power 4.4s linear forwards;
+}
+
+@keyframes power {
+  0% { transform: scale(1, 0.004); filter: brightness(4); }
+  4% { transform: scale(1, 0.004); filter: brightness(4); }
+  9% { transform: scale(1, 1.03); filter: brightness(1.7); }
+  13% { transform: scale(1, 1); filter: brightness(1); }
+  84% { transform: scale(1, 1); filter: brightness(1); }
+  90% { transform: scale(1, 0.006); filter: brightness(3); }
+  95% { transform: scale(0.004, 0.006); filter: brightness(5); }
+  100% { transform: scale(0, 0); filter: brightness(5); }
+}
+
+.backdrop,
+.img {
+  position: absolute;
+  inset: 0;
+  background: url("/out-of-frame/poster.webp") center / cover no-repeat;
+}
+
+.backdrop {
+  display: none;
+}
+
+.picture {
+  position: absolute;
+  inset: 0;
+  animation: shake 4.4s linear forwards;
+}
+
+.img {
+  mix-blend-mode: screen;
+}
+
+.cyan {
+  filter: url(#oof-cyan);
+  animation: splitCyan 4.4s linear forwards;
+}
+
+.red {
+  filter: url(#oof-red);
+  animation: splitRed 4.4s linear forwards;
+}
+
+.tear {
+  mix-blend-mode: normal;
   opacity: 0;
 }
 
-/* Écran qui clignote comme une console mal branchée : jamais plus de trois
-   éclats par seconde (sécurité photosensible). */
-.flashing {
-  animation: flicker 3.8s steps(1, end) forwards;
+.tearA {
+  animation: tearA 4.4s linear forwards;
 }
 
-.gone {
-  opacity: 0;
-  transition: opacity 0.6s ease;
+.tearB {
+  animation: tearB 4.4s linear forwards;
 }
 
-@keyframes flicker {
-  0% { opacity: 0; }
-  6% { opacity: 1; filter: brightness(1.1); }
-  14% { opacity: 0.15; }
-  22% { opacity: 1; filter: brightness(0.9) contrast(1.15); }
-  40% { opacity: 1; }
-  46% { opacity: 0.25; }
-  54% { opacity: 1; filter: none; }
-  72% { opacity: 1; }
-  78% { opacity: 0.1; }
-  84% { opacity: 0.9; filter: brightness(1.2); }
-  92% { opacity: 0.4; }
-  100% { opacity: 0; }
+@keyframes shake {
+  0%, 24%, 29%, 44%, 49%, 65%, 70%, 100% { transform: none; }
+  25% { transform: translateX(-4px) skewX(-3deg); }
+  27% { transform: translateX(5px) skewX(2deg); }
+  45% { transform: translate(3px, -2px) skewX(2deg); }
+  47% { transform: translateX(-6px) skewX(-4deg); }
+  66% { transform: translateX(-3px) skewX(-2deg); }
+  68% { transform: translateX(6px) scaleY(1.02); }
+}
+
+@keyframes splitRed {
+  0%, 100% { transform: translateX(3px); }
+  24% { transform: translateX(3px); }
+  25% { transform: translateX(-16px); }
+  26.5% { transform: translate(12px, 1px); }
+  28% { transform: translateX(3px); }
+  44% { transform: translateX(3px); }
+  45% { transform: translate(18px, -1px); }
+  46.5% { transform: translateX(-10px); }
+  48% { transform: translateX(3px); }
+  65% { transform: translateX(3px); }
+  66% { transform: translateX(-22px); }
+  67.5% { transform: translateX(14px); }
+  69% { transform: translateX(4px); }
+}
+
+@keyframes splitCyan {
+  0%, 100% { transform: translateX(-1px); }
+  24% { transform: translateX(-1px); }
+  25% { transform: translateX(9px); }
+  26.5% { transform: translateX(-7px); }
+  28% { transform: translateX(-1px); }
+  44% { transform: translateX(-1px); }
+  45% { transform: translateX(-11px); }
+  46.5% { transform: translateX(6px); }
+  48% { transform: translateX(-1px); }
+  65% { transform: translateX(-1px); }
+  66% { transform: translateX(12px); }
+  67.5% { transform: translateX(-8px); }
+  69% { transform: translateX(-1px); }
+}
+
+@keyframes tearA {
+  0%, 24.5%, 28%, 44.5%, 48%, 65.5%, 69%, 100% { opacity: 0; }
+  25% { opacity: 1; clip-path: inset(36% 0 54% 0); transform: translateX(-7%); }
+  26.5% { opacity: 1; clip-path: inset(61% 0 31% 0); transform: translateX(5%); }
+  45% { opacity: 1; clip-path: inset(17% 0 75% 0); transform: translateX(9%); }
+  46.5% { opacity: 1; clip-path: inset(70% 0 19% 0); transform: translateX(-6%); }
+  66% { opacity: 1; clip-path: inset(44% 0 47% 0); transform: translateX(12%); }
+  67.5% { opacity: 1; clip-path: inset(8% 0 86% 0); transform: translateX(-9%); }
+}
+
+@keyframes tearB {
+  0%, 25%, 28.5%, 45%, 48.5%, 66%, 69.5%, 100% { opacity: 0; }
+  25.5% { opacity: 1; clip-path: inset(80% 0 12% 0); transform: translateX(6%); }
+  27% { opacity: 1; clip-path: inset(22% 0 72% 0); transform: translateX(-4%); }
+  45.5% { opacity: 1; clip-path: inset(52% 0 40% 0); transform: translateX(-10%); }
+  47% { opacity: 1; clip-path: inset(88% 0 5% 0); transform: translateX(7%); }
+  66.5% { opacity: 1; clip-path: inset(27% 0 65% 0); transform: translateX(-12%); }
+  68% { opacity: 1; clip-path: inset(58% 0 33% 0); transform: translateX(8%); }
+}
+
+.noise {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  mix-blend-mode: screen;
+  animation: snow 4.4s linear forwards;
+}
+
+@keyframes snow {
+  0% { opacity: 0.6; }
+  12% { opacity: 0.45; }
+  18% { opacity: 0.1; }
+  24% { opacity: 0.1; }
+  25.5% { opacity: 0.35; }
+  28% { opacity: 0.1; }
+  44% { opacity: 0.1; }
+  45.5% { opacity: 0.35; }
+  48% { opacity: 0.1; }
+  65% { opacity: 0.1; }
+  66.5% { opacity: 0.4; }
+  70% { opacity: 0.12; }
+  84% { opacity: 0.2; }
+  100% { opacity: 0.6; }
+}
+
+/* Bande claire qui descend lentement, comme une image mal synchronisée. */
+.roll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 22%;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.07), transparent);
+  animation: roll 1.8s linear infinite;
+}
+
+@keyframes roll {
+  from { top: -25%; }
+  to { top: 105%; }
+}
+
+/* En portrait, l'affiche 16:9 serait rognée sur le titre : on la montre
+   plus grande que l'écran en largeur, sur un fond flouté de la même image. */
+@media (max-aspect-ratio: 1 / 1) {
+  .backdrop {
+    display: block;
+    filter: blur(22px) brightness(0.3);
+    transform: scale(1.15);
+  }
+
+  .img {
+    background-size: 175% auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .flashing {
+  .screen,
+  .picture,
+  .cyan,
+  .red,
+  .noise,
+  .roll {
     animation: none;
-    opacity: 1;
+  }
+
+  .red,
+  .cyan {
+    transform: none;
+  }
+
+  .tear,
+  .noise,
+  .roll {
+    display: none;
   }
 }
 
@@ -66,7 +256,20 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   min-height: 1.2em;
-  text-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
+  text-shadow: -1px 0 rgba(255, 40, 80, 0.45), 1px 0 rgba(0, 220, 255, 0.45), 0 0 18px rgba(255, 255, 255, 0.18);
+  animation: textGlitch 5.5s linear infinite;
+}
+
+@keyframes textGlitch {
+  0%, 91%, 94.5%, 100% { transform: none; text-shadow: -1px 0 rgba(255, 40, 80, 0.45), 1px 0 rgba(0, 220, 255, 0.45), 0 0 18px rgba(255, 255, 255, 0.18); }
+  92% { transform: translateX(-3px) skewX(-6deg); text-shadow: -6px 0 rgba(255, 40, 80, 0.8), 5px 0 rgba(0, 220, 255, 0.8); }
+  93% { transform: translateX(4px); text-shadow: 5px 0 rgba(255, 40, 80, 0.8), -4px 0 rgba(0, 220, 255, 0.8); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .question {
+    animation: none;
+  }
 }
 
 .cursor {

@@ -8,7 +8,7 @@ type Stats = { yes: number; no: number; total: number };
 type Phase = "flash" | "typing" | "choice" | "sending" | "result";
 
 const QUESTION = "WILL YOU TURN OFF THE CONSOLE?";
-const FLASH_MS = 3800;
+const FLASH_MS = 4400;
 const TYPE_MS = 85;
 
 function pct(n: number, total: number) {
@@ -23,6 +23,7 @@ export default function Experience() {
   const [notice, setNotice] = useState<string | null>(null);
   const token = useRef<string | null>(null);
   const honeypot = useRef<HTMLInputElement>(null);
+  const noise = useRef<HTMLCanvasElement>(null);
 
   // Jeton, stats et vote déjà fait : chargés pendant le flash.
   useEffect(() => {
@@ -41,6 +42,25 @@ export default function Experience() {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const t = setTimeout(() => setPhase("typing"), reduced ? 1200 : FLASH_MS);
     return () => clearTimeout(t);
+  }, [phase]);
+
+  // Neige de télé pendant l'allumage : petite toile agrandie, 20 images/s.
+  useEffect(() => {
+    if (phase !== "flash") return;
+    const canvas = noise.current;
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const img = ctx.createImageData(canvas.width, canvas.height);
+    const id = setInterval(() => {
+      const d = img.data;
+      for (let i = 0; i < d.length; i += 4) {
+        const v = Math.random() * 255;
+        d[i] = d[i + 1] = d[i + 2] = v;
+        d[i + 3] = 255;
+      }
+      ctx.putImageData(img, 0, 0);
+    }, 50);
+    return () => clearInterval(id);
   }, [phase]);
 
   useEffect(() => {
@@ -80,7 +100,30 @@ export default function Experience() {
 
   return (
     <main className={styles.stage}>
-      <div className={`${styles.poster} ${phase === "flash" ? styles.flashing : styles.gone}`} aria-hidden="true" />
+      {phase === "flash" && (
+        <div className={styles.tv} aria-hidden="true">
+          {/* Canaux séparés pour l'aberration chromatique (rouge / cyan en mode écran). */}
+          <svg width="0" height="0" className={styles.defs}>
+            <filter id="oof-red">
+              <feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" />
+            </filter>
+            <filter id="oof-cyan">
+              <feColorMatrix type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+            </filter>
+          </svg>
+          <div className={styles.screen}>
+            <div className={styles.backdrop} />
+            <div className={styles.picture}>
+              <div className={`${styles.img} ${styles.cyan}`} />
+              <div className={`${styles.img} ${styles.red}`} />
+              <div className={`${styles.img} ${styles.tear} ${styles.tearA}`} />
+              <div className={`${styles.img} ${styles.tear} ${styles.tearB}`} />
+            </div>
+            <canvas ref={noise} className={styles.noise} width={160} height={90} />
+            <div className={styles.roll} />
+          </div>
+        </div>
+      )}
 
       {phase !== "flash" && (
         <section className={styles.panel} aria-live="polite">
