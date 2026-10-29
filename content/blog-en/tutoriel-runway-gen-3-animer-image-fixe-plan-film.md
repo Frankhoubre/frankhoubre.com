@@ -31,7 +31,7 @@ The cleanup started earlier in the year. The ["Deprecated Standalone Tools"](htt
 
 Two subscription changes matter to you. The Unlimited plan stopped being sold on June 1, 2026, replaced by Max. Existing Unlimited subscribers keep it until November 30, 2026, then move to Max at the same monthly price, according to [Runway's transition article](https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max). Separately, there's a credit-free generation mode called Unlimited Mode on the Pro and Max plans, but only on some models, with a slower queue and fewer generations at once.
 
-For anyone animating stills, I think the trade is a good one. Gen-4.5 takes more aspect ratios, more durations and a finer motion prompt. You just have to relearn the settings and redo your credit math.
+For anyone animating stills, I think the trade is a good one. Gen-4.5 takes more aspect ratios, more durations and a finer motion prompt. You just have to relearn the settings and redo your credit math. For the bigger picture on the platform, pricing, Aleph 2.0 and its marketing turn included, read my [full Runway review for 2026](/en/blog/runway-avis-2026).
 
 ## Gen-4.5 image to video: the settings that matter
 

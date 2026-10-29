@@ -1,6 +1,17 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-28 (PLAN_80 F04 publie, J58 toujours decale)
+## Last run: 2026-10-29 (PLAN_80 F05 publie, J58 toujours decale)
+
+### What happened
+- Quatorzieme jour PLAN_80 : ligne F05 `runway-avis-2026` (analyses, avis) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F15 kling-vs-seedance (71), puis F10 et F11 (70). 6 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (habilleuse et deux vestes, rue pavee de nuit) + 10 captures reelles du 29/10.
+- Liens entrants FR et EN : tutoriel-runway-gen-3-animer-image-fixe-plan-film + higgsfield-vs-runway.
+- Runway : page tarifs incoherente sur Gen-4 Turbo (5 ou 6 cr/s), ne pas citer de chiffre unique (utile pour F09 alternatives-runway et F14 dreamina-vs-runway).
+
+## Previous run: 2026-10-28 (PLAN_80 F04 publie, J58 toujours decale)
 
 ### What happened
 - Treizieme jour PLAN_80 : ligne F04 `kling-ai-avis-fiction` (analyses, avis) publiee a la place de J58.

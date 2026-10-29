@@ -31,7 +31,7 @@ Ce nettoyage a commencé plus tôt dans l'année. La page [« Deprecated Standal
 
 Côté abonnement, deux changements comptent pour toi. Le plan Unlimited n'est plus proposé depuis le 1er juin 2026, remplacé par la formule Max. Les anciens abonnés Unlimited le gardent jusqu'au 30 novembre 2026, puis basculent sur Max au même prix mensuel, selon [l'article d'aide sur la transition](https://help.runwayml.com/hc/en-us/articles/52068047744019-Unlimited-plan-is-switching-to-Max). Et un mode de génération sans crédits, appelé Unlimited Mode, existe sur les plans Pro et Max, mais seulement sur certains modèles, avec une file plus lente et moins de rendus simultanés.
 
-Pour quelqu'un qui anime des images fixes, je trouve l'échange plutôt favorable. Gen-4.5 accepte plus de formats, plus de durées et un prompt de mouvement plus fin. Il faut juste réapprendre les réglages et refaire ses calculs de crédits.
+Pour quelqu'un qui anime des images fixes, je trouve l'échange plutôt favorable. Gen-4.5 accepte plus de formats, plus de durées et un prompt de mouvement plus fin. Il faut juste réapprendre les réglages et refaire ses calculs de crédits. Pour un regard plus large sur la plateforme, prix, Aleph 2.0 et virage marketing compris, j'ai publié un [avis complet sur Runway en 2026](/blog/runway-avis-2026).
 
 ## Gen-4.5 en image vers vidéo : les réglages qui comptent
 
