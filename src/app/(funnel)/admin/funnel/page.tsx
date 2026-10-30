@@ -14,6 +14,7 @@ import {
   fmtDate,
   pct,
 } from "@/components/funnel/admin/Widgets";
+import { OPTIN_AB, compareRates, type AbVariant } from "@/lib/funnel/ab";
 import { isAdminSession } from "@/lib/funnel/admin";
 import { FUNNEL_EVENT_LABELS, FUNNEL_PATHS, type FunnelEvent } from "@/lib/funnel/config";
 import { isResendConfigured } from "@/lib/funnel/emails";
@@ -21,6 +22,7 @@ import {
   getFunnelStore,
   isPersistentStoreConfigured,
   lastDays,
+  type AbVariantStats,
   type DayStats,
   type RecentEvent,
   type Subscriber,
@@ -53,6 +55,7 @@ type Data = {
   subscribers: Subscriber[];
   subscriberCount: number;
   recent: RecentEvent[];
+  ab: Record<AbVariant, AbVariantStats>;
 };
 
 async function loadData(period: Period): Promise<Data> {
@@ -67,6 +70,7 @@ async function loadData(period: Period): Promise<Data> {
     subscribers,
     subscriberCount,
     recent,
+    ab,
   ] = await Promise.all([
     store.getDays(lastDays(period)),
     store.getTotals(),
@@ -77,6 +81,7 @@ async function loadData(period: Period): Promise<Data> {
     store.listSubscribers(8),
     store.countSubscribers(),
     store.getRecent(30),
+    store.getAb(),
   ]);
   return {
     days,
@@ -88,7 +93,111 @@ async function loadData(period: Period): Promise<Data> {
     subscribers,
     subscriberCount,
     recent,
+    ab,
   };
+}
+
+function fmtPct(n: number): string {
+  return `${(n * 100).toLocaleString("fr-FR", { maximumFractionDigits: 1 })} %`;
+}
+
+/** Test A/B de la page d'inscription : compteurs par version depuis le début du test. */
+function AbTestPanel({ ab }: { ab: Record<AbVariant, AbVariantStats> }) {
+  const rows = (["a", "b"] as const).map((v) => {
+    const st = ab[v];
+    return {
+      v,
+      visitors: st.uniques.optin_view ?? 0,
+      submits: st.counts.optin_submit ?? 0,
+      subs: st.counts.subscribe ?? 0,
+      skool: st.counts.click_skool ?? 0,
+    };
+  });
+  const [a, b] = rows;
+  const verdict = compareRates(
+    { visitors: a.visitors, conversions: a.subs },
+    { visitors: b.visitors, conversions: b.subs },
+  );
+  const minVisitors = Math.min(a.visitors, b.visitors);
+  let conclusion: string;
+  if (minVisitors < 100) {
+    conclusion = `Trop tôt pour conclure : il faut au moins 100 visiteurs par version${
+      verdict.neededPerVariant
+        ? `, et environ ${verdict.neededPerVariant.toLocaleString("fr-FR")} pour voir un écart de 20 %`
+        : ""
+    }.`;
+  } else if (verdict.probBBeatsA !== null && verdict.probBBeatsA >= 0.95) {
+    conclusion = `B fait mieux que A (probabilité ${fmtPct(verdict.probBBeatsA)}). Vous pouvez garder B et lancer un nouveau test.`;
+  } else if (verdict.probBBeatsA !== null && verdict.probBBeatsA <= 0.05) {
+    conclusion = `A fait mieux que B (probabilité ${fmtPct(1 - verdict.probBBeatsA)}). Gardez A.`;
+  } else {
+    conclusion = `Pas encore d’écart net : B a ${
+      verdict.probBBeatsA === null ? "?" : fmtPct(verdict.probBBeatsA)
+    } de chances de faire mieux que A. On conclut à 95 %.`;
+  }
+
+  return (
+    <Panel
+      index="A/B"
+      title={OPTIN_AB.active ? `Test A/B de la page d’inscription · depuis le ${OPTIN_AB.startedAt}` : "Test A/B arrêté"}
+      id="ab-title"
+      className="mt-6"
+      actions={
+        <>
+          <a href={`${FUNNEL_PATHS.optin}?${OPTIN_AB.forceParam}=a`} target="_blank" rel="noreferrer" className="nav-link !min-h-0">
+            Voir A ↗
+          </a>
+          <a href={`${FUNNEL_PATHS.optin}?${OPTIN_AB.forceParam}=b`} target="_blank" rel="noreferrer" className="nav-link !min-h-0">
+            Voir B ↗
+          </a>
+        </>
+      }
+    >
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[720px] text-sm">
+          <thead>
+            <tr>
+              <Th>Version</Th>
+              <Th right>Visiteurs uniques</Th>
+              <Th right>Formulaires</Th>
+              <Th right>Nouveaux inscrits</Th>
+              <Th right>Taux d’inscription</Th>
+              <Th right>Clics AI Studios</Th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.v} className="border-t border-line align-top">
+                <td className="py-3 pr-4">
+                  <p className="text-cream">{OPTIN_AB.variants[r.v].name}</p>
+                  <p className="mt-1 max-w-md text-[13px] leading-snug text-fog">{OPTIN_AB.variants[r.v].summary}</p>
+                </td>
+                <td className="py-3 pr-4 text-right tabular-nums text-cream">{r.visitors}</td>
+                <td className="py-3 pr-4 text-right tabular-nums text-cream">{r.submits}</td>
+                <td className="py-3 pr-4 text-right tabular-nums text-cream">{r.subs}</td>
+                <td className="py-3 pr-4 text-right tabular-nums text-cream">{pct(r.subs, r.visitors)}</td>
+                <td className="py-3 text-right tabular-nums text-cream">{r.skool}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-5 text-sm leading-relaxed text-stone">
+        {verdict.lift !== null && minVisitors > 0 ? (
+          <span className="text-cream">
+            B {verdict.lift >= 0 ? "+" : ""}
+            {fmtPct(verdict.lift)} par rapport à A.{" "}
+          </span>
+        ) : null}
+        {conclusion}
+      </p>
+      <p className="meta mt-3 text-[10px] normal-case tracking-[0.04em] text-fog">
+        Moitié des visiteurs tirés au sort sur chaque version, gardée 30 jours par cookie. Les robots et les
+        inscriptions ManyChat ne comptent pas. Les clics AI Studios sont ceux des inscrits de chaque version sur la
+        page formation.
+      </p>
+    </Panel>
+  );
 }
 
 function Overview({ period, data }: { period: Period; data: Data }) {
@@ -177,6 +286,8 @@ function Overview({ period, data }: { period: Period; data: Data }) {
           <KpiTile label="Inscrits en base" value={data.subscriberCount} hint="depuis le début" />
         </div>
       </div>
+
+      <AbTestPanel ab={data.ab} />
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
         <Panel index="01" title={`Parcours sur ${period} jours`} id="funnel-steps">

@@ -1,3 +1,4 @@
+import { readVariantCookie } from "@/lib/funnel/ab";
 import type { FunnelEvent } from "@/lib/funnel/config";
 
 export const UTM_STORAGE_KEY = "fh-funnel-utm";
@@ -48,6 +49,7 @@ export function sendFunnelEvent(event: FunnelEvent, detail?: string) {
     referrer: utm.referrer,
     utmSource: utm.utmSource,
     detail,
+    variant: readVariantCookie(),
   });
   try {
     if (navigator.sendBeacon) {

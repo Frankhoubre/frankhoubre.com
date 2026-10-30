@@ -6,6 +6,8 @@
 
 export const FUNNEL_PATHS = {
   optin: "/formation-ia-gratuite",
+  /** Version B du test A/B, servie par réécriture (voir src/lib/funnel/ab.ts). */
+  optinB: "/formation-ia-gratuite/b",
   course: "/formation-ia-gratuite/cours",
   unsubscribed: "/formation-ia-gratuite/desinscription",
   admin: "/admin/funnel",

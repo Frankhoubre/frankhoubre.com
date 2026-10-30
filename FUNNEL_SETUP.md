@@ -77,7 +77,14 @@ déjà active ne reçoit pas une deuxième séquence.
 
 Le webhook existe déjà dans Resend (voir tableau). Son signing secret est dans
 `RESEND_WEBHOOK_SECRET` sur Vercel. Le suivi des clics
-et des ouvertures a été activé sur le domaine frankhoubre.com à sa création.
+et des ouvertures n'était en fait PAS actif jusqu'au 2026-10-30 (0 ouverture
+sur ~2 000 emails délivrés) : Resend l'exige désormais via un sous-domaine de
+suivi. Activé le 2026-10-30 : sous-domaine `links.frankhoubre.com` (CNAME
+`links` → `links2.resend-dns.com` et CAA `0 issue "amazon.com"` ajoutés dans
+le DNS Vercel), clics et ouvertures cochés dans Resend → Domains →
+frankhoubre.com → Configuration. Les événements d'ouverture visibles avant
+cette date dans le webhook venaient d'Imaginode (même compte Resend) et sont
+écartés car ils n'ont pas le tag `funnel=formation-ia-gratuite`.
 
 ## Mesure du funnel
 

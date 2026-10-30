@@ -1,4 +1,5 @@
 import { Redis } from "@upstash/redis";
+import { OPTIN_AB, type AbVariant } from "@/lib/funnel/ab";
 import {
   FUNNEL_EVENTS,
   UNIQUE_EVENTS,
@@ -27,6 +28,8 @@ export type Subscriber = {
   utmMedium?: string;
   utmCampaign?: string;
   utmContent?: string;
+  /** Version de la page d'inscription vue au moment de l'inscription (test A/B). */
+  abVariant?: string;
   /** Emails programmés chez Resend (annulés en cas de désinscription). */
   scheduledEmailIds: string[];
   /** Suivi de chaque email de la séquence, par étape (acces, jour-2, …). */
@@ -68,6 +71,12 @@ export type DayStats = {
   uniques: Partial<Record<FunnelEvent, number>>;
 };
 
+/** Compteurs d'une version du test A/B, depuis le début du test. */
+export type AbVariantStats = {
+  counts: Partial<Record<FunnelEvent, number>>;
+  uniques: Partial<Record<FunnelEvent, number>>;
+};
+
 export type RecentEvent = {
   at: string;
   event: FunnelEvent;
@@ -84,7 +93,11 @@ export type FunnelStore = {
     detail?: string;
     /** Compte sans alimenter le fil des événements récents (crawlers). */
     quiet?: boolean;
+    /** Version du test A/B vue par le visiteur (compteurs du test en plus). */
+    variant?: AbVariant;
   }): Promise<void>;
+  /** Compteurs du test A/B en cours, par version. */
+  getAb(): Promise<Record<AbVariant, AbVariantStats>>;
   getSubscriber(email: string): Promise<Subscriber | null>;
   saveSubscriber(sub: Subscriber): Promise<void>;
   /** Inscrits du plus récent au plus ancien, avec décalage pour la pagination. */
@@ -163,7 +176,11 @@ const KEY = {
   subs: "funnel:subs",
   recent: "funnel:recent",
   rate: (k: string) => `funnel:rate:${k}`,
+  ab: (test: string) => `funnel:ab:${test}`,
+  abUniq: (test: string, v: string, e: string) => `funnel:abu:${test}:${v}:${e}`,
 };
+
+const AB_TTL_S = 60 * 60 * 24 * 400;
 
 const RECENT_MAX = 200;
 
@@ -204,13 +221,22 @@ function redisFromEnv(): Redis | null {
 
 function createRedisStore(redis: Redis): FunnelStore {
   return {
-    async recordEvent({ event, date, visitorHash, source, detail, quiet }) {
+    async recordEvent({ event, date, visitorHash, source, detail, quiet, variant }) {
       const p = redis.pipeline();
       p.hincrby(KEY.day(date), event, 1);
       p.hincrby(KEY.totals, event, 1);
       if (visitorHash && UNIQUE_EVENTS.includes(event)) {
         p.pfadd(KEY.uniq(date, event), visitorHash);
         p.expire(KEY.uniq(date, event), 60 * 60 * 24 * 400);
+      }
+      if (variant && OPTIN_AB.active) {
+        p.hincrby(KEY.ab(OPTIN_AB.id), `${variant}:${event}`, 1);
+        p.expire(KEY.ab(OPTIN_AB.id), AB_TTL_S);
+        if (visitorHash && UNIQUE_EVENTS.includes(event)) {
+          const k = KEY.abUniq(OPTIN_AB.id, variant, event);
+          p.pfadd(k, visitorHash);
+          p.expire(k, AB_TTL_S);
+        }
       }
       if (source) p.hincrby(KEY.src(event), source, 1);
       if (quiet) {
@@ -226,6 +252,30 @@ function createRedisStore(redis: Redis): FunnelStore {
       p.lpush(KEY.recent, JSON.stringify(entry));
       p.ltrim(KEY.recent, 0, RECENT_MAX - 1);
       await p.exec();
+    },
+
+    async getAb() {
+      const p = redis.pipeline();
+      p.hgetall(KEY.ab(OPTIN_AB.id));
+      for (const v of ["a", "b"] as const) {
+        for (const e of UNIQUE_EVENTS) p.pfcount(KEY.abUniq(OPTIN_AB.id, v, e));
+      }
+      const res = await p.exec<unknown[]>();
+      const flat = toNumberMap(res[0] as Record<string, unknown> | null);
+      const out = {} as Record<AbVariant, AbVariantStats>;
+      (["a", "b"] as const).forEach((v, i) => {
+        const counts: Record<string, number> = {};
+        for (const [k, n] of Object.entries(flat)) {
+          if (k.startsWith(`${v}:`)) counts[k.slice(2)] = n;
+        }
+        const uniques: Partial<Record<FunnelEvent, number>> = {};
+        UNIQUE_EVENTS.forEach((e, j) => {
+          const n = Number(res[1 + i * UNIQUE_EVENTS.length + j] ?? 0);
+          if (n) uniques[e] = n;
+        });
+        out[v] = { counts: pickEventCounts(counts), uniques };
+      });
+      return out;
     },
 
     async getSubscriber(email) {
@@ -414,6 +464,7 @@ type MemoryState = {
   sublogs: Map<string, SubscriberLogEntry[]>;
   recent: RecentEvent[];
   rate: Map<string, { n: number; exp: number }>;
+  ab?: Record<string, number>;
 };
 
 function createMemoryStore(): FunnelStore {
@@ -430,7 +481,17 @@ function createMemoryStore(): FunnelStore {
   });
 
   return {
-    async recordEvent({ event, date, visitorHash, source, detail, quiet }) {
+    async recordEvent({ event, date, visitorHash, source, detail, quiet, variant }) {
+      if (variant && OPTIN_AB.active) {
+        const ab = (state.ab ??= {});
+        ab[`${variant}:${event}`] = (ab[`${variant}:${event}`] ?? 0) + 1;
+        if (visitorHash && UNIQUE_EVENTS.includes(event)) {
+          const k = KEY.abUniq(OPTIN_AB.id, variant, event);
+          const set = state.uniques.get(k) ?? new Set<string>();
+          set.add(visitorHash);
+          state.uniques.set(k, set);
+        }
+      }
       const day = state.days.get(date) ?? {};
       day[event] = (day[event] ?? 0) + 1;
       state.days.set(date, day);
@@ -454,6 +515,22 @@ function createMemoryStore(): FunnelStore {
         ...(detail ? { detail } : {}),
       });
       state.recent.length = Math.min(state.recent.length, RECENT_MAX);
+    },
+    async getAb() {
+      const out = {} as Record<AbVariant, AbVariantStats>;
+      for (const v of ["a", "b"] as const) {
+        const counts: Record<string, number> = {};
+        for (const [k, n] of Object.entries(state.ab ?? {})) {
+          if (k.startsWith(`${v}:`)) counts[k.slice(2)] = n;
+        }
+        const uniques: Partial<Record<FunnelEvent, number>> = {};
+        for (const e of UNIQUE_EVENTS) {
+          const n = state.uniques.get(KEY.abUniq(OPTIN_AB.id, v, e))?.size ?? 0;
+          if (n) uniques[e] = n;
+        }
+        out[v] = { counts: pickEventCounts(counts), uniques };
+      }
+      return out;
     },
     async getSubscriber(email) {
       return state.subs.get(normalizeEmail(email)) ?? null;

@@ -1,5 +1,6 @@
 import { NextResponse, after, type NextRequest } from "next/server";
 import { z } from "zod";
+import { OPTIN_AB, parseVariant } from "@/lib/funnel/ab";
 import { FUNNEL_PATHS, SUBSCRIBED_COOKIE } from "@/lib/funnel/config";
 import {
   isResendConfigured,
@@ -102,7 +103,10 @@ export async function POST(req: NextRequest) {
     ownHost: req.nextUrl.hostname,
   });
 
-  await store.recordEvent({ event: "optin_submit", date, source });
+  // Version du test A/B vue sur la page d'inscription (absente pour ManyChat).
+  const variant = OPTIN_AB.active ? parseVariant(req.cookies.get(OPTIN_AB.cookie)?.value) : undefined;
+
+  await store.recordEvent({ event: "optin_submit", date, source, variant });
 
   const existing = await store.getSubscriber(input.email);
   const isRepeat = Boolean(existing);
@@ -143,6 +147,7 @@ export async function POST(req: NextRequest) {
     utmMedium: cleanShort(input.utmMedium) ?? existing?.utmMedium,
     utmCampaign: cleanShort(input.utmCampaign) ?? existing?.utmCampaign,
     utmContent: cleanShort(input.utmContent) ?? existing?.utmContent,
+    abVariant: existing?.abVariant ?? (variant ? `${OPTIN_AB.id}:${variant}` : undefined),
     scheduledEmailIds: startSequence ? [] : (existing?.scheduledEmailIds ?? []),
     emails,
   };
@@ -162,6 +167,7 @@ export async function POST(req: NextRequest) {
     date,
     source,
     detail: email,
+    variant,
   });
 
   if (startSequence && isResendConfigured()) {

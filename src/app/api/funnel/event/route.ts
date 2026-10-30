@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { z } from "zod";
+import { AB_VARIANTS } from "@/lib/funnel/ab";
 import { CLIENT_EVENTS, type FunnelEvent } from "@/lib/funnel/config";
 import { clientIp, looksLikeBot, resolveSource } from "@/lib/funnel/request";
 import { dailyVisitorHash } from "@/lib/funnel/security";
@@ -12,6 +13,7 @@ const bodySchema = z.object({
   referrer: z.string().max(500).optional(),
   utmSource: z.string().max(80).optional(),
   detail: z.string().max(120).optional(),
+  variant: z.enum(AB_VARIANTS).optional(),
 });
 
 /**
@@ -37,13 +39,14 @@ export async function POST(req: NextRequest) {
   if (hits > 120) return new NextResponse(null, { status: 204 });
 
   const date = funnelDateKey();
-  const { event, referrer, utmSource, detail } = parsed.data;
+  const { event, referrer, utmSource, detail, variant } = parsed.data;
   await store.recordEvent({
     event,
     date,
     visitorHash: dailyVisitorHash(ip, ua ?? "", date),
     source: resolveSource({ utmSource, referrer, ownHost: req.nextUrl.hostname }),
     detail,
+    variant,
   });
   return new NextResponse(null, { status: 204 });
 }
