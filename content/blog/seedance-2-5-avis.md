@@ -164,7 +164,7 @@ C'est ce dernier cas qui nous concerne, et mon conflit d'intérêts est ici le p
 
 Si tu fais de la pub de 10 secondes ou des tests de look, la 2.0 Mini coûte 0,38 $ les 5 secondes en 720p, trois fois moins que la 2.5. J'avais présenté [la Seedance 2.0 Mini à sa sortie](/blog/seedance-2-mini-bytedance-video-rapide-juin-2026) : pour un plan isolé sans enjeu de continuité, elle suffit.
 
-Si ton film part de vrais comédiens, le blocage des visages réels te ralentira. Compare avec Kling et Veo, que j'ai opposés plan par plan dans [Kling ou Veo 3 selon le plan](/blog/kling-vs-veo-3-choisir-par-plan).
+Si ton film part de vrais comédiens, le blocage des visages réels te ralentira. J'ai mis Seedance 2.5 face à Kling 4.0 critère par critère dans [Kling vs Seedance](/blog/kling-vs-seedance). Compare aussi avec Kling et Veo, que j'ai opposés plan par plan dans [Kling ou Veo 3 selon le plan](/blog/kling-vs-veo-3-choisir-par-plan).
 
 Si tu veux un seul abonnement pour plusieurs modèles, Higgsfield propose Seedance 2.5 à côté d'une vingtaine d'autres moteurs, mais pas sur son offre d'entrée selon sa grille du 16 octobre. J'ai lu ses conditions en détail dans [mon avis sur Higgsfield](/blog/higgsfield-avis-realisateur).
 

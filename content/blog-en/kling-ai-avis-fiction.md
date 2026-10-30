@@ -150,7 +150,7 @@ My take: output quality is up for debate, billing much less so, since Kling's ow
 
 ## Kling vs Seedance, Veo and ScreenWeaver
 
-ScreenWeaver, which I co-founded, gives you Kling, Seedance and Veo in the same project. Keep that conflict of interest in mind as you read the table.
+ScreenWeaver, which I co-founded, gives you Kling, Seedance and Veo in the same project. Keep that conflict of interest in mind as you read the table. For the engine-against-engine match, scene by scene, I compared [Kling and Seedance on a fiction scene](/en/blog/kling-vs-seedance).
 
 <ComparisonTable caption="Kling AI, Google Flow and ScreenWeaver for a short fiction film" source="https://kling.ai/app/membership" checkedOn="2026-10-28">
 

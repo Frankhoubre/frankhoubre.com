@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-29T09:02:24.315Z
+> Generated: 2026-10-30T09:15:39.328Z
 
-## FR : 347 articles (/blog/<slug>)
+## FR : 348 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 53, business 31, analyses 26, comparatifs 25, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 53, business 31, analyses 26, comparatifs 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-30 | comparatifs | `kling-vs-seedance` | Kling vs Seedance : quel modèle pour une scène de fiction ? |
 | 2026-10-29 | analyses | `runway-avis-2026` | Avis Runway 2026 : Gen-4.5 et Aleph vus par un réalisateur |
 | 2026-10-28 | analyses | `kling-ai-avis-fiction` | Avis Kling AI 2026 : Kling 4.0 vaut-il le coup en fiction ? |
 | 2026-10-27 | analyses | `google-flow-avis` | Avis Google Flow 2026 : un court métrage avec Veo 3.1 ? |
@@ -359,12 +360,13 @@ Categories: tutoriels 191, actualite 53, business 31, analyses 26, comparatifs 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 262 articles (/en/blog/<slug>)
+## EN : 263 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, business 21, comparatifs 20, analyses 17, actualite 14, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 21, business 21, analyses 17, actualite 14, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-30 | comparatifs | `kling-vs-seedance` | Kling vs Seedance: which model for a fiction scene? |
 | 2026-10-29 | analyses | `runway-avis-2026` | Runway Review 2026: Gen-4.5 and Aleph From a Director |
 | 2026-10-28 | analyses | `kling-ai-avis-fiction` | Kling AI Review 2026: Is Kling 4.0 Worth It for Fiction? |
 | 2026-10-27 | analyses | `google-flow-avis` | Google Flow Review 2026: A Short Film with Veo 3.1? |

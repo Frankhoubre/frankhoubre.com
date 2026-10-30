@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-29 (PLAN_80 F05 publie, J58 toujours decale)
+## Last run: 2026-10-30 (PLAN_80 F15 publie, J58 toujours decale)
+
+### What happened
+- Quinzieme jour PLAN_80 : ligne F15 `kling-vs-seedance` (comparatifs, vs) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F10 alternatives-google-flow (70), F11 alternatives-kling-fiction (70), puis F09, F16, F14. 5 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (salle d'escrime en hiver) + 10 captures reelles du 30/10.
+- Kling a monte Premier (144,99 $) et Ultra+ (432,99 $) au 1er mois depuis le 28/10 ; Dreamina tarifs : modale de connexion bloque l'onglet mensuel en headless.
+
+## Previous run: 2026-10-29 (PLAN_80 F05 publie, J58 toujours decale)
 
 ### What happened
 - Quatorzieme jour PLAN_80 : ligne F05 `runway-avis-2026` (analyses, avis) publiee a la place de J58.

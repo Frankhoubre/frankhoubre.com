@@ -165,7 +165,7 @@ That last case is ours, and it's where my conflict of interest is strongest. In 
 
 If you make 10-second ads or look tests, 2.0 Mini costs $0.38 for 5 seconds at 720p, a third of 2.5. I covered [Seedance 2.0 Mini when it launched](/en/blog/seedance-2-mini-bytedance-video-rapide-juin-2026): for a one-off shot with no continuity at stake, it's enough.
 
-If your film starts from real actors, the real-face block will slow you down. Look at the other engines in [my roundup of AI video tools](/en/blog/meilleurs-outils-ia-video) before you commit.
+If your film starts from real actors, the real-face block will slow you down. I put Seedance 2.5 against Kling 4.0 criterion by criterion in [Kling vs Seedance](/en/blog/kling-vs-seedance). Look at the other engines in [my roundup of AI video tools](/en/blog/meilleurs-outils-ia-video) before you commit.
 
 If you want one subscription for several models, Higgsfield offers Seedance 2.5 next to about twenty other engines, though not on its entry plan according to its October 16 pricing. I read its terms closely in [my Higgsfield review](/en/blog/higgsfield-avis-realisateur).
 

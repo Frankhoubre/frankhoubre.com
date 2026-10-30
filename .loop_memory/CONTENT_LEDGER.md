@@ -40,6 +40,23 @@ article block goes below this line.
 ```
 
 <!-- New article blocks below, newest first -->
+### 2026-10-30 : Kling vs Seedance : quel modèle pour une scène de fiction ?
+- slug: kling-vs-seedance
+- locale: fr + en (meme slug, publies le meme jour)
+- url: https://frankhoubre.com/blog/kling-vs-seedance
+- url_en: https://frankhoubre.com/en/blog/kling-vs-seedance
+- category: comparatifs
+- type: evergreen (comparatif PLAN_80 F15)
+- search_intent: commerciale (choisir un modele video pour une scene de fiction)
+- primary_keyword: kling vs seedance
+- secondary_keywords: seedance vs kling, kling 4 vs seedance 2.5, kling 3 vs seedance 2.5, seedance vs kling (EN)
+- sources: kling.ai (guide 4.0, guide Video 3.0, element library, release notes, membership), seed.bytedance.com seedance2_5, docs.byteplus.com ModelArk 2607688 et 1544106, runway.com/pricing, trustpilot klingai, domoai.app blog, screenweaver.ai/fr ; tout releve le 2026-10-30
+- internal_links: -> garder-meme-personnage-video-ia, kling-ai-avis-fiction, combien-coute-court-metrage-ia-2026, seedance-2-5-avis, kling-vs-veo-3-choisir-par-plan, meilleure-ia-anime-2026 (EN : runway-avis-2026 a la place de kling-vs-veo-3) ; entrants : kling-ai-avis-fiction, seedance-2-5-avis (FR et EN)
+- cta: CtaScreenWeaver (destination script) ; aucun lien affilie
+- cannibalization_notes: kling-vs-veo-3 = autre duel, wan-27 = news Wan 2.7, avis Kling et Seedance = avis mono-outil ; aucune page « kling vs seedance »
+- editorial_decisions: conflit d'interets declare ; aucun test ; Runway comme monnaie commune ; mode Draft chiffre avec hypothese de facturation dite ; Dreamina non chiffre (onglet mensuel non capture)
+- checker: pass (seo_audit 0 issue sur le slug, editorial_audit aucun flag, lint 0 err, typecheck OK, build EXIT=0, scan-anti-ia OK FR et EN, QA PLAN_80 91/100)
+- published_commit: (voir commit content(PLAN_80 F15))
 ### 2026-10-28 : Avis Kling AI 2026 : Kling 4.0 vaut-il le coup en fiction ?
 - slug: kling-ai-avis-fiction
 - locale: fr + en (meme slug, publies le meme jour)
