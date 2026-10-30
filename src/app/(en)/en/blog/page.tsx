@@ -58,8 +58,8 @@ export default function EnBlogPage() {
         kicker="Journal"
         title={
           <>
-            Blog
-            <span className="block text-fog">AI filmmaking, in the trenches</span>
+            blog
+            <span className="or block">AI filmmaking, in the trenches</span>
           </>
         }
         lede="Concrete workflows and honest analysis to make AI images and videos that actually look cinematic."
@@ -80,7 +80,7 @@ export default function EnBlogPage() {
         {posts.length === 0 ? (
           <div className="border border-line p-8 sm:p-12">
             <p className="meta">Coming soon</p>
-            <h2 className="h-block mt-4 text-cream">New articles, every day</h2>
+            <h2 className="h-block mt-4 text-cream">new articles, <span className="or">every day.</span></h2>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-fog">
               The English blog is just getting started. A fresh AI news article
               lands here daily. In the meantime, the full library lives on the

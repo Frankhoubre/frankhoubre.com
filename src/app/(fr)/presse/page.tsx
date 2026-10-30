@@ -133,8 +133,8 @@ export default function PressePage() {
           kicker="Kit presse"
           title={
             <>
-              Frank Houbre
-              <span className="block text-fog">formateur IA et réalisateur IA</span>
+              frank houbre
+              <span className="or block">formateur IA et réalisateur IA</span>
             </>
           }
           lede="Tout ce dont un journaliste, un organisateur d’événement ou un partenaire a besoin : biographies prêtes à copier, visuels libres d’usage éditorial, distinctions vérifiables et contact direct."

@@ -66,8 +66,8 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
         kicker="Journal IA"
         title={
           <>
-            Blog
-            <span className="block text-fog">cinéma, IA et production</span>
+            blog
+            <span className="or block">cinéma, IA et production</span>
           </>
         }
         lede={`Idées, tutoriels et actualités signés ${siteName}. Utilisez la recherche et les catégories pour parcourir les articles publiés.`}

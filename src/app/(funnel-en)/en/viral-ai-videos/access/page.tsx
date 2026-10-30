@@ -40,7 +40,7 @@ const HERO = {
 
 function NoAccess() {
   return (
-    <FunnelFrame locale="en">
+    <FunnelFrame locale="en" theme="noir">
       <div className="container-x py-16 sm:py-24">
         <div className="max-w-xl border border-line-strong p-6 sm:p-8">
           <p className="meta">Viral AI videos</p>
@@ -79,7 +79,7 @@ export default async function ViralAiVideosAccessPage({
   const banner = welcome === "1" ? c.welcome : welcome === "back" ? c.welcomeBack : null;
 
   return (
-    <FunnelFrame locale="en">
+    <FunnelFrame locale="en" theme="noir">
       <BuzzBeacon event="buzz_access_view" />
       <RevealObserver />
 

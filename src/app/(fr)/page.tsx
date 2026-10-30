@@ -345,7 +345,7 @@ export default function HomePage() {
             </div>
             <div className="col-span-12 lg:col-span-6">
               <h2 id="positionnement" className="h-section reveal">
-                Formation IA, création vidéo et réalisation : un seul métier.
+                formation IA, création vidéo et réalisation&nbsp;: <span className="or">un seul métier.</span>
               </h2>
               <div className="reveal mt-8 space-y-5 text-[1.05rem] leading-relaxed text-fog" data-delay="0.1">
                 <p>
@@ -411,7 +411,7 @@ export default function HomePage() {
             index="03"
             kicker="Le site"
             id="le-site"
-            title="Ce que vous trouverez sur frankhoubre.com"
+            title={<>ce que vous trouverez <span className="or">sur frankhoubre.com.</span></>}
             lede="Une base solide pour comprendre le positionnement, apprendre une méthode et explorer des projets de réalisation IA."
           />
           <ol className="mt-14 border-t border-line">
@@ -441,7 +441,7 @@ export default function HomePage() {
           <div className="grid-12 gap-y-14">
             <div className="col-span-12 lg:col-span-5">
               <p className="meta"><span className="meta-strong">04</span> &nbsp;/&nbsp; Explorer par thème</p>
-              <h2 id="explorer" className="h-block mt-5 text-cream">Les catégories du blog</h2>
+              <h2 id="explorer" className="h-block mt-5 text-cream">les catégories <span className="or">du blog.</span></h2>
               <p className="mt-3 text-sm leading-relaxed text-fog">
                 Chaque catégorie regroupe les articles publiés sur le sujet, du plus récent au plus
                 ancien.
@@ -462,7 +462,7 @@ export default function HomePage() {
             </div>
             <div className="col-span-12 lg:col-span-5 lg:col-start-8">
               <p className="meta">Outils IA gratuits</p>
-              <h2 className="h-block mt-5 text-cream">Des outils pour produire plus vite</h2>
+              <h2 className="h-block mt-5 text-cream">des outils pour <span className="or">produire plus vite.</span></h2>
               <p className="mt-3 text-sm leading-relaxed text-fog">
                 Générateur de prompts cinéma, storyboard PDF, calculateur de budget, annuaires
                 d’outils image et audio : tout est gratuit et fonctionne dans le navigateur.
@@ -489,7 +489,7 @@ export default function HomePage() {
             index="05"
             kicker="Réalisation"
             id="projets-titre"
-            title="Projets de réalisation IA"
+            title={<>projets de <span className="or">réalisation IA.</span></>}
             lede="Trois exemples visibles de création IA orientée narration, direction artistique et mise en scène. Le lecteur vidéo ne se charge qu’au clic."
             aside={<p className="meta">{films.length} films · 2024 – 2026</p>}
           />
@@ -563,7 +563,7 @@ export default function HomePage() {
       {/* 07 · Approche */}
       <section className="section border-t border-line" aria-labelledby="approche">
         <div className="container-x">
-          <SectionHeader index="07" kicker="Approche" id="approche" title="Apprendre, créer, se positionner" />
+          <SectionHeader index="07" kicker="Approche" id="approche" title={<>apprendre, créer, <span className="or">se positionner.</span></>} />
           <div className="mt-14 grid gap-10 border-t border-line pt-10 md:grid-cols-3 md:gap-8">
             {approach.map((item, i) => (
               <article key={item.kicker} className="reveal" data-delay={(0.08 * i).toFixed(2)}>
@@ -583,7 +583,7 @@ export default function HomePage() {
             <div className="col-span-12 lg:col-span-4">
               <p className="meta"><span className="meta-strong">08</span> &nbsp;/&nbsp; FAQ</p>
               <h2 id="faq-titre" className="h-section mt-5">
-                Questions fréquentes sur Frank Houbre et la formation IA
+                questions fréquentes sur Frank Houbre et <span className="or">la formation IA.</span>
               </h2>
               <p className="mt-5 max-w-sm text-sm leading-relaxed text-fog">
                 Quelques réponses directes pour clarifier le positionnement du site et les sujets

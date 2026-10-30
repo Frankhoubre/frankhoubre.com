@@ -58,7 +58,7 @@ export default function ContactPage() {
       <PageHeader
         index="06"
         kicker="Contact"
-        title="Parlons de votre projet."
+        title={<>parlons de <span className="or">votre projet.</span></>}
         lede="Une question, un besoin, une mission ? Un seul point d’entrée, une réponse sous 48 h ouvrées."
         aside={
           <ul className="meta space-y-1 lg:text-right">

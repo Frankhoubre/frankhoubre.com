@@ -130,7 +130,7 @@ export default function PrestationPage() {
         <div className="container-x relative z-[4] flex flex-1 flex-col justify-end pb-12 pt-[calc(var(--header-h)+4rem)] sm:pb-16">
           <p className="meta meta-strong reveal">05 / Prestation conseil IA</p>
           <h1 id="prestation-title" className="display display-md reveal mt-6 max-w-5xl normal-case leading-[0.98] text-cream" data-delay="0.1">
-            J’accompagne les entreprises et boîtes de prod pour optimiser leur production avec l’IA.
+            j’accompagne les entreprises et boîtes de prod pour <span className="or">optimiser leur production avec l’IA.</span>
           </h1>
           <div className="grid-12 mt-10 gap-y-8 border-t border-line pt-8">
             <p className="lede reveal col-span-12 lg:col-span-6" data-delay="0.2">
@@ -160,7 +160,7 @@ export default function PrestationPage() {
             index="01"
             kicker="Une prestation orientée performance"
             id="leviers"
-            title="Trois leviers, un objectif : des gains mesurables."
+            title={<>trois leviers, un objectif : <span className="or">des gains mesurables.</span></>}
             lede="Je travaille avec des équipes dirigeantes, des studios, des agences et des boîtes de production qui veulent intégrer l’IA sans improvisation. L’accompagnement se concentre sur les décisions qui ont un impact direct sur les délais, le budget et la qualité."
           />
           <ul className="mt-14 grid gap-10 border-t border-line pt-10 md:grid-cols-3 md:gap-8">
@@ -192,7 +192,7 @@ export default function PrestationPage() {
             </div>
             <div className="col-span-12 lg:col-span-7 lg:col-start-6">
               <p className="meta"><span className="meta-strong">02</span> &nbsp;/&nbsp; Ce que comprend la mission</p>
-              <h2 id="mission" className="h-section mt-5">Conseil stratégique et exécution terrain</h2>
+              <h2 id="mission" className="h-section mt-5">conseil stratégique <span className="or">et exécution terrain.</span></h2>
               <ol className="mt-10 border-t border-line">
                 {interventions.map((item, i) => (
                   <li key={item} className="reveal grid grid-cols-[2.5rem_1fr] gap-4 border-b border-line py-4 text-[15px] text-stone" data-delay={(0.05 * i).toFixed(2)}>
@@ -223,7 +223,7 @@ export default function PrestationPage() {
           <div className="grid-12 items-end gap-y-10">
             <div className="col-span-12 lg:col-span-8">
               <p className="meta"><span className="meta-strong">03</span> &nbsp;/&nbsp; Demande de mission</p>
-              <h2 id="demande" className="h-section mt-5">Parlons de vos enjeux de production IA.</h2>
+              <h2 id="demande" className="h-section mt-5">parlons de vos enjeux <span className="or">de production IA.</span></h2>
               <p className="mt-6 max-w-2xl text-[1.05rem] leading-relaxed text-fog">
                 Si vous cherchez un accompagnement senior, structuré et orienté ROI, je peux vous aider à
                 cadrer et accélérer votre exécution.

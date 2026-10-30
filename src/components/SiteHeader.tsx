@@ -57,8 +57,9 @@ export function SiteHeader() {
   return (
     <header className={`site-header ${solid ? "is-solid" : ""}`}>
       <div className="container-x flex h-[var(--header-h)] items-center justify-between gap-6">
-        <Link href={homeHref} className="group flex shrink-0 items-baseline gap-3 whitespace-nowrap no-underline" aria-label={siteName}>
-          <span className="display text-[13px] font-semibold tracking-[0.2em] text-cream">
+        <Link href={homeHref} className="group flex shrink-0 items-center gap-3 whitespace-nowrap no-underline" aria-label={siteName}>
+          <span className="inline-flex items-center gap-2 font-[family-name:var(--font-display)] text-[17px] font-bold lowercase tracking-[-0.04em] text-cream">
+            <span className="h-1.5 w-1.5 rounded-full bg-amber shadow-[0_0_10px_rgb(255_210_70/0.9)]" aria-hidden />
             {siteName}
           </span>
           <span className="meta hidden text-[10px] text-fog transition-colors duration-200 group-hover:text-stone md:inline">

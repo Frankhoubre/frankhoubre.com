@@ -176,8 +176,8 @@ export default function LiensPage() {
         kicker="Hub officiel"
         title={
           <>
-            Liens
-            <span className="block text-fog">outils, podcast, réseaux</span>
+            liens
+            <span className="or block">outils, podcast, réseaux</span>
           </>
         }
         lede="Mes outils utilisés au quotidien, mes canaux de diffusion et les ressources pour apprendre à créer des images et vidéos IA de façon crédible, en un seul endroit."

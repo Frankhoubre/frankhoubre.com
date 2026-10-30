@@ -167,8 +167,8 @@ export default function AboutPage() {
           kicker="À propos"
           title={
             <>
-              Frank Houbre
-              <span className="block text-fog">formateur IA et réalisateur IA</span>
+              frank houbre
+              <span className="or block">formateur IA et réalisateur IA</span>
             </>
           }
           lede="Entrepreneur et créateur : la compréhension technique des outils, la pédagogie appliquée à la production, et une exigence de mise en scène inspirée du cinéma."
@@ -236,7 +236,7 @@ export default function AboutPage() {
         {/* Trois métiers */}
         <section aria-labelledby="positionnement" className="section border-t border-line">
           <div className="container-x">
-            <SectionHeader index="01" kicker="Trois métiers" id="positionnement" title="Formateur, réalisateur, entrepreneur" />
+            <SectionHeader index="01" kicker="Trois métiers" id="positionnement" title={<>formateur, réalisateur, <span className="or">entrepreneur.</span></>} />
             <div className="mt-14 grid gap-10 border-t border-line pt-10 lg:grid-cols-3 lg:gap-8">
               {roles.map((r) => (
                 <article key={r.n}>
@@ -268,7 +268,7 @@ export default function AboutPage() {
                 </ol>
               </div>
               <div className="col-span-12 lg:col-span-8 lg:col-start-5">
-                <h2 id="parcours" className="h-section">De la musique à la mise en scène par l’IA</h2>
+                <h2 id="parcours" className="h-section">de la musique <span className="or">à la mise en scène par l’IA.</span></h2>
                 <div className="prose-cinema mt-8">
                   <p>
                     Son parcours débute dans la musique. Guitariste passionné, il commence très jeune à
@@ -328,7 +328,7 @@ export default function AboutPage() {
                 <p className="meta"><span className="meta-strong">03</span> &nbsp;/&nbsp; Projets phares</p>
               </div>
               <div className="col-span-12 lg:col-span-8 lg:col-start-5">
-                <h2 id="projets-phares" className="h-section">Former, outiller, réaliser</h2>
+                <h2 id="projets-phares" className="h-section">former, outiller, <span className="or">réaliser.</span></h2>
                 <div className="prose-cinema mt-8">
                   <p>
                     À partir des années 2020, son travail s’oriente progressivement vers l’intelligence
@@ -390,7 +390,7 @@ export default function AboutPage() {
               index="04"
               kicker="Distinctions"
               id="distinctions"
-              title="Prix, distinctions et sélections"
+              title={<>prix, distinctions <span className="or">et sélections.</span></>}
               lede={
                 <>
                   Les distinctions publiques associées à Frank Houbre et à ses projets IA renforcent son
@@ -472,7 +472,7 @@ export default function AboutPage() {
             <div className="grid-12 gap-y-12">
               <div className="col-span-12 lg:col-span-5">
                 <p className="meta"><span className="meta-strong">06</span> &nbsp;/&nbsp; Réseaux, profils et sites</p>
-                <h2 id="reseaux" className="h-block mt-5 text-cream">Retrouver Frank Houbre</h2>
+                <h2 id="reseaux" className="h-block mt-5 text-cream">retrouver <span className="or">Frank Houbre.</span></h2>
                 <p className="mt-3 text-sm leading-relaxed text-fog">
                   Les principales plateformes, bases de données publiques et sites associés.
                 </p>

@@ -172,7 +172,7 @@ export default function EnHomePage() {
             </div>
             <div className="col-span-12 lg:col-span-7">
               <h2 id="approach" className="h-section reveal">
-                Make AI images and videos that don&apos;t look like AI.
+                make AI images and videos <span className="or">that don&apos;t look like AI.</span>
               </h2>
               <p className="reveal mt-8 max-w-2xl text-[1.05rem] leading-relaxed text-fog" data-delay="0.1">
                 I&apos;m Frank Houbre, an AI filmmaker and trainer. I share concrete workflows to
@@ -219,7 +219,7 @@ export default function EnHomePage() {
           <div className="grid-12 gap-y-14">
             <div className="col-span-12 lg:col-span-5">
               <p className="meta"><span className="meta-strong">04</span> &nbsp;/&nbsp; Free AI tools</p>
-              <h2 id="tools" className="h-block mt-5 text-cream">Tools to produce faster</h2>
+              <h2 id="tools" className="h-block mt-5 text-cream">tools to <span className="or">produce faster.</span></h2>
               <p className="mt-3 text-sm leading-relaxed text-fog">
                 A cinematic prompt generator, a storyboard PDF builder, a production budget
                 calculator and curated directories of free image and audio AI tools. The tool
@@ -238,7 +238,7 @@ export default function EnHomePage() {
             </div>
             <div className="col-span-12 lg:col-span-6 lg:col-start-7">
               <p className="meta">FAQ</p>
-              <h2 className="h-block mt-5 text-cream">Quick answers</h2>
+              <h2 className="h-block mt-5 text-cream">quick <span className="or">answers.</span></h2>
               <div className="mt-8">
                 {enFaq.map((entry, i) => (
                   <details key={entry.question} className="faq-item" open={i === 0}>
@@ -265,7 +265,7 @@ export default function EnHomePage() {
             index="05"
             kicker="Journal"
             id="latest"
-            title="Latest articles"
+            title={<>latest <span className="or">articles.</span></>}
             lede="Tutorials, workflows and honest tool analysis for AI filmmaking, image and video."
             aside={<Cta href="/en/blog" size="sm">All articles</Cta>}
           />

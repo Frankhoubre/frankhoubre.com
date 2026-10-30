@@ -104,7 +104,7 @@ export default function ViralAiVideosPage() {
   );
 
   return (
-    <FunnelFrame minimal locale="en">
+    <FunnelFrame minimal locale="en" theme="noir">
       <JsonLd data={jsonLd} />
       <BuzzBeacon event="buzz_view" />
       <RevealObserver />

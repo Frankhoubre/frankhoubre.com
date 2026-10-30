@@ -97,8 +97,8 @@ export default function OutilsPage() {
         kicker="Ressources"
         title={
           <>
-            Outils
-            <span className="block text-fog">gratuits, dans le navigateur</span>
+            outils
+            <span className="or block">gratuits, dans le navigateur</span>
           </>
         }
         lede="Des outils utiles pour la création IA : image, vidéo, workflow et production. Aucune inscription, tout fonctionne en local."
