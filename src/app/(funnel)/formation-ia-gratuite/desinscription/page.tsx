@@ -21,16 +21,24 @@ export default async function UnsubscribedPage({
   const ok = etat === "ok";
 
   return (
-    <FunnelFrame>
+    <FunnelFrame theme="noir">
       <div className="container-narrow py-16 sm:py-24">
-        <div className="card card-surface p-6 sm:p-8">
-          <p className="meta">Emails de la formation</p>
+        <div className="carte-noir p-6 sm:p-8">
+          <p className="meta meta-strong">emails de la formation</p>
           <h1 className="h-block mt-4 text-cream">
-            {ok ? "Vous ne recevrez plus ces emails." : "Lien de désinscription invalide."}
+            {ok ? (
+              <>
+                c’est fait, <span className="or">plus aucun email.</span>
+              </>
+            ) : (
+              <>
+                ce lien de désinscription <span className="or">ne fonctionne pas.</span>
+              </>
+            )}
           </h1>
           <p className="mt-4 text-[15px] leading-relaxed text-fog">
             {ok
-              ? "C'est fait, les emails restants du challenge sont annulés. Les trois vidéos restent accessibles sur la page de formation si vous voulez y revenir."
+              ? "Les emails restants du challenge sont annulés. Les trois vidéos restent accessibles sur la page de formation si vous voulez y revenir."
               : `Ce lien est incomplet ou a été modifié. Ouvrez le lien depuis l'email d'origine, ou écrivez à ${SUPPORT_EMAIL} et je m'en occupe.`}
           </p>
           <p className="mt-8 flex flex-col gap-3 sm:flex-row">

@@ -15,8 +15,9 @@ export type AbVariant = (typeof AB_VARIANTS)[number];
 
 export const OPTIN_AB = {
   active: true,
-  id: "optin-1",
-  cookie: "fh_ab_optin1",
+  /** optin-2 : même duel A/B, relancé sur la charte noir et or (30 oct. 2026). */
+  id: "optin-2",
+  cookie: "fh_ab_optin2",
   startedAt: "2026-10-30",
   /** Paramètre d'URL qui force une version (aperçu) : ?version=b */
   forceParam: "version",

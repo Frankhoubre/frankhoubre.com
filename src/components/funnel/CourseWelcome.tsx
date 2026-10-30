@@ -14,9 +14,9 @@ export function CourseWelcome() {
   return (
     <div
       role="status"
-      className="mx-auto mb-8 max-w-3xl border border-amber/60 bg-charcoal/70 px-4 py-3 text-left text-sm leading-relaxed text-cream backdrop-blur-sm"
+      className="mx-auto mb-8 max-w-3xl rounded-[14px] border border-amber/60 bg-charcoal/80 px-4 py-3 shadow-[0_0_30px_rgb(255_210_70/0.15)] text-left text-sm leading-relaxed text-cream backdrop-blur-sm"
     >
-      <span className="meta meta-amber mr-3">Inscription</span>
+      <span className="meta meta-amber mr-3">inscription confirmée</span>
       {message}
     </div>
   );

@@ -37,7 +37,7 @@ export default async function FormationCoursePage() {
     FUNNEL_DAYS.map((d) => getVimeoThumbnail(d.vimeoId)),
   );
   return (
-    <FunnelFrame>
+    <FunnelFrame theme="noir">
       <FunnelBeacon event="course_view" />
 
       <RevealObserver />
@@ -52,10 +52,10 @@ export default async function FormationCoursePage() {
           <Suspense fallback={null}>
             <CourseWelcome />
           </Suspense>
-          <p className="meta meta-strong reveal">00 / Challenge gratuit · 3 jours · accessible aux débutants</p>
-          <h1 className="reveal mt-6 max-w-4xl text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] tracking-[-0.03em] text-cream" data-delay="0.1">
-            Vous avez la méthode. Voici vos trois vidéos.{" "}
-            <span className="text-fog">La première commence maintenant.</span>
+          <p className="meta meta-strong reveal">challenge gratuit · 3 jours · accessible aux débutants</p>
+          <h1 className="reveal mt-6 max-w-4xl text-[clamp(2.3rem,5.2vw,4.75rem)] leading-[0.98] text-cream" data-delay="0.1">
+            vous avez la méthode, voici vos trois vidéos.{" "}
+            <span className="or">la première commence maintenant.</span>
           </h1>
           <p className="lede reveal mt-8 max-w-2xl" data-delay="0.2">
             Regardez la vidéo du jour, faites sa mission, passez à la suivante.
@@ -72,9 +72,12 @@ export default async function FormationCoursePage() {
                     href={`#${d.slug}`}
                     className="group flex items-baseline justify-between gap-4 py-4 no-underline sm:pr-6"
                   >
-                    <span>
-                      <span className="meta meta-strong">Jour {d.n}</span>
-                      <span className="mt-1 block text-[15px] text-cream">{d.shortTitle}</span>
+                    <span className="flex items-baseline gap-3">
+                      <span className="num text-[1.9rem]">0{d.n}</span>
+                      <span>
+                        <span className="meta meta-strong">jour {d.n}</span>
+                        <span className="mt-0.5 block text-[15px] text-cream transition-colors group-hover:text-amber">{d.shortTitle}</span>
+                      </span>
                     </span>
                     <span className="meta tabular whitespace-nowrap">
                       {formatMinutes(thumbnails[i]?.duration) ?? ""}
@@ -84,7 +87,7 @@ export default async function FormationCoursePage() {
               ))}
             </ol>
           </nav>
-          <p className="meta reveal mt-6 text-[10px]" data-delay="0.4">
+          <p className="meta reveal mt-6" data-delay="0.4">
             La méthode derrière des œuvres primées à Séoul, Hollywood et aux Mondial Chroma Awards.
           </p>
         </div>
@@ -115,22 +118,27 @@ export default async function FormationCoursePage() {
                   />
                 </div>
                 <div className="col-span-12 min-w-0 lg:col-span-5">
-                  <p className="meta"><span className="meta-strong tabular">0{d.n}</span> &nbsp;/&nbsp; {d.kicker}</p>
-                  <h2 id={`${d.slug}-title`} className="h-block mt-4 text-cream">
-                    {d.title}
+                  <div className="flex items-end gap-4">
+                    <span className="num text-[4.5rem]">0{d.n}</span>
+                    <p className="meta meta-strong pb-2">{d.kicker.toLowerCase()}</p>
+                  </div>
+                  <h2 id={`${d.slug}-title`} className="h-block mt-5 text-cream">
+                    {d.title.charAt(0).toLowerCase() + d.title.slice(1)}
                   </h2>
                   <p className="mt-4 text-[15px] leading-relaxed text-fog">{d.intro}</p>
                   <ul className="mt-6 border-t border-line">
                     {d.points.map((p) => (
                       <li key={p} className="flex gap-3 border-b border-line py-3 text-[15px] leading-relaxed text-stone">
-                        <span className="mt-[0.7em] h-px w-4 shrink-0 bg-fog" aria-hidden />
+                        <svg className="mt-1 h-4 w-4 shrink-0 text-amber" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                          <path d="M3 8.5l3 3 7-7" />
+                        </svg>
                         <span>{p}</span>
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-5 text-sm leading-relaxed text-stone">
-                    <span className="meta mr-2">Mission du jour</span>
-                    {d.mission}
+                  <p className="carte-noir mt-5 p-4 text-sm leading-relaxed text-stone">
+                    <span className="chip-or mb-2 mr-2 text-[0.95rem]">mission du jour</span>
+                    <span className="block">{d.mission}</span>
                   </p>
                   <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                     <TrackedLink
@@ -164,9 +172,14 @@ export default async function FormationCoursePage() {
         <div className="container-x">
           <SectionHeader
             index="04"
-            kicker="La suite"
+            kicker="la suite"
             id="ai-studios-title"
-            title="Comment passer de six plans à des films complets, sans repartir de zéro"
+            title={
+              <>
+                comment passer de six plans à des films complets,{" "}
+                <span className="or">sans repartir de zéro.</span>
+              </>
+            }
             lede="Vous savez maintenant par où commencer et pourquoi vos anciens essais brûlaient votre budget. Ce qui reste à apprendre, c’est la cohérence des personnages sur un film entier, la mise en scène, le mouvement, le montage, le son. C’est ce qu’on travaille dans AI Studios, avec des retours sur vos propres plans."
           />
 
@@ -178,9 +191,11 @@ export default async function FormationCoursePage() {
           </div>
 
           <div className="grid-12 mt-16 gap-y-12">
-            <div className="col-span-12 border border-line-strong p-6 sm:p-8 lg:col-span-6">
-              <p className="meta">La communauté AI Studios</p>
-              <h3 className="h-block mt-4 text-cream">Ce que vous débloquez aujourd’hui</h3>
+            <div className="carte-noir col-span-12 p-6 sm:p-8 lg:col-span-6">
+              <p className="meta meta-strong">la communauté AI Studios</p>
+              <h3 className="h-block mt-4 text-cream">
+                ce que vous <span className="or">débloquez aujourd’hui.</span>
+              </h3>
               <p className="mt-4 text-[15px] leading-relaxed text-fog">
                 Le module Étape 1 de la formation, la Méthode Film Mental en
                 cadeau, et une communauté privée de {SKOOL_OFFER.members}{" "}
@@ -189,10 +204,10 @@ export default async function FormationCoursePage() {
                 retours.
               </p>
               <p className="mt-8 flex items-baseline gap-3">
-                <span className="display text-5xl leading-none text-cream">{SKOOL_OFFER.priceLabel}</span>
+                <span className="num text-6xl">{SKOOL_OFFER.priceLabel}</span>
                 <span className="text-sm text-fog">{SKOOL_OFFER.period}</span>
               </p>
-              <p className="meta mt-2">Moins qu’un café par semaine</p>
+              <p className="meta mt-2">moins qu’un café par semaine</p>
               <p className="mt-4 text-sm leading-relaxed text-fog">
                 Sans engagement, annulable en un clic à tout moment. Vous gardez
                 l’accès tant que vous êtes membre, vous partez quand vous voulez.
@@ -211,11 +226,11 @@ export default async function FormationCoursePage() {
             </div>
 
             <div className="col-span-12 min-w-0 lg:col-span-5 lg:col-start-8">
-              <p className="meta">Ce que vous obtenez</p>
+              <p className="meta meta-strong">ce que vous obtenez</p>
               <ul className="mt-4 border-t border-line">
                 {SKOOL_OFFER.includes.map((item, i) => (
                   <li key={item} className="grid grid-cols-[2.5rem_1fr] gap-3 border-b border-line py-3 text-[15px] leading-relaxed text-stone">
-                    <span className="meta tabular pt-1">0{i + 1}</span>
+                    <span className="num pt-1 text-[1.35rem]">0{i + 1}</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -225,8 +240,8 @@ export default async function FormationCoursePage() {
                 partie de l’accès annuel complet.
               </p>
 
-              <p className="meta mt-10">
-                Ce qu’ils en disent · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
+              <p className="meta meta-strong mt-10">
+                ce qu’ils en disent · {SKOOL_OFFER.trustpilotScore} sur Trustpilot
               </p>
               <ul className="mt-4">
                 {SKOOL_OFFER.reviews.map((r) => (
@@ -242,7 +257,9 @@ export default async function FormationCoursePage() {
 
           <div className="grid-12 mt-16 gap-y-8 border-t border-line pt-12">
             <div className="col-span-12 lg:col-span-4">
-              <p className="meta"><span className="meta-strong">05</span> &nbsp;/&nbsp; Questions fréquentes</p>
+              <h2 className="h-block text-cream">
+                vos <span className="or">questions.</span>
+              </h2>
             </div>
             <div className="col-span-12 lg:col-span-7 lg:col-start-6">
               {SKOOL_OFFER.faq.map((f) => (
@@ -264,9 +281,9 @@ export default async function FormationCoursePage() {
         <div className="container-x relative z-[5] section">
           <div className="grid-12 items-end gap-y-10">
             <div className="col-span-12 lg:col-span-7">
-              <p className="meta meta-strong reveal">06 / Dernière séquence</p>
+              <p className="meta meta-strong reveal">dernière séquence</p>
               <p id="final-title" className="h-section reveal mt-5 text-cream" data-delay="0.1">
-                Le challenge vous a donné la direction.
+                le challenge vous a donné <span className="or">la direction.</span>
               </p>
               <p className="reveal mt-5 max-w-lg text-[15px] leading-relaxed text-fog" data-delay="0.2">
                 AI Studios vous donne l’exécution, les retours sur vos plans et la
