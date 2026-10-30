@@ -62,13 +62,13 @@ export function SiteHeader() {
             <span className="h-1.5 w-1.5 rounded-full bg-amber shadow-[0_0_10px_rgb(255_210_70/0.9)]" aria-hidden />
             {siteName}
           </span>
-          <span className="meta hidden text-[10px] text-fog transition-colors duration-200 group-hover:text-stone md:inline">
+          <span className="meta hidden text-[10px] text-fog transition-colors duration-200 group-hover:text-stone xl:inline">
             {tagline}
           </span>
         </Link>
 
         <nav
-          className="hidden items-center gap-7 lg:flex"
+          className="hidden items-center gap-5 lg:flex xl:gap-7"
           aria-label={locale === "en" ? "Main navigation" : "Navigation principale"}
         >
           {navItems.map((item) => (

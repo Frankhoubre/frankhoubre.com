@@ -195,7 +195,7 @@ export default function LiensPage() {
 
       <section className="container-x section-sm" aria-label="Workflow de création">
         <figure>
-          <div className="frame frame-grain frame-marks relative aspect-[2048/501] min-h-[7rem]">
+          <div className="frame frame-grain frame-marks relative aspect-[2048/501] min-h-[7rem] w-full">
             <Image
               src="/images/liens-formation-workflow.png"
               alt="Workflow de création : idée, personnage, storyboard, puis film IA."

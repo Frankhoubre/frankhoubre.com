@@ -14,7 +14,7 @@ export function ArticleMobileToc({ items, label = "Sommaire", sectionsLabel = "s
   if (!items.length) return null;
 
   return (
-    <details className="faq-item mt-10 lg:hidden">
+    <details className="faq-item mt-10 xl:hidden">
       <summary className="!text-[11px] !font-medium !uppercase !tracking-[0.18em] !text-fog">
         <span>{label} · {items.length} {sectionsLabel}</span>
         <Plus />

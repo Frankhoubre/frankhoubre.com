@@ -207,9 +207,9 @@ export default async function EnBlogArticlePage({ params }: Props) {
       <JsonLd data={jsonLd} />
       <ReadingProgressBar />
       <div className="container-x page-top pb-20 sm:pb-28">
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,45rem)_minmax(0,1fr)] lg:gap-12">
-          <div className="hidden lg:block" aria-hidden />
-          <article className="mx-auto min-w-0 max-w-[45rem] lg:col-start-2 lg:mx-0">
+        <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_minmax(0,45rem)_minmax(0,1fr)] xl:gap-12">
+          <div className="hidden xl:block" aria-hidden />
+          <article className="mx-auto min-w-0 max-w-[45rem] xl:col-start-2 xl:mx-0">
             <ArticleHeader
               title={post.frontmatter.title}
               excerpt={post.frontmatter.excerpt}
@@ -270,7 +270,7 @@ export default async function EnBlogArticlePage({ params }: Props) {
             <RelatedPosts posts={related} locale="en" />
           </article>
 
-          <div className="mt-12 hidden lg:col-start-3 lg:mt-0 lg:block lg:justify-self-start">
+          <div className="mt-12 hidden xl:col-start-3 xl:mt-0 xl:block xl:justify-self-start">
             <div className="sticky top-28">
               <ArticleToc items={toc} label={ARTICLE_LABELS.en.toc} />
             </div>

@@ -310,13 +310,13 @@ export default async function BlogArticlePage({ params }: Props) {
       <JsonLd data={jsonLd} />
       <ReadingProgressBar />
       <div className="container-x page-top pb-20 sm:pb-28">
-        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,45rem)_minmax(0,1fr)] lg:gap-12">
-          <div className="hidden lg:block" aria-hidden>
+        <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_minmax(0,45rem)_minmax(0,1fr)] xl:gap-12">
+          <div className="hidden xl:block" aria-hidden>
             <p className="meta vertical-meta sticky top-32 text-[10px] text-fog/70">
               Journal · {getCategoryLabel(post.frontmatter.category)} · {post.frontmatter.date}
             </p>
           </div>
-          <article className="min-w-0 max-w-[45rem] lg:col-start-2">
+          <article className="mx-auto min-w-0 max-w-[45rem] xl:col-start-2 xl:mx-0">
             <ArticleHeader
               title={post.frontmatter.title}
               excerpt={post.frontmatter.excerpt}
@@ -400,7 +400,7 @@ export default async function BlogArticlePage({ params }: Props) {
             <RelatedPosts posts={related} />
           </article>
 
-          <div className="mt-12 hidden lg:col-start-3 lg:mt-0 lg:block lg:justify-self-start">
+          <div className="mt-12 hidden xl:col-start-3 xl:mt-0 xl:block xl:justify-self-start">
             <div className="sticky top-28">
               <ArticleToc items={toc} />
               <ArticleSidebarSearch posts={sidebarPosts} currentSlug={slug} />
