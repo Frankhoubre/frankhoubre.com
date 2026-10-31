@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-10-30T09:15:39.328Z
+> Generated: 2026-10-31T09:06:45.666Z
 
-## FR : 348 articles (/blog/<slug>)
+## FR : 349 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 53, business 31, analyses 26, comparatifs 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 53, business 31, comparatifs 27, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-31 | comparatifs | `alternatives-google-flow` | Alternatives à Google Flow : où aller quand Veo coince |
 | 2026-10-30 | comparatifs | `kling-vs-seedance` | Kling vs Seedance : quel modèle pour une scène de fiction ? |
 | 2026-10-29 | analyses | `runway-avis-2026` | Avis Runway 2026 : Gen-4.5 et Aleph vus par un réalisateur |
 | 2026-10-28 | analyses | `kling-ai-avis-fiction` | Avis Kling AI 2026 : Kling 4.0 vaut-il le coup en fiction ? |
@@ -360,12 +361,13 @@ Categories: tutoriels 191, actualite 53, business 31, analyses 26, comparatifs 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 263 articles (/en/blog/<slug>)
+## EN : 264 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, comparatifs 21, business 21, analyses 17, actualite 14, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 22, business 21, analyses 17, actualite 14, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-10-31 | comparatifs | `alternatives-google-flow` | Google Flow Alternatives: Where to Go When Veo Stalls |
 | 2026-10-30 | comparatifs | `kling-vs-seedance` | Kling vs Seedance: which model for a fiction scene? |
 | 2026-10-29 | analyses | `runway-avis-2026` | Runway Review 2026: Gen-4.5 and Aleph From a Director |
 | 2026-10-28 | analyses | `kling-ai-avis-fiction` | Kling AI Review 2026: Is Kling 4.0 Worth It for Fiction? |

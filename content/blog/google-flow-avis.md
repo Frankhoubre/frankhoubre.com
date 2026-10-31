@@ -183,7 +183,7 @@ Pour situer Flow parmi les autres pipelines, mon [classement des logiciels de r�
 
 Choisis Flow si tu débutes et veux apprendre à écrire un prompt de plan sans sortir ta carte, si tu prépares un teaser ou une pub de moins d'une minute, ou si tu travailles déjà avec les services Google (Gemini, Drive, YouTube). Le Pro à 21,99 € te donne en plus 5 To de stockage, ce qui compte vite avec des rushes vidéo.
 
-Choisis autre chose si tu as besoin de Kling ou Seedance pour un type de plan précis, si tu retouches des prises de vues réelles depuis l'Europe, ou si ton projet est une série où le scénario évolue. Pour un plan isolé très travaillé, mon guide du [brief réalisateur pour Veo 3](/blog/google-veo-3-brief-realisateur-plan-sequence) et mon comparatif [Kling ou Veo 3 selon le plan](/blog/kling-vs-veo-3-choisir-par-plan) t'aideront à choisir le modèle avant l'outil.
+Choisis autre chose si tu as besoin de Kling ou Seedance pour un type de plan précis, si tu retouches des prises de vues réelles depuis l'Europe, ou si ton projet est une série où le scénario évolue. Pour un plan isolé très travaillé, mon guide du [brief réalisateur pour Veo 3](/blog/google-veo-3-brief-realisateur-plan-sequence) et mon comparatif [Kling ou Veo 3 selon le plan](/blog/kling-vs-veo-3-choisir-par-plan) t'aideront à choisir le modèle avant l'outil. Et si tu veux changer d'outil, j'ai classé [les alternatives à Google Flow](/blog/alternatives-google-flow) selon ce qui te bloque.
 
 <Methodologie date="2026-10-27">
 

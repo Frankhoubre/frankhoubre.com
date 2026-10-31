@@ -119,7 +119,7 @@ Google gives everyone 50 Flow credits a day, subscribed or not. A Veo 3.1 Lite s
 
 Without a subscription, the help page warns that video may be unavailable at peak hours, roughly 2 to 5 pm UTC. And Flow only offers Google's models, Veo 3.1 and Gemini Omni Flash. I found no screenplay editor or shot list in the help center: Scenebuilder assembles clips you've already generated.
 
-Flow makes a good test bench for checking that an idea holds up in images before you pay anyone.
+Flow makes a good test bench for checking that an idea holds up in images before you pay anyone. When it stops being enough, see [my Google Flow alternatives](/en/blog/alternatives-google-flow).
 
 ## What about Katalist?
 

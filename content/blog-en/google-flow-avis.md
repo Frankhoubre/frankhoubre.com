@@ -184,7 +184,7 @@ To see where Flow sits among the other pipelines, my [ranking of AI filmmaking s
 
 Pick Flow if you're starting out and want to learn to prompt a shot without reaching for your card, if you're cutting a teaser or an ad under a minute, or if you already work in Google's services (Gemini, Drive, YouTube). Pro also gives you 5 TB of storage, which adds up fast with video files.
 
-Pick something else if you need Kling or Seedance for a specific kind of shot, if you're fixing live action footage from Europe, or if your project is a series where the script keeps changing. For a single carefully crafted shot, my [director's brief for Veo 3](/en/blog/google-veo-3-brief-realisateur-plan-sequence) will help you get the model right before you worry about the tool.
+Pick something else if you need Kling or Seedance for a specific kind of shot, if you're fixing live action footage from Europe, or if your project is a series where the script keeps changing. For a single carefully crafted shot, my [director's brief for Veo 3](/en/blog/google-veo-3-brief-realisateur-plan-sequence) will help you get the model right before you worry about the tool. And if you're ready to switch tools, I sorted [the Google Flow alternatives](/en/blog/alternatives-google-flow) by what's holding you back.
 
 <Methodology date="2026-10-27">
 

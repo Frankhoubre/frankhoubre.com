@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-30 (PLAN_80 F15 publie, J58 toujours decale)
+## Last run: 2026-10-31 (PLAN_80 F10 publie, J58 toujours decale)
+
+### What happened
+- Seizieme jour PLAN_80 : ligne F10 `alternatives-google-flow` (comparatifs, alternatives) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F11 alternatives-kling-fiction (70), puis F09, F16, F14. 4 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (entrepot de location de cameras) + 11 captures reelles du 31/10.
+- Aide Flow FR : les restrictions EEE sont repliees, lire la version ?hl=en pour les citer. Runway n'affiche pas Veo sur sa page tarifs.
+
+## Previous run: 2026-10-30 (PLAN_80 F15 publie, J58 toujours decale)
 
 ### What happened
 - Quinzieme jour PLAN_80 : ligne F15 `kling-vs-seedance` (comparatifs, vs) publiee a la place de J58.

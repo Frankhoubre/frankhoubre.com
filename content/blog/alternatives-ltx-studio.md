@@ -118,7 +118,7 @@ Google donne 50 crédits Flow par jour à tout le monde, abonné ou pas. Un plan
 
 Sans abonnement, l'aide prévient que la vidéo peut être indisponible aux heures de pointe, environ de 14 h à 17 h UTC. Et Flow ne propose que les modèles de Google, Veo 3.1 et Gemini Omni Flash. Je n'ai trouvé dans l'aide ni éditeur de scénario ni découpage technique : Scenebuilder assemble des plans déjà générés.
 
-Flow fait un bon banc d'essai pour vérifier qu'une idée tient en images avant de payer qui que ce soit.
+Flow fait un bon banc d'essai pour vérifier qu'une idée tient en images avant de payer qui que ce soit. Quand il ne suffit plus, j'ai listé [les alternatives à Google Flow](/blog/alternatives-google-flow).
 
 ## Et Katalist ?
 
