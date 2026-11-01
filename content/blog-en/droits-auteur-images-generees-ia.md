@@ -34,7 +34,7 @@ Keep a **dated capture** of the terms of service on the day of delivery.
 
 ## European Union and neighborhood: trends
 
-The discussions often focus on **transparency**, **traceability of the training data**, and obligations for high-risk systems. What matters for you: document the chain (tool, version, archived prompt) and avoid the imitation of identifiable real people or brands.
+The discussions often focus on **transparency**, **traceability of the training data**, and obligations for high-risk systems. What matters for you: document the chain (tool, version, archived prompt) and avoid the imitation of identifiable real people or brands. On the data collection side, Google, Microsoft, OpenAI and Anthropic said on October 30, 2026 that they will honor a [shared robots.txt signal against AI training](/en/blog/signal-commun-entrainement-ia-robots-txt), which matters if your portfolio lives on your own site.
 
 ## United States: pragmatism and landmark cases
 

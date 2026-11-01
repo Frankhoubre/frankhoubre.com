@@ -143,7 +143,8 @@ export default async function EnBlogArticlePage({ params }: Props) {
 
   const graphNodes: object[] = [
     {
-      "@type": "BlogPosting",
+      "@type":
+        post.frontmatter.category === "actualite" ? "NewsArticle" : "BlogPosting",
       "@id": `${url}#article`,
       headline: post.frontmatter.title,
       description: post.frontmatter.excerpt,

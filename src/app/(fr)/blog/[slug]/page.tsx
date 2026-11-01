@@ -140,7 +140,8 @@ function buildJsonLd(opts: {
   const wordCount = post.content.trim().split(/\s+/).filter(Boolean).length;
 
   const article = {
-    "@type": "BlogPosting",
+    "@type":
+      post.frontmatter.category === "actualite" ? "NewsArticle" : "BlogPosting",
     "@id": `${url}#article`,
     headline: post.frontmatter.title,
     description: post.frontmatter.excerpt,

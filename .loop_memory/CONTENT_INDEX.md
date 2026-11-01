@@ -3,15 +3,16 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-01T09:04:29.262Z
+> Generated: 2026-11-01T10:10:31.782Z
 
-## FR : 350 articles (/blog/<slug>)
+## FR : 351 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 53, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 54, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
 | 2026-11-01 | comparatifs | `alternatives-kling-fiction` | Alternatives à Kling AI pour la fiction et l'animé |
+| 2026-11-01 | actualite | `signal-commun-entrainement-ia-robots-txt` | Entraînement IA : un robots.txt commun chez OpenAI et Google |
 | 2026-10-31 | comparatifs | `alternatives-google-flow` | Alternatives à Google Flow : où aller quand Veo coince |
 | 2026-10-30 | comparatifs | `kling-vs-seedance` | Kling vs Seedance : quel modèle pour une scène de fiction ? |
 | 2026-10-29 | analyses | `runway-avis-2026` | Avis Runway 2026 : Gen-4.5 et Aleph vus par un réalisateur |
@@ -362,13 +363,14 @@ Categories: tutoriels 191, actualite 53, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 265 articles (/en/blog/<slug>)
+## EN : 266 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, comparatifs 23, business 21, analyses 17, actualite 14, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 23, business 21, analyses 17, actualite 15, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
 | 2026-11-01 | comparatifs | `alternatives-kling-fiction` | Kling AI Alternatives for Fiction and Anime |
+| 2026-11-01 | actualite | `signal-commun-entrainement-ia-robots-txt` | AI training opt-out: OpenAI and Google back one robots.txt |
 | 2026-10-31 | comparatifs | `alternatives-google-flow` | Google Flow Alternatives: Where to Go When Veo Stalls |
 | 2026-10-30 | comparatifs | `kling-vs-seedance` | Kling vs Seedance: which model for a fiction scene? |
 | 2026-10-29 | analyses | `runway-avis-2026` | Runway Review 2026: Gen-4.5 and Aleph From a Director |

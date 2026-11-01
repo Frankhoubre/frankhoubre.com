@@ -34,7 +34,7 @@ Garde une **capture datée** des CGU du jour de livraison.
 
 ## Union européenne et voisinage : tendances
 
-Les discussions portent souvent sur **transparence**, **trace des données d’entraînement**, et obligations pour les systèmes à risque. Ce qui compte pour toi : documenter la chaîne (outil, version, prompt archivé) et éviter l’imitation de personnes réelles identifiables ou de marques.
+Les discussions portent souvent sur **transparence**, **trace des données d’entraînement**, et obligations pour les systèmes à risque. Ce qui compte pour toi : documenter la chaîne (outil, version, prompt archivé) et éviter l’imitation de personnes réelles identifiables ou de marques. Côté collecte, Google, Microsoft, OpenAI et Anthropic ont promis le 30 octobre 2026 de respecter un [signal robots.txt commun contre l'entraînement IA](/blog/signal-commun-entrainement-ia-robots-txt) : utile si tu publies ton portfolio sur ton propre site.
 
 ## États-Unis : pragmatisme et cas d’école
 
