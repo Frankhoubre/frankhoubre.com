@@ -1,6 +1,16 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-10-31 (PLAN_80 F10 publie, J58 toujours decale)
+## Last run: 2026-11-01 (PLAN_80 F11 publie, J58 toujours decale)
+
+### What happened
+- Dix-septieme jour PLAN_80 : ligne F11 `alternatives-kling-fiction` (comparatifs, alternatives) publiee a la place de J58.
+  J58 (`soumettre-film-ia-festival-retour-experience`) reste la prochaine ligne du plan habituel.
+  Prochaines lignes PLAN_80 frankhoubre : F09 alternatives-runway-fiction (69), puis F16, F14. 3 restent.
+- Version EN publiee le meme jour, memes images, aucun YouTube.
+- Images : hero Nano Banana 2 (studio d'animation dans un hangar a bateaux) + 10 captures reelles du 01/11.
+- Trustpilot bloque Playwright (lire en WebFetch) ; Dreamina pricing : fenetre de connexion non masquable, lire le texte de la page ; Higgsfield pricing demande WAIT=30000.
+
+## Previous run: 2026-10-31 (PLAN_80 F10 publie, J58 toujours decale)
 
 ### What happened
 - Seizieme jour PLAN_80 : ligne F10 `alternatives-google-flow` (comparatifs, alternatives) publiee a la place de J58.

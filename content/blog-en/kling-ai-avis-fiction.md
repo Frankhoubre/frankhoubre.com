@@ -170,7 +170,7 @@ The Google Flow figures come from my [Google Flow review](/en/blog/google-flow-a
 
 Pick Kling if your film has action, chases, bodies in motion, cameras that follow. If you shoot short dialogue scenes and Video 3.0 multi-shot saves you editing. If you need long 20 or 30 second shots without a cut. For the prompting method that gets the most out of Kling's motion, my [Kling 3 workflow for fluid animation](/en/blog/workflow-kling-3-animation-fluide-realiste) still holds on Video 3.0.
 
-Pick something else if you want to try without paying: Google Flow gives 50 credits a day. If your budget can't absorb failed takes, or you're on a series with a script still moving, you need a tool that keeps text and shots linked. And if commercial use is planned, forget the free plan: it doesn't allow it.
+Pick something else if you want to try without paying: Google Flow gives 50 credits a day. If your budget can't absorb failed takes, or you're on a series with a script still moving, you need a tool that keeps text and shots linked. And if commercial use is planned, forget the free plan: it doesn't allow it. I sorted the options by type of shot in [Kling AI alternatives for fiction and anime](/en/blog/alternatives-kling-fiction).
 
 <Methodology date="2026-10-28">
 

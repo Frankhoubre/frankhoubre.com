@@ -154,7 +154,7 @@ Go with Kling if your film moves through action, if you shoot with real faces, o
 
 Go with Seedance 2.5 if your film moves through performance, if you have time to prep references, and if you work in drafts before the final render. It's the engine I use on Lost Garden, whose episode 2 took 75 hours of work and $1,852 in generation, all models combined.
 
-And in real life you don't have to pick one for the whole film. A fight scene in Kling, the dialogue scene after it in Seedance: that's a shot-by-shot call. The hard part is keeping the same characters and the same light when you switch engines. For other head-to-heads, see [my Runway review](/en/blog/runway-avis-2026) and my ranking of [the best AI tools for making anime](/en/blog/meilleure-ia-anime-2026).
+And in real life you don't have to pick one for the whole film. A fight scene in Kling, the dialogue scene after it in Seedance: that's a shot-by-shot call. The hard part is keeping the same characters and the same light when you switch engines. For other head-to-heads, see [my Runway review](/en/blog/runway-avis-2026) and my ranking of [the best AI tools for making anime](/en/blog/meilleure-ia-anime-2026). And if neither one fits, [the Kling alternatives for fiction](/en/blog/alternatives-kling-fiction) cover Hailuo, Vidu and the platforms that resell Kling.
 
 <Methodology date="2026-10-30">
 

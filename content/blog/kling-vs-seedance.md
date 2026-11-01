@@ -153,7 +153,7 @@ Choisis Kling si ton film avance par le mouvement, si tu tournes avec de vrais v
 
 Choisis Seedance 2.5 si ton film avance par le jeu, si tu as le temps de préparer tes références, et si tu travailles en brouillon avant le rendu final. C'est le moteur que j'utilise pour Lost Garden, dont l'épisode 2 a demandé 75 heures de travail et 1 852 $ de génération, tous modèles confondus.
 
-Et dans la vraie vie, tu n'as pas à choisir pour tout le film. Une scène de combat en Kling, la scène de dialogue qui suit en Seedance, c'est un choix plan par plan. Le problème, c'est de garder les mêmes personnages et la même lumière quand tu changes de moteur. Pour d'autres duels de modèles, j'ai comparé [Kling et Veo 3 plan par plan](/blog/kling-vs-veo-3-choisir-par-plan) et classé [les meilleures IA pour faire un anime](/blog/meilleure-ia-anime-2026).
+Et dans la vraie vie, tu n'as pas à choisir pour tout le film. Une scène de combat en Kling, la scène de dialogue qui suit en Seedance, c'est un choix plan par plan. Le problème, c'est de garder les mêmes personnages et la même lumière quand tu changes de moteur. Pour d'autres duels de modèles, j'ai comparé [Kling et Veo 3 plan par plan](/blog/kling-vs-veo-3-choisir-par-plan) et classé [les meilleures IA pour faire un anime](/blog/meilleure-ia-anime-2026). Et si aucun des deux ne te convient, [les alternatives à Kling pour la fiction](/blog/alternatives-kling-fiction) couvrent Hailuo, Vidu et les plateformes qui revendent Kling.
 
 <Methodologie date="2026-10-30">
 

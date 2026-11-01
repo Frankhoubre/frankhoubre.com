@@ -169,7 +169,7 @@ Les chiffres de Google Flow viennent de mon [avis sur Google Flow](/blog/google-
 
 Choisis Kling si ton film a de l'action, de la poursuite, des corps en mouvement, des caméras qui suivent. Si tu tournes des scènes dialoguées courtes et que le multi-plans de Video 3.0 te fait gagner du montage. Si tu as besoin de plans longs de 20 ou 30 secondes sans raccord. Pour la méthode de prompt qui tire le meilleur du mouvement de Kling, mon [workflow Kling 3 pour une animation fluide](/blog/workflow-kling-3-animation-fluide-realiste) reste valable sur Video 3.0.
 
-Choisis autre chose si tu veux tester sans payer : Google Flow donne 50 crédits par jour. Si ton budget ne supporte pas les prises ratées, ou si tu es en série avec un scénario qui bouge encore, il te faut un outil qui garde le lien entre texte et plans. Et si un usage commercial est prévu, oublie le plan gratuit : il ne l'autorise pas.
+Choisis autre chose si tu veux tester sans payer : Google Flow donne 50 crédits par jour. Si ton budget ne supporte pas les prises ratées, ou si tu es en série avec un scénario qui bouge encore, il te faut un outil qui garde le lien entre texte et plans. Et si un usage commercial est prévu, oublie le plan gratuit : il ne l'autorise pas. J'ai trié les options par type de plan dans [les alternatives à Kling AI pour la fiction et l'animé](/blog/alternatives-kling-fiction).
 
 <Methodologie date="2026-10-28">
 
