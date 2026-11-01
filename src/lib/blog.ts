@@ -16,6 +16,8 @@ export type PostFrontmatter = {
   excerpt: string;
   thumbnail?: string;
   dateModified?: string;
+  /** Heure de publication "HH:MM", heure de Paris (articles d'actualité). */
+  time?: string | number;
   /** Article avec liens affiliés : bandeau de mention en tête. */
   affiliate?: boolean;
   /**

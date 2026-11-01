@@ -21,7 +21,7 @@ import {
 } from "@/lib/blog";
 import { buildArticleToc } from "@/lib/blog-toc";
 import { buildArticleVideoObject } from "@/lib/article-video";
-import { realModifiedDate } from "@/lib/article-dates";
+import { modifiedIso, publishedIso, realModifiedDate } from "@/lib/article-dates";
 import { getAllEnPosts, getEnPostBySlug, getRelatedEnPosts } from "@/lib/blog-en";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
@@ -93,8 +93,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "article",
       title: titleAbsolute ?? `${title} | ${siteName}`,
-      publishedTime: post.frontmatter.date,
-      modifiedTime: post.frontmatter.dateModified ?? post.frontmatter.date,
+      publishedTime: publishedIso(post.frontmatter),
+      modifiedTime: modifiedIso(post.frontmatter),
       ...(ogImage ? { images: [{ path: ogImage, width: 1200, height: 630 }] } : {}),
     },
     authors: [{ name: person.name, url: person.url }],
@@ -149,8 +149,8 @@ export default async function EnBlogArticlePage({ params }: Props) {
       headline: post.frontmatter.title,
       description: post.frontmatter.excerpt,
       inLanguage: "en-US",
-      datePublished: post.frontmatter.date,
-      dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
+      datePublished: publishedIso(post.frontmatter),
+      dateModified: modifiedIso(post.frontmatter),
       url,
       mainEntityOfPage: url,
       wordCount,

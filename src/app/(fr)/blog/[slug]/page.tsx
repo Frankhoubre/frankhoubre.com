@@ -36,7 +36,7 @@ import {
   buildPageMetadata,
 } from "@/lib/metadata";
 import { buildArticleVideoObject } from "@/lib/article-video";
-import { realModifiedDate } from "@/lib/article-dates";
+import { modifiedIso, publishedIso, realModifiedDate } from "@/lib/article-dates";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
 import { ARTICLE_LABELS } from "@/components/article/labels";
 import { baseUrl, getCategoryLabel, person, siteName } from "@/lib/site";
@@ -102,8 +102,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       title: titleAbsolute ?? `${title} | ${siteName}`,
       description,
-      publishedTime: post.frontmatter.date,
-      modifiedTime: post.frontmatter.dateModified ?? post.frontmatter.date,
+      publishedTime: publishedIso(post.frontmatter),
+      modifiedTime: modifiedIso(post.frontmatter),
       ...(ogImage
         ? { images: [{ path: ogImage, width: 1200, height: 630 }] }
         : {}),
@@ -146,8 +146,8 @@ function buildJsonLd(opts: {
     headline: post.frontmatter.title,
     description: post.frontmatter.excerpt,
     inLanguage: "fr-FR",
-    datePublished: post.frontmatter.date,
-    dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
+    datePublished: publishedIso(post.frontmatter),
+    dateModified: modifiedIso(post.frontmatter),
     url,
     mainEntityOfPage: url,
     wordCount,
