@@ -3,3 +3,4 @@
 Une ligne par article : date | slug | actualité | source | URL
 
 2026-11-01 | signal-commun-entrainement-ia-robots-txt | Signal robots.txt commun __usage_ai-training : Google, Microsoft, OpenAI et Anthropic promettent de le respecter (annonces du 30/10/2026) | Google Search Central (John Mueller), Bing Blog (Krishna Madhavan), OpenAI, IETF draft-kelley-aipref-training-preference-signal-00 | https://frankhoubre.com/blog/signal-commun-entrainement-ia-robots-txt
+2026-11-02 | iqiyi-studio-cinema-ia-shanghai | iQIYI ouvre un studio de cinema IA a Shanghai (110 m2, tournage reel + postproduction IA via NadouPro, premier film Cop in Trouble, tournage depuis le 28/10) | Communique PR Newswire date de Pekin le 01/11/2026 (repris Yahoo Finance le 02/11), contexte AFP/NST 21/04, Yicai 15/05, communiques iQIYI 03/04 et 23/07, Senal News 24/09 | https://frankhoubre.com/blog/iqiyi-studio-cinema-ia-shanghai

@@ -51,6 +51,8 @@ Ce qui a été généré, d'après la même source : des gros plans de chevaux q
 
 Erwin a lâché une phrase que je garde : pour chaque plan d'effets dans la série, l'équipe en génère vingt fois plus. Le travail se déplace de la fabrication vers le tri, et trier vingt versions d'un plan de chevaux demande un œil formé, pas un stagiaire avec un bouton.
 
+En Chine, iQIYI prend le problème par l'autre bout : son [studio de cinéma IA de Shanghai](/blog/iqiyi-studio-cinema-ia-shanghai), ouvert fin octobre 2026, filme de vrais comédiens et ne génère que ce qui les entoure.
+
 ### Ce que les majors ont réellement livré
 
 J'ai passé au crible [ce que les studios classiques et les studios natifs IA ont produit en 2026](/blog/studios-traditionnels-vs-studios-ia-2026), et le bilan tient en deux lignes. Les majors ont signé beaucoup et livré très peu avec l'IA générative : le premier projet issu du partenariat élargi entre Lionsgate et Runway, annoncé le 11 juin 2026, est une série épisodique au format court. Les studios natifs IA livrent, mais du court, de l'hybride, de la pub et de l'animation.

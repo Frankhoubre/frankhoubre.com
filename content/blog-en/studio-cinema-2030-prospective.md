@@ -31,7 +31,7 @@ The last date is a warning. OpenAI shut down the Sora API on September 24, 2026,
 
 My first bet, and I've held it for a while: in 2030, a studio making fiction will still have a stage. It'll be smaller, more often rented than owned, and each film will spend fewer days on it. But the shooting days that remain will be the ones that matter most.
 
-Why? Because the hard things to generate convincingly are faces in close-up holding a specific emotion for several seconds, hands handling an object, two people touching. A wide shot of a village at dusk already generates very well. So the 2030 studio shoots the performance and generates the environment. That's the *House of David* LED wall logic, pushed one notch further.
+Why? Because the hard things to generate convincingly are faces in close-up holding a specific emotion for several seconds, hands handling an object, two people touching. A wide shot of a village at dusk already generates very well. So the 2030 studio shoots the performance and generates the environment. That's the *House of David* LED wall logic, pushed one notch further. iQIYI's [new AI film studio in Shanghai](/en/blog/iqiyi-studio-cinema-ia-shanghai), opened in late October 2026, already works this way on 110 square meters.
 
 In practice I picture a stage like the one in the image above. A big, almost empty space, one corner of real set (a table, a window, a piece of wall someone can touch), and everything else supplied by generation, either live on a screen or in post. The production designer doesn't disappear. They build fewer square meters, with more care, because every real object will also serve as a reference for the machine.
 

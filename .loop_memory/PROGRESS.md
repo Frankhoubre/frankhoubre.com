@@ -1,6 +1,12 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-01 (2e run : article d'actualite signal-commun-entrainement-ia-robots-txt, apres F11 ; J58 toujours decale)
+## Last run: 2026-11-02 (1er run : article d'actualite iqiyi-studio-cinema-ia-shanghai FR + EN ; J58 et PLAN_80 F09 decales d'un jour)
+
+- Actu du 02/11 : studio de cinema IA d'iQIYI a Shanghai (communique du 01/11). Reservee a 09:52 dans actu-du-jour.jsonl.
+- Piege : render_blog_queue_nanobanana.py n'a pas d'option --slug, et depuis Git Bash il faut MSYS_NO_PATHCONV=1 pour --dest /images/...
+- Yahoo Finance : banniere cookies FR, cliquer "Refuser tout" avant capture.
+
+## Run precedent : 2026-11-01 (2e run : article d'actualite signal-commun-entrainement-ia-robots-txt, apres F11 ; J58 toujours decale)
 
 - Consigne du 01/11 : chaque jour, le premier run publie un article d'actu IA (fiche automations/taches/article-actu-google-news.md), tant que docs/news-log.md n'a pas de ligne du jour. Articles d'actu en JSON-LD NewsArticle (categorie actualite).
 - Relire automations/etat/actu-du-jour.jsonl JUSTE AVANT de rediger : le 01/11, AI Studios a pris la meme actu quelques minutes avant nous.

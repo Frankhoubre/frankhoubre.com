@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-01T10:10:31.782Z
+> Generated: 2026-11-02T08:58:22.390Z
 
-## FR : 351 articles (/blog/<slug>)
+## FR : 352 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 54, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 55, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-02 | actualite | `iqiyi-studio-cinema-ia-shanghai` | iQIYI ouvre un studio de cinéma IA à Shanghai |
 | 2026-11-01 | comparatifs | `alternatives-kling-fiction` | Alternatives à Kling AI pour la fiction et l'animé |
 | 2026-11-01 | actualite | `signal-commun-entrainement-ia-robots-txt` | Entraînement IA : un robots.txt commun chez OpenAI et Google |
 | 2026-10-31 | comparatifs | `alternatives-google-flow` | Alternatives à Google Flow : où aller quand Veo coince |
@@ -363,12 +364,13 @@ Categories: tutoriels 191, actualite 54, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 266 articles (/en/blog/<slug>)
+## EN : 267 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, comparatifs 23, business 21, analyses 17, actualite 15, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 23, business 21, analyses 17, actualite 16, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-02 | actualite | `iqiyi-studio-cinema-ia-shanghai` | iQIYI opens an AI film studio in Shanghai |
 | 2026-11-01 | comparatifs | `alternatives-kling-fiction` | Kling AI Alternatives for Fiction and Anime |
 | 2026-11-01 | actualite | `signal-commun-entrainement-ia-robots-txt` | AI training opt-out: OpenAI and Google back one robots.txt |
 | 2026-10-31 | comparatifs | `alternatives-google-flow` | Google Flow Alternatives: Where to Go When Veo Stalls |

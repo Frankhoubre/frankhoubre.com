@@ -131,6 +131,8 @@ I make films with these tools, so I speak from that chair too. Here are the habi
 
 For voice the rule is the same, only stricter, because the proof is easier to make. A spectrogram talks. If you need a precise timbre, hire the person who owns it, or take a library voice whose licence explicitly covers your commercial use.
 
+Big platforms are moving in the same direction. In November 2026, iQIYI presented its [Shanghai AI film studio](/en/blog/iqiyi-studio-cinema-ia-shanghai) as a place where actors are filmed for real and AI only rebuilds what surrounds them, six months after a backlash over its actor platform for AI content.
+
 On ScreenWeaver the question keeps coming up in reverse: by the time you finish writing, you have already decided how many real faces your film needs. Casting settled at the script stage costs less than casting discovered at the storyboard.
 
 ## What I see break in practice

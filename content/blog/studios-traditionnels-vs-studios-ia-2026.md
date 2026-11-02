@@ -133,6 +133,8 @@ Le deuxième point, c'est la série courte Lionsgate. Si elle sort et trouve un 
 
 Le troisième, c'est la sortie de Critterz. Un long métrage d'animation à budget réduit qui trouve une distribution en salles change la conversation sur les coûts. Un film qui reste bloqué en pré-ventes la change aussi, dans l'autre sens.
 
+Hors des États-Unis, je regarde aussi iQIYI, qui a ouvert fin octobre 2026 [un studio de cinéma IA à Shanghai](/blog/iqiyi-studio-cinema-ia-shanghai) : les comédiens sont filmés pour de vrai, les décors et la lumière refaits par IA. Son premier film, *Cop in Trouble*, dira si la méthode tient sur un long.
+
 Le quatrième, c'est la mesure côté français. Les baromètres du CNC et les notes d'emploi produites avec Audiens et l'Afdas sont pour l'instant la seule source publique qui regarde les effectifs réels plutôt que les annonces. C'est aussi le seul endroit où l'on pourra voir si les métiers bougent, sujet que je traite en détail dans [mon analyse des métiers de l'audiovisuel face à l'IA](/blog/metiers-audiovisuel-ia-menaces-transformation-avis). Et si tu veux voir où ces quatre signaux mènent, j'ai décrit [le studio de cinéma tel que je l'imagine en 2030](/blog/studio-cinema-2030-prospective), pièce par pièce.
 
 ## Ce que ça veut dire pour toi
