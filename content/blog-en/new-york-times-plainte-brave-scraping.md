@@ -2,7 +2,7 @@
 title: "The New York Times sues Brave over AI scraping"
 date: "2026-11-03"
 dateModified: "2026-11-03"
-time: "10:30"
+time: "10:05"
 category: "actualite"
 excerpt: "On November 2, the New York Times and three dailies sued Brave over a 30 billion page index sold to AI companies. What the complaints say."
 thumbnail: "/images/blog/new-york-times-plainte-brave-scraping/hero.webp"

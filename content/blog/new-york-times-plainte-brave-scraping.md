@@ -1,7 +1,7 @@
 ---
 title: "Le New York Times attaque Brave pour scraping IA"
 date: "2026-11-03"
-time: "10:30"
+time: "10:05"
 category: "actualite"
 excerpt: "Le 2 novembre, le New York Times et trois quotidiens ont porté plainte contre Brave : index de 30 milliards de pages revendu à des IA. Ce qu'on sait."
 thumbnail: "/images/blog/new-york-times-plainte-brave-scraping/hero.webp"

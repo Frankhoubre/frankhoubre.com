@@ -1,6 +1,12 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-02 (1er run : article d'actualite iqiyi-studio-cinema-ia-shanghai FR + EN ; J58 et PLAN_80 F09 decales d'un jour)
+## Last run: 2026-11-03 (1er run : article d'actualite new-york-times-plainte-brave-scraping FR + EN ; J58 et PLAN_80 F09 decales d'un jour)
+
+- Actu du 03/11 : plaintes du NYT et de trois quotidiens contre Brave (deposees le 02/11). Reservee a 09:52 dans actu-du-jour.jsonl.
+- TechCrunch : modal de consentement, cliquer "Do not consent" avant capture ; masquer le lecteur video flottant.
+- 'git stash' pour comparer l'audit remet les fichiers en CRLF : re-normaliser en LF apres.
+
+## Run precedent : 2026-11-02 (1er run : article d'actualite iqiyi-studio-cinema-ia-shanghai FR + EN ; J58 et PLAN_80 F09 decales d'un jour)
 
 - Actu du 02/11 : studio de cinema IA d'iQIYI a Shanghai (communique du 01/11). Reservee a 09:52 dans actu-du-jour.jsonl.
 - Piege : render_blog_queue_nanobanana.py n'a pas d'option --slug, et depuis Git Bash il faut MSYS_NO_PATHCONV=1 pour --dest /images/...
