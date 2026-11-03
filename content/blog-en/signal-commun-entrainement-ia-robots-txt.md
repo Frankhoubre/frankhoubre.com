@@ -80,7 +80,7 @@ So if you're a director or an illustrator, you can refuse to have a model learn 
 
 ## What the signal won't do
 
-OpenAI calls the commitment voluntary, and the draft points back to RFC 9309, the robots.txt spec, which was never a lock. A scraper that ignores robots.txt will ignore this signal too.
+OpenAI calls the commitment voluntary, and the draft points back to RFC 9309, the robots.txt spec, which was never a lock. A scraper that ignores robots.txt will ignore this signal too. And a crawler with no name of its own slips past it by design, which is the heart of [the New York Times lawsuit against Brave](/en/blog/new-york-times-plainte-brave-scraping), filed on November 2.
 
 Nothing changes for the past either. Data already collected and models already trained stay as they are. You're stating a preference for what comes next.
 

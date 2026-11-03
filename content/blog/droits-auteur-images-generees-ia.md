@@ -38,7 +38,7 @@ Les discussions portent souvent sur **transparence**, **trace des données d’e
 
 ## États-Unis : pragmatisme et cas d’école
 
-La jurisprudence et les positions des offices évoluent. Pour une campagne US, une double vérification locale est courante en agence sérieuse.
+La jurisprudence et les positions des offices évoluent. Pour une campagne US, une double vérification locale est courante en agence sérieuse. Côté éditeurs, le front s'est déplacé vers les index qui revendent des pages aux IA, comme le montre [la plainte du New York Times contre Brave](/blog/new-york-times-plainte-brave-scraping) en novembre 2026.
 
 ## Checklist créateur avant livraison
 

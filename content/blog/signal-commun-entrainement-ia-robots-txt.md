@@ -79,7 +79,7 @@ Si tu es réalisateur ou illustrateur, tu peux donc refuser qu'on apprenne de to
 
 ## Ce que le signal ne fera pas
 
-OpenAI parle d'un engagement volontaire, et le brouillon renvoie à la RFC 9309, celle de robots.txt, qui n'a jamais été un verrou. Un scraper qui se moque de robots.txt se moquera aussi de ce signal.
+OpenAI parle d'un engagement volontaire, et le brouillon renvoie à la RFC 9309, celle de robots.txt, qui n'a jamais été un verrou. Un scraper qui se moque de robots.txt se moquera aussi de ce signal. Et un robot sans nom propre y échappe d'office : c'est tout le sujet de [la plainte du New York Times contre Brave](/blog/new-york-times-plainte-brave-scraping), déposée le 2 novembre.
 
 Rien ne bouge non plus pour le passé. Les données déjà collectées et les modèles déjà entraînés restent ce qu'ils sont : tu exprimes une préférence pour la suite, point.
 

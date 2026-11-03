@@ -38,7 +38,7 @@ The discussions often focus on **transparency**, **traceability of the training 
 
 ## United States: pragmatism and landmark cases
 
-The case law and the positions of the offices evolve. For a US campaign, a local double check is common in a serious agency.
+The case law and the positions of the offices evolve. For a US campaign, a local double check is common in a serious agency. On the publisher side, the fight has moved to the indexes that resell web pages to AI companies, as [the New York Times lawsuit against Brave](/en/blog/new-york-times-plainte-brave-scraping) showed in November 2026.
 
 ## Creator checklist before delivery
 
