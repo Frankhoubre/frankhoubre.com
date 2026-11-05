@@ -147,6 +147,7 @@ version-control for AI projects.
 ## USED (Run 14 — 2026-07-06)
 
 - `Runway Agent Skills campagnes pub vidéo IA juillet 2026` — FILLED: runway-agent-skills-campagnes-pub-video-ia-juillet-2026
+- `plugin Runway Dev Claude Code Codex Cursor / Runway API agent de code / Runway Dev MCP` — FILLED: runway-dev-plugin-claude-code-codex-cursor (actu 05/11/2026, FR + EN). Une future evolution du plugin = UPDATE de cet article, pas un nouveau.
 - `EU AI Act Article 50 marquage vidéo IA août 2026` — FILLED: eu-ai-act-article-50-marquage-video-ia-aout-2026
 - `présenter projet vidéo IA client non-tech` — FILLED: presenter-projet-video-ia-client-non-tech
 

@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-03 (1er run : article d'actualite new-york-times-plainte-brave-scraping FR + EN ; J58 et PLAN_80 F09 decales d'un jour)
+## Last run: 2026-11-05 (run CLOUD, session Claude Code distante : article d'actualite runway-dev-plugin-claude-code-codex-cursor FR + EN)
+
+- Pas d'actu le 04/11 (aucun run local ce jour-la, pas de ligne dans docs/news-log.md).
+- Run fait depuis le cloud sans acces a automations/etat/actu-du-jour.jsonl : coordination faite a la main avec les autres sites du projet (AI Studios : ChatGPT Images 2.6 ; ScreenWeaver : GPT Image 2.6 Flare/Sunburst ; SimpleAIBlog : Pangram ; BusinessDynamite : Uber). A noter dans actu-du-jour.jsonl au prochain run local.
+- Le proxy du cloud bloque le web general (runway.com, news.google.com, ai-gateway.vercel.sh) : pas de capture d'ecran ni de hero Nano Banana 2. Hero et visuel du corps = schemas maison (HTML Inter/JetBrains Mono rendu par Playwright, palette du design system), versions FR et EN. Un hero Nano Banana peut remplacer hero.webp plus tard si Frank le veut.
+- Fait a verifier : certains sites (byteiota) attribuent au plugin des outils de generation video ; la doc officielle dit le contraire. Article ecrit sur la doc officielle.
+- J58 et PLAN_80 F09 non touches par ce run.
+
+## Run precedent : 2026-11-03 (1er run : article d'actualite new-york-times-plainte-brave-scraping FR + EN ; J58 et PLAN_80 F09 decales d'un jour)
 
 - Actu du 03/11 : plaintes du NYT et de trois quotidiens contre Brave (deposees le 02/11). Reservee a 09:52 dans actu-du-jour.jsonl.
 - TechCrunch : modal de consentement, cliquer "Do not consent" avant capture ; masquer le lecteur video flottant.

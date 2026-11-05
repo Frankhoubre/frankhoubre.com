@@ -50,6 +50,10 @@ Claude Code lit le script, extrait les scènes, génère un fichier JSON ou Mark
 
 > 💡 **Le cut de Frank :** La vraie valeur n'est pas dans les tâches spectaculaires. Elle est dans les petites frictions quotidiennes que vous faites à la main depuis des mois parce que vous n'avez jamais eu le temps d'automatiser. Claude Code transforme "je devrais faire un script pour ça un jour" en "c'est fait, maintenant".
 
+### Brancher une API vidéo sans écrire le code soi-même
+
+Depuis le 2 novembre 2026, Runway propose un plugin officiel pour Claude Code : l'agent lit ton compte Runway Dev, les modèles autorisés et leurs prix, puis écrit l'intégration. Il ne génère pas les vidéos lui-même, il construit l'outil qui le fera. J'ai détaillé l'installation et les limites dans [mon article sur le plugin Runway Dev](/blog/runway-dev-plugin-claude-code-codex-cursor).
+
 ### Maintenance des workflows ComfyUI
 
 Si vous utilisez ComfyUI pour de la génération image ou vidéo, vous avez probablement des centaines de nœuds à gérer. Mettre à jour des références de modèles dans un workflow JSON quand vous changez de modèle de base est une tâche qui devient vite pénible à grande échelle.
