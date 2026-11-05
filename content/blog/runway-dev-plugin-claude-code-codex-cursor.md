@@ -11,7 +11,7 @@ Tu as déjà essayé de brancher une API vidéo dans un petit outil maison ? Tu 
 
 Le 2 novembre 2026, Runway a publié les plugins Runway Dev pour trois agents de code : Claude Code d'Anthropic, Codex d'OpenAI et Cursor. Une fois installé, ton agent lit ton compte Runway Dev (tes projets, les modèles que chaque projet a le droit d'utiliser, leurs prix, ton solde de crédits) et peut construire l'intégration à ta place. J'ai lu l'annonce et la documentation officielles ce 5 novembre. Voici ce qui est vrai, ce qui est exagéré ailleurs, et ce que ça change si tu fabriques des vidéos.
 
-![Schéma : Claude Code, Codex ou Cursor passent par le plugin runway-api (MCP Runway Dev et skills de l'API), qui lit les projets, les modèles autorisés, les prix et le solde de crédits du compte, puis peuvent créer un Model Router, des Characters, des Recipes ou des Workflows](/images/blog/runway-dev-plugin-claude-code-codex-cursor/hero.webp)
+![Une créatrice installée à son bureau la nuit regarde le code ouvert sur son ordinateur portable, à côté d'un écran qui affiche la vidéo produit d'un vase en céramique mouchetée tournant sur un plateau, le même vase posé près de cartons d'expédition](/images/blog/runway-dev-plugin-claude-code-codex-cursor/hero.webp)
 
 ## Ce que Runway a lancé le 2 novembre
 
@@ -21,6 +21,8 @@ L'annonce tient en une phrase sur [le blog de Runway](https://runway.com/news/de
 - sept **skills**, des fiches d'instructions qui apprennent à l'agent à se servir de l'API : configuration, choix des modèles, Model Routers, Characters, Recipes, Workflows.
 
 Concrètement, l'agent peut lister tes projets, voir quels modèles chacun autorise avec leur prix et leurs limites, consulter ton solde de crédits, puis créer un **Model Router** (un aiguillage qui choisit le modèle selon la demande), un **Character** (un avatar en temps réel), une **Recipe** ou brancher un **Workflow** publié depuis l'app Runway. Quand un appel échoue, il va lire le détail de l'erreur. Quand un Model Router choisit un modèle, il peut voir pourquoi.
+
+![Schéma : Claude Code, Codex ou Cursor passent par le plugin runway-api (MCP Runway Dev et skills de l'API), qui lit les projets, les modèles autorisés, les prix et le solde de crédits du compte, puis peuvent créer un Model Router, des Characters, des Recipes ou des Workflows](/images/blog/runway-dev-plugin-claude-code-codex-cursor/schema.webp)
 
 L'exemple donné par Runway est parlant : tu décris la fonction voulue, « une vidéo produit pour chaque article de ta boutique », et l'agent la construit de bout en bout sans quitter l'éditeur.
 

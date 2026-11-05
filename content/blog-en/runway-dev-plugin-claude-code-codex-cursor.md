@@ -4,14 +4,14 @@ date: "2026-11-05"
 time: "15:50"
 category: "actualite"
 excerpt: "On November 2, Runway shipped a free plugin that connects Claude Code, Codex and Cursor to its video API. What it does, what it doesn't, and who it's for."
-thumbnail: "/images/blog/runway-dev-plugin-claude-code-codex-cursor/hero-en.webp"
+thumbnail: "/images/blog/runway-dev-plugin-claude-code-codex-cursor/hero.webp"
 ---
 
 Ever tried wiring a video API into a small in-house tool? You lose an evening in the docs, you get a model name wrong, you find out the real price after the first render, and the API key ends up pasted into a file you shouldn't have shared. Runway wants to kill that evening.
 
 On November 2, 2026, Runway released Runway Dev plugins for three coding agents: Anthropic's Claude Code, OpenAI's Codex and Cursor. Once installed, your agent reads your Runway Dev account (your projects, the models each project is allowed to use, their prices, your credit balance) and can build the integration for you. I went through the official announcement and docs on November 5. Here's what's true, what's overstated elsewhere, and what it changes if you make video.
 
-![Diagram: Claude Code, Codex or Cursor go through the runway-api plugin (Runway Dev MCP plus API skills), which reads the account's projects, allowed models, prices and credit balance, then can create a Model Router, Characters, Recipes or Workflows](/images/blog/runway-dev-plugin-claude-code-codex-cursor/hero-en.webp)
+![A maker at her desk at night watches code on her laptop next to a monitor showing a product video of a speckled ceramic vase turning on a turntable, the same vase sitting by kraft shipping boxes](/images/blog/runway-dev-plugin-claude-code-codex-cursor/hero.webp)
 
 ## What Runway launched on November 2
 
@@ -21,6 +21,8 @@ The announcement fits in one line on [Runway's blog](https://runway.com/news/dev
 - seven **skills**, instruction files that teach the agent how to use the API: setup, model choice, Model Routers, Characters, Recipes, Workflows.
 
 In practice, the agent can list your projects, see which models each one allows along with price and limits, check your credit balance, then create a **Model Router** (a switch that picks the model based on the request), a **Character** (a real-time avatar), a **Recipe**, or hook up a **Workflow** published from the Runway app. When a call fails, it reads the error details. When a Model Router picks a model, it can see why.
+
+![Diagram: Claude Code, Codex or Cursor go through the runway-api plugin (Runway Dev MCP plus API skills), which reads the account's projects, allowed models, prices and credit balance, then can create a Model Router, Characters, Recipes or Workflows](/images/blog/runway-dev-plugin-claude-code-codex-cursor/schema-en.webp)
 
 Runway's own example says it well: you describe the feature you want, "a product video for every item in your store", and the agent builds it end to end without leaving the editor.
 
