@@ -39,7 +39,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from cinematic_still_post import apply_cinematic_post  # noqa: E402
 
 GATEWAY_URL = "https://ai-gateway.vercel.sh/v1/chat/completions"
-DEFAULT_MODEL = "google/gemini-3.1-flash-image-preview"  # Nano Banana 2
+DEFAULT_MODEL = "google/gemini-3.1-flash-image"  # Nano Banana 2
 
 NO_TEXT_CLAUSE = (
     "absolutely no text, no typography, no letters, no words, no captions, "

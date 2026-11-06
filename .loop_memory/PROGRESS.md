@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-05 (run CLOUD, session Claude Code distante : article d'actualite runway-dev-plugin-claude-code-codex-cursor FR + EN)
+## Last run: 2026-11-06 (run CLOUD, routine 5 blogs : article d'actualite grimes-film-ia-gods-dont-give-gifts FR + EN)
+
+- Actu du 06/11 : Grimes rejoint Gods Don't Give Gifts (Fable, Zack London alias Gossip Goblin), film entierement genere par IA, salles US le 4 decembre. Communique Fable introuvable en ligne : faits tires de PEOPLE, Forbes, Billboard, Consequence, The Verge (5/11). The Verge ecrit "Jack London", les 4 autres Zack.
+- Coordination des autres sites le 06/11 : ScreenWeaver Gemini Omni 1.2 Flash, SimpleAIBlog ElevenMusic x SoundCloud, BusinessDynamite Meta suspend ses conditions pub, AI Studios Instagram Edits sur Mac.
+- Reseau cloud ouvert et AI_GATEWAY_API_KEY present : hero Nano Banana 2 + capture Billboard + schema maison FR/EN.
+- PIEGE : l'id gateway google/gemini-3.1-flash-image-preview renvoie 404 ; DEFAULT_MODEL de render_blog_queue_nanobanana.py corrige en google/gemini-3.1-flash-image.
+- Lien entrant FR + EN depuis acteurs-ia-clones-droits-opportunites (section licences). J58 et PLAN_80 F09 non touches.
+
+## Run precedent : 2026-11-05 (run CLOUD, session Claude Code distante : article d'actualite runway-dev-plugin-claude-code-codex-cursor FR + EN)
 
 - Pas d'actu le 04/11 (aucun run local ce jour-la, pas de ligne dans docs/news-log.md).
 - Run fait depuis le cloud sans acces a automations/etat/actu-du-jour.jsonl : coordination faite a la main avec les autres sites du projet (AI Studios : ChatGPT Images 2.6 ; ScreenWeaver : GPT Image 2.6 Flare/Sunburst ; SimpleAIBlog : Pangram ; BusinessDynamite : Uber). A noter dans actu-du-jour.jsonl au prochain run local.

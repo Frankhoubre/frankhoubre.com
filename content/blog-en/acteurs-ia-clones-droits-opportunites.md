@@ -1,7 +1,7 @@
 ---
 title: "AI actor clones: your rights, contracts and the market"
 date: "2026-10-01"
-dateModified: "2026-10-01"
+dateModified: "2026-11-06"
 category: "analyses"
 excerpt: "Digital replicas, cloned voices, synthetic performers: what the law actually protects, and where an actor can license a face or a voice today."
 thumbnail: "/images/blog/acteurs-ia-clones-droits-opportunites/hero.webp"
@@ -102,6 +102,8 @@ While the public debate circles around replacement, licensing routes have opened
 *Captured from elevenlabs.io/iconic-marketplace on 1 October 2026. The page describes a match between creators and rights holders.*
 
 **The Cameo coalition.** On 26 August 2026, SAG-AFTRA, Cameo, CAA, UTA, WME and the Music Artist Coalition published a joint statement: talent keep full ownership of the videos they submit, Cameo policies prohibit any account from using AI to generate a deepfake of talent without explicit authorisation, and the platform does not use talent videos to create or train digital replicas without permission.
+
+**The Grimes case.** On 5 November 2026, the studio Fable announced that Grimes stars in Gods Don't Give Gifts, a fully AI-generated feature due in US theaters on December 4. She recorded her real voice, and her on-screen likeness is generated. The terms of her deal have not been disclosed. I break down what is human and what is AI in [my piece on Grimes and Gods Don't Give Gifts](/en/blog/grimes-film-ia-gods-dont-give-gifts).
 
 Narrativ and Ethovox run through SAG-AFTRA membership, so a French performer cannot walk straight in. Those deals still set a contract shape and a payment principle. When a producer offers you a replica clause with no money on top of the fee, you now have something to put on the table.
 

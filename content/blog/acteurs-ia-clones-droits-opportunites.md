@@ -102,6 +102,8 @@ Pendant que le débat public tourne autour du remplacement, des circuits de lice
 
 **La coalition Cameo.** Le 26 août 2026, SAG-AFTRA, Cameo, CAA, UTA, WME et la Music Artist Coalition ont publié une déclaration commune : les talents gardent la pleine propriété des vidéos qu'ils déposent, les règles de Cameo interdisent à tout compte d'utiliser l'IA pour générer un deepfake d'un talent sans autorisation explicite, et la plateforme n'utilise pas les vidéos pour créer ou entraîner des répliques numériques sans permission.
 
+**Le cas Grimes.** Le 5 novembre 2026, le studio Fable a annoncé que Grimes joue dans Gods Don't Give Gifts, un long métrage entièrement généré par IA prévu en salles aux États-Unis le 4 décembre. Elle a enregistré sa vraie voix, et son apparence à l'écran est générée. Les conditions de son contrat n'ont pas été rendues publiques. J'ai détaillé ce qui est humain et ce qui est IA dans [mon article sur Grimes et Gods Don't Give Gifts](/blog/grimes-film-ia-gods-dont-give-gifts).
+
 Narrativ et Ethovox passent par la carte SAG-AFTRA, donc un comédien français n'y entre pas directement. Ces accords fixent quand même un format de contrat et un principe de rémunération. Quand un producteur te propose une clause de réplique sans un centime de plus que le cachet, tu as maintenant quelque chose à poser sur la table.
 
 ## Les clauses que je relis avant de signer quoi que ce soit

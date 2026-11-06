@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-05T14:23:14.227Z
+> Generated: 2026-11-06T08:03:53.127Z
 
-## FR : 354 articles (/blog/<slug>)
+## FR : 355 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 57, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 58, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-06 | actualite | `grimes-film-ia-gods-dont-give-gifts` | Grimes joue dans Gods Don't Give Gifts, film IA en salles |
 | 2026-11-05 | actualite | `runway-dev-plugin-claude-code-codex-cursor` | Runway Dev arrive dans Claude Code, Codex et Cursor |
 | 2026-11-03 | actualite | `new-york-times-plainte-brave-scraping` | Le New York Times attaque Brave pour scraping IA |
 | 2026-11-02 | actualite | `iqiyi-studio-cinema-ia-shanghai` | iQIYI ouvre un studio de cinéma IA à Shanghai |
@@ -366,12 +367,13 @@ Categories: tutoriels 191, actualite 57, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 269 articles (/en/blog/<slug>)
+## EN : 270 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, comparatifs 23, business 21, actualite 18, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 23, business 21, actualite 19, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-06 | actualite | `grimes-film-ia-gods-dont-give-gifts` | Grimes stars in Gods Don't Give Gifts, an AI film for theaters |
 | 2026-11-05 | actualite | `runway-dev-plugin-claude-code-codex-cursor` | Runway Dev lands in Claude Code, Codex and Cursor |
 | 2026-11-03 | actualite | `new-york-times-plainte-brave-scraping` | The New York Times sues Brave over AI scraping |
 | 2026-11-02 | actualite | `iqiyi-studio-cinema-ia-shanghai` | iQIYI opens an AI film studio in Shanghai |
