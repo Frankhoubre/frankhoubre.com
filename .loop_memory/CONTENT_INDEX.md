@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-06T08:03:53.127Z
+> Generated: 2026-11-07T08:03:49.611Z
 
-## FR : 355 articles (/blog/<slug>)
+## FR : 356 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 58, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 59, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-07 | actualite | `underdog-woof-voix-ia-locale-32-mo` | Underdog Woof : une voix IA de 32 Mo qui tourne en local |
 | 2026-11-06 | actualite | `grimes-film-ia-gods-dont-give-gifts` | Grimes joue dans Gods Don't Give Gifts, film IA en salles |
 | 2026-11-05 | actualite | `runway-dev-plugin-claude-code-codex-cursor` | Runway Dev arrive dans Claude Code, Codex et Cursor |
 | 2026-11-03 | actualite | `new-york-times-plainte-brave-scraping` | Le New York Times attaque Brave pour scraping IA |
@@ -367,12 +368,13 @@ Categories: tutoriels 191, actualite 58, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 270 articles (/en/blog/<slug>)
+## EN : 271 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, comparatifs 23, business 21, actualite 19, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 23, business 21, actualite 20, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-07 | actualite | `underdog-woof-voix-ia-locale-32-mo` | Underdog Woof: a 32 MB AI voice that runs locally |
 | 2026-11-06 | actualite | `grimes-film-ia-gods-dont-give-gifts` | Grimes stars in Gods Don't Give Gifts, an AI film for theaters |
 | 2026-11-05 | actualite | `runway-dev-plugin-claude-code-codex-cursor` | Runway Dev lands in Claude Code, Codex and Cursor |
 | 2026-11-03 | actualite | `new-york-times-plainte-brave-scraping` | The New York Times sues Brave over AI scraping |

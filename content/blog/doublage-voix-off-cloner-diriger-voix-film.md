@@ -41,7 +41,7 @@ Avant toute génération, tu dois sécuriser le matériau source. Même si l’o
 
 Ensuite, découpe ton script en blocs dramatiques, pas en paragraphes visuels. Un bloc = une intention claire. Exemple: retenue, tension, fragilité, affirmation. Cette segmentation évite les monologues uniformes qui sonnent faux. En pratique, je génère rarement plus de 1 à 3 phrases par passe pour garder un contrôle artistique fin.
 
-À ce stade, pense à ton image. Une voix trop active peut détruire un plan contemplatif. Une voix trop lente peut casser une scène de tension. Tu dois lire la voix avec le montage, pas au casque en solo. Pour ça, j’ouvre toujours la timeline, même en version brouillon, et je teste les répliques dans le flux réel.
+À ce stade, pense à ton image. Une voix trop active peut détruire un plan contemplatif. Une voix trop lente peut casser une scène de tension. Tu dois lire la voix avec le montage, pas au casque en solo. Pour ça, j’ouvre toujours la timeline, même en version brouillon, et je teste les répliques dans le flux réel. Pour ces voix de brouillon, un petit modèle local suffit souvent : j'en parle dans [mon article sur Underdog Woof, une voix IA de 32 Mo](/blog/underdog-woof-voix-ia-locale-32-mo), utile pour l'animatique mais pas pour la voix finale.
 
 Dernière règle de base: garde un journal des prompts et réglages de jeu. Tu notes chaque passe, ce qui fonctionne, ce qui sonne artificiel, ce qui tient au mix. En deux projets, tu constitues ton propre dictionnaire d’intentions. C’est là que tu passes de "je teste des presets" à "je dirige une performance".
 

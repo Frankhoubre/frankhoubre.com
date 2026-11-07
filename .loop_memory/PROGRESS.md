@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-06 (run CLOUD, routine 5 blogs : article d'actualite grimes-film-ia-gods-dont-give-gifts FR + EN)
+## Last run: 2026-11-07 (run CLOUD, routine 5 blogs : article d'actualite underdog-woof-voix-ia-locale-32-mo FR + EN)
+
+- Actu du 07/11 : Underdog Woof, synthese vocale de 31,7 Mo (une voix) / 40,6 Mo (deux voix, Hugging Face), dans le navigateur via WebGPU, hors ligne. Licence CC BY-NC 4.0 (non commerciale). Demos en anglais seulement. Sources : underdog.ai/woof (26/10), underdog.ai/escape, TechCrunch 06/11 (Ivan Mehta).
+- Angle : voix temporaires d'animatique, pas voix finale (licence, pas de francais, pas de clonage). Chiffres de qualite = ceux d'Underdog, signales comme tels.
+- Coordination des autres sites le 07/11 : ScreenWeaver Higgsfield Micro Drama Ads, SimpleAIBlog Meta Muse spaces, BusinessDynamite Alexa par SMS, AI Studios Physicl.
+- Images : hero Nano Banana 2 (logo du casque floute a la main), captures woof-page, woof-comparaison, techcrunch, schema maison FR/EN.
+- Lien entrant FR + EN depuis doublage-voix-off-cloner-diriger-voix-film (section trench workflow). J58 et PLAN_80 F09 non touches.
+
+## Run precedent : 2026-11-06 (run CLOUD, routine 5 blogs : article d'actualite grimes-film-ia-gods-dont-give-gifts FR + EN)
 
 - Actu du 06/11 : Grimes rejoint Gods Don't Give Gifts (Fable, Zack London alias Gossip Goblin), film entierement genere par IA, salles US le 4 decembre. Communique Fable introuvable en ligne : faits tires de PEOPLE, Forbes, Billboard, Consequence, The Verge (5/11). The Verge ecrit "Jack London", les 4 autres Zack.
 - Coordination des autres sites le 06/11 : ScreenWeaver Gemini Omni 1.2 Flash, SimpleAIBlog ElevenMusic x SoundCloud, BusinessDynamite Meta suspend ses conditions pub, AI Studios Instagram Edits sur Mac.

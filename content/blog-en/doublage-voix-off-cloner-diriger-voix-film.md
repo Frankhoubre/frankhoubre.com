@@ -41,7 +41,7 @@ Before any generation, you must secure the source material. Even if the tool pro
 
 Then, cut your script into dramatic blocks, not into visual paragraphs. One block = one clear intention. Example: restraint, tension, fragility, affirmation. This segmentation avoids the uniform monologues that sound false. In practice, I rarely generate more than 1 to 3 sentences per pass to keep a fine artistic control.
 
-At this stage, think about your image. A too-active voice can destroy a contemplative shot. A too-slow voice can break a tension scene. You must read the voice with the edit, not on headphones in solo. For that, I always open the timeline, even in a draft version, and I test the lines in the real flow.
+At this stage, think about your image. A too-active voice can destroy a contemplative shot. A too-slow voice can break a tension scene. You must read the voice with the edit, not on headphones in solo. For that, I always open the timeline, even in a draft version, and I test the lines in the real flow. For those draft voices, a small local model is often enough: I cover one in [my article on Underdog Woof, a 32 MB AI voice](/en/blog/underdog-woof-voix-ia-locale-32-mo), useful for the animatic but not for the final voice.
 
 Last basic rule: keep a log of the prompts and acting settings. You note each pass, what works, what sounds artificial, what holds at the mix. In two projects, you build your own dictionary of intentions. That is where you move from "I test presets" to "I direct a performance".
 
