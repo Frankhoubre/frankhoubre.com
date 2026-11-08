@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-07 (run CLOUD, routine 5 blogs : article d'actualite underdog-woof-voix-ia-locale-32-mo FR + EN)
+## Last run: 2026-11-08 (run CLOUD, routine 5 blogs : article d'actualite chomet-dior-accuse-ia-interpolation FR + EN)
+
+- Actu du 08/11 : Sylvain Chomet et le producteur Aton Soumache dementent toute IA generative dans le court metrage Christian Dior's Night in Color (6 min, voix Pattinson, Garrel, Cottin, Rihanna) ; 7 mois, ~20 personnes dont 6 animateurs ; interpolation automatique pour une partie des intervalles ; explication des six doigts (main en eventail). Sources : Variety 07/11 (Elsa Keslassy, exclusif), The Verge 07/11 (Terrence O'Brien). dior.com bloque les robots (page indisponible), pas de capture officielle Dior.
+- Angle : dessiner / interpoler / generer, trois choses differentes ; lecon de transparence pour un createur (fiche technique avant la sortie).
+- Coordination des autres sites le 08/11 : ScreenWeaver Core Studio (imCore), SimpleAIBlog Suno et ayants droit Elvis / Eminem, BusinessDynamite donnees Ramp sur les depenses IA, AI Studios Meta Muse voix et avatars.
+- Images : hero Nano Banana 2 (animatrice et table lumineuse, sans logo), captures Variety (titre + citation) et The Verge, schema maison 4 etapes FR/EN.
+- Lien entrant FR + EN depuis metiers-audiovisuel-ia-menaces-transformation-avis. Note : la version EN de cet article ne parle pas de l'article 50 (plus ancienne que la FR).
+
+## Run precedent : 2026-11-07 (run CLOUD, routine 5 blogs : article d'actualite underdog-woof-voix-ia-locale-32-mo FR + EN)
 
 - Actu du 07/11 : Underdog Woof, synthese vocale de 31,7 Mo (une voix) / 40,6 Mo (deux voix, Hugging Face), dans le navigateur via WebGPU, hors ligne. Licence CC BY-NC 4.0 (non commerciale). Demos en anglais seulement. Sources : underdog.ai/woof (26/10), underdog.ai/escape, TechCrunch 06/11 (Ivan Mehta).
 - Angle : voix temporaires d'animatique, pas voix finale (licence, pas de francais, pas de clonage). Chiffres de qualite = ceux d'Underdog, signales comme tels.

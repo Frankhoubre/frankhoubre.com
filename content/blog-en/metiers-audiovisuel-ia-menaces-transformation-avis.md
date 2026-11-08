@@ -115,6 +115,8 @@ He can stay artistically brilliant, but he loses tenders where the budget assume
 
 Whether AI takes your job is one of the questions I get most often, alongside the ones about rights, costs and timelines. All twelve are answered in [my creative AI questions and answers](/en/blog/questions-frequentes-ia-creative-reponses).
 
+The in-betweener's job is a good example of a role that tools reshape rather than delete. The row over Sylvain Chomet's Dior short, where the team says the film was drawn by hand with some in-betweens interpolated, shows how blurred that line looks from outside: I break it down in [my piece on Chomet and interpolation](/en/blog/chomet-dior-accuse-ia-interpolation).
+
 Whatever your role, the employer side of this has a deadline now. Article 4 of the European AI Act has required measures supporting staff AI literacy since February 2025, and I turned that into a workable calendar in [my 30 day protocol for training a team on AI](/en/blog/former-equipe-creative-ia-protocole-30-jours).
 
 ## What becomes rare (therefore precious)

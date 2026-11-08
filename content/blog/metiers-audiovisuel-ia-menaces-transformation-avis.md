@@ -59,6 +59,8 @@ Ce que ça change dans une équipe est très concret. Quelqu'un doit savoir quel
 
 Cette obligation de transparence revient dans presque toutes les sessions que j'anime, avec onze autres interrogations que j'ai regroupées dans [mes réponses aux douze questions les plus fréquentes sur l'IA créative](/blog/questions-frequentes-ia-creative-reponses).
 
+L'affaire du court métrage de Sylvain Chomet pour Dior, accusé d'IA alors que l'équipe parle de dessin à la main et d'intervalles en partie interpolés, montre ce que coûte une transparence floue : je l'ai décortiquée dans [mon article sur Chomet et l'interpolation](/blog/chomet-dior-accuse-ia-interpolation).
+
 Je ne suis pas juriste et rien ici ne remplace un avis juridique. Pour lire le texte plutôt que les résumés : les [lignes directrices de la Commission sur les obligations de transparence](https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations) et une [lecture détaillée de l'article 50](https://artificialintelligenceact.eu/transparency-rules-article-50/).
 
 > 💡 **Le cut de Frank :** ouvre un onglet « traçabilité » dans ta feuille de service dès la préparation, pas au montage. Une colonne plan, une colonne outil, une colonne date. Le jour où le client demande ce qui est généré, tu réponds en trente secondes au lieu de rouvrir six projets archivés.
