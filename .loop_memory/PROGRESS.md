@@ -1,6 +1,15 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-08 (run CLOUD, routine 5 blogs : article d'actualite chomet-dior-accuse-ia-interpolation FR + EN)
+## Last run: 2026-11-09 (run CLOUD, routine 5 blogs : article d'actualite nolan-odyssey-mention-anti-entrainement-ia FR + EN)
+
+- Actu du 09/11 : Christopher Nolan (president DGA) dans le podcast Hollywood Insiders (MPTF), repris par Deadline (Glenn Garner) et TheWrap (Benjamin Lindsay) le 07/11 : c'est aux studios de defendre leurs droits face a l'IA, le fair use ne tiendra pas selon lui, et le generique de The Odyssey contient pour la premiere fois (Universal) une mention interdisant l'entrainement IA sur le film.
+- Angle : une mention au generique ne suffit pas en Europe ; directive 2019/790 art. 4 par. 3 (procedes lisibles par machine), considerant 18, CPI L. 122-5-3, AI Act art. 53 ; quatre endroits ou reserver son film (generique, fichier et page, CGU, contrats).
+- Coordination des autres sites le 09/11 : BusinessDynamite Siri agentique (apps tierces, UE exclue), ScreenWeaver Weta FX et la strategie IA exigee par les studios, AI Studios Fuji TV AI Center, SimpleAIBlog clip IA de Nile Rodgers.
+- Images : hero Nano Banana 2 (monteuse de nuit, generique flou, sans logo), captures Deadline (titre) et TheWrap (citation), EUR-Lex article 4 FR et EN, schema maison 4 cases FR/EN.
+- Lien entrant FR + EN depuis signal-commun-entrainement-ia-robots-txt.
+- Rappel : l'article Chomet du 08/11 etait toujours en 404 le 09/11 au matin (aucun deploiement Vercel depuis le push).
+
+## Run precedent : 2026-11-08 (run CLOUD, routine 5 blogs : article d'actualite chomet-dior-accuse-ia-interpolation FR + EN)
 
 - Actu du 08/11 : Sylvain Chomet et le producteur Aton Soumache dementent toute IA generative dans le court metrage Christian Dior's Night in Color (6 min, voix Pattinson, Garrel, Cottin, Rihanna) ; 7 mois, ~20 personnes dont 6 animateurs ; interpolation automatique pour une partie des intervalles ; explication des six doigts (main en eventail). Sources : Variety 07/11 (Elsa Keslassy, exclusif), The Verge 07/11 (Terrence O'Brien). dior.com bloque les robots (page indisponible), pas de capture officielle Dior.
 - Angle : dessiner / interpoler / generer, trois choses differentes ; lecon de transparence pour un createur (fiche technique avant la sortie).

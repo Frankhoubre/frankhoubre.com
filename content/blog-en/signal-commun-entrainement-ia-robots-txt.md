@@ -86,6 +86,8 @@ Nothing changes for the past either. Data already collected and models already t
 
 The last limit is the one illustrators hate most: your robots.txt covers your domain and nothing else. An image reposted on Pinterest, a forum or an aggregator depends on those sites' robots.txt. For the rights question itself, our guide to [copyright on AI-generated images](/en/blog/droits-auteur-images-generees-ia) is the right place to start.
 
+*Update, November 9, 2026: Universal added a notice to The Odyssey's end credits forbidding AI training on the film, and Christopher Nolan welcomed it. I explain in [my piece on that notice](/en/blog/nolan-odyssey-mention-anti-entrainement-ia) why it needs a machine-readable signal like this one alongside it.*
+
 ## What I'd do on my site this week
 
 There's no technical rush: none of the four reads the signal in production yet, except maybe Anthropic, which gave no date. But adding the group now costs nothing and breaks nothing, since a bot that doesn't know the name just ignores it.

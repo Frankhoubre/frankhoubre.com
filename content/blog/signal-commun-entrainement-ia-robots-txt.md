@@ -85,6 +85,8 @@ Rien ne bouge non plus pour le passé. Les données déjà collectées et les mo
 
 Dernière limite, celle qui fâche le plus les illustrateurs : ton robots.txt vaut pour ton domaine, et seulement lui. Une image reprise sur Pinterest, un forum ou un agrégateur dépend du robots.txt de ces sites-là. Pour la question des droits eux-mêmes, notre guide sur les [droits d'auteur des images générées par IA](/blog/droits-auteur-images-generees-ia) reste la bonne porte d'entrée.
 
+*Mise à jour du 9 novembre 2026 : Universal a ajouté au générique de The Odyssey une mention qui interdit d'entraîner une IA sur le film, et Christopher Nolan s'en félicite. Je montre dans [mon article sur cette mention](/blog/nolan-odyssey-mention-anti-entrainement-ia) pourquoi elle doit être doublée d'un signal lisible par machine, comme celui-ci.*
+
 ## Ce que je ferais sur mon site cette semaine
 
 Rien ne presse côté technique : aucun des quatre ne lit encore le signal en production, sauf peut-être Anthropic, qui n'a pas donné de date. Mais ajouter le groupe maintenant ne coûte rien et ne casse rien, puisqu'un robot qui ne le connaît pas l'ignore.

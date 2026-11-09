@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-08T07:57:57.941Z
+> Generated: 2026-11-09T07:58:03.311Z
 
-## FR : 357 articles (/blog/<slug>)
+## FR : 358 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 60, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 61, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-09 | actualite | `nolan-odyssey-mention-anti-entrainement-ia` | Nolan salue la mention anti-IA du générique de The Odyssey |
 | 2026-11-08 | actualite | `chomet-dior-accuse-ia-interpolation` | Chomet accusé d'IA pour son film Dior : il répond |
 | 2026-11-07 | actualite | `underdog-woof-voix-ia-locale-32-mo` | Underdog Woof : une voix IA de 32 Mo qui tourne en local |
 | 2026-11-06 | actualite | `grimes-film-ia-gods-dont-give-gifts` | Grimes joue dans Gods Don't Give Gifts, film IA en salles |
@@ -369,12 +370,13 @@ Categories: tutoriels 191, actualite 60, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 272 articles (/en/blog/<slug>)
+## EN : 273 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, comparatifs 23, actualite 21, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, comparatifs 23, actualite 22, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-09 | actualite | `nolan-odyssey-mention-anti-entrainement-ia` | Nolan praises The Odyssey's anti-AI credits notice |
 | 2026-11-08 | actualite | `chomet-dior-accuse-ia-interpolation` | Chomet accused of AI over his Dior film: his answer |
 | 2026-11-07 | actualite | `underdog-woof-voix-ia-locale-32-mo` | Underdog Woof: a 32 MB AI voice that runs locally |
 | 2026-11-06 | actualite | `grimes-film-ia-gods-dont-give-gifts` | Grimes stars in Gods Don't Give Gifts, an AI film for theaters |
