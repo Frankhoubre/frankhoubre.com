@@ -95,6 +95,8 @@ Do a cold final check. Let a few hours pass, come back, look on a phone and a la
 
 ![Final check of an AI video edit with multi-format exports and mobile verification](/images/art9-wf2.png)
 
+*Update, November 10, 2026: Apple now charges for AI in its creative apps past the monthly allowance, with a $49.99 pack in Logic Pro, France included, and Final Cut Pro expected next. I explain how it works in [my piece on Apple's AI usage packs](/en/blog/apple-packs-ia-payants-logic-pro-final-cut).*
+
 ## Troubleshooting: what beginners break in AI editing
 
 First recurring problem, an illegible timeline. Tracks named any old way, unsorted assets, mixed versions. Result, each correction takes twice as long. Correction: strict project structure, naming conventions, and locked versions.

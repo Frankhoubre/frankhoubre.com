@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-09 (run CLOUD, routine 5 blogs : article d'actualite nolan-odyssey-mention-anti-entrainement-ia FR + EN)
+## Last run: 2026-11-10 (run CLOUD, routine 5 blogs : article d'actualite apple-packs-ia-payants-logic-pro-final-cut FR + EN)
+
+- Actu du 09/11 : Apple lance les intelligence usage packs (49,99 $, achat unique, report 12 mois, sans partage familial, non remboursables) dans Logic Pro pour les abonnes Apple Creator Studio ayant epuise leur quota mensuel ; 8 pays dont la France (page d'assistance Apple 127888). Quota inclus : au minimum 50 images, 250 formes, 50 presentations ou notes pour 700 diapositives par mois. Gemini pour l'assistant Logic Pro et les images, OpenAI pour Generate Presentation. Final Cut Pro, Pixelmator Pro et iWork attendus selon 9to5Mac.
+- Coordination des autres sites le 10/11 : BusinessDynamite Skyfall (agents qui gerent trois petites entreprises), AI Studios rapport Adobe Creators' Toolkit (68 % se contentent du presque), ScreenWeaver alliance Disney et Adobe (modeles Firefly Foundry), SimpleAIBlog Claude Fable 5.2.
+- Images : hero Nano Banana 2 (monteur musicien de nuit, sans logo), captures support Apple, 9to5Mac, Engadget, schema maison 4 etapes FR/EN.
+- Lien entrant FR + EN depuis guide-complet-montage-video-assiste-intelligence-artificielle.
+- Le deploiement Vercel fonctionne a nouveau (Chomet du 08/11 et Nolan du 09/11 en 200 le 09/11).
+
+## Run precedent : 2026-11-09 (run CLOUD, routine 5 blogs : article d'actualite nolan-odyssey-mention-anti-entrainement-ia FR + EN)
 
 - Actu du 09/11 : Christopher Nolan (president DGA) dans le podcast Hollywood Insiders (MPTF), repris par Deadline (Glenn Garner) et TheWrap (Benjamin Lindsay) le 07/11 : c'est aux studios de defendre leurs droits face a l'IA, le fair use ne tiendra pas selon lui, et le generique de The Odyssey contient pour la premiere fois (Universal) une mention interdisant l'entrainement IA sur le film.
 - Angle : une mention au generique ne suffit pas en Europe ; directive 2019/790 art. 4 par. 3 (procedes lisibles par machine), considerant 18, CPI L. 122-5-3, AI Act art. 53 ; quatre endroits ou reserver son film (generique, fichier et page, CGU, contrats).

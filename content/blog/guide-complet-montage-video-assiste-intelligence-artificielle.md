@@ -101,6 +101,8 @@ Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 
 [Voir l'explication en vidéo](https://www.youtube.com/watch?v=60RXHCo3d84)
 
+*Mise à jour du 10 novembre 2026 : Apple fait désormais payer l'IA de ses apps créatives au-delà du quota mensuel, avec un pack à 49,99 dollars dans Logic Pro, France incluse, et Final Cut Pro attendu. Je détaille le fonctionnement dans [mon article sur les packs d'IA d'Apple](/blog/apple-packs-ia-payants-logic-pro-final-cut).*
+
 ## Troubleshooting: ce que les débutants cassent au montage IA
 
 Premier problème récurrent, timeline illisible. Pistes nommées n’importe comment, assets non triés, versions mélangées. Résultat, chaque correction prend deux fois plus de temps. Correction: structure stricte de projet, conventions de nommage, et versions verrouillées.
