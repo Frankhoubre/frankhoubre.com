@@ -97,6 +97,8 @@ Do a cold final check. Let a few hours pass, come back, look on a phone and a la
 
 *Update, November 10, 2026: Apple now charges for AI in its creative apps past the monthly allowance, with a $49.99 pack in Logic Pro, France included, and Final Cut Pro expected next. I explain how it works in [my piece on Apple's AI usage packs](/en/blog/apple-packs-ia-payants-logic-pro-final-cut).*
 
+*Update, November 11, 2026: at Adobe MAX, Premiere gets Color Mode grading, video, sound and music generation in the timeline, and Generative Remove in beta. Driving it from Claude or ChatGPT arrives in early 2027. I sort it out in [my piece on Adobe MAX 2026 and Premiere](/en/blog/adobe-max-2026-premiere-ia-montage).*
+
 ## Troubleshooting: what beginners break in AI editing
 
 First recurring problem, an illegible timeline. Tracks named any old way, unsorted assets, mixed versions. Result, each correction takes twice as long. Correction: strict project structure, naming conventions, and locked versions.

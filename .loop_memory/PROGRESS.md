@@ -1,6 +1,13 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-10 (run CLOUD, routine 5 blogs : article d'actualite apple-packs-ia-payants-logic-pro-final-cut FR + EN)
+## Last run: 2026-11-11 (run CLOUD, routine 5 blogs : article d'actualite adobe-max-2026-premiere-ia-montage FR + EN)
+
+- Actu du 10/11 : Adobe MAX (Miami). Premiere : Color Mode (etalonnage, sort de beta), Generative Media Tool (video, bruitages, ambiances, musique dans la timeline ; Firefly + Google, Kling, Runway, Luma selon RedShark), Enhance Audio, Separate Crosstalk, Separate Sound Source, Generative Remove (beta). Adobe Creative Agent en beta dans Premiere, After Effects, Illustrator, InDesign, Frame.io. Integrations MCP locales (Claude, ChatGPT dans Photoshop, Illustrator, Premiere, After Effects) en beta privee debut 2027, prix non annonce.
+- Coordination des autres sites le 11/11 : ScreenWeaver Storm Dogs (film IA de Rob Minkoff), BusinessDynamite Businesses in ChatGPT, AI Studios etude OpenAI x Upwork freelances, SimpleAIBlog MCP Creative Cloud d'Adobe (angle piloter depuis Claude ; ici angle monteur Premiere).
+- Images : hero Nano Banana 2 (monteuse de nuit, sans logo), captures communique Adobe (titre + passage Premiere), RedShark News (titre), schema maison 3 colonnes FR/EN.
+- Lien entrant FR + EN depuis guide-complet-montage-video-assiste-intelligence-artificielle.
+
+## Run precedent : 2026-11-10 (run CLOUD, routine 5 blogs : article d'actualite apple-packs-ia-payants-logic-pro-final-cut FR + EN)
 
 - Actu du 09/11 : Apple lance les intelligence usage packs (49,99 $, achat unique, report 12 mois, sans partage familial, non remboursables) dans Logic Pro pour les abonnes Apple Creator Studio ayant epuise leur quota mensuel ; 8 pays dont la France (page d'assistance Apple 127888). Quota inclus : au minimum 50 images, 250 formes, 50 presentations ou notes pour 700 diapositives par mois. Gemini pour l'assistant Logic Pro et les images, OpenAI pour Generate Presentation. Final Cut Pro, Pixelmator Pro et iWork attendus selon 9to5Mac.
 - Coordination des autres sites le 10/11 : BusinessDynamite Skyfall (agents qui gerent trois petites entreprises), AI Studios rapport Adobe Creators' Toolkit (68 % se contentent du presque), ScreenWeaver alliance Disney et Adobe (modeles Firefly Foundry), SimpleAIBlog Claude Fable 5.2.

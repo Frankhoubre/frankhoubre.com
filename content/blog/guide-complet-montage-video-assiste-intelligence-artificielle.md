@@ -103,6 +103,8 @@ Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 
 *Mise à jour du 10 novembre 2026 : Apple fait désormais payer l'IA de ses apps créatives au-delà du quota mensuel, avec un pack à 49,99 dollars dans Logic Pro, France incluse, et Final Cut Pro attendu. Je détaille le fonctionnement dans [mon article sur les packs d'IA d'Apple](/blog/apple-packs-ia-payants-logic-pro-final-cut).*
 
+*Mise à jour du 11 novembre 2026 : à Adobe MAX, Premiere reçoit l'étalonnage Color Mode, la génération de vidéo, de son et de musique dans la timeline et Generative Remove en bêta. Le pilotage par Claude ou ChatGPT arrive début 2027. Je fais le tri dans [mon article sur Adobe MAX 2026 et Premiere](/blog/adobe-max-2026-premiere-ia-montage).*
+
 ## Troubleshooting: ce que les débutants cassent au montage IA
 
 Premier problème récurrent, timeline illisible. Pistes nommées n’importe comment, assets non triés, versions mélangées. Résultat, chaque correction prend deux fois plus de temps. Correction: structure stricte de projet, conventions de nommage, et versions verrouillées.

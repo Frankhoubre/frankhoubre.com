@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-10T07:52:53.550Z
+> Generated: 2026-11-11T08:09:39.519Z
 
-## FR : 359 articles (/blog/<slug>)
+## FR : 360 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 62, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 63, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-11 | actualite | `adobe-max-2026-premiere-ia-montage` | Adobe MAX 2026 : ce qui change dans Premiere pour monter un film |
 | 2026-11-10 | actualite | `apple-packs-ia-payants-logic-pro-final-cut` | Apple fait payer l'IA de ses apps créatives au-delà du quota |
 | 2026-11-09 | actualite | `nolan-odyssey-mention-anti-entrainement-ia` | Nolan salue la mention anti-IA du générique de The Odyssey |
 | 2026-11-08 | actualite | `chomet-dior-accuse-ia-interpolation` | Chomet accusé d'IA pour son film Dior : il répond |
@@ -371,12 +372,13 @@ Categories: tutoriels 191, actualite 62, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 274 articles (/en/blog/<slug>)
+## EN : 275 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 23, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 24, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-11 | actualite | `adobe-max-2026-premiere-ia-montage` | Adobe MAX 2026: what changes in Premiere for cutting a film |
 | 2026-11-10 | actualite | `apple-packs-ia-payants-logic-pro-final-cut` | Apple now charges for AI in its creative apps past a quota |
 | 2026-11-09 | actualite | `nolan-odyssey-mention-anti-entrainement-ia` | Nolan praises The Odyssey's anti-AI credits notice |
 | 2026-11-08 | actualite | `chomet-dior-accuse-ia-interpolation` | Chomet accused of AI over his Dior film: his answer |
