@@ -437,6 +437,8 @@ Only then do you correct.
 9) You ignore decision fatigue. Fix, short sessions and clear goals.
 10) You deliver with no break. Fix, cold validation the next morning.
 
+*Update, November 12, 2026: at the Adobe MAX Sneaks, Adobe showed Project Screen Test, a prototype that builds a character's look, voice and personality and lets you talk with it before you shoot it, and Project Live Set, which edits a video during playback. These are research projects, and I cover them in [my piece on Project Live Set](/en/blog/adobe-project-live-set-video-temps-reel).*
+
 ## Complementary FAQ
 
 ### How do I know I am really ready to publish

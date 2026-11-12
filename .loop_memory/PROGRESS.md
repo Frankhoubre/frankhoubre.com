@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-11 (run CLOUD, routine 5 blogs : article d'actualite adobe-max-2026-premiere-ia-montage FR + EN)
+## Last run: 2026-11-12 (run CLOUD, routine 5 blogs : article d'actualite adobe-project-live-set-video-temps-reel FR + EN)
+
+- Actu du 11/11 : Sneaks d'Adobe MAX (animes par Terry Crews), 10 projets de recherche. Video : Project Scene Sweep (une retouche sur tous les plans d'une scene), Screen Test (construire un personnage et discuter avec lui), Live Set (changer sujet, decor ou camera pendant la lecture), On Cue (caler une action sur un signal dessine ou une musique). Variety : citation Gautham Mysore, preversion de recherche, modeles non devoiles, demo du chat noir a 4 prompts.
+- Angle : l'attente est le vrai frein d'un film IA ; Live Set = outil de previsualisation, pas de livraison ; un Sneak n'est pas un produit.
+- Coordination des autres sites le 12/11 : ScreenWeaver MiniMax H3-Image (16 references), BusinessDynamite Reddit Reviews, AI Studios ElevenLabs Scribe v3, SimpleAIBlog Claude Whiteboards et connecteurs interactifs.
+- Images : hero Nano Banana 2 (realisatrice et technicien devant un moniteur avec un chat noir, sans logo), captures blog Adobe (en-tete + section video) et Variety (titre), schema maison 3 blocs FR/EN.
+- Lien entrant FR + EN depuis comment-diriger-personnage-ia-comme-acteur.
+
+## Run precedent : 2026-11-11 (run CLOUD, routine 5 blogs : article d'actualite adobe-max-2026-premiere-ia-montage FR + EN)
 
 - Actu du 10/11 : Adobe MAX (Miami). Premiere : Color Mode (etalonnage, sort de beta), Generative Media Tool (video, bruitages, ambiances, musique dans la timeline ; Firefly + Google, Kling, Runway, Luma selon RedShark), Enhance Audio, Separate Crosstalk, Separate Sound Source, Generative Remove (beta). Adobe Creative Agent en beta dans Premiere, After Effects, Illustrator, InDesign, Frame.io. Integrations MCP locales (Claude, ChatGPT dans Photoshop, Illustrator, Premiere, After Effects) en beta privee debut 2027, prix non annonce.
 - Coordination des autres sites le 11/11 : ScreenWeaver Storm Dogs (film IA de Rob Minkoff), BusinessDynamite Businesses in ChatGPT, AI Studios etude OpenAI x Upwork freelances, SimpleAIBlog MCP Creative Cloud d'Adobe (angle piloter depuis Claude ; ici angle monteur Premiere).

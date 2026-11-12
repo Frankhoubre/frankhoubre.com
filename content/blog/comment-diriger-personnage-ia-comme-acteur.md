@@ -445,6 +445,8 @@ Ensuite seulement, tu corriges.
 9) Tu ignores la fatigue décisionnelle. Fix, sessions courtes et objectifs clairs.  
 10) Tu livres sans pause. Fix, validation à froid le lendemain matin.
 
+*Mise à jour du 12 novembre 2026 : aux Sneaks d'Adobe MAX, Adobe a montré Project Screen Test, un prototype qui construit l'apparence, la voix et la personnalité d'un personnage et te laisse discuter avec lui avant de le filmer, et Project Live Set, qui modifie une vidéo pendant la lecture. Ce sont des projets de recherche, je fais le point dans [mon article sur Project Live Set](/blog/adobe-project-live-set-video-temps-reel).*
+
 ## FAQ complémentaire
 
 ### Comment savoir que je suis vraiment prêt à publier
