@@ -112,6 +112,8 @@ La sixième erreur est d’oublier le plateau. Une scène doit pouvoir se tourne
 
 ![Deux comédiens répétant une scène dans un appartement, scénario annoté et ordinateur avec IA hors champ](/images/blog/ia-page-blanche-scenarisation/repetition.webp)
 
+*Mise à jour du 13 novembre 2026 : une étude publiée dans PNAS Nexus montre que laisser l'IA trouver l'idée et le plan donne les histoires les plus uniformes, sans faire gagner plus de temps que garder l'idée pour soi. Je la détaille dans [mon article sur l'écriture avec l'IA](/blog/ia-ecriture-creative-garder-les-idees).*
+
 ## FAQ: IA et page blanche en scénarisation
 
 ### L’IA peut-elle vraiment aider à écrire un scénario?

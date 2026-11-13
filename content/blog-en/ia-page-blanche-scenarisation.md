@@ -108,6 +108,8 @@ The sixth mistake is forgetting the set. A scene must be shootable. If the AI pr
 
 ![Two actors rehearsing a scene in an apartment, an annotated screenplay and a computer with AI off-frame](/images/blog/ia-page-blanche-scenarisation/repetition.webp)
 
+*Update, November 13, 2026: a study published in PNAS Nexus shows that letting AI come up with the idea and the outline gives the most uniform stories, without saving more time than keeping the idea yourself. I cover it in [my piece on writing with AI](/en/blog/ia-ecriture-creative-garder-les-idees).*
+
 ## FAQ: AI and the blank page in screenwriting
 
 ### Can AI really help to write a screenplay?

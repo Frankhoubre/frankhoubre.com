@@ -1,6 +1,13 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-12 (run CLOUD, routine 5 blogs : article d'actualite adobe-project-live-set-video-temps-reel FR + EN)
+## Last run: 2026-11-13 (run CLOUD, routine 5 blogs : article d'actualite ia-ecriture-creative-garder-les-idees FR + EN)
+
+- Actu du 10-12/11 : etude PNAS Nexus (Hosanagar et Ahn, publiee le 10/11), 285 etudiants, histoire de 1 000 mots puis une seconde avec ChatGPT 3.5 selon 3 methodes (Human Confirmation, Human Creativity, Copilot). 36,2 % plus rapide avec l'IA, temps similaire entre methodes ; IA qui fait tout = histoires les moins bonnes, les plus uniformes, auteurs les moins satisfaits. Divergence signalee : le communique dit mieux que sans IA pour 2 methodes, CNET dit que l'IA n'ameliore la qualite dans aucun groupe. Article complet OUP inaccessible (verification anti-bot).
+- Coordination des autres sites le 13/11 : ScreenWeaver World Labs Atlas ouvert a tous, BusinessDynamite etude Podqi sur les faux sites cites par les IA, AI Studios Nectar Creator Agent, SimpleAIBlog Krea Bots.
+- Images : hero Nano Banana 2 (scenariste a la table de cuisine, carnet), captures communique PNAS Nexus via Mirage News et CNET (titre), schema maison 3 blocs FR/EN.
+- Lien entrant FR + EN depuis ia-page-blanche-scenarisation (qui n'avait qu'un lien interne).
+
+## Run precedent : 2026-11-12 (run CLOUD, routine 5 blogs : article d'actualite adobe-project-live-set-video-temps-reel FR + EN)
 
 - Actu du 11/11 : Sneaks d'Adobe MAX (animes par Terry Crews), 10 projets de recherche. Video : Project Scene Sweep (une retouche sur tous les plans d'une scene), Screen Test (construire un personnage et discuter avec lui), Live Set (changer sujet, decor ou camera pendant la lecture), On Cue (caler une action sur un signal dessine ou une musique). Variety : citation Gautham Mysore, preversion de recherche, modeles non devoiles, demo du chat noir a 4 prompts.
 - Angle : l'attente est le vrai frein d'un film IA ; Live Set = outil de previsualisation, pas de livraison ; un Sneak n'est pas un produit.

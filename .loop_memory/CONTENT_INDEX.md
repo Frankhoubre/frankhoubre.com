@@ -3,15 +3,16 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-12T07:53:42.388Z
+> Generated: 2026-11-13T07:54:13.265Z
 
-## FR : 361 articles (/blog/<slug>)
+## FR : 362 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 64, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 65, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
-| 2026-11-12 | actualite | `adobe-project-live-set-video-temps-reel` | Adobe Project Live Set : modifier une vidéo pendant qu'elle tourne |
+| 2026-11-13 | actualite | `ia-ecriture-creative-garder-les-idees` | Écrire avec l'IA : une étude dit de garder l'idée pour toi |
+| 2026-11-12 | actualite | `adobe-project-live-set-video-temps-reel` | Project Live Set d'Adobe : la vidéo modifiée en direct |
 | 2026-11-11 | actualite | `adobe-max-2026-premiere-ia-montage` | Adobe MAX 2026 : ce qui change dans Premiere pour monter un film |
 | 2026-11-10 | actualite | `apple-packs-ia-payants-logic-pro-final-cut` | Apple fait payer l'IA de ses apps créatives au-delà du quota |
 | 2026-11-09 | actualite | `nolan-odyssey-mention-anti-entrainement-ia` | Nolan salue la mention anti-IA du générique de The Odyssey |
@@ -373,12 +374,13 @@ Categories: tutoriels 191, actualite 64, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 276 articles (/en/blog/<slug>)
+## EN : 277 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 25, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 26, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-13 | actualite | `ia-ecriture-creative-garder-les-idees` | Writing with AI: a study says keep the idea for yourself |
 | 2026-11-12 | actualite | `adobe-project-live-set-video-temps-reel` | Adobe Project Live Set: editing a video while it plays |
 | 2026-11-11 | actualite | `adobe-max-2026-premiere-ia-montage` | Adobe MAX 2026: what changes in Premiere for cutting a film |
 | 2026-11-10 | actualite | `apple-packs-ia-payants-logic-pro-final-cut` | Apple now charges for AI in its creative apps past a quota |
