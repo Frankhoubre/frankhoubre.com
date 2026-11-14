@@ -264,6 +264,9 @@ Ensuite seulement, tu corriges.
 9) Tu ignores la fatigue décisionnelle. Fix, sessions courtes et objectifs clairs.  
 10) Tu livres sans pause. Fix, validation à froid le lendemain matin.
 
+*Mise à jour du 14 novembre 2026 : Intangible 2.0 et Bloomway 3D Director Studio permettent de poser la caméra dans une scène 3D avant de générer. Je les présente dans [mon article sur la previz 3D](/blog/previz-3d-ia-intangible-bloomway).*
+
+
 ## Foire aux questions
 
 ### Est-ce que je dois être expert pour appliquer cette méthode

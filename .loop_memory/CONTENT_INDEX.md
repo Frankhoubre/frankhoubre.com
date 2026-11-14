@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-13T07:54:13.265Z
+> Generated: 2026-11-14T07:55:49.108Z
 
-## FR : 362 articles (/blog/<slug>)
+## FR : 363 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 65, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 66, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-14 | actualite | `previz-3d-ia-intangible-bloomway` | Previz 3D : réalise ta scène IA au lieu de la prompter |
 | 2026-11-13 | actualite | `ia-ecriture-creative-garder-les-idees` | Écrire avec l'IA : une étude dit de garder l'idée pour toi |
 | 2026-11-12 | actualite | `adobe-project-live-set-video-temps-reel` | Project Live Set d'Adobe : la vidéo modifiée en direct |
 | 2026-11-11 | actualite | `adobe-max-2026-premiere-ia-montage` | Adobe MAX 2026 : ce qui change dans Premiere pour monter un film |
@@ -374,12 +375,13 @@ Categories: tutoriels 191, actualite 65, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 277 articles (/en/blog/<slug>)
+## EN : 278 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 26, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 27, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-14 | actualite | `previz-3d-ia-intangible-bloomway` | 3D previz: direct your AI scene instead of prompting it |
 | 2026-11-13 | actualite | `ia-ecriture-creative-garder-les-idees` | Writing with AI: a study says keep the idea for yourself |
 | 2026-11-12 | actualite | `adobe-project-live-set-video-temps-reel` | Adobe Project Live Set: editing a video while it plays |
 | 2026-11-11 | actualite | `adobe-max-2026-premiere-ia-montage` | Adobe MAX 2026: what changes in Premiere for cutting a film |

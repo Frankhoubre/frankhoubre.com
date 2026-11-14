@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-13 (run CLOUD, routine 5 blogs : article d'actualite ia-ecriture-creative-garder-les-idees FR + EN)
+## Last run: 2026-11-14 (run CLOUD, routine 5 blogs : article d'actualite previz-3d-ia-intangible-bloomway FR + EN)
+
+- Actu du 11-13/11 : Intangible 2.0 (11/11, studio image, video, 3D ; quatre modes : references avec agents, construction du monde, mise en scene des cameras, rendu ; 400 credits ; MCP Claude/ChatGPT ; temoignages Netflix, Amazon MGM) et Bloomway 3D Director Studio (13/11, communique GlobeNewswire : decor 3D simplifie, previz animee, focale, valeur de plan, previz qui guide la generation ; pas de prix).
+- Angle : la video IA exige la mise en scene ; poser decor et camera en 3D avant de generer.
+- Coordination des autres sites le 14/11 : ScreenWeaver Pine Drama Studio, BusinessDynamite eBay et les agents IA d'achat, AI Studios Relight dans Photoshop, SimpleAIBlog housefishing (photos immobilieres retouchees par IA).
+- Images : hero Nano Banana 2 (realisateur devant une previz 3D grise d'une rue sous la pluie), captures intangible.ai et bloomway.ai, schema maison 3 blocs FR/EN.
+- Lien entrant FR + EN depuis comment-choisir-bons-angles-camera-ia.
+
+## Run precedent : 2026-11-13 (run CLOUD, routine 5 blogs : article d'actualite ia-ecriture-creative-garder-les-idees FR + EN)
 
 - Actu du 10-12/11 : etude PNAS Nexus (Hosanagar et Ahn, publiee le 10/11), 285 etudiants, histoire de 1 000 mots puis une seconde avec ChatGPT 3.5 selon 3 methodes (Human Confirmation, Human Creativity, Copilot). 36,2 % plus rapide avec l'IA, temps similaire entre methodes ; IA qui fait tout = histoires les moins bonnes, les plus uniformes, auteurs les moins satisfaits. Divergence signalee : le communique dit mieux que sans IA pour 2 methodes, CNET dit que l'IA n'ameliore la qualite dans aucun groupe. Article complet OUP inaccessible (verification anti-bot).
 - Coordination des autres sites le 13/11 : ScreenWeaver World Labs Atlas ouvert a tous, BusinessDynamite etude Podqi sur les faux sites cites par les IA, AI Studios Nectar Creator Agent, SimpleAIBlog Krea Bots.
