@@ -67,6 +67,8 @@ Pour débloquer une scène sans lui confier l'idée, mon article sur [l'IA face 
 - **Si ça vaut pour un scénario.** La tâche est une nouvelle de 1 000 mots, pas un scénario de 90 pages.
 - **Le détail des notes de qualité.** Je n'ai pas eu accès à l'article complet, et les résumés divergent sur la comparaison avec l'écriture sans IA.
 
+*Mise à jour du 15 novembre 2026 : le Los Angeles Times raconte comment des écoles de cinéma enseignent l'IA aux jeunes scénaristes, avec la même règle : le métier d'abord. Je le résume dans [mon article sur les écoles de cinéma et l'IA](/blog/ecoles-cinema-ia-scenaristes).*
+
 ## FAQ
 
 ### Que dit l'étude PNAS Nexus sur l'écriture avec l'IA ?

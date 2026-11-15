@@ -1,6 +1,10 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-14 (run CLOUD, routine 5 blogs : article d'actualite previz-3d-ia-intangible-bloomway FR + EN)
+## Last run: 2026-11-15 (run CLOUD, routine 5 blogs : article d'actualite ecoles-cinema-ia-scenaristes FR + EN)
+
+- Actu LA Times 11/11 sur les ecoles de cinema qui enseignent l'IA aux scenaristes. Capture : page LMU seulement (latimes.com renvoie Access Denied aux navigateurs automatises, non contourne).
+
+## Run precedent : 2026-11-14 (run CLOUD, routine 5 blogs : article d'actualite previz-3d-ia-intangible-bloomway FR + EN)
 
 - Actu du 11-13/11 : Intangible 2.0 (11/11, studio image, video, 3D ; quatre modes : references avec agents, construction du monde, mise en scene des cameras, rendu ; 400 credits ; MCP Claude/ChatGPT ; temoignages Netflix, Amazon MGM) et Bloomway 3D Director Studio (13/11, communique GlobeNewswire : decor 3D simplifie, previz animee, focale, valeur de plan, previz qui guide la generation ; pas de prix).
 - Angle : la video IA exige la mise en scene ; poser decor et camera en 3D avant de generer.

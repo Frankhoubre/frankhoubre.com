@@ -67,6 +67,8 @@ To unblock a scene without handing over the idea, my piece on [AI and the blank 
 - **Whether it holds for a screenplay.** The task is a 1,000-word story, not a 90-page script.
 - **The detail of the quality ratings.** I could not access the full paper, and the summaries disagree on the comparison with writing without AI.
 
+*Update, November 15, 2026: the Los Angeles Times shows how film schools teach AI to young screenwriters, with the same rule: craft first. I sum it up in [my piece on film schools and AI](/en/blog/ecoles-cinema-ia-scenaristes).*
+
 ## FAQ
 
 ### What does the PNAS Nexus study say about writing with AI?
