@@ -2,22 +2,58 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { SUBSCRIBED_COOKIE } from "@/lib/funnel/config";
 import {
+  FORMATION_COPY,
   FORMATION_PROMO_STORAGE_KEY,
-  FORMATION_PROMO_URL,
+  formationHref,
   formationPromoTodayKey,
 } from "@/lib/formation-promo";
+import { localeFromPathname } from "@/lib/i18n";
 import { Arrow } from "@/components/ui/Cta";
 
 const DELAY_MS = 30_000;
 
 /** Photogramme de la fenêtre : extrait de film IA de Frank (galerie de l'accueil). */
-const PROMO_STILL = {
-  src: "/images/home/gallery/shot-37.webp",
-  alt: "Extrait de film IA : une silhouette assise sur une chaise dans une forêt embrumée, face au soleil couchant",
-};
+const PROMO_STILL_SRC = "/images/home/gallery/shot-37.webp";
+
+/** Textes de la fenêtre, dans la langue de la page (la formation est en français). */
+const MODAL_COPY = {
+  fr: {
+    stillAlt:
+      "Extrait de film IA : une silhouette assise sur une chaise dans une forêt embrumée, face au soleil couchant",
+    closeVeil: "Fermer la promotion",
+    close: "Fermer",
+    fig: "Fig. 01 · Extrait de film IA",
+    offered: "Méthode offerte",
+    videos: "3 vidéos",
+    specs: "24 min · 0 €",
+    kicker: "Formation vidéo IA gratuite",
+    title: "Le film que vous imaginez peut enfin exister.",
+    text: "Une idée écrite, un storyboard clair, puis une vidéo IA crédible. Même si vous débutez.",
+    button: "Recevoir la méthode",
+    later: "Plus tard",
+    note: "Accès immédiat · sans carte bancaire · désinscription en un clic",
+  },
+  en: {
+    stillAlt:
+      "AI film still: a figure sitting on a chair in a misty forest, facing the setting sun",
+    closeVeil: "Close this offer",
+    close: "Close",
+    fig: "Fig. 01 · AI film still",
+    offered: "Free method",
+    videos: "3 videos",
+    specs: "24 min · €0",
+    kicker: "Free AI video training · in French",
+    title: "The film you imagine can finally exist.",
+    text: "A written idea, a clear storyboard, then a believable AI video. Even if you are just starting. The videos are in French.",
+    button: "Get the method",
+    later: "Later",
+    note: "Instant access · no credit card · unsubscribe in one click",
+  },
+} as const;
 
 function markShownToday() {
   try {
@@ -59,6 +95,9 @@ function wasShownToday(): boolean {
  */
 export function FormationPromoModal() {
   const [open, setOpen] = useState(false);
+  const locale = localeFromPathname(usePathname());
+  const c = MODAL_COPY[locale];
+  const days = FORMATION_COPY[locale].end.days;
 
   const dismiss = useCallback(() => {
     setOpen(false);
@@ -101,7 +140,7 @@ export function FormationPromoModal() {
       <button
         type="button"
         className="modal-veil absolute inset-0 bg-charcoal/75 backdrop-blur-sm"
-        aria-label="Fermer la promotion"
+        aria-label={c.closeVeil}
         onClick={dismiss}
       />
       <div
@@ -109,26 +148,25 @@ export function FormationPromoModal() {
         aria-modal="true"
         aria-labelledby="formation-promo-title"
         aria-describedby="formation-promo-text"
-        className="modal-in relative grid max-h-[92dvh] w-full max-w-4xl overflow-y-auto border border-line-strong bg-charcoal md:grid-cols-[0.95fr_1.05fr]"
+        className="modal-in relative flex max-h-[92dvh] w-full max-w-4xl flex-col overflow-y-auto border border-line-strong bg-charcoal md:grid md:grid-cols-[0.95fr_1.05fr]"
       >
         {/* Photogramme */}
-        <figure className="frame-grain relative aspect-[16/9] overflow-hidden border-b border-line md:aspect-auto md:min-h-[30rem] md:border-b-0 md:border-r">
+        <figure className="frame-grain relative aspect-[5/2] shrink-0 overflow-hidden sm:aspect-[16/9] border-b border-line md:aspect-auto md:min-h-[30rem] md:border-b-0 md:border-r">
           <Image
-            src={PROMO_STILL.src}
-            alt={PROMO_STILL.alt}
+            src={PROMO_STILL_SRC}
+            alt={c.stillAlt}
             fill
             sizes="(max-width: 768px) 100vw, 440px"
             className="object-cover object-[55%_center]"
-            priority
           />
           <span className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/10 to-charcoal/30" aria-hidden />
           <span className="frame-marks absolute inset-0" aria-hidden />
-          <span className="meta meta-strong absolute left-5 top-4 text-[10px]">Fig. 01 · Extrait de film IA</span>
+          <span className="meta meta-strong absolute left-5 top-4 hidden text-[10px] sm:block">{c.fig}</span>
           <figcaption className="absolute bottom-5 left-5 right-5">
-            <span className="meta block text-[10px]">Méthode offerte</span>
+            <span className="meta block text-[10px]">{c.offered}</span>
             <span className="display mt-2 block text-[clamp(2.2rem,5vw,3.4rem)] leading-[0.9] text-cream">
-              3 vidéos
-              <span className="block text-fog">24 min · 0 €</span>
+              {c.videos}
+              <span className="block text-fog">{c.specs}</span>
             </span>
           </figcaption>
         </figure>
@@ -136,14 +174,14 @@ export function FormationPromoModal() {
         {/* Offre */}
         <div className="flex flex-col p-6 sm:p-8">
           <div className="flex items-start justify-between gap-4">
-            <p className="meta">Formation vidéo IA gratuite</p>
+            <p className="meta">{c.kicker}</p>
             <button
               type="button"
               onClick={dismiss}
-              className="meta -mr-2 -mt-2 flex h-10 items-center gap-2 px-2 text-fog transition-colors hover:text-cream"
-              aria-label="Fermer"
+              className="meta -mr-2 -mt-2 flex h-11 items-center gap-2 px-2 text-fog transition-colors hover:text-cream"
+              aria-label={c.close}
             >
-              <span>Fermer</span>
+              <span>{c.close}</span>
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" aria-hidden>
                 <path d="M1 1l10 10M11 1L1 11" />
               </svg>
@@ -151,36 +189,40 @@ export function FormationPromoModal() {
           </div>
 
           <h2 id="formation-promo-title" className="mt-6 text-[clamp(1.6rem,2.6vw,2.2rem)] leading-[1.02] tracking-[-0.025em] text-cream">
-            Le film que vous imaginez peut enfin exister.
+            {c.title}
           </h2>
           <p id="formation-promo-text" className="serif mt-4 text-[1.2rem] leading-[1.3] text-stone">
-            Une idée écrite, un storyboard clair, puis une vidéo IA crédible. Même si vous débutez.
+            {c.text}
           </p>
 
           <dl className="mt-6">
-            {[
-              ["Jour 1", "La vision : votre idée en une phrase"],
-              ["Jour 2", "Le storyboard : voir le film avant de générer"],
-              ["Jour 3", "Le montage réel de Lost Garden"],
-            ].map(([k, v]) => (
-              <div key={k} className="spec-row !py-2.5">
-                <dt className="spec-label">{k}</dt>
-                <dd className="spec-value !text-left sm:!text-right">{v}</dd>
+            {days.map(([k, v]) => (
+              <div
+                key={k}
+                className="grid grid-cols-[4.25rem_minmax(0,1fr)] items-baseline gap-4 border-t border-line py-2.5 last:border-b"
+              >
+                <dt className="meta meta-strong">{k}</dt>
+                <dd className="text-sm leading-snug text-stone">{v}</dd>
               </div>
             ))}
           </dl>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <Link href={FORMATION_PROMO_URL} onClick={dismiss} className="btn btn-primary flex-1">
-              <span>Recevoir la méthode</span>
+            <Link
+              href={formationHref("modal")}
+              onClick={dismiss}
+              className="btn btn-primary flex-1"
+              {...(locale === "en" ? { hrefLang: "fr" } : {})}
+            >
+              <span>{c.button}</span>
               <Arrow />
             </Link>
             <button type="button" onClick={dismiss} className="btn btn-quiet sm:flex-none">
-              <span>Plus tard</span>
+              <span>{c.later}</span>
             </button>
           </div>
-          <p className="meta mt-auto pt-6 text-[10px] text-fog/70">
-            Accès immédiat · sans carte bancaire · désinscription en un clic
+          <p className="mt-auto pt-6 text-xs text-fog">
+            {c.note}
           </p>
         </div>
       </div>

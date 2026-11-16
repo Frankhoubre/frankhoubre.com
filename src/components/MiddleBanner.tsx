@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FORMATION_PROMO_URL } from "@/lib/formation-promo";
+import { FORMATION_COPY, formationHref } from "@/lib/formation-promo";
 import { Arrow } from "@/components/ui/Cta";
 
 /** Photogramme de fond de l'encart (extrait de film IA de Frank). */
@@ -12,13 +12,14 @@ const BANNER_STILL = {
 /**
  * Encart inséré au milieu des articles (composant MDX <MiddleBanner />) :
  * photogramme plein cadre sous un dégradé noir progressif, offre à gauche,
- * un bouton plein.
+ * un bouton plein. Texte dans la langue de l'article.
  */
-export function MiddleBanner() {
+export function MiddleBanner({ locale = "fr" }: { locale?: "fr" | "en" }) {
+  const c = FORMATION_COPY[locale].mid;
   return (
     <aside
       className="not-prose frame frame-grain frame-marks relative my-12 overflow-hidden"
-      aria-label="Formation vidéo IA gratuite"
+      aria-label={c.label}
     >
       <Image
         src={BANNER_STILL.src}
@@ -32,24 +33,24 @@ export function MiddleBanner() {
         aria-hidden
       />
       <div className="relative z-[3] max-w-md p-6 sm:p-8">
-        <p className="meta meta-strong">Méthode offerte · 3 vidéos · 24 min</p>
+        <p className="meta meta-strong">{c.kicker}</p>
         <p className="mt-4 text-[clamp(1.5rem,2.6vw,2rem)] font-semibold leading-[1.05] tracking-[-0.02em] text-cream">
-          Le film que vous avez en tête peut enfin exister.
+          {c.title}
         </p>
-        <p className="mt-4 text-[15px] leading-relaxed text-stone">
-          Recevez gratuitement la méthode pour transformer une simple idée
-          écrite en storyboard clair, puis en vidéo IA crédible. Séries, films
-          ou publicités, dans tous les styles, même si vous débutez.
-        </p>
+        <p className="mt-4 text-[15px] leading-relaxed text-stone">{c.text}</p>
         <p className="mt-6">
-          <Link href={FORMATION_PROMO_URL} className="btn btn-primary">
-            <span>Recevoir la méthode gratuite</span>
+          <Link
+            href={formationHref("article-mid")}
+            className="btn btn-primary w-full sm:w-auto"
+            {...(locale === "en" ? { hrefLang: "fr" } : {})}
+          >
+            <span>{c.button}</span>
             <Arrow />
           </Link>
         </p>
-        <p className="meta mt-5 text-[10px] text-fog/80">Accès immédiat · sans carte bancaire</p>
+        <p className="mt-5 text-xs text-fog">{c.note}</p>
       </div>
-      <span className="meta absolute bottom-4 right-5 z-[3] hidden text-[10px] sm:block">Fig. · Extrait de film IA</span>
+      <span className="meta absolute bottom-4 right-5 z-[3] hidden text-[10px] sm:block">{c.caption}</span>
     </aside>
   );
 }
