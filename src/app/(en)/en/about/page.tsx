@@ -4,29 +4,65 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { ArrowLink } from "@/components/ui/Cta";
-import { buildPageMetadata } from "@/lib/metadata";
+import {
+  ABOUT_OG_IMAGE,
+  PERSON_ID,
+  buildBreadcrumbList,
+  buildGraphJsonLd,
+  buildPageMetadata,
+} from "@/lib/metadata";
 import { baseUrl, person, socialLinks } from "@/lib/site";
 
+const aboutDescription =
+  "AI filmmaker, trainer and creative director. Frank Houbre helps creators produce believable, cinematic AI images, videos and films.";
+
 export const metadata: Metadata = buildPageMetadata({
-  title: "About Frank Houbre",
-  description:
-    "AI filmmaker, trainer and creative director. Frank Houbre helps creators produce believable, cinematic AI images, videos and films.",
+  title: "About Frank Houbre, AI filmmaker and trainer",
+  titleAbsolute: "About Frank Houbre, AI filmmaker and trainer",
+  description: aboutDescription,
   path: "/en/about",
-  openGraph: { type: "profile" },
+  openGraph: {
+    type: "profile",
+    images: [
+      {
+        path: ABOUT_OG_IMAGE.path,
+        width: ABOUT_OG_IMAGE.width,
+        height: ABOUT_OG_IMAGE.height,
+        alt: "Portrait of Frank Houbre",
+      },
+    ],
+  },
   alternateLanguages: { en: "/en/about", fr: "/a-propos", "x-default": "/a-propos" },
 });
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: person.name,
-  url: `${baseUrl}/en/about`,
-  jobTitle: "AI trainer, AI filmmaker and image & video creator",
-  description:
-    "Frank Houbre is an AI video and image trainer, AI filmmaker and entrepreneur.",
-  image: `${baseUrl}${person.image}`,
-  sameAs: [...person.sameAs],
-};
+// Même graphe que /a-propos : ProfilePage dont l'entité principale est le
+// Person unique du site (@id partagé), plus le fil d'Ariane.
+const jsonLd = buildGraphJsonLd(
+  {
+    "@type": "ProfilePage",
+    "@id": `${baseUrl}/en/about#profile`,
+    url: `${baseUrl}/en/about`,
+    name: "About Frank Houbre",
+    description: aboutDescription,
+    inLanguage: "en-US",
+    mainEntity: { "@id": PERSON_ID },
+  },
+  {
+    "@type": "Person",
+    "@id": PERSON_ID,
+    name: person.name,
+    url: baseUrl,
+    jobTitle: "AI trainer, AI filmmaker and image & video creator",
+    description:
+      "Frank Houbre is an AI video and image trainer, AI filmmaker and entrepreneur.",
+    image: `${baseUrl}${person.image}`,
+    sameAs: [...person.sameAs],
+  },
+  buildBreadcrumbList([
+    { name: "Home", path: "/en" },
+    { name: "About", path: "/en/about" },
+  ]),
+);
 
 export default function EnAboutPage() {
   return (

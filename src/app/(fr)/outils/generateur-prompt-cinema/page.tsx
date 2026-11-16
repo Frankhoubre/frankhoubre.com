@@ -89,7 +89,7 @@ export default function CinemaPromptGeneratorPage() {
       <article className="container-x pb-20 sm:pb-28">
         <div className="grid-12 gap-y-10 border-t border-line pt-14">
           <div className="col-span-12 lg:col-span-3">
-            <p className="meta"><span className="meta-strong">01</span> &nbsp;/&nbsp; Comment utiliser cet outil</p>
+            <h2 className="meta [text-shadow:none]"><span className="meta-strong">01</span> &nbsp;/&nbsp; Comment utiliser cet outil</h2>
           </div>
           <div className="col-span-12 lg:col-span-7 lg:col-start-5">
             <ol>
@@ -110,7 +110,7 @@ export default function CinemaPromptGeneratorPage() {
 
         <div className="grid-12 mt-14 gap-y-10 border-t border-line pt-14">
           <div className="col-span-12 lg:col-span-3">
-            <p className="meta"><span className="meta-strong">02</span> &nbsp;/&nbsp; Pourquoi structurer un prompt cinéma</p>
+            <h2 className="meta [text-shadow:none]"><span className="meta-strong">02</span> &nbsp;/&nbsp; Pourquoi structurer un prompt cinéma</h2>
           </div>
           <div className="prose-cinema col-span-12 lg:col-span-7 lg:col-start-5">
             <p>
@@ -136,7 +136,7 @@ export default function CinemaPromptGeneratorPage() {
 
         <div className="grid-12 mt-14 gap-y-10 border-t border-line pt-14">
           <div className="col-span-12 lg:col-span-3">
-            <p className="meta"><span className="meta-strong">03</span> &nbsp;/&nbsp; Questions fréquentes</p>
+            <h2 className="meta [text-shadow:none]"><span className="meta-strong">03</span> &nbsp;/&nbsp; Questions fréquentes</h2>
           </div>
           <div className="col-span-12 lg:col-span-7 lg:col-start-5">
             {faqEntries.map((entry) => (

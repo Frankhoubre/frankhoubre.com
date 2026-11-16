@@ -4,14 +4,16 @@ import type { MDXComponents } from "mdx/types";
 import type { HTMLAttributes, ImgHTMLAttributes, ReactNode } from "react";
 import { getTextFromChildren, slugify } from "@/lib/slugify";
 import { isTitleLikeHeading } from "@/lib/article-headings";
+import { readPublicImageDimensions } from "@/lib/image-dimensions";
 import { MiddleBanner } from "@/components/MiddleBanner";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
 import { ArticleLink } from "@/components/article/ArticleLink";
 import { Capture, type CaptureProps } from "@/components/article/Capture";
+import { CodeBlock } from "@/components/article/CodeBlock";
 import { ComparisonTable } from "@/components/article/ComparisonTable";
 import { Gallery } from "@/components/article/Gallery";
-import type { ArticleLocale } from "@/components/article/labels";
+import { ARTICLE_LABELS, type ArticleLocale } from "@/components/article/labels";
 import { Methodology } from "@/components/article/Methodology";
 import { ProductCta } from "@/components/article/ProductCta";
 import { SponsoredLink } from "@/components/article/SponsoredLink";
@@ -52,6 +54,8 @@ export function createBlogMdxComponents(
     skipFirstBodyImage: boolean;
     articleTitle?: string;
     locale?: ArticleLocale;
+    /** L'article ouvre sur un photogramme : aucune capture du corps n'est prioritaire. */
+    hasHero?: boolean;
   },
 ): MDXComponents {
   const locale: ArticleLocale = options.locale ?? "fr";
@@ -72,7 +76,7 @@ export function createBlogMdxComponents(
   const BoundCapture = (props: CaptureProps & { compact?: boolean }) => {
     // eslint-disable-next-line react-hooks/immutability -- compteur de rendu serveur, ordre du document
     captureIndex.n += 1;
-    return <Capture {...props} locale={locale} slug={slug} eager={captureIndex.n === 1} />;
+    return <Capture {...props} locale={locale} slug={slug} eager={!options.hasHero && captureIndex.n === 1} />;
   };
   type Kids = { children?: ReactNode };
   type VerdictAttrs = Omit<Parameters<typeof Verdict>[0], "locale">;
@@ -90,6 +94,11 @@ export function createBlogMdxComponents(
   );
   const CtaImaginode = (p: CtaAttrs) => (
     <ProductCta {...p} product="imaginode" locale={locale} slug={slug} />
+  );
+
+  const BoundMiddleBanner = () => <MiddleBanner locale={locale} />;
+  const BoundYouTube = (p: { videoId: string; title?: string }) => (
+    <YouTubeEmbed {...p} locale={locale} />
   );
 
   const fallbackAlt =
@@ -132,13 +141,16 @@ export function createBlogMdxComponents(
         </span>
       );
     }
+    // Dimensions réelles (manifeste généré au build) : la place est réservée
+    // au bon ratio, sans saut de mise en page au chargement.
+    const dims = readPublicImageDimensions(resolved);
     return (
       <span className="figure">
         <Image
           src={resolved}
           alt={resolvedAlt}
-          width={1200}
-          height={630}
+          width={dims?.width ?? 1200}
+          height={dims?.height ?? 630}
           sizes="(max-width: 768px) 100vw, 720px"
         />
       </span>
@@ -185,9 +197,16 @@ export function createBlogMdxComponents(
         <table {...props} />
       </div>
     ),
+    pre: (props) => (
+      <CodeBlock
+        {...props}
+        copyLabel={ARTICLE_LABELS[locale].copy}
+        copiedLabel={ARTICLE_LABELS[locale].copied}
+      />
+    ),
     img: Img,
-    YouTubeEmbed,
-    MiddleBanner,
+    YouTubeEmbed: BoundYouTube,
+    MiddleBanner: BoundMiddleBanner,
     // Composants premium : noms FR et alias EN, libellés selon la langue de l'article.
     Verdict: BoundVerdict,
     Forts: BoundStrengths,

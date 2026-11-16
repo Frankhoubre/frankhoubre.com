@@ -21,8 +21,9 @@ export const DEFAULT_OG_IMAGE = {
 
 export const ABOUT_OG_IMAGE = {
   path: "/images/frank-houbre-about.png",
-  width: 1200,
-  height: 630,
+  // Dimensions réelles du fichier (portrait carré), pas le 1200×630 par défaut.
+  width: 1024,
+  height: 1024,
   alt: "Portrait de Frank Houbre",
 } as const;
 

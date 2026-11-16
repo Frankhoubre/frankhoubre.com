@@ -38,6 +38,7 @@ import {
 import { buildArticleVideoObject } from "@/lib/article-video";
 import { modifiedIso, publishedIso, realModifiedDate } from "@/lib/article-dates";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
+import { FormationCta } from "@/components/article/FormationCta";
 import { ARTICLE_LABELS } from "@/components/article/labels";
 import { baseUrl, getCategoryLabel, person, siteName } from "@/lib/site";
 
@@ -220,6 +221,12 @@ function buildJsonLd(opts: {
       {
         "@type": "ListItem",
         position: 3,
+        name: categoryLabel,
+        item: `${baseUrl}/blog/category/${post.frontmatter.category}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
         name: post.frontmatter.title,
         item: url,
       },
@@ -269,20 +276,24 @@ export default async function BlogArticlePage({ params }: Props) {
   const components = createBlogMdxComponents(slug, {
     skipFirstBodyImage,
     articleTitle,
+    hasHero: Boolean(thumb),
     locale: "fr",
   });
   const faqComponents = createBlogMdxComponents(slug, {
     skipFirstBodyImage: false,
     articleTitle,
+    hasHero: Boolean(thumb),
     locale: "fr",
   });
   const minutes = readingTimeMinutes(raw);
   const related = getRelatedPosts(slug, 3);
   const shareUrl = `${baseUrl}/blog/${slug}`;
-  const sidebarPosts = allPosts.map((p) => ({
-    slug: p.slug,
-    title: p.frontmatter.title,
-  }));
+  // Seuls les articles récents partent dans le HTML : l'index complet de la
+  // recherche est chargé à la demande (voir ArticleSidebarSearch).
+  const sidebarPosts = allPosts
+    .filter((p) => p.slug !== slug)
+    .slice(0, 8)
+    .map((p) => ({ slug: p.slug, title: p.frontmatter.title }));
 
   const mdxOpts = {
     mdxOptions: {
@@ -293,11 +304,6 @@ export default async function BlogArticlePage({ params }: Props) {
   // La vidéo recommandée n'a pas de VideoObject : seule une vidéo intégrée
   // et décrite dans le frontmatter en reçoit un.
   const jsonLd = buildJsonLd({ post, slug, videoIds, faqPairs });
-
-  const authorImg =
-    typeof person.image === "string" && person.image.startsWith("http")
-      ? person.image
-      : `${baseUrl}${person.image}`;
 
   const dateFmt = new Intl.DateTimeFormat("fr-FR", {
     year: "numeric",
@@ -338,6 +344,10 @@ export default async function BlogArticlePage({ params }: Props) {
               breadcrumb={[
                 { label: "Accueil", href: "/" },
                 { label: "Blog", href: "/blog" },
+                {
+                  label: getCategoryLabel(post.frontmatter.category),
+                  href: `/blog/category/${post.frontmatter.category}`,
+                },
                 { label: post.frontmatter.title },
               ]}
               actions={<ArticleShareButtons url={shareUrl} title={post.frontmatter.title} />}
@@ -387,8 +397,10 @@ export default async function BlogArticlePage({ params }: Props) {
               </section>
             ) : null}
 
+            <FormationCta locale="fr" placement="article-end" className="mt-16" />
+
             <AuthorBox
-              imageSrc={authorImg}
+              imageSrc={person.image}
               jobTitle={person.jobTitle}
               bio={person.bio}
               links={[

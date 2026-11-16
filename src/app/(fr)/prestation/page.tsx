@@ -16,7 +16,7 @@ import { person, siteName } from "@/lib/site";
 
 const pageTitle = "Conseil IA production vidéo et image";
 const pageDescription =
-  "Conseil IA pour entreprises et boîtes de prod : workflows, coûts et vitesse d’exécution. 4 200 € HT/jour, distanciel ou Paris/Strasbourg. Contactez-moi pour un premier échange.";
+  "Conseil IA pour entreprises et boîtes de prod : workflows, coûts et vitesse d’exécution. 4 200 € HT/jour, à distance ou à Paris et Strasbourg.";
 
 export const metadata: Metadata = buildPageMetadata({
   title: pageTitle,

@@ -38,7 +38,10 @@ export function Plus() {
   );
 }
 
-/** FAQ d'article : accordéon sur lignes fines, balisage FAQPage conservé. */
+/**
+ * FAQ d'article : accordéon sur lignes fines. Le balisage FAQPage vit dans le
+ * JSON-LD de la page (un seul FAQPage par page : pas de microdonnées ici).
+ */
 export function FaqSection({ pairs, components, locale = "fr" }: Props) {
   if (!pairs.length) return null;
   const copy = FAQ_COPY[locale];
@@ -48,33 +51,23 @@ export function FaqSection({ pairs, components, locale = "fr" }: Props) {
       id="foire-aux-questions"
       className="not-prose my-14 scroll-mt-28"
       aria-labelledby="faq-heading"
-      itemScope
-      itemType="https://schema.org/FAQPage"
     >
-      <p id="faq-heading" className="meta">
-        FAQ
-      </p>
-      <h2 className="h-block mt-3 !mt-3 !border-0 !pt-0 text-cream">{copy.title}</h2>
+      <p className="meta">FAQ</p>
+      <h2 id="faq-heading" className="h-block mt-3 !mt-3 !border-0 !pt-0 text-cream">{copy.title}</h2>
       <p className="mt-2 text-sm text-fog">
         {copy.intro}
       </p>
       <div className="mt-6">
         {pairs.map((pair, i) => (
-          <details
-            key={i}
-            className="faq-item"
-            itemScope
-            itemProp="mainEntity"
-            itemType="https://schema.org/Question"
-          >
+          <details key={i} className="faq-item">
             <summary>
-              <h3 className="text-[inherit] font-[inherit] leading-[inherit] tracking-[inherit]" itemProp="name">
+              <h3 className="text-[inherit] font-[inherit] leading-[inherit] tracking-[inherit]">
                 {pair.question}
               </h3>
               <Plus />
             </summary>
-            <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-              <div className="prose-cinema text-[0.97rem]" itemProp="text">
+            <div>
+              <div className="prose-cinema text-[0.97rem]">
                 <MDXRemote
                   source={pair.answer}
                   components={components}

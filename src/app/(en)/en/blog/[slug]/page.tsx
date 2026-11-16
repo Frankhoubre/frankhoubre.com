@@ -12,6 +12,8 @@ import { RelatedPosts } from "@/components/RelatedPosts";
 import { ArticleMobileToc } from "@/components/ArticleMobileToc";
 import { ArticleToc } from "@/components/ArticleToc";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
+import { FormationCta } from "@/components/article/FormationCta";
+import { ArticleShareButtons } from "@/components/ArticleShareButtons";
 import { ARTICLE_LABELS } from "@/components/article/labels";
 import {
   extractYouTubeVideoIds,
@@ -114,11 +116,13 @@ export default async function EnBlogArticlePage({ params }: Props) {
   const components = createBlogMdxComponents(slug, {
     skipFirstBodyImage: Boolean(post.frontmatter.thumbnail?.trim()),
     articleTitle,
+    hasHero: Boolean(thumb),
     locale: "en",
   });
   const faqComponents = createBlogMdxComponents(slug, {
     skipFirstBodyImage: false,
     articleTitle,
+    hasHero: Boolean(thumb),
     locale: "en",
   });
   const modified = realModifiedDate(post.frontmatter);
@@ -155,6 +159,11 @@ export default async function EnBlogArticlePage({ params }: Props) {
       mainEntityOfPage: url,
       wordCount,
       timeRequired: `PT${minutes}M`,
+      isPartOf: {
+        "@type": "Blog",
+        name: `${siteName} Blog`,
+        url: `${baseUrl}/en/blog`,
+      },
       ...(img ? { image: [img] } : {}),
       author: {
         "@type": "Person",
@@ -233,6 +242,17 @@ export default async function EnBlogArticlePage({ params }: Props) {
                 { label: post.frontmatter.title },
               ]}
               breadcrumbLabel="Breadcrumb"
+              actions={
+                <ArticleShareButtons
+                  url={url}
+                  title={post.frontmatter.title}
+                  labels={{
+                    share: ARTICLE_LABELS.en.share,
+                    copyLink: ARTICLE_LABELS.en.copyLink,
+                    linkCopied: ARTICLE_LABELS.en.linkCopied,
+                  }}
+                />
+              }
               figureCaption="Fig. 01"
             />
 
@@ -258,9 +278,11 @@ export default async function EnBlogArticlePage({ params }: Props) {
               ) : null}
             </div>
 
+            <FormationCta locale="en" placement="article-end" className="mt-16" />
+
             <AuthorBox
               locale="en"
-              imageSrc={`${baseUrl}${person.image}`}
+              imageSrc={person.image}
               jobTitle="AI trainer, AI filmmaker and image & video creator."
               links={[
                 { label: "About", href: "/en/about" },

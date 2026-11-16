@@ -103,6 +103,32 @@ complet du 2026-07-03 (données GSC 16 mois + crawl live).
 - Home : WebSite + SearchAction + Person + FAQPage — ne pas dégrader, c'est
   l'ancrage entité (knowledge graph + LLM).
 
+### Ajouts du 2026-11-16 (passe responsive, SEO, conversion)
+
+- **Un seul FAQPage par page** : il vit dans le JSON-LD. `FaqSection` ne porte
+  plus de microdonnées (`itemScope`), sinon Google voit deux FAQPage.
+- **Fil d'Ariane d'article FR** : Accueil, Blog, catégorie, article, à
+  l'écran et dans le BreadcrumbList. EN : pas de niveau catégorie tant que
+  `/en/blog/category/*` n'existe pas.
+- **Archives EN** (`/en/blog/page/N`) : même graphe que le FR (BreadcrumbList,
+  CollectionPage, ItemList). `/en/blog/page/1` redirige en 308, comme le FR.
+- **À propos EN** : ProfilePage + Person (`PERSON_ID`) + BreadcrumbList, comme
+  `/a-propos`.
+- **Pages de catégorie** : un index serveur liste tous les articles de la
+  catégorie (la liste client n'en rend que 9 dans le HTML), plus les liens vers
+  les autres catégories.
+- **Image LCP** : photogramme d'article et première carte des listes en
+  `loading="eager"` + `fetchPriority="high"`. Les captures du corps restent en
+  `lazy` dès que l'article a un photogramme. Les images markdown du corps
+  prennent leurs vraies dimensions dans `src/generated/image-dimensions.json`.
+- **Vidéos YouTube d'article** : `YouTubeEmbed` rend une `VideoFacade`, aucune
+  iframe tierce au chargement.
+- **Recherche de la colonne d'article** : l'index (slug + titre) est servi par
+  `/api/blog-index` au premier focus. Ne pas repasser la liste complète en
+  props d'un composant client.
+- **Liens vers la formation** : toujours l'URL nue `/formation-ia-gratuite`
+  (`formationHref`), jamais de paramètre utm sur un lien interne.
+
 ## 6. Maillage interne (à chaque article)
 
 - 3–6 liens internes contextuels minimum ; FR pointe vers `/blog/…`,

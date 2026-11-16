@@ -1,3 +1,4 @@
+import { FormationCta } from "@/components/article/FormationCta";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllEnPosts } from "@/lib/blog-en";
@@ -15,10 +16,10 @@ import { baseUrl, siteName } from "@/lib/site";
 export const revalidate = 3600;
 
 const enBlogDescription =
-  "Tutorials, workflows and analysis to create believable, cinematic AI images, videos and films.";
+  "Tutorials, workflows and honest tool analysis to create believable, cinematic AI images, videos and films, written by AI filmmaker Frank Houbre.";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Blog",
+  title: "AI filmmaking blog: video, image, workflows",
   description: enBlogDescription,
   path: "/en/blog",
   alternateLanguages: { en: "/en/blog", fr: "/blog", "x-default": "/blog" },
@@ -93,6 +94,7 @@ export default function EnBlogPage() {
         ) : (
           <EnBlogGrid posts={pagePosts} currentPage={1} totalPages={totalPages} />
         )}
+        <FormationCta locale="en" placement="listing" className="mt-20" />
         <p className="mt-16 border-t border-line pt-6 text-sm text-fog">
           Want the full library? The{" "}
           <Link href="/blog" className="link" hrefLang="fr">

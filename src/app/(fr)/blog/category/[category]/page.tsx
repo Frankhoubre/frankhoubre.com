@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { FormationCta } from "@/components/article/FormationCta";
 import { notFound } from "next/navigation";
 import { BlogList } from "@/components/BlogList";
+import { Plus } from "@/components/FaqSection";
 import { getPostsByCategory } from "@/lib/blog";
 import { toPostSummary } from "@/lib/blog-thumbnail";
 import { JsonLd } from "@/components/JsonLd";
@@ -130,6 +133,51 @@ export default async function BlogCategoryPage({ params }: Props) {
       />
       <div className="container-x section-sm">
         <BlogList posts={posts.map(toPostSummary)} initialCategory={category} gridLayout />
+
+        {/* Index serveur : la liste ci-dessus (client) ne rend que 9 cartes dans
+            le HTML. Ces liens donnent aux moteurs et aux lecteurs un chemin réel
+            vers chaque article de la catégorie. */}
+        {posts.length > 9 ? (
+          <details className="faq-item mt-20">
+            <summary>
+              <h2 className="text-[inherit] font-[inherit] leading-[inherit] tracking-[inherit]">
+                Tous les articles {label} ({posts.length})
+              </h2>
+              <Plus />
+            </summary>
+            {/* Mise en forme dans `.post-index` (globals.css) : pas de classes
+                répétées sur 200 liens, le HTML reste sous le budget. */}
+            <ul className="post-index">
+              {posts.map((p) => (
+                <li key={p.slug}>
+                  <a href={`/blog/${p.slug}`}>{p.frontmatter.title}</a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ) : null}
+
+        <nav aria-label="Autres catégories du blog" className="mt-12 border-t border-line pt-8">
+          <p className="meta">Autres catégories</p>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {blogCategories
+              .filter((c) => c.slug !== category)
+              .map((c) => (
+                <li key={c.slug}>
+                  <Link href={`/blog/category/${c.slug}`} className="chip">
+                    {c.label}
+                  </Link>
+                </li>
+              ))}
+            <li>
+              <Link href="/blog" className="chip">
+                Tout le blog
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <FormationCta locale="fr" placement="listing" className="mt-16" />
       </div>
     </>
   );

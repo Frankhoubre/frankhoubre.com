@@ -1,3 +1,4 @@
+import { FormationCta } from "@/components/article/FormationCta";
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
@@ -116,6 +117,7 @@ export default async function BlogArchivePage({ params }: PageProps) {
           totalPages={totalPages}
           locale="fr"
         />
+        <FormationCta locale="fr" placement="listing" className="mt-20" />
       </div>
     </>
   );

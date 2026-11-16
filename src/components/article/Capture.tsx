@@ -78,8 +78,7 @@ export function Capture({ locale, slug, eager = false, compact = false, ...p }: 
       width={width}
       height={height}
       sizes={compact ? "(max-width: 640px) 100vw, 360px" : "(max-width: 768px) 100vw, 720px"}
-      priority={eager}
-      loading={eager ? undefined : "lazy"}
+      loading={eager ? "eager" : "lazy"}
       className="capture-img"
     />
   );

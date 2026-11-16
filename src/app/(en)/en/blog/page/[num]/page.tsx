@@ -1,9 +1,12 @@
+import { FormationCta } from "@/components/article/FormationCta";
 import type { Metadata } from "next";
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { getAllEnPosts } from "@/lib/blog-en";
 import { EnBlogGrid, EN_POSTS_PER_PAGE } from "@/components/EnBlogGrid";
 import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
-import { buildPageMetadata } from "@/lib/metadata";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBreadcrumbList, buildGraphJsonLd, buildPageMetadata } from "@/lib/metadata";
+import { baseUrl, siteName } from "@/lib/site";
 
 export const revalidate = 3600;
 
@@ -33,8 +36,8 @@ export async function generateMetadata({
   const { num } = await params;
   const page = Number(num);
   return buildPageMetadata({
-    title: `Blog, page ${page}`,
-    description: `English articles on AI filmmaking, image and video, page ${page}. Tutorials, workflows and honest tool analysis.`,
+    title: `AI filmmaking blog, page ${page}`,
+    description: `English articles on AI filmmaking, image and video, page ${page}: tutorials, workflows and honest tool analysis, newest first, by Frank Houbre.`,
     path: `/en/blog/page/${page}`,
   });
 }
@@ -43,7 +46,7 @@ export default async function EnBlogPaginatedPage({ params }: PageProps) {
   const { num } = await params;
   const page = Number(num);
   if (!Number.isInteger(page) || page < 1) notFound();
-  if (page === 1) redirect("/en/blog");
+  if (page === 1) permanentRedirect("/en/blog");
 
   const posts = getAllEnPosts();
   const totalPages = totalPagesCount();
@@ -52,8 +55,34 @@ export default async function EnBlogPaginatedPage({ params }: PageProps) {
   const start = (page - 1) * EN_POSTS_PER_PAGE;
   const pagePosts = posts.slice(start, start + EN_POSTS_PER_PAGE);
 
+  // Même graphe que les archives FR : BreadcrumbList + CollectionPage + ItemList.
+  const jsonLd = buildGraphJsonLd(
+    buildBreadcrumbList([
+      { name: "Home", path: "/en" },
+      { name: "Blog", path: "/en/blog" },
+      { name: `Page ${page}`, path: `/en/blog/page/${page}` },
+    ]),
+    {
+      "@type": "CollectionPage",
+      name: `${siteName} Blog (English), page ${page}`,
+      url: `${baseUrl}/en/blog/page/${page}`,
+      inLanguage: "en-US",
+      isPartOf: { "@type": "Blog", name: `${siteName} Blog (English)`, url: `${baseUrl}/en/blog` },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: pagePosts.map((p, i) => ({
+          "@type": "ListItem",
+          position: start + i + 1,
+          url: `${baseUrl}/en/blog/${p.slug}`,
+          name: p.frontmatter.title,
+        })),
+      },
+    },
+  );
+
   return (
     <>
+      <JsonLd data={jsonLd} />
       <PageHeader
         index={String(page).padStart(2, "0")}
         kicker="Blog archive"
@@ -73,6 +102,7 @@ export default async function EnBlogPaginatedPage({ params }: PageProps) {
       />
       <div className="container-x section-sm">
         <EnBlogGrid posts={pagePosts} currentPage={page} totalPages={totalPages} />
+        <FormationCta locale="en" placement="listing" className="mt-20" />
       </div>
     </>
   );

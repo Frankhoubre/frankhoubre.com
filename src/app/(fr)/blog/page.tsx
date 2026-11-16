@@ -1,3 +1,4 @@
+import { FormationCta } from "@/components/article/FormationCta";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BlogList } from "@/components/BlogList";
@@ -84,7 +85,7 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
             <div className="flex gap-3 lg:justify-end">
               <dt>Flux</dt>
               <dd>
-                <Link href="/feed.xml" className="link-muted">
+                <Link href="/feed.xml" className="link-muted tap">
                   RSS
                 </Link>
               </dd>
@@ -119,7 +120,7 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
                   <li key={n}>
                     <Link
                       href={blogPagePath("fr", n)}
-                      className="chip min-w-9 justify-center px-2"
+                      className="chip min-w-9 pointer-coarse:min-w-11 justify-center px-2"
                       aria-current={n === 1 ? "page" : undefined}
                     >
                       {n}
@@ -130,6 +131,8 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
             </div>
           </nav>
         ) : null}
+
+        <FormationCta locale="fr" placement="listing" className="mt-20" />
       </div>
     </>
   );

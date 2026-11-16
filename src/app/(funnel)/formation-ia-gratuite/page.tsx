@@ -15,11 +15,14 @@ import {
 import { siteName } from "@/lib/site";
 
 const title = "Formation vidéo IA gratuite : votre premier film IA cohérent en 3 jours";
+/** Titre SERP : 60 caractères, sans la marque (le titre long dépassait 85). */
+const serpTitle = "Formation vidéo IA gratuite : un film IA cohérent en 3 jours";
 const description =
-  "Comment réaliser un film IA cohérent en 3 jours sans jeter vos crédits par les fenêtres. La méthode de Frank Houbre en 3 vidéos (24 min), accès immédiat, sans carte bancaire.";
+  "Réalisez un film IA cohérent en 3 jours sans gaspiller vos crédits. La méthode de Frank Houbre en 3 vidéos (24 min), accès immédiat, sans carte bancaire.";
 
 export const metadata: Metadata = buildPageMetadata({
   title,
+  titleAbsolute: serpTitle,
   description,
   path: FUNNEL_PATHS.optin,
   keywords: [

@@ -53,7 +53,7 @@ export function ArticleHeader({
     <header>
       <Breadcrumb items={breadcrumb} label={breadcrumbLabel} />
       <div className="meta mt-8 flex flex-wrap items-center gap-x-3 gap-y-1">
-        <Badge category={category} href={categoryHref} plain />
+        <Badge category={category} href={categoryHref} plain className={categoryHref ? "tap" : ""} />
         <span className="text-fog/50" aria-hidden>/</span>
         <time dateTime={date}>{dateLabel}</time>
         {modifiedDate && modifiedLabel ? (
@@ -74,7 +74,7 @@ export function ArticleHeader({
       {author ? (
         <p className="meta mt-6">
           {author.prefix}{" "}
-          <Link href={author.href} rel="author" className="line-link meta-strong hover:text-cream">
+          <Link href={author.href} rel="author" className="line-link tap meta-strong hover:text-cream">
             {author.name}
           </Link>
         </p>
@@ -86,9 +86,17 @@ export function ArticleHeader({
           <div className="frame frame-grain frame-marks relative aspect-[2/1] w-full">
             {thumb.startsWith("http") ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={thumb} alt={thumbAlt} className="absolute inset-0 h-full w-full object-cover" />
+              <img src={thumb} alt={thumbAlt} fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
             ) : (
-              <Image src={thumb} alt={thumbAlt} fill priority sizes="(max-width: 768px) 100vw, 720px" />
+              <Image
+                src={thumb}
+                alt={thumbAlt}
+                fill
+                loading="eager"
+                fetchPriority="high"
+                sizes="(max-width: 768px) 100vw, 720px"
+                className="object-cover"
+              />
             )}
           </div>
           {figureCaption ? <figcaption className="meta mt-3">{figureCaption}</figcaption> : null}

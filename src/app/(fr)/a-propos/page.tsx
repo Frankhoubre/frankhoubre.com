@@ -15,7 +15,8 @@ import {
 } from "@/lib/metadata";
 import { baseUrl, person, socialLinks } from "@/lib/site";
 
-const aboutTitle = "À propos de Frank Houbre | Formateur IA, réalisateur IA et entrepreneur";
+// 56 caractères : le titre long (71) était coupé dans les résultats.
+const aboutTitle = "À propos de Frank Houbre | Formateur IA et réalisateur IA";
 const aboutDescription =
   // ≤155 caractères : au-delà, Google tronque la description en SERP.
   "Biographie de Frank Houbre, formateur IA et réalisateur IA : parcours, projets, distinctions et vision de la création assistée par IA.";
