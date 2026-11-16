@@ -63,7 +63,7 @@ export function Breadcrumb({ items, label = "Fil d'Ariane" }: { items: Crumb[]; 
           <li key={`${item.label}-${i}`} className="flex items-center gap-3">
             {i > 0 ? <span className="text-fog/50" aria-hidden>/</span> : null}
             {item.href ? (
-              <a href={item.href} className="link-muted">
+              <a href={item.href} className="link-muted tap">
                 {item.label}
               </a>
             ) : (

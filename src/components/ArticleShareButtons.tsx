@@ -6,9 +6,12 @@ import { siteName } from "@/lib/site";
 type Props = {
   url: string;
   title: string;
+  labels?: { share: string; copyLink: string; linkCopied: string };
 };
 
-export function ArticleShareButtons({ url, title }: Props) {
+const FR_LABELS = { share: "Partager", copyLink: "Copier le lien", linkCopied: "Lien copié" };
+
+export function ArticleShareButtons({ url, title, labels = FR_LABELS }: Props) {
   const [copied, setCopied] = useState(false);
   const encoded = encodeURIComponent(url);
   const text = encodeURIComponent(`${title} · ${siteName}`);
@@ -30,15 +33,15 @@ export function ArticleShareButtons({ url, title }: Props) {
   ];
 
   return (
-    <div className="meta flex flex-wrap items-center gap-x-5 gap-y-2">
-      <span className="meta-dim">Partager</span>
+    <div className="meta flex flex-wrap items-center gap-x-5 gap-y-1">
+      <span className="meta-dim">{labels.share}</span>
       {links.map((l) => (
-        <a key={l.label} className="line-link text-fog hover:text-cream" href={l.href} target="_blank" rel="noopener noreferrer">
+        <a key={l.label} className={`line-link tap text-fog hover:text-cream ${l.label.length < 3 ? "tap-w" : ""}`} href={l.href} target="_blank" rel="noopener noreferrer">
           {l.label}
         </a>
       ))}
-      <button type="button" onClick={onCopy} className="line-link text-fog hover:text-cream">
-        {copied ? "Lien copié" : "Copier le lien"}
+      <button type="button" onClick={onCopy} className="line-link tap text-fog hover:text-cream" aria-live="polite">
+        {copied ? labels.linkCopied : labels.copyLink}
       </button>
     </div>
   );

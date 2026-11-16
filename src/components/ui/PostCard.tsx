@@ -62,7 +62,15 @@ function Thumb({
       />
     );
   }
-  return <Image src={src} alt={alt} fill sizes={sizes} priority={priority} />;
+  return (
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      sizes={sizes}
+      {...(priority ? { loading: "eager" as const, fetchPriority: "high" as const } : {})}
+    />
+  );
 }
 
 /**
@@ -95,7 +103,7 @@ export function PostCard({
           <div className="meta flex flex-wrap items-center gap-x-3 gap-y-1">
             <time dateTime={post.frontmatter.date}>{date}</time>
             <span className="text-fog/50" aria-hidden>/</span>
-            <Badge category={post.frontmatter.category} href={categoryHref} plain />
+            <Badge category={post.frontmatter.category} href={categoryHref} plain className={categoryHref ? "tap" : ""} />
           </div>
           <Heading className="h-item mt-3">
             <Link href={href} className="line-link">
@@ -116,7 +124,7 @@ export function PostCard({
         <Thumb src={post.thumbnail} alt="" sizes={sizes} priority={priority} fallback={previewLabel} />
         <Link href={href} className="absolute inset-0 z-[2]" tabIndex={-1} aria-hidden />
         <span className="absolute left-3 top-3 z-[3]">
-          <Badge category={post.frontmatter.category} href={categoryHref} />
+          <Badge category={post.frontmatter.category} href={categoryHref} className={categoryHref ? "tap-x" : ""} />
         </span>
         {index ? (
           <span className="meta meta-strong absolute bottom-3 right-3 z-[3] text-[10px]">{index}</span>

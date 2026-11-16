@@ -43,17 +43,17 @@ export function SiteFooter() {
           <div className="col-span-12 grid gap-10 sm:grid-cols-3 lg:col-span-6 lg:gap-8">
             <nav aria-label={dict.footer.nav}>
               <p className="meta border-b border-line pb-3">{dict.footer.nav}</p>
-              <ul className="mt-4 space-y-2.5 text-sm">
+              <ul className="mt-4 space-y-2.5 text-sm pointer-coarse:space-y-0">
                 {dict.nav.map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="link-muted">
+                    <Link href={item.href} className="link-muted tap">
                       {item.label}
                     </Link>
                   </li>
                 ))}
                 {locale === "fr" ? (
                   <li>
-                    <Link href="/presse" className="link-muted">
+                    <Link href="/presse" className="link-muted tap">
                       Kit presse
                     </Link>
                   </li>
@@ -63,10 +63,10 @@ export function SiteFooter() {
 
             <nav aria-label={dict.footer.social}>
               <p className="meta border-b border-line pb-3">{dict.footer.social}</p>
-              <ul className="mt-4 space-y-2.5 text-sm">
+              <ul className="mt-4 space-y-2.5 text-sm pointer-coarse:space-y-0">
                 {socialLinks.map((social) => (
                   <li key={social.href}>
-                    <a href={social.href} target="_blank" rel="noreferrer" className="link-muted">
+                    <a href={social.href} target="_blank" rel="noreferrer" className="link-muted tap">
                       {social.label}
                     </a>
                   </li>
@@ -84,10 +84,10 @@ export function SiteFooter() {
                 </span>
               </Link>
               <nav aria-label="Legal" className="mt-8">
-                <ul className="space-y-2 text-xs">
+                <ul className="space-y-2 text-xs pointer-coarse:space-y-0">
                   {legal.map((item) => (
                     <li key={item.href}>
-                      <Link href={item.href} className="link-muted">
+                      <Link href={item.href} className="link-muted tap">
                         {item.label}
                       </Link>
                     </li>
@@ -105,7 +105,7 @@ export function SiteFooter() {
           <span className="flex items-center gap-4">
             <span>FR / EN</span>
             <span className="text-fog/40" aria-hidden>|</span>
-            <Link href="/feed.xml" className="link-muted">
+            <Link href="/feed.xml" className="link-muted tap tap-w">
               RSS
             </Link>
             <span className="text-fog/40" aria-hidden>|</span>

@@ -92,7 +92,7 @@ export function ArticleToc({ items, layout = "sidebar", label = "Sommaire" }: Pr
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className={`grid grid-cols-[1.75rem_1fr] gap-2 py-1 pl-4 leading-snug transition-colors duration-200 ${
+                  className={`tap-row grid grid-cols-[1.75rem_1fr] gap-2 py-1 pl-4 leading-snug transition-colors duration-200 ${
                     isActive ? "text-cream" : "text-fog hover:text-stone"
                   }`}
                   aria-current={isActive ? "location" : undefined}

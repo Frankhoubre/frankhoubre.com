@@ -146,6 +146,7 @@ export function BlogList({
                 categoryHref={`/blog/category/${post.frontmatter.category}`}
                 index={String((currentPage - 1) * POSTS_PER_PAGE + i + 1).padStart(2, "0")}
                 headingLevel="h2"
+                priority={i === 0 && currentPage === 1}
               />
             </li>
           ))}
@@ -193,7 +194,7 @@ export function BlogList({
                   key={n}
                   type="button"
                   onClick={() => setCurrentPage(n)}
-                  className="chip min-w-9 justify-center px-2"
+                  className="chip min-w-9 pointer-coarse:min-w-11 justify-center px-2"
                   aria-current={n === currentPage ? "page" : undefined}
                 >
                   {n}

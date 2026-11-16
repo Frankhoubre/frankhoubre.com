@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { person } from "@/lib/site";
 
@@ -18,12 +19,12 @@ export function AuthorBox({ locale = "fr", imageSrc, jobTitle, bio = [], links }
       <p className="meta">{locale === "en" ? "Author" : "Auteur"}</p>
       <div className="mt-5 grid gap-6 sm:grid-cols-[5rem_1fr] sm:gap-8">
         <div className="frame relative aspect-square w-20">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={imageSrc}
             alt={person.authorDisplayName}
             width={80}
             height={80}
+            sizes="80px"
             className="absolute inset-0 h-full w-full object-cover"
           />
         </div>
@@ -37,9 +38,9 @@ export function AuthorBox({ locale = "fr", imageSrc, jobTitle, bio = [], links }
               ))}
             </div>
           ) : null}
-          <nav className="meta mt-5 flex flex-wrap gap-x-5 gap-y-2" aria-label={locale === "en" ? "Author links" : "Liens auteur"}>
+          <nav className="meta mt-5 flex flex-wrap gap-x-5 gap-y-1" aria-label={locale === "en" ? "Author links" : "Liens auteur"}>
             {links.map((l) => (
-              <Link key={l.href} href={l.href} className="line-link text-fog hover:text-cream">
+              <Link key={l.href} href={l.href} className="line-link tap text-fog hover:text-cream">
                 {l.label}
               </Link>
             ))}

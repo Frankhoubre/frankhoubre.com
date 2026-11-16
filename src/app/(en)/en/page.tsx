@@ -228,7 +228,7 @@ export default function EnHomePage() {
               <ul className="mt-8">
                 {tools.map((tool, i) => (
                   <li key={tool.path} className="spec-row">
-                    <Link href={tool.path} className="line-link text-[15px] text-cream" hrefLang="fr">
+                    <Link href={tool.path} className="line-link tap text-[15px] text-cream" hrefLang="fr">
                       {tool.title}
                     </Link>
                     <span className="spec-label">0{i + 1} · Free</span>

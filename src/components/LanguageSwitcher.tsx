@@ -36,7 +36,7 @@ export function LanguageSwitcher({ onNavigate }: { onNavigate?: () => void }) {
               <Link
                 href={localizedHref(pathname, item.code)}
                 onClick={onNavigate}
-                className="line-link text-fog hover:text-cream"
+                className="line-link tap tap-w text-fog hover:text-cream"
                 hrefLang={item.code}
               >
                 {item.label}

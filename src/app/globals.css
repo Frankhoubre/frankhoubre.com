@@ -2479,4 +2479,186 @@
   .theme-noir :focus-visible {
     outline-color: var(--gold);
   }
+
+  /* --- Confort mobile (16 nov. 2026) --------------------------------- */
+
+  /* Cibles tactiles : 44 px minimum sur écran tactile, sans toucher au
+     rendu souris. `.tap` s'ajoute aux liens texte isolés (pied de page, fil
+     d'Ariane, partage, sommaire) ; `.tap-x` agrandit la zone cliquable sans
+     changer la mise en page (étiquettes posées sur une image). */
+  .tap-x {
+    position: relative;
+  }
+
+  @media (pointer: coarse) {
+    .tap {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+    }
+
+    /* Libellés très courts (« X », « EN ») : la largeur compte aussi. */
+    .tap-w {
+      min-width: 2.75rem;
+      justify-content: center;
+    }
+
+    .tap-x::before {
+      content: "";
+      position: absolute;
+      inset: -0.65rem -0.5rem;
+    }
+
+    .btn-sm,
+    .chip,
+    .nav-link,
+    .arrow-link {
+      min-height: 2.75rem;
+    }
+
+    /* Lignes du sommaire : toute la ligne est la cible. */
+    .tap-row {
+      min-height: 2.75rem;
+      align-items: center;
+    }
+  }
+
+  /* Tableaux d'article : une ombre à droite signale qu'il reste des
+     colonnes à faire défiler, elle disparaît en bout de course. */
+  .prose-cinema .table-wrap {
+    background:
+      linear-gradient(to right, var(--bg), var(--bg)) left center / 2.5rem 100% no-repeat local,
+      linear-gradient(to left, var(--bg), var(--bg)) right center / 2.5rem 100% no-repeat local,
+      linear-gradient(to right, rgb(255 226 122 / 0.16), transparent) left center / 0.9rem 100% no-repeat scroll,
+      linear-gradient(to left, rgb(255 226 122 / 0.16), transparent) right center / 0.9rem 100% no-repeat scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .prose-cinema .table-wrap th {
+    background: transparent;
+  }
+
+  @media (max-width: 639px) {
+    /* Trois colonnes ou plus : on garde des colonnes lisibles et on fait
+       défiler, plutôt que d'écraser le texte mot par mot. */
+    .prose-cinema .table-wrap table:has(th:nth-child(3)),
+    .prose-cinema .table-wrap table:has(td:nth-child(3)) {
+      min-width: 34rem;
+    }
+
+    .prose-cinema th,
+    .prose-cinema td {
+      padding: 0.65rem 0.75rem;
+    }
+
+    /* Prompts et blocs de code : une ligne longue passe à la ligne au lieu
+       d'obliger à faire défiler pour la lire ou la copier. */
+    .prose-cinema pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      padding: 1rem;
+    }
+
+    .prose-cinema blockquote {
+      font-size: 1.2rem;
+      padding-left: 1.1em;
+    }
+  }
+
+  /* En-tête fixe : assez opaque pour que le texte qui défile dessous ne se
+     lise plus à travers. */
+  .theme-noir .site-header.is-solid {
+    background: rgb(5 5 5 / 0.97);
+  }
+
+  /* Bloc de code avec bouton « Copier ». */
+  .code-block {
+    position: relative;
+    margin: 1.8em 0;
+  }
+
+  .prose-cinema .code-block pre {
+    margin: 0;
+    padding-top: 2.9rem;
+  }
+
+  .code-copy {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2rem;
+    padding: 0 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    font-family: var(--font-display), "Inter Tight", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  }
+
+  .code-copy:hover,
+  .code-copy[data-copied="true"] {
+    color: var(--gold);
+    border-color: rgb(255 226 122 / 0.6);
+  }
+
+  @media (pointer: coarse) {
+    .code-copy {
+      min-height: 2.75rem;
+      min-width: 2.75rem;
+      top: 0;
+      right: 0;
+      border-color: transparent;
+      background: transparent;
+    }
+  }
+
+  /* Index d'articles (pages de catégorie) : liste dense de liens titres. */
+  .post-index {
+    display: grid;
+    column-gap: 2.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .post-index {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .post-index li {
+    border-top: 1px solid var(--line);
+  }
+
+  .post-index a {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding-block: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  .post-index a:hover {
+    color: var(--cream);
+  }
+
+  /* Mots très longs (URL, noms de modèles) : ils passent à la ligne au
+     lieu de pousser la page en largeur. */
+  .prose-cinema {
+    overflow-wrap: break-word;
+  }
+
+  .prose-cinema td,
+  .prose-cinema th {
+    overflow-wrap: normal;
+  }
 }

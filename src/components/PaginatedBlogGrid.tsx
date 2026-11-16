@@ -73,6 +73,7 @@ export function PaginatedBlogGrid({ posts, currentPage, totalPages, locale }: Pr
               categoryHref={locale === "fr" ? `/blog/category/${p.frontmatter.category}` : undefined}
               index={String(offset + i + 1).padStart(2, "0")}
               headingLevel="h2"
+              priority={i === 0}
             />
           </li>
         ))}
@@ -100,7 +101,7 @@ export function PaginatedBlogGrid({ posts, currentPage, totalPages, locale }: Pr
                   key={n}
                   href={blogPagePath(locale, n)}
                   aria-current={n === currentPage ? "page" : undefined}
-                  className="chip min-w-9 justify-center px-2"
+                  className="chip min-w-9 pointer-coarse:min-w-11 justify-center px-2"
                 >
                   {n}
                 </Link>

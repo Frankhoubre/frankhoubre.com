@@ -23,6 +23,11 @@ export const ARTICLE_LABELS = {
       "Certains liens de cet article sont affiliés : si vous vous abonnez, Frank touche une commission, sans surcoût pour vous. Cela ne change pas notre avis.",
     toc: "Sommaire",
     tocSections: "sections",
+    copy: "Copier",
+    copied: "Copié",
+    share: "Partager",
+    copyLink: "Copier le lien",
+    linkCopied: "Lien copié",
   },
   en: {
     by: "By",
@@ -46,6 +51,11 @@ export const ARTICLE_LABELS = {
       "Some links in this article are affiliate links: if you subscribe, Frank earns a commission at no extra cost to you. It does not change our opinion.",
     toc: "Contents",
     tocSections: "sections",
+    copy: "Copy",
+    copied: "Copied",
+    share: "Share",
+    copyLink: "Copy link",
+    linkCopied: "Link copied",
   },
 } as const;
 

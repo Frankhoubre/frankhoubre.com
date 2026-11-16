@@ -449,7 +449,7 @@ export default function HomePage() {
               <ul className="mt-8">
                 {categories.map((c) => (
                   <li key={c.slug} className="spec-row">
-                    <Link href={`/blog/category/${c.slug}`} className="line-link text-[15px] text-cream">
+                    <Link href={`/blog/category/${c.slug}`} className="line-link tap text-[15px] text-cream">
                       {c.label}
                     </Link>
                     <span className="spec-value">
@@ -470,7 +470,7 @@ export default function HomePage() {
               <ul className="mt-8">
                 {tools.map((tool, i) => (
                   <li key={tool.path} className="spec-row">
-                    <Link href={tool.path} className="line-link text-[15px] text-cream">
+                    <Link href={tool.path} className="line-link tap text-[15px] text-cream">
                       {tool.title}
                     </Link>
                     <span className="spec-label">0{i + 1} · Gratuit</span>
