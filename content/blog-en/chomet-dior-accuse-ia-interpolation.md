@@ -90,6 +90,8 @@ If you want to understand what interpolation really does to an image, and where 
 - **The tool used.** Neither Variety nor The Verge names it.
 - **Dior's reaction.** The statements come from Chomet and his producer, not from a statement by the house.
 
+*Update, November 16, 2026: the same technique, AI interpolation between key poses, is openly used by Animaj on Disney's Ozzy Fox. I break down its pipeline in [Ozzy Fox on Disney+: what Animaj's AI actually does](/en/blog/disney-ozzy-fox-animaj-ia-animation).*
+
 ## FAQ
 
 ### Was Sylvain Chomet's Dior film made with AI?

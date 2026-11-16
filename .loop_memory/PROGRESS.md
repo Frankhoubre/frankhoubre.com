@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-15 (run CLOUD, routine 5 blogs : article d'actualite ecoles-cinema-ia-scenaristes FR + EN)
+## Last run: 2026-11-16 (run CLOUD, routine 5 blogs : article d'actualite disney-ozzy-fox-animaj-ia-animation FR + EN)
+
+- Actu Bloomberg 13/11 (lu via Yahoo Finance et The Next Web) : Ozzy Fox, serie animee avec les outils de la startup francaise Animaj, arrive sur Disney+ en decembre ; virage IA de Disney sous Josh D'Amaro. Detail de la chaine via la page Animaj du 23/07 (Sketch-to-Motion = poses intermediaires, poses cles par les animateurs).
+- Angle : ou l'IA entre dans la chaine ; lien avec l'affaire Chomet/Dior (interpolation). Transparence : Animaj vend FlipMove, ScreenWeaver est l'outil de Frank.
+- Coordination des autres sites le 16/11 : ScreenWeaver Inevitable (Shortical, double IA d'Aki Avni), BusinessDynamite Digital Fairness Act, AI Studios Firefly et modeles partenaires, SimpleAIBlog Still, Ryan (Kakao, ChatGPT Images).
+- Images : hero Nano Banana 2 (animatrice parisienne, ecureuil generique), captures Animaj (x2) et The Next Web, schema 3 blocs FR/EN.
+- Lien entrant FR + EN depuis chomet-dior-accuse-ia-interpolation.
+
+## Run precedent : 2026-11-15 (run CLOUD, routine 5 blogs : article d'actualite ecoles-cinema-ia-scenaristes FR + EN)
 
 - Actu LA Times 11/11 sur les ecoles de cinema qui enseignent l'IA aux scenaristes. Capture : page LMU seulement (latimes.com renvoie Access Denied aux navigateurs automatises, non contourne).
 

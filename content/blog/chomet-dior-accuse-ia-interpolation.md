@@ -90,6 +90,8 @@ Si tu veux comprendre ce que l'interpolation fait vraiment à une image, et où 
 - **L'outil utilisé.** Ni Variety ni The Verge ne le nomment.
 - **La réaction de Dior.** Les déclarations viennent de Chomet et de son producteur, pas d'un communiqué de la maison.
 
+*Mise à jour du 16 novembre 2026 : la même technique, l'interpolation par IA entre poses clés, est assumée par Animaj pour la série Ozzy Fox de Disney. Je détaille sa chaîne dans [Ozzy Fox sur Disney+ : ce que l'IA d'Animaj fait vraiment](/blog/disney-ozzy-fox-animaj-ia-animation).*
+
 ## FAQ
 
 ### Le film de Dior réalisé par Sylvain Chomet a-t-il été fait avec de l'IA ?
