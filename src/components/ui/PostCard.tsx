@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { PostFrontmatter } from "@/lib/blog";
+import type { PostSummaryFrontmatter } from "@/lib/blog-thumbnail";
 import { Badge } from "@/components/Badge";
 import { Arrow } from "@/components/ui/Cta";
 
 export type PostCardData = {
   slug: string;
-  frontmatter: PostFrontmatter;
+  frontmatter: PostSummaryFrontmatter;
   thumbnail?: string;
 };
 
@@ -94,7 +94,7 @@ export function PostCard({
 
   if (variant === "row") {
     return (
-      <article className="group grid gap-5 border-t border-line py-6 sm:grid-cols-[10rem_1fr] sm:gap-8">
+      <article className="post-card group grid gap-5 border-t border-line py-6 sm:grid-cols-[10rem_1fr] sm:gap-8">
         <div className="frame frame-hover relative aspect-[16/10] sm:aspect-[4/3]">
           <Thumb src={post.thumbnail} alt="" sizes="240px" priority={false} fallback={previewLabel} />
           <Link href={href} className="absolute inset-0 z-[2]" tabIndex={-1} aria-hidden />
@@ -119,7 +119,7 @@ export function PostCard({
   const feature = variant === "feature";
 
   return (
-    <article className="group flex h-full flex-col">
+    <article className="post-card group flex h-full flex-col">
       <div className={`frame frame-grain frame-hover relative ${feature ? "aspect-[16/9]" : "aspect-[16/10]"}`}>
         <Thumb src={post.thumbnail} alt="" sizes={sizes} priority={priority} fallback={previewLabel} />
         <Link href={href} className="absolute inset-0 z-[2]" tabIndex={-1} aria-hidden />
@@ -139,7 +139,7 @@ export function PostCard({
             {post.frontmatter.title}
           </Link>
         </Heading>
-        <p className={`mt-3 flex-1 leading-relaxed text-fog ${feature ? "line-clamp-3 text-base" : "line-clamp-2 text-sm"}`}>
+        <p className={`mt-3 flex-1 leading-relaxed text-fog ${feature ? "line-clamp-3 text-base" : "line-clamp-3 text-[0.9375rem]"}`}>
           {post.frontmatter.excerpt}
         </p>
         <span className="mt-4 inline-flex items-center gap-2 text-cream opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100" aria-hidden>

@@ -100,7 +100,7 @@ export default async function EnBlogPaginatedPage({ params }: PageProps) {
           />
         }
       />
-      <div className="container-x section-sm">
+      <div className="container-x section-sm pt-8 sm:pt-10">
         <EnBlogGrid posts={pagePosts} currentPage={page} totalPages={totalPages} />
         <FormationCta locale="en" placement="listing" className="mt-20" />
       </div>

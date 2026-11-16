@@ -110,7 +110,7 @@ export default async function BlogArchivePage({ params }: PageProps) {
           </p>
         }
       />
-      <div className="container-x section-sm">
+      <div className="container-x section-sm pt-8 sm:pt-10">
         <PaginatedBlogGrid
           posts={pagePosts}
           currentPage={page}

@@ -1,3 +1,4 @@
+import { modifiedIso, publishedIso } from "@/lib/article-dates";
 import { FormationCta } from "@/components/article/FormationCta";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import {
   blogPagePath,
 } from "@/components/PaginatedBlogGrid";
 import { getAllPosts } from "@/lib/blog";
-import { toPostSummary } from "@/lib/blog-thumbnail";
+import { POSTS_PER_PAGE, toPostSummary } from "@/lib/blog-thumbnail";
 import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { buildBreadcrumbList, buildGraphJsonLd, buildPageMetadata } from "@/lib/metadata";
@@ -53,8 +54,8 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
         "@type": "BlogPosting",
         headline: post.frontmatter.title,
         url: `${baseUrl}/blog/${post.slug}`,
-        datePublished: post.frontmatter.date,
-        dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
+        datePublished: publishedIso(post.frontmatter),
+        dateModified: modifiedIso(post.frontmatter),
       })),
     },
   );
@@ -94,10 +95,11 @@ export default async function BlogIndexPage({ searchParams }: PageProps) {
         }
       />
 
-      <div className="container-x section-sm">
+      <div className="container-x section-sm pt-8 sm:pt-10">
         {/* PostSummary : ne jamais sérialiser le markdown complet vers le client. */}
         <BlogList
-          posts={posts.map(toPostSummary)}
+          posts={posts.slice(0, POSTS_PER_PAGE).map(toPostSummary)}
+          total={posts.length}
           gridLayout
           initialSearch={initialSearch}
         />

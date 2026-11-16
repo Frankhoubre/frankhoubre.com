@@ -1,3 +1,4 @@
+import { modifiedIso, publishedIso } from "@/lib/article-dates";
 import { FormationCta } from "@/components/article/FormationCta";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -45,8 +46,8 @@ export default function EnBlogPage() {
         "@type": "BlogPosting",
         headline: post.frontmatter.title,
         url: `${baseUrl}/en/blog/${post.slug}`,
-        datePublished: post.frontmatter.date,
-        dateModified: post.frontmatter.dateModified ?? post.frontmatter.date,
+        datePublished: publishedIso(post.frontmatter),
+        dateModified: modifiedIso(post.frontmatter),
       })),
     },
   );
@@ -77,7 +78,7 @@ export default function EnBlogPage() {
           </dl>
         }
       />
-      <div className="container-x section-sm">
+      <div className="container-x section-sm pt-8 sm:pt-10">
         {posts.length === 0 ? (
           <div className="border border-line p-8 sm:p-12">
             <p className="meta">Coming soon</p>

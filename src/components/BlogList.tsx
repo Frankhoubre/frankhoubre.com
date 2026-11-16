@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import type { PostSummary } from "@/lib/blog-thumbnail";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { POSTS_PER_PAGE, type PostSummary } from "@/lib/blog-thumbnail";
 import { blogCategories } from "@/lib/site";
 import { SearchInput } from "@/components/SearchInput";
 import { PostCard } from "@/components/ui/PostCard";
 
-export const POSTS_PER_PAGE = 9;
 
 export function getPageNumbers(
   _current: number,
@@ -31,19 +30,27 @@ export function getPageNumbers(
 }
 
 type Props = {
+  /** Première page de la liste, rendue dans le HTML (9 fiches). */
   posts?: PostSummary[];
+  /** Nombre total d'articles de la vue initiale (tout le blog ou la catégorie). */
+  total?: number;
   initialCategory?: string;
   initialSearch?: string;
   gridLayout?: boolean;
 };
 
+const INDEX_URL = "/api/blog-summaries";
+
 /**
- * Liste filtrable du blog : recherche, filtres par catégorie en capitales,
- * grille de fiches et pagination côté client (les archives statiques
- * /blog/page/N restent le chemin de crawl des moteurs).
+ * Liste filtrable du blog : recherche, filtres par catégorie, grille de
+ * fiches et pagination côté client. Le HTML ne porte que la première page ;
+ * l'index complet (résumés de tous les articles) est chargé à la première
+ * interaction. Les archives statiques /blog/page/N et l'index des pages de
+ * catégorie restent le chemin de crawl des moteurs.
  */
 export function BlogList({
   posts = [],
+  total = posts.length,
   initialCategory = "",
   initialSearch = "",
   gridLayout = false,
@@ -51,6 +58,20 @@ export function BlogList({
   const [search, setSearch] = useState(initialSearch);
   const [category, setCategory] = useState(initialCategory);
   const [currentPage, setCurrentPage] = useState(1);
+  const [index, setIndex] = useState<PostSummary[] | null>(null);
+  const requested = useRef(false);
+
+  const loadIndex = useCallback(() => {
+    if (requested.current) return;
+    requested.current = true;
+    fetch(INDEX_URL)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((data: PostSummary[]) => setIndex(data))
+      .catch(() => {
+        // Nouvel essai à la prochaine interaction.
+        requested.current = false;
+      });
+  }, []);
 
   useEffect(() => {
     setCategory(initialCategory);
@@ -58,10 +79,15 @@ export function BlogList({
 
   useEffect(() => {
     setSearch(initialSearch);
-  }, [initialSearch]);
+    if (initialSearch.trim()) loadIndex();
+  }, [initialSearch, loadIndex]);
+
+  // Tant que rien n'a été filtré, la première page vient du HTML serveur.
+  const untouched = category === initialCategory && !search.trim();
 
   const filtered = useMemo(() => {
-    let list = posts;
+    if (!index) return posts;
+    let list = index;
     if (category) {
       list = list.filter((p) => p.frontmatter.category === category);
     }
@@ -74,9 +100,11 @@ export function BlogList({
       );
     }
     return list;
-  }, [posts, category, search]);
+  }, [index, posts, category, search]);
 
-  const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+  const loading = !index && (!untouched || currentPage > 1);
+  const count = index ? filtered.length : total;
+  const totalPages = Math.max(1, Math.ceil(count / POSTS_PER_PAGE));
 
   useEffect(() => {
     setCurrentPage(1);
@@ -87,25 +115,39 @@ export function BlogList({
   }, [currentPage, totalPages]);
 
   const pageItems = useMemo(() => {
+    if (!index) return posts.slice(0, POSTS_PER_PAGE);
     const start = (currentPage - 1) * POSTS_PER_PAGE;
     return filtered.slice(start, start + POSTS_PER_PAGE);
-  }, [filtered, currentPage]);
+  }, [index, posts, filtered, currentPage]);
+
+  const pickCategory = (slug: string) => {
+    loadIndex();
+    setCategory(slug);
+  };
+  const onSearch = (value: string) => {
+    loadIndex();
+    setSearch(value);
+  };
+  const goToPage = (n: number) => {
+    loadIndex();
+    setCurrentPage(n);
+  };
 
   const pageNumbers = getPageNumbers(currentPage, totalPages);
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8" onPointerEnter={loadIndex} onFocusCapture={loadIndex} aria-busy={loading}>
       <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div className="w-full max-w-md">
           <label htmlFor="blog-search" className="meta mb-2 block">
             Recherche
           </label>
-          <SearchInput value={search} onChange={setSearch} />
+          <SearchInput value={search} onChange={onSearch} />
         </div>
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Filtrer par catégorie">
+        <div className="chip-scroller flex gap-2 sm:flex-wrap" role="group" aria-label="Filtrer par catégorie">
           <button
             type="button"
-            onClick={() => setCategory("")}
+            onClick={() => pickCategory("")}
             className="chip"
             aria-pressed={category === ""}
           >
@@ -115,7 +157,7 @@ export function BlogList({
             <button
               key={c.slug}
               type="button"
-              onClick={() => setCategory(c.slug)}
+              onClick={() => pickCategory(c.slug)}
               className="chip"
               aria-pressed={category === c.slug}
             >
@@ -126,18 +168,18 @@ export function BlogList({
       </div>
 
       <p className="meta border-t border-line pt-4" aria-live="polite">
-        {filtered.length} article{filtered.length > 1 ? "s" : ""}
+        {count} article{count > 1 ? "s" : ""}
         {category ? ` · ${blogCategories.find((c) => c.slug === category)?.label ?? category}` : ""}
         {search.trim() ? ` · « ${search.trim()} »` : ""}
       </p>
 
-      {filtered.length === 0 ? (
+      {count === 0 ? (
         <div className="border border-line px-6 py-16 text-center">
           <p className="h-item text-cream">Aucun article trouvé.</p>
           <p className="mt-2 text-sm text-fog">Essayez un autre mot ou retirez le filtre de catégorie.</p>
         </div>
       ) : gridLayout ? (
-        <ul className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className={`grid gap-x-8 gap-y-14 transition-opacity duration-200 sm:grid-cols-2 lg:grid-cols-3 ${loading ? "opacity-50" : ""}`}>
           {pageItems.map((post, i) => (
             <li key={post.slug}>
               <PostCard
@@ -167,7 +209,7 @@ export function BlogList({
         </ul>
       )}
 
-      {filtered.length > 0 && totalPages > 1 ? (
+      {count > 0 && totalPages > 1 ? (
         <nav
           className="flex flex-col items-start gap-4 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between"
           aria-label="Pagination"
@@ -179,7 +221,7 @@ export function BlogList({
             <button
               type="button"
               disabled={currentPage <= 1}
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+              onClick={() => goToPage(Math.max(1, currentPage - 1))}
               className="chip"
             >
               Précédent
@@ -193,7 +235,7 @@ export function BlogList({
                 <button
                   key={n}
                   type="button"
-                  onClick={() => setCurrentPage(n)}
+                  onClick={() => goToPage(n)}
                   className="chip min-w-9 pointer-coarse:min-w-11 justify-center px-2"
                   aria-current={n === currentPage ? "page" : undefined}
                 >
@@ -204,7 +246,7 @@ export function BlogList({
             <button
               type="button"
               disabled={currentPage >= totalPages}
-              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+              onClick={() => goToPage(Math.min(totalPages, currentPage + 1))}
               className="chip"
             >
               Suivant

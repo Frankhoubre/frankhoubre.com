@@ -129,6 +129,36 @@ complet du 2026-07-03 (données GSC 16 mois + crawl live).
 - **Liens vers la formation** : toujours l'URL nue `/formation-ia-gratuite`
   (`formationHref`), jamais de paramètre utm sur un lien interne.
 
+### Ajouts du 2026-11-16, passe 2 (Google News, Discover, listes)
+
+- **Balisage d'article** : un seul constructeur, `buildArticleNode`
+  (`src/lib/article-jsonld.ts`), pour le FR et l'EN. `NewsArticle` uniquement
+  pour la catégorie `actualite`, `BlogPosting` pour le reste. `headline` coupé à
+  110 caractères, `image` en ImageObject avec les dimensions réelles,
+  `author.url` vers la page auteur (`/a-propos`, `/en/about`), `publisher.logo`.
+- **Dates** : `publishedIso` et `modifiedIso` sortent toujours un ISO 8601
+  complet avec le fuseau de Paris. Sans heure dans le frontmatter (`time`),
+  c'est 00:00 à Paris. `dateModified` ne vient que du frontmatter : jamais la
+  date du jour, jamais de date rafraîchie sans vraie mise à jour.
+- **Sitemap news** (`/news-sitemap.xml`) : seulement la catégorie `actualite`,
+  publiée depuis moins de 2 jours, FR et EN, avec `news:language` par langue.
+  Le nom de publication est `siteName`.
+- **Sitemap général** : `lastmod` seulement quand il est connu (articles,
+  catégories, blog, accueil). Les pages statiques n'en portent plus, la date
+  du build n'est pas une date de modification.
+- **Robots meta** : `max-image-preview:large`, `max-snippet:-1` et
+  `max-video-preview:-1` sur `robots` et `googlebot` (requis pour Discover).
+- **Flux RSS** : `/feed.xml` (FR) et `/en/feed.xml` (EN), annoncés par
+  `<link rel="alternate">` dans la langue de la page.
+- **Liste du blog** : `/blog` et les pages de catégorie ne rendent que 9
+  fiches ; la recherche et les filtres chargent `/api/blog-summaries` à la
+  première interaction. Les archives `/blog/page/N` et l'index des catégories
+  restent le chemin de crawl. `POSTS_PER_PAGE` vit dans
+  `src/lib/blog-thumbnail.ts` (une constante exportée d'un module client vaut
+  une référence, pas un nombre, côté serveur).
+- **Titre de FAQ** : `## FAQ` tout court. Plus de mention interne du type
+  « (PAA Optimization) » dans un titre visible.
+
 ## 6. Maillage interne (à chaque article)
 
 - 3–6 liens internes contextuels minimum ; FR pointe vers `/blog/…`,

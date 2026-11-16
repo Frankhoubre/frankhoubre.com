@@ -51,8 +51,8 @@ export function ArticleHeader({
 }: Props) {
   return (
     <header>
-      <Breadcrumb items={breadcrumb} label={breadcrumbLabel} />
-      <div className="meta mt-8 flex flex-wrap items-center gap-x-3 gap-y-1">
+      <Breadcrumb items={breadcrumb} label={breadcrumbLabel} hideCurrentOnMobile />
+      <div className="meta mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 sm:mt-8">
         <Badge category={category} href={categoryHref} plain className={categoryHref ? "tap" : ""} />
         <span className="text-fog/50" aria-hidden>/</span>
         <time dateTime={date}>{dateLabel}</time>
@@ -67,22 +67,22 @@ export function ArticleHeader({
         <span className="text-fog/50" aria-hidden>/</span>
         <span>{minutesLabel}</span>
       </div>
-      <h1 className="mt-6 text-[clamp(2rem,4.6vw,3.6rem)] leading-[1.02] tracking-[-0.025em] text-cream">
+      <h1 className="article-title mt-4 text-[clamp(2rem,4.6vw,3.6rem)] text-cream sm:mt-6">
         {title}
       </h1>
-      <p className="lede mt-6">{excerpt}</p>
+      <p className="lede article-lede mt-5 sm:mt-6">{excerpt}</p>
       {author ? (
-        <p className="meta mt-6">
+        <p className="meta mt-4 sm:mt-6">
           {author.prefix}{" "}
           <Link href={author.href} rel="author" className="line-link tap meta-strong hover:text-cream">
             {author.name}
           </Link>
         </p>
       ) : null}
-      {actions ? <div className="mt-8 border-t border-line pt-5">{actions}</div> : null}
+      {actions ? <div className="mt-4 border-t border-line pt-2 sm:mt-8 sm:pt-5">{actions}</div> : null}
 
       {thumb ? (
-        <figure className="mt-12">
+        <figure className="mt-6 sm:mt-12">
           <div className="frame frame-grain frame-marks relative aspect-[2/1] w-full">
             {thumb.startsWith("http") ? (
               // eslint-disable-next-line @next/next/no-img-element

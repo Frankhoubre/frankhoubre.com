@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { BlogList } from "@/components/BlogList";
 import { Plus } from "@/components/FaqSection";
 import { getPostsByCategory } from "@/lib/blog";
-import { toPostSummary } from "@/lib/blog-thumbnail";
+import { POSTS_PER_PAGE, toPostSummary } from "@/lib/blog-thumbnail";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumb, PageHeader } from "@/components/ui/PageHeader";
 import {
@@ -22,23 +22,44 @@ import {
   type BlogCategorySlug,
 } from "@/lib/site";
 
-const CATEGORY_DESCRIPTIONS: Partial<Record<BlogCategorySlug, string>> = {
-  actualite:
-    "Brèves, annonces et sujets d’actualité : articles classés sous Actualité.",
-  tutoriels:
-    "Guides pas à pas et tutoriels pratiques pour aller droit au but.",
-  notes:
-    "Notes de travail, réflexions courtes et brouillons utiles partagés.",
-  business:
-    "Studio, pricing, acquisition et stratégie pour monétiser une pratique créative IA.",
-  comparatifs:
-    "Comparatifs d’outils et de modèles pour choisir ce qui convient à ton usage.",
-  postproduction:
-    "Étalonnage, finitions et chaîne image après tournage ou génération.",
-  analyses:
-    "Analyses de fond sur les usages, les limites et les évolutions de l’IA créative.",
-  guides:
-    "Guides thématiques et parcours structurés pour avancer étape par étape.",
+/**
+ * Texte de chaque catégorie : `lede` s'affiche sous le titre, `meta` est la
+ * meta description (120 à 155 caractères). Écrits à la main, sans promesse
+ * qu'on ne tient pas dans les articles.
+ */
+const CATEGORY_COPY: Record<BlogCategorySlug, { lede: string; meta: string }> = {
+  actualite: {
+    lede: "Les annonces qui comptent quand on fabrique des images et des films avec l’IA : nouveaux modèles, changements de prix, décisions de justice, sorties en salles. À chaque fois, ce que ça change sur un projet réel.",
+    meta: "Actualité de l’IA créative : nouveaux modèles vidéo et image, prix, droit d’auteur, films IA. Ce que chaque annonce change sur un projet réel.",
+  },
+  tutoriels: {
+    lede: "Des méthodes pas à pas, issues de ma pratique de réalisateur IA : prompts, réglages, ordre des étapes et erreurs qui coûtent des crédits. De quoi refaire le plan chez soi, pas seulement comprendre le principe.",
+    meta: "Tutoriels IA vidéo et image pas à pas : prompts, réglages, ordre des étapes et erreurs qui coûtent des crédits. Pour refaire le plan chez soi.",
+  },
+  notes: {
+    lede: "Des notes courtes, écrites en cours de production : une observation, un réglage qui a marché, une idée à creuser. Moins abouties qu’un tutoriel, plus proches du carnet de tournage.",
+    meta: "Notes de production sur l’IA créative : observations, réglages qui ont marché, idées à creuser. Le carnet de tournage d’un réalisateur IA.",
+  },
+  business: {
+    lede: "Vendre une prestation vidéo IA, fixer un prix, trouver des clients, monter un studio : la partie du métier dont on parle peu, avec les chiffres quand je les ai et les limites quand il y en a.",
+    meta: "Vivre de la création IA : vendre une prestation vidéo, fixer un prix, trouver des clients, monter un studio. Avec les chiffres et les limites.",
+  },
+  comparatifs: {
+    lede: "Deux outils face à face, et ce que chacun donne vraiment : prix relevés à date, crédits consommés, points forts et défauts. Pour choisir selon le projet, pas selon la dernière annonce.",
+    meta: "Comparatifs d’outils IA vidéo et image : prix relevés à date, crédits consommés, points forts et défauts. Pour choisir selon le projet.",
+  },
+  postproduction: {
+    lede: "Ce qui se passe après la génération : étalonnage, upscaling, son, montage et finitions. C’est souvent là qu’une vidéo IA cesse d’avoir l’air générée.",
+    meta: "Postproduction des vidéos IA : étalonnage, upscaling, son, montage et finitions. Là où une vidéo cesse d’avoir l’air générée.",
+  },
+  analyses: {
+    lede: "Des prises de recul sur l’IA créative : ce qu’un modèle sait vraiment faire, où il casse, ce que les annonces ne disent pas. Les faits d’abord, mon avis ensuite, et je signale lequel est lequel.",
+    meta: "Analyses de l’IA créative : ce qu’un modèle sait vraiment faire, où il casse, ce que les annonces ne disent pas. Les faits, puis mon avis.",
+  },
+  guides: {
+    lede: "Les dossiers de fond du blog : un sujet traité en entier, du premier réglage au rendu final, avec les étapes dans l’ordre. À garder ouvert pendant qu’on travaille.",
+    meta: "Guides complets sur l’IA vidéo et image : un sujet traité en entier, du premier réglage au rendu final, avec les étapes dans l’ordre.",
+  },
 };
 
 export function generateStaticParams() {
@@ -53,17 +74,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: `Blog | ${siteName}` };
   }
   const label = getCategoryLabel(category);
-  const desc =
-    CATEGORY_DESCRIPTIONS[category] ??
-    `Articles de la catégorie « ${label} » sur le blog de ${siteName}.`;
+  const copy = CATEGORY_COPY[category];
 
   return buildPageMetadata({
     title: `${label} : blog IA`,
-    description: `${desc} Parcourez les articles et tutoriels de la catégorie ${label}.`,
+    description: copy.meta,
     path: `/blog/category/${category}`,
     openGraph: {
       title: `${label} | Blog ${siteName}`,
-      description: desc,
+      description: copy.meta,
     },
   });
 }
@@ -92,7 +111,7 @@ export default async function BlogCategoryPage({ params }: Props) {
       "@id": `${categoryUrl}#collection`,
       name: `${label} : articles du blog ${siteName}`,
       url: categoryUrl,
-      description: CATEGORY_DESCRIPTIONS[category],
+      description: CATEGORY_COPY[category].meta,
       inLanguage: "fr-FR",
       isPartOf: { "@type": "Blog", name: `Blog ${siteName}`, url: `${baseUrl}/blog` },
       mainEntity: {
@@ -115,7 +134,7 @@ export default async function BlogCategoryPage({ params }: Props) {
         index={index}
         kicker="Catégorie du blog"
         title={label}
-        lede={CATEGORY_DESCRIPTIONS[category] ?? "Tous les articles publiés dans cette catégorie."}
+        lede={CATEGORY_COPY[category].lede}
         breadcrumb={
           <Breadcrumb
             items={[
@@ -131,8 +150,13 @@ export default async function BlogCategoryPage({ params }: Props) {
           </p>
         }
       />
-      <div className="container-x section-sm">
-        <BlogList posts={posts.map(toPostSummary)} initialCategory={category} gridLayout />
+      <div className="container-x section-sm pt-8 sm:pt-10">
+        <BlogList
+          posts={posts.slice(0, POSTS_PER_PAGE).map(toPostSummary)}
+          total={posts.length}
+          initialCategory={category}
+          gridLayout
+        />
 
         {/* Index serveur : la liste ci-dessus (client) ne rend que 9 cartes dans
             le HTML. Ces liens donnent aux moteurs et aux lecteurs un chemin réel

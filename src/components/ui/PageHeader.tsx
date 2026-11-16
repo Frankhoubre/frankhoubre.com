@@ -37,8 +37,8 @@ export function PageHeader({
   size = "xl",
 }: Props) {
   return (
-    <header className={`container-x pt-[calc(var(--header-h)+3rem)] sm:pt-[calc(var(--header-h)+4.5rem)] ${className}`}>
-      {breadcrumb ? <div className="mb-8">{breadcrumb}</div> : null}
+    <header className={`container-x pt-[calc(var(--header-h)+2rem)] sm:pt-[calc(var(--header-h)+3.25rem)] ${className}`}>
+      {breadcrumb ? <div className="mb-6 sm:mb-8">{breadcrumb}</div> : null}
       <div className="grid-12 items-end gap-y-8">
         <div className="col-span-12 lg:col-span-9">
           <p className="meta flex items-center gap-3">
@@ -50,17 +50,29 @@ export function PageHeader({
         </div>
         {aside ? <div className="col-span-12 lg:col-span-3 lg:justify-self-end lg:text-right">{aside}</div> : null}
       </div>
-      <div className="hairline mt-10 sm:mt-14" />
+      <div className="hairline mt-8 sm:mt-10" />
     </header>
   );
 }
 
-export function Breadcrumb({ items, label = "Fil d'Ariane" }: { items: Crumb[]; label?: string }) {
+export function Breadcrumb({
+  items,
+  label = "Fil d'Ariane",
+  hideCurrentOnMobile = false,
+}: {
+  items: Crumb[];
+  label?: string;
+  /** Article : le titre suit juste dessous, inutile de le répéter sur mobile. */
+  hideCurrentOnMobile?: boolean;
+}) {
   return (
     <nav aria-label={label}>
       <ol className="meta flex flex-wrap items-center gap-x-3 gap-y-1">
         {items.map((item, i) => (
-          <li key={`${item.label}-${i}`} className="flex items-center gap-3">
+          <li
+            key={`${item.label}-${i}`}
+            className={`items-center gap-3 ${!item.href && hideCurrentOnMobile ? "hidden sm:flex" : "flex"}`}
+          >
             {i > 0 ? <span className="text-fog/50" aria-hidden>/</span> : null}
             {item.href ? (
               <a href={item.href} className="link-muted tap">

@@ -138,6 +138,17 @@ Même langage (tokens, hairlines, `.meta`, `.btn`, `.chip`, `.input`,
 `.card-surface`) mais plus dense : `AdminShell` avec navigation en capitales sur
 une ligne, tableaux sur hairlines, graphique SVG steel / stone.
 
+### Réglages du 2026-11-16 (charte noir et or)
+
+- En-tête fixe opaque (`#050505`) : aucun texte ne doit se lire à travers.
+- Lueur or (`--gold-glow`) resserrée : elle souligne le mot, elle ne bave pas.
+- Texte d'article : 17 px sur mobile, 18 px à partir de 1024 px, interlignage
+  1.7. Titres de prose moins serrés (`-0.032em`) que les titres de page.
+- Fiches (`.post-card`) : titre et filet de l'image en or au survol et au focus.
+- Filtres de catégorie (`.chip-scroller`) : une ligne qui défile sur mobile.
+- Ouverture d'article sur mobile : le photogramme doit apparaître dans le
+  premier écran (espacements réduits, titre non répété dans le fil d'Ariane).
+
 ---
 
 ## Anti-Patterns (Do NOT Use)
