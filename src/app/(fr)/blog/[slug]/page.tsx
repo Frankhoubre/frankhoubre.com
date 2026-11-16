@@ -30,11 +30,10 @@ import {
 import type { FaqPair } from "@/lib/mdx-pipeline";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
 import {
-  ORGANIZATION_ID,
-  PERSON_ID,
   articleSerpTitle,
   buildPageMetadata,
 } from "@/lib/metadata";
+import { buildArticleNode, ogImageSize } from "@/lib/article-jsonld";
 import { buildArticleVideoObject } from "@/lib/article-video";
 import { modifiedIso, publishedIso, realModifiedDate } from "@/lib/article-dates";
 import { AffiliateDisclosure } from "@/components/article/AffiliateDisclosure";
@@ -106,7 +105,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: publishedIso(post.frontmatter),
       modifiedTime: modifiedIso(post.frontmatter),
       ...(ogImage
-        ? { images: [{ path: ogImage, width: 1200, height: 630 }] }
+        ? { images: [{ path: ogImage, ...ogImageSize(thumb) }] }
         : {}),
     },
     twitter: {
@@ -127,80 +126,7 @@ function buildJsonLd(opts: {
   const { post, slug, videoIds, faqPairs } = opts;
   const url = `${baseUrl}/blog/${slug}`;
   const categoryLabel = getCategoryLabel(post.frontmatter.category);
-  const thumb = getPostThumbnail(post);
-  const img = thumb
-    ? thumb.startsWith("http")
-      ? thumb
-      : `${baseUrl}${thumb}`
-    : undefined;
-  const authorImage =
-    typeof person.image === "string" && person.image.startsWith("http")
-      ? person.image
-      : `${baseUrl}${person.image}`;
-
-  const wordCount = post.content.trim().split(/\s+/).filter(Boolean).length;
-
-  const article = {
-    "@type":
-      post.frontmatter.category === "actualite" ? "NewsArticle" : "BlogPosting",
-    "@id": `${url}#article`,
-    headline: post.frontmatter.title,
-    description: post.frontmatter.excerpt,
-    inLanguage: "fr-FR",
-    datePublished: publishedIso(post.frontmatter),
-    dateModified: modifiedIso(post.frontmatter),
-    url,
-    mainEntityOfPage: url,
-    wordCount,
-    timeRequired: `PT${readingTimeMinutes(post.content)}M`,
-    articleSection: categoryLabel,
-    isPartOf: {
-      "@type": "Blog",
-      name: `${siteName} Blog`,
-      url: `${baseUrl}/blog`,
-    },
-    about: [
-      "IA générative",
-      "vidéo IA",
-      "image IA",
-      "workflow cinématographique",
-    ],
-    keywords: [
-      post.frontmatter.category,
-      categoryLabel,
-      "IA",
-      "intelligence artificielle",
-      "prompt",
-      "vidéo IA",
-      "image IA",
-      "cinématique",
-    ],
-    ...(img ? { image: [img] } : {}),
-    author: {
-      "@type": "Person",
-      "@id": PERSON_ID,
-      name: person.name,
-      url: person.url,
-      jobTitle: person.jobTitle,
-      description: person.description,
-      image: authorImage,
-      ...(person.sameAs.length
-        ? { sameAs: [...person.sameAs] }
-        : {}),
-    },
-    publisher: {
-      "@type": "Organization",
-      "@id": ORGANIZATION_ID,
-      name: siteName,
-      url: baseUrl,
-      logo: {
-        "@type": "ImageObject",
-        url: `${baseUrl}/images/frank-houbre-about.png`,
-        width: 1024,
-        height: 1024,
-      },
-    },
-  };
+  const article = buildArticleNode(post, "fr");
 
   const graph: object[] = [article];
   graph.push({
@@ -327,7 +253,7 @@ export default async function BlogArticlePage({ params }: Props) {
             <ArticleHeader
               title={post.frontmatter.title}
               excerpt={post.frontmatter.excerpt}
-              date={post.frontmatter.date}
+              date={publishedIso(post.frontmatter)}
               dateLabel={dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
               {...(modified
                 ? {

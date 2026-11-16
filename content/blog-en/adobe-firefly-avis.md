@@ -141,7 +141,7 @@ Case 3, B2B content department. Need: illustrate weekly articles with no repetit
 
 Case 4, solo consultant. Need: quickly produce client mockups. Firefly gives you a fast lever to visualize directions before a shoot or heavier production. You secure the strategic discussion upstream.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Is Adobe Firefly good for a beginner who wants to create pro visuals quickly?**
 Yes, Firefly is a good entry point to start without excessive technical friction, especially if you already work in the Adobe ecosystem. The interface is accessible and the generation logic is intuitive enough to learn fast. But to get truly professional visuals, you have to structure your method: clear intention, concrete prompt, targeted iteration and multi-screen validation. Without this discipline, you will have clean but generic images. Firefly eases the start, but durable quality comes from your visual direction process and your sorting standards.

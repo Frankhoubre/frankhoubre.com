@@ -164,7 +164,7 @@ Le quatrième concept, c’est l’intégration équipe. L’outil idéal pour t
 
 Le cinquième concept, c’est la vitesse de correction. En production, ce critère gagne presque toujours contre l’effet “première image bluffante”.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Ideogram AI est-il le meilleur choix pour créer des visuels avec texte intégré ?**  
 Ideogram AI est souvent un excellent choix quand ton besoin principal est la lisibilité du texte dans l’image, notamment pour les publicités sociales, miniatures et visuels promotionnels. Cela dit, il faut distinguer texte lisible et image performante globalement. Une création utile doit aussi tenir la route en composition, matière, lumière et hiérarchie visuelle. Le meilleur réflexe est de tester Ideogram sur un brief réel et de le comparer à un second outil avec une grille objective. S’il gagne sur lisibilité et reste solide sur les autres critères, c’est probablement un bon choix pour ton cas.

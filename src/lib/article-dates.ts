@@ -35,14 +35,22 @@ function parisOffset(date: string, time: string): string {
   return zone?.match(/GMT([+-]\d{2}:\d{2})/)?.[1] ?? "+00:00";
 }
 
-/** datePublished : "2026-11-02T08:40:00+01:00" si l'heure est connue, sinon la date seule. */
+/**
+ * datePublished en ISO 8601 complet, avec le fuseau de Paris :
+ * "2026-11-02T08:40:00+01:00". Quand le frontmatter ne donne pas d'heure, on
+ * prend le début de la journée à Paris (00:00) : une date seule laissait
+ * Google choisir son propre fuseau, et midi pouvait tomber dans le futur.
+ */
 export function publishedIso(fm: PostFrontmatter): string {
-  const time = publishTime(fm);
-  return time ? `${fm.date}T${time}:00${parisOffset(fm.date, time)}` : fm.date;
+  const time = publishTime(fm) ?? "00:00";
+  return `${fm.date}T${time}:00${parisOffset(fm.date, time)}`;
 }
 
-/** dateModified : le même jour que la publication, on reprend l'heure pour ne pas précéder datePublished. */
+/**
+ * dateModified : la date de mise à jour réelle du frontmatter (début de
+ * journée à Paris), sinon la date de publication. Jamais la date du jour.
+ */
 export function modifiedIso(fm: PostFrontmatter): string {
-  const m = fm.dateModified?.trim();
-  return m && m !== fm.date ? m : publishedIso(fm);
+  const m = realModifiedDate(fm);
+  return m ? `${m}T00:00:00${parisOffset(m, "00:00")}` : publishedIso(fm);
 }

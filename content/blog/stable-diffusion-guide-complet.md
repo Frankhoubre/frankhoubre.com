@@ -147,7 +147,7 @@ Le quatrième concept, c’est la dette technique créative. Chaque extension aj
 
 Le cinquième concept, c’est l’adéquation outil-objectif. Stable Diffusion est fantastique, mais pas pour tout ni tout de suite. Ton niveau monte quand tu choisis l’outil pour servir l’intention, pas pour suivre la hype.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Stable Diffusion est-il vraiment adapté aux débutants en 2026 ?**  
 Oui, à condition d’accepter une phase d’installation et de méthode. Stable Diffusion peut sembler plus technique que des outils hébergés, mais il devient très accessible si tu avances par étapes et que tu documentes tes réglages. Le gros avantage pour un débutant sérieux, c’est que tu apprends les vraies mécaniques de génération, pas seulement des boutons. Cette compréhension te rend plus autonome sur le long terme. Si tu cherches un résultat instantané sans apprentissage, ce n’est pas l’option la plus simple. Si tu veux progresser vite et durablement, c’est une excellente base.

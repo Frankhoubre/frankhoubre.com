@@ -109,7 +109,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const enEntries: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}/en`,
-      lastModified: now,
+      lastModified: enBlogLastMod,
       changeFrequency: "monthly",
       priority: 0.9,
       alternates: alternates("/", "/en"),
@@ -123,7 +123,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/en/about`,
-      lastModified: now,
       changeFrequency: "yearly",
       priority: 0.4,
       alternates: alternates("/a-propos", "/en/about"),
@@ -143,7 +142,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const toolEntries: MetadataRoute.Sitemap = Object.values(outilPages).map(
     (tool) => ({
       url: `${baseUrl}${tool.path}`,
-      lastModified: now,
       changeFrequency: "monthly" as const,
       priority: tool.path.includes("annuaire") ? 0.85 : 0.8,
     }),
@@ -152,7 +150,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${baseUrl}/`,
-      lastModified: now,
+      lastModified: blogLastMod,
       changeFrequency: "monthly",
       priority: 1,
       alternates: alternates("/", "/en"),
@@ -167,64 +165,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/a-propos`,
-      lastModified: now,
       changeFrequency: "yearly",
       priority: 0.5,
       alternates: alternates("/a-propos", "/en/about"),
     },
     {
       url: `${baseUrl}/presse`,
-      lastModified: now,
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/outils`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     ...toolEntries,
     {
       url: `${baseUrl}/liens`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
       url: `${baseUrl}${FUNNEL_PATHS.optin}`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     // Tunnel payant « Viral AI videos », en anglais uniquement.
     {
       url: `${baseUrl}${BUZZ_PATHS.sales}`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/prestation`,
-      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.75,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: now,
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/mentions-legales`,
-      lastModified: now,
       changeFrequency: "yearly",
       priority: 0.3,
     },
     {
       url: `${baseUrl}/politique-confidentialite`,
-      lastModified: now,
       changeFrequency: "yearly",
       priority: 0.3,
     },

@@ -108,6 +108,7 @@ function resolveOgImages(images?: OgImageInput[]) {
 
 export function buildPageMetadata(opts: BuildPageMetadataOptions): Metadata {
   const canonical = pageUrl(opts.path);
+  const isEn = opts.path === "/en" || opts.path.startsWith("/en/");
   const ogTitle = opts.openGraph?.title ?? `${opts.title} | ${siteName}`;
   const ogDescription = opts.openGraph?.description ?? opts.description;
   const ogImages = resolveOgImages(opts.openGraph?.images);
@@ -128,7 +129,12 @@ export function buildPageMetadata(opts: BuildPageMetadataOptions): Metadata {
   return {
     title: opts.titleAbsolute ? { absolute: opts.titleAbsolute } : opts.title,
     description: opts.description,
-    alternates: { canonical, ...(languages ? { languages } : {}) },
+    alternates: {
+      canonical,
+      ...(languages ? { languages } : {}),
+      // Découverte du flux RSS de la langue de la page (lecteurs, agrégateurs).
+      types: { "application/rss+xml": `${baseUrl}${isEn ? "/en/feed.xml" : "/feed.xml"}` },
+    },
     ...(opts.keywords?.length ? { keywords: opts.keywords } : {}),
     ...(opts.noIndex ? { robots: { index: false, follow: true } } : {}),
     ...(opts.authors?.length ? { authors: opts.authors } : {}),

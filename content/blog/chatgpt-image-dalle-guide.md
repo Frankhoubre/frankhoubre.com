@@ -143,7 +143,7 @@ Le quatrième concept, c’est l’intention d’usage. Une image pour landing p
 
 Le cinquième concept, c’est la mémoire de projet. Garde un journal minimal: prompt, corrections, décision finale. Sans historique, tu répètes les mêmes erreurs. Avec historique, tu construis une méthode transmissible, utile si tu travailles en équipe ou si tu dois refaire une série un mois plus tard.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Quelle différence concrète entre DALL·E 3 et ChatGPT Image pour un débutant ?**  
 Pour un débutant, la différence la plus visible est l’expérience d’usage. ChatGPT Image permet d’itérer en conversation naturelle, ce qui rend les corrections plus intuitives. Tu peux demander des ajustements progressifs sans reconstruire ton prompt entièrement à chaque fois. DALL·E 3, en tant que modèle, reste la base technologique de génération dans beaucoup de contextes, mais l’interface conversationnelle change la manière de travailler. En pratique, ce qui compte est ta capacité à guider l’image avec précision. Sans méthode, même le meilleur moteur produira des rendus génériques et peu exploitables.

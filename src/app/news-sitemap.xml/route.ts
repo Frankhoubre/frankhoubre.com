@@ -1,5 +1,5 @@
 import { publishedIso } from "@/lib/article-dates";
-import { getAllPosts, type Post } from "@/lib/blog";
+import { getAllPosts, isPostPublished, type Post } from "@/lib/blog";
 import { getAllEnPosts } from "@/lib/blog-en";
 import { baseUrl, siteName } from "@/lib/site";
 
@@ -16,10 +16,14 @@ function esc(value: string): string {
     .replaceAll('"', "&quot;");
 }
 
-function isRecent(post: Post, cutoff: number): boolean {
-  const published = publishedIso(post.frontmatter);
-  const ts = new Date(published.length === 10 ? `${published}T00:00:00+01:00` : published);
-  return ts.getTime() >= cutoff;
+/**
+ * Seules les actualités entrent dans le sitemap news : les guides et
+ * tutoriels publiés le même jour ne sont pas de l'information datée.
+ */
+function isRecentNews(post: Post, cutoff: number): boolean {
+  if (post.frontmatter.category !== "actualite") return false;
+  const ts = new Date(publishedIso(post.frontmatter)).getTime();
+  return ts >= cutoff && ts <= Date.now();
 }
 
 function entry(post: Post, path: string, language: "fr" | "en"): string {
@@ -40,10 +44,10 @@ export function GET() {
   const cutoff = Date.now() - WINDOW_MS;
   const items = [
     ...getAllPosts()
-      .filter((p) => isRecent(p, cutoff))
+      .filter((p) => isPostPublished(p) && isRecentNews(p, cutoff))
       .map((p) => entry(p, `/blog/${p.slug}`, "fr")),
     ...getAllEnPosts()
-      .filter((p) => isRecent(p, cutoff))
+      .filter((p) => isPostPublished(p) && isRecentNews(p, cutoff))
       .map((p) => entry(p, `/en/blog/${p.slug}`, "en")),
   ].join("\n");
 

@@ -246,7 +246,7 @@ If you want a single progress indicator, take this one: your average time betwee
 - [Discord](https://discord.com)
 - [Runway](https://runwayml.com)
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **What is an effective creative ai workflow for a complete beginner?**  
 An effective creative AI workflow to start must stay simple and stable. You start from a clear intention, you generate a small number of visuals, you select the best, then you move to the video, the voice, and finally the edit with a final quality control. The beginner mistake is to multiply the tools too early. What really works is a short but rigorous chain, with defined steps. In practice, the method regularity produces more professional results than the immediate technical sophistication.

@@ -143,7 +143,7 @@ The fourth concept is the creative technical debt. Each extension added with no 
 
 The fifth concept is the tool-goal fit. Stable Diffusion is fantastic, but not for everything nor right away. Your level rises when you choose the tool to serve the intention, not to follow the hype.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Is Stable Diffusion really suited to beginners in 2026?**  
 Yes, provided you accept an installation and method phase. Stable Diffusion can seem more technical than hosted tools, but it becomes very accessible if you advance by steps and you document your settings. The big advantage for a serious beginner is that you learn the real generation mechanics, not only buttons. This understanding makes you more autonomous in the long term. If you look for an instant result with no learning, it is not the simplest option. If you want to progress fast and durably, it is an excellent base.

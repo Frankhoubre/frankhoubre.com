@@ -205,7 +205,7 @@ Cette checklist paraît basique. C’est justement pour ça qu’elle est puissa
 
 Si tu appliques ce protocole sur dix projets d’affilée, ta qualité moyenne monte mécaniquement. Pas parce que l’outil devient magique, mais parce que ton regard devient précis, rapide et impitoyablement cohérent.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Quel est le meilleur outil ia video pour débuter en 2026 ?**  
 Pour débuter, Runway est souvent un très bon point d’entrée car il combine génération et itération dans un environnement relativement fluide. Tu peux tester, corriger et progresser sans reconstruire ton pipeline à chaque étape. Pika Labs peut aussi être utile si tu veux prototyper vite et comprendre les bases du mouvement. Le meilleur choix dépend de ton objectif immédiat: apprendre la logique narrative ou produire des clips rapides. Dans tous les cas, commence avec une méthode stricte de comparaison, sinon tu risques de confondre vitesse de génération et qualité de livrable.

@@ -250,7 +250,7 @@ Si tu veux un seul indicateur de progression, prends celui-ci: ton temps moyen e
 - [Discord](https://discord.com)
 - [Runway](https://runwayml.com)
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Qu’est-ce qu’un workflow ia créatif efficace pour un débutant complet ?**  
 Un workflow IA créatif efficace pour débuter doit rester simple et stable. Tu pars d’une intention claire, tu génères un petit nombre de visuels, tu sélectionnes les meilleurs, puis tu passes à la vidéo, à la voix, et enfin au montage avec un contrôle qualité final. L’erreur des débutants est de multiplier les outils trop tôt. Ce qui fonctionne vraiment, c’est une chaîne courte mais rigoureuse, avec des étapes définies. En pratique, la régularité de méthode produit des résultats plus professionnels que la sophistication technique immédiate.

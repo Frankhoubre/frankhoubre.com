@@ -177,7 +177,7 @@ Erreur avancée 4: dépendre d’un seul outil par principe. La maturité créat
 
 Erreur avancée 5: ne pas tracer les décisions. Quand un client demande de refaire la version 2 avec un ton plus humain, tu dois pouvoir répondre sans repartir de zéro. Un fichier de log simple avec prompt, corrections et verdict change complètement ton efficacité.
 
-## FAQ (PAA Optimization)
+## FAQ
 
 1. **Quel est le meilleur ai image generator en 2026 pour un débutant ?**  
 Pour un débutant, le meilleur choix est souvent l’outil qui permet d’itérer vite sans friction technique excessive. ChatGPT Image est très fort sur ce point grâce à l’interface conversationnelle. Tu peux corriger progressivement sans te perdre dans une interface complexe. Cela dit, “meilleur” dépend du résultat que tu veux produire. Si ton besoin est une forte signature artistique, Midjourney peut être plus adapté. Si ton besoin est la cadence marketing en équipe, Firefly peut être plus rentable. Le bon réflexe est de faire un mini benchmark guidé plutôt que de choisir à l’aveugle.

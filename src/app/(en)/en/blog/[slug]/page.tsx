@@ -22,14 +22,13 @@ import {
   readingTimeMinutes,
 } from "@/lib/blog";
 import { buildArticleToc } from "@/lib/blog-toc";
+import { buildArticleNode, ogImageSize } from "@/lib/article-jsonld";
 import { buildArticleVideoObject } from "@/lib/article-video";
 import { modifiedIso, publishedIso, realModifiedDate } from "@/lib/article-dates";
 import { getAllEnPosts, getEnPostBySlug, getRelatedEnPosts } from "@/lib/blog-en";
 import { getPostThumbnail } from "@/lib/blog-thumbnail";
 import { prepareArticleMdxParts } from "@/lib/mdx-pipeline";
 import {
-  ORGANIZATION_ID,
-  PERSON_ID,
   buildBreadcrumbList,
   buildGraphJsonLd,
   articleSerpTitle,
@@ -97,7 +96,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: titleAbsolute ?? `${title} | ${siteName}`,
       publishedTime: publishedIso(post.frontmatter),
       modifiedTime: modifiedIso(post.frontmatter),
-      ...(ogImage ? { images: [{ path: ogImage, width: 1200, height: 630 }] } : {}),
+      ...(ogImage ? { images: [{ path: ogImage, ...ogImageSize(thumb) }] } : {}),
     },
     authors: [{ name: person.name, url: person.url }],
   });
@@ -133,60 +132,14 @@ export default async function EnBlogArticlePage({ params }: Props) {
     day: "numeric",
   });
   const url = `${baseUrl}/en/blog/${slug}`;
-  const img = thumb
-    ? thumb.startsWith("http")
-      ? thumb
-      : `${baseUrl}${thumb}`
-    : undefined;
 
   // Graphe aligné sur le FR : BlogPosting + BreadcrumbList + FAQPage (quand
   // l'article a une section FAQ). Le FAQPage nourrit les extraits enrichis
   // et les réponses des moteurs IA.
   const related = getRelatedEnPosts(slug, 3);
-  const wordCount = raw.trim().split(/\s+/).filter(Boolean).length;
 
   const graphNodes: object[] = [
-    {
-      "@type":
-        post.frontmatter.category === "actualite" ? "NewsArticle" : "BlogPosting",
-      "@id": `${url}#article`,
-      headline: post.frontmatter.title,
-      description: post.frontmatter.excerpt,
-      inLanguage: "en-US",
-      datePublished: publishedIso(post.frontmatter),
-      dateModified: modifiedIso(post.frontmatter),
-      url,
-      mainEntityOfPage: url,
-      wordCount,
-      timeRequired: `PT${minutes}M`,
-      isPartOf: {
-        "@type": "Blog",
-        name: `${siteName} Blog`,
-        url: `${baseUrl}/en/blog`,
-      },
-      ...(img ? { image: [img] } : {}),
-      author: {
-        "@type": "Person",
-        "@id": PERSON_ID,
-        name: person.name,
-        url: `${baseUrl}/en/about`,
-        jobTitle: "AI trainer, AI filmmaker and image & video creator",
-        image: `${baseUrl}${person.image}`,
-        sameAs: [...person.sameAs],
-      },
-      publisher: {
-        "@type": "Organization",
-        "@id": ORGANIZATION_ID,
-        name: siteName,
-        url: baseUrl,
-        logo: {
-          "@type": "ImageObject",
-          url: `${baseUrl}/images/frank-houbre-about.png`,
-          width: 1024,
-          height: 1024,
-        },
-      },
-    },
+    buildArticleNode(post, "en"),
     buildBreadcrumbList([
       { name: "Home", path: "/en" },
       { name: "Blog", path: "/en/blog" },
@@ -223,7 +176,7 @@ export default async function EnBlogArticlePage({ params }: Props) {
             <ArticleHeader
               title={post.frontmatter.title}
               excerpt={post.frontmatter.excerpt}
-              date={post.frontmatter.date}
+              date={publishedIso(post.frontmatter)}
               dateLabel={dateFmt.format(new Date(`${post.frontmatter.date}T12:00:00`))}
               {...(modified
                 ? {

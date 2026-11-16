@@ -57,7 +57,14 @@ export function SiteFooter() {
                       Kit presse
                     </Link>
                   </li>
-                ) : null}
+                ) : (
+                  // Transparence éditeur : la page contact n'existe qu'en FR.
+                  <li>
+                    <Link href="/contact" className="link-muted tap" hrefLang="fr">
+                      Contact
+                    </Link>
+                  </li>
+                )}
               </ul>
             </nav>
 
@@ -105,7 +112,7 @@ export function SiteFooter() {
           <span className="flex items-center gap-4">
             <span>FR / EN</span>
             <span className="text-fog/40" aria-hidden>|</span>
-            <Link href="/feed.xml" className="link-muted tap tap-w">
+            <Link href={locale === "en" ? "/en/feed.xml" : "/feed.xml"} className="link-muted tap tap-w">
               RSS
             </Link>
             <span className="text-fog/40" aria-hidden>|</span>
