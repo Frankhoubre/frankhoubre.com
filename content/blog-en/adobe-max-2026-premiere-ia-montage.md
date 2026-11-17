@@ -76,6 +76,8 @@ For grading an AI film, my guide to [mastering the color look of your films](/en
 - **Credits used.** The release does not say what a generation in the timeline costs.
 - **Real-world quality.** The examples come from Adobe, not from an independent test.
 
+*Update, November 17, 2026: at MAX, Adobe's CTO also talked about labels. For him, the point is to mark what was not generated rather than everything AI touches: [label the original, not the AI](/en/blog/c2pa-etiqueter-originalite-pas-ia-adobe).*
+
 ## FAQ
 
 ### What is Color Mode in Premiere?

@@ -76,6 +76,8 @@ Pour l'étalonnage d'un film IA, mon guide pour [maîtriser le look couleur de t
 - **Les crédits consommés.** Le communiqué ne dit pas combien coûte une génération dans la timeline.
 - **La qualité réelle.** Les exemples viennent d'Adobe, pas d'un test indépendant.
 
+*Mise à jour du 17 novembre 2026 : pendant MAX, le directeur technique d'Adobe a aussi parlé d'étiquetage. Pour lui, il faut marquer ce qui n'est pas généré plutôt que tout ce que l'IA touche : [étiqueter l'original, pas l'IA](/blog/c2pa-etiqueter-originalite-pas-ia-adobe).*
+
 ## FAQ
 
 ### Qu'est-ce que Color Mode dans Premiere ?

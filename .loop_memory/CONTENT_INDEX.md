@@ -3,15 +3,16 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-16T07:56:07.111Z
+> Generated: 2026-11-17T07:56:41.045Z
 
-## FR : 365 articles (/blog/<slug>)
+## FR : 366 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 68, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 69, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
-| 2026-11-16 | actualite | `disney-ozzy-fox-animaj-ia-animation` | Disney met une série animée avec l'IA sur Disney+ : ce que fait Animaj |
+| 2026-11-17 | actualite | `c2pa-etiqueter-originalite-pas-ia-adobe` | Étiqueter l'original, pas l'IA : ce que dit le CTO d'Adobe |
+| 2026-11-16 | actualite | `disney-ozzy-fox-animaj-ia-animation` | Ozzy Fox sur Disney+ : ce que l'IA d'Animaj fait vraiment |
 | 2026-11-15 | actualite | `ecoles-cinema-ia-scenaristes` | Écoles de cinéma : l'IA enseignée aux scénaristes, 90 % de métier |
 | 2026-11-14 | actualite | `previz-3d-ia-intangible-bloomway` | Previz 3D : réalise ta scène IA au lieu de la prompter |
 | 2026-11-13 | actualite | `ia-ecriture-creative-garder-les-idees` | Écrire avec l'IA : une étude dit de garder l'idée pour toi |
@@ -377,13 +378,14 @@ Categories: tutoriels 191, actualite 68, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 280 articles (/en/blog/<slug>)
+## EN : 281 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 29, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 30, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
-| 2026-11-16 | actualite | `disney-ozzy-fox-animaj-ia-animation` | Disney puts an AI-assisted cartoon on Disney+: what Animaj does |
+| 2026-11-17 | actualite | `c2pa-etiqueter-originalite-pas-ia-adobe` | Label the original, not the AI: what Adobe's CTO says |
+| 2026-11-16 | actualite | `disney-ozzy-fox-animaj-ia-animation` | Ozzy Fox on Disney+: what Animaj's AI actually does |
 | 2026-11-15 | actualite | `ecoles-cinema-ia-scenaristes` | Film schools teach AI to screenwriters: 90% craft first |
 | 2026-11-14 | actualite | `previz-3d-ia-intangible-bloomway` | 3D previz: direct your AI scene instead of prompting it |
 | 2026-11-13 | actualite | `ia-ecriture-creative-garder-les-idees` | Writing with AI: a study says keep the idea for yourself |

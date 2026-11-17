@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-16 (run CLOUD, routine 5 blogs : article d'actualite disney-ozzy-fox-animaj-ia-animation FR + EN)
+## Last run: 2026-11-17 (run CLOUD, routine 5 blogs : article d'actualite c2pa-etiqueter-originalite-pas-ia-adobe FR + EN)
+
+- Actu Digital Trends 15/11 (Varun Mirchandani, exclusif MAX) : Ely Greenfield, CTO Digital Media d'Adobe, veut que le C2PA etiquette ce qui n'est PAS fait avec l'IA ; etiquette IA bientot aussi vide que retouche Photoshop ; credentials manipulables mais source identifiable ; Leica, Nikon, Canon, Qualcomm x Truepic. Site c2pa.org et contentcredentials.org lus le 17/11.
+- Angle : traite / assiste / genere, ce qu'un credential prouve ou non, conseils (fichiers sources, declarer precisement). Mise en garde : interet d'Adobe.
+- Coordination des autres sites le 17/11 : ScreenWeaver voix polonaise de Geralt (Witcher 3, Respeecher), BusinessDynamite Shopping Agent de BigCommerce, AI Studios Phota Labs, SimpleAIBlog World Labs Atlas.
+- Images : hero Nano Banana 2 (bureau de photographe, marque d'appareil floutee), captures Digital Trends, c2pa.org, contentcredentials.org, schema 3 blocs FR/EN.
+- Lien entrant FR + EN depuis adobe-max-2026-premiere-ia-montage.
+
+## Run precedent : 2026-11-16 (run CLOUD, routine 5 blogs : article d'actualite disney-ozzy-fox-animaj-ia-animation FR + EN)
 
 - Actu Bloomberg 13/11 (lu via Yahoo Finance et The Next Web) : Ozzy Fox, serie animee avec les outils de la startup francaise Animaj, arrive sur Disney+ en decembre ; virage IA de Disney sous Josh D'Amaro. Detail de la chaine via la page Animaj du 23/07 (Sketch-to-Motion = poses intermediaires, poses cles par les animateurs).
 - Angle : ou l'IA entre dans la chaine ; lien avec l'affaire Chomet/Dior (interpolation). Transparence : Animaj vend FlipMove, ScreenWeaver est l'outil de Frank.
