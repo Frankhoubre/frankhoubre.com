@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-17 (run CLOUD, routine 5 blogs : article d'actualite c2pa-etiqueter-originalite-pas-ia-adobe FR + EN)
+## Last run: 2026-11-18 (run CLOUD, routine 5 blogs : article d'actualite suno-visuals-clips-video-ia-chansons FR + EN)
+
+- Actu Suno 17/11 (billet de Jack Brody, CPO) : Visuals, clips de 15 s qui suivent structure et paroles avec lip sync, videos de paroles, pochettes, credits Visuals a part, modele H3 Move base sur MiniMax H3 (FAQ suno.com/visuals). Filtres artistes/personnalites/oeuvres protegees, controle avant affichage, filigrane. MBW et TNW : mobile dans quelques semaines (contradiction signalee).
+- Angle : musicien independant, formats courts ; ce qu'on ne sait pas (prix, droits commerciaux, coherence longue).
+- Coordination des autres sites le 18/11 : BusinessDynamite Ask Maps (Google Maps appelle les commerces), SimpleAIBlog HeyGen Avatar 6, AI Studios Tone (voix IA de Jordan Belfort), ScreenWeaver David Ayer et ACME AI (Grey Box).
+- Images : hero Nano Banana 2 (musicienne dans son home studio, lune en papier decoupe), captures blog Suno (x2) et MBW, schema 3 cartes FR/EN.
+- Lien entrant FR + EN depuis 5-meilleurs-ia-video-maker-clip-musical-2026.
+
+## Run precedent : 2026-11-17 (run CLOUD, routine 5 blogs : article d'actualite c2pa-etiqueter-originalite-pas-ia-adobe FR + EN)
 
 - Actu Digital Trends 15/11 (Varun Mirchandani, exclusif MAX) : Ely Greenfield, CTO Digital Media d'Adobe, veut que le C2PA etiquette ce qui n'est PAS fait avec l'IA ; etiquette IA bientot aussi vide que retouche Photoshop ; credentials manipulables mais source identifiable ; Leica, Nikon, Canon, Qualcomm x Truepic. Site c2pa.org et contentcredentials.org lus le 17/11.
 - Angle : traite / assiste / genere, ce qu'un credential prouve ou non, conseils (fichiers sources, declarer precisement). Mise en garde : interet d'Adobe.

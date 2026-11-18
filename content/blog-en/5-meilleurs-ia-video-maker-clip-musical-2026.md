@@ -1,7 +1,7 @@
 ---
 title: "The 5 Best AI Video Makers for Creating a Music Video in 2026"
 date: "2026-04-17"
-dateModified: "2026-04-23"
+dateModified: "2026-11-18"
 category: "actualite"
 excerpt: "An expert comparison of the best AI video makers in 2026 for creating a cinematic, consistent, broadcast-ready music video."
 thumbnail: "https://images.unsplash.com/photo-1516280440614-37939bbacd81"
@@ -82,6 +82,8 @@ Conclusion: the best option for a signature video where consistency takes priori
 > 💡 **Frank's Cut:** on a chorus, pick two strong visual motifs and repeat them intelligently. The impact comes from controlled repetition, not from piling things on.
 
 ![AI music video editing timeline with musical cues, chorus variations and cut points](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d)
+
+*Update, November 18, 2026: Suno now generates 15-second clips that follow the structure and lyrics of your songs. What it does and what it refuses: [Suno Visuals, AI video clips for your songs](/en/blog/suno-visuals-clips-video-ia-chansons).*
 
 ## Technical comparison table
 
