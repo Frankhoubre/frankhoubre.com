@@ -1,6 +1,7 @@
 ---
 title: "Nolan salue la mention anti-IA du générique de The Odyssey"
 date: "2026-11-09"
+dateModified: "2026-11-19"
 time: "09:00"
 category: "actualite"
 excerpt: "Le générique de The Odyssey interdit d'entraîner une IA sur le film. Nolan s'en félicite. Ce que vaut cette mention, et comment protéger tes propres films."
@@ -8,6 +9,9 @@ thumbnail: "/images/blog/nolan-odyssey-mention-anti-entrainement-ia/hero.webp"
 ---
 
 **Christopher Nolan**, président de la Directors Guild of America, s'est dit « très content » d'une ligne que peu de spectateurs ont lue : à la fin de *The Odyssey*, le générique précise, pour la première fois chez Universal, que le film ne peut pas servir à entraîner une IA. Il l'a dit dans le podcast *Hollywood Insiders*, repris le **7 novembre 2026** par [Deadline](https://deadline.com/2026/11/christopher-nolan-dga-holding-studios-account-protecting-ai-1237216368/) et [TheWrap](https://www.thewrap.com/creative-content/movies/christopher-nolan-previews-dgas-next-phase-of-ai-protections-its-down-to-the-studios/).
+
+*Mise à jour du 19 novembre 2026 : Hollywood raconte aussi l'IA par la fiction. [La bande-annonce d'Artificial, le film de Guadagnino sur OpenAI](/blog/artificial-film-guadagnino-openai-bande-annonce), vient de sortir.*
+
 
 Si tu fais des films, avec ou sans IA, cette histoire te concerne plus qu'elle n'en a l'air. Elle pose une question simple : comment dire « non » à l'entraînement sur ton travail, et à qui ? Nolan donne sa réponse pour Hollywood. En Europe, la loi donne une partie de la réponse pour toi.
 

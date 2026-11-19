@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-18 (run CLOUD, routine 5 blogs : article d'actualite suno-visuals-clips-video-ia-chansons FR + EN)
+## Last run: 2026-11-19 (run CLOUD, routine 5 blogs : article d'actualite artificial-film-guadagnino-openai-bande-annonce FR + EN)
+
+- Actu 18/11 : Neon publie la bande-annonce complete d'Artificial (Guadagnino, scenario Simon Rich), Andrew Garfield en Sam Altman, Borisov Sutskever, Barbaro Murati, Rylance Hinton, Barinholtz Musk. Scenes : diner vodka, chatbot qui ment (citation Murati), Candy Crush (Gizmodo). Amazon MGM lache le film (communique 19/06), Neon le reprend en juin ; sortie limitee US 25/12, large 8/01. Sources ABC Audio 18/11, Gizmodo 18/11, Variety 8/09.
+- Angle : film sur l'IA tourne classiquement ; scene d'explication, distribution fragile. Pas de date FR, pas de reaction Altman verifiee (Deadline sous paywall), 4 ou 5 jours selon la source.
+- Coordination des autres sites le 19/11 : BusinessDynamite protection de contenu Instagram, SimpleAIBlog Media Nov et la chanteuse sur YouTube, AI Studios The Sentinels (Studio Jadu), ScreenWeaver Gemini garde deux mois les chats historique coupe.
+- Images : hero Nano Banana 2 (salle de cinema parisienne, conseil d'administration a l'ecran), captures ABC Audio et Variety (Gizmodo bloque par Cloudflare), schema 3 cartes FR/EN.
+- Lien entrant FR + EN depuis nolan-odyssey-mention-anti-entrainement-ia.
+
+## Run precedent : 2026-11-18 (run CLOUD, routine 5 blogs : article d'actualite suno-visuals-clips-video-ia-chansons FR + EN)
 
 - Actu Suno 17/11 (billet de Jack Brody, CPO) : Visuals, clips de 15 s qui suivent structure et paroles avec lip sync, videos de paroles, pochettes, credits Visuals a part, modele H3 Move base sur MiniMax H3 (FAQ suno.com/visuals). Filtres artistes/personnalites/oeuvres protegees, controle avant affichage, filigrane. MBW et TNW : mobile dans quelques semaines (contradiction signalee).
 - Angle : musicien independant, formats courts ; ce qu'on ne sait pas (prix, droits commerciaux, coherence longue).

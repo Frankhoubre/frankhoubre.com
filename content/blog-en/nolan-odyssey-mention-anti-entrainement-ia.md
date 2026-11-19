@@ -1,6 +1,7 @@
 ---
 title: "Nolan praises The Odyssey's anti-AI credits notice"
 date: "2026-11-09"
+dateModified: "2026-11-19"
 time: "09:00"
 category: "actualite"
 excerpt: "The Odyssey's end credits forbid using the film to train AI. Nolan welcomes it. What such a notice is worth, and how to protect your own films."
@@ -8,6 +9,9 @@ thumbnail: "/images/blog/nolan-odyssey-mention-anti-entrainement-ia/hero.webp"
 ---
 
 **Christopher Nolan**, president of the Directors Guild of America, says he was "very pleased" with a line few viewers have read: at the end of *The Odyssey*, the credits state, for the first time at Universal, that the film cannot be used to train AI. He said it on the *Hollywood Insiders* podcast, reported on **November 7, 2026** by [Deadline](https://deadline.com/2026/11/christopher-nolan-dga-holding-studios-account-protecting-ai-1237216368/) and [TheWrap](https://www.thewrap.com/creative-content/movies/christopher-nolan-previews-dgas-next-phase-of-ai-protections-its-down-to-the-studios/).
+
+*Update, November 19, 2026: Hollywood is also telling the AI story through fiction. [The trailer for Artificial, Guadagnino's OpenAI film](/en/blog/artificial-film-guadagnino-openai-bande-annonce), is out.*
+
 
 If you make films, with or without AI, this matters more than it looks. It raises a simple question: how do you say "no" to training on your work, and to whom? Nolan gives his answer for Hollywood. In Europe, the law gives part of the answer for you.
 
