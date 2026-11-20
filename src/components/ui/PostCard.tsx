@@ -127,7 +127,7 @@ export function PostCard({
           <Badge category={post.frontmatter.category} href={categoryHref} className={categoryHref ? "tap-x" : ""} />
         </span>
         {index ? (
-          <span className="meta meta-strong absolute bottom-3 right-3 z-[3] text-[10px]">{index}</span>
+          <span className="vig-num !left-auto !top-auto bottom-2 right-2">{index}</span>
         ) : null}
       </div>
       <div className="flex flex-1 flex-col pt-4">

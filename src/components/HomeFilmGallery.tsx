@@ -12,7 +12,7 @@ type HomeFilmGalleryProps = {
 
 /**
  * Deux bandeaux de photogrammes en défilement continu, sens opposés, comme
- * deux bandes de pellicule. Vignettes rectangulaires, hairline, pas d'ombre.
+ * deux bandes de pellicule. Vignettes numérotées, hairline, pas d'ombre.
  * `images` vide => rien.
  */
 export function HomeFilmGallery({
@@ -33,6 +33,9 @@ export function HomeFilmGallery({
         className="frame frame-hover relative h-28 w-[12.5rem] shrink-0 sm:h-40 sm:w-72"
       >
         {/* Dimensions fixes plutôt que `fill` : le srcset se limite à 1x/2x. */}
+        <span className="vig-num" aria-hidden>
+          {String((index % row.length) * 2 + (key === "row1" ? 1 : 2)).padStart(2, "0")}
+        </span>
         <Image
           src={image.src}
           alt={index < row.length ? image.alt : ""}

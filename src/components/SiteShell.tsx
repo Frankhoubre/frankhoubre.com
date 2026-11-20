@@ -16,7 +16,7 @@ type SiteShellProps = {
  * ((fr) et (en)) sert son propre <html lang> dès le HTML initial : plus de
  * correction côté client, les moteurs lisent la bonne langue au premier rendu.
  */
-// Le body porte la charte noir et or (reels FR, AI Studios), commune à tout le site.
+// Le body porte la charte « régie de cinéma » (20 nov. 2026), commune à tout le site.
 export function SiteShell({ lang, children }: SiteShellProps) {
   const skipLabel =
     lang === "en" ? "Skip to main content" : "Aller au contenu principal";
@@ -28,7 +28,7 @@ export function SiteShell({ lang, children }: SiteShellProps) {
       // La classe « js » est ajoutée par le script inline avant l'hydratation.
       suppressHydrationWarning
     >
-      <body className="theme-noir relative isolate flex min-h-full flex-col bg-background text-foreground">
+      <body className="theme-regie relative isolate flex min-h-full flex-col bg-background text-foreground">
         {/* Active les états d'animation uniquement quand JS tourne : les
             crawlers et les navigateurs sans script voient tout le contenu. */}
         {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document -- SiteShell est rendu par les root layouts (fr) et (en) */}

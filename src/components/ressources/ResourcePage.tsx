@@ -97,7 +97,7 @@ function StateTile({ state, after, className }: { state: ResourceState; after: b
   return (
     <div
       className={`reveal frame frame-grain relative aspect-[16/10] ${className} ${
-        after ? "border-[color:var(--gold-label)] shadow-[0_0_70px_-18px_rgb(255_205_60/0.55)]" : ""
+        after ? "border-[color:var(--gold-label)] shadow-[0_0_70px_-18px_rgb(255_255_255/0.45)]" : ""
       }`}
       data-delay={after ? "0.15" : "0"}
     >
@@ -176,7 +176,7 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
           <p className="meta meta-strong reveal">
             {t.method} &nbsp;/&nbsp; {r.label}
           </p>
-          <h1 id="ressource-title" className="display display-md reveal mt-6 max-w-5xl normal-case leading-[0.98] text-cream" data-delay="0.1">
+          <h1 id="ressource-title" className="display display-md reveal mt-6 max-w-5xl leading-[0.98] text-cream" data-delay="0.1">
             {r.title} <span className="or">{r.titleGold}</span>
           </h1>
           <div className="grid-12 mt-10 gap-y-8 border-t border-line pt-8">
@@ -322,7 +322,7 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
             <span className="tabular text-[color:var(--gold)]">B</span>
             <span>{r.to.title}</span>
           </p>
-          <h2 id="a-vous" className="display display-md mt-6 max-w-4xl normal-case leading-[1] text-cream">
+          <h2 id="a-vous" className="display display-md mt-6 max-w-4xl leading-[1] text-cream">
             {r.cta.title}
           </h2>
           <p className="lede mt-6 max-w-2xl">{r.cta.text}</p>

@@ -188,7 +188,7 @@ export function FormationPromoModal() {
             </button>
           </div>
 
-          <h2 id="formation-promo-title" className="mt-6 text-[clamp(1.6rem,2.6vw,2.2rem)] leading-[1.02] tracking-[-0.025em] text-cream">
+          <h2 id="formation-promo-title" className="mt-6 text-[clamp(1.6rem,2.6vw,2.2rem)] leading-[1.02] text-cream">
             {c.title}
           </h2>
           <p id="formation-promo-text" className="serif mt-4 text-[1.2rem] leading-[1.3] text-stone">

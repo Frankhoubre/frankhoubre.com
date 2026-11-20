@@ -1,180 +1,126 @@
 # Design System Master File
 
-> **LOGIC:** When building a specific page, first check `design-system/pages/[page-name].md`.
+> **LOGIC:** When building a specific page, first check `design-system/frankhoubre.com/pages/[page-name].md`.
 > If that file exists, its rules **override** this Master file.
 > If not, strictly follow the rules below.
 
 ---
 
 **Project:** frankhoubre.com
-**Generated:** 2026-04-20 13:17:16
-**Restyled:** 2026-09-11 (direction « Cinéma » : réalisateur / studio, éditorial suisse, brutalisme)
-**Category:** Portfolio/Personal
+**Restyled:** 2026-11-20, charte « régie de cinéma » (validée par Frank sur maquettes le même jour)
+**Précédentes directions, retirées :** « Cinéma » (11 sept. 2026), noir et or (30 oct. 2026)
+**Source de la charte :** `~/Claude/skool-posts/page-about-2026-11-20-regie/regie.css` et
+`~/Claude/frank-reels-studio/recettes/regie-de-cinema.md` (reels et page About Skool).
 
 ---
 
 ## Direction artistique
 
-Un site de réalisateur, pas un SaaS. Sensation recherchée : monumental,
-cinématographique, mystérieux, intelligent, minimal, humain. Références :
-cinéma grand format, photographie argentique, architecture brutaliste, design
-éditorial suisse, dossiers de production, cartes topographiques.
+La régie d'un plateau de cinéma : blanc sur noir, grands titres serif en capitales
+resserrées, étiquettes en capitales machine, timecodes, filets à butée, coins de
+viseur, vignettes numérotées façon pellicule, grain léger. **Aucune couleur
+d'accent : la couleur vient des images** (photogrammes, portrait de Frank).
 
-Un seul registre, sombre, sur tout le site (marketing, blog, outils, tunnel de
-formation, back-office). La sophistication vient de la composition (grille,
-vide, asymétrie, lignes fines), jamais des effets.
+Un seul registre sur tout le site (marketing, blog, ressources, outils, tunnel de
+formation, back-office). Le thème vit dans `.theme-regie` (`src/app/globals.css`),
+posé sur `<body>` par `SiteShell` et sur le cadre du tunnel par `FunnelFrame`.
 
-## Global Rules
+## Règles
 
-### Color Palette (tokens dans `src/app/globals.css`, `:root` + `@theme`)
+1. **Blanc sur noir `#050505`.** Jamais d'or, de bleu ni d'ambre dans l'interface.
+   Les anciens tokens (`--amber`, `--gold`, `--gold-label`) pointent sur le blanc.
+2. **Aucun contour ni ombre dure autour d'un texte.** Le trait de 0,014 em des
+   titres a la couleur du texte : il épaissit les déliés, ce n'est pas un contour
+   (Frank a rejeté la version à déliés fins : « trop fine, peu lisible »).
+3. **La lueur blanche va sur un groupe de mots par écran** : le mot en italique du
+   titre (`.or`), un chiffre clé (`.lueur`). Forte sur le hero d'accueil, douce
+   sur les titres de page et de section, presque éteinte sur les blocs.
+4. **Angles droits.** Radius 0 partout (boutons, champs, cadres, cartes).
+5. **Jamais de prix ni de crédits dans un visuel, jamais de promesse de live.**
+   Palmarès : « 30 distinctions dont 10 prix ». Lien ScreenWeaver : `/start`.
 
-| Role | Value | CSS variable | Tailwind |
-|------|-------|--------------|----------|
-| Page ground (charcoal) | `#0B0B0C` | `--bg` | `bg-charcoal` |
-| Near black | `#111214` | `--bg-2` | `bg-charcoal-2` |
-| Surface (graphite) | `#17191C` | `--surface` | `bg-graphite` |
-| Surface 2 | `#1D2024` | `--surface-2` | `bg-graphite-2` |
-| Deep navy (bandes) | `#0E2436` | `--navy` | `bg-navy` |
-| Steel blue | `#3F5B6C` | `--steel` | `text-steel` |
-| Fog (texte secondaire) | `#9CA3A8` | `--fog` / `--text-muted` | `text-fog` |
-| Stone (texte 2) | `#D8D6CE` | `--stone` / `--text-2` | `text-stone` |
-| Warm white (texte) | `#EEECE5` | `--cream` / `--text` | `text-cream` |
-| Muted amber (accent rare) | `#B07B47` | `--amber` | `text-amber` |
-| Hairline | `rgba(238,236,229,0.12)` | `--line` | `border-line` |
-| Hairline forte | `rgba(238,236,229,0.26)` | `--line-strong` | `border-line-strong` |
+## Couleurs (tokens de `.theme-regie`)
 
-**Règles :** 80 à 90 % de l'interface reste noir / charbon / gris / bleu acier /
-blanc chaud. L'ambre ne sert qu'aux signaux (état actif, erreur de formulaire,
-point de repère). Jamais de gradient SaaS, de glow néon, de glassmorphism
-omniprésent, de blob. Les anciens noms (`--orange`, `--ink`, `--muted`,
-`--label`) existent encore comme alias vers ces tokens : ne pas les réutiliser.
+| Rôle | Valeur | Variable |
+|------|--------|----------|
+| Fond | `#050505` | `--bg` |
+| Surfaces | `#0a0a0a`, `#0e0e0e`, `#141414` | `--bg-2`, `--surface`, `--surface-2` |
+| Texte | `#ffffff` | `--text`, `--cream` |
+| Texte secondaire | blanc à 82 % | `--text-2`, `--stone` |
+| Texte discret | blanc à 62 % | `--text-muted`, `--fog` |
+| Filets | blanc à 16 % et 32 % | `--line`, `--line-strong` |
+| Lueurs | `--lueur`, `--lueur-2`, `--lueur-3` | text-shadow blancs, du plus fort au plus doux |
 
-### Typography
+## Typographie (`src/lib/fonts.ts`)
 
-- **Display / titres / navigation / métadonnées :** Inter Tight (500, 600, 700),
-  `--font-display`. Titres en `font-weight: 600`, `letter-spacing: -0.02em`,
-  `line-height` ≈ 1. Classes : `.display` (capitales, 0.92), `.display-xl/lg/md`,
-  `.h-section` (clamp 1.85–3.4rem), `.h-block` (1.35–1.9rem), `.h-item` (1.125rem).
-- **Texte courant :** Inter (400, 500, 600), `--font-body`. 16 px, `line-height 1.6`.
-- **Citations et chapôs :** Instrument Serif italique, `--font-serif`. Classes
-  `.serif`, `.lede` (1.3–1.75rem), `QuoteBlock`.
-- **Métadonnées :** `.meta` = 11 px, capitales, `letter-spacing 0.18em`, brume.
-  Variantes `.meta-strong` (stone), `.meta-dim`, `.meta-amber`. Esprit dossier de
-  production : `01 / SÉQUENCE`, `FIG. 01`, `PLANCHE 02`, compteurs tabulaires.
-- Toutes les polices sont auto-hébergées via `next/font/google` (`src/lib/fonts.ts`,
-  export `fontVariables`). Aucun `<link>` vers Google Fonts.
+- **Titres : Regie Bodoni**, `--font-title` (titrage) et `--font-title-text` (corps
+  moyens, déliés plus épais). C'est Bodoni Moda (OFL) 800 resserrée à 74 % en
+  largeur et figée dans quatre fichiers `src/fonts/regie-bodoni-*.woff2` par
+  `scripts/build-regie-font.py`. La police est resserrée dans le fichier, pas en
+  CSS : aucune `transform: scaleX` à écrire, les retours à la ligne sont justes.
+  Capitales, `line-height` 0,96, mot clé en italique (`<span className="or">`).
+  S'applique à `h1`, `h2`, `.h-section`, `.h-block`, `.display`, `.titre`,
+  `.titre-texte`, et aux `h2` / `h3` d'article.
+- **Étiquettes, navigation, boutons : Space Mono 700** en capitales, interlettrage
+  0,14 em (`.meta`, `.nav-link`, `.btn`, `.chip`, `--font-mono`).
+- **Chiffres, dates, numéros : JetBrains Mono 500** (`time`, `.tabular`, `.tc`,
+  `.num`, `.badge`, `.vig-num`, `--font-tc`).
+- **Texte courant : Inter** (`--font-body`). La charte n'a pas de police de
+  lecture ; Bodoni et Space Mono fatiguent sur un article entier.
+- **Titres de fiches et questions : Inter Tight 600**, casse normale (`h3`, `h4`,
+  `.h-item`, questions de FAQ).
+- Les titres sont écrits en minuscules dans le source, la CSS les passe en
+  capitales. Ne pas poser `normal-case` ni `tracking-[…]` sur un titre.
 
-### Spacing, grid, container
+## Motifs de la régie
 
-- Conteneur `.container-x` : `max-width 88rem`, gouttière `clamp(1rem, 4vw, 3.5rem)`.
-- Grille `.grid-12` : 12 colonnes. Compositions éditoriales asymétriques :
-  3 / 7 / 2 (`SectionHeader`), 5 / 7, 4 / 8, 7 / 5. Jamais de 50/50 systématique ni
-  de trois cartes identiques centrées.
-- Sections `.section` (`clamp(4rem, 9vw, 8.5rem)` vertical), `.section-sm`. Pages
-  intérieures : `.page-top` ou `PageHeader` (contenu sous l'en-tête fixe, `--header-h` = 64 px).
-- Le vide est structurel : grandes marges, une idée par bloc, annotations en marge.
+- **Filet à butée** `.filet` (`.filet-court`, `.filet-long`) : trait de 2 px fermé
+  par une butée verticale. Devant le kicker de `SectionHeader` et de `PageHeader`,
+  sous les rôles du hero, avant la signature d'une citation, au-dessus de chaque
+  `h2` d'article.
+- **Coins de viseur** `.viseur`, et d'office sur `.frame-marks` et `.carte-noir`.
+- **Vignette numérotée** `.vig-num` : chiffres JetBrains sur pastille noire, en
+  haut à gauche d'un photogramme (pellicule d'accueil, fiches d'article, films).
+- **Grain** : `body::after` (global) et `.theme-regie::before` (overlay à 10 %).
+- **Kicker de séquence** : `01 / Titre` ou `01 ⟝ Titre` (numéro, filet, étiquette).
 
-### Radius, lines, shadows
+## Composants (voir `src/app/globals.css` et `src/components/ui/`)
 
-- Radius : 0 à 2 px (`--r-1`). Les utilitaires Tailwind `rounded-*` sont plafonnés à 8 px.
-- Séparateurs : lignes 1 px à faible contraste (`.hairline`, `border-line`).
-  Elles structurent navigation, listes (`.spec-row`), sections, tableaux, footer.
-- Aucune ombre portée. Les surfaces se distinguent par la couleur (`.card`,
-  `.card-surface`) et la hairline.
-
-### Motion (`src/components/motion/RevealObserver.tsx`, `HeroSpotlight.tsx`)
-
-- Apparitions au scroll : `.reveal` (fondu + 22 px, 900 ms), `.reveal-mask`
-  (clip-path depuis le bas), `.reveal-line` (scaleX), `data-delay` en secondes.
-  Titres du hero : `.words-pull-up` (mots qui montent sous un masque de ligne).
-- Images : `.kenburns` (zoom lent 20 s), `.hero-media-animate` (fondu 1,6 s),
-  `.frame-hover` (scale 1 → 1.025 en 900 ms). Lueur : `.glow` + `.drift`, une par écran.
-- Ease : `cubic-bezier(0.22, 1, 0.36, 1)`. Durées 200 / 450 / 900 ms. Hover :
-  flèche +4 px, souligné qui grandit (`.line-link`, `.nav-link`), fond inversé (`.btn`).
-- Les états initiaux masqués n'existent que sous `html.js` (script inline
-  `beforeInteractive` dans `SiteShell` et le layout du tunnel) : sans JS, tout est visible.
-- `prefers-reduced-motion: reduce` neutralise toutes les animations et transitions.
-- Projecteur du curseur (`HeroSpotlight`) : desktop à pointeur fin uniquement, `requestAnimationFrame`.
-
-### Textures
-
-- Grain argentique global (`body::after`, opacité 0,05), grain de cadre
-  (`.frame-grain`, `.grain`, opacité 0,09 / 0,10 en overlay), vignette (`.vignette`),
-  voile (`.scrim`, `.hero-scrim`). Toujours quasi imperceptible.
-
----
-
-## Component Specs (voir `src/app/globals.css` et `src/components/ui/`)
-
-- `Cta` / `CtaButton` (`.btn`, `.btn-primary`, `.btn-quiet`, `.btn-sm`, `.btn-lg`) :
-  rectangle 1 px, capitales, flèche qui glisse. Un seul bouton plein (blanc chaud)
-  par écran. `ArrowLink` (`.arrow-link`) pour finir une fiche.
-- `SectionHeader` : numéro + kicker en marge (3 col.), titre (7 col.), annotation (2 col.).
-- `PageHeader` + `Breadcrumb` : ouverture de page intérieure (kicker, titre
-  monumental, chapô serif, colonne d'annotations, hairline).
+- `Cta` / `.btn` : rectangle à filet blanc, capitales machine. `.btn-primary` :
+  blanc plein, texte noir, lueur. Un seul bouton plein par écran.
+- `SectionHeader`, `PageHeader` + `Breadcrumb` : numéro, filet, kicker, titre.
 - `PostCard` (`grid`, `feature`, `row`) : la seule fiche d'article du site.
-- `FilmFrame` / `.frame` (+ `.frame-grain`, `.frame-marks` = repères de cadre
-  aux quatre coins) : tout photogramme, toute image.
-- `VideoFacade` : façade vidéo cadrée, lecteur chargé au clic.
-- `QuoteBlock`, `TechnicalDiagram` (orbites SVG, rotation lente sous JS).
-- `HomeHero` (`.hero*`) : image plein cadre, scène révélée sous le curseur, nom
-  monumental en bas à gauche, notes en marge droite, ligne de pied (intro,
-  actions, repères, cue de scroll).
-- Listes : `.spec-row` (clé / valeur sur hairline), listes numérotées
-  `grid-cols-[2.5rem_1fr]`, accordéon `.faq-item` (+ `Plus`).
-- Formulaires : `.input` (fond near black, hairline forte, focus stone),
-  `.chip` (filtres, pagination ; `.is-active` / `aria-pressed`).
-- `.badge` : étiquette de catégorie sur image (verre sombre, capitales 10 px).
-- Header : `SiteHeader` (`.site-header`, `.is-solid` après 24 px de scroll ou hors
-  accueil), `.nav-link`, menu mobile plein écran. Footer : marque monumentale,
-  trois colonnes, ligne de métadonnées.
-- Prose (articles, pages longues) : `.prose-cinema` pilote toute la mise en forme
-  MDX (titres avec hairline, listes à tiret, blockquote serif, tableaux dans
-  `.table-wrap`, images dans `.figure`). Les blocs insérés portent `.not-prose`.
+- `FilmFrame` / `.frame` / `VideoFacade` : tout photogramme, toute image.
+- `QuoteBlock` : capitales Bodoni, jamais l'italique en minuscules.
+- `HomeHero` : portrait de Frank en régie à droite, nom à gauche (voir `pages/home.md`).
+- `.carte-noir` : bloc cadré avec coins de viseur (formulaires, encarts formation).
+- `.chip-or` (pastille blanche pleine), `.chip-ligne`, `.tampon`, `.badge`.
+- Prose (articles) : `.prose-cinema` pilote toute la mise en forme MDX.
+- En-tête : `SiteHeader` (marque `.marque`, « FRANK *HOUBRE* »), menu mobile
+  plein écran. Pied de page : marque monumentale, trois colonnes.
 
-### Registre produit (back-office `/admin/funnel`)
+## Layout, motion
 
-Même langage (tokens, hairlines, `.meta`, `.btn`, `.chip`, `.input`,
-`.card-surface`) mais plus dense : `AdminShell` avec navigation en capitales sur
-une ligne, tableaux sur hairlines, graphique SVG steel / stone.
+Inchangés : conteneur `.container-x` (88 rem), grille `.grid-12`, sections
+`.section`, apparitions `.reveal` sous `html.js` seulement, `prefers-reduced-motion`
+respecté. Le hero d'accueil n'a plus d'état masqué : son H1 est lisible dès la
+première image.
 
-### Réglages du 2026-11-16 (charte noir et or)
+## À ne pas faire
 
-- En-tête fixe opaque (`#050505`) : aucun texte ne doit se lire à travers.
-- Lueur or (`--gold-glow`) resserrée : elle souligne le mot, elle ne bave pas.
-- Texte d'article : 17 px sur mobile, 18 px à partir de 1024 px, interlignage
-  1.7. Titres de prose moins serrés (`-0.032em`) que les titres de page.
-- Fiches (`.post-card`) : titre et filet de l'image en or au survol et au focus.
-- Filtres de catégorie (`.chip-scroller`) : une ligne qui défile sur mobile.
-- Ouverture d'article sur mobile : le photogramme doit apparaître dans le
-  premier écran (espacements réduits, titre non répété dans le fil d'Ariane).
-
----
-
-## Anti-Patterns (Do NOT Use)
-
-- ❌ Gradients violet/rose, glow néon, glassmorphism, blobs, ombres flottantes
-- ❌ Boutons pill, gros radius (> 8 px), cartes toutes identiques en grille 3 × N
-- ❌ Emojis, icônes colorées, illustrations corporate
-- ❌ Orbitron, orange vif, fond clair quadrillé (direction précédente, retirée)
-- ❌ Utilitaires Tailwind qui ne pourraient pas surcharger un composant :
-  tout `globals.css` est dans `@layer base` / `@layer components`, ne pas sortir
-  une règle de ces couches
-- ❌ Contraste faible : brume (`--fog`) sur charbon reste ≥ 7:1 ; ambre sur charbon
-  ≈ 5.4:1, réservé aux petits signaux
-- ❌ Contenu masqué hors `html.js`, animations sans `prefers-reduced-motion`
-- ❌ Iframes tierces au chargement (utiliser `VideoFacade`), `<img>` pour un asset local
-
----
+- ❌ Or, ambre, bleu, dégradés colorés, glassmorphism, coins arrondis, ombres portées
+- ❌ Contour noir autour d'un texte, texte posé sur le tee-shirt blanc de Frank
+- ❌ Bodoni en minuscules ou à déliés fins, lueur sur plusieurs mots d'un même écran
+- ❌ `transform: scaleX` pour resserrer un titre (la police l'est déjà)
+- ❌ Utilitaires Tailwind qui contredisent la charte sur un titre (`normal-case`,
+  `tracking-*`, `rounded-*`)
+- ❌ Sortir `globals.css` de `@layer base` / `@layer components`
 
 ## Pre-Delivery Checklist
 
-- [ ] Aucune couleur hors tokens ; ambre limité aux signaux
-- [ ] Composition asymétrique (grille 12, marges, vide) ; pas de trois cartes identiques
-- [ ] Hairlines 1 px, radius ≤ 2 px, pas d'ombre
-- [ ] Métadonnées `.meta` numérotées, titres Inter Tight, citations serif
-- [ ] Hover discrets (flèche, souligné, fond inversé), transitions 200–900 ms
-- [ ] `prefers-reduced-motion` respecté, contenu visible sans JavaScript
-- [ ] Focus visible (outline stone), boutons utilisables au clavier, alt sur les images
-- [ ] Responsive 375 / 768 / 1024 / 1440, pas de défilement horizontal
-- [ ] Contenu sous l'en-tête fixe (`PageHeader` ou `.page-top`)
+- [ ] Aucune couleur d'accent, aucun radius, aucun contour de texte
+- [ ] Une lueur par écran au plus
+- [ ] Le visage de Frank n'est jamais sous un texte (hero à 1024, 1440, 1920 px)
+- [ ] Mobile 375 px sans défilement horizontal, cibles tactiles de 44 px
+- [ ] URL, balises, JSON-LD et H1 inchangés (`SEO-GUIDELINES.md` §8)
+- [ ] `npm run typecheck` et `npm run lint`

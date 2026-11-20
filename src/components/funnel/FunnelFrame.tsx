@@ -8,7 +8,7 @@ type Props = {
   minimal?: boolean;
   /** Tunnel anglais : libellés et liens EN. Le légal reste en FR (pas de version EN encore). */
   locale?: "fr" | "en";
-  /** Charte noir et or des reels et d'AI Studios (tunnel FR de la formation). */
+  /** Charte « régie de cinéma » (le nom de la valeur date de la charte précédente). */
   theme?: "noir";
   children: React.ReactNode;
 };
@@ -43,19 +43,20 @@ export function FunnelFrame({ minimal = false, locale = "fr", theme, children }:
   const copy = COPY[locale];
   const noir = theme === "noir";
   return (
-    <div className={`flex min-h-screen flex-col bg-charcoal text-cream ${noir ? "theme-noir" : ""}`}>
+    <div className={`flex min-h-screen flex-col bg-charcoal text-cream ${noir ? "theme-regie" : ""}`}>
       <header className="border-b border-line">
         <div className="container-x flex h-[var(--header-h)] items-center justify-between gap-4">
           <Link
             href={copy.home}
-            className={
-              noir
-                ? "inline-flex items-center gap-2 font-[family-name:var(--font-display)] text-[17px] font-bold tracking-[-0.04em] text-cream no-underline"
-                : "display inline-flex items-center text-[13px] tracking-[0.2em] text-cream no-underline"
-            }
+            className={noir ? "marque no-underline" : "display inline-flex items-center text-[13px] tracking-[0.2em] text-cream no-underline"}
           >
-            {noir ? <span className="h-1.5 w-1.5 rounded-full bg-amber shadow-[0_0_10px_rgb(255_210_70/0.9)]" aria-hidden /> : null}
-            {noir ? siteName.toLowerCase() : siteName}
+            {noir ? (
+              <>
+                {siteName.split(" ")[0]} <em>{siteName.split(" ").slice(1).join(" ")}</em>
+              </>
+            ) : (
+              siteName
+            )}
           </Link>
           {minimal ? (
             <span className={noir ? "chip-ligne" : "meta"}>{copy.minimalLabel}</span>
