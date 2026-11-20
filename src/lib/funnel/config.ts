@@ -215,7 +215,7 @@ export const FUNNEL_FAQ = [
   },
   {
     q: "Quelle différence avec AI Studios ?",
-    a: "Le challenge, c'est la méthode en trois jours, gratuite. AI Studios est la communauté et la formation complète sur Skool, à 7 euros par mois sans engagement. Vous n'avez aucune obligation de la rejoindre pour suivre le challenge.",
+    a: "Le challenge, c'est la méthode en trois jours, gratuite. AI Studios est la communauté et la formation complète sur Skool, à 97 $ par mois avec 7 jours d'essai gratuit, sans engagement. Vous n'avez aucune obligation de la rejoindre pour suivre le challenge.",
   },
   {
     q: "Que faites-vous de mon adresse email ?",
@@ -225,15 +225,16 @@ export const FUNNEL_FAQ = [
 
 /** Offre AI Studios telle qu'affichée sur l'ancien tunnel (à tenir à jour). */
 export const SKOOL_OFFER = {
-  priceLabel: "7 €",
+  priceLabel: "97 $",
   period: "par mois",
+  trial: "7 jours d'essai gratuit",
   members: "200+",
   trustpilotScore: "4,6/5",
   includes: [
-    "Le module Étape 1 débloqué : « De l'idée à l'image et vidéo IA »",
+    "7 jours d'essai gratuit : vous ne payez rien pendant la première semaine",
+    "Toute la formation : les cinq étapes, les masterclass et les bonus",
     "La Méthode Film Mental IA offerte (valeur 67 €)",
-    "L'accès à la communauté privée de 200+ créateurs IA",
-    "Les échanges quotidiens et l'inspiration avec les membres",
+    "La communauté privée de 200+ créateurs IA et mes retours sur vos créations",
   ],
   reviews: [
     {
@@ -256,19 +257,19 @@ export const SKOOL_OFFER = {
     },
     {
       q: "Qu'est-ce que je trouve concrètement à l'intérieur ?",
-      a: "Le module Étape 1 de la formation (« De l'idée à l'image et vidéo IA ») débloqué, la Méthode Film Mental offerte, l'accès à la communauté privée de 200 créateurs IA et les échanges au quotidien.",
+      a: "Toute la formation AI Studios (les cinq étapes, les masterclass et les bonus), la Méthode Film Mental offerte, la communauté privée de 200 créateurs IA et mes retours sur vos créations.",
     },
     {
       q: "Est-ce que j'ai accès à toute la formation AI Studios ?",
-      a: "À 7 € par mois, vous débloquez le module Étape 1, la Méthode Film Mental et la communauté. Les modules suivants (Étapes 2 à 5, masterclass et bonus) font partie de l'accès annuel complet, que vous pourrez prendre quand vous voudrez aller plus loin.",
+      a: "Oui, tout est inclus. Pendant les 7 jours d'essai, les modules s'ouvrent au fil de la semaine : l'Étape 1 dès le premier jour, puis l'Étape 2, le module scénario et mes coulisses. Tout le reste se débloque à la fin de l'essai.",
     },
     {
       q: "Je peux annuler quand je veux ?",
-      a: "Oui, en un clic, à tout moment. Aucun engagement. Vous gardez l'accès tant que vous êtes membre.",
+      a: "Oui, en un clic, à tout moment. Aucun engagement. Si vous annulez pendant les 7 jours d'essai, vous ne payez rien.",
     },
     {
-      q: "Pourquoi seulement 7 € par mois ?",
-      a: "Pour que le maximum de créateurs puissent rejoindre et que la communauté reste vivante et active. Plus on est nombreux à partager, plus chacun progresse vite.",
+      q: "Comment marche l'essai gratuit ?",
+      a: "Vous avez 7 jours pour tout essayer sans rien payer. Si AI Studios n'est pas pour vous, vous annulez avant la fin de l'essai. Sinon, l'abonnement démarre à 97 $ par mois, sans engagement.",
     },
   ],
 } as const;

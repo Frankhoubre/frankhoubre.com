@@ -1,7 +1,5 @@
 import { Resend } from "resend";
 import {
-  AI_STUDIOS_ANNUAL_URL,
-  ANNUAL_OFFER,
   FUNNEL_DAYS,
   FUNNEL_PATHS,
   IMAGINODE_FACTS,
@@ -283,7 +281,6 @@ function specs(): Spec[] {
   const skool = (c: string) => outUrl(SKOOL_URL, c);
   const sw = (c: string) => outUrl(SCREENWEAVER_URL, c);
   const im = (c: string) => outUrl(IMAGINODE_URL, c);
-  const annual = (c: string) => outUrl(AI_STUDIOS_ANNUAL_URL, c);
 
   return [
     {
@@ -374,7 +371,7 @@ function specs(): Spec[] {
     },
     {
       key: "offre",
-      subject: "AI Studios à 7 € par mois : ce que vous débloquez exactement",
+      subject: "AI Studios, 7 jours d'essai gratuit : ce que vous débloquez exactement",
       blocks: [
         {
           type: "p",
@@ -383,7 +380,7 @@ function specs(): Spec[] {
         {
           type: "list",
           items: [
-            "**Le module Étape 1** de la formation complète, « De l'idée à l'image et vidéo IA », débloqué dès votre arrivée.",
+            "**Toute la formation**, des cinq étapes aux masterclass : l'Étape 1 dès votre arrivée, le reste au fil de votre semaine d'essai.",
             "**La Méthode Film Mental IA, offerte.** Vendue 67 € à part : comment tirer d'une seule idée une source de prompts adaptés à votre univers.",
             `**Une communauté privée de ${SKOOL_OFFER.members} créateurs IA** qui postent leurs plans, leurs prompts et leurs ratés, tous les jours.`,
             "**Mes coulisses chaque semaine** : ce que j'ai produit, ce qui a marché, ce que j'ai jeté.",
@@ -392,9 +389,9 @@ function specs(): Spec[] {
         },
         {
           type: "p",
-          text: `**Le prix : ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}. Sans engagement**, vous partez en un clic. Pourquoi si peu ? Parce que je veux que le maximum de créateurs rejoignent, et qu'une communauté ne vit que si elle est nombreuse et active.`,
+          text: `**Le prix : ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, avec ${SKOOL_OFFER.trial}.** Vous testez tout pendant une semaine sans rien payer. Si ce n'est pas pour vous, vous annulez en un clic avant la fin de l'essai.`,
         },
-        { type: "cta", label: `Rejoindre AI Studios à ${SKOOL_OFFER.priceLabel} par mois`, href: skool("offre") },
+        { type: "cta", label: "Commencer mes 7 jours gratuits", href: skool("offre") },
         {
           type: "p",
           text: "Une seule chose que je vous demande en arrivant : **postez le storyboard de votre challenge**. Vous aurez un retour dessus, et c'est souvent là que le projet décolle.",
@@ -495,7 +492,7 @@ function specs(): Spec[] {
           type: "p",
           text: "C'est ce que j'ai formalisé dans la Méthode Film Mental IA : comment partir d'une idée simple et en tirer une source de prompts professionnels, à la demande, sans jamais repartir de zéro. **Je la vends 67 € à part. Elle est offerte quand vous rejoignez AI Studios.**",
         },
-        { type: "cta", label: `Récupérer la Méthode Film Mental avec AI Studios (${SKOOL_OFFER.priceLabel} par mois)`, href: skool("prompts") },
+        { type: "cta", label: "Récupérer la Méthode Film Mental avec AI Studios (7 jours gratuits)", href: skool("prompts") },
         {
           type: "p",
           text: "Et si vous préférez continuer avec vos outils, gardez au moins ceci : **un prompt n'est jamais bon en soi. Il est bon pour un projet.**",
@@ -524,7 +521,7 @@ function specs(): Spec[] {
           type: "p",
           text: "Dans AI Studios, vous voyez ce travail chaque semaine dans mes coulisses : ce que je monte, ce que je jette, et pourquoi. C'est là que le regard se forme.",
         },
-        { type: "link", label: `Rejoindre AI Studios (${SKOOL_OFFER.priceLabel} par mois)`, href: skool("montage") },
+        { type: "link", label: "Essayer AI Studios 7 jours gratuitement", href: skool("montage") },
       ],
     },
     {
@@ -550,7 +547,7 @@ function specs(): Spec[] {
         },
         {
           type: "p",
-          text: `C'est ce qu'on fait ensemble dans AI Studios : vous postez votre avancée, vous avez un retour, vous corrigez, vous avancez. ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, sans engagement.`,
+          text: `C'est ce qu'on fait ensemble dans AI Studios : vous postez votre avancée, vous avez un retour, vous corrigez, vous avancez. ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, avec ${SKOOL_OFFER.trial} pour commencer.`,
         },
         { type: "cta", label: "Commencer mes 30 jours dans AI Studios", href: skool("30-jours") },
       ],
@@ -577,7 +574,7 @@ function specs(): Spec[] {
         },
         {
           type: "p",
-          text: `**Et le prix : ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, sans engagement, résiliable en un clic.** Vous restez le temps que vous voulez, vous partez quand vous voulez.`,
+          text: `**Et le prix : ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, avec ${SKOOL_OFFER.trial}, sans engagement.** Vous essayez une semaine sans payer, vous restez le temps que vous voulez, vous partez quand vous voulez.`,
         },
         { type: "cta", label: "Rejoindre AI Studios", href: skool("objections") },
         {
@@ -588,30 +585,27 @@ function specs(): Spec[] {
     },
     {
       key: "annuel",
-      subject: `L'accès annuel AI Studios : ${ANNUAL_OFFER.videos} vidéos et ${ANNUAL_OFFER.guaranteeDays} jours pour changer d'avis`,
+      subject: "7 jours pour tout essayer dans AI Studios, sans rien payer",
       blocks: [
         {
           type: "p",
-          text: `L'abonnement à ${SKOOL_OFFER.priceLabel} ouvre l'Étape 1 et la communauté. Certains d'entre vous veulent tout le chemin, tout de suite. **C'est l'accès annuel.**`,
+          text: "Une question revient souvent : « Et si AI Studios n'est pas fait pour moi ? » La réponse est simple : **vous avez 7 jours pour essayer, sans rien payer.** Voici comment la semaine se déroule.",
         },
         {
           type: "list",
           items: [
-            "Les cinq étapes de la formation : de l'idée à l'image et la vidéo, la mise en scène, le montage, le son, jusqu'au portfolio et aux clients.",
-            `Plus de ${ANNUAL_OFFER.videos} vidéos, et de nouvelles vidéos ajoutées chaque semaine pendant vos douze mois.`,
-            "Les masterclass, les bonus, les workflows prêts à l'emploi, et mes coulisses.",
-            "La communauté Skool, avec mes retours sur vos créations.",
+            "**Jour 1** : l'Étape 1 de la formation, « De l'idée à l'image et vidéo IA », et la communauté.",
+            "**Jour 2** : l'Étape 2, l'entraînement, et mes retours sur vos exercices.",
+            "**Jour 3** : le module scénario, de l'idée au film structuré.",
+            "**Jour 5** : mes coulisses, ce que je produis et ce que je jette.",
+            "**À la fin de l'essai** : tout le reste, le montage, les masterclass, les bonus et la vente de vos services.",
           ],
         },
         {
           type: "p",
-          text: `Le tarif affiché aujourd'hui sur la page est de **${ANNUAL_OFFER.price} au lieu de ${ANNUAL_OFFER.regularPrice}**, en un seul paiement pour douze mois. Et vous avez **${ANNUAL_OFFER.guaranteeDays} jours pour changer d'avis** : si la formation ne vous convient pas, vous êtes remboursé.`,
+          text: `**Ensuite, c'est ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}, sans engagement.** Si ce n'est pas pour vous, vous annulez en un clic avant la fin des 7 jours et vous ne payez rien.`,
         },
-        { type: "cta", label: "Voir l'accès annuel", href: annual("annuel") },
-        {
-          type: "p",
-          text: `Si ${SKOOL_OFFER.priceLabel} par mois vous suffit pour l'instant, restez-y, c'est très bien aussi. L'annuel est pour celles et ceux qui savent déjà qu'ils veulent en vivre.`,
-        },
+        { type: "cta", label: "Commencer mes 7 jours gratuits", href: skool("annuel") },
       ],
     },
     {
@@ -650,7 +644,7 @@ function specs(): Spec[] {
         {
           type: "list",
           items: [
-            `**AI Studios, ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period}** : le programme, la Méthode Film Mental offerte, et des retours sur vos plans.`,
+            `**AI Studios, ${SKOOL_OFFER.priceLabel} ${SKOOL_OFFER.period} avec ${SKOOL_OFFER.trial}** : toute la formation, la Méthode Film Mental offerte, et des retours sur vos plans.`,
             "**ScreenWeaver, gratuit** : votre projet, vos personnages, vos lieux, votre découpage au même endroit.",
             `**imaginode, ${IMAGINODE_FACTS.freeImages} images offertes** : générer sur des références, valider en image, animer ensuite.`,
           ],
@@ -659,7 +653,7 @@ function specs(): Spec[] {
           type: "p",
           text: "**À choisir, je prendrais AI Studios.** Les outils, vous les apprendrez de toute façon. Ce qui vous fera gagner des mois, c'est un regard extérieur sur vos premiers plans, avant d'avoir brûlé vos crédits dessus.",
         },
-        { type: "cta", label: `Rejoindre AI Studios à ${SKOOL_OFFER.priceLabel} par mois`, href: skool("derniere") },
+        { type: "cta", label: "Essayer AI Studios 7 jours gratuitement", href: skool("derniere") },
         {
           type: "p",
           text: "Quoi qu'il se passe, gardez les trois vidéos, elles restent accessibles. Prenez soin de vous et de vos projets.",
@@ -852,6 +846,63 @@ export async function sendSequenceStep(
     scheduledAt: null,
     error: error ? error.message : null,
   };
+}
+
+/**
+ * Étapes de la séquence qui citent l'offre AI Studios (prix, essai). Sert au
+ * rattrapage des emails déjà programmés quand l'offre change.
+ */
+export const OFFER_STEP_KEYS: SequenceKey[] = [
+  "offre",
+  "prompts",
+  "montage",
+  "30-jours",
+  "objections",
+  "annuel",
+  "derniere",
+];
+
+/**
+ * Remplace un email déjà programmé par sa version actuelle : annule l'ancien
+ * chez Resend puis reprogramme le texte du code à la même date. Ne
+ * reprogramme rien si l'annulation échoue (pas de doublon).
+ */
+export async function reprogramSequenceStep(
+  email: string,
+  firstName: string,
+  key: SequenceKey,
+  oldId: string,
+  scheduledAt: string,
+): Promise<SequenceStepResult & { cancelled: boolean }> {
+  const resend = resendClient();
+  const canceller = contactsClient();
+  const mail = buildSequence(email, firstName).find((m) => m.key === key);
+  const base = { key, subject: mail?.subject ?? key, id: null, scheduledAt };
+  if (!resend || !canceller || !process.env.RESEND_FROM || !mail) {
+    return { ...base, error: "Resend non configuré", cancelled: false };
+  }
+  const cancel = await canceller.emails.cancel(oldId);
+  if (cancel.error) return { ...base, error: `annulation : ${cancel.error.message}`, cancelled: false };
+  await sleep(550);
+  const unsubscribe = unsubscribeUrl(email);
+  const { data, error } = await resend.emails.send({
+    from: fromAddress(),
+    to: email,
+    replyTo: process.env.RESEND_REPLY_TO ?? SUPPORT_EMAIL,
+    subject: mail.subject,
+    html: mail.html,
+    text: mail.text,
+    headers: {
+      "List-Unsubscribe": `<${unsubscribe}>`,
+      "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+    },
+    tags: [
+      { name: "funnel", value: "formation-ia-gratuite" },
+      { name: "step", value: mail.key },
+    ],
+    scheduledAt,
+  });
+  return { ...base, id: data?.id ?? null, error: error ? error.message : null, cancelled: true };
 }
 
 /** Supprime le contact de l'audience Resend (suppression RGPD), sans erreur bloquante. */
