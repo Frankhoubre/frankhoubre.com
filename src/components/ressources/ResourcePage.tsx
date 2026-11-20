@@ -8,45 +8,125 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { SPONSORED_REL } from "@/lib/affiliate";
 import { buildBreadcrumbList, buildGraphJsonLd, pageUrl } from "@/lib/metadata";
 import { RESOURCE_BASE, resourcePath, resourcesFor, type Resource } from "@/lib/ressources";
+import type { ResourceState, ResourceTile } from "@/lib/ressources/types";
 
 const UI = {
   fr: {
-    word: "Mot",
+    method: "Méthode",
     home: "Accueil",
     hub: "Ressources",
-    seeSteps: "Voir le déroulé",
-    caseKicker: "Le cas",
-    stepsKicker: "Le déroulé",
-    stepsTitle: "Les étapes, dans l'ordre.",
-    stepsLede: "Chaque étape renvoie à la leçon vidéo qui montre le geste dans l'app.",
+    seePath: "Voir le chemin",
+    abKicker: "Avant, après",
+    abTitle: ["d'où vous partez,", "où vous arrivez."],
+    from: "Aujourd'hui",
+    to: "À l'arrivée",
+    caseKicker: "La preuve",
+    stepsKicker: "Le chemin",
+    stepsTitle: (n: number) => [`de A à B,`, `en ${n} étapes.`],
+    stepsLede: "Chaque étape a sa leçon vidéo : vous regardez le geste, vous le refaites.",
     step: "Étape",
     lesson: "Voir la leçon complète",
     play: "Lire",
-    trapKicker: "Le piège",
+    trapKicker: "Le piège à éviter",
     extraKicker: "Pour aller plus loin",
-    ctaKicker: "À vous",
-    others: "Les autres mots",
-    othersLede: "Chaque mot commenté sous un reel ouvre sa propre page.",
+    others: "D'autres méthodes",
   },
   en: {
-    word: "Word",
+    method: "Method",
     home: "Home",
     hub: "Resources",
-    seeSteps: "See the steps",
-    caseKicker: "The case",
-    stepsKicker: "The steps",
-    stepsTitle: "Step by step, in order.",
-    stepsLede: "Each step links to the video lesson that shows it inside the app.",
+    seePath: "See the path",
+    abKicker: "Before, after",
+    abTitle: ["where you start,", "where you land."],
+    from: "Today",
+    to: "At the end",
+    caseKicker: "The proof",
+    stepsKicker: "The path",
+    stepsTitle: (n: number) => [`from A to B,`, `in ${n} steps.`],
+    stepsLede: "Every step has its video lesson: watch the move, then do it yourself.",
     step: "Step",
     lesson: "Watch the full lesson",
     play: "Play",
-    trapKicker: "The trap",
+    trapKicker: "The trap to avoid",
     extraKicker: "Go further",
-    ctaKicker: "Your turn",
-    others: "The other words",
-    othersLede: "Every word you can comment under a reel opens its own page.",
+    others: "More methods",
   },
 } as const;
+
+const TILE_SIZES = "(max-width: 1024px) 100vw, 560px";
+
+/** Ce qu'on voit dans une case : une image, une note brute ou une page de scénario. */
+function Tile({ tile, after }: { tile: ResourceTile; after: boolean }) {
+  if (tile.kind === "image") {
+    return (
+      <Image
+        src={tile.src}
+        alt={tile.alt}
+        fill
+        sizes={TILE_SIZES}
+        className={after ? "" : "opacity-80 grayscale"}
+        style={{
+          objectFit: tile.fit ?? "cover",
+          objectPosition: tile.position ?? "center",
+        }}
+      />
+    );
+  }
+  if (tile.kind === "script") {
+    return (
+      <div className={`absolute inset-0 overflow-hidden bg-[#efece4] px-[10%] py-[9%] font-mono text-[#1c1b19] ${after ? "" : "opacity-80 grayscale"}`}>
+        {tile.lines.map((line, i) => (
+          <p key={line} className={`text-[12.5px] leading-[1.6] sm:text-[15px] lg:text-[16px] ${i === 0 ? "font-bold uppercase" : "mt-[1.1em]"}`}>
+            {line}
+          </p>
+        ))}
+        <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-[#efece4] to-transparent" aria-hidden />
+      </div>
+    );
+  }
+  return (
+    <div className="absolute inset-0 flex items-center justify-center px-[10%]">
+      <p className={`text-center font-serif text-[clamp(1.15rem,2.4vw,1.6rem)] italic leading-snug ${after ? "text-cream" : "text-fog"}`}>
+        « {tile.text} »
+      </p>
+    </div>
+  );
+}
+
+function StateTile({ state, after, className }: { state: ResourceState; after: boolean; className: string }) {
+  return (
+    <div
+      className={`reveal frame frame-grain relative aspect-[16/10] ${className} ${
+        after ? "border-[color:var(--gold-label)] shadow-[0_0_70px_-18px_rgb(255_205_60/0.55)]" : ""
+      }`}
+      data-delay={after ? "0.15" : "0"}
+    >
+      <Tile tile={state.tile} after={after} />
+    </div>
+  );
+}
+
+function StateText({ state, letter, label, after, className }: { state: ResourceState; letter: string; label: string; after: boolean; className: string }) {
+  return (
+    <div className={`reveal ${className}`} data-delay={after ? "0.15" : "0"}>
+      <p className="meta flex items-center gap-3">
+        <span className={`tabular ${after ? "text-[color:var(--gold)]" : "meta-strong"}`}>{letter}</span>
+        <span>{label}</span>
+      </p>
+      <h3 className={`h-block mt-3 ${after ? "text-cream" : "text-stone"}`}>{state.title}</h3>
+      <ul className="mt-5 space-y-2.5">
+        {state.points.map((p) => (
+          <li key={p} className={`flex gap-3 text-[15px] leading-relaxed ${after ? "text-stone" : "text-fog"}`}>
+            <span className={`shrink-0 ${after ? "text-[color:var(--gold)]" : "text-fog/60"}`} aria-hidden>
+              {after ? "→" : "×"}
+            </span>
+            <span>{p}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export function ResourcePage({ resource: r }: { resource: Resource }) {
   const t = UI[r.locale];
@@ -54,6 +134,7 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
   const home = r.locale === "fr" ? "/" : "/en";
   const others = resourcesFor(r.locale).filter((o) => o.slug !== r.slug);
   const ctaRel = r.cta.affiliate ? SPONSORED_REL : undefined;
+  const stepsTitle = t.stepsTitle(r.steps.length);
 
   const jsonLd = buildGraphJsonLd(
     {
@@ -73,7 +154,7 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
     buildBreadcrumbList([
       { name: t.home, path: home },
       { name: t.hub, path: RESOURCE_BASE[r.locale] },
-      { name: r.word, path },
+      { name: r.label, path },
     ]),
   );
 
@@ -82,12 +163,18 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
       <JsonLd data={jsonLd} />
       <RevealObserver />
 
-      {/* Ouverture */}
-      <section className="band grain vignette relative" aria-labelledby="ressource-title">
-        <div className="glow drift" style={{ width: "40vw", height: "40vw", maxWidth: 640, maxHeight: 640, right: "-10%", top: "5%" }} aria-hidden />
-        <div className="container-x relative z-[4] pb-12 pt-[calc(var(--header-h)+3.5rem)] sm:pb-16">
+      {/* Ouverture : la promesse */}
+      <section className="band grain vignette relative flex min-h-[82svh] flex-col" aria-labelledby="ressource-title">
+        {r.hero ? (
+          <div className="layer kenburns" aria-hidden>
+            <Image src={r.hero.src} alt="" fill priority sizes="100vw" className="opacity-60" style={{ objectPosition: r.hero.position ?? "center" }} />
+          </div>
+        ) : null}
+        <div className="scrim" aria-hidden />
+        <div className="glow drift" style={{ width: "40vw", height: "40vw", maxWidth: 640, maxHeight: 640, right: "-10%", top: "8%" }} aria-hidden />
+        <div className="container-x relative z-[4] flex flex-1 flex-col justify-end pb-12 pt-[calc(var(--header-h)+4rem)] sm:pb-16">
           <p className="meta meta-strong reveal">
-            {t.word} {r.word}
+            {t.method} &nbsp;/&nbsp; {r.label}
           </p>
           <h1 id="ressource-title" className="display display-md reveal mt-6 max-w-5xl normal-case leading-[0.98] text-cream" data-delay="0.1">
             {r.title} <span className="or">{r.titleGold}</span>
@@ -100,16 +187,40 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
               <Cta href={r.cta.link.href} variant="primary" rel={ctaRel}>
                 {r.cta.link.label}
               </Cta>
-              <Cta href="#deroule">{t.seeSteps}</Cta>
+              <Cta href="#chemin">{t.seePath}</Cta>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Le cas */}
-      <section className="section" aria-labelledby="le-cas">
+      {/* Avant, après */}
+      <section className="section" aria-labelledby="avant-apres">
         <div className="container-x">
-          <SectionHeader index="01" kicker={t.caseKicker} id="le-cas" title={r.case.title} lede={r.case.text} />
+          <p className="meta">
+            <span className="meta-strong tabular">01</span> &nbsp;/&nbsp; {t.abKicker}
+          </p>
+          <h2 id="avant-apres" className="h-section mt-5">
+            {t.abTitle[0]} <span className="or">{t.abTitle[1]}</span>
+          </h2>
+          <div className="mt-14 grid items-center gap-x-8 gap-y-6 lg:grid-cols-[1fr_auto_1fr]">
+            <StateTile state={r.from} after={false} className="order-1" />
+            <div className="order-3 flex justify-center py-4 text-[color:var(--gold)] lg:order-2 lg:py-0" aria-hidden>
+              <svg width="56" height="24" viewBox="0 0 56 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="rotate-90 lg:rotate-0">
+                <path d="M2 12h51M42 2l11 10-11 10" />
+              </svg>
+            </div>
+            <StateTile state={r.to} after className="order-4 lg:order-3" />
+            <StateText state={r.from} letter="A" label={t.from} after={false} className="order-2 self-start lg:order-4" />
+            <div className="hidden lg:order-5 lg:block" aria-hidden />
+            <StateText state={r.to} letter="B" label={t.to} after className="order-5 self-start lg:order-6" />
+          </div>
+        </div>
+      </section>
+
+      {/* La preuve */}
+      <section className="section border-t border-line" aria-labelledby="preuve">
+        <div className="container-x">
+          <SectionHeader index="02" kicker={t.caseKicker} id="preuve" title={r.case.title} lede={r.case.text} />
           <div className="mt-12 max-w-5xl">
             {r.case.video ? (
               <VideoFacade
@@ -121,11 +232,10 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
                 meta={r.case.video.meta}
                 playLabel={t.play}
                 sizes="(max-width: 1024px) 100vw, 1024px"
-                priority
               />
             ) : r.case.image ? (
               <div className="frame frame-grain frame-marks relative aspect-video w-full">
-                <Image src={r.case.image.src} alt={r.case.image.alt} fill sizes="(max-width: 1024px) 100vw, 1024px" priority />
+                <Image src={r.case.image.src} alt={r.case.image.alt} fill sizes="(max-width: 1024px) 100vw, 1024px" />
               </div>
             ) : null}
             {r.case.link ? (
@@ -137,10 +247,20 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
         </div>
       </section>
 
-      {/* Le déroulé */}
-      <section className="section border-t border-line" aria-labelledby="deroule">
+      {/* Le chemin */}
+      <section className="section border-t border-line" aria-labelledby="chemin">
         <div className="container-x">
-          <SectionHeader index="02" kicker={t.stepsKicker} id="deroule" title={t.stepsTitle} lede={t.stepsLede} />
+          <SectionHeader
+            index="03"
+            kicker={t.stepsKicker}
+            id="chemin"
+            title={
+              <>
+                {stepsTitle[0]} <span className="or">{stepsTitle[1]}</span>
+              </>
+            }
+            lede={t.stepsLede}
+          />
           <ol className="mt-14 border-t border-line">
             {r.steps.map((s, i) => (
               <li key={s.title} className="reveal grid-12 gap-y-6 border-b border-line py-10">
@@ -181,31 +301,28 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
       {/* Le piège */}
       <section className="section border-t border-line" aria-labelledby="piege">
         <div className="container-x">
-          <SectionHeader index="03" kicker={t.trapKicker} id="piege" title={r.trap.title} lede={r.trap.text} />
+          <SectionHeader index="04" kicker={t.trapKicker} id="piege" title={r.trap.title} lede={r.trap.text} />
+          {r.extra ? (
+            <div className="mt-14 flex flex-wrap items-baseline justify-between gap-x-10 gap-y-4 border-t border-line pt-8">
+              <p className="max-w-2xl text-[15px] leading-relaxed text-fog">
+                <span className="meta meta-strong mr-3">{t.extraKicker}</span>
+                <span className="text-stone">{r.extra.title}.</span> {r.extra.text}
+              </p>
+              <ArrowLink href={r.extra.link.href}>{r.extra.link.label}</ArrowLink>
+            </div>
+          ) : null}
         </div>
       </section>
 
-      {/* Pour aller plus loin */}
-      {r.extra ? (
-        <section className="section border-t border-line" aria-labelledby="plus-loin">
-          <div className="container-x">
-            <SectionHeader
-              index="04"
-              kicker={t.extraKicker}
-              id="plus-loin"
-              title={r.extra.title}
-              lede={r.extra.text}
-              aside={<ArrowLink href={r.extra.link.href}>{r.extra.link.label}</ArrowLink>}
-            />
-          </div>
-        </section>
-      ) : null}
-
-      {/* Appel final */}
+      {/* L'arrivée : l'appel */}
       <section className="band grain vignette relative border-t border-line" aria-labelledby="a-vous">
-        <div className="container-x relative z-[4] py-20 sm:py-28">
-          <p className="meta meta-strong">{t.ctaKicker}</p>
-          <h2 id="a-vous" className="h-section mt-5 max-w-4xl text-cream">
+        <div className="glow drift" style={{ width: "36vw", height: "36vw", maxWidth: 560, maxHeight: 560, left: "-8%", bottom: "-20%" }} aria-hidden />
+        <div className="container-x relative z-[4] py-24 sm:py-32">
+          <p className="meta flex items-center gap-3">
+            <span className="tabular text-[color:var(--gold)]">B</span>
+            <span>{r.to.title}</span>
+          </p>
+          <h2 id="a-vous" className="display display-md mt-6 max-w-4xl normal-case leading-[1] text-cream">
             {r.cta.title}
           </h2>
           <p className="lede mt-6 max-w-2xl">{r.cta.text}</p>
@@ -218,21 +335,17 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
         </div>
       </section>
 
-      {/* Les autres mots */}
-      <section className="section border-t border-line" aria-labelledby="autres-mots">
-        <div className="container-x">
-          <SectionHeader kicker={t.hub} id="autres-mots" title={t.others} lede={t.othersLede} size="block" />
-          <ul className="mt-10 flex flex-wrap gap-3">
-            {others.map((o) => (
-              <li key={o.slug}>
-                <Link href={resourcePath(o.locale, o.slug)} className="btn btn-sm">
-                  <span>{o.word}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+      {/* D'autres méthodes */}
+      <nav className="border-t border-line py-10" aria-label={t.others}>
+        <div className="container-x flex flex-wrap items-center gap-x-6 gap-y-3">
+          <p className="meta meta-strong">{t.others}</p>
+          {others.map((o) => (
+            <Link key={o.slug} href={resourcePath(o.locale, o.slug)} className="meta link-muted tap">
+              {o.label}
+            </Link>
+          ))}
         </div>
-      </section>
+      </nav>
     </>
   );
 }

@@ -3,9 +3,9 @@ import { ResourceHub } from "@/components/ressources/ResourceHub";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Resources: one word, one method",
+  title: "Resources: one film, one method",
   description:
-    "The methods I send by DM after my reels: storyboard, script, film, anime, webtoon, drama, character, camera, MCP and video tools, each with its video lessons.",
+    "Ten methods to take your idea to a finished film: storyboard, screenplay, short film, anime, webtoon, vertical series, character, camera, MCP, video models.",
   path: "/en/resources",
   noIndex: true,
   alternateLanguages: { fr: "/ressources", en: "/en/resources", "x-default": "/ressources" },

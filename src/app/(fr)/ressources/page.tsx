@@ -3,9 +3,9 @@ import { ResourceHub } from "@/components/ressources/ResourceHub";
 import { buildPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildPageMetadata({
-  title: "Ressources : un mot, une méthode",
+  title: "Ressources : un film, une méthode",
   description:
-    "Les méthodes envoyées en message après mes reels : storyboard, script, film, animé, webtoon, série, personnage, caméra, MCP et outils vidéo, avec leurs leçons.",
+    "Dix méthodes pour passer de votre idée à un film : storyboard, scénario, court métrage, animé, webtoon, série verticale, personnage, caméra, MCP, modèles vidéo.",
   path: "/ressources",
   noIndex: true,
   alternateLanguages: { fr: "/ressources", en: "/en/resources", "x-default": "/ressources" },

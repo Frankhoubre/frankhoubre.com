@@ -1,7 +1,7 @@
 /**
- * Pages « ressources » : une page par mot à commenter sous les reels de
- * Frank Houbre (FR) et Frank Houbre AI (EN). Le DM ManyChat du mot envoie
- * vers la page du même mot, dans la langue du compte.
+ * Pages « ressources » : une page par sujet de reel (Frank Houbre en français,
+ * Frank Houbre AI en anglais). Chaque page vend un résultat : elle montre
+ * l'état de départ (A), l'état d'arrivée (B), la preuve, puis le chemin.
  * Carte des mots : ~/Claude/manychat/STRATEGIE-MOTS-CLES-2026-11-20.md.
  */
 
@@ -33,9 +33,26 @@ export type ResourceStep = {
 
 export type ResourceLink = { href: string; label: string };
 
+/** Ce qu'on voit dans une case « avant » ou « après ». */
+export type ResourceTile =
+  | { kind: "image"; src: string; alt: string; fit?: "contain"; position?: string }
+  /** Matière brute : une idée, une description, une phrase. */
+  | { kind: "note"; text: string }
+  /** Une page de scénario au format pro. */
+  | { kind: "script"; lines: string[] };
+
+export type ResourceState = {
+  /** L'état en une phrase courte. */
+  title: string;
+  points: string[];
+  tile: ResourceTile;
+};
+
 export type Resource = {
-  /** Mot à commenter, en capitales. */
+  /** Mot commenté sous le reel (sert au suivi, jamais affiché tel quel). */
   word: string;
+  /** Nom du sujet affiché sur la page : « Storyboard », « Série verticale ». */
+  label: string;
   slug: string;
   /** Slug de la page jumelle dans l'autre langue. */
   twinSlug: string;
@@ -45,6 +62,10 @@ export type Resource = {
   title: string;
   titleGold: string;
   lede: string;
+  /** Image de fond de l'ouverture. */
+  hero?: { src: string; position?: string };
+  from: ResourceState;
+  to: ResourceState;
   case: {
     title: string;
     text: string;

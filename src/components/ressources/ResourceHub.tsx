@@ -5,13 +5,13 @@ import { resourcePath, resourcesFor, type ResourceLocale } from "@/lib/ressource
 const UI = {
   fr: {
     kicker: "Ressources",
-    title: "Un mot, une méthode.",
-    lede: "Sous chaque reel, je vous propose un mot à commenter. Chaque mot ouvre sa page : un vrai cas, les étapes dans l'ordre et la leçon vidéo de chaque geste.",
+    title: "Un film, une méthode.",
+    lede: "Chaque méthode part de là où vous êtes et vous amène à un résultat : un storyboard, un scénario, un pilote animé. Un vrai cas, les étapes dans l'ordre, la vidéo de chaque geste.",
   },
   en: {
     kicker: "Resources",
-    title: "One word, one method.",
-    lede: "Under every reel there is a word to comment. Each word opens its own page: a real case, the steps in order and the video lesson for each one.",
+    title: "One film, one method.",
+    lede: "Each method starts where you are and takes you to a result: a storyboard, a screenplay, an animated pilot. A real case, the steps in order, the video for each move.",
   },
 } as const;
 
@@ -26,11 +26,11 @@ export function ResourceHub({ locale }: { locale: ResourceLocale }) {
             {resourcesFor(locale).map((r) => (
               <li key={r.slug} className="bg-charcoal">
                 <Link href={resourcePath(locale, r.slug)} className="group block p-8 transition-colors hover:bg-white/[0.03]">
-                  <p className="meta meta-strong">{r.word}</p>
+                  <p className="meta meta-strong">{r.label}</p>
                   <p className="h-block mt-4 text-cream">
                     {r.title} <span className="or">{r.titleGold}</span>
                   </p>
-                  <p className="mt-3 text-[15px] leading-relaxed text-fog">{r.metaDescription}</p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-fog">{r.to.title}.</p>
                 </Link>
               </li>
             ))}
