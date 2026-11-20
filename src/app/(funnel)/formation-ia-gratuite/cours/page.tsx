@@ -197,7 +197,7 @@ export default async function FormationCoursePage() {
                 ce que vous <span className="or">débloquez aujourd’hui.</span>
               </h3>
               <p className="mt-4 text-[15px] leading-relaxed text-fog">
-                Le module Étape 1 de la formation, la Méthode Film Mental en
+                Toute la formation, la Méthode Film Mental en
                 cadeau, et une communauté privée de {SKOOL_OFFER.members}{" "}
                 créateurs IA qui partagent leurs plans et leurs prompts chaque
                 jour. Vous postez votre storyboard du challenge, vous avez des
@@ -207,10 +207,10 @@ export default async function FormationCoursePage() {
                 <span className="num text-6xl">{SKOOL_OFFER.priceLabel}</span>
                 <span className="text-sm text-fog">{SKOOL_OFFER.period}</span>
               </p>
-              <p className="meta mt-2">moins qu’un café par semaine</p>
+              <p className="meta mt-2">{SKOOL_OFFER.trial}</p>
               <p className="mt-4 text-sm leading-relaxed text-fog">
-                Sans engagement, annulable en un clic à tout moment. Vous gardez
-                l’accès tant que vous êtes membre, vous partez quand vous voulez.
+                Vous essayez tout pendant 7 jours sans rien payer. Ensuite, sans
+                engagement, annulable en un clic à tout moment.
               </p>
               <div className="mt-6">
                 <TrackedLink
@@ -219,7 +219,7 @@ export default async function FormationCoursePage() {
                   detail="offre"
                   className="btn btn-primary btn-lg w-full sm:w-auto"
                 >
-                  <span>Débloquer l’Étape 1 pour {SKOOL_OFFER.priceLabel} par mois</span>
+                  <span>Commencer mes 7 jours gratuits</span>
                   <Arrow />
                 </TrackedLink>
               </div>
@@ -236,8 +236,8 @@ export default async function FormationCoursePage() {
                 ))}
               </ul>
               <p className="mt-4 text-sm leading-relaxed text-fog">
-                Les modules suivants (Étapes 2 à 5, masterclass et bonus) font
-                partie de l’accès annuel complet.
+                Pendant l’essai, les modules s’ouvrent au fil de la semaine, et
+                tout le reste à la fin des 7 jours.
               </p>
 
               <p className="meta meta-strong mt-10">
@@ -287,12 +287,13 @@ export default async function FormationCoursePage() {
               </p>
               <p className="reveal mt-5 max-w-lg text-[15px] leading-relaxed text-fog" data-delay="0.2">
                 AI Studios vous donne l’exécution, les retours sur vos plans et la
-                régularité, pour {SKOOL_OFFER.priceLabel} par mois, sans engagement.
+                régularité, pour {SKOOL_OFFER.priceLabel} par mois, avec 7 jours
+                d’essai gratuit et sans engagement.
               </p>
             </div>
             <div className="reveal col-span-12 lg:col-span-5 lg:text-right" data-delay="0.3">
               <TrackedLink href={SKOOL_URL} event="click_skool" detail="final" className="btn btn-primary btn-lg">
-                <span>Rejoindre AI Studios pour {SKOOL_OFFER.priceLabel} par mois</span>
+                <span>Essayer AI Studios 7 jours gratuitement</span>
                 <Arrow />
               </TrackedLink>
             </div>

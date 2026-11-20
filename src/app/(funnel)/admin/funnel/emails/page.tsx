@@ -51,6 +51,17 @@ export default async function EmailsPage({
           </Notice>
         </div>
       ) : null}
+      {message?.startsWith("offre:") ? (
+        <div className="mt-4">
+          <Notice>
+            Offre AI Studios mise à jour pour {message.split(":")[1]} inscrit(s) :{" "}
+            {message.split(":")[2]} email(s) reprogrammé(s), {message.split(":")[3]} échec(s).
+            {Number(message.split(":")[4]) > 0
+              ? ` Il en reste ${message.split(":")[4]} : cliquez de nouveau pour continuer.`
+              : ""}
+          </Notice>
+        </div>
+      ) : null}
       {message?.startsWith("annule:") ? (
         <div className="mt-4">
           <Notice>
@@ -132,6 +143,20 @@ export default async function EmailsPage({
           <span className="max-w-xl text-xs leading-relaxed text-fog">
             Annule chez Resend les emails encore programmés pour les personnes désinscrites. Peut
             prendre plusieurs minutes, une demi-seconde par email.
+          </span>
+        </form>
+        <form
+          method="post"
+          action="/api/funnel/admin/email-stats"
+          className="mt-4 flex flex-wrap items-center gap-4"
+        >
+          <input type="hidden" name="action" value="refresh-offer" />
+          <button type="submit" className="btn btn-sm">
+            <span>Mettre à jour l’offre dans les emails programmés</span>
+          </button>
+          <span className="max-w-xl text-xs leading-relaxed text-fog">
+            Remplace les emails déjà programmés qui parlent d’AI Studios par leur texte actuel, à la
+            même date. Une seconde par email environ.
           </span>
         </form>
       </Panel>

@@ -16,7 +16,7 @@ export const SEQUENCE_META = [
   { key: "montage", label: "Montage", dayOffset: 9, kicker: "Méthode · Le montage" },
   { key: "30-jours", label: "30 jours", dayOffset: 10, kicker: "AI Studios · Dans 30 jours" },
   { key: "objections", label: "Objections", dayOffset: 11, kicker: "AI Studios · Vos questions" },
-  { key: "annuel", label: "Accès annuel", dayOffset: 12, kicker: "AI Studios · L'accès annuel" },
+  { key: "annuel", label: "Essai gratuit", dayOffset: 12, kicker: "AI Studios · L'essai gratuit" },
   { key: "outils", label: "Pipeline outils", dayOffset: 13, kicker: "Méthode · Mon pipeline" },
   { key: "derniere", label: "Dernier email", dayOffset: 14, kicker: "Dernière séquence" },
 ] as const;
