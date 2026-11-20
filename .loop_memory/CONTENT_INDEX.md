@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-19T07:53:02.116Z
+> Generated: 2026-11-20T07:49:19.464Z
 
-## FR : 368 articles (/blog/<slug>)
+## FR : 369 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 71, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 72, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-20 | actualite | `genie-4-mondes-interactifs-reperage-cinema` | Genie 4 : des mondes à explorer pour repérer tes décors |
 | 2026-11-19 | actualite | `artificial-film-guadagnino-openai-bande-annonce` | Artificial : la bande-annonce du film de Guadagnino sur OpenAI |
 | 2026-11-18 | actualite | `suno-visuals-clips-video-ia-chansons` | Suno Visuals : des clips vidéo IA pour vos chansons |
 | 2026-11-17 | actualite | `c2pa-etiqueter-originalite-pas-ia-adobe` | Étiqueter l'original, pas l'IA : ce que dit le CTO d'Adobe |
@@ -380,12 +381,13 @@ Categories: tutoriels 191, actualite 71, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 283 articles (/en/blog/<slug>)
+## EN : 284 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 32, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 33, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-20 | actualite | `genie-4-mondes-interactifs-reperage-cinema` | Genie 4: worlds you can walk through to scout your sets |
 | 2026-11-19 | actualite | `artificial-film-guadagnino-openai-bande-annonce` | Artificial: the trailer for Guadagnino's OpenAI film |
 | 2026-11-18 | actualite | `suno-visuals-clips-video-ia-chansons` | Suno Visuals: AI video clips for your songs |
 | 2026-11-17 | actualite | `c2pa-etiqueter-originalite-pas-ia-adobe` | Label the original, not the AI: what Adobe's CTO says |

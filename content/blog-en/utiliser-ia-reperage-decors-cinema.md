@@ -1,12 +1,14 @@
 ---
 title: "How to use AI for cinema location scouting"
 date: "2026-04-18"
-dateModified: "2026-05-07"
+dateModified: "2026-11-20"
 category: "tutoriels"
 excerpt: "Practical method to preselect, test and validate cinema locations with AI without losing the field realism."
 ---
 
 # How to use AI for cinema location scouting without picking the wrong place
+
+*Update, November 20, 2026: to walk through a set before you look for it, [Google opens Genie 4, interactive worlds you can explore](/en/blog/genie-4-mondes-interactifs-reperage-cinema).*
 
 You have already lived this scenario. A location found online looks perfect. On site, it is the reverse. The street is impassable, the noise is unmanageable, the light falls in the wrong place, the truck access is impossible, and your schedule explodes. A failed scout costs a lot, not only in money. It breaks the team dynamic and the client trust.
 

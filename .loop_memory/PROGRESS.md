@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-19 (run CLOUD, routine 5 blogs : article d'actualite artificial-film-guadagnino-openai-bande-annonce FR + EN)
+## Last run: 2026-11-20 (run CLOUD, routine 5 blogs : article d'actualite genie-4-mondes-interactifs-reperage-cinema FR + EN)
+
+- Actu Google 18/11 (Diego Rivas, Pavan Kumar) : Genie 4 dans Project Genie pour abonnes AI Ultra eligibles, prompts en cours d'exploration, son natif temps reel, agent, galerie ; Genie 3 sessions 3 min, panoramas 360. API Gemini 19/11 : 720p 24 i/s, texte et/ou image, clavier, SynthID. Createurs cites : Anand Gandhi (The Life of Ants), Will BLVCKL!GHT (Villa Giallo). Limites listees par Google.
+- Angle : reperage avant reperage, previz sonore, bible des lieux ; inconnues (prix API, duree session Genie 4, pays, droits).
+- Coordination des autres sites le 20/11 : BusinessDynamite banques et agents IA, SimpleAIBlog Kling Image 4.0, AI Studios bouton anti-IA de Canva, ScreenWeaver ChatGPT Live Dictation.
+- Images : hero Nano Banana 2 (realisateur explorant un village cotier), captures blog Google x2, schema 3 cartes FR/EN.
+- Lien entrant FR + EN depuis utiliser-ia-reperage-decors-cinema.
+
+## Run precedent : 2026-11-19 (run CLOUD, routine 5 blogs : article d'actualite artificial-film-guadagnino-openai-bande-annonce FR + EN)
 
 - Actu 18/11 : Neon publie la bande-annonce complete d'Artificial (Guadagnino, scenario Simon Rich), Andrew Garfield en Sam Altman, Borisov Sutskever, Barbaro Murati, Rylance Hinton, Barinholtz Musk. Scenes : diner vodka, chatbot qui ment (citation Murati), Candy Crush (Gizmodo). Amazon MGM lache le film (communique 19/06), Neon le reprend en juin ; sortie limitee US 25/12, large 8/01. Sources ABC Audio 18/11, Gizmodo 18/11, Variety 8/09.
 - Angle : film sur l'IA tourne classiquement ; scene d'explication, distribution fragile. Pas de date FR, pas de reaction Altman verifiee (Deadline sous paywall), 4 ou 5 jours selon la source.

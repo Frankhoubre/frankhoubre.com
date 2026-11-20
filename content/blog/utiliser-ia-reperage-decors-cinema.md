@@ -1,12 +1,14 @@
 ---
 title: "Comment utiliser l’IA pour le repérage de décors de cinéma"
 date: "2026-04-18"
-dateModified: "2026-05-07"
+dateModified: "2026-11-20"
 category: "tutoriels"
 excerpt: "Méthode pratique pour présélectionner, tester et valider des décors de cinéma avec l’IA sans perdre le réalisme terrain."
 ---
 
 # Comment utiliser l’IA pour le repérage de décors de cinéma sans se tromper de lieu
+
+*Mise à jour du 20 novembre 2026 : pour visiter un décor avant de le chercher, [Google ouvre Genie 4, des mondes interactifs à explorer](/blog/genie-4-mondes-interactifs-reperage-cinema).*
 
 Tu as déjà vécu ce scénario. Un décor trouvé en ligne a l’air parfait. Sur place, c’est l’inverse. La rue est impraticable, le bruit est ingérable, la lumière tombe au mauvais endroit, l’accès camion est impossible, et ton planning explose. Le repérage raté coûte cher, pas seulement en argent. Il casse la dynamique d’équipe et la confiance du client.
 

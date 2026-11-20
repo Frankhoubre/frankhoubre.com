@@ -267,3 +267,4 @@ GSC query data to pick keywords instead of guessing. See SETUP_LOOP.md.
 - `C2PA / Content Credentials / etiquetage IA / label IA image / originalite` — FILLED: c2pa-etiqueter-originalite-pas-ia-adobe (actu 17/11/2026, FR + EN). Source Digital Trends 15/11 (Ely Greenfield, Adobe) + c2pa.org.
 - `Suno Visuals / clip video IA chanson / lyric video IA / pochette album IA / Suno video` — FILLED: suno-visuals-clips-video-ia-chansons (actu 18/11/2026, FR + EN). Source billet Suno 17/11 + suno.com/visuals + MBW.
 - `Artificial film / film OpenAI Sam Altman / Andrew Garfield Sam Altman / Guadagnino Artificial bande-annonce` — FILLED: artificial-film-guadagnino-openai-bande-annonce (actu 19/11/2026, FR + EN). Sources ABC Audio 18/11, Gizmodo 18/11, Variety 8/09.
+- `Genie 4 / Project Genie / modele de monde Google / world model cinema / reperage decor IA` — FILLED: genie-4-mondes-interactifs-reperage-cinema (actu 20/11/2026, FR + EN). Sources blog Google 18/11 et 19/11.
