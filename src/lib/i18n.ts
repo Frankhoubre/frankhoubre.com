@@ -3,6 +3,7 @@
  * /en. La langue se déduit du chemin (pas de rendu dynamique imposé), ce qui
  * garde le rendu statique du site intact.
  */
+import { RESOURCE_LOCALE_PAIRS } from "./ressources/pairs";
 export type Locale = "fr" | "en";
 
 export const locales: Locale[] = ["fr", "en"];
@@ -32,6 +33,7 @@ const LOCALE_PAIRS: ReadonlyArray<readonly [string, string]> = [
   ["/", "/en"],
   ["/blog", "/en/blog"],
   ["/a-propos", "/en/about"],
+  ...RESOURCE_LOCALE_PAIRS,
 ];
 
 /**
