@@ -117,3 +117,29 @@ export function lostGardenEp2(caption: string): ResourceVideo {
     meta: "21 min",
   };
 }
+
+/** Visuels « avant / après » (public/images/ressources). */
+const R = "/images/ressources";
+export const IMG = {
+  storyboard40: `${R}/seam-storyboard-40.webp`,
+  casePlaine: `${R}/seam-case-plaine.webp`,
+  planPlaine: `${R}/seam-plan-film.webp`,
+  caseInsert: `${R}/seam-case-insert.webp`,
+  ficheStitcher: `${R}/seam-fiche-stitcher.webp`,
+  stillDome: `${R}/seam-still-dome.webp`,
+  stillDechirure: `${R}/seam-still-dechirure.webp`,
+  stillPlaine: `${R}/seam-still-plaine.webp`,
+  stillCoeur: `${R}/seam-still-coeur.webp`,
+  imaginariumPlanche: `${R}/imaginarium-case.webp`,
+  imaginariumAnime: `${R}/imaginarium-anime.webp`,
+  mcpCroquis: `${R}/mcp-croquis.webp`,
+  mcpPlan: `${R}/mcp-plan.webp`,
+  serieVerticale: `${R}/serie-verticale.webp`,
+} as const;
+
+/** Les premières lignes du vrai scénario de The Seam (en anglais dans le projet). */
+export const SEAM_SCRIPT = [
+  "EXT. THE FABRIC PLAIN - DAY",
+  "A pale world made of cloth. Quilted hills of charcoal wool roll toward a tiny wooden house. A long black tear runs across the ivory ground.",
+  "Far away, a thin figure in a black coat: THE STITCHER.",
+];
