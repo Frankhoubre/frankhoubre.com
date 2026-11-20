@@ -129,7 +129,7 @@ export default function PrestationPage() {
         <div className="glow drift" style={{ width: "40vw", height: "40vw", maxWidth: 640, maxHeight: 640, right: "-10%", top: "10%" }} aria-hidden />
         <div className="container-x relative z-[4] flex flex-1 flex-col justify-end pb-12 pt-[calc(var(--header-h)+4rem)] sm:pb-16">
           <p className="meta meta-strong reveal">05 / Prestation conseil IA</p>
-          <h1 id="prestation-title" className="display display-md reveal mt-6 max-w-5xl normal-case leading-[0.98] text-cream" data-delay="0.1">
+          <h1 id="prestation-title" className="display display-md reveal mt-6 max-w-5xl leading-[0.98] text-cream" data-delay="0.1">
             j’accompagne les entreprises et boîtes de prod pour <span className="or">optimiser leur production avec l’IA.</span>
           </h1>
           <div className="grid-12 mt-10 gap-y-8 border-t border-line pt-8">

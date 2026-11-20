@@ -1,35 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HeroSpotlight } from "@/components/motion/HeroSpotlight";
 import { Arrow } from "@/components/ui/Cta";
 
-export type HeroSpec = { label: string; value: string };
-
 export type HomeHeroProps = {
-  /** Repère de dossier en haut à gauche : « 01 / Réalisateur IA ». */
+  /** Repère de dossier au-dessus du nom : « 01 / Réalisateur de films IA ». */
   kicker: string;
-  /** Nom monumental (première ligne du H1). */
+  /** Nom monumental (première ligne du H1). Le dernier mot passe en italique avec la lueur. */
   name: string;
   /** Rôles, deuxième ligne du H1 (mots-clés conservés pour le référencement). */
   roles: string;
   intro: string;
-  /** Quatre annotations en marge droite. */
-  notes: readonly string[];
-  /** Compteur en haut à droite : « 142 articles ». */
-  counter: string;
-  counterLabel: string;
+  /** Ligne de régie en pied de hero : « 369 articles », « 30 distinctions dont 10 prix »… */
+  facts: readonly string[];
   primary: { label: string; href: string; external?: boolean };
   secondary: { label: string; href: string; external?: boolean };
-  specsTitle: string;
-  specs: readonly HeroSpec[];
-  scrollLabel: string;
-  images: {
-    base: { src: string; alt: string };
-    reveal: { src: string; alt: string };
-  };
+  /** Portrait en régie, cadré à droite. */
+  image: { src: string; alt: string };
 };
-
-const REVEAL_ID = "reveal-img";
 
 function SmartLink({
   href,
@@ -57,99 +44,56 @@ function SmartLink({
 }
 
 /**
- * Hero plein écran : photogramme en fondu lent, seconde scène révélée sous
- * le curseur (desktop), nom monumental en bas à gauche, annotations en
- * marge droite, ligne de pied avec intro, actions et repères. Tout le
- * texte est rendu côté serveur ; les mots montent sous un masque côté client.
+ * Hero d'accueil, charte « régie de cinéma » : portrait de Frank en régie à
+ * droite, fondu vers le noir à gauche, nom en capitales Bodoni (le nom de
+ * famille en italique avec la lueur), rôles en capitales machine, filet à
+ * butée, deux actions et une ligne de régie en pied. Tout le texte est rendu
+ * côté serveur, sans état masqué : le H1 est lisible dès la première image.
  */
-export function HomeHero(props: HomeHeroProps) {
-  const {
-    kicker,
-    name,
-    roles,
-    intro,
-    notes,
-    counter,
-    counterLabel,
-    primary,
-    secondary,
-    specsTitle,
-    specs,
-    scrollLabel,
-    images,
-  } = props;
+export function HomeHero({ kicker, name, roles, intro, facts, primary, secondary, image }: HomeHeroProps) {
+  const words = name.split(" ");
+  const last = words.pop();
+  const first = words.join(" ");
+  const [index, ...kickerRest] = kicker.split(" / ");
 
   return (
     <section className="hero" aria-labelledby="hero-title">
-      <HeroSpotlight targetId={REVEAL_ID} />
-
-      <div className="hero-media hero-media-animate">
-        <Image
-          src={images.base.src}
-          alt={images.base.alt}
-          fill
-          priority
-          fetchPriority="high"
-          quality={80}
-          sizes="100vw"
-        />
-      </div>
-      <div className="hero-reveal" id={REVEAL_ID} aria-hidden>
-        <Image src={images.reveal.src} alt="" fill quality={75} sizes="100vw" />
+      <div className="hero-media">
+        <Image src={image.src} alt={image.alt} fill priority fetchPriority="high" quality={82} sizes="(max-width: 860px) 100vw, 70vw" />
       </div>
       <div className="hero-scrim" aria-hidden />
-      <div className="hero-grain" aria-hidden />
 
       <div className="hero-ui">
-        <p className="hero-kicker meta meta-strong reveal" data-delay="0.3">
-          {kicker}
-        </p>
-
-        <div className="hero-side reveal" data-delay="0.4">
-          <p className="display text-[clamp(1.6rem,3vw,2.6rem)] leading-none text-cream">{counter}</p>
-          <p className="meta mt-1">{counterLabel}</p>
-        </div>
-
         <div className="hero-copy">
-          <h1 id="hero-title" className="words-pull-up">
-            <span className="hero-name">{name}</span>
+          <p className="meta flex items-center gap-3">
+            <span className="meta-strong tabular">{index}</span>
+            <span aria-hidden>/</span>
+            <span>{kickerRest.join(" / ")}</span>
+          </p>
+          <h1 id="hero-title">
+            <span className="hero-name">
+              {first} <em>{last}</em>
+            </span>
             <span className="hero-roles">{roles}</span>
           </h1>
-        </div>
-
-        <ul className="hero-notes reveal" data-delay="0.6" aria-label="Repères">
-          {notes.map((note) => (
-            <li key={note}>{note}</li>
-          ))}
-        </ul>
-
-        <div className="hero-bottom reveal" data-delay="0.8">
+          <span className="filet filet-long mt-6" aria-hidden />
           <p className="hero-intro">{intro}</p>
           <div className="hero-actions">
-            <SmartLink href={primary.href} external={primary.external} className="btn btn-primary">
+            <SmartLink href={primary.href} external={primary.external} className="btn btn-primary btn-lg">
               <span>{primary.label}</span>
               <Arrow />
             </SmartLink>
-            <SmartLink href={secondary.href} external={secondary.external} className="btn">
+            <SmartLink href={secondary.href} external={secondary.external} className="btn btn-lg">
               <span>{secondary.label}</span>
               <Arrow />
             </SmartLink>
           </div>
-          <aside className="hero-specs" aria-label={specsTitle}>
-            <p className="meta mb-1">{specsTitle}</p>
-            {specs.map((spec) => (
-              <div key={spec.label} className="spec-row !py-2">
-                <span className="spec-label">{spec.label}</span>
-                <span className="spec-value">{spec.value}</span>
-              </div>
-            ))}
-            <p className="hero-scroll mt-5" aria-hidden>
-              <span className="scroll-cue" />
-              <span className="meta meta-dim">{scrollLabel}</span>
-            </p>
-          </aside>
         </div>
       </div>
+
+      <p className="hero-ligne">
+        <span className="container-x block">{facts.join(" · ")}</span>
+      </p>
     </section>
   );
 }

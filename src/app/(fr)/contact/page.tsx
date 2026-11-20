@@ -74,7 +74,7 @@ export default function ContactPage() {
             <p className="meta">Écrire à</p>
             <a
               href={`mailto:${contactEmail}`}
-              className="display mt-4 block break-all text-[clamp(1.5rem,4.2vw,3.6rem)] normal-case leading-none tracking-[-0.02em] text-cream transition-colors duration-200 hover:text-stone"
+              className="display mt-4 block break-all text-[clamp(1.5rem,4.2vw,3.6rem)] leading-none tracking-[-0.02em] text-cream transition-colors duration-200 hover:text-stone"
             >
               {contactEmail}
             </a>

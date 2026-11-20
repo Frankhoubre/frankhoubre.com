@@ -63,7 +63,7 @@ export function FilmFrame({
           />
         )}
         {label ? (
-          <span className="meta meta-strong absolute left-4 top-3 z-[3] text-[10px]">{label}</span>
+          <span className={`vig-num uppercase ${marks ? "!left-7 !top-7" : ""}`}>{label}</span>
         ) : null}
         {children}
       </div>

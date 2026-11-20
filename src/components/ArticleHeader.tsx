@@ -67,7 +67,7 @@ export function ArticleHeader({
         <span className="text-fog/50" aria-hidden>/</span>
         <span>{minutesLabel}</span>
       </div>
-      <h1 className="article-title mt-4 text-[clamp(2rem,4.6vw,3.6rem)] text-cream sm:mt-6">
+      <h1 className="article-title mt-4 text-[clamp(2.4rem,5.6vw,4.6rem)] text-cream sm:mt-6">
         {title}
       </h1>
       <p className="lede article-lede mt-5 sm:mt-6">{excerpt}</p>

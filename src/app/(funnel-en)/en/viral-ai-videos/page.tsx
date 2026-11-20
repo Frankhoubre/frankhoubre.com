@@ -119,7 +119,7 @@ export default function ViralAiVideosPage() {
             <p className="meta meta-strong reveal">{c.kicker}</p>
             <h1
               id="hero-title"
-              className="reveal mt-6 text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] tracking-[-0.03em] text-cream"
+              className="reveal mt-6 text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] text-cream"
               data-delay="0.1"
             >
               {c.h1a} <span className="text-fog">{c.h1b}</span>

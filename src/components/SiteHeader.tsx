@@ -22,6 +22,8 @@ export function SiteHeader() {
   const homeHref = withLocale("/", locale);
   const ctaLabel = locale === "en" ? "Free training" : "Formation gratuite";
   const tagline = locale === "en" ? "AI filmmaker" : "Réalisateur IA";
+  const [firstName, ...restName] = siteName.split(" ");
+  const lastName = restName.join(" ");
   const isHome = pathname === homeHref;
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,9 +60,8 @@ export function SiteHeader() {
     <header className={`site-header ${solid ? "is-solid" : ""}`}>
       <div className="container-x flex h-[var(--header-h)] items-center justify-between gap-6">
         <Link href={homeHref} className="group flex min-h-11 shrink-0 items-center gap-3 whitespace-nowrap no-underline" aria-label={siteName}>
-          <span className="inline-flex items-center gap-2 font-[family-name:var(--font-display)] text-[17px] font-bold lowercase tracking-[-0.04em] text-cream">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber shadow-[0_0_10px_rgb(255_210_70/0.9)]" aria-hidden />
-            {siteName}
+          <span className="marque">
+            {firstName} <em>{lastName}</em>
           </span>
           <span className="meta hidden text-[10px] text-fog transition-colors duration-200 group-hover:text-stone xl:inline">
             {tagline}

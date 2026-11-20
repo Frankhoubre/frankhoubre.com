@@ -33,10 +33,11 @@ export function SectionHeader({
   size = "section",
 }: Props) {
   return (
-    <div className={`grid-12 items-end gap-y-6 ${className}`}>
-      <div className="col-span-12 flex items-baseline gap-4 lg:col-span-3 lg:block">
+    <div className={`grid-12 items-end gap-y-5 ${className}`}>
+      <div className="col-span-12 flex items-center gap-3 lg:col-span-3 lg:self-start lg:pt-3">
         {index ? <span className="meta meta-strong tabular">{index}</span> : null}
-        <p className={`meta ${index ? "lg:mt-2" : ""}`}>{kicker}</p>
+        <span className="filet filet-court" aria-hidden />
+        <p className="meta meta-strong">{kicker}</p>
       </div>
       <div className="col-span-12 lg:col-span-7">
         <Tag id={id} className={size === "section" ? "h-section" : "h-block"}>

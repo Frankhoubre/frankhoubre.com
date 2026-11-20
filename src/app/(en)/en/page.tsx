@@ -143,24 +143,14 @@ export default function EnHomePage() {
       <RevealObserver />
 
       <HomeHero
-        kicker="01 / AI filmmaker · AI trainer · Creative director"
+        kicker="01 / AI filmmaker"
         name="Frank Houbre"
         roles="AI filmmaker, AI trainer and creative director."
         intro="I help creators, freelancers, agencies and brands make AI images, videos and films that look believable, with a real method for art direction and production."
-        notes={["Image", "Video", "Film", "Method"]}
-        counter={String(posts.length)}
-        counterLabel="articles in English"
+        facts={[`${posts.length} articles in English`, "30 distinctions, 10 of them awards", "Ronces, VOIDBORN, Lost Garden"]}
         primary={{ label: "AI Studios training", href: "https://www.skool.com/ai-studios", external: true }}
         secondary={{ label: "Read the blog", href: "/en/blog" }}
-        specsTitle="At a glance"
-        specs={[
-          { label: "Training", value: "AI Studios, ScreenWeaver" },
-          { label: "Films", value: "Ronces, VOIDBORN, Lost Garden" },
-          { label: "Awards", value: "SIAFF Seoul, Chroma Awards" },
-          { label: "Channel", value: "Business Dynamite" },
-        ]}
-        scrollLabel="Scroll"
-        images={{ base: homeHeroImages.base, reveal: homeHeroImages.reveal }}
+        image={{ src: homeHeroImages.portrait.src, alt: "Frank Houbre, AI filmmaker, smiling in his control room, microphone in hand, reaching out to the camera" }}
       />
 
       {/* 02 · The approach */}

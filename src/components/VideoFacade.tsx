@@ -86,7 +86,7 @@ export function VideoFacade({
         aria-hidden
       />
       {caption ? (
-        <span className="meta meta-strong absolute left-6 top-5 z-[3] text-[10px]">{caption}</span>
+        <span className="vig-num !left-7 !top-7 uppercase">{caption}</span>
       ) : null}
       {meta ? (
         <span className="meta absolute right-6 top-5 z-[3] text-[10px]">{meta}</span>

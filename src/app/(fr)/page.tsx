@@ -306,24 +306,14 @@ export default function HomePage() {
       <RevealObserver />
 
       <HomeHero
-        kicker="01 / Formateur IA · Réalisateur IA · Créateur vidéo"
+        kicker="01 / Réalisateur de films IA"
         name="Frank Houbre"
         roles="Formateur IA, réalisateur IA et créateur vidéo."
         intro="J’aide les créateurs, indépendants, agences et marques à produire des images, vidéos et films IA crédibles, avec une vraie méthode de direction artistique et de production."
-        notes={["Image", "Vidéo", "Film", "Méthode"]}
-        counter={String(allPosts.length)}
-        counterLabel="articles publiés"
+        facts={[`${allPosts.length} articles`, "30 distinctions dont 10 prix", "Ronces, VOIDBORN, Lost Garden"]}
         primary={{ label: "Formation AI Studios", href: "https://www.skool.com/ai-studios", external: true }}
         secondary={{ label: "Voir les films IA", href: "#projets" }}
-        specsTitle="Repères"
-        specs={[
-          { label: "Formation", value: "AI Studios, ScreenWeaver" },
-          { label: "Films", value: "Ronces, VOIDBORN, Lost Garden" },
-          { label: "Prix", value: "SIAFF Séoul, Chroma Awards" },
-          { label: "Chaîne", value: "Business Dynamite" },
-        ]}
-        scrollLabel="Défiler"
-        images={{ base: homeHeroImages.base, reveal: homeHeroImages.reveal }}
+        image={homeHeroImages.portrait}
       />
 
       {galleryImages.length > 0 ? (
@@ -377,7 +367,18 @@ export default function HomePage() {
               </div>
             </div>
             <aside className="col-span-12 reveal lg:col-span-3" data-delay="0.2" aria-label="Signaux publics">
-              <p className="meta">Signaux publics</p>
+              <p className="meta">Palmarès</p>
+              <p className="mt-3 flex items-center gap-4">
+                <span className="titre lueur text-[clamp(5rem,9vw,8rem)] leading-[0.8]">30</span>
+                <span className="meta meta-strong text-[12px] leading-relaxed">
+                  distinctions
+                  <br />
+                  internationales
+                  <br />
+                  <span className="lueur-2">dont 10 prix</span>
+                </span>
+              </p>
+              <p className="meta mt-10">Signaux publics</p>
               <ul className="mt-4">
                 {[
                   "Entrepreneuriat tech, création de contenus et pédagogie autour de l’IA.",

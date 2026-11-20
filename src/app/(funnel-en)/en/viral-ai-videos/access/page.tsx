@@ -91,7 +91,7 @@ export default async function ViralAiVideosAccessPage({
             </div>
           ) : null}
           <p className="meta meta-strong reveal">00 / {c.kicker}</p>
-          <h1 className="reveal mt-6 max-w-4xl text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] tracking-[-0.03em] text-cream" data-delay="0.1">
+          <h1 className="reveal mt-6 max-w-4xl text-[clamp(2rem,4.8vw,4.25rem)] leading-[0.98] text-cream" data-delay="0.1">
             {c.title}
           </h1>
           {c.intro.map((p, i) => (

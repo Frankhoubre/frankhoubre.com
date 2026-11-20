@@ -43,7 +43,8 @@ export function PageHeader({
         <div className="col-span-12 lg:col-span-9">
           <p className="meta flex items-center gap-3">
             {index ? <span className="meta-strong tabular">{index}</span> : null}
-            <span>{kicker}</span>
+            <span className="filet filet-court" aria-hidden />
+            <span className="meta-strong">{kicker}</span>
           </p>
           <h1 className={`mt-5 ${SIZES[size]}`}>{title}</h1>
           {lede ? <div className="lede mt-6 max-w-3xl">{lede}</div> : null}
