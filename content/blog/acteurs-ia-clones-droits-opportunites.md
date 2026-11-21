@@ -4,9 +4,12 @@ date: "2026-10-01"
 category: "analyses"
 excerpt: "Réplique numérique, voix clonée, performer synthétique : ce que la loi protège vraiment en France, et où un acteur peut licencier son image."
 thumbnail: "/images/blog/acteurs-ia-clones-droits-opportunites/hero.webp"
+dateModified: "2026-11-21"
 ---
 
 # Acteur et clone IA : droits, contrats et opportunités
+
+*Mise à jour du 21 novembre 2026 : aux États-Unis, Paris Hilton relance la loi DEFIANCE contre les deepfakes sexuels. Ce que ça change pour les créateurs dans [notre article d'actualité](/blog/loi-defiance-deepfakes-sexuels-createurs).*
 
 Un contrat de trois pages, une ligne perdue au milieu du paragraphe 7, et le mot « réplique numérique » glissé entre deux phrases sur les droits de diffusion. Voilà par où la question arrive chez la plupart des comédiens. Une signature à rendre avant vendredi, sur un texte que personne autour de la table n'a vraiment lu.
 

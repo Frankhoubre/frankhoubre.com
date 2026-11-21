@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-20 (run CLOUD, routine 5 blogs : article d'actualite genie-4-mondes-interactifs-reperage-cinema FR + EN)
+## Last run: 2026-11-21 (run CLOUD, routine 5 blogs : article d'actualite loi-defiance-deepfakes-sexuels-createurs FR + EN)
+
+- Actu 17/11 (TNW Ana-Maria Stanciuc 18/11, Gray DC Stetson Miller 18/11) : Paris Hilton au Capitole avec AOC et Laurel Lee, demande le vote de la loi DEFIANCE (recours civil contre ceux qui creent, partagent, publient ou menacent de partager), Senat unanime en janvier, Chambre jamais votee, 70 coparrains 35/35, Microsoft Snap OpenAI soutiennent ; plus de 100 000 deepfakes d'elle ; 83 des 156 elues (chiffre de son equipe). Complement du Take It Down Act (mai 2025, retrait 48 h). Droit francais : page CNIL (226-8, 1 an / 15 000 euros, aggrave si sexuel).
+- Angle : visage reel = terrain mine pour le createur, accord ecrit, partage = creation, traçabilite, personnages inventes.
+- Coordination des autres sites le 21/11 : BusinessDynamite Le Figaro x OpenAI, SimpleAIBlog MAI Image 2.7 Flash, AI Studios Gemini agent Mac, ScreenWeaver Christopher Hampton.
+- Images : hero Nano Banana 2 (realisatrice lisant une autorisation de droit a l'image), captures TNW et CNIL, schema 3 colonnes FR/EN.
+- Lien entrant FR + EN depuis acteurs-ia-clones-droits-opportunites.
+
+## Run precedent : 2026-11-20 (run CLOUD, routine 5 blogs : article d'actualite genie-4-mondes-interactifs-reperage-cinema FR + EN)
 
 - Actu Google 18/11 (Diego Rivas, Pavan Kumar) : Genie 4 dans Project Genie pour abonnes AI Ultra eligibles, prompts en cours d'exploration, son natif temps reel, agent, galerie ; Genie 3 sessions 3 min, panoramas 360. API Gemini 19/11 : 720p 24 i/s, texte et/ou image, clavier, SynthID. Createurs cites : Anand Gandhi (The Life of Ants), Will BLVCKL!GHT (Villa Giallo). Limites listees par Google.
 - Angle : reperage avant reperage, previz sonore, bible des lieux ; inconnues (prix API, duree session Genie 4, pays, droits).

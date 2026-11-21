@@ -1,13 +1,15 @@
 ---
 title: "AI actor clones: your rights, contracts and the market"
 date: "2026-10-01"
-dateModified: "2026-11-06"
+dateModified: "2026-11-21"
 category: "analyses"
 excerpt: "Digital replicas, cloned voices, synthetic performers: what the law actually protects, and where an actor can license a face or a voice today."
 thumbnail: "/images/blog/acteurs-ia-clones-droits-opportunites/hero.webp"
 ---
 
 # AI actor clones: your rights, contracts and the market
+
+*Update, November 21, 2026: in the US, Paris Hilton is pushing the DEFIANCE Act against sexual deepfakes again. What it means for creators in [our news article](/en/blog/loi-defiance-deepfakes-sexuels-createurs).*
 
 A three-page contract, one line buried in paragraph 7, and the words "digital replica" slipped between two sentences about distribution rights. That is how the question reaches most actors. A signature due Friday, on a document nobody around the table has really read.
 
