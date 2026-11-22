@@ -4,10 +4,12 @@ date: "2026-09-19"
 category: "analyses"
 excerpt: "Ce que l'IA a déjà remplacé sur les plateaux, ce qu'elle ne remplace pas en 2026, et mon pari pour 2030, plan par plan et avec les chiffres."
 thumbnail: "/images/blog/cinema-ia-remplacer-tournages/hero.webp"
-dateModified: "2026-09-27"
+dateModified: "2026-11-22"
 ---
 
 # Cinéma IA : va-t-il remplacer les tournages ? Mon avis
+
+*Mise à jour du 22 novembre 2026 : Topview parie justement sur des tournages avec de vrais acteurs, l'IA gérant lumière, angles et figurants. Je détaille son annonce dans [Topview mise sur le film hybride](/blog/topview-film-hybride-acteurs-ia).*
 
 Un producteur m'a posé la question à la fin d'une formation, en rangeant son ordinateur. « Dans cinq ans, on tourne encore ? » Il ne cherchait pas un débat. Il avait deux longs métrages en développement, un plan de financement à boucler, et il voulait savoir s'il investissait dans un métier ou dans un souvenir.
 

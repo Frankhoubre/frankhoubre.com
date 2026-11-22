@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-21 (run CLOUD, routine 5 blogs : article d'actualite loi-defiance-deepfakes-sexuels-createurs FR + EN)
+## Last run: 2026-11-22 (run CLOUD, routine 5 blogs : article d'actualite topview-film-hybride-acteurs-ia FR + EN)
+
+- Actu ~20/11 (TV Tech Jenny Priestley, Unite.ai sur Video Relight lance le 19/11, page topview.ai/film-studio) : Topview presente Film Studio 2.0 comme premiere plateforme de film hybride (vrais acteurs + decors, plans, VFX IA). Outils : Video Relight (sphere en platre), Video Element Edit, Camera Angle Presets, Add Extras, Change Time and Weather, fond vert, calques. Citation Jensen Wu (PDG) : films 100 % IA freines par Hollywood, revenus limites a YouTube. Prix non publie.
+- Angle : l'IA remplace ce qui coute cher autour de l'acteur, pas l'acteur ; conseils tournage propre, angles generes en inserts, figurants, contrat d'acteur.
+- Coordination des autres sites le 22/11 : AI Studios Etsy IA vendeurs, SimpleAIBlog Gemini GIF, BusinessDynamite barre laterale IA de la page d'accueil Google, ScreenWeaver fermeture d'AI Screenwriter.
+- Images : hero Nano Banana 2 (actrice sous un reverbere, cour parisienne pluvieuse), captures TV Tech x2, schema FR/EN.
+- Liens entrants : FR depuis cinema-ia-remplacer-tournages, EN depuis generer-effets-speciaux-vfx-outils-ia.
+
+## Run precedent : 2026-11-21 (run CLOUD, routine 5 blogs : article d'actualite loi-defiance-deepfakes-sexuels-createurs FR + EN)
 
 - Actu 17/11 (TNW Ana-Maria Stanciuc 18/11, Gray DC Stetson Miller 18/11) : Paris Hilton au Capitole avec AOC et Laurel Lee, demande le vote de la loi DEFIANCE (recours civil contre ceux qui creent, partagent, publient ou menacent de partager), Senat unanime en janvier, Chambre jamais votee, 70 coparrains 35/35, Microsoft Snap OpenAI soutiennent ; plus de 100 000 deepfakes d'elle ; 83 des 156 elues (chiffre de son equipe). Complement du Take It Down Act (mai 2025, retrait 48 h). Droit francais : page CNIL (226-8, 1 an / 15 000 euros, aggrave si sexuel).
 - Angle : visage reel = terrain mine pour le createur, accord ecrit, partage = creation, traçabilite, personnages inventes.

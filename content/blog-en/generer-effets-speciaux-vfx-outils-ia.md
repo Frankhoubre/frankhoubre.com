@@ -1,12 +1,14 @@
 ---
 title: "How to Generate Special Effects (VFX) With AI Tools"
 date: "2026-04-20"
-dateModified: "2026-05-07"
+dateModified: "2026-11-22"
 category: "tutoriels"
 excerpt: "A complete method to create credible AI VFX, from the shot diagnosis to the final compositing with no artificial render."
 ---
 
 # How to Generate Special Effects (VFX) With AI Tools With No Fake Render
+
+*Update, November 22, 2026: Topview now bundles relighting, new camera angles and AI extras on top of live-action footage. I cover the announcement in [Topview bets on hybrid film](/en/blog/topview-film-hybride-acteurs-ia).*
 
 You open your shot, you lay a spectacular AI effect, and for two seconds you tell yourself it is incredible. Then you watch in real playback and everything breaks. The effect floats, the light does not match, the motion blur is false, the perspective slides, and your viewer immediately feels that it is "stuck on". It is exactly there that beginners abandon AI VFX too fast.
 

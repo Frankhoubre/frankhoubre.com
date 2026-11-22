@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-21T07:52:12.336Z
+> Generated: 2026-11-22T07:59:36.434Z
 
-## FR : 370 articles (/blog/<slug>)
+## FR : 371 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 73, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 74, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-22 | actualite | `topview-film-hybride-acteurs-ia` | Topview mise sur le film hybride : vrais acteurs, décors IA |
 | 2026-11-21 | actualite | `loi-defiance-deepfakes-sexuels-createurs` | Deepfakes sexuels : Paris Hilton relance la loi DEFIANCE |
 | 2026-11-20 | actualite | `genie-4-mondes-interactifs-reperage-cinema` | Genie 4 : des mondes à explorer pour repérer tes décors |
 | 2026-11-19 | actualite | `artificial-film-guadagnino-openai-bande-annonce` | Artificial : la bande-annonce du film de Guadagnino sur OpenAI |
@@ -382,12 +383,13 @@ Categories: tutoriels 191, actualite 73, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 285 articles (/en/blog/<slug>)
+## EN : 286 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 34, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 35, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-22 | actualite | `topview-film-hybride-acteurs-ia` | Topview bets on hybrid film: real actors, AI sets |
 | 2026-11-21 | actualite | `loi-defiance-deepfakes-sexuels-createurs` | Sexual deepfakes: Paris Hilton pushes the DEFIANCE Act again |
 | 2026-11-20 | actualite | `genie-4-mondes-interactifs-reperage-cinema` | Genie 4: worlds you can walk through to scout your sets |
 | 2026-11-19 | actualite | `artificial-film-guadagnino-openai-bande-annonce` | Artificial: the trailer for Guadagnino's OpenAI film |
