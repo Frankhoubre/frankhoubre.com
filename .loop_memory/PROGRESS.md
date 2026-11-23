@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-22 (run CLOUD, routine 5 blogs : article d'actualite topview-film-hybride-acteurs-ia FR + EN)
+## Last run: 2026-11-23 (run CLOUD, routine 5 blogs : article d'actualite harari-ia-pente-glissante-deepfake-seydoux FR + EN)
+
+- Actu 22/11 (Variety, Christopher Vourlias) : Arthur Harari au Festival de Marrakech (Conversations, avec Charles Tesson) : n'a jamais utilise l'IA, puis admet un outil de deepfake pour la scene ou Lea Seydoux embrasse Lea Seydoux dans L'Inconnu (Cannes 2026), "toujours un humain" ; IA legitime pour la recherche, "pente tres glissante" pour l'ecriture (addiction, telephones).
+- Angle : la ligne recherche / effets sous controle / ecriture ; consentement de l'actrice vs deepfake non consenti.
+- Coordination des autres sites le 23/11 : AI Studios musique Suno dans Binding of Isaac, SimpleAIBlog defauts IA reproches au film de Fincher (Cliff Booth), ScreenWeaver Paul Schrader et l'IA (Guardian), BusinessDynamite Signal bloque les captures face aux agents IA.
+- Images : hero Nano Banana 2 (truquiste, ecran partage de deux silhouettes), 2 captures Variety, schema FR/EN.
+- Liens entrants FR + EN depuis ia-ecriture-creative-garder-les-idees.
+
+## Run precedent : 2026-11-22 (run CLOUD, routine 5 blogs : article d'actualite topview-film-hybride-acteurs-ia FR + EN)
 
 - Actu ~20/11 (TV Tech Jenny Priestley, Unite.ai sur Video Relight lance le 19/11, page topview.ai/film-studio) : Topview presente Film Studio 2.0 comme premiere plateforme de film hybride (vrais acteurs + decors, plans, VFX IA). Outils : Video Relight (sphere en platre), Video Element Edit, Camera Angle Presets, Add Extras, Change Time and Weather, fond vert, calques. Citation Jensen Wu (PDG) : films 100 % IA freines par Hollywood, revenus limites a YouTube. Prix non publie.
 - Angle : l'IA remplace ce qui coute cher autour de l'acteur, pas l'acteur ; conseils tournage propre, angles generes en inserts, figurants, contrat d'acteur.

@@ -5,7 +5,10 @@ time: "09:00"
 category: "actualite"
 excerpt: "Une étude publiée dans PNAS Nexus compare trois façons d'écrire avec l'IA. Laisser l'IA tout faire donne les pires histoires. Ce que ça change pour ton scénario."
 thumbnail: "/images/blog/ia-ecriture-creative-garder-les-idees/hero.webp"
+dateModified: "2026-11-23"
 ---
+
+*Mise à jour du 23 novembre 2026 : à Marrakech, Arthur Harari, coscénariste d'Anatomie d'une chute, juge l'IA légitime pour la recherche mais « une pente très glissante » pour l'écriture. [Ce qu'il a dit](/blog/harari-ia-pente-glissante-deepfake-seydoux).*
 
 Quand tu écris un scénario avec l'IA, la question n'est pas seulement « est-ce que je l'utilise ? ». C'est **à quel moment**. Une étude publiée le **10 novembre 2026** dans la revue scientifique **PNAS Nexus** le montre assez clairement : la même IA donne des histoires très différentes selon la part du travail que tu lui laisses.
 

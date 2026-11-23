@@ -270,3 +270,4 @@ GSC query data to pick keywords instead of guessing. See SETUP_LOOP.md.
 - `Genie 4 / Project Genie / modele de monde Google / world model cinema / reperage decor IA` — FILLED: genie-4-mondes-interactifs-reperage-cinema (actu 20/11/2026, FR + EN). Sources blog Google 18/11 et 19/11.
 - `loi DEFIANCE / DEFIANCE Act / deepfake sexuel loi / Paris Hilton deepfake / droit a l'image IA createur` — FILLED: loi-defiance-deepfakes-sexuels-createurs (actu 21/11/2026, FR + EN). Sources The Next Web 18/11, Gray DC 18/11, CNIL.
 - `Topview Film Studio / film hybride IA / Video Relight / acteurs reels et IA / figurants IA` — FILLED: topview-film-hybride-acteurs-ia (actu 22/11/2026, FR + EN). Sources TV Tech ~20/11, Unite.ai, topview.ai.
+- `Arthur Harari IA / L'Inconnu deepfake / Lea Seydoux deepfake / IA ecriture scenario pente glissante / Marrakech IA` — FILLED: harari-ia-pente-glissante-deepfake-seydoux (actu 23/11/2026, FR + EN). Source Variety 22/11.

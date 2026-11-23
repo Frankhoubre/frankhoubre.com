@@ -5,7 +5,10 @@ time: "09:00"
 category: "actualite"
 excerpt: "A study in PNAS Nexus compares three ways of writing with AI. Letting AI do everything gives the weakest stories. What it means for your screenplay."
 thumbnail: "/images/blog/ia-ecriture-creative-garder-les-idees/hero.webp"
+dateModified: "2026-11-23"
 ---
+
+*Update, November 23, 2026: in Marrakech, Anatomy of a Fall co-writer Arthur Harari called AI legitimate for research but "a very slippery slope" for writing. [What he said](/en/blog/harari-ia-pente-glissante-deepfake-seydoux).*
 
 When you write a screenplay with AI, the question is not only "do I use it?". It is **when**. A study published on **November 10, 2026** in the scientific journal **PNAS Nexus** shows it fairly clearly: the same AI produces very different stories depending on how much of the work you hand over.
 
