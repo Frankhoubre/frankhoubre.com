@@ -2,6 +2,7 @@
 title: "Grimes stars in Gods Don't Give Gifts, an AI film for theaters"
 date: "2026-11-06"
 time: "09:15"
+dateModified: "2026-11-24"
 category: "actualite"
 excerpt: "Grimes lends her voice and likeness to the AI film Gods Don't Give Gifts, in US theaters on December 4. What is human, what is AI, and what it means for you."
 thumbnail: "/images/blog/grimes-film-ia-gods-dont-give-gifts/hero.webp"
@@ -12,6 +13,8 @@ On November 5, 2026, the studio Fable announced that Grimes has joined the cast 
 It's the first time an artist this well known has taken a role in an AI film headed for theaters. I couldn't find Fable's press release online, so what follows comes from the articles published on November 5 by [PEOPLE](https://www.yahoo.com/entertainment/movies/articles/grimes-feature-film-debut-fully-170200192.html), [Forbes](https://www.forbes.com/sites/maureenkerr/2026/11/05/grimes-joins-ai-film-gods-dont-give-gifts-ahead-of-december-4-release/), [Billboard](https://www.billboard.com/culture/tv-film/grimes-star-first-ai-movie-coming-theaters-video-clip-1236375024/), [Consequence](https://consequence.net/2026/11/grimes-gods-dont-give-gifts-ai-film/) and [The Verge](https://www.theverge.com/entertainment/1026282/grimes-ai-movie), which quote that release and the filmmakers. I read them on November 6.
 
 ![A short-haired voice performer records a line with her eyes closed and one hand raised, at a microphone with a pop filter in a small amber-lit booth, while a sound engineer listens on headphones behind the glass](/images/blog/grimes-film-ia-gods-dont-give-gifts/hero.webp)
+
+*Update, November 24, 2026: the Academy ruled the film ineligible for Best Animated Feature, and Fable plans to appeal. [What the rule says and what it means](/en/blog/oscar-animation-gods-dont-give-gifts-ineligible).*
 
 ## What was announced on November 5
 

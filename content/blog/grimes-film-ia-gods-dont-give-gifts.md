@@ -2,6 +2,7 @@
 title: "Grimes joue dans Gods Don't Give Gifts, film IA en salles"
 date: "2026-11-06"
 time: "09:15"
+dateModified: "2026-11-24"
 category: "actualite"
 excerpt: "Grimes prête sa voix et son apparence au film IA Gods Don't Give Gifts, en salles le 4 décembre. Ce qui est humain, ce qui est IA, et ce que ça change pour toi."
 thumbnail: "/images/blog/grimes-film-ia-gods-dont-give-gifts/hero.webp"
@@ -12,6 +13,8 @@ Le 5 novembre 2026, le studio Fable a annoncé que Grimes rejoint la distributio
 C'est la première fois qu'une artiste de cette notoriété tient un rôle dans un film IA destiné aux salles. Je n'ai pas trouvé le communiqué de Fable en ligne : ce qui suit vient des articles publiés le 5 novembre par [PEOPLE](https://www.yahoo.com/entertainment/movies/articles/grimes-feature-film-debut-fully-170200192.html), [Forbes](https://www.forbes.com/sites/maureenkerr/2026/11/05/grimes-joins-ai-film-gods-dont-give-gifts-ahead-of-december-4-release/), [Billboard](https://www.billboard.com/culture/tv-film/grimes-star-first-ai-movie-coming-theaters-video-clip-1236375024/), [Consequence](https://consequence.net/2026/11/grimes-gods-dont-give-gifts-ai-film/) et [The Verge](https://www.theverge.com/entertainment/1026282/grimes-ai-movie), qui citent ce communiqué et les équipes du film. Je les ai lus ce 6 novembre.
 
 ![Une comédienne de voix aux cheveux courts enregistre une réplique les yeux fermés, la main levée, devant un micro à filtre anti-pop dans une petite cabine éclairée en ambre, pendant qu'un ingénieur du son l'écoute au casque derrière la vitre](/images/blog/grimes-film-ia-gods-dont-give-gifts/hero.webp)
+
+*Mise à jour du 24 novembre 2026 : l'Académie a jugé le film inéligible à l'Oscar du meilleur film d'animation, et Fable va faire appel. [Ce que dit la règle et ce que ça change](/blog/oscar-animation-gods-dont-give-gifts-ineligible).*
 
 ## Ce qui a été annoncé le 5 novembre
 

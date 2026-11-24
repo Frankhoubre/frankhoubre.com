@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-23 (run CLOUD, routine 5 blogs : article d'actualite harari-ia-pente-glissante-deepfake-seydoux FR + EN)
+## Last run: 2026-11-24 (run CLOUD, routine 5 blogs : article d'actualite oscar-animation-gods-dont-give-gifts-ineligible FR + EN)
+
+- Actu 23/11 (IndieWire, Brian Welk) : l'Academie ne retient pas Gods Don't Give Gifts (Zack London / Gossip Goblin, Fable) parmi les 38 films eligibles a l'Oscar de l'animation : mouvement cree "par tout moyen humain" ; appel annonce par Edward Saatchi (precedent Apollo 10 1/2) ; film soumis aussi en realisation, scenario adapte, VFX, son.
+- Angle : documenter qui fait quoi, l'Academie juge la part humaine ; categorie "film IA" = reconnaissance ou ghetto.
+- Coordination des autres sites le 24/11 : AI Studios proces de l'Oregon et de la Virginie contre Grok Imagine, SimpleAIBlog rachat de Decart par Amazon, ScreenWeaver Morgan Freeman et Lori McCreary (Fortune), BusinessDynamite Walmart et l'agent Muse de Meta.
+- Images : hero Nano Banana 2 (salle de cinema vide), 2 captures IndieWire, schema FR/EN.
+- Liens entrants FR + EN depuis grimes-film-ia-gods-dont-give-gifts.
+
+## Run precedent : 2026-11-23 (run CLOUD, routine 5 blogs : article d'actualite harari-ia-pente-glissante-deepfake-seydoux FR + EN)
 
 - Actu 22/11 (Variety, Christopher Vourlias) : Arthur Harari au Festival de Marrakech (Conversations, avec Charles Tesson) : n'a jamais utilise l'IA, puis admet un outil de deepfake pour la scene ou Lea Seydoux embrasse Lea Seydoux dans L'Inconnu (Cannes 2026), "toujours un humain" ; IA legitime pour la recherche, "pente tres glissante" pour l'ecriture (addiction, telephones).
 - Angle : la ligne recherche / effets sous controle / ecriture ; consentement de l'actrice vs deepfake non consenti.
