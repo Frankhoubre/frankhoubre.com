@@ -48,6 +48,58 @@ export type ResourceState = {
   tile: ResourceTile;
 };
 
+/** Une illustration du gabarit court : image réelle ou schéma dessiné en code. */
+export type ResourceArt =
+  | {
+      kind: "image";
+      src: string;
+      alt: string;
+      /** Proportions du cadre, en CSS : « 16 / 9 », « 4 / 5 ». */
+      aspect: string;
+      position?: string;
+      /** Image verticale : cadre plus étroit. */
+      narrow?: boolean;
+    }
+  /** Matière brute : une idée, une description, une phrase. */
+  | { kind: "note"; text: string }
+  /** Une page de scénario au format pro. */
+  | { kind: "script"; lines: string[] }
+  /** Le plan en grand (et sa version verticale), puis la timeline des plans. */
+  | {
+      kind: "timeline";
+      main: { src: string; alt: string };
+      /** Cadrage de la version 9:16 du même plan ; absent = pas de version verticale. */
+      vertical?: string;
+      thumbs: { src: string; alt: string }[];
+      selected: number;
+    }
+  /** Des blocs reliés, le dernier mis en avant. Un bloc porte une image ou un texte. */
+  | {
+      kind: "flow";
+      nodes: { label: string; src?: string; alt?: string; position?: string; text?: string }[];
+      /** false : blocs posés côte à côte, sans lien ni bouton lecture. */
+      link?: boolean;
+    }
+  /** Des cartes courtes : épisodes, scènes, réglages. */
+  | { kind: "cards"; items: { text: string; tag?: string; on?: boolean }[] }
+  /** Un échange avec l'assistant. */
+  | { kind: "chat"; user: string; reply: string };
+
+/**
+ * Version courte et visuelle de la page : la transformation en ouverture,
+ * puis une illustration et une phrase par étape, puis l'appel. Aucune vidéo.
+ * Quand ce bloc existe, il remplace le gabarit long.
+ */
+export type ResourceVisual = {
+  title: string;
+  titleGold: string;
+  lede: string;
+  before: { label: string; art: ResourceArt };
+  after: { label: string; art: ResourceArt };
+  steps: { title: string; text: string; art: ResourceArt }[];
+  cta: { title: string; text: string };
+};
+
 export type Resource = {
   /** Mot commenté sous le reel (sert au suivi, jamais affiché tel quel). */
   word: string;
@@ -75,6 +127,7 @@ export type Resource = {
     link?: ResourceLink;
   };
   steps: ResourceStep[];
+  visual?: ResourceVisual;
   trap: { title: string; text: string };
   extra?: { title: string; text: string; link: ResourceLink };
   cta: {

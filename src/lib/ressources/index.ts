@@ -2,12 +2,19 @@ import { RESOURCES_EN } from "./en";
 import { RESOURCES_FR } from "./fr";
 import { RESOURCE_BASE, RESOURCE_SLUG_PAIRS } from "./pairs";
 import type { Resource, ResourceLocale } from "./types";
+import { visualFor } from "./visuals";
 
 export type { Resource, ResourceLocale } from "./types";
 export { RESOURCE_BASE } from "./pairs";
 
+/** Chaque page reçoit son gabarit court (visuals.ts), qui remplace le gabarit long. */
+const BY_LOCALE: Record<ResourceLocale, Resource[]> = {
+  fr: RESOURCES_FR.map((r) => ({ ...r, visual: visualFor("fr", r.slug) })),
+  en: RESOURCES_EN.map((r) => ({ ...r, visual: visualFor("en", r.slug) })),
+};
+
 export function resourcesFor(locale: ResourceLocale): Resource[] {
-  return locale === "fr" ? RESOURCES_FR : RESOURCES_EN;
+  return BY_LOCALE[locale];
 }
 
 export function getResource(locale: ResourceLocale, slug: string): Resource | undefined {
@@ -26,4 +33,9 @@ for (const [fr, en] of RESOURCE_SLUG_PAIRS) {
 }
 if (RESOURCES_FR.length !== RESOURCE_SLUG_PAIRS.length || RESOURCES_EN.length !== RESOURCE_SLUG_PAIRS.length) {
   throw new Error("Une page ressource manque dans pairs.ts");
+}
+for (const locale of ["fr", "en"] as const) {
+  for (const r of resourcesFor(locale)) {
+    if (!r.visual) throw new Error(`Gabarit court manquant : ${locale}/${r.slug}`);
+  }
 }

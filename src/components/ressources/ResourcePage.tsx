@@ -8,6 +8,8 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { SPONSORED_REL } from "@/lib/affiliate";
 import { buildBreadcrumbList, buildGraphJsonLd, pageUrl } from "@/lib/metadata";
 import { RESOURCE_BASE, resourcePath, resourcesFor, type Resource } from "@/lib/ressources";
+import { LevelBadge } from "./LevelBadge";
+import { ResourceVisualPage } from "./ResourceVisualPage";
 import type { ResourceState, ResourceTile } from "@/lib/ressources/types";
 
 const UI = {
@@ -129,6 +131,7 @@ function StateText({ state, letter, label, after, className }: { state: Resource
 }
 
 export function ResourcePage({ resource: r }: { resource: Resource }) {
+  if (r.visual) return <ResourceVisualPage resource={r} visual={r.visual} />;
   const t = UI[r.locale];
   const path = resourcePath(r.locale, r.slug);
   const home = r.locale === "fr" ? "/" : "/en";
@@ -173,9 +176,12 @@ export function ResourcePage({ resource: r }: { resource: Resource }) {
         <div className="scrim" aria-hidden />
         <div className="glow drift" style={{ width: "40vw", height: "40vw", maxWidth: 640, maxHeight: 640, right: "-10%", top: "8%" }} aria-hidden />
         <div className="container-x relative z-[4] flex flex-1 flex-col justify-end pb-12 pt-[calc(var(--header-h)+4rem)] sm:pb-16">
-          <p className="meta meta-strong reveal">
-            {t.method} &nbsp;/&nbsp; {r.label}
-          </p>
+          <div className="reveal flex flex-wrap items-center gap-x-5 gap-y-3">
+            <p className="meta meta-strong">
+              {t.method} &nbsp;/&nbsp; {r.label}
+            </p>
+            <LevelBadge locale={r.locale} />
+          </div>
           <h1 id="ressource-title" className="display display-md reveal mt-6 max-w-5xl leading-[0.98] text-cream" data-delay="0.1">
             {r.title} <span className="or">{r.titleGold}</span>
           </h1>
