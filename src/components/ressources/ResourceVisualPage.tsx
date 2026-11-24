@@ -233,6 +233,39 @@ function Art({
   }
 }
 
+/** Images réalisées dans ScreenWeaver (public/images/ressources/realisations). */
+const WORKS: string[][] = [
+  ["umbrella-s3", "neon-car", "garden-1", "elves", "lost-garden", "diner", "beetle", "red-coat"],
+  ["anime-film", "street-night", "garden-3", "typewriter", "umbrella-s4", "garden-2", "neon-x", "workshop"],
+];
+
+/** Deux rangées de réalisations qui défilent en sens inverse, sous l'appel final. */
+function WorksStrip() {
+  return (
+    <div aria-hidden className="pointer-events-none relative z-[4] overflow-hidden pb-20 sm:pb-28">
+      {WORKS.map((row, r) => (
+        <div key={row[0]} className="marquee py-1.5">
+          <div className={`marquee-track ${r === 0 ? "marquee-left" : "marquee-right"}`}>
+            {[0, 1].map((copy) =>
+              row.map((name) => (
+                <div
+                  key={`${copy}-${name}`}
+                  className="relative h-28 w-[12.4rem] shrink-0 overflow-hidden rounded-[var(--r-1)] border border-line sm:h-44 sm:w-[19.5rem]"
+                >
+                  {/* Vignettes déjà à la bonne taille (560 px) : servies telles quelles. */}
+                  <Image src={`/images/ressources/realisations/${name}.webp`} alt="" fill unoptimized sizes="312px" style={{ objectFit: "cover" }} />
+                </div>
+              )),
+            )}
+          </div>
+        </div>
+      ))}
+      <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[var(--bg-2)] to-transparent sm:w-40" />
+      <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[var(--bg-2)] to-transparent sm:w-40" />
+    </div>
+  );
+}
+
 function ArrowMark({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -355,7 +388,7 @@ export function ResourceVisualPage({ resource: r, visual: v }: { resource: Resou
           style={{ width: "36vw", height: "36vw", maxWidth: 560, maxHeight: 560, left: "50%", bottom: "-40%", transform: "translateX(-50%)" }}
           aria-hidden
         />
-        <div className="container-x relative z-[4] py-24 text-center sm:py-32">
+        <div className={`container-x relative z-[4] pt-24 text-center sm:pt-32 ${r.cta.affiliate ? "pb-24 sm:pb-32" : "pb-16 sm:pb-20"}`}>
           <h2 id="a-vous" className="display display-md mx-auto max-w-3xl normal-case leading-[1] text-cream">
             {v.cta.title}
           </h2>
@@ -366,6 +399,8 @@ export function ResourceVisualPage({ resource: r, visual: v }: { resource: Resou
             </Cta>
           </div>
         </div>
+        {/* Réalisations : pas sur la page qui mène vers un autre outil (lien affilié). */}
+        {r.cta.affiliate ? null : <WorksStrip />}
       </section>
     </>
   );
