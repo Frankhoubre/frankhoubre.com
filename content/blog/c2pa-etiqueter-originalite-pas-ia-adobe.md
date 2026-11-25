@@ -2,6 +2,7 @@
 title: "Étiqueter l'original, pas l'IA : ce que dit le CTO d'Adobe"
 date: "2026-11-17"
 time: "09:00"
+dateModified: "2026-11-25"
 category: "actualite"
 excerpt: "Pour Ely Greenfield (Adobe), l'étiquette « fait avec l'IA » ne voudra bientôt plus rien dire. Il veut marquer ce qui n'a pas été généré. Ce que ça change pour vous."
 thumbnail: "/images/blog/c2pa-etiqueter-originalite-pas-ia-adobe/hero.webp"
@@ -12,6 +13,8 @@ Quand vous prenez une photo avec votre téléphone, de l'IA intervient déjà : 
 Il l'a dit à **Digital Trends**, dans un entretien exclusif mené pendant Adobe MAX et publié le **15 novembre 2026**. Sa phrase la plus nette : le but du C2PA « n'est pas d'étiqueter ce qui a été fait avec l'IA, ce qui ne vous aide pas, c'est d'étiqueter ce qui ne l'a pas été ». J'ai lu [l'article de Varun Mirchandani](https://www.digitaltrends.com/cool-tech/adobe-ely-greenfield-c2pa-ai-originality-exclusive/) et le site de la coalition [C2PA](https://c2pa.org/) le 17 novembre.
 
 ![Un bureau de photographe le soir : un appareil photo hybride, un tirage de paysage de montagne encadré, et un ordinateur portable qui affiche la même photo avec un panneau de réglages, une main pointe vers l'écran](/images/blog/c2pa-etiqueter-originalite-pas-ia-adobe/hero.webp)
+
+*Mise à jour du 25 novembre 2026 : le New York Times demande à ses photographes d'éviter Photoshop 2027, de peur que les métadonnées C2PA marquent leurs photos comme générées par IA. [Ce que dit la consigne](/blog/new-york-times-photoshop-2027-ia-photographes).*
 
 ## Ce que dit Ely Greenfield
 

@@ -2,6 +2,7 @@
 title: "Label the original, not the AI: what Adobe's CTO says"
 date: "2026-11-17"
 time: "09:00"
+dateModified: "2026-11-25"
 category: "actualite"
 excerpt: "For Adobe's Ely Greenfield, the \"made with AI\" label will soon mean nothing. He wants to mark what was not generated. What that changes for you."
 thumbnail: "/images/blog/c2pa-etiqueter-originalite-pas-ia-adobe/hero.webp"
@@ -12,6 +13,8 @@ When you take a photo with your phone, AI is already involved: several exposures
 He said so to **Digital Trends**, in an exclusive interview at Adobe MAX published on **November 15, 2026**. His clearest line: "The goal of C2PA is not to label things that were made with AI, which doesn't help you; it's to label things that weren't." I read [Varun Mirchandani's article](https://www.digitaltrends.com/cool-tech/adobe-ely-greenfield-c2pa-ai-originality-exclusive/) and the [C2PA](https://c2pa.org/) coalition's site on November 17.
 
 ![A photographer's desk at night: a mirrorless camera, a framed mountain landscape print, and a laptop showing the same photo with an adjustments panel, a hand pointing at the screen](/images/blog/c2pa-etiqueter-originalite-pas-ia-adobe/hero.webp)
+
+*Update, November 25, 2026: The New York Times is asking its photographers to avoid Photoshop 2027, fearing C2PA metadata will tag their photos as AI-generated. [What the rule says](/en/blog/new-york-times-photoshop-2027-ia-photographes).*
 
 ## What Ely Greenfield says
 

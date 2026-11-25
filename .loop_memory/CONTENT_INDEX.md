@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-24T07:50:19.068Z
+> Generated: 2026-11-25T07:57:47.534Z
 
-## FR : 373 articles (/blog/<slug>)
+## FR : 374 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 76, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 77, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-25 | actualite | `new-york-times-photoshop-2027-ia-photographes` | Le New York Times interdit Photoshop 2027 à ses photographes |
 | 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts écarté de l'Oscar de l'animation : pourquoi |
 | 2026-11-23 | actualite | `harari-ia-pente-glissante-deepfake-seydoux` | Arthur Harari : l'IA, « une pente glissante », sauf pour un plan |
 | 2026-11-22 | actualite | `topview-film-hybride-acteurs-ia` | Topview mise sur le film hybride : vrais acteurs, décors IA |
@@ -385,13 +386,14 @@ Categories: tutoriels 191, actualite 76, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 288 articles (/en/blog/<slug>)
+## EN : 289 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 37, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 38, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
-| 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts ruled out of the animated feature Oscar: why |
+| 2026-11-25 | actualite | `new-york-times-photoshop-2027-ia-photographes` | The New York Times tells photographers to avoid Photoshop 2027 |
+| 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts ruled out of the animation Oscar |
 | 2026-11-23 | actualite | `harari-ia-pente-glissante-deepfake-seydoux` | Arthur Harari: AI is \"a slippery slope\", except for one shot |
 | 2026-11-22 | actualite | `topview-film-hybride-acteurs-ia` | Topview bets on hybrid film: real actors, AI sets |
 | 2026-11-21 | actualite | `loi-defiance-deepfakes-sexuels-createurs` | Sexual deepfakes: Paris Hilton pushes the DEFIANCE Act again |

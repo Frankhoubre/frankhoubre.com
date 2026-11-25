@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-24 (run CLOUD, routine 5 blogs : article d'actualite oscar-animation-gods-dont-give-gifts-ineligible FR + EN)
+## Last run: 2026-11-25 (run CLOUD, routine 5 blogs : article d'actualite new-york-times-photoshop-2027-ia-photographes FR + EN)
+
+- Actu 24/11 (The Verge, Emma Roth) : le New York Times demande a ses photographes independants d'eviter Photoshop 2027 (28.0.0 et suivantes), car des fonctions IA peu visibles peuvent inscrire dans les metadonnees C2PA que la photo est generee par IA ; consigne confirmee par Graham James ; fonctions exactes inconnues, Adobe sans reponse.
+- Angle : savoir ce que ses outils ecrivent dans ses fichiers ; lisibilite de l'etiquetage.
+- Coordination des autres sites le 25/11 : AI Studios historique Gemini sans entrainement, SimpleAIBlog Tidal supprime la musique 100 % IA, ScreenWeaver Eklavya (Lionsgate Play, serie IA), BusinessDynamite Muse dans les DM Instagram.
+- Images : hero Nano Banana 2 (photographe de presse devant une mise a jour), 3 captures The Verge, schema FR/EN.
+- Liens entrants FR + EN depuis c2pa-etiqueter-originalite-pas-ia-adobe.
+
+## Run precedent : 2026-11-24 (run CLOUD, routine 5 blogs : article d'actualite oscar-animation-gods-dont-give-gifts-ineligible FR + EN)
 
 - Actu 23/11 (IndieWire, Brian Welk) : l'Academie ne retient pas Gods Don't Give Gifts (Zack London / Gossip Goblin, Fable) parmi les 38 films eligibles a l'Oscar de l'animation : mouvement cree "par tout moyen humain" ; appel annonce par Edward Saatchi (precedent Apollo 10 1/2) ; film soumis aussi en realisation, scenario adapte, VFX, son.
 - Angle : documenter qui fait quoi, l'Academie juge la part humaine ; categorie "film IA" = reconnaissance ou ghetto.
