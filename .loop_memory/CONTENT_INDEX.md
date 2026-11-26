@@ -3,14 +3,15 @@
 > Regenerate with `node .loop_scripts/build_ledger.mjs`. Do not hand-edit.
 > This is the baseline map of all existing articles. New articles
 > the loop publishes are tracked richly in CONTENT_LEDGER.md.
-> Generated: 2026-11-25T07:57:47.534Z
+> Generated: 2026-11-26T07:53:35.333Z
 
-## FR : 374 articles (/blog/<slug>)
+## FR : 375 articles (/blog/<slug>)
 
-Categories: tutoriels 191, actualite 77, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
+Categories: tutoriels 191, actualite 78, business 31, comparatifs 28, analyses 26, guides 19, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-26 | actualite | `google-my-channel-brevet-videos-ia-personnalisees` | Google brevette une chaîne de vidéos IA faites pour toi |
 | 2026-11-25 | actualite | `new-york-times-photoshop-2027-ia-photographes` | Le New York Times interdit Photoshop 2027 à ses photographes |
 | 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts écarté de l'Oscar de l'animation : pourquoi |
 | 2026-11-23 | actualite | `harari-ia-pente-glissante-deepfake-seydoux` | Arthur Harari : l'IA, « une pente glissante », sauf pour un plan |
@@ -386,12 +387,13 @@ Categories: tutoriels 191, actualite 77, business 31, comparatifs 28, analyses 2
 | 2026-03-30 | tutoriels | `screenweaver-ai-ecriture-scenario-storyboard` | ScreenWeaver : du scénario au storyboard sans perdre l’âme du film (guide studio) |
 | 2026-03-29 | tutoriels | `dzine-ia` | Dzine IA : avis, test et pipeline personnages cohérents |
 
-## EN : 289 articles (/en/blog/<slug>)
+## EN : 290 articles (/en/blog/<slug>)
 
-Categories: tutoriels 181, actualite 38, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
+Categories: tutoriels 181, actualite 39, comparatifs 23, business 21, analyses 17, guides 7, notes 1, postproduction 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-26 | actualite | `google-my-channel-brevet-videos-ia-personnalisees` | Google patents a channel of AI videos made just for you |
 | 2026-11-25 | actualite | `new-york-times-photoshop-2027-ia-photographes` | The New York Times tells photographers to avoid Photoshop 2027 |
 | 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts ruled out of the animation Oscar |
 | 2026-11-23 | actualite | `harari-ia-pente-glissante-deepfake-seydoux` | Arthur Harari: AI is \"a slippery slope\", except for one shot |

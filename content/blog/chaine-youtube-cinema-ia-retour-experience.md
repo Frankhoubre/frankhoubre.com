@@ -4,6 +4,7 @@ date: "2026-10-05"
 category: "business"
 excerpt: "Retour d'expérience sur une chaîne YouTube cinéma IA : quel format tient, quelles règles YouTube lire avant de poster, et ce qui casse en premier."
 thumbnail: "/images/blog/chaine-youtube-cinema-ia-retour-experience/hero.webp"
+dateModified: "2026-11-26"
 ---
 
 # Chaîne YouTube cinéma IA : mon retour d'expérience
@@ -25,6 +26,9 @@ La chaîne d'atelier vit du processus. Comment tu as tenu un personnage cohéren
 Je penche nettement du second côté. Quand j'ai raconté [les coulisses de VOIDBORN](/blog/voidborn-anime-ia-festival-coulisses), les décisions de direction artistique et les erreurs qui m'ont coûté du temps, les retours ont été d'une autre nature que sur le film seul. Les gens posaient des questions techniques. Ils revenaient. Le film, lui, a trouvé son public ailleurs : en festival, où il a été lauréat au Seoul International AI Film Festival, au Hollywood Indie Festival et à l'Australian AI Festival. Deux canaux différents, deux publics différents.
 
 > 💡 **Le cut de Frank :** si tu hésites, pose toi cette question. Est ce que tu peux tenir une publication toutes les deux semaines pendant six mois avec le format que tu envisages ? Si la réponse est non, change de format avant de créer la chaîne, pas au bout de quatre vidéos.
+
+
+*Mise à jour du 26 novembre 2026 : un brevet de Google décrit My Channel, une chaîne de vidéos générées par IA à partir des goûts de chaque spectateur. [Ce que ça dit aux créateurs vidéo](/blog/google-my-channel-brevet-videos-ia-personnalisees).*
 
 ## J'avais déjà une chaîne, ça n'a servi qu'à moitié
 

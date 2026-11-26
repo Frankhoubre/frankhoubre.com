@@ -1,7 +1,7 @@
 ---
 title: "AI film YouTube channel: what I learned the hard way"
 date: "2026-10-05"
-dateModified: "2026-10-05"
+dateModified: "2026-11-26"
 category: "business"
 excerpt: "A real account of running an AI film YouTube channel: which format survives, which YouTube rules to read first, and what breaks before anything else."
 thumbnail: "/images/blog/chaine-youtube-cinema-ia-retour-experience/hero.webp"
@@ -26,6 +26,9 @@ The workshop channel lives off the process. How you held a character consistent 
 I lean hard toward the second one. When I told the story behind the art direction of VOIDBORN, the decisions and the mistakes that cost me time, the responses were a different species from the ones the film alone got. People asked technical questions. They came back. The film found its audience elsewhere, at festivals, where it won at the Seoul International AI Film Festival, the Hollywood Indie Festival and the Australian AI Festival. Two channels, two crowds.
 
 > 💡 **Frank's cut:** if you are hesitating, ask yourself one thing. Can you hold a release every two weeks for six months with the format you have in mind? If the answer is no, change format before you create the channel, not four videos in.
+
+
+*Update, November 26, 2026: a Google patent describes My Channel, a feed of AI-generated videos built from each viewer's tastes. [What it tells video creators](/en/blog/google-my-channel-brevet-videos-ia-personnalisees).*
 
 ## I already had a channel, and it only helped halfway
 

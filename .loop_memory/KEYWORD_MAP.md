@@ -273,3 +273,4 @@ GSC query data to pick keywords instead of guessing. See SETUP_LOOP.md.
 - `Arthur Harari IA / L'Inconnu deepfake / Lea Seydoux deepfake / IA ecriture scenario pente glissante / Marrakech IA` — FILLED: harari-ia-pente-glissante-deepfake-seydoux (actu 23/11/2026, FR + EN). Source Variety 22/11.
 - `Gods Don't Give Gifts Oscar / film IA inéligible Oscar animation / Academie regles IA / Oscar film d'animation IA` — FILLED: oscar-animation-gods-dont-give-gifts-ineligible (actu 24/11/2026, FR + EN). Source IndieWire 23/11.
 - `New York Times Photoshop 2027 / Photoshop IA metadonnees / C2PA photographes presse / etiquette IA photo` — FILLED: new-york-times-photoshop-2027-ia-photographes (actu 25/11/2026, FR + EN). Source The Verge 24/11.
+- `Google My Channel brevet / videos IA personnalisees / chaine TV generee par IA / avatar spectateur` — FILLED: google-my-channel-brevet-videos-ia-personnalisees (actu 26/11/2026, FR + EN). Sources Patentlyze 20/11, The Verge 25/11.

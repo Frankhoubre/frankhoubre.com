@@ -1,6 +1,15 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-25 (run CLOUD, routine 5 blogs : article d'actualite new-york-times-photoshop-2027-ia-photographes FR + EN)
+## Last run: 2026-11-26 (run CLOUD, routine 5 blogs : article d'actualite google-my-channel-brevet-videos-ia-personnalisees FR + EN)
+
+- Actu : demande de brevet Google US 2026/0370899 (deposee le 13/05/2025, publiee le 19/11/2026, rejetee mais modifiable) pour My Channel, chaine TV de videos generees par IA a partir de l'historique, de la position (IP, GPS), de la langue et de donnees demographiques ; option avatar et voix de l'utilisateur ; pubs inserees. Sources : Patentlyze (20/11), The Verge (Charles Pulliam-Moore, 25/11).
+- Angle : place du createur face a un flux genere ; proteger son image et sa voix.
+- Coordination des autres sites le 26/11 : ScreenWeaver Fincher et l'IA dans Cliff Booth, BusinessDynamite encheres des conversations Character.AI, SimpleAIBlog ElevenLabs a 33 milliards, AI Studios fusion Chat et Work dans ChatGPT.
+- Le deploiement Vercel du 25/11 (fd40d79) a echoue cote Vercel alors que le build local passe ; ce push relance un deploiement.
+- Images : hero Nano Banana 2 (createur devant sa tele), 3 captures (Patentlyze, encadre, The Verge), schema FR/EN.
+- Liens entrants FR + EN depuis chaine-youtube-cinema-ia-retour-experience.
+
+## Run precedent : 2026-11-25 (run CLOUD, routine 5 blogs : article d'actualite new-york-times-photoshop-2027-ia-photographes FR + EN)
 
 - Actu 24/11 (The Verge, Emma Roth) : le New York Times demande a ses photographes independants d'eviter Photoshop 2027 (28.0.0 et suivantes), car des fonctions IA peu visibles peuvent inscrire dans les metadonnees C2PA que la photo est generee par IA ; consigne confirmee par Graham James ; fonctions exactes inconnues, Adobe sans reponse.
 - Angle : savoir ce que ses outils ecrivent dans ses fichiers ; lisibilite de l'etiquetage.
