@@ -1,6 +1,14 @@
 # PROGRESS.md — Loop state (read at start of every run, update at end)
 
-## Last run: 2026-11-26 (run CLOUD, routine 5 blogs : article d'actualite google-my-channel-brevet-videos-ia-personnalisees FR + EN)
+## Last run: 2026-11-27 (run CLOUD, routine 5 blogs : article d'actualite luc-besson-furious-five-film-animation-seedance FR + EN)
+
+- Actu 26/11 (Torino Film Festival, Stella della Mole) : Luc Besson prepare Furious Five, film d'animation attendu en 2027 (mi-2027 selon Cinematografo/AdnKronos) ; seul Sky TG24 dit qu'il est genere avec Seedance 2.0 ; citation "a Hollywood ils sont 2 500, nous etions quinze" ; reprise World of Reel.
+- Angle : legitimite du cinema IA, choix de l'animation, petite equipe complete, distribution (The End de Dumont sans distributeur).
+- Coordination des autres sites le 27/11 : ScreenWeaver paiements du reglement Anthropic aux auteurs, BusinessDynamite Etsy corrige ses conditions IA, SimpleAIBlog Shot Reader (mouvements de camera), AI Studios Made by Humans de Press Gazette.
+- Images : hero Nano Banana 2 (petit studio d'animation), 4 captures (Cinematografo x2, World of Reel, page Seedance 2.0), schema FR/EN. Sky TG24 bloque la capture.
+- Liens entrants FR + EN depuis comment-obtenir-rendu-cinema-avec-seedance-2.
+
+## Run precedent : 2026-11-26 (run CLOUD, routine 5 blogs : article d'actualite google-my-channel-brevet-videos-ia-personnalisees FR + EN)
 
 - Actu : demande de brevet Google US 2026/0370899 (deposee le 13/05/2025, publiee le 19/11/2026, rejetee mais modifiable) pour My Channel, chaine TV de videos generees par IA a partir de l'historique, de la position (IP, GPS), de la langue et de donnees demographiques ; option avatar et voix de l'utilisateur ; pubs inserees. Sources : Patentlyze (20/11), The Verge (Charles Pulliam-Moore, 25/11).
 - Angle : place du createur face a un flux genere ; proteger son image et sa voix.

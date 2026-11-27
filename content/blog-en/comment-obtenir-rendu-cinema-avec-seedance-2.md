@@ -1,7 +1,7 @@
 ---
 title: "How to Get a Cinema Render with Seedance 2"
 date: "2026-04-10"
-dateModified: "2026-05-07"
+dateModified: "2026-11-27"
 category: "tutoriels"
 excerpt: "Settings and work habits to push a video engine toward a film render, with no demo look."
 thumbnail: "/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/hero.webp"
@@ -17,6 +17,8 @@ This guide assumes you accept back-and-forth. Not twenty mystical settings: a fe
 
 ![Hero, cinema render with Seedance 2.](/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/hero.webp)
 
+
+*Update, 27 November 2026: Luc Besson is preparing Furious Five, an animated film reportedly generated with Seedance 2.0 according to Sky TG24. Here's [what we know and what it changes](/en/blog/luc-besson-furious-five-film-animation-seedance).*
 
 ## What "cinema" means here
 

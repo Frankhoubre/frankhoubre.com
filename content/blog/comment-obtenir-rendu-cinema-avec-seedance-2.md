@@ -1,7 +1,7 @@
 ---
 title: "Comment obtenir un rendu cinéma avec Seedance 2"
 date: "2026-04-10"
-dateModified: "2026-05-07"
+dateModified: "2026-11-27"
 category: "tutoriels"
 excerpt: "Les réglages Seedance 2 et les habitudes de travail qui poussent le moteur vers un rendu film crédible, sans look démo ni sliders poussés au hasard."
 thumbnail: "/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/hero.webp"
@@ -17,6 +17,8 @@ Ce guide suppose que tu acceptes des allers retours. Pas vingt réglages mystiqu
 
 ![Hero, rendu cinéma avec Seedance 2.](/images/blog/comment-obtenir-rendu-cinema-avec-seedance-2/hero.webp)
 
+
+*Mise à jour du 27 novembre 2026 : Luc Besson prépare Furious Five, un film d'animation qui serait généré avec Seedance 2.0 selon Sky TG24. J'explique [ce qu'on sait et ce que ça change](/blog/luc-besson-furious-five-film-animation-seedance).*
 
 ## Ce que « cinéma » veut dire ici
 
