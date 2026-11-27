@@ -108,7 +108,7 @@ Claude Code m'a sauvé environ 3 à 5 heures par semaine de tâches répétitive
 
 Ce que je fais maintenant et que je ne faisais pas avant : j'automatise les petites frictions dès que je les identifie. Avant, si une tâche prenait 20 minutes et se répétait une fois par semaine, je la faisais à la main parce que créer un script me prenait plus longtemps que la tâche elle-même. Avec Claude Code, la création du script se fait en 5 minutes. L'équation change.
 
-Pour aller plus loin sur comment optimiser un workflow de production IA complet, l'article sur [comment optimiser son workflow IA](/blog/comment-optimiser-workflow-ia) couvre les principes généraux. Et pour la gestion des versions et l'organisation des fichiers d'un projet IA en production, [gérer les versions de ses projets vidéo IA](/blog/gerer-versions-projets-video-ia) est le complément naturel.
+Pour aller plus loin sur comment optimiser un workflow de production IA complet, l'article sur [comment optimiser son workflow IA](/blog/comment-optimiser-workflow-ia-gagner-temps) couvre les principes généraux. Et pour la gestion des versions et l'organisation des fichiers d'un projet IA en production, [gérer les versions de ses projets vidéo IA](/blog/gerer-versions-projets-video-ia) est le complément naturel.
 
 ## FAQ
 

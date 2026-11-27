@@ -4,7 +4,7 @@ date: "2026-04-17"
 dateModified: "2026-04-23"
 category: "tutoriels"
 excerpt: "Masterclass pas à pas pour créer un storyboard IA complet, cohérent et prêt production, sans dérive visuelle ni plans inutilisables."
-thumbnail: "https://images.unsplash.com/photo-1497032205916-ac775f0649ae"
+thumbnail: "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # Générer un storyboard professionnel complet avec l'IA

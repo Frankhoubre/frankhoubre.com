@@ -4,7 +4,7 @@ date: "2026-04-21"
 dateModified: "2026-09-26"
 category: "business"
 excerpt: "Outbound, proof content, partnerships, and niches: a field method to fill your pipeline with clients who pay for serious production."
-thumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+thumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Find Clients With AI Video (Acquisition With No Spam)

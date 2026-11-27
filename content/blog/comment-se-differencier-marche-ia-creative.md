@@ -3,7 +3,7 @@ title: "Comment se différencier sur le marché de l'IA créative (sans course a
 date: "2026-04-23"
 category: "business"
 excerpt: "Positionnement, preuve, style, process et niche: une stratégie réaliste pour sortir du bruit et attirer des clients qui paient."
-thumbnail: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+thumbnail: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # Comment se différencier sur le marché de l'IA créative (sans course au buzz)

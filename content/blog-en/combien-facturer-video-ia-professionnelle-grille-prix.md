@@ -4,7 +4,7 @@ date: "2026-04-21"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "Ranges, options, rush fees, and rights: how to build a credible price for an AI video delivered like a real agency project."
-thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How Much to Charge for a Professional AI Video (Price Grid and Traps)

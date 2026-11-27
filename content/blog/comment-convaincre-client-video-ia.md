@@ -3,7 +3,7 @@ title: "Comment convaincre un client avec une vidéo IA (preuve, pas promesse)"
 date: "2026-04-23"
 category: "business"
 excerpt: "Pitch, démo, preuve sociale et cadre juridique: comment faire accepter une vidéo IA par un décideur sceptique sans baisser ton prix."
-thumbnail: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+thumbnail: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # Comment convaincre un client avec une vidéo IA (preuve, pas promesse)

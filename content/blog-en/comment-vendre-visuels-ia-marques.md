@@ -4,7 +4,7 @@ date: "2026-04-22"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "Positioning, pitch, rights, portfolio and client process: the method to monetize AI visuals with demanding brands."
-thumbnail: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a"
+thumbnail: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Sell AI Visuals to Brands (Without Being Seen as Low-Cost)

@@ -4,7 +4,7 @@ date: "2026-04-22"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "A creative and media method to produce AI ads that perform: angle, hooks, tests, budget and iterations."
-thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Use AI to Create Profitable Ads (Not Just Pretty Ones)

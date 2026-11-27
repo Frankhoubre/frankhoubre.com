@@ -3,7 +3,7 @@ title: "How to Stand Out in the Creative AI Market (With No Buzz Race)"
 date: "2026-04-23"
 category: "business"
 excerpt: "Positioning, proof, style, process and niche: a realistic strategy to get out of the noise and attract clients who pay."
-thumbnail: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+thumbnail: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Stand Out in the Creative AI Market (With No Buzz Race)

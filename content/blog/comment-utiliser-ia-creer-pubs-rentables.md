@@ -4,7 +4,7 @@ date: "2026-04-22"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "Méthode créative et media pour produire des publicités IA qui performent: angle, hooks, tests, budget et itérations."
-thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # Comment utiliser l'IA pour créer des pubs rentables (et pas juste jolies)
