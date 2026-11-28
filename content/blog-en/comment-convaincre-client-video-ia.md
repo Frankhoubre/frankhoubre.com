@@ -3,7 +3,7 @@ title: "How to Convince a Client with an AI Video (Proof, Not Promise)"
 date: "2026-04-23"
 category: "business"
 excerpt: "Pitch, demo, social proof and legal framework: how to get an AI video accepted by a skeptical decision-maker without lowering your price."
-thumbnail: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
+thumbnail: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Convince a Client with an AI Video (Proof, Not Promise)

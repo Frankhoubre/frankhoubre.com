@@ -4,7 +4,7 @@ date: "2026-04-21"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "Packaging, proof, legal, and process: the field method to sell AI videos like a pro studio, not like a TikTok demo."
-thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978"
+thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Sell AI Videos to Clients (Without Looking Like a Tinkerer)

@@ -4,7 +4,7 @@ date: "2026-04-22"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "Positioning, offers, process, staffing and profitability: the field guide to build a credible and scalable AI video agency."
-thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978"
+thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # How to Build an AI Video Creation Agency (Without Operational Chaos)

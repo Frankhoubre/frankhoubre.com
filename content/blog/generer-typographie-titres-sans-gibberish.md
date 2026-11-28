@@ -68,10 +68,10 @@ Je décortique ce point directement en vidéo sur ma chaîne Business Dynamite.
 
 ![Export multi formats titres, tests lisibilité mobile](/images/blog/generer-typographie-titres-sans-gibberish/workflow-2.webp)
 
-- [workflow complet Seedance 2](/blog//blog/workflow-complet-seedance-2-rendu-cinema)
-- [scène dialogue à deux sans raccord cassé](/blog//blog/scene-dialogue-deux-personnages-raccord-ia)
-- [transformer une image IA en vidéo fluide](/blog//blog/comment-transformer-image-ia-video-fluide-credible)
-- [structurer une vidéo IA comme un vrai film](/blog//blog/comment-structurer-video-ia-comme-vrai-film)
+- [workflow complet Seedance 2](/blog/workflow-complet-seedance-2-rendu-cinema)
+- [scène dialogue à deux sans raccord cassé](/blog/scene-dialogue-deux-personnages-raccord-ia)
+- [transformer une image IA en vidéo fluide](/blog/comment-transformer-image-ia-video-fluide-credible)
+- [structurer une vidéo IA comme un vrai film](/blog/comment-structurer-video-ia-comme-vrai-film)
 
 ## FAQ
 

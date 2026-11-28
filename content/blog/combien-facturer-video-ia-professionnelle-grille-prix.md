@@ -4,7 +4,7 @@ date: "2026-04-21"
 dateModified: "2026-04-23"
 category: "business"
 excerpt: "Fourchettes, options, rush fees, et droits: comment construire un prix crédible pour une vidéo IA livrée comme un vrai projet agence."
-thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=75"
 ---
 
 # Combien facturer une vidéo IA professionnelle (grille de prix et pièges)
