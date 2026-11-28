@@ -11,6 +11,7 @@ Categories: tutoriels 191, actualite 78, business 31, comparatifs 28, analyses 2
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-28 | actualite | `fincher-ia-cliff-booth-doublage-levres` | Fincher et l'IA sur Cliff Booth : dialogues et lèvres recalés |
 | 2026-11-26 | actualite | `google-my-channel-brevet-videos-ia-personnalisees` | Google brevette une chaîne de vidéos IA faites pour toi |
 | 2026-11-25 | actualite | `new-york-times-photoshop-2027-ia-photographes` | Le New York Times interdit Photoshop 2027 à ses photographes |
 | 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts écarté de l'Oscar de l'animation : pourquoi |
@@ -393,6 +394,7 @@ Categories: tutoriels 181, actualite 39, comparatifs 23, business 21, analyses 1
 
 | Date | Category | Slug | Title |
 | --- | --- | --- | --- |
+| 2026-11-28 | actualite | `fincher-ia-cliff-booth-doublage-levres` | Fincher's AI on Cliff Booth: cleaned-up dialogue and fixed lips |
 | 2026-11-26 | actualite | `google-my-channel-brevet-videos-ia-personnalisees` | Google patents a channel of AI videos made just for you |
 | 2026-11-25 | actualite | `new-york-times-photoshop-2027-ia-photographes` | The New York Times tells photographers to avoid Photoshop 2027 |
 | 2026-11-24 | actualite | `oscar-animation-gods-dont-give-gifts-ineligible` | Gods Don't Give Gifts ruled out of the animation Oscar |

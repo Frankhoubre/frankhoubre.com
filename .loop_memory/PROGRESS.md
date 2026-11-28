@@ -9,6 +9,10 @@
 - Images : hero Nano Banana 2 (createur devant sa tele), 3 captures (Patentlyze, encadre, The Verge), schema FR/EN.
 - Liens entrants FR + EN depuis chaine-youtube-cinema-ia-retour-experience.
 
+## Run precedent : 2026-11-28 (run CLOUD, routine 5 blogs : article d'actualite fincher-ia-cliff-booth-doublage-levres FR + EN)
+
+- Actu 25/11 (Variety, podcast The Big Picture) : Fincher a utilise l'IA sur Cliff Booth pour nettoyer les dialogues et recaler les levres ; 5 % de postsynchro classique ; entretien avant les accusations d'images generees. 3 captures, schema FR/EN, hero NB2, liens entrants depuis l'article Harari.
+
 ## Run precedent : 2026-11-25 (run CLOUD, routine 5 blogs : article d'actualite new-york-times-photoshop-2027-ia-photographes FR + EN)
 
 - Actu 24/11 (The Verge, Emma Roth) : le New York Times demande a ses photographes independants d'eviter Photoshop 2027 (28.0.0 et suivantes), car des fonctions IA peu visibles peuvent inscrire dans les metadonnees C2PA que la photo est generee par IA ; consigne confirmee par Graham James ; fonctions exactes inconnues, Adobe sans reponse.

@@ -2,6 +2,7 @@
 title: "Arthur Harari : l'IA, « une pente glissante », sauf pour un plan"
 date: "2026-11-23"
 time: "09:00"
+dateModified: "2026-11-28"
 category: "actualite"
 excerpt: "À Marrakech, le coscénariste d'Anatomie d'une chute dit refuser l'IA pour écrire, puis admet un deepfake pour un plan avec Léa Seydoux. Où il trace la ligne."
 thumbnail: "/images/blog/harari-ia-pente-glissante-deepfake-seydoux/hero.webp"
@@ -14,6 +15,8 @@ Ce n'est pas une contradiction honteuse. C'est la position que beaucoup de ciné
 Ce qui suit vient de [l'article de Christopher Vourlias pour Variety](https://variety.com/2026/film/festivals/the-unknown-director-deepfake-tool-lea-seydoux-kissing-scene-1236955267/), publié le 22 novembre et lu le 23 novembre 2026. Les citations sont traduites de l'anglais de Variety : je n'ai pas eu accès à un enregistrement de la rencontre.
 
 ![Dans une salle de post-production parisienne, la nuit, une truquiste se penche vers un écran qui montre en écran partagé deux silhouettes identiques en manteau sombre, face à face dans un couloir, avec un carnet de notes de plans et des toits de Paris sous la pluie derrière la fenêtre](/images/blog/harari-ia-pente-glissante-deepfake-seydoux/hero.webp)
+
+*Mise à jour du 28 novembre 2026 : Monsieur David Fincher explique avoir utilisé l'IA sur Cliff Booth pour nettoyer les dialogues et recaler les lèvres des acteurs. [Ce qu'il a fait](/blog/fincher-ia-cliff-booth-doublage-levres).*
 
 ## Ce qu'il a dit à Marrakech
 

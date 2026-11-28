@@ -2,6 +2,7 @@
 title: "Arthur Harari: AI is \"a slippery slope\", except for one shot"
 date: "2026-11-23"
 time: "09:00"
+dateModified: "2026-11-28"
 category: "actualite"
 excerpt: "In Marrakech, the Anatomy of a Fall co-writer said he won't use AI to write, then admitted a deepfake for a Léa Seydoux scene. Where he draws the line."
 thumbnail: "/images/blog/harari-ia-pente-glissante-deepfake-seydoux/hero.webp"
@@ -14,6 +15,8 @@ That isn't a shameful contradiction. It's the position many filmmakers will have
 This piece is based on [Christopher Vourlias's article for Variety](https://variety.com/2026/film/festivals/the-unknown-director-deepfake-tool-lea-seydoux-kissing-scene-1236955267/), published on November 22 and read on November 23, 2026. I haven't had access to a recording of the talk, so all quotes are as Variety reported them.
 
 ![In a Paris post-production suite at night, a VFX compositor leans toward a monitor showing a split-screen of two identical silhouettes in dark coats facing each other in a hallway, with a notebook of shot numbers and rainy Paris rooftops behind the window](/images/blog/harari-ia-pente-glissante-deepfake-seydoux/hero.webp)
+
+*Update, 28 November 2026: Mr. David Fincher says he used AI on Cliff Booth to clean up dialogue and fix the actors' lip sync. [What he did](/blog/fincher-ia-cliff-booth-doublage-levres).*
 
 ## What he said in Marrakech
 
